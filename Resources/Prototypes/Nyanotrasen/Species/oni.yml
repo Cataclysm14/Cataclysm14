@@ -24,10 +24,17 @@
     HeadTop:
       points: 1
       required: true
-      defaultMarkings: [ OniHornSingleCurved ]
+      defaultMarkings: [ OniHornDoubleCurved ]
     Tail: # Frontier
       points: 1 # Frontier
       required: false # Frontier
+    HeadSide:
+      points: 1
+      required: false
+      defaultMarkings: [ PointyEarsUpwards ]
+    Snout:
+      points: 2
+      required: false
     Chest:
       points: 4 # Frontier 1<4
       required: false
