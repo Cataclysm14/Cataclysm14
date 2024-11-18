@@ -47,6 +47,12 @@ public sealed partial class BodyPartComponent : Component, ISurgeryToolComponent
     public bool? Used { get; set; } = null;
 
     /// <summary>
+    ///     Multiply the step's doafter by this value.
+    /// </summary>
+    [DataField]
+    public float Speed { get; set; } = 1f;
+
+    /// <summary>
     /// Shitmed Change: What's the max health this body part can have?
     /// </summary>
     [DataField]

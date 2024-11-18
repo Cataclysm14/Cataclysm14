@@ -57,6 +57,7 @@
     soundHit:
       path: "/Audio/Items/drill_hit.ogg"
     attackRate: 4
+    heavyStaminaCost: 0 # Shitmed: Mining drill is for mining
     damage:
       groups:
         Brute: 3
@@ -107,7 +108,7 @@
   components:
   - type: Tag
     tags:
-      - Pickaxe
+    - Pickaxe
   - type: Sprite
     sprite: Objects/Weapons/Melee/crusher.rsi
     state: icon
@@ -206,7 +207,7 @@
   - type: MeleeWeapon
   - type: Tag
     tags:
-      - Pickaxe
+    - Pickaxe
   - type: Item
     size: Ginormous
     sprite: Objects/Weapons/Melee/crusher_glaive-inhands.rsi

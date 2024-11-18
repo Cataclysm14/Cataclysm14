@@ -29,7 +29,7 @@
     storedRotation: 90
   - type: MeleeWeapon
     damage:
-       types:
+      types:
         Heat: 5
     soundHit:
       path: /Audio/Effects/lightburn.ogg
@@ -87,7 +87,7 @@
     speedModifier: 0.66 # pretend the sixes go on forever :)
   - type: Utensil
     types:
-      - Knife
+    - Knife
   - type: Sprite
     sprite: Objects/Specific/Medical/Surgery/scalpel.rsi
     state: scalpel
@@ -136,6 +136,8 @@
     damage:
       types:
         Slash: 12
+  - type: Scalpel # Shitmed
+    speed: 1.25
 
 - type: entity
   name: laser scalpel
@@ -147,6 +149,9 @@
     state: laser
   - type: Item
     heldPrefix: laser
+  - type: Scalpel # Shitmed
+    speed: 1.5
+  # TODO: prevent bleeding from incisions
 
 # Scissors
 
@@ -183,13 +188,15 @@
     heldPrefix: hemostat
     sprite: Objects/Specific/Medical/Surgery/scissors.rsi # Shitmed Change
     storedRotation: 90
-  # Shitmed CHange
+  # Shitmed Change
   - type: SurgeryTool
     startSound:
       path: /Audio/_Shitmed/Medical/Surgery/retractor1.ogg
     endSound:
       path: /Audio/_Shitmed/Medical/Surgery/hemostat1.ogg
   - type: Hemostat
+  - type: Tweezers # Shitmed
+  - type: Tending # Shitmed
 
 # Bone setter - Shitmed Change
 - type: entity
@@ -228,7 +235,7 @@
   - type: Sharp
   - type: Utensil
     types:
-      - Knife
+    - Knife
   - type: Sprite
     sprite: Objects/Specific/Medical/Surgery/saw.rsi
     state: saw
@@ -238,7 +245,7 @@
     storedRotation: 90
   - type: Tool
     qualities:
-      - Sawing
+    - Sawing
   # Shitmed Change
   - type: BoneSaw
   - type: SurgeryTool
@@ -265,6 +272,8 @@
       path: /Audio/Weapons/bladeslice.ogg
   - type: Tool
     speedModifier: 0.5
+  - type: BoneSaw # Shitmed
+    speed: 0.5
 
 - type: entity
   name: circular saw
@@ -284,6 +293,8 @@
       path: /Audio/Items/drill_hit.ogg
   - type: Tool
     speedModifier: 1.5
+  - type: BoneSaw # Shitmed
+    speed: 1.5
 
 - type: entity
   name: advanced circular saw
@@ -299,6 +310,8 @@
     attackRate: 1.5
   - type: Tool
     speedModifier: 2.0
+  - type: BoneSaw # Shitmed
+    speed: 2
 
 # ORGANS - SHITMED
 

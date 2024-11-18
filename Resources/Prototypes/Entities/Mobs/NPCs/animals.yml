@@ -56,7 +56,7 @@
     accent: mouse
   - type: MeleeWeapon
     soundHit:
-        path: /Audio/Effects/bite.ogg
+      path: /Audio/Effects/bite.ogg
     angle: 0
     animation: WeaponArcBite
     damage:
@@ -438,7 +438,7 @@
     useKey: false
     selectedMode: SemiAuto
     availableModes:
-      - SemiAuto
+    - SemiAuto
     soundGunshot: /Audio/Weapons/Guns/Gunshots/pistol.ogg
   - type: BallisticAmmoProvider
     proto: CartridgeCaselessRifle
@@ -573,6 +573,7 @@
     - Mouse
   - type: Body
     prototype: Mothroach
+  - type: SurgeryTarget # Shitmed
   - type: TypingIndicator
     proto: moth
   - type: Destructible
@@ -591,6 +592,8 @@
     interfaces:
       enum.StrippingUiKey.Key:
         type: StrippableBoundUserInterface
+      enum.SurgeryUIKey.Key: # Shitmed
+        type: SurgeryBui
   - type: InventorySlots
   - type: Inventory
     speciesId: hamster
@@ -744,17 +747,17 @@
   parent: FoodEgg
   suffix: Fertilized, Duck
   components:
-    - type: Timer
-    - type: TimedSpawner
-      prototypes:
-      - MobDuckMallard
-      - MobDuckWhite
-      - MobDuckBrown
-      intervalSeconds: 20
-      minimumEntitiesSpawned: 1
-      maximumEntitiesSpawned: 1
-    - type: TimedDespawn #delete the egg after the chicken spawns
-      lifetime: 21
+  - type: Timer
+  - type: TimedSpawner
+    prototypes:
+    - MobDuckMallard
+    - MobDuckWhite
+    - MobDuckBrown
+    intervalSeconds: 20
+    minimumEntitiesSpawned: 1
+    maximumEntitiesSpawned: 1
+  - type: TimedDespawn #delete the egg after the chicken spawns
+    lifetime: 21
 
 - type: entity
   name: butterfly
@@ -789,8 +792,8 @@
       10: Dead
   - type: RandomSprite
     available:
-      - enum.DamageStateVisualLayers.Base:
-          butterfly: Rainbow
+    - enum.DamageStateVisualLayers.Base:
+        butterfly: Rainbow
   - type: DamageStateVisuals
     states:
       Alive:
@@ -898,6 +901,11 @@
     - Passive
   - type: Body
     prototype: AnimalRuminant
+  - type: SurgeryTarget # Shitmed
+  - type: UserInterface # Shitmed
+    interfaces:
+      enum.SurgeryUIKey.Key:
+        type: SurgeryBui
   - type: HTN
     rootTask:
       task: RuminantCompound
@@ -975,6 +983,11 @@
       task: RuminantCompound
   - type: Body
     prototype: AnimalHemocyanin
+  - type: SurgeryTarget # Shitmed
+  - type: UserInterface # Shitmed
+    interfaces:
+      enum.SurgeryUIKey.Key:
+        type: SurgeryBui
 
 - type: entity
   name: goat
@@ -1073,6 +1086,11 @@
     - Passive
   - type: Body
     prototype: AnimalRuminant
+  - type: SurgeryTarget # Shitmed
+  - type: UserInterface # Shitmed
+    interfaces:
+      enum.SurgeryUIKey.Key:
+        type: SurgeryBui
   - type: NPCRetaliation
     attackMemoryLength: 5
   - type: FactionException
@@ -1200,9 +1218,9 @@
   - type: Sprite
     drawdepth: Mobs
     layers:
-      - map: ["enum.DamageStateVisualLayers.Base"]
-        state: kangaroo
-        sprite: Mobs/Animals/kangaroo.rsi
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: kangaroo
+      sprite: Mobs/Animals/kangaroo.rsi
   - type: Fixtures
     fixtures:
       fix1:
@@ -1291,9 +1309,8 @@
   abstract: true
   components:
   - type: CombatMode
-  #- type: SurgeryTarget
-  #  canOperate: false
-  #- type: Targeting
+  - type: SurgeryTarget # Shitmed
+  - type: Targeting # Shitmed
   - type: Inventory
     templateId: monkey
     speciesId: monkey
@@ -1348,6 +1365,12 @@
   - type: Body
     prototype: Primate
     requiredLegs: 1 # TODO: More than 1 leg
+  - type: UserInterface # Shitmed: Add SurgeryUIKey on top of stripping ui
+    interfaces:
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
+      enum.SurgeryUIKey.Key:
+        type: SurgeryBui
   - type: CreamPied
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
@@ -1383,8 +1406,8 @@
   - type: FactionException
   - type: NpcFactionMember
     factions:
-      - Passive
-      - Monkey # Frontier
+    - Passive
+    - Monkey # Frontier
   - type: HTN
     rootTask:
       task: SimpleHostileCompound
@@ -1478,7 +1501,7 @@
   parent: MobBaseSyndicateMonkey
   suffix: syndicate agent
   components:
-    # make the player a traitor once its taken
+  # make the player a traitor once its taken
   - type: AutoTraitor
     profile: TraitorReinforcement
 
@@ -1573,19 +1596,19 @@
   - type: RandomSprite
     getAllGroups: true
     available:
-      - enum.DamageStateVisualLayers.Base:
-          kobold: KoboldColors
-      - horns:
-          horns_curled: KoboldHornColors
-          horns_ram: KoboldHornColors
-          horns_short: KoboldHornColors
-          horns_myrsore: KoboldHornColors
-          horns_bighorn: KoboldHornColors
-          horns_argali: KoboldHornColors
-          horns_ayrshire: KoboldHornColors
-          horns_floppy_kobold_ears: Inherit
-          horns_double: Inherit
-          horns_kobold_ears: Inherit
+    - enum.DamageStateVisualLayers.Base:
+        kobold: KoboldColors
+    - horns:
+        horns_curled: KoboldHornColors
+        horns_ram: KoboldHornColors
+        horns_short: KoboldHornColors
+        horns_myrsore: KoboldHornColors
+        horns_bighorn: KoboldHornColors
+        horns_argali: KoboldHornColors
+        horns_ayrshire: KoboldHornColors
+        horns_floppy_kobold_ears: Inherit
+        horns_double: Inherit
+        horns_kobold_ears: Inherit
   - type: Butcherable
     butcheringType: Spike
     spawned:
@@ -1639,7 +1662,7 @@
   parent: MobBaseSyndicateKobold
   suffix: syndicate agent
   components:
-    # make the player a traitor once its taken
+  # make the player a traitor once its taken
   - type: AutoTraitor
     profile: TraitorReinforcement
 
@@ -1657,7 +1680,7 @@
   id: MobGuidebookMonkey
   description: A hopefully helpful monkey whose only purpose in life is for you to click on. Does this count as having a monkey give you a tutorial?
   components:
-    - type: GuidebookControlsTest
+  - type: GuidebookControlsTest
 
 - type: entity
   name: mouse
@@ -1667,6 +1690,11 @@
   components:
   - type: Body
     prototype: Mouse
+  - type: SurgeryTarget # Shitmed
+  - type: UserInterface # Shitmed
+    interfaces:
+      enum.SurgeryUIKey.Key:
+        type: SurgeryBui
   - type: GhostRole
     makeSentient: true
     allowSpeech: true
@@ -1705,7 +1733,7 @@
     - HEAD
   - type: NpcFactionMember
     factions:
-      - Mouse
+    - Mouse
   - type: HTN
     rootTask:
       task: MouseCompound
@@ -2201,11 +2229,11 @@
   - type: ParrotSpeech
     blacklist:
       components:
-        - ParrotSpeech # Stop parrots repeating their own speech
-        - SurveillanceCamera
-        - SurveillanceCameraMonitor
-        - RadioSpeaker
-        - VendingMachine
+      - ParrotSpeech # Stop parrots repeating their own speech
+      - SurveillanceCamera
+      - SurveillanceCameraMonitor
+      - RadioSpeaker
+      - VendingMachine
   # End Frontier
 
 - type: entity
@@ -2341,7 +2369,7 @@
       behaviors:
       - !type:ExplodeBehavior
 
-  # I have included a snake_hiss.ogg sound file so if you want to use that be my guest
+      # I have included a snake_hiss.ogg sound file so if you want to use that be my guest
 - type: entity
   name: snake
   parent: SimpleMobBase
@@ -2417,6 +2445,11 @@
   - type: CombatMode
   - type: Body
     prototype: AnimalHemocyanin
+  - type: SurgeryTarget # Shitmed
+  - type: UserInterface # Shitmed
+    interfaces:
+      enum.SurgeryUIKey.Key:
+        type: SurgeryBui
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -2488,7 +2521,7 @@
   components:
   - type: NpcFactionMember
     factions:
-      - Xeno
+    - Xeno
   - type: InputMover
   - type: MobMover
   - type: HTN
@@ -2554,47 +2587,47 @@
   id: MobClownSpider
   description: Combines the two most terrifying things in existence, spiders and clowns.
   components:
-    - type: Sprite
-      drawdepth: Mobs
-      layers:
-      - map: ["enum.DamageStateVisualLayers.Base"]
-        state: clown
-        sprite: Mobs/Animals/clownspider.rsi
-    - type: Butcherable
-      spawned:
-        - id: MaterialBananium1
-          amount: 1
-    - type: DamageStateVisuals
-      states:
-        Alive:
-          Base: clown
-        Critical:
-          Base: dead
-        Dead:
-          Base: dead
-    - type: MobThresholds
-      thresholds:
-        0: Alive
-        180: Dead
-    - type: Spider
-      webPrototype: SpiderWebClown
-    - type: MeleeWeapon
-      altDisarm: false
-      angle: 0
-      animation: WeaponArcBite
-      soundHit:
-        path: /Audio/Effects/bite.ogg
-      damage:
-        types:
-          Piercing: 8
-    - type: FootstepModifier
-      footstepSoundCollection:
-        collection: FootstepClownFast
-    - type: Speech
-      speechVerb: Cluwne
-    - type: Bloodstream
-      bloodMaxVolume: 150
-      bloodReagent: Laughter
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: clown
+      sprite: Mobs/Animals/clownspider.rsi
+  - type: Butcherable
+    spawned:
+    - id: MaterialBananium1
+      amount: 1
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: clown
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      180: Dead
+  - type: Spider
+    webPrototype: SpiderWebClown
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    animation: WeaponArcBite
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Piercing: 8
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepClownFast
+  - type: Speech
+    speechVerb: Cluwne
+  - type: Bloodstream
+    bloodMaxVolume: 150
+    bloodReagent: Laughter
 
 - type: entity
   name: wizard spider
@@ -2899,7 +2932,7 @@
         Base: narsian_dead
   - type: MeleeWeapon
     soundHit:
-        path: /Audio/Effects/bite.ogg
+      path: /Audio/Effects/bite.ogg
     angle: 0
     animation: WeaponArcBite
     damage:
@@ -3132,7 +3165,7 @@
     coldDamageThreshold: 0
   - type: Tag
     tags:
-      - DoorBumpOpener
+    - DoorBumpOpener
   - type: MovementAlwaysTouching
   - type: PressureImmunity
   - type: ProtectedFromStepTriggers
@@ -3433,7 +3466,7 @@
   - type: CombatMode
   - type: MeleeWeapon
     soundHit:
-        path: /Audio/Effects/bite.ogg
+      path: /Audio/Effects/bite.ogg
     angle: 0
     animation: WeaponArcBite
     damage:
@@ -3631,13 +3664,13 @@
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: reindeer_buck
       sprite: Mobs/Animals/reindeer_buck.rsi
-#  - type: SpriteMovement  # One day when this shit isnt broken as hell. For now they hoppity hop.
-#    movementLayers:
-#      movement:
-#        state: reindeer_buck
-#    noMovementLayers:
-#      movement:
-#        state: reindeer_buck_still
+  #  - type: SpriteMovement  # One day when this shit isnt broken as hell. For now they hoppity hop.
+  #    movementLayers:
+  #      movement:
+  #        state: reindeer_buck
+  #    noMovementLayers:
+  #      movement:
+  #        state: reindeer_buck_still
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -3697,13 +3730,13 @@
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: reindeer_doe
       sprite: Mobs/Animals/reindeer_doe.rsi
-#  - type: SpriteMovement  # One day when this shit isnt broken as hell. For now they hoppity hop.
-#    movementLayers:
-#      movement:
-#        state: reindeer_doe
-#    noMovementLayers:
-#      movement:
-#        state: reindeer_doe_still
+  #  - type: SpriteMovement  # One day when this shit isnt broken as hell. For now they hoppity hop.
+  #    movementLayers:
+  #      movement:
+  #        state: reindeer_doe
+  #    noMovementLayers:
+  #      movement:
+  #        state: reindeer_doe_still
   - type: DamageStateVisuals
     states:
       Alive:
