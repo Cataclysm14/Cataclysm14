@@ -4,7 +4,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortMk58Expedition
   suffix: Dungeon, Mk58
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -17,7 +16,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortN1984Expedition
   suffix: Dungeon, N1984
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -30,7 +28,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortViper
   suffix: Dungeon, Viper
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -43,7 +40,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortCobra
   suffix: Dungeon, Cobra
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -58,7 +54,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortUniversalExpedition
   suffix: Dungeon, Universal
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -71,7 +66,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortPollockExpedition
   suffix: Dungeon, Pollock
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -84,7 +78,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortAntiqueLaserExpedition
   suffix: Dungeon, Antique Laser
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -96,7 +89,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortArgentiExpedition
   suffix: Dungeon, Argenti
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -109,7 +101,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortDeckardExpedition
   suffix: Dungeon, Deckard
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -122,7 +113,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortPython
   suffix: Dungeon, Python
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -135,7 +125,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortMateba
   suffix: Dungeon, Mateba
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -148,7 +137,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortFitzExpedition
   suffix: Dungeon, Fitz
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -161,7 +149,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortFaithExpedition
   suffix: Dungeon, Faith
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -174,7 +161,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortLuckyExpedition
   suffix: Dungeon, Lucky 37
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -187,7 +173,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortRevolverPirate
   suffix: Dungeon, Pirate Revolver
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -201,7 +186,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortHandmadeExpedition
   suffix: Dungeon, Handmade Pistol
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -214,7 +198,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongShotgunDoubleBarreledExpedition
   suffix: Dungeon, Double Barreled
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -227,7 +210,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortSawnExpedition
   suffix: Dungeon, Sawn-off
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -240,7 +222,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongKammererExpedition
   suffix: Dungeon, Kammerer
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -253,7 +234,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongEnforcerExpedition
   suffix: Dungeon, Enforcer
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -266,7 +246,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongBulldog
   suffix: Dungeon, Bulldog
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -282,7 +261,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongWT550Expedition
   suffix: Dungeon, WT550
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -297,7 +275,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongAtreidesExpedition
   suffix: Dungeon, Atreides
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -312,7 +289,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongDrozdExpedition
   suffix: Dungeon, Drozd
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -327,7 +303,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongC20r
   suffix: Dungeon, C20r
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -342,7 +317,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongTypewriterExpedition
   suffix: Dungeon, Typewriter
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -358,7 +332,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongGestioExpedition
   suffix: Dungeon, Gestio
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -371,7 +344,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongWeaponRifleNovaliteC1Expedition
   suffix: Dungeon, NovaliteC1
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -384,7 +356,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongLecterExpedition
   suffix: Dungeon, Lecter
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -397,7 +368,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongAk
   suffix: Dungeon, AKM
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -409,21 +379,19 @@
 - type: entity
   parent: WeaponCaseLong
   id: WeaponCaseLongM90Expedition
-  suffix: Dungeon, M-90gl
-  categories: [ HideSpawnMenu ]
+  suffix: Dungeon, M-90
   components:
   - type: StorageFill
     contents:
-    - id: WeaponRifleM90GrenadeLauncher
+    - id: WeaponRifleM90
       amount: 1
-    - id: Magazine5.56x45mmFMJ
+    - id: Magazine7.62x51mmFMJ
       amount: 2
 
 - type: entity
   parent: WeaponCaseLong
   id: WeaponCaseLongSVSExpedition
   suffix: Dungeon, SVS
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -436,7 +404,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongVulcanExpedition
   suffix: Dungeon, Vulcan
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -449,7 +416,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongJackdaw
   suffix: Dungeon, Jackdaw
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -463,7 +429,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortLaserGunExpedition
   suffix: Dungeon, Retro Laser
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -474,7 +439,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortSvalinnExpedition
   suffix: Dungeon, Svalinn
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -487,7 +451,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongLaserCarbineExpedition
   suffix: Dungeon, Laser Carbine
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -498,7 +461,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongEnergyGunExpedition
   suffix: Dungeon, Energy Gun
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -509,7 +471,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortAdvancedLaserExpedition
   suffix: Dungeon, Advanced Laser
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -520,7 +481,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongLaserCannonExpedition
   suffix: Dungeon, Laser Cannon
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -531,7 +491,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongXrayCannonExpedition
   suffix: Dungeon, Xray Cannon
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -543,7 +502,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongMosinExpedition
   suffix: Dungeon, Mosin
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -556,7 +514,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongHristovExpedition
   suffix: Dungeon, Hristov
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -569,7 +526,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongRepeaterExpedition
   suffix: Dungeon, Repeater
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -582,7 +538,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongMusketExpedition
   suffix: Dungeon, Musket
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -595,7 +550,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongSniperCeremonialExpedition
   suffix: Dungeon, Ceremonial Rifle
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -609,7 +563,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongLauncherRocketExpedition
   suffix: Dungeon, RPG
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -622,7 +575,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongLauncherChinaLake
   suffix: Dungeon, China Lake
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -636,7 +588,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongLightMachineGunL6
   suffix: Dungeon, L6
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -650,7 +601,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortEnergyShieldExpedition
   suffix: Dungeon, Energy Shield
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -661,7 +611,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortEnergySwordExpedition
   suffix: Dungeon, Energy Sword
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -672,7 +621,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortEnergyDaggerExpedition
   suffix: Dungeon, Energy Dagger
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -683,7 +631,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortEnergyCutlassExpedition
   suffix: Dungeon, Energy Cutlass
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -694,7 +641,6 @@
   parent: WeaponCaseShort
   id: WeaponCaseShortEnergySwordDoubleExpedition
   suffix: Dungeon, Energy Sword Double
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -706,7 +652,6 @@
   parent: WeaponCaseShortExplosives
   id: WeaponCaseShortFireBomb
   suffix: Dungeon, Fire Bomb
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -717,7 +662,6 @@
   parent: WeaponCaseShortExplosives
   id: WeaponCaseShortPipeBomb
   suffix: Dungeon, Pipe Bomb
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -728,7 +672,6 @@
   parent: WeaponCaseShortExplosives
   id: WeaponCaseShortSeismicCharge
   suffix: Dungeon, Seismic Charge
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -739,7 +682,6 @@
   parent: WeaponCaseShortExplosives
   id: WeaponCaseShortExGrenade
   suffix: Dungeon, Explosive Grenade
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -750,7 +692,6 @@
   parent: WeaponCaseShortExplosives
   id: WeaponCaseShortC4
   suffix: Dungeon, C4
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -762,7 +703,6 @@
   parent: WeaponCaseHeavy
   id: WeaponCaseHeavyAsmgtExpeditions
   suffix: packed ASMGT, Expeditions
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -778,49 +718,42 @@
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxLethal20
   id: WeaponCaseShortAmmoBoxLethal20
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxBigLethal20
   id: WeaponCaseShortAmmoBoxBigLethal20
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxRubber20
   id: WeaponCaseShortAmmoBoxRubber20
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxBigRubber20
   id: WeaponCaseShortAmmoBoxBigRubber20
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxPractice20
   id: WeaponCaseShortAmmoBoxPractice20
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxIncendiary20
   id: WeaponCaseShortAmmoBoxIncendiary20
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxUranium20
   id: WeaponCaseShortAmmoBoxUranium20
-  categories: [ HideSpawnMenu ]
 
 ## 7.62x39mm
 - type: entity
@@ -828,42 +761,36 @@
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxLethal30
   id: WeaponCaseShortAmmoBoxLethal30
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxBigLethal30
   id: WeaponCaseShortAmmoBoxBigLethal30
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxRubber30
   id: WeaponCaseShortAmmoBoxRubber30
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxPractice30
   id: WeaponCaseShortAmmoBoxPractice30
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxIncendiary30
   id: WeaponCaseShortAmmoBoxIncendiary30
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxUranium30
   id: WeaponCaseShortAmmoBoxUranium30
-  categories: [ HideSpawnMenu ]
 
 ## .35 pistol
 - type: entity
@@ -871,42 +798,36 @@
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxLethal35
   id: WeaponCaseShortAmmoBoxLethal35
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxRubber35
   id: WeaponCaseShortAmmoBoxRubber35
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxPractice35
   id: WeaponCaseShortAmmoBoxPractice35
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxIncendiary35
   id: WeaponCaseShortAmmoBoxIncendiary35
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxUranium35
   id: WeaponCaseShortAmmoBoxUranium35
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxEmp35
   id: WeaponCaseShortAmmoBoxEmp35
-  categories: [ HideSpawnMenu ]
 
 ## 6.35x40mm Caseless
 - type: entity
@@ -914,35 +835,30 @@
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxLethal25
   id: WeaponCaseShortAmmoBoxLethal25
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxBigLethal25
   id: WeaponCaseShortAmmoBoxBigLethal25
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxRubber25
   id: WeaponCaseShortAmmoBoxRubber25
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxBigRubber25
   id: WeaponCaseShortAmmoBoxBigRubber25
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxPractice25
   id: WeaponCaseShortAmmoBoxPractice25
-  categories: [ HideSpawnMenu ]
 
 ## Shotgun
 - type: entity
@@ -950,49 +866,42 @@
   - WeaponCaseShortAmmo
   - StorageFillAmmoAmmoBox12_gaugeBuckshotgun
   id: WeaponCaseShortAmmoAmmoBox12_gaugeBuckshotgun
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxRubberShotgun
   id: WeaponCaseShortAmmoBoxRubberShotgun
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxPracticeShotgun
   id: WeaponCaseShortAmmoBoxPracticeShotgun
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxIncendiaryShotgun
   id: WeaponCaseShortAmmoBoxIncendiaryShotgun
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxUraniumShotgun
   id: WeaponCaseShortAmmoBoxUraniumShotgun
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxSlugShotgun
   id: WeaponCaseShortAmmoBoxSlugShotgun
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxFlareShotgun
   id: WeaponCaseShortAmmoBoxFlareShotgun
-  categories: [ HideSpawnMenu ]
 
 ## .45 magnum ammo
 - type: entity
@@ -1000,32 +909,27 @@
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxLethal45
   id: WeaponCaseShortAmmoBoxLethal45
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxRubber45
   id: WeaponCaseShortAmmoBoxRubber45
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxPractice45
   id: WeaponCaseShortAmmoBoxPractice45
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxIncendiary45
   id: WeaponCaseShortAmmoBoxIncendiary45
-  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent:
   - WeaponCaseShortAmmo
   - StorageFillAmmoBoxUranium45
   id: WeaponCaseShortAmmoBoxUranium45
-  categories: [ HideSpawnMenu ]

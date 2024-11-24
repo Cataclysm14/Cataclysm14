@@ -120,7 +120,7 @@
   - type: StorageFill
     contents:
       - id: WeaponRifleM90GrenadeLauncher
-      - id: Magazine5.56x45mmFMJ
+      - id: Magazine7.62x51mmFMJ
         amount: 2
       - id: 40mmGrenadeThermobaric
         amount: 2

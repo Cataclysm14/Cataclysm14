@@ -59555,7 +59555,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: WeaponRifleM90GrenadeLauncher
+- proto: WeaponRifleM90
   entities:
   - uid: 2573
     components:

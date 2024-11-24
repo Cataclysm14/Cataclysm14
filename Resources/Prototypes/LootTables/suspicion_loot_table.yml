@@ -5,7 +5,7 @@
   - id: WeaponRifleAk
     amount: 0
     maxAmount: 5
-  - id: WeaponRifleM90GrenadeLauncher
+  - id: WeaponRifleM90
     amount: 0
     maxAmount: 5
   - id: WeaponRifleLecter

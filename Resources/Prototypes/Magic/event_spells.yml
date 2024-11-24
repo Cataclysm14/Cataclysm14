@@ -48,7 +48,7 @@
         orGroup: Guns
       - id: WeaponRifleAk
         orGroup: Guns
-      - id: WeaponRifleM90GrenadeLauncher
+      - id: WeaponRifleM90
         orGroup: Guns
       - id: WeaponRifleLecter
         orGroup: Guns
