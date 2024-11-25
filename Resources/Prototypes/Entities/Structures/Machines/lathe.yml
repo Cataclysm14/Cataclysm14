@@ -225,6 +225,7 @@
     - NFService # Frontier
     - NFScience # Frontier
     - NFPouches # Frontier
+    - SMSurgery # Shitmed Change
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityAmmo
@@ -340,6 +341,9 @@
     - BorgModules
     - MechParts
     - MechEquipment
+    # Shitmed Change
+    - BorgModulesDynamic
+    - SMCybernetics
   - type: MaterialStorage
     whitelist:
       tags:
@@ -427,6 +431,7 @@
     - SecurityAmmo
     - SecurityWeapons
     - SecurityDisablers
+    - SMCybernetics
   - type: MaterialStorage
     whitelist:
       tags:
@@ -502,6 +507,9 @@
     - Chemistry
     - SyringeGuns # DeltaV
     - NFMedical # Frontier
+    # Shitmed Change
+    - SMSurgery
+    - SMCybernetics
   - type: Machine
     board: MedicalTechFabCircuitboard
   - type: StealTarget

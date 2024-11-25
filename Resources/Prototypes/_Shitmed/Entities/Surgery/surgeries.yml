@@ -95,7 +95,7 @@
   - type: SurgeryPartRemovedCondition
     part: Arm
     symmetry: Left
-    connection: left_arm
+    connection: left arm
 
 - type: entity
   parent: SurgeryBase
@@ -113,7 +113,7 @@
   - type: SurgeryPartRemovedCondition
     part: Arm
     symmetry: Right
-    connection: right_arm
+    connection: right arm
 
 - type: entity
   parent: SurgeryBase
@@ -131,7 +131,7 @@
   - type: SurgeryPartRemovedCondition
     part: Leg
     symmetry: Left
-    connection: left_leg
+    connection: left leg
 
 - type: entity
   parent: SurgeryBase
@@ -149,7 +149,7 @@
   - type: SurgeryPartRemovedCondition
     part: Leg
     symmetry: Right
-    connection: right_leg
+    connection: right leg
 
 - type: entity
   parent: SurgeryBase
@@ -168,7 +168,7 @@
   - type: SurgeryPartRemovedCondition
     part: Hand
     symmetry: Left
-    connection: left_hand
+    connection: left hand
 
 - type: entity
   parent: SurgeryBase
@@ -187,7 +187,7 @@
   - type: SurgeryPartRemovedCondition
     part: Hand
     symmetry: Right
-    connection: right_hand
+    connection: right hand
 
 - type: entity
   parent: SurgeryBase
@@ -206,7 +206,7 @@
   - type: SurgeryPartRemovedCondition
     part: Foot
     symmetry: Left
-    connection: left_foot
+    connection: left foot
 
 - type: entity
   parent: SurgeryBase
@@ -225,7 +225,7 @@
   - type: SurgeryPartRemovedCondition
     part: Foot
     symmetry: Right
-    connection: right_foot
+    connection: right foot
 
 #- type: entity
 #  parent: SurgeryBase
@@ -325,7 +325,6 @@
     - type: Brain
     inverse: true
     reattaching: true
-
 
 - type: entity
   parent: SurgeryBase
@@ -478,6 +477,41 @@
     - type: Eyes
     inverse: true
     reattaching: true
+
+- type: entity
+  parent: SurgeryBase
+  id: SurgeryLobotomize
+  name: Lobotomize
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Surgery
+    requirement: SurgeryOpenIncision
+    steps:
+    - SurgeryStepLobotomize
+    - SurgeryStepCloseIncision
+  - type: SurgeryComponentCondition
+    component:
+    - type: SlurredAccent
+    inverse: true
+  - type: SurgeryPartCondition
+    part: Head
+
+- type: entity
+  parent: SurgeryBase
+  id: SurgeryMendBrainTissue
+  name: Mend brain tissue
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Surgery
+    requirement: SurgeryOpenIncision
+    steps:
+    - SurgeryStepMendBrainTissue
+    - SurgeryStepCloseIncision
+  - type: SurgeryComponentCondition
+    component:
+    - type: SlurredAccent
+  - type: SurgeryPartCondition
+    part: Head
 
 # Fluff/Joke Surgeries
 

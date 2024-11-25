@@ -720,3 +720,17 @@
     Steel: 1200
 
 # mono changes end
+
+# Shitmed Recipes
+
+- type: latheRecipe
+  id: SecurityCyberneticEyes
+  result: SecurityCyberneticEyes
+  category: Robotics
+  completetime: 5
+  materials:
+    Steel: 1000
+    Glass: 500
+    Plastic: 500
+    Gold: 300
+    Silver: 300
