@@ -340,6 +340,8 @@
     - BorgModulesStatic
     - BorgLimbsStatic
     - MechMiscStatic # Mono
+    # Shitmed Change
+    - IPCPartsStatic
     dynamicPacks:
     - Robotics
     - BorgModules

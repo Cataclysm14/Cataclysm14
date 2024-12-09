@@ -227,18 +227,18 @@
   - type: Sprite
     sprite: Structures/Power/borg_charger.rsi
     layers:
-      - state: borgcharger-u1
-        map: ["base"]
-      - state: borgcharger0
-        map: ["enum.PowerDeviceVisualLayers.Powered"]
-        shader: "unshaded"
-      - state: borgcharger1
-        map: ["charged"]
-        shader: "unshaded"
-        visible: false
-      - state: borgdecon1
-        map: ["enum.WiresVisualLayers.MaintenancePanel"]
-        visible: false
+    - state: borgcharger-u1
+      map: ["base"]
+    - state: borgcharger0
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+      shader: "unshaded"
+    - state: borgcharger1
+      map: ["charged"]
+      shader: "unshaded"
+      visible: false
+    - state: borgdecon1
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+      visible: false
   - type: Charger
     chargeRate: 75 # Frontier: 30 Mono
     slotId: entity_storage
@@ -289,6 +289,7 @@
     whitelist:
       components:
       - BorgChassis
+      - Silicon # EE IPCs
   - type: ContainerContainer
     containers:
       entity_storage: !type:Container
