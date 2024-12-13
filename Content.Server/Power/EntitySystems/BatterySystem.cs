@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using Content.Server.Cargo.Systems;
 using Content.Server.Emp;
 using Content.Shared.Emp; // Frontier: Upstream - #28984
@@ -6,6 +7,7 @@ using Content.Shared.Examine;
 using Content.Shared.Rejuvenate;
 using Content.Shared.Timing;
 using JetBrains.Annotations;
+using Robust.Shared.Containers;
 using Robust.Shared.Utility;
 using Robust.Shared.Timing;
 using Content.Server._NF.Power.Components; // Frontier
@@ -16,6 +18,8 @@ namespace Content.Server.Power.EntitySystems
     public sealed class BatterySystem : EntitySystem
     {
         [Dependency] protected readonly IGameTiming Timing = default!;
+
+        [Dependency] private readonly SharedContainerSystem _containers = default!; // WD EDIT
 
         public override void Initialize()
         {
@@ -52,7 +56,7 @@ namespace Content.Server.Power.EntitySystems
                 if (effectiveMax == 0)
                     effectiveMax = 1;
                 var chargeFraction = batteryComponent.CurrentCharge / effectiveMax;
-                var chargePercentRounded = (int) (chargeFraction * 100);
+                var chargePercentRounded = (int)(chargeFraction * 100);
                 args.PushMarkup(
                     Loc.GetString(
                         "examinable-battery-component-examine-detail",
@@ -134,7 +138,7 @@ namespace Content.Server.Power.EntitySystems
 
         public float UseCharge(EntityUid uid, float value, BatteryComponent? battery = null)
         {
-            if (value <= 0 ||  !Resolve(uid, ref battery) || battery.CurrentCharge == 0)
+            if (value <= 0 || !Resolve(uid, ref battery) || battery.CurrentCharge == 0)
                 return 0;
 
             var newValue = Math.Clamp(0, battery.CurrentCharge - value, battery.MaxCharge);
@@ -247,7 +251,54 @@ namespace Content.Server.Power.EntitySystems
             if (!Resolve(uid, ref battery))
                 return false;
 
-            return battery.CurrentCharge >= battery.MaxCharge;
+            return battery.CurrentCharge / battery.MaxCharge >= 0.99f;
         }
+
+        // Goobstation
+        public int GetChargeDifference(EntityUid uid, BatteryComponent? battery = null) // Debug
+        {
+            if (!Resolve(uid, ref battery))
+                return 0;
+
+            return Convert.ToInt32(battery.MaxCharge - battery.CurrentCharge);
+        }
+        public float AddCharge(EntityUid uid, float value, BatteryComponent? battery = null)
+        {
+            if (value <= 0 || !Resolve(uid, ref battery))
+                return 0;
+
+            var newValue = Math.Clamp(battery.CurrentCharge + value, 0, battery.MaxCharge);
+            battery.CurrentCharge = newValue;
+            var ev = new ChargeChangedEvent(battery.CurrentCharge, battery.MaxCharge);
+            RaiseLocalEvent(uid, ref ev);
+            return newValue;
+        }
+            // WD EDIT START
+        public bool TryGetBatteryComponent(EntityUid uid, [NotNullWhen(true)] out BatteryComponent? battery,
+            [NotNullWhen(true)] out EntityUid? batteryUid)
+        {
+            if (TryComp(uid, out battery))
+            {
+                batteryUid = uid;
+                return true;
+            }
+
+            if (!_containers.TryGetContainer(uid, "cell_slot", out var container)
+                || container is not ContainerSlot slot)
+            {
+                battery = null;
+                batteryUid = null;
+                return false;
+            }
+
+            batteryUid = slot.ContainedEntity;
+
+            if (batteryUid != null)
+                return TryComp(batteryUid, out battery);
+
+            battery = null;
+            return false;
+        }
+        // WD EDIT END
     }
 }

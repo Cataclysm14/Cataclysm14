@@ -255,7 +255,7 @@
   discountDownTo:
     Telecrystal: 15 # Mono #5->3 Mono Edit
   cost:
-    Telecrystal: 30 # Mono #8->6 Mono Edit
+    Telecrystal: 40 # Mono #8->6 Mono Edit
   categories:
   - UplinkWeaponry
 #  conditions: # Mono normal uplink
