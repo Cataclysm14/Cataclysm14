@@ -17,6 +17,7 @@
   - Felinid # DeltaV
   - Oni # DeltaV
   - Chitinid # DeltaV
+  - Resomi
 #    - Rodentia # DeltaV
 
 - type: guideEntry
@@ -58,3 +59,8 @@
   id: Vox
   name: species-name-vox
   text: "/ServerInfo/Guidebook/Mobs/Vox.xml"
+
+- type: guideEntry
+  id: Resomi
+  name: species-name-resomi
+  text: "/ServerInfo/Guidebook/Mobs/Resomi.xml"

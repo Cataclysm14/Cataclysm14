@@ -19,6 +19,7 @@
     - Moth
     - Reptilian
     - Chitinid # DeltaV
+    - Resomi
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox
