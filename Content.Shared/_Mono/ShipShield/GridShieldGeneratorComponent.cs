@@ -21,6 +21,12 @@ public sealed partial class GridShieldGeneratorComponent : Component
     public bool IsConnected;
 
     /// <summary>
+    /// Whether the shield fields are currently active and protecting the grid
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite)]
+    public bool FieldsActive;
+
+    /// <summary>
     /// The masks the raycast should not go through
     /// </summary>
     [DataField("collisionMask")]

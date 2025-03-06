@@ -14,6 +14,7 @@ using Content.Shared.Tag;
 using Robust.Server.GameObjects;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
+using Robust.Shared.Timing;
 
 namespace Content.Server._Mono.ShipShield;
 
@@ -30,6 +31,12 @@ public sealed class GridShieldGeneratorSystem : EntitySystem
     [Dependency] private readonly SharedMapSystem _mapSystem = default!;
     [Dependency] private readonly ITileDefinitionManager _tileDefinitionManager = default!;
     [Dependency] private readonly PowerReceiverSystem _powerReceiverSystem = default!;
+    [Dependency] private readonly EntityManager _entityManager = default!;
+    [Dependency] private readonly IGameTiming _gameTiming = default!;
+
+    // Track when we last processed entities for optimization
+    private TimeSpan _lastProcessTime;
+    private readonly TimeSpan _processInterval = TimeSpan.FromSeconds(1);
 
     public override void Initialize()
     {
@@ -45,8 +52,106 @@ public sealed class GridShieldGeneratorSystem : EntitySystem
         SubscribeLocalEvent<GridShieldGeneratorComponent, ExaminedEvent>(OnExamine);
         SubscribeLocalEvent<GridShieldGeneratorComponent, PowerChangedEvent>(OnPowerStateChanged);
         SubscribeLocalEvent<GridShieldGeneratorComponent, MapInitEvent>(OnMapInit);
+        
+        // Subscribe to entity added to grid event to protect new entities
+        SubscribeLocalEvent<GridInitializeEvent>(OnGridInitialize);
+        
+        _lastProcessTime = _gameTiming.CurTime;
+    }
+    
+    public override void Update(float frameTime)
+    {
+        base.Update(frameTime);
+        
+        // Periodically process entities for shield protection
+        // This handles entities that have moved between grids
+        var curTime = _gameTiming.CurTime;
+        if (curTime - _lastProcessTime > _processInterval)
+        {
+            ProcessEntitiesForShieldProtection();
+            _lastProcessTime = curTime;
+        }
+    }
+    
+    /// <summary>
+    /// Processes all entities to check if they should have shield protection or not
+    /// </summary>
+    private void ProcessEntitiesForShieldProtection()
+    {
+        // Get all grids with shield protection and at least one active field
+        var protectedGrids = new HashSet<EntityUid>();
+        var gridQuery = EntityQueryEnumerator<GridShieldProtectionComponent>();
+        while (gridQuery.MoveNext(out var gridUid, out var protection))
+        {
+            // Only count this grid as protected if at least one generator has active fields
+            var hasActiveFields = false;
+            foreach (var generatorUid in protection.ActiveGenerators)
+            {
+                if (TryComp<GridShieldGeneratorComponent>(generatorUid, out var generator) && generator.FieldsActive)
+                {
+                    hasActiveFields = true;
+                    break;
+                }
+            }
+            
+            if (hasActiveFields)
+            {
+                protectedGrids.Add(gridUid);
+            }
+        }
+        
+        // Check all entities to see if they need protection
+        var entityQuery = EntityQueryEnumerator<TransformComponent, MetaDataComponent>();
+        while (entityQuery.MoveNext(out var entityUid, out var transform, out var metadata))
+        {
+            // Skip entities that have the GridShieldGenerator component - they should never get protection
+            if (HasComp<GridShieldGeneratorComponent>(entityUid))
+            {
+                // Remove protection if they somehow already have it
+                if (HasComp<GridShieldProtectedEntityComponent>(entityUid))
+                {
+                    RemComp<GridShieldProtectedEntityComponent>(entityUid);
+                    Log.Debug($"Removed shield protection from generator {metadata.EntityName} ({entityUid})");
+                }
+                continue;
+            }
+            
+            if (transform.GridUid == null)
+            {
+                // Not on a grid, remove protection if it has it
+                if (HasComp<GridShieldProtectedEntityComponent>(entityUid))
+                {
+                    RemComp<GridShieldProtectedEntityComponent>(entityUid);
+                    Log.Debug($"Removed shield protection from {metadata.EntityName} ({entityUid}) because it's not on a grid");
+                }
+                continue;
+            }
+            
+            // Check if this entity is on a protected grid
+            if (protectedGrids.Contains(transform.GridUid.Value))
+            {
+                // Ensure the entity has protection
+                EnsureComp<GridShieldProtectedEntityComponent>(entityUid);
+            }
+            else if (HasComp<GridShieldProtectedEntityComponent>(entityUid))
+            {
+                // Entity is on a grid without protection, remove the component
+                RemComp<GridShieldProtectedEntityComponent>(entityUid);
+                Log.Debug($"Removed shield protection from {metadata.EntityName} ({entityUid}) because its grid {transform.GridUid.Value} is not protected");
+            }
+        }
     }
 
+    private void OnGridInitialize(GridInitializeEvent ev)
+    {
+        // Check if this grid has shield protection
+        if (!HasComp<GridShieldProtectionComponent>(ev.EntityUid))
+            return;
+            
+        // Add protection to all entities on this grid by processing all entities
+        ProcessEntitiesForShieldProtection();
+    }
+    
     private void OnMapInit(EntityUid uid, GridShieldGeneratorComponent component, MapInitEvent args)
     {
         // Check power status on map init
@@ -183,12 +288,31 @@ public sealed class GridShieldGeneratorSystem : EntitySystem
     private void TurnOff(EntityUid uid, GridShieldGeneratorComponent component)
     {
         component.Enabled = false;
+        
+        // Make sure the fields are marked as inactive before removing them
+        component.FieldsActive = false;
+        
         RemoveShieldFields(uid, component);
+        
+        // Make sure we remove this generator from any grid protection
+        if (TryComp<TransformComponent>(uid, out var xform) && xform.GridUid != null)
+        {
+            RemoveGeneratorFromGridProtection(uid, xform.GridUid.Value);
+            
+            // Ensure entities lose protection by processing all entities again
+            ProcessEntitiesForShieldProtection();
+        }
     }
 
     private void OnComponentRemoved(EntityUid uid, GridShieldGeneratorComponent component, ref ComponentRemove args)
     {
         RemoveShieldFields(uid, component);
+        
+        // Make sure we remove this generator from any grid protection
+        if (TryComp<TransformComponent>(uid, out var xform) && xform.GridUid != null)
+        {
+            RemoveGeneratorFromGridProtection(uid, xform.GridUid.Value);
+        }
     }
 
     private void RemoveShieldFields(EntityUid uid, GridShieldGeneratorComponent component)
@@ -219,7 +343,17 @@ public sealed class GridShieldGeneratorSystem : EntitySystem
 
         component.ShieldFields.Clear();
         component.IsConnected = false;
+        component.FieldsActive = false;
         ChangeOnLightVisualizer(uid, component);
+        
+        // Remove this generator from grid protection if needed
+        if (gridUid != null)
+        {
+            RemoveGeneratorFromGridProtection(uid, gridUid.Value);
+            
+            // Ensure entities lose protection
+            ProcessEntitiesForShieldProtection();
+        }
     }
 
     private void GenerateGridShield(EntityUid uid, GridShieldGeneratorComponent component)
@@ -273,9 +407,13 @@ public sealed class GridShieldGeneratorSystem : EntitySystem
         if (component.ShieldFields.Count > 0)
         {
             component.IsConnected = true;
+            component.FieldsActive = true;
             ChangeOnLightVisualizer(uid, component);
             ChangeFieldVisualizer(uid, component);
             _popupSystem.PopupEntity(Loc.GetString("shield-generator-connection-established") + $" ({component.ShieldFields.Count} fields)", uid);
+            
+            // Add this generator to grid protection
+            AddGeneratorToGridProtection(uid, gridUid.Value);
         }
         else
         {
@@ -310,28 +448,70 @@ public sealed class GridShieldGeneratorSystem : EntitySystem
         {
             var indices = tile.GridIndices;
 
-            // Check all 8 directions (including diagonals)
-            for (int dx = -1; dx <= 1; dx++)
+            // First check orthogonal directions only
+            var orthogonalDirections = new[]
             {
-                for (int dy = -1; dy <= 1; dy++)
+                new Vector2i(1, 0),
+                new Vector2i(-1, 0),
+                new Vector2i(0, 1),
+                new Vector2i(0, -1)
+            };
+
+            foreach (var dir in orthogonalDirections)
+            {
+                var neighborPos = new Vector2i(indices.X + dir.X, indices.Y + dir.Y);
+
+                // If the neighbor is outside the grid, this is a perimeter tile
+                if (!tileIndices.Contains(neighborPos))
                 {
-                    // Skip the center (the tile itself)
-                    if (dx == 0 && dy == 0)
-                        continue;
+                    // Calculate the offset position (1 tile outward from the perimeter)
+                    var offsetPos = new Vector2i(indices.X + dir.X, indices.Y + dir.Y);
 
-                    var neighborPos = new Vector2i(indices.X + dx, indices.Y + dy);
-
-                    // If the neighbor is outside the grid, this is a perimeter tile
-                    if (!tileIndices.Contains(neighborPos))
+                    // Only add if we haven't already added this position
+                    if (offsetPositions.Add(offsetPos))
                     {
-                        // Calculate the offset position (1 tile outward from the perimeter)
-                        // We place the shield field in the direction of the missing neighbor
-                        var offsetPos = new Vector2i(indices.X + dx, indices.Y + dy);
+                        // For orthogonal positions, we know they're connected to the grid
+                        perimeter.Add(_mapSystem.GridTileToLocal(gridUid, grid, offsetPos));
+                    }
+                }
+            }
 
-                        // Only add if we haven't already added this position
-                        if (offsetPositions.Add(offsetPos))
+            // Now check diagonal directions, but with stricter placement rules
+            var diagonalDirections = new[]
+            {
+                new Vector2i(1, 1),
+                new Vector2i(1, -1),
+                new Vector2i(-1, 1),
+                new Vector2i(-1, -1)
+            };
+
+            foreach (var dir in diagonalDirections)
+            {
+                var neighborPos = new Vector2i(indices.X + dir.X, indices.Y + dir.Y);
+
+                // If the diagonal neighbor is outside the grid
+                if (!tileIndices.Contains(neighborPos))
+                {
+                    var offsetPos = new Vector2i(indices.X + dir.X, indices.Y + dir.Y);
+
+                    // Only add if we haven't already added this position
+                    if (offsetPositions.Add(offsetPos))
+                    {
+                        // For diagonal positions, ensure there's at least one orthogonal connection
+                        bool hasOrthogonalConnection = false;
+                        
+                        // Check if either adjacent orthogonal position is part of the grid
+                        var orthogonal1 = new Vector2i(offsetPos.X, indices.Y);
+                        var orthogonal2 = new Vector2i(indices.X, offsetPos.Y);
+                        
+                        if (tileIndices.Contains(orthogonal1) || tileIndices.Contains(orthogonal2))
                         {
-                            // Place the shield field at the center of the offset tile
+                            hasOrthogonalConnection = true;
+                        }
+
+                        // Only add the diagonal position if it has an orthogonal connection
+                        if (hasOrthogonalConnection)
+                        {
                             perimeter.Add(_mapSystem.GridTileToLocal(gridUid, grid, offsetPos));
                         }
                     }
@@ -373,5 +553,49 @@ public sealed class GridShieldGeneratorSystem : EntitySystem
     private void ChangeOnLightVisualizer(EntityUid uid, GridShieldGeneratorComponent component)
     {
         _visualizer.SetData(uid, ContainmentFieldGeneratorVisuals.OnLight, component.IsConnected);
+    }
+
+    /// <summary>
+    /// Adds a generator to the grid's protection component
+    /// </summary>
+    private void AddGeneratorToGridProtection(EntityUid generatorUid, EntityUid gridUid)
+    {
+        // Ensure the grid has a protection component
+        var gridProtection = EnsureComp<GridShieldProtectionComponent>(gridUid);
+        
+        // Add this generator to the list of active generators
+        gridProtection.ActiveGenerators.Add(generatorUid);
+        
+        // Make sure the component is dirty
+        Dirty(gridUid, gridProtection);
+        
+        // Protect all entities on the grid
+        ProcessEntitiesForShieldProtection();
+    }
+    
+    /// <summary>
+    /// Removes a generator from the grid's protection component
+    /// </summary>
+    private void RemoveGeneratorFromGridProtection(EntityUid generatorUid, EntityUid gridUid)
+    {
+        if (!TryComp<GridShieldProtectionComponent>(gridUid, out var protection))
+            return;
+            
+        // Remove this generator from the active generators list
+        protection.ActiveGenerators.Remove(generatorUid);
+        
+        // If there are no more active generators, remove the protection component
+        if (protection.ActiveGenerators.Count == 0)
+        {
+            RemComp<GridShieldProtectionComponent>(gridUid);
+        }
+        else
+        {
+            // Otherwise just mark it as dirty
+            Dirty(gridUid, protection);
+        }
+        
+        // Process all entities to update protection status
+        ProcessEntitiesForShieldProtection();
     }
 }
