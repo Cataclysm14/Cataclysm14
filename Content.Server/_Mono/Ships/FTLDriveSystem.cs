@@ -1,5 +1,4 @@
 using Content.Server.Power.Components;
-using Content.Server.Power.EntitySystems;
 using Content.Shared._Mono.Ships;
 using Content.Shared.Power;
 
@@ -7,7 +6,6 @@ namespace Content.Server._Mono.Ships;
 
 public sealed class FTLDriveSystem : EntitySystem
 {
-    [Dependency] private readonly PowerReceiverSystem _powerReceiverSystem = default!;
 
     public override void Initialize()
     {
@@ -23,16 +21,13 @@ public sealed class FTLDriveSystem : EntitySystem
         if (TryComp<ApcPowerReceiverComponent>(uid, out var powerReceiver))
         {
             component.Powered = powerReceiver.Powered;
-        }
-        else
-        {
-            // If no power receiver, assume it's powered
-            component.Powered = true;
+            Dirty(uid, component);
         }
     }
 
     private void OnPowerChanged(EntityUid uid, FTLDriveComponent component, ref PowerChangedEvent args)
     {
         component.Powered = args.Powered;
+        Dirty(uid, component);
     }
 }

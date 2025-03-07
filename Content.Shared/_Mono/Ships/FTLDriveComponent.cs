@@ -3,8 +3,7 @@ using Robust.Shared.GameStates;
 namespace Content.Shared._Mono.Ships;
 
 /// <summary>
-/// A component that enhances a shuttle's FTL capabilities when powered.
-/// FTL travel is still possible without this component, but the range is limited.
+/// A component that enhances a shuttle's FTL range.
 /// </summary>
 [RegisterComponent]
 [NetworkedComponent]
@@ -12,15 +11,15 @@ namespace Content.Shared._Mono.Ships;
 public sealed partial class FTLDriveComponent : Component
 {
     /// <summary>
-    /// Whether the FTL drive is currently powered and operational.
+    /// Whether the FTL drive is currently powered.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("powered")]
     [AutoNetworkedField]
-    public bool Powered = true;
+    public bool Powered;
 
     /// <summary>
-    /// The maximum FTL range this drive can achieve when powered.
+    /// The maximum FTL range this drive can achieve.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("range")]

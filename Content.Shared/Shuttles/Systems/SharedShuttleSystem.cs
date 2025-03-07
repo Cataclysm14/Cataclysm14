@@ -171,7 +171,8 @@ public abstract partial class SharedShuttleSystem : EntitySystem
             }
         }
 
-        // Always provide a default range, even without an FTL drive
+        // Return the default FTL range if no powered drive was found
+        // In the future, we could return a different range if an unpowered drive was found
         return FTLRange;
     }
 
