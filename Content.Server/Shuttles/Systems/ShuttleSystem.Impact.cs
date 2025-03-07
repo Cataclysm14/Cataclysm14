@@ -76,8 +76,14 @@ public sealed partial class ShuttleSystem
 
         var energy = ourBody.Mass * Math.Pow(jungleDiff, 2) / 2;
         var dir = (ourVelocity.Length() > otherVelocity.Length() ? ourVelocity : -otherVelocity).Normalized();
-        ProcessTile(uid, ourGrid, (Vector2i) ourPoint, (float) energy, -dir);
-        ProcessTile(args.OtherEntity, otherGrid, (Vector2i) otherPoint, (float) energy, dir);
+        
+        // Convert the collision point directly to tile indices without creating intermediate EntityCoordinates
+        // ourPoint and otherPoint are already in local space of their respective entities
+        var ourTile = new Vector2i((int)Math.Floor(ourPoint.X / ourGrid.TileSize), (int)Math.Floor(ourPoint.Y / ourGrid.TileSize));
+        var otherTile = new Vector2i((int)Math.Floor(otherPoint.X / otherGrid.TileSize), (int)Math.Floor(otherPoint.Y / otherGrid.TileSize));
+        
+        ProcessTile(uid, ourGrid, ourTile, (float) energy, -dir);
+        ProcessTile(args.OtherEntity, otherGrid, otherTile, (float) energy, dir);
 
         var coordinates = new EntityCoordinates(ourXform.MapUid.Value, args.WorldPoint);
         var volume = MathF.Min(10f, 1f * MathF.Pow(jungleDiff, 0.5f) - 5f);
