@@ -9,6 +9,12 @@ using Robust.Shared.Map.Components;
 using Content.Shared.Damage;
 using Content.Shared.Buckle.Components;
 using Content.Shared.Mobs.Components;
+using Content.Shared.Slippery;
+using Content.Shared.Inventory;
+using Content.Shared.Clothing;
+using Content.Shared.Item;
+using Content.Shared.Item.ItemToggle;
+using Content.Shared.Item.ItemToggle.Components;
 
 namespace Content.Server.Shuttles.Systems;
 
@@ -16,6 +22,8 @@ public sealed partial class ShuttleSystem
 {
     [Dependency] private readonly MapSystem _mapSys = default!;
     [Dependency] private readonly DamageableSystem _damageSys = default!;
+    [Dependency] private readonly InventorySystem _inventorySystem = default!;
+    [Dependency] private readonly ItemToggleSystem _toggle = default!;
 
     /// <summary>
     /// Minimum velocity difference between 2 bodies for a shuttle "impact" to occur.
@@ -75,7 +83,7 @@ public sealed partial class ShuttleSystem
         var volume = MathF.Min(10f, 1f * MathF.Pow(jungleDiff, 0.5f) - 5f);
         var audioParams = AudioParams.Default.WithVariation(SharedContentAudioSystem.DefaultVariation).WithVolume(volume);
         _audio.PlayPvs(_shuttleImpactSound, coordinates, audioParams);
-        
+
         // Knockdown unbuckled entities on both grids
         KnockdownEntitiesOnGrid(uid);
         KnockdownEntitiesOnGrid(args.OtherEntity);
@@ -88,24 +96,54 @@ public sealed partial class ShuttleSystem
     {
         if (!TryComp<MapGridComponent>(gridUid, out var grid))
             return;
-            
+
         // Find all entities on the grid
         var buckleQuery = GetEntityQuery<BuckleComponent>();
+        var noSlipQuery = GetEntityQuery<NoSlipComponent>();
+        var magbootsQuery = GetEntityQuery<MagbootsComponent>();
+        var itemToggleQuery = GetEntityQuery<ItemToggleComponent>();
         var knockdownTime = TimeSpan.FromSeconds(5);
-        
+
         // Get all entities with MobState component on the grid
         var query = EntityQueryEnumerator<MobStateComponent, TransformComponent>();
-        
+
         while (query.MoveNext(out var uid, out var mobState, out var xform))
         {
             // Skip entities not on this grid
             if (xform.GridUid != gridUid)
                 continue;
-                
+
             // If entity has a buckle component and is buckled, skip it
             if (buckleQuery.TryGetComponent(uid, out var buckle) && buckle.Buckled)
                 continue;
-                
+
+            // Skip if the entity directly has NoSlip component
+            if (noSlipQuery.HasComponent(uid))
+                continue;
+
+            // Check if the entity is wearing magboots
+            bool hasMagboots = false;
+
+            // Check if they're wearing shoes with NoSlip component or activated magboots
+            if (_inventorySystem.TryGetSlotEntity(uid, "shoes", out var shoes))
+            {
+                // If shoes have NoSlip component
+                if (noSlipQuery.HasComponent(shoes))
+                {
+                    hasMagboots = true;
+                }
+                // If shoes are magboots and they are activated
+                else if (magbootsQuery.HasComponent(shoes) &&
+                         itemToggleQuery.TryGetComponent(shoes, out var toggle) &&
+                         toggle.Activated)
+                {
+                    hasMagboots = true;
+                }
+            }
+
+            if (hasMagboots)
+                continue;
+
             // Apply knockdown to unbuckled entities
             _stuns.TryKnockdown(uid, knockdownTime, true);
         }
