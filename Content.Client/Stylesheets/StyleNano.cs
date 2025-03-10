@@ -44,7 +44,8 @@ namespace Content.Client.Stylesheets
                     $"/Fonts/NotoSans{ds}/NotoSans{ds}-{sv}.ttf",
                     $"/Fonts/NotoSans/NotoSansSymbols-{sv}.ttf",
                     "/Fonts/NotoSans/NotoSansSymbols2-Regular.ttf",
-                    "/Fonts/NotoSans/NotoSansSC-Regular.ttf",
+                    // Removing Chinese font since it's missing
+                    // "/Fonts/NotoSans/NotoSansSC-Regular.ttf",
                 },
                 size
             );
@@ -59,7 +60,8 @@ namespace Content.Client.Stylesheets
                     path,
                     $"/Fonts/NotoSans/NotoSansSymbols-Regular.ttf",
                     "/Fonts/NotoSans/NotoSansSymbols2-Regular.ttf",
-                    "/Fonts/NotoSans/NotoSansSC-Regular.ttf",
+                    // Removing Chinese font since it's missing
+                    // "/Fonts/NotoSans/NotoSansSC-Regular.ttf",
                 },
                 size
             );
@@ -116,7 +118,7 @@ namespace Content.Client.Stylesheets
 
         public static readonly Color PanelDark = Color.FromHex("#1E1E1E");
 
-        public static readonly Color NanoGold = Color.FromHex("#ADADAD");
+        public static readonly Color NanoGold = Color.FromHex("#444444");
         public static readonly Color GoodGreenFore = Color.FromHex("#31843E");
         public static readonly Color ConcerningOrangeFore = Color.FromHex("#A5762F");
         public static readonly Color DangerousRedFore = Color.FromHex("#BB3232");
@@ -464,7 +466,7 @@ namespace Content.Client.Stylesheets
             var itemListItemBackgroundDisabled = new StyleBoxFlat { BackgroundColor = new Color(10, 10, 12) };
             itemListItemBackgroundDisabled.SetContentMarginOverride(StyleBox.Margin.Vertical, 2);
             itemListItemBackgroundDisabled.SetContentMarginOverride(StyleBox.Margin.Horizontal, 4);
-            var itemListItemBackground = new StyleBoxFlat { BackgroundColor = new Color(55, 55, 68) };
+            var itemListItemBackground = new StyleBoxFlat { BackgroundColor = new Color(54, 54, 54) };
             itemListItemBackground.SetContentMarginOverride(StyleBox.Margin.Vertical, 2);
             itemListItemBackground.SetContentMarginOverride(StyleBox.Margin.Horizontal, 4);
             var itemListItemBackgroundTransparent = new StyleBoxFlat { BackgroundColor = Color.Transparent };
@@ -520,7 +522,7 @@ namespace Content.Client.Stylesheets
             var sliderForeBox = new StyleBoxTexture
             {
                 Texture = sliderOutlineTex,
-                Modulate = Color.FromHex("#494949")
+                Modulate = Color.FromHex("#363636")
             };
 
             var sliderGrabBox = new StyleBoxTexture
