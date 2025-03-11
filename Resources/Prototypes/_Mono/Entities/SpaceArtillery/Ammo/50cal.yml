@@ -15,8 +15,9 @@
     radius: 3.5
     energy: 0.5
   - type: RadarBlip
-    scale: 0.5
+    scale: 1
     requireNoGrid: true
+    shape: triangle
 
 - type: entity
   id: 50CartridgeBase

@@ -7,6 +7,7 @@ using Content.Shared.Shuttles.BUIStates;
 using Content.Shared.Shuttles.Components;
 using Content.Shared.Shuttles.Systems;
 using Content.Client._Mono.Radar;
+using Content.Shared._Mono.Radar;
 using Robust.Client.Graphics;
 using Robust.Client.UserInterface;
 using Robust.Shared.Input;
@@ -54,7 +55,7 @@ public sealed class FireControlNavControl : BaseShuttleControl
     public bool ShowIFF { get; set; } = true;
     public bool RotateWithEntity { get; set; } = true;
 
-    public FireControlNavControl() : base(64f, 256f, 256f)
+    public FireControlNavControl() : base(64f, 512f, 512f)
     {
         IoCManager.InjectDependencies(this);
         _shuttles = EntManager.System<SharedShuttleSystem>();
@@ -305,7 +306,7 @@ public sealed class FireControlNavControl : BaseShuttleControl
         foreach (var blip in blips)
         {
             var blipPos = Vector2.Transform(blip.Item1, worldToShuttle * shuttleToView);
-            handle.DrawCircle(blipPos, blip.Item2 * 3f, blip.Item3.WithAlpha(0.8f));
+            DrawBlipShape(handle, blipPos, blip.Item2 * 3f, blip.Item3.WithAlpha(0.8f), blip.Item4);
 
             if (_isMouseInside && _controllables != null)
             {
@@ -348,5 +349,101 @@ public sealed class FireControlNavControl : BaseShuttleControl
     private Vector2 InverseScalePosition(Vector2 value)
     {
         return (value - MidPointVector) / MinimapScale;
+    }
+
+    private void DrawBlipShape(DrawingHandleScreen handle, Vector2 position, float size, Color color, RadarBlipShape shape)
+    {
+        switch (shape)
+        {
+            case RadarBlipShape.Circle:
+                handle.DrawCircle(position, size, color);
+                break;
+            case RadarBlipShape.Square:
+                var halfSize = size / 2;
+                var rect = new UIBox2(
+                    position.X - halfSize,
+                    position.Y - halfSize,
+                    position.X + halfSize,
+                    position.Y + halfSize
+                );
+                handle.DrawRect(rect, color);
+                break;
+            case RadarBlipShape.Triangle:
+                var points = new Vector2[]
+                {
+                    position + new Vector2(0, -size),
+                    position + new Vector2(-size * 0.866f, size * 0.5f),
+                    position + new Vector2(size * 0.866f, size * 0.5f)
+                };
+                handle.DrawPrimitives(DrawPrimitiveTopology.TriangleList, points, color);
+                break;
+            case RadarBlipShape.Star:
+                DrawStar(handle, position, size, color);
+                break;
+            case RadarBlipShape.Diamond:
+                var diamondPoints = new Vector2[]
+                {
+                    position + new Vector2(0, -size),
+                    position + new Vector2(size, 0),
+                    position + new Vector2(0, size),
+                    position + new Vector2(-size, 0)
+                };
+                handle.DrawPrimitives(DrawPrimitiveTopology.TriangleFan, diamondPoints, color);
+                break;
+            case RadarBlipShape.Hexagon:
+                DrawHexagon(handle, position, size, color);
+                break;
+            case RadarBlipShape.Arrow:
+                DrawArrow(handle, position, size, color);
+                break;
+        }
+    }
+
+    private void DrawStar(DrawingHandleScreen handle, Vector2 position, float size, Color color)
+    {
+        var outerRadius = size;
+        var innerRadius = size * 0.4f;
+        var points = new List<Vector2>();
+
+        for (var i = 0; i < 10; i++)
+        {
+            var angle = i * MathF.PI / 5;
+            var radius = i % 2 == 0 ? outerRadius : innerRadius;
+            points.Add(position + new Vector2(
+                radius * MathF.Sin(angle),
+                -radius * MathF.Cos(angle)
+            ));
+        }
+
+        handle.DrawPrimitives(DrawPrimitiveTopology.TriangleFan, points.ToArray(), color);
+    }
+
+    private void DrawHexagon(DrawingHandleScreen handle, Vector2 position, float size, Color color)
+    {
+        var points = new List<Vector2>();
+
+        for (var i = 0; i < 6; i++)
+        {
+            var angle = i * MathF.PI / 3;
+            points.Add(position + new Vector2(
+                size * MathF.Cos(angle),
+                size * MathF.Sin(angle)
+            ));
+        }
+
+        handle.DrawPrimitives(DrawPrimitiveTopology.TriangleFan, points.ToArray(), color);
+    }
+
+    private void DrawArrow(DrawingHandleScreen handle, Vector2 position, float size, Color color)
+    {
+        var points = new Vector2[]
+        {
+            position + new Vector2(0, -size),
+            position + new Vector2(size * 0.5f, 0),
+            position + new Vector2(0, size),
+            position + new Vector2(-size * 0.5f, 0)
+        };
+
+        handle.DrawPrimitives(DrawPrimitiveTopology.TriangleFan, points, color);
     }
 }

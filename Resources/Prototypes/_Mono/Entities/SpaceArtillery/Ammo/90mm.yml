@@ -14,8 +14,9 @@
     energy: 0.5
   - type: ShipWeaponProjectile
   - type: RadarBlip
-    scale: 0.5
+    scale: 1
     requireNoGrid: true
+    shape: triangle
 
 - type: entity
   id: 90mmBulletArmorPiercing

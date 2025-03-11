@@ -41,7 +41,7 @@
   - type: ExtensionCableReceiver
   - type: FireControllable
   - type: RadarBlip
-    color: "#FFFF33"
+    radarColor: "#FFFF33"
     scale: 1
 
 - type: entity
