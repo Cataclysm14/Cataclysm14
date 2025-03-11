@@ -1,13 +1,12 @@
 ﻿using System.Linq;
 using Content.Server.GameTicking;
-using Content.Server.Ghost;
-using Content.Server.Mind;
 using Content.Shared.Administration;
 using Content.Shared.Ghost;
 using Content.Shared.Mind;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
 using Robust.Shared.Console;
+using GhostSystem = Content.Server.Ghost.GhostSystem;
 
 namespace Content.Server.Administration.Commands;
 
@@ -71,7 +70,7 @@ public sealed class AGhostCommand : LocalizedCommands
 
         var mindSystem = _entities.System<SharedMindSystem>();
         var metaDataSystem = _entities.System<MetaDataSystem>();
-        var ghostSystem = _entities.System<SharedGhostSystem>();
+        var ghostSystem = _entities.System<GhostSystem>();
         var transformSystem = _entities.System<TransformSystem>();
         var gameTicker = _entities.System<GameTicker>();
 
@@ -117,5 +116,8 @@ public sealed class AGhostCommand : LocalizedCommands
 
         var comp = _entities.GetComponent<GhostComponent>(ghost);
         ghostSystem.SetCanReturnToBody(comp, canReturn);
+
+        // Apply admin OOC color to the admin ghost
+        ghostSystem.ApplyAdminOOCColor(ghost, mindId);
     }
 }

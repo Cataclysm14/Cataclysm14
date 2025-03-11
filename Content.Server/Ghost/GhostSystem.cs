@@ -39,6 +39,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
+using Content.Server.Preferences.Managers;
 
 namespace Content.Server.Ghost
 {
@@ -69,6 +70,7 @@ namespace Content.Server.Ghost
         [Dependency] private readonly IRobustRandom _random = default!;
         [Dependency] private readonly TagSystem _tag = default!;
         [Dependency] private readonly IAdminManager _admin = default!; // Frontier
+        [Dependency] private readonly IServerPreferencesManager _preferencesManager = default!;
 
         private EntityQuery<GhostComponent> _ghostQuery;
         private EntityQuery<PhysicsComponent> _physicsQuery;
@@ -104,6 +106,8 @@ namespace Content.Server.Ghost
 
             SubscribeLocalEvent<RoundEndTextAppendEvent>(_ => MakeVisible(true));
             SubscribeLocalEvent<ToggleGhostVisibilityToAllEvent>(OnToggleGhostVisibilityToAll);
+
+            SubscribeLocalEvent<GhostComponent, MindAddedMessage>(OnMindAdded);
         }
 
         private void OnGhostHearingAction(EntityUid uid, GhostComponent component, ToggleGhostHearingActionEvent args)
@@ -518,7 +522,49 @@ namespace Content.Server.Ghost
             else
                 _minds.TransferTo(mind.Owner, ghost, mind: mind.Comp);
             Log.Debug($"Spawned ghost \"{ToPrettyString(ghost)}\" for {mind.Comp.CharacterName}.");
+
+            // Apply admin OOC color to the ghost if the player has one
+            ApplyAdminOOCColor(ghost, mind.Owner);
+
             return ghost;
+        }
+
+        /// <summary>
+        /// Applies the admin OOC color to a ghost entity if the player has one set
+        /// </summary>
+        /// <param name="ghostEntity">The ghost entity to apply the color to</param>
+        /// <param name="mindId">The mind ID of the player</param>
+        public void ApplyAdminOOCColor(EntityUid ghostEntity, EntityUid mindId)
+        {
+            if (!_mind.TryGetSession(mindId, out var session))
+                return;
+
+            if (!_preferencesManager.TryGetCachedPreferences(session.UserId, out var prefs))
+                return;
+
+            // Only apply the color if it's not transparent (the default)
+            if (prefs.AdminOOCColor == Color.Transparent)
+                return;
+
+            // Make the color slightly transparent for ghosts
+            var ghostColor = prefs.AdminOOCColor;
+            ghostColor.A = 0.8f;
+
+            if (TryComp<GhostComponent>(ghostEntity, out var ghostComp))
+            {
+                ghostComp.Color = ghostColor;
+                Dirty(ghostEntity, ghostComp);
+            }
+        }
+
+        private void OnMindAdded(EntityUid uid, GhostComponent component, MindAddedMessage args)
+        {
+            // When a mind is added to a ghost, check if the player has an admin OOC color
+            // and apply it to the ghost if they do
+            if (args.Mind == default)
+                return;
+
+            ApplyAdminOOCColor(uid, args.Mind);
         }
 
         public bool OnGhostAttempt(EntityUid mindId, bool canReturnGlobal, bool viaCommand = false, MindComponent? mind = null)
