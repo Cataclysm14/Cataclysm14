@@ -118,7 +118,7 @@ public sealed partial class MapScreen : BoxContainer
         //frontier - we only allow pre-approved vessels to FTL
         if (!_entManager.HasComponent<ShuttleFTLComponent>(_shuttleEntity))
         {
-            MapFTLButton.Visible = false;
+            MapFTLButton.Visible = true;
         }
         else
         {
