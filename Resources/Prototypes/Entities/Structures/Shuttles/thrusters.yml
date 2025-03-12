@@ -102,6 +102,10 @@
     - Toggle # frontier
   - type: PirateBountyItem # Frontier
     id: Thruster # Frontier
+  - type: RadarBlip # Mono
+    radarColor: "#99FF99"
+    scale: 1
+    shape: diamond
 
 - type: entity
   id: ThrusterUnanchored
@@ -137,10 +141,6 @@
       shader: unshaded
       visible: false
       offset: 0, 1
-  - type: RadarBlip # Mono
-    radarColor: "#99FF99"
-    scale: 1
-    shape: diamond
 
 - type: entity
   id: Gyroscope
