@@ -1,27 +1,20 @@
-<p align="center"> <img alt="Frontier Station 14" width="880" height="300" src="https://github.com/new-frontiers-14/frontier-station-14/blob/30cdc70d8fcbf52f949337150bf42338ececbd80/Resources/Textures/Logo/logo.png?raw=true" /></p>
+<p align="center"> <img alt="Frontier Station 14" width="880" height="300" src="https://raw.githubusercontent.com/Monolith-Station/Monolith/89d435f0d2c54c4b0e6c3b1bf4493c9c908a6ac7/Resources/Textures/_Mono/Logo/logo.png?raw=true" /></p>
 
-Frontier Station 14 is a fork of [Space Station 14](https://github.com/space-wizards/space-station-14) that runs on [Robust Toolbox](https://github.com/space-wizards/RobustToolbox) engine written in C#.
+Monolith is a fork of [Frontier Station 14](https://github.com/new-frontiers-14/frontier-station-14) that runs on [Robust Toolbox](https://github.com/space-wizards/RobustToolbox) engine written in C#.
 
-This is the primary repo for Frontier Station 14.
+This is the primary repo for Monolith.
 
-If you want to host or create content for FS14, this is the repo you need. It contains both RobustToolbox and the content pack for development of new content packs.
+If you want to host or create content for Monolith, this is the repo you need. It contains both RobustToolbox and the content pack for development of new content packs.
 
 ## Links
 
-[Discord](https://discord.gg/tpuAT7d3zm/) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/)
-
-## Documentation/Wiki
-
-Our [wiki](https://frontierstation.wiki.gg/) has documentation on FS14s content.
+[Discord](https://discord.gg/mxY4h2JuUw) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/)
 
 ## Contributing
 
-We are happy to accept contributions from anybody. Get in Discord if you want to help. We've got a [list of ideas](https://discord.com/channels/1123826877245694004/1127017858833068114) that can be done and anybody can pick them up. Don't be afraid to ask for help either!
+We are happy to accept contributions from anybody. Get in Discord if you want to help. Don't be afraid to ask for help either!
 
 We are not currently accepting translations of the game on our main repository. If you would like to translate the game into another language consider creating a fork or contributing to a fork.
-
-If you make any contributions, please make sure to read the markers section in [MARKERS.md](https://github.com/new-frontiers-14/frontier-station-14/blob/master/MARKERS.md)
-Any changes made to files belonging to our upstream should be properly marked in accordance to what is specified there.
 
 ## Building
 
