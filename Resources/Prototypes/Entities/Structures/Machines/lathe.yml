@@ -769,7 +769,7 @@
   - type: Lathe
     idleState: limbgrower_idleoff
     runningState: limbgrower_idleon
-    StaticPacks:
+    staticPacks:
     - MedicalSynthLimbsStatic
   - type: EmagLatheRecipes
     emagStaticPacks:
