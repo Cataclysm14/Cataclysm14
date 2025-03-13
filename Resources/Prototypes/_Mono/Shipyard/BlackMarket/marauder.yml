@@ -1,29 +1,29 @@
 - type: vessel
-  id: Schooner
+  id: Marauder
   parent: BaseVesselAntag
-  name: Schooner
-  description: A small wooden ship with 2 central cargo bays.
-  price: 60000
+  name: Marauder
+  description: Truly a revolutionary piece of pirate ship design. Contains the bare essentials for piracy.
+  price: 37500
   category: Medium
   group: BlackMarket
-  shuttlePath: /Maps/_NF/Shuttles/BlackMarket/schooner.yml
+  shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/marauder.yml
   guidebookPage: Null
   class:
   - Pirate
   engine:
-  - Uranium
+  - Plasma
 
 - type: gameMap
-  id: Schooner
-  mapName: 'Schooner'
-  mapPath: /Maps/_NF/Shuttles/BlackMarket/schooner.yml
+  id: Marauder
+  mapName: 'Marauder'
+  mapPath: /Maps/_Mono/Shuttles/BlackMarket/marauder.yml
   minPlayers: 0
   stations:
-    Schooner:
+    Marauder:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Schooner {1}'
+          mapNameTemplate: 'Marauder {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
