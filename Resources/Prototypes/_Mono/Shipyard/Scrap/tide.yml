@@ -7,7 +7,7 @@
   category: Small
   group: Scrap
   shuttlePath: /Maps/_NF/Shuttles/Scrap/tide.yml
-  guidebookPage: ShipyardTide
+  guidebookPage: Null
   class:
   - Scrapyard
   - Civilian
