@@ -33,7 +33,7 @@ namespace Content.Shared.Preferences
         public const int MaxLoadoutNameLength = 32;
         public const int MaxDescLength = 512;
 
-        public const int DefaultBalance = 30000;
+        public const int DefaultBalance = 75000;
 
         //private readonly Dictionary<string, JobPriority> _jobPriorities; // Frontier: commented out during merge.
         //private readonly List<string> _antagPreferences; // Frontier: commented out during merge.

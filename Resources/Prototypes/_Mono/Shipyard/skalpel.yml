@@ -5,31 +5,31 @@
 # Shuttle Notes:
 #
 - type: vessel
-  id: Sabine
+  id: Skalpel
   parent: BaseVessel
-  name: NT Sabine
-  description: Light salvage and mining shuttle. Requires 2 crewmen to utilize gunnery and pilot console at the same time effectively.
-  price: 27000
-  category: Small
+  name: NT-SFS Skalpel
+  description: A de-militarized S&R ship, outfitted with chemistry and paramedic equipment.
+  price: 48500
+  category: Medium
   group: Shipyard
-  shuttlePath: /Maps/_Mono/Shuttles/sabine.yml
-  guidebookPage: ShipyardSabine
+  shuttlePath: /Maps/_Mono/Shuttles/Skalpel.yml
+  guidebookPage: null
   class:
-  - Salvage
+  - Medical
   engine:
   - Uranium
 
 - type: gameMap
-  id: Sabine
-  mapName: 'NT Sabine'
-  mapPath: /Maps/_Mono/Shuttles/sabine.yml
+  id: Skalpel
+  mapName: 'NT-SFS Skalpel'
+  mapPath: /Maps/_Mono/Shuttles/Skalpel.yml
   minPlayers: 0
   stations:
-    Sabine:
+    Skalpel:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Sabine {1}'
+          mapNameTemplate: 'Skalpel {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
