@@ -12,6 +12,7 @@
   price: 29750
   category: Small
   group: Shipyard
+  access: Mercenary
   shuttlePath: /Maps/_Mono/Shuttles/dagger.yml
   guidebookPage: Null
   class:
