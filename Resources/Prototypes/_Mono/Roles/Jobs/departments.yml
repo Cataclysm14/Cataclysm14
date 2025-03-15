@@ -1,0 +1,10 @@
+- type: department
+  id: PMC
+  name: department-PMC
+  description: department-PMC-description
+  color: "#7D8A3F"
+  weight: 0 # accounted for in jobs
+  roles:
+  - Mercenary
+  primary: false
+  editorHidden: true

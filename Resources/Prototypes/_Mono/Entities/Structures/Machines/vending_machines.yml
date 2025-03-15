@@ -1,0 +1,9 @@
+- type: entity
+  parent: [VendingMachineAmmo, BaseStructureDisableAnchoring]
+  id: VendingMachineAmmoPOIMercenary
+  suffix: POI, PMC
+  components:
+  - type: VendingMachine
+    pack: WeaponryWorksVendPOIMercInventory
+  - type: AccessReader
+    access: [["Mercenary"], ["Security"]]

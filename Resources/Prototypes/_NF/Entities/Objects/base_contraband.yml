@@ -21,7 +21,7 @@
 # endregion Class 1
 
 # region Class 2
-# Class 2 contraband: explosives, unregistered firearms, 
+# Class 2 contraband: explosives, unregistered firearms,
 
 # Specific parent for sensitive items (e.g. command headset, secway, secway keys) that should not be redeemed for FUCs
 - type: entity
@@ -31,7 +31,7 @@
   - type: Contraband
     severity: Class2
     # Security and heads only (finally, shotgun traffic controller)
-    allowedDepartments: [ Security, Command ]
+    allowedDepartments: [ PMC, Security, Command ] # Mono - Add PMC
 
 - type: entity
   parent: BaseC2ContrabandUnredeemable

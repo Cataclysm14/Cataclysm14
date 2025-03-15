@@ -2,10 +2,10 @@
   id: WeaponryWorksVendInventory
   startingInventory:
     SurvivalKnife: 1
-    WeaponBrassKnuckles: 1 
-    WeaponLaserPistolNF: 1 
-    WeaponRifleGestio: 1 
-    WeaponRifleNovaliteC1: 1 
+    WeaponBrassKnuckles: 1
+    WeaponLaserPistolNF: 1
+    WeaponRifleGestio: 1
+    WeaponRifleNovaliteC1: 1
     WeaponShotgunDoubleBarreled: 1
     WeaponRevolverArgenti: 1
     WeaponPistolUniversal: 1
@@ -57,3 +57,29 @@
     MagazinePistolEmpty: 4294967295
   emaggedInventory:
     WeaponPistolViper: 1
+
+- type: vendingMachineInventory # Mono - this entire thing is mono
+  id: WeaponryWorksVendPOIMercInventory
+  startingInventory:
+    WeaponSubMachineGunAtreidesPMC: 4294967295
+    WeaponSubMachineGunWt550PMC: 4294967295
+    WeaponSubMachineGunDrozdPMC: 4294967295
+    WeaponSubMachineGunC20rPMC: 4294967295
+    WeaponSniperHristovPMC: 4294967295
+    WeaponRifleLecterPMC: 4294967295
+    WeaponPistolViperPMC: 4294967295
+    WeaponPistolUniversal: 4294967295
+    SurvivalKnife: 4294967295
+    MagazinePistolSubMachineGunEmpty: 4294967295
+    MagazinePistolSubMachineGunTopMountedEmpty: 4294967295
+    MagazineRifleEmpty: 4294967295
+    MagazinePistolEmpty: 4294967295
+    MagazineBoxAntiMateriel: 4294967295
+    MagazineBoxRifle: 4294967295
+    MagazineBoxRifleBig: 4294967295
+    MagazineBoxLightRifle: 4294967295
+    MagazineBoxLightRifleBig: 4294967295
+    MagazineBoxPistol: 4294967295
+    MagazineBoxMagnum: 4294967295
+    BoxShotgunSlug: 4294967295
+    BoxLethalshot: 4294967295

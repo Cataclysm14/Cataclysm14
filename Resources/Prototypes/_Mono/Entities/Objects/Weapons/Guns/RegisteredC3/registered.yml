@@ -1,0 +1,70 @@
+# SMGs
+
+- type: entity
+  parent:
+  - BaseC2ContrabandMercenary
+  - WeaponSubMachineGunAtreides
+  categories: [ HideSpawnMenu ]
+  name: PMC Atreides
+  id: WeaponSubMachineGunAtreidesPMC
+  description: An Atreides that has been properly registered for private security and mercenary use.
+
+- type: entity
+  parent:
+  - BaseC2ContrabandMercenary
+  - WeaponSubMachineGunWt550
+  categories: [ HideSpawnMenu ]
+  name: PMC WT-550
+  id: WeaponSubMachineGunWt550PMC
+  description: A WT-550 that has been properly registered for private security and mercenary use.
+
+- type: entity
+  parent:
+  - BaseC2ContrabandMercenary
+  - WeaponSubMachineGunDrozd
+  categories: [ HideSpawnMenu ]
+  name: PMC Drozd
+  id: WeaponSubMachineGunDrozdPMC
+  description: A Drozd that has been properly registered for private security and mercenary use.
+
+- type: entity
+  parent:
+  - BaseC2ContrabandMercenary
+  - WeaponSubMachineGunC20r
+  categories: [ HideSpawnMenu ]
+  name: PMC C-20r
+  id: WeaponSubMachineGunC20rPMC
+  description: A C-20r that has been properly registered for private security and mercenary use.
+
+# AMRs/snipers
+
+- type: entity
+  parent:
+  - BaseC2ContrabandMercenary
+  - WeaponSniperHristov
+  categories: [ HideSpawnMenu ]
+  name: PMC Hristov
+  id: WeaponSniperHristovPMC
+  description: A Hristov that has been properly registered for private security and mercenary use.
+
+# Rifles
+
+- type: entity
+  parent:
+  - BaseC2ContrabandMercenary
+  - WeaponRifleLecter
+  categories: [ HideSpawnMenu ]
+  name: PMC Lecter
+  id: WeaponRifleLecterPMC
+  description: A Lecter that has been properly registered for private security and mercenary use.
+
+# Pistols
+
+- type: entity
+  parent:
+  - BaseC2ContrabandMercenary
+  - WeaponPistolViper
+  categories: [ HideSpawnMenu ]
+  name: PMC Viper
+  id: WeaponPistolViperPMC
+  description: A Viper that has been properly registered for private security and mercenary use.
