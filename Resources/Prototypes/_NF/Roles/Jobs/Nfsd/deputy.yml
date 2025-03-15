@@ -5,14 +5,14 @@
   playTimeTracker: JobSecurityOfficer
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 43200 # 12 hours
+      time: 10800 # 3 hours # mono
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 21600 # 6 hours
+      time: 7200 # 2 hours # mono
   alternateRequirementSets:
     longerPlaytimeLessSec:
     - !type:OverallPlaytimeRequirement
-      time: 360000 # 100 hours
+      time: 18000 # 5 hours # mono
   startingGear: DeputyGear
   icon: JobIconDeputy
   supervisors: job-supervisors-sergeant

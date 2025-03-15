@@ -5,9 +5,9 @@
   playTimeTracker: JobPilot
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 43200
+      time: 3600 # mono - change to 1hr
   startingGear: PilotGear
-  icon: "JobIconPilot" 
+  icon: "JobIconPilot"
   supervisors: job-supervisors-hire
   weight: 2 # Prioritize station & department jobs
   displayWeight: 30 # Second from the top

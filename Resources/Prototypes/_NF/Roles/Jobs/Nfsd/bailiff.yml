@@ -3,25 +3,25 @@
   name: job-name-bailiff
   description: job-description-bailiff
   playTimeTracker: JobWarden
-  requirements:
+  requirements: # mono - lowers all of these tbh
     - !type:OverallPlaytimeRequirement
-      time: 108000 # 30 hours
+      time: 21600 # 6 hours
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 64800 # 18 hours
+      time: 21600 # 6 hours
     - !type:RoleTimeRequirement
       role: JobSeniorOfficer
-      time: 21600 # 6 hours
+      time: 3600 # 1 hours
   alternateRequirementSets:
     longerPlaytimeLessSec:
     - !type:OverallPlaytimeRequirement
-      time: 720000 # 200 hours
+      time: 43200 # 12 hours
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 43200 # 12 hours
+      time: 10800 # 3 hours
     - !type:RoleTimeRequirement
       role: JobSeniorOfficer
-      time: 21600 # 6 hours
+      time: 3600 # 1 hours
   startingGear: BailiffGear
   icon: JobIconBailiff
   supervisors: job-supervisors-sheriff

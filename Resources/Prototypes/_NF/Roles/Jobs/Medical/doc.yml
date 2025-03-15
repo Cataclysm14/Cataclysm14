@@ -5,8 +5,8 @@
   playTimeTracker: JobDirectorOfCare
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 72000 # 20 hrs
-  whitelisted: true
+      time: 21600 # 20 hrs # mono - change to 6hr
+  #whitelisted: true # mono - comment out
   startingGear: DocGear
   alwaysUseSpawner: true
   icon: "JobIconDoc"

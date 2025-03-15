@@ -5,11 +5,11 @@
   playTimeTracker: JobHeadOfPersonnel
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 72000 # 20 hrs
+      time: 43200 # 20 hrs # mono - change to 12hr
     - !type:RoleTimeRequirement
       role: JobSecurityGuard
       time: 10800 # 3 hrs as security guard
-  whitelisted: true
+  #whitelisted: true # mono - comment out
   startingGear: SrGear
   alwaysUseSpawner: true
   icon: "JobIconHeadOfPersonnel"
