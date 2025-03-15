@@ -3,19 +3,20 @@
   name: guide-entry-species
   text: "/ServerInfo/Guidebook/Mobs/Species.xml"
   children:
-    - Arachnid
-    - Diona # Note: Frontier changes inside
-    - Dwarf # Note: Frontier changes inside
-    - Human
-    - Moth
-    - Reptilian
-    - SlimePerson
-    - Vox
-    - Goblin # Frontier
-    - Vulpkanin # DeltaV
-    - Harpy # DeltaV
-    - Felinid # DeltaV
-    - Oni # DeltaV
+  - Arachnid
+  - Diona # Note: Frontier changes inside
+  - Dwarf # Note: Frontier changes inside
+  - Human
+  - Moth
+  - Reptilian
+  - SlimePerson
+  - Vox
+  - Goblin # Frontier
+  - Vulpkanin # DeltaV
+  - Harpy # DeltaV
+  - Felinid # DeltaV
+  - Oni # DeltaV
+  - Chitinid # DeltaV
 #    - Rodentia # DeltaV
 
 - type: guideEntry

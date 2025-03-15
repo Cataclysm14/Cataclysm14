@@ -18,6 +18,7 @@
     - Human
     - Moth
     - Reptilian
+    - Chitinid # DeltaV
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox

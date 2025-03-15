@@ -1,5 +1,6 @@
 using System.Numerics;
 using Content.Shared._Mono.Radar;
+using Content.Shared.Projectiles;
 using Content.Shared.Shuttles.Components;
 
 namespace Content.Server._Mono.Radar;
@@ -36,13 +37,28 @@ public sealed partial class RadarBlipSystem : EntitySystem
             var radarXform = Transform(uid);
             var radarPosition = _xform.GetWorldPosition(uid);
             var radarGrid = _xform.GetGrid(uid);
-            
+            var radarMapId = radarXform.MapID;
+
             var blipQuery = EntityQueryEnumerator<RadarBlipComponent, TransformComponent>();
 
             while (blipQuery.MoveNext(out var blipUid, out var blip, out var blipXform))
             {
                 if (!blip.Enabled)
                     continue;
+
+                // Don't show radar blips for projectiles on different maps than the one they were fired from
+                if (TryComp<ProjectileComponent>(blipUid, out var projectile))
+                {
+                    // If the projectile is on a different map than the radar, don't show it
+                    if (blipXform.MapID != radarMapId)
+                        continue;
+
+                    // If we can determine the shooter and they're on a different map, don't show the blip
+                    if (projectile.Shooter != null &&
+                        TryComp<TransformComponent>(projectile.Shooter, out var shooterXform) &&
+                        shooterXform.MapID != blipXform.MapID)
+                        continue;
+                }
 
                 var blipPosition = _xform.GetWorldPosition(blipUid);
                 var distance = (blipPosition - radarPosition).Length();
@@ -55,7 +71,7 @@ public sealed partial class RadarBlipSystem : EntitySystem
                 {
                     if (blipGrid != null)
                         continue;
-                    
+
                     // For free-floating blips without a grid, use world position with null grid
                     blips.Add((null, blipPosition, blip.Scale, blip.RadarColor, blip.Shape));
                 }
@@ -64,15 +80,15 @@ public sealed partial class RadarBlipSystem : EntitySystem
                     // If we're requiring grid, make sure they're on the same grid
                     if (blipGrid != radarGrid)
                         continue;
-                    
+
                     // For grid-aligned blips, store grid NetEntity and grid-local position
                     if (blipGrid != null)
                     {
-                        // Local position relative to grid 
+                        // Local position relative to grid
                         var gridMatrix = _xform.GetWorldMatrix(blipGrid.Value);
                         Matrix3x2.Invert(gridMatrix, out var invGridMatrix);
                         var localPos = Vector2.Transform(blipPosition, invGridMatrix);
-                        
+
                         // Add grid-relative blip with grid entity ID
                         blips.Add((GetNetEntity(blipGrid.Value), localPos, blip.Scale, blip.RadarColor, blip.Shape));
                     }
