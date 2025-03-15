@@ -4,8 +4,8 @@ meta:
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 03/15/2025 23:25:07
-  entityCount: 473
+  time: 03/15/2025 23:36:34
+  entityCount: 479
 maps: []
 grids:
 - 1
@@ -710,6 +710,32 @@ entities:
     components:
     - type: Transform
       pos: 1.5,-7.5
+      parent: 1
+- proto: AtmosDeviceFanDirectional
+  entities:
+  - uid: 474
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -6.5,-6.5
+      parent: 1
+  - uid: 475
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -6.5,-7.5
+      parent: 1
+  - uid: 476
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 7.5,-6.5
+      parent: 1
+  - uid: 477
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 7.5,-7.5
       parent: 1
 - proto: AtmosFixBlockerMarker
   entities:
@@ -2259,6 +2285,20 @@ entities:
     components:
     - type: Transform
       pos: -3.5,-3.5
+      parent: 1
+- proto: LockerWallEVAColorNfsdFilled
+  entities:
+  - uid: 478
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 1.5,-7.5
+      parent: 1
+  - uid: 479
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -0.5,-7.5
       parent: 1
 - proto: LockerWallMaterialsFuelPlasmaFilled2
   entities:
