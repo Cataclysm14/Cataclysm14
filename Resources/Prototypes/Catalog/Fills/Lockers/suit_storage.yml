@@ -87,10 +87,10 @@
 #        - id: NitrogenTankFilled
 #        - id: OxygenTankFilled
         - id: AirTankFilled
-        - id: ClothingOuterHardsuitPirateEVA
+        - id: ClothingOuterHardsuitSyndie # Mono
         - id: ClothingMaskGas
         - id: JetpackBlackFilled # Frontier
-        - id: ClothingShoesBootsMagPirateFilled # Frontier
+        - id: ClothingShoesBootsMagSyndie # Mono
 
 #NTSRA Voidsuit
 - type: entity
@@ -301,11 +301,11 @@
 #        - id: NitrogenTankFilled
 #        - id: OxygenTankFilled
         - id: AirTankFilled
-        - id: ClothingOuterHardsuitPirateCap
-        - id: ClothingMaskGas
+        - id: ClothingOuterHardsuitSyndieCommander # Mono
+        - id: ClothingMaskGasSwat # Mono
         - id: ClothingNeckCloakPirateCap # Frontier
         - id: JetpackBlackFilled # Frontier
-        - id: ClothingShoesBootsMagPirateFilled # Frontier
+        - id: ClothingShoesBootsMagSyndie # Mono
 
 #Wizard
 - type: entity
