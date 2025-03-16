@@ -119,7 +119,7 @@
   name:  uplink-pirate-smg-magazine-name
   description: uplink-pirate-smg-magazine-desc
   productEntity: MagazinePistolSubMachineGun
-  icon: { sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi, state: pellets }
+  icon: { sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi, state: red-icon }
   cost:
     Doubloon: 1
   categories:
