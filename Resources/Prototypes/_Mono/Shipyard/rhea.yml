@@ -15,7 +15,8 @@
   shuttlePath: /Maps/_Mono/Shuttles/rhea.yml
   guidebookPage: Null
   class:
-  - Service
+  - Civilian
+  - Kitchen
   engine:
   - Plasma
 
