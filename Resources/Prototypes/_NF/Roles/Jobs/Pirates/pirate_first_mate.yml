@@ -45,3 +45,6 @@
     #belt: ClothingBeltUtility # mono
     pocket1: BasePirateUplinkPirateCrew
     pocket2: AppraisalTool
+  storage: # mono
+    back:
+    - RadioHandheldNF
