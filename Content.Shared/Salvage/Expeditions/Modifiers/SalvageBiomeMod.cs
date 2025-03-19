@@ -7,8 +7,8 @@ namespace Content.Shared.Salvage.Expeditions.Modifiers;
 /// <summary>
 /// Affects the biome to be used for salvage.
 /// </summary>
-[Prototype]
-public sealed class SalvageBiomeModPrototype : IPrototype, ISalvageMod
+[Prototype("salvageBiomeMod")]
+public sealed partial class SalvageBiomeModPrototype : IPrototype, ISalvageMod
 {
     [IdDataField] public string ID { get; private set; } = default!;
 
