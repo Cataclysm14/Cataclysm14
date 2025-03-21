@@ -25,8 +25,8 @@
     ports:
     - Toggle
   - type: Gun
-    fireRate: 3
-    projectileSpeed: 95
+    fireRate: 6
+    projectileSpeed: 175
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/uaf_57mm.ogg
     soundEmpty:
@@ -73,8 +73,8 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
-    fireRate: 1.5
-    projectileSpeed: 150
+    fireRate: 2.0
+    projectileSpeed: 80
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/ship_duster.ogg
     soundEmpty:
@@ -97,7 +97,7 @@
 
 - type: entity
   id: WeaponTurretType35
-  name: type-35 plasma launcher
+  name: MARAUDER-type plasma weapon
   parent: BallisticArtillery
   description: Launches magnetically contained balls of plasma at targets. Links up to a central gunnery control system.
   components:
@@ -116,8 +116,8 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
-    fireRate: 0.5
-    projectileSpeed: 30
+    fireRate: 0.25
+    projectileSpeed: 150
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon2.ogg
     soundEmpty:
