@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from arbalest_hardpoint_base.png, arbalest_hardpoint_recoil.png, and arbalest_hardpoint_under.png from Starsector.",
+  "copyright": "Taken from Starsector's UAF mod.",
   "size": {
     "x": 32,
     "y": 32

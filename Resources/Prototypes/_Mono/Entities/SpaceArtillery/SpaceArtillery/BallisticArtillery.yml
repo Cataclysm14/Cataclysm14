@@ -153,6 +153,76 @@
     radarColor: "#C92BCC"
     scale: 1
 
+# Railgun
+
+- type: entity
+  id: WeaponTurretCharon
+  name: M381 CHARON mass driver
+  parent: BallisticArtillery
+  description: A heavy linear accelerator, capable of devastating targets with kinetic energy.
+  components:
+  - type: Anchorable
+    delay: 120 # you shouldnt be putting this on small shittles
+  - type: StaticPrice
+    price: 15000 # but if you do unanchor it...
+  - type: Sprite
+    sprite: _Mono/Objects/ShuttleWeapons/charon.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: AmmoCounter
+  - type: Battery
+    maxCharge: 40000
+    startingCharge: 40000
+  - type: ExaminableBattery
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: Gun
+    fireRate: 0.05
+    projectileSpeed: 175 # i was gonna make this faster, but the engine really hates fast moving projectiles and collisions
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/uaf_tona_iv_608.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 250
+    powerUsePassive: 200
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 350
+  - type: Actions
+  - type: ProjectileBatteryAmmoProvider
+    proto: ShipRailgunProjectile
+    fireCost: 1500
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        density: 1500 # fat mf
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 6000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 1500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: RadarBlip
+    radarColor: "#CF0E0E"
+    scale: 1
+
+
 # Base
 
 - type: entity
@@ -191,7 +261,7 @@
         shape:
           !type:PhysShapeAabb
           bounds: "-0.25,-0.25,0.25,0.25"
-        density: 600
+        density: 800
         mask:
         - MachineMask
         layer:
@@ -199,6 +269,7 @@
   - type: Transform
     anchored: true
   - type: Anchorable
+    delay: 10
   - type: Pullable
   - type: Rotatable
     rotateWhilePulling: false
