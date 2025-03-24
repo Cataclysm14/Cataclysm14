@@ -70,5 +70,6 @@
     totalIntensity: 600
     maxTileBreak: 5
   - type: GatheringProjectile
-  - type: MiningGatheringSoft # Frontier
+  - type: MiningGatheringSoft
+  - type: MiningGatheringHard
 
