@@ -1,29 +1,29 @@
 - type: vessel
-  id: Marauder
+  id: Polaris
   parent: BaseVesselAntag
-  name: Marauder
-  description: Truly a revolutionary piece of pirate ship design. Contains the bare essentials for piracy.
-  price: 37500
-  category: Medium
+  name: Polaris
+  description: A mining ship that used to utilize a large mass driver for punching through rock, repurposed for combat.
+  price: 235500
+  category: Large
   group: BlackMarket
-  shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/marauder.yml
+  shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/polaris.yml
   guidebookPage: Null
   class:
-  - Pirate
+  - Capital
   engine:
-  - Plasma
+  - AME
 
 - type: gameMap
-  id: Marauder
-  mapName: 'Marauder'
-  mapPath: /Maps/_Mono/Shuttles/BlackMarket/marauder.yml
+  id: Polaris
+  mapName: 'Polaris'
+  mapPath: /Maps/_Mono/Shuttles/BlackMarket/polaris.yml
   minPlayers: 0
   stations:
-    Marauder:
+    Polaris:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Marauder {1}'
+          mapNameTemplate: 'Polaris {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
