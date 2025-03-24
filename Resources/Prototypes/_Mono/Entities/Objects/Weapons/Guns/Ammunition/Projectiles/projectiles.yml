@@ -61,12 +61,14 @@
   - type: TimedDespawn
     lifetime: 60
   - type: PointLight
-    color: "#FB00FF"
+    color: "#19AFFF"
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Cryo
-    maxIntensity: 350
+    maxIntensity: 700
     intensitySlope: 10
     totalIntensity: 600
     maxTileBreak: 5
+  - type: GatheringProjectile
+  - type: MiningGatheringSoft # Frontier
 

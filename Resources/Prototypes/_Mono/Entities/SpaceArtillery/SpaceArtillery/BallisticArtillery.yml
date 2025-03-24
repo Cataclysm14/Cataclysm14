@@ -36,7 +36,7 @@
     powerUsePassive: 100
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 50
+    autoRechargeRate: 95
   - type: Actions
   - type: CombatMode
     isInCombatMode: true
@@ -84,7 +84,7 @@
     powerUsePassive: 200
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 45
+    autoRechargeRate: 95
   - type: Actions
   - type: ProjectileBatteryAmmoProvider
     proto: 90mmBulletArmorPiercing
