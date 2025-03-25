@@ -44,9 +44,9 @@
   - type: Projectile
     damage:
       types:
-        Structural: 2500
-        Blunt: 10000
-        Heat: 10000
+        Structural: 300
+        Blunt: 100
+        Heat: 100
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
     layers:
@@ -65,7 +65,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Cryo
-    maxIntensity: 700
+    maxIntensity: 1600
     intensitySlope: 10
     totalIntensity: 600
     maxTileBreak: 5
