@@ -63,10 +63,12 @@
     - WeaponCaseShortSawnExpedition
     - WeaponCaseLongMosinExpedition
     - WeaponCaseLongSniperCeremonialExpedition
+    - L58Flatpack
     chance: 1.0
     offset: 0.0
     rarePrototypes:
     - SpawnDungeonLootGunT2
+    - AK570Flatpack
     rareChance: 0.1
 
 - type: entity
@@ -156,6 +158,8 @@
     - WeaponCaseLongEnergyGunExpedition
     - WeaponCaseLongRepeaterExpedition
     - WeaponCaseLongSVSExpedition
+    - L58Flatpack
+    - AK570Flatpack
     chance: 1.0
     offset: 0.0
     rarePrototypes:
@@ -243,6 +247,8 @@
     - WeaponCaseLongLaserCarbineExpedition
     - WeaponCaseShortSvalinnExpedition
     - WeaponCaseShortAdvancedLaserExpedition
+    - Type35Flatpack
+    - AK570Flatpack
     #- WeaponCaseLongMusketExpedition
     chance: 1.0
     offset: 0.0
@@ -415,6 +421,8 @@
     - WeaponCaseLongHristovExpedition
     chance: 1.0
     offset: 0.0
+    rarePrototypes:
+    - M381Flatpack # godo
 
 - type: entity
   name: random weapon
