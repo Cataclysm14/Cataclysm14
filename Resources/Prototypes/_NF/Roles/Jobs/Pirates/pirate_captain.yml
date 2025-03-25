@@ -47,5 +47,4 @@
     pocket2: EnergyCutlass
   storage:
     back:
-    - AppraisalTool
     - RadioHandheldNF # mono

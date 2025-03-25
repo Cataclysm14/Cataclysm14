@@ -8,9 +8,6 @@
   - PirateJumpskirt
   - PirateClothingUniformJumpsuitPirateSlops
   - PirateClothingUniformJumpsuitPirateLuffy
-  fallbacks:
-  - PirateJumpsuit
-  - PirateJumpskirt
   subgroups: # mono
   - MercenaryJumpsuit
   - ContractorJumpsuit
@@ -33,8 +30,6 @@
   - ContractorClothingMaskBreath
   - ContractorClothingMaskBreathMedical
   - ContractorClothingMaskGas
-  fallbacks:
-  - ContractorClothingMaskBreath
   subgroups: # mono
   - MercenaryFace
   - PilotFace
@@ -45,8 +40,6 @@
   loadouts:
   - PirateClothingShoesBootsLaceup
   - PirateClothingShoesBootsPirateLuffy
-  fallbacks:
-  - PirateClothingShoesBootsLaceup
   subgroups: # mono
   - MercenaryShoes
   - ContractorShoes
@@ -61,8 +54,6 @@
   - PirateClothingHeadBandBrown
   - PirateClothingHeadBandGrey
   - PirateClothingHeadBandRed
-  fallbacks:
-  - PirateClothingHeadBandBlack
   subgroups: # mono
   - MercenaryHead
   - ContractorHead
@@ -87,8 +78,6 @@
   loadouts:
   - PirateClothingHeadHatPirate
   - PirateClothingHeadHatPirateLuffy
-  fallbacks:
-  - PirateClothingHeadHatPirate
   subgroups: # mono
   - MercenaryHead
   - ContractorHead
@@ -97,10 +86,8 @@
 - type: loadoutGroup
   id: PirateCaptainOuterClothing
   name: loadout-group-contractor-outerclothing
-  hidden: true # No point in showing this, it gets auto-selected.
+  hidden: false
   loadouts:
-  - PirateCaptainClothingOuterCoatPirate
-  fallbacks:
   - PirateCaptainClothingOuterCoatPirate
   subgroups: # mono
   - ContractorOuterClothing
@@ -135,8 +122,6 @@
   loadouts:
   - PirateClothingHeadHatPirateTricord
   - PirateClothingHeadHatPirateLuffy
-  fallbacks:
-  - PirateClothingHeadHatPirateTricord
   subgroups: # mono
   - MercenaryHead
   - ContractorHead
@@ -146,8 +131,6 @@
   id: PirateFirstMateOuterClothing
   name: loadout-group-contractor-outerclothing
   loadouts:
-  - PirateFirstMateClothingOuterCoatGentle
-  fallbacks:
   - PirateFirstMateClothingOuterCoatGentle
   subgroups: # mono
   - MercenaryOuterClothing
