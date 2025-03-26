@@ -31,20 +31,6 @@
           False: { visible: false }
 
 - type: entity
-  id: GunneryTest
-  parent: BaseWeaponTurret
-  name: gunnery controllable
-  description: Helps debug gunnery.
-  components:
-  - type: ApcPowerReceiver
-    powerLoad: 200
-  - type: ExtensionCableReceiver
-  - type: FireControllable
-  - type: RadarBlip
-    radarColor: "#FFFF33"
-    scale: 1
-
-- type: entity
   parent: BaseComputer
   id: ComputerGunneryConsole
   name: gunnery control console
