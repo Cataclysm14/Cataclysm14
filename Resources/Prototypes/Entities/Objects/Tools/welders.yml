@@ -129,6 +129,9 @@
       collection: Welder
     endSound:
       collection: WelderOff
+  - type: Tag # Goobstation-WelderSword
+    tags:
+    - Welder
 
 - type: entity
   name: industrial welding tool
@@ -147,6 +150,9 @@
         - ReagentId: WeldingFuel
           Quantity: 250
         maxVol: 250
+  - type: Tag # Goobstation-WelderSword
+    tags:
+    - WelderIndustrial
 
 - type: entity
   name: advanced industrial welding tool
@@ -226,3 +232,6 @@
     enabled: false
     radius: 1.0
     color: orange
+  - type: Tag # Goobstation-WelderSword
+    tags:
+    - WelderMini
