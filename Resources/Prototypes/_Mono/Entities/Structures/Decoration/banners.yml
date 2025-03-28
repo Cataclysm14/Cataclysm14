@@ -1,0 +1,12 @@
+- type: entity
+  id: BannerNGC
+  parent: BannerBase
+  name: NGC banner
+  description: A banner proudly displaying the stars of the New Galactic Congress.
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Decoration/banner.rsi
+    state: ngc-banner
+  - type: Construction
+    graph: BannersGraph
+    node: BannerSecurityNode

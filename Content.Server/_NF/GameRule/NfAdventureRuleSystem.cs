@@ -97,6 +97,7 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
             if (endBalance < 0)
                 continue;
 
+            // WIP: Replace += string appends w. StringBuilder.
             var profit = endBalance - playerInfo.StartBalance;
             string summaryText;
             if (profit < 0)
@@ -161,13 +162,15 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
         if (ev.Entity is not { Valid: true } mobUid)
             return;
 
-        if (_players.ContainsKey(mobUid))
+        // if player doesn't have bank information, cut early
+        if (!_players.TryGetValue(mobUid, out var value))
+            return;
+
+        // get the players balance
+        if (value.UserId == ev.Player.UserId &&
+            _bank.TryGetBalance(ev.Player, out var bankBalance))
         {
-            if (_players[mobUid].UserId == ev.Player.UserId &&
-                _bank.TryGetBalance(ev.Player, out var bankBalance))
-            {
-                _players[mobUid].EndBalance = bankBalance;
-            }
+            value.EndBalance = bankBalance;
         }
     }
 
@@ -179,13 +182,16 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
             return;
 
         var mobUid = e.Session.AttachedEntity.Value;
-        if (_players.ContainsKey(mobUid))
+
+        // checking if player has any bank information, if not, leave early
+        if (!_players.TryGetValue(mobUid, out var value))
+            return;
+
+        // get the players balance
+        if (value.UserId == e.Session.UserId &&
+            _bank.TryGetBalance(e.Session, out var bankBalance))
         {
-            if (_players[mobUid].UserId == e.Session.UserId &&
-                _bank.TryGetBalance(e.Session, out var bankBalance))
-            {
-                _players[mobUid].EndBalance = bankBalance;
-            }
+            value.EndBalance = bankBalance;
         }
     }
 
@@ -199,10 +205,10 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
         var mapUid = GameTicker.DefaultMap;
 
         //First, we need to grab the list and sort it into its respective spawning logics
-        List<PointOfInterestPrototype> depotProtos = new();
-        List<PointOfInterestPrototype> marketProtos = new();
-        List<PointOfInterestPrototype> requiredProtos = new();
-        List<PointOfInterestPrototype> optionalProtos = new();
+        List<PointOfInterestPrototype> depotProtos = [];
+        List<PointOfInterestPrototype> marketProtos = [];
+        List<PointOfInterestPrototype> requiredProtos = [];
+        List<PointOfInterestPrototype> optionalProtos = [];
         Dictionary<string, List<PointOfInterestPrototype>> remainingUniqueProtosBySpawnGroup = new();
 
         var currentPreset = _ticker.CurrentPreset?.ID ?? _fallbackPresetID;
@@ -213,19 +219,28 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
             if (location.SpawnGamePreset.Length > 0 && !location.SpawnGamePreset.Contains(currentPreset))
                 continue;
 
-            if (location.SpawnGroup == "CargoDepot")
-                depotProtos.Add(location);
-            else if (location.SpawnGroup == "MarketStation")
-                marketProtos.Add(location);
-            else if (location.SpawnGroup == "Required")
-                requiredProtos.Add(location);
-            else if (location.SpawnGroup == "Optional")
-                optionalProtos.Add(location);
-            else // the remainder are done on a per-poi-per-group basis
+            switch (location.SpawnGroup)
             {
-                if (!remainingUniqueProtosBySpawnGroup.ContainsKey(location.SpawnGroup))
-                    remainingUniqueProtosBySpawnGroup[location.SpawnGroup] = new();
-                remainingUniqueProtosBySpawnGroup[location.SpawnGroup].Add(location);
+                case "CargoDepot":
+                    depotProtos.Add(location);
+                    break;
+                case "MarketStation":
+                    marketProtos.Add(location);
+                    break;
+                case "Required":
+                    requiredProtos.Add(location);
+                    break;
+                case "Optional":
+                    optionalProtos.Add(location);
+                    break;
+                // the remainder are done on a per-poi-per-group basis
+                default:
+                {
+                    if (!remainingUniqueProtosBySpawnGroup.ContainsKey(location.SpawnGroup))
+                        remainingUniqueProtosBySpawnGroup[location.SpawnGroup] = new();
+                    remainingUniqueProtosBySpawnGroup[location.SpawnGroup].Add(location);
+                    break;
+                }
             }
         }
         _poi.GenerateDepots(mapUid, depotProtos, out component.CargoDepots);
@@ -249,13 +264,13 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
 
         var serverName = _baseServer.ServerName;
         var gameTicker = _entSys.GetEntitySystemOrNull<GameTicker>();
-        var runId = gameTicker != null ? gameTicker.RoundId : 0;
+        var runId = gameTicker?.RoundId ?? 0;
 
         var payload = new WebhookPayload
         {
-            Embeds = new List<Embed>
-            {
-                new()
+            Embeds =
+            [
+                new Embed
                 {
                     Title = Loc.GetString("adventure-webhook-list-start"),
                     Description = message,
@@ -268,14 +283,15 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
                             ("roundId", runId)),
                     },
                 },
-            },
+
+            ],
         };
         await SendWebhookPayload(webhookUrl, payload);
     }
 
     private async Task ReportLedger(int color = 0xBF863F)
     {
-        string webhookUrl = _cfg.GetCVar(NFCCVars.DiscordLeaderboardWebhook);
+        var webhookUrl = _cfg.GetCVar(NFCCVars.DiscordLeaderboardWebhook);
         if (webhookUrl == string.Empty)
             return;
 
@@ -286,13 +302,13 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
 
         var serverName = _baseServer.ServerName;
         var gameTicker = _entSys.GetEntitySystemOrNull<GameTicker>();
-        var runId = gameTicker != null ? gameTicker.RoundId : 0;
+        var runId = gameTicker?.RoundId ?? 0;
 
         var payload = new WebhookPayload
         {
-            Embeds = new List<Embed>
-            {
-                new()
+            Embeds =
+            [
+                new Embed
                 {
                     Title = Loc.GetString("adventure-webhook-ledger-start"),
                     Description = ledgerPrintout,
@@ -305,15 +321,16 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
                             ("roundId", runId)),
                     },
                 },
-            },
+
+            ],
         };
         await SendWebhookPayload(webhookUrl, payload);
     }
 
     private async Task SendWebhookPayload(string webhookUrl, WebhookPayload payload)
     {
-        var ser_payload = JsonSerializer.Serialize(payload);
-        var content = new StringContent(ser_payload, Encoding.UTF8, "application/json");
+        var serializedPayload = JsonSerializer.Serialize(payload);
+        var content = new StringContent(serializedPayload, Encoding.UTF8, "application/json");
         var request = await _httpClient.PostAsync($"{webhookUrl}?wait=true", content);
         var reply = await request.Content.ReadAsStringAsync();
         if (!request.IsSuccessStatusCode)
