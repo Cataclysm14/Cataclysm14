@@ -22,6 +22,12 @@
     - type: FTLDrive
     - type: ApcPowerReceiver
       powerLoad: 2000
+    - type: PointLight
+      enabled: false
+      color: "#349BEB" # beb color
+      radius: 2.0
+      energy: 1.5
+    - type: LitOnPowered
     - type: ExtensionCableReceiver
     - type: Appearance
     - type: AmbientOnPowered
