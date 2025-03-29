@@ -14,6 +14,7 @@ using Content.Shared.Inventory;
 using Content.Shared.Clothing;
 using Content.Shared.Item.ItemToggle;
 using Content.Shared.Item.ItemToggle.Components;
+using Content.Server._NF.Shuttles.Components;
 
 namespace Content.Server.Shuttles.Systems;
 
@@ -55,6 +56,13 @@ public sealed partial class ShuttleSystem
     {
         if (!TryComp<MapGridComponent>(uid, out var ourGrid) ||
             !TryComp<MapGridComponent>(args.OtherEntity, out var otherGrid))
+            return;
+
+        // Skip impact processing if either grid has an anchor component
+        if (HasComp<PreventGridAnchorChangesComponent>(uid) ||
+            HasComp<ForceAnchorComponent>(uid) ||
+            HasComp<PreventGridAnchorChangesComponent>(args.OtherEntity) ||
+            HasComp<ForceAnchorComponent>(args.OtherEntity))
             return;
 
         var ourBody = args.OurBody;
@@ -194,6 +202,10 @@ public sealed partial class ShuttleSystem
     /// </summary>
     private void ProcessImpactZone(EntityUid uid, MapGridComponent grid, Vector2i centerTile, float energy, Vector2 dir, int radius)
     {
+        // Skip processing if the grid has an anchor component
+        if (HasComp<PreventGridAnchorChangesComponent>(uid) || HasComp<ForceAnchorComponent>(uid))
+            return;
+
         // // Skip processing if this grid has entities protected by grid shields
         // if (IsGridProtected(uid))
         //     return;
