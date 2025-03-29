@@ -1,4 +1,4 @@
 - type: sinkPort
   id: CircularShieldConsoleReceiver
-  name: "Circular shield console receiver"
-  description: "Circular shield console receiver"
+  name: "Shield console receiver"
+  description: "Shield console receiver"
