@@ -9,7 +9,7 @@
     - !type:RoleTimeRequirement
       role: JobPirateFirstMate # mono
       time: 10800 # 3 hours
-  #whitelisted: true # mono - comment out
+  whitelisted: true 
   startingGear: PirateCaptainNFGear
   alwaysUseSpawner: true
   hideConsoleVisibility: true
