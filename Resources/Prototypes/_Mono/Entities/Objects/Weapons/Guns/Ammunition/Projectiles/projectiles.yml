@@ -112,8 +112,8 @@
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
-    Acceleration: 20
-    DetectionRange: 400
-    FieldOfView: 45
-    LaunchSpeed: 25
-    MaxSpeed: 80
+    acceleration: 20
+    detectionRange: 400
+    scanArc: 45
+    launchSpeed: 25
+    maxSpeed: 80
