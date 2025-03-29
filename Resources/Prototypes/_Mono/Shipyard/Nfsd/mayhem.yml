@@ -3,7 +3,7 @@
   parent: BaseVessel
   name: TSK Mayhem
   description: A corvette equipped with missiles and a small holding cell.
-  price: 123500
+  price: 72500
   category: Medium
   group: Security
   access: Security
