@@ -111,3 +111,9 @@
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
+  - type: TargetSeeking
+    Acceleration: 20
+    DetectionRange: 400
+    FieldOfView: 45
+    LaunchSpeed: 25
+    MaxSpeed: 80
