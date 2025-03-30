@@ -19,7 +19,7 @@
     maxAngle: 48
     angleIncrease: 6
     angleDecay: 24
-    fireRate: 10 # 600 rpm
+    fireRate: 5 # 300 rpm
     selectedMode: FullAuto
     availableModes:
     - SemiAuto
