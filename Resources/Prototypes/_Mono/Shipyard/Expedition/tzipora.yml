@@ -5,31 +5,32 @@
 # Shuttle Notes:
 #
 - type: vessel
-  id: Archon
+  id: Tzipora
   parent: BaseVessel
-  name: MPS Archon
-  description: A entry level expedition ship, outfitted with bare essentials.
+  name: MPS Tzipora
+  description: A advanced medical ship, outfitted with cryo, chem, and surgical capabilities.
   price: 45820
-  category: Medium
+  category: Large
   group: Expedition
-  shuttlePath: /Maps/_Mono/Shuttles/Expedition/archon.yml
+  shuttlePath: /Maps/_Mono/Shuttles/Expedition/tzipora.yml
   guidebookPage: null
   class:
   - Expedition
+  - Medical
   engine:
   - AME
 
 - type: gameMap
-  id: Archon
-  mapName: 'Archon'
-  mapPath: /Maps/_Mono/Shuttles/Expedition/archon.yml
+  id: Tzipora
+  mapName: 'Tzipora'
+  mapPath: /Maps/_Mono/Shuttles/Expedition/tzipora.yml
   minPlayers: 0
   stations:
-    Archon:
+    Tzipora:
       stationProto: StandardFrontierExpeditionVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Archon {1}'
+          mapNameTemplate: 'Tzipora {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
