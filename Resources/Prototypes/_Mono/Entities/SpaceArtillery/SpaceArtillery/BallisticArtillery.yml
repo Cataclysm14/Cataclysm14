@@ -36,7 +36,7 @@
     powerUsePassive: 100
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 95
+    autoRechargeRate: 500
   - type: Actions
   - type: CombatMode
     isInCombatMode: true
