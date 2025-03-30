@@ -28,7 +28,7 @@
     fireRate: 12
     projectileSpeed: 60
     soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/Gunshots/uaf_20mm.ogg
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/uaf_57mm.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
   - type: SpaceArtillery
