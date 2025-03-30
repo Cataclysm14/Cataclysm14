@@ -1,0 +1,5 @@
+- type: guideEntry
+  id: WeaponsSystems
+  name: guide-entry-gunnery
+  text: "/ServerInfo/_Mono/Guidebook/ShipCombat.xml"
+  priority: 7
