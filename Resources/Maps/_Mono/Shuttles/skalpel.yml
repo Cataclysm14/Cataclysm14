@@ -3524,7 +3524,7 @@ entities:
     - type: Transform
       pos: -1.5,-3.5
       parent: 1
-- proto: LockerChemistryFilled
+- proto: ChemMaster
   entities:
   - uid: 472
     components:
