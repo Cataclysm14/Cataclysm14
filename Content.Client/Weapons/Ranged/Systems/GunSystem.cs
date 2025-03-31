@@ -3,7 +3,6 @@ using Content.Client.Animations;
 using Content.Client.Gameplay;
 using Content.Client.Items;
 using Content.Client.Weapons.Ranged.Components;
-using Content.Shared._RMC14.Weapons.Ranged.Prediction;
 using Content.Shared.Camera;
 using Content.Shared.CombatMode;
 using Content.Shared.Weapons.Ranged;
@@ -20,8 +19,6 @@ using Robust.Shared.Animations;
 using Robust.Shared.Input;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
-using Robust.Shared.Physics.Systems;
-using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using SharedGunSystem = Content.Shared.Weapons.Ranged.Systems.SharedGunSystem;
@@ -41,7 +38,6 @@ public sealed partial class GunSystem : SharedGunSystem
     [Dependency] private readonly SharedCameraRecoilSystem _recoil = default!;
     [Dependency] private readonly SharedMapSystem _maps = default!;
     [Dependency] private readonly SharedTransformSystem _xform = default!;
-    [Dependency] private readonly SharedPhysicsSystem _physics = default!;
 
     [ValidatePrototypeId<EntityPrototype>]
     public const string HitscanProto = "HitscanEffect";
@@ -101,7 +97,7 @@ public sealed partial class GunSystem : SharedGunSystem
     {
         var gunUid = GetEntity(args.Uid);
 
-        CreateEffect(gunUid, args, _player.LocalEntity);
+        CreateEffect(gunUid, args, gunUid);
     }
 
     private void OnHitscan(HitscanEvent ev)
@@ -295,7 +291,7 @@ public sealed partial class GunSystem : SharedGunSystem
         PopupSystem.PopupEntity(message, uid.Value, user.Value);
     }
 
-    protected override void CreateEffect(EntityUid gunUid, MuzzleFlashEvent message, EntityUid? user = null)
+    protected override void CreateEffect(EntityUid gunUid, MuzzleFlashEvent message, EntityUid? tracked = null)
     {
         if (!Timing.IsFirstTimePredicted)
             return;
@@ -328,10 +324,10 @@ public sealed partial class GunSystem : SharedGunSystem
         var ent = Spawn(message.Prototype, coordinates);
         TransformSystem.SetWorldRotationNoLerp(ent, message.Angle);
 
-        if (user != null)
+        if (tracked != null)
         {
             var track = EnsureComp<TrackUserComponent>(ent);
-            track.User = user;
+            track.User = tracked;
             track.Offset = Vector2.UnitX / 2f;
         }
 
@@ -408,39 +404,5 @@ public sealed partial class GunSystem : SharedGunSystem
 
         _animPlayer.Stop(gunUid, uidPlayer, "muzzle-flash-light");
         _animPlayer.Play((gunUid, uidPlayer), animTwo, "muzzle-flash-light");
-    }
-
-    public override void ShootProjectile(EntityUid uid,
-        Vector2 direction,
-        Vector2 gunVelocity,
-        EntityUid gunUid,
-        EntityUid? user = null,
-        float speed = 20)
-    {
-        EnsureComp<PredictedProjectileClientComponent>(uid);
-        _physics.UpdateIsPredicted(uid);
-        base.ShootProjectile(uid, direction, gunVelocity, gunUid, user, speed);
-    }
-
-    /// <summary>
-    /// Client-side wrapper for ShootRequested to handle client prediction for gun systems
-    /// </summary>
-    public void ShootRequested(NetEntity gunNetEntity, NetCoordinates coordinates, NetEntity? target, List<int>? shots, ICommonSession? session)
-    {
-        // Convert NetEntity to EntityUid
-        var gunEntity = GetEntity(gunNetEntity);
-        var entityCoordinates = GetCoordinates(coordinates);
-        EntityUid? targetEntity = target.HasValue ? GetEntity(target.Value) : null;
-
-        // Call the shared implementation
-        base.ShootRequested(gunEntity, entityCoordinates, targetEntity, shots, session);
-    }
-
-    /// <summary>
-    /// Override the base ShootRequested method to simplify direct EntityUid calls
-    /// </summary>
-    public override void ShootRequested(EntityUid gunUid, EntityCoordinates coordinates, EntityUid? target, List<int>? shots, ICommonSession? session)
-    {
-        base.ShootRequested(gunUid, coordinates, target, shots, session);
     }
 }
