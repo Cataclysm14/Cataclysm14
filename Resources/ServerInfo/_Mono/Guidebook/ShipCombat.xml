@@ -26,7 +26,7 @@ Missiles will only track grids with a shuttle console, and are immediately point
 
 ## Shield Generators
 
-Some ships are equipped with [color=cyan]shield generators[/color]. These absorb all incoming impacts, and add power draw for every projectile absorbed. Shields will NOT block beam or hitscan weapons, such as [color=red][bold]Lasers[/bold][/color], and the effects of [color=teal][bold]EMP[/color][/bold]s will still go through.
+Some ships are equipped with [color=cyan]shield generators[/color]. These absorb all incoming impacts, and add power draw for every projectile absorbed. Shields will NOT block beam or hitscan weapons, such as [color=red][bold]lasers[/bold][/color], and the effects of [color=teal][bold]EMPs[/color][/bold] will still go through.
 
   <Box>
     <GuideEntityEmbed Entity="CircularShieldConsole"/>
