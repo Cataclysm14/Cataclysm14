@@ -19,7 +19,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/DMR/DMR_mag.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/DMR/dmr_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
