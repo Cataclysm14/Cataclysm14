@@ -5,7 +5,7 @@
 
 - type: Tag # Mono
   id: AdvancedLaserPistol
-  
+
 - type: Tag
   id: AICoreElectronics
 
@@ -1019,7 +1019,7 @@
 
 - type: Tag
   id: PlushieSharkPink
-  
+
 - type: Tag
   id: Posibrain
 
@@ -1040,6 +1040,9 @@
 
 - type: Tag
   id: Powerdrill
+
+- type: Tag
+  id: PreventAccessLogging
 
 - type: Tag
   id: PrisonUniform

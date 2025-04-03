@@ -13,6 +13,7 @@
     - BypassInteractionRangeChecks
     - BypassDropChecks
     - NoConsoleSound
+    - PreventAccessLogging
   - type: Input
     context: "aghost"
   - type: Ghost
@@ -51,7 +52,7 @@
       enum.CrewMonitoringUIKey.Key:
         type: CrewMonitoringBoundUserInterface
       enum.GeneralStationRecordConsoleKey.Key:
-      # who the fuck named this bruh
+        # who the fuck named this bruh
         type: GeneralStationRecordConsoleBoundUserInterface
   - type: IntrinsicUI
     uis:
