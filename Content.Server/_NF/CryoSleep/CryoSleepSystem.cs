@@ -318,7 +318,9 @@ public sealed partial class CryoSleepSystem : SharedCryoSleepSystem
         {
             message = Loc.GetString("cryopod-radio-location",
                 ("character", characterName),
-                ("location", gridMetadata.EntityName));
+                ("location", gridMetadata.EntityName),
+                ("x", Math.Round(mapPos.Position.X)),
+                ("y", Math.Round(mapPos.Position.Y)));
         }
         else
         {
