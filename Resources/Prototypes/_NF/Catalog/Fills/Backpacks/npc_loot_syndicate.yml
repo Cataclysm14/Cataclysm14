@@ -305,9 +305,9 @@
   components:
   - type: SpawnItemsOnUse
     items:
-      - id: WeaponRifleMR8 # mono - change from AK
-      - id: MagazineLightRifle
-      - id: MagazineLightRifle
+      - id: WeaponRifleMR8C # mono - change from AK
+      - id: MagazineDMR
+      - id: MagazineDMR
       - id: ClothingShoesBootsMagSyndie
       - id: SpaceCash10000
       # Bonus Loot T4
@@ -438,7 +438,7 @@
         prob: 0.5
       - id: SpawnDungeonLootToolsAdvancedEngineering
         prob: 0.4
-      - id: WeaponRifleMR8 # mono
+      - id: WeaponRifleMR8C # mono
         prob: 0.4
     sound:
       path: /Audio/Items/jumpsuit_equip.ogg
@@ -470,7 +470,7 @@
         prob: 0.5
       - id: SpawnDungeonLootToolsAdvancedEngineering
         prob: 0.4
-      - id: WeaponRifleMR8 # mono
+      - id: WeaponRifleMR8C # mono
         prob: 0.2
     sound:
       path: /Audio/Items/jumpsuit_equip.ogg

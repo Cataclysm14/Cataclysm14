@@ -254,7 +254,7 @@
     offset: 0.0
     rarePrototypes:
     - SpawnDungeonLootGunT4
-    - WeaponRifleMR8 # mono
+    - WeaponRifleMR8C # mono
     rareChance: 0.2 # mono
 
 - type: entity
@@ -338,7 +338,7 @@
     - WeaponCaseLongEnforcerExpedition
     - WeaponCaseLongLaserCannonExpedition
     - WeaponCaseLongVulcanExpedition
-    - WeaponRifleMR8 # mono
+    - WeaponRifleMR8C # mono
     chance: 1.0
     offset: 0.0
     rarePrototypes:
