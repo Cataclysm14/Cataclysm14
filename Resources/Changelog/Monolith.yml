@@ -278,3 +278,31 @@ Entries:
       message: Fixed tzipora gas mixture mix
   id: 33
   time: '2025-04-01T16:35:41.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Add
+      message: A few new lobby music tracks!
+    - type: Remove
+      message: Frontier lobby music is no more.
+  id: 34
+  time: '2025-04-01T21:13:11.0000000+00:00'
+- author: starch70
+  changes:
+    - type: Remove
+      message: I took the Dagger out back and shot it. Its gone.
+    - type: Tweak
+      message: Minor tweaks to the ship combat guidebook page.
+  id: 35
+  time: '2025-04-01T21:19:57.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Add
+      message: Your ship guns no longer damage your own ship!
+  id: 36
+  time: '2025-04-01T21:35:47.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Tweak
+      message: New shield appearance.
+  id: 37
+  time: '2025-04-02T20:54:01.0000000+00:00'
