@@ -1,0 +1,13 @@
+- type: entity
+  parent: ShipVoucherNfsdBailiff
+  id: ShipVoucherDebug
+  name: evil debug pirate ship voucher
+  description: put in console = free ship!!
+  components:
+  - type: Sprite
+    layers:
+    - state: nfsd
+    - state: voucherbailiff
+  - type: ShipyardVoucher
+    access:
+    - Pirate
