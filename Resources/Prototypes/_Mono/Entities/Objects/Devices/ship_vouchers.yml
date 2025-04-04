@@ -6,7 +6,7 @@
   components:
   - type: Sprite
     layers:
-    - state: base
+    - state: blue
     - state: voucherbailiff
   - type: ShipyardVoucher
     destroyOnEmpty: true
