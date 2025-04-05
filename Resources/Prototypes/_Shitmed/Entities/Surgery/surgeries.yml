@@ -478,40 +478,7 @@
     inverse: true
     reattaching: true
 
-- type: entity
-  parent: SurgeryBase
-  id: SurgeryLobotomize
-  name: Lobotomize
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Surgery
-    requirement: SurgeryOpenIncision
-    steps:
-    - SurgeryStepLobotomize
-    - SurgeryStepCloseIncision
-  - type: SurgeryComponentCondition
-    component:
-    - type: SlurredAccent
-    inverse: true
-  - type: SurgeryPartCondition
-    part: Head
 
-- type: entity
-  parent: SurgeryBase
-  id: SurgeryMendBrainTissue
-  name: Mend brain tissue
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Surgery
-    requirement: SurgeryOpenIncision
-    steps:
-    - SurgeryStepMendBrainTissue
-    - SurgeryStepCloseIncision
-  - type: SurgeryComponentCondition
-    component:
-    - type: SlurredAccent
-  - type: SurgeryPartCondition
-    part: Head
 
 # Fluff/Joke Surgeries
 
