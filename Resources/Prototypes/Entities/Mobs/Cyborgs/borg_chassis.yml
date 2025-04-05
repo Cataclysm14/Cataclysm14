@@ -152,6 +152,7 @@
       params:
         volume: -6
   - type: SurgeryTarget
+  - type: Sanitized
 
 - type: entity
   id: BorgChassisSyndicateSaboteur
