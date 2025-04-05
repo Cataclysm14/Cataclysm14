@@ -225,6 +225,10 @@
     - NFService # Frontier
     - NFScience # Frontier
     - NFPouches # Frontier
+    # WD EDIT START
+    #- ClothingEyesNightVisionGoggles
+    #- ClothingEyesThermalVisionGoggles
+    # WD EDIT END
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityAmmo
