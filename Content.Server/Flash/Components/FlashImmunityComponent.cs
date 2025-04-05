@@ -12,4 +12,8 @@ public sealed partial class FlashImmunityComponent : Component
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("enabled")]
     public bool Enabled { get; set; } = true;
+
+    [ViewVariables(VVAccess.ReadWrite)]
+    [DataField("protectionRange")]
+    public float ProtectionRange { get; set; } = 0f;
 }
