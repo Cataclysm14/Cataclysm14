@@ -1,7 +1,7 @@
 # Shitmed Recipes
 
 - type: latheRecipe
-  id: BoneGel
+  id: ShitmedBoneGel
   result: BoneGel
   completetime: 2
   materials:
@@ -9,7 +9,7 @@
     Plasma: 200
 
 - type: latheRecipe
-  id: MedicalCyberneticEyes
+  id: ShitmedMedicalCyberneticEyes
   result: MedicalCyberneticEyes
   category: Robotics
   completetime: 5
@@ -21,7 +21,7 @@
     Silver: 300
 
 - type: latheRecipe
-  id: EnergyScalpel
+  id: ShitmedEnergyScalpel
   result: EnergyScalpel
   completetime: 2
   materials:
@@ -30,7 +30,7 @@
     Gold: 150
 
 - type: latheRecipe
-  id: AdvancedRetractor
+  id: ShitmedAdvancedRetractor
   result: AdvancedRetractor
   completetime: 2
   materials:
@@ -39,7 +39,7 @@
     Silver: 150
 
 - type: latheRecipe
-  id: EnergyCautery
+  id: ShitmedEnergyCautery
   result: EnergyCautery
   completetime: 2
   materials:
@@ -48,7 +48,7 @@
     Plasma: 150
 
 - type: latheRecipe
-  id: OmnimedTool
+  id: ShitmedOmnimedTool
   result: OmnimedTool
   completetime: 2
   materials:

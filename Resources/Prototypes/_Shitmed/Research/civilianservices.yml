@@ -3,7 +3,7 @@
 # Tier 2
 
 - type: technology
-  id: AdvancedTreatment
+  id: ShitmedAdvancedTreatment
   name: research-technology-advanced-treatment
   icon:
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/e-scalpel.rsi
@@ -12,15 +12,15 @@
   tier: 2
   cost: 10000
   recipeUnlocks:
-  - BorgModuleAdvancedTreatment
+  - ShitmedBorgModuleAdvancedSurgery
   - BorgModuleDefibrillator
-  - EnergyScalpel
-  - EnergyCautery
-  - AdvancedRetractor
-  - BorgModuleAdvancedSurgery
+  - ShitmedEnergyScalpel
+  - ShitmedEnergyCautery
+  - ShitmedAdvancedRetractor
+  - ShitmedBorgModuleAdvancedSurgery
 
 - type: technology
-  id: CyberneticEnhancements
+  id: ShitmedCyberneticEnhancements
   name: research-technology-cybernetic-enhancements
   icon:
     sprite: _Shitmed/Mobs/Species/IPC/organs.rsi
@@ -29,13 +29,13 @@
   tier: 2
   cost: 15000
   recipeUnlocks:
-  - JawsOfLifeLeftArm
-  - JawsOfLifeRightArm
-  - SpeedLeftLeg
-  - SpeedRightLeg
-  - BasicCyberneticEyes
-  - SecurityCyberneticEyes
-  - MedicalCyberneticEyes
+  - ShitmedJawsOfLifeLeftArm
+  - ShitmedJawsOfLifeRightArm
+  - ShitmedSpeedLeftLeg
+  - ShitmedSpeedRightLeg
+  - ShitmedBasicCyberneticEyes
+  - ShitmedSecurityCyberneticEyes
+  - ShitmedMedicalCyberneticEyes
 
 # Tier 3
 
@@ -49,4 +49,4 @@
   tier: 3
   cost: 10000
   recipeUnlocks:
-  - OmnimedTool
+  - ShitmedOmnimedTool

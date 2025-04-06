@@ -1,5 +1,5 @@
 - type: latheRecipe
-  id: BorgModuleSurgery
+  id: ShitmedBorgModuleSurgery
   result: BorgModuleSurgery
   category: Robotics
   completetime: 3
@@ -9,7 +9,7 @@
     Plastic: 250
 
 - type: latheRecipe
-  id: BorgModuleAdvancedSurgery
+  id: ShitmedBorgModuleAdvancedSurgery
   result: BorgModuleAdvancedSurgery
   category: Robotics
   completetime: 3
@@ -20,7 +20,7 @@
     Gold: 50
 
 - type: latheRecipe
-  id: JawsOfLifeLeftArm
+  id: ShitmedJawsOfLifeLeftArm
   result: JawsOfLifeLeftArm
   category: Robotics
   completetime: 5
@@ -32,7 +32,7 @@
     Silver: 300
 
 - type: latheRecipe
-  id: JawsOfLifeRightArm
+  id: ShitmedJawsOfLifeRightArm
   result: JawsOfLifeRightArm
   category: Robotics
   completetime: 5
@@ -44,7 +44,7 @@
     Silver: 300
 
 - type: latheRecipe
-  id: SpeedLeftLeg
+  id: ShitmedSpeedLeftLeg
   result: SpeedLeftLeg
   category: Robotics
   completetime: 5
@@ -56,7 +56,7 @@
     Silver: 300
 
 - type: latheRecipe
-  id: SpeedRightLeg
+  id: ShitmedSpeedRightLeg
   result: SpeedRightLeg
   category: Robotics
   completetime: 5
@@ -68,7 +68,7 @@
     Silver: 300
 
 - type: latheRecipe
-  id: BasicCyberneticEyes
+  id: ShitmedBasicCyberneticEyes
   result: BasicCyberneticEyes
   category: Robotics
   completetime: 5
