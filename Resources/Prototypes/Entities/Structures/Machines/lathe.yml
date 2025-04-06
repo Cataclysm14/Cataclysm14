@@ -272,13 +272,12 @@
     - ScienceBoardsStatic
     - ServiceBoardsStatic
     - CargoBoardsStatic
-    - MedicalBoardsStatic
+    - MedicalBoardsStatic # Shitmed Change
     - EngineeringBoardsStatic
     - CircuitFloorsStatic
     - NFScienceBoardsStatic # Frontier
     - NFServiceBoardsStatic # Frontier
     - NFSalvageBoardsStatic # Frontier
-    #- OperatingTableCircuitboard # Shitmed Change
     dynamicPacks:
     - EngineeringBoards
     - CargoBoards
@@ -289,9 +288,8 @@
     - MechBoards
     - ShuttleBoards
     - NFEngineeringBoards # Frontier
-    - NFMedicalBoards # Frontier
+    - NFMedicalBoards # Frontier + Shitmed Change
     - NFServiceBoards # Frontier
-    #- AutodocCircuitboard # Shitmed
   - type: EmagLatheRecipes
     emagDynamicPacks: [] # Frontier: empty list
     # - SecurityBoards # Frontier

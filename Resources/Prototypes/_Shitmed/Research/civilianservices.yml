@@ -2,41 +2,6 @@
 
 # Tier 2
 
-- type: technology
-  id: ShitmedAdvancedTreatment
-  name: research-technology-advanced-treatment
-  icon:
-    sprite: _Shitmed/Objects/Specific/Medical/Surgery/e-scalpel.rsi
-    state: e-scalpel-on
-  discipline: CivilianServices
-  tier: 2
-  cost: 10000
-  recipeUnlocks:
-  - ShitmedBorgModuleAdvancedSurgery
-  - BorgModuleDefibrillator
-  - ShitmedEnergyScalpel
-  - ShitmedEnergyCautery
-  - ShitmedAdvancedRetractor
-  - ShitmedBorgModuleAdvancedSurgery
-
-- type: technology
-  id: ShitmedCyberneticEnhancements
-  name: research-technology-cybernetic-enhancements
-  icon:
-    sprite: _Shitmed/Mobs/Species/IPC/organs.rsi
-    state: eyes
-  discipline: CivilianServices
-  tier: 2
-  cost: 15000
-  recipeUnlocks:
-  - ShitmedJawsOfLifeLeftArm
-  - ShitmedJawsOfLifeRightArm
-  - ShitmedSpeedLeftLeg
-  - ShitmedSpeedRightLeg
-  - ShitmedBasicCyberneticEyes
-  - ShitmedSecurityCyberneticEyes
-  - ShitmedMedicalCyberneticEyes
-
 # Tier 3
 
 - type: technology
