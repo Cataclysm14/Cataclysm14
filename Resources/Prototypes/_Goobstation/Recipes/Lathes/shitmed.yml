@@ -1,0 +1,11 @@
+# Goobstation Lathe Recipes
+# Note: The 'category' field has been removed as it's no longer supported in LatheRecipePrototype
+
+- type: latheRecipe
+  id: RapidSyringeGun
+  result: SyringeGunRapid
+  completetime: 4
+  materials:
+    Steel: 2000
+    Glass: 500
+    Plastic: 1000 

@@ -726,7 +726,6 @@
 - type: latheRecipe
   id: SecurityCyberneticEyes
   result: SecurityCyberneticEyes
-  category: Robotics
   completetime: 5
   materials:
     Steel: 1000

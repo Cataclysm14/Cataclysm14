@@ -6,7 +6,6 @@
   - type: Sprite
     sprite: Mobs/Species/Arachnid/organs.rsi
   - type: Organ
-    species: "Arachnid"
   - type: Food
   - type: Extractable
     grindableSolutionName: organ
