@@ -226,6 +226,9 @@
     - NFScience # Frontier
     - NFPouches # Frontier
     - SMSurgery # Shitmed Change
+    # WD EDIT START
+    - VisionGoggles
+    # WD EDIT END
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityAmmo
