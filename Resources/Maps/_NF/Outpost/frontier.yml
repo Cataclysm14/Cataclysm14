@@ -2632,7 +2632,7 @@ entities:
           decals:
             183: -59,2
         - node:
-            color: '#1F6626FF'
+            color: '#1F66ACFF'
             id: MiniTileCheckerAOverlay
           decals:
             2362: 3,23
