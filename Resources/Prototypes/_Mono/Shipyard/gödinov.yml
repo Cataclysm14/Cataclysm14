@@ -1,0 +1,45 @@
+# Author Info
+# GitHub: LukeZurg22
+# Discord: lukezurg22
+
+# Shuttle Notes:
+# Not for the faint of heart. Either new players buy this thing and die on it from
+# a lack of air later-on, or experts get this to build on like its a child's toy.
+#
+# The price is deliberate. The effective cost is just below $7k. This is a bit more expensive.
+
+- type: vessel
+  id: Gödinov
+  parent: BaseVessel
+  name: UNJ Gödinov
+  description: A cheap but effective salvage shuttle.
+  price: 14000
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_Mono/Shuttles/gödinov.yml
+  guidebookPage: null
+  class:
+  - Salvage
+  - Cargo
+  engine:
+  - Plasma
+
+- type: gameMap
+  id: Gödinov
+  mapName: 'UNJ Gödinov'
+  mapPath: /Maps/_Mono/Shuttles/gödinov.yml
+  minPlayers: 0
+  stations:
+    Gödinov:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Gödinov {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
