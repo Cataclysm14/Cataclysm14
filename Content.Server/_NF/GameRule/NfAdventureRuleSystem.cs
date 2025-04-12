@@ -216,7 +216,8 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
         foreach (var location in _proto.EnumeratePrototypes<PointOfInterestPrototype>())
         {
             // Check if any preset is accepted (empty) or if current preset is supported.
-            if (location.SpawnGamePreset.Length > 0 && !location.SpawnGamePreset.Contains(currentPreset))
+            var protoIds = location.SpawnGamePreset.ToList();
+            if (location.SpawnGamePreset.Length > 0 && !protoIds.Contains(currentPreset))
                 continue;
 
             switch (location.SpawnGroup)
