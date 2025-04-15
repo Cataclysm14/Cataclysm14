@@ -69,6 +69,18 @@ public sealed partial class ShuttleSystem
     /// </summary>
     private const int FTLProximityIterations = 15; // Frontier: 5<15
 
+    // Frontier: coordinate rollover
+    /// <summary>
+    /// Maximum X coordinate before rolling over.
+    /// </summary>
+    private const float MaxCoord = 20000f;
+
+    /// <summary>
+    /// Amount to subtract from X coordinate on rollover.
+    /// </summary>
+    private const float CoordRollover = 40000f;
+    // End Frontier: coordinate rollover
+
     private readonly HashSet<EntityUid> _lookupEnts = new();
     private readonly HashSet<EntityUid> _immuneEnts = new();
     private readonly HashSet<Entity<NoFTLComponent>> _noFtls = new();
@@ -1496,6 +1508,11 @@ public sealed partial class ShuttleSystem
         // Reset rotation so they always face the same direction.
         xform.LocalRotation = Angle.Zero;
         _index += width + Buffer;
+
+        // Frontier: rollover coordinates
+        if (_index > MaxCoord)
+            _index -= CoordRollover;
+        // End Frontier
 
         // Move all docked shuttles maintaining their relative positions
         foreach (var dockedUid in dockedShuttles)
