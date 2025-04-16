@@ -190,7 +190,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: FaxMachine
-    name: "Pirate's Cove"
+    name: "Rogue Insurgency Hideout"
 
 - type: entity
   parent: [BaseStructureDisableToolUse, FaxMachineBase]

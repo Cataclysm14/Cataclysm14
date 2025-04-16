@@ -74,7 +74,7 @@
 - type: entity
   parent: ClothingBackpackSatchelLeather
   id: ClothingBackpackPirateBundle
-  suffix: Filled, Pirate
+  suffix: Filled, Rogue
   components:
     - type: StorageFill
       contents:

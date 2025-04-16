@@ -561,3 +561,9 @@ Entries:
       message: NFDSO -> NCMCO
   id: 66
   time: '2025-04-15T04:53:46.0000000+00:00'
+- author: LukeZurg22
+  changes:
+    - type: Tweak
+      message: Numerous NFSD proto names -> NCMC
+  id: 67
+  time: '2025-04-16T01:42:17.0000000+00:00'
