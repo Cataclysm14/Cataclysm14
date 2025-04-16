@@ -1,0 +1,9 @@
+- type: company
+  id: None
+  name: None
+  color: "#FFFFFF"
+
+- type: company
+  id: UnionJ
+  name: Union J
+  color: "#99CCFF"
