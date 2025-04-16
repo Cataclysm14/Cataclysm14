@@ -316,6 +316,8 @@
   - type: Targeting
   - type: SurgeryTarget
   - type: LayingDown
+  - type: CombatMode
+    canDisarm: true
   - type: ExaminableCharacter # WWDP
   - type: CanEnterCryostorage # Goobstation
   - type: StatusIcon # Goobstation
