@@ -7,7 +7,7 @@
 - type: vessel
   id: Seraphim
   parent: BaseVessel
-  name: RSIC Seraphim
+  name: SKR Seraphim
   description: A large, unarmed heavy freight transport.
   price: 92530
   category: Large

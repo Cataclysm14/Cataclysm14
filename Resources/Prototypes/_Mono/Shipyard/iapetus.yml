@@ -7,7 +7,7 @@
 - type: vessel
   id: Iapetus
   parent: BaseVessel
-  name: NT-SFS Iapetus
+  name: NGC-SKR Iapetus
   description: A basic artifact research ship, with minimal armament.
   price: 36200
   category: Small

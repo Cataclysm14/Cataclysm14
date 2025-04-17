@@ -7,7 +7,7 @@
 - type: vessel
   id: MClass
   parent: BaseVessel
-  name: M-Class Salvage Carrier
+  name: SKR M-Class Salvage Carrier
   description: A large salvage carrier with space for 2 salvage microshuttles to dock.
   price: 155000
   category: Large

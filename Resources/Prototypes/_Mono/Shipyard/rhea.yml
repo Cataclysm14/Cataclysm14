@@ -7,7 +7,7 @@
 - type: vessel
   id: Rhea
   parent: BaseVessel
-  name: NT Rhea
+  name: SKR Rhea
   description: A very small food ship.
   price: 25250
   category: Small
