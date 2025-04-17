@@ -1,0 +1,42 @@
+# Author Info
+# GitHub: LukeZurg22
+# Discord: lukezurg22
+
+# Shuttle Notes:
+# A botany ship shaped like a mushroom. It's got everything a botany ship needs.
+# Can be recovered even after a max-speed head-on collision.
+
+- type: vessel
+  id: Coldcap
+  parent: BaseVessel
+  name: UNJ Coldcap
+  description: An oddly fungal-shaped botanists vessel.
+  price: 30000
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_Mono/Shuttles/coldcap.yml
+  guidebookPage: null
+  class:
+  - Civilian
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Coldcap
+  mapName: 'UNJ Coldcap'
+  mapPath: /Maps/_Mono/Shuttles/coldcap.yml
+  minPlayers: 0
+  stations:
+    Coldcap:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Coldcap {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
