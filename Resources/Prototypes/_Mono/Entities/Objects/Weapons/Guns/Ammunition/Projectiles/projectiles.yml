@@ -4,36 +4,36 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
-    - type: Projectile
-      damage:
-        types:
-          Caustic: 100
-          Structural: 700
-          Heat: 225
-          Radiation: 20
-          Ion: 40
-    - type: Sprite
-      sprite: _Mono/Objects/SpaceArtillery/plasmashot.rsi
-      layers:
-        - state: plasmashot
-    - type: Ammo
-      muzzleFlash: null
-    - type: ShipWeaponProjectile
-    - type: RadarBlip
-      scale: 2.5
-      requireNoGrid: true
-      shape: triangle
-    - type: TimedDespawn
-      lifetime: 10
-    - type: PointLight
-      color: "#FB00FF"
-    - type: ExplodeOnTrigger
-    - type: Explosive
-      explosionType: Default
-      maxIntensity: 65
-      intensitySlope: 3
-      totalIntensity: 25
-      maxTileBreak: 1
+  - type: Projectile
+    damage:
+      types:
+        Caustic: 500
+        Structural: 3500
+        Heat: 1125
+        Radiation: 80
+        Ion: 200
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/plasmashot.rsi
+    layers:
+    - state: plasmashot
+  - type: Ammo
+    muzzleFlash: null
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    scale: 2.5
+    requireNoGrid: true
+    shape: triangle
+  - type: TimedDespawn
+    lifetime: 10
+  - type: PointLight
+    color: "#FB00FF"
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 125
+    intensitySlope: 3
+    totalIntensity: 35
+    maxTileBreak: 1
 
 - type: entity
   id: ShipRailgunProjectile
@@ -44,9 +44,9 @@
   - type: Projectile
     damage:
       types:
-        Structural: 1250
-        Blunt: 100
-        Heat: 100
+        Structural: 12500 # POWER...
+        Blunt: 1000
+        Heat: 1000
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
     layers:
@@ -65,9 +65,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBomb
-    totalIntensity: 2500.0
+    totalIntensity: 3000
     intensitySlope: 3
-    maxIntensity: 400
+    maxIntensity: 750
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
@@ -81,9 +81,9 @@
   - type: Projectile
     damage:
       types:
-        Structural: 100
-        Blunt: 50
-        Heat: 50
+        Structural: 500
+        Blunt: 125
+        Heat: 30
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
@@ -104,9 +104,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 25
+    totalIntensity: 65
     intensitySlope: 5
-    maxIntensity: 5
+    maxIntensity: 25
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard

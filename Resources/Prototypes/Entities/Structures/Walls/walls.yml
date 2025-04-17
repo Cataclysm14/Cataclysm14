@@ -69,7 +69,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 1200 # Mono - wall buff - 4x
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -102,7 +102,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 1200 # Mono - wall buff - 4x
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -144,7 +144,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 1200 # Mono - wall buff - 4x
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -178,7 +178,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 100 # weak
+        damage: 400 # Mono - wall buff - 4x
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -207,7 +207,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 1200 # Mono - wall buff - 4x
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -238,7 +238,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 1200 # Mono - wall buff - 4x
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -271,7 +271,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 2400 # Mono - wall buff - 8x its diamonds bro
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -307,7 +307,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 900 # Mono - wall buff - 3x gold is brittle
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -345,7 +345,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 600 # Mono - wall buff - 2x
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -381,7 +381,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 1200 # Mono - wall buff - 4x
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -428,7 +428,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 1200 # Mono - wall buff - 4x
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -437,7 +437,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 600 # Mono - wall buff - 4x
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -485,7 +485,7 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 1000
+            damage: 7500 # Mono - wall buff - 7.5x
           behaviors:
             - !type:SpawnEntitiesBehavior
               spawn:
@@ -520,7 +520,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 2000
+        damage: 3500 # Mono - wall buff - 2x
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
@@ -529,7 +529,7 @@
             collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 1000
+        damage: 2000 # Mono - wall buff - 2x
       behaviors:
       - !type:ChangeConstructionNodeBehavior
         node: girder
@@ -611,7 +611,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 600
+        damage: 3000 # Mono - wall buff - 5x
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -620,7 +620,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 2000 # Mono - wall buff - 5x
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -678,7 +678,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 500
+        damage: 2500 # Mono - wall buff - 5x
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -687,7 +687,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 350
+        damage: 1750 # Mono - wall buff - 5x
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -743,7 +743,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1000
+        damage: 5000 # Mono - wall buff - 5x
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -782,7 +782,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 1000 # Mono - wall buff - 3.33x
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -818,7 +818,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 1200 # Mono - wall buff - 4x
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -827,7 +827,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 600 # Mono - wall buff - 4x
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -899,7 +899,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 600
+        damage: 3600 # Mono - wall buff - 6x
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
@@ -908,7 +908,7 @@
             collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 1800 # Mono - wall buff - 6x
       behaviors:
       - !type:ChangeConstructionNodeBehavior
         node: girder
@@ -938,7 +938,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 600
+        damage: 3600 # Mono - wall buff - 6x
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -947,7 +947,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 2400 # Mono - wall buff - 6x
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -1004,7 +1004,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 2400 # Mono - wall buff - 6x
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -1013,7 +1013,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 200
+        damage: 1200 # Mono - wall buff - 6x
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -1059,7 +1059,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 1600 # Mono - wall buff - 4x
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -1068,7 +1068,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 200
+        damage: 800 # Mono - wall buff - 4x
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -1123,7 +1123,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 1200 # Mono - wall buff - 4x
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -1132,7 +1132,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 600 # Mono - wall buff - 4x
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -1158,7 +1158,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 3000 # Mono - wall buff - 10x
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -1167,7 +1167,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 2000 # Mono - wall buff - alot - uranium is dense
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -1298,7 +1298,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1000
+        damage: 3500 # Mono - wall buff - 3.5x
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -1322,7 +1322,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 700
+        damage: 1750 # Mono - wall buff
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -1378,7 +1378,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 500
+        damage: 2500 # Mono - wall buff - 5x
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -1482,7 +1482,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 100
+        damage: 1000 # Mono - wall buff - 10x
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
