@@ -5,31 +5,31 @@
 # Shuttle Notes:
 #
 - type: vessel
-  id: Tzipora
+  id: Akasono
   parent: BaseVessel
-  name: SKR Tzipora
-  description: A advanced medical ship, outfitted with cryo, chem, and surgical capabilities.
-  price: 115530
-  category: Large
-  group: Medical
-  shuttlePath: /Maps/_Mono/Shuttles/tzipora.yml
-  guidebookPage: null
+  name: SKR Akasono
+  description: A small ntry-level gas deposit mining ship.
+  price: 38250
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_Mono/Shuttles/akasono.yml
+  guidebookPage: Null
   class:
-  - Medical
+  - Atmospherics
   engine:
-  - AME
+  - Uranium
 
 - type: gameMap
-  id: Tzipora
-  mapName: 'SKR Tzipora'
-  mapPath: /Maps/_Mono/Shuttles/tzipora.yml
+  id: Akasono
+  mapName: 'SKR Akasono'
+  mapPath: /Maps/_Mono/Shuttles/akasono.yml
   minPlayers: 0
   stations:
-    Tzipora:
-      stationProto: StandardFrontierExpeditionVessel
+    Akasono:
+      stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Tzipora {1}'
+          mapNameTemplate: 'Akasono {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

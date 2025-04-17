@@ -22,7 +22,7 @@
 
 - type: gameMap
   id: Rhea
-  mapName: 'NT Rhea'
+  mapName: 'SKR Rhea'
   mapPath: /Maps/_Mono/Shuttles/rhea.yml
   minPlayers: 0
   stations:

@@ -21,7 +21,7 @@
 
 - type: gameMap
   id: Argent
-  mapName: 'NT-SFS Argent'
+  mapName: 'NGC-SKR Argent'
   mapPath: /Maps/_Mono/Shuttles/argent.yml
   minPlayers: 0
   stations:

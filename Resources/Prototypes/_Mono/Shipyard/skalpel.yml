@@ -21,7 +21,7 @@
 
 - type: gameMap
   id: Skalpel
-  mapName: 'NT-SFS Skalpel'
+  mapName: 'NGC-SKR Skalpel'
   mapPath: /Maps/_Mono/Shuttles/skalpel.yml
   minPlayers: 0
   stations:

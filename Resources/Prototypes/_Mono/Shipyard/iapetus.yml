@@ -21,7 +21,7 @@
 
 - type: gameMap
   id: Iapetus
-  mapName: 'NT-SFS Iapetus'
+  mapName: 'NGC-SKR Iapetus'
   mapPath: /Maps/_Mono/Shuttles/iapetus.yml
   minPlayers: 0
   stations:

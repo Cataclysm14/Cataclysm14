@@ -21,7 +21,7 @@
 
 - type: gameMap
   id: Sabine
-  mapName: 'NT Sabine'
+  mapName: 'SKR Sabine'
   mapPath: /Maps/_Mono/Shuttles/sabine.yml
   minPlayers: 0
   stations:

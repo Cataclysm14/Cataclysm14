@@ -21,7 +21,7 @@
 
 - type: gameMap
   id: MClass
-  mapName: 'NT-SFS M-Class Salvage Carrier'
+  mapName: 'NGC-SKR M-Class Salvage Carrier'
   mapPath: /Maps/_Mono/Shuttles/mclass.yml
   minPlayers: 0
   stations:

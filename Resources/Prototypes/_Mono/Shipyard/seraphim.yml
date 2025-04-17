@@ -21,7 +21,7 @@
 
 - type: gameMap
   id: Seraphim
-  mapName: 'RSIC Argent'
+  mapName: 'SKR Seraphim'
   mapPath: /Maps/_Mono/Shuttles/seraphim.yml
   minPlayers: 0
   stations:
