@@ -15,6 +15,24 @@
     tags:
     - NuclearOperative
     - SyndicateAgent
+  - type: AccessReader
+    access: [["SyndicateAgent"], ["NuclearOperative"]]
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Binary
+    - Syndicate
+  - type: ActiveRadio
+    channels:
+    - Syndicate
+  - type: ShowSyndicateIcons
+  - type: MovementAlwaysTouching
+  - type: Speech
+    speechSounds: SyndieBorg
+    allowedEmotes:
+    - Laugh
+  - type: Vocal
+    sounds:
+      Unsexed: UnisexSiliconSyndicate
   - type: IonStormTarget
     chance: 0.2
   - type: ShowJobIcons
