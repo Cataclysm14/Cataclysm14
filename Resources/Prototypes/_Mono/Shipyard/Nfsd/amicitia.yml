@@ -1,0 +1,32 @@
+- type: vessel
+  id: Amicitia
+  parent: BaseVessel
+  name: SNS Amicitia
+  description: A medium-sized patrol craft. Equipped with a radar suite, 2 EMP guns, and 4 light rear and side auto-cannons total. Has no holding cell.
+  price: 33105
+  category: Medium
+  group: Security
+  access: Security
+  shuttlePath: /Maps/_Mono/Shuttles/Nfsd/amicitia.yml
+  guidebookPage: Null
+  class:
+  - Patrol
+  engine:
+  - AME
+
+- type: gameMap
+  id: Amicitia
+  mapName: 'Amicitia'
+  mapPath: /Maps/_Mono/Shuttles/Nfsd/amicitia.yml
+  minPlayers: 0
+  stations:
+    Amicitia:
+      stationProto: StandardFrontierSecurityVessel
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: 'Amicitia {1}'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: '14'
+      - type: StationJobs
+        availableJobs: {}
