@@ -103,4 +103,5 @@
     rules: ghost-role-information-silicon-rules
     raffle:
       settings: default
+    prototype: RedactedBorg
   - type: GhostTakeoverAvailable
