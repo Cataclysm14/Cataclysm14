@@ -11,6 +11,7 @@ using Robust.Shared.Physics.Systems;
 using System.Linq;
 using Content.Shared.Physics;
 using System.Numerics;
+using Content.Shared.Shuttles.Components;
 
 namespace Content.Server._Mono.FireControl;
 
@@ -189,6 +190,14 @@ public sealed partial class FireControlSystem : EntitySystem
     {
         if (!Resolve(server, ref component))
             return;
+
+        // Check if the weapon's grid is in FTL
+        var grid = component.ConnectedGrid;
+        if (grid != null && TryComp<FTLComponent>((EntityUid)grid, out var ftlComp))
+        {
+            // Cannot fire weapons during FTL travel
+            return;
+        }
 
         var targetCoords = GetCoordinates(coordinates);
 
