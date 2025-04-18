@@ -66,6 +66,7 @@ namespace Content.Server.Destructible.Thresholds
             }
 
             OldTriggered = true;
+            Triggered = true;
             return true;
         }
 
@@ -79,16 +80,28 @@ namespace Content.Server.Destructible.Thresholds
         /// </param>
         /// <param name="entityManager"></param>
         /// <param name="cause"></param>
-        public void Execute(EntityUid owner, DestructibleSystem system, IEntityManager entityManager, EntityUid? cause)
+        public void Execute(EntityUid owner, DestructibleSystem system, IEntityManager entityManager, EntityUid? cause = null)
         {
-            Triggered = true;
-
-            foreach (var behavior in Behaviors)
+            foreach (var behavior in _behaviors)
             {
-                // The owner has been deleted. We stop execution of behaviors here.
                 if (!entityManager.EntityExists(owner))
                     return;
+                
+                behavior.Execute(owner, system, cause);
+            }
+        }
 
+        /// <summary>
+        /// Special version of Execute that allows prevention of gibbing from space damage
+        /// </summary>
+        public void Reached(EntityUid owner, DestructibleSystem system, EntityUid? cause = null, bool spaceOrigin = false)
+        {
+            foreach (var behavior in _behaviors)
+            {
+                // Skip gibbing behaviors if the damage is from space
+                if (spaceOrigin && behavior is GibBehavior)
+                    continue;
+                
                 behavior.Execute(owner, system, cause);
             }
         }

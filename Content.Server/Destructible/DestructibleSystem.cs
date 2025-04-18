@@ -1,5 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using Content.Server.Administration.Logs;
+using Content.Server.Atmos.Components;
 using Content.Server.Atmos.EntitySystems;
 using Content.Server.Body.Systems;
 using Content.Server.Construction;
@@ -71,6 +72,13 @@ namespace Content.Server.Destructible
                         return b.GetType().Name;
                     }));
 
+                    bool spaceOrigin = false;
+                    // Check if the damage is from space (barotrauma)
+                    if (args.Origin != null && EntityManager.TryGetComponent<BarotraumaComponent>(args.Origin.Value, out _))
+                    {
+                        spaceOrigin = true;
+                    }
+
                     if (args.Origin != null)
                     {
                         _adminLogger.Add(LogType.Damaged, LogImpact.Medium,
@@ -82,23 +90,23 @@ namespace Content.Server.Destructible
                             $"Unknown damage source caused {ToPrettyString(uid):subject} to trigger [{triggeredBehaviors}]");
                     }
 
-                    threshold.Execute(uid, this, EntityManager, args.Origin);
+                    threshold.Reached(uid, this, args.Origin, spaceOrigin);
                 }
 
                 // if destruction behavior (or some other deletion effect) occurred, don't run other triggers.
-                if (EntityManager.IsQueuedForDeletion(uid) || Deleted(uid))
+                if (EntityManager.IsQueuedForDeletion(uid) || EntityManager.Deleted(uid))
                     return;
             }
         }
 
-        public bool TryGetDestroyedAt(Entity<DestructibleComponent?> ent, [NotNullWhen(true)] out FixedPoint2? destroyedAt)
+        public void BreakEntity(EntityUid uid)
         {
-            destroyedAt = null;
-            if (!Resolve(ent, ref ent.Comp, false))
-                return false;
+            RaiseLocalEvent(uid, new BreakageEventArgs(), true);
+        }
 
-            destroyedAt = DestroyedAt(ent, ent.Comp);
-            return true;
+        public void DestroyEntity(EntityUid uid)
+        {
+            EntityManager.QueueDeleteEntity(uid);
         }
 
         // FFS this shouldn't be this hard. Maybe this should just be a field of the destructible component. Its not
@@ -133,6 +141,16 @@ namespace Content.Server.Destructible
                 }
             }
             return damageNeeded;
+        }
+
+        public bool TryGetDestroyedAt(Entity<DestructibleComponent?> ent, [NotNullWhen(true)] out FixedPoint2? destroyedAt)
+        {
+            destroyedAt = null;
+            if (!Resolve(ent, ref ent.Comp, false))
+                return false;
+
+            destroyedAt = DestroyedAt(ent, ent.Comp);
+            return true;
         }
     }
 
