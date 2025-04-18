@@ -14,7 +14,7 @@
     - BluespaceSalvageEventScheduler
     - SmugglingEventScheduler
     - FrontierRoundstartVariation
-    - STCShuttleSpawnerScheduler
+    - MonoAISTCShuttleSpawnerScheduler # Mono
 
 - type: gamePreset
   id: NFPirate
@@ -32,4 +32,4 @@
     - BluespaceSalvageEventScheduler
     - SmugglingEventScheduler
     - FrontierRoundstartVariation
-    - STCShuttleSpawnerScheduler
+    - MonoAISTCShuttleSpawnerScheduler # Mono
