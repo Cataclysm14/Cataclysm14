@@ -5,7 +5,7 @@
   components:
   - type: ConditionalSpawner
     prototypes:
-    - PlayerBorgRedactedGhostRole
+    - PlayerBorgRedacted
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:
