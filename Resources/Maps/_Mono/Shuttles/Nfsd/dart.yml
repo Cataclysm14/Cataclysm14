@@ -4,8 +4,8 @@ meta:
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 04/19/2025 03:30:22
-  entityCount: 674
+  time: 04/19/2025 03:33:14
+  entityCount: 675
 maps: []
 grids:
 - 1
@@ -2241,6 +2241,13 @@ entities:
     components:
     - type: Transform
       pos: -7.5,3.5
+      parent: 1
+- proto: MedkitFilled
+  entities:
+  - uid: 675
+    components:
+    - type: Transform
+      pos: -4.5051527,2.597217
       parent: 1
 - proto: NFHolopadShip
   entities:
