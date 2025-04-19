@@ -1,7 +1,42 @@
 - type: dataset
   id: MonoRedactedBorgNameset
   values:
-  - Syndicated ADS Manipulator Module
+  - ADS Manipulator Module
+
+- type: dataset
+  id: MonoRemnantCoreNameset
+  values:
+  - ADS System Core
+
+- type: dataset
+  id: MonoRemnantShipNameset # eventually this will have a use... randommetadata component dont work with grids though...
+  values:
+  - ADS-Glimmer
+  - ADS-Orion
+  - ADS-Expanse
+  - ADS-Symphony
+  - ADS-Chorus
+  - ADS-Flashpoint
+  - ADS-Phoron
+  - ADS-Conquest
+  - ADS-Prime
+  - ADS-Firestorm
+  - ADS-Retaliation
+  - ADS-Horizon
+  - ADS-Marksman
+  - ADS-Barricade
+  - ADS-Vein
+  - ADS-Zero
+  - ADS-Midnight
+  - ADS-Interdiction
+  - ADS-Mist
+  - ADS-Granite
+  - ADS-Typhoon
+  - ADS-Storm
+  - ADS-Rubicon
+  - ADS-Cauterizer
+  - ADS-Evasion
+  - ADS-Apprehension
 
 - type: entity
   id: BaseBorgChassisRedacted
@@ -150,6 +185,8 @@
       settings: default
     prototype: RemnantAICore
   - type: GhostTakeoverAvailable
+  - type: RandomMetadata
+    nameSegments: [MonoRemnantCoreNameset]
 
 - type: entity
   id: AiHeldRedacted

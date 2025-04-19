@@ -60,8 +60,6 @@ entities:
       bodyType: Dynamic
     - type: Fixtures
       fixtures: {}
-    - type: BecomesStation
-      id: Zenith
     - type: OccluderTree
     - type: Shuttle
     - type: GridPathfinding
