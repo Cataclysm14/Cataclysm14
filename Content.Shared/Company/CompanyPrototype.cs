@@ -20,11 +20,17 @@ public sealed class CompanyPrototype : IPrototype
     public string Name { get; private set; } = default!;
 
     /// <summary>
+    /// The name of the company.
+    /// </summary>
+    [DataField("description", required: false)]
+    public string Description { get; private set; } = default!;
+
+    /// <summary>
     /// The color used to display the company name in examine text.
     /// </summary>
     [DataField("color")]
     public Color Color { get; private set; } = Color.Yellow;
-    
+
     /// <summary>
     /// Whether this company should be disabled from selection in the UI.
     /// Companies with this set to true will still be assigned automatically through the job system,
@@ -32,4 +38,4 @@ public sealed class CompanyPrototype : IPrototype
     /// </summary>
     [DataField("disabled")]
     public bool Disabled { get; private set; } = false;
-} 
+}

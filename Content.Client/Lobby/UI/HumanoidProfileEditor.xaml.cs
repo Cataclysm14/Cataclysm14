@@ -444,17 +444,21 @@ namespace Content.Client.Lobby.UI
                 CompanyButton.SelectId(args.Id);
                 if (args.Id >= 0 && args.Id < companies.Count)
                 {
-                    string companyId = companies[args.Id].ID;
-                    
+                    var companyId = companies[args.Id].ID;
+
+                    // Description of Company (pointed-to in prototype, defined in Locale)
+                    CompanyDescriptionLabel.Text = !string.IsNullOrEmpty(companies[args.Id].Description)
+                        ? Loc.GetString(companies[args.Id].Description)
+                        : "-"; // Only if there's a description. If not, then set to nothing.
+
                     // Get the current profile for comparison
                     var oldCompany = Profile?.Company;
-                    
                     // Update the profile with the new company
                     Profile = Profile?.WithCompany(companyId);
-                    
+
                     // Debug logging to verify selection
                     Logger.Debug($"Company changed from {oldCompany} to {companyId}");
-                    
+
                     // Explicitly call SetDirty to update save button state
                     SetDirty();
                 }
@@ -896,7 +900,7 @@ namespace Content.Client.Lobby.UI
 
             // Get the selected character for comparison
             var selectedCharacter = (HumanoidCharacterProfile)_preferencesManager.Preferences.SelectedCharacter;
-            
+
             // Check explicitly if company changed
             if (selectedCharacter.Company != Profile.Company)
             {
@@ -1869,7 +1873,7 @@ namespace Content.Client.Lobby.UI
                 .Where(c => !c.Disabled) // Filter out disabled companies
                 .ToList();
             companies.Sort((a, b) => string.Compare(a.Name, b.Name, StringComparison.Ordinal));
-            
+
             // Make sure "None" is first in the list
             var noneIndex = companies.FindIndex(c => c.ID == "None");
             if (noneIndex != -1)
@@ -1878,9 +1882,9 @@ namespace Content.Client.Lobby.UI
                 companies.RemoveAt(noneIndex);
                 companies.Insert(0, none);
             }
-            
+
             Logger.Debug($"Updating company controls. Current profile company: {Profile.Company}");
-            
+
             // Find the company in the list and select it
             bool found = false;
             for (var i = 0; i < companies.Count; i++)
@@ -1889,17 +1893,23 @@ namespace Content.Client.Lobby.UI
                 {
                     Logger.Debug($"Found company at index {i}: {companies[i].ID} - {companies[i].Name}");
                     CompanyButton.SelectId(i);
+
+                    // Description of Company (pointed-to in prototype, defined in Locale)
+                    CompanyDescriptionLabel.Text = !string.IsNullOrEmpty(companies[i].Description)
+                        ? Loc.GetString(companies[i].Description)
+                        : "-"; // Only if there's a description. If not, then set to nothing.
+
                     found = true;
                     break;
                 }
             }
-            
+
             // If company wasn't found, default to "None" (index 0)
             if (!found)
             {
                 Logger.Debug($"Company {Profile.Company} not found in list, defaulting to None");
                 CompanyButton.SelectId(0);
-                
+
                 // Also reset the profile's company to None if the current one is disabled
                 if (_prototypeManager.TryIndex<CompanyPrototype>(Profile.Company, out var companyProto) && companyProto.Disabled)
                 {

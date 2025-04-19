@@ -132,15 +132,21 @@
                         <BoxContainer Name="TraitsList" Orientation="Vertical" />
                     </ScrollContainer>
                 </BoxContainer>
+                <!-- Monolith: Company Tab -->
                 <BoxContainer Orientation="Vertical" Margin="10">
                     <!-- Company -->
                     <ScrollContainer VerticalExpand="True">
+                        <!-- Select -->
                         <BoxContainer Orientation="Vertical">
                             <BoxContainer Margin="10" Orientation="Horizontal" HorizontalExpand="True">
                                 <Label Text="{Loc 'humanoid-profile-editor-company-label'}" />
                                 <Control HorizontalExpand="True"/>
                                 <OptionButton Name="CompanyButton" HorizontalAlignment="Right" />
                             </BoxContainer>
+                        </BoxContainer>
+                        <!-- Description -->
+                        <BoxContainer Margin="5,35,0,0" VerticalExpand="True">
+                            <Label Name="CompanyDescriptionLabel" Text="-" VerticalAlignment="Top"/>
                         </BoxContainer>
                     </ScrollContainer>
                 </BoxContainer>
