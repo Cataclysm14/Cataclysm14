@@ -64,6 +64,8 @@
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
+      - BorgModuleSyndicate
+      - BorgModuleSyndicateAssault
     hasMindState: derelict_e
     noMindState: derelict_e_r
   - type: Construction
@@ -84,7 +86,8 @@
       borg_brain:
       - PositronicBrain
       borg_module:
-      - BorgModuleTool
+      - BorgModuleOperative
+      - BorgModuleSyndicateWeapon
       - BorgModuleJetpack
       - BorgModuleGPS
   - type: ItemSlots
@@ -193,3 +196,6 @@
     - sprite: Mobs/Silicon/station_ai.rsi
       state: default
   - type: ShowJobIcons
+  - type: Tag
+    tags:
+    - CanPilot
