@@ -143,10 +143,11 @@
                                 <Control HorizontalExpand="True"/>
                                 <OptionButton Name="CompanyButton" HorizontalAlignment="Right" />
                             </BoxContainer>
-                        </BoxContainer>
-                        <!-- Description -->
-                        <BoxContainer Margin="5,35,0,0" VerticalExpand="True">
-                            <Label Name="CompanyDescriptionLabel" Text="-" VerticalAlignment="Top"/>
+                            <!-- Description -->
+                            <BoxContainer Margin="10,5,10,0" VerticalExpand="True">
+                                <RichTextLabel Name="CompanyDescriptionLabel" VerticalAlignment="Top"
+                                       MaxWidth="1080"/>
+                            </BoxContainer>
                         </BoxContainer>
                     </ScrollContainer>
                 </BoxContainer>

@@ -447,9 +447,9 @@ namespace Content.Client.Lobby.UI
                     var companyId = companies[args.Id].ID;
 
                     // Description of Company (pointed-to in prototype, defined in Locale)
-                    CompanyDescriptionLabel.Text = !string.IsNullOrEmpty(companies[args.Id].Description)
+                    CompanyDescriptionLabel.SetMessage(!string.IsNullOrEmpty(companies[args.Id].Description)
                         ? Loc.GetString(companies[args.Id].Description)
-                        : "-"; // Only if there's a description. If not, then set to nothing.
+                        : "N/A"); // Only if there's a description. If not, then set to N/A.
 
                     // Get the current profile for comparison
                     var oldCompany = Profile?.Company;
@@ -1895,9 +1895,9 @@ namespace Content.Client.Lobby.UI
                     CompanyButton.SelectId(i);
 
                     // Description of Company (pointed-to in prototype, defined in Locale)
-                    CompanyDescriptionLabel.Text = !string.IsNullOrEmpty(companies[i].Description)
+                    CompanyDescriptionLabel.SetMessage(!string.IsNullOrEmpty(companies[i].Description)
                         ? Loc.GetString(companies[i].Description)
-                        : "-"; // Only if there's a description. If not, then set to nothing.
+                        : "N/A"); // Only if there's a description. If not, then set to N/A.
 
                     found = true;
                     break;
