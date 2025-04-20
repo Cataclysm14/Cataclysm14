@@ -1,4 +1,6 @@
-﻿- type: entity
+﻿# MARAUDER
+
+- type: entity
   id: ShipMediumPlasmaProjectile
   name: plasma projectile
   parent: BaseBulletTrigger
@@ -33,6 +35,8 @@
     intensitySlope: 3
     totalIntensity: 35
     maxTileBreak: 1
+
+# CHARON
 
 - type: entity
   id: ShipRailgunProjectile
@@ -70,6 +74,8 @@
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
+
+# ASM-302
 
 - type: entity
   id: ShipMissileASM302
@@ -115,3 +121,98 @@
     scanArc: 65
     launchSpeed: 60
     maxSpeed: 140
+
+# 20mm
+
+- type: entity
+  id: 20mmBulletBase
+  parent: BaseBullet
+  abstract: true
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 75
+        Blunt: 75
+        Piercing: 100
+    ignoreWeaponGrid: true
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 3
+  - type: PointLight
+    radius: 3.5
+    energy: 0.5
+  - type: RadarBlip
+    scale: 0.35
+    requireNoGrid: true
+    shape: triangle
+
+- type: entity
+  id: 20mmBulletArmorPiercing
+  name: 20mm AP bullet
+  parent: 20mmBulletBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 25
+        Piercing: 125
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    layers:
+    - state: base-projectile
+  - type: PointLight
+    color: orange
+
+# 90mm
+
+- type: entity
+  id: 90mmBulletBase
+  name: shell
+  parent: BaseBulletTrigger
+  abstract: true
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TimedDespawn
+    lifetime: 5
+  - type: PointLight
+    radius: 3.5
+    energy: 0.5
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    scale: 1
+    requireNoGrid: true
+    shape: triangle
+
+- type: entity
+  id: 90mmBulletArmorPiercing
+  parent: 90mmBulletExplosiveBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 875
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
+    layers:
+    - state: base-projectile
+  - type: Explosive
+    maxIntensity: 30
+    intensitySlope: 2
+    totalIntensity: 4
+    maxTileBreak: 1
+  - type: PointLight
+    color: orange
+
+- type: entity
+  id: 90mmBulletExplosiveBase
+  parent: 90mmBulletBase
+  abstract: true
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
