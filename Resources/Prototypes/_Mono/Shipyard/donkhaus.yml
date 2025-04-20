@@ -1,0 +1,43 @@
+# Author Info
+# GitHub: LukeZurg22
+# Discord: lukezurg22
+
+# Shuttle Notes:
+# A botany ship shaped like a mushroom. It's got everything a botany ship needs.
+# Can be recovered even after a max-speed head-on collision.
+
+- type: vessel
+  id: Donkhaus
+  parent: BaseVessel
+  name: UNJ Donkhaus
+  description: A large and very well-established diner. Donkhaus is a sizable mobile kitchen.
+  price: 40000
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_Mono/Shuttles/donkhaus.yml
+  guidebookPage: null
+  class:
+  - Civilian
+  - Kitchen
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Donkhaus
+  mapName: 'UNJ Donkhaus'
+  mapPath: /Maps/_Mono/Shuttles/donkhaus.yml
+  minPlayers: 0
+  stations:
+    Donkhaus:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Donkhaus {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 1, 1 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
