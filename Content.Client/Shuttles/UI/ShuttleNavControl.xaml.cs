@@ -398,7 +398,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
                     var coordsText = $"({gridMapPos.X:0.0}, {gridMapPos.Y:0.0})";
 
                     // Calculate unscaled offsets.
-                    var labelDimensions = handle.GetDimensions(Font, labelText, 1f);
+                    var labelDimensions = handle.GetDimensions(Font, labelText, 0.9f);
                     var blipSize = RadarBlipSize * 0.7f;
                     var labelOffset = new Vector2()
                     {
@@ -426,7 +426,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
                     var mainLabel = lines[0];
 
                     // Draw main ship label with company color if available
-                    handle.DrawString(Font, (uiPosition + labelOffset) * UIScale, mainLabel, UIScale, displayColor);
+                    handle.DrawString(Font, (uiPosition + labelOffset) * UIScale, mainLabel, UIScale * 0.9f, displayColor);
 
                     // Draw company label if present
                     if (lines.Length > 1)
@@ -434,10 +434,10 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
                         var companyLabel = lines[1];
                         var companyLabelOffset = new Vector2(
                             labelOffset.X,
-                            labelOffset.Y + handle.GetDimensions(Font, mainLabel, 1f).Y
+                            labelOffset.Y + handle.GetDimensions(Font, mainLabel, 0.9f).Y
                         );
 
-                        handle.DrawString(Font, (uiPosition + companyLabelOffset) * UIScale, companyLabel, UIScale, displayColor);
+                        handle.DrawString(Font, (uiPosition + companyLabelOffset) * UIScale, companyLabel, UIScale * 0.9f, displayColor);
                     }
 
                     if (isMouseOver && !HideCoords)
@@ -694,8 +694,8 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
                     continue;
 
                 labeled.Add(state.LabelName);
-                var labelDimensions = handle.GetDimensions(Font, state.LabelName, 1.0f);
-                handle.DrawString(Font, (uiPosition / UIScale - labelDimensions / 2) * UIScale, state.LabelName, UIScale * 1.0f, _dockLabelColor);
+                var labelDimensions = handle.GetDimensions(Font, state.LabelName, 0.9f);
+                handle.DrawString(Font, (uiPosition / UIScale - labelDimensions / 2) * UIScale, state.LabelName, UIScale * 0.9f, _dockLabelColor);
             }
             // End Frontier
         }
@@ -715,7 +715,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
     }
 
     private const int RadarBlipSize = 15;
-    private const int RadarFontSize = 10;
+    private const int RadarFontSize = 8;
 
     /// <summary>
     /// Draws a shield ring with constant thickness regardless of zoom level.

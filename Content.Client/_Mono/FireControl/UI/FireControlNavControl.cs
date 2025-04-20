@@ -270,8 +270,8 @@ public sealed class FireControlNavControl : BaseShuttleControl
                     var mapCoords = _transform.GetWorldPosition(gUid);
                     var coordsText = $"({mapCoords.X:0.0}, {mapCoords.Y:0.0})";
 
-                    var labelDimensions = handle.GetDimensions(Font, labelText, 1f);
-                    var coordsDimensions = handle.GetDimensions(Font, coordsText, 0.7f);
+                    var labelDimensions = handle.GetDimensions(Font, labelText, 0.9f);
+                    var coordsDimensions = handle.GetDimensions(Font, coordsText, 0.65f);
 
                     var yOffset = Math.Max(gridBounds.Height, gridBounds.Width) * MinimapScale / 1.8f;
 
@@ -291,11 +291,11 @@ public sealed class FireControlNavControl : BaseShuttleControl
                     var controlExtents = PixelSize - new Vector2(labelDimensions.X, labelDimensions.Y);
                     labelUiPosition = Vector2.Clamp(labelUiPosition, Vector2.Zero, controlExtents);
 
-                    handle.DrawString(Font, labelUiPosition, labelText, labelColor);
+                    handle.DrawString(Font, labelUiPosition, labelText, 0.9f, labelColor);
 
                     if (offsetMax < 1)
                     {
-                        handle.DrawString(Font, coordUiPosition, coordsText, 0.7f, coordColor);
+                        handle.DrawString(Font, coordUiPosition, coordsText, 0.65f, coordColor);
                     }
                 }
             }
