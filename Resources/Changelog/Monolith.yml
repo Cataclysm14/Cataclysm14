@@ -789,3 +789,13 @@ Entries:
       message: AI is now able to properly pilot a ship.
   id: 94
   time: '2025-04-20T06:30:24.0000000+00:00'
+- author: starch70
+  changes:
+    - type: Add
+      message: Added Praetorian to CO shipyard (merc access restricted). Archer+ real
+    - type: Fix
+      message: >-
+        Fixed missing extinguishers, defib, warp point, and latejoin point on
+        Moonlight.
+  id: 95
+  time: '2025-04-20T19:44:49.0000000+00:00'

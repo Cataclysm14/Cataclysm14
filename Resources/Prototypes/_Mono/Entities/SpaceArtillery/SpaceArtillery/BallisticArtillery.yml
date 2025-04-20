@@ -4,7 +4,7 @@
   id: WeaponTurretL85Autocannon
   name: L85 20mm autocannon
   parent: BallisticArtillery
-  description: A old, but not outdated 20mm autocannon. Links up to a central GCS, and is not automated like PD turrets.
+  description: A cheap and light 20mm autocannon. Can be remotely activated, or linked up to a GCS.
   components:
   - type: StaticPrice
     price: 250
@@ -58,7 +58,7 @@
   id: WeaponTurretAK570
   name: AK570 90mm heavy autocannon
   parent: BallisticArtillery
-  description: A dual barrel, heavy autocannon. Links up to a central GCS, and is not automated like PD turrets.
+  description: A dual barrel, heavy autocannon. Can be remotely activated, or linked up to a GCS.
   components:
   - type: StaticPrice
     price: 750
@@ -103,7 +103,7 @@
   id: WeaponTurretType35
   name: MARAUDER-type plasma weapon
   parent: BallisticArtillery
-  description: Launches magnetically contained balls of plasma at targets. Links up to a central gunnery control system.
+  description: Launches magnetically contained balls of plasma at targets. Can be remotely activated, or linked up to a GCS.
   components:
   - type: StaticPrice
     price: 2500
@@ -165,7 +165,7 @@
   id: WeaponTurretCharon
   name: M381 CHARON mass driver
   parent: BallisticArtillery
-  description: A heavy linear accelerator, capable of devastating targets with kinetic energy.
+  description: A heavy linear accelerator, capable of devastating targets with kinetic energy. Can be remotely activated, or linked up to a GCS.
   components:
   - type: Anchorable
     delay: 120 # you shouldnt be putting this on small shittles
@@ -236,7 +236,7 @@
   id: WeaponTurretVanyk
   name: ASM-302 pod
   parent: BallisticArtillery
-  description: A basic guided missile pod.
+  description: A basic guided missile pod. Can be remotely activated, or linked up to a GCS.
   components:
   - type: StaticPrice
     price: 2250
