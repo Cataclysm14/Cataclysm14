@@ -1,5 +1,6 @@
 using Content.Server.Destructible;
 using Content.Server.Gatherable.Components;
+using Content.Shared.Destructible;
 using Content.Shared.Interaction;
 using Content.Shared.Tag;
 using Content.Shared.Weapons.Melee.Events;
@@ -61,7 +62,13 @@ public sealed partial class GatherableSystem : EntitySystem
         }
 
         // Complete the gathering process
-        _destructible.DestroyEntity(gatheredUid);
+        // Instead of directly destroying, raise the destruction event first
+        // This ensures that components like OreVein have their event handlers called
+        var eventArgs = new DestructionEventArgs();
+        RaiseLocalEvent(gatheredUid, eventArgs);
+        
+        // Now queue the entity for deletion
+        QueueDel(gatheredUid);
 
         // Spawn the loot!
         if (component.Loot == null)

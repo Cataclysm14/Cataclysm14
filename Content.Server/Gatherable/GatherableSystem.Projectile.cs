@@ -1,4 +1,5 @@
 using Content.Server.Gatherable.Components;
+using Content.Shared.Destructible;
 using Content.Shared.Mining.Components;
 using Content.Shared.Projectiles;
 using Robust.Shared.Physics.Events;
