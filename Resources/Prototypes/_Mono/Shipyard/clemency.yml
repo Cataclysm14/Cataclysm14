@@ -3,37 +3,37 @@
 # Discord: lukezurg22
 
 - type: vessel
-  id: Donkhaus
+  id: Clemency
   parent: BaseVessel
-  name: UNJ Donkhaus
-  description: A large and very well-established diner. Donkhaus is a sizable mobile kitchen.
-  price: 40000
+  name: UNJ Clemency
+  description: An oddly fungal-shaped botanists vessel.
+  price: 22291
   category: Medium
   group: Shipyard
-  shuttlePath: /Maps/_Mono/Shuttles/donkhaus.yml
+  shuttlePath: /Maps/_Mono/Shuttles/clemency.yml
   guidebookPage: null
   class:
   - Civilian
-  - Kitchen
+  - Medical
   engine:
   - Uranium
 
 - type: gameMap
-  id: Donkhaus
-  mapName: 'UNJ Donkhaus'
-  mapPath: /Maps/_Mono/Shuttles/donkhaus.yml
+  id: Clemency
+  mapName: 'UNJ Clemency'
+  mapPath: /Maps/_Mono/Shuttles/clemency.yml
   minPlayers: 0
   stations:
-    Donkhaus:
+    Clemency:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Donkhaus {1}'
+          mapNameTemplate: 'Clemency {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
         - type: StationJobs
           availableJobs:
-            Contractor: [ 1, 1 ]
+            Contractor: [ 0, 0 ]
             Pilot: [ 0, 0 ]
             Mercenary: [ 0, 0 ]
