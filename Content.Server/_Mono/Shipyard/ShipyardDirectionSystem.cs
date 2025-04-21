@@ -1,6 +1,7 @@
 using System.Numerics;
 using Content.Server.Chat.Managers;
 using Content.Shared.Chat;
+using Content.Shared.Localizations;
 using Robust.Server.Player;
 
 namespace Content.Server._Mono.Shipyard;
@@ -38,7 +39,7 @@ public sealed class ShipyardDirectionSystem : EntitySystem
             return;
 
         // Get compass direction
-        var directionName = GetCompassDirection(direction);
+        var directionName = ContentLocalizationManager.FormatDirection(direction.GetDir()).ToLower(); //lua localization
         var distance = Math.Round(direction.Length(), 1);
 
         // Send message to player
@@ -52,25 +53,27 @@ public sealed class ShipyardDirectionSystem : EntitySystem
         }
     }
 
-    /// <summary>
-    /// Converts a direction vector to a compass direction
-    /// </summary>
-    private string GetCompassDirection(Vector2 direction)
-    {
-        var angle = new Angle(direction);
-        var dir = angle.GetDir();
+    //lua start
+    ///// <summary>
+    ///// Converts a direction vector to a compass direction
+    ///// </summary>
+    //private string GetCompassDirection(Vector2 direction)
+    //{
+    //    var angle = new Angle(direction);
+    //    var dir = angle.GetDir();
 
-        return dir switch
-        {
-            Direction.North => "North",
-            Direction.NorthEast => "North East",
-            Direction.East => "East",
-            Direction.SouthEast => "South East",
-            Direction.South => "South",
-            Direction.SouthWest => "South West",
-            Direction.West => "West",
-            Direction.NorthWest => "North West",
-            _ => "Unknown"
-        };
-    }
+    //    return dir switch
+    //    {
+    //        Direction.North => "North",
+    //        Direction.NorthEast => "North East",
+    //        Direction.East => "East",
+    //        Direction.SouthEast => "South East",
+    //        Direction.South => "South",
+    //        Direction.SouthWest => "South West",
+    //        Direction.West => "West",
+    //        Direction.NorthWest => "North West",
+    //        _ => "Unknown"
+    //    };
+    //}
+    //lua end
 }

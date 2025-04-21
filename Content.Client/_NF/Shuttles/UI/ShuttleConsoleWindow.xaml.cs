@@ -9,6 +9,7 @@ namespace Content.Client.Shuttles.UI
     {
         public event Action<NetEntity?, InertiaDampeningMode>? OnInertiaDampeningModeChanged;
         public event Action<NetEntity?, float>? OnMaxShuttleSpeedChanged;
+        public event Action<string, string>? OnNetworkPortButtonPressed;
 
         private void NfInitialize()
         {
@@ -20,6 +21,11 @@ namespace Content.Client.Shuttles.UI
             NavContainer.OnMaxShuttleSpeedChanged += (entityUid, maxSpeed) =>
             {
                 OnMaxShuttleSpeedChanged?.Invoke(entityUid, maxSpeed);
+            };
+            
+            NavContainer.OnNetworkPortButtonPressed += (sourcePort, targetPort) =>
+            {
+                OnNetworkPortButtonPressed?.Invoke(sourcePort, targetPort);
             };
         }
     }

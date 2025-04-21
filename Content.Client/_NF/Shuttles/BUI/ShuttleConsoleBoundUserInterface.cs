@@ -13,6 +13,7 @@ namespace Content.Client.Shuttles.BUI
             _window ??= new ShuttleConsoleWindow();
             _window.OnInertiaDampeningModeChanged += OnInertiaDampeningModeChanged;
             _window.OnMaxShuttleSpeedChanged += OnMaxShuttleSpeedChanged;
+            _window.OnNetworkPortButtonPressed += OnNetworkPortButtonPressed;
         }
         private void OnInertiaDampeningModeChanged(NetEntity? entityUid, InertiaDampeningMode mode)
         {
@@ -29,6 +30,15 @@ namespace Content.Client.Shuttles.BUI
             {
                 ShuttleEntityUid = entityUid,
                 MaxSpeed = maxSpeed,
+            });
+        }
+        
+        private void OnNetworkPortButtonPressed(string sourcePort, string targetPort)
+        {
+            SendMessage(new ShuttlePortButtonPressedMessage
+            {
+                SourcePort = sourcePort,
+                TargetPort = targetPort
             });
         }
     }
