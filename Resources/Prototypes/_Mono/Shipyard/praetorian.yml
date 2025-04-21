@@ -8,8 +8,8 @@
   id: Praetorian
   parent: BaseVessel
   name: NGC-SKR Praetorian
-  description: A more compact Archer, outfitted with a shield gen, 4 AK570s, 2 L85s, and 2 MARAUDERS.
-  price: 98250
+  description: A more compact and advanced Archer, outfitted with a shield gen, 4 AK570s, 2 L85s, and 2 MARAUDERS.
+  price: 101520
   category: Medium
   group: Shipyard
   access: Mercenary
@@ -18,7 +18,7 @@
   class:
   - Pursuit
   engine:
-  - Plasma
+  - Uranium
 
 - type: gameMap
   id: Praetorian
