@@ -81,6 +81,17 @@
   - type: Wires
     boardName: wires-board-name-computer
     layoutId: Computer
+    # Mono changes start - buffer for power outages
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 100
+  - type: ExaminableBattery
+  - type: BatterySelfRecharger
+  - type: ApcPowerReceiverBattery
+    idlePowerUse: 5
+    batteryRechargeRate: 250
+    batteryRechargeEfficiency: 0.95
+    # Mono changes end
 #
 #     This is overwritten by children, so needs to be defined there
 #  - type: UserInterface
