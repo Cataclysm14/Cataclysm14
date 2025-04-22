@@ -111,7 +111,7 @@
     - type: ExaminableBattery
     - type: BatterySelfRecharger
     - type: ApcPowerReceiverBattery
-      idlePowerUse: 5
+      idleLoad: 5
       batteryRechargeRate: 350
       batteryRechargeEfficiency: 0.55
       # Mono changes end
