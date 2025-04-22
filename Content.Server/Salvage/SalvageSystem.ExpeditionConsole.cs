@@ -23,9 +23,6 @@ public sealed partial class SalvageSystem
 
     [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
 
-    private const float ShuttleFTLMassThreshold = 50f;
-    private const float ShuttleFTLRange = 150f;
-
     private void OnSalvageClaimMessage(EntityUid uid, SalvageExpeditionConsoleComponent component, ClaimSalvageMessage args)
     {
         var station = _station.GetOwningStation(uid);
@@ -62,25 +59,6 @@ public sealed partial class SalvageSystem
                 return;
             if (!TryComp<MapGridComponent>(grid, out var gridComp))
                 return;
-
-            var xform = Transform(grid);
-            var bounds = xform.WorldMatrix.TransformBox(gridComp.LocalAABB).Enlarged(ShuttleFTLRange);
-            var bodyQuery = GetEntityQuery<PhysicsComponent>();
-            foreach (var other in _mapManager.FindGridsIntersecting(xform.MapID, bounds))
-            {
-                if (grid == other.Owner ||
-                    !bodyQuery.TryGetComponent(other.Owner, out var body) ||
-                    body.Mass < ShuttleFTLMassThreshold)
-                {
-                    continue;
-                }
-
-                PlayDenySound(uid, component);
-                _popupSystem.PopupEntity(Loc.GetString("shuttle-ftl-proximity"), uid, PopupType.MediumCaution);
-                UpdateConsoles(station.Value, data);
-                return;
-            }
-            // end of Frontier proximity check
 
             // Frontier: check for FTL component - if one exists, the station won't be taken into FTL.
             if (HasComp<FTLComponent>(grid))
