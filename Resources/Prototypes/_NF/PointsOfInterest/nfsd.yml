@@ -1,12 +1,12 @@
 # Author Info
-# GitHub:
-# Discord: Tjsip
+# GitHub: SuperJoelD00D
+# Discord: Super_Joel_Dood
 
 # Maintainer Info
 # GitHub: ???
 # Discord: ???
 
-# Notes:
+# Notes: Wow.
 #
 - type: pointOfInterest
   id: Nfsd
@@ -18,7 +18,7 @@
   gridPath: /Maps/_NF/POI/nfsd.yml
   addComponents:
   - type: IFF
-    color: "#ae7d57"
+    color: "#407780"
   - type: ProtectedGrid
     preventEmpEvents: true
 
