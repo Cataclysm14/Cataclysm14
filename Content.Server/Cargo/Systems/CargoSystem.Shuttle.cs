@@ -6,12 +6,12 @@ using Content.Shared.Cargo.Components;
 using Content.Shared.Cargo.Events;
 using Content.Shared.GameTicking;
 using Robust.Shared.Map;
-using Robust.Shared.Random;
 using Robust.Shared.Audio;
 using Content.Shared.Whitelist; // Frontier
 using Content.Server._NF.Cargo.Components; // Frontier
 using Content.Shared._NF.Bank.Components; // Frontier
-using Content.Shared.Mobs; // Frontier
+using Content.Shared.Mobs;
+using Robust.Shared.Containers; // Frontier
 
 namespace Content.Server.Cargo.Systems;
 
@@ -274,16 +274,50 @@ public sealed partial class CargoSystem
         if (toSell.Count == 0)
             return false;
 
-
         var ev = new EntitySoldEvent(toSell, gridUid); // Frontier: add gridUid
         RaiseLocalEvent(ref ev);
 
+        // Collect all container entities and their contained entities recursively
+        var allEntsToDelete = new HashSet<EntityUid>(toSell);
+
+        // Make sure we delete all contained entities as well
         foreach (var ent in toSell)
+        {
+            if (TryComp<ContainerManagerComponent>(ent, out var containerManager))
+            {
+                // Recursively gather all entities inside containers
+                var containedEntities = new HashSet<EntityUid>();
+                GatherContainedEntities(ent, containerManager, containedEntities);
+                allEntsToDelete.UnionWith(containedEntities);
+            }
+        }
+
+        foreach (var ent in allEntsToDelete)
         {
             Del(ent);
         }
 
         return true;
+    }
+
+    /// <summary>
+    /// Recursively gathers all entities inside containers
+    /// </summary>
+    private void GatherContainedEntities(EntityUid uid, ContainerManagerComponent containerManager, HashSet<EntityUid> containedEntities)
+    {
+        foreach (var container in containerManager.Containers.Values)
+        {
+            foreach (var entity in container.ContainedEntities)
+            {
+                containedEntities.Add(entity);
+
+                // Recursively check containers inside this entity
+                if (TryComp<ContainerManagerComponent>(entity, out var nestedContainers))
+                {
+                    GatherContainedEntities(entity, nestedContainers, containedEntities);
+                }
+            }
+        }
     }
 
     private void GetPalletGoods(Entity<CargoPalletConsoleComponent> consoleUid, EntityUid gridUid, out HashSet<EntityUid> toSell, out double amount, out double noMultiplierAmount) // Frontier: first arg to Entity, add noMultiplierAmount
