@@ -11,6 +11,7 @@ using Content.Server.Database;
 using Content.Server.Discord;
 using Content.Server.GameTicking;
 using Content.Server.Players.RateLimiting;
+using Content.Server.Preferences.Managers;
 using Content.Shared.Administration;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
@@ -43,6 +44,7 @@ namespace Content.Server.Administration.Systems
         [Dependency] private readonly IAfkManager _afkManager = default!;
         [Dependency] private readonly IServerDbManager _dbManager = default!;
         [Dependency] private readonly PlayerRateLimitManager _rateLimit = default!;
+        [Dependency] private readonly IServerPreferencesManager _preferencesManager = default!;
 
         [GeneratedRegex(@"^https://(?:(?:canary|ptb)\.)?discord\.com/api/webhooks/(\d+)/((?!.*/).*)$")]
         private static partial Regex DiscordRegex();
@@ -696,7 +698,18 @@ namespace Content.Server.Administration.Systems
             }
             else if (fromWebhook || senderAdmin is not null && senderAdmin.HasFlag(AdminFlags.Adminhelp)) // Frontier: anything sent via webhooks are from an admin.
             {
-                bwoinkText = $"[color=red]{adminPrefix}{senderName}[/color]";
+                // Get the admin's OOC color from preferences if available
+                string colorHex = "#FF0000"; // Default red color
+                if (senderAdmin is not null && !fromWebhook)
+                {
+                    var prefs = _preferencesManager.GetPreferences(senderId);
+                    if (prefs != null)
+                    {
+                        colorHex = prefs.AdminOOCColor.ToHex();
+                    }
+                }
+                
+                bwoinkText = $"[color={colorHex}]{adminPrefix}{senderName}[/color]";
             }
             else
             {
