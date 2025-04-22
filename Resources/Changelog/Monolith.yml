@@ -845,3 +845,9 @@ Entries:
       message: Shuttle-mounted PKAs can mine again.
   id: 101
   time: '2025-04-22T00:29:26.0000000+00:00'
+- author: LukeZurg22
+  changes:
+    - type: Tweak
+      message: New Gunnery Console appearance by justanorang
+  id: 102
+  time: '2025-04-22T04:02:06.0000000+00:00'
