@@ -18,7 +18,7 @@
   gridPath: /Maps/_NF/POI/courthouse.yml
   addComponents:
   - type: IFF
-    color: "#ae7d57"
+    color: "#047abd
 
 - type: gameMap
   id: Courthouse
