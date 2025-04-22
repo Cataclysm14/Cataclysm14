@@ -50,13 +50,21 @@ public abstract partial class SharedShuttleSystem
         {
             if (IoCManager.Resolve<IPrototypeManager>().TryIndex<CompanyPrototype>(companyComp.CompanyName, out var prototype))
             {
-                companyName = prototype.Name;
-                companyColor = prototype.Color;
+                // Don't include "None" companies in the IFF label
+                if (prototype.ID != "None")
+                {
+                    companyName = prototype.Name;
+                    companyColor = prototype.Color;
+                }
             }
             else
             {
-                companyName = companyComp.CompanyName;
-                companyColor = Color.Yellow;
+                // For unknown companies, still check if it's not "None"
+                if (companyComp.CompanyName != "None")
+                {
+                    companyName = companyComp.CompanyName;
+                    companyColor = Color.Yellow;
+                }
             }
         }
 
