@@ -877,3 +877,23 @@ Entries:
         them when destroyed.
   id: 106
   time: '2025-04-22T20:20:13.0000000+00:00'
+- author: sowelipililimute
+  changes:
+    - type: Add
+      message: >-
+        The Eden now exists, a hydroponics-chemistry shuttle that can be
+        purchased from the Medical Dispatch.
+  id: 107
+  time: '2025-04-22T21:14:40.0000000+00:00'
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Added expedition-capable Praetorian and Archer variants to the
+        expedition shipyard at a 25% markup.
+    - type: Fix
+      message: >-
+        Moonlight gas mixer is proper mixture now. Also fixed Calypso
+        engineering door's access.
+  id: 108
+  time: '2025-04-22T21:58:25.0000000+00:00'

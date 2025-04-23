@@ -1,0 +1,42 @@
+# Author Info
+# GitHub: starch70
+# Discord: _starch_
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: PraetorianEXPD
+  parent: BaseVessel
+  name: NGC-SKR Praetorian-EX
+  description: A Praetorian outfitted with a nav computer for expeditions. Other than that, functionally almost the same.
+  price: 126900 # 25% markup
+  category: Medium
+  group: Expedition
+  access: Mercenary
+  shuttlePath: /Maps/_Mono/Shuttles/Expedition/praetorian_expd.yml
+  guidebookPage: Null
+  class:
+  - Pursuit
+  - Expedition
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: PraetorianEXPD
+  mapName: 'NGC-SKR Praetorian-EX'
+  mapPath: /Maps/_Mono/Shuttles/Expedition/praetorian_expd.yml
+  minPlayers: 0
+  stations:
+    PraetorianEXPD:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Praetorian-EX {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
