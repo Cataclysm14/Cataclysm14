@@ -179,7 +179,7 @@
 - type: entity
   id: NFPouchSr
   parent: NFPouchUtility
-  name: station representative's pouch
+  name: colonial liaison's pouch
   components:
   - type: Sprite
     layers:

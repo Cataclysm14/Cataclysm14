@@ -1,7 +1,7 @@
 - type: entity
   id: DresserStationRepresentativeFilled
   parent: Dresser
-  suffix: Filled, Station Representative
+  suffix: Filled, Colonial Liaison
   components:
   - type: StorageFill
     contents:

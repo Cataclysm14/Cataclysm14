@@ -30,7 +30,7 @@
   categories: [ HideSpawnMenu ] # debloat spawn menu
   id: LockerWallEVAColorSr
   parent: LockerWallColorBase
-  name: station representative EVA wall locker
+  name: colonial liaison EVA wall locker
   components:
   - type: Sprite
     layers:

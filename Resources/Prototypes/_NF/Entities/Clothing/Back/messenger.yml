@@ -89,7 +89,7 @@
 - type: entity
   parent: ClothingBackpackMessengerContractor
   id: ClothingBackpackMessengerSr
-  name: station representative's messenger bag
+  name: colonial liaison's messenger bag
   description: An exclusive messenger bag for Nanotrasen officers.
   components:
   - type: Sprite

@@ -179,7 +179,7 @@
 - type: entity
   parent: [HoPIDCard, BaseCommandContraband]
   id: SrIDCard
-  name: station representative ID card
+  name: colonial liaison ID card
   components:
   - type: PresetIdCard
     job: StationRepresentative

@@ -120,7 +120,7 @@
 - type: entity
   id: SpawnPointStationRepresentative
   parent: SpawnPointHeadOfPersonnel
-  name: station representative
+  name: colonial liaison
   components:
   - type: SpawnPoint
     job_id: StationRepresentative

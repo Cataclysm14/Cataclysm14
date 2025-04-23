@@ -23,7 +23,7 @@
 - type: entity
   parent: [ SuitStorageBase, StorageFillEVASuitSr ]
   id: SuitStorageEVASr
-  suffix: EVA, Station Representative
+  suffix: EVA, Colonial Liaison
   components:
   - type: AccessReader
     access: [["HeadOfPersonnel"]]

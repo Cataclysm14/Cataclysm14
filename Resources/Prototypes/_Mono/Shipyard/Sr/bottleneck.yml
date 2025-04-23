@@ -12,7 +12,7 @@
   id: Bottleneck
   parent: BaseVessel
   name: NT Bottleneck
-  description: A personal transport and mobile office for the station representative.
+  description: A personal transport and mobile office for the colonial liaison.
   price: 18000 # TODO: fix this value, getting tests to pass - Whatstone
   category: Small
   group: Sr
