@@ -931,3 +931,9 @@ Entries:
       message: Clemency Price
   id: 111
   time: '2025-04-23T05:27:01.0000000+00:00'
+- author: SuperJoelD00D
+  changes:
+    - type: Tweak
+      message: Made NCMCO (and Courthouse) proper colors, that being blue. Yay!
+  id: 112
+  time: '2025-04-23T18:32:32.0000000+00:00'
