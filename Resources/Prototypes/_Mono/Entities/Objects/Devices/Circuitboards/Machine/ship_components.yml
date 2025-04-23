@@ -52,12 +52,7 @@
     prototype: GunneryServer
     requirements:
       Capacitor: 2
-      Manipulator: 6
-    componentRequirements:
-      AmeFuelContainer:
-        amount: 3
-        defaultPrototype: AmeJar
+      Manipulator: 2
     stackRequirements:
       Glass: 10
       Steel: 10
-      Uranium: 30
