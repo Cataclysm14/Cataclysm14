@@ -4,8 +4,8 @@ meta:
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 04/21/2025 07:03:00
-  entityCount: 322
+  time: 04/23/2025 03:07:52
+  entityCount: 324
 maps: []
 grids:
 - 1
@@ -658,6 +658,13 @@ entities:
     - type: Transform
       pos: 0.5,7.5
       parent: 1
+- proto: ClothingBackpackDuffelSurgeryFilled
+  entities:
+  - uid: 323
+    components:
+    - type: Transform
+      pos: -1.6493349,2.6187823
+      parent: 1
 - proto: ComfyChair
   entities:
   - uid: 43
@@ -685,6 +692,22 @@ entities:
     - type: Transform
       pos: -3.5,0.5
       parent: 1
+    - type: ApcPowerReceiver
+      powerLoad: 5
+    - type: Battery
+      startingCharge: 0
+    - type: DeviceLinkSource
+      linkedPorts: {}
+      lastSignals: {}
+      ports:
+      - device-button-1
+      - device-button-2
+      - device-button-3
+      - device-button-4
+      - device-button-5
+      - device-button-6
+      - device-button-7
+      - device-button-8
 - proto: ComputerStationRecords
   entities:
   - uid: 42
@@ -692,6 +715,10 @@ entities:
     - type: Transform
       pos: -2.5,0.5
       parent: 1
+    - type: ApcPowerReceiver
+      powerLoad: 5
+    - type: Battery
+      startingCharge: 0
 - proto: ComputerWallmountCrewMonitoring
   entities:
   - uid: 184
@@ -699,6 +726,10 @@ entities:
     - type: Transform
       pos: -1.5,0.5
       parent: 1
+    - type: ApcPowerReceiver
+      powerLoad: 5
+    - type: Battery
+      startingCharge: 0
 - proto: ComputerWallmountWithdrawBankATM
   entities:
   - uid: 248
@@ -707,6 +738,10 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -1.5,1.5
       parent: 1
+    - type: ApcPowerReceiver
+      powerLoad: 5
+    - type: Battery
+      startingCharge: 0
 - proto: CrateFreezer
   entities:
   - uid: 254
@@ -1502,6 +1537,13 @@ entities:
     components:
     - type: Transform
       pos: 2.5,-7.5
+      parent: 1
+- proto: MedicalTechFab
+  entities:
+  - uid: 324
+    components:
+    - type: Transform
+      pos: -1.5,-9.5
       parent: 1
 - proto: MedkitFilled
   entities:
