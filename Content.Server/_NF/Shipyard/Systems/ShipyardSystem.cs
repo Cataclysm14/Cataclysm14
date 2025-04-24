@@ -16,10 +16,9 @@ using System.Numerics;
 using Content.Shared._NF.Shipyard.Events;
 using Content.Shared.Mobs.Components;
 using Robust.Shared.Containers;
-using Robust.Shared.Map.Components;
 using Content.Server._NF.Station.Components;
+using Content.Server.Storage.Components;
 using Robust.Shared.EntitySerialization.Systems;
-using Robust.Shared.EntitySerialization;
 using Robust.Shared.Utility;
 
 namespace Content.Server._NF.Shipyard.Systems;
@@ -289,7 +288,14 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
             output.Add(entity);
             return;
         }
-        else if (TryComp<ContainerManagerComponent>(entity, out var containers))
+        if (TryComp<EntityStorageComponent>(entity, out var storageComp))
+        {
+            // Make storage containers delete their contents when they are deleted during ship sale
+            storageComp.DeleteContentsOnDestruction = true;
+            Dirty(entity, storageComp);
+        }
+
+        if (TryComp<ContainerManagerComponent>(entity, out var containers))
         {
             foreach (var container in containers.Containers.Values)
             {
