@@ -15,6 +15,7 @@ using Content.Shared.Clothing;
 using Content.Shared.Item.ItemToggle;
 using Content.Shared.Item.ItemToggle.Components;
 using Content.Server._NF.Shuttles.Components;
+using Robust.Shared.Threading;
 
 namespace Content.Server.Shuttles.Systems;
 
@@ -24,6 +25,7 @@ public sealed partial class ShuttleSystem
     [Dependency] private readonly DamageableSystem _damageSys = default!;
     [Dependency] private readonly InventorySystem _inventorySystem = default!;
     [Dependency] private readonly ItemToggleSystem _toggle = default!;
+    [Dependency] private readonly IParallelManager _parallel = default!;
 
     /// <summary>
     /// Minimum velocity difference between 2 bodies for a shuttle "impact" to occur.
@@ -99,18 +101,69 @@ public sealed partial class ShuttleSystem
         var ourTile = new Vector2i((int)Math.Floor(ourPoint.X / ourGrid.TileSize), (int)Math.Floor(ourPoint.Y / ourGrid.TileSize));
         var otherTile = new Vector2i((int)Math.Floor(otherPoint.X / otherGrid.TileSize), (int)Math.Floor(otherPoint.Y / otherGrid.TileSize));
 
-        // Process impact zones instead of single tiles
-        ProcessImpactZone(uid, ourGrid, ourTile, (float)energy, -dir, impactRadius);
-        ProcessImpactZone(args.OtherEntity, otherGrid, otherTile, (float)energy, dir, impactRadius);
-
+        // Play impact sound
         var coordinates = new EntityCoordinates(ourXform.MapUid.Value, args.WorldPoint);
         var volume = MathF.Min(10f, 1f * MathF.Pow(jungleDiff, 0.5f) - 5f);
         var audioParams = AudioParams.Default.WithVariation(SharedContentAudioSystem.DefaultVariation).WithVolume(volume);
-        _audio.PlayPvs(_shuttleImpactSound, coordinates, audioParams);
+
+        try
+        {
+            _audio.PlayPvs(_shuttleImpactSound, coordinates, audioParams);
+        }
+        catch (Exception ex)
+        {
+            Log.Error($"Error playing shuttle impact sound: {ex}");
+        }
+
+        // Process impact zones sequentially to avoid race conditions
+        try
+        {
+            if (Exists(uid) && HasComp<Robust.Shared.Physics.BroadphaseComponent>(uid))
+            {
+                ProcessImpactZone(uid, ourGrid, ourTile, (float)energy, -dir, impactRadius);
+            }
+        }
+        catch (Exception ex)
+        {
+            Log.Error($"Error processing impact zone for {ToPrettyString(uid)}: {ex}");
+        }
+
+        try
+        {
+            if (Exists(args.OtherEntity) && HasComp<Robust.Shared.Physics.BroadphaseComponent>(args.OtherEntity))
+            {
+                ProcessImpactZone(args.OtherEntity, otherGrid, otherTile, (float)energy, dir, impactRadius);
+            }
+        }
+        catch (Exception ex)
+        {
+            Log.Error($"Error processing impact zone for {ToPrettyString(args.OtherEntity)}: {ex}");
+        }
 
         // Knockdown unbuckled entities on both grids
-        KnockdownEntitiesOnGrid(uid);
-        KnockdownEntitiesOnGrid(args.OtherEntity);
+        try
+        {
+            if (Exists(uid))
+            {
+                KnockdownEntitiesOnGrid(uid);
+            }
+        }
+        catch (Exception ex)
+        {
+            Log.Error($"Error knocking down entities on grid {ToPrettyString(uid)}: {ex}");
+        }
+
+        try
+        {
+            if (Exists(args.OtherEntity))
+            {
+                KnockdownEntitiesOnGrid(args.OtherEntity);
+            }
+        }
+        catch (Exception ex)
+        {
+            Log.Error($"Error knocking down entities on grid {ToPrettyString(args.OtherEntity)}: {ex}");
+        }
     }
 
     /// <summary>
@@ -131,10 +184,13 @@ public sealed partial class ShuttleSystem
         // Get all entities with MobState component on the grid
         var query = EntityQueryEnumerator<MobStateComponent, TransformComponent>();
 
+        // Create a collection to batch knockdown operations
+        var entitiesToKnockdown = new List<EntityUid>();
+
         while (query.MoveNext(out var uid, out var mobState, out var xform))
         {
             // Skip entities not on this grid
-            if (xform.GridUid != gridUid)
+            if (xform.GridUid != gridUid || !Exists(uid))
                 continue;
 
             // If entity has a buckle component and is buckled, skip it
@@ -149,7 +205,7 @@ public sealed partial class ShuttleSystem
             bool hasMagboots = false;
 
             // Check if they're wearing shoes with NoSlip component or activated magboots
-            if (_inventorySystem.TryGetSlotEntity(uid, "shoes", out var shoes))
+            if (_inventorySystem.TryGetSlotEntity(uid, "shoes", out var shoes) && Exists(shoes))
             {
                 // If shoes have NoSlip component
                 if (noSlipQuery.HasComponent(shoes))
@@ -168,34 +224,45 @@ public sealed partial class ShuttleSystem
             if (hasMagboots)
                 continue;
 
-            // Apply knockdown to unbuckled entities
-            _stuns.TryKnockdown(uid, knockdownTime, true);
+            // Add entity to knockdown batch
+            entitiesToKnockdown.Add(uid);
+        }
+
+        // Apply knockdowns sequentially for safety
+        foreach (var uid in entitiesToKnockdown)
+        {
+            if (Exists(uid))
+            {
+                try
+                {
+                    _stuns.TryKnockdown(uid, knockdownTime, true);
+                }
+                catch (Exception ex)
+                {
+                    Log.Error($"Error applying knockdown to {ToPrettyString(uid)}: {ex}");
+                }
+            }
         }
     }
 
-    /*/// <summary>
-    /// Checks if a grid has any entities with GridShieldProtectedEntityComponent on it
+    /// <summary>
+    /// Structure to hold impact tile processing data
     /// </summary>
-    private bool IsGridProtected(EntityUid gridUid)
+    private readonly struct ImpactTileData
     {
-        // If the grid itself has a protection component, it's protected
-        if (HasComp<GridShieldProtectionComponent>(gridUid))
-            return true;
+        public readonly Vector2i Tile;
+        public readonly float Energy;
+        public readonly float DistanceFactor;
+        public readonly Vector2 ThrowDirection;
 
-        // Also check for any individual entities with protection
-        var protectedQuery = GetEntityQuery<GridShieldProtectedEntityComponent>();
-        var xformQuery = GetEntityQuery<TransformComponent>();
-
-        // Check all entities with the protection component
-        var query = EntityQueryEnumerator<GridShieldProtectedEntityComponent>();
-        while (query.MoveNext(out var uid, out _))
+        public ImpactTileData(Vector2i tile, float energy, float distanceFactor, Vector2 throwDirection)
         {
-            if (xformQuery.TryGetComponent(uid, out var xform) && xform.GridUid == gridUid)
-                return true;
+            Tile = tile;
+            Energy = energy;
+            DistanceFactor = distanceFactor;
+            ThrowDirection = throwDirection;
         }
-
-        return false;
-    }*/
+    }
 
     /// <summary>
     /// Processes a zone of tiles around the impact point
@@ -203,18 +270,16 @@ public sealed partial class ShuttleSystem
     private void ProcessImpactZone(EntityUid uid, MapGridComponent grid, Vector2i centerTile, float energy, Vector2 dir, int radius)
     {
         // Skip processing if the grid has an anchor component
-        if (HasComp<PreventGridAnchorChangesComponent>(uid) || HasComp<ForceAnchorComponent>(uid))
+        if (!Exists(uid) ||
+            HasComp<PreventGridAnchorChangesComponent>(uid) ||
+            HasComp<ForceAnchorComponent>(uid) ||
+            !HasComp<Robust.Shared.Physics.BroadphaseComponent>(uid))
             return;
 
-        // // Skip processing if this grid has entities protected by grid shields
-        // if (IsGridProtected(uid))
-        //     return;
+        // Create a list of all tiles to process
+        var tilesToProcess = new List<ImpactTileData>();
 
-        // Create damage object for entities
-        DamageSpecifier damage = new();
-        damage.DamageDict = new() { { "Blunt", energy } };
-
-        // Process tiles in a circle around the impact point
+        // Pre-calculate all tiles that need processing
         for (var x = -radius; x <= radius; x++)
         {
             for (var y = -radius; y <= radius; y++)
@@ -229,39 +294,169 @@ public sealed partial class ShuttleSystem
                 float distanceFactor = 1.0f - (float)Math.Sqrt(x*x + y*y) / (radius + 1);
                 float tileEnergy = energy * distanceFactor;
 
+                tilesToProcess.Add(new ImpactTileData(tile, tileEnergy, distanceFactor, dir));
+            }
+        }
+
+        // Create common damage specification
+        DamageSpecifier damageTemplate = new();
+        damageTemplate.DamageDict = new() { { "Blunt", energy } };
+
+        // Process tiles sequentially for safety
+        var brokenTiles = new List<Vector2i>();
+        var sparkTiles = new List<Vector2i>();
+
+        ProcessTileBatch(uid, grid, tilesToProcess, 0, tilesToProcess.Count, damageTemplate, brokenTiles, sparkTiles);
+
+        // Only proceed with visual effects if the entity still exists
+        if (Exists(uid))
+        {
+            ProcessBrokenTilesAndSparks(uid, grid, brokenTiles, sparkTiles);
+        }
+    }
+
+    /// <summary>
+    /// Process a batch of tiles from the impact zone
+    /// </summary>
+    private void ProcessTileBatch<T>(
+        EntityUid uid,
+        MapGridComponent grid,
+        List<ImpactTileData> tilesToProcess,
+        int startIndex,
+        int endIndex,
+        DamageSpecifier damageTemplate,
+        T brokenTiles,
+        T sparkTiles) where T : ICollection<Vector2i>
+    {
+        // Maximum damage that can be applied to a single entity during impact, prevents gibbing
+        const float MaxEntityDamage = 85f;
+
+        for (var i = startIndex; i < endIndex; i++)
+        {
+            var tileData = tilesToProcess[i];
+
+            try
+            {
+                if (!Exists(uid) || !HasComp<Robust.Shared.Physics.BroadphaseComponent>(uid))
+                    continue;
+
                 // Process entities on this tile
-                foreach (EntityUid localUid in _lookup.GetLocalEntitiesIntersecting(uid, tile, gridComp: grid))
+                var entitiesOnTile = new HashSet<EntityUid>();
+
+                try
                 {
-                    // Skip entities protected by grid shields or entities that no longer exist
+                    _lookup.GetLocalEntitiesIntersecting(uid, tileData.Tile, entitiesOnTile, gridComp: grid);
+                }
+                catch (Exception ex)
+                {
+                    Log.Error($"Error getting entities on tile {tileData.Tile} for grid {ToPrettyString(uid)}: {ex}");
+                    continue;
+                }
+
+                foreach (var localUid in entitiesOnTile)
+                {
                     if (!Exists(localUid))
                         continue;
 
-                    // Scale damage based on distance from center
-                    var scaledDamage = new DamageSpecifier(damage) { DamageDict = { ["Blunt"] = tileEnergy } };
-                    _damageSys.TryChangeDamage(localUid, scaledDamage);
+                    try
+                    {
+                        // Apply damage scaled by distance but capped to prevent gibbing
+                        var scaledDamage = Math.Min(tileData.Energy, MaxEntityDamage);
+                        var damageSpec = new DamageSpecifier(damageTemplate)
+                        {
+                            DamageDict = { ["Blunt"] = scaledDamage }
+                        };
 
-                    // Check if the entity has a transform component before proceeding
-                    if (!TryComp<TransformComponent>(localUid, out var form))
-                        continue;
+                        _damageSys.TryChangeDamage(localUid, damageSpec);
 
-                    if (!form.Anchored)
-                        _transform.Unanchor(localUid, form);
+                        // Handle anchoring and throwing
+                        if (TryComp<TransformComponent>(localUid, out var form))
+                        {
+                            if (!form.Anchored)
+                                _transform.Unanchor(localUid, form);
 
-                    // Safely try to throw the entity
-                    if (Exists(localUid))
-                        _throwing.TryThrow(localUid, dir * distanceFactor); // Reduce throw force based on distance
+                            if (Exists(localUid))
+                                _throwing.TryThrow(localUid, tileData.ThrowDirection * tileData.DistanceFactor);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Log.Error($"Error processing impact on entity {ToPrettyString(localUid)}: {ex}");
+                    }
                 }
 
-                // Only break tiles if they have enough energy
-                if (tileEnergy > TileBreakEnergy)
-                    _mapSys.SetTile(new Entity<MapGridComponent>(uid, grid), tile, Tile.Empty);
-
-                // Spawn sparks with probability based on energy
-                if (tileEnergy > SparkEnergy && distanceFactor > 0.7f)
+                // Mark tiles for breaking/effects
+                if (tileData.Energy > TileBreakEnergy)
                 {
-                    var coords = grid.GridTileToLocal(tile);
-                    Spawn("EffectSparks", coords);
+                    brokenTiles.Add(tileData.Tile);
                 }
+
+                // Mark tiles for spark effects
+                if (tileData.Energy > SparkEnergy && tileData.DistanceFactor > 0.7f)
+                {
+                    sparkTiles.Add(tileData.Tile);
+                }
+            }
+            catch (Exception ex)
+            {
+                Log.Error($"Error processing tile {tileData.Tile} during impact: {ex}");
+            }
+        }
+    }
+
+    /// <summary>
+    /// Process visual effects and tile breaking after entity processing
+    /// </summary>
+    private void ProcessBrokenTilesAndSparks<TCollection>(
+        EntityUid uid,
+        MapGridComponent grid,
+        TCollection brokenTiles,
+        TCollection sparkTiles) where TCollection : IEnumerable<Vector2i>
+    {
+        if (!Exists(uid))
+            return;
+
+        // Break tiles
+        foreach (var tile in brokenTiles)
+        {
+            try
+            {
+                if (Exists(uid))
+                    _mapSys.SetTile(new Entity<MapGridComponent>(uid, grid), tile, Tile.Empty);
+            }
+            catch (Exception ex)
+            {
+                Log.Error($"Error breaking tile {tile} on grid {ToPrettyString(uid)}: {ex}");
+            }
+        }
+
+        // Spawn spark effects
+        foreach (var tile in sparkTiles)
+        {
+            try
+            {
+                if (!Exists(uid))
+                    continue;
+
+                var coords = grid.GridTileToLocal(tile);
+
+                // Validate the coordinates before spawning
+                var mapId = coords.GetMapId(EntityManager);
+                if (mapId == MapId.Nullspace)
+                    continue;
+
+                if (!_mapManager.MapExists(mapId))
+                    continue;
+
+                var mapPos = coords.ToMap(EntityManager, _transform);
+                if (mapPos.MapId == MapId.Nullspace)
+                    continue;
+
+                Spawn("EffectSparks", coords);
+            }
+            catch (Exception ex)
+            {
+                Log.Error($"Error spawning sparks at tile {tile} on grid {ToPrettyString(uid)}: {ex}");
             }
         }
     }
