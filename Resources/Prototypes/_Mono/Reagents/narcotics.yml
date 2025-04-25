@@ -3,9 +3,9 @@
   name: reagent-name-fent
   group: Narcotics
   desc: reagent-desc-fent
-  physicalDesc: reagent-physical-desc-syrupy
+  physicalDesc: reagent-physical-desc-crystalline
   flavor: bitter
-  color: "#63806e"
+  color: "#b4dae0"
   metabolisms:
     Medicine:
       metabolismRate: 0.5
@@ -20,13 +20,13 @@
           groups:
             Burn: -3
             Brute: -6 # its a painkiller
-            Toxin: -4
+            Toxin: -1
     Narcotic:
       metabolismRate: 0.5
       effects:
       - !type:MovespeedModifier
-        walkSpeedModifier: 0.45
-        sprintSpeedModifier: 0.65
+        walkSpeedModifier: 0.40
+        sprintSpeedModifier: 0.40
       - !type:GenericStatusEffect
         key: Stutter
         component: StutteringAccent
@@ -37,27 +37,27 @@
             Poison: 2
       - !type:GenericStatusEffect
         key: ForcedSleep
-        time: 3
+        time: 5
         type: Add
       - !type:GenericStatusEffect
         key: SeeingRainbows
         component: SeeingRainbows
         type: Add
-        time: 15
+        time: 20
         refresh: false
       - !type:Emote
         emote: Laugh
         showInChat: true
-        probability: 0.1
+        probability: 0.2
         conditions:
         - !type:ReagentThreshold
           max: 20
       - !type:Drunk
         slurSpeech: true
-        boozePower: 20
+        boozePower: 75
         # OD effects
       - !type:ChemVomit
-        probability: 0.15
+        probability: 0.05
         conditions:
         - !type:ReagentThreshold
           min: 5.5
@@ -72,6 +72,15 @@
           min: 5.5
         damage:
           types:
-            Poison: 5
-            Asphyxiation: 5
-            Cellular: 5
+            Poison: 10
+            Toxin: 3
+            Asphyxiation: 12.5 # from wikipedia - "The most dangerous adverse effect of fentanyl is respiratory depression"
+            Cellular: 4.5
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentThreshold
+          min: 2
+        type: Local
+        visualType: Medium
+        messages: [ "generic-reagent-effect-nauseous" ]
+        probability: 0.5
