@@ -8,7 +8,7 @@
   color: "#b4dae0"
   metabolisms:
     Medicine:
-      metabolismRate: 0.5
+      metabolismRate: 1
       effects:
       - !type:HealthChange
         conditions:
@@ -22,7 +22,7 @@
             Brute: -6 # its a painkiller
             Poison: -1
     Narcotic:
-      metabolismRate: 0.5
+      metabolismRate: 1
       effects:
       - !type:MovespeedModifier
         walkSpeedModifier: 0.40
