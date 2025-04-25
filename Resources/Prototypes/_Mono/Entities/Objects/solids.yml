@@ -1,0 +1,13 @@
+- type: entity
+  name: fentanyl crystal
+  parent: BaseItem
+  id: FentanylSolidified
+  description: 5u of Fentanyl solidified with Tricordrazine. Worth a lot.
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Misc/fentanyl.rsi
+    state: icon
+  - type: Item
+    size: Tiny
+  - type: StaticPrice
+    price: 3500
