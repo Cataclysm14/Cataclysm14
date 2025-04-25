@@ -199,7 +199,7 @@
   productEntity: WeaponEmpEmitter
   icon: { sprite: _NF/Objects/Weapons/Guns/Projectiles/emp.rsi, state: icon }
   cost:
-    FrontierUplinkCoin: 1
+    FrontierUplinkCoin: 3 #Mono Emmiter price: From 1 to 3
   categories:
     - UplinkSecurityWeapons
   conditions:
@@ -478,6 +478,8 @@
       whitelist:
         - Sheriff
 
+#Mono start
+
 - type: listing
   id: UplinkSecurityRadPen
   name:  uplink-security-rad-pen-name
@@ -577,6 +579,8 @@
       whitelist:
         - Sheriff
         - Brigmedic
+
+#Mono end
 
 - type: listing
   id: UplinkSecurityEmpRocket
@@ -845,6 +849,11 @@
       whitelist:
         tags:
           - SecurityUplink
+    - !type:BuyerJobCondition # Mono: Whitelisted Mateba to only Baliff, Sergeant and Sheriff
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
 
 - type: listing
   id: UplinkSecurityTruncheon
@@ -1372,6 +1381,11 @@
       whitelist:
         tags:
           - SecurityUplink
+    - !type:BuyerJobCondition #Mono: Whitelisted EMP Bundle to only Baliff, Sergeant and Sheriff
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
 
 - type: listing
   id: UplinkSecurityNonLethalArmory

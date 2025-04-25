@@ -93,11 +93,13 @@
 - type: entity
   parent: BaseSecurityUplinkRadio
   id: BaseSecurityUplinkRadioOfficer
-  suffix: Command 15
+  suffix: Officer 15
   components:
   - type: Store
     balance:
       FrontierUplinkCoin: 15
+
+#Mono
 
 - type: entity
   parent: BaseSecurityUplinkRadio
@@ -107,6 +109,8 @@
   - type: Store
     balance:
       FrontierUplinkCoin: 10
+
+#Mono End
 
 - type: entity
   name: NCMC deployable barrier
