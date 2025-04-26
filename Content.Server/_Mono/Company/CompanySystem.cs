@@ -1,12 +1,11 @@
-using Content.Shared.Company;
+using Content.Shared._Mono.Company;
 using Content.Shared.Examine;
 using Content.Shared.GameTicking;
-using Content.Shared.Roles;
 using Content.Shared.Roles.Jobs;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 
-namespace Content.Server.Company;
+namespace Content.Server._Mono.Company;
 
 /// <summary>
 /// This system handles assigning a company to players when they join.
@@ -47,7 +46,7 @@ public sealed class CompanySystem : EntitySystem
         SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawnComplete);
 
         // Subscribe to examination to show the company on examine
-        SubscribeLocalEvent<CompanyComponent, ExaminedEvent>(OnExamined);
+        SubscribeLocalEvent<Shared._Mono.Company.CompanyComponent, ExaminedEvent>(OnExamined);
 
         // Subscribe to player detached event to clean up stored preferences
         SubscribeLocalEvent<PlayerDetachedEvent>(OnPlayerDetached);
@@ -62,7 +61,7 @@ public sealed class CompanySystem : EntitySystem
     private void OnPlayerSpawnComplete(PlayerSpawnCompleteEvent args)
     {
         // Add the company component with the player's saved company
-        var companyComp = EnsureComp<CompanyComponent>(args.Mob);
+        var companyComp = EnsureComp<Shared._Mono.Company.CompanyComponent>(args.Mob);
 
         var playerId = args.Player.UserId.ToString();
         var profileCompany = args.Profile.Company;
@@ -99,7 +98,7 @@ public sealed class CompanySystem : EntitySystem
         Dirty(args.Mob, companyComp);
     }
 
-    private void OnExamined(EntityUid uid, CompanyComponent component, ExaminedEvent args)
+    private void OnExamined(EntityUid uid, Shared._Mono.Company.CompanyComponent component, ExaminedEvent args)
     {
         // Try to get the prototype for the company
         if (_prototypeManager.TryIndex<CompanyPrototype>(component.CompanyName, out var prototype))

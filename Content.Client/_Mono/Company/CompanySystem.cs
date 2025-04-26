@@ -1,8 +1,8 @@
-using Content.Shared.Company;
+using Content.Shared._Mono.Company;
 using Content.Shared.Examine;
 using Robust.Shared.Prototypes;
 
-namespace Content.Client.Company;
+namespace Content.Client._Mono.Company;
 
 /// <summary>
 /// Client-side system for displaying company information in examine text.
@@ -10,15 +10,15 @@ namespace Content.Client.Company;
 public sealed class CompanySystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
-    
+
     public override void Initialize()
     {
         base.Initialize();
-        
-        SubscribeLocalEvent<CompanyComponent, ExaminedEvent>(OnExamined);
+
+        SubscribeLocalEvent<Shared._Mono.Company.CompanyComponent, ExaminedEvent>(OnExamined);
     }
-    
-    private void OnExamined(EntityUid uid, CompanyComponent component, ExaminedEvent args)
+
+    private void OnExamined(EntityUid uid, Shared._Mono.Company.CompanyComponent component, ExaminedEvent args)
     {
         // Try to get the prototype for the company
         if (_prototypeManager.TryIndex<CompanyPrototype>(component.CompanyName, out var prototype))
@@ -32,4 +32,4 @@ public sealed class CompanySystem : EntitySystem
             args.PushMarkup($"Company: [color=yellow]{component.CompanyName}[/color]");
         }
     }
-} 
+}

@@ -1,7 +1,6 @@
 using Robust.Shared.Prototypes;
-using Robust.Shared.Utility;
 
-namespace Content.Shared.Company;
+namespace Content.Shared._Mono.Company;
 
 /// <summary>
 /// Prototype for a company that can be assigned to players.
@@ -12,6 +11,16 @@ public sealed class CompanyPrototype : IPrototype
     /// <inheritdoc/>
     [IdDataField]
     public string ID { get; private set; } = default!;
+
+    /// <summary>
+    /// The form / type of company ("type" is a bad word).
+    /// Assign "Neutral"
+    /// Assign "Protagonist"
+    /// Assign "Antagonist"
+    /// </summary>
+    [DataField("form", required: true)]
+    public string Form { get; private set; } = default!;
+
 
     /// <summary>
     /// The name of the company.

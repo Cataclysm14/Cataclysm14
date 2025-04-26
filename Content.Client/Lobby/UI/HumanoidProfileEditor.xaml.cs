@@ -7,12 +7,10 @@ using Content.Client.Lobby.UI.Roles;
 using Content.Client.Message;
 using Content.Client.Players.PlayTimeTracking;
 using Content.Client.Sprite;
-using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Systems.Guidebook;
+using Content.Shared._Mono.Company;
 using Content.Shared.CCVar;
 using Content.Shared.Clothing;
-using Content.Shared.Company;
-using Content.Shared.GameTicking;
 using Content.Shared.Guidebook;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
@@ -432,7 +430,7 @@ namespace Content.Client.Lobby.UI
                 companies.Insert(0, none);
             }
 
-            // Add to dropdown
+            // Add to NGC company dropdown
             for (var i = 0; i < companies.Count; i++)
             {
                 CompanyButton.AddItem(companies[i].Name, i);
@@ -1883,25 +1881,26 @@ namespace Content.Client.Lobby.UI
                 companies.Insert(0, none);
             }
 
-            Logger.Debug($"Updating company controls. Current profile company: {Profile.Company}");
+            Logger.Debug($"Updating company controls." +
+                         $"Current profile company: {Profile.Company}\n");
 
             // Find the company in the list and select it
             bool found = false;
             for (var i = 0; i < companies.Count; i++)
             {
-                if (companies[i].ID == Profile.Company)
-                {
-                    Logger.Debug($"Found company at index {i}: {companies[i].ID} - {companies[i].Name}");
-                    CompanyButton.SelectId(i);
+                if (companies[i].ID != Profile.Company)
+                    continue; // Short circuit.
 
-                    // Description of Company (pointed-to in prototype, defined in Locale)
-                    CompanyDescriptionLabel.SetMessage(!string.IsNullOrEmpty(companies[i].Description)
-                        ? Loc.GetString(companies[i].Description)
-                        : "N/A"); // Only if there's a description. If not, then set to N/A.
+                Logger.Debug($"Found company at index {i}: {companies[i].ID} - {companies[i].Name}");
+                CompanyButton.SelectId(i);
 
-                    found = true;
-                    break;
-                }
+                // Description of Company (pointed-to in prototype, defined in Locale)
+                CompanyDescriptionLabel.SetMessage(!string.IsNullOrEmpty(companies[i].Description)
+                    ? Loc.GetString(companies[i].Description)
+                    : "N/A"); // Only if there's a description. If not, then set to N/A.
+
+                found = true;
+                break;
             }
 
             // If company wasn't found, default to "None" (index 0)

@@ -1,6 +1,6 @@
 using Robust.Shared.GameStates;
 
-namespace Content.Shared.Company;
+namespace Content.Shared._Mono.Company;
 
 /// <summary>
 /// Component that represents a player's affiliated company.

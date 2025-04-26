@@ -6,19 +6,17 @@ using Content.Shared.Shuttles.BUIStates;
 using Content.Shared.Shuttles.Components;
 using Robust.Shared.Physics.Components;
 using System.Numerics;
+using Content.Shared._Mono.Company;
 using Robust.Client.Graphics;
 using Robust.Shared.Collections;
-using Robust.Shared.IoC;
 using Robust.Shared.Prototypes;
-using Content.Shared.Company;
-using Robust.Client.UserInterface.Controls;
 
 namespace Content.Client.Shuttles.UI
 {
     public sealed partial class ShuttleNavControl
     {
         public InertiaDampeningMode DampeningMode { get; set; }
-        
+
         /// <summary>
         /// Whether the shuttle is currently in FTL. This is used to disable the Park button
         /// while in FTL to prevent parking while traveling.
@@ -36,7 +34,7 @@ namespace Content.Client.Shuttles.UI
             }
 
             DampeningMode = state.DampeningMode;
-            
+
             // Check if the entity has an FTLComponent which indicates it's in FTL
             if (transform.GridUid != null)
             {
@@ -78,9 +76,9 @@ namespace Content.Client.Shuttles.UI
         {
             // Check if the entity has a company component and use that color if available
             Color blipColor = color;
-            
-            if (gridUid != default && 
-                IoCManager.Resolve<IEntityManager>().TryGetComponent(gridUid, out CompanyComponent? companyComp) && 
+
+            if (gridUid != default &&
+                IoCManager.Resolve<IEntityManager>().TryGetComponent(gridUid, out Shared._Mono.Company.CompanyComponent? companyComp) &&
                 !string.IsNullOrEmpty(companyComp.CompanyName))
             {
                 var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
@@ -89,7 +87,7 @@ namespace Content.Client.Shuttles.UI
                     blipColor = prototype.Color;
                 }
             }
-            
+
             blipDataList.Add(new BlipData
             {
                 IsOutsideRadarCircle = isOutsideRadarCircle,

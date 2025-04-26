@@ -5,9 +5,9 @@ using Content.Client.Inventory;
 using Content.Client.Lobby.UI;
 using Content.Client.Players.PlayTimeTracking;
 using Content.Client.Station;
+using Content.Shared._Mono.Company;
 using Content.Shared.CCVar;
 using Content.Shared.Clothing;
-using Content.Shared.Company;
 using Content.Shared.GameTicking;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
@@ -191,13 +191,13 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
         }
 
         // Verify company exists, if not set it to "None"
-        if (!string.IsNullOrEmpty(humanoid.Company) && 
-            humanoid.Company != "None" && 
+        if (!string.IsNullOrEmpty(humanoid.Company) &&
+            humanoid.Company != "None" &&
             !_prototypeManager.HasIndex<CompanyPrototype>(humanoid.Company))
         {
             // Create a new profile with the company set to "None"
             humanoid = humanoid.WithCompany("None");
-            
+
             // Update the character in preferences
             if (_preferencesManager.Preferences != null)
             {
@@ -209,7 +209,7 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
         PreviewPanel.SetSprite(dummy);
         PreviewPanel.SetSummaryText(humanoid.Summary);
         PreviewPanel.SetBankBalanceText(humanoid.BankBalanceText); // Frontier
-        
+
         // Company Display
         var companyId = humanoid.Company;
         if (_prototypeManager.TryIndex<CompanyPrototype>(companyId, out var company))

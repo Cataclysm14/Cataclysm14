@@ -41,6 +41,7 @@ using Content.Shared.Access;
 using Content.Shared._NF.Bank.BUI;
 using Content.Shared._NF.ShuttleRecords;
 using Content.Server.StationEvents.Components;
+using Content.Shared._Mono.Company;
 using Content.Shared.Forensics.Components;
 
 namespace Content.Server._NF.Shipyard.Systems;
@@ -195,10 +196,10 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
         }
 
         // Add company information to the shuttle
-        if (TryComp<Content.Shared.Company.CompanyComponent>(player, out var playerCompany) && 
+        if (TryComp<CompanyComponent>(player, out var playerCompany) && 
             !string.IsNullOrEmpty(playerCompany.CompanyName))
         {
-            var shipCompany = EnsureComp<Content.Shared.Company.CompanyComponent>(shuttleUid);
+            var shipCompany = EnsureComp<CompanyComponent>(shuttleUid);
             shipCompany.CompanyName = playerCompany.CompanyName;
             Dirty(shuttleUid, shipCompany);
         }
