@@ -18,6 +18,23 @@
     Fentanyl: 7.5
 
 - type: reaction
+  id: FentanylVestine
+  minTemp: 435
+  reactants:
+    SpaceDrugs:
+      amount: 2
+    Desoxyephedrine:
+      amount: 2
+    SodiumHydroxide:
+      amount: 0.5
+    Phenol:
+      amount: 0.5
+    Vestine:
+      amount: 1
+  products:
+    Fentanyl: 10
+
+- type: reaction
   id: FentanylSolidification
   impact: Low
   quantized: true

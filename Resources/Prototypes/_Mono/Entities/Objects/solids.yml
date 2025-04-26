@@ -10,7 +10,7 @@
   - type: Item
     size: Tiny
   - type: StaticPrice
-    price: 3500
+    price: 2500
   - type: Food
   - type: FlavorProfile
     flavors:
