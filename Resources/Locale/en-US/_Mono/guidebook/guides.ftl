@@ -10,3 +10,6 @@ guide-entry-marauder = MARAUDER-type Plasma Launcher
 guide-entry-charon = M381 CHARON Mass Driver
 guide-entry-asm302 = ASM-302 "Vanyk" Missile Launcher
 guide-entry-rubicon = M220 RUBICON EMP Launcher
+
+# Generic guides
+guide-entry-fentanyl = Fentanyl Production
