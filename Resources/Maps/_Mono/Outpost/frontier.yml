@@ -4305,21 +4305,24 @@ entities:
           - 0
         chunkSize: 4
     - type: GasTileOverlay
+    - type: RadiationGridResistance
     - type: BecomesStation
       id: Frontier
     - type: ForceAnchor
     - type: StationTransit
-    - type: IFF
-      readOnly: True
     - type: ProtectedGrid
       hostileMobKillSound: !type:SoundPathSpecifier
         path: /Audio/Effects/holy.ogg
       killHostileMobs: True
       preventArtifactTriggers: True
+      preventExplosions: True
       preventEmpEvents: True
       preventRCDUse: True
       preventFloorPlacement: True
       preventFloorRemoval: True
+    - type: SpreaderGrid
+    - type: IFF
+      readOnly: True
   - uid: 4
     components:
     - type: MetaData
