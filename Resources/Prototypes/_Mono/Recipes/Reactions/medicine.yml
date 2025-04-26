@@ -3,15 +3,19 @@
   minTemp: 475
   reactants:
     SpaceDrugs:
-      amount: 2
+      amount: 1
     Desoxyephedrine:
-      amount: 1
-    Plasma:
-      amount: 1
+      amount: 2
     Oil:
       amount: 1
+    SodiumHydroxide:
+      amount: 0.5
+    Phenol:
+      amount: 0.5
+    Kelotane:
+      amount: 0.5
   products:
-    Fentanyl: 5
+    Fentanyl: 7.5
 
 - type: reaction
   id: FentanylSolidification
