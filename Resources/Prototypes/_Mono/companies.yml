@@ -43,6 +43,13 @@
   description: gas-new-galactic-description
   color: "#3DA695"
 
+  -type: company
+  id: DarkMatterEnterprises
+  form: Protagonist
+  name: Dark Matter Enterprises
+  description: dark-matter-enterprises-description
+  color: "#1C003E"
+
 # ====Rogue / Antag. Companies====
 - type: company
   id: TheViperGroup
