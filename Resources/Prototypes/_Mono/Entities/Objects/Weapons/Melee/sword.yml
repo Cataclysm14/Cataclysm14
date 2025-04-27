@@ -1,11 +1,13 @@
 - type: entity
   name: HF-katana
-  parent: Katana
+  parent: [Katana, BaseC3Contraband]
   id: HFKatana
   description: A katana modified to have a high-frequency blade. Its incredibly powerful.
   components:
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Melee/hfblade.rsi
+  - type: Item
+    size: Huge
   - type: MeleeWeapon
     wideAnimationRotation: -60
     damage:
@@ -13,6 +15,8 @@
         Slash: 45
         Burn: 30
         Ion: 40
+    soundHit:
+      path: /Audio/Weapons/eblade1.ogg
   - type: Item
     sprite: _Mono/Objects/Weapons/Melee/hfblade.rsi
   - type: Clothing
@@ -20,4 +24,7 @@
     slots:
     - Back
     - Belt
+    - suitStorage
   - type: Reflect
+  - type: StaticPrice
+    price: 5000 # YOU CALL THAT A BLADE.... I'LL SHOW YOU A BLADE...
