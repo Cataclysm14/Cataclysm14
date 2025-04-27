@@ -24,10 +24,10 @@
           sprite: Objects/Misc/potatoai_chip.rsi
           state: icon
         doAfter: 1
-      - tag: WeaponAntiqueLaser
-        name: an antique laser
+      - tag: AdvancedLaserPistol
+        name: an advanced laser pistol
         icon:
-          sprite: Objects/Weapons/Guns/Battery/antiquelasergun.rsi
+          sprite: Objects/Weapons/Guns/Battery/advancedlasergun.rsi
           state: icon
         doAfter: 1
   - node: WeaponHFKatana
