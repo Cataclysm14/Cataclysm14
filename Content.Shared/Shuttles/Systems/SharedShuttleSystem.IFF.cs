@@ -1,6 +1,6 @@
+using Content.Shared._Mono.Company;
 using Content.Shared.Shuttles.Components;
 using JetBrains.Annotations;
-using Content.Shared.Company;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Shuttles.Systems;
@@ -45,8 +45,8 @@ public abstract partial class SharedShuttleSystem
         // Get the company information if available
         Color? companyColor = null;
         string? companyName = null;
-        
-        if (TryComp<CompanyComponent>(gridUid, out var companyComp) && !string.IsNullOrEmpty(companyComp.CompanyName))
+
+        if (TryComp<_Mono.Company.CompanyComponent>(gridUid, out var companyComp) && !string.IsNullOrEmpty(companyComp.CompanyName))
         {
             if (IoCManager.Resolve<IPrototypeManager>().TryIndex<CompanyPrototype>(companyComp.CompanyName, out var prototype))
             {
@@ -69,7 +69,7 @@ public abstract partial class SharedShuttleSystem
         }
 
         var labelText = string.IsNullOrEmpty(entName) ? Loc.GetString("shuttle-console-unknown") : entName;
-        
+
         // Add company info if available
         if (companyName != null && companyColor != null)
         {

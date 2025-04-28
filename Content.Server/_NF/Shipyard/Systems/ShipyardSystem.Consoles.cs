@@ -41,7 +41,10 @@ using Content.Shared.Access;
 using Content.Shared._NF.Bank.BUI;
 using Content.Shared._NF.ShuttleRecords;
 using Content.Server.StationEvents.Components;
+using Content.Shared._Mono.Company;
 using Content.Shared.Forensics.Components;
+using Robust.Server.Player;
+using Robust.Shared.Player;
 
 namespace Content.Server._NF.Shipyard.Systems;
 
@@ -195,10 +198,10 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
         }
 
         // Add company information to the shuttle
-        if (TryComp<Content.Shared.Company.CompanyComponent>(player, out var playerCompany) && 
+        if (TryComp<CompanyComponent>(player, out var playerCompany) &&
             !string.IsNullOrEmpty(playerCompany.CompanyName))
         {
-            var shipCompany = EnsureComp<Content.Shared.Company.CompanyComponent>(shuttleUid);
+            var shipCompany = EnsureComp<CompanyComponent>(shuttleUid);
             shipCompany.CompanyName = playerCompany.CompanyName;
             Dirty(shuttleUid, shipCompany);
         }
@@ -229,6 +232,13 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
 
         var deedShuttle = EnsureComp<ShuttleDeedComponent>(shuttleUid);
         AssignShuttleDeedProperties(deedShuttle, shuttleUid, name, shuttleOwner, voucherUsed);
+
+        // Register ship ownership for auto-deletion when owner is offline too long
+        // We need to get the player's session from their entity
+        if (TryComp<ActorComponent>(player, out var actorComp) && actorComp.PlayerSession != null)
+        {
+            _shipOwnership.RegisterShipOwnership(shuttleUid, actorComp.PlayerSession);
+        }
 
         if (!voucherUsed)
         {
