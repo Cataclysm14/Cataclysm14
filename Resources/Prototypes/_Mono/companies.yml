@@ -48,7 +48,7 @@
   form: Protagonist
   name: Dark Matter Enterprises
   description: dark-matter-enterprises-description
-  color: "#1C003E"
+  color: "#BF00B9"
 
 # ====Rogue / Antag. Companies====
 - type: company
