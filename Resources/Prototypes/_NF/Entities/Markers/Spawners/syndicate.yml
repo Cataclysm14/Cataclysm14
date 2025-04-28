@@ -22,13 +22,9 @@
         - Telecrystal1
       rarePrototypes:
         - Telecrystal5
-      rareChance: 0.1 # Mono
-      rarePrototypes:
         - Telecrystal10
-      rareChance: 0.05 # Mono
-      rarePrototypes:
         - Telecrystal
-      rareChance: 0.005 # Mono
+      rareChance: 0.1 # Mono
 
 - type: entity
   name: Contraband Crate Spawner

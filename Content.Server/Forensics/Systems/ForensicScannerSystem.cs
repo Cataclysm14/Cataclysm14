@@ -68,8 +68,8 @@ namespace Content.Server.Forensics
         private const float ActiveUsedDeadDropFUCReward = 3.0f; //Mono
         private const int InactiveUsedDeadDropSpesoReward = 25000; //Mono
         private const float InactiveUsedDeadDropFUCReward = 2.0f; //Mono
-        private const int DropPodSpesoReward = 20000; //Mono
-        private const float DropPodFUCReward = 1.0f; //Mono
+        private const int DropPodSpesoReward = 75000; //Mono
+        private const float DropPodFUCReward = 5.0f; //Mono
         // End Frontier: payout constants
 
         public override void Initialize()

@@ -71,8 +71,6 @@ uplink-security-key-name = NCMC Encryption Keys
 uplink-security-key-desc = A box of 4 encryption keys that give access to the NCMC radio channel.
 uplink-security-emprocket-name = EMP Rocket
 uplink-security-emprocket-desc = An EMP rocket for the RPG-7.
-uplink-security-thrusterkit-name = Thruster Upgrade Kit
-uplink-security-thrusterkit-desc = Contains 12 super capaciters. Perfect for upgrading three thrusters.
 uplink-security-magazinepistol-name = .35 Auto Pistol Magazines
 uplink-security-magazinepistol-desc = A box containing 4 filled .35 auto magazines.
 uplink-security-magazinepistol-rubber-name = .35 Auto Pistol Rubber Magazines
@@ -237,7 +235,10 @@ uplink-security-rad-pen-desc = A rapid dose of anti-radiation. Contains arithraz
 uplink-security-combat-pen-name = Combat Medipen
 uplink-security-combat-pen-desc = A general use shot of omnizine, packaged in a autoinjector.
 
-uplink-security-cash10000-name = 10,000 Spesos
-uplink-security-cash10000-desc = Cold, hard cash.
+uplink-security-cash5000-name = 5,000 Spesos
+uplink-security-cash5000-desc = Cold, hard cash.
+
+uplink-security-thrusterkit-name = Thruster Upgrade Kit
+uplink-security-thrusterkit-desc = Contains 32 super capaciters. Perfect for upgrading eight thrusters.
 
 #Mono End
