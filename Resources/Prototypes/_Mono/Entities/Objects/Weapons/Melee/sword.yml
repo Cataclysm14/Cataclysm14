@@ -62,7 +62,7 @@
   - type: StaticPrice
     price: 50000
 
-    - type: entity
+- type: entity
   name: VT-7 HF blade
   parent: [Katana, BaseC3Contraband] # we dont want the construction node, so we dont copy off the other HF katana
   id: WeaponVT7
