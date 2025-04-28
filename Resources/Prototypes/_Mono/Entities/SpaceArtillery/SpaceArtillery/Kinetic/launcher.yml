@@ -97,6 +97,57 @@
   - type: ShipGunType
     shipType: Ballistic
 
+# 90mm
+
+- type: entity
+  id: WeaponTurretCyrexa
+  name: CYREXA 220mm cannon
+  parent: BallisticArtillery
+  description: A dual barrel, main-battery cannon. Can be remotely activated, or linked up to a GCS.
+  components:
+  - type: StaticPrice
+    price: 5000
+  - type: Sprite
+    sprite: _Mono/Objects/ShuttleWeapons/cyrexa.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: AmmoCounter
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 1000
+  - type: ExaminableBattery
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: Gun
+    projectileSpeed: 90
+    fireRate: 4.0
+    burstFireRate: 8
+    shotsPerBurst: 2
+    burstCooldown: 10
+    selectedMode: Burst
+    availableModes:
+    - Burst
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/uaf_cyrexa_452.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 250
+    powerUsePassive: 200
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 100
+  - type: Actions
+  - type: ProjectileBatteryAmmoProvider
+    proto: ShipCyrexaProjectile
+    fireCost: 500
+  - type: RadarBlip
+    radarColor: "#03FC9D"
+    scale: 1.5
+  - type: ShipGunType
+    shipType: Ballistic
+
 # Railgun
 
 - type: entity
@@ -106,11 +157,12 @@
   description: A heavy linear accelerator, capable of devastating targets with kinetic energy. Can be remotely activated, or linked up to a GCS.
   components:
   - type: StaticPrice
-    price: 15000 # but if you do unanchor it...
+    price: 15000
   - type: Sprite
     sprite: _Mono/Objects/ShuttleWeapons/charon.rsi
     layers:
     - state: space_artillery
+    scale: 2, 2
   - type: Appearance
   - type: AmmoCounter
   - type: Battery
@@ -141,7 +193,7 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,0.5"
+          bounds: "-0.75,-0.75,0.75,0.75"
         density: 1500 # fat mf
   - type: Destructible
     thresholds:
