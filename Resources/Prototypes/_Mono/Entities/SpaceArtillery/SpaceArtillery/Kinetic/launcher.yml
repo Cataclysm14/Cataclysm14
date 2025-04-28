@@ -111,7 +111,7 @@
     sprite: _Mono/Objects/ShuttleWeapons/cyrexa.rsi
     layers:
     - state: space_artillery
-    scale: 2, 2
+    scale: 1.5, 1.5
   - type: Appearance
   - type: AmmoCounter
   - type: Battery
@@ -128,7 +128,7 @@
           bounds: "-0.75,-0.75,0.75,0.75"
         density: 1500 # fat mf
   - type: Gun
-    projectileSpeed: 90
+    projectileSpeed: 105
     fireRate: 4.0
     burstFireRate: 4.0
     shotsPerBurst: 2
@@ -149,7 +149,7 @@
   - type: Actions
   - type: ProjectileBatteryAmmoProvider
     proto: ShipCyrexaProjectile
-    fireCost: 500
+    fireCost: 350
   - type: RadarBlip
     radarColor: "#03FC9D"
   - type: ShipGunType
