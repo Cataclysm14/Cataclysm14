@@ -102,7 +102,7 @@
 - type: entity
   id: WeaponTurretCyrexa
   name: CYREXA 220mm cannon
-  parent: BallisticArtillery
+  parent: BallisticArtilleryUnanchorable
   description: A dual barrel, main-battery cannon. Can be remotely activated, or linked up to a GCS.
   components:
   - type: StaticPrice
