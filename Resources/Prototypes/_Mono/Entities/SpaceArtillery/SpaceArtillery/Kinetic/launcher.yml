@@ -111,6 +111,7 @@
     sprite: _Mono/Objects/ShuttleWeapons/cyrexa.rsi
     layers:
     - state: space_artillery
+    scale: 2, 2
   - type: Appearance
   - type: AmmoCounter
   - type: Battery
@@ -119,6 +120,13 @@
   - type: ExaminableBattery
   - type: WirelessNetworkConnection
     range: 500
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.75,-0.75,0.75,0.75"
+        density: 1500 # fat mf
   - type: Gun
     projectileSpeed: 90
     fireRate: 4.0
@@ -144,7 +152,6 @@
     fireCost: 500
   - type: RadarBlip
     radarColor: "#03FC9D"
-    scale: 1.5
   - type: ShipGunType
     shipType: Ballistic
 
@@ -162,7 +169,6 @@
     sprite: _Mono/Objects/ShuttleWeapons/charon.rsi
     layers:
     - state: space_artillery
-    scale: 2, 2
   - type: Appearance
   - type: AmmoCounter
   - type: Battery
