@@ -257,7 +257,7 @@
   productEntity: WeaponHFKatana
   icon: { sprite: _Mono/Objects/Weapons/Melee/hfblade.rsi, state: icon }
   cost:
-    FrontierUplinkCoin: 5
+    FrontierUplinkCoin: 15
   categories:
     - UplinkSecurityWeapons
   conditions:
@@ -1145,10 +1145,10 @@
           - SecurityUplink
 
 - type: listing
-  id: UplinkSecurityCash1000
-  name:  uplink-security-cash1000-name
-  description: uplink-security-cash1000-desc
-  productEntity: SpaceCash1000
+  id: UplinkSecurityCash5000
+  name:  uplink-security-cash5000-name
+  description: uplink-security-cash5000-desc
+  productEntity: SpaceCash5000 # Mono: Changed the exchange rate from 1000 to 5000
   icon: { sprite: Objects/Economy/cash.rsi, state: cash_1000000 }
   cost:
     FrontierUplinkCoin: 1
