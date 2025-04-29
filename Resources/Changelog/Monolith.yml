@@ -1306,3 +1306,38 @@ Entries:
       message: Changed HF-katana to C2 contraband from C3.
   id: 154
   time: '2025-04-28T13:23:09.0000000+00:00'
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Added Flyssa-class to the NCMC shipyard, a NGC destroyer lended from the
+        frontlines to help you kill Rogues. A bit over half a million, but the
+        CYREXAs are worth it.
+    - type: Add
+      message: >-
+        Added CYREXA 220mm guns as a heavy AP weapon, for capital-ship main
+        batteries.
+    - type: Remove
+      message: >-
+        Removed buying autocannons from TM/TO. You lagged the server too much
+        with gun bricks. No more.
+    - type: Tweak
+      message: Shield power surge duration lowered again to 25s.
+    - type: Tweak
+      message: CHARON is now unanchorable.
+    - type: Tweak
+      message: Removed CHARON flatpack from exped spawns.
+  id: 155
+  time: '2025-04-29T00:49:47.0000000+00:00'
+- author: LukeZurg22
+  changes:
+    - type: Add
+      message: New Service Shuttles
+    - type: Add
+      message: Colonial Staff Console to Colonial Outpost
+    - type: Remove
+      message: Old Service Shuttles
+    - type: Tweak
+      message: Sheriff -> Colonel
+  id: 156
+  time: '2025-04-29T07:08:08.0000000+00:00'
