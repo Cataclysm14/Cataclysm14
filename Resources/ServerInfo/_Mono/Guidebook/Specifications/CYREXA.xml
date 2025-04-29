@@ -1,10 +1,10 @@
 <Document>
-  # CHARON Mass Driver
+  # CYREXA 220mm CAPITAL MAIN BATTERY
 
-A [color=gold]ballistic[/color] capital-class turret, firing a 220mm shell at a insane velocity.
+A [color=gold]ballistic[/color] capital-class turret, firing a 220mm shell with insane power.
 
   <Box>
-    <GuideEntityEmbed Entity="WeaponTurretCharon"/>
+    <GuideEntityEmbed Entity="WeaponTurretCyrexa"/>
   </Box>
 
 ## Gun Specifications

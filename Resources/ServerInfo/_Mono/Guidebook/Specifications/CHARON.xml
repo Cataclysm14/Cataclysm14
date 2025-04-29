@@ -1,10 +1,10 @@
 <Document>
-  # CYREXA 220mm CAPITAL MAIN BATTERY
+  # CHARON Mass Driver
 
 A [color=gold]ballistic[/color] mass driver, firing a large slug hard enough to cause a serious impact.
 
   <Box>
-    <GuideEntityEmbed Entity="WeaponTurretCyrexa"/>
+    <GuideEntityEmbed Entity="WeaponTurretCharon"/>
   </Box>
 
 ## Gun Specifications
