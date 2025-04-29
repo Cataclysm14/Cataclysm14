@@ -108,6 +108,22 @@
       - PirateUplink
 
 - type: listing
+  id: UplinkPirateThrusterKit
+  name:  uplink-pirate-thruster-kit-name
+  description: uplink-pirate-thruster-kit-desc
+  icon: { sprite: Objects/Storage/boxes.rsi, state: box}
+  productEntity: BoxT3SuperCapacitor
+  cost:
+    Doubloon: 3
+  categories:
+  - UplinkPirateUtility
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
   id: UplinkPirateAgentIDCard
   name:  uplink-pirate-agent-id-card-name
   description: uplink-pirate-agent-id-card-desc
@@ -463,7 +479,7 @@
   productEntity: WeaponVT7
   icon: { sprite: _Mono/Objects/Weapons/Melee/murasama.rsi, state: icon }
   cost:
-    Doubloon: 15
+    Doubloon: 20
   categories:
   - UplinkPirateWeapons
   conditions:
