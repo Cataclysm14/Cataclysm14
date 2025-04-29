@@ -165,7 +165,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBomb
-    totalIntensity: 1250
+    totalIntensity: 550
     intensitySlope: 5
     maxIntensity: 1150
   - type: GatheringProjectile

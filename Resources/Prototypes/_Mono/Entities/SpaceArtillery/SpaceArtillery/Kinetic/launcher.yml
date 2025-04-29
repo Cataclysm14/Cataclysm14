@@ -129,7 +129,7 @@
         density: 1500 # fat mf
   - type: Gun
     projectileSpeed: 105
-    fireRate: 0.1
+    fireRate: 0.125
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/uaf_cyrexa_452.ogg
     soundEmpty:

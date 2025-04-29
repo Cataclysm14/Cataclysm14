@@ -9,11 +9,11 @@ A [color=gold]ballistic[/color] capital-class turret, firing a 220mm shell at a 
 
 ## Gun Specifications
 
-- Firerate: [color=crimson] 6 RPM [/color]/[color=deepskyblue] 0.1 RPS [/color]
+- Firerate: [color=crimson] 7.5 RPM [/color]/[color=deepskyblue] 0.125 RPS [/color]
 - Sell Value: [color=greenyellow][bold]5000 Spesos[/bold][/color]
 - Muzzle Velocity: [color=orange]105 m/s[/color]
 - Capacitor Storage: [color=orange]1000u[/color]
-- Capacitor Recharge: [color=turquoise]300u/s[/color]
+- Capacitor Recharge: [color=turquoise]30u/s[/color]
 - Capacitor Fire Cost: [color=turquoise]350u[/color]
 
 </Document>
