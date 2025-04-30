@@ -538,7 +538,16 @@ public sealed class CircularShieldSystem : SharedCircularShieldSystem
         {
             shield.Powered = false;
         }
-        
+
+        // Power off shield if above the max power usage
+        if (shield.DesiredDraw > shield.PowerDrawLimit)
+        {
+            shield.Powered = false;
+        }
+        else if (shield.DesiredDraw < shield.PowerDrawLimit)
+        {
+            shield.Powered = true;
+        }
         // Update console UI if bound to display new power consumption
         if (shield.BoundConsole != null && EntityManager.EntityExists(shield.BoundConsole.Value))
         {
