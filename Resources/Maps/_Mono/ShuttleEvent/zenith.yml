@@ -65,6 +65,7 @@ entities:
     - type: OccluderTree
     - type: Shuttle
     - type: GridPathfinding
+    - type: ImpactProtection
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
         path: /Audio/Effects/alert.ogg

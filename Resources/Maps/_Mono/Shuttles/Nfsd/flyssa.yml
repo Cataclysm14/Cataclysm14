@@ -1055,6 +1055,7 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
+    - type: ImpactProtection
     - type: BecomesStation
       id: Flyssa
 - proto: AirAlarm
