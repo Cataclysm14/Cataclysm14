@@ -1353,3 +1353,11 @@ Entries:
       message: Added a revamped interior (and some parts of the front hull) for Flyssa!
   id: 158
   time: '2025-04-29T21:51:26.0000000+00:00'
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Added a shield power draw limit of 1.5mW to the MS-225 before it turns
+        off. I didn't have time to test this much, so report any bugs.
+  id: 159
+  time: '2025-04-30T02:35:55.0000000+00:00'

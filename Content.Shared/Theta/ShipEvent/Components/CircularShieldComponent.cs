@@ -52,6 +52,9 @@ public sealed partial class CircularShieldComponent : Component
     [DataField("surgeTimeRemaining"), ViewVariables(VVAccess.ReadWrite)]
     public float SurgeTimeRemaining; // Time remaining for the current power surge
 
+    [DataField("powerDrawLimit"), ViewVariables(VVAccess.ReadWrite)]
+    public float PowerDrawLimit = 1500000f; // Amount of wattage you can draw before the shield system turns off
+
     [DataField("effects", serverOnly: true)]
     public List<CircularShieldEffect> Effects = new();
 
