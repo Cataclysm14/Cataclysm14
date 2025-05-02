@@ -437,7 +437,7 @@
     sprite: _NF/Objects/Vehicles/hoverbike.rsi
     layers:
     - state: hull
-      color: "#49633d"
+      color: "#3d4b54"
     - state: engine
       map: ["enum.VehicleVisualLayers.AutoAnimate"]
     - state: nfsdstar
