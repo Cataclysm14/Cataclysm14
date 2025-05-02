@@ -8,26 +8,24 @@
   dollPrototype: MobProtogenDummy
   skinColoration: Hues
 
+- type: speciesBaseSprites
   id: MobProtogenSprites
   sprites:
-    Special: MobHumanoidAnyMarking
     Head: MobProtogenHead
-    Hair: MobHumanoidAnyMarking
-    FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
     Chest: MobProtogenTorso
-    Eyes: MobHumanoidEyes
     HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
+    Tail: MobHumanoidAnyMarking
+    Eyes: MobHumanoidEyes
     LArm: MobProtogenLArm
     RArm: MobProtogenRArm
     LHand: MobProtogenLHand
     RHand: MobProtogenRHand
     LLeg: MobProtogenLLeg
     RLeg: MobProtogenRLeg
-    LFoot: MobProtogenLFoot
+    LFoot: MobProtogennLFoot
     RFoot: MobProtogenRFoot
-    Tail: MobHumanoidAnyMarking # Nyanotrasen - Felinid
-    HeadSide: MobHumanoidAnyMarking # Einstein Engines - Oni
 
 - type: markingPoints
   id: MobProtogenMarkingLimits
