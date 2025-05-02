@@ -12,15 +12,13 @@
   id: Nfsd
   parent: BasePOI
   name: 'TSFMC Sector FOB'
-  minimumDistance: 2750
-  maximumDistance: 3500
+  minimumDistance: 4750
+  maximumDistance: 6500
   spawnGroup: Required
   gridPath: /Maps/_NF/POI/nfsd.yml
   addComponents:
   - type: IFF
     color: "#047abd"
-    flags: [HideLabel]
-    readOnly: false
   - type: ProtectedGrid
     preventEmpEvents: true
 
@@ -44,10 +42,10 @@
           availableJobs:
             Sheriff: [ 1, 1 ]
             Bailiff: [ 1, 1 ]
-            SeniorOfficer: [ 1, 1 ]
-            Brigmedic: [ 0, 0 ]
+            SeniorOfficer: [ 2, 2 ]
+            Brigmedic: [ 1, 1 ]
             #NFDetective: [ 0, 0 ] # Mono
-            Deputy: [ 3, 3 ]
+            Deputy: [ 4, 4 ]
             Cadet: [ 2, 2 ] # Mono
             # Others:
             #PublicAffairsLiaison: [ 1, 1 ] # Mono
