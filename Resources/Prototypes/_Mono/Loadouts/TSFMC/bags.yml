@@ -1,0 +1,14 @@
+- type: loadout
+  id: TsfmcClothingBackpack
+  equipment:
+    back: ClothingBackpackSecurity # Replace once we get a better thing to use for this
+
+- type: loadout
+  id: TsfmcClothingSatchel
+  equipment:
+    back: ClothingBackpackSatchelSecurity # To be replaced later...
+
+- type: loadout
+  id: TsfmcClothingDuffel
+  equipment:
+    back: ClothingBackpackDuffelSecurity # To be replaced later...

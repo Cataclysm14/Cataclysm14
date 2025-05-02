@@ -19,7 +19,7 @@
   - type: IFF
     color: "#C83737"
     flags: [HideLabel]
-    readOnly: false
+    readOnly: true # mono
 
 - type: gameMap
   id: Cove
