@@ -56,16 +56,16 @@
       required: false
 
 - type: humanoidBaseSprite
-  id: MobHumanoidEyes
+  id: MobProtogenEyes
   baseSprite:
     sprite: Mobs/Customization/ProtogenEyes.rsi
     state: eyes
 
 - type: humanoidBaseSprite
-  id: MobHumanoidAnyMarking
+  id: MobProtogenAnyMarking
 
 - type: humanoidBaseSprite
-  id: MobHumanoidMarkingMatchSkin
+  id: MobProtogenMarkingMatchSkin
   markingsMatchSkin: true
 
 - type: humanoidBaseSprite
