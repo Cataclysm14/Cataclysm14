@@ -1,0 +1,50 @@
+- type: entity
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobProtogen
+  name: Urist McHardDrive
+  abstract: true
+  components:
+  - type: Hunger
+  - type: Icon # It will not have an icon in the adminspawn menu without this. Body parts seem fine for whatever reason.
+    sprite: Mobs/Species/Human/parts.rsi
+    state: full
+  - type: Ovarbi
+    modifiers:
+      coefficients:
+        Heat: 1.5
+        Cold: 1.25
+
+  - type: Thirst
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatHuman
+      amount: 5
+  - type: HumanoidAppearance
+    species: Protogen
+    hideLayersOnEquip:
+    - Hair
+    - Snout
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Protogen/displacement.rsi
+            state: jumpsuit-female
+  - type: Carriable # Frontier: Carrying system from nyanotrasen.
+  - type: Speech # Frontier
+    allowedEmotes: ['Belch', 'Beep', 'Ping', 'Buzz'] # Frontier + Protogen stuff
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobProtogenDummy
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Protogen/displacement.rsi
+            state: jumpsuit-female
