@@ -1456,3 +1456,31 @@ Entries:
       message: Added Spyglass. Its a science ship for Rogues. Insane.
   id: 172
   time: '2025-05-01T20:50:52.0000000+00:00'
+- author: Onezero0
+  changes:
+    - type: Fix
+      message: Fixed the Judiciary missing an expedition console.
+  id: 173
+  time: '2025-05-02T00:35:08.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Add
+      message: Shuttle consoles are now locked when you initially purchase your ship.
+  id: 174
+  time: '2025-05-02T03:56:57.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Fix
+      message: >-
+        You should no longer be able to keep firing a turret when it is off your
+        grid.
+  id: 175
+  time: '2025-05-02T07:16:24.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Add
+      message: >-
+        Being outside your ship in FTL will now gib you. Is it really that
+        surprising?
+  id: 176
+  time: '2025-05-02T07:21:47.0000000+00:00'

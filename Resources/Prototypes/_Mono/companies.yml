@@ -57,6 +57,13 @@
   description: southern-peak-mercenaries-description
   color: "#020624"
 
+- type: company
+  id: ZealotsOfBalaam
+  form: Protagonist
+  name: Zealots Of Balaam
+  description: zealots-of-balaam-description
+  color: "#BC7F58"
+
 # ====Rogue / Antag. Companies====
 - type: company
   id: TheViperGroup
