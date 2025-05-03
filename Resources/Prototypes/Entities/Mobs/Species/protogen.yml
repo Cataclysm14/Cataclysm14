@@ -8,11 +8,9 @@
   - type: Icon # It will not have an icon in the adminspawn menu without this. Body parts seem fine for whatever reason.
     sprite: Mobs/Species/Human/parts.rsi
     state: full
-  - type: Protogen
-    modifiers:
-      coefficients:
-        Heat: 1.5
-        Cold: 1.25
+  - type: Damagable
+    damageContainer: Biological
+    damageModifierSet: Protogen
 
   - type: Thirst
   - type: Butcherable
