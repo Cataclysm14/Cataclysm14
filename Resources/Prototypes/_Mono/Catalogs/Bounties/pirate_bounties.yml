@@ -1,7 +1,7 @@
 - type: pirateBounty
   id: PirateBountyScaf
   reward: 5
-  description: pirate-bounty-description-generic
+  description: pirate-bounty-description-scaf
   entries:
   - name: pirate-bounty-item-scaf
     amount: 1
@@ -10,7 +10,7 @@
 - type: pirateBounty
   id: PirateBountyTacsuit
   reward: 6
-  description: pirate-bounty-description-generic
+  description: pirate-bounty-description-tsfmctacsuit
   entries:
   - name: pirate-bounty-item-tsfmc-tacsuit
     amount: 1
@@ -19,7 +19,7 @@
 - type: pirateBounty
   id: PirateBountyHfBlade
   reward: 6
-  description: pirate-bounty-description-generic
+  description: pirate-bounty-description-hfblade
   entries:
   - name: pirate-bounty-item-hfblade
     amount: 1
@@ -28,7 +28,7 @@
 - type: pirateBounty
   id: PirateBountyShipWeapon
   reward: 4
-  description: pirate-bounty-description-generic
+  description: pirate-bounty-description-shipweapon
   spawnChest: false
   entries:
   - name: pirate-bounty-item-shipweapon
@@ -86,7 +86,7 @@
 - type: pirateBounty
   id: PirateBountyMercGun
   reward: 4
-  description: pirate-bounty-description-generic
+  description: pirate-bounty-description-pmc
   entries:
   - name: pirate-bounty-item-pmc-gun
     amount: 1
@@ -95,7 +95,7 @@
 - type: pirateBounty
   id: PirateBountyNitroOxyAirCan
   reward: 1
-  description: pirate-bounty-description-generic
+  description: pirate-bounty-description-lifesupport
   spawnChest: false
   entries:
   - name: pirate-bounty-item-n2-o2-air
@@ -105,7 +105,7 @@
 - type: pirateBounty
   id: PirateBountyTechfab
   reward: 2
-  description: pirate-bounty-description-generic
+  description: pirate-bounty-description-techfab
   spawnChest: false
   entries:
   - name: pirate-bounty-item-techfab
@@ -115,8 +115,18 @@
 - type: pirateBounty
   id: PirateBountyCybernetics
   reward: 2
-  description: pirate-bounty-description-generic
+  description: pirate-bounty-description-cybernetics
   entries:
   - name: pirate-bounty-item-cybernetics
     amount: 4
     id: Cybernetics
+
+- type: pirateBounty
+  id: PirateBountyRTG
+  reward: 2
+  description: pirate-bounty-description-rtg
+  spawnChest: false
+  entries:
+  - name: pirate-bounty-item-rtg
+    amount: 1
+    id: GeneratorRTG
