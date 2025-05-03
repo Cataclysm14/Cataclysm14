@@ -197,7 +197,7 @@
 - type: damageModifierSet
   id: Protogen
   coefficients:
-    Burn: 1.5
+    Heat: 1.5
     Cold: 1.25
 
 - type: damageModifierSet
