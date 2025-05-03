@@ -292,7 +292,7 @@
     contents:
         - id: AirTankFilled
         - id: ClothingOuterHardsuitNfsdBronze # Frontier
-        - id: ClothingMaskGasNfsd
+        - id: ClothingMaskGasSecurity
         - id: JetpackNfsdFilled
         - id: ClothingShoesBootsMagSecurity # Frontier
   - type: AccessReader
@@ -308,7 +308,7 @@
     contents:
         - id: AirTankFilled
         - id: ClothingOuterHardsuitNfsdSilver # Frontier
-        - id: ClothingMaskGasNfsd
+        - id: ClothingMaskGasSecurity
         - id: JetpackNfsdFilled
         - id: ClothingShoesBootsMagSecurity # Frontier
   - type: AccessReader
@@ -324,7 +324,7 @@
     contents:
         - id: AirTankFilled
         - id: ClothingOuterHardsuitNfsdBrigmedic # Frontier
-        - id: ClothingMaskGasNfsd
+        - id: ClothingMaskGasSecurity
         - id: JetpackNfsdFilled
         - id: ClothingShoesBootsMagSecurity # Frontier
   - type: AccessReader
@@ -340,7 +340,7 @@
     contents:
         - id: AirTankFilled
         - id: ClothingOuterHardsuitNfsdGold # Frontier
-        - id: ClothingMaskGasNfsd
+        - id: ClothingMaskGasSecurity
         - id: JetpackNfsdFilled
         - id: ClothingShoesBootsMagSecurity # Frontier
   - type: AccessReader
@@ -356,7 +356,7 @@
     contents:
         - id: AirTankFilled
         - id: ClothingOuterHardsuitNfsdGold # Frontier
-        - id: ClothingMaskGasNfsd
+        - id: ClothingMaskGasSecurity
         - id: JetpackNfsdFilled
         - id: ClothingShoesBootsMagSecurity # Frontier
   - type: AccessReader
@@ -388,7 +388,7 @@
     contents:
         - id: AirTankFilled
         - id: ClothingOuterHardsuitNfsdCombat # Frontier
-        - id: ClothingMaskGasNfsd
+        - id: ClothingMaskGasSecurity
         - id: JetpackNfsdFilled
         - id: ClothingShoesBootsMagSecurity # Frontier
   - type: AccessReader
@@ -404,7 +404,7 @@
     contents:
         - id: AirTankFilled
         - id: ClothingOuterHardsuitNfsdCommand # Frontier
-        - id: ClothingMaskGasNfsd
+        - id: ClothingMaskGasSecurity
         - id: JetpackNfsdFilled
         - id: ClothingShoesBootsMagSecurity # Frontier
   - type: AccessReader
