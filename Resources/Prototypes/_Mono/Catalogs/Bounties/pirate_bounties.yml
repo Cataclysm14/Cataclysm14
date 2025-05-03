@@ -101,3 +101,22 @@
   - name: pirate-bounty-item-n2-o2-air
     amount: 4
     id: LifeSupportCan
+
+- type: pirateBounty
+  id: PirateBountyTechfab
+  reward: 2
+  description: pirate-bounty-description-generic
+  spawnChest: false
+  entries:
+  - name: pirate-bounty-item-techfab
+    amount: 1
+    id: Techfab
+
+- type: pirateBounty
+  id: PirateBountyCybernetics
+  reward: 2
+  description: pirate-bounty-description-generic
+  entries:
+  - name: pirate-bounty-item-cybernetics
+    amount: 4
+    id: Cybernetics
