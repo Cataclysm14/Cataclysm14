@@ -29,6 +29,7 @@
   id: PirateBountyShipWeapon
   reward: 4
   description: pirate-bounty-description-generic
+  spawnChest: false
   entries:
   - name: pirate-bounty-item-shipweapon
     amount: 1
@@ -56,6 +57,7 @@
   id: PirateBountyFTLDrive
   reward: 5
   description: pirate-bounty-description-generic
+  spawnChest: false
   entries:
   - name: pirate-bounty-item-ftldrive
     amount: 1
@@ -65,6 +67,7 @@
   id: PirateBountyShipShield
   reward: 5
   description: pirate-bounty-description-generic
+  spawnChest: false
   entries:
   - name: pirate-bounty-item-shield
     amount: 1
@@ -74,6 +77,7 @@
   id: PirateBountyGCS
   reward: 4
   description: pirate-bounty-description-generic
+  spawnChest: false
   entries:
   - name: pirate-bounty-item-gcs
     amount: 1
@@ -92,6 +96,7 @@
   id: PirateBountyNitroOxyAirCan
   reward: 1
   description: pirate-bounty-description-generic
+  spawnChest: false
   entries:
   - name: pirate-bounty-item-n2-o2-air
     amount: 4
