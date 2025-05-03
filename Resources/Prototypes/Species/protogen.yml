@@ -1,5 +1,5 @@
 - type: species
-  id: MobProtogenDummy
+  id: Protogen
   name: species-name-protogen
   roundStart: true
   prototype: MobProtogen
