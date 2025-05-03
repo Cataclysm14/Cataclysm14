@@ -200,10 +200,6 @@
     Burn: 1.5
     Cold: 1.25
 
-- type: Damagable
-  damageContainer: Biological
-  damageModifierSet: Protogen
-
 - type: damageModifierSet
   id: Vox
   coefficients: # To be decided
