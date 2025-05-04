@@ -83,8 +83,8 @@
 # plastitainum
 
 - type: entity
-  parent: WallReinforced
-  id: WallPlastitanium
+  parent: WallPlastitanium
+  id: WallPlastitaniumOutpost
   suffix: OUTPOST ONLY
   components:
   - type: Destructible

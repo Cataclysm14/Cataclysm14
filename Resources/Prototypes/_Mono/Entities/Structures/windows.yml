@@ -1,7 +1,7 @@
 # strong windows for outposts sir!
 
 - type: entity
-  id: ReinforcedWindowOUTPOST
+  id: ReinforcedWindowOutpost
   suffix: OUTPOST ONLY
   name: reinforced window
   parent: ReinforcedWindow
@@ -70,7 +70,7 @@
 # plastitanium
 
 - type: entity
-  id: PlastitaniumWindowOUTPOST
+  id: PlastitaniumWindowOutpost
   suffix: OUTPOST ONLY
   parent: PlastitaniumWindow
   components:
