@@ -55,7 +55,6 @@
     back:
     - NfsdTechFabFlatpack
     - Multitool
-    - HoloprojectorNfsd
     - DoorRemoteNfsd
     - BaseSecurityUplinkRadioSheriff
     - RubberStampSheriff
