@@ -4,8 +4,8 @@ meta:
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 05/03/2025 21:12:59
-  entityCount: 469
+  time: 05/04/2025 00:56:56
+  entityCount: 490
 maps: []
 grids:
 - 1
@@ -1087,6 +1087,111 @@ entities:
     components:
     - type: Transform
       pos: -2.5,5.5
+      parent: 1
+  - uid: 470
+    components:
+    - type: Transform
+      pos: -0.5,0.5
+      parent: 1
+  - uid: 471
+    components:
+    - type: Transform
+      pos: -0.5,-0.5
+      parent: 1
+  - uid: 472
+    components:
+    - type: Transform
+      pos: -0.5,-1.5
+      parent: 1
+  - uid: 473
+    components:
+    - type: Transform
+      pos: -0.5,-2.5
+      parent: 1
+  - uid: 474
+    components:
+    - type: Transform
+      pos: -0.5,-3.5
+      parent: 1
+  - uid: 475
+    components:
+    - type: Transform
+      pos: -0.5,-4.5
+      parent: 1
+  - uid: 476
+    components:
+    - type: Transform
+      pos: -0.5,-5.5
+      parent: 1
+  - uid: 477
+    components:
+    - type: Transform
+      pos: -0.5,-6.5
+      parent: 1
+  - uid: 478
+    components:
+    - type: Transform
+      pos: -0.5,-7.5
+      parent: 1
+  - uid: 479
+    components:
+    - type: Transform
+      pos: -1.5,7.5
+      parent: 1
+  - uid: 480
+    components:
+    - type: Transform
+      pos: -2.5,7.5
+      parent: 1
+  - uid: 481
+    components:
+    - type: Transform
+      pos: -3.5,7.5
+      parent: 1
+  - uid: 482
+    components:
+    - type: Transform
+      pos: -4.5,7.5
+      parent: 1
+  - uid: 483
+    components:
+    - type: Transform
+      pos: -5.5,7.5
+      parent: 1
+  - uid: 484
+    components:
+    - type: Transform
+      pos: -6.5,7.5
+      parent: 1
+  - uid: 485
+    components:
+    - type: Transform
+      pos: 0.5,7.5
+      parent: 1
+  - uid: 486
+    components:
+    - type: Transform
+      pos: 1.5,7.5
+      parent: 1
+  - uid: 487
+    components:
+    - type: Transform
+      pos: 2.5,7.5
+      parent: 1
+  - uid: 488
+    components:
+    - type: Transform
+      pos: 3.5,7.5
+      parent: 1
+  - uid: 489
+    components:
+    - type: Transform
+      pos: 4.5,7.5
+      parent: 1
+  - uid: 490
+    components:
+    - type: Transform
+      pos: 5.5,7.5
       parent: 1
 - proto: CableHV
   entities:
