@@ -33,6 +33,7 @@ public sealed class PublicTransitSystem : EntitySystem
     [Dependency] private readonly ChatSystem _chat = default!;
     [Dependency] private readonly MetaDataSystem _meta = default!;
     [Dependency] private readonly StationRenameWarpsSystems _renameWarps = default!;
+    [Dependency] private readonly DockingSystem _dockSystem = default!;
 
     /// <summary>
     /// If enabled then spawns the bus and sets up the bus line.
@@ -222,7 +223,11 @@ public sealed class PublicTransitSystem : EntitySystem
 
             // FTL to next station, but only if it exists.
             if (comp.NextStation.Valid)
-                _shuttles.FTLToDock(uid, shuttle, comp.NextStation, hyperspaceTime: FlyTime, priorityTag: "DockTransit"); // TODO: Unhard code the priorityTag as it should be added from the system.
+            {
+                // Ensure the shuttle is undocked before initiating FTL travel
+                _dockSystem.UndockDocks(uid);
+                _shuttles.FTLToDock(uid, shuttle, comp.NextStation, hyperspaceTime: FlyTime, priorityTag: "DockTransit");
+            }
 
             if (TryGetNextStation(out var nextStation) && nextStation is { Valid: true } destination)
                 comp.NextStation = destination;
@@ -295,6 +300,9 @@ public sealed class PublicTransitSystem : EntitySystem
             {
                 //we set up a default in case the second time we call it fails for some reason
                 transitComp.NextStation = destination;
+                
+                // Ensure the shuttle is undocked before initiating FTL travel
+                _dockSystem.UndockDocks(shuttle);
                 _shuttles.FTLToDock(shuttle, shuttleComp, destination, hyperspaceTime: 5f);
                 transitComp.NextTransfer = _timing.CurTime + TimeSpan.FromSeconds(_cfgManager.GetCVar(NFCCVars.PublicTransitWaitTime));
 
