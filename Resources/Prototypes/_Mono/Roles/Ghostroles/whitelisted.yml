@@ -34,5 +34,5 @@
   name: ghost-role-information-rogue-core
   description: ghost-role-information-rogue-core-description
   rules: ghost-role-information-silicon-rules
-  entityPrototype: StationAiBrainTSFMC
+  entityPrototype: StationAiBrainRogue
   whitelisted: true
