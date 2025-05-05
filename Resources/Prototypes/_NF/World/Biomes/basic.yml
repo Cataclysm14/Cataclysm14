@@ -66,72 +66,72 @@
         - id: NFAsteroidScrapDebrisExtraEnormous
         # Massive
         - id: NFAsteroidDebrisMassive
-          prob: 0.6
+          prob: 0.05
         - id: NFAsteroidIceDebrisMassive
-          prob: 0.6
+          prob: 0.01
         - id: NFAsteroidAndesiteDebrisMassive
-          prob: 0.6
+          prob: 0.01
         - id: NFAsteroidBasaltDebrisMassive
-          prob: 0.6
+          prob: 0.01
         - id: NFAsteroidSandDebrisMassive
-          prob: 0.6
+          prob: 0.01
         - id: NFAsteroidChromiteDebrisMassive
-          prob: 0.6
+          prob: 0.01
         - id: NFAsteroidRockDebrisMassive
-          prob: 0.6
+          prob: 0.01
         - id: NFAsteroidScrapDebrisMassive
-          prob: 0.6
+          prob: 0.05
         # Extra Massive
         - id: NFAsteroidDebrisExtraMassive
-          prob: 0.3
+          prob: 0.055
         - id: NFAsteroidIceDebrisExtraMassive
-          prob: 0.3
+          prob: 0.05
         - id: NFAsteroidAndesiteDebrisExtraMassive
-          prob: 0.3
+          prob: 0.05
         - id: NFAsteroidBasaltDebrisExtraMassive
-          prob: 0.3
+          prob: 0.05
         - id: NFAsteroidSandDebrisExtraMassive
-          prob: 0.3
+          prob: 0.05
         - id: NFAsteroidChromiteDebrisExtraMassive
-          prob: 0.3
+          prob: 0.05
         - id: NFAsteroidRockDebrisExtraMassive
-          prob: 0.3
+          prob: 0.05
         - id: NFAsteroidScrapDebrisExtraMassive
-          prob: 0.3
+          prob: 0.05
         # Gigantic
         - id: NFAsteroidDebrisGigantic
-          prob: 0.15
+          prob: 0.07
         - id: NFAsteroidIceDebrisGigantic
-          prob: 0.15
+          prob: 0.055
         - id: NFAsteroidAndesiteDebrisGigantic
-          prob: 0.15
+          prob: 0.055
         - id: NFAsteroidBasaltDebrisGigantic
-          prob: 0.15
+          prob: 0.055
         - id: NFAsteroidSandDebrisGigantic
-          prob: 0.15
+          prob: 0.055
         - id: NFAsteroidChromiteDebrisGigantic
-          prob: 0.15
+          prob: 0.055
         - id: NFAsteroidRockDebrisGigantic
-          prob: 0.15
+          prob: 0.055
         - id: NFAsteroidScrapDebrisGigantic
-          prob: 0.15
+          prob: 0.055
         # Extra Gigantic
         - id: NFAsteroidDebrisExtraGigantic
-          prob: 0.08
+          prob: 0.01
         - id: NFAsteroidIceDebrisExtraGigantic
-          prob: 0.08
+          prob: 0.005
         - id: NFAsteroidAndesiteDebrisExtraGigantic
-          prob: 0.08
+          prob: 0.005
         - id: NFAsteroidBasaltDebrisExtraGigantic
-          prob: 0.08
+          prob: 0.005
         - id: NFAsteroidSandDebrisExtraGigantic
-          prob: 0.08
+          prob: 0.005
         - id: NFAsteroidChromiteDebrisExtraGigantic
-          prob: 0.08
+          prob: 0.005
         - id: NFAsteroidRockDebrisExtraGigantic
-          prob: 0.08
+          prob: 0.005
         - id: NFAsteroidScrapDebrisExtraGigantic
-          prob: 0.08
+          prob: 0.005
     - type: NoiseDrivenDebrisSelector
       noiseChannel: Wreck
       debrisTable:
@@ -142,17 +142,17 @@
         # - id: NFWreckDebrisLarge
           # prob: 1
         - id: NFWreckDebrisExtraLarge
-          prob: 1
-        - id: NFWreckDebrisHuge
-          prob: 0.6
-        - id: NFWreckDebrisExtraHuge
-          prob: 0.15
-        - id: NFWreckDebrisEnormous
           prob: 0.08
-        - id: NFWreckDebrisBrassLarge
+        - id: NFWreckDebrisHuge
+          prob: 0.01
+        - id: NFWreckDebrisExtraHuge
+          prob: 0.05
+        - id: NFWreckDebrisEnormous
           prob: 0.008
-        - id: NFWreckDebrisBrassExtraLarge
+        - id: NFWreckDebrisBrassLarge
           prob: 0.002
+        - id: NFWreckDebrisBrassExtraLarge
+          prob: 0.001
     - type: NoiseRangeCarver
       ranges:
         - 0.4, 0.6

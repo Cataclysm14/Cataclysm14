@@ -14,8 +14,9 @@
       debrisTable:
         ##- id: AsteroidDebrisSmall
         - id: AsteroidDebrisMedium
+          prob: 0.1 # Mono
         - id: AsteroidDebrisLarge
-          prob: 0.7
+          prob: 0.15 # Mono
         - id: AsteroidDebrisLarger
-          prob: 0.4
+          prob: 0.05 # Mono
 
