@@ -382,7 +382,7 @@
 - type: entity
   parent: [BaseStructureDisableAnchoring, VendingMachine]
   id: VendingMachineNfsdDrobe
-  name: NFSDDrobe
+  name: TSFMCDrobe
   description: A vending machine for TSFMC clothing!
   components:
   - type: VendingMachine
@@ -432,7 +432,7 @@
 - type: entity
   parent: [BaseStructureDisableAnchoring, VendingMachine]
   id: VendingMachineNfsdTech
-  name: NFSDTech
+  name: TSFMCTech
   description: A vending machine for TSFMC tech!
   components:
   - type: VendingMachine
