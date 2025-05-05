@@ -25,7 +25,7 @@
     RHand: MobProtogenRHand
     LLeg: MobProtogenLLeg
     RLeg: MobProtogenRLeg
-    LFoot: MobProtogennLFoot
+    LFoot: MobProtogenLFoot
     RFoot: MobProtogenRFoot
 
 - type: markingPoints
