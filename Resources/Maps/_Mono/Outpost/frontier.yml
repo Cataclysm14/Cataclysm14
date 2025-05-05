@@ -26116,7 +26116,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 21.5,21.5
       parent: 3
-- proto: ReinforcedPlasmaWindow
+- proto: PlastitaniumWindowOutpost
   entities:
   - uid: 3467
     components:
@@ -26143,7 +26143,7 @@ entities:
     - type: Transform
       pos: 4.5,32.5
       parent: 3
-- proto: ReinforcedWindow
+- proto: ReinforcedWindowOutpost
   entities:
   - uid: 3472
     components:
@@ -27275,7 +27275,7 @@ entities:
     - type: Transform
       pos: -19.5,35.5
       parent: 3
-- proto: ReinforcedWindowDiagonal
+- proto: ReinforcedWindowDiagonalOutpost
   entities:
   - uid: 3698
     components:
@@ -29086,7 +29086,7 @@ entities:
     - type: Transform
       pos: 16.5,14.5
       parent: 3
-- proto: WallReinforced
+- proto: WallReinforcedOutpost
   entities:
   - uid: 3951
     components:
@@ -32162,7 +32162,7 @@ entities:
     - type: Transform
       pos: 25.5,34.5
       parent: 3
-- proto: WallReinforcedDiagonal
+- proto: WallReinforcedDiagonalOutpost
   entities:
   - uid: 4564
     components:

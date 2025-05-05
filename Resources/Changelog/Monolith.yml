@@ -1563,3 +1563,103 @@ Entries:
       message: Shields should no longer function while not anchored.
   id: 186
   time: '2025-05-03T07:24:36.0000000+00:00'
+- author: starch70
+  changes:
+    - type: Add
+      message: Added stamres. Fuck you.
+    - type: Add
+      message: Added Silhea to rogue shipyard.
+    - type: Remove
+      message: Removed Marauder. It was funny while it lasted.
+    - type: Fix
+      message: Fixed some shit with Flyssa and Tumour
+    - type: Tweak
+      message: Changed weapon layout on Calypso.
+  id: 187
+  time: '2025-05-03T21:32:56.0000000+00:00'
+- author: starch70
+  changes:
+    - type: Fix
+      message: Fixed Silhea LV wiring.
+  id: 188
+  time: '2025-05-04T00:58:57.0000000+00:00'
+- author: starch70
+  changes:
+    - type: Add
+      message: Added Corvax sprites for walls and windows. Doors is a wyci still.
+  id: 189
+  time: '2025-05-04T03:44:38.0000000+00:00'
+- author: starch70
+  changes:
+    - type: Add
+      message: More purging of stupid NFSD shit. TSFMC duffels and satchels. Lets go.
+    - type: Add
+      message: Brigmeds get deputy uplink.
+    - type: Add
+      message: >-
+        Remapped TSFMC-FOB. I made it in like 4 hours from 1 AM to 5 AM. I cant
+        wait for bug reports.
+  id: 190
+  time: '2025-05-04T09:19:19.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Fix
+      message: Abandoned ships now look for players before deleting.
+  id: 191
+  time: '2025-05-04T11:13:03.0000000+00:00'
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Added really strong walls and windows to CO, TSFMC-FOB, and Rogue
+        Insurgency Hideout
+  id: 192
+  time: '2025-05-04T17:40:11.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Add
+      message: >-
+        You can now travel with multiple docked ships at once. Carriers are
+        real!
+  id: 193
+  time: '2025-05-04T18:06:33.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Fix
+      message: >-
+        Infinite money should be no more. Ported from the "billions must smile"
+        server.
+  id: 194
+  time: '2025-05-04T22:28:12.0000000+00:00'
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Ported a lot more sprites from Corvax and DV. Reagent storage
+        containers, APCs, air/fire alarms, stairs, airlocks, substations.
+        Probably a lot more.
+  id: 195
+  time: '2025-05-04T22:42:18.0000000+00:00'
+- author: KiraZen-Underscore
+  changes:
+    - type: Add
+      message: >-
+        Added AI cores to capital ships! There are now factional AI cores,
+        currently the ones that are used are TSFMC AI Core (Has TSFMC comms, is
+        on a Flyssa), and Rogue AI Core (Has Freelance comms, is on the
+        Polaris). There is also a Vessel AI Core, which is an unaligned AI Core
+        that is currently unused with default comms.
+  id: 196
+  time: '2025-05-05T00:16:06.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Fix
+      message: Blips should now be more optimized. Ported from Frontier.
+  id: 197
+  time: '2025-05-05T00:20:33.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Fix
+      message: Gunnery Control UI scaling should now be fixed!
+  id: 198
+  time: '2025-05-05T00:56:37.0000000+00:00'

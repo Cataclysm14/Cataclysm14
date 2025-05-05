@@ -107,6 +107,7 @@ namespace Content.Server.Preferences.Managers
             profile.EnsureValid(session, _dependencies);
 
             var profiles = new Dictionary<int, ICharacterProfile>(curPrefs.Characters)
+
             {
                 [slot] = profile
             };

@@ -1,5 +1,6 @@
 using Content.Shared.Input;
 using Content.Shared.Shuttles.Components;
+using Content.Shared.Shuttles.Events;
 using Content.Shared.Shuttles.Systems;
 using Robust.Client.Input;
 using Robust.Client.Player;
@@ -16,6 +17,9 @@ namespace Content.Client.Shuttles.Systems
         {
             base.Initialize();
             SubscribeLocalEvent<PilotComponent, ComponentHandleState>(OnHandleState);
+            
+            // We don't need to handle BUI events on client-side since the BoundUserInterface class does that
+            
             var shuttle = _input.Contexts.New("shuttle", "common");
             shuttle.AddFunction(ContentKeyFunctions.ShuttleStrafeUp);
             shuttle.AddFunction(ContentKeyFunctions.ShuttleStrafeDown);

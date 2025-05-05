@@ -367,7 +367,9 @@ public sealed class FireControlNavControl : BaseShuttleControl
 
     private Vector2 InverseScalePosition(Vector2 value)
     {
-        return (value - MidPointVector) / MinimapScale;
+        // Account for UI scaling: value is unscaled, so adjust by UIScale
+        var scaledValue = value * UIScale;
+        return (scaledValue - MidPointVector) / MinimapScale;
     }
 
     private void DrawBlipShape(DrawingHandleScreen handle, Vector2 position, float size, Color color, RadarBlipShape shape)

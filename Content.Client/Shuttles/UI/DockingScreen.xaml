@@ -17,10 +17,30 @@
                            Align="Center"
                            Margin="5 0 5 5"
                            Orientation="Vertical">
+        <!-- FTL Lock Section -->
         <controls1:StripeBack MinSize="48 48">
-            <controls:Label Name="DockingPortsLabel" Text="{controls:Loc 'shuttle-console-docks-label'}" HorizontalAlignment="Center"/>
+            <controls:Label Text="{controls:Loc 'FTL Lock'}" HorizontalAlignment="Center"/>
         </controls1:StripeBack>
-        <controls:Button Name="UndockAllButton" Text="{controls:Loc 'shuttle-console-undock-all'}" Margin="5 5 5 5"/>
+        <controls:BoxContainer Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="5 5 5 5">
+            <controls:Button Name="FTLLockEnabledButton" 
+                             Text="{controls:Loc 'Enabled'}" 
+                             ToggleMode="True"
+                             HorizontalExpand="True"
+                             StyleClasses="OpenRight"/>
+            <controls:Button Name="FTLLockDisabledButton" 
+                             Text="{controls:Loc 'Disabled'}" 
+                             ToggleMode="True"
+                             HorizontalExpand="True"
+                             StyleClasses="OpenLeft"/>
+        </controls:BoxContainer>
+        
+        <!-- Docks Section -->
+        <controls1:StripeBack MinSize="48 48">
+            <controls:Label Text="{controls:Loc 'Docks'}" HorizontalAlignment="Center"/>
+        </controls1:StripeBack>
+        <controls:Button Name="UndockAllButton" 
+                         Text="{controls:Loc 'Undock All'}" 
+                         Margin="5 5 5 5"/>
         <controls:ScrollContainer VerticalExpand="True" HScrollEnabled="False"
                                   ReturnMeasure="True">
             <controls:BoxContainer Name="DockPorts" Orientation="Vertical"/>

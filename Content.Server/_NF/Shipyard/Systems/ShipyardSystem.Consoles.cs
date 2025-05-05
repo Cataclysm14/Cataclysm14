@@ -47,6 +47,8 @@ using Content.Shared.Forensics.Components;
 using Content.Shared.Shuttles.Components;
 using Robust.Server.Player;
 using Robust.Shared.Player;
+using Content.Server.Shuttles.Components;
+using Content.Server.Shuttles.Systems;
 using Robust.Shared.Log;
 
 namespace Content.Server._NF.Shipyard.Systems;
@@ -221,6 +223,15 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
             shuttleStation = _station.InitializeNewStation(stationProto.Stations[vessel.ID], gridUids);
             name = Name(shuttleStation.Value);
         }
+
+        // Add FTLLockComponent to the shuttle with Enabled set to true
+        // We need to use the ShuttleConsoleSystem to properly set the Enabled property
+        var ftlLock = EnsureComp<FTLLockComponent>(shuttleUid);
+
+        // Get the ShuttleConsoleSystem which has proper access to modify FTLLockComponent.Enabled
+        var shuttleConsoleSystem = Get<ShuttleConsoleSystem>();
+        var dockedEntities = new List<NetEntity>();
+        shuttleConsoleSystem.ToggleFTLLock(shuttleUid, dockedEntities, true);
 
         if (TryComp<AccessComponent>(targetId, out var newCap))
         {
