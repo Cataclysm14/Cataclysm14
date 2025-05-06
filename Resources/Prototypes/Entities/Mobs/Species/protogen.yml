@@ -17,6 +17,14 @@
     spawned:
     - id: FoodMeatHuman
       amount: 5
+  - type: MeleeWeapon
+    soundHit:
+      collection: AlienClaw
+    angle: 30
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 5
   - type: HumanoidAppearance
     species: Protogen
     hideLayersOnEquip:
