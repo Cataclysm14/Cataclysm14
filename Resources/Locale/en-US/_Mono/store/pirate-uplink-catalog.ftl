@@ -130,6 +130,18 @@ uplink-pirate-bulldog-ammo-desc = A ammo drum for a Bulldog shotgun. Can be used
 uplink-pirate-smg-magazine-name = .35 auto SMG magazine
 uplink-pirate-smg-magazine-desc = A 30 round magazine of .35 auto. Compatible with the C-20r, Drozd, and many others.
 
+uplink-subsonic-mag-name = .30 subsonic rifle mag
+uplink-subsonic-mag-desc = Supports the WSPR and Annie.
+
+uplink-subsonic-box-name = .30 subsonic rifle box
+uplink-subsonic-box-desc = A box of ammo for the WSPR and Annie.
+
+uplink-pirate-box-highcal-name = .50 ammunition box
+uplink-pirate-box-highcal-desc = A box of general-purpose ammunition for the Burner heavy rifle.
+
+uplink-pirate-box-highcal-he-name = HE .50 ammunition box
+uplink-pirate-box-highcal-he-desc = A box of explosive ammunition for the Burner heavy rifle.
+
 # equipment
 
 uplink-pirate-combat-hardsuit-name = Combat Hardsuit
