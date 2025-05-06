@@ -217,6 +217,7 @@
     - AnomalyHost
   - type: Targeting # Shitmed Change
   - type: SurgeryTarget # Shitmed Change
+  - type: ExaminableCharacter # WWDP
 
 - type: entity
   save: false
