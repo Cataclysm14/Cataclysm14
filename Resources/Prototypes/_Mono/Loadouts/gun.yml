@@ -12,7 +12,7 @@
 - type: loadoutGroup
   id: TsfmcMag1
   name: loadout-group-tsfmc-magazine-first
-  minLimit: 0
+  minLimit: 1
   maxLimit: 1
   loadouts:
   - TsfmcSmgMagLoadout
@@ -28,7 +28,7 @@
 - type: loadoutGroup
   id: TsfmcMag2
   name: loadout-group-tsfmc-magazine-second
-  minLimit: 0
+  minLimit: 1
   maxLimit: 1
   loadouts:
   - TsfmcSmgMagLoadoutSpare
