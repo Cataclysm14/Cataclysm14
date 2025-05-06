@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ BaseItem, BaseSyndicateContraband ]
+  parent: [ BaseItem, BaseC3PirateContraband ]
   id: WeaponPistolAnaconda
   name: Anaconda
   description: A heavy pistol capable of supplying itself with the ammo on the way using a built-in fabricator.

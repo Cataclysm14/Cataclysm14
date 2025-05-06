@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: [ BaseItem, BaseSyndicateContraband ]
+  parent: [ BaseItem, BaseC3PirateContraband ]
   id: BaseMagazineBoxHighCaliber
   name: ammunition box (.50 anti-materiel)
   components:
