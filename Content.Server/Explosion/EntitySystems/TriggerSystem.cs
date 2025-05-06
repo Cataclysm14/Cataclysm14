@@ -35,6 +35,9 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Content.Shared.Body.Components; // Frontier: Gib organs
 using Content.Shared.Projectiles; // Frontier: embed triggers
+using Content.Shared.Mind;
+using Content.Shared.Mind.Components;
+using Content.Shared.Roles;
 
 namespace Content.Server.Explosion.EntitySystems
 {
@@ -267,11 +270,62 @@ namespace Content.Server.Explosion.EntitySystems
 
             if (mobstate.CurrentState != MobState.Alive)
             {
+                // Check if this is a TSF job
+                var isTSF = false;
+                if (TryComp<MindContainerComponent>(implanted.ImplantedEntity, out var mindContainer) &&
+                    mindContainer.Mind.HasValue &&
+                    TryComp<MindComponent>(mindContainer.Mind.Value, out var mindComp))
+                {
+                    string jobTitle = "";
+
+                    // Try to get job name from the mind roles
+                    foreach (var roleId in mindComp.MindRoles)
+                    {
+                        if (!TryComp<MindRoleComponent>(roleId, out var mindRole) || mindRole.JobPrototype == null)
+                            continue;
+
+                        if (!_prototypeManager.TryIndex(mindRole.JobPrototype.Value, out var jobPrototype))
+                            continue;
+
+                        jobTitle = jobPrototype.LocalizedName;
+                        break;
+                    }
+
+                    isTSF = jobTitle.Equals(Loc.GetString("job-name-bailiff"), StringComparison.OrdinalIgnoreCase) ||
+                            jobTitle.Equals(Loc.GetString("job-name-brigmedic"), StringComparison.OrdinalIgnoreCase) ||
+                            jobTitle.Equals(Loc.GetString("job-name-cadet-nf"), StringComparison.OrdinalIgnoreCase) ||
+                            jobTitle.Equals(Loc.GetString("job-name-deputy"), StringComparison.OrdinalIgnoreCase) ||
+                            jobTitle.Equals(Loc.GetString("job-name-nf-detective"), StringComparison.OrdinalIgnoreCase) ||
+                            jobTitle.Equals(Loc.GetString("job-name-sheriff"), StringComparison.OrdinalIgnoreCase) ||
+                            jobTitle.Equals(Loc.GetString("job-name-stc"), StringComparison.OrdinalIgnoreCase) ||
+                            jobTitle.Equals(Loc.GetString("job-name-sr"), StringComparison.OrdinalIgnoreCase) ||
+                            jobTitle.Equals(Loc.GetString("job-name-pal"), StringComparison.OrdinalIgnoreCase);
+                }
+
                 // Sends a message to the radio channel specified by the implant
                 if (mobstate.CurrentState == MobState.Critical)
-                    _radioSystem.SendRadioMessage(uid, critMessage, _prototypeManager.Index<RadioChannelPrototype>(component.RadioChannel), uid);
+                {
+                    // Use TSF channel for TSF jobs, otherwise use the original channel
+                    RadioChannelPrototype radioChannel;
+                    if (isTSF)
+                    {
+                        // Use explicit ProtoId for TSF channel
+                        radioChannel = _prototypeManager.Index<RadioChannelPrototype>(new ProtoId<RadioChannelPrototype>("Nfsd"));
+                    }
+                    else
+                    {
+                        // Use component's channel directly
+                        radioChannel = _prototypeManager.Index<RadioChannelPrototype>(component.RadioChannel);
+                    }
+
+                    _radioSystem.SendRadioMessage(uid, critMessage, radioChannel, uid);
+                }
+
                 if (mobstate.CurrentState == MobState.Dead)
-                    _radioSystem.SendRadioMessage(uid, deathMessage, _prototypeManager.Index<RadioChannelPrototype>(component.RadioChannel), uid);
+                {
+                    var radioChannel = _prototypeManager.Index<RadioChannelPrototype>(component.RadioChannel);
+                    _radioSystem.SendRadioMessage(uid, deathMessage, radioChannel, uid);
+                }
             }
 
             args.Handled = true;
