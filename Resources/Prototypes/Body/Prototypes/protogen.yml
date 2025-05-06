@@ -1,5 +1,5 @@
 ﻿- type: body
-  id: MobProtogen
+  id: Protogen
   name: "protogen"
   root: torso
   slots:
