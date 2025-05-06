@@ -11,4 +11,7 @@ shuttle-console-no-ship-id = This console isn't assigned to any ship.
 
 ## Shuttle Console Lock Verbs
 shuttle-console-verb-unlock = Unlock Console
-shuttle-console-verb-lock = Lock Console 
+shuttle-console-verb-lock = Lock Console
+
+## Shuttle Console FTL
+shuttle-ftl-proximity = Unable to FTL while around other ships.
