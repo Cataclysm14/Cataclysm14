@@ -520,7 +520,7 @@
       - PirateUplink
 
 - type: listing
-  id: UplinkPirateBurnerBox
+  id: UplinkPirateBurnerBoxHE
   name:  uplink-pirate-box-highcal-he-name
   description: uplink-pirate-box-highcal-he-desc
   productEntity: MagazineBoxHighCaliberExplosive
