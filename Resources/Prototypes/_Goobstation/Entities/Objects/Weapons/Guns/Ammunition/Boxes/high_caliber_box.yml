@@ -19,9 +19,9 @@
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Boxes/anti_materiel.rsi
     layers:
-    - state: base-b
+    - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: magb-1
+    - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: magb
