@@ -67,6 +67,7 @@
   name: The Viper Group
   description: viper-group-description
   color: "#D82918"
+  image: /Textures/_Mono/Companies/cybersunpublicaffairs.png
 
 - type: company
   id: AetherionDynamics

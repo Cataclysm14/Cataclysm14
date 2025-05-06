@@ -143,6 +143,14 @@
                                 <Control HorizontalExpand="True"/>
                                 <OptionButton Name="CompanyButton" HorizontalAlignment="Right" />
                             </BoxContainer>
+                            <!-- Company Image -->
+                            <BoxContainer Margin="10,5,10,5" HorizontalAlignment="Center">
+                                <TextureRect Name="CompanyImage" HorizontalAlignment="Center"
+                                             Stretch="KeepAspectCovered"
+                                             MinWidth="400" MaxWidth="400"
+                                             MinHeight="225" MaxHeight="225"
+                                             Visible="False"/>
+                            </BoxContainer>
                             <!-- Description -->
                             <BoxContainer Margin="10,5,10,0" VerticalExpand="True">
                                 <RichTextLabel Name="CompanyDescriptionLabel" VerticalAlignment="Top"
