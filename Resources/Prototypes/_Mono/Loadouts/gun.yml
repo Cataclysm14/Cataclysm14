@@ -31,10 +31,10 @@
   minLimit: 0
   maxLimit: 1
   loadouts:
-  - TsfmcSmgMagLoadout
-  - TsfmcRifleMagLoadout
-  - TsfmcPistolMagLoadout
-  - TsfmcLightRifleMagLoadout
+  - TsfmcSmgMagLoadoutSpare
+  - TsfmcRifleMagLoadoutSpare
+  - TsfmcPistolMagLoadoutSpare
+  - TsfmcLightRifleMagLoadoutSpare
   fallbacks:
-  - TsfmcSmgMagLoadout
+  - TsfmcSmgMagLoadoutSpare
 

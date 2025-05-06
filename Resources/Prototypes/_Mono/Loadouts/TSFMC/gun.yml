@@ -78,3 +78,26 @@
   storage:
     back:
     - MagazineLightRifle
+
+# spares
+
+- type: loadout
+  id: TsfmcSmgMagLoadout
+  price: 0
+  storage:
+    back:
+    - MagazinePistolSubMachineGun
+
+- type: loadout
+  id: TsfmcRifleMagLoadout
+  price: 125
+  storage:
+    back:
+    - MagazineRifle
+
+- type: loadout
+  id: TsfmcLightRifleMagLoadout
+  price: 125
+  storage:
+    back:
+    - MagazineLightRifle
