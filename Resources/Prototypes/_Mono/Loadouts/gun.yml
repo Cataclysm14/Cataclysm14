@@ -17,9 +17,7 @@
   - TsfmcSmgMagLoadout
   - TsfmcSmgMagEmpLoadout
   - TsfmcRifleMagLoadout
-  - TsfmcRifleIncendiaryMagLoadout
   - TsfmcPistolMagLoadout
-  - TsfmcPistolIncendiaryMagLoadout
   - TsfmcLightRifleMagLoadout
   fallbacks:
   - TsfmcSmgMagLoadout
