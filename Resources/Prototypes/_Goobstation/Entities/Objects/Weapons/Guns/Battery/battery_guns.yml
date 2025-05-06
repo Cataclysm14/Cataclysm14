@@ -25,9 +25,9 @@
   - type: Gun
     fireRate: 1.5
     soundGunshot:
-      path: Weapons/Guns/Gunshots/laser_cannon.ogg
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
     soundEmpty:
-      path: _DV/Weapons/Guns/Empty/dry_fire.ogg
+      path: /Audio/_DV/Weapons/Guns/Empty/dry_fire.ogg
   - type: Battery
     maxCharge: 1800
     startingCharge: 1800
