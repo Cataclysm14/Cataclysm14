@@ -1,0 +1,17 @@
+- type: marking
+  id: ProtogenTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Protogen]
+  sprites:
+  - sprite: Mobs/Customization/protogen_parts.rsi
+    state: tail_protogen
+
+- type: marking
+  id: ProtogenEars
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Protogen]
+  sprites:
+  - sprite: Mobs/Customization/protogen_parts.rsi
+    state: ears_protogen
