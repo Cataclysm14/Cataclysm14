@@ -261,6 +261,9 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
             var lockComp = EnsureComp<ShuttleConsoleLockComponent>(consoleUid);
             _shuttleConsoleLock.SetShuttleId(consoleUid, shuttleUid.ToString(), lockComp);
             
+            // Ensure emergency lock is disabled for newly purchased ships
+            _shuttleConsoleLock.SetEmergencyLock(consoleUid, false);
+            
             // Log for debugging
             Log.Debug("Locked shuttle console {0} to shuttle {1} for deed holder {2}", consoleUid, shuttleUid, targetId);
         }

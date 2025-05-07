@@ -4,6 +4,7 @@ using Content.Shared.Popups;
 using Content.Shared.Shuttles.BUIStates;
 using Content.Shared.Shuttles.Events;
 using Content.Shared.Shuttles.UI.MapObjects;
+using Content.Shared.Station.Components;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Physics.Components;
@@ -208,7 +209,8 @@ public sealed partial class ShuttleConsoleSystem
             if (other.Owner == shuttleUid.Value ||
                 dockedGrids.Contains(other.Owner) || // Skip grids that are docked to us or to the same parent grid
                 !bodyQuery.TryGetComponent(other.Owner, out var body) ||
-                body.Mass < ShuttleFTLMassThreshold)
+                body.Mass < ShuttleFTLMassThreshold ||
+                !HasComp<StationMemberComponent>(other.Owner)) // Skip entities without a StationMember component
             {
                 continue;
             }

@@ -580,7 +580,7 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
         {
             Act = () => SendPanicSignal(uid, args.User, component),
             Text = Loc.GetString("shuttle-console-panic-button"),
-            Priority = 10
+            Priority = 1
         };
 
         args.Verbs.Add(verb);
