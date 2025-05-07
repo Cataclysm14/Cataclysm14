@@ -3,7 +3,7 @@
   parent: BaseVesselAntag
   name: RSIC Europa
   description: A multipurpose frigate, with a focus on broadside firepower and shields.
-  price: 74500 # appraises at like 50k, but cyrexas are pretty fucking good
+  price: 105200
   category: Large
   group: BlackMarket
   access: Pirate
