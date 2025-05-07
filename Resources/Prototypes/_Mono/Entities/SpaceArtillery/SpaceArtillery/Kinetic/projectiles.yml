@@ -30,9 +30,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBomb
-    totalIntensity: 3000
-    intensitySlope: 3
-    maxIntensity: 750
+    totalIntensity: 5000
+    intensitySlope: 8
+    maxIntensity: 3000
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
