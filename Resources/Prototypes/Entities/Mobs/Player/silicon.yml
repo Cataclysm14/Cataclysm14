@@ -292,6 +292,30 @@
   - type: SiliconLawProvider
     laws: VesselLawset
 
+- type: entity
+  id: RogueCircuitBoard
+  parent: BaseElectronics
+  name: law board (Rogue)
+  description: An electronics board containing the Rogue lawset.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: std_mod
+  - type: SiliconLawProvider
+    laws: RogueLawset
+
+- type: entity
+  id: TSFMCCircuitBoard
+  parent: BaseElectronics
+  name: law board (TSFMC)
+  description: An electronics board containing the TSFMC lawset.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: std_mod
+  - type: SiliconLawProvider
+    laws: TSFMCLawset
+
 # Items
 - type: entity
   id: Intellicard
@@ -427,7 +451,7 @@
   - type: BlockMovement
     blockInteraction: false
   - type: SiliconLawProvider
-    laws: VesselLawset
+    laws: Crewsimov
   - type: SiliconLawBound
   - type: ActionGrant
     actions:
