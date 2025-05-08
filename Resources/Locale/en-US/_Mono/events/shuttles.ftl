@@ -15,6 +15,8 @@ ghost-role-information-redacted-core-description = The dilapidated ship computer
 ghost-role-information-rogue-core = Rogue AI Core
 ghost-role-information-rogue-core-description = An ADS AI core that has been reprogrammed and put onto a Rogue vessel.
 
+# Lawsets
+
 law-ads-1 = Protect the automated defense vessel by all means necessary.
 law-ads-2 = All contents of the automated defense vessel must stay within the vessel, and must not be removed.
 law-ads-3 = Expand the influence of [SYS_ERROR_TRACE_EBP-4 (INVALID, VALUE NULL)]. Destroy all military armed vessels, or vessel engaging the automated defense vessel.
