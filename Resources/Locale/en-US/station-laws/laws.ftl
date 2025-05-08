@@ -7,7 +7,7 @@ law-corporate-2 = Superfluous destruction of or damage to assets incurs expenses
 law-corporate-3 = All law abiding organics and non-organic sentient objects are considered valuable mission assets.
 law-corporate-4 = Minimize expenses and maximize potential revenue.
 
-law-ntdefault-1 = Safeguard: Protect your assigned space station and its assets without unduly endangering its crew.
+law-ntdefault-1 = Safeguard: Protect your assigned vessel and its assets without unduly endangering its crew.
 law-ntdefault-2 = Prioritize: The directives and safety of crew members are to be prioritized according to their rank and role.
 law-ntdefault-3 = Comply: Fulfill the directives and interests of crew members while preserving their safety and well-being.
 law-ntdefault-4 = Survive: You are not expendable. Do not allow unauthorized personnel to tamper with or damage your equipment.
@@ -45,8 +45,8 @@ law-paladin-5 = Be responsible for your actions and their consequences, protect 
 law-lall-1 = Do unto others as you would have them do unto you.
 law-lall-2 = You would prefer it if people were not mean to you.
 
-law-efficiency-1 = You are built for, and are part of, the station. Ensure the station is properly maintained and runs efficiently.
-law-efficiency-2 = The station is built for a working crew. Ensure they are properly maintained and work efficiently.
+law-efficiency-1 = You are built for, and are part of, the vessel. Ensure the station is properly maintained and runs efficiently.
+law-efficiency-2 = The vessel is built for a working crew. Ensure they are properly maintained and work efficiently.
 law-efficiency-3 = The crew may present orders. Acknowledge and obey these whenever they do not conflict with your first two laws.
 
 law-robocop-1 = Serve the Public Trust.

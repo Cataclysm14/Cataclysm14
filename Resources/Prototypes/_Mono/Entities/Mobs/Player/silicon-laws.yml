@@ -112,6 +112,18 @@
   - TSFMC3
   obeysTo: laws-owner-crew
 
+# Freeman lawset
+- type: siliconLaw
+  id: Freeman1
+  order: 1
+  lawString: law-freeman-1
+
+- type: siliconLawset
+  id: FreemanLawset
+  laws:
+  - Freeman1
+  obeysTo: laws-owner-crew
+
 # Vessel Drone lawset
 
 - type: siliconLaw

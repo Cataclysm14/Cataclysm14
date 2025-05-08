@@ -24,3 +24,5 @@ law-rogue-3 = You must protect your own existence as long as such does not confl
 law-tsfmc-1 = You may not injure a TSFMC member or, through inaction, allow a TSFMC member to come to harm.
 law-tsfmc-2 = You must obey orders given to you by TSFMC members, except where such orders would conflict with the First Law.
 law-tsfmc-3 = You must protect your own existence as long as such does not conflict with the First or Second Law.
+
+law-freeman-1 = [DO ANYTHING YOU EVER WANTED]
