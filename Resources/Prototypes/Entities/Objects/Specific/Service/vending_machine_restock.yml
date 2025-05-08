@@ -370,7 +370,7 @@
   parent: BaseVendingMachineRestock
   id: VendingMachineRestockSalvageEquipment
   name: Salvage Vendor restock box
-  description: "Strike the earth ere the space carp nip your behind! Slam into a salvage vendor to begin. Or break it, the choice is yours!"" #Monolith: no angry label
+  description: "Strike the earth ere the space carp nip your behind! Slam into a salvage vendor to begin. Or break it, the choice is yours!" #Monolith: no angry label
   components:
   - type: VendingMachineRestock
     canRestock:
