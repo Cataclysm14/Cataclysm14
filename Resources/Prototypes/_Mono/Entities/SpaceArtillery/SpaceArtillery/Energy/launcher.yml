@@ -122,7 +122,7 @@
   - type: ShipGunType
     shipType: Energy
 
-    # DYMERE
+# DYMERE
 
 - type: entity
   id: WeaponTurretDymere
