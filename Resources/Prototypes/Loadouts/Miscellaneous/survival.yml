@@ -18,6 +18,7 @@
     - Human
     - Moth
     - Reptilian
+    - Protogen
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox

@@ -1853,3 +1853,67 @@ Entries:
       message: Buffed the CHARON again.
   id: 221
   time: '2025-05-07T11:18:31.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Fix
+      message: FTL proximity should now ignore asteroids.
+    - type: Fix
+      message: >-
+        Ships no longer send out an emergency broadcast when you alt-click on
+        the shuttle console.
+    - type: Fix
+      message: Ships should no longer start with emergency lockdown on.
+  id: 222
+  time: '2025-05-07T23:26:30.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Fix
+      message: You will no longer get stuck in hyperspace after undocking during FTL.
+  id: 223
+  time: '2025-05-08T01:22:23.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Tweak
+      message: Made the TSFMC and Rogue job descriptions more fitting.
+  id: 224
+  time: '2025-05-08T01:23:22.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Add
+      message: You can now unassign your ship deed.
+    - type: Tweak
+      message: Confirmation before selling your ship.
+  id: 225
+  time: '2025-05-08T12:25:43.0000000+00:00'
+- author: SuperJoelD00D
+  changes:
+    - type: Fix
+      message: >-
+        For the one person who plays as a Protogen (me) I gave them shoes and
+        survival boxes. Yay.
+  id: 226
+  time: '2025-05-08T13:41:23.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Add
+      message: Radio channels can now be range limited.
+    - type: Tweak
+      message: Traffic -> Shortband (500 Meters).
+    - type: Tweak
+      message: Common -> Broadband (3000 Meters).
+  id: 227
+  time: '2025-05-09T03:12:01.0000000+00:00'
+- author: SuperJoelD00D
+  changes:
+    - type: Tweak
+      message: Protogens can now eat raw meat. Mmm, yummy.
+  id: 228
+  time: '2025-05-09T03:13:10.0000000+00:00'
+- author: Tmanzxd
+  changes:
+    - type: Tweak
+      message: >-
+        Restock Box Price has been set to $0, but made restock boxes drop loot
+        on breaking them instead of having their contents destroyed.
+  id: 229
+  time: '2025-05-09T03:14:38.0000000+00:00'
