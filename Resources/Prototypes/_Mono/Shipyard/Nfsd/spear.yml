@@ -3,7 +3,7 @@
   parent: BaseVessel
   name: TSF-SKR Spear
   description: A small ship meant as a escort. Horrible interior space, and not much in the way of comfort.
-  price: 65300
+  price: 33200
   category: Small
   group: Security
   access: Security

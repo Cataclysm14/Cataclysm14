@@ -2,7 +2,7 @@
   id: Europa
   parent: BaseVesselAntag
   name: RSIC Europa
-  description: A multipurpose frigate, with a focus on broadside firepower and shields.
+  description: A multipurpose corvette, with a focus on broadside firepower and shields.
   price: 105200
   category: Large
   group: BlackMarket
@@ -11,6 +11,7 @@
   guidebookPage: Null
   class:
   - Pirate
+  - Capital
   engine:
   - AME
 
