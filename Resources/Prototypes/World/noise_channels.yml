@@ -4,10 +4,10 @@
   fractalLacunarityByPi: 0.666666666
   remapTo0Through1: true
   clippingRanges:
-    - 0.4, 0.6
-  clippedValue: 15.258 # MONO NOTE = BIGGER = SMALLER AMOUNT OF ASTEROIDS!!!
-  inputMultiplier: 3 # Makes density hopefully low noise in the local area while still being interesting at scale.
-  outputMultiplier: 5000.0 # We scale density up significantly for more human-friendly numbers.
+    - 0.1, 0.3
+  clippedValue: 2 # Mono - i have no idea what this shit does
+  inputMultiplier: 5 # Makes density hopefully low noise in the local area while still being interesting at scale.
+  outputMultiplier: 5.0 # We scale density up significantly for more human-friendly numbers.
   minimum: 0.25
 
 - type: noiseChannel
@@ -15,9 +15,9 @@
   noiseType: Perlin
   fractalLacunarityByPi: 0.666666666
   remapTo0Through1: true
-  inputMultiplier: 60  # Makes density hopefully low noise in the local area while still being interesting at scale.
-  outputMultiplier: 50.0 # We scale density up significantly for more human-friendly numbers.
-  minimum: 45.0
+  inputMultiplier: 5  # Makes density hopefully low noise in the local area while still being interesting at scale.
+  outputMultiplier: 5.0 # We scale density up significantly for more human-friendly numbers.
+  minimum: 0.25
 
 - type: noiseChannel
   id: Carver
@@ -31,10 +31,10 @@
   noiseType: Perlin
   fractalLacunarityByPi: 0.666666666
   clippingRanges:
-    - 0.0, 0.4
-  clippedValue: 0
+    - 0.3, 0.1
+  clippedValue: 2
   remapTo0Through1: true
-  inputMultiplier: 16 # Makes wreck concentration very low noise at scale.
+  inputMultiplier: 1 # Makes wreck concentration very low noise at scale.
 
 - type: noiseChannel
   id: Temperature
