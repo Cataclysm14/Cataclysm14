@@ -1,39 +1,41 @@
 # Author Info
-# GitHub: LukeZurg22
-# Discord: lukezurg22
+# GitHub: starch70
+# Discord: _starch_
 
+# Shuttle Notes:
+#
 - type: vessel
-  id: Donkhaus
+  id: Sakuratsu
   parent: BaseVessel
-  name: UNJ Donkhaus
-  description: A large and very well-established diner. Donkhaus is a sizable mobile kitchen.
-  price: 40000
+  name: SKR Sakuratsu
+  description: A xenoarcheology ship with a dedicated, reinforced chamber. Contains mining equipment too.
+  price: 58250
   category: Medium
   group: Shipyard
-  shuttlePath: /Maps/_Mono/Shuttles/donkhaus.yml
+  shuttlePath: /Maps/_Mono/Shuttles/sakuratsu.yml
   guidebookPage: null
   class:
-  - Civilian
-  - Kitchen
+  - Science
+  - Salvage
   engine:
   - Uranium
 
 - type: gameMap
-  id: Donkhaus
-  mapName: 'UNJ Donkhaus'
-  mapPath: /Maps/_Mono/Shuttles/donkhaus.yml
+  id: Sakuratsu
+  mapName: 'SKR Sakuratsu'
+  mapPath: /Maps/_Mono/Shuttles/sakuratsu.yml
   minPlayers: 0
   stations:
-    Donkhaus:
+    Sakuratsu:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Donkhaus CIV{1}'
+          mapNameTemplate: 'Sakuratsu CIV{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
         - type: StationJobs
           availableJobs:
-            Contractor: [ 1, 1 ]
+            Contractor: [ 0, 0 ]
             Pilot: [ 0, 0 ]
             Mercenary: [ 0, 0 ]

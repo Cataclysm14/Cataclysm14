@@ -463,7 +463,7 @@
   - type: BlockMovement
     blockInteraction: false
   - type: SiliconLawProvider
-    laws: VesselLawset
+    laws: Crewsimov
   - type: SiliconLawBound
   - type: ActionGrant
     actions:

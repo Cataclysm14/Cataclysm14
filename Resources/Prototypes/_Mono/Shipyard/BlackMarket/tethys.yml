@@ -20,7 +20,7 @@
   mapPath: /Maps/_Mono/Shuttles/BlackMarket/tethys.yml
   minPlayers: 0
   stations:
-    Silhea:
+    Tethys:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup

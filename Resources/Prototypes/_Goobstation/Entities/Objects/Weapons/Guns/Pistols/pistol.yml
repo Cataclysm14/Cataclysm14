@@ -25,6 +25,7 @@
     - Belt
   - type: Gun
     fireRate: 3
+    projectileSpeed: 40 # Mono
     availableModes:
       - SemiAuto
     soundGunshot:

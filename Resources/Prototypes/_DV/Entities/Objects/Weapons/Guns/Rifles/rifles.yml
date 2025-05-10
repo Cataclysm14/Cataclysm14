@@ -107,6 +107,7 @@
     angleIncrease: 2
     angleDecay: 8
     fireRate: 8
+    projectileSpeed: 35 # Mono
     selectedMode: FullAuto
     availableModes:
     - SemiAuto

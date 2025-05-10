@@ -4,7 +4,7 @@
   noiseRanges: {}
   chunkComponents:
     - type: DebrisFeaturePlacerController
-      densityNoiseChannel: Density
+      densityNoiseChannel: DensityUnclipped
     - type: SimpleDebrisSelector
       debrisTable:
         - id: AsteroidDebrisSmall
@@ -26,5 +26,5 @@
           prob: 0.05
     - type: NoiseRangeCarver
       ranges:
-        - 0.4, 0.6
+        - 0.3, 0.515
       noiseChannel: Carver

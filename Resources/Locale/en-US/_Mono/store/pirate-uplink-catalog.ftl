@@ -63,6 +63,9 @@ uplink-pirate-thruster-kit-desc = Contains 32 super capaciters. Perfect for upgr
 uplink-pirate-comms-computer-circuitboard-name = Rogue communications computer board
 uplink-pirate-comms-computer-circuitboard-desc = A computer printed circuit board for a rogue communications console.
 
+uplink-pirate-security-cyborg-module-name = Security Cyborg Module
+uplink-pirate-security-cyborg-module-desc = A machete, an energy gun, and a stun baton, made specifically for borgs. Wait, doesn't TFSMC have the same thing?
+
 # weapons
 
 uplink-pirate-energy-cutlass-name = Energy Cutlass
@@ -146,6 +149,12 @@ uplink-pirate-box-highcal-he-desc = A box of explosive ammunition for the Burner
 
 uplink-pirate-combat-hardsuit-name = Combat Hardsuit
 uplink-pirate-combat-hardsuit-desc = Definitely not just a stolen SCAF suit. Incase you lost yours.
+
+uplink-pirate-viper-group-standard-hardsuit-name = Viper Group JACKAL Hardsuit
+uplink-pirate-viper-group-standard-hardsuit-desc = A hardsuit adorned with signature markings of the Viper Group. The armor is remarkably nimble for its protection and has a built-in nightvision system.
+
+uplink-pirate-viper-group-medic-hardsuit-name = Viper Group IMP Hardsuit
+uplink-pirate-viper-group-medic-hardsuit-desc = A hardsuit adorned with signature markings of the Viper Group. The armor features various reinforced plating in vital areas and a medical HUD complemented by thermal pulse systems.
 
 uplink-pirate-webvest-name = Syndicate Webvest
 uplink-pirate-webvest-desc = A webvest smuggled into the sector that hasn't been downgraded like ones utilized by contractors. Great pierce resist, poor heat resist.

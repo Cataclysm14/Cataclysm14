@@ -1,0 +1,75 @@
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
+  id: ClothingOuterHardsuitViperGroupStandard
+  name: JACKAL mk.II viper hardsuit
+  description: A hardsuit adorned with signature markings of the Viper Group. The armor is remarkably nimble for the protection it offers.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/OuterClothing/Hardsuits/viper_group_standard.rsi
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _Mono/Clothing/OuterClothing/Hardsuits/viper_group_standard.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.55
+        Piercing: 0.45
+        Heat: 0.4
+        Radiation: 0.4
+        Caustic: 0.45
+  - type: StaminaDamageResistance # Mono - Stamres
+    coefficient: 0.4
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitViperGroupStandard
+  - type: StaticPrice
+    price: 1500
+    vendPrice: 4000
+
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
+  id: ClothingOuterHardsuitViperGroupMedic
+  name: IMP mk.III viper hardsuit
+  description: A hardsuit adorned with signature markings of the Viper Group. The armor features various reinforced plating in vital areas.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/OuterClothing/Hardsuits/viper_group_medic.rsi
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _Mono/Clothing/OuterClothing/Hardsuits/viper_group_medic.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.33
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.4
+        Piercing: 0.5
+        Heat: 0.4
+        Radiation: 0.33
+        Caustic: 0.25
+  - type: StaminaDamageResistance # Mono - Stamres
+    coefficient: 0.35
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitViperGroupMedic
+  - type: StaticPrice
+    price: 1500
+    vendPrice: 4000

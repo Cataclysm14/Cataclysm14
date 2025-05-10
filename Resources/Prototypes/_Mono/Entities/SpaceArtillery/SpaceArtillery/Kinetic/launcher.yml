@@ -173,7 +173,7 @@
     range: 500
   - type: Gun
     fireRate: 0.05
-    projectileSpeed: 110 # i was gonna make this faster, but the engine really hates fast moving projectiles and collisions
+    projectileSpeed: 300
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/uaf_tona_iv_608.ogg
     soundEmpty:

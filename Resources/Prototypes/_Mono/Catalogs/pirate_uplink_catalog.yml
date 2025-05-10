@@ -333,6 +333,22 @@
       tags:
       - PirateUplink
 
+- type: listing
+  id: UplinkPirateSecurityCyborgModule
+  name: uplink-pirate-security-cyborg-module-name
+  description: uplink-pirate-security-cyborg-module-desc
+  icon: { sprite: Interface/Actions/actions_borg.rsi, state: syndicate-weapon-module }
+  productEntity: BorgModuleSecurity
+  cost:
+    Doubloon: 10
+  categories:
+  - UplinkPirateUtility
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
 # Ammunition
 
 - type: listing
@@ -744,6 +760,37 @@
       tags:
       - PirateUplink
 
+- type: listing
+  id: UplinkViperStandardHardsuit
+  name:  uplink-pirate-viper-group-standard-hardsuit-name
+  description: uplink-pirate-viper-group-standard-hardsuit-desc
+  productEntity: ClothingOuterHardsuitViperGroupStandard
+  icon: { sprite: _Mono/Clothing/OuterClothing/Hardsuits/viper_group_standard.rsi, state: icon }
+  cost:
+    Doubloon: 20
+  categories:
+  - UplinkPirateHardsuits
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkViperMedicHardsuit
+  name:  uplink-pirate-viper-group-medic-hardsuit-name
+  description: uplink-pirate-viper-group-medic-hardsuit-desc
+  productEntity: ClothingOuterHardsuitViperGroupMedic
+  icon: { sprite: _Mono/Clothing/OuterClothing/Hardsuits/viper_group_medic.rsi, state: icon }
+  cost:
+    Doubloon: 15
+  categories:
+  - UplinkPirateHardsuits
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
 
 - type: listing
   id: UplinkPirateWebVest

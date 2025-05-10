@@ -20,7 +20,7 @@
   mapPath: /Maps/_Mono/Shuttles/BlackMarket/vega.yml
   minPlayers: 0
   stations:
-    Silhea:
+    Vega:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup

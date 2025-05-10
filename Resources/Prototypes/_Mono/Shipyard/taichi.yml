@@ -1,34 +1,36 @@
 # Author Info
-# GitHub: LukeZurg22
-# Discord: lukezurg22
+# GitHub: starch70
+# Discord: _starch_
 
+# Shuttle Notes:
+#
 - type: vessel
-  id: Clemency
+  id: Taichi
   parent: BaseVessel
-  name: UNJ Clemency
-  description: An honest-to-God medical transport and treatment vessel.
-  price: 40001
-  category: Medium
+  name: SKR Taichi
+  description: A extremely compact medical ship, with a full chemistry setup.
+  price: 32500
+  category: Small
   group: Medical
-  shuttlePath: /Maps/_Mono/Shuttles/clemency.yml
+  shuttlePath: /Maps/_Mono/Shuttles/taichi.yml
   guidebookPage: null
   class:
-  - Civilian
   - Medical
+  - Chemistry
   engine:
   - Uranium
 
 - type: gameMap
-  id: Clemency
-  mapName: 'UNJ Clemency'
-  mapPath: /Maps/_Mono/Shuttles/clemency.yml
+  id: Taichi
+  mapName: 'SKR Taichi'
+  mapPath: /Maps/_Mono/Shuttles/taichi.yml
   minPlayers: 0
   stations:
-    Clemency:
+    Taichi:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Clemency CIV{1}'
+          mapNameTemplate: 'Taichi CIV{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

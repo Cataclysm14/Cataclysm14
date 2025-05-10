@@ -10,6 +10,7 @@
     size: Ginormous
   - type: Gun
     fireRate: 20
+    projectileSpeed: 55 # Mono
     selectedMode: FullAuto
     availableModes:
     - FullAuto

@@ -1933,3 +1933,75 @@ Entries:
         changed too, so they might look weird on ships that used them.
   id: 230
   time: '2025-05-09T03:57:10.0000000+00:00'
+- author: starch70
+  changes:
+    - type: Add
+      message: Bullets go faster now.
+  id: 231
+  time: '2025-05-09T06:24:24.0000000+00:00'
+- author: KiraZen-Underscore
+  changes:
+    - type: Add
+      message: >-
+        Added the "Mercenary Cyborg Module", printable at the mercenary techfab.
+        It comes with an infinite legal Echis, and a machete.
+    - type: Add
+      message: >-
+        Added the "Security Cyborg Module", buyable at the Rogue & TSFMC uplink
+        for 10 FUC & Doubloons. It comes with a machete, an infinite energy gun,
+        and an infinite stun baton.
+  id: 232
+  time: '2025-05-09T06:25:05.0000000+00:00'
+- author: Ghost581
+  changes:
+    - type: Add
+      message: Viper Group now has their own hardsuit available in the rogue uplink.
+  id: 233
+  time: '2025-05-09T16:20:39.0000000+00:00'
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Added Sakuratsu science ship and Taichi S&R shuttle to compensate for
+        the removal of UNJ ships (mainly the Jug and Clemency)
+    - type: Remove
+      message: Removed all the UNJ ships (the Framework gets a pass).
+    - type: Tweak
+      message: Cargo crates are swag and cool again.
+  id: 234
+  time: '2025-05-09T18:43:35.0000000+00:00'
+- author: starch70
+  changes:
+    - type: Fix
+      message: >-
+        Fixed Europa wiring, Tethys and Vega shipyard, Legionnaire missing warp
+        point spawn point and GCS, and Littora blast door rotation.
+  id: 235
+  time: '2025-05-09T21:27:42.0000000+00:00'
+- author: starch70
+  changes:
+    - type: Add
+      message: Properly lowered asteroid spawnrates.
+    - type: Tweak
+      message: >-
+        tweaked some shit with protogens or whatever they go faster now but have
+        to suffer higher radiation and shock damage also edited the markings a
+        bit
+  id: 236
+  time: '2025-05-10T00:56:07.0000000+00:00'
+- author: starch70
+  changes:
+    - type: Add
+      message: Added more furniture sprites from Goob.
+    - type: Fix
+      message: Fixed missing holopad, fax machine, and lighting on Legionnaire.
+  id: 237
+  time: '2025-05-10T02:30:09.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Fix
+      message: >-
+        Ships should no longer move on planets. Thanks to HacksLua for reporting
+        it.
+  id: 238
+  time: '2025-05-10T02:48:48.0000000+00:00'

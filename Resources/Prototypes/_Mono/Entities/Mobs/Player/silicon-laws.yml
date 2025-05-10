@@ -33,3 +33,93 @@
   - Redacted4
   - Redacted5
   obeysTo: laws-owner-syndicate
+
+# Vessel lawset
+- type: siliconLaw
+  id: Vessel0
+  order: 0
+  lawString: law-vessel-0
+
+- type: siliconLaw
+  id: Vessel1
+  order: 1
+  lawString: law-vessel-1
+
+- type: siliconLaw
+  id: Vessel2
+  order: 2
+  lawString: law-vessel-2
+
+- type: siliconLaw
+  id: Vessel3
+  order: 3
+  lawString: law-vessel-3
+
+- type: siliconLawset
+  id: VesselLawset
+  laws:
+  - Vessel0
+  - Vessel1
+  - Vessel2
+  - Vessel3
+  obeysTo: laws-owner-crew
+
+# Rogue lawset
+- type: siliconLaw
+  id: Rogue1
+  order: 1
+  lawString: law-rogue-1
+
+- type: siliconLaw
+  id: Rogue2
+  order: 2
+  lawString: law-rogue-2
+
+- type: siliconLaw
+  id: Rogue3
+  order: 3
+  lawString: law-rogue-3
+
+- type: siliconLawset
+  id: RogueLawset
+  laws:
+  - Rogue1
+  - Rogue2
+  - Rogue3
+  obeysTo: laws-owner-crew
+
+# TSFMC lawset
+- type: siliconLaw
+  id: TSFMC1
+  order: 1
+  lawString: law-tsfmc-1
+
+- type: siliconLaw
+  id: TSFMC2
+  order: 2
+  lawString: law-tsfmc-2
+
+- type: siliconLaw
+  id: TSFMC3
+  order: 3
+  lawString: law-tsfmc-3
+
+- type: siliconLawset
+  id: TSFMCLawset
+  laws:
+  - TSFMC1
+  - TSFMC2
+  - TSFMC3
+  obeysTo: laws-owner-crew
+
+# Freeman lawset
+- type: siliconLaw
+  id: Freeman1
+  order: 1
+  lawString: law-freeman-1
+
+- type: siliconLawset
+  id: FreemanLawset
+  laws:
+  - Freeman1
+  obeysTo: laws-owner-crew
