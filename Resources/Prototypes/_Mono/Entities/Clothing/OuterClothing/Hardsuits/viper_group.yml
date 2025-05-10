@@ -52,14 +52,14 @@
     highPressureMultiplier: 0.05
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
-    damageCoefficient: 0.33
+    damageCoefficient: 0.4
   - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.5
         Slash: 0.4
-        Piercing: 0.5
-        Heat: 0.4
+        Piercing: 0.6
+        Heat: 0.45
         Radiation: 0.33
         Caustic: 0.25
   - type: StaminaDamageResistance # Mono - Stamres
