@@ -822,6 +822,23 @@ public sealed partial class ShuttleSystem
         var ftlEvent = new FTLCompletedEvent(uid, _mapSystem.GetMap(mapId));
         RaiseLocalEvent(uid, ref ftlEvent, true);
         _console.RefreshShuttleConsoles(uid);
+
+        if (_physicsQuery.TryGetComponent(uid, out body))
+        {
+            _physics.SetLinearVelocity(uid, Vector2.Zero, body: body);
+            _physics.SetAngularVelocity(uid, 0f, body: body);
+
+            // Disable shuttle if it's on a planet; unfortunately can't do this in parent change messages due
+            // to event ordering and awake body shenanigans (at least for now).
+            if (HasComp<MapGridComponent>(xform.MapUid))
+            {
+                Disable(uid, component: body);
+            }
+            else
+            {
+                Enable(uid, component: body, shuttle: entity.Comp2);
+            }
+        }
     }
 
     private void UpdateFTLCooldown(Entity<FTLComponent, ShuttleComponent> entity)
