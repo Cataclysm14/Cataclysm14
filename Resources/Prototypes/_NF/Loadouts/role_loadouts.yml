@@ -295,6 +295,8 @@
   - NFSpeciesSpecific
   - PirateTrinkets
   - MercenaryBelt # mono
+  - ContractorEncryptionKey # Mono
+  - MercenaryGlasses # Mono
   canCustomizeName: true # pseudonym?
 
 - type: roleLoadout
@@ -313,6 +315,8 @@
   - NFSpeciesSpecific
   - PirateTrinkets
   - MercenaryBelt # mono
+  - ContractorEncryptionKey # Mono
+  - MercenaryGlasses # Mono
   canCustomizeName: true # pseudonym?
 
 - type: roleLoadout
@@ -331,6 +335,8 @@
   - NFSpeciesSpecific
   - PirateCaptainTrinkets
   - MercenaryBelt # mono
+  - ContractorEncryptionKey # Mono
+  - MercenaryGlasses # Mono
   canCustomizeName: true # pseudonym?
 
 # Prisoner

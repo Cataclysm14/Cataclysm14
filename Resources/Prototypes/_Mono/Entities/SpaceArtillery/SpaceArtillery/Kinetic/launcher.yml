@@ -97,7 +97,7 @@
   - type: ShipGunType
     shipType: Ballistic
 
-# CYREXA
+# Cyrexa 220mm
 
 - type: entity
   id: WeaponTurretCyrexa

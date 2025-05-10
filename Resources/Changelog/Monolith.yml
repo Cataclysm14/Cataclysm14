@@ -1989,3 +1989,41 @@ Entries:
         bit
   id: 236
   time: '2025-05-10T00:56:07.0000000+00:00'
+- author: starch70
+  changes:
+    - type: Add
+      message: Added more furniture sprites from Goob.
+    - type: Fix
+      message: Fixed missing holopad, fax machine, and lighting on Legionnaire.
+  id: 237
+  time: '2025-05-10T02:30:09.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Fix
+      message: >-
+        Ships should no longer move on planets. Thanks to HacksLua for reporting
+        it.
+  id: 238
+  time: '2025-05-10T02:48:48.0000000+00:00'
+- author: DisguisedBear
+  changes:
+    - type: Add
+      message: Added ADEX-9 Dymere turbolaser battery
+  id: 239
+  time: '2025-05-10T06:34:48.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Tweak
+      message: Department radio channels now have limited range.
+  id: 240
+  time: '2025-05-10T08:01:00.0000000+00:00'
+- author: starch70
+  changes:
+    - type: Add
+      message: Added hair to Protogens, I guess.
+    - type: Add
+      message: Added guidebook help for encryption key range.
+    - type: Add
+      message: Added encryption keys and glasses to Rogue loadouts.
+  id: 241
+  time: '2025-05-10T08:35:12.0000000+00:00'

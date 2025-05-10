@@ -118,6 +118,9 @@
   targetNode: cocoon
   category: construction-category-clothing
   description: "Strong web cocoon used to restrain criminal or preys, its also prevent rotting."
+  entityWhitelist:
+    tags:
+    - SpiderCraft
   icon:
     sprite: Clothing/OuterClothing/Misc/webcocoon.rsi
     state: cocoon
