@@ -40,12 +40,12 @@
         variation: 0.125
     activatedDamage:
       types:
-        Slash: 15
-        Heat: 15
-        Structural: 20
+          Slash: 15
+          Heat: 20
+          Structural: 20
   - type: MeleeWeapon
     wideAnimationRotation: -135
-    attackRate: 1
+    attackRate: 1.15
     damage:
       types:
         Blunt: 4.5
@@ -125,8 +125,8 @@
         variation: 0.250
     activatedDamage:
       types:
-        Slash: 10
-        Heat: 10
+          Slash: 10
+          Heat: 10
     deactivatedSecret: true
   - type: ItemToggleActiveSound
     activeSound:
@@ -264,8 +264,8 @@
   - type: ItemToggleMeleeWeapon
     activatedDamage:
       types:
-        Slash: 10
-        Heat: 12
+          Slash: 15
+          Heat: 20
     deactivatedSecret: true
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_cutlass.rsi
@@ -304,9 +304,9 @@
         variation: 0.250
     activatedDamage:
       types:
-        Slash: 12
-        Heat: 12
-        Structural: 15
+        Slash: 10
+        Heat: 20
+        Structural: 25
   - type: ItemToggleActiveSound
     activeSound:
       path: /Audio/Weapons/ebladehum.ogg
@@ -323,7 +323,7 @@
     wieldSound: null # esword light sound instead
   - type: MeleeWeapon
     wideAnimationRotation: -135
-    attackRate: 1.5
+    attackRate: 1.3
     angle: 100
     damage:
       types:
@@ -368,8 +368,8 @@
     activatedDamage:
       types:
         Slash: 20
-        Heat: 20
-        Structural: 20
+        Heat: 25
+        Structural: 25
   - type: MeleeRequiresWield
   - type: HeldSpeedModifier #slowdown is what balances this compared to a dsword
     walkModifier: 0.6

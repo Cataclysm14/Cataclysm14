@@ -38,7 +38,7 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Piercing: 12
+        Piercing: 15
     angle: 0
     animation: WeaponArcThrust
     soundHit:
@@ -46,7 +46,7 @@
   - type: DamageOtherOnHit
     damage:
       types:
-        Piercing: 15
+        Piercing: 25
   - type: Item
     size: Ginormous
   - type: Clothing
@@ -76,7 +76,7 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Piercing: 4
+        Piercing: 5
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -130,11 +130,11 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Piercing: 15
+        Piercing: 18
   - type: DamageOtherOnHit
     damage:
       types:
-        Piercing: 18
+        Piercing: 30
   - type: Construction
     graph: SpearReinforced
 
@@ -150,11 +150,11 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Piercing: 18
+        Piercing: 21
   - type: DamageOtherOnHit
     damage:
       types:
-        Piercing: 21
+        Piercing: 35
   - type: Construction
     graph: SpearPlasma
 
@@ -170,7 +170,7 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Piercing: 10
+        Piercing: 15
         Radiation: 8
   - type: DamageOtherOnHit
     damage:

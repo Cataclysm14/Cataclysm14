@@ -14,17 +14,15 @@
     range: 1.70
     damage:
       types:
-        Blunt: 10
-        Piercing: 3
-        Structural: 10
+        Blunt: 15
+        Structural: 25
     bluntStaminaDamageFactor: 1.50 # 15 stamina damage
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 5
-        Piercing: 2
-        Structural: 25
+        Blunt: 30
+        Structural: 45
   - type: Tool
     qualities:
       - Prying

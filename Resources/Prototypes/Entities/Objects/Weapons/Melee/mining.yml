@@ -11,7 +11,7 @@
     sprite: Objects/Weapons/Melee/pickaxe.rsi
     state: pickaxe
   - type: MeleeWeapon
-    attackRate: 0.7
+    attackRate: 0.75
     wideAnimationRotation: -135
     soundHit:
       path: "/Audio/Weapons/smash.ogg"
@@ -19,14 +19,16 @@
         volume: -3
     damage:
       groups:
-        Brute: 5
+        Blunt: 5
+        Piercing: 5
+        Structural: 10
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
       groups:
-        Brute: 10
-      types:
-        Structural: 30
+        Blunt: 15
+        Piercing: 5
+        Structural: 25
   - type: Item
     size: Normal
     shape:
@@ -59,7 +61,7 @@
     attackRate: 4
     damage:
       groups:
-        Brute: 3
+        Brute: 6
       types:
         Structural: 15
 
@@ -81,9 +83,9 @@
     attackRate: 4
     damage:
       groups:
-        Brute: 6
+        Brute: 8
       types:
-        Structural: 30
+        Structural: 35
   - type: MiningGatheringHard # Frontier
 
 
@@ -132,11 +134,11 @@
     capacity: 1
     count: 1
   - type: MeleeWeapon
-    attackRate: 1.5
+    attackRate: 1.25
     wideAnimationRotation: -135
     damage:
       types:
-        Blunt: 10
+        Blunt: 5
         Slash: 5
     soundHit:
       collection: MetalThud
@@ -144,8 +146,8 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 2.5
-        Slash: 2.5
+        Blunt: 10
+        Slash: 5
         Structural: 30
   - type: GunRequiresWield
   - type: Item
@@ -174,7 +176,7 @@
     attackRate: 2
     damage:
       types:
-        Slash: 15
+        Slash: 17
   - type: EmbeddableProjectile
     sound: /Audio/Weapons/star_hit.ogg
     offset: -0.15,0.0
@@ -182,7 +184,7 @@
   - type: DamageOtherOnHit
     damage:
       types:
-        Slash: 10
+        Slash: 20
   - type: DisarmMalus
     malus: 0.225
   - type: ThrowingAngle
