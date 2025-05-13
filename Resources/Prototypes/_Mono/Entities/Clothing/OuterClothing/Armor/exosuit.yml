@@ -9,7 +9,6 @@
     sprite: _Mono/Clothing/OuterClothing/Armor/aurora.rsi
   - type: Clothing
     sprite: _Mono/Clothing/OuterClothing/Armor/aurora.rsi
-  - type: Clothing
     stripDelay: 35
     equipDelay: 5 # to avoid accidentally falling into the trap associated with SelfUnremovableClothing
   - type: SelfUnremovableClothing
