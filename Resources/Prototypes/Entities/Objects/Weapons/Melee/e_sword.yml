@@ -266,6 +266,7 @@
       types:
         Slash: 10
         Heat: 12
+        Structural: 15
     deactivatedSecret: true
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_cutlass.rsi

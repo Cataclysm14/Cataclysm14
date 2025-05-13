@@ -2144,3 +2144,49 @@ Entries:
       message: Ported over evil mechs from Goob.
   id: 257
   time: '2025-05-13T08:42:51.0000000+00:00'
+- author: Redrover1760
+  changes:
+    - type: Add
+      message: Adds a Medfab Flatpack and Surgery Tools to DoC locker.
+  id: 258
+  time: '2025-05-13T21:18:26.0000000+00:00'
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Merc/Private Sec hardsuits now have decent armor
+    - type: Tweak
+      message: SCAF suits now resist radiation
+    - type: Tweak
+      message: Prototype Experimental Salvager suits are now faster
+    - type: Tweak
+      message: >-
+        Experimental Tacsuits are slightly more resistant to pierce, weaker to
+        heat.
+  id: 259
+  time: '2025-05-13T21:19:33.0000000+00:00'
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: The Rogue SCAF suit and IMP hardsuit now costs 5 DB.
+    - type: Tweak
+      message: Jackel hardsuit now costs 15 DB.
+    - type: Tweak
+      message: Energy Cutlasses do 15 structural damage now.
+    - type: Tweak
+      message: Web vest is now 3 DB.
+    - type: Tweak
+      message: syndicate gas mask is 1 DB.
+  id: 260
+  time: '2025-05-13T21:21:02.0000000+00:00'
+- author: KiraZen-Underscore
+  changes:
+    - type: Add
+      message: >-
+        Added the Grandhonker, a civilian clown ship that's powered by bananium,
+        has an AI core, and more.
+    - type: Add
+      message: Added the "Entertainer" lawset for AI cores.
+    - type: Tweak
+      message: Made TSFMC AI cores hear Command comms.
+  id: 261
+  time: '2025-05-13T22:15:46.0000000+00:00'
