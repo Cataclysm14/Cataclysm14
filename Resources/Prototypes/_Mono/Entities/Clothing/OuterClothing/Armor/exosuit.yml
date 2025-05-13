@@ -1,0 +1,47 @@
+- type: entity
+  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseC2ContrabandUnredeemable, ContrabandClothing ]
+  id: ClothingOuterArmorRaid
+  name: M-320X AURORA exosuit
+  description: An experimental exosuit designed for the future of warfare. Despite not having any head covering, the utilization of new nanomachine technology allows it to protect the wearer from the vacuum of space and blinding flashes.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/OuterClothing/Armor/aurora.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/OuterClothing/Armor/aurora.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.55 # nanomachines are brittle
+        Slash: 0.1
+        Piercing: 0.35
+        Heat: 0.2
+        Cold: 0.2
+        Shock: 0.125
+        Caustic: 0.5
+        Radiation: 0.75
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: ClothingSpeedModifier
+    walkModifier: 1.35
+    sprintModifier: 1.35
+  - type: StaminaDamageResistance
+    coefficient: 0.1 # high shock resist, why shouldnt it block a batong?
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.01
+    coolingCoefficient: 0.01
+  - type: FireProtection # raiden is actively lit on fire like 5 times ingame
+    reduction: 0.4
+  - type: ProtectedFromStepTriggers
+    slots: WITHOUT_POCKET
+  - type: DamageOnInteractProtection
+    damageProtection:
+      flatReductions:
+        Heat: 10 # the average lightbulb only does around four damage!
+    slots: OUTERCLOTHING
+  - type: HarpyHideWings # Frontier, needed for Harpies
+  - type: StaticPrice
+    price: 10000
+    vendPrice: 150000
