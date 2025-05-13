@@ -1,13 +1,18 @@
 - type: entity
   parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseC2ContrabandUnredeemable, ContrabandClothing ]
-  id: ClothingOuterArmorRaid
+  id: ClothingOuterExosuitAurora
   name: M-320X AURORA exosuit
-  description: An experimental exosuit designed for the future of warfare. Despite not having any head covering, the utilization of new nanomachine technology allows it to protect the wearer from the vacuum of space and blinding flashes.
+  suffix: SelfUnremovable
+  description: An experimental exosuit designed for the future of warfare. Despite not having any head covering, the utilization of new nanomachine technology allows it to protect the wearer from the vacuum and cold of space.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Armor/aurora.rsi
   - type: Clothing
     sprite: _Mono/Clothing/OuterClothing/Armor/aurora.rsi
+  - type: Clothing
+    stripDelay: 35
+    equipDelay: 5 # to avoid accidentally falling into the trap associated with SelfUnremovableClothing
+  - type: SelfUnremovableClothing
   - type: Armor
     modifiers:
       coefficients:
