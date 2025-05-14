@@ -384,9 +384,7 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
 
             // Check for access tags on the ID card
             if (TryComp<AccessComponent>(idCard, out var access))
-                hasTsfAccess =
-                    access.Tags.Contains("Nfsd") ||
-                    access.Tags.Contains("Security"); // Check if ID has TSF or Security access
+                hasTsfAccess = access.Tags.Contains("Nfsd") || access.Tags.Contains("Security"); // Check if ID has TSF or Security access
 
             // Check for TSF company membership directly on the user entity
             if (!hasTsfAccess && user != null && TryComp<CompanyComponent>(user, out var userCompany))
@@ -512,76 +510,46 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
     /// </summary>
     public void SetEmergencyLock(EntityUid console, bool enabled)
     {
-        if (!TryComp<ShuttleConsoleLockComponent>(console, out var lockComp))
-        {
-            // Add the component if it doesn't exist
-            if (!enabled)
-                return;
-
-            lockComp = AddComp<ShuttleConsoleLockComponent>(console);
-            lockComp.Locked = true;
-            lockComp.EmergencyLocked = true;
-
-            // Make the shuttle visible in emergency mode by manipulating IFF
-            if (Transform(console).GridUid is { } gridUid)
-            {
-                // Store original IFF flags
-                if (TryComp<IFFComponent>(gridUid, out var iff))
-                {
-                    lockComp.OriginalIFFFlags = iff.Flags;
-                    // Remove hiding flags
-                    _shuttleSystem.RemoveIFFFlag(gridUid, IFFFlags.Hide | IFFFlags.HideLabel);
-                }
-                else
-                {
-                    // If no IFF component exists, add one that's visible
-                    var iffComp = EntityManager.EnsureComponent<IFFComponent>(gridUid);
-                    lockComp.OriginalIFFFlags = iffComp.Flags;
-                }
-            }
-
-            Dirty(console, lockComp);
-            return;
-        }
+        var lockComp = EnsureComp<ShuttleConsoleLockComponent>(console);
 
         // Update existing component
         lockComp.Locked = enabled || !string.IsNullOrEmpty(lockComp.ShuttleId);
         lockComp.EmergencyLocked = enabled;
 
         // Handle IFF visibility
-        if (Transform(console).GridUid is { } iffVisibilityGridUid)
-        {
-            if (enabled)
-            {
-                // Save current IFF flags and make visible
-                if (TryComp<IFFComponent>(iffVisibilityGridUid, out var iff))
-                {
-                    lockComp.OriginalIFFFlags = iff.Flags;
+        if (Transform(console).GridUid is not { } iffVisibilityGridUid)
+            return;
 
-                    // Remove hiding flags
-                    _shuttleSystem.RemoveIFFFlag(iffVisibilityGridUid, IFFFlags.Hide | IFFFlags.HideLabel);
-                }
-                else
-                {
-                    // If no IFF component exists, add one that's visible
-                    var iffComp = EntityManager.EnsureComponent<IFFComponent>(iffVisibilityGridUid);
-                    lockComp.OriginalIFFFlags = iffComp.Flags;
-                }
+        if (enabled)
+        {
+            // Save current IFF flags and make visible
+            if (TryComp<IFFComponent>(iffVisibilityGridUid, out var iff))
+            {
+                lockComp.OriginalIFFFlags = iff.Flags;
+
+                // Remove hiding flags
+                _shuttleSystem.RemoveIFFFlag(iffVisibilityGridUid, IFFFlags.Hide | IFFFlags.HideLabel);
             }
             else
             {
-                // Restore original flags
-                if (TryComp<IFFComponent>(iffVisibilityGridUid, out var iff))
-                {
-                    // Clear all flags first
-                    _shuttleSystem.RemoveIFFFlag(iffVisibilityGridUid, IFFFlags.Hide | IFFFlags.HideLabel);
-                    // Then restore the original flags that were hiding
-                    if ((lockComp.OriginalIFFFlags & IFFFlags.Hide) != 0)
-                        _shuttleSystem.AddIFFFlag(iffVisibilityGridUid, IFFFlags.Hide);
+                // If no IFF component exists, add one that's visible
+                var iffComp = EnsureComp<IFFComponent>(iffVisibilityGridUid);
+                lockComp.OriginalIFFFlags = iffComp.Flags;
+            }
+        }
+        else
+        {
+            // Restore original flags
+            if (TryComp<IFFComponent>(iffVisibilityGridUid, out _))
+            {
+                // Clear all flags first
+                _shuttleSystem.RemoveIFFFlag(iffVisibilityGridUid, IFFFlags.Hide | IFFFlags.HideLabel);
+                // Then restore the original flags that were hiding
+                if ((lockComp.OriginalIFFFlags & IFFFlags.Hide) != 0)
+                    _shuttleSystem.AddIFFFlag(iffVisibilityGridUid, IFFFlags.Hide);
 
-                    if ((lockComp.OriginalIFFFlags & IFFFlags.HideLabel) != 0)
-                        _shuttleSystem.AddIFFFlag(iffVisibilityGridUid, IFFFlags.HideLabel);
-                }
+                if ((lockComp.OriginalIFFFlags & IFFFlags.HideLabel) != 0)
+                    _shuttleSystem.AddIFFFlag(iffVisibilityGridUid, IFFFlags.HideLabel);
             }
         }
 
