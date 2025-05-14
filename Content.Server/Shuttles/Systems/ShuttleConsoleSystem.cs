@@ -63,7 +63,7 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
         SubscribeLocalEvent<ShuttleConsoleComponent, PowerChangedEvent>(OnConsolePowerChange);
         SubscribeLocalEvent<ShuttleConsoleComponent, AnchorStateChangedEvent>(OnConsoleAnchorChange);
         SubscribeLocalEvent<ShuttleConsoleComponent, ActivatableUIOpenAttemptEvent>(OnConsoleUIOpenAttempt);
-        SubscribeLocalEvent<ShuttleConsoleComponent, GetVerbsEvent<AlternativeVerb>>(AddPanicButtonVerb);
+        SubscribeLocalEvent<ShuttleConsoleComponent, GetVerbsEvent<Verb>>(AddPanicButtonVerb);
         Subs.BuiEvents<ShuttleConsoleComponent>(ShuttleConsoleUiKey.Key, subs =>
         {
             subs.Event<ShuttleConsoleFTLBeaconMessage>(OnBeaconFTLMessage);
@@ -576,7 +576,7 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
     /// <summary>
     /// Adds the panic button verb to the shuttle console
     /// </summary>
-    private void AddPanicButtonVerb(EntityUid uid, ShuttleConsoleComponent component, GetVerbsEvent<AlternativeVerb> args)
+    private void AddPanicButtonVerb(EntityUid uid, ShuttleConsoleComponent component, GetVerbsEvent<Verb> args)
     {
         if (!args.CanAccess || !args.CanInteract || !this.IsPowered(uid, EntityManager))
             return;
@@ -586,7 +586,7 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
             return;
 
         // Create the panic button verb
-        AlternativeVerb verb = new()
+        Verb verb = new()
         {
             Act = () => SendPanicSignal(uid, args.User, component),
             Text = Loc.GetString("shuttle-console-panic-button"),

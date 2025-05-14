@@ -12,6 +12,8 @@ using Content.Shared.Verbs;
 using Robust.Shared.Utility;
 using Content.Server._NF.Shipyard.Components;
 using Content.Shared._Mono.Company;
+using Content.Shared.PDA;
+using Robust.Shared.Audio;
 
 namespace Content.Server.Shuttles.Systems;
 
@@ -61,7 +63,7 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
             return;
 
         // Check if player has an ID card or voucher in hand
-        var idCards = FindAccessibleIDCards(args.User);
+        var idCards = FindAccessibleIdCards(args.User);
         var vouchers = FindAccessibleVouchers(args.User);
 
         if (idCards.Count == 0 && vouchers.Count == 0)
@@ -99,7 +101,7 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
             bool unlocked = false;
 
             // Try each ID card the user has
-            var idCards = FindAccessibleIDCards(user);
+            var idCards = FindAccessibleIdCards(user);
             foreach (var idCard in idCards)
             {
                 if (TryUnlock(uid, idCard, component, user: user))
@@ -142,7 +144,7 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
             var validLock = false;
 
             // Try ID cards first
-            var idCards = FindAccessibleIDCards(user);
+            var idCards = FindAccessibleIdCards(user);
             foreach (var idCard in idCards)
             {
                 if (TryLock(uid, idCard, component))
@@ -269,14 +271,14 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
         if (!deedFound)
         {
             Log.Debug("No matching voucher-purchased deed found for shuttle console {0}", console);
-            _audio.PlayPvs("/Audio/Effects/Cargo/buzz_sigh.ogg", voucher);
+            _audio.PlayPvs(new SoundPathSpecifier("/Audio/Effects/Cargo/buzz_sigh.ogg"), voucher);
             return false;
         }
 
         // Success! Unlock the console
         Log.Debug("Successfully unlocked shuttle console {0} with voucher {1}", console, voucher);
         lockComp.Locked = false;
-        _audio.PlayPvs("/Audio/Machines/id_swipe.ogg", console);
+        _audio.PlayPvs(new SoundPathSpecifier("/Audio/Machines/id_swipe.ogg"), console);
         Popup.PopupEntity(Loc.GetString("shuttle-console-unlocked"), console);
         return true;
     }
@@ -322,26 +324,23 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
         if (!deedFound)
         {
             Log.Debug("No matching voucher-purchased deed found for shuttle console {0}", console);
-            _audio.PlayPvs("/Audio/Effects/Cargo/buzz_sigh.ogg", voucher);
+            _audio.PlayPvs(new SoundPathSpecifier("/Audio/Effects/Cargo/buzz_sigh.ogg"), voucher);
             return false;
         }
 
         // Success! Lock the console
         Log.Debug("Successfully locked shuttle console {0} with voucher {1}", console, voucher);
         lockComp.Locked = true;
-        _audio.PlayPvs("/Audio/Machines/id_swipe.ogg", console);
+        _audio.PlayPvs(new SoundPathSpecifier("/Audio/Machines/id_swipe.ogg"), console);
         Popup.PopupEntity(Loc.GetString("shuttle-console-locked-success"), console);
 
         // Remove any pilots
-        if (TryComp<ShuttleConsoleComponent>(console, out var shuttleComp))
-        {
-            // Clone the list to avoid modification during enumeration
-            var pilots = shuttleComp.SubscribedPilots.ToList();
-            foreach (var pilot in pilots)
-            {
-                _consoleSystem.RemovePilot(pilot);
-            }
-        }
+        if (!TryComp<ShuttleConsoleComponent>(console, out var shuttleComp))
+            return true;
+        // Clone the list to avoid modification during enumeration
+        var pilots = shuttleComp.SubscribedPilots.ToList();
+        foreach (var pilot in pilots)
+            _consoleSystem.RemovePilot(pilot);
 
         return true;
     }
@@ -361,7 +360,7 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
     /// <summary>
     /// Finds all ID cards accessible to a user (in hands or worn)
     /// </summary>
-    private List<EntityUid> FindAccessibleIDCards(EntityUid user)
+    private List<EntityUid> FindAccessibleIdCards(EntityUid user)
     {
         var results = new List<EntityUid>();
 
@@ -373,12 +372,11 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
                 continue;
 
             if (TryComp<IdCardComponent>(hand.HeldEntity, out _))
-            {
                 results.Add(hand.HeldEntity.Value);
-            }
-        }
 
-        // TODO: Check for PDAs and other items containing ID cards
+            if(TryComp<PdaComponent>(hand.HeldEntity, out var pdaComponent) && pdaComponent.ContainedId is not null)
+                results.Add(pdaComponent.ContainedId.Value);
+        }
 
         return results;
     }
@@ -398,9 +396,8 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
                 continue;
 
             if (TryComp<ShipyardVoucherComponent>(hand.HeldEntity, out _))
-            {
                 results.Add(hand.HeldEntity.Value);
-            }
+
         }
 
         return results;
@@ -497,18 +494,18 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
         // Check if any deed matches the shuttle ID
         foreach (var (entity, deed) in deeds)
         {
-            var deedShuttleId = deed.ShuttleUid.HasValue ? deed.ShuttleUid.Value.ToString() : null;
+            var deedShuttleId = deed.ShuttleUid?.ToString();
 
             Log.Debug("Checking deed shuttle ID {0} against lock shuttle ID {1}", deedShuttleId, lockComp.ShuttleId);
 
-            if (deed.ShuttleUid != null &&
-                lockComp.ShuttleId != null &&
-                deedShuttleId == lockComp.ShuttleId)
-            {
-                deedFound = true;
-                Log.Debug("Found matching deed for shuttle console {0}", console);
-                break;
-            }
+            if (deed.ShuttleUid == null ||
+                lockComp.ShuttleId == null ||
+                deedShuttleId != lockComp.ShuttleId)
+                continue;
+
+            deedFound = true;
+            Log.Debug("Found matching deed for shuttle console {0}", console);
+            break;
         }
 
         if (!deedFound)
@@ -541,14 +538,14 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
         lockComp.Locked = !string.IsNullOrEmpty(shuttleId);
 
         // Remove any pilots when locking the console
-        if (lockComp.Locked && TryComp<ShuttleConsoleComponent>(console, out var shuttleComp))
+        if (!lockComp.Locked || !TryComp<ShuttleConsoleComponent>(console, out var shuttleComp))
+            return;
+
+        // Clone the list to avoid modification during enumeration
+        var pilots = shuttleComp.SubscribedPilots.ToList();
+        foreach (var pilot in pilots)
         {
-            // Clone the list to avoid modification during enumeration
-            var pilots = shuttleComp.SubscribedPilots.ToList();
-            foreach (var pilot in pilots)
-            {
-                _consoleSystem.RemovePilot(pilot);
-            }
+            _consoleSystem.RemovePilot(pilot);
         }
     }
 
@@ -560,50 +557,17 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
         if (!TryComp<ShuttleConsoleLockComponent>(console, out var lockComp))
         {
             // Add the component if it doesn't exist
-            if (enabled)
+            if (!enabled)
+                return;
+
+            lockComp = AddComp<ShuttleConsoleLockComponent>(console);
+            lockComp.Locked = true;
+            lockComp.EmergencyLocked = true;
+
+            // Make the shuttle visible in emergency mode by manipulating IFF
+            if (Transform(console).GridUid is { } gridUid)
             {
-                lockComp = AddComp<ShuttleConsoleLockComponent>(console);
-                lockComp.Locked = true;
-                lockComp.EmergencyLocked = true;
-
-                // Make the shuttle visible in emergency mode by manipulating IFF
-                if (TryComp<TransformComponent>(console, out var xform) && xform.GridUid != null)
-                {
-                    var gridUid = xform.GridUid.Value;
-
-                    // Store original IFF flags
-                    if (TryComp<IFFComponent>(gridUid, out var iff))
-                    {
-                        lockComp.OriginalIFFFlags = iff.Flags;
-
-                        // Remove hiding flags
-                        _shuttleSystem.RemoveIFFFlag(gridUid, IFFFlags.Hide | IFFFlags.HideLabel);
-                    }
-                    else
-                    {
-                        // If no IFF component exists, add one that's visible
-                        var iffComp = EntityManager.EnsureComponent<IFFComponent>(gridUid);
-                        lockComp.OriginalIFFFlags = iffComp.Flags;
-                    }
-                }
-
-                Dirty(console, lockComp);
-            }
-            return;
-        }
-
-        // Update existing component
-        lockComp.Locked = enabled || !string.IsNullOrEmpty(lockComp.ShuttleId);
-        lockComp.EmergencyLocked = enabled;
-
-        // Handle IFF visibility
-        if (TryComp<TransformComponent>(console, out var transform) && transform.GridUid != null)
-        {
-            var gridUid = transform.GridUid.Value;
-
-            if (enabled)
-            {
-                // Save current IFF flags and make visible
+                // Store original IFF flags
                 if (TryComp<IFFComponent>(gridUid, out var iff))
                 {
                     lockComp.OriginalIFFFlags = iff.Flags;
@@ -618,20 +582,49 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
                     lockComp.OriginalIFFFlags = iffComp.Flags;
                 }
             }
+
+            Dirty(console, lockComp);
+            return;
+        }
+
+        // Update existing component
+        lockComp.Locked = enabled || !string.IsNullOrEmpty(lockComp.ShuttleId);
+        lockComp.EmergencyLocked = enabled;
+
+        // Handle IFF visibility
+        if (Transform(console).GridUid is { } iffVisibilityGridUid)
+        {
+            if (enabled)
+            {
+                // Save current IFF flags and make visible
+                if (TryComp<IFFComponent>(iffVisibilityGridUid, out var iff))
+                {
+                    lockComp.OriginalIFFFlags = iff.Flags;
+
+                    // Remove hiding flags
+                    _shuttleSystem.RemoveIFFFlag(iffVisibilityGridUid, IFFFlags.Hide | IFFFlags.HideLabel);
+                }
+                else
+                {
+                    // If no IFF component exists, add one that's visible
+                    var iffComp = EntityManager.EnsureComponent<IFFComponent>(iffVisibilityGridUid);
+                    lockComp.OriginalIFFFlags = iffComp.Flags;
+                }
+            }
             else
             {
                 // Restore original flags
-                if (TryComp<IFFComponent>(gridUid, out var iff))
+                if (TryComp<IFFComponent>(iffVisibilityGridUid, out var iff))
                 {
                     // Clear all flags first
-                    _shuttleSystem.RemoveIFFFlag(gridUid, IFFFlags.Hide | IFFFlags.HideLabel);
+                    _shuttleSystem.RemoveIFFFlag(iffVisibilityGridUid, IFFFlags.Hide | IFFFlags.HideLabel);
 
                     // Then restore the original flags that were hiding
                     if ((lockComp.OriginalIFFFlags & IFFFlags.Hide) != 0)
-                        _shuttleSystem.AddIFFFlag(gridUid, IFFFlags.Hide);
+                        _shuttleSystem.AddIFFFlag(iffVisibilityGridUid, IFFFlags.Hide);
 
                     if ((lockComp.OriginalIFFFlags & IFFFlags.HideLabel) != 0)
-                        _shuttleSystem.AddIFFFlag(gridUid, IFFFlags.HideLabel);
+                        _shuttleSystem.AddIFFFlag(iffVisibilityGridUid, IFFFlags.HideLabel);
                 }
             }
         }
@@ -639,14 +632,14 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
         Dirty(console, lockComp);
 
         // Remove any pilots when locking the console
-        if (lockComp.Locked && TryComp<ShuttleConsoleComponent>(console, out var shuttleComp))
+        if (!lockComp.Locked || !TryComp<ShuttleConsoleComponent>(console, out var shuttleComp))
+            return;
+
+        // Clone the list to avoid modification during enumeration
+        var pilots = shuttleComp.SubscribedPilots.ToList();
+        foreach (var pilot in pilots)
         {
-            // Clone the list to avoid modification during enumeration
-            var pilots = shuttleComp.SubscribedPilots.ToList();
-            foreach (var pilot in pilots)
-            {
-                _consoleSystem.RemovePilot(pilot);
-            }
+            _consoleSystem.RemovePilot(pilot);
         }
     }
 }

@@ -51,7 +51,7 @@ public sealed partial class ShuttleSystem
     public float DefaultStartupTime;
     public float DefaultTravelTime;
     public float DefaultArrivalTime;
-    private float FTLCooldown;
+    //private float FTLCooldown;
     public float FTLMassLimit;
     private TimeSpan _hyperspaceKnockdownTime = TimeSpan.FromSeconds(5);
 
@@ -96,7 +96,7 @@ public sealed partial class ShuttleSystem
         _cfg.OnValueChanged(CCVars.FTLStartupTime, time => DefaultStartupTime = time, true);
         _cfg.OnValueChanged(CCVars.FTLTravelTime, time => DefaultTravelTime = time, true);
         _cfg.OnValueChanged(CCVars.FTLArrivalTime, time => DefaultArrivalTime = time, true);
-        _cfg.OnValueChanged(CCVars.FTLCooldown, time => FTLCooldown = time, true);
+        //_cfg.OnValueChanged(CCVars.FTLCooldown, time => FTLCooldown = time, true); Monolith FTL Drive sets cooldown
         _cfg.OnValueChanged(CCVars.FTLMassLimit, time => FTLMassLimit = time, true);
         _cfg.OnValueChanged(CCVars.HyperspaceKnockdownTime, time => _hyperspaceKnockdownTime = TimeSpan.FromSeconds(time), true);
     }
@@ -646,6 +646,7 @@ public sealed partial class ShuttleSystem
     /// </summary>
     private void UpdateFTLArriving(Entity<FTLComponent, ShuttleComponent> entity)
     {
+        var globalFtlCooldown = 10f;
         var uid = entity.Owner;
         var comp = entity.Comp1;
         // If this is a linked shuttle, let the main shuttle handle the arrival
@@ -655,6 +656,9 @@ public sealed partial class ShuttleSystem
         var body = _physicsQuery.GetComponent(uid);
         DoTheDinosaur(xform);
         _dockSystem.SetDockBolts(entity, false);
+
+        if (TryGetFTLDrive(entity, out _, out var globalDrive))
+            globalFtlCooldown = globalDrive.Cooldown;
 
         // Get all docked shuttles
         var dockedShuttles = new HashSet<EntityUid>();
@@ -736,6 +740,7 @@ public sealed partial class ShuttleSystem
             if (dockedUid == uid) continue;
             var dockedXform = _xformQuery.GetComponent(dockedUid);
             var (relativePos, relativeRot, dockConnections) = relativeTransforms[dockedUid];
+            var ftlCooldown = 10f;
 
             var mainNewPos = _transform.GetWorldPosition(uid);
             var mainNewRot = _transform.GetWorldRotation(uid);
@@ -775,11 +780,14 @@ public sealed partial class ShuttleSystem
                 }
             }
 
+            if (TryGetFTLDrive(dockedUid, out _, out var drive))
+                ftlCooldown = drive.Cooldown;
+
             // Put linked shuttles in cooldown state instead of immediately removing the component
-            if (FTLCooldown > 0f && TryComp<FTLComponent>(dockedUid, out var dockedFtl))
+            if (ftlCooldown > 0f && TryComp<FTLComponent>(dockedUid, out var dockedFtl))
             {
                 dockedFtl.State = FTLState.Cooldown;
-                dockedFtl.StateTime = StartEndTime.FromCurTime(_gameTiming, FTLCooldown);
+                dockedFtl.StateTime = StartEndTime.FromCurTime(_gameTiming, ftlCooldown);
             }
             else
             {
@@ -809,10 +817,10 @@ public sealed partial class ShuttleSystem
         Smimsh(uid, xform: xform);
 
         // Add cooldown before removing the FTL component
-        if (FTLCooldown > 0f)
+        if (globalFtlCooldown > 0f)
         {
             comp.State = FTLState.Cooldown;
-            comp.StateTime = StartEndTime.FromCurTime(_gameTiming, FTLCooldown);
+            comp.StateTime = StartEndTime.FromCurTime(_gameTiming, globalFtlCooldown);
         }
         else
         {

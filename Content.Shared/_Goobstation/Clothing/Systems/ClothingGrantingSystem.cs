@@ -3,9 +3,9 @@ using Content.Shared.Clothing.Components;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Tag;
 using Robust.Shared.Serialization.Manager;
+using YamlDotNet.Core.Tokens;
 
 namespace Content.Shared._Goobstation.Clothing.Systems;
-
 public sealed class ClothingGrantingSystem : EntitySystem
 {
     [Dependency] private readonly IComponentFactory _componentFactory = default!;
@@ -23,18 +23,14 @@ public sealed class ClothingGrantingSystem : EntitySystem
         SubscribeLocalEvent<ClothingGrantTagComponent, GotUnequippedEvent>(OnTagUnequip);
     }
 
+    // Monolith Cleanup - Below
     private void OnCompEquip(EntityUid uid, ClothingGrantComponentComponent component, GotEquippedEvent args)
     {
-        if (!TryComp<ClothingComponent>(uid, out var clothing)) return;
+        if (!TryComp<ClothingComponent>(uid, out var clothing))
+            return;
 
-        if (!clothing.Slots.HasFlag(args.SlotFlags)) return;
-
-        // Goobstation
-        //if (component.Components.Count > 1)
-        //{
-        //    Logger.Error("Although a component registry supports multiple components, we cannot bookkeep more than 1 component for ClothingGrantComponent at this time.");
-        //    return;
-        //}
+        if (!clothing.Slots.HasFlag(args.SlotFlags))
+            return;
 
         foreach (var (name, data) in component.Components)
         {
@@ -43,9 +39,7 @@ public sealed class ClothingGrantingSystem : EntitySystem
             if (HasComp(args.Equipee, newComp.GetType()))
                 continue;
 
-            newComp.Owner = args.Equipee;
-
-            var temp = (object) newComp;
+            object? temp = newComp;
             _serializationManager.CopyTo(data.Component, ref temp);
             EntityManager.AddComponent(args.Equipee, (Component)temp!);
 
@@ -55,23 +49,16 @@ public sealed class ClothingGrantingSystem : EntitySystem
 
     private void OnCompUnequip(EntityUid uid, ClothingGrantComponentComponent component, GotUnequippedEvent args)
     {
-        // Goobstation
-        //if (!component.IsActive) return;
-
-        foreach (var (name, data) in component.Components)
+        foreach (var (name, _) in component.Components)
         {
-            // Goobstation
-            if (!component.Active.ContainsKey(name) || !component.Active[name])
+            if (!component.Active.TryGetValue(name, out _))
                 continue;
 
             var newComp = (Component) _componentFactory.GetComponent(name);
 
             RemComp(args.Equipee, newComp.GetType());
-            component.Active[name] = false; // Goobstation
+            component.Active[name] = false;
         }
-
-        // Goobstation
-        //component.IsActive = false;
     }
 
 

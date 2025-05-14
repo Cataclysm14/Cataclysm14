@@ -15,7 +15,6 @@ using Content.Shared.Clothing;
 using Content.Shared.Item.ItemToggle;
 using Content.Shared.Item.ItemToggle.Components;
 using Content.Server._NF.Shuttles.Components;
-using Content.Server._Mono.Ships;
 using Robust.Shared.Threading;
 
 namespace Content.Server.Shuttles.Systems;
@@ -25,8 +24,7 @@ public sealed partial class ShuttleSystem
     [Dependency] private readonly MapSystem _mapSys = default!;
     [Dependency] private readonly DamageableSystem _damageSys = default!;
     [Dependency] private readonly InventorySystem _inventorySystem = default!;
-    [Dependency] private readonly ItemToggleSystem _toggle = default!;
-    [Dependency] private readonly IParallelManager _parallel = default!;
+
 
     /// <summary>
     /// Minimum velocity difference between 2 bodies for a shuttle "impact" to occur.

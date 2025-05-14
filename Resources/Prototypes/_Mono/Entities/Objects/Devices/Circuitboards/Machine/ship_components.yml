@@ -56,3 +56,47 @@
     stackRequirements:
       Glass: 10
       Steel: 10
+
+- type: entity
+  id: MachineDriveCTLA50Circuitboard
+  parent: BaseMachineCircuitboard
+  name: CTLA-25s bluespace drive board
+  description: A machine board for an advanced bluespace drive.
+  components:
+  - type: Sprite
+    state: security
+  - type: MachineBoard
+    prototype: MachineFTLDrive25S
+    requirements:
+      Capacitor: 8
+      Manipulator: 4
+    componentRequirements:
+      AmeFuelContainer:
+        amount: 3
+        defaultPrototype: AmeJar
+    stackRequirements:
+      Glass: 20
+      Steel: 20
+      Uranium: 35
+
+- type: entity
+  id: MachineDriveCTLA50Circuitboard
+  parent: BaseMachineCircuitboard
+  name: CTLA-50 bluespace drive board
+  description: A machine board for an advanced bluespace drive.
+  components:
+  - type: Sprite
+    state: security
+  - type: MachineBoard
+    prototype: MachineFTLDrive50
+    requirements:
+      Capacitor: 8
+      Manipulator: 4
+    componentRequirements:
+      AmeFuelContainer:
+        amount: 3
+        defaultPrototype: AmeJar
+    stackRequirements:
+      Glass: 20
+      Steel: 20
+      Uranium: 40

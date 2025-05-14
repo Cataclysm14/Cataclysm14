@@ -19,6 +19,7 @@
         map: ["enum.PowerDeviceVisualLayers.Powered"]
         visible: false
         shader: unshaded
+        color: "#349BEB"
     - type: FTLDrive
       range: 5000
     - type: ApcPowerReceiver
@@ -57,3 +58,62 @@
         machine_parts: !type:Container
     - type: PirateBountyItem
       id: FTLDrive
+
+- type: entity
+  parent: MachineFTLDrive
+  id: MachineFTLDrive50
+  name: CTLA-50 bluespace drive
+  description: A FTL drive that extends a ship's FTL range to ~10 kilometers. Does not stack.
+  components:
+  - type: Sprite
+    sprite: _Mono/Structures/ShuttleComponents/drive.rsi
+    snapCardinals: true
+    layers:
+    - state: control
+    - state: control_on
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+      visible: false
+      shader: unshaded
+      color: "#E6173E"
+  - type: FTLDrive
+    range: 10000
+  - type: ApcPowerReceiver
+    powerLoad: 4000
+  - type: PointLight
+    enabled: false
+    color: "#E6173E" # beb color
+    radius: 2.0
+    energy: 1.5
+  - type: Machine
+    board: MachineDriveCTLA50Circuitboard
+
+- type: entity
+  parent: MachineFTLDrive
+  id: MachineFTLDrive25S
+  name: CTLA-25s bluespace drive
+  description: An advanced FTL drive that extends a ship's FTL range to ~5 kilometers, but with upgrades to allow for faster recharge and flight times. Does not stack.
+  components:
+  - type: Sprite
+    sprite: _Mono/Structures/ShuttleComponents/drive.rsi
+    snapCardinals: true
+    layers:
+    - state: control
+    - state: control_on
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+      visible: false
+      shader: unshaded
+      color: "#7E16F7"
+  - type: FTLDrive
+    range: 5000
+    cooldown: 5
+    hyperSpaceTime: 10
+    startupTime: 2.25
+  - type: ApcPowerReceiver
+    powerLoad: 4000
+  - type: PointLight
+    enabled: false
+    color: "#7E16F7" # beb color
+    radius: 2.0
+    energy: 1.5
+  - type: Machine
+    board: MachineDriveCTLA50Circuitboard
