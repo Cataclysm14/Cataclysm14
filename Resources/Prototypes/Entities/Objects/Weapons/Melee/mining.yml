@@ -26,7 +26,10 @@
   - type: IncreaseDamageOnWield
     damage:
       groups:
+       types:
         Blunt: 15
+        Piercing: 5
+        Structural: 25
         Piercing: 5
         Structural: 25
   - type: Item
