@@ -14,16 +14,16 @@ public sealed partial class CircularShieldTempSpeedChangeEffect : CircularShield
     private SharedPhysicsSystem _physSys = default!;
     private SharedCircularShieldSystem _shieldSys = default!;
 
-    [DataField("speedModifier", required: true), ViewVariables(VVAccess.ReadWrite)]
+    [DataField(required: true)]
     public float SpeedModifier;
 
-    [DataField("projectilesOnly"), ViewVariables(VVAccess.ReadWrite)]
+    [DataField]
     public bool ProjectilesOnly = true;
 
-    [DataField("projectilePhasing"), ViewVariables(VVAccess.ReadWrite)]
+    [DataField]
     public bool ProjectilePhasing = true;
 
-    [DataField("destroyProjectiles"), ViewVariables(VVAccess.ReadWrite)]
+    [DataField]
     public bool DestroyProjectiles = true;
 
     // Changed from HashSet to ConcurrentHashSet for thread safety
@@ -36,31 +36,29 @@ public sealed partial class CircularShieldTempSpeedChangeEffect : CircularShield
     // Expose a thread-safe collection interface to check tracked projectiles
     public ICollection<EntityUid> TrackedProjectiles => _trackedUids.Keys;
 
-    public override void OnShieldInit(EntityUid uid, CircularShieldComponent shield)
+    public override void OnShieldInit(Entity<CircularShieldComponent> shield)
     {
         _entMan = IoCManager.Resolve<IEntityManager>();
         _formSys = _entMan.System<SharedTransformSystem>();
         _physSys = _entMan.System<SharedPhysicsSystem>();
         _shieldSys = _entMan.System<SharedCircularShieldSystem>();
 
-        ShieldEntity = uid;
-        ShieldComponent = shield;
+        ShieldEntity = shield.Owner;
+        ShieldComponent = shield.Comp;
     }
 
-    public override void OnShieldShutdown(EntityUid uid, CircularShieldComponent shield)
+    public override void OnShieldShutdown(Entity<CircularShieldComponent> shield)
     {
         foreach (var id in _trackedUids.Keys)
-        {
             RestoreVelocity(id);
-        }
 
         _trackedUids.Clear();
         ShieldComponent = null;
     }
 
-    public override void OnShieldUpdate(EntityUid uid, CircularShieldComponent shield, float time)
+    public override void OnShieldUpdate(Entity<CircularShieldComponent> shield, float time)
     {
-        base.OnShieldUpdate(uid, shield, time);
+        base.OnShieldUpdate(shield, time);
         if (_trackedUids.IsEmpty)
             return;
 
@@ -75,7 +73,7 @@ public sealed partial class CircularShieldTempSpeedChangeEffect : CircularShield
                 continue;
             }
 
-            if (!_shieldSys.EntityInShield(uid, shield, trackedUid, _formSys))
+            if (!_shieldSys.EntityInShield(shield, trackedUid, _formSys))
             {
                 RestoreVelocity(trackedUid);
                 _trackedUids.TryRemove(trackedUid, out _);
@@ -83,115 +81,104 @@ public sealed partial class CircularShieldTempSpeedChangeEffect : CircularShield
         }
     }
 
-    public override void OnShieldEnter(EntityUid uid, CircularShieldComponent shield)
+    public override void OnShieldEnter(EntityUid uid, Entity<CircularShieldComponent> shield)
     {
         // Initialize entity manager if it hasn't been initialized yet
-        if (_entMan == null)
-        {
-            _entMan = IoCManager.Resolve<IEntityManager>();
-            _formSys = _entMan.System<SharedTransformSystem>();
-            _physSys = _entMan.System<SharedPhysicsSystem>();
-            _shieldSys = _entMan.System<SharedCircularShieldSystem>();
-        }
+        _entMan = IoCManager.Resolve<IEntityManager>();
+        _formSys = _entMan.System<SharedTransformSystem>();
+        _physSys = _entMan.System<SharedPhysicsSystem>();
+        _shieldSys = _entMan.System<SharedCircularShieldSystem>();
 
         // If the entity doesn't exist, don't process it
         if (!_entMan.EntityExists(uid))
             return;
 
         // Flag to determine if we should affect the projectile
-        bool shouldAffectProjectile = true;
+        var shouldAffectProjectile = true;
 
-        if (ProjectilesOnly)
+        if (!ProjectilesOnly)
+            return;
+
+        // If we're only affecting projectiles, check if this entity is a projectile
+        if (!_entMan.HasComponent<ProjectileComponent>(uid)
+            || !_entMan.HasComponent<ShipWeaponProjectileComponent>(uid))
+            return;
+
+        // Make sure we have a valid shield entity
+        if (ShieldEntity == default || !_entMan.EntityExists(ShieldEntity))
         {
-            // If we're only affecting projectiles, check if this entity is a projectile
-            if (!_entMan.HasComponent<ProjectileComponent>(uid))
-                return;
-                
-            // Check if the projectile has the ShipWeaponProjectile component
-            if (!_entMan.HasComponent<ShipWeaponProjectileComponent>(uid))
-                return;
+            // Shield entity not properly initialized, fall back to the current shield
+            ShieldEntity = shield;
 
-            // Make sure we have a valid shield entity
+            // If still invalid, skip grid checking but allow effects by default
             if (ShieldEntity == default || !_entMan.EntityExists(ShieldEntity))
-            {
-                // Shield entity not properly initialized, fall back to the current shield
-                ShieldEntity = shield.Owner;
+                goto ApplyEffects;
+        }
 
-                // If still invalid, skip grid checking but allow effects by default
-                if (ShieldEntity == default || !_entMan.EntityExists(ShieldEntity))
-                    goto ApplyEffects;
+        try
+        {
+            // Get the shield's grid
+            if (!_entMan.TryGetComponent(ShieldEntity, out TransformComponent? shieldTransform))
+                goto ApplyEffects;
+
+            var shieldGridUid = shieldTransform.GridUid;
+
+            // Get the projectile's grid
+            if (!_entMan.TryGetComponent(uid, out TransformComponent? projectileTransform))
+                goto ApplyEffects;
+
+            var projectileGridUid = projectileTransform.GridUid;
+
+            // Get the shooter's grid if possible
+            EntityUid? shooterGridUid = null;
+            if (_entMan.HasComponent<ProjectileComponent>(uid) &&
+                _entMan.TryGetComponent(uid, out ProjectileComponent? projectileComp) &&
+                projectileComp.Shooter.HasValue &&
+                _entMan.EntityExists(projectileComp.Shooter.Value) &&
+                _entMan.TryGetComponent(projectileComp.Shooter.Value, out TransformComponent? shooterTransform))
+            {
+                shooterGridUid = shooterTransform.GridUid;
             }
 
-            try
-            {
-                // Get the shield's grid
-                if (!_entMan.TryGetComponent(ShieldEntity, out TransformComponent? shieldTransform))
-                    goto ApplyEffects;
+            // Only affect projectiles that are from a different grid than the shield
+            // or if the shooter is from a different grid than the shield
+            bool isSameGrid = (shieldGridUid == projectileGridUid) || (shooterGridUid.HasValue && shieldGridUid == shooterGridUid);
 
-                var shieldGridUid = shieldTransform.GridUid;
-
-                // Get the projectile's grid
-                if (!_entMan.TryGetComponent(uid, out TransformComponent? projectileTransform))
-                    goto ApplyEffects;
-
-                var projectileGridUid = projectileTransform.GridUid;
-
-                // Get the shooter's grid if possible
-                EntityUid? shooterGridUid = null;
-                if (_entMan.HasComponent<ProjectileComponent>(uid) &&
-                    _entMan.TryGetComponent(uid, out ProjectileComponent? projectileComp) &&
-                    projectileComp.Shooter.HasValue &&
-                    _entMan.EntityExists(projectileComp.Shooter.Value) &&
-                    _entMan.TryGetComponent(projectileComp.Shooter.Value, out TransformComponent? shooterTransform))
-                {
-                    shooterGridUid = shooterTransform.GridUid;
-                }
-
-                // Only affect projectiles that are from a different grid than the shield
-                // or if the shooter is from a different grid than the shield
-                bool isSameGrid = (shieldGridUid == projectileGridUid) || (shooterGridUid.HasValue && shieldGridUid == shooterGridUid);
-
-                // If projectile is from the same grid, don't affect it
-                if (isSameGrid)
-                    shouldAffectProjectile = false;
-            }
-            catch (Exception)
-            {
-                // If any error occurs during grid checking, we'll continue with default behavior
-            }
+            // If projectile is from the same grid, don't affect it
+            if (isSameGrid)
+                shouldAffectProjectile = false;
+        }
+        catch (Exception)
+        {
+            // If any error occurs during grid checking, we'll continue with default behavior
+        }
 
         ApplyEffects:
-            // If we should destroy projectiles and this projectile should be affected
-            if (DestroyProjectiles && shouldAffectProjectile)
-            {
-                // Queue deletion of the projectile
-                _entMan.QueueDeleteEntity(uid);
-                return; // Exit early since we're destroying the projectile
-            }
-            else if (shouldAffectProjectile)
-            {
-                // Only track projectiles for phasing if they should be affected and we're not destroying them
-                if (ProjectilePhasing)
-                {
-                    _trackedUids.TryAdd(uid, 0); // Value is not used, just a placeholder for the concurrent dictionary
-                }
+        // If we should destroy projectiles and this projectile should be affected
+        if (DestroyProjectiles && shouldAffectProjectile)
+        {
+            // Queue deletion of the projectile
+            _entMan.QueueDeleteEntity(uid);
+        }
+        else if (shouldAffectProjectile)
+        {
+            // Only track projectiles for phasing if they should be affected and we're not destroying them
+            if (ProjectilePhasing)
+                _trackedUids.TryAdd(uid, 0); // Value is not used, just a placeholder for the concurrent dictionary
 
-                // Apply speed change if entity is in the shield and should be affected
-                if (_entMan.TryGetComponent(uid, out TransformComponent? form))
-                {
-                    _physSys.SetLinearVelocity(uid, _physSys.GetLinearVelocity(uid, _formSys.GetWorldPosition(form), xform: form) * SpeedModifier);
-                }
-            }
+            // Apply speed change if entity is in the shield and should be affected
+            if (_entMan.TryGetComponent(uid, out TransformComponent? form))
+                _physSys.SetLinearVelocity(uid, _physSys.GetLinearVelocity(uid, _formSys.GetWorldPosition(form), xform: form) * SpeedModifier);
         }
     }
 
     private void RestoreVelocity(EntityUid uid)
     {
-        if (_entMan.TryGetComponent(uid, out TransformComponent? transform))
-        {
-            var currentVel = _physSys.GetLinearVelocity(uid, _formSys.GetWorldPosition(transform), xform: transform);
-            _physSys.SetLinearVelocity(uid, currentVel / SpeedModifier);
-        }
+        if (!_entMan.TryGetComponent(uid, out TransformComponent? transform))
+            return;
+
+        var currentVel = _physSys.GetLinearVelocity(uid, _formSys.GetWorldPosition(transform), xform: transform);
+        _physSys.SetLinearVelocity(uid, currentVel / SpeedModifier);
 
         // No need to restore velocity if the entity is deleted
     }
