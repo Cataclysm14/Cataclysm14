@@ -12,6 +12,7 @@
   parent: [VendingMachineAstroVend, BaseStructureDisableAnchoring]
   id: VendingMachineBluespaceDrive
   name: DriveVend
+  description: Sells flatpacked bluespaces drives.
   components:
   - type: VendingMachine
     pack: BlueSpaceVendInventory

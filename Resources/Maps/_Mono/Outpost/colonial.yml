@@ -4,8 +4,8 @@ meta:
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 05/06/2025 20:04:10
-  entityCount: 4976
+  time: 05/15/2025 17:40:54
+  entityCount: 4981
 maps:
 - 1
 grids:
@@ -4528,6 +4528,19 @@ entities:
       radarColor: '#00DEFEFF'
     - type: CircularShieldRadar
   - uid: 1638
+    components:
+    - type: MetaData
+    - type: Transform
+      pos: -9.71575,19.022425
+      parent: 2
+    - type: RadarBlip
+      enabled: False
+      visibleFromOtherGrids: True
+      shape: Ring
+      scale: 0
+      radarColor: '#00DEFEFF'
+    - type: CircularShieldRadar
+  - uid: 4977
     components:
     - type: MetaData
     - type: Transform
@@ -10359,6 +10372,21 @@ entities:
     components:
     - type: Transform
       pos: -38.5,16.5
+      parent: 2
+  - uid: 4979
+    components:
+    - type: Transform
+      pos: -21.5,5.5
+      parent: 2
+  - uid: 4980
+    components:
+    - type: Transform
+      pos: -25.5,5.5
+      parent: 2
+  - uid: 4981
+    components:
+    - type: Transform
+      pos: -25.5,6.5
       parent: 2
 - proto: CableHV
   entities:
@@ -29865,87 +29893,119 @@ entities:
       rot: 3.141592653589793 rad
       pos: -13.5,24.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
       id: CL Office Line
+    - type: Fixtures
+      fixtures: {}
   - uid: 4068
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -9.5,27.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
       id: CL's Office
+    - type: Fixtures
+      fixtures: {}
   - uid: 4069
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -17.5,27.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
       id: Bridge West Hallway
+    - type: Fixtures
+      fixtures: {}
   - uid: 4070
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -7.5,27.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
       id: Bridge East Hallway
+    - type: Fixtures
+      fixtures: {}
   - uid: 4071
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -13.5,34.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
       id: CL's Quarters
+    - type: Fixtures
+      fixtures: {}
   - uid: 4072
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -25.5,26.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
       id: Vault
+    - type: Fixtures
+      fixtures: {}
   - uid: 4073
     components:
     - type: Transform
       pos: 0.5,33.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
       id: Shield Control
+    - type: Fixtures
+      fixtures: {}
   - uid: 4074
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 5.5,36.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
       id: Gravity Generator
+    - type: Fixtures
+      fixtures: {}
 - proto: SurveillanceCameraEngineering
   entities:
   - uid: 4075
@@ -29954,22 +30014,30 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 0.5,22.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
       id: Engineering
+    - type: Fixtures
+      fixtures: {}
   - uid: 4076
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 1.5,29.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
       id: Atmospherics
+    - type: Fixtures
+      fixtures: {}
 - proto: SurveillanceCameraGeneral
   entities:
   - uid: 4077
@@ -29978,340 +30046,480 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -23.5,31.5
       parent: 2
+    - type: Physics
+      canCollide: False
+    - type: Fixtures
+      fixtures: {}
   - uid: 4078
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -20.5,43.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: NW Docking Arm
+    - type: Fixtures
+      fixtures: {}
   - uid: 4079
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -4.5,43.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: NE Docking Arm
+    - type: Fixtures
+      fixtures: {}
   - uid: 4080
     components:
     - type: Transform
       pos: 2.5,45.5
       parent: 2
+    - type: Physics
+      canCollide: False
+    - type: Fixtures
+      fixtures: {}
   - uid: 4081
     components:
     - type: Transform
       pos: -27.5,45.5
       parent: 2
+    - type: Physics
+      canCollide: False
+    - type: Fixtures
+      fixtures: {}
   - uid: 4082
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -2.5,51.5
       parent: 2
+    - type: Physics
+      canCollide: False
+    - type: Fixtures
+      fixtures: {}
   - uid: 4083
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -22.5,51.5
       parent: 2
+    - type: Physics
+      canCollide: False
+    - type: Fixtures
+      fixtures: {}
   - uid: 4084
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -28.5,37.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: Janitorial Docking Port
+    - type: Fixtures
+      fixtures: {}
   - uid: 4085
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -4.5,13.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: East Central Hallway
+    - type: Fixtures
+      fixtures: {}
   - uid: 4086
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -20.5,13.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: West Central Hallway
+    - type: Fixtures
+      fixtures: {}
   - uid: 4087
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -6.5,11.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: East Bus Dock Maints
+    - type: Fixtures
+      fixtures: {}
   - uid: 4088
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -18.5,11.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: West Bus Dock Maints
+    - type: Fixtures
+      fixtures: {}
   - uid: 4089
     components:
     - type: Transform
       pos: -7.5,15.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: East Bus Dock
+    - type: Fixtures
+      fixtures: {}
   - uid: 4090
     components:
     - type: Transform
       pos: -17.5,15.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: West Bus Dock
+    - type: Fixtures
+      fixtures: {}
   - uid: 4091
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,22.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: NE Hallway - E Center Hallway
+    - type: Fixtures
+      fixtures: {}
   - uid: 4092
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -23.5,22.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: NW Hallway - W Center Hallway
+    - type: Fixtures
+      fixtures: {}
   - uid: 4093
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 2.5,18.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: East Shipyard
+    - type: Fixtures
+      fixtures: {}
   - uid: 4094
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -27.5,18.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: West Shipyard
+    - type: Fixtures
+      fixtures: {}
   - uid: 4095
     components:
     - type: Transform
       pos: 1.5,8.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: East Tree
+    - type: Fixtures
+      fixtures: {}
   - uid: 4096
     components:
     - type: Transform
       pos: -26.5,8.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: West Tree
+    - type: Fixtures
+      fixtures: {}
   - uid: 4097
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -3.5,1.5
       parent: 2
+    - type: Physics
+      canCollide: False
+    - type: Fixtures
+      fixtures: {}
   - uid: 4098
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -21.5,1.5
       parent: 2
+    - type: Physics
+      canCollide: False
+    - type: Fixtures
+      fixtures: {}
   - uid: 4099
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -11.5,-7.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: Center Docking Arm - Middle
+    - type: Fixtures
+      fixtures: {}
   - uid: 4100
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -13.5,-16.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: Center Docking Arm - South
+    - type: Fixtures
+      fixtures: {}
   - uid: 4101
     components:
     - type: Transform
       pos: -34.5,3.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: West Hallway
+    - type: Fixtures
+      fixtures: {}
   - uid: 4102
     components:
     - type: Transform
       pos: 9.5,3.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: East Hallway
+    - type: Fixtures
+      fixtures: {}
   - uid: 4103
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -50.5,5.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: West Docking Arm
+    - type: Fixtures
+      fixtures: {}
   - uid: 4104
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 19.5,24.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: Hub North
+    - type: Fixtures
+      fixtures: {}
   - uid: 4105
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 19.5,7.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: East Docking Arm Junction
+    - type: Fixtures
+      fixtures: {}
   - uid: 4106
     components:
     - type: Transform
       pos: 26.5,4.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: East Docking Arm
+    - type: Fixtures
+      fixtures: {}
   - uid: 4107
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 16.5,16.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: Hub South
+    - type: Fixtures
+      fixtures: {}
   - uid: 4108
     components:
     - type: Transform
       pos: -36.5,12.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: Freezer
+    - type: Fixtures
+      fixtures: {}
   - uid: 4109
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -43.5,29.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: Northmost West Docking Port
+    - type: Fixtures
+      fixtures: {}
   - uid: 4110
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -34.5,17.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: Public Kitchen
+    - type: Fixtures
+      fixtures: {}
   - uid: 4111
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -41.5,15.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
       id: Western Main Docking Arm
+    - type: Fixtures
+      fixtures: {}
 - proto: SurveillanceCameraMedical
   entities:
   - uid: 4112
@@ -30319,22 +30527,30 @@ entities:
     - type: Transform
       pos: 18.5,33.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
       id: Morgue
+    - type: Fixtures
+      fixtures: {}
   - uid: 4113
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 23.5,26.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
       id: Medbay
+    - type: Fixtures
+      fixtures: {}
 - proto: SurveillanceCameraRouterCommand
   entities:
   - uid: 4114
@@ -30399,22 +30615,30 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 11.5,23.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
       id: Security Guard
+    - type: Fixtures
+      fixtures: {}
   - uid: 4123
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 13.5,18.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
       id: Security Hallway
+    - type: Fixtures
+      fixtures: {}
 - proto: SurveillanceCameraService
   entities:
   - uid: 4124
@@ -30423,22 +30647,30 @@ entities:
       rot: 3.141592653589793 rad
       pos: -26.5,35.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraService
       nameSet: True
       id: Janitor's Closet
+    - type: Fixtures
+      fixtures: {}
   - uid: 4125
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 20.5,16.5
       parent: 2
+    - type: Physics
+      canCollide: False
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraService
       nameSet: True
       id: Mail Room
+    - type: Fixtures
+      fixtures: {}
 - proto: SurveillanceCameraWirelessRouterEntertainment
   entities:
   - uid: 4126
@@ -30741,6 +30973,13 @@ entities:
     components:
     - type: Transform
       pos: 0.5,18.5
+      parent: 2
+- proto: VendingMachineBluespaceDrive
+  entities:
+  - uid: 4978
+    components:
+    - type: Transform
+      pos: -25.5,6.5
       parent: 2
 - proto: VendingMachineChefvend
   entities:
