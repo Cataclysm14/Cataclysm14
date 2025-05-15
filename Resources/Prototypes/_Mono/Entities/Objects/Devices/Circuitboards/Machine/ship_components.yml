@@ -58,7 +58,7 @@
       Steel: 10
 
 - type: entity
-  id: MachineDriveCTLA50Circuitboard
+  id: MachineDriveCTLA25sCircuitboard
   parent: BaseMachineCircuitboard
   name: CTLA-25s bluespace drive board
   description: A machine board for an advanced bluespace drive.

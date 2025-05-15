@@ -26,6 +26,9 @@
           0.1
         ]
       ]
+    },
+    {
+      "name": "drive-unshaded"
     }
   ]
 }

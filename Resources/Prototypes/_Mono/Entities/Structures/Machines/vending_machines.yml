@@ -7,3 +7,26 @@
     pack: WeaponryWorksVendPOIMercInventory
   - type: AccessReader
     access: [["Mercenary"], ["Security"]]
+
+- type: entity
+  parent: [VendingMachineAstroVend, BaseStructureDisableAnchoring]
+  id: VendingMachineBluespaceDrive
+  name: DriveVend
+  components:
+  - type: VendingMachine
+    pack: BlueSpaceVendInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: MarketModifier
+    mod: 1
+  - type: Sprite
+    sprite: _Mono/Structures/Machines/VendingMachines/drivevend.rsi
+    layers:
+    - state: "off"
+      map: [ "enum.VendingMachineVisualLayers.Base" ]
+    - state: "off"
+      map: [ "enum.VendingMachineVisualLayers.BaseUnshaded" ]
+      shader: unshaded
+    - state: panel
+      map: [ "enum.WiresVisualLayers.MaintenancePanel" ]

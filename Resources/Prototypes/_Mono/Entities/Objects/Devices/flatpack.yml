@@ -41,3 +41,36 @@
     entity: WeaponTurretCharon
   - type: StaticPrice
     price: 10000
+
+- type: entity
+  parent: BaseFlatpack
+  id: FTLDriveFlatpack
+  name: CTLA-25 bluespace drive flatpack
+  description: A flatpack used for constructing a CTLA-25 bluespace drive.
+  components:
+  - type: Flatpack
+    entity: MachineFTLDrive
+  - type: StaticPrice
+    price: 25000
+
+- type: entity
+  parent: BaseFlatpack
+  id: FTLDrive50Flatpack
+  name: CTLA-50 bluespace drive flatpack
+  description: A flatpack used for constructing a CTLA-50 bluespace drive.
+  components:
+  - type: Flatpack
+    entity: MachineFTLDrive50
+  - type: StaticPrice
+    price: 45000
+
+- type: entity
+  parent: BaseFlatpack
+  id: FTLDrive25SFlatpack
+  name: CTLA-25s bluespace drive flatpack
+  description: A flatpack used for constructing a CTLA-25s bluespace drive.
+  components:
+  - type: Flatpack
+    entity: MachineFTLDrive25S
+  - type: StaticPrice
+    price: 75000
