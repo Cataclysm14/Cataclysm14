@@ -1,0 +1,97 @@
+
+# Nfsd
+- type: roleLoadout
+  id: USSPRifleman
+  groups:
+  - USSPHead
+  - USSPJumpsuit
+  - TsfmcGloves
+  - USSPBackpack
+  - TsfmcOuterClothing
+  - TsfmcShoes
+  - TsfmcFace
+  - TsfmcBelt
+  - USSPEars
+  - NfsdBoxSurvival
+  - USSPRiflemanPDA
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - NfsdSpeciesSpecific
+
+- type: roleLoadout
+  id: USSPCorporal
+  groups:
+  - USSPHead
+  - USSPJumpsuit
+  - TsfmcGloves
+  - USSPBackpack
+  - TsfmcOuterClothing
+  - TsfmcShoes
+  - TsfmcFace
+  - TsfmcBelt
+  - USSPEars
+  - NfsdBoxSurvival
+  - USSPCorporalPDA
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - NfsdSpeciesSpecific
+
+- type: roleLoadout
+  id: USSPMedic
+  groups:
+  - USSPHead
+  - USSPJumpsuit
+  - TsfmcBrigmedicGloves
+  - USSPBackpack
+  - TsfmcOuterClothing
+  - TsfmcShoes
+  - TsfmcFace
+  - USSPEars
+  - NfsdBoxSurvival
+  - USSPMedicPDA
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - NfsdSpeciesSpecific
+  - USSPMedhud
+  - TsfmcBrigmedicBelt
+
+- type: roleLoadout
+  id: USSPSergeant
+  groups:
+  - USSPHead
+  - USSPJumpsuit
+  - TsfmcGloves
+  - USSPBackpack
+  - TsfmcOuterClothing
+  - TsfmcShoes
+  - TsfmcFace
+  - TsfmcBelt
+  - USSPEarsCommand
+  - NfsdBoxSurvival
+  - USSPSergeantPDA
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - NfsdSpeciesSpecific
+
+- type: roleLoadout
+  id: USSPCommissar
+  groups:
+  - USSPHead
+  - USSPJumpsuit
+  - TsfmcGloves
+  - USSPBackpack
+  - TsfmcOuterClothing
+  - TsfmcShoes
+  - TsfmcFace
+  - TsfmcBelt
+  - USSPEarsCommand
+  - NfsdBoxSurvival
+  - USSPCommissarPDA
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - NfsdSpeciesSpecific

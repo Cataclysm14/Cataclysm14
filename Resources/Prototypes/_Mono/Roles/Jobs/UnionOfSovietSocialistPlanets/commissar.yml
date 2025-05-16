@@ -1,0 +1,21 @@
+- type: job
+  id: USSPCommissar
+  name: job-name-ussp-commissar
+  description: job-description-ussp-commissar
+  playTimeTracker: JobUSSPCommissar
+  requirements:
+  - !type:DepartmentTimeRequirement
+    department: UnionOfSovietSocialistPlanets
+    time: 0
+  startingGear: USSPCommissarGear
+  icon: "JobIconUSSPCommissar"
+  supervisors: job-supervisors-ussp-highcomm
+  canBeAntag: false
+  accessGroups:
+  - GeneralAccess
+
+- type: startingGear
+  id: USSPCommissarGear
+  equipment:
+    pocket1: WeaponRevolverMatebaAP
+    pocket2: SpeedLoaderMagnumAP

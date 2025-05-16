@@ -1,0 +1,24 @@
+- type: job
+  id: USSPCorporal
+  name: job-name-ussp-corporal
+  description: job-description-ussp-corporal
+  playTimeTracker: JobUSSP
+  requirements:
+  - !type:DepartmentTimeRequirement
+    department: UnionOfSovietSocialistPlanets
+    time: 0
+  startingGear: USSPCorporalGear
+  icon: "JobIconUSSPCorporal"
+  supervisors: job-supervisors-ussp-sergeant
+  canBeAntag: false
+  accessGroups:
+  - GeneralAccess
+
+- type: startingGear
+  id: USSPCorporalGear
+  equipment:
+    pocket1: WeaponPistolPollock
+    pocket2: MagazinePistol
+  storage:
+    back:
+    - WeaponRifleAK502

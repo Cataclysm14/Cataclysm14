@@ -1,0 +1,24 @@
+- type: job
+  id: USSPMedic
+  name: job-name-ussp-medic
+  description: job-description-ussp-medic
+  playTimeTracker: JobUSSP
+  requirements:
+  - !type:DepartmentTimeRequirement
+    department: UnionOfSovietSocialistPlanets
+    time: 0
+  startingGear: USSPMedicGear
+  icon: "JobIconUSSPMedic"
+  supervisors: job-supervisors-ussp-sergeant
+  canBeAntag: false
+  accessGroups:
+  - GeneralAccess
+
+- type: startingGear
+  id: USSPMedicGear
+  equipment:
+    pocket1: WeaponPistolPollock
+    pocket2: MagazinePistol
+  storage:
+    back:
+    - WeaponRifleAK502
