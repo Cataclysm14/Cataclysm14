@@ -1,0 +1,11 @@
+﻿- type: vendingMachineInventory
+  id: BlueSpaceVendInventory
+  startingInventory:
+    MagazineLightRifle: 4294967295 # Infinite
+    MagazinePistol: 4294967295 # Infinite
+    MagazinePistolHighCapacity: 20
+    CombatKnife: 4294967295 # Infinite
+    SurvivalKnife: 4294967295 # Infinite
+    SecBreachingHammer: 4294967295 # Infinite
+    ClothingUniformUSSP: 4294967295 # Infinite
+    ShipVoucherUSSP: 4294967295 # Infinite

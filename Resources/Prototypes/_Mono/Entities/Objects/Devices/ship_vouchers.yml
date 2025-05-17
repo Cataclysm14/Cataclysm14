@@ -13,3 +13,19 @@
     consoleType: BlackMarket
     access:
     - Pirate
+
+- type: entity
+  parent: BaseShipVoucher
+  id: ShipVoucherUSSP
+  name: USSP ship voucher
+  description: A small card that authorizes the acquisition of a singular free USSP ship.
+  components:
+  - type: Sprite
+    layers:
+    - state: nfsd
+    - state: voucherstationguard
+  - type: ShipyardVoucher
+    destroyOnEmpty: true
+    consoleType: USSP
+    access:
+    - USSP
