@@ -1,29 +1,29 @@
 - type: vessel
-  id: Hunter
+  id: Infiltrator
   parent: BaseVesselAntag
   name: Hunter
-  description: A small armored and armed with 4, 90mm autocannons Syndicate transport shuttle.
-  price: 50000
+  description: A small-mid sized syndicate vessel armed with 2, 90mm autocannons and 2, 220mm cannons.
+  price: 75000
   category: Small
   group: Syndicate
-  shuttlePath: /Maps/_Mono/Shuttles/Syndicate/hunter.yml
+  shuttlePath: /Maps/_Mono/Shuttles/Syndicate/infiltrator.yml
   guidebookPage: Null
   class:
   - Syndicate
   engine:
-  - Plasma
+  - AME
 
 - type: gameMap
-  id: Hunter
-  mapName: 'Hunter'
-  mapPath: /Maps/_Mono/Shuttles/Syndicate/hunter.yml
+  id: Infiltrator
+  mapName: 'Infiltrator'
+  mapPath: /Maps/_Mono/Shuttles/Syndicate/infiltrator.yml
   minPlayers: 0
   stations:
     Hunter:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Hunter MIL{1}'
+          mapNameTemplate: 'Infiltrator MIL{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
