@@ -1,5 +1,5 @@
 - type: roleLoadout
-  id: USSPRifleman
+  id: JobUSSPRifleman
   groups:
   - USSPHead
   - USSPJumpsuit
@@ -16,7 +16,7 @@
   - NfsdSpeciesSpecific
 
 - type: roleLoadout
-  id: USSPCorporal
+  id: JobUSSPCorporal
   groups:
   - USSPHead
   - USSPJumpsuit
@@ -33,7 +33,7 @@
   - NfsdSpeciesSpecific
 
 - type: roleLoadout
-  id: USSPMedic
+  id: JobUSSPMedic
   groups:
   - USSPHead
   - USSPJumpsuit
@@ -51,7 +51,7 @@
   - TsfmcBrigmedicBelt
 
 - type: roleLoadout
-  id: USSPSergeant
+  id: JobUSSPSergeant
   groups:
   - USSPHead
   - USSPJumpsuit
@@ -68,7 +68,7 @@
   - NfsdSpeciesSpecific
 
 - type: roleLoadout
-  id: USSPCommissar
+  id: JobUSSPCommissar
   groups:
   - USSPHead
   - USSPJumpsuit
