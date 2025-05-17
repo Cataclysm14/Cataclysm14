@@ -612,7 +612,7 @@ public sealed class CircularShieldSystem : SharedCircularShieldSystem
             return false;
 
         UpdateConsoleState(console);
-        Dirty(console, shield.Comp);
+        Dirty(shield.Owner, shield.Comp);
 
         return true;
     }
