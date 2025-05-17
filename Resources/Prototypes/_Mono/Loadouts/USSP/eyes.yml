@@ -1,4 +1,4 @@
 - type: loadout
   id: USSPMedHud
   equipment:
-    eyes: ClothingEyesHudMed
+    eyes: ClothingEyesHudMedical
