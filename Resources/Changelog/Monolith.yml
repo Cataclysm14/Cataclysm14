@@ -2433,3 +2433,9 @@ Entries:
       message: 'Rogue VT-7s are now displayed as C3 Contraband now. '
   id: 285
   time: '2025-05-16T15:34:17.0000000+00:00'
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Increases radio range to 6k.
+  id: 286
+  time: '2025-05-16T23:54:09.0000000+00:00'

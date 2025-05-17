@@ -18,7 +18,7 @@
   parent: [EncryptionKey, RecyclableItemDeviceTiny] # Frontier: added RecyclableItemDeviceTiny
   id: EncryptionKeyCommon
   name: broadband encryption key
-  description: An encryption key for the broadband channel. Limited to a 3000 meters range.
+  description: An encryption key for the broadband channel. Limited to a 6000 meters range.
   components:
   - type: EncryptionKey
     channels:
