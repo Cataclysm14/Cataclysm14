@@ -1,29 +1,29 @@
 - type: vessel
-  id: Gadyuka
+  id: Drakon
   parent: BaseVesselAntag
-  name: NCS Gadyuka
-  description: A small attack craft, ideal for dealing with small threats.
-  price: 21520 # WALMARTMOBILE 2
-  category: Small
+  name: NCS Drakon
+  description: A fast brawler with heavy armor and ballistic armaments.
+  price: 63500
+  category: Medium
   group: Ussp
-  shuttlePath: /Maps/_Mono/Shuttles/USSP/gadyuka.yml
+  shuttlePath: /Maps/_Mono/Shuttles/USSP/drakon.yml
   guidebookPage: Null
   class:
   - Pursuit
   engine:
-  - Uranium
+  - AME
 
 - type: gameMap
-  id: Gadyuka
-  mapName: 'Gadyuka'
-  mapPath: /Maps/_Mono/Shuttles/USSP/gadyuka.yml
+  id: Drakon
+  mapName: 'Drakon'
+  mapPath: /Maps/_Mono/Shuttles/USSP/drakon.yml
   minPlayers: 0
   stations:
-    Gadyuka:
+    Drakon:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Gadyuka USSP{1}'
+          mapNameTemplate: 'Drakon USSP{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
