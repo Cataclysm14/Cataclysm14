@@ -1,5 +1,5 @@
 ﻿- type: vendingMachineInventory
-  id: BlueSpaceVendInventory
+  id: USSPVendInventory
   startingInventory:
     MagazineLightRifle: 4294967295 # Infinite
     MagazinePistol: 4294967295 # Infinite

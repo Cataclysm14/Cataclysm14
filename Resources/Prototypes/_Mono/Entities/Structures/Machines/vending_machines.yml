@@ -13,6 +13,7 @@
   id: VendingMachineBluespaceDrive
   name: DriveVend
   description: Sells flatpacked bluespaces drives.
+  suffix: POI
   components:
   - type: VendingMachine
     pack: BlueSpaceVendInventory
@@ -37,6 +38,7 @@
   id: VendingMachineUSSP
   name: USSP Automated Requisition Vendor
   description: Sells various USSP equipment.
+  suffix: POI
   components:
   - type: VendingMachine
     pack: USSPVendInventory
@@ -55,3 +57,5 @@
       shader: unshaded
     - state: panel
       map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+  - type: AccessReader
+    access: [["USSP"], ["USSPHigh"]]
