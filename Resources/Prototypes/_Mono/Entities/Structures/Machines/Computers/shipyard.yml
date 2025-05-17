@@ -5,10 +5,10 @@
   description: Used to buy ships from USSP naval reserves.
   components:
   - type: ActivatableUI
-    key: enum.ShipyardConsoleUiKey.BlackMarket
+    key: enum.ShipyardConsoleUiKey.Ussp
   - type: UserInterface
     interfaces:
-      enum.ShipyardConsoleUiKey.BlackMarket:
+      enum.ShipyardConsoleUiKey.Ussp:
         type: ShipyardConsoleBoundUserInterface
   - type: Sprite
     sprite: _NF/Structures/Machines/computers.rsi
