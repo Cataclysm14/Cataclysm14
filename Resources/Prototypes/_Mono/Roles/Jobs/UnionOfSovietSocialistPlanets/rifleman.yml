@@ -4,15 +4,15 @@
   description: job-description-ussp-rifleman
   playTimeTracker: JobUSSPRifleman
   requirements:
-  - !type:DepartmentTimeRequirement
-    department: UnionOfSovietSocialistPlanets
-    time: 0
+  - !type:OverallPlaytimeRequirement
+    time: 14400 # 4 hrs
   startingGear: USSPRiflemanGear
-  icon: "JobIconUSSPRifleman"
+  icon: "JobIconSecurityCadet" # TODO - new USSP icons
   supervisors: job-supervisors-ussp-sergeant
   canBeAntag: false
   accessGroups:
   - GeneralAccess
+  - USSPLow
 
 - type: startingGear
   id: USSPRiflemanGear

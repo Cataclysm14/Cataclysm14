@@ -841,11 +841,13 @@
   - type: Access
     groups:
     - AllAccess
+    - USSPAA # Mono
     tags:
     - CentralCommand
     - NuclearOperative
     - SyndicateAgent
     - Wizard
+    - Pirate # Mono
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener

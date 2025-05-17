@@ -6,13 +6,16 @@
   requirements:
   - !type:DepartmentTimeRequirement
     department: UnionOfSovietSocialistPlanets
-    time: 0
+    time: 54000 # 15 hours
+  - !type:OverallPlaytimeRequirement
+    time: 72000 # 20 hrs
   startingGear: USSPSergeantGear
-  icon: "JobIconUSSPSergeant"
+  icon: "JobIconSeniorOfficer" # TODO - new USSP icons
   supervisors: job-supervisors-ussp-commissars
   canBeAntag: false
   accessGroups:
   - GeneralAccess
+  - USSPHigh
 
 - type: startingGear
   id: USSPSergeantGear
