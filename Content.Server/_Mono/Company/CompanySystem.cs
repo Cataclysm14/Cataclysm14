@@ -38,6 +38,15 @@ public sealed class CompanySystem : EntitySystem
         "PirateFirstMate"
     };
 
+    private readonly HashSet<string> _usspJobs = new()
+    {
+        "USSPCommissar",
+        "USSPSergeant",
+        "USSPCorporal",
+        "USSPMedic",
+        "USSPRifleman"
+    };
+
     public override void Initialize()
     {
         base.Initialize();
@@ -83,6 +92,12 @@ public sealed class CompanySystem : EntitySystem
         {
             // Assign Rogue company
             companyComp.CompanyName = "Rogue";
+        }
+        // Check if player's job is one of the USSP jobs
+        else if (args.JobId != null && _usspJobs.Contains(args.JobId))
+        {
+            // Assign USSP company
+            companyComp.CompanyName = "USSP";
         }
         else
         {

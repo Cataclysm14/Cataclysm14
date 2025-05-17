@@ -21,6 +21,13 @@
   disabled: true
 
 - type: company
+  id: USSP
+  form: Antagonist
+  name: USSP
+  color: "#B01340"
+  disabled: true
+
+- type: company
   id: TSFHighComm
   form: Protagonist
   name: Winter Solstice
@@ -77,7 +84,7 @@
   description: viper-group-description
   color: "#D82918"
   image: /Textures/_Mono/Companies/thevipergroup.png # Example
-  logins: 
+  logins:
   - Schizm1253
   - Archylle
   - bubz_bs
