@@ -14,8 +14,6 @@
   - USSPEars
   - NfsdBoxSurvival
   - USSPRiflemanPDA
-  - ContractorCartridge
-  - ContractorImplanter
   - ContractorEncryptionKey
   - NfsdSpeciesSpecific
 
@@ -33,8 +31,6 @@
   - USSPEars
   - NfsdBoxSurvival
   - USSPCorporalPDA
-  - ContractorCartridge
-  - ContractorImplanter
   - ContractorEncryptionKey
   - NfsdSpeciesSpecific
 
@@ -51,8 +47,6 @@
   - USSPEars
   - NfsdBoxSurvival
   - USSPMedicPDA
-  - ContractorCartridge
-  - ContractorImplanter
   - ContractorEncryptionKey
   - NfsdSpeciesSpecific
   - USSPMedhud
@@ -72,8 +66,6 @@
   - USSPEarsCommand
   - NfsdBoxSurvival
   - USSPSergeantPDA
-  - ContractorCartridge
-  - ContractorImplanter
   - ContractorEncryptionKey
   - NfsdSpeciesSpecific
 
@@ -91,7 +83,5 @@
   - USSPEarsCommand
   - NfsdBoxSurvival
   - USSPCommissarPDA
-  - ContractorCartridge
-  - ContractorImplanter
   - ContractorEncryptionKey
   - NfsdSpeciesSpecific
