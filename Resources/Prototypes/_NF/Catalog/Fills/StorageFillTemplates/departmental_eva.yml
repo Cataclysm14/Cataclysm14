@@ -6,7 +6,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitContractor
     - id: ClothingMaskBreath
     - id: JetpackMiniFilled
@@ -18,7 +19,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitPilot
     - id: ClothingMaskPilot
     - id: JetpackMiniFilled
@@ -30,7 +32,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitSr
     - id: ClothingMaskBreath
     - id: JetpackMiniFilled
@@ -42,7 +45,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitCaptain
     - id: ClothingMaskGasCaptain
     - id: JetpackMiniFilled
@@ -54,7 +58,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitEngineer
     - id: ClothingMaskGas
     - id: JetpackMiniFilled
@@ -66,7 +71,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitAtmosTech
     - id: ClothingMaskGasAtmos
     - id: JetpackMiniFilled
@@ -78,7 +84,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitCargo
     - id: ClothingMaskBreath
     - id: JetpackMiniFilled
@@ -90,7 +97,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitSalvage
     - id: ClothingMaskGasExplorer
     - id: JetpackMiniFilled
@@ -103,7 +111,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitMedic
     - id: ClothingMaskBreathMedical
     - id: JetpackMiniFilled
@@ -115,7 +124,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterHardsuitVoidParamed
     - id: ClothingMaskBreathMedical
     - id: JetpackMiniFilled
@@ -128,7 +138,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitScientist
     - id: ClothingMaskBreath
     - id: JetpackMiniFilled
@@ -140,7 +151,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitJanitor
     - id: ClothingMaskBreath
     - id: JetpackMiniFilled
@@ -152,7 +164,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitServiceWorker
     - id: ClothingMaskBreath
     - id: JetpackMiniFilled
@@ -164,7 +177,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitChaplain
     - id: ClothingMaskBreath
     - id: JetpackMiniFilled
@@ -177,7 +191,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitBoxerRed
     - id: ClothingMaskBreath
     - id: JetpackMiniFilled
@@ -191,7 +206,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitBoxerGreen
     - id: ClothingMaskBreath
     - id: JetpackMiniFilled
@@ -205,7 +221,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitBoxerBlue
     - id: ClothingMaskBreath
     - id: JetpackMiniFilled
@@ -219,7 +236,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitBoxerYellow
     - id: ClothingMaskBreath
     - id: JetpackMiniFilled
@@ -233,7 +251,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitBoxerRandom
     - id: ClothingMaskBreath
     - id: JetpackMiniFilled
@@ -247,7 +266,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitHydro
     - id: ClothingMaskBreath
     - id: JetpackMiniFilled
@@ -259,7 +279,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitMailman
     - id: ClothingMaskBreath
     - id: JetpackMiniFilled
@@ -311,7 +332,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitGoblin
     - id: ClothingMaskBreath
     - id: JetpackMiniFilled
@@ -325,7 +347,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterSuitEmergency
     - id: ClothingMaskBreath
     - id: JetpackMiniFilled
@@ -339,7 +362,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitLvhi
     - id: ClothingMaskBreath
     - id: JetpackMiniFilled
@@ -351,7 +375,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AirTankFilled
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingOuterEVASuitFsb
     - id: ClothingMaskBreath
     - id: JetpackMiniFilled
