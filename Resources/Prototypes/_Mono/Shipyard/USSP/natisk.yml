@@ -1,12 +1,12 @@
 - type: vessel
-  id: Drakon
+  id: Natisk
   parent: BaseVesselAntag
-  name: NCS Drakon
-  description: A fast brawler with heavy armor and ballistic armaments.
-  price: 78290
+  name: NCS Natisk
+  description: A tank with a layer of reinforced walls under its exterior hull, ensuring its able to send out obscene amounts of firepower.
+  price: 63500
   category: Medium
   group: Ussp
-  shuttlePath: /Maps/_Mono/Shuttles/USSP/drakon.yml
+  shuttlePath: /Maps/_Mono/Shuttles/USSP/natisk.yml
   guidebookPage: Null
   class:
   - Pursuit
@@ -14,16 +14,16 @@
   - AME
 
 - type: gameMap
-  id: Drakon
-  mapName: 'Drakon'
-  mapPath: /Maps/_Mono/Shuttles/USSP/drakon.yml
+  id: Natisk
+  mapName: 'Natisk'
+  mapPath: /Maps/_Mono/Shuttles/USSP/natisk.yml
   minPlayers: 0
   stations:
-    Drakon:
+    Natisk:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Drakon USSP{1}'
+          mapNameTemplate: 'Natisk USSP{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
