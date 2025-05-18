@@ -8,10 +8,10 @@
     department: UnionOfSovietSocialistPlanets
     time: 72000 # 20 hours
   - !type:RoleTimeRequirement
-    role: USSPSergeant
+    role: JobUSSPSergeant
     time: 10800 # 3 hrs
   - !type:RoleTimeRequirement
-    role: USSPMedic
+    role: JobUSSPMedic
     time: 10800 # 3 hrs
   - !type:OverallPlaytimeRequirement
     time: 144000 # 40 hrs
