@@ -10,6 +10,10 @@
   id: USSPCommand
   name: id-card-access-level-ussp-command
 
+- type: accessLevel
+  id: USSPGadyuka
+  name: id-card-access-level-ussp-debug
+
 - type: accessGroup
   id: USSPAA
   tags:
