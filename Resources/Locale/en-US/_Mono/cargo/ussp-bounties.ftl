@@ -1,6 +1,6 @@
 ussp-bounty-item-bread = Bread
 ussp-bounty-item-artifact = Alien Artifact
-ussp-bounty-item-stew = Soup
+ussp-bounty-item-soup = Soup
 ussp-bounty-item-pizza = Pizza
 ussp-bounty-item-radio = Handicomms
 ussp-bounty-item-rogue-hardsuit = Rogue Hardsuit
