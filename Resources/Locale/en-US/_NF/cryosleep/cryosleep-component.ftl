@@ -22,5 +22,5 @@ cryopod-refuse-organic = The {$cryopod} detected multiple sentients! Remove {$na
 cryopod-wake-up = {$entity} returns from cryosleep!
 
 # Mono
-cryopod-radio-location = {$character} has entered cryosleep at {$location} ({$x}, {$y}).
+cryopod-radio-location = {$character} has entered cryosleep at {$location}.
 cryopod-radio-coordinates = {$character} has entered cryosleep at coordinates ({$x}, {$y}).
