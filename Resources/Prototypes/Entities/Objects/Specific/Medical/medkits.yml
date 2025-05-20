@@ -93,20 +93,8 @@
 - type: entity
   name: combat medical kit
   description: "For the big weapons among us."
-  parent: Medkit
-  id: MedkitCombat
-  components:
-  - type: Sprite
-    state: blackkit
-  - type: Item
-    heldPrefix: blackkit
-    size: Normal
-
-- type: entity
-  name: combat medical kit
-  description: "For the big weapons among us."
   parent: BaseStorageItem
-  id: Medkit
+  id: MedkitCombat
   components:
   - type: Sprite
     sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi

@@ -317,7 +317,7 @@
   - type: Storage
     maxItemSize: Huge
     grid:
-    - 0,0,11,4
+    - 0,0,20,10
 
 - type: entity
   parent: NFClothingBackpack # Frontier: ClothingBackpack<NFClothingBackpackClown
