@@ -14,7 +14,7 @@
   - type: Item
     size: Normal # Frontier: Large<Normal
     shape: # Frontier
-    - 0,0,3,1 # Frontier
+    - 0,0,2,1 # Frontier
     sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi # Frontier: _NF prefix
     heldPrefix: firstaid
   - type: PhysicalComposition
@@ -102,3 +102,28 @@
     heldPrefix: blackkit
     size: Normal
 
+- type: entity
+  name: combat medical kit
+  description: "For the big weapons among us."
+  parent: BaseStorageItem
+  id: Medkit
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi
+    state: blackkit
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,3,1
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+    sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi
+    heldPrefix: blackkit
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 150
+  - type: Tag
+    tags:
+    - Medkit
