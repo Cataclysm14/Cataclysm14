@@ -21,3 +21,6 @@ guide-entry-tovek = ADMX-23 TOVEK Hybrid EMP Pod
 # Generic guides
 guide-entry-fentanyl = Fentanyl Production
 guide-entry-radios = Broadband & Shortband
+
+# Rules
+guide-entry-monolith-rules = Monolith Rules
