@@ -50,6 +50,6 @@
             Pilot: [0, -1]
             Mercenary: [0, -1]
           tags:
-          - USSPSecure
+          - USSPHigh
         - type: StationDeadDrop
           maxDeadDrops: 1 # Fewer here, players start here.

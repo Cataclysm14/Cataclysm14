@@ -239,6 +239,7 @@
     - id: RubberStampDoctor # Frontier
     # Shitmed
     - id: MedicalBiofabMachineBoard
+    - id: MMI # Shitmed
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable

@@ -17,3 +17,6 @@ guide-entry-dymere = ADEX-9 Dymere Turbolaser Battery
 # Generic guides
 guide-entry-fentanyl = Fentanyl Production
 guide-entry-radios = Broadband & Shortband
+
+# Rules
+guide-entry-monolith-rules = Monolith Rules

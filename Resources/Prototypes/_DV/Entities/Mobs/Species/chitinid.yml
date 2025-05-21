@@ -5,6 +5,7 @@
   id: BaseMobChitinid
   abstract: true
   components:
+
   - type: HumanoidAppearance
     species: Chitinid
     hideLayersOnEquip:

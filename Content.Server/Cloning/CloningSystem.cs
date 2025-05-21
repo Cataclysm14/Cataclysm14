@@ -116,15 +116,24 @@ namespace Content.Server.Cloning
 
         internal void TransferMindToClone(EntityUid mindId, MindComponent mind)
         {
-            if (!ClonesWaitingForMind.TryGetValue(mind, out var entity) ||
-                !EntityManager.EntityExists(entity) ||
-                !TryComp<MindContainerComponent>(entity, out var mindComp) ||
-                mindComp.Mind != null)
+            // find first mob this player is meant to use and doesn't already have a mind via alternate means
+            var query = EntityQueryEnumerator<BeingClonedComponent, MindContainerComponent>();
+            var found = false;
+            EntityUid mob;
+            while (query.MoveNext(out mob, out var cloned, out var mc))
+            {
+                if (cloned.Mind == mind && mc.Mind == null)
+                {
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found)
                 return;
 
-            _mindSystem.TransferTo(mindId, entity, ghostCheckOverride: true, mind: mind);
+            _mindSystem.TransferTo(mindId, mob, ghostCheckOverride: true, mind: mind);
             _mindSystem.UnVisit(mindId, mind);
-            ClonesWaitingForMind.Remove(mind);
         }
 
         private void HandleMindAdded(EntityUid uid, BeingClonedComponent clonedComponent, MindAddedMessage message)
@@ -175,7 +184,8 @@ namespace Content.Server.Cloning
                 return false;
 
             var mind = mindEnt.Comp;
-            if (ClonesWaitingForMind.TryGetValue(mind, out var clone))
+            // GoobStation: Remove this logic entirely, infinite clone army
+            /*if (ClonesWaitingForMind.TryGetValue(mind, out var clone))
             {
                 if (EntityManager.EntityExists(clone) &&
                     !_mobStateSystem.IsDead(clone) &&
@@ -184,10 +194,11 @@ namespace Content.Server.Cloning
                     return false; // Mind already has clone
 
                 ClonesWaitingForMind.Remove(mind);
-            }
+            }*/
 
-            if (mind.OwnedEntity != null && !_mobStateSystem.IsDead(mind.OwnedEntity.Value))
-                return false; // Body controlled by mind is not dead
+            // GoobStation: Lets you clone living people
+            //if (mind.OwnedEntity != null && !_mobStateSystem.IsDead(mind.OwnedEntity.Value))
+            //    return false; // Body controlled by mind is not dead
 
             // Yes, we still need to track down the client because we need to open the Eui
             if (mind.UserId == null || !_playerManager.TryGetSessionById(mind.UserId.Value, out var client))
@@ -285,7 +296,7 @@ namespace Content.Server.Cloning
             cloneMindReturn.Mind = mind;
             cloneMindReturn.Parent = uid;
             _containerSystem.Insert(mob, clonePod.BodyContainer);
-            ClonesWaitingForMind.Add(mind, mob);
+            //ClonesWaitingForMind.Add(mind, mob); // GoobStation: Use mindId
             UpdateStatus(uid, CloningPodStatus.NoMind, clonePod);
             _euiManager.OpenEui(new AcceptCloningEui(mindEnt, mind, this), client);
 
