@@ -126,7 +126,7 @@
 
 - type: entity
   id: WeaponTurretDymere
-  name: ADEX-9 Dymere Turbolaser
+  name: ADEX-9 DYMERE Turbolaser
   parent: BallisticArtillery
   description: Aetherion Dynamics Weapons Development Branch's most iconic product. Ionized gas projectiles will melt through anything you put in front of them. Can be remotely activated, or linked up to a GCS.
   components:
@@ -169,9 +169,8 @@
   - type: Actions
   - type: ProjectileBatteryAmmoProvider
     proto: ShipDymereProjectile
-    fireCost: 2400 # Adjusted from 1600 to achieve 17 total shots
+    fireCost: 2400
   - type: RadarBlip
     radarColor: "#FA4E5C"
   - type: ShipGunType
     shipType: Energy
-    
