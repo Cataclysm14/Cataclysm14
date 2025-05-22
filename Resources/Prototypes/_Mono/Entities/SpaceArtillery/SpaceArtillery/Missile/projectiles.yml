@@ -133,6 +133,7 @@
     totalIntensity: 100
     intensitySlope: 10
     maxIntensity: 50
+    maxTileBreak: 1
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
@@ -142,4 +143,3 @@
     scanArc: 25
     launchSpeed: 40
     maxSpeed: 200
-    maxTileBreak: 1
