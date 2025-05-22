@@ -78,7 +78,7 @@
     fireRate: 1.25
     projectileSpeed: 75
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/120mm_mortar.ogg
+      path: /Audio/Weapons/Guns/Gunshots/mortar.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
   - type: SpaceArtillery
@@ -124,7 +124,7 @@
     fireRate: 2.0
     projectileSpeed: 80
     soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/Gunshots/flak_fire.ogg
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/120mm_mortar.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
   - type: SpaceArtillery
