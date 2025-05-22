@@ -114,7 +114,7 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
-    fireRate: 2.0
+    fireRate: 2.5
     projectileSpeed: 80
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/120mm_mortar.ogg
