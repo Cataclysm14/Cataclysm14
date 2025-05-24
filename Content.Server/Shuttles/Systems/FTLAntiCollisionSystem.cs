@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Server.Shuttles.Components;
 using Content.Server.Shuttles.Events;
 using Content.Shared.Maps;
 using Content.Shared.Shuttles.Components;
@@ -27,6 +28,8 @@ public sealed class FTLAntiCollisionSystem : EntitySystem
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly ShuttleSystem _shuttle = default!;
     [Dependency] private readonly TileSystem _tile = default!;
+    [Dependency] private readonly DockingSystem _dockingSystem = default!;
+    [Dependency] private readonly EntityLookupSystem _lookupSystem = default!;
 
     // How far to check for other ships
     private const float CollisionCheckRange = 30f;
@@ -40,6 +43,7 @@ public sealed class FTLAntiCollisionSystem : EntitySystem
     private EntityQuery<PhysicsComponent> _physicsQuery;
     private EntityQuery<MapGridComponent> _gridQuery;
     private EntityQuery<TransformComponent> _xformQuery;
+    private EntityQuery<DockingComponent> _dockingQuery;
 
     public override void Initialize()
     {
@@ -48,6 +52,7 @@ public sealed class FTLAntiCollisionSystem : EntitySystem
         _physicsQuery = GetEntityQuery<PhysicsComponent>();
         _gridQuery = GetEntityQuery<MapGridComponent>();
         _xformQuery = GetEntityQuery<TransformComponent>();
+        _dockingQuery = GetEntityQuery<DockingComponent>();
 
         // Subscribe to FTL events to handle collision prevention
         SubscribeLocalEvent<FTLCompletedEvent>(OnFTLCompleted);
@@ -72,6 +77,10 @@ public sealed class FTLAntiCollisionSystem : EntitySystem
         if (TryComp<FTLComponent>(shuttle, out var ftlComp) && ftlComp.LinkedShuttle.HasValue)
             return;
 
+        // Get all docked ships to this shuttle to ignore them in collision checks
+        var dockedShips = new HashSet<EntityUid>();
+        _shuttle.GetAllDockedShuttles(shuttle, dockedShips);
+
         // Check for nearby ships
         var shuttlePosition = _transform.GetWorldPosition(shuttle);
         var shuttleAABB = grid.LocalAABB.Translated(shuttlePosition);
@@ -85,6 +94,26 @@ public sealed class FTLAntiCollisionSystem : EntitySystem
         {
             // Skip self
             if (otherGrid.Owner == shuttle)
+                continue;
+
+            // Skip ships that are docked to this shuttle
+            if (dockedShips.Contains(otherGrid.Owner))
+                continue;
+
+            // Check if this grid is docked to any other grids that are docked to our shuttle
+            bool isIndirectlyDocked = false;
+            foreach (var dockedShip in dockedShips)
+            {
+                var otherDockedShips = new HashSet<EntityUid>();
+                _shuttle.GetAllDockedShuttles(dockedShip, otherDockedShips);
+                if (otherDockedShips.Contains(otherGrid.Owner))
+                {
+                    isIndirectlyDocked = true;
+                    break;
+                }
+            }
+
+            if (isIndirectlyDocked)
                 continue;
 
             // Only care about grids with physics (actual ships)
@@ -110,7 +139,7 @@ public sealed class FTLAntiCollisionSystem : EntitySystem
         nearbyGrids.Sort((a, b) => a.Distance.CompareTo(b.Distance));
 
         // Try to find a safe position away from other ships
-        var newPosition = FindSafePosition(shuttle, mapId, shuttlePosition, shuttleAABB.Size.X);
+        var newPosition = FindSafePosition(shuttle, mapId, shuttlePosition, shuttleAABB.Size.X, dockedShips);
 
         if (newPosition != shuttlePosition)
         {
@@ -130,8 +159,9 @@ public sealed class FTLAntiCollisionSystem : EntitySystem
     /// <param name="mapId">The map ID where the shuttle is located</param>
     /// <param name="originalPosition">The original position of the shuttle</param>
     /// <param name="shipSize">The approximate size of the shuttle</param>
+    /// <param name="dockedShips">Ships docked to this shuttle to ignore in collision checks</param>
     /// <returns>A new safe position, or the original position if no safe position could be found</returns>
-    private Vector2 FindSafePosition(EntityUid shuttle, MapId mapId, Vector2 originalPosition, float shipSize)
+    private Vector2 FindSafePosition(EntityUid shuttle, MapId mapId, Vector2 originalPosition, float shipSize, HashSet<EntityUid> dockedShips)
     {
         // Try a few random directions at increasing distances
         for (int attempt = 0; attempt < MaxRepositionAttempts; attempt++)
@@ -146,7 +176,7 @@ public sealed class FTLAntiCollisionSystem : EntitySystem
             var testPosition = originalPosition + offset;
 
             // Check if this position is clear
-            if (IsPositionClear(shuttle, mapId, testPosition, shipSize))
+            if (IsPositionClear(shuttle, mapId, testPosition, shipSize, dockedShips))
             {
                 return testPosition;
             }
@@ -167,8 +197,9 @@ public sealed class FTLAntiCollisionSystem : EntitySystem
     /// <param name="mapId">The map ID where the shuttle is located</param>
     /// <param name="position">The position to check</param>
     /// <param name="shipSize">The approximate size of the shuttle</param>
+    /// <param name="dockedShips">Ships docked to this shuttle to ignore in collision checks</param>
     /// <returns>True if the position is clear, false otherwise</returns>
-    private bool IsPositionClear(EntityUid shuttle, MapId mapId, Vector2 position, float shipSize)
+    private bool IsPositionClear(EntityUid shuttle, MapId mapId, Vector2 position, float shipSize, HashSet<EntityUid> dockedShips)
     {
         // Buffer around the ship
         var checkSize = shipSize + MinimumSafeDistance;
@@ -180,6 +211,26 @@ public sealed class FTLAntiCollisionSystem : EntitySystem
         {
             // Skip self
             if (otherGrid.Owner == shuttle)
+                continue;
+
+            // Skip ships that are docked to this shuttle
+            if (dockedShips.Contains(otherGrid.Owner))
+                continue;
+
+            // Check if this grid is docked to any other grids that are docked to our shuttle
+            bool isIndirectlyDocked = false;
+            foreach (var dockedShip in dockedShips)
+            {
+                var otherDockedShips = new HashSet<EntityUid>();
+                _shuttle.GetAllDockedShuttles(dockedShip, otherDockedShips);
+                if (otherDockedShips.Contains(otherGrid.Owner))
+                {
+                    isIndirectlyDocked = true;
+                    break;
+                }
+            }
+
+            if (isIndirectlyDocked)
                 continue;
 
             // If we found another grid, position is not clear
