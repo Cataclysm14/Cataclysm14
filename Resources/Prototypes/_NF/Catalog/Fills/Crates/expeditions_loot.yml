@@ -64,7 +64,7 @@
     contents:
     - id: AirTankFilled
     - id: ClothingShoesBootsMag
-    - id: ClothingOuterHardsuitEngineering
+    - id: UndeterminedVoidsuitEngineer
     - id: ClothingMaskBreath
     - id: JetpackMiniFilled
     - id: HandheldGPSBasic
@@ -79,7 +79,7 @@
     contents:
     - id: AirTankFilled
     - id: ClothingShoesBootsMag
-    - id: ClothingOuterHardsuitAtmos
+    - id: ClothingModsuitAtmostechPowerCell
     - id: ClothingMaskBreath
     - id: JetpackMiniFilled
     - id: HandheldGPSBasic
