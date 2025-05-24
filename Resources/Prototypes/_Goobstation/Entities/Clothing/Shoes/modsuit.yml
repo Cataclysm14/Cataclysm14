@@ -25,12 +25,7 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
-  - type: ToggleClothing
-    action: ActionToggleMagboots
-    mustEquip: false
-  - type: ComponentToggler
-    components:
-    - type: NoSlip
+  - type: NoSlip
   - type: Magboots
   - type: SealableClothingVisuals
     visualLayers:
@@ -65,12 +60,7 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.95
     sprintModifier: 0.95
-  - type: ToggleClothing
-    action: ActionToggleMagboots
-    mustEquip: false
-  - type: ComponentToggler
-    components:
-    - type: NoSlip
+  - type: NoSlip
   - type: Magboots
   - type: SealableClothingVisuals
     visualLayers:
@@ -104,12 +94,7 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.95
     sprintModifier: 0.95
-  - type: ToggleClothing
-    action: ActionToggleMagboots
-    mustEquip: false
-  - type: ComponentToggler
-    components:
-    - type: NoSlip
+  - type: NoSlip
   - type: Magboots
   - type: SealableClothingVisuals
     visualLayers:
@@ -143,12 +128,7 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.95
     sprintModifier: 0.95
-  - type: ToggleClothing
-    action: ActionToggleMagboots
-    mustEquip: false
-  - type: ComponentToggler
-    components:
-    - type: NoSlip
+  - type: NoSlip
   - type: Magboots
   - type: SealableClothingVisuals
     visualLayers:
@@ -182,12 +162,7 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.85
-  - type: ToggleClothing
-    action: ActionToggleMagboots
-    mustEquip: false
-  - type: ComponentToggler
-    components:
-    - type: NoSlip
+  - type: NoSlip
   - type: Magboots
   - type: SealableClothingVisuals
     visualLayers:
@@ -221,12 +196,7 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.85
-  - type: ToggleClothing
-    action: ActionToggleMagboots
-    mustEquip: false
-  - type: ComponentToggler
-    components:
-    - type: NoSlip
+  - type: NoSlip
   - type: Magboots
   - type: SealableClothingVisuals
     visualLayers:
@@ -260,12 +230,7 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.85
-  - type: ToggleClothing
-    action: ActionToggleMagboots
-    mustEquip: false
-  - type: ComponentToggler
-    components:
-    - type: NoSlip
+  - type: NoSlip
   - type: Magboots
   - type: SealableClothingVisuals
     visualLayers:
@@ -299,12 +264,7 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.90
     sprintModifier: 0.90
-  - type: ToggleClothing
-    action: ActionToggleMagboots
-    mustEquip: false
-  - type: ComponentToggler
-    components:
-    - type: NoSlip
+  - type: NoSlip
   - type: Magboots
   - type: SealableClothingVisuals
     visualLayers:
