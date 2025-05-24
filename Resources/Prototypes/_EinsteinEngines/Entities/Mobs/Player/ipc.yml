@@ -71,6 +71,7 @@
   - type: GuideHelp
     guides:
       - IPC
+  - type: ExaminableCharacter # WWDP
   - type: Silicon
     entityType: enum.SiliconType.Player
     batteryPowered: true
