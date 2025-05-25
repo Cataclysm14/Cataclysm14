@@ -21,18 +21,19 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
-    fireRate: 0.25
-    projectileSpeed: 40
+    fireRate: 0.5
+    projectileSpeed: 60
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon2.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
-  - type: SpaceArtillery
-    powerChargeRate: 250
-    powerUsePassive: 200
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 350
+  - type: SpaceArtillery
+    powerChargeRate: 350
+    powerUsePassive: 500
+    powerUseActive: 0
   - type: Actions
   - type: ProjectileBatteryAmmoProvider
     proto: ShipMediumPlasmaProjectile
@@ -69,7 +70,7 @@
   description: Launches EMP projectiles at ships. Can be remotely activated, or linked up to a GCS.
   components:
   - type: StaticPrice
-    price: 2500
+    price: 5000
   - type: Sprite
     sprite: _Mono/Objects/ShuttleWeapons/rubicon.rsi
     layers:
@@ -89,12 +90,13 @@
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon2.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
-  - type: SpaceArtillery
-    powerChargeRate: 250
-    powerUsePassive: 200
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 350
+  - type: SpaceArtillery
+    powerChargeRate: 350
+    powerUsePassive: 1250
+    powerUseActive: 0
   - type: Actions
   - type: ProjectileBatteryAmmoProvider
     proto: ShipRubiconProjectile
@@ -126,8 +128,8 @@
 
 - type: entity
   id: WeaponTurretDymere
-  name: ADEX-9 Dymere Turbolaser
-  parent: BallisticArtillery
+  name: ADEX-9 DYMERE Turbolaser
+  parent: BallisticArtilleryUnanchorable
   description: Aetherion Dynamics Weapons Development Branch's most iconic product. Ionized gas projectiles will melt through anything you put in front of them. Can be remotely activated, or linked up to a GCS.
   components:
   - type: StaticPrice
@@ -159,19 +161,19 @@
       path: /Audio/_Mono/Weapons/Guns/Gunshots/laserfire.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
-  - type: SpaceArtillery
-    powerChargeRate: 250
-    powerUsePassive: 200
-    powerUseActive: 0
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 67
+  - type: SpaceArtillery
+    powerChargeRate: 67
+    powerUsePassive: 5750
+    powerUseActive: 0
   - type: Actions
   - type: ProjectileBatteryAmmoProvider
     proto: ShipDymereProjectile
-    fireCost: 2400 # Adjusted from 1600 to achieve 17 total shots
+    fireCost: 2400
   - type: RadarBlip
     radarColor: "#FA4E5C"
   - type: ShipGunType
     shipType: Energy
-    
+

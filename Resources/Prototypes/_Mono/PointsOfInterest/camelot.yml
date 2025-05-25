@@ -30,7 +30,7 @@
   minPlayers: 0
   stations:
     Camelot:
-      stationProto: RecordsFrontierOutpost
+      stationProto: RecordsFrontierOutpostCargo
       components:
         - type: StationNameSetup
           mapNameTemplate: 'Camelot Station'
@@ -49,5 +49,7 @@
             Contractor: [-1, -1]
             Pilot: [0, -1]
             Mercenary: [0, -1]
+          tags:
+          - USSPHigh
         - type: StationDeadDrop
           maxDeadDrops: 1 # Fewer here, players start here.

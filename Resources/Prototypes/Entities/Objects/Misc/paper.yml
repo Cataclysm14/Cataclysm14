@@ -586,6 +586,7 @@
     taxAccounts: # Frontier
       Frontier: 0.25 # Frontier
       Nfsd: 0.15 # Frontier
+      Medical: 0.1 # Mono
   - type: BankClient
   - type: ActivatableUI
     verbText: qm-clipboard-computer-verb-text

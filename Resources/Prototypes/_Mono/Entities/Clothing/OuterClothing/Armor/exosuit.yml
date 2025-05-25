@@ -16,15 +16,15 @@
     modifiers:
       coefficients:
         Blunt: 0.55 # nanomachines are brittle
-        Slash: 0.1
+        Slash: 0.2
         Piercing: 0.6
-        Heat: 0.2
-        Cold: 0.2
-        Shock: 0.125
+        Heat: 0.35
+        Cold: 0.35
+        Shock: 0.15
         Caustic: 0.5
-        Radiation: 0.75
+        Radiation: 0.7
   - type: ExplosionResistance
-    damageCoefficient: 0.2
+    damageCoefficient: 0.35
   - type: ClothingSpeedModifier
     walkModifier: 1.35
     sprintModifier: 1.35

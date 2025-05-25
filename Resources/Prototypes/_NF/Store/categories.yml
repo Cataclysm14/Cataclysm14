@@ -22,15 +22,15 @@
 - type: storeCategory
   id: UplinkSecurityExplosives
   name: store-category-secexplosives
-
-#pirate
+# mono edit
+# MARK: Rogue
 - type: storeCategory
   id: UplinkPirateBundles
   name: store-category-piratebundles
 
 - type: storeCategory
-  id: UplinkPirateHardsuits
-  name: store-category-piratehardsuits
+  id: UplinkPirateEquipment
+  name: store-category-pirateequipment
 
 - type: storeCategory
   id: UplinkPirateWeapons
@@ -41,6 +41,10 @@
   name: store-category-pirateammo
 
 - type: storeCategory
+  id: UplinkPirateMedical
+  name: store-category-piratemedical
+
+- type: storeCategory
   id: UplinkPirateUtility
   name: store-category-pirateutility
 
@@ -48,3 +52,7 @@
   id: UplinkPirateExplosives
   name: store-category-pirateexplosives
 
+- type: storeCategory
+  id: UplinkPirateGambling
+  name: store-category-pirategambling
+# mono edit end

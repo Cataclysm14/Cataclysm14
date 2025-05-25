@@ -3,18 +3,18 @@
   result: MonkeyCube
   categories:
   - Food
-  completetime: 300 # Frontier 3<300
+  completetime: 3
   materials:
-    Biomass: 70
+    Biomass: 16 # Mono
 
 - type: latheRecipe
   id: BioGenKoboldCube
   result: KoboldCube
   categories:
   - Food
-  completetime: 300 # Frontier 3<300
+  completetime: 3
   materials:
-    Biomass: 70
+    Biomass: 16 # Mono
 
 - type: latheRecipe
   id: BioGenMaterialCloth1

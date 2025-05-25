@@ -16,7 +16,7 @@
         shape:
           !type:PhysShapeCircle
           radius: 0.35
-        density: 185
+        density: 120 #Mono
         restitution: 0.0
         mask:
         - MobMask
@@ -50,6 +50,11 @@
       Male: MaleAvali
       Unsexed: MaleAvali
       Female: FemaleAvali
+  - type: Butcherable # Mono - Chicken
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatChicken
+      amount: 5
   - type: Hands
     handDisplacement:
       sizeMaps:
@@ -104,6 +109,11 @@
           32:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: mask
+      outerClothing:
+        sizeMaps:
+          32:
+            sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
+            state: outerClothing
       suitstorage:
         sizeMaps:
           32:
@@ -160,6 +170,11 @@
           32:
             sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
             state: mask
+      outerClothing:
+        sizeMaps:
+          32:
+            sprite: _Floofstation/Mobs/Species/Resomi/displacement.rsi
+            state: outerClothing
       suitstorage:
         sizeMaps:
           32:

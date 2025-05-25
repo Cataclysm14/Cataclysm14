@@ -56,9 +56,22 @@
     contents:
       - id: WeaponSubMachineGunC20r
       - id: MagazinePistolSubMachineGun
-        amount: 2
+        amount: 3
 #     - id: SMGSuppressor
-
+# Mono edit
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateFilledAtreides
+  name: Atreides bundle
+  description: "Sleek and deadly: A compact, one-handed Submachine Gun favored by the old Syndicate hands, bundled with three magazines." #, and a Suppressor.
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponSubMachineGunAtreides
+      - id: MagazinePistolSubMachineGun
+        amount: 3
+#     - id: SMGSuppressor
+# Mono edit end
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
   id: ClothingBackpackDuffelSyndicateFilledRevolver

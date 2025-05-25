@@ -5,8 +5,8 @@
   description: A Cloning Pod. 50% reliable.
   components:
   - type: CloningPod
-    baseBiomassRequirementMultiplier: 5 # Frontier
-    biomassRequirementMultiplier: 5 # Frontier
+    baseBiomassRequirementMultiplier: 1 # Mono Revert
+    biomassRequirementMultiplier: 1 # Mono Revert
   - type: DeviceList
   - type: DeviceNetwork
     deviceNetId: Wired

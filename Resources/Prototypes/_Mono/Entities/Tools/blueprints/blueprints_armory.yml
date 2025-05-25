@@ -1,0 +1,10 @@
+- type: entity
+  parent: NFBaseBlueprintArmory
+  id: BlueprintLauncherRocket
+  name: RPG-7 Blueprint
+  description: A blueprint with a schematic of RPG-7 and the ammo for it. It can be inserted into an autolathe or a techfab.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - WeaponLauncherRocket
+    - CartridgeRocket
