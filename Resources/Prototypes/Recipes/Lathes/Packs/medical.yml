@@ -90,6 +90,7 @@
   - SynthHeart
   - SynthLungs
   - SynthEyes
+#  - SynthHeadEmpty # Mono - Doesn't work yet
   - SynthLeftLeg
   - SynthRightLeg
   - SynthLeftFoot

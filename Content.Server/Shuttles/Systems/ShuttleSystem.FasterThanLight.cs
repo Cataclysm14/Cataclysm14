@@ -439,9 +439,9 @@ public sealed partial class ShuttleSystem
     }
 
     /// <summary>
-    /// Gets all shuttles that are docked to the specified shuttle, including transitively docked ones.
+    /// Recursively gets all docked shuttles to the target shuttle.
     /// </summary>
-    private void GetAllDockedShuttles(EntityUid shuttleUid, HashSet<EntityUid> dockedShuttles)
+    public void GetAllDockedShuttles(EntityUid shuttleUid, HashSet<EntityUid> dockedShuttles)
     {
         if (!dockedShuttles.Add(shuttleUid))
             return;  // Already processed this shuttle

@@ -78,7 +78,7 @@
 - type: entity
   parent: BaseSubdermalImplant
   id: TrackingImplant
-  name: tracking implant
+  name: TSFMC tracking implant # Mono - TSFMC named now
   description: This implant has a condition monitor for the TSFMC radio channel. # Frontier: NFSD mentioned, no tracking
   categories: [ HideSpawnMenu ]
   components:

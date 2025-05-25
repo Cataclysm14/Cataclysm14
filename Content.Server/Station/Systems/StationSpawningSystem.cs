@@ -31,6 +31,7 @@ using Content.Server._NF.Bank; // Frontier
 using Content.Server.Preferences.Managers; // Frontier
 using System.Linq;
 using Content.Shared.NameIdentifier; // Frontier
+using Content.Server._EinsteinEngines.Silicon.IPC; // Goobstation
 
 namespace Content.Server.Station.Systems;
 
@@ -53,6 +54,7 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly IDependencyCollection _dependencyCollection = default!; // Frontier
     [Dependency] private readonly IServerPreferencesManager _preferences = default!; // Frontier
+    [Dependency] private readonly InternalEncryptionKeySpawner _internalEncryption = default!; // Goobstation
 
     [Dependency] private readonly BankSystem _bank = default!; // Frontier
     private bool _randomizeCharacters;
@@ -176,6 +178,13 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
         if (_randomizeCharacters)
         {
             profile = HumanoidCharacterProfile.RandomWithSpecies(speciesId);
+        }
+
+        if (prototype?.StartingGear != null)
+        {
+            var startingGear = _prototypeManager.Index<StartingGearPrototype>(prototype.StartingGear);
+            EquipStartingGear(entity.Value, startingGear, raiseEvent: false);
+            _internalEncryption.TryInsertEncryptionKey(entity.Value, startingGear, EntityManager); // Goobstation
         }
 
         if (loadout != null)

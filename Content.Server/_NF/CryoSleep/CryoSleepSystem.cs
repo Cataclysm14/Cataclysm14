@@ -377,9 +377,7 @@ public sealed partial class CryoSleepSystem : SharedCryoSleepSystem
         {
             message = Loc.GetString("cryopod-radio-location",
                 ("character", characterName),
-                ("location", gridMetadata.EntityName),
-                ("x", Math.Round(mapPos.Position.X)),
-                ("y", Math.Round(mapPos.Position.Y)));
+                ("location", gridMetadata.EntityName)); // Mono: They don't tell coords now
         }
         else
         {

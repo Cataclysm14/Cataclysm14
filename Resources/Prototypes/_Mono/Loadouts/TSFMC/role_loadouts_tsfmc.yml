@@ -23,6 +23,7 @@
   - NfsdSpeciesSpecific
   - TsfmcFirearm
   - TsfmcMag
+  canCustomizeName: true # pseudonym?
 
 - type: roleLoadout
   id: JobDeputy
@@ -48,6 +49,7 @@
   - NfsdSpeciesSpecific
   - TsfmcFirearm
   - TsfmcMag
+  canCustomizeName: true
 
 - type: roleLoadout
   id: JobBrigmedic
@@ -73,6 +75,7 @@
   - NfsdSpeciesSpecific
   - TsfmcFirearm
   - TsfmcMag
+  canCustomizeName: true
 
 - type: roleLoadout
   id: JobBailiff
@@ -98,6 +101,7 @@
   - NfsdSpeciesSpecific
   - TsfmcFirearm
   - TsfmcMag
+  canCustomizeName: true
 
 - type: roleLoadout
   id: JobSeniorOfficer
@@ -123,6 +127,7 @@
   - NfsdSpeciesSpecific
   - TsfmcFirearm
   - TsfmcMag
+  canCustomizeName: true
 
 - type: roleLoadout
   id: JobSheriff
@@ -147,3 +152,4 @@
   - NfsdSpeciesSpecific
   - TsfmcFirearm
   - TsfmcMag
+  canCustomizeName: true

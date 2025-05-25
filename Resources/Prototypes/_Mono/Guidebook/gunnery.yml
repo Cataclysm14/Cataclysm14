@@ -12,6 +12,10 @@
   - ASM302Guide
   - CYREXAGuide
   - DYMEREGuide
+  - DRAVONGuide
+  - TARNYXGuide
+  - VESPERAGuide
+  - TOVEKGuide
 
 - type: guideEntry
   id: L85Guide
@@ -55,8 +59,32 @@
   text: "/ServerInfo/_Mono/Guidebook/Specifications/ASM302.xml"
   priority: 1
 
-- type: guideEntry 
+- type: guideEntry
   id: DYMEREGuide
   name: guide-entry-dymere
   text: "/ServerInfo/_Mono/Guidebook/Specifications/DYMERE.xml"
+  priority: 1
+
+- type: guideEntry
+  id: DRAVONGuide
+  name: guide-entry-dravon
+  text: "/ServerInfo/_Mono/Guidebook/Specifications/DRAVON.xml"
+  priority: 1
+
+- type: guideEntry
+  id: TARNYXGuide
+  name: guide-entry-tarnyx
+  text: "/ServerInfo/_Mono/Guidebook/Specifications/TARNYX.xml"
+  priority: 1
+
+- type: guideEntry
+  id: VESPERAGuide
+  name: guide-entry-vespera
+  text: "/ServerInfo/_Mono/Guidebook/Specifications/VESPERA.xml"
+  priority: 1
+
+- type: guideEntry
+  id: TOVEKGuide
+  name: guide-entry-tovek
+  text: "/ServerInfo/_Mono/Guidebook/Specifications/TOVEK.xml"
   priority: 1

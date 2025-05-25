@@ -5,10 +5,10 @@
     - type: BasicStationEventScheduler
       scheduledGameRules: !type:NestedSelector
         tableId: MonoAISTCEventsTable
-      minimumTimeUntilFirstEvent: 10800 # 180 minutes
+      minimumTimeUntilFirstEvent: 3600 # 60 minutes
       minMaxEventTiming:
-        min: 5400 # 90 minutes between events
-        max: 9000 # 150 minutes between events
+        min: 3600 # 60 minutes between events
+        max: 7200 # 120 minutes between events
 
 - type: entityTable
   id: MonoAISTCEventsTable
@@ -16,6 +16,7 @@
     children:
       - id: UnknownShuttleZenith
       - id: UnknownShuttleRazor
+      - id: UnknownShuttleNebula
 
 - type: entity
   abstract: true
@@ -24,7 +25,7 @@
   components:
   - type: StationEvent
     weight: 10
-    reoccurrenceDelay: 90
+    reoccurrenceDelay: 30
     duration: 1
     maxOccurrences: 2 # should be the same as [copies] in ship_spawns.yml
   - type: RuleGrids

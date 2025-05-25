@@ -39,6 +39,7 @@
     balance:
       FrontierUplinkCoin: 0
 
+# mono edit
 - type: entity
   id: StorePresetPirateUplink
   abstract: true
@@ -46,12 +47,15 @@
   - type: Store
     name: store-preset-name-pirate-uplink
     categories:
-    - UplinkPirateHardsuits
+    - UplinkPirateEquipment
     - UplinkPirateWeapons
     - UplinkPirateAmmo
+    - UplinkPirateMedical
     - UplinkPirateUtility
     - UplinkPirateExplosives
+    - UplinkPirateGambling
     currencyWhitelist:
-    - Doubloon
+    - Doubloon #Rename to Mark/Slip/Chit in code to represent blackmarket currency instead of doubloons
     balance:
       Doubloon: 0
+# mono edit end

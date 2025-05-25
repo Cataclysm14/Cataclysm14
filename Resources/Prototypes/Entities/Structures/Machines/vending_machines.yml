@@ -114,6 +114,7 @@
     taxAccounts:
       Frontier: 0.25
       Nfsd: 0.15
+      Medical: 0.1 # Mono
     cashSlot:
       whitelist:
         components:

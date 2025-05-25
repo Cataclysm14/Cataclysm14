@@ -1,0 +1,4 @@
+- type: latheRecipe
+  parent: NFBaseBlueprintLatheRecipe
+  id: BlueprintLauncherRocket
+  result: BlueprintLauncherRocket

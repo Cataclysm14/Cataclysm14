@@ -84,6 +84,7 @@
   description: viper-group-description
   color: "#D82918"
   image: /Textures/_Mono/Companies/thevipergroup.png # Example
+  disabled: true
   logins:
   - Schizm1253
   - Archylle
