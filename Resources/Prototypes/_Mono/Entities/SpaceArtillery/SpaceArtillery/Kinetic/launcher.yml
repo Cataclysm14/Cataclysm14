@@ -149,7 +149,7 @@
 - type: entity
   id: WeaponTurretTarnyx
   name: ADBX-31 TARNYX 150mm EMP Cannon
-  parent: BallisticArtillery
+  parent: BallisticArtilleryUnanchorable
   description: A heavy EMP Cannon made by Aetherion Dynamics. It can disable massive parts of an enemy ship, making it effective in asymmetric combat. Can be remotely activated, or linked up to a GCS.
   components:
   - type: StaticPrice

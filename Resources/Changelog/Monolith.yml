@@ -2807,3 +2807,97 @@ Entries:
       message: Fixed guns having less ammo than they should.
   id: 329
   time: '2025-05-24T13:25:49.0000000+00:00'
+- author: starch70
+  changes:
+    - type: Fix
+      message: Fixed ADS cores not being WL'd
+    - type: Fix
+      message: Fix ADS-Nebula missing gyroscope.
+  id: 330
+  time: '2025-05-24T14:36:57.0000000+00:00'
+- author: Redrover1760
+  changes:
+    - type: Add
+      message: Moth Hair
+  id: 331
+  time: '2025-05-24T21:13:35.0000000+00:00'
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Added MODsuits/undetermined voidsuit selectors to more suit storages
+        where they should've been.
+    - type: Add
+      message: MODsuit boots now work as magboots/noslips.
+    - type: Tweak
+      message: 0.1x the power consumption for MODsuits.
+  id: 332
+  time: '2025-05-24T21:54:34.0000000+00:00'
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        I decided to add a selector for selecting between RD MODsuit and RD
+        hardsuit instead of butchering it. Have fun.
+    - type: Add
+      message: >-
+        RD Hardsuit uses Shiptest sprites now instead of TG MODsuit/Goob
+        sprites.
+    - type: Tweak
+      message: >-
+        RD hardsuit pierce and slash has been buffed a bit. Also replaced the
+        headlamp with NVDs.
+  id: 333
+  time: '2025-05-25T00:40:48.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Fix
+      message: IPCs should now start with the encryption keys for their job.
+  id: 334
+  time: '2025-05-25T01:49:41.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Add
+      message: >-
+        Ships will now be re-positioned if they go to the same location and end
+        up stuck together after FTL.
+    - type: Fix
+      message: Docked ships should no longer clip together after FTL ends.
+  id: 335
+  time: '2025-05-25T02:15:47.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Add
+      message: Ported over wallets from Frontier!
+  id: 336
+  time: '2025-05-25T03:29:19.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Tweak
+      message: You are no longer able to FTL a POI.
+  id: 337
+  time: '2025-05-25T05:57:02.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Fix
+      message: Blips from other maps will no longer show up.
+  id: 338
+  time: '2025-05-25T09:39:25.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Fix
+      message: Ship designations should no longer say "Unknown" for shipyard ships.
+  id: 339
+  time: '2025-05-25T09:59:51.0000000+00:00'
+- author: Redrover1760
+  changes:
+    - type: Add
+      message: .35 big magazine boxes to merc vender and loot drops
+    - type: Tweak
+      message: Small pistol magazine boxes now 70 ammo
+    - type: Tweak
+      message: Ammo mags start loaded in the liberation station
+    - type: Fix
+      message: .35 mags are now all 35 ammo, instead of just empty .35 mags
+  id: 340
+  time: '2025-05-25T11:25:53.0000000+00:00'

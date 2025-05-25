@@ -31,7 +31,8 @@ using Content.Server._NF.Bank; // Frontier
 using Content.Server.Preferences.Managers; // Frontier
 using System.Linq;
 using Content.Shared.NameIdentifier; // Frontier
-using Content.Server._EinsteinEngines.Silicon.IPC; // Goobstation
+using Content.Server._EinsteinEngines.Silicon.IPC;
+using Content.Shared.Radio.Components; // Goobstation
 
 namespace Content.Server.Station.Systems;
 
@@ -184,7 +185,7 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
         {
             var startingGear = _prototypeManager.Index<StartingGearPrototype>(prototype.StartingGear);
             EquipStartingGear(entity.Value, startingGear, raiseEvent: false);
-            _internalEncryption.TryInsertEncryptionKey(entity.Value, startingGear, EntityManager); // Goobstation
+            _internalEncryption.TryInsertEncryptionKey(entity.Value, startingGear); // Goobstation - Removed EntityManager
         }
 
         if (loadout != null)
@@ -227,6 +228,12 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
                         bankBalance -= int.Max(0, loadoutProto.Price); // Treat negatives as zero.
                         EquipStartingGear(entity.Value, loadoutProto, raiseEvent: false);
                         equippedItems.Add(loadoutProto.ID);
+
+                        // Add support for IPC encryption keys from loadout headsets
+                        if (HasComp<EncryptionKeyHolderComponent>(entity.Value))
+                        {
+                            _internalEncryption.TryInsertEncryptionKey(entity.Value, loadoutProto); // Removed EntityManager
+                        }
                     }
                 }
 
@@ -256,6 +263,13 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
 
                         EquipStartingGear(entity.Value, loadoutProto, raiseEvent: false);
                         equippedItems.Add(fallback);
+
+                        // Add support for IPC encryption keys from loadout headsets
+                        if (HasComp<EncryptionKeyHolderComponent>(entity.Value))
+                        {
+                            _internalEncryption.TryInsertEncryptionKey(entity.Value, loadoutProto); // Removed EntityManager
+                        }
+
                         // Minimum number of items equipped, no need to load more prototypes.
                         if (equippedItems.Count >= groupPrototype.MinLimit)
                             break;

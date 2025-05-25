@@ -25,6 +25,8 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
+  - type: NoSlip
+  - type: Magboots
   - type: SealableClothingVisuals
     visualLayers:
       shoes:
@@ -58,6 +60,8 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.95
     sprintModifier: 0.95
+  - type: NoSlip
+  - type: Magboots
   - type: SealableClothingVisuals
     visualLayers:
       shoes:
@@ -90,6 +94,8 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.95
     sprintModifier: 0.95
+  - type: NoSlip
+  - type: Magboots
   - type: SealableClothingVisuals
     visualLayers:
       shoes:
@@ -122,6 +128,8 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.95
     sprintModifier: 0.95
+  - type: NoSlip
+  - type: Magboots
   - type: SealableClothingVisuals
     visualLayers:
       shoes:
@@ -154,6 +162,8 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.85
+  - type: NoSlip
+  - type: Magboots
   - type: SealableClothingVisuals
     visualLayers:
       shoes:
@@ -186,6 +196,8 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.85
+  - type: NoSlip
+  - type: Magboots
   - type: SealableClothingVisuals
     visualLayers:
       shoes:
@@ -218,6 +230,8 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.85
+  - type: NoSlip
+  - type: Magboots
   - type: SealableClothingVisuals
     visualLayers:
       shoes:
@@ -250,6 +264,8 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.90
     sprintModifier: 0.90
+  - type: NoSlip
+  - type: Magboots
   - type: SealableClothingVisuals
     visualLayers:
       shoes:
