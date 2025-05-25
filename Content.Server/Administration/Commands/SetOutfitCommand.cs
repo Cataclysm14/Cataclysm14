@@ -168,11 +168,10 @@ namespace Content.Server.Administration.Commands
 
             if (entityManager.HasComponent<EncryptionKeyHolderComponent>(target))
             {
-                var encryption = new InternalEncryptionKeySpawner();
                 var encryptionSystem = entityManager.System<InternalEncryptionKeySpawner>();
                 encryptionSystem.TryInsertEncryptionKey(target, startingGear);
             }
-            
+
             return true;
         }
     }
