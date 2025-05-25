@@ -154,7 +154,7 @@
     layers:
     - state: base-projectile
   - type: Explosive
-    maxIntensity: 30
+    maxIntensity: 50
     intensitySlope: 2
     totalIntensity: 10
     maxTileBreak: 1
@@ -238,7 +238,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBomb
-    totalIntensity: 550
+    totalIntensity: 750
     intensitySlope: 10
     maxIntensity: 1150
   - type: GatheringProjectile
