@@ -4,19 +4,22 @@ using Content.Shared._Mono;
 using Content.Shared._Mono.NoHack;
 using Content.Shared._Mono.NoDeconstruct;
 using Content.Shared.Doors.Components;
+using Content.Shared.VendingMachines;
 using Robust.Shared.Containers;
 using Robust.Shared.Map.Components;
+using Robust.Shared.Timing;
 
 namespace Content.Server._Mono;
 
 /// <summary>
-/// System that handles the GridRaiderComponent, which applies NoHack and NoDeconstruct to all entities with Door components on a grid.
+/// System that handles the GridRaiderComponent, which applies NoHack and NoDeconstruct to entities with Door and/or VendingMachine components on a grid.
 /// </summary>
 public sealed class GridRaiderSystem : EntitySystem
 {
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
 
     public override void Initialize()
     {
@@ -29,6 +32,27 @@ public sealed class GridRaiderSystem : EntitySystem
         SubscribeLocalEvent<EntRemovedFromContainerMessage>(OnEntityRemovedFromContainer);
     }
 
+    public override void Update(float frameTime)
+    {
+        base.Update(frameTime);
+
+        var curTime = _timing.CurTime;
+        var query = EntityQueryEnumerator<GridRaiderComponent>();
+
+        while (query.MoveNext(out var uid, out var component))
+        {
+            // Skip if it's not time for the next settings check yet
+            if (component.NextSettingsCheck > curTime)
+                continue;
+
+            // Update the next check time
+            component.NextSettingsCheck = curTime + component.SettingsCheckInterval;
+
+            // Reprocess all entities on the grid to apply/remove protection based on current settings
+            RefreshGridProtection(uid, component);
+        }
+    }
+
     private void OnGridRaiderStartup(EntityUid uid, GridRaiderComponent component, ComponentStartup args)
     {
         // Verify this is applied to a grid
@@ -38,17 +62,11 @@ public sealed class GridRaiderSystem : EntitySystem
             return;
         }
 
-        // Find all entities on the grid and apply NoHack/NoDeconstruct to doors
-        var allEntitiesOnGrid = _lookup.GetEntitiesIntersecting(uid).ToHashSet();
+        // Set the initial settings check time
+        component.NextSettingsCheck = _timing.CurTime + component.SettingsCheckInterval;
 
-        foreach (var entity in allEntitiesOnGrid)
-        {
-            // Skip the grid itself and entities inside containers (they'll be handled by container logic)
-            if (entity == uid || _container.IsEntityInContainer(entity))
-                continue;
-
-            ProcessEntityOnGrid(uid, entity, component);
-        }
+        // Find all entities on the grid and apply NoHack/NoDeconstruct to doors and vending machines
+        RefreshGridProtection(uid, component);
     }
 
     private void OnGridRaiderShutdown(EntityUid uid, GridRaiderComponent component, ComponentShutdown args)
@@ -153,12 +171,20 @@ public sealed class GridRaiderSystem : EntitySystem
     }
 
     /// <summary>
-    /// Process an entity on a grid and apply NoHack/NoDeconstruct if it's a door
+    /// Process an entity on a grid and apply NoHack/NoDeconstruct if it's a door or vending machine
     /// </summary>
     private void ProcessEntityOnGrid(EntityUid gridUid, EntityUid entityUid, GridRaiderComponent component)
     {
-        // Only apply protection to entities with Door components
-        if (!HasComp<DoorComponent>(entityUid))
+        // Check if this entity should be protected based on component settings
+        var shouldProtect = false;
+
+        if (component.ProtectDoors && HasComp<DoorComponent>(entityUid))
+            shouldProtect = true;
+
+        if (component.ProtectVendingMachines && HasComp<VendingMachineComponent>(entityUid))
+            shouldProtect = true;
+
+        if (!shouldProtect)
             return;
 
         ApplyProtection(gridUid, entityUid, component);
@@ -188,7 +214,7 @@ public sealed class GridRaiderSystem : EntitySystem
         {
             RemComp<NoHackComponent>(entityUid);
         }
-        
+
         if (HasComp<NoDeconstructComponent>(entityUid))
         {
             RemComp<NoDeconstructComponent>(entityUid);
@@ -206,5 +232,53 @@ public sealed class GridRaiderSystem : EntitySystem
             return false;
 
         return TryComp(gridUid.Value, out component);
+    }
+
+    /// <summary>
+    /// Refreshes protection for all entities on a grid based on current component settings
+    /// </summary>
+    private void RefreshGridProtection(EntityUid gridUid, GridRaiderComponent component)
+    {
+        // Get all entities currently on the grid
+        var allEntitiesOnGrid = _lookup.GetEntitiesIntersecting(gridUid).ToHashSet();
+        var entitiesThatShouldBeProtected = new HashSet<EntityUid>();
+
+        // Find entities that should be protected based on current settings
+        foreach (var entity in allEntitiesOnGrid)
+        {
+            // Skip the grid itself and entities inside containers
+            if (entity == gridUid || _container.IsEntityInContainer(entity))
+                continue;
+
+            // Check if this entity should be protected based on current settings
+            var shouldProtect = false;
+
+            if (component.ProtectDoors && HasComp<DoorComponent>(entity))
+                shouldProtect = true;
+
+            if (component.ProtectVendingMachines && HasComp<VendingMachineComponent>(entity))
+                shouldProtect = true;
+
+            if (shouldProtect)
+                entitiesThatShouldBeProtected.Add(entity);
+        }
+
+        // Remove protection from entities that should no longer be protected
+        var entitiesToUnprotect = component.ProtectedEntities.Except(entitiesThatShouldBeProtected).ToList();
+        foreach (var entity in entitiesToUnprotect)
+        {
+            if (EntityManager.EntityExists(entity))
+            {
+                RemoveProtection(entity);
+            }
+            component.ProtectedEntities.Remove(entity);
+        }
+
+        // Add protection to entities that should be protected but aren't yet
+        var entitiesToProtect = entitiesThatShouldBeProtected.Except(component.ProtectedEntities).ToList();
+        foreach (var entity in entitiesToProtect)
+        {
+            ApplyProtection(gridUid, entity, component);
+        }
     }
 }
