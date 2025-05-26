@@ -206,7 +206,7 @@ public sealed partial class GunSystem : SharedGunSystem
                             var hit = result.HitEntity;
                             lastHit = hit;
 
-                            FireEffects(fromEffect, result.Distance, dir.Normalized().ToAngle(), hitscan, hit);
+                            FireEffects(fromEffect, result.Distance, dir.Normalized().ToAngle(), hitscan, hit, user);
 
                             var ev = new HitScanReflectAttemptEvent(user, gunUid, hitscan.Reflective, dir, false);
                             RaiseLocalEvent(hit, ref ev);
@@ -261,7 +261,7 @@ public sealed partial class GunSystem : SharedGunSystem
                     }
                     else
                     {
-                        FireEffects(fromEffect, hitscan.MaxLength, dir.ToAngle(), hitscan);
+                        FireEffects(fromEffect, hitscan.MaxLength, dir.ToAngle(), hitscan, null, user);
                     }
 
                     Audio.PlayPredicted(gun.SoundGunshotModified, gunUid, user);
@@ -413,10 +413,12 @@ public sealed partial class GunSystem : SharedGunSystem
     // TODO: Pseudo RNG so the client can predict these.
     #region Hitscan effects
 
-    private void FireEffects(EntityCoordinates fromCoordinates, float distance, Angle angle, HitscanPrototype hitscan, EntityUid? hitEntity = null)
+    private void FireEffects(EntityCoordinates fromCoordinates, float distance, Angle angle, HitscanPrototype hitscan, EntityUid? hitEntity = null, EntityUid? user = null)
     {
         // Raise custom event for radar tracking
-        var radarEv = new _Mono.Radar.HitscanRadarSystem.HitscanFireEffectEvent(fromCoordinates, distance, angle, hitscan, hitEntity, GetShooterFromCoordinates(fromCoordinates));
+        // Use the actual user as shooter instead of trying to derive from coordinates
+        var shooter = user ?? GetShooterFromCoordinates(fromCoordinates);
+        var radarEv = new _Mono.Radar.HitscanRadarSystem.HitscanFireEffectEvent(fromCoordinates, distance, angle, hitscan, hitEntity, shooter);
         RaiseLocalEvent(radarEv);
 
         // Lord

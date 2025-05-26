@@ -1,6 +1,7 @@
 using Robust.Shared.Map;
 using Robust.Shared.Physics.Systems;
 using System.Numerics;
+using Content.Server._Mono.FireControl;
 using Robust.Shared.Timing;
 using Content.Shared.Weapons.Ranged;
 
@@ -46,11 +47,7 @@ public sealed partial class HitscanRadarSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-
-        // Subscribe to our custom hitscan fire effect event
         SubscribeLocalEvent<HitscanFireEffectEvent>(OnHitscanEffect);
-
-        // Handle component lifecycle
         SubscribeLocalEvent<HitscanRadarComponent, ComponentShutdown>(OnHitscanRadarShutdown);
     }
 
@@ -59,17 +56,14 @@ public sealed partial class HitscanRadarSystem : EntitySystem
         if (ev.Shooter == null)
             return;
 
+        // Only create hitscan radar blips for entities with FireControllable component
+        if (!HasComp<FireControllableComponent>(ev.Shooter.Value))
+            return;
+
         // Create a new entity for the hitscan radar visualization
         // Use the shooter's position to spawn the entity
         var shooterCoords = new EntityCoordinates(ev.Shooter.Value, Vector2.Zero);
         var uid = Spawn(null, shooterCoords);
-
-        // Add the radar blip component so it shows up on radar
-        var blip = EnsureComp<RadarBlipComponent>(uid);
-        blip.RequireNoGrid = true;
-        blip.VisibleFromOtherGrids = true;
-        blip.RadarColor = Color.Transparent; // Make the point invisible
-        blip.Enabled = true;
 
         // Add the hitscan radar component
         var hitscanRadar = EnsureComp<HitscanRadarComponent>(uid);
@@ -88,29 +82,44 @@ public sealed partial class HitscanRadarSystem : EntitySystem
         hitscanRadar.StartPosition = startPos;
         hitscanRadar.EndPosition = endPos;
 
-        // If the hitscan has a travel flash, use its color for radar
-        if (ev.Hitscan.TravelFlash != null)
-        {
-            hitscanRadar.RadarColor = Color.Magenta; // Default color for hitscan beams
-        }
-        else
-        {
-            // Fallback color
-            hitscanRadar.RadarColor = Color.Red;
-        }
+        // Inherit component settings from the shooter entity
+        InheritShooterSettings(ev.Shooter.Value, hitscanRadar, ev.Hitscan);
 
         // Schedule entity for deletion after its lifetime expires
         var deleteTime = _timing.CurTime + TimeSpan.FromSeconds(hitscanRadar.LifeTime);
         _pendingDeletions[uid] = deleteTime;
     }
 
+    /// <summary>
+    /// Inherits radar settings from the shooter entity if available
+    /// </summary>
+    private void InheritShooterSettings(EntityUid shooter, HitscanRadarComponent hitscanRadar, HitscanPrototype hitscan)
+    {
+        // Try to inherit from shooter's existing HitscanRadarComponent if present
+        if (TryComp<HitscanRadarComponent>(shooter, out var shooterHitscanRadar))
+        {
+            hitscanRadar.RadarColor = shooterHitscanRadar.RadarColor;
+            hitscanRadar.LineThickness = shooterHitscanRadar.LineThickness;
+            hitscanRadar.Enabled = shooterHitscanRadar.Enabled;
+            hitscanRadar.LifeTime = shooterHitscanRadar.LifeTime;
+        }
+    }
+
     private void OnHitscanRadarShutdown(Entity<HitscanRadarComponent> ent, ref ComponentShutdown args)
     {
-        // Ensure the entity is properly deleted when the component is removed
-        QueueDel(ent);
-
-        // Remove from pending deletions if it's there
-        _pendingDeletions.Remove(ent);
+        // Only delete the entity if it's a temporary hitscan trail entity (tracked in _pendingDeletions)
+        // Don't delete legitimate entities that have the component added manually
+        if (_pendingDeletions.ContainsKey(ent))
+        {
+            // This is a temporary hitscan trail entity, safe to delete
+            QueueDel(ent);
+            _pendingDeletions.Remove(ent);
+        }
+        // For legitimate entities, just remove from pending deletions if present (shouldn't be there anyway)
+        else
+        {
+            _pendingDeletions.Remove(ent);
+        }
     }
 
     public override void Update(float frameTime)

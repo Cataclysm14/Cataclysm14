@@ -49,10 +49,6 @@ public sealed partial class RadarBlipSystem : EntitySystem
                 if (!blip.Enabled)
                     continue;
 
-                // Don't include hitscan radar trackers in regular blips - they'll be handled separately
-                if (HasComp<HitscanRadarComponent>(blipUid))
-                    continue;
-
                 // Don't show radar blips for projectiles on different maps than the one they were fired from
                 if (TryComp<ProjectileComponent>(blipUid, out var projectile))
                 {
