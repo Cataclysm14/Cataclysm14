@@ -11,6 +11,7 @@
   - PirateFace
   - ContractorBoxSurvival
   - PiratePDA
+  - ContractorWallet
   - NFSpeciesSpecific
   - PirateTrinkets
   - MercenaryBelt
@@ -32,6 +33,7 @@
   - ContractorBoxSurvival
   - PirateFirstMatePDA
   - NFSpeciesSpecific
+  - ContractorWallet
   - PirateTrinkets
   - MercenaryBelt
   - ContractorEncryptionKey
@@ -51,6 +53,7 @@
   - ContractorBoxSurvival
   - PirateCaptainPDA
   - NFSpeciesSpecific
+  - ContractorWallet
   - PirateCaptainTrinkets
   - MercenaryBelt
   - ContractorEncryptionKey
