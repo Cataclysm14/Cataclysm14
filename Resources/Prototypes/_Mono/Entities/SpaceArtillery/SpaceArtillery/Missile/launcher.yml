@@ -253,7 +253,7 @@
     shipType: Missile
 
 
-# ASM-530 Tossotchka
+# ASM-530 Electron
 
 - type: entity
   id: WeaponTurretASM530
@@ -298,7 +298,7 @@
     proto: ShipMissileASM530
     fireCost: 350
   - type: RadarBlip
-    radarColor: "#FCBA03"
+    radarColor: "#035EFC"
     scale: 2.5
   - type: ShipGunType
     shipType: Missile
