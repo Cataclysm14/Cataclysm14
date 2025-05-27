@@ -447,3 +447,11 @@
 #    - id: BloodbathPuddleMessVariationPass # Frontier
 #      prob: 0.01 # Frontier
 #      orGroup: puddleMess # Frontier
+#    - id: BasicDecalDirtVariationPass
+#    - id: BasicDecalGraffitiVariationPass
+#    - id: BasicDecalBrunsVariationPass
+#      prob: 0.50
+#      orGroup: monospaceDecals
+#    - id: BasicDecalDirtMonospaceVariationPass
+#      prob: 0.50
+#      orGroup: monospaceDecals
