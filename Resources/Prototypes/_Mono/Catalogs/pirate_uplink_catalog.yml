@@ -125,6 +125,22 @@
       - PirateUplink
 
 - type: listing
+  id: UplinkPirateRadPen
+  name: uplink-pirate-rad-pen-name
+  description: uplink-pirate-rad-pen-desc
+  productEntity: RadAutoInjector
+  icon: { sprite: Objects/Specific/Medical/medipen.rsi, state: arithpen }
+  cost:
+    Doubloon: 1
+  categories:
+  - UplinkPirateMedical
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
   id: UplinkPirateHyperzine
   name: uplink-pirate-hyperzine-name
   description: uplink-pirate-hyperzine-desc
