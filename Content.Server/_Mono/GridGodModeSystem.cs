@@ -1,6 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Server.Damage.Systems;
+using Content.Server.Spreader;
 using Content.Shared._Mono;
 using Content.Shared.Damage.Components;
 using Content.Shared.Ghost;
@@ -161,8 +162,8 @@ public sealed class GridGodModeSystem : EntitySystem
     /// </summary>
     private void ProcessEntityOnGrid(EntityUid gridUid, EntityUid entityUid, GridGodModeComponent component)
     {
-        // Don't apply GodMode to organic entities or ghosts
-        if (IsOrganic(entityUid) || HasComp<GhostComponent>(entityUid))
+        // Don't apply GodMode to organic entities, ghosts, or kudzu
+        if (IsOrganic(entityUid) || HasComp<GhostComponent>(entityUid) || HasComp<KudzuComponent>(entityUid))
             return;
 
         ApplyGodMode(gridUid, entityUid, component);
