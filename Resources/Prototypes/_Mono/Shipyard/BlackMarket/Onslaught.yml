@@ -1,0 +1,32 @@
+- type: vessel
+  id: Onslaught
+  parent: BaseVesselAntag
+  name: RG Onslaught
+  description: Brawler ship specialized in combat with 2 build in Cyrexas and a thick coat of plastitanium. Manufactured by [redacted], Salvaged and restored by IHR in the [redacted] sector.
+  price: 160000
+  category: Medium
+  group: BlackMarket
+  shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/Onslaught.yml
+  guidebookPage: Null
+  class:
+  - Pirate
+  engine:
+  - AME
+
+- type: gameMap
+  id: Onslaught
+  mapName: 'Onslaught'
+  mapPath: /Maps/_Mono/Shuttles/BlackMarket/Onslaught.yml
+  minPlayers: 0
+  stations:
+    Tethys:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Onslaught RG{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Pirate: [ 0, 0 ]
