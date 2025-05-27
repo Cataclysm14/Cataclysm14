@@ -1,15 +1,15 @@
 - type: entity
-  name: doubloon
+  name: data chit
   parent: BaseItem
   id: Doubloon
-  suffix: 20 DB
-  description: A dirty gold coin used for nefarious pirate exchanges.
+  suffix: 20 DC
+  description: A rugged, shielded disk containing encrypted intelligence.
   components:
   - type: Sprite
-    sprite: _NF/Objects/Specific/Pirate/pirate_doubloon.rsi
-    state: doubloon
+    sprite: _Mono/Objects/Specific/Rogue/rogue_chits.rsi
+    state: chits
   - type: Item
-    sprite: _NF/Objects/Specific/Pirate/pirate_doubloon.rsi
+    sprite: _Mono/Objects/Specific/Rogue/rogue_chits.rsi
     size: Tiny
   - type: Stack
     count: 20
@@ -25,7 +25,7 @@
 - type: entity
   parent: Doubloon
   id: Doubloon1
-  suffix: 1 DB
+  suffix: 1 DC
   components:
   - type: Stack
     count: 1
@@ -33,7 +33,7 @@
 - type: entity
   parent: Doubloon
   id: Doubloon5
-  suffix: 5 DB
+  suffix: 5 DC
   components:
   - type: Stack
     count: 5
@@ -41,7 +41,7 @@
 - type: entity
   parent: Doubloon
   id: Doubloon10
-  suffix: 10 DB
+  suffix: 10 DC
   components:
   - type: Stack
     count: 10
@@ -50,13 +50,13 @@
 - type: entity
   parent: [ BaseItem, StorePresetPirateUplink ]
   id: BasePirateUplink
-  name: pirate uplink
-  description: A coconut with an antenna?
+  name: rogue uplink
+  description: A scarred tablet encased in heat-resistant composite with slot for chits on the side.
   suffix: Empty
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: _NF/Objects/Devices/pirate_uplink.rsi
+    sprite: _Mono/Objects/Devices/rogue_uplink.rsi
     layers:
     - state: icon
       scale: 0.7, 0.7
@@ -64,7 +64,7 @@
       scale: 0.7, 0.7
       shader: unshaded
   - type: Item
-    sprite: _NF/Objects/Devices/pirate_uplink.rsi
+    sprite: _Mono/Objects/Devices/rogue_uplink.rsi
     heldPrefix: icon
   - type: UserInterface
     interfaces:

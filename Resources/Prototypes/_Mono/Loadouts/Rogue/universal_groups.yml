@@ -1,0 +1,15 @@
+- type: loadoutGroup
+  id: RogueJumpsuit
+  name: loadout-group-contractor-jumpsuit
+  minLimit: 1
+  loadouts:
+  - RogueClothingJumpsuit
+  - RogueClothingJumpsuitPants
+  - RogueClothingJumpsuitJeans
+  - RogueClothingJumpsuitCargos
+  - RogueClothingJumpsuitWarm
+  fallbacks:
+  - RogueClothingJumpsuit
+  subgroups:
+  - PirateJumpsuit
+  - PirateMercenaryJumpsuit

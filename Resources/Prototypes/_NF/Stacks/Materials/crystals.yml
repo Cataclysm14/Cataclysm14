@@ -6,6 +6,6 @@
 
 - type: stack
   id: Doubloon
-  name: doubloon
+  name: data chit
   icon: _NF/Objects/Specific/Pirate/pirate_doubloon.rsi
   spawn: Doubloon1

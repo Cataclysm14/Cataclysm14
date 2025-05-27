@@ -291,9 +291,9 @@ public sealed partial class ShuttleSystem
         // If going to an expedition, undock all other shuttles before FTL
         if (isExpedition)
         {
-            // Get all docked shuttles
+            // Get all docked shuttles, ignoring FTLLock status for expeditions
             var dockedShuttles = new HashSet<EntityUid>();
-            GetAllDockedShuttles(shuttleUid, dockedShuttles);
+            GetAllDockedShuttlesIgnoringFTLLock(shuttleUid, dockedShuttles);
 
             Log.Info($"FTL to expedition detected. Shuttle {ToPrettyString(shuttleUid)} has {dockedShuttles.Count} docked shuttles (including self)");
 
@@ -368,13 +368,13 @@ public sealed partial class ShuttleSystem
         // If going to an expedition, undock all other shuttles before FTL
         if (isExpedition)
         {
-            // Get all docked shuttles
+            // Get all docked shuttles, ignoring FTLLock status for expeditions
             var dockedShuttles = new HashSet<EntityUid>();
-            GetAllDockedShuttles(shuttleUid, dockedShuttles);
+            GetAllDockedShuttlesIgnoringFTLLock(shuttleUid, dockedShuttles);
 
             Log.Info($"FTL dock to expedition detected. Shuttle {ToPrettyString(shuttleUid)} has {dockedShuttles.Count} docked shuttles (including self)");
 
-            // Undock all other shuttles
+            // Undock all other shuttles - for expeditions, ALL docked shuttles must be undocked
             foreach (var dockedUid in dockedShuttles)
             {
                 if (dockedUid == shuttleUid)
@@ -490,6 +490,34 @@ public sealed partial class ShuttleSystem
             if (!dockedShuttles.Contains(dockedGridUid))
             {
                 GetAllDockedShuttles(dockedGridUid, dockedShuttles);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Recursively gets all docked shuttles to the target shuttle, ignoring FTLLock status.
+    /// Used for expeditions where ALL docked shuttles must be undocked regardless of FTLLock.
+    /// </summary>
+    public void GetAllDockedShuttlesIgnoringFTLLock(EntityUid shuttleUid, HashSet<EntityUid> dockedShuttles)
+    {
+        if (!dockedShuttles.Add(shuttleUid))
+            return;  // Already processed this shuttle
+
+        var docks = _dockSystem.GetDocks(shuttleUid);
+        foreach (var dock in docks)
+        {
+            if (!TryComp<DockingComponent>(dock, out var dockComp) || dockComp.Docked == false)
+                continue;
+            if (dockComp.DockedWith == null)
+                continue;
+            var dockedGridUid = _transform.GetParentUid(dockComp.DockedWith.Value);
+            if (dockedGridUid == EntityUid.Invalid || !HasComp<ShuttleComponent>(dockedGridUid))
+                continue;
+
+            // For expeditions, we ignore FTLLock status and get ALL docked shuttles
+            if (!dockedShuttles.Contains(dockedGridUid))
+            {
+                GetAllDockedShuttlesIgnoringFTLLock(dockedGridUid, dockedShuttles);
             }
         }
     }

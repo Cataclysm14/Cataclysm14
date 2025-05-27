@@ -542,6 +542,60 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
                 }
             }
         }
+
+        // Draw hitscan lines from the radar blips system
+        var hitscanLines = _blips.GetRawHitscanLines();
+        foreach (var line in hitscanLines)
+        {
+            Vector2 startPosInView;
+            Vector2 endPosInView;
+
+            // Handle differently based on if there's a grid
+            if (line.Grid == null)
+            {
+                // For world-space lines without a grid, use standard world transformation
+                startPosInView = Vector2.Transform(line.Start, worldToShuttle * shuttleToView);
+                endPosInView = Vector2.Transform(line.End, worldToShuttle * shuttleToView);
+            }
+            else if (EntManager.TryGetEntity(line.Grid, out var gridEntity))
+            {
+                // For grid-relative lines, transform using the grid's transform
+                var gridToWorld = _transform.GetWorldMatrix(gridEntity.Value);
+                var gridToView = gridToWorld * worldToShuttle * shuttleToView;
+
+                // Transform the grid-local positions
+                startPosInView = Vector2.Transform(line.Start, gridToView);
+                endPosInView = Vector2.Transform(line.End, gridToView);
+            }
+            else
+            {
+                // Skip lines with invalid grid references
+                continue;
+            }
+
+            // Only draw lines if at least one endpoint is within view
+            if (monoViewBounds.Contains(startPosInView) || monoViewBounds.Contains(endPosInView))
+            {
+                // Draw the line with the specified thickness and color
+                handle.DrawLine(startPosInView, endPosInView, line.Color);
+
+                // For thicker lines, draw multiple lines side by side
+                if (line.Thickness > 1.0f)
+                {
+                    // Calculate perpendicular vector for thickness
+                    var dir = (endPosInView - startPosInView).Normalized();
+                    var perpendicular = new Vector2(-dir.Y, dir.X) * 0.5f;
+
+                    // Draw additional lines for thickness
+                    for (float i = 1; i <= line.Thickness; i += 1.0f)
+                    {
+                        var offset = perpendicular * i;
+                        handle.DrawLine(startPosInView + offset, endPosInView + offset, line.Color);
+                        handle.DrawLine(startPosInView - offset, endPosInView - offset, line.Color);
+                    }
+                }
+            }
+        }
         #endregion
     }
 

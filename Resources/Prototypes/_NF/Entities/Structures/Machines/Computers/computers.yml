@@ -231,8 +231,8 @@
 - type: entity
   id: ComputerPirateBounty
   parent: BaseComputer
-  name: pirate bounty computer
-  description: Avast, get ye pirate bounties here.
+  name: rogue bounty console
+  description: Pull up active contracts, track targets, and get paid in chits.
   components:
   - type: Sprite
     sprite: _NF/Structures/Machines/computers.rsi
@@ -270,10 +270,10 @@
   #   - Pirate # Frontier: eventually?  maybe?
 
 - type: entity
-  name: plunder exchange computer
+  name: contraband exchange console
   parent: ComputerContrabandPalletConsole
   id: ComputerContrabandPalletConsolePirate
-  description: Fence yer ill-gotten goods here! And keep yer pile orderly.
+  description: Upload contraband and blacklisted tech. Pays well if you know what you're doing.
   components:
   - type: Sprite
     sprite: _NF/Structures/Machines/computers.rsi
@@ -294,10 +294,10 @@
     locStringPrefix: pirate-
 
 - type: entity
-  name: pirate bounty redemption computer
+  name: bounty redemption console
   parent: ComputerPirateBounty
   id: ComputerPirateBountyRedemption
-  description: Back from a voyage? Redeem yer bounties here, matey.
+  description: Contract completed? Redeem your chit and claim your payout.
   components:
   - type: Sprite
     sprite: _NF/Structures/Machines/computers.rsi

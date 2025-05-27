@@ -2973,3 +2973,43 @@ Entries:
       message: New conflict rule regarding outpost striking.
   id: 349
   time: '2025-05-26T09:33:39.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Add
+      message: Hitscan blips are now here! Laser ship guns soon?
+  id: 350
+  time: '2025-05-27T00:06:39.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Fix
+      message: Docked ships should no longer go into expeditions together.
+  id: 351
+  time: '2025-05-27T01:18:41.0000000+00:00'
+- author: BlueHNT
+  changes:
+    - type: Add
+      message: Added Rogue outfits
+    - type: Add
+      message: Added Rogue uplink
+    - type: Tweak
+      message: Renamed `Doubloons` to `Data Chits`
+  id: 352
+  time: '2025-05-27T01:29:28.0000000+00:00'
+- author: HungryCuban
+  changes:
+    - type: Add
+      message: Russian accent has been added!
+  id: 353
+  time: '2025-05-27T03:52:26.0000000+00:00'
+- author: cheetah1984
+  changes:
+    - type: Add
+      message: Ported the (extremely fancy) Substation and SMES UI from Wizden.
+  id: 354
+  time: '2025-05-27T08:31:51.0000000+00:00'
+- author: BlueHNT
+  changes:
+    - type: Fix
+      message: Fixed FUC farming issue
+  id: 355
+  time: '2025-05-27T13:37:17.0000000+00:00'

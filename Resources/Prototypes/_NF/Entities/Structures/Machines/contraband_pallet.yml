@@ -27,11 +27,11 @@
     - sprite: _NF/Structures/Machines/contraband_pallet.rsi
       state: base
 
-# Pirate reskin for flavour
+# Rogue version
 - type: entity
   id: ContrabandPalletPirate
-  name: plunder exchange pallet
-  description: Sells yer ill-gotten goods fer heaps o' doubloons!
+  name: data exchange platform
+  description: Uploads stolen assets and contraband for data chits.
   parent: ContrabandPallet
   components:
   - type: Sprite
