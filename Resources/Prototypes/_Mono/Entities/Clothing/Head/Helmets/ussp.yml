@@ -23,3 +23,6 @@
     - Snout
     - HeadTop
     - HeadSide
+  - type: StaticPrice
+    price: 500
+    vendPrice: 2500
