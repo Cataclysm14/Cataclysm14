@@ -2,6 +2,7 @@ namespace Content.Shared._Mono;
 
 /// <summary>
 /// Component that applies NoHack and NoDeconstruct to entities with Door and/or VendingMachine components on a grid.
+/// Protection is applied once during initialization and remains until the component is removed.
 /// </summary>
 [RegisterComponent]
 public sealed partial class GridRaiderComponent : Component
@@ -23,16 +24,4 @@ public sealed partial class GridRaiderComponent : Component
     /// </summary>
     [DataField]
     public bool ProtectVendingMachines = true;
-
-    /// <summary>
-    /// The server time at which the next settings check will occur.
-    /// </summary>
-    [DataField]
-    public TimeSpan NextSettingsCheck = TimeSpan.Zero;
-
-    /// <summary>
-    /// How often to check for setting changes (5 seconds).
-    /// </summary>
-    [DataField]
-    public TimeSpan SettingsCheckInterval = TimeSpan.FromSeconds(5);
 }
