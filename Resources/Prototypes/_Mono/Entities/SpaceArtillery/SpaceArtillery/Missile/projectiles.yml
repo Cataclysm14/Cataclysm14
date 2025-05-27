@@ -189,5 +189,101 @@
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
-    launchSpeed: 20
-    maxSpeed: 20
+    acceleration: 5
+    launchSpeed: 3
+    maxSpeed: 25
+
+# ASM-520 Tossotchka
+
+- type: entity
+  id: ShipMissileASM520
+  name: ASM-520 missile
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 10000
+        Blunt: 1000
+        Heat: 1250
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: frag
+  - type: Ammo
+    muzzleFlash: null
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    radarColor: "#FCBA03"
+    scale: 4
+    requireNoGrid: true
+    shape: triangle
+  - type: TimedDespawn
+    lifetime: 30
+  - type: PointLight
+    radius: 5
+    color: orange
+    energy: 2
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 150
+    intensitySlope: 0.3
+    totalIntensity: 150
+  - type: GatheringProjectile
+  - type: MiningGatheringSoft
+  - type: MiningGatheringHard
+  - type: TargetSeeking
+    maxSpeed: 25
+    launchSpeed: 25
+
+# ASM-530 Electron
+
+- type: entity
+  id: ShipMissileASM530
+  name: ASM-530 missile
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 10000
+        Blunt: 1000
+        Heat: 1000
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: frag
+  - type: Ammo
+    muzzleFlash: null
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    radarColor: "#FCBA03"
+    scale: 4
+    requireNoGrid: true
+    shape: triangle
+  - type: TimedDespawn
+    lifetime: 30
+  - type: PointLight
+    radius: 5
+    color: orange
+    energy: 2
+  - type: ExplodeOnTrigger
+  - type: EmpOnTrigger
+    range: 20
+    energyConsumption: 60000000
+    disableDuration: 16
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 400
+    intensitySlope: 90
+    totalIntensity: 400
+  - type: GatheringProjectile
+  - type: MiningGatheringSoft
+  - type: MiningGatheringHard
+  - type: TargetSeeking
+    acceleration: 5
+    launchSpeed: 3
+    maxSpeed: 25

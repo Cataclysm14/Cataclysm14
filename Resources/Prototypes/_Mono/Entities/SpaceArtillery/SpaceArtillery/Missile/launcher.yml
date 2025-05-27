@@ -155,13 +155,13 @@
 # ASM-510 Smerchs
 
 - type: entity
-  id: WeaponTurretASM501
+  id: WeaponTurretASM510
   name: ASM-510 pod
   parent: BallisticArtillery
-  description: ASM-510 Smerchs heavy torpedo launcher. Can be remotely activated, or linked up to a GCS.
+  description: ASM-510 Smerchs heavy torpedo launcher battery. Can be remotely activated, or linked up to a GCS.
   components:
   - type: StaticPrice
-    price: 7500
+    price: 12500
   - type: Sprite
     sprite: _Mono/Objects/ShuttleWeapons/smerchs.rsi
     layers:
@@ -175,20 +175,127 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
-    fireRate: 0.1
+    projectileSpeed: 105
+    fireRate: 0.2
+    burstCooldown: 35
+    burstFireRate: 2
+    shotsPerBurst: 4
+    selectedMode: Burst
+    availableModes: Burst
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
   - type: SpaceArtillery
-    powerChargeRate: 250
+    powerChargeRate: 5000
     powerUsePassive: 200
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 60
+    autoRechargeRate: 600
   - type: Actions
   - type: ProjectileBatteryAmmoProvider
     proto: ShipMissileASM510
+    fireCost: 350
+  - type: RadarBlip
+    radarColor: "#FCBA03"
+    scale: 2.5
+  - type: ShipGunType
+    shipType: Missile
+
+# ASM-520 Tossotchka
+
+- type: entity
+  id: WeaponTurretASM520
+  name: ASM-520 pod
+  parent: BallisticArtillery
+  description: ASM-520 Tossotchka thermobaric multiple rocket launcher battery. Can be remotely activated, or linked up to a GCS.
+  components:
+  - type: StaticPrice
+    price: 12500
+  - type: Sprite
+    sprite: _Mono/Objects/ShuttleWeapons/tossotchka.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: AmmoCounter
+  - type: Battery
+    maxCharge: 40000
+    startingCharge: 40000
+  - type: ExaminableBattery
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: Gun
+    projectileSpeed: 105
+    fireRate: 0.2
+    burstCooldown: 35
+    burstFireRate: 2
+    shotsPerBurst: 4
+    selectedMode: Burst
+    availableModes: Burst
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 5000
+    powerUsePassive: 200
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 600
+  - type: Actions
+  - type: ProjectileBatteryAmmoProvider
+    proto: ShipMissileASM520
+    fireCost: 350
+  - type: RadarBlip
+    radarColor: "#FCBA03"
+    scale: 2.5
+  - type: ShipGunType
+    shipType: Missile
+
+
+# ASM-530 Tossotchka
+
+- type: entity
+  id: WeaponTurretASM530
+  name: ASM-530 pod
+  parent: BallisticArtillery
+  description: ASM-530 Electron EMP torpedo launcher battery. Can be remotely activated, or linked up to a GCS.
+  components:
+  - type: StaticPrice
+    price: 12500
+  - type: Sprite
+    sprite: _Mono/Objects/ShuttleWeapons/Electron.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: AmmoCounter
+  - type: Battery
+    maxCharge: 40000
+    startingCharge: 40000
+  - type: ExaminableBattery
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: Gun
+    projectileSpeed: 105
+    fireRate: 0.2
+    burstCooldown: 35
+    burstFireRate: 2
+    shotsPerBurst: 4
+    selectedMode: Burst
+    availableModes: Burst
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 5000
+    powerUsePassive: 200
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 600
+  - type: Actions
+  - type: ProjectileBatteryAmmoProvider
+    proto: ShipMissileASM530
     fireCost: 350
   - type: RadarBlip
     radarColor: "#FCBA03"
