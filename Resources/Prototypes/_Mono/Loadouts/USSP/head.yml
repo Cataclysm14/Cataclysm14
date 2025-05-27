@@ -7,3 +7,13 @@
   id: USSPBeret
   equipment:
     head: ClothingHeadHatBeretSecurity
+
+- type: loadout
+  id: USSPOfficerCap
+  equipment:
+    head: ClothingHeadHatUSSPOfficerCap
+
+- type: loadout
+  id: USSPCommissarCap
+  equipment:
+    head: ClothingHeadHatUSSPCommissarCap

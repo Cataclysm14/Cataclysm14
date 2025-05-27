@@ -33,6 +33,7 @@
   - ContractorWallet
   - ContractorEncryptionKey
   - NfsdSpeciesSpecific
+  - USSPOuterClothing
 
 - type: roleLoadout
   id: JobUSSPMedic
@@ -52,11 +53,11 @@
   - NfsdSpeciesSpecific
   - USSPMedhud
   - TsfmcBrigmedicBelt
+  - USSPOuterClothing
 
 - type: roleLoadout
   id: JobUSSPSergeant
   groups:
-  - USSPHead
   - USSPJumpsuit
   - TsfmcGloves
   - USSPBackpack
@@ -70,11 +71,12 @@
   - ContractorWallet
   - ContractorEncryptionKey
   - NfsdSpeciesSpecific
+  - USSPOuterClothingOfficer
+  - USSPHeadOfficer
 
 - type: roleLoadout
   id: JobUSSPCommissar
   groups:
-  - USSPHead
   - USSPJumpsuit
   - TsfmcGloves
   - USSPBackpack
@@ -88,3 +90,5 @@
   - ContractorWallet
   - ContractorEncryptionKey
   - NfsdSpeciesSpecific
+  - USSPHeadCommissar
+  - USSPOuterClothingOfficer
