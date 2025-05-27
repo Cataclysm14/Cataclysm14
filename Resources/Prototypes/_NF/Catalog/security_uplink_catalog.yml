@@ -560,6 +560,9 @@
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
         - Sheriff
         - Brigmedic
 
