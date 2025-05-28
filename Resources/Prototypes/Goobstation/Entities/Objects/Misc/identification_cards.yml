@@ -12,7 +12,7 @@
   - type: Item
     heldPrefix: blue
   - type: IdCard
-    jobTitle: Future Agent
+    jobTitle: job-name-futureagent
     jobIcon: JobIconFuture
   - type: Access
     groups:

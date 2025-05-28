@@ -1,6 +1,6 @@
 ﻿- type: entity
   id: EffectStasis
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: PointLight
     radius: 2
