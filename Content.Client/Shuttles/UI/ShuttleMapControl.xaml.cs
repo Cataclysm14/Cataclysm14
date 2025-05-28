@@ -144,7 +144,7 @@ public sealed partial class ShuttleMapControl : BaseShuttleControl
 
                     var range = _shuttles.GetFTLRange(shuttleUid);
 
-                    // If the target position is outside of the shuttle's FTL range, then try to FTL as close as possible.
+                    // If the target position is outside of the shuttle's FTL range, then try to FTL as close as possible to save the player some hassle.
                     if (shuttleToTarget.Length() > range)
                     {
                         mapCoords = new(shuttlePosition + shuttleToTarget.Normalized() * range, ViewingMap);
