@@ -157,7 +157,7 @@
   parent: ClothingOuterHardsuitBase
   id: ClothingOuterHardsuitOfficerCombat
   name: USSP Commissar tacsuit
-  description: TBD
+  description: Wrought iron and commanding presence stitched together. The insignia burns with duty — leather draped not for comfort, but authority.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Hardsuits/ussp_officer_combat.rsi

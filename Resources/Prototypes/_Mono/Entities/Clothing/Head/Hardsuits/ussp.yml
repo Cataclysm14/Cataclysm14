@@ -127,7 +127,7 @@
   parent: [ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ShowMedicalIcons]
   id: ClothingHeadHelmetHardsuitOfficerCombat
   name: USSP Commissar tacsuit helmet
-  description: TBD
+  description: A crimson visor set in cold steel — the watchful gaze of the Union. Fear is a weapon, and this helm wears it well.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/Head/Hardsuits/ussp_officer_combat.rsi
