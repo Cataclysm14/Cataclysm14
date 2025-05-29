@@ -126,8 +126,8 @@
 - type: entity
   parent: [ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ShowMedicalIcons]
   id: ClothingHeadHelmetHardsuitOfficerCombat
-  name: USSP Commissar tacsuit helmet
-  description: A crimson visor set in cold steel — the watchful gaze of the Union. Fear is a weapon, and this helm wears it well.
+  name: USSP UF-16 "Voenkom" commissar tacsuit helmet
+  description: Equipped with an integrated command control map and a striking red visor—designed to let commissars lead with clarity under fire.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/Head/Hardsuits/ussp_officer_combat.rsi

@@ -156,8 +156,8 @@
 - type: entity
   parent: ClothingOuterHardsuitBase
   id: ClothingOuterHardsuitOfficerCombat
-  name: USSP Commissar tacsuit
-  description: Wrought iron and commanding presence stitched together. The insignia burns with duty — leather draped not for comfort, but authority.
+  name: USSP UF-16 "Voenkom" commissar tacsuit
+  description: Developed by Union armament manufacturers for use by members of the commissariat on the frontlines. Features enhanced plating for survivability, allowing commanders to continue to give orders even while under heavy fire.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Hardsuits/ussp_officer_combat.rsi
