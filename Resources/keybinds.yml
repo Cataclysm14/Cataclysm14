@@ -1,4 +1,4 @@
-version: 1 # Not used right now, whatever.
+﻿version: 1 # Not used right now, whatever.
 binds:
 - function: UIClick
   type: State
@@ -281,11 +281,6 @@ binds:
 - function: FlipObject
   type: State
   key: F
-- function: Pan
-  type: State
-  key: MouseMiddle
-  canFocus: true
-  priority: 2
 - function: TextCursorLeft
   type: State
   key: Left
