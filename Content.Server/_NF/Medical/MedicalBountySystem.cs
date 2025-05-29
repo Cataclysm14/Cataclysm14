@@ -99,7 +99,6 @@ public sealed partial class MedicalBountySystem : EntitySystem
         // Check if entity has bloodstream for reagent injection
         var hasBloodstream = TryComp<BloodstreamComponent>(entity, out var bloodstream);
 
-        // Log for debugging IPC medical bounty fix
         var entityName = MetaData(entity).EntityName;
         Log.Info($"Initializing medical bounty for {entityName} ({ToPrettyString(entity)}), hasBloodstream: {hasBloodstream}");
 
