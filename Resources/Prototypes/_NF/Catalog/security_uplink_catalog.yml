@@ -455,7 +455,7 @@
   productEntity: RadAutoInjector
   icon: { sprite: Objects/Specific/Medical/medipen.rsi, state: arithpen }
   cost:
-    FederationMilitaryCredit: 1
+    FederationMilitaryCredit: 2
   categories:
     - UplinkSecurityUtility
   conditions:
@@ -515,7 +515,7 @@
   productEntity: AntiPoisonMedipen
   icon: { sprite: Objects/Specific/Medical/medipen.rsi, state: penacid }
   cost:
-    FederationMilitaryCredit: 1
+    FederationMilitaryCredit: 2
   categories:
     - UplinkSecurityUtility
   conditions:
