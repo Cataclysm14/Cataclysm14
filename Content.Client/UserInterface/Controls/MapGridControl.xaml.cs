@@ -110,10 +110,11 @@ public partial class MapGridControl : LayoutContainer
         if (!Draggable)
             return;
 
-        if (args.Function == EngineKeyFunctions.Use)
+        if (args.Function == EngineKeyFunctions.UseSecondary)
         {
             StartDragPosition = args.PointerLocation.Position;
             _draggin = true;
+            args.Handle();
         }
     }
 
@@ -122,8 +123,11 @@ public partial class MapGridControl : LayoutContainer
         if (!Draggable)
             return;
 
-        if (args.Function == EngineKeyFunctions.Use)
+        if (args.Function == EngineKeyFunctions.UseSecondary)
+        {
             _draggin = false;
+            args.Handle();
+        }
     }
 
     protected override void MouseMove(GUIMouseMoveEventArgs args)
