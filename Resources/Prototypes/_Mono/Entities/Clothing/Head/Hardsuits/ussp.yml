@@ -127,7 +127,7 @@
   parent: [ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ShowMedicalIcons]
   id: ClothingHeadHelmetHardsuitOfficerCombat
   name: USSP UF-16 "Voenkom" commissar tacsuit helmet
-  description: Equipped with an integrated command control map and a striking red visor—designed to let commissars lead with clarity under the heaviest of fire.
+  description: Cold, imposing, and unmistakably Union -- developed to instill discipline and fear. It's visor grants enhanced battlefield awareness with It's built-in command control map. Ideal for Commissars overseeing frontline operations.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/Head/Hardsuits/ussp_officer_combat.rsi
