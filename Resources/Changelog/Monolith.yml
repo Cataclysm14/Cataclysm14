@@ -3095,3 +3095,87 @@ Entries:
       message: Ported over the Bluespace Lifeline from Goob!
   id: 366
   time: '2025-05-28T08:25:39.0000000+00:00'
+- author: RikuTheKiller
+  changes:
+    - type: Tweak
+      message: >-
+        Trying to FTL outside of your shuttle's FTL range will now try to FTL as
+        close to the target as possible.
+  id: 367
+  time: '2025-05-28T19:46:35.0000000+00:00'
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Combat ship thrusters/gyros can be unanchored now
+  id: 368
+  time: '2025-05-28T21:06:54.0000000+00:00'
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: 'ADS AI/borg Can now yap on wideband. '
+  id: 369
+  time: '2025-05-29T01:31:24.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Add
+      message: Ported over latejoin advertisements from Frontier!
+  id: 370
+  time: '2025-05-29T01:33:17.0000000+00:00'
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Tarantula cost 95k->90k
+  id: 371
+  time: '2025-05-29T01:33:57.0000000+00:00'
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Moths can eat clothes again.
+  id: 372
+  time: '2025-05-29T01:36:28.0000000+00:00'
+- author: HungryCuban
+  changes:
+    - type: Tweak
+      message: >-
+        .30 low cap magazine and .30 speedloader are obtainable via vendors and
+        ammotechfab
+  id: 373
+  time: '2025-05-29T01:49:13.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Tweak
+      message: You can now tap your ID or PDA on a shuttle console to unlock/lock it.
+  id: 374
+  time: '2025-05-29T01:56:29.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Add
+      message: Anti-raid on recognized safe zones.
+  id: 375
+  time: '2025-05-29T02:02:04.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Fix
+      message: You are now able to unseal limbless people with modsuits.
+  id: 376
+  time: '2025-05-29T07:29:38.0000000+00:00'
+- author: Redrover1760
+  changes:
+    - type: Add
+      message: Portable Rechargers added to the tsf uplink for 10 FMCs/FUCs.
+    - type: Tweak
+      message: Portable rechargers recharge a bit faster.
+    - type: Tweak
+      message: Portable recharges fit on belt and suitstorage slots.
+    - type: Fix
+      message: >-
+        Portable recharger click behavior improved, alt click or use in hand to
+        take gun out.
+  id: 377
+  time: '2025-05-29T07:33:57.0000000+00:00'
+- author: Ark
+  changes:
+    - type: Fix
+      message: IPC medical bounty should now give a payout.
+  id: 378
+  time: '2025-05-29T09:40:52.0000000+00:00'
