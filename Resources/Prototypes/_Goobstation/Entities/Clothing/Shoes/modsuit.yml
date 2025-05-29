@@ -296,8 +296,8 @@
     sealUpPopup: sealable-clothing-seal-up-boots
     sealDownPopup: sealable-clothing-seal-down-boots
   - type: ClothingSpeedModifier
-    walkModifier: 0.90
-    sprintModifier: 0.90
+    walkModifier: 0.95
+    sprintModifier: 0.95
   - type: NoSlip
   - type: Magboots
   - type: SealableClothingVisuals
