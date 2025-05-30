@@ -10,7 +10,7 @@
   - type: Item
     size: Tiny
   - type: StaticPrice
-    price: 3500
+    price: 2000 # People can consistently pump out a million in less then an hour of fent production, fuck that.
   - type: Food
   - type: FlavorProfile
     flavors:
