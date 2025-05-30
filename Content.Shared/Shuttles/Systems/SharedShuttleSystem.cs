@@ -202,7 +202,7 @@ public abstract partial class SharedShuttleSystem : EntitySystem
             driveUid = uid;
             drive = comp;
 
-            poweredDriveFound = _powerReceiverSystem.IsPowered(uid);
+            poweredDriveFound = isPowered;
         }
 
         return driveUid != null;
