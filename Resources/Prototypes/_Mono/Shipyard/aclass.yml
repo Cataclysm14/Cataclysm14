@@ -5,31 +5,32 @@
 # Shuttle Notes:
 #
 - type: vessel
-  id: MClass
+  id: AClass
   parent: BaseVessel
-  name: TSF-SKR M-Class Salvage Carrier
-  description: A large salvage carrier with space for 2 salvage microshuttles to dock.
-  price: 155000
+  name: TSF-SKR A-Class Atmospherics Rig
+  description: A variant of the M-Class with the carrier area refitted to a atmospherics bay.
+  price: 168200
   category: Large
   group: Shipyard
-  shuttlePath: /Maps/_Mono/Shuttles/mclass.yml
+  shuttlePath: /Maps/_Mono/Shuttles/aclass.yml
   guidebookPage: Null
   class:
   - Salvage
+  - Atmospherics
   engine:
   - AME
 
 - type: gameMap
-  id: MClass
-  mapName: 'TSF-SKR M-Class Salvage Carrier'
-  mapPath: /Maps/_Mono/Shuttles/mclass.yml
+  id: AClass
+  mapName: 'TSF-SKR A-Class Atmospherics Rig'
+  mapPath: /Maps/_Mono/Shuttles/aclass.yml
   minPlayers: 0
   stations:
     MClass:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'M-Class CIV{1}'
+          mapNameTemplate: 'A-Class CIV{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
