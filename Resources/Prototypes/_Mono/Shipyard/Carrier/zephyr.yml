@@ -1,6 +1,6 @@
 - type: vessel
   id: Zephyr
-  parent: BaseVessel
+  parent: BaseVesselAntag
   name: TSF-SKR Zephyr
   description: A fighter refurbished from recovered remnant Razor hulls.
   price: 14200
