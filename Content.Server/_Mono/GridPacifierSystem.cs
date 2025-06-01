@@ -26,6 +26,7 @@ public sealed class GridPacifierSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
+
         SubscribeLocalEvent<GridPacifierComponent, ComponentStartup>(OnGridPacifierStartup);
         SubscribeLocalEvent<GridPacifierComponent, ComponentShutdown>(OnGridPacifierShutdown);
         SubscribeLocalEvent<MoveEvent>(OnEntityMoved);
@@ -43,10 +44,10 @@ public sealed class GridPacifierSystem : EntitySystem
             return;
         }
 
-        // Initialize the next update time
+        // Initialize the next update time for periodic checks
         component.NextUpdate = _gameTiming.CurTime + component.UpdateInterval;
 
-        // Find all entities on the grid and apply Pacified to them if they're organic
+        // Find all entities on the grid and process them (they'll be added to pending list with 5-second delay)
         var allEntitiesOnGrid = _lookup.GetEntitiesIntersecting(uid).ToHashSet();
 
         foreach (var entity in allEntitiesOnGrid)
@@ -71,30 +72,64 @@ public sealed class GridPacifierSystem : EntitySystem
         }
 
         component.PacifiedEntities.Clear();
+        component.PendingEntities.Clear();
     }
 
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
-        
+
         var curTime = _gameTiming.CurTime;
-        
+
         // Find all grids with a GridPacifierComponent
         var query = EntityQueryEnumerator<GridPacifierComponent, MapGridComponent>();
         while (query.MoveNext(out var uid, out var component, out _))
         {
+            // Process pending entities that have waited 5 seconds
+            ProcessPendingEntities(uid, component, curTime);
+
             // Check if it's time for the periodic update
             if (curTime < component.NextUpdate)
                 continue;
-                
+
             // Schedule the next update
             component.NextUpdate = curTime + component.UpdateInterval;
-            
+
             // Perform a complete re-check of all entities on the grid
             PerformGridwideCheck(uid, component);
         }
     }
-    
+
+    /// <summary>
+    /// Processes entities that have been pending pacification for 1 second
+    /// </summary>
+    private void ProcessPendingEntities(EntityUid gridUid, GridPacifierComponent component, TimeSpan curTime)
+    {
+        var entitiesToProcess = new List<EntityUid>();
+
+        // Find entities that have been pending for 1+ seconds
+        foreach (var (entityUid, entryTime) in component.PendingEntities.ToList())
+        {
+            if (curTime - entryTime >= TimeSpan.FromSeconds(1))
+            {
+                // Check if entity still exists and is still on the grid
+                if (EntityManager.EntityExists(entityUid) && IsEntityOnGrid(entityUid, gridUid))
+                {
+                    entitiesToProcess.Add(entityUid);
+                }
+
+                // Remove from pending regardless (either will be processed or no longer valid)
+                component.PendingEntities.Remove(entityUid);
+            }
+        }
+
+        // Re-run full checks for entities that have waited long enough
+        foreach (var entityUid in entitiesToProcess)
+        {
+            ProcessEntityForPacification(gridUid, entityUid, component);
+        }
+    }
+
     /// <summary>
     /// Performs a complete check of all entities on the grid, applying or removing
     /// pacification as needed based on current conditions.
@@ -103,30 +138,36 @@ public sealed class GridPacifierSystem : EntitySystem
     {
         // First, get all entities currently on the grid
         var entitiesOnGrid = _lookup.GetEntitiesIntersecting(gridUid).ToHashSet();
-        
+
         // Create a copy of the current pacified entities list for tracking which ones are no longer on the grid
         var stillPacifiedEntities = new HashSet<EntityUid>();
-        
+        var stillPendingEntities = new HashSet<EntityUid>();
+
         // Process all entities currently on the grid
         foreach (var entity in entitiesOnGrid)
         {
             // Skip the grid itself and entities inside containers
             if (entity == gridUid || _container.IsEntityInContainer(entity))
                 continue;
-                
-            // Process this entity - this will either pacify it or skip it based on conditions
-            ProcessEntityOnGrid(gridUid, entity, component);
-            
-            // If this entity is pacified after processing, add it to our tracking set
+
+            // For entities not yet tracked, add them to pending
+            if (!component.PacifiedEntities.Contains(entity) && !component.PendingEntities.ContainsKey(entity))
+            {
+                ProcessEntityOnGrid(gridUid, entity, component);
+            }
+
+            // Track entities that are still on the grid
             if (component.PacifiedEntities.Contains(entity))
                 stillPacifiedEntities.Add(entity);
+            if (component.PendingEntities.ContainsKey(entity))
+                stillPendingEntities.Add(entity);
         }
-        
+
         // Find entities that are no longer on the grid or no longer meet pacification criteria
-        // These are entities that were in the pacified list but aren't in our updated tracking set
         var entitiesToRemove = component.PacifiedEntities.Where(e => !stillPacifiedEntities.Contains(e)).ToList();
-        
-        // Remove pacification from these entities
+        var pendingToRemove = component.PendingEntities.Keys.Where(e => !stillPendingEntities.Contains(e)).ToList();
+
+        // Remove pacification from entities no longer on grid
         foreach (var entity in entitiesToRemove)
         {
             if (EntityManager.EntityExists(entity))
@@ -134,6 +175,12 @@ public sealed class GridPacifierSystem : EntitySystem
                 RemovePacified(entity);
                 component.PacifiedEntities.Remove(entity);
             }
+        }
+
+        // Remove pending entities no longer on grid
+        foreach (var entity in pendingToRemove)
+        {
+            component.PendingEntities.Remove(entity);
         }
     }
 
@@ -146,19 +193,24 @@ public sealed class GridPacifierSystem : EntitySystem
         if (_container.IsEntityInContainer(entity.Owner))
             return;
 
-        // If the entity is already pacified by a GridPacifierComponent, check if it left the grid
+        // If the entity left a grid with GridPacifierComponent, clean up pacification/pending status
         if (TryGetGridPacifierComponent(args.OldPosition.EntityId, out var oldGridComp) &&
-            oldGridComp != null && oldGridComp.PacifiedEntities.Contains(entity.Owner) &&
-            args.NewPosition.EntityId != args.OldPosition.EntityId)
+            oldGridComp != null && args.NewPosition.EntityId != args.OldPosition.EntityId)
         {
-            RemovePacified(entity.Owner);
-            oldGridComp.PacifiedEntities.Remove(entity.Owner);
+            if (oldGridComp.PacifiedEntities.Contains(entity.Owner))
+            {
+                RemovePacified(entity.Owner);
+                oldGridComp.PacifiedEntities.Remove(entity.Owner);
+            }
+            oldGridComp.PendingEntities.Remove(entity.Owner);
         }
 
-        // If the entity moved to a grid with GridPacifierComponent, check if it should get Pacified
+        // If the entity moved to a grid with GridPacifierComponent, check if it should get processed
         if (args.NewPosition.EntityId.IsValid() &&
             TryGetGridPacifierComponent(args.NewPosition.EntityId, out var newGridComp) &&
-            newGridComp != null && !newGridComp.PacifiedEntities.Contains(entity.Owner))
+            newGridComp != null &&
+            !newGridComp.PacifiedEntities.Contains(entity.Owner) &&
+            !newGridComp.PendingEntities.ContainsKey(entity.Owner))
         {
             ProcessEntityOnGrid(args.NewPosition.EntityId, entity.Owner, newGridComp);
         }
@@ -175,17 +227,23 @@ public sealed class GridPacifierSystem : EntitySystem
         // If the entity was on a pacified grid and left
         if (args.OldParent.HasValue && args.OldParent.Value.IsValid() &&
             TryGetGridPacifierComponent(args.OldParent.Value, out var oldGridComp) &&
-            oldGridComp != null && oldGridComp.PacifiedEntities.Contains(entity))
+            oldGridComp != null)
         {
-            // Entity moved away from a pacified grid - remove Pacified
-            RemovePacified(entity);
-            oldGridComp.PacifiedEntities.Remove(entity);
+            // Entity moved away from a pacified grid - clean up pacification/pending status
+            if (oldGridComp.PacifiedEntities.Contains(entity))
+            {
+                RemovePacified(entity);
+                oldGridComp.PacifiedEntities.Remove(entity);
+            }
+            oldGridComp.PendingEntities.Remove(entity);
         }
 
         // If the entity moved to a pacified grid
         if (args.Transform.ParentUid.IsValid() &&
             TryGetGridPacifierComponent(args.Transform.ParentUid, out var newGridComp) &&
-            newGridComp != null && !newGridComp.PacifiedEntities.Contains(entity))
+            newGridComp != null &&
+            !newGridComp.PacifiedEntities.Contains(entity) &&
+            !newGridComp.PendingEntities.ContainsKey(entity))
         {
             ProcessEntityOnGrid(args.Transform.ParentUid, entity, newGridComp);
         }
@@ -195,7 +253,7 @@ public sealed class GridPacifierSystem : EntitySystem
     private void OnEntityInsertedInContainer(EntInsertedIntoContainerMessage args)
     {
         var entity = args.Entity;
-        // Entity was pacified but is now in a container - remove protection
+        // Entity was pacified or pending but is now in a container - remove protection/pending status
         // Iterate over all grids that might be pacifying this entity
         var query = EntityQueryEnumerator<GridPacifierComponent, TransformComponent>();
         while (query.MoveNext(out var gridUid, out var gridComp, out _))
@@ -205,6 +263,7 @@ public sealed class GridPacifierSystem : EntitySystem
                 RemovePacified(entity);
                 gridComp.PacifiedEntities.Remove(entity);
             }
+            gridComp.PendingEntities.Remove(entity);
         }
     }
 
@@ -217,23 +276,45 @@ public sealed class GridPacifierSystem : EntitySystem
             xform.GridUid.HasValue &&
             TryGetGridPacifierComponent(xform.GridUid.Value, out var gridComp) &&
             gridComp != null &&
-            !gridComp.PacifiedEntities.Contains(entity))
+            !gridComp.PacifiedEntities.Contains(entity) &&
+            !gridComp.PendingEntities.ContainsKey(entity))
         {
             ProcessEntityOnGrid(xform.GridUid.Value, entity, gridComp);
         }
     }
 
     /// <summary>
-    /// Process an entity on a grid and apply Pacified if appropriate
+    /// Process an entity on a grid - adds to pending list for delayed processing
     /// </summary>
     private void ProcessEntityOnGrid(EntityUid gridUid, EntityUid entityUid, GridPacifierComponent component)
+    {
+        // Skip entities that are already pacified by this component or pending pacification
+        if (component.PacifiedEntities.Contains(entityUid) || component.PendingEntities.ContainsKey(entityUid))
+            return;
+
+        // Add entity to pending list with current timestamp (1-second delay before checks)
+        component.PendingEntities[entityUid] = _gameTiming.CurTime;
+    }
+
+    /// <summary>
+    /// Performs the actual pacification checks and applies Pacified if appropriate
+    /// </summary>
+    private void ProcessEntityForPacification(EntityUid gridUid, EntityUid entityUid, GridPacifierComponent component)
     {
         // Only apply Pacified to organic entities
         if (!IsOrganic(entityUid))
             return;
 
+        // Skip entities that already have the Pacified component
+        if (HasComp<PacifiedComponent>(entityUid))
+            return;
+
+        // Skip if already pacified by this component
+        if (component.PacifiedEntities.Contains(entityUid))
+            return;
+
         // Check if the entity is from an exempt company
-        if (TryComp<CompanyComponent>(entityUid, out var companyComp) && 
+        if (TryComp<CompanyComponent>(entityUid, out var companyComp) &&
             !string.IsNullOrEmpty(companyComp.CompanyName))
         {
             // Check against all three exempt company slots
@@ -241,17 +322,12 @@ public sealed class GridPacifierSystem : EntitySystem
                 (!string.IsNullOrEmpty(component.ExemptCompany2) && companyComp.CompanyName == component.ExemptCompany2) ||
                 (!string.IsNullOrEmpty(component.ExemptCompany3) && companyComp.CompanyName == component.ExemptCompany3))
             {
-                // Entity is from an exempt company
-                // If they were previously pacified, remove the pacification
-                if (component.PacifiedEntities.Contains(entityUid))
-                {
-                    RemovePacified(entityUid);
-                    component.PacifiedEntities.Remove(entityUid);
-                }
+                // Entity is from an exempt company - don't pacify
                 return;
             }
         }
 
+        // All checks passed - apply pacification
         ApplyPacified(gridUid, entityUid, component);
     }
 
@@ -260,8 +336,12 @@ public sealed class GridPacifierSystem : EntitySystem
     /// </summary>
     private void ApplyPacified(EntityUid gridUid, EntityUid entityUid, GridPacifierComponent component)
     {
-        // Skip if the entity is already pacified
+        // Skip if the entity is already pacified by this component
         if (component.PacifiedEntities.Contains(entityUid))
+            return;
+
+        // Skip if the entity already has a Pacified component (safety check)
+        if (HasComp<PacifiedComponent>(entityUid))
             return;
 
         // Apply Pacified
@@ -291,6 +371,17 @@ public sealed class GridPacifierSystem : EntitySystem
             return false;
 
         return TryComp(gridUid.Value, out component);
+    }
+
+    /// <summary>
+    /// Checks if an entity is currently on the specified grid
+    /// </summary>
+    private bool IsEntityOnGrid(EntityUid entityUid, EntityUid gridUid)
+    {
+        if (!TryComp<TransformComponent>(entityUid, out var xform))
+            return false;
+
+        return xform.GridUid == gridUid;
     }
 
     /// <summary>

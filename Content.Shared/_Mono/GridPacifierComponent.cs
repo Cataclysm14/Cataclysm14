@@ -1,5 +1,4 @@
 using Robust.Shared.GameStates;
-using Robust.Shared.Serialization;
 
 namespace Content.Shared._Mono;
 
@@ -15,6 +14,13 @@ public sealed partial class GridPacifierComponent : Component
     /// </summary>
     [DataField]
     public HashSet<EntityUid> PacifiedEntities = new();
+
+    /// <summary>
+    /// Entities that are pending pacification with their entry timestamps.
+    /// After 1 second, they will be moved to PacifiedEntities.
+    /// </summary>
+    [DataField]
+    public Dictionary<EntityUid, TimeSpan> PendingEntities = new();
 
     /// <summary>
     /// First company name that is exempt from pacification.
@@ -33,13 +39,13 @@ public sealed partial class GridPacifierComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public string ExemptCompany3 = string.Empty;
-    
+
     /// <summary>
     /// The time when the next periodic update should occur
     /// </summary>
     [DataField, AutoPausedField]
     public TimeSpan NextUpdate;
-    
+
     /// <summary>
     /// How frequently to check all entities on the grid for changes (in seconds)
     /// </summary>
