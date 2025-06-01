@@ -1,3 +1,4 @@
+using Content.Server._Mono.Shuttles.Components;
 using Content.Server.Power.EntitySystems;
 using Content.Server.Shuttles.Components;
 using Content.Server.Shuttles.Events;
@@ -24,6 +25,7 @@ using Content.Shared.UserInterface;
 using Content.Shared.Access.Systems; // Frontier
 using Content.Shared.Construction.Components; // Frontier
 using Content.Server.Radio.EntitySystems;
+using Content.Server.Station.Components;
 using Content.Shared.Verbs;
 
 namespace Content.Server.Shuttles.Systems;
@@ -43,6 +45,7 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
     [Dependency] private readonly SharedContentEyeSystem _eyeSystem = default!;
     [Dependency] private readonly AccessReaderSystem _access = default!;
     [Dependency] private readonly RadioSystem _radioSystem = default!;
+    [Dependency] private readonly StationJobsSystem _stationJobs = default!;
 
     private EntityQuery<MetaDataComponent> _metaQuery;
     private EntityQuery<TransformComponent> _xformQuery;
@@ -178,6 +181,9 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
         DockingInterfaceState? dockState = null;
         UpdateState(uid, ref dockState);
         _shuttle.NfSetPowered(uid, component, args.Powered); // Frontier
+
+        // Handle job slots when power changes
+        HandleJobSlotsOnPowerChange(uid, component, args.Powered);
     }
 
     private bool TryPilot(EntityUid user, EntityUid uid)
@@ -635,5 +641,130 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
 
         // Show confirmation popup
         _popup.PopupEntity(Loc.GetString("shuttle-console-panic-sent"), uid, user);
+    }
+
+    /// <summary>
+    /// Handles job slots when shuttle console power changes.
+    /// </summary>
+    private void HandleJobSlotsOnPowerChange(EntityUid consoleUid, ShuttleConsoleComponent component, bool powered)
+    {
+        // Get the console's transform to find the grid
+        if (!TryComp<TransformComponent>(consoleUid, out var consoleXform) || consoleXform.GridUid == null)
+            return;
+
+        var gridUid = consoleXform.GridUid.Value;
+
+        // Only handle job slots for shuttles (grids with ShuttleComponent)
+        if (!HasComp<ShuttleComponent>(gridUid))
+            return;
+
+        // Find the station that owns this shuttle
+        var owningStation = _station.GetOwningStation(gridUid);
+        if (owningStation == null)
+            return;
+
+        // Check if the grid has any powered shuttle consoles
+        var hasPoweredConsole = HasPoweredShuttleConsole(gridUid);
+
+        if (!hasPoweredConsole)
+        {
+            // No powered consoles
+            SaveAndCloseJobSlots(gridUid, owningStation.Value);
+        }
+        else
+        {
+            // Has powered console
+            RestoreJobSlots(gridUid, owningStation.Value);
+        }
+    }
+
+    /// <summary>
+    /// Checks if the grid has any powered shuttle consoles.
+    /// </summary>
+    private bool HasPoweredShuttleConsole(EntityUid gridUid)
+    {
+        var query = AllEntityQuery<ShuttleConsoleComponent, TransformComponent>();
+
+        while (query.MoveNext(out var consoleUid, out _, out var xform))
+        {
+            // Check if this console is on our grid
+            if (xform.GridUid != gridUid)
+                continue;
+
+            // Check if this console is powered
+            if (this.IsPowered(consoleUid, EntityManager))
+                return true;
+        }
+
+        return false;
+    }
+
+    /// <summary>
+    /// Saves the current job slots for the station and sets them all to 0 (closed).
+    /// </summary>
+    private void SaveAndCloseJobSlots(EntityUid gridUid, EntityUid station)
+    {
+        // Get or create the job slots component on the grid
+        var jobSlotsComp = EnsureComp<ShuttleConsoleJobSlotsComponent>(gridUid);
+
+        // If we already have saved slots, don't save again
+        if (jobSlotsComp.SavedJobSlots.Count > 0)
+            return;
+
+        // Clear any previous saved state and set the owning station
+        jobSlotsComp.SavedJobSlots.Clear();
+        jobSlotsComp.OwningStation = station;
+
+        // Get all current job slots for the station
+        if (!TryComp<StationJobsComponent>(station, out var stationJobs))
+            return;
+
+        // Save current job slots
+        foreach (var (jobId, slots) in stationJobs.JobList)
+        {
+            // Only save jobs that have slots available (not 0)
+            if (slots != 0)
+            {
+                jobSlotsComp.SavedJobSlots[jobId] = slots;
+
+                // Set the job slot to 0 (closed)
+                _stationJobs.TrySetJobSlot(station, jobId, 0);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Restores the previously saved job slots for the station.
+    /// </summary>
+    private void RestoreJobSlots(EntityUid gridUid, EntityUid station)
+    {
+        // Get the job slots component from the grid
+        if (!TryComp<ShuttleConsoleJobSlotsComponent>(gridUid, out var jobSlotsComp))
+            return;
+
+        // If no saved slots, nothing to restore
+        if (jobSlotsComp.SavedJobSlots.Count == 0)
+            return;
+
+        // Verify this is for the correct station
+        if (jobSlotsComp.OwningStation != station)
+            return;
+
+        // Restore all saved job slots
+        foreach (var (jobId, savedSlots) in jobSlotsComp.SavedJobSlots)
+        {
+            if (savedSlots.HasValue)
+            {
+                _stationJobs.TrySetJobSlot(station, jobId, savedSlots.Value);
+            }
+            else
+            {
+                _stationJobs.MakeJobUnlimited(station, jobId);
+            }
+        }
+
+        // Clear the saved state
+        jobSlotsComp.SavedJobSlots.Clear();
+        jobSlotsComp.OwningStation = null;
     }
 }
