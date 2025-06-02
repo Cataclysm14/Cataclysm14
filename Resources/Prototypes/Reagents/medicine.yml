@@ -228,12 +228,12 @@
         damage:
           types:
             Heat: -2
-            Shock: -2 
+            Shock: -2
             Cold: -2 # Was 1.5, Buffed due to limb damage changes(GoobStation)
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 10
+          min: 10.5
         damage:
           types:
             Asphyxiation: 1
@@ -243,7 +243,7 @@
       - !type:Jitter
         conditions:
         - !type:ReagentThreshold
-          min: 10
+          min: 10.5
 
 - type: reagent
   id: Dexalin
