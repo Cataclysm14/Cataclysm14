@@ -1,0 +1,17 @@
+- type: entity
+  parent: AirlockShuttleNfsdOutpost
+  id: AirlockShuttleNfsdOutpostLocked
+  suffix: OUTPOST ONLY, TSFMC, Docking, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSecurity ]
+
+- type: entity
+  parent: AirlockGlassShuttleNfsdOutpost
+  id: AirlockGlassShuttleNfsdOutpostLocked
+  suffix: OUTPOST ONLY, TSFMC, Glass, Docking, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSecurity ]
