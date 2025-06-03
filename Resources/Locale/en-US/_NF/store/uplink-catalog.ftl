@@ -245,8 +245,8 @@ uplink-security-syringe-case-desc = A pocket case filled with medipens for most 
 uplink-security-compact-defibrillator-name = Compact Defibrillator
 uplink-security-compact-defibrillator-desc = A portable defibrillator made for field revivals.
 
-uplink-security-cash5000-name = 5,000 Spesos
-uplink-security-cash5000-desc = Cold, hard cash.
+uplink-security-cash7500-name = 7,500 Spesos
+uplink-security-cash7500-desc = Cold, hard cash.
 
 uplink-security-thrusterkit-name = Thruster Upgrade Kit
 uplink-security-thrusterkit-desc = Contains 32 super capaciters. Perfect for upgrading eight thrusters.
