@@ -15,3 +15,39 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsUSSP ]
+
+- type: entity
+  id: AirlockGlassShuttleNfsdOutpost
+  parent: AirlockGlassShuttleNfsd
+  suffix: OUTPOST ONLY, TSFMC, Glass, Docking
+  components:
+  - type: Destructible # Mono - buff docking port health
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 25000 # 10x buff
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      # TODO this should go to the broken node first
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+
+- type: entity
+  id: AirlockShuttleNfsdOutpost
+  parent: AirlockShuttleNfsd
+  suffix: OUTPOST ONLY, TSFMC, Docking
+  components:
+  - type: Destructible # Mono - buff docking port health
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 25000 # 10x buff
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      # TODO this should go to the broken node first
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
