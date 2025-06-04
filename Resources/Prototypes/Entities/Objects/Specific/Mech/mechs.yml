@@ -184,6 +184,7 @@
         - Book
   - type: StaticPrice
     price: 450
+  - type: DragDropTargetable
   # Goobstation Change End
   - type: RadarConsole
     maxRange: 256
