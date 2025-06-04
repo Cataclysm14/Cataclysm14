@@ -282,6 +282,18 @@ namespace Content.Server.Administration.Systems
                 var discordMessage = GenerateAHelpMessage(messageParams);
                 queue.Enqueue(discordMessage);
             }
+
+            // Send to Discord chat link (thread-based integration)
+            // Fire and forget - don't block the main thread
+            _ = Task.Run(async () =>
+            {
+                var lookup = await _playerLocator.LookupIdAsync(session.UserId);
+                var playerName = lookup?.Username ?? "Unknown";
+                var roundId = _gameTicker.RoundId;
+                var characterName = _minds.GetCharacterName(session.UserId);
+                var discordMessage = $"{session.Name} {message}";
+                _discordChatLink.SendAhelpMessage(session.UserId, playerName, "System", discordMessage, true, roundId, characterName);
+            });
         }
 
         private void OnGameRunLevelChanged(GameRunLevelChangedEvent args)
