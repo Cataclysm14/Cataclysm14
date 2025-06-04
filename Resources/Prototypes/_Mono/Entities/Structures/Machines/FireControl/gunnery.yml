@@ -101,7 +101,7 @@
   - type: Machine
     board: MachineGCSStationCircuitboard
   - type: FireControlServer
-    processingPower: 50
+    processingPower: 1000
   - type: ApcPowerReceiver
     powerLoad: 5000
   - type: ApcPowerReceiverBattery
