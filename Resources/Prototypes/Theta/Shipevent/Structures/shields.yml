@@ -112,7 +112,7 @@
   id: CircularShieldFob
   name: FS-421 fortress shield generator
   parent: BaseStructure
-  suffix: Theta, CircularShield, DO NOT MAP # Mono
+  suffix: Theta, CircularShield, OUTPOST ONLY # Mono
   components:
   - type: CircularShield
     consumptionPerM2: 0.2 # Mono - too much at 1
@@ -129,11 +129,11 @@
   - type: Anchorable
     delay: 10
   - type: Sprite
-    sprite: _Mono/Structures/ShuttleComponents/shield.rsi
+    sprite: _Mono/Structures/ShuttleComponents/fobshield.rsi
     snapCardinals: true
     layers:
-    - state: control
-    - state: control_on
+    - state: fortresscontrol
+    - state: fortresscontrol_on
       map: [ "enum.PowerDeviceVisualLayers.Powered" ]
       visible: false
       shader: unshaded
