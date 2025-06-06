@@ -143,7 +143,7 @@
         type: BankATMMenuBoundUserInterface
   - type: BankATM
     taxAccounts:
-      Frontier: 0.2 # Monolith
+      Frontier: 0.2 # Monolith #STOP-TAXES
 
 - type: entity
   suffix: Wallmount, BlackMarket
@@ -167,7 +167,7 @@
         type: BankATMMenuBoundUserInterface
   - type: BankATM
     taxAccounts:
-      Frontier: 0.2 # Monolith
+      Frontier: 0.2 # Monolith #STOP-TAXES
 
 - type: entity
   name: station administration console
