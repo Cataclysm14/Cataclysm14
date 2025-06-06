@@ -49,3 +49,45 @@
 #  components:
 #  - type: PirateBountyItem
 #    id: PMCGun
+
+# Energy
+
+- type: entity
+  parent:
+  - BaseC2ContrabandMercenary
+  - WeaponEnergyGun
+  name: PMC Energy Gun
+  id: WeaponEnergyGunPMC
+  description: An Energy Gun that has been properly registered for private security and mercenary use.
+
+- type: entity
+  parent:
+  - BaseC2ContrabandMercenary
+  - WeaponLaserCarbine
+  name: PMC Laser Rifle
+  id: WeaponLaserCarbinePMC
+  description: A Laser Rifle that has been properly registered for private security and mercenary use.
+
+- type: entity
+  parent:
+  - BaseC2ContrabandMercenary
+  - WeaponLaserCannon
+  name: PMC Laser Cannon
+  id: WeaponLaserCannonPMC
+  description: A Laser Cannon that has been properly registered for private security and mercenary use.
+
+- type: entity
+  parent:
+  - BaseC2ContrabandMercenary
+  - WeaponDisablerSMG
+  name: PMC Disabler SMG
+  id: WeaponDisablerSMGPMC
+  description: An Energy Gun that has been properly registered for private security and mercenary use.
+
+- type: entity
+  parent:
+  - BaseC2ContrabandMercenary
+  - WeaponEnergyShotgun
+  name: PMC Energy Shotgun
+  id: WeaponEnergyShotgunPMC
+  description: An Energy Shotgun that has been properly registered for private security and mercenary use.
