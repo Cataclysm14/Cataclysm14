@@ -3767,3 +3767,46 @@ Entries:
   id: 454
   time: '2025-06-07T11:42:30.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/745
+- author: Redrover1760
+  changes:
+    - type: Fix
+      message: Mass drivers reflecting at the owner is gone sadly
+  id: 455
+  time: '2025-06-07T21:37:38.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/753
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Only TSF company can modify CO/MD budget.
+  id: 456
+  time: '2025-06-07T22:23:14.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/751
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        A bit more evil added to drop pods, slightly less contra crates on
+        average.
+  id: 457
+  time: '2025-06-07T22:24:04.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/749
+- author: Ark
+  changes:
+    - type: Fix
+      message: Corpses should no longer go through walls.
+  id: 458
+  time: '2025-06-07T22:25:32.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/756
+- author: Danchi299
+  changes:
+    - type: Tweak
+      message: Most PMC Weapon prices were increased.
+    - type: Tweak
+      message: Replaced Enforcer with Kammerer in PMC Liberty Station
+    - type: Remove
+      message: >-
+        Removed Energy Shotgun from PMC Liberty Station. May be re-added later
+        as expeditionary loot.
+  id: 459
+  time: '2025-06-07T22:27:02.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/754
