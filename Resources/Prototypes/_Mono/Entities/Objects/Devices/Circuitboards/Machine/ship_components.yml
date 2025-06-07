@@ -27,10 +27,10 @@
   - type: Sprite
     state: security
   - type: MachineBoard
-    prototype: CircularShieldBase # why are we using the base for this? whatever
+    prototype: CircularShieldFob # why are we using the base for this? whatever
     componentRequirements:
       AmeFuelContainer:
-        amount: 3
+        amount: 6
         defaultPrototype: AmeJar
     stackRequirements:
       Glass: 10

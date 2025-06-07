@@ -8,10 +8,18 @@
   },
   "states": [
     {
-      "name": "fobshield"
+      "name": "outpostcore"
     },
     {
-      "name": "fobshield_on"
+      "name": "outpostcore_on",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
     }
   ]
 }
