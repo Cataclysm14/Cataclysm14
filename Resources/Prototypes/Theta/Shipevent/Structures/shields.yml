@@ -111,32 +111,34 @@
 - type: entity
   id: CircularShieldFob
   name: FS-421 fortress shield generator
+  description: An enhanced shield generator designed for stations. Due to using a strong bluespace reaction, it is limited to use by static structures.
   parent: BaseStructure
   suffix: Theta, CircularShield, OUTPOST ONLY # Mono
   components:
   - type: CircularShield
-    consumptionPerM2: 0.2 # Mono - too much at 1
+    consumptionPerM2: 0.1 # Mono - too much at 1
     maxWidth: 360
-    maxRadius: 100 # Mono - 2x
-    projectileWattPerImpact: 0
+    maxRadius: 150 # Mono - 2x
+    projectileWattPerImpact: 3
     color: "#B79CF7"
     effects:
     - !type:CircularShieldTempSpeedChangeEffect
       speedModifier: 0.1
   - type: ExtensionCableReceiver
   - type: ApcPowerReceiver
-    needsPower: true
+    powerLoad: 200
   - type: Anchorable
     delay: 10
   - type: Sprite
     sprite: _Mono/Structures/ShuttleComponents/fobshield.rsi
     snapCardinals: true
     layers:
-    - state: fortresscontrol
-    - state: fortresscontrol_on
-      map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+    - state: fobshield
+    - state: fobshield_on
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
       visible: false
       shader: unshaded
+      color: "#b9a3f7"
   - type: DeviceNetwork
     deviceNetId: Wireless
   - type: WirelessNetworkConnection
@@ -158,11 +160,12 @@
           False: { visible: false }
   - type: PointLight
     enabled: false
-    color: "#866CC4"
+    color: "#8368C6"
     radius: 2.0
     energy: 1.5
   - type: LitOnPowered
   - type: InteractionOutline
+  - type: Appearance
   - type: Machine
     board: MachineShieldFS421Circuitboard
   - type: Construction # Mono
