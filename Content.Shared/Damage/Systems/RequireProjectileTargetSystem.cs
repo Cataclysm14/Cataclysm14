@@ -34,18 +34,18 @@ public sealed class RequireProjectileTargetSystem : EntitySystem
         if (!TryComp<RequireProjectileTargetComponent>(target, out var targetComp) || !targetComp.Active)
             return false;
 
-        // Check if shooter and target are in the same company
-        var sameCompany = false;
-        if (shooter != null &&
-            TryComp<CompanyComponent>(shooter.Value, out var shooterCompany) &&
-            TryComp<CompanyComponent>(target, out var targetCompany) &&
-            !string.IsNullOrEmpty(shooterCompany.CompanyName) &&
-            !string.IsNullOrEmpty(targetCompany.CompanyName) &&
-            shooterCompany.CompanyName != "None" &&
-            targetCompany.CompanyName != "None")
-        {
-            sameCompany = shooterCompany.CompanyName == targetCompany.CompanyName;
-        }
+        // // Check if shooter and target are in the same company
+        // var sameCompany = false;
+        // if (shooter != null &&
+        //     TryComp<CompanyComponent>(shooter.Value, out var shooterCompany) &&
+        //     TryComp<CompanyComponent>(target, out var targetCompany) &&
+        //     !string.IsNullOrEmpty(shooterCompany.CompanyName) &&
+        //     !string.IsNullOrEmpty(targetCompany.CompanyName) &&
+        //     shooterCompany.CompanyName != "None" &&
+        //     targetCompany.CompanyName != "None")
+        // {
+        //     sameCompany = shooterCompany.CompanyName == targetCompany.CompanyName;
+        // }
 
         // Prevent hitting downed mobs ONLY if they are critical or dead
         // unless the shot is specifically targeted at them (cursor over them when firing)
@@ -59,18 +59,18 @@ public sealed class RequireProjectileTargetSystem : EntitySystem
             return true;
         }
 
-        // If we reach here, the mob is downed but alive
-        // If shooter and target are in the same company, prevent friendly fire
-        // unless the shot is specifically targeted at them (cursor over them when firing)
-        if (sameCompany)
-        {
-            // If the shot is specifically targeted at this same-company mob, allow the hit
-            if (isTargeted)
-                return false;
-
-            // Otherwise, prevent friendly fire
-            return true;
-        }
+        // // If we reach here, the mob is downed but alive
+        // // If shooter and target are in the same company, prevent friendly fire
+        // // unless the shot is specifically targeted at them (cursor over them when firing)
+        // if (sameCompany)
+        // {
+        //     // If the shot is specifically targeted at this same-company mob, allow the hit
+        //     if (isTargeted)
+        //         return false;
+        //
+        //     // Otherwise, prevent friendly fire
+        //     return true;
+        // }
 
         // Otherwise, allow shots to hit
         return false;
