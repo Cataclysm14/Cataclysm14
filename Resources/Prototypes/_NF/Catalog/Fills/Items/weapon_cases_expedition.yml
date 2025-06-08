@@ -994,7 +994,7 @@
   id: WeaponCaseShortAmmoBoxFlareShotgun
   categories: [ HideSpawnMenu ]
 
-## .45 ammo
+## .45 magnum ammo
 - type: entity
   parent:
   - WeaponCaseShortAmmo

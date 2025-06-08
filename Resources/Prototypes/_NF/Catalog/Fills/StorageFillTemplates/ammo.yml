@@ -323,7 +323,7 @@
     - id: BoxShotgunFlare
       amount: 2
 
-# .45 ammo
+# .45 magnum ammo
 - type: entity # Lethal
   abstract: true
   id: StorageFillAmmoBoxLethal45
