@@ -11,37 +11,16 @@
             "name": "base"
         },
         {
-            "name": "practice"
+            "name": "beanbag"
         },
         {
-            "name": "red"
+            "name": "pellets"
         },
         {
-            "name": "red-icon"
-        },
-        {
-            "name": "rubber"
-        },
-        {
-            "name": "emp"
-        },
-        {
-            "name": "uranium"
+            "name": "slug"
         },
         {
             "name": "mag-1"
-        },
-        {
-            "name": "mag-2"
-        },
-        {
-            "name": "mag-3"
-        },
-        {
-            "name": "mag-4"
-        },
-        {
-            "name": "mag-5"
         }
     ]
 }
