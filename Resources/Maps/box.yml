@@ -145406,7 +145406,7 @@ entities:
     - type: Transform
       pos: -23.2492,-71.39133
       parent: 8364
-- proto: ShellShotgunPractice
+- proto: ShellShotgun12gaugePractice
   entities:
   - uid: 8770
     components:

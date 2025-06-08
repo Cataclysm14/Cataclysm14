@@ -32,9 +32,9 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - ShellShotgun
+      - ShellShotgun12gauge
     capacity: 7
-    proto: ShellShotgun
+    proto: ShellShotgun12gauge
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg
   - type: ContainerContainer
@@ -135,7 +135,7 @@
   suffix: Non-Lethal
   components:
   - type: BallisticAmmoProvider
-    proto: ShellShotgunBeanbag
+    proto: ShellShotgun12gaugeBeanbag
 
 - type: entity
   name: Enforcer
@@ -162,7 +162,7 @@
   suffix: Non-Lethal
   components:
   - type: BallisticAmmoProvider
-    proto: ShellShotgunBeanbag
+    proto: ShellShotgun12gaugeBeanbag
 
 - type: entity
   name: Kammerer
@@ -300,4 +300,4 @@
   id: WeaponShotgunImprovisedLoaded
   components:
   - type: BallisticAmmoProvider
-    proto: ShellShotgunImprovised
+    proto: ShellShotgun12gaugeImprovised

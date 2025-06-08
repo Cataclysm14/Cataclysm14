@@ -561,7 +561,7 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - ShellShotgun
+      - ShellShotgun12gauge
     capacity: 14
 
 - type: entity

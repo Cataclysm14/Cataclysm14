@@ -1,13 +1,13 @@
 - type: entity
-  id: BaseShellShotgun
-  name: shell (.50)
+  id: BaseShellShotgun12gauge
+  name: shotgun shell (12 gauge)
   parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: added BaseC1Contraband
   abstract: true
   components:
   - type: Tag
     tags:
     - Cartridge
-    - ShellShotgun
+    - ShellShotgun12gauge
   - type: CartridgeAmmo
     soundEject:
       collection: ShellEject
@@ -22,15 +22,15 @@
     price: 1
 
 - type: entity
-  id: ShellShotgunBeanbag
-  name: shell (.50 beanbag)
-  parent: BaseShellShotgun # Frontier: remove BaseSecurityBartenderContraband
+  id: ShellShotgun12gaugeBeanbag
+  name: shotgun shell (12 gauge beanbag)
+  parent: BaseShellShotgun12gauge # Frontier: remove BaseSecurityBartenderContraband
   components:
   - type: Tag
     tags:
     - Cartridge
-    - ShellShotgun
-    - ShellShotgunLight
+    - ShellShotgun12gauge
+    - ShellShotgun12gaugeLight
   - type: Sprite
     layers:
       - state: beanbag
@@ -41,9 +41,9 @@
     state: "beanbag"
 
 - type: entity
-  id: ShellShotgunSlug
-  name: shell (.50 slug)
-  parent: BaseShellShotgun # Frontier: remove BaseSecurityContraband
+  id: ShellShotgun12gaugeSlug
+  name: shotgun shell (12 gauge slug)
+  parent: BaseShellShotgun12gauge # Frontier: remove BaseSecurityContraband
   components:
   - type: Sprite
     layers:
@@ -55,15 +55,15 @@
     state: "slug"
 
 - type: entity
-  id: ShellShotgunFlare
-  name: shell (.50 flare)
-  parent: BaseShellShotgun
+  id: ShellShotgun12gaugeFlare
+  name: flare shell (12 gauge flare)
+  parent: BaseShellShotgun12gauge
   components:
   - type: Tag
     tags:
     - Cartridge
-    - ShellShotgun
-    - ShellShotgunLight
+    - ShellShotgun12gauge
+    - ShellShotgun12gaugeLight
   - type: Sprite
     layers:
       - state: flare
@@ -74,9 +74,9 @@
     state: "flare"
 
 - type: entity
-  id: ShellShotgun
-  name: shell (.50)
-  parent: BaseShellShotgun # Frontier: remove BaseSecurityContraband
+  id: ShellShotgun12gauge
+  name: shotgun shell (12 gauge)
+  parent: BaseShellShotgun12gauge # Frontier: remove BaseSecurityContraband
   components:
   - type: Sprite
     layers:
@@ -86,9 +86,9 @@
     proto: PelletShotgunSpread
 
 - type: entity
-  id: ShellShotgunIncendiary
-  name: shell (.50 incendiary)
-  parent: BaseShellShotgun # Frontier: remove BaseSecurityContraband
+  id: ShellShotgun12gaugeIncendiary
+  name: shotgun shell (12 gauge incendiary)
+  parent: BaseShellShotgun12gauge # Frontier: remove BaseSecurityContraband
   components:
   - type: Sprite
     layers:
@@ -100,9 +100,9 @@
     state: "incendiary"
 
 - type: entity
-  id: ShellShotgunPractice
-  name: shell (.50 practice)
-  parent: BaseShellShotgun # Frontier: remove BaseSecurityContraband
+  id: ShellShotgun12gaugePractice
+  name: shotgun shell (12 gauge practice)
+  parent: BaseShellShotgun12gauge # Frontier: remove BaseSecurityContraband
   components:
   - type: Sprite
     layers:
@@ -115,14 +115,14 @@
 
 - type: entity
   id: ShellTranquilizer
-  name: shell (.50 tranquilizer)
-  parent: BaseShellShotgun # Frontier: remove BaseSecurityContraband
+  name: shotgun shell (12 gauge tranquilizer)
+  parent: BaseShellShotgun12gauge # Frontier: remove BaseSecurityContraband
   components:
   - type: Tag
     tags:
     - Cartridge
-    - ShellShotgun
-    - ShellShotgunLight
+    - ShellShotgun12gauge
+    - ShellShotgun12gaugeLight
   - type: Sprite
     layers:
       - state: tranquilizer
@@ -142,16 +142,16 @@
     state: "tranquilizer"
 
 - type: entity
-  id: ShellShotgunImprovised
-  name: improvised shotgun shell
+  id: ShellShotgun12gaugeImprovised
+  name: improvised shotgun shell (12 gauge)
   description: A homemade shotgun shell that shoots painful glass shrapnel. The spread is so wide that it couldn't hit the broad side of a barn.
-  parent: BaseShellShotgun # Frontier: remove BaseSecurityContraband
+  parent: BaseShellShotgun12gauge # Frontier: remove BaseSecurityContraband
   components:
   - type: Tag
     tags:
     - Cartridge
-    - ShellShotgun
-    - ShellShotgunLight
+    - ShellShotgun12gauge
+    - ShellShotgun12gaugeLight
   - type: Sprite
     layers:
       - state: improvised
@@ -165,9 +165,9 @@
     state: "improvised"
 
 - type: entity
-  id: ShellShotgunUranium
-  name: uranium shotgun shell
-  parent: BaseShellShotgun # Frontier: remove BaseSecurityContraband
+  id: ShellShotgun12gaugeUranium
+  name: shotgun shell (12 gauge uranium)
+  parent: BaseShellShotgun12gauge # Frontier: remove BaseSecurityContraband
   components:
     - type: Sprite
       layers:

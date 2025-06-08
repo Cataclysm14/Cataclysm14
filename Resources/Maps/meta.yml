@@ -146601,7 +146601,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: ShellShotgunBeanbag
+- proto: ShellShotgun12gaugeBeanbag
   entities:
   - uid: 9472
     components:

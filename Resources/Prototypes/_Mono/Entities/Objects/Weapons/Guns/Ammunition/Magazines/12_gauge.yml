@@ -11,7 +11,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - ShellShotgun
+        - ShellShotgun12gauge
     capacity: 8
     soundRack:
       path: /Audio/Weapons/Guns/Cock/smg_cock.ogg
@@ -48,7 +48,7 @@
   parent: BaseMagazineShotgun
   components:
   - type: BallisticAmmoProvider
-    proto: ShellShotgun
+    proto: ShellShotgun12gauge
   - type: Sprite
     layers:
     - state: pellets
@@ -62,7 +62,7 @@
   parent: BaseMagazineShotgun
   components:
   - type: BallisticAmmoProvider
-    proto: ShellShotgunBeanbag
+    proto: ShellShotgun12gaugeBeanbag
   - type: Sprite
     layers:
     - state: beanbag
@@ -76,7 +76,7 @@
   parent: BaseMagazineShotgun
   components:
   - type: BallisticAmmoProvider
-    proto: ShellShotgunSlug
+    proto: ShellShotgun12gaugeSlug
   - type: Sprite
     layers:
     - state: slug
@@ -90,7 +90,7 @@
   parent: BaseMagazineShotgun
   components:
   - type: BallisticAmmoProvider
-    proto: ShellShotgunIncendiary
+    proto: ShellShotgun12gaugeIncendiary
   - type: Sprite
     layers:
     - state: slug

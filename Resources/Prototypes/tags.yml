@@ -1154,10 +1154,10 @@
   id: Sheet
 
 - type: Tag
-  id: ShellShotgun
+  id: ShellShotgun12gauge
 
 - type: Tag
-  id: ShellShotgunLight # shotgun shells that are compatible with the flare gun.
+  id: ShellShotgun12gaugeLight # shotgun shells that are compatible with the flare gun.
 
 - type: Tag
   id: Shiv

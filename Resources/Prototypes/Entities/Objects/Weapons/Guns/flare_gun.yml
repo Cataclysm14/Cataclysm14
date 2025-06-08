@@ -16,12 +16,12 @@
     slots:
       gun_chamber:
         name: Chamber
-        startingItem: ShellShotgunFlare
+        startingItem: ShellShotgun12gaugeFlare
         priority: 1
         whitelist:
           tags: ## TODO: Add a risk of the gun blowing up if using non-light shotgun shells, and then re-enable them.
-            ## - ShellShotgun
-            - ShellShotgunLight
+            ## - ShellShotgun12gauge
+            - ShellShotgun12gaugeLight
   - type: ContainerContainer
     containers:
       gun_chamber: !type:ContainerSlot
@@ -71,7 +71,7 @@
         priority: 1
         whitelist:
           tags:
-            - ShellShotgun
+            - ShellShotgun12gauge
   - type: Tag
     tags:
     - Sidearm
