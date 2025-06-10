@@ -1,7 +1,7 @@
 - type: entity
   parent: [ BaseCartridge, BaseC3PirateContraband ]
   id: Cartridge12.7x99mm
-  name: cartridge (12.7x99mm anti-materiel)
+  name: cartridge (12.7x99mm anti-material)
   components:
   - type: Tag
     tags:
@@ -10,7 +10,7 @@
   - type: CartridgeAmmo
     proto: Bullet12.7x99mm
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/14.5x114mm_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -31,7 +31,7 @@
   - type: CartridgeAmmo
     proto: Bullet12.7x99mmExplosive
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/14.5x114mm_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]

@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseMagazineBox.45_magnum
   id: MagazineBox.45_magnumRubber
-  name: ammunition box (.45_magnum rubber)
+  name: ammunition box (.45 magnum rubber)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge.45_magnumRubber

@@ -15,7 +15,7 @@
     proto: BulletRocketEmp
     deleteOnSpawn: true
   - type: Sprite
-    sprite: _NF/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     state: rpg-emp
   - type: EmpDescription
     range: 2

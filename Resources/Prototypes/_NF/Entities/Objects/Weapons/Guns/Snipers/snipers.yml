@@ -1,11 +1,11 @@
 # Upstream
 - type: entity
-  id: Kardashev-MosinNonlethal
+  id: WeaponSniperMosinNonlethal
   parent: WeaponSniperMosin
   suffix: Non-lethal
   components:
   - type: BallisticAmmoProvider # Inherit whitelist, capacity from parent
-    proto: Cartridge7.62x39mmRubber
+    proto: Cartridge7.62x54mmRRubber
 
 # Frontier
 - type: entity

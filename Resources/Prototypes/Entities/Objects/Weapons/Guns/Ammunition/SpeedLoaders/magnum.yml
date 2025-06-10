@@ -1,6 +1,6 @@
 - type: entity
   id: BaseSpeedLoader.45_magnum
-  name: "speed loader (.45_magnum)"
+  name: "speed loader (.45 magnum)"
   parent: [ BaseItem, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
   abstract: true
   components:
@@ -21,7 +21,7 @@
 
 - type: entity
   id: SpeedLoader.45_magnum
-  name: "speed loader (.45_magnum)"
+  name: "speed loader (.45 magnum)"
   parent: BaseSpeedLoader.45_magnum
   components:
   - type: BallisticAmmoProvider
@@ -41,7 +41,7 @@
 
 - type: entity
   id: SpeedLoader.45_magnumEmpty
-  name: "speed loader (.45_magnum any)"
+  name: "speed loader (.45 magnum any)"
   parent: SpeedLoader.45_magnum
   components:
   - type: BallisticAmmoProvider
@@ -59,7 +59,7 @@
 
 - type: entity
   id: SpeedLoader.45_magnumIncendiary
-  name: "speed loader (.45_magnum incendiary)"
+  name: "speed loader (.45 magnum incendiary)"
   parent: SpeedLoader.45_magnum
   components:
   - type: BallisticAmmoProvider
@@ -67,7 +67,7 @@
 
 - type: entity
   id: SpeedLoader.45_magnumPractice
-  name: "speed loader (.45_magnum practice)"
+  name: "speed loader (.45 magnum practice)"
   parent: BaseSpeedLoader.45_magnum
   components:
   - type: BallisticAmmoProvider
@@ -87,7 +87,7 @@
 
 - type: entity
   id: SpeedLoader.45_magnumAP
-  name: "speed loader (.45_magnum armor-piercing)"
+  name: "speed loader (.45 magnum armor-piercing)"
   parent: BaseSpeedLoader.45_magnum
   components:
   - type: BallisticAmmoProvider
@@ -107,7 +107,7 @@
 
 - type: entity
   id: SpeedLoader.45_magnumUranium
-  name: "speed loader (.45_magnum uranium)"
+  name: "speed loader (.45 magnum uranium)"
   parent: BaseSpeedLoader.45_magnum
   components:
   - type: BallisticAmmoProvider

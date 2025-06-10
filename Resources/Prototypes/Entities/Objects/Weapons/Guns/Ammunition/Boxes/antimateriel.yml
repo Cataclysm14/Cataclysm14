@@ -1,15 +1,15 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseMagazineBoxAntiMateriel
-  name: ammunition box (.60 anti-materiel)
+  id: BaseMagazineBox14.5x114mm
+  name: ammunition box (14.5x114mm)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgeAntiMateriel
-    proto: CartridgeAntiMateriel
+        - Cartridge14.5x114mm
+    proto: Cartridge14.5x114mm
     capacity: 10
   - type: Item
     size: Small
@@ -26,12 +26,12 @@
 
 # Boxes
 - type: entity
-  parent: BaseMagazineBoxAntiMateriel
-  id: MagazineBoxAntiMateriel
-  name: ammunition box (.60 anti-materiel)
+  parent: BaseMagazineBox14.5x114mm
+  id: MagazineBox14.5x114mm
+  name: ammunition box (14.5x114mm)
   components:
   - type: BallisticAmmoProvider
-    proto: CartridgeAntiMateriel
+    proto: Cartridge14.5x114mm
   - type: Sprite
     layers:
     - state: base

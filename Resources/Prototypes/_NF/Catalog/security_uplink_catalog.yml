@@ -605,7 +605,7 @@
   name:  uplink-security-emprocket-name
   description: uplink-security-emprocket-desc
   productEntity: CartridgeRocketEmp
-  icon: { sprite: _NF/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: rpg-emp }
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: rpg-emp }
   cost:
     FederationMilitaryCredit: 1
   categories:

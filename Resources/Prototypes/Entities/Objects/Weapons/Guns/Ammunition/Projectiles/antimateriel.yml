@@ -1,8 +1,8 @@
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
-  id: BulletAntiMateriel
-  name: bullet (.60 anti-materiel)
+  id: Bullet14.5x114mm
+  name: bullet (14.5x114mm)
   components:
   - type: Projectile
     damage:

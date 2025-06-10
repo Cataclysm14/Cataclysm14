@@ -1,6 +1,6 @@
 - type: entity
   id: Magazine.45_magnumRubber
-  name: pistol magazine (.45_magnum rubber)
+  name: pistol magazine (.45 magnum rubber)
   parent: BaseMagazine.45_magnum
   components:
   - type: BallisticAmmoProvider
@@ -15,7 +15,7 @@
 
 - type: entity
   id: Magazine.45_magnumSubMachineGunRubber
-  name: "SMG magazine (.45_magnum rubber)"
+  name: "SMG magazine (.45 magnum rubber)"
   parent: BaseMagazine.45_magnumSubMachineGun
   components:
   - type: BallisticAmmoProvider

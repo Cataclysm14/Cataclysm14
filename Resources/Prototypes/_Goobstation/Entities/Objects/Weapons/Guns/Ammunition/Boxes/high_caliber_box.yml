@@ -2,7 +2,7 @@
   abstract: true
   parent: [ BaseItem, BaseC3PirateContraband ]
   id: BaseMagazineBox12.7x99mm
-  name: ammunition box (12.7x99mm anti-materiel)
+  name: ammunition box (12.7x99mm anti-material)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true

@@ -2,13 +2,13 @@
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
   id: Bullet12.7x99mm
-  name: bullet (12.7x99mm anti-materiel)
+  name: bullet (12.7x99mm anti-material)
   components:
   - type: Projectile
     damage:
       types:
-        Piercing: 35
-        Structural: 130 # if you were a wall would you like having a .50 cal anti materiel round go through you? (this breaks a normal wall in 3 shots, one mag goes through four normal walls, 10 rounds to take down a reinforced wall)
+        Piercing: 65
+        Structural: 200 # if you were a wall would you like having a .50 cal anti materiel round go through you? (this breaks a normal wall in 3 shots, one mag goes through four normal walls, 10 rounds to take down a reinforced wall)
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -20,7 +20,7 @@
     damage:
       types:
         Piercing: 10
-        Heat: 5
+        Heat: 8
         Structural: 20
   - type: ExplodeOnTrigger
   - type: Explosive

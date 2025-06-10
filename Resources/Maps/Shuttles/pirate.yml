@@ -3060,7 +3060,7 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
-- proto: MagazineBoxAntiMateriel
+- proto: MagazineBox14.5x114mm
   entities:
   - uid: 464
     components:

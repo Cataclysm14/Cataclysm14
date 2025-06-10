@@ -1,16 +1,16 @@
 - type: entity
   parent: [ BaseCartridge, BaseC2Contraband ] # Frontier: BaseMajorContraband<BaseC2Contraband
-  id: CartridgeAntiMateriel
-  name: cartridge (.60 anti-materiel)
+  id: Cartridge14.5x114mm
+  name: cartridge (14.5x114mm)
   components:
   - type: Tag
     tags:
     - Cartridge
-    - CartridgeAntiMateriel
+    - Cartridge14.5x114mm
   - type: CartridgeAmmo
-    proto: BulletAntiMateriel
+    proto: Bullet14.5x114mm
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/14.5x114mm_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]

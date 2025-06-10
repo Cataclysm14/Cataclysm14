@@ -15,7 +15,7 @@
     proto: BulletRocket
     deleteOnSpawn: true
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     state: rpg
   - type: StaticPrice
     price: 20
@@ -35,7 +35,7 @@
       proto: BulletWeakRocket
       deleteOnSpawn: true
     - type: Sprite
-      sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+      sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
       state: frag
     - type: StaticPrice
       price: 20
@@ -63,7 +63,7 @@
   - type: CartridgeAmmo
     proto: BulletGrenadeBaton
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     layers:
     - state: baton
       map: ["enum.AmmoVisualLayers.Base"]
@@ -80,7 +80,7 @@
   - type: CartridgeAmmo
     proto: BulletGrenadeBlast
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     layers:
     - state: blast
       map: ["enum.AmmoVisualLayers.Base"]
@@ -97,7 +97,7 @@
   - type: CartridgeAmmo
     proto: BulletGrenadeFlash
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     layers:
     - state: flash
       map: ["enum.AmmoVisualLayers.Base"]
@@ -114,7 +114,7 @@
   - type: CartridgeAmmo
     proto: BulletGrenadeFrag
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     layers:
     - state: frag
       map: ["enum.AmmoVisualLayers.Base"]
@@ -131,7 +131,7 @@
   - type: CartridgeAmmo
     proto: BulletGrenadeEMP
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     layers:
     - state: emp
       map: ["enum.AmmoVisualLayers.Base"]
@@ -169,7 +169,7 @@
     proto: BulletCannonBall
     deleteOnSpawn: true
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     state: ball
 
 - type: entity
@@ -182,7 +182,7 @@
     proto: PelletGrapeshotSpread
     deleteOnSpawn: true
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     state: grapeshot
 
 - type: entity
@@ -195,5 +195,5 @@
     proto: PelletGlassSpread
     deleteOnSpawn: true
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     state: glassshot

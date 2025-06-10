@@ -562,7 +562,7 @@
     contents:
     - id: WeaponSniperHristov
       amount: 1
-    - id: MagazineBoxAntiMateriel
+    - id: MagazineBox14.5x114mm
       amount: 2
 
 - type: entity
@@ -588,7 +588,7 @@
     contents:
     - id: WeaponMusketExpedition
       amount: 1
-    - id: MagazineBoxAntiMateriel
+    - id: MagazineBox14.5x114mm
       amount: 2
 
 - type: entity

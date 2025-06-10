@@ -42,7 +42,7 @@
 
 - type: entity
   id: Magazine12.7x99mm
-  name: "magazine (12.7x99mm anti-materiel)"
+  name: "magazine (12.7x99mm anti-material)"
   parent: BaseMagazine12.7x99mm
   components:
   - type: BallisticAmmoProvider
