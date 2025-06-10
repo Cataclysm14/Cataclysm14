@@ -2,14 +2,14 @@
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
   id: BaseMagazineBox7.62x39mm
-  name: ammunition box (7.62x39mm)
+  name: ammunition box (7.62x39mm FMJ)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge7.62x39mm
-    proto: Cartridge7.62x39mm
+        - Cartridge7.62x39mmFMJ
+    proto: Cartridge7.62x39mmFMJ
     capacity: 60
   - type: Item
     size: Small
@@ -28,12 +28,12 @@
 - type: entity
   parent: BaseMagazineBox7.62x39mm
   id: MagazineBox7.62x39mmBig
-  name: ammunition box (7.62x39mm)
+  name: ammunition box (7.62x39mm FMJ)
   suffix: Big
   components:
   - type: BallisticAmmoProvider
     capacity: 200
-    proto: Cartridge7.62x39mm
+    proto: Cartridge7.62x39mmFMJ
   - type: Sprite
     layers:
     - state: base-b # Frontier: base<base-b
@@ -48,10 +48,10 @@
 - type: entity
   parent: BaseMagazineBox7.62x39mm
   id: MagazineBox7.62x39mm
-  name: ammunition box (7.62x39mm)
+  name: ammunition box (7.62x39mm FMJ)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x39mm
+    proto: Cartridge7.62x39mmFMJ
   - type: Sprite
     layers:
     - state: base

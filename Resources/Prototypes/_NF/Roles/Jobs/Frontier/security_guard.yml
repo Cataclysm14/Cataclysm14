@@ -34,12 +34,12 @@
   equipment:
     eyes: ClothingEyesGlassesSunglasses #ClothingEyesGlassesSecurity
     pocket1: WeaponPistolMk58 #WeaponPistolMk58Nonlethal
-    pocket2: Magazine9x19mm
+    pocket2: Magazine9x19mmFMJ
   storage:
     back:
     - EncryptionKeyService
     - EncryptionKeySecurity
     - Flash
-    - Magazine9x19mm
+    - Magazine9x19mmFMJ
     - Magazine9x19mmRubber
     - ShipVoucherFrontierGuard

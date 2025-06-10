@@ -3,14 +3,14 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: BaseAmmoIntermediateMagazineRecipe
+  id: BaseFMJAmmoIntermediateMagazineRecipe
   abstract: true
   materials:
     Steel: 475
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: AmmoRubberIntermediateMagazineRecipe
+  id: BaseAmmoRubberIntermediateMagazineRecipe
   abstract: true
   materials:
     Steel: 75
@@ -18,7 +18,7 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: AmmoIncendiaryIntermediateMagazineRecipe
+  id: BaseAmmoIncendiaryIntermediateMagazineRecipe
   abstract: true
   materials:
     Steel: 75
@@ -27,7 +27,7 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: AmmoPracticeIntermediateMagazineRecipe
+  id: BaseAmmoPracticeIntermediateMagazineRecipe
   abstract: true
   materials:
     Steel: 47
@@ -36,14 +36,14 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: BaseAmmoFullyPoweredMagazineRecipe
+  id: BaseAmmoFMJFullyPoweredMagazineRecipe
   abstract: true
   materials:
     Steel: 575
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: AmmoRubberFullyPoweredMagazineRecipe
+  id: BaseAmmoRubberFullyPoweredMagazineRecipe
   abstract: true
   materials:
     Steel: 125
@@ -51,7 +51,7 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: AmmoIncendiaryFullyPoweredMagazineRecipe
+  id: BaseAmmoIncendiaryFullyPoweredMagazineRecipe
   abstract: true
   materials:
     Steel: 100
@@ -60,7 +60,7 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: AmmoPracticeFullyPoweredMagazineRecipe
+  id: BaseAmmoPracticeFullyPoweredMagazineRecipe
   abstract: true
   materials:
     Steel: 57
@@ -69,14 +69,14 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: BaseAmmoPistolMagazineRecipe
+  id: BaseAmmoFMJPistolMagazineRecipe
   abstract: true
   materials:
     Steel: 175
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: AmmoRubberPistolMagazineRecipe
+  id: BaseAmmoRubberPistolMagazineRecipe
   abstract: true
   materials:
     Steel: 25
@@ -84,7 +84,7 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: AmmoIncendiaryPistolMagazineRecipe
+  id: BaseAmmoIncendiaryPistolMagazineRecipe
   abstract: true
   materials:
     Steel: 25
@@ -93,7 +93,7 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: AmmoPracticePistolMagazineRecipe
+  id: BaseAmmoPracticePistolMagazineRecipe
   abstract: true
   materials:
     Steel: 17
@@ -102,14 +102,14 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: BaseAmmoSMGMagazineRecipe
+  id: BaseAmmoFMJSMGMagazineRecipe
   abstract: true
   materials:
     Steel: 375
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: AmmoRubberSMGMagazineRecipe
+  id: BaseAmmoRubberSMGMagazineRecipe
   abstract: true
   materials:
     Steel: 50
@@ -117,7 +117,7 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: AmmoIncendiarySMGMagazineRecipe
+  id: BaseAmmoIncendiarySMGMagazineRecipe
   abstract: true
   materials:
     Steel: 75
@@ -126,7 +126,7 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: AmmoPracticeSMGMagazineRecipe
+  id: BaseAmmoPracticeSMGMagazineRecipe
   abstract: true
   materials:
     Steel: 37

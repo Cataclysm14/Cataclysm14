@@ -29,22 +29,22 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine7.62x51mm
+        startingItem: Magazine7.62x51mmFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine7.62x51mm
+            - Magazine7.62x51mmFMJ
             - Magazine7.62x51mmLowCapacity
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7.62x51mm
+        startingItem: Cartridge7.62x51mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x51mm
+            - Cartridge7.62x51mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -80,10 +80,10 @@
       path: /Audio/Weapons/Guns/Gunshots/rifle2.ogg
   - type: BallisticAmmoProvider
     capacity: 5
-    proto: Cartridge7.62x39mm
+    proto: Cartridge7.62x39mmFMJ
     whitelist:
       tags:
-      - Cartridge7.62x39mm
+      - Cartridge7.62x39mmFMJ
   - type: CursorOffsetRequiresWield # Frontier
   - type: EyeCursorOffset # Frontier
     maxOffset: 1.5 # Frontier

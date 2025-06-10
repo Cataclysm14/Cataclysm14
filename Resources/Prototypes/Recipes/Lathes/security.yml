@@ -204,8 +204,8 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: Magazine9x19mm
-  result: Magazine9x19mm
+  id: Magazine9x19mmFMJ
+  result: Magazine9x19mmFMJ
   materials:
     Steel: 145
 
@@ -340,8 +340,8 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: Magazine7.62x39mm
-  result: Magazine7.62x39mm
+  id: Magazine7.62x39mmFMJ
+  result: Magazine7.62x39mmFMJ
   materials:
     Steel: 565
 

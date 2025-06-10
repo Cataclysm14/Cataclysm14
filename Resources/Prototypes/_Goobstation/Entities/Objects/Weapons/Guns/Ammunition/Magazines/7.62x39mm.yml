@@ -6,7 +6,7 @@
   - type: Tag
     tags:
       - Magazine7.62x39mmSubsonic
-      - Magazine7.62x39mm
+      - Magazine7.62x39mmFMJ
   - type: BallisticAmmoProvider
     proto: Cartridge7.62x39mmSubsonic
     mayTransfer: true

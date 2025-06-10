@@ -1,13 +1,13 @@
 - type: entity
   id: BaseCartridge7.62x51mm
-  name: cartridge (7.62x51mm)
+  name: cartridge (7.62x51mm FMJ)
   parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
   abstract: true
   components:
   - type: Tag
     tags:
     - Cartridge
-    - Cartridge7.62x51mm
+    - Cartridge7.62x51mmFMJ
   - type: CartridgeAmmo
     proto: Bullet7.62x51mm
   - type: Sprite
@@ -21,8 +21,8 @@
     price: 1
 
 - type: entity
-  id: Cartridge7.62x51mm
-  name: cartridge (7.62x51mm)
+  id: Cartridge7.62x51mmFMJ
+  name: cartridge (7.62x51mm FMJ)
   parent: BaseCartridge7.62x51mm
   components:
   - type: CartridgeAmmo

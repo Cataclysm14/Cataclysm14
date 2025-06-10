@@ -52,11 +52,11 @@
             - Magazine7.62x39mmBox
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7.62x39mm
+        startingItem: Cartridge7.62x39mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x39mm
+            - Cartridge7.62x39mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -117,7 +117,7 @@
       containers:
         ballistic-ammo: !type:Container
     - type: ProjectileBatteryAmmoProvider
-      proto: Cartridge7.62x39mm
+      proto: Cartridge7.62x39mmFMJ
       fireCost: 100
     - type: Battery
       maxCharge: 10000

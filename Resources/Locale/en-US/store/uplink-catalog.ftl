@@ -1,6 +1,6 @@
 # Weapons
 uplink-pistol-viper-name = Viper
-uplink-pistol-viper-desc = A small, easily concealable, but somewhat underpowered gun. Retrofitted with a fully automatic receiver. Uses pistol magazines (9x19mm).
+uplink-pistol-viper-desc = A small, easily concealable, but somewhat underpowered gun. Retrofitted with a fully automatic receiver. Uses pistol magazines (9x19mm FMJ).
 
 uplink-revolver-python-name = Python
 uplink-revolver-python-desc = A brutally simple, effective, and loud Syndicate revolver. Comes loaded with armor-piercing rounds. Uses .45 magnum.
@@ -82,10 +82,10 @@ uplink-shrapnel-grenade-name = Shrapnel Grenade
 uplink-shrapnel-grenade-desc = Launches a spray of sharp fragments dealing great damage against unarmored targets.
 
 # Ammo
-uplink-pistol-magazine-name = Pistol Magazine (9x19mm)
+uplink-pistol-magazine-name = Pistol Magazine (9x19mm FMJ)
 uplink-pistol-magazine-desc = Pistol magazine with 10 catridges. Compatible with the Viper.
 
-uplink-pistol-magazine-c20r-name = SMG magazine (9x19mm)
+uplink-pistol-magazine-c20r-name = SMG magazine (9x19mm FMJ)
 uplink-pistol-magazine-c20r-desc = Rifle magazine with 30 catridges. Compatible with C-20r.
 
 uplink-pistol-magazine-caseless-name = Pistol Magazine (6.35x40mm Caseless)
@@ -94,7 +94,7 @@ uplink-pistol-magazine-caseless-desc = Pistol magazine with 10 catridges. Compat
 uplink-speedloader-45_magnum-name = Speedloader (.45 magnum AP)
 uplink-speedloader-magnu-desc = Revolver speedloader with 6 armor-piercing catridges, capable of ignoring armor entirely. Compatible with the Python.
 
-uplink-mosin-ammo-name = Ammunition box (7.62x39mm)
+uplink-mosin-ammo-name = Ammunition box (7.62x39mm FMJ)
 uplink-mosin-ammo-desc = A box of 60 cartridges for the surplus rifle.
 
 uplink-sniper-ammo-name = Ammunition box (.60 14.5x114mm)

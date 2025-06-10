@@ -2,14 +2,14 @@
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
   id: BaseMagazineBoxPistol
-  name: ammunition box (9x19mm)
+  name: ammunition box (9x19mm FMJ)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge9x19mm
-    proto: Cartridge9x19mm
+        - Cartridge9x19mmFMJ
+    proto: Cartridge9x19mmFMJ
     capacity: 70 # 60->70 Two mags per box
   - type: Item
     size: Small
@@ -28,12 +28,12 @@
 - type: entity # Mono Big Pistol Mags
   parent: BaseMagazineBoxPistol
   id: MagazineBoxPistolBig
-  name: ammunition box (9x19mm)
+  name: ammunition box (9x19mm FMJ)
   suffix: Big
   components:
   - type: BallisticAmmoProvider
     capacity: 280 # 8 mags per box similar to rifle box
-    proto: Cartridge9x19mm
+    proto: Cartridge9x19mmFMJ
   - type: Sprite
     layers:
     - state: base-b # Frontier: base-big<base-b
@@ -49,10 +49,10 @@
 - type: entity
   parent: BaseMagazineBoxPistol
   id: MagazineBoxPistol
-  name: ammunition box (9x19mm)
+  name: ammunition box (9x19mm FMJ)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mm
+    proto: Cartridge9x19mmFMJ
   - type: Sprite
     layers:
     - state: base

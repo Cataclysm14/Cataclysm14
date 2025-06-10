@@ -132,11 +132,11 @@
     maxAmount: 15
   - id: Magazine6.35x40mmCaselessPistol
     maxAmount: 15
-  - id: Magazine7.62x39mm
+  - id: Magazine7.62x39mmFMJ
     maxAmount: 15
   - id: MagazineShotgun
     maxAmount: 15
-  - id: Magazine9x19mm
+  - id: Magazine9x19mmFMJ
     maxAmount: 15
   - id: Magazine9x19mmHighCapacity
     maxAmount: 15

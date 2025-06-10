@@ -87,7 +87,7 @@
     back:
     - BoxSurvivalSecurity
     - Flash
-    - Magazine9x19mm
+    - Magazine9x19mmFMJ
 
 - type: startingGear
   id: BoxingKangarooGear

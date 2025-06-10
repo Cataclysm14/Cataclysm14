@@ -1,19 +1,19 @@
 # Empty mags
 - type: entity
   id: BaseMagazine7.62x54mmR
-  name: "magazine (7.62x54mmR)"
+  name: "magazine (7.62x54mmR FMJ)"
   parent: [ BaseItem, BaseC1Contraband, RecyclableItemSteelTiny ] # Frontier: BaseSecurityContraband<BaseC1Contraband added RecyclableItemSteelTiny
   abstract: true
   components:
   - type: Tag
     tags:
-      - Magazine7.62x54mmR
+      - Magazine7.62x54mmRFMJ
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge7.62x54mmR
-    proto: Cartridge7.62x54mmR
+        - Cartridge7.62x54mmRFMJ
+    proto: Cartridge7.62x54mmRFMJ
     capacity: 10
   - type: Item
     size: Small
@@ -35,15 +35,15 @@
 
 # Magazines
 - type: entity
-  id: Magazine7.62x54mmR
-  name: "magazine (7.62x54mmR)"
+  id: Magazine7.62x54mmRFMJ
+  name: "magazine (7.62x54mmR FMJ)"
   parent: BaseMagazine7.62x54mmR
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x54mmR
+    proto: Cartridge7.62x54mmRFMJ
   - type: Sprite
     layers:
-    - state: red
+    - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
@@ -52,7 +52,7 @@
   id: Magazine7.62x54mmREmpty
   name: "magazine (7.62x54mmR any)"
   suffix: empty
-  parent: Magazine7.62x54mmR
+  parent: Magazine7.62x54mmRFMJ
   components:
   - type: BallisticAmmoProvider
     proto: null
@@ -94,7 +94,7 @@
 - type: entity
   id: Magazine7.62x54mmRIncendiary
   name: "magazine (7.62x54mmR incendiary)"
-  parent: Magazine7.62x54mmR
+  parent: Magazine7.62x54mmRFMJ
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge7.62x54mmRIncendiary

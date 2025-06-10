@@ -6,7 +6,7 @@
   - type: Tag
     tags:
     - Cartridge
-    - Cartridge7.62x39mm
+    - Cartridge7.62x39mmFMJ
     - Cartridge7.62x39mmSubsonic
   - type: CartridgeAmmo
     proto: Bullet7.62x39mmSubsonic

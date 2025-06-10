@@ -126729,7 +126729,7 @@ entities:
     - type: Transform
       pos: -110.5,36.5
       parent: 2
-- proto: Magazine9x19mm
+- proto: Magazine9x19mmFMJ
   entities:
   - uid: 4573
     components:

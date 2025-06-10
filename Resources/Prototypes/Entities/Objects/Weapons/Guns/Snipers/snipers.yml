@@ -28,10 +28,10 @@
     projectileSpeed: 65 # Mono
   - type: BallisticAmmoProvider
     capacity: 10
-    proto: Cartridge7.62x39mm
+    proto: Cartridge7.62x39mmFMJ
     whitelist:
       tags:
-      - Cartridge7.62x39mm
+      - Cartridge7.62x39mmFMJ
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -56,9 +56,9 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - Cartridge7.62x54mmR
+      - Cartridge7.62x54mmRFMJ
     capacity: 5
-    proto: Cartridge7.62x54mmR
+    proto: Cartridge7.62x54mmRFMJ
 
 - type: entity
   name: Hristov

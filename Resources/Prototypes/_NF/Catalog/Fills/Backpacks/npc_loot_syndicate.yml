@@ -363,8 +363,8 @@
   components:
   - type: SpawnItemsOnUse
     items:
-      - id: Magazine7.62x39mm
-      - id: Magazine7.62x39mm
+      - id: Magazine7.62x39mmFMJ
+      - id: Magazine7.62x39mmFMJ
       - id: ClothingShoesBootsMagSyndie
       - id: SpaceCash10000
       # Bonus Loot T4
@@ -544,8 +544,8 @@
   - type: SpawnItemsOnUse
     items:
       - id: WeaponPistolViper
-      - id: Magazine9x19mm
-      - id: Magazine9x19mm
+      - id: Magazine9x19mmFMJ
+      - id: Magazine9x19mmFMJ
       - id: SpaceCash1000
       # Bonus Loot T1
       - id: SpaceCash500
@@ -565,7 +565,7 @@
   - type: SpawnItemsOnUse
     items:
       - id: WeaponPistolMk58Expedition
-      - id: Magazine9x19mm
+      - id: Magazine9x19mmFMJ
       - id: SpaceCash1000
       # Bonus Loot T1
       - id: SpaceCash500
@@ -584,8 +584,8 @@
   components:
   - type: SpawnItemsOnUse
     items:
-      - id: Magazine9x19mm
-      - id: Magazine9x19mm
+      - id: Magazine9x19mmFMJ
+      - id: Magazine9x19mmFMJ
       - id: SpaceCash1000
       # Bonus Loot T1
       - id: SpaceCash500

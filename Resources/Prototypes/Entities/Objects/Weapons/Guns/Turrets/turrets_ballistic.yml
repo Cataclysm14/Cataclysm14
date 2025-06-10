@@ -38,7 +38,7 @@
     - FullAuto
     soundGunshot: /Audio/Weapons/Guns/Gunshots/gun_sentry.ogg
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mm
+    proto: Cartridge9x19mmFMJ
     capacity: 50
   - type: Construction
     deconstructionTarget: null

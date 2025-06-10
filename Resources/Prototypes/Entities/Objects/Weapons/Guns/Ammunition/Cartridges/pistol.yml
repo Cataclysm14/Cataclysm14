@@ -1,13 +1,13 @@
 - type: entity
   id: BaseCartridge9x19mm
-  name: cartridge (9x19mm)
+  name: cartridge (9x19mm FMJ)
   parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
   abstract: true
   components:
   - type: Tag
     tags:
       - Cartridge
-      - Cartridge9x19mm
+      - Cartridge9x19mmFMJ
   - type: CartridgeAmmo
     proto: Bullet9x19mm
   - type: Sprite
@@ -21,8 +21,8 @@
     price: 1
 
 - type: entity
-  id: Cartridge9x19mm
-  name: cartridge (9x19mm)
+  id: Cartridge9x19mmFMJ
+  name: cartridge (9x19mm FMJ)
   parent: BaseCartridge9x19mm
   components:
   - type: CartridgeAmmo

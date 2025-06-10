@@ -46,9 +46,9 @@ Bullet.45_magnumHighVelocity: Bullet.45_magnum
 Bullet9x19mmHighVelocity: Bullet9x19mm
 Bullet5.56x45mmHighVelocity: Bullet5.56x45mm
 Cartridge6.35x40mmCaselessHighVelocity: Cartridge6.35x40mmCaseless
-Cartridge7.62x39mmHighVelocity: Cartridge7.62x39mm
+Cartridge7.62x39mmHighVelocity: Cartridge7.62x39mmFMJ
 Cartridge.45_magnumHighVelocity: Cartridge.45_magnum
-Cartridge9x19mmHighVelocity: Cartridge9x19mm
+Cartridge9x19mmHighVelocity: Cartridge9x19mmFMJ
 Cartridge5.56x45mmHighVelocity: Cartridge5.56x45mm
 MagazineBox6.35x40mmCaselessHighVelocity: MagazineBox6.35x40mmCaseless
 MagazineBox7.62x39mmHighVelocity: MagazineBox7.62x39mm
@@ -57,11 +57,11 @@ MagazineBoxPistolHighVelocity: MagazineBoxPistol
 MagazineBox5.56x45mmHighVelocity: MagazineBox5.56x45mm
 Magazine6.35x40mmCaselessHighVelocity: Magazine6.35x40mmCaseless
 Magazine6.35x40mmCaselessShortHighVelocity: Magazine6.35x40mmCaselessShort
-Magazine7.62x39mmHighVelocity: Magazine7.62x39mm
-Magazine.45_magnumSubMachineGunHighVelocity: Magazine.45_magnumSubMachineGun
+Magazine7.62x39mmHighVelocity: Magazine7.62x39mmFMJ
+Magazine.45_magnumSubMachineGunHighVelocity: Magazine.45_magnumSubMachineGunFMJ
 Magazine6.35x40mmCaselessPistolHighVelocity: Magazine6.35x40mmCaselessPistol
 Magazine9x19mmHighCapacityHighVelocity: Magazine9x19mmHighCapacity
-Magazine9x19mmHighVelocity: Magazine9x19mm
+Magazine9x19mmHighVelocity: Magazine9x19mmFMJ
 Magazine9x19mmSubMachineGunHighVelocity: Magazine9x19mmSubMachineGun
 MagazineRifleHighVelocity: MagazineRifle
 SpeedLoader.45_magnumHighVelocity: SpeedLoader.45_magnum
@@ -294,17 +294,17 @@ BodyBag_Folded: BodyBagFolded
 # Bullet7.62x39mmRubber: Bullet7.62x39mm # Frontier
 # Bullet5.56x45mmRubber: Bullet5.56x45mm # Frontier
 # Bullet6.35x40mmCaselessRubber: Bullet6.35x40mmCaseless # Frontier
-# Cartridge9x19mmRubber: Cartridge9x19mm # Frontier
+# Cartridge9x19mmRubber: Cartridge9x19mmFMJ # Frontier
 # Cartridge.45_magnumRubber: Cartridge.45_magnum # Frontier
-# Cartridge7.62x39mmRubber: Cartridge7.62x39mm # Frontier
+# Cartridge7.62x39mmRubber: Cartridge7.62x39mmFMJ # Frontier
 # Cartridge5.56x45mmRubber: Cartridge5.56x45mm # Frontier
 # Cartridge6.35x40mmCaselessRubber: Cartridge6.35x40mmCaseless # Frontier
-# Magazine9x19mmRubber: Magazine9x19mm # Frontier
+# Magazine9x19mmRubber: Magazine9x19mmFMJ # Frontier
 # Magazine9x19mmSubMachineGunRubber: Magazine9x19mmSubMachineGun # Frontier
 # Magazine6.35x40mmCaselessPistolRubber: Magazine6.35x40mmCaselessPistol # Frontier
 # Magazine.45_magnumRubber: Magazine.45_magnum # Frontier
-# Magazine.45_magnumSubMachineGunRubber: Magazine.45_magnumSubMachineGun # Frontier
-# Magazine7.62x39mmRubber: Magazine7.62x39mm # Frontier
+# Magazine.45_magnumSubMachineGunRubber: Magazine.45_magnumSubMachineGunFMJ # Frontier
+# Magazine7.62x39mmRubber: Magazine7.62x39mmFMJ # Frontier
 # MagazineRifleRubber: MagazineRifle # Frontier
 # Magazine6.35x40mmCaselessRubber: Magazine6.35x40mmCaseless # Frontier
 # Magazine6.35x40mmCaselessShortRubber: Magazine6.35x40mmCaselessShort # Frontier

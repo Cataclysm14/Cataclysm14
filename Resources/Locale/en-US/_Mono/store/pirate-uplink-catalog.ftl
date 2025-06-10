@@ -90,7 +90,7 @@ uplink-pirate-python-name = Python
 uplink-pirate-python-desc = A brutally simple, effective, and loud revolver. Comes loaded with .45_magnum rounds.
 
 uplink-pirate-viper-name = Viper
-uplink-pirate-viper-desc = A small, easily concealable, but somewhat underpowered gun. Retrofitted with a fully automatic receiver. Uses pistol magazines (9x19mm).
+uplink-pirate-viper-desc = A small, easily concealable, but somewhat underpowered gun. Retrofitted with a fully automatic receiver. Uses pistol magazines (9x19mm FMJ).
 
 uplink-pirate-kanabou-name = Kanabou
 uplink-pirate-kanabou-desc = A weapon for those who wish to forgo subtlety. Particularly suited to oni.
@@ -136,13 +136,13 @@ uplink-pirate-box-magazine-light-rifle-desc = A box filled with 4 7.62x39mm maga
 uplink-pirate-magazine-box-45_magnum-name = Box of .45_magnum speedloaders
 uplink-pirate-magazine-box-45_magnum-desc = A box containing 4 .45_magnum speedloaders.
 
-uplink-pirate-light-rifle-magazine-box-big-name = Ammunition box (7.62x39mm)
+uplink-pirate-light-rifle-magazine-box-big-name = Ammunition box (7.62x39mm FMJ)
 uplink-pirate-light-rifle-magazine-box-big-desc = A box containing 200 7.62x39mm catridges.
 
 uplink-pirate-shell-box-lethal-name = Shell box (lethal)
 uplink-pirate-shell-box-lethal-desc = A box containing 16 12 gauge shotgun shells.
 
-uplink-pirate-smg-ammo-box-name = Ammunition box (9x19mm)
+uplink-pirate-smg-ammo-box-name = Ammunition box (9x19mm FMJ)
 uplink-pirate-smg-ammo-box-desc = A box containing 60 9x19mm pistol catridges. Can be used to load SMG magazines.
 
 uplink-pirate-box-bulldog-ammo-name = Box of .50 pellet drums

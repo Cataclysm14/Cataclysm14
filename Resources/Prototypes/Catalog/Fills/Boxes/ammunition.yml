@@ -42,7 +42,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: Magazine7.62x39mm
+      - id: Magazine7.62x39mmFMJ
         amount: 4
 
 - type: entity
@@ -65,7 +65,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: Magazine.45_magnumSubMachineGun
+      - id: Magazine.45_magnumSubMachineGunFMJ
         amount: 3
 
 - type: entity
@@ -99,7 +99,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: Magazine9x19mm
+      - id: Magazine9x19mmFMJ
         amount: 4
 
 - type: entity

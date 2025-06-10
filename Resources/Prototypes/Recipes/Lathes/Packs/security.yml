@@ -38,10 +38,10 @@
   - MagazineBoxPistolRubber # Frontier
   - MagazineBox5.56x45mm
   - MagazineBox5.56x45mmRubber # Frontier
-  - Magazine7.62x39mm
+  - Magazine7.62x39mmFMJ
   - Magazine7.62x39mmRubber # Frontier
   - Magazine7.62x39mmEmpty
-  - Magazine9x19mm
+  - Magazine9x19mmFMJ
   - Magazine9x19mmRubber # Frontier
   - Magazine9x19mmEmpty
   - Magazine9x19mmSubMachineGun

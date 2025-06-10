@@ -39,5 +39,5 @@
     pocket1: WeaponPistolMk58 #WeaponPistolMk58Nonlethal
   storage:
     back:
-    - Magazine9x19mm
+    - Magazine9x19mmFMJ
     - BaseSecurityUplinkRadioDeputy #Mono: Added Deputy uplink

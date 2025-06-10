@@ -16,9 +16,9 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge9x19mm
+        - Cartridge9x19mmFMJ
         - Cartridge5.56x45mm
-        - Cartridge7.62x39mm
+        - Cartridge7.62x39mmFMJ
         - Cartridge6.35x40mmCaseless
     capacity: 50
   - type: ContainerContainer
@@ -44,7 +44,7 @@
   suffix: loaded .35 pistol
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mm
+    proto: Cartridge9x19mmFMJ
   - type: Sprite
     layers:
     - state: base

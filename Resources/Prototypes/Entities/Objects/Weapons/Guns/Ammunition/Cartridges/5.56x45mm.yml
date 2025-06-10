@@ -1,6 +1,6 @@
 - type: entity
   id: BaseCartridge5.56x45mm
-  name: cartridge (5.56x45mm)
+  name: cartridge (5.56x45mm FMJ)
   parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
   abstract: true
   components:
@@ -22,7 +22,7 @@
 
 - type: entity
   id: Cartridge5.56x45mm
-  name: cartridge (5.56x45mm)
+  name: cartridge (5.56x45mm FMJ)
   parent: BaseCartridge5.56x45mm
   components:
   - type: CartridgeAmmo

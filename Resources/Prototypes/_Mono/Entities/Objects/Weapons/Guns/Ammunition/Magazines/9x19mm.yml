@@ -1,17 +1,17 @@
 - type: entity
   id: BaseMagazine9x19mm
-  name: pistol magazine (9x19mm)
+  name: pistol magazine (9x19mm FMJ)
   parent: [ BaseItem, BaseC1Contraband, RecyclableItemSteelTiny ] # Frontier: BaseSecurityContraband<BaseC1Contraband, added RecyclableItemSteelTiny
   abstract: true
   components:
   - type: Tag
     tags:
-      - Magazine9x19mm
+      - Magazine9x19mmFMJ
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge9x19mm
+        - Cartridge9x19mmFMJ
     capacity: 10
   - type: Item
     size: Small
@@ -33,7 +33,7 @@
 
 - type: entity
   id: BaseMagazine9x19mmHighCapacity
-  name: machine pistol magazine (9x19mm)
+  name: machine pistol magazine (9x19mm FMJ)
   parent: [BaseItem, BaseC1Contraband, RecyclableItemSteelTiny] # Frontier: added RecyclableItemSteelTiny, BaseC1Contraband
   abstract: true
   components:
@@ -44,7 +44,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge9x19mm
+        - Cartridge9x19mmFMJ
     capacity: 16
   - type: Item
     size: Small
@@ -66,7 +66,7 @@
 
 - type: entity
   id: BaseMagazine9x19mmSubMachineGun
-  name: SMG magazine (9x19mm)
+  name: SMG magazine (9x19mm FMJ)
   parent: [BaseItem, BaseC1Contraband, RecyclableItemSteelTiny] # Frontier: added RecyclableItemSteelTiny, BaseSecurityContraband<BaseC1Contraband
   abstract: true
   components:
@@ -77,7 +77,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge9x19mm
+        - Cartridge9x19mmFMJ
     capacity: 35
   - type: Item
     size: Small
@@ -107,10 +107,10 @@
       - Magazine9x19mmSubMachineGunTopMounted
   - type: BallisticAmmoProvider
     mayTransfer: true
-    proto: Cartridge9x19mm
+    proto: Cartridge9x19mmFMJ
     whitelist:
       tags:
-      - Cartridge9x19mm
+      - Cartridge9x19mmFMJ
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/9x19mm/9x19mm_smg_mag_top_mounted.rsi
     layers:
@@ -137,15 +137,15 @@
     proto: null
 
 - type: entity
-  id: Magazine9x19mm
-  name: pistol magazine (9x19mm)
+  id: Magazine9x19mmFMJ
+  name: pistol magazine (9x19mm FMJ)
   parent: BaseMagazine9x19mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mm
+    proto: Cartridge9x19mmFMJ
   - type: Sprite
     layers:
-    - state: red
+    - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
@@ -154,7 +154,7 @@
   id: Magazine9x19mmEmpty
   name: pistol magazine (9x19mm any)
   suffix: empty
-  parent: Magazine9x19mm
+  parent: Magazine9x19mmFMJ
   components:
   - type: BallisticAmmoProvider
     proto: null
@@ -169,7 +169,7 @@
 - type: entity
   id: Magazine9x19mmIncendiary
   name: pistol magazine (9x19mm incendiary)
-  parent: Magazine9x19mm
+  parent: Magazine9x19mmFMJ
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmIncendiary
@@ -219,14 +219,14 @@
 
 - type: entity
   id: Magazine9x19mmHighCapacity
-  name: machine pistol magazine (9x19mm)
+  name: machine pistol magazine (9x19mm FMJ)
   parent: BaseMagazine9x19mmHighCapacity
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mm
+    proto: Cartridge9x19mmFMJ
   - type: Sprite
     layers:
-    - state: red
+    - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
@@ -237,7 +237,7 @@
   parent: BaseMagazine9x19mmHighCapacity
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mm
+    proto: Cartridge9x19mmFMJ
   - type: Sprite
     layers:
     - state: practice
@@ -247,19 +247,19 @@
 
 - type: entity
   id: Magazine9x19mmSubMachineGun
-  name: SMG magazine (9x19mm)
+  name: SMG magazine (9x19mm FMJ)
   parent: BaseMagazine9x19mmSubMachineGun
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mm
+    proto: Cartridge9x19mmFMJ
     whitelist:
       tags:
-        - Cartridge9x19mm
+        - Cartridge9x19mmFMJ
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/bullet_insert.ogg
   - type: Sprite
     layers:
-    - state: red
+    - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
@@ -352,7 +352,7 @@
   parent: BaseMagazine9x19mmHighCapacity
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mm
+    proto: Cartridge9x19mmFMJ
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/9x19mm/9x19mm_pistol_high_capacity_mag.rsi
     layers:

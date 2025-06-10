@@ -39,7 +39,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge9x19mm
+            - Cartridge9x19mmFMJ
 
 - type: entity
   id: MagazinePistolDebug

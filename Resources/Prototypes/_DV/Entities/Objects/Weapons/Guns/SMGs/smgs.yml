@@ -39,11 +39,11 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge9x19mm
+        startingItem: Cartridge9x19mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge9x19mm
+            - Cartridge9x19mmFMJ
   - type: MagazineVisuals
     magState: mag
     steps: 1

@@ -42,7 +42,7 @@
         priority: 2
         whitelist:
           tags:
-            - Magazine7.62x51mm
+            - Magazine7.62x51mmFMJ
             - Magazine7.62x51mmLowCapacity
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
@@ -51,7 +51,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x51mm
+            - Cartridge7.62x51mmFMJ
 
 # Frontier
 - type: entity
@@ -95,11 +95,11 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7.62x39mm
+        startingItem: Cartridge7.62x39mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x39mm
+            - Cartridge7.62x39mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -133,7 +133,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x39mm
+            - Cartridge7.62x39mmFMJ
 
 - type: entity
   parent: [ BaseWeaponRifle, BaseC1Contraband ]
@@ -246,21 +246,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine7.62x54mmR
+        startingItem: Magazine7.62x54mmRFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine7.62x54mmR
+            - Magazine7.62x54mmRFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7.62x54mmR
+        startingItem: Cartridge7.62x54mmRFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x54mmR
+            - Cartridge7.62x54mmRFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

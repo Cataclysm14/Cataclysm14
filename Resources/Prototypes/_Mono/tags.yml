@@ -2,10 +2,10 @@
   id: CassetteTape
 
 - type: Tag
-  id: Cartridge7.62x51mm
+  id: Cartridge7.62x51mmFMJ
 
 - type: Tag
-  id: Magazine7.62x51mm
+  id: Magazine7.62x51mmFMJ
 
 - type: Tag
   id: Magazine7.62x51mmLowCapacity
@@ -14,19 +14,19 @@
   id: Magazine7.62x51mmBox
 
 - type: Tag
-  id: Cartridge7.62x54mmR
+  id: Cartridge7.62x54mmRFMJ
 
 - type: Tag
-  id: Magazine7.62x54mmR
+  id: Magazine7.62x54mmRFMJ
 
 - type: Tag
   id: Magazine7.62x54mmRBox
 
 - type: Tag
-  id: Cartridge7.62x39mm
+  id: Cartridge7.62x39mmFMJ
 
 - type: Tag
-  id: Magazine7.62x39mm
+  id: Magazine7.62x39mmFMJ
 
 - type: Tag
   id: Magazine7.62x39mmBox

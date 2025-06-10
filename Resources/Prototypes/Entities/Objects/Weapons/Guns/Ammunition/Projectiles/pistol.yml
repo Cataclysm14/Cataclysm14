@@ -1,6 +1,6 @@
 - type: entity
   id: Bullet9x19mm
-  name: bullet (9x19mm)
+  name: bullet (9x19mm FMJ)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:

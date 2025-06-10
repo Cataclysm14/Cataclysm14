@@ -58635,7 +58635,7 @@ entities:
     - type: Godmode
       wasMovedByPressure: True
     - type: InsideEntityStorage
-- proto: Magazine7.62x39mm
+- proto: Magazine7.62x39mmFMJ
   entities:
   - uid: 5585
     components:
