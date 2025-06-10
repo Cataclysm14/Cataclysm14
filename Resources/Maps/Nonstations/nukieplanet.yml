@@ -6674,7 +6674,7 @@ entities:
     - type: Transform
       pos: -13.494709,9.54891
       parent: 104
-- proto: BoxMagazine9x19mmCaselessRiflePractice
+- proto: BoxMagazine6.35x23mmCaselessPractice
   entities:
   - uid: 1635
     components:

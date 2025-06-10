@@ -1,13 +1,13 @@
 - type: entity
-  id: Magazine9x19mmCaselessRifleRubber
-  name: "pistol magazine (.25 caseless rubber)"
-  parent: BaseMagazine9x19mmCaselessRifle
+  id: Magazine6.35x23mmCaselessRubber
+  name: "pistol magazine (6.35x23mm Caseless rubber)"
+  parent: BaseMagazine6.35x23mmCaseless
   components:
   - type: BallisticAmmoProvider
-    proto: CartridgeCaselessRifleRubber
+    proto: Cartridge6.35x23mmCaselessRubber
     capacity: 10
   - type: Sprite
-    sprite: _NF/Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_pistol_mag.rsi
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Magazine/6.35x23mmCaseless/caseless_pistol_mag.rsi
     layers:
     - state: rubber
       map: ["enum.GunVisualLayers.Base"]
@@ -20,14 +20,14 @@
   - type: Appearance
 
 - type: entity
-  id: MagazineCaselessRifleRubber
-  name: "magazine (.25 caseless rubber)"
-  parent: BaseMagazineCaselessRifle
+  id: Magazine6.35x23mmCaselessRubber
+  name: "magazine (6.35x23mm Caseless rubber)"
+  parent: BaseMagazine6.35x23mmCaseless
   components:
   - type: BallisticAmmoProvider
-    proto: CartridgeCaselessRifleRubber
+    proto: Cartridge6.35x23mmCaselessRubber
   - type: Sprite
-    sprite: _NF/Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_rifle_mag.rsi
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Magazine/6.35x23mmCaseless/caseless_rifle_mag.rsi
     layers:
     - state: rubber
       map: ["enum.GunVisualLayers.Base"]
@@ -35,15 +35,15 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: MagazineCaselessRifleShortRubber
-  name: "short magazine (.25 caseless rubber)"
-  parent: BaseMagazineCaselessRifleShort
+  id: Magazine6.35x23mmCaselessShortRubber
+  name: "short magazine (6.35x23mm Caseless rubber)"
+  parent: BaseMagazine6.35x23mmCaselessShort
   components:
   - type: BallisticAmmoProvider
-    proto: CartridgeCaselessRifleRubber
+    proto: Cartridge6.35x23mmCaselessRubber
     capacity: 20
   - type: Sprite
-    sprite: _NF/Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_rifle_mag_short.rsi
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Magazine/6.35x23mmCaseless/caseless_rifle_mag_short.rsi
     layers:
     - state: rubber
       map: ["enum.GunVisualLayers.Base"]

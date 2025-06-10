@@ -445,7 +445,7 @@
     - SemiAuto
     soundGunshot: /Audio/Weapons/Guns/Gunshots/pistol.ogg
   - type: BallisticAmmoProvider
-    proto: CartridgeCaselessRifle
+    proto: Cartridge6.35x23mmCaseless
     capacity: 500
   - type: CombatMode
   - type: HTN

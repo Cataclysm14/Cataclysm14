@@ -1,6 +1,6 @@
 - type: entity
-  id: BulletCaselessRifle
-  name: bullet (.25 caseless)
+  id: Bullet6.35x23mmCaseless
+  name: bullet (6.35x23mm Caseless)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -10,8 +10,8 @@
         Piercing: 19
 
 - type: entity
-  id: BulletCaselessRiflePractice
-  name: bullet (.25 caseless practice)
+  id: Bullet6.35x23mmCaselessPractice
+  name: bullet (6.35x23mm Caseless practice)
   parent: BaseBulletPractice
   categories: [ HideSpawnMenu ]
   components:
@@ -21,8 +21,8 @@
         Blunt: 2
 
 - type: entity
-  id: BulletCaselessRifleRubber
-  name: bullet (.25 caseless rubber)
+  id: Bullet6.35x23mmCaselessRubber
+  name: bullet (6.35x23mm Caseless rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
   components:

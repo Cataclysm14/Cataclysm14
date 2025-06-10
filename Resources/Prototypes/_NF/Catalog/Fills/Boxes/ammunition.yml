@@ -1,13 +1,13 @@
-# CaselessRifle
+# 6.35x23mmCaseless
 - type: entity
-  name: box of .25 caseless (rubber) magazines
+  name: box of 6.35x23mm Caseless (rubber) magazines
   parent: BoxMagazine
-  id: BoxMagazineCaselessRifleRubber
+  id: BoxMagazine6.35x23mmCaselessRubber
   description: A box full of
   components:
   - type: StorageFill
     contents:
-      - id: MagazineCaselessRifleRubber
+      - id: Magazine6.35x23mmCaselessRubber
         amount: 4
 
 # 7.62x39mm

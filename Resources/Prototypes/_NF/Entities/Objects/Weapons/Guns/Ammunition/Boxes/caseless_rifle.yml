@@ -1,11 +1,11 @@
 - type: entity
-  parent: BaseMagazineBoxCaselessRifle
-  id: MagazineBoxCaselessRifleBigRubber
-  name: ammunition box (.25 caseless rubber)
+  parent: BaseMagazineBox6.35x23mmCaseless
+  id: MagazineBox6.35x23mmCaselessBigRubber
+  name: ammunition box (6.35x23mm Caseless rubber)
   components:
   - type: BallisticAmmoProvider
     capacity: 200
-    proto: CartridgeCaselessRifleRubber
+    proto: Cartridge6.35x23mmCaselessRubber
   - type: Sprite
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/caseless_rifle.rsi
     layers:
@@ -21,12 +21,12 @@
   - type: Appearance
 
 - type: entity
-  parent: BaseMagazineBoxCaselessRifle
-  id: MagazineBoxCaselessRifleRubber
-  name: ammunition box (.25 caseless rubber)
+  parent: BaseMagazineBox6.35x23mmCaseless
+  id: MagazineBox6.35x23mmCaselessRubber
+  name: ammunition box (6.35x23mm Caseless rubber)
   components:
   - type: BallisticAmmoProvider
-    proto: CartridgeCaselessRifleRubber
+    proto: Cartridge6.35x23mmCaselessRubber
   - type: Sprite
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/caseless_rifle.rsi
     layers:
@@ -37,14 +37,14 @@
     - state: rubber
 
 - type: entity
-  parent: BaseMagazineBoxCaselessRifle
-  id: MagazineBoxCaselessRifle10x24
-  name: ammunition box (.25 caseless)
+  parent: BaseMagazineBox6.35x23mmCaseless
+  id: MagazineBox6.35x23mmCaseless10x24
+  name: ammunition box (6.35x23mm Caseless)
   suffix: 200
   components:
   - type: BallisticAmmoProvider
     capacity: 200
-    proto: CartridgeCaselessRifle
+    proto: Cartridge6.35x23mmCaseless
   - type: Sprite
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/caseless_rifle.rsi
     layers:
@@ -56,13 +56,13 @@
     magState: mag10
 
 - type: entity
-  parent: BaseMagazineBoxCaselessRifle
-  id: MagazineBoxCaselessRifleBig
-  name: ammunition box (.25 caseless)
+  parent: BaseMagazineBox6.35x23mmCaseless
+  id: MagazineBox6.35x23mmCaselessBig
+  name: ammunition box (6.35x23mm Caseless)
   components:
   - type: BallisticAmmoProvider
     capacity: 200
-    proto: CartridgeCaselessRifle
+    proto: Cartridge6.35x23mmCaseless
   - type: Sprite
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/caseless_rifle.rsi
     layers:

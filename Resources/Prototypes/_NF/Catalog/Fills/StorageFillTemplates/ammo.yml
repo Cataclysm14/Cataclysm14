@@ -201,31 +201,31 @@
     - id: MagazineBoxPistolEmp
       amount: 4
 
-# .25 caseless ammo
+# 6.35x23mm Caseless ammo
 - type: entity # Lethal
   abstract: true
   id: StorageFillAmmoBoxLethal25
-  suffix: .25 caseless, Lethal, x4 boxes
+  suffix: 6.35x23mm Caseless, Lethal, x4 boxes
   components:
   - type: StorageFill
     contents:
-    - id: MagazineBoxCaselessRifle
+    - id: MagazineBox6.35x23mmCaseless
       amount: 4
 
 - type: entity # Lethal
   abstract: true
   id: StorageFillAmmoBoxBigLethal25
-  suffix: .25 caseless, Lethal, x4 big boxes
+  suffix: 6.35x23mm Caseless, Lethal, x4 big boxes
   components:
   - type: StorageFill
     contents:
-    - id: MagazineBoxCaselessRifleBig
+    - id: MagazineBox6.35x23mmCaselessBig
       amount: 4
 
 - type: entity # Rubber
   abstract: true
   id: StorageFillAmmoBoxRubber25
-  suffix: .25 caseless, Rubber, x4 boxes
+  suffix: 6.35x23mm Caseless, Rubber, x4 boxes
   components:
   - type: StorageFill
     contents:
@@ -235,17 +235,17 @@
 - type: entity # Rubber
   abstract: true
   id: StorageFillAmmoBoxBigRubber25
-  suffix: .25 caseless, Rubber, x4 big boxes
+  suffix: 6.35x23mm Caseless, Rubber, x4 big boxes
   components:
   - type: StorageFill
     contents:
-    - id: MagazineBoxCaselessRifleBigRubber
+    - id: MagazineBox6.35x23mmCaselessBigRubber
       amount: 4
 
 - type: entity # Practice
   abstract: true
   id: StorageFillAmmoBoxPractice25
-  suffix: .25 caseless, Practice, x4 boxes
+  suffix: 6.35x23mm Caseless, Practice, x4 boxes
   components:
   - type: StorageFill
     contents:

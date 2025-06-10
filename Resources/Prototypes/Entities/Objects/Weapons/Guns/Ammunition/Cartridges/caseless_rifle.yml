@@ -1,5 +1,5 @@
 - type: entity
-  id: BaseCartridgeCaselessRifle
+  id: BaseCartridge6.35x23mmCaseless
   name: cartridge (.25 rifle)
   parent: [ BaseCartridge, BaseC3SyndicateContrabandNoValue ] # Frontier: BaseSecurityContraband<BaseC3SyndicateContraband
   abstract: true
@@ -7,7 +7,7 @@
   - type: Tag
     tags:
       - Cartridge
-      - CartridgeCaselessRifle
+      - Cartridge6.35x23mmCaseless
   - type: CartridgeAmmo
     deleteOnSpawn: true
   - type: Sprite
@@ -22,20 +22,20 @@
     price: 1
 
 - type: entity
-  id: CartridgeCaselessRifle
-  name: cartridge (.25 caseless)
-  parent: BaseCartridgeCaselessRifle
+  id: Cartridge6.35x23mmCaseless
+  name: cartridge (6.35x23mm Caseless)
+  parent: BaseCartridge6.35x23mmCaseless
   components:
   - type: CartridgeAmmo
-    proto: BulletCaselessRifle
+    proto: Bullet6.35x23mmCaseless
 
 - type: entity
-  id: CartridgeCaselessRiflePractice
-  name: cartridge (.25 caseless practice)
-  parent: BaseCartridgeCaselessRifle
+  id: Cartridge6.35x23mmCaselessPractice
+  name: cartridge (6.35x23mm Caseless practice)
+  parent: BaseCartridge6.35x23mmCaseless
   components:
   - type: CartridgeAmmo
-    proto: BulletCaselessRiflePractice
+    proto: Bullet6.35x23mmCaselessPractice
   - type: Sprite
     layers:
       - state: base

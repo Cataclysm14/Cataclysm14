@@ -1,15 +1,15 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseMagazineBoxCaselessRifle
-  name: ammunition box (.25 caseless)
+  id: BaseMagazineBox6.35x23mmCaseless
+  name: ammunition box (6.35x23mm Caseless)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgeCaselessRifle
-    proto: CartridgeCaselessRifle
+        - Cartridge6.35x23mmCaseless
+    proto: Cartridge6.35x23mmCaseless
     capacity: 60
   - type: Item
     size: Small
@@ -26,12 +26,12 @@
 
 # Boxes
 - type: entity
-  parent: BaseMagazineBoxCaselessRifle
-  id: MagazineBoxCaselessRifle
-  name: ammunition box (.25 caseless)
+  parent: BaseMagazineBox6.35x23mmCaseless
+  id: MagazineBox6.35x23mmCaseless
+  name: ammunition box (6.35x23mm Caseless)
   components:
   - type: BallisticAmmoProvider
-    proto: CartridgeCaselessRifle
+    proto: Cartridge6.35x23mmCaseless
   - type: Sprite
     layers:
     - state: base
@@ -40,12 +40,12 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  parent: BaseMagazineBoxCaselessRifle
-  id: MagazineBoxCaselessRiflePractice
-  name: ammunition box (.25 caseless practice)
+  parent: BaseMagazineBox6.35x23mmCaseless
+  id: MagazineBox6.35x23mmCaselessPractice
+  name: ammunition box (6.35x23mm Caseless practice)
   components:
   - type: BallisticAmmoProvider
-    proto: CartridgeCaselessRiflePractice
+    proto: Cartridge6.35x23mmCaselessPractice
   - type: Sprite
     layers:
     - state: base

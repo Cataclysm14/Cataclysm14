@@ -487,11 +487,11 @@
 
 # For the Cobra
 - type: listing
-  id: UplinkMagazine9x19mmCaselessRifle
+  id: UplinkMagazine6.35x23mmCaseless
   name: uplink-pistol-magazine-caseless-name
   description: uplink-pistol-magazine-caseless-desc
-  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_pistol_mag.rsi, state: red-icon }
-  productEntity: Magazine9x19mmCaselessRifle
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/6.35x23mmCaseless/caseless_pistol_mag.rsi, state: red-icon }
+  productEntity: Magazine6.35x23mmCaseless
   cost:
     Telecrystal: 1
   categories:
@@ -502,7 +502,7 @@
   id: UplinkSpeedLoader.45_magnumAP
   name: uplink-speedloader-45_magnum-name
   description: uplink-speedloader-magnu-desc
-  icon: { sprite: /Textures/_Mono/_Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/.45_magnum/.45_magnum_speed_loader.rsi, state: icon }
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/.45_magnum/.45_magnum_speed_loader.rsi, state: icon }
   productEntity: SpeedLoader.45_magnumAP
   cost:
     Telecrystal: 3
