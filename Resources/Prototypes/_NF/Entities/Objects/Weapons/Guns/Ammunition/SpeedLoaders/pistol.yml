@@ -1,8 +1,8 @@
 # Upstream
 - type: entity
-  id: SpeedLoaderPistolRubber
+  id: SpeedLoader9x19mmRubber
   name: "speed loader (9x19mm rubber)"
-  parent: BaseSpeedLoaderPistol
+  parent: BaseSpeedLoader9x19mm
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmRubber

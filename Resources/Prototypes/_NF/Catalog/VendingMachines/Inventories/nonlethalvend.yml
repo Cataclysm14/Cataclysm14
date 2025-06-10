@@ -18,7 +18,7 @@
     BoxDarts: 4
   contrabandInventory:
     SpeedLoader5.56x45mmPractice: 3
-    SpeedLoaderPistolPractice: 3
+    SpeedLoader9x19mmPractice: 3
     SpeedLoader.45_magnumPractice: 3
   emaggedInventory:
     ThrowingKnife: 1

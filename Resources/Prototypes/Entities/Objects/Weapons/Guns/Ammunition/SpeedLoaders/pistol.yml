@@ -1,12 +1,12 @@
 - type: entity
-  id: BaseSpeedLoaderPistol
+  id: BaseSpeedLoader9x19mm
   name: "speed loader (9x19mm FMJ)"
   parent: [ BaseItem, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
   abstract: true
   components:
   - type: Tag
     tags:
-      - SpeedLoaderPistol
+      - SpeedLoader9x19mm
   - type: SpeedLoader
   - type: BallisticAmmoProvider
     whitelist:
@@ -21,9 +21,9 @@
         ents: []
 
 - type: entity
-  id: SpeedLoaderPistol
+  id: SpeedLoader9x19mm
   name: "speed loader (9x19mm FMJ)"
-  parent: BaseSpeedLoaderPistol
+  parent: BaseSpeedLoader9x19mm
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmFMJ
@@ -40,9 +40,9 @@
   - type: Appearance
 
 - type: entity
-  id: SpeedLoaderPistolPractice
+  id: SpeedLoader9x19mmPractice
   name: "speed loader (9x19mm practice)"
-  parent: BaseSpeedLoaderPistol
+  parent: BaseSpeedLoader9x19mm
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmPractice

@@ -14,7 +14,7 @@
     MagazineBox.45_magnumRubber: 10
   contrabandInventory:
     SpeedLoader5.56x45mmRubber: 3
-    SpeedLoaderPistolRubber: 3
+    SpeedLoader9x19mmRubber: 3
     SpeedLoader.45_magnumRubber: 3
     WeaponRifleBBEmpty: 2
     BoxCartridgeBB: 10
@@ -38,7 +38,7 @@
     MagazineBox.45_magnumRubber: 4294967295 # Infinite
   contrabandInventory:
     SpeedLoader5.56x45mmRubber: 3
-    SpeedLoaderPistolRubber: 3
+    SpeedLoader9x19mmRubber: 3
     SpeedLoader.45_magnumRubber: 3
     WeaponRifleBBEmpty: 2
     BoxCartridgeBB: 10
