@@ -49,9 +49,9 @@
     contents:
     - id: WeaponPistolCobra
       amount: 1
-    - id: Magazine6.35x23mmCaseless
+    - id: Magazine9x19mmCaselessRifle
       amount: 1
-    - id: MagazineBox6.35x23mmCaseless10x24
+    - id: MagazineBoxCaselessRifle10x24
       amount: 1
 
 - type: entity
@@ -455,7 +455,7 @@
     contents:
     - id: WeaponRifleJackdaw
       amount: 1
-    - id: Magazine6.35x23mmCaseless
+    - id: MagazineCaselessRifle
       amount: 2
 
 # Energy
@@ -908,7 +908,7 @@
   id: WeaponCaseShortAmmoBoxEmp35
   categories: [ HideSpawnMenu ]
 
-## 6.35x23mm Caseless
+## .25 caseless
 - type: entity
   parent:
   - WeaponCaseShortAmmo

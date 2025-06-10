@@ -1,8 +1,8 @@
 - type: vendingMachineInventory
   id: AmmoVendInventory
   startingInventory:
-    MagazineBox6.35x23mmCaseless: 6
-    MagazineBox6.35x23mmCaselessPractice: 3
+    MagazineBoxCaselessRifle: 6
+    MagazineBoxCaselessRiflePractice: 3
 
     MagazineBox7.62x39mmBig: 6
     MagazineBox7.62x39mmPractice: 3

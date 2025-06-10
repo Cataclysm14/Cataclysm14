@@ -96,7 +96,7 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/gun_sentry.ogg
   - type: ProjectileBatteryAmmoProvider
-    proto: Cartridge6.35x23mmCaseless
+    proto: CartridgeCaselessRifle
     fireCost: 25
   - type: BatterySelfRecharger
     autoRecharge: true

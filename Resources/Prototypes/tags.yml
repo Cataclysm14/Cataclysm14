@@ -271,7 +271,7 @@
   id: CartridgeCap
 
 - type: Tag
-  id: Cartridge6.35x23mmCaseless
+  id: CartridgeCaselessRifle
 
 - type: Tag
   id: CartridgeCHIMP
@@ -802,6 +802,8 @@
 - type: Tag
   id: MagazineCalico
 
+- type: Tag
+  id: MagazineCaselessRifle
 
 - type: Tag
   id: MagazineRifle
@@ -819,7 +821,7 @@
   id: Magazine9x19mm
 
 - type: Tag
-  id: Magazine6.35x23mmCaseless
+  id: Magazine9x19mmCaselessRifle
 
 - type: Tag
   id: Magazine9x19mmHighCapacity

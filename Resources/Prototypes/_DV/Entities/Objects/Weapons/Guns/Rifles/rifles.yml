@@ -93,7 +93,7 @@
   name: CAWS-25 Jackdaw
   parent: [BaseWeaponRifle, BaseGunWieldable, BaseC3Contraband] # Frontier: add BaseC3Contraband
   id: WeaponRifleJackdaw
-  description: The beginning of the end is heralded by the song of a Jackdaw. Uses 6.35x23mm Caseless ammo.
+  description: The beginning of the end is heralded by the song of a Jackdaw. Uses .25 caseless ammo.
   components:
   - type: Item
     size: Large
@@ -116,29 +116,27 @@
     - SemiAuto
     - FullAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
-      params:
-        volume: -1
+      path: /Audio/_DV/Weapons/Guns/Gunshots/jackdaw.ogg
   - type: ChamberMagazineAmmoProvider
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine6.35x23mmCaseless
+        startingItem: MagazineCaselessRifle
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine6.35x23mmCaseless
+            - MagazineCaselessRifle
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge6.35x23mmCaseless
+        startingItem: CartridgeCaselessRifle
         priority: 1
         whitelist:
           tags:
-            - Cartridge6.35x23mmCaseless
+            - CartridgeCaselessRifle
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

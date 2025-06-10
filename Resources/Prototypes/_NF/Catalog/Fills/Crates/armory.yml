@@ -265,7 +265,7 @@
   id: CrateAmmoBoxEmp35
   categories: [ HideSpawnMenu ]
 
-## 6.35x23mm Caseless
+## .25 caseless
 - type: entity
   parent:
   - CrateAmmoSecureMercenary

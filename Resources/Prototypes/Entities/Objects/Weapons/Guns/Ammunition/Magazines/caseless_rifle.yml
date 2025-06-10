@@ -1,18 +1,18 @@
 - type: entity
-  id: BaseMagazine6.35x23mmCaseless
-  name: "magazine (6.35x23mm Caseless)"
+  id: BaseMagazineCaselessRifle
+  name: "magazine (.25 caseless)"
   parent: [ BaseCartridge, BaseC3SyndicateContrabandNoValue, RecyclableItemSteelTiny ] # Frontier: BaseSecurityContraband<BaseC3SyndicateContraband, added RecyclableItemSteelTiny
   abstract: true
   components:
   - type: Tag
     tags:
-      - Magazine6.35x23mmCaseless
+      - MagazineCaselessRifle
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge6.35x23mmCaseless
-    proto: Cartridge6.35x23mmCaseless
+        - CartridgeCaselessRifle
+    proto: CartridgeCaselessRifle
     capacity: 30
   - type: Item
     size: Small
@@ -20,7 +20,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Magazine/6.35x23mmCaseless/caseless_rifle_mag.rsi
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_rifle_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -33,18 +33,18 @@
   - type: Appearance
 
 - type: entity
-  id: BaseMagazine6.35x23mmCaselessShort
-  name: "caseless rifle short magazine (6.35x23mm Caseless)"
-  parent: BaseMagazine6.35x23mmCaseless
+  id: BaseMagazineCaselessRifleShort
+  name: "caseless rifle short magazine (.25 caseless)"
+  parent: BaseMagazineCaselessRifle
   abstract: true
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.35x23mmCaseless
+    proto: CartridgeCaselessRifle
     capacity: 10
   - type: Item
     size: Tiny
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Magazine/6.35x23mmCaseless/caseless_rifle_mag_short.rsi
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_rifle_mag_short.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -52,24 +52,24 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: BaseMagazine6.35x23mmCaseless
-  name: "pistol magazine (6.35x23mm Caseless)"
-  parent: BaseMagazine6.35x23mmCaseless
+  id: BaseMagazine9x19mmCaselessRifle
+  name: "pistol magazine (.25 caseless)"
+  parent: BaseMagazineCaselessRifle
   abstract: true
   components:
   - type: Tag
     tags:
-      - Magazine6.35x23mmCaseless
+      - Magazine9x19mmCaselessRifle
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - Cartridge6.35x23mmCaseless
-    proto: Cartridge6.35x23mmCaseless
+        - CartridgeCaselessRifle
+    proto: CartridgeCaselessRifle
     capacity: 10
   - type: Item
     size: Small
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Magazine/6.35x23mmCaseless/caseless_pistol_mag.rsi
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_pistol_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -82,27 +82,27 @@
   - type: Appearance
 
 - type: entity
-  id: Magazine6.35x23mmCaseless10x24
-  name: "box magazine (6.35x23mm Caseless)"
-  parent: BaseMagazine6.35x23mmCaseless
+  id: MagazineCaselessRifle10x24
+  name: "box magazine (.25 caseless)"
+  parent: BaseMagazineCaselessRifle
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.35x23mmCaseless
+    proto: CartridgeCaselessRifle
     capacity: 99
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Magazine/6.35x23mmCaseless/10x24.rsi
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/10x24.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 8
     zeroVisible: false
 
 - type: entity
-  id: Magazine6.35x23mmCaseless
-  name: "pistol magazine (6.35x23mm Caseless)"
-  parent: BaseMagazine6.35x23mmCaseless
+  id: Magazine9x19mmCaselessRifle
+  name: "pistol magazine (.25 caseless)"
+  parent: BaseMagazine9x19mmCaselessRifle
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.35x23mmCaseless
+    proto: CartridgeCaselessRifle
     capacity: 10
   - type: Sprite
     slayers:
@@ -117,12 +117,12 @@
   - type: Appearance
 
 - type: entity
-  id: Magazine6.35x23mmCaselessPractice
-  name: "pistol magazine (6.35x23mm Caseless practice)"
-  parent: BaseMagazine6.35x23mmCaseless
+  id: Magazine9x19mmCaselessRiflePractice
+  name: "pistol magazine (.25 caseless practice)"
+  parent: BaseMagazine9x19mmCaselessRifle
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.35x23mmCaselessPractice
+    proto: CartridgeCaselessRiflePractice
     capacity: 10
   - type: Sprite
     layers:
@@ -137,12 +137,12 @@
   - type: Appearance
 
 - type: entity
-  id: Magazine6.35x23mmCaseless
-  name: "magazine (6.35x23mm Caseless)"
-  parent: BaseMagazine6.35x23mmCaseless
+  id: MagazineCaselessRifle
+  name: "magazine (.25 caseless)"
+  parent: BaseMagazineCaselessRifle
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.35x23mmCaseless
+    proto: CartridgeCaselessRifle
   - type: Sprite
     layers:
     - state: red
@@ -151,12 +151,12 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine6.35x23mmCaselessPractice
-  name: "magazine (6.35x23mm Caseless practice)"
-  parent: BaseMagazine6.35x23mmCaseless
+  id: MagazineCaselessRiflePractice
+  name: "magazine (.25 caseless practice)"
+  parent: BaseMagazineCaselessRifle
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.35x23mmCaselessPractice
+    proto: CartridgeCaselessRiflePractice
   - type: Sprite
     layers:
     - state: practice
@@ -165,12 +165,12 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine6.35x23mmCaselessShort
-  name: "short magazine (6.35x23mm Caseless)"
-  parent: BaseMagazine6.35x23mmCaselessShort
+  id: MagazineCaselessRifleShort
+  name: "short magazine (.25 caseless)"
+  parent: BaseMagazineCaselessRifleShort
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.35x23mmCaseless
+    proto: CartridgeCaselessRifle
     capacity: 20
   - type: Sprite
     layers:
@@ -180,12 +180,12 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine6.35x23mmCaselessShortPractice
-  name: "short magazine (6.35x23mm Caseless practice)"
-  parent: BaseMagazine6.35x23mmCaselessShort
+  id: MagazineCaselessRifleShortPractice
+  name: "short magazine (.25 caseless practice)"
+  parent: BaseMagazineCaselessRifleShort
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.35x23mmCaselessPractice
+    proto: CartridgeCaselessRiflePractice
     capacity: 20
   - type: Sprite
     layers:
