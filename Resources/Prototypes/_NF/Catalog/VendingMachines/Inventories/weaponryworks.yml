@@ -90,7 +90,7 @@
     SpeedLoader7.62x39mm: 4294967295 # .30 Mosin
 # Ammo
     MagazineBox5.56x45mmBig: 4294967295 # .20
-    MagazineBoxCaselessRifleBig: 4294967295 # .25
+    MagazineBox6.35x40mmCaselessBig: 4294967295 # .25
     MagazineBox7.62x39mmBig: 4294967295 # .30
     MagazineBoxPistolBig: 4294967295 # .35
     MagazineBox.45_magnum: 4294967295 # .45

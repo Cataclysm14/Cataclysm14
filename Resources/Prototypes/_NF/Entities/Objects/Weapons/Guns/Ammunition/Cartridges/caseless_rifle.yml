@@ -1,10 +1,10 @@
 - type: entity
-  id: CartridgeCaselessRifleRubber
-  name: cartridge (.25 caseless rubber)
-  parent: BaseCartridgeCaselessRifle
+  id: Cartridge6.35x40mmCaselessRubber
+  name: cartridge (6.35x40mm Caseless rubber)
+  parent: BaseCartridge6.35x40mmCaseless
   components:
   - type: CartridgeAmmo
-    proto: BulletCaselessRifleRubber
+    proto: Bullet6.35x40mmCaselessRubber
   - type: Sprite
     layers:
       - state: base

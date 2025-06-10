@@ -178,7 +178,7 @@
   name: cobra
   parent: [ BaseWeaponPistol, BaseC3SyndicateContraband ] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
   id: WeaponPistolCobra
-  description: A rugged, robust operator handgun with inbuilt silencer. Uses .25 caseless ammo. An illegal firearm often used by Syndicate agents.
+  description: A rugged, robust operator handgun with inbuilt silencer. Uses 6.35x40mm Caseless ammo. An illegal firearm often used by Syndicate agents.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/cobra.rsi
@@ -204,21 +204,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine9x19mmCaselessRifle
+        startingItem: Magazine6.35x40mmCaselessPistol
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine9x19mmCaselessRifle
+            - Magazine6.35x40mmCaselessPistol
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeCaselessRifle
+        startingItem: Cartridge6.35x40mmCaseless
         priority: 1
         whitelist:
           tags:
-            - CartridgeCaselessRifle
+            - Cartridge6.35x40mmCaseless
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

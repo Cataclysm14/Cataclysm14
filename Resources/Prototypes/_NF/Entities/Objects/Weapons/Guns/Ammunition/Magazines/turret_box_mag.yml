@@ -19,7 +19,7 @@
         - Cartridge9x19mm
         - Cartridge5.56x45mm
         - Cartridge7.62x39mm
-        - CartridgeCaselessRifle
+        - Cartridge6.35x40mmCaseless
     capacity: 50
   - type: ContainerContainer
     containers:
