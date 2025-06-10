@@ -2409,7 +2409,7 @@ entities:
     - type: Transform
       pos: 4.23837,-0.7256026
       parent: 1
-- proto: BoxLethalshot
+- proto: Box12GaugeBuckshot
   entities:
   - uid: 389
     components:

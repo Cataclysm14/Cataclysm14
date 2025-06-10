@@ -33,8 +33,8 @@
 # Shotgun Shells
 - type: entity
   parent: AmmoProviderShotgunShell
-  id: BoxBeanbag
-  name: shell box (beanbag)
+  id: Box12GaugeBeanbag
+  name: shotgun shell box (12 gauge beanbag)
   components:
     - type: BallisticAmmoProvider
       proto: ShellShotgun12gaugeBeanbag
@@ -51,9 +51,9 @@
       - state: beanbag
 
 - type: entity
-  name: shell box (lethal)
+  name: shotgun shell box (12 gauge buckshot)
   parent: AmmoProviderShotgunShell
-  id: BoxLethalshot
+  id: Box12GaugeBuckshot
   components:
     - type: BallisticAmmoProvider
       proto: ShellShotgun12gauge
@@ -66,9 +66,9 @@
       - state: lethal
 
 - type: entity
-  name: shell box (slug)
+  name: shotgun shell box (12 gauge slug)
   parent: AmmoProviderShotgunShell
-  id: BoxShotgunSlug
+  id: Box12GaugeSlug
   components:
     - type: BallisticAmmoProvider
       proto: ShellShotgun12gaugeSlug
@@ -85,9 +85,9 @@
       - state: slug
 
 - type: entity
-  name: shell box (flare)
+  name: flare shell box (12 gauge flare)
   parent: AmmoProviderShotgunShell
-  id: BoxShotgunFlare
+  id: Box12GaugeFlare
   components:
     - type: BallisticAmmoProvider
       proto: ShellShotgun12gaugeFlare
@@ -104,9 +104,9 @@
       - state: flare
 
 - type: entity
-  name: shell box (incendiary)
+  name: shotgun shell box (12 gauge incendiary)
   parent: AmmoProviderShotgunShell
-  id: BoxShotgunIncendiary
+  id: Box12GaugeIncendiary
   components:
     - type: BallisticAmmoProvider
       proto: ShellShotgun12gaugeIncendiary
@@ -123,9 +123,9 @@
       - state: incendiary
 
 - type: entity
-  name: shell box (uranium)
+  name: shotgun shell box (12 gauge incendiary)
   parent: AmmoProviderShotgunShell
-  id: BoxShotgunUranium
+  id: Box12GaugeUranium
   components:
     - type: BallisticAmmoProvider
       proto: ShellShotgun12gaugeUranium
@@ -142,9 +142,9 @@
       - state: uranium
 
 - type: entity
-  name: shell box (practice)
+  name: shotgun shell box (12 gauge practice)
   parent: AmmoProviderShotgunShell
-  id: BoxShotgunPractice
+  id: Box12GaugePractice
   components:
     - type: BallisticAmmoProvider
       proto: ShellShotgun12gaugePractice
@@ -161,9 +161,9 @@
       - state: practice
 
 - type: entity
-  name: shell box (tranquilizer)
+  name: shotgun shell box (12 gauge tranquilizer)
   parent: AmmoProviderShotgunShell
-  id: BoxShellTranquilizer
+  id: Box12GaugeTranquilizer
   components:
     - type: BallisticAmmoProvider
       proto: ShellTranquilizer

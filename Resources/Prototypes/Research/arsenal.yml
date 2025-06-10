@@ -31,7 +31,7 @@
 #   tier: 1
 #   cost: 10000
 #   recipeUnlocks:
-#   - BoxShotgunIncendiary
+#   - Box12GaugeIncendiary
 #   - MagazineRifleIncendiary
 #   - Magazine9x19mmIncendiary
 #   - Magazine9x19mmSubMachineGunIncendiary
@@ -70,8 +70,8 @@
   cost: 5000
   recipeUnlocks:
   - MagazineShotgunBeanbag
-  - BoxShellTranquilizer
-  - BoxBeanbag
+  - Box12GaugeTranquilizer
+  - Box12GaugeBeanbag
   - WeaponDisabler
   - MagazineBox7.62x39mmRubber # Frontier
   - MagazineBox.45_magnumRubber # Frontier
@@ -100,7 +100,7 @@
 #   - MagazineBox.45_magnumUranium
 #   - MagazineBox7.62x39mmUranium
 #   - MagazineBox5.56x45mmUranium
-#   - BoxShotgunUranium
+#   - Box12GaugeUranium
 # #  - SpeedLoader5.56x45mmUranium # Frontier
 
 # End Frontier: restricted arsenal research

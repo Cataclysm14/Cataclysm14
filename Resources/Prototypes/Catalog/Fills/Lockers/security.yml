@@ -217,7 +217,7 @@
     contents:
     - id: WeaponShotgunEnforcer
       amount: 2
-    - id: BoxLethalshot
+    - id: Box12GaugeBuckshot
       amount: 4
 
 - type: entity
@@ -230,7 +230,7 @@
     contents:
     - id: WeaponShotgunKammerer
       amount: 2
-    - id: BoxLethalshot
+    - id: Box12GaugeBuckshot
       amount: 2
 
 - type: entity

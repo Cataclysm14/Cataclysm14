@@ -4,9 +4,9 @@
 - type: latheRecipePack
   id: NFNfsdTechfabDeprecatedStatic
   recipes:
-  - BoxLethalshot
-  - BoxShotgunPractice
-  - BoxShotgunSlug
+  - Box12GaugeBuckshot
+  - Box12GaugePractice
+  - Box12GaugeSlug
   - ClothingEyesHudNfsd
   - CombatKnife
   - Flash
@@ -59,7 +59,7 @@
   - GyroscopeNfsdMachineCircuitboard
   - SmallGyroscopeNfsdMachineCircuitboard
   - ClothingOuterHardsuitEVAPrisoner
-  - BoxBeanbag
+  - Box12GaugeBeanbag
   - MagazineBox7.62x39mmRubber
   - MagazineBox.45_magnumRubber
   - MagazineBoxPistolRubber
@@ -84,7 +84,7 @@
 - type: latheRecipePack
   id: NFNfsdTechfabDeprecated
   recipes:
-  - BoxShellTranquilizer
+  - Box12GaugeTranquilizer
   - ExplosivePayload
   - FlashPayload
   - GrenadeBlast
@@ -105,8 +105,8 @@
 - type: latheRecipePack
   id: NFNfsdTechfabDeprecatedEmag
   recipes:
-  - BoxShotgunIncendiary
-  - BoxShotgunUranium
+  - Box12GaugeIncendiary
+  - Box12GaugeUranium
   - MagazineBox7.62x39mmIncendiary
   - MagazineBox7.62x39mmUranium
   - MagazineBox.45_magnumIncendiary

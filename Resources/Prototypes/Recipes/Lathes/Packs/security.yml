@@ -15,7 +15,7 @@
 - type: latheRecipePack
   id: SecurityPracticeStatic
   recipes:
-  - BoxShotgunPractice
+  - Box12GaugePractice
   - MagazineBox7.62x39mmPractice
   - MagazineBox.45_magnumPractice
   - MagazineBoxPistolPractice
@@ -28,8 +28,8 @@
 - type: latheRecipePack
   id: SecurityAmmoStatic
   recipes:
-  - BoxLethalshot
-  - BoxShotgunSlug
+  - Box12GaugeBuckshot
+  - Box12GaugeSlug
   - MagazineBox7.62x39mm
   - MagazineBox7.62x39mmRubber # Frontier
   - MagazineBox.45_magnum
@@ -111,10 +111,10 @@
 - type: latheRecipePack
   id: SecurityAmmo
   recipes:
-  - BoxBeanbag
-  # - BoxShotgunIncendiary # Frontier
-  # - BoxShotgunUranium # Frontier
-  - BoxShellTranquilizer
+  - Box12GaugeBeanbag
+  # - Box12GaugeIncendiary # Frontier
+  # - Box12GaugeUranium # Frontier
+  - Box12GaugeTranquilizer
   # - MagazineBox7.62x39mmIncendiary # Frontier
   # - MagazineBox7.62x39mmUranium # Frontier
   # - MagazineBox.45_magnumIncendiary # Frontier

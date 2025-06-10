@@ -217,7 +217,7 @@
   id: WeaponRifleSVS
   name: SVS-42
   parent: [ BaseWeaponRifle, BaseGunMelee, BaseC1Contraband ]
-  description: "Originally designed by Samonov, this old surplus rifle looks like it's seen a few wars. Uses low capacity 7.62x39mm magazines. Equipped with bayonet."
+  description: "Originally designed by Samonov, this old surplus rifle looks like it's seen a few wars. Uses low capacity 10 rounder 7.62x54mmR magazines. Equipped with bayonet."
   components:
   - type: Sprite
     sprite: _NF/Objects/Weapons/Guns/Rifles/svs42.rsi
@@ -233,7 +233,7 @@
     - Back
     - suitStorage
   - type: Gun
-    fireRate: 4
+    fireRate: 1.9
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
@@ -246,21 +246,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine7.62x39mmLowCapacity
+        startingItem: Magazine7.62x54mmR
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine7.62x39mmLowCapacity
+            - Magazine7.62x54mmR
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7.62x39mm
+        startingItem: Cartridge7.62x54mmR
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x39mm
+            - Cartridge7.62x54mmR
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

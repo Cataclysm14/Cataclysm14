@@ -465,7 +465,7 @@
     - WeaponCaseShortAmmoBoxLethal30
     - WeaponCaseShortAmmoBoxLethal35
     - WeaponCaseShortAmmoBoxLethal25
-    - WeaponCaseShortAmmoBoxLethalShotgun
+    - WeaponCaseShortAmmoBox12GaugeBuckshotgun
     - WeaponCaseShortAmmoBoxSlugShotgun
     - WeaponCaseShortAmmoBoxLethal45
     chance: 0.8

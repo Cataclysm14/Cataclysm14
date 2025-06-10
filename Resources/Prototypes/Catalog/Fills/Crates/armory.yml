@@ -21,7 +21,7 @@
     contents:
       - id: WeaponShotgunEnforcer
         amount: 2
-      - id: BoxLethalshot
+      - id: Box12GaugeBuckshot
         amount: 4
 
 - type: entity
@@ -84,7 +84,7 @@
       amount: 2
     - id: WeaponShotgunEnforcerRubber
       amount: 2
-    - id: BoxBeanbag
+    - id: Box12GaugeBeanbag
       amount: 2
     - id: RiotShield
       amount: 2

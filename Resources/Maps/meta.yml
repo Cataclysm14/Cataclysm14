@@ -23062,7 +23062,7 @@ entities:
     - type: Transform
       pos: -18.52302,-24.35315
       parent: 5350
-- proto: BoxBeanbag
+- proto: Box12GaugeBeanbag
   entities:
   - uid: 3114
     components:
@@ -23374,7 +23374,7 @@ entities:
     - type: Transform
       pos: 47.486122,-24.404968
       parent: 5350
-- proto: BoxLethalshot
+- proto: Box12GaugeBuckshot
   entities:
   - uid: 3056
     components:
@@ -23443,7 +23443,7 @@ entities:
     - type: Transform
       pos: -46.819557,-31.22118
       parent: 5350
-- proto: BoxShotgunPractice
+- proto: Box12GaugePractice
   entities:
   - uid: 7275
     components:

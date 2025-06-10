@@ -7487,7 +7487,7 @@ entities:
     - type: Transform
       pos: -0.5,-45.5
       parent: 1668
-- proto: BoxLethalshot
+- proto: Box12GaugeBuckshot
   entities:
   - uid: 1093
     components:
@@ -7669,35 +7669,35 @@ entities:
     - type: Transform
       pos: -31.416765,-8.047967
       parent: 1668
-- proto: BoxShellTranquilizer
+- proto: Box12GaugeTranquilizer
   entities:
   - uid: 1323
     components:
     - type: Transform
       pos: 34.536674,-21.41355
       parent: 1668
-- proto: BoxShotgunFlare
+- proto: Box12GaugeFlare
   entities:
   - uid: 1329
     components:
     - type: Transform
       pos: 34.567924,-22.2573
       parent: 1668
-- proto: BoxShotgunIncendiary
+- proto: Box12GaugeIncendiary
   entities:
   - uid: 1311
     components:
     - type: Transform
       pos: 34.52105,-21.1323
       parent: 1668
-- proto: BoxShotgunSlug
+- proto: Box12GaugeSlug
   entities:
   - uid: 1335
     components:
     - type: Transform
       pos: 34.5523,-21.72605
       parent: 1668
-- proto: BoxShotgunUranium
+- proto: Box12GaugeUranium
   entities:
   - uid: 1334
     components:

@@ -21313,7 +21313,7 @@ entities:
     - type: Transform
       pos: 76.50828,-54.33026
       parent: 8364
-- proto: BoxBeanbag
+- proto: Box12GaugeBeanbag
   entities:
   - uid: 5374
     components:
@@ -21628,7 +21628,7 @@ entities:
     - type: Transform
       pos: 24.498875,-36.223793
       parent: 8364
-- proto: BoxLethalshot
+- proto: Box12GaugeBuckshot
   entities:
   - uid: 4645
     components:

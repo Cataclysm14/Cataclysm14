@@ -12329,7 +12329,7 @@ entities:
     - type: Transform
       pos: -33.393288,32.64253
       parent: 2
-- proto: BoxShotgunFlare
+- proto: Box12GaugeFlare
   entities:
   - uid: 3447
     components:

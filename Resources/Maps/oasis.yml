@@ -39398,7 +39398,7 @@ entities:
     - type: Transform
       pos: -28.464748,-17.253857
       parent: 2
-- proto: BoxLethalshot
+- proto: Box12GaugeBuckshot
   entities:
   - uid: 4197
     components:
@@ -39456,14 +39456,14 @@ entities:
     - type: Transform
       pos: 27.126343,-29.311195
       parent: 21002
-- proto: BoxShellTranquilizer
+- proto: Box12GaugeTranquilizer
   entities:
   - uid: 4195
     components:
     - type: Transform
       pos: -18.456379,-2.4510403
       parent: 2
-- proto: BoxShotgunSlug
+- proto: Box12GaugeSlug
   entities:
   - uid: 4199
     components:

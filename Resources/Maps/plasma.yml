@@ -25198,7 +25198,7 @@ entities:
     - type: Transform
       pos: -147.97498,-45.376217
       parent: 2
-- proto: BoxBeanbag
+- proto: Box12GaugeBeanbag
   entities:
   - uid: 6600
     components:

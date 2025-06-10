@@ -10,9 +10,9 @@
     WeaponRevolverArgenti: 1
     WeaponPistolUniversal: 1
     WeaponRevolverFaith: 1
-    BoxShotgunSlug: 1
-    BoxLethalshot: 1
-    BoxBeanbag: 1
+    Box12GaugeSlug: 1
+    Box12GaugeBuckshot: 1
+    Box12GaugeBeanbag: 1
     MagazineBox5.56x45mm: 2
     MagazineBox5.56x45mmRubber: 2
     MagazineBox7.62x39mm: 2
@@ -40,9 +40,9 @@
     WeaponRevolverArgenti: 4294967295
     WeaponPistolUniversal: 4294967295
     WeaponRevolverFaith: 4294967295
-    BoxShotgunSlug: 4294967295
-    BoxLethalshot: 4294967295
-    BoxBeanbag: 4294967295
+    Box12GaugeSlug: 4294967295
+    Box12GaugeBuckshot: 4294967295
+    Box12GaugeBeanbag: 4294967295
     MagazineBox5.56x45mm: 4294967295
     MagazineBox5.56x45mmRubber: 4294967295
     MagazineBox7.62x39mm: 4294967295
@@ -94,5 +94,5 @@
     MagazineBox7.62x39mmBig: 4294967295 # .30
     MagazineBoxPistolBig: 4294967295 # .35
     MagazineBox.45_magnum: 4294967295 # .45
-    BoxShotgunSlug: 4294967295
-    BoxLethalshot: 4294967295
+    Box12GaugeSlug: 4294967295
+    Box12GaugeBuckshot: 4294967295

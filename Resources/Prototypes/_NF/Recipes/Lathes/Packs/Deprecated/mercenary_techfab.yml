@@ -90,14 +90,14 @@
   - CrossbowModern
   - WeaponPistolPollock
 ## Ammo boxes
-  - BoxLethalshot
+  - Box12GaugeBuckshot
   - MagazineBox7.62x39mm
   - MagazineBoxPistol
   - MagazineBox5.56x45mm
   - CrossbowBolt
   - CrossbowBoltBroadhead
-  - BoxBeanbag
-  - BoxShotgunSlug
+  - Box12GaugeBeanbag
+  - Box12GaugeSlug
   - MagazineBox7.62x39mmRubber
   - MagazineBox.45_magnumRubber
   - MagazineBoxPistolRubber
@@ -204,8 +204,8 @@
   - WeaponLaserCannon
   - WeaponXrayCannon
 ## Ammo boxes
-  - BoxBeanbag
-  - BoxShellTranquilizer
+  - Box12GaugeBeanbag
+  - Box12GaugeTranquilizer
   - MagazineBox7.62x39mmRubber
   - MagazineBox.45_magnumRubber
   - MagazineBoxPistolRubber
@@ -215,8 +215,8 @@
 - type: latheRecipePack
   id: NFMercenaryTechfabDeprecatedEmag
   recipes:
-  - BoxShotgunIncendiary
-  - BoxShotgunUranium
+  - Box12GaugeIncendiary
+  - Box12GaugeUranium
   - MagazineBox7.62x39mmIncendiary
   - MagazineBox7.62x39mmUranium
   - MagazineBox.45_magnumIncendiary

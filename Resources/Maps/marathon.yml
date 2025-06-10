@@ -15441,7 +15441,7 @@ entities:
     - type: Transform
       pos: -7.493107,-6.5537953
       parent: 30
-- proto: BoxBeanbag
+- proto: Box12GaugeBeanbag
   entities:
   - uid: 444
     components:
@@ -15627,7 +15627,7 @@ entities:
     - type: Transform
       pos: -15.496401,-18.280874
       parent: 30
-- proto: BoxLethalshot
+- proto: Box12GaugeBuckshot
   entities:
   - uid: 16932
     components:

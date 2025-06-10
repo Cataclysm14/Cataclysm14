@@ -12070,7 +12070,7 @@ entities:
     - type: Transform
       pos: 82.3458,-6.40663
       parent: 2
-- proto: BoxBeanbag
+- proto: Box12GaugeBeanbag
   entities:
   - uid: 8432
     components:

@@ -205,9 +205,9 @@
   components:
   - type: SpawnItemsOnUse
     items:
-    - id: BoxLethalshot
+    - id: Box12GaugeBuckshot
       prob: 0.9
-    - id: BoxLethalshot
+    - id: Box12GaugeBuckshot
       prob: 0.2
     sound:
       path: /Audio/Items/jumpsuit_equip.ogg

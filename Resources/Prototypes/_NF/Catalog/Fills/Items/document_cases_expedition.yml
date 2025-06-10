@@ -7,7 +7,7 @@
   components:
   - type: StorageFill
     contents:
-    # - id: NFBlueprintBoxShotgunUranium # While funny I think we should move this to events
+    # - id: NFBlueprintBox12GaugeUranium # While funny I think we should move this to events
       # prob: 0.2
       # orGroup: Blueprints
     # - id: NFBlueprintMagazineBox5.56x45mmUranium
@@ -22,7 +22,7 @@
     # - id: NFBlueprintMagazineBoxPistolUranium
       # prob: 0.2
       # orGroup: Blueprints
-    # - id: NFBlueprintBoxShotgunIncendiary
+    # - id: NFBlueprintBox12GaugeIncendiary
       # prob: 0.2
       # orGroup: Blueprints
     # - id: NFBlueprintMagazineBox5.56x45mmIncendiary

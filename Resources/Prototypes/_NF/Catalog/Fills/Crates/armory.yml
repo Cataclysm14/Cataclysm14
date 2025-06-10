@@ -42,7 +42,7 @@
     contents:
       - id: WeaponShotgunKammererExpedition
         amount: 2
-      - id: BoxLethalshot
+      - id: Box12GaugeBuckshot
         amount: 3
 
 - type: entity
@@ -305,8 +305,8 @@
 - type: entity
   parent:
   - CrateAmmoSecureMercenary
-  - StorageFillAmmoBoxLethalShotgun
-  id: CrateAmmoBoxLethalShotgun
+  - StorageFillAmmoBox12GaugeBuckshotgun
+  id: CrateAmmoBox12GaugeBuckshotgun
   categories: [ HideSpawnMenu ]
 
 - type: entity
