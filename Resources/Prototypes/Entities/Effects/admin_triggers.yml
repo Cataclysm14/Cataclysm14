@@ -28,7 +28,7 @@
   - type: FlashOnTrigger
     range: 7
   - type: SpawnOnTrigger
-    proto: 40mmGrenadeFlashEffect
+    proto: GrenadeFlashEffect
 
 - type: entity
   id: AdminInstantEffectSmoke3

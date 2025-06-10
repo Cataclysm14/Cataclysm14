@@ -61,7 +61,7 @@
   parent: BaseGrenade
   components:
   - type: CartridgeAmmo
-    proto: BulletGrenadeBaton
+    proto: Bullet40mmGrenadeBaton
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     layers:
@@ -78,7 +78,7 @@
   parent: BaseGrenade
   components:
   - type: CartridgeAmmo
-    proto: BulletGrenadeBlast
+    proto: Bullet40mmGrenadeBlast
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     layers:
@@ -95,7 +95,7 @@
   parent: BaseGrenade
   components:
   - type: CartridgeAmmo
-    proto: BulletGrenadeFlash
+    proto: Bullet40mmGrenadeFlash
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     layers:
@@ -112,7 +112,7 @@
   parent: BaseGrenade
   components:
   - type: CartridgeAmmo
-    proto: BulletGrenadeFrag
+    proto: Bullet40mmGrenadeFrag
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     layers:
@@ -129,7 +129,7 @@
   parent: BaseGrenade
   components:
   - type: CartridgeAmmo
-    proto: BulletGrenadeEMP
+    proto: Bullet40mmGrenadeEMP
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     layers:

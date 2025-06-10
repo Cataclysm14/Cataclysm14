@@ -10790,7 +10790,7 @@ entities:
       parent: 104
     - type: PointLight
       radius: 175.75
-- proto: 40mmGrenadeFlashBang
+- proto: GrenadeFlashBang
   entities:
   - uid: 2309
     components:

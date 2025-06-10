@@ -38716,7 +38716,7 @@ entities:
     - type: Transform
       pos: -5.5,26.5
       parent: 1668
-- proto: 40mmGrenadeFlashBang
+- proto: GrenadeFlashBang
   entities:
   - uid: 2615
     components:
