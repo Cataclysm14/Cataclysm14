@@ -1,5 +1,5 @@
-
-#Base intermediate ammo for 5.56 and 5.45 and potential others
+# practice = TOTAL/10
+#Base intermediate ammo for 5.56 and 5.45 and potential others [TOTAL = 475]
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
@@ -10,13 +10,29 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: RubberAmmoIntermediateMagazineRecipe
+  id: AmmoRubberIntermediateMagazineRecipe
   abstract: true
   materials:
     Steel: 75
     Plastic: 400
 
-#Base Fully powered ammo for all the 7.62
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: AmmoIncendiaryIntermediateMagazineRecipe
+  abstract: true
+  materials:
+    Steel: 75
+    Plastic: 150
+    Plasma: 250
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: AmmoPracticeIntermediateMagazineRecipe
+  abstract: true
+  materials:
+    Steel: 47
+
+#Base Fully powered ammo for all the 7.62 [TOTAL = 575]
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
@@ -27,25 +43,90 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: RubberAmmoFullyPoweredMagazineRecipe
+  id: AmmoRubberFullyPoweredMagazineRecipe
   abstract: true
   materials:
     Steel: 125
     Plastic: 450
 
-#Base pistol ammo for .45 ACP, 9mm, 5.7mm, 4.6mm
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: AmmoIncendiaryFullyPoweredMagazineRecipe
+  abstract: true
+  materials:
+    Steel: 100
+    Plastic: 175
+    Plasma: 300
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: AmmoPracticeFullyPoweredMagazineRecipe
+  abstract: true
+  materials:
+    Steel: 57
+
+#Base pistol ammo for .45 ACP, 9mm, 5.7mm, 4.6mm [TOTAL = 175]
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoPistolMagazineRecipe
   abstract: true
   materials:
-    Steel: 150
+    Steel: 175
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: RubberAmmoPistolMagazineRecipe
+  id: AmmoRubberPistolMagazineRecipe
+  abstract: true
+  materials:
+    Steel: 25
+    Plastic: 125
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: AmmoIncendiaryPistolMagazineRecipe
+  abstract: true
+  materials:
+    Steel: 25
+    Plastic: 50
+    Plasma: 100
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: AmmoPracticePistolMagazineRecipe
+  abstract: true
+  materials:
+    Steel: 17
+
+#Base smg ammo for .45 ACP, 9mm, 5.7mm, 4.6mm [TOTAL = 375]
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoSMGMagazineRecipe
+  abstract: true
+  materials:
+    Steel: 375
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: AmmoRubberSMGMagazineRecipe
+  abstract: true
+  materials:
+    Steel: 50
+    Plastic: 325
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: AmmoIncendiarySMGMagazineRecipe
   abstract: true
   materials:
     Steel: 75
-    Plastic: 150
+    Plastic: 100
+    Plasma: 200
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: AmmoPracticeSMGMagazineRecipe
+  abstract: true
+  materials:
+    Steel: 37

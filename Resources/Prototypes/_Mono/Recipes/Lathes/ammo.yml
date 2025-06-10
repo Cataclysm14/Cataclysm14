@@ -1,3 +1,5 @@
+# Various things
+
 - type: latheRecipe
   parent: BaseWeaponRecipeLong
   id: CartridgeRocket
@@ -6,3 +8,5 @@
     Steel: 250
     Plastic: 250
     Plasma: 1000
+
+# All the ammo
