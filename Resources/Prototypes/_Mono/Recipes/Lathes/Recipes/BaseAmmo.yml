@@ -1,0 +1,51 @@
+
+#Base intermediate ammo for 5.56 and 5.45 and potential others
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoIntermediateMagazineRecipe
+  abstract: true
+  materials:
+    Steel: 475
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: RubberAmmoIntermediateMagazineRecipe
+  abstract: true
+  materials:
+    Steel: 75
+    Plastic: 150
+
+#Base Fully powered ammo for all the 7.62
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoFullyPoweredMagazineRecipe
+  abstract: true
+  materials:
+    Steel: 575
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: RubberAmmoFullyPoweredMagazineRecipe
+  abstract: true
+  materials:
+    Steel: 75
+    Plastic: 150
+
+#Base pistol ammo for .45 ACP, 9mm, 5.7mm, 4.6mm
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoPistolMagazineRecipe
+  abstract: true
+  materials:
+    Steel: 150
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: RubberAmmoPistolMagazineRecipe
+  abstract: true
+  materials:
+    Steel: 75
+    Plastic: 150
