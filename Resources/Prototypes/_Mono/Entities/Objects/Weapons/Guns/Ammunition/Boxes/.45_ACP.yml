@@ -1,0 +1,140 @@
+- type: entity
+  abstract: true
+  parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
+  id: BaseMagazineBoxPistol
+  name: ammunition box (.45 ACP FMJ)
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge.45_ACPFMJ
+    proto: Cartridge.45_ACPFMJ
+    capacity: 70 # 60->70 Two mags per box
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi # Frontier: _NF prefix
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+# Boxes
+- type: entity # Mono Big Pistol Mags
+  parent: BaseMagazineBoxPistol
+  id: MagazineBoxPistolBig
+  name: ammunition box (.45 ACP FMJ)
+  suffix: Big
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 280 # 8 mags per box similar to rifle box
+    proto: Cartridge.45_ACPFMJ
+  - type: Sprite
+    layers:
+    - state: base-b # Frontier: base-big<base-b
+      map: ["enum.GunVisualLayers.Base"]
+    - state: magb-1 # Frontier: mag-big-1<magb-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: magb # Frontier: mag-big<magb
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseMagazineBoxPistol
+  id: MagazineBoxPistol
+  name: ammunition box (.45 ACP FMJ)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge.45_ACPFMJ
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: BaseMagazineBoxPistol
+  id: MagazineBoxPistolPractice
+  name: ammunition box (.45 ACP practice)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge.45_ACPPractice
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: practice
+
+- type: entity
+  parent: BaseMagazineBoxPistol
+  id: MagazineBoxPistolIncendiary
+  name: ammunition box (.45 ACP incendiary)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge.45_ACPIncendiary
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: incendiary
+
+- type: entity
+  id: MagazineBoxPistolUranium
+  parent: BaseMagazineBoxPistol
+  name: ammunition box (.45 ACP uranium)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge.45_ACPUranium
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: uranium
+
+# Upstream
+- type: entity
+  parent: BaseMagazineBoxPistol
+  id: MagazineBoxPistolRubber
+  name: ammunition box (.45 ACP rubber)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge.45_ACPRubber
+  - type: Sprite
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: rubber
+
+# Frontier
+- type: entity
+  parent: BaseMagazineBoxPistol
+  id: MagazineBoxPistolEmp
+  name: ammunition box (.45 ACP emp)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge.45_ACPEmp
+  - type: Sprite
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: emp

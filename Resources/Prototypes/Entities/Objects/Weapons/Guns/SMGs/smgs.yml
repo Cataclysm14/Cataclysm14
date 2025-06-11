@@ -128,7 +128,7 @@
   name: Drozd
   parent: [BaseWeaponSubMachineGun, BaseC2ContrabandUnredeemable] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
   id: WeaponSubMachineGunDrozd
-  description: An excellent fully automatic Heavy SMG. An illegal firearm often used by Syndicate agents.
+  description: An excellent fully automatic Heavy SMG. Uses .45 ACP ammo. An illegal firearm often used by Syndicate agents.
   components:
     - type: Sprite
       sprite: _NF/Objects/Weapons/Guns/SMGs/drozd.rsi # Frontier: add _NF prefix
@@ -161,21 +161,21 @@
       slots:
         gun_magazine:
           name: Magazine
-          startingItem: Magazine9x19mmSubMachineGun
+          startingItem: Magazine.45_ACPSubMachineGun
           insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
           ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
           priority: 2
           whitelist:
             tags:
-              - Magazine9x19mmSubMachineGun
+              - Magazine.45_ACPSubMachineGun
           whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:
           name: Chamber
-          startingItem: Cartridge9x19mmFMJ
+          startingItem: Cartridge.45_ACPFMJ
           priority: 1
           whitelist:
             tags:
-              - Cartridge9x19mmFMJ
+              - Cartridge.45_ACPFMJ
     - type: MagazineVisuals
       magState: mag
       steps: 1
@@ -191,7 +191,7 @@
   name: WT550
   parent: [ BaseWeaponSubMachineGun, BaseC2ContrabandUnredeemable ] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
   id: WeaponSubMachineGunWt550
-  description: An excellent SMG, produced by NanoTrasen's Small Arms Division. Uses 9x19mm ammo. On the receiver is a label that says 'for authorized use only.'
+  description: An excellent SMG, produced by NanoTrasen's Small Arms Division. Uses 4.6x30mm ammo. On the receiver is a label that says 'for authorized use only.'
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/SMGs/wt550.rsi
@@ -228,21 +228,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine9x19mmSubMachineGunTopMounted
+        startingItem: Magazine4.6x30mmSubMachineGunTopMounted
         insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine9x19mmSubMachineGunTopMounted
+            - Magazine4.6x30mmSubMachineGunTopMounted
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge9x19mmFMJ
+        startingItem: Cartridge4.6x30mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge9x19mmFMJ
+            - Cartridge4.6x30mmFMJ
   - type: MagazineVisuals
     magState: mag
     steps: 6

@@ -1,0 +1,103 @@
+- type: entity
+  id: BaseCartridge.45_ACP
+  name: cartridge (.45 ACP FMJ)
+  parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - Cartridge.45_ACPFMJ
+  - type: CartridgeAmmo
+    proto: Bullet.45_ACP
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+
+- type: entity
+  id: Cartridge.45_ACPFMJ
+  name: cartridge (.45 ACP FMJ)
+  parent: BaseCartridge.45_ACP
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet.45_ACP
+
+- type: entity
+  id: Cartridge.45_ACPPractice
+  name: cartridge (.45 ACP practice)
+  parent: BaseCartridge.45_ACP
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet.45_ACPPractice
+  -  type: Sprite
+     layers:
+       - state: base
+         map: [ "enum.AmmoVisualLayers.Base" ]
+       - state: tip
+         map: [ "enum.AmmoVisualLayers.Tip" ]
+         color: "#dbdbdb"
+
+- type: entity
+  id: Cartridge.45_ACPIncendiary
+  name: cartridge (.45 ACP incendiary)
+  parent: BaseCartridge.45_ACP
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet.45_ACPIncendiary
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#ff6e52"
+
+- type: entity
+  id: Cartridge.45_ACPUranium
+  name: cartridge (.45 ACP uranium)
+  parent: BaseCartridge.45_ACP
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet.45_ACPUranium
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#65fe08"
+
+# Upstream
+- type: entity
+  id: Cartridge.45_ACPRubber
+  name: cartridge (.45 ACP rubber)
+  parent: BaseCartridge.45_ACP
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet.45_ACPRubber
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#43c4f7"
+
+# Frontier
+- type: entity
+  id: Cartridge.45_ACPEmp
+  name: cartridge (.45 ACP emp)
+  parent: BaseCartridge.45_ACP
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet.45_ACPEmp
+  - type: EmpDescription
+    range: 0.3
+    energyConsumption: 2700000
+    disableDuration: 10
