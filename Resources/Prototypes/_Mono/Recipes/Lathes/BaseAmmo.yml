@@ -1,9 +1,9 @@
 # practice/empty = TOTAL/10
-# boxes = magazine * 3
+# boxes = magazine * 3-ish
 #.45 magnum gonna use intermediate
 
 #Base intermediate ammo magazines for 5.56 and 5.45 and potential others 
-#Boxes:     [TOTAL = 1425]
+#Magazines:     [TOTAL = 475]
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
@@ -53,6 +53,52 @@
 
 #Base intermediate ammo boxes for 5.56 and 5.45 and potential others 
 #Boxes:     [TOTAL = 1425]
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoFMJIntermediateAmmoBoxRecipe
+  abstract: true
+  materials:
+    Steel: 1425
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoRubberIntermediateAmmoBoxRecipe
+  abstract: true
+  materials:
+    Steel: 570
+    Plastic: 855
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoIncendiaryIntermediateAmmoBoxRecipe
+  abstract: true
+  materials:
+    Steel: 285
+    Plastic: 285
+    Plasma: 855
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoPracticeIntermediateAmmoBoxRecipe
+  abstract: true
+  materials:
+    Steel: 142
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoEmptyIntermediateAmmoBoxRecipe
+  abstract: true
+  materials:
+    Steel: 142
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoUraniumIntermediateAmmoBoxRecipe
+  abstract: true
+  materials:
+    Steel: 570
+    Uranium: 855
 
 #Base Fully powered ammo magazines for all the 7.62 
 #Magazines: [TOTAL = 575]
