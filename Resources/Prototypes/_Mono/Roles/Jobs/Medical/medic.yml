@@ -1,0 +1,40 @@
+- type: job
+  id: MdMedic
+  name: job-name-md-medic
+  description: job-description-md-medic
+  playTimeTracker: MdMedic
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 54000 # 15 hrs
+  startingGear: MdMedicGear
+  alwaysUseSpawner: true
+  icon: "JobIconMedicalDoctor"
+  supervisors: job-supervisors-doc
+  weight: 170
+  displayWeight: 55 # Second from the top
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, TrackingImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+        - TSFMC
+      - type: SurgerySpeedModifier
+        SpeedModifier: 2
+  - !type:GiveItemOnHolidaySpecial
+    holiday: FrontierBirthday
+    prototype: FrontierBirthdayGift
+
+- type: startingGear
+  id: MdMedicGear
+  equipment:
+    pocket1: HypoMini
+    pocket2: MedicalAppraisalTool
+  storage:
+    back:
+    - RubberStampDoc
+    - BoxFolderMedicalDoctor

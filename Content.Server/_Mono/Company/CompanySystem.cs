@@ -35,6 +35,7 @@ public sealed class CompanySystem : EntitySystem
         "NFDetective",
         "PublicAffairsLiaison",
         "DirectorOfCare",
+        "MdMedic",
         "SecurityGuard",
         "Cadet"
     };
