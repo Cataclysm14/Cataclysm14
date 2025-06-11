@@ -1,41 +1,41 @@
-- type entity
-  categories [ HideSpawnMenu ]
-  parent BaseBullet
-  id Bullet12.7x99mm
-  name bullet (12.7x99mm anti-material)
-  components
-  - type Projectile
-    damage
-      types
-        Piercing 65
-        Structural 2000 # if you were a wall would you like having a .50 cal anti materiel round go through you (this breaks a normal wall in 3 shots, one mag goes through four normal walls, 10 rounds to take down a reinforced wall)
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: Bullet12.7x99mm
+  name: bullet (12.7x99mm anti-material)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 65
+        Structural: 2000 # if you were a wall would you like having a .50 cal anti materiel round go through you (this breaks a normal wall in 3 shots, one mag goes through four normal walls, 10 rounds to take down a reinforced wall)
 
-- type entity
-  categories [ HideSpawnMenu ]
-  parent BaseBulletTrigger
-  id Bullet12.7x99mmExplosive
-  name bullet (12.7x99mm high-explosive)
-  components
-  - type Projectile
-    damage
-      types
-        Piercing 10
-        Heat 8
-        Structural 20
-  - type ExplodeOnTrigger
-  - type Explosive
-    explosionType Default
-    maxIntensity 2
-    intensitySlope 2
-    totalIntensity 18 # 30 damage per tile
-    maxTileBreak 0
-  - type PointLight
-    radius 3.5
-    color orange
-    energy 0.5
-  - type Sprite
-    noRot false
-    sprite ObjectsWeaponsGunsProjectilesprojectiles2.rsi
-    layers
-    - state bullet
-      shader unshaded
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: Bullet12.7x99mmExplosive
+  name: bullet (12.7x99mm high-explosive)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10
+        Heat: 8
+        Structural: 20
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 2
+    intensitySlope: 2
+    totalIntensity: 18 # 30 damage per tile
+    maxTileBreak: 0
+  - type: PointLight
+    radius: 3.5
+    color: orange
+    energy: 0.5
+  - type: Sprite
+    noRot: false
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: bullet
+      shader: unshaded

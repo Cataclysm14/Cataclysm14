@@ -86,7 +86,7 @@
         map: [ "enum.AmmoVisualLayers.Base" ]
       - state: tip
         map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#43c4f7"µ
+        color: "#43c4f7"
 
 - type: entity
   id: Cartridge7.62x39mmSubsonic
