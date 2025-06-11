@@ -8,7 +8,7 @@
     WeaponRifleNovaliteC1: 1
     WeaponShotgunDoubleBarreled: 1
     WeaponRevolverArgenti: 1
-    WeaponPistolUniversal: 1
+    WeaponPistolMk32: 1
     WeaponRevolverFaith: 1
     Box12GaugeSlug: 1
     Box12GaugeBuckshot: 1
@@ -38,7 +38,7 @@
     WeaponRifleNovaliteC1: 4294967295
     WeaponShotgunDoubleBarreled: 4294967295
     WeaponRevolverArgenti: 4294967295
-    WeaponPistolUniversal: 4294967295
+    WeaponPistolMk32: 4294967295
     WeaponRevolverFaith: 4294967295
     Box12GaugeSlug: 4294967295
     Box12GaugeBuckshot: 4294967295
@@ -76,7 +76,7 @@
 # Sidearms
     WeaponShotgunSawn: 4294967295
     WeaponPistolViperPMC: 4294967295
-    WeaponPistolUniversal: 4294967295
+    WeaponPistolMk32: 4294967295
     Machete: 4294967295
     KukriKnife: 4294967295
     CombatKnife: 4294967295

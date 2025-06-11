@@ -86,4 +86,24 @@
         map: [ "enum.AmmoVisualLayers.Base" ]
       - state: tip
         map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#43c4f7"
+        color: "#43c4f7"µ
+
+- type: entity
+  id: Cartridge7.62x39mmSubsonic
+  name: cartridge (7.62x39mm subsonic)
+  parent: BaseCartridge7.62x39mm
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge7.62x39mmFMJ
+    - Cartridge7.62x39mmSubsonic
+  - type: CartridgeAmmo
+    proto: Bullet7.62x39mmSubsonic
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#00f8ff"

@@ -21,10 +21,10 @@
     components:
       - type: SurgerySpeedModifier
         SpeedModifier: 1.25
-    
+
 
 - type: startingGear
   id: PilotGear
   storage:
     back:
-    - WeaponPistolUniversal
+    - WeaponPistolMk32

@@ -228,7 +228,7 @@
   name: mk 58
   parent: [BaseWeaponPistol, BaseC1Contraband] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable<BaseC1Contraband to match weapon description
   id: WeaponPistolMk58
-  description: A cheap, civilian grade, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Uses .45 ACP ammo.
+  description: The Mark 58 Offensive Handgun, produced by NanoTrasen's Small Arms Division. Uses .45 ACP ammo.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
