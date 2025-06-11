@@ -106,6 +106,52 @@
 #Base Fully powered ammo boxes for all the 7.62 
 #Boxes:     [TOTAL = 1725]
 
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoFMJFullyPoweredAmmoBoxRecipe
+  abstract: true
+  materials:
+    Steel: 1725
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoRubberFullyPoweredAmmoBoxRecipe
+  abstract: true
+  materials:
+    Steel: 345
+    Plastic: 1380
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoIncendiaryFullyPoweredAmmoBoxRecipe
+  abstract: true
+  materials:
+    Steel: 345
+    Plastic: 345
+    Plasma: 1035
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoPracticeFullyPoweredAmmoBoxRecipe
+  abstract: true
+  materials:
+    Steel: 172
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoEmptyFullyPoweredAmmoBoxRecipe
+  abstract: true
+  materials:
+    Steel: 172
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoUraniumFullyPoweredAmmoBoxRecipe
+  abstract: true
+  materials:
+    Steel: 575
+    Uranium: 1150
+
 #Base pistol caliber magazines ammo for .45 ACP, 9mm, 5.7mm, 4.6mm
 #Magazines: [TOTAL = 175]
 
@@ -209,46 +255,46 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: BaseAmmoFMJPistolCaliberSMGMagazineRecipe
+  id: BaseAmmoFMJPistolCaliberAmmoBoxRecipe
+  abstract: true
+  materials:
+    Steel: 1125
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoRubberPistolCaliberAmmoBoxRecipe
+  abstract: true
+  materials:
+    Steel: 175
+    Plastic: 950
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoIncendiaryPistolCaliberAmmoBoxRecipe
+  abstract: true
+  materials:
+    Steel: 225
+    Plastic: 450
+    Plasma: 675
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoPracticePistolCaliberAmmoBoxRecipe
+  abstract: true
+  materials:
+    Steel: 112
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoEmptyPistolCaliberAmmoBoxRecipe
+  abstract: true
+  materials:
+    Steel: 112
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoUraniumPistolCaliberAmmoBoxRecipe
   abstract: true
   materials:
     Steel: 375
-
-- type: latheRecipe
-  parent: BaseAmmoRecipe
-  id: BaseAmmoRubberPistolCaliberSMGMagazineRecipe
-  abstract: true
-  materials:
-    Steel: 50
-    Plastic: 325
-
-- type: latheRecipe
-  parent: BaseAmmoRecipe
-  id: BaseAmmoIncendiaryPistolCaliberSMGMagazineRecipe
-  abstract: true
-  materials:
-    Steel: 75
-    Plastic: 100
-    Plasma: 200
-
-- type: latheRecipe
-  parent: BaseAmmoRecipe
-  id: BaseAmmoPracticePistolCaliberSMGMagazineRecipe
-  abstract: true
-  materials:
-    Steel: 37
-
-- type: latheRecipe
-  parent: BaseAmmoRecipe
-  id: BaseAmmoEmptyPistolCaliberSMGMagazineRecipe
-  abstract: true
-  materials:
-    Steel: 37
-
-- type: latheRecipe
-  parent: BaseAmmoRecipe
-  id: BaseAmmoUraniumPistolCaliberSMGMagazineRecipe
-  abstract: true
-  materials:
-    Steel: 125
-    Uranium: 250
+    Uranium: 750
