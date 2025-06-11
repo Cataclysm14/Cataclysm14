@@ -93,7 +93,7 @@
           priority: 2
           whitelist:
             tags:
-              - Magazine5.7x28mmPSubMachineGun
+              - Magazine5.7x28mmSubMachineGun
           whitelistFailPopup: gun-magazine-whitelist-fail
        gun_chamber:
           name: Chamber
