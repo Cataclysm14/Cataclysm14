@@ -14,43 +14,43 @@
 
 - type: entity
   parent: BaseBlueprintExpedition
-  id: NFBlueprintMagazineBox5.56x45mmUranium
+  id: NFBlueprintAmmoBox5.56x45mmUranium
   name: uranium 5.56x45mm blueprint
   description: A blueprint with a schematic of an uranium 5.56x45mm ammo. It can be inserted into an autolathe or a techfab.
   components:
   - type: Blueprint
     providedRecipes:
-    - MagazineBox5.56x45mmUranium
+    - AmmoBox5.56x45mmUranium
 
 - type: entity
   parent: BaseBlueprintExpedition
-  id: NFBlueprintMagazineBox7.62x39mmUranium
+  id: NFBlueprintAmmoBox7.62x39mmUranium
   name: uranium 7.62x39mm blueprint
   description: A blueprint with a schematic of an uranium 7.62x39mm ammo. It can be inserted into an autolathe or a techfab.
   components:
   - type: Blueprint
     providedRecipes:
-    - MagazineBox7.62x39mmUranium
+    - AmmoBox7.62x39mmUranium
 
 - type: entity
   parent: BaseBlueprintExpedition
-  id: NFBlueprintMagazineBox45_magnumUranium
+  id: NFBlueprintAmmoBox45_magnumUranium
   name: uranium .45 magnum ammo blueprint
   description: A blueprint with a schematic of an uranium .45 magnum ammo. It can be inserted into an autolathe or a techfab.
   components:
   - type: Blueprint
     providedRecipes:
-    - MagazineBox45_magnumUranium
+    - AmmoBox45_magnumUranium
 
 - type: entity
   parent: BaseBlueprintExpedition
-  id: NFBlueprintMagazineBox9x19mmUranium
+  id: NFBlueprintAmmoBox9x19mmUranium
   name: uranium 9x19mm blueprint
   description: A blueprint with a schematic of an uranium 9x19mm. It can be inserted into an autolathe or a techfab.
   components:
   - type: Blueprint
     providedRecipes:
-    - MagazineBox9x19mmUranium
+    - AmmoBox9x19mmUranium
 
 ## Incendiary
 
@@ -66,43 +66,43 @@
 
 - type: entity
   parent: BaseBlueprintExpedition
-  id: NFBlueprintMagazineBox5.56x45mmIncendiary
+  id: NFBlueprintAmmoBox5.56x45mmIncendiary
   name: incendiary 5.56x45mm blueprint
   description: A blueprint with a schematic of an incendiary 5.56x45mm ammo. It can be inserted into an autolathe or a techfab.
   components:
   - type: Blueprint
     providedRecipes:
-    - MagazineBox5.56x45mmIncendiary
+    - AmmoBox5.56x45mmIncendiary
 
 - type: entity
   parent: BaseBlueprintExpedition
-  id: NFBlueprintMagazineBox7.62x39mmIncendiary
+  id: NFBlueprintAmmoBox7.62x39mmIncendiary
   name: incendiary 7.62x39mm blueprint
   description: A blueprint with a schematic of an incendiary 7.62x39mm ammo. It can be inserted into an autolathe or a techfab.
   components:
   - type: Blueprint
     providedRecipes:
-    - MagazineBox7.62x39mmIncendiary
+    - AmmoBox7.62x39mmIncendiary
 
 - type: entity
   parent: BaseBlueprintExpedition
-  id: NFBlueprintMagazineBox45_magnumIncendiary
+  id: NFBlueprintAmmoBox45_magnumIncendiary
   name: incendiary .45 magnum ammo blueprint
   description: A blueprint with a schematic of an incendiary .45 magnum ammo. It can be inserted into an autolathe or a techfab.
   components:
   - type: Blueprint
     providedRecipes:
-    - MagazineBox45_magnumIncendiary
+    - AmmoBox45_magnumIncendiary
 
 - type: entity
   parent: BaseBlueprintExpedition
-  id: NFBlueprintMagazineBox9x19mmIncendiary
+  id: NFBlueprintAmmoBox9x19mmIncendiary
   name: incendiary 9x19mm blueprint
   description: A blueprint with a schematic of an incendiary 9x19mm. It can be inserted into an autolathe or a techfab.
   components:
   - type: Blueprint
     providedRecipes:
-    - MagazineBox9x19mmIncendiary
+    - AmmoBox9x19mmIncendiary
 
 # Guns
 

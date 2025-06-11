@@ -15947,7 +15947,7 @@ entities:
     - type: Transform
       pos: -27.5,7.5
       parent: 1
-- proto: MagazineBox7.62x39mmPractice
+- proto: AmmoBox7.62x39mmPractice
   entities:
   - uid: 2263
     components:
@@ -15959,7 +15959,7 @@ entities:
     - type: Transform
       pos: -14.463586,16.659513
       parent: 1
-- proto: MagazineBox9x19mmPractice
+- proto: AmmoBox9x19mmPractice
   entities:
   - uid: 2265
     components:
@@ -15976,7 +15976,7 @@ entities:
     - type: Transform
       pos: -14.139512,16.44655
       parent: 1
-- proto: MagazineBox5.56x45mmPractice
+- proto: AmmoBox5.56x45mmPractice
   entities:
   - uid: 2268
     components:

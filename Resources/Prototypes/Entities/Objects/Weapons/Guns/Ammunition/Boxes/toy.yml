@@ -32,7 +32,7 @@
       - state: shelltoy
 
 - type: entity
-  parent: BaseMagazineBox45_magnum
+  parent: BaseAmmoBox45_magnum
   id: BoxCartridgeCap
   name: cap gun cartridge box
   components:

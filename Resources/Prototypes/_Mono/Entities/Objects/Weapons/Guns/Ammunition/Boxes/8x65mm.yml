@@ -1,7 +1,7 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseMagazineBoxDMR
+  id: BaseAmmoBoxDMR
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -25,8 +25,8 @@
 
 # Boxes
 - type: entity
-  parent: BaseMagazineBoxDMR
-  id: MagazineBoxDMR
+  parent: BaseAmmoBoxDMR
+  id: AmmoBoxDMR
   name: ammunition box (8x65mm SKR)
   components:
   - type: BallisticAmmoProvider

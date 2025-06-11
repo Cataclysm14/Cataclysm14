@@ -51,7 +51,7 @@
       amount: 1
     - id: Magazine6.35x40mmCaselessPistol
       amount: 1
-    - id: MagazineBox6.35x40mmCaseless
+    - id: AmmoBox6.35x40mmCaseless
       amount: 1
 
 - type: entity
@@ -290,7 +290,7 @@
       amount: 1
     - id: Magazine9x19mmSubMachineGunTopMounted
       amount: 2
-    - id: MagazineBox9x19mmFMJ
+    - id: AmmoBox9x19mmFMJ
       amount: 1
 
 - type: entity
@@ -305,7 +305,7 @@
       amount: 1
     - id: Magazine9x19mmSubMachineGun
       amount: 2
-    - id: MagazineBox9x19mmFMJ
+    - id: AmmoBox9x19mmFMJ
       amount: 2
 
 - type: entity
@@ -320,7 +320,7 @@
       amount: 1
     - id: Magazine9x19mmSubMachineGun
       amount: 2
-    - id: MagazineBox9x19mmFMJ
+    - id: AmmoBox9x19mmFMJ
       amount: 1
 
 - type: entity
@@ -335,7 +335,7 @@
       amount: 1
     - id: Magazine9x19mmSubMachineGun
       amount: 2
-    - id: MagazineBox9x19mmFMJ
+    - id: AmmoBox9x19mmFMJ
       amount: 2
 
 - type: entity
@@ -350,7 +350,7 @@
       amount: 1
     - id: Magazine9x19mmSubMachineGun
       amount: 2
-    - id: MagazineBox9x19mmFMJ
+    - id: AmmoBox9x19mmFMJ
       amount: 2
 
 # Rifles
@@ -549,7 +549,7 @@
     contents:
     - id: WeaponSniperMosinExpedition
       amount: 1
-    - id: MagazineBox7.62x39mmFMJ
+    - id: AmmoBox7.62x39mmFMJ
       amount: 2
 
 - type: entity
@@ -562,7 +562,7 @@
     contents:
     - id: WeaponSniperHristov
       amount: 1
-    - id: MagazineBox14.5x114mm
+    - id: AmmoBox14.5x114mm
       amount: 2
 
 - type: entity
@@ -575,7 +575,7 @@
     contents:
     - id: WeaponSniperRepeater
       amount: 1
-    - id: MagazineBox45_magnum
+    - id: AmmoBox45_magnum
       amount: 2
 
 - type: entity
@@ -588,7 +588,7 @@
     contents:
     - id: WeaponMusketExpedition
       amount: 1
-    - id: MagazineBox14.5x114mm
+    - id: AmmoBox14.5x114mm
       amount: 2
 
 - type: entity
@@ -601,7 +601,7 @@
     contents:
     - id: WeaponSniperCeremonialExpedition
       amount: 1
-    - id: MagazineBox7.62x39mmFMJ
+    - id: AmmoBox7.62x39mmFMJ
       amount: 2
 
 # Launchers

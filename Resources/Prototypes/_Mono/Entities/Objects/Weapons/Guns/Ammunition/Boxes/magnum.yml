@@ -1,7 +1,7 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseMagazineBox45_magnum
+  id: BaseAmmoBox45_magnum
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -25,8 +25,8 @@
 
 # Boxes
 - type: entity
-  parent: BaseMagazineBox45_magnum
-  id: MagazineBox45_magnum
+  parent: BaseAmmoBox45_magnum
+  id: AmmoBox45_magnum
   name: ammunition box (.45 magnum)
   components:
   - type: BallisticAmmoProvider
@@ -39,8 +39,8 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  parent: BaseMagazineBox45_magnum
-  id: MagazineBox45_magnumPractice
+  parent: BaseAmmoBox45_magnum
+  id: AmmoBox45_magnumPractice
   name: ammunition box (.45 magnum practice)
   components:
   - type: BallisticAmmoProvider
@@ -54,8 +54,8 @@
     - state: practice
 
 - type: entity
-  id: MagazineBox45_magnumIncendiary
-  parent: BaseMagazineBox45_magnum
+  id: AmmoBox45_magnumIncendiary
+  parent: BaseAmmoBox45_magnum
   name: ammunition box (.45 magnum incendiary)
   components:
   - type: BallisticAmmoProvider
@@ -69,8 +69,8 @@
     - state: incendiary
 
 - type: entity
-  id: MagazineBox45_magnumUranium
-  parent: BaseMagazineBox45_magnum
+  id: AmmoBox45_magnumUranium
+  parent: BaseAmmoBox45_magnum
   name: ammunition box (.45 magnum uranium)
   components:
   - type: BallisticAmmoProvider
@@ -84,8 +84,8 @@
     - state: uranium
 
 - type: entity
-  id: MagazineBox45_magnumAP
-  parent: BaseMagazineBox45_magnum
+  id: AmmoBox45_magnumAP
+  parent: BaseAmmoBox45_magnum
   name: ammunition box (.45 magnum armor-piercing)
   components:
   - type: BallisticAmmoProvider
@@ -99,8 +99,8 @@
     - state: piercing
 
 - type: entity
-  parent: BaseMagazineBox45_magnum
-  id: MagazineBox45_magnumRubber
+  parent: BaseAmmoBox45_magnum
+  id: AmmoBox45_magnumRubber
   name: ammunition box (.45 magnum rubber)
   components:
   - type: BallisticAmmoProvider

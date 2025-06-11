@@ -399,8 +399,8 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: MagazineBoxDMR
-  result: MagazineBoxDMR
+  id: AmmoBoxDMR
+  result: AmmoBoxDMR
   materials:
     Steel: 1200
 

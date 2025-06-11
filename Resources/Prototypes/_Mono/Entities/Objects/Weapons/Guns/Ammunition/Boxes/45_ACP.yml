@@ -1,7 +1,7 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseMagazineBox45_ACP
+  id: BaseAmmoBox45_ACP
   name: ammunition box (.45 ACP FMJ)
   components:
   - type: BallisticAmmoProvider
@@ -26,8 +26,8 @@
 
 # Boxes
 - type: entity # Mono Big Pistol Mags
-  parent: BaseMagazineBox45_ACP
-  id: MagazineBox45_ACPBigFMJ
+  parent: BaseAmmoBox45_ACP
+  id: AmmoBox45_ACPBigFMJ
   name: ammunition box (.45 ACP FMJ)
   suffix: Big
   components:
@@ -47,8 +47,8 @@
   - type: Appearance
 
 - type: entity
-  parent: BaseMagazineBox45_ACP
-  id: MagazineBox45_ACPFMJ
+  parent: BaseAmmoBox45_ACP
+  id: AmmoBox45_ACPFMJ
   name: ammunition box (.45 ACP FMJ)
   components:
   - type: BallisticAmmoProvider
@@ -61,8 +61,8 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  parent: BaseMagazineBox45_ACP
-  id: MagazineBox45_ACPPractice
+  parent: BaseAmmoBox45_ACP
+  id: AmmoBox45_ACPPractice
   name: ammunition box (.45 ACP practice)
   components:
   - type: BallisticAmmoProvider
@@ -76,8 +76,8 @@
     - state: practice
 
 - type: entity
-  parent: BaseMagazineBox45_ACP
-  id: MagazineBox45_ACPIncendiary
+  parent: BaseAmmoBox45_ACP
+  id: AmmoBox45_ACPIncendiary
   name: ammunition box (.45 ACP incendiary)
   components:
   - type: BallisticAmmoProvider
@@ -91,8 +91,8 @@
     - state: incendiary
 
 - type: entity
-  id: MagazineBox45_ACPUranium
-  parent: BaseMagazineBox45_ACP
+  id: AmmoBox45_ACPUranium
+  parent: BaseAmmoBox45_ACP
   name: ammunition box (.45 ACP uranium)
   components:
   - type: BallisticAmmoProvider
@@ -107,8 +107,8 @@
 
 # Upstream
 - type: entity
-  parent: BaseMagazineBox45_ACP
-  id: MagazineBox45_ACPRubber
+  parent: BaseAmmoBox45_ACP
+  id: AmmoBox45_ACPRubber
   name: ammunition box (.45 ACP rubber)
   components:
   - type: BallisticAmmoProvider
@@ -124,8 +124,8 @@
 
 # Frontier
 - type: entity
-  parent: BaseMagazineBox45_ACP
-  id: MagazineBox45_ACPEmp
+  parent: BaseAmmoBox45_ACP
+  id: AmmoBox45_ACPEmp
   name: ammunition box (.45 ACP emp)
   components:
   - type: BallisticAmmoProvider

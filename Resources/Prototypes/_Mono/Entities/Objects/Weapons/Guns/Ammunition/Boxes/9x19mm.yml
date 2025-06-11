@@ -1,7 +1,7 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseMagazineBox9x19mm
+  id: BaseAmmoBox9x19mm
   name: ammunition box (9x19mm FMJ)
   components:
   - type: BallisticAmmoProvider
@@ -26,8 +26,8 @@
 
 # Boxes
 - type: entity # Mono Big Pistol Mags
-  parent: BaseMagazineBox9x19mm
-  id: MagazineBox9x19mmBigFMJ
+  parent: BaseAmmoBox9x19mm
+  id: AmmoBox9x19mmBigFMJ
   name: ammunition box (9x19mm FMJ)
   suffix: Big
   components:
@@ -47,8 +47,8 @@
   - type: Appearance
 
 - type: entity
-  parent: BaseMagazineBox9x19mm
-  id: MagazineBox9x19mmFMJ
+  parent: BaseAmmoBox9x19mm
+  id: AmmoBox9x19mmFMJ
   name: ammunition box (9x19mm FMJ)
   components:
   - type: BallisticAmmoProvider
@@ -61,8 +61,8 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  parent: BaseMagazineBox9x19mm
-  id: MagazineBox9x19mmPractice
+  parent: BaseAmmoBox9x19mm
+  id: AmmoBox9x19mmPractice
   name: ammunition box (9x19mm practice)
   components:
   - type: BallisticAmmoProvider
@@ -76,8 +76,8 @@
     - state: practice
 
 - type: entity
-  parent: BaseMagazineBox9x19mm
-  id: MagazineBox9x19mmIncendiary
+  parent: BaseAmmoBox9x19mm
+  id: AmmoBox9x19mmIncendiary
   name: ammunition box (9x19mm incendiary)
   components:
   - type: BallisticAmmoProvider
@@ -91,8 +91,8 @@
     - state: incendiary
 
 - type: entity
-  id: MagazineBox9x19mmUranium
-  parent: BaseMagazineBox9x19mm
+  id: AmmoBox9x19mmUranium
+  parent: BaseAmmoBox9x19mm
   name: ammunition box (9x19mm uranium)
   components:
   - type: BallisticAmmoProvider
@@ -107,8 +107,8 @@
 
 # Upstream
 - type: entity
-  parent: BaseMagazineBox9x19mm
-  id: MagazineBox9x19mmRubber
+  parent: BaseAmmoBox9x19mm
+  id: AmmoBox9x19mmRubber
   name: ammunition box (9x19mm rubber)
   components:
   - type: BallisticAmmoProvider
@@ -124,8 +124,8 @@
 
 # Frontier
 - type: entity
-  parent: BaseMagazineBox9x19mm
-  id: MagazineBox9x19mmEmp
+  parent: BaseAmmoBox9x19mm
+  id: AmmoBox9x19mmEmp
   name: ammunition box (9x19mm emp)
   components:
   - type: BallisticAmmoProvider

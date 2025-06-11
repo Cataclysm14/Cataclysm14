@@ -84,7 +84,7 @@
   id: UplinkSecurityBoxSubsonic
   name:  uplink-subsonic-box-name
   description: uplink-subsonic-box-desc
-  productEntity: MagazineBox7.62x39mmSubsonic
+  productEntity: AmmoBox7.62x39mmSubsonic
   cost:
     FederationMilitaryCredit: 3
   categories:

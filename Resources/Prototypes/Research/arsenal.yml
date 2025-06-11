@@ -38,10 +38,10 @@
 #   - Magazine7.62x39mmIncendiary
 #   - SpeedLoader45_magnumIncendiary
 #   - MagazineShotgunIncendiary
-#   - MagazineBox9x19mmIncendiary
-#   - MagazineBox45_magnumIncendiary
-#   - MagazineBox7.62x39mmIncendiary
-#   - MagazineBox5.56x45mmIncendiary
+#   - AmmoBox9x19mmIncendiary
+#   - AmmoBox45_magnumIncendiary
+#   - AmmoBox7.62x39mmIncendiary
+#   - AmmoBox5.56x45mmIncendiary
 # #   - SpeedLoader5.56x45mmIncendiary # Frontier
 
 # End Frontier: restricted arsenal research
@@ -73,10 +73,10 @@
   - Box12GaugeTranquilizer
   - Box12GaugeBeanbag
   - WeaponDisabler
-  - MagazineBox7.62x39mmRubber # Frontier
-  - MagazineBox45_magnumRubber # Frontier
-  - MagazineBox9x19mmRubber # Frontier
-  - MagazineBox5.56x45mmRubber # Frontier
+  - AmmoBox7.62x39mmRubber # Frontier
+  - AmmoBox45_magnumRubber # Frontier
+  - AmmoBox9x19mmRubber # Frontier
+  - AmmoBox5.56x45mmRubber # Frontier
   - WeaponMechCombatDisabler # Goobstation
 
 # Frontier: restricted arsenal research
@@ -96,10 +96,10 @@
 #   - Magazine9x19mmSubMachineGunUranium
 #   - Magazine7.62x39mmUranium
 #   - SpeedLoader45_magnumUranium
-#   - MagazineBox9x19mmUranium
-#   - MagazineBox45_magnumUranium
-#   - MagazineBox7.62x39mmUranium
-#   - MagazineBox5.56x45mmUranium
+#   - AmmoBox9x19mmUranium
+#   - AmmoBox45_magnumUranium
+#   - AmmoBox7.62x39mmUranium
+#   - AmmoBox5.56x45mmUranium
 #   - Box12GaugeUranium
 # #  - SpeedLoader5.56x45mmUranium # Frontier
 

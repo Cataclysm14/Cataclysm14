@@ -50,11 +50,11 @@ Cartridge7.62x39mmHighVelocity: Cartridge7.62x39mmFMJ
 Cartridge45_magnumHighVelocity: Cartrdige45_magnumFMJ
 Cartridge9x19mmHighVelocity: Cartridge9x19mmFMJ
 Cartridge5.56x45mmHighVelocity: Cartridge5.56x45mmFMJ
-MagazineBox6.35x40mmCaselessHighVelocity: MagazineBox6.35x40mmCaseless
-MagazineBox7.62x39mmHighVelocity: MagazineBox7.62x39mmFMJ
-MagazineBox45_magnumHighVelocity: MagazineBox45_magnum
-MagazineBox9x19mmHighVelocity: MagazineBox9x19mmFMJ
-MagazineBox5.56x45mmHighVelocity: MagazineBox5.56x45mmFMJ
+AmmoBox6.35x40mmCaselessHighVelocity: AmmoBox6.35x40mmCaseless
+AmmoBox7.62x39mmHighVelocity: AmmoBox7.62x39mmFMJ
+AmmoBox45_magnumHighVelocity: AmmoBox45_magnum
+AmmoBox9x19mmHighVelocity: AmmoBox9x19mmFMJ
+AmmoBox5.56x45mmHighVelocity: AmmoBox5.56x45mmFMJ
 Magazine6.35x40mmCaselessHighVelocity: Magazine6.35x40mmCaseless
 Magazine6.35x40mmCaselessShortHighVelocity: Magazine6.35x40mmCaselessShort
 Magazine7.62x39mmHighVelocity: Magazine7.62x39mmFMJ
@@ -310,14 +310,14 @@ BodyBag_Folded: BodyBagFolded
 # Magazine6.35x40mmCaselessShortRubber: Magazine6.35x40mmCaselessShort # Frontier
 # SpeedLoader9x19mmRubber: SpeedLoader9x19mm # Frontier
 # SpeedLoader45_magnumRubber: SpeedLoader45_magnum # Frontier
-# MagazineBox9x19mmRubber: MagazineBox9x19mmFMJ # Frontier
+# AmmoBox9x19mmRubber: AmmoBox9x19mmFMJ # Frontier
 # RIP box of .45 magnum rubbers 202X to 2024
-# MagazineBox45_magnumRubber: MagazineBox45_magnum # Frontier
-# MagazineBox7.62x39mmRubber: MagazineBox7.62x39mmFMJ # Frontier
-# MagazineBox5.56x45mmRubber: MagazineBox5.56x45mmFMJ # Frontier
-# MagazineBox5.56x45mmBigRubber: MagazineBox5.56x45mmBigFMJ # Frontier
-# MagazineBox6.35x40mmCaselessRubber: MagazineBox6.35x40mmCaseless # Frontier
-# MagazineBox6.35x40mmCaselessBigRubber: MagazineBox6.35x40mmCaseless # Frontier
+# AmmoBox45_magnumRubber: AmmoBox45_magnum # Frontier
+# AmmoBox7.62x39mmRubber: AmmoBox7.62x39mmFMJ # Frontier
+# AmmoBox5.56x45mmRubber: AmmoBox5.56x45mmFMJ # Frontier
+# AmmoBox5.56x45mmBigRubber: AmmoBox5.56x45mmBigFMJ # Frontier
+# AmmoBox6.35x40mmCaselessRubber: AmmoBox6.35x40mmCaseless # Frontier
+# AmmoBox6.35x40mmCaselessBigRubber: AmmoBox6.35x40mmCaseless # Frontier
 # BoxMagazine9x19mmRubber: BoxMagazine9x19mm # Frontier
 # BoxMagazine9x19mmPistolHighCapacityRubber: BoxMagazine9x19mmPistolHighCapacity # Frontier
 # BoxMagazine9x19mmSubMachineGunRubber: BoxMagazine9x19mmSubMachineGun # Frontier
@@ -553,9 +553,9 @@ WeaponSubMachineGunVector: null
 WeaponSubMachineGunVectorRubber: null
 
 # 2025-02-20
-# MagazineBox14.5x114mmBig: null # Frontier
-# MagazineBox6.35x40mmCaseless: null # Frontier
-# MagazineBox6.35x40mmCaselessBig: null # Frontier
+# AmmoBox14.5x114mmBig: null # Frontier
+# AmmoBox6.35x40mmCaseless: null # Frontier
+# AmmoBox6.35x40mmCaselessBig: null # Frontier
 # Magazine9x19mmPistolHighCapacityRubber: null # Frontier
 
 # 2025-04-14

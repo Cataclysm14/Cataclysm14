@@ -1,7 +1,7 @@
 - type: entity
   abstract: true
   parent: [ BaseItem, BaseC3PirateContraband ]
-  id: BaseMagazineBox12.7x99mm
+  id: BaseAmmoBox12.7x99mm
   name: ammunition box (12.7x99mm anti-material)
   components:
   - type: BallisticAmmoProvider
@@ -30,12 +30,12 @@
   - type: Appearance
 
 - type: entity
-  parent: BaseMagazineBox12.7x99mm
-  id: MagazineBox12.7x99mm
+  parent: BaseAmmoBox12.7x99mm
+  id: AmmoBox12.7x99mm
 
 - type: entity
-  parent: BaseMagazineBox12.7x99mm
-  id: MagazineBox12.7x99mmExplosive
+  parent: BaseAmmoBox12.7x99mm
+  id: AmmoBox12.7x99mmExplosive
   name: ammunition box (12.7x99mm high-explosive)
   components:
   - type: BallisticAmmoProvider

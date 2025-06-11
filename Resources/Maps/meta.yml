@@ -131971,14 +131971,14 @@ entities:
     - type: Transform
       pos: -44.5,-21.5
       parent: 5350
-- proto: MagazineBox45_magnumPractice
+- proto: AmmoBox45_magnumPractice
   entities:
   - uid: 22264
     components:
     - type: Transform
       pos: -15.199577,42.62874
       parent: 5350
-- proto: MagazineBox9x19mmPractice
+- proto: AmmoBox9x19mmPractice
   entities:
   - uid: 13619
     components:
@@ -131990,7 +131990,7 @@ entities:
     - type: Transform
       pos: -15.574577,42.476746
       parent: 5350
-- proto: MagazineBox5.56x45mmPractice
+- proto: AmmoBox5.56x45mmPractice
   entities:
   - uid: 22344
     components:

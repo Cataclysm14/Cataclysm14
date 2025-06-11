@@ -1,7 +1,7 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseMagazineBox7.62x39mm
+  id: BaseAmmoBox7.62x39mm
   name: ammunition box (7.62x39mm FMJ)
   components:
   - type: BallisticAmmoProvider
@@ -26,8 +26,8 @@
 
 # Boxes
 - type: entity
-  parent: BaseMagazineBox7.62x39mm
-  id: MagazineBox7.62x39mmBigFMJ
+  parent: BaseAmmoBox7.62x39mm
+  id: AmmoBox7.62x39mmBigFMJ
   name: ammunition box (7.62x39mm FMJ)
   suffix: Big
   components:
@@ -46,8 +46,8 @@
   # End Frontier
 
 - type: entity
-  parent: BaseMagazineBox7.62x39mm
-  id: MagazineBox7.62x39mmFMJ
+  parent: BaseAmmoBox7.62x39mm
+  id: AmmoBox7.62x39mmFMJ
   name: ammunition box (7.62x39mm FMJ)
   components:
   - type: BallisticAmmoProvider
@@ -60,8 +60,8 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  parent: BaseMagazineBox7.62x39mm
-  id: MagazineBox7.62x39mmPractice
+  parent: BaseAmmoBox7.62x39mm
+  id: AmmoBox7.62x39mmPractice
   name: ammunition box (7.62x39mm practice)
   components:
   - type: BallisticAmmoProvider
@@ -75,8 +75,8 @@
     - state: practice
 
 - type: entity
-  id: MagazineBox7.62x39mmIncendiary
-  parent: BaseMagazineBox7.62x39mm
+  id: AmmoBox7.62x39mmIncendiary
+  parent: BaseAmmoBox7.62x39mm
   name: ammunition box (7.62x39mm incendiary)
   components:
   - type: BallisticAmmoProvider
@@ -90,8 +90,8 @@
     - state: incendiary
 
 - type: entity
-  parent: BaseMagazineBox7.62x39mm
-  id: MagazineBox7.62x39mmUranium
+  parent: BaseAmmoBox7.62x39mm
+  id: AmmoBox7.62x39mmUranium
   name: ammunition box (7.62x39mm uranium)
   components:
   - type: BallisticAmmoProvider
@@ -105,8 +105,8 @@
     - state: uranium
 
 - type: entity
-  parent: BaseMagazineBox7.62x39mm
-  id: MagazineBox7.62x39mmRubber
+  parent: BaseAmmoBox7.62x39mm
+  id: AmmoBox7.62x39mmRubber
   name: ammunition box (7.62x39mm rubber)
   components:
   - type: BallisticAmmoProvider
@@ -121,8 +121,8 @@
     - state: rubber
 
 - type: entity
-  parent: MagazineBox7.62x39mmBigFMJ
-  id: MagazineBox7.62x39mmRubberBig
+  parent: AmmoBox7.62x39mmBigFMJ
+  id: AmmoBox7.62x39mmRubberBig
   name: ammunition box (7.62x39mm rubber)
   suffix: Big
   components:
@@ -138,8 +138,8 @@
     - state: rubber-b
 
 - type: entity
-  parent: BaseMagazineBox7.62x39mm
-  id: MagazineBox7.62x39mmSubsonic
+  parent: BaseAmmoBox7.62x39mm
+  id: AmmoBox7.62x39mmSubsonic
   name: ammunition box (7.62x39mm subsonic)
   components:
   - type: BallisticAmmoProvider

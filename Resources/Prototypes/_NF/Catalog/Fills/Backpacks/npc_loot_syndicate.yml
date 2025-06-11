@@ -482,8 +482,8 @@
   components:
   - type: SpawnItemsOnUse
     items:
-      - id: MagazineBox9x19mmFMJ
-      - id: MagazineBox9x19mmFMJ
+      - id: AmmoBox9x19mmFMJ
+      - id: AmmoBox9x19mmFMJ
       - id: SpaceCash1000
       - id: SpaceCash500
       # Bonus Loot T3
@@ -495,7 +495,7 @@
         prob: 0.7
       - id: SpawnDungeonLootMaterialsValuableFull
         prob: 0.7
-      - id: MagazineBox9x19mmBig # Mono
+      - id: AmmoBox9x19mmBig # Mono
       - prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2

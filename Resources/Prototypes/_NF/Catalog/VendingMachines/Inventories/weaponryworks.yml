@@ -13,14 +13,14 @@
     Box12GaugeSlug: 1
     Box12GaugeBuckshot: 1
     Box12GaugeBeanbag: 1
-    MagazineBox5.56x45mmFMJ: 2
-    MagazineBox5.56x45mmRubber: 2
-    MagazineBox7.62x39mmFMJ: 2
-    MagazineBox7.62x39mmRubber: 2
-    MagazineBox9x19mmFMJ: 2
-    MagazineBox9x19mmRubber: 2
-    MagazineBox45_magnum: 2
-    MagazineBox45_magnumRubber: 2
+    AmmoBox5.56x45mmFMJ: 2
+    AmmoBox5.56x45mmRubber: 2
+    AmmoBox7.62x39mmFMJ: 2
+    AmmoBox7.62x39mmRubber: 2
+    AmmoBox9x19mmFMJ: 2
+    AmmoBox9x19mmRubber: 2
+    AmmoBox45_magnum: 2
+    AmmoBox45_magnumRubber: 2
     SpeedLoader5.56x45mmEmpty: 1
     MagazineNovaliteC1Empty: 1
     Magazine7.62x39mmLowCapacityEmpty: 1
@@ -43,14 +43,14 @@
     Box12GaugeSlug: 4294967295
     Box12GaugeBuckshot: 4294967295
     Box12GaugeBeanbag: 4294967295
-    MagazineBox5.56x45mmFMJ: 4294967295
-    MagazineBox5.56x45mmRubber: 4294967295
-    MagazineBox7.62x39mmFMJ: 4294967295
-    MagazineBox7.62x39mmRubber: 4294967295
-    MagazineBox9x19mmFMJ: 4294967295
-    MagazineBox9x19mmRubber: 4294967295
-    MagazineBox45_magnum: 4294967295
-    MagazineBox45_magnumRubber: 4294967295
+    AmmoBox5.56x45mmFMJ: 4294967295
+    AmmoBox5.56x45mmRubber: 4294967295
+    AmmoBox7.62x39mmFMJ: 4294967295
+    AmmoBox7.62x39mmRubber: 4294967295
+    AmmoBox9x19mmFMJ: 4294967295
+    AmmoBox9x19mmRubber: 4294967295
+    AmmoBox45_magnum: 4294967295
+    AmmoBox45_magnumRubber: 4294967295
     SpeedLoader5.56x45mmEmpty: 4294967295
     MagazineNovaliteC1Empty: 4294967295
     Magazine7.62x39mmLowCapacityEmpty: 4294967295
@@ -89,10 +89,10 @@
     Magazine7.62x39mmLowCapacity: 4294967295 # .30 SVS
     SpeedLoader7.62x39mm: 4294967295 # .30 Mosin
 # Ammo
-    MagazineBox5.56x45mmBigFMJ: 4294967295 # .20
-    MagazineBox6.35x40mmCaselessBig: 4294967295 # .25
-    MagazineBox7.62x39mmBigFMJ: 4294967295 # .30
-    MagazineBox9x19mmBig: 4294967295 # .35
-    MagazineBox45_magnum: 4294967295 # .45
+    AmmoBox5.56x45mmBigFMJ: 4294967295 # .20
+    AmmoBox6.35x40mmCaselessBig: 4294967295 # .25
+    AmmoBox7.62x39mmBigFMJ: 4294967295 # .30
+    AmmoBox9x19mmBig: 4294967295 # .35
+    AmmoBox45_magnum: 4294967295 # .45
     Box12GaugeSlug: 4294967295
     Box12GaugeBuckshot: 4294967295

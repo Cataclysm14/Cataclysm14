@@ -514,7 +514,7 @@
   id: UplinkMosinAmmo
   name: uplink-mosin-ammo-name
   description: uplink-mosin-ammo-desc
-  productEntity: MagazineBox7.62x39mmFMJ
+  productEntity: AmmoBox7.62x39mmFMJ
   cost:
     Telecrystal: 1
   categories:
@@ -525,7 +525,7 @@
   id: UplinkHristovAmmo
   name: uplink-sniper-ammo-name
   description: uplink-sniper-ammo-desc
-  productEntity: MagazineBox14.5x114mm
+  productEntity: AmmoBox14.5x114mm
   cost:
     Telecrystal: 2
   categories:

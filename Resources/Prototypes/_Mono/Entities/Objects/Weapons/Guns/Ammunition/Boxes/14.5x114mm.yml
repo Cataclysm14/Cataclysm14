@@ -1,7 +1,7 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseMagazineBox14.5x114mm
+  id: BaseAmmoBox14.5x114mm
   name: ammunition box (14.5x114mm)
   components:
   - type: BallisticAmmoProvider
@@ -26,8 +26,8 @@
 
 # Boxes
 - type: entity
-  parent: BaseMagazineBox14.5x114mm
-  id: MagazineBox14.5x114mm
+  parent: BaseAmmoBox14.5x114mm
+  id: AmmoBox14.5x114mm
   name: ammunition box (14.5x114mm)
   components:
   - type: BallisticAmmoProvider
@@ -40,8 +40,8 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  parent: BaseMagazineBox14.5x114mm
-  id: MagazineBox14.5x114mmBig
+  parent: BaseAmmoBox14.5x114mm
+  id: AmmoBox14.5x114mmBig
   name: ammunition box (14.5x114mm)
   suffix: 30
   components:

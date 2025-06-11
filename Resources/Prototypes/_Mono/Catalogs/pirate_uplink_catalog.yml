@@ -493,10 +493,10 @@
       - PirateUplink
 
 - type: listing
-  id: UplinkPirate7.62x39mmMagazineBoxBig
+  id: UplinkPirate7.62x39mmAmmoBoxBig
   name: uplink-pirate-light-rifle-magazine-box-big-name
   description: uplink-pirate-light-rifle-magazine-box-big-desc
-  productEntity: MagazineBox7.62x39mmBigFMJ
+  productEntity: AmmoBox7.62x39mmBigFMJ
   cost:
     Doubloon: 2
   categories:
@@ -508,7 +508,7 @@
       - PirateUplink
 
 - type: listing
-  id: UplinkPirateMagazineBox45_magnum
+  id: UplinkPirateAmmoBox45_magnum
   name: uplink-pirate-magazine-box-45_magnum-name
   description: uplink-pirate-magazine-box-45_magnum-desc
   productEntity: BoxMagazine45_magnum
@@ -556,7 +556,7 @@
   id: UplinkPirateBoxSubsonic
   name: uplink-subsonic-box-name
   description: uplink-subsonic-box-desc
-  productEntity: MagazineBox7.62x39mmSubsonic
+  productEntity: AmmoBox7.62x39mmSubsonic
   cost:
     Doubloon: 2
   categories:
@@ -586,7 +586,7 @@
   id: UplinkPirateBurnerBox
   name: uplink-pirate-box-highcal-name
   description: uplink-pirate-box-highcal-desc
-  productEntity: MagazineBox12.7x99mm
+  productEntity: AmmoBox12.7x99mm
   cost:
     Doubloon: 3
   categories:
@@ -601,7 +601,7 @@
   id: UplinkPirateBurnerBoxHE
   name: uplink-pirate-box-highcal-he-name
   description: uplink-pirate-box-highcal-he-desc
-  productEntity: MagazineBox12.7x99mmExplosive
+  productEntity: AmmoBox12.7x99mmExplosive
   cost:
     Doubloon: 6
   categories:
