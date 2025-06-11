@@ -244,7 +244,7 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
+      path: /Audio/_DV/Weapons/Guns/Gunshots/universal.ogg
   - type: PirateBountyItem # Frontier
     id: WeaponPistolMk58 # Frontier
   - type: ItemSlots
