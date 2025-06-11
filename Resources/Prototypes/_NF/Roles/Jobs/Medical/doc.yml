@@ -6,8 +6,8 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 54000 # 20 hrs # mono - change to 15hr
-    - !type:RoleTimeRequirement
-      role: JobMdMedic
+    - !type:DepartmentTimeRequirement
+      department: Medical
       time: 36000 # mono - 10 hours
   alternateRequirementSets: # mono
     longerPlaytimeLessSec: # mono

@@ -24,6 +24,17 @@
   - MedicalDoctorJumpsuit
 
 - type: loadoutGroup
+  id: MdMedicBackpack
+  name: loadout-group-contractor-backpack
+  loadouts:
+  - MdMedicClothingModsuitParamedicPowerCell
+  subgroups:
+  - ContractorBackpack
+  - DocBackpack
+  fallbacks:
+  - DocClothingBackpackMedical
+
+- type: loadoutGroup
   id: MdMedicPDA
   name: loadout-group-contractor-id
   loadouts:
