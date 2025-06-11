@@ -64,7 +64,7 @@
 - type: Tag
   id: Magazine4.6x30mmSubMachineGunFMJ
 - type: Tag
-  id: Magazine4.6x30mmSubMachineGunTopMounted
+  id: Magazine4.6x30mmSubMachineGunTopMountedFMJ
 
 - type: Tag
   id: Magazine4.6x30mmFMJBox
@@ -82,7 +82,7 @@
 - type: Tag
   id: Magazine45_ACPSubMachineGunFMJ
 - type: Tag
-  id: Magazine45_ACPSubMachineGunTopMounted
+  id: Magazine45_ACPSubMachineGunTopMountedFMJ
 
 - type: Tag
   id: Magazine45_ACPFMJBox
@@ -100,7 +100,7 @@
 - type: Tag
   id: Magazine9x19mmSubMachineGunFMJ
 - type: Tag
-  id: Magazine9x19mmSubMachineGunTopMounted
+  id: Magazine9x19mmSubMachineGunTopMountedFMJ
 
 - type: Tag
   id: Magazine9x19mmFMJBox
@@ -118,7 +118,7 @@
 - type: Tag
   id: Magazine5.7x28mmSubMachineGunFMJ
 - type: Tag
-  id: Magazine5.7x28mmSubMachineGunTopMounted
+  id: Magazine5.7x28mmSubMachineGunTopMountedFMJ
 
 - type: Tag
   id: Magazine5.7x28mmFMJBox

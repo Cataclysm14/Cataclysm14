@@ -32,7 +32,8 @@
   - type: Appearance
 
 - type: entity
-  id: BaseMagazine5.7x28mmPistolHighCapacityFMJ  name: machine pistol magazine (5.7x28mm FMJ)
+  id: BaseMagazine5.7x28mmPistolHighCapacityFMJ  
+  name: machine pistol magazine (5.7x28mm FMJ)
   parent: [BaseItem, BaseC1Contraband, RecyclableItemSteelTiny] # Frontier: added RecyclableItemSteelTiny, BaseC1Contraband
   abstract: true
   components:
@@ -63,7 +64,8 @@
   - type: Appearance
 
 - type: entity
-  id: BaseMagazine5.7x28mmSubMachineGunFMJ  name: SMG magazine (5.7x28mm FMJ)
+  id: BaseMagazine5.7x28mmSubMachineGunFMJ  
+  name: SMG magazine (5.7x28mm FMJ)
   parent: [BaseItem, BaseC1Contraband, RecyclableItemSteelTiny] # Frontier: added RecyclableItemSteelTiny, BaseSecurityContraband<BaseC1Contraband
   abstract: true
   components:
@@ -163,7 +165,8 @@
   id: Magazine5.7x28mmPistolHighCapacityEmpty
   name: machine pistol magazine (5.7x28mm any)
   suffix: empty
-  parent: BaseMagazine5.7x28mmPistolHighCapacityFMJ  components:
+  parent: BaseMagazine5.7x28mmPistolHighCapacityFMJ 
+  components:
   - type: BallisticAmmoProvider
     proto: null
   - type: Sprite
@@ -174,8 +177,10 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine5.7x28mmPistolHighCapacityFMJ  name: machine pistol magazine (5.7x28mm FMJ)
-  parent: BaseMagazine5.7x28mmPistolHighCapacityFMJ  components:
+  id: Magazine5.7x28mmPistolHighCapacityFMJ  
+  name: machine pistol magazine (5.7x28mm FMJ)
+  parent: BaseMagazine5.7x28mmPistolHighCapacityFMJ 
+  components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.7x28mmFMJ
   - type: Sprite
@@ -188,7 +193,8 @@
 - type: entity
   id: Magazine5.7x28mmPistolHighCapacityPractice
   name: machine pistol magazine (5.7x28mm practice)
-  parent: BaseMagazine5.7x28mmPistolHighCapacityFMJ  components:
+  parent: BaseMagazine5.7x28mmPistolHighCapacityFMJ
+  components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.7x28mmFMJ
   - type: Sprite
@@ -199,8 +205,10 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine5.7x28mmSubMachineGunFMJ  name: SMG magazine (5.7x28mm FMJ)
-  parent: BaseMagazine5.7x28mmSubMachineGunFMJ  components:
+  id: Magazine5.7x28mmSubMachineGunFMJ  
+  name: SMG magazine (5.7x28mm FMJ)
+  parent: BaseMagazine5.7x28mmSubMachineGunFMJ  
+  components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.7x28mmFMJ
     whitelist:
@@ -219,7 +227,8 @@
   id: Magazine5.7x28mmSubMachineGunEmpty
   name: SMG magazine (5.7x28mm any)
   suffix: empty
-  parent: BaseMagazine5.7x28mmSubMachineGunFMJ  components:
+  parent: BaseMagazine5.7x28mmSubMachineGunFMJ  
+  components:
   - type: BallisticAmmoProvider
     proto: null
   - type: Sprite
@@ -232,7 +241,8 @@
 - type: entity
   id: Magazine5.7x28mmSubMachineGunPractice
   name: SMG magazine (5.7x28mm practice)
-  parent: BaseMagazine5.7x28mmSubMachineGunFMJ  components:
+  parent: BaseMagazine5.7x28mmSubMachineGunFMJ  
+  components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.7x28mmPractice
   - type: Sprite
@@ -245,7 +255,8 @@
 - type: entity
   id: Magazine5.7x28mmSubMachineGunUranium
   name: SMG magazine (5.7x28mm uranium)
-  parent: BaseMagazine5.7x28mmSubMachineGunFMJ  components:
+  parent: BaseMagazine5.7x28mmSubMachineGunFMJ  
+  components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.7x28mmUranium
   - type: Sprite
@@ -256,7 +267,8 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  parent: BaseMagazine5.7x28mmSubMachineGunFMJ  id: Magazine5.7x28mmSubMachineGunIncendiary
+  parent: BaseMagazine5.7x28mmSubMachineGunFMJ  
+  id: Magazine5.7x28mmSubMachineGunIncendiary
   name: SMG magazine (5.7x28mm incendiary)
   components:
   - type: BallisticAmmoProvider
@@ -280,7 +292,8 @@
 - type: entity
   id: Magazine5.7x28mmSubMachineGunRubber
   name: SMG magazine (5.7x28mm rubber)
-  parent: BaseMagazine5.7x28mmSubMachineGunFMJ  components:
+  parent: BaseMagazine5.7x28mmSubMachineGunFMJ  
+  components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.7x28mmRubber
   - type: Sprite
@@ -295,7 +308,8 @@
 - type: entity
   id: Magazine5.7x28mmPistolHighCapacityRubber
   name: machine pistol magazine (5.7x28mm rubber)
-  parent: BaseMagazine5.7x28mmPistolHighCapacityFMJ  components:
+  parent: BaseMagazine5.7x28mmPistolHighCapacityFMJ  
+  components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.7x28mmFMJ
   - type: Sprite
@@ -310,7 +324,8 @@
 - type: entity
   id: Magazine5.7x28mmSubMachineGunEmp
   name: SMG magazine (5.7x28mm emp)
-  parent: BaseMagazine5.7x28mmSubMachineGunFMJ  components:
+  parent: BaseMagazine5.7x28mmSubMachineGunFMJ  
+  components:
   - type: BallisticAmmoProvider
     proto: Cartridge5.7x28mmEmp
   - type: Sprite
@@ -322,13 +337,13 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine5.7x28mmSubMachineGunTopMounted
-  name: WT550 magazine (5.7x28mm top-mounted)
+  id: Magazine5.7x28mmSubMachineGunTopMountedFMJ
+  name: Top mounted magazine (5.7x28mm top-mounted FMJ)
   parent: [ BaseItem, BaseC1Contraband, RecyclableItemSteelTiny ] # Frontier: BaseSecurityContraband<BaseC1Contraband, added RecyclableItemSteelTiny
   components:
   - type: Tag
     tags:
-      - Magazine5.7x28mmSubMachineGunTopMounted
+      - Magazine5.7x28mmSubMachineGunTopMountedFMJ
   - type: BallisticAmmoProvider
     mayTransfer: true
     proto: Cartridge5.7x28mmFMJ
@@ -354,8 +369,8 @@
 
 - type: entity
   id: Magazine5.7x28mmSubMachineGunTopMountedEmpty
-  name: WT550 magazine (5.7x28mm top-mounted any)
-  parent: Magazine5.7x28mmSubMachineGunTopMounted
+  name: Top mounted magazine (5.7x28mm top-mounted any)
+  parent: Magazine5.7x28mmSubMachineGunTopMountedFMJ
   components:
   - type: BallisticAmmoProvider
     proto: null

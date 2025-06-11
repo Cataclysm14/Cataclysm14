@@ -449,7 +449,7 @@
   - type: SpawnItemsOnUse
     items:
       - id: WeaponSubMachineGunWt550Expedition
-      - id: Magazine9x19mmSubMachineGunTopMounted
+      - id: Magazine9x19mmSubMachineGunTopMountedFMJ
       - id: SpaceCash1000
       - id: SpaceCash500
       # Bonus Loot T3

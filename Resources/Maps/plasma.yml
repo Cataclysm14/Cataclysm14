@@ -126746,7 +126746,7 @@ entities:
     - type: Transform
       pos: -88.74439,-22.559776
       parent: 2
-- proto: Magazine9x19mmSubMachineGunTopMounted
+- proto: Magazine9x19mmSubMachineGunTopMountedFMJ
   entities:
   - uid: 8276
     components:

@@ -240,13 +240,13 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine4.6x30mmSubMachineGunTopMounted
+        startingItem: Magazine4.6x30mmSubMachineGunTopMountedFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine4.6x30mmSubMachineGunTopMounted
+            - Magazine4.6x30mmSubMachineGunTopMountedFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
