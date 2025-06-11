@@ -1,3 +1,5 @@
+#Magazines
+
 - type: latheRecipe
   parent: BaseAmmoFMJFullyPoweredMagazineRecipe
   id: Magazine7.62x54mmRFMJ
@@ -27,3 +29,35 @@
   parent: BaseAmmoUraniumFullyPoweredMagazineRecipe
   id: Magazine7.62x54mmRUranium
   result: Magazine7.62x54mmRUranium
+
+#Boxes
+
+- type: latheRecipe
+  parent: BaseAmmoFMJFullyPoweredAmmoBoxRecipe
+  id: AmmoBox7.62x54mmRFMJ
+  result: AmmoBox7.62x54mmRFMJ
+
+- type: latheRecipe
+  parent: BaseAmmoRubberFullyPoweredAmmoBoxRecipe
+  id: AmmoBox7.62x54mmRRubber
+  result: AmmoBox7.62x54mmRRubber
+
+- type: latheRecipe
+  parent: BaseAmmoIncendiaryFullyPoweredAmmoBoxRecipe
+  id: AmmoBox7.62x54mmRIncendiary
+  result: AmmoBox7.62x54mmRIncendiary
+
+- type: latheRecipe
+  parent: BaseAmmoPracticeFullyPoweredAmmoBoxRecipe
+  id: AmmoBox7.62x54mmRPractice
+  result: AmmoBox7.62x54mmRPractice
+
+- type: latheRecipe
+  parent: BaseAmmoEmptyFullyPoweredAmmoBoxRecipe
+  id: AmmoBox7.62x54mmREmpty
+  result: AmmoBox7.62x54mmREmpty
+
+- type: latheRecipe
+  parent: BaseAmmoUraniumFullyPoweredAmmoBoxRecipe
+  id: AmmoBox7.62x54mmRUranium
+  result: AmmoBox7.62x54mmRUranium

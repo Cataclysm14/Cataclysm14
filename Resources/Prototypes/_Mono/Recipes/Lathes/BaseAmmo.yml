@@ -2,7 +2,7 @@
 # boxes = magazine * 3-ish
 #.45 magnum gonna use intermediate
 
-#Base intermediate ammo magazines for 5.56 and 5.45 and potential others 
+#Base intermediate ammo magazines for 5.56, 5.45, 7.62x39mm and potential others 
 #Magazines:     [TOTAL = 475]
 
 - type: latheRecipe
@@ -51,7 +51,7 @@
     Steel: 175
     Uranium: 300
 
-#Base intermediate ammo boxes for 5.56 and 5.45 and potential others 
+#Base intermediate ammo boxes for 5.56, 5.45, 7.62x39mm and potential others 
 #Boxes:     [TOTAL = 1425]
 
 - type: latheRecipe
@@ -100,7 +100,7 @@
     Steel: 570
     Uranium: 855
 
-#Base Fully powered ammo magazines for all the 7.62 
+#Base Fully powered ammo magazines for all the other 7.62 (-7.62x39mm) 
 #Magazines: [TOTAL = 575]
 
 - type: latheRecipe
@@ -149,7 +149,7 @@
     Steel: 200
     Uranium: 375
 
-#Base Fully powered ammo boxes for all the 7.62 
+#Base Fully powered ammo boxes for all the other 7.62 (-7.62x39mm) 
 #Boxes:     [TOTAL = 1725]
 
 - type: latheRecipe
