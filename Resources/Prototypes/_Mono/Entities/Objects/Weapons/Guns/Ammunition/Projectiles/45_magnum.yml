@@ -1,5 +1,5 @@
 - type: entity
-  id: Bullet.45_magnum
+  id: Bullet45_magnum
   name: bullet (.45 magnum)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -10,7 +10,7 @@
         Piercing: 35
 
 - type: entity
-  id: Bullet.45_magnumPractice
+  id: Bullet45_magnumPractice
   name: bullet (.45 magnum practice)
   parent: BaseBulletPractice
   categories: [ HideSpawnMenu ]
@@ -21,7 +21,7 @@
         Blunt: 1
 
 - type: entity
-  id: Bullet.45_magnumRubber
+  id: Bullet45_magnumRubber
   name: bullet (.45 magnum rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
@@ -34,7 +34,7 @@
     damage: 35 # 3 hits to stun cuz revolver
 
 - type: entity
-  id: Bullet.45_magnumIncendiary
+  id: Bullet45_magnumIncendiary
   parent: BaseBulletIncendiary
   name: bullet (.45 magnum incendiary)
   categories: [ HideSpawnMenu ]
@@ -46,7 +46,7 @@
         Heat: 32
 
 - type: entity
-  id: Bullet.45_magnumAP
+  id: Bullet45_magnumAP
   name: bullet (.45 magnum armor-piercing)
   parent: BaseBulletAP
   categories: [ HideSpawnMenu ]
@@ -58,7 +58,7 @@
     ignoreResistances: true
 
 - type: entity
-  id: Bullet.45_magnumUranium
+  id: Bullet45_magnumUranium
   name: bullet (.45 magnum uranium)
   parent: BaseBulletUranium
   categories: [ HideSpawnMenu ]

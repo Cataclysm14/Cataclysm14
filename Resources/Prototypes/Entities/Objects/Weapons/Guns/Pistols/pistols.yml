@@ -277,18 +277,18 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine.45_magnum
+        startingItem: Magazine45_magnum
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine.45_magnum
+            - Magazine45_magnum
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge.45_magnum
+        startingItem: Cartridge45_magnum
         priority: 1
         whitelist:
           tags:
-            - Cartridge.45_magnum
+            - Cartridge45_magnum

@@ -138,25 +138,25 @@
     Plastic: 300 #50% of ammo box
 
 - type: latheRecipe
-  id: MagazineBox.45_magnumRubber
+  id: MagazineBox45_magnumRubber
   parent: BaseAmmoRecipe
-  result: MagazineBox.45_magnumRubber
+  result: MagazineBox45_magnumRubber
   materials:
     Steel: 80
     Plastic: 160
 
 - type: latheRecipe
-  id: SpeedLoader.45_magnumRubber
+  id: SpeedLoader45_magnumRubber
   parent: BaseAmmoRecipe
-  result: SpeedLoader.45_magnumRubber
+  result: SpeedLoader45_magnumRubber
   materials:
     Steel: 40 #50% of ammo box
     Plastic: 80 #50% of ammo box
 
 - type: latheRecipe
-  id: MagazineBoxPistolRubber
+  id: MagazineBox9x19mmRubber
   parent: BaseAmmoRecipe
-  result: MagazineBoxPistolRubber
+  result: MagazineBox9x19mmRubber
   materials:
     Steel: 200
     Plastic: 400

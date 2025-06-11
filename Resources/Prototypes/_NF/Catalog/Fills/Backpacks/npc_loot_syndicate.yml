@@ -74,8 +74,8 @@
   - type: SpawnItemsOnUse
     items:
       - id: WeaponRevolverPythonAP
-      - id: SpeedLoader.45_magnumAP
-      - id: SpeedLoader.45_magnumAP
+      - id: SpeedLoader45_magnumAP
+      - id: SpeedLoader45_magnumAP
       - id: SpaceCash5000
       # Bonus Loot T3
       - id: SpaceCash1000
@@ -104,8 +104,8 @@
   - type: SpawnItemsOnUse
     items:
       - id: WeaponRevolverPython
-      - id: SpeedLoader.45_magnum
-      - id: SpeedLoader.45_magnum
+      - id: SpeedLoader45_magnum
+      - id: SpeedLoader45_magnum
       - id: SpaceCash2500
       # Bonus Loot T3
       - id: SpaceCash1000
@@ -133,7 +133,7 @@
   components:
   - type: SpawnItemsOnUse
     items:
-      - id: SpeedLoader.45_magnum
+      - id: SpeedLoader45_magnum
       - id: SpaceCash2500
       # Bonus Loot T3
       - id: SpaceCash1000
@@ -482,8 +482,8 @@
   components:
   - type: SpawnItemsOnUse
     items:
-      - id: MagazineBoxPistol
-      - id: MagazineBoxPistol
+      - id: MagazineBox9x19mm
+      - id: MagazineBox9x19mm
       - id: SpaceCash1000
       - id: SpaceCash500
       # Bonus Loot T3
@@ -495,7 +495,7 @@
         prob: 0.7
       - id: SpawnDungeonLootMaterialsValuableFull
         prob: 0.7
-      - id: MagazineBoxPistolBig # Mono
+      - id: MagazineBox9x19mmBig # Mono
       - prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2

@@ -23,6 +23,6 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - Cartridge.45_magnum
+      - Cartridge45_magnum
     capacity: 7
-    proto: Cartridge.45_magnum
+    proto: Cartridge45_magnum

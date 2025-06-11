@@ -92,15 +92,15 @@
 ## Ammo boxes
   - Box12GaugeBuckshot
   - MagazineBox7.62x39mm
-  - MagazineBoxPistol
+  - MagazineBox9x19mm
   - MagazineBox5.56x45mm
   - CrossbowBolt
   - CrossbowBoltBroadhead
   - Box12GaugeBeanbag
   - Box12GaugeSlug
   - MagazineBox7.62x39mmRubber
-  - MagazineBox.45_magnumRubber
-  - MagazineBoxPistolRubber
+  - MagazineBox45_magnumRubber
+  - MagazineBox9x19mmRubber
   - MagazineBox5.56x45mmRubber
 ## Mags / Speedloaders / Clips
   - MagazineNovaliteC1Empty
@@ -118,7 +118,7 @@
   - SpeedLoader5.56x45mm
   - SpeedLoader5.56x45mmEmpty
   - SpeedLoader5.56x45mmRubber
-  - SpeedLoader.45_magnumRubber
+  - SpeedLoader45_magnumRubber
   - Magazine5.56x45mmRubber
   - MagazineShotgunSlug
   - Magazine9x19mmRubber
@@ -207,8 +207,8 @@
   - Box12GaugeBeanbag
   - Box12GaugeTranquilizer
   - MagazineBox7.62x39mmRubber
-  - MagazineBox.45_magnumRubber
-  - MagazineBoxPistolRubber
+  - MagazineBox45_magnumRubber
+  - MagazineBox9x19mmRubber
   - MagazineBox5.56x45mmRubber
   - MagazineShotgunBeanbag
 
@@ -219,10 +219,10 @@
   - Box12GaugeUranium
   - MagazineBox7.62x39mmIncendiary
   - MagazineBox7.62x39mmUranium
-  - MagazineBox.45_magnumIncendiary
-  - MagazineBox.45_magnumUranium
-  - MagazineBoxPistolIncendiary
-  - MagazineBoxPistolUranium
+  - MagazineBox45_magnumIncendiary
+  - MagazineBox45_magnumUranium
+  - MagazineBox9x19mmIncendiary
+  - MagazineBox9x19mmUranium
   - MagazineBox5.56x45mmIncendiary
   - MagazineBox5.56x45mmUranium
   - Magazine40mmEmpty
@@ -233,7 +233,7 @@
   - MagazineRifleIncendiary
   - MagazineRifleUranium
   - MagazineShotgunIncendiary
-  - SpeedLoader.45_magnumIncendiary
-  - SpeedLoader.45_magnumUranium
+  - SpeedLoader45_magnumIncendiary
+  - SpeedLoader45_magnumUranium
   - SpeedLoader5.56x45mmIncendiary
   - SpeedLoader5.56x45mmUranium

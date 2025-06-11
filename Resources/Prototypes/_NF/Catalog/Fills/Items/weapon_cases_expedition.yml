@@ -23,7 +23,7 @@
     contents:
     - id: WeaponPistolN1984
       amount: 1
-    - id: Magazine.45_magnum
+    - id: Magazine45_magnum
       amount: 2
 
 - type: entity
@@ -115,7 +115,7 @@
     contents:
     - id: WeaponRevolverDeckardExpedition
       amount: 1
-    - id: SpeedLoader.45_magnum
+    - id: SpeedLoader45_magnum
       amount: 2
 
 - type: entity
@@ -128,7 +128,7 @@
     contents:
     - id: WeaponRevolverPython
       amount: 1
-    - id: SpeedLoader.45_magnum
+    - id: SpeedLoader45_magnum
       amount: 2
 
 - type: entity
@@ -141,7 +141,7 @@
     contents:
     - id: WeaponRevolverMatebaExpedition
       amount: 1
-    - id: SpeedLoader.45_magnum
+    - id: SpeedLoader45_magnum
       amount: 2
 
 - type: entity
@@ -154,7 +154,7 @@
     contents:
     - id: WeaponRevolverFitzExpedition
       amount: 1
-    - id: SpeedLoader.45_magnum
+    - id: SpeedLoader45_magnum
       amount: 2
 
 - type: entity
@@ -167,7 +167,7 @@
     contents:
     - id: WeaponRevolverFaithExpedition
       amount: 1
-    - id: SpeedLoader.45_magnum
+    - id: SpeedLoader45_magnum
       amount: 2
 
 - type: entity
@@ -180,7 +180,7 @@
     contents:
     - id: WeaponRevolverLuckyExpedition
       amount: 1
-    - id: SpeedLoader.45_magnum
+    - id: SpeedLoader45_magnum
       amount: 2
 
 - type: entity
@@ -193,7 +193,7 @@
     contents:
     - id: WeaponRevolverPirateExpedition
       amount: 1
-    - id: SpeedLoader.45_magnum
+    - id: SpeedLoader45_magnum
       amount: 2
 
 # Shotguns
@@ -290,7 +290,7 @@
       amount: 1
     - id: Magazine9x19mmSubMachineGunTopMounted
       amount: 2
-    - id: MagazineBoxPistol
+    - id: MagazineBox9x19mm
       amount: 1
 
 - type: entity
@@ -305,7 +305,7 @@
       amount: 1
     - id: Magazine9x19mmSubMachineGun
       amount: 2
-    - id: MagazineBoxPistol
+    - id: MagazineBox9x19mm
       amount: 2
 
 - type: entity
@@ -320,7 +320,7 @@
       amount: 1
     - id: Magazine9x19mmSubMachineGun
       amount: 2
-    - id: MagazineBoxPistol
+    - id: MagazineBox9x19mm
       amount: 1
 
 - type: entity
@@ -335,7 +335,7 @@
       amount: 1
     - id: Magazine9x19mmSubMachineGun
       amount: 2
-    - id: MagazineBoxPistol
+    - id: MagazineBox9x19mm
       amount: 2
 
 - type: entity
@@ -350,7 +350,7 @@
       amount: 1
     - id: Magazine9x19mmSubMachineGun
       amount: 2
-    - id: MagazineBoxPistol
+    - id: MagazineBox9x19mm
       amount: 2
 
 # Rifles
@@ -575,7 +575,7 @@
     contents:
     - id: WeaponSniperRepeater
       amount: 1
-    - id: MagazineBox.45_magnum
+    - id: MagazineBox45_magnum
       amount: 2
 
 - type: entity

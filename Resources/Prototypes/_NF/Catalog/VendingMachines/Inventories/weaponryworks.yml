@@ -17,10 +17,10 @@
     MagazineBox5.56x45mmRubber: 2
     MagazineBox7.62x39mm: 2
     MagazineBox7.62x39mmRubber: 2
-    MagazineBoxPistol: 2
-    MagazineBoxPistolRubber: 2
-    MagazineBox.45_magnum: 2
-    MagazineBox.45_magnumRubber: 2
+    MagazineBox9x19mm: 2
+    MagazineBox9x19mmRubber: 2
+    MagazineBox45_magnum: 2
+    MagazineBox45_magnumRubber: 2
     SpeedLoader5.56x45mmEmpty: 1
     MagazineNovaliteC1Empty: 1
     Magazine7.62x39mmLowCapacityEmpty: 1
@@ -47,10 +47,10 @@
     MagazineBox5.56x45mmRubber: 4294967295
     MagazineBox7.62x39mm: 4294967295
     MagazineBox7.62x39mmRubber: 4294967295
-    MagazineBoxPistol: 4294967295
-    MagazineBoxPistolRubber: 4294967295
-    MagazineBox.45_magnum: 4294967295
-    MagazineBox.45_magnumRubber: 4294967295
+    MagazineBox9x19mm: 4294967295
+    MagazineBox9x19mmRubber: 4294967295
+    MagazineBox45_magnum: 4294967295
+    MagazineBox45_magnumRubber: 4294967295
     SpeedLoader5.56x45mmEmpty: 4294967295
     MagazineNovaliteC1Empty: 4294967295
     Magazine7.62x39mmLowCapacityEmpty: 4294967295
@@ -92,7 +92,7 @@
     MagazineBox5.56x45mmBig: 4294967295 # .20
     MagazineBox6.35x40mmCaselessBig: 4294967295 # .25
     MagazineBox7.62x39mmBig: 4294967295 # .30
-    MagazineBoxPistolBig: 4294967295 # .35
-    MagazineBox.45_magnum: 4294967295 # .45
+    MagazineBox9x19mmBig: 4294967295 # .35
+    MagazineBox45_magnum: 4294967295 # .45
     Box12GaugeSlug: 4294967295
     Box12GaugeBuckshot: 4294967295

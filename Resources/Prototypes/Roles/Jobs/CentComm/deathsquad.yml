@@ -32,8 +32,8 @@
     back:
     - WeaponPulsePistol
     - WeaponRevolverMatebaAP
-    - SpeedLoader.45_magnumAP
-    - SpeedLoader.45_magnumAP
+    - SpeedLoader45_magnumAP
+    - SpeedLoader45_magnumAP
     - BoxFlashbang
     - ToolDebug # spanish army knife
     - WelderExperimental

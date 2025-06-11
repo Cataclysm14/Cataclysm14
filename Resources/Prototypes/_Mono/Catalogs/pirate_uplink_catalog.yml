@@ -508,10 +508,10 @@
       - PirateUplink
 
 - type: listing
-  id: UplinkPirateMagazineBox.45_magnum
+  id: UplinkPirateMagazineBox45_magnum
   name: uplink-pirate-magazine-box-45_magnum-name
   description: uplink-pirate-magazine-box-45_magnum-desc
-  productEntity: BoxMagazine.45_magnum
+  productEntity: BoxMagazine45_magnum
   cost:
     Doubloon: 1
   categories:

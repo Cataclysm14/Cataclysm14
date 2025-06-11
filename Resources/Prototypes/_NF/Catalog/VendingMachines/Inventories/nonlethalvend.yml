@@ -7,8 +7,8 @@
     MagazineBox5.56x45mmPractice: 8
     MagazineBox6.35x40mmCaselessPractice: 10
     MagazineBox7.62x39mmPractice: 5
-    MagazineBoxPistolPractice: 10
-    MagazineBox.45_magnumPractice: 10
+    MagazineBox9x19mmPractice: 10
+    MagazineBox45_magnumPractice: 10
     RevolverCapGun: 2
     BoxCartridgeCap: 4
     WeaponRifleFoam: 2
@@ -19,6 +19,6 @@
   contrabandInventory:
     SpeedLoader5.56x45mmPractice: 3
     SpeedLoader9x19mmPractice: 3
-    SpeedLoader.45_magnumPractice: 3
+    SpeedLoader45_magnumPractice: 3
   emaggedInventory:
     ThrowingKnife: 1

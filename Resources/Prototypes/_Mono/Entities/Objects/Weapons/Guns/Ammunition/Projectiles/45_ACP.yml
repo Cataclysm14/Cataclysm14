@@ -1,5 +1,5 @@
 - type: entity
-  id: Bullet.45_ACP
+  id: Bullet45_ACP
   name: bullet (.45 ACP FMJ)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -10,7 +10,7 @@
         Piercing: 16
 
 - type: entity
-  id: Bullet.45_ACPPractice
+  id: Bullet45_ACPPractice
   name: bullet (.45 ACP practice)
   parent: BaseBulletPractice
   categories: [ HideSpawnMenu ]
@@ -21,7 +21,7 @@
         Blunt: 2
 
 - type: entity
-  id: Bullet.45_ACPRubber
+  id: Bullet45_ACPRubber
   name: bullet (.45 ACP rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
@@ -32,7 +32,7 @@
         Blunt: 3
 
 - type: entity
-  id: Bullet.45_ACPIncendiary
+  id: Bullet45_ACPIncendiary
   parent: BaseBulletIncendiary
   name: bullet (.45 ACP incendiary)
   categories: [ HideSpawnMenu ]
@@ -44,7 +44,7 @@
         Heat: 14
 
 - type: entity
-  id: Bullet.45_ACPUranium
+  id: Bullet45_ACPUranium
   parent: BaseBulletUranium
   name: bullet (.45 ACP uranium)
   categories: [ HideSpawnMenu ]
@@ -57,7 +57,7 @@
 
 # Upstream
 - type: entity
-  id: Bullet.45_ACPEmp
+  id: Bullet45_ACPEmp
   name: bullet (.45 ACP emp)
   parent: BaseBulletEmp
   categories: [ HideSpawnMenu ]

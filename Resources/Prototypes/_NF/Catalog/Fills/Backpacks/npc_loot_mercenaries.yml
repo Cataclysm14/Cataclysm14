@@ -90,9 +90,9 @@
     - id: Magazine9x19mmEmpty
       amount: 2
       prob: 0.4
-    - id: MagazineBoxPistol
+    - id: MagazineBox9x19mm
       prob: 0.4
-    - id: MagazineBoxPistolBig # Mono
+    - id: MagazineBox9x19mmBig # Mono
       prob: 0.2
     sound:
       path: /Audio/Items/jumpsuit_equip.ogg
@@ -486,13 +486,13 @@
     - id: ClothingOuterArmorBulletproof
       prob: 0.4
     # Items
-    - id: MagazineBox.45_magnum
+    - id: MagazineBox45_magnum
       prob: 0.9
-    - id: MagazineBox.45_magnum
+    - id: MagazineBox45_magnum
       prob: 0.4
     - id: ClothingNeckIFFNeutral
       prob: 0.2
-    - id: MagazineBox.45_magnum
+    - id: MagazineBox45_magnum
       prob: 0.2
     - id: AmmoTechFabCircuitboard
       prob: 0.1

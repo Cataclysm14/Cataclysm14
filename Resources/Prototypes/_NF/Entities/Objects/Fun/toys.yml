@@ -610,4 +610,4 @@
   suffix: Fake, Grown
   components:
   - type: RevolverAmmoProvider
-    proto: Cartridge.45_magnum # Base has AP rounds
+    proto: Cartridge45_magnum # Base has AP rounds

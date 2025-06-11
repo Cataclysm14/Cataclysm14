@@ -34,23 +34,23 @@
 
 - type: entity
   parent: BaseBlueprintExpedition
-  id: NFBlueprintMagazineBox.45_magnumUranium
+  id: NFBlueprintMagazineBox45_magnumUranium
   name: uranium .45 magnum ammo blueprint
   description: A blueprint with a schematic of an uranium .45 magnum ammo. It can be inserted into an autolathe or a techfab.
   components:
   - type: Blueprint
     providedRecipes:
-    - MagazineBox.45_magnumUranium
+    - MagazineBox45_magnumUranium
 
 - type: entity
   parent: BaseBlueprintExpedition
-  id: NFBlueprintMagazineBoxPistolUranium
+  id: NFBlueprintMagazineBox9x19mmUranium
   name: uranium 9x19mm blueprint
   description: A blueprint with a schematic of an uranium 9x19mm. It can be inserted into an autolathe or a techfab.
   components:
   - type: Blueprint
     providedRecipes:
-    - MagazineBoxPistolUranium
+    - MagazineBox9x19mmUranium
 
 ## Incendiary
 
@@ -86,23 +86,23 @@
 
 - type: entity
   parent: BaseBlueprintExpedition
-  id: NFBlueprintMagazineBox.45_magnumIncendiary
+  id: NFBlueprintMagazineBox45_magnumIncendiary
   name: incendiary .45 magnum ammo blueprint
   description: A blueprint with a schematic of an incendiary .45 magnum ammo. It can be inserted into an autolathe or a techfab.
   components:
   - type: Blueprint
     providedRecipes:
-    - MagazineBox.45_magnumIncendiary
+    - MagazineBox45_magnumIncendiary
 
 - type: entity
   parent: BaseBlueprintExpedition
-  id: NFBlueprintMagazineBoxPistolIncendiary
+  id: NFBlueprintMagazineBox9x19mmIncendiary
   name: incendiary 9x19mm blueprint
   description: A blueprint with a schematic of an incendiary 9x19mm. It can be inserted into an autolathe or a techfab.
   components:
   - type: Blueprint
     providedRecipes:
-    - MagazineBoxPistolIncendiary
+    - MagazineBox9x19mmIncendiary
 
 # Guns
 

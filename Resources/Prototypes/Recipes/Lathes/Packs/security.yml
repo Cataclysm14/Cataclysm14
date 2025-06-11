@@ -17,8 +17,8 @@
   recipes:
   - Box12GaugePractice
   - MagazineBox7.62x39mmPractice
-  - MagazineBox.45_magnumPractice
-  - MagazineBoxPistolPractice
+  - MagazineBox45_magnumPractice
+  - MagazineBox9x19mmPractice
   - MagazineBox5.56x45mmPractice
   - WeaponDisablerPractice
   - WeaponLaserCarbinePractice
@@ -32,10 +32,10 @@
   - Box12GaugeSlug
   - MagazineBox7.62x39mm
   - MagazineBox7.62x39mmRubber # Frontier
-  - MagazineBox.45_magnum
-  - MagazineBox.45_magnumRubber # Frontier
-  - MagazineBoxPistol
-  - MagazineBoxPistolRubber # Frontier
+  - MagazineBox45_magnum
+  - MagazineBox45_magnumRubber # Frontier
+  - MagazineBox9x19mm
+  - MagazineBox9x19mmRubber # Frontier
   - MagazineBox5.56x45mm
   - MagazineBox5.56x45mmRubber # Frontier
   - Magazine7.62x39mmFMJ
@@ -54,8 +54,8 @@
   - MagazineShotgun
   - MagazineShotgunEmpty
   - MagazineShotgunSlug
-  - SpeedLoader.45_magnum
-  - SpeedLoader.45_magnumEmpty
+  - SpeedLoader45_magnum
+  - SpeedLoader45_magnumEmpty
   - SpeedLoader5.56x45mm # Frontier
   - SpeedLoader5.56x45mmEmpty # Frontier
   - MagazineNovaliteC1Empty # Frontier
@@ -117,10 +117,10 @@
   - Box12GaugeTranquilizer
   # - MagazineBox7.62x39mmIncendiary # Frontier
   # - MagazineBox7.62x39mmUranium # Frontier
-  # - MagazineBox.45_magnumIncendiary # Frontier
-  # - MagazineBox.45_magnumUranium # Frontier
-  # - MagazineBoxPistolIncendiary # Frontier
-  # - MagazineBoxPistolUranium # Frontier
+  # - MagazineBox45_magnumIncendiary # Frontier
+  # - MagazineBox45_magnumUranium # Frontier
+  # - MagazineBox9x19mmIncendiary # Frontier
+  # - MagazineBox9x19mmUranium # Frontier
   # - MagazineBox5.56x45mmIncendiary # Frontier
   # - MagazineBox5.56x45mmUranium # Frontier
   # - Magazine7.62x39mmIncendiary # Frontier
@@ -133,8 +133,8 @@
   # - MagazineRifleUranium # Frontier
   - MagazineShotgunBeanbag
   # - MagazineShotgunIncendiary # Frontier
-  # - SpeedLoader.45_magnumIncendiary # Frontier
-  # - SpeedLoader.45_magnumUranium # Frontier
+  # - SpeedLoader45_magnumIncendiary # Frontier
+  # - SpeedLoader45_magnumUranium # Frontier
 
 - type: latheRecipePack
   id: SecurityWeapons

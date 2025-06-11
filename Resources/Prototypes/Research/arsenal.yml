@@ -36,10 +36,10 @@
 #   - Magazine9x19mmIncendiary
 #   - Magazine9x19mmSubMachineGunIncendiary
 #   - Magazine7.62x39mmIncendiary
-#   - SpeedLoader.45_magnumIncendiary
+#   - SpeedLoader45_magnumIncendiary
 #   - MagazineShotgunIncendiary
-#   - MagazineBoxPistolIncendiary
-#   - MagazineBox.45_magnumIncendiary
+#   - MagazineBox9x19mmIncendiary
+#   - MagazineBox45_magnumIncendiary
 #   - MagazineBox7.62x39mmIncendiary
 #   - MagazineBox5.56x45mmIncendiary
 # #   - SpeedLoader5.56x45mmIncendiary # Frontier
@@ -74,8 +74,8 @@
   - Box12GaugeBeanbag
   - WeaponDisabler
   - MagazineBox7.62x39mmRubber # Frontier
-  - MagazineBox.45_magnumRubber # Frontier
-  - MagazineBoxPistolRubber # Frontier
+  - MagazineBox45_magnumRubber # Frontier
+  - MagazineBox9x19mmRubber # Frontier
   - MagazineBox5.56x45mmRubber # Frontier
   - WeaponMechCombatDisabler # Goobstation
 
@@ -95,9 +95,9 @@
 #   - Magazine9x19mmUranium
 #   - Magazine9x19mmSubMachineGunUranium
 #   - Magazine7.62x39mmUranium
-#   - SpeedLoader.45_magnumUranium
-#   - MagazineBoxPistolUranium
-#   - MagazineBox.45_magnumUranium
+#   - SpeedLoader45_magnumUranium
+#   - MagazineBox9x19mmUranium
+#   - MagazineBox45_magnumUranium
 #   - MagazineBox7.62x39mmUranium
 #   - MagazineBox5.56x45mmUranium
 #   - Box12GaugeUranium

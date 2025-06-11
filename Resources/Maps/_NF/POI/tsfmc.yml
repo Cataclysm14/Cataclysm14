@@ -15959,7 +15959,7 @@ entities:
     - type: Transform
       pos: -14.463586,16.659513
       parent: 1
-- proto: MagazineBoxPistolPractice
+- proto: MagazineBox9x19mmPractice
   entities:
   - uid: 2265
     components:

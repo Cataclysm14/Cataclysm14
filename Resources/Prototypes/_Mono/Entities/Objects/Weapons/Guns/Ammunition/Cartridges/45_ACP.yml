@@ -1,5 +1,5 @@
 - type: entity
-  id: BaseCartridge.45_ACP
+  id: BaseCartridge45_ACP
   name: cartridge (.45 ACP FMJ)
   parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
   abstract: true
@@ -7,9 +7,9 @@
   - type: Tag
     tags:
       - Cartridge
-      - Cartridge.45_ACPFMJ
+      - Cartridge45_ACPFMJ
   - type: CartridgeAmmo
-    proto: Bullet.45_ACP
+    proto: Bullet45_ACP
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:
@@ -21,20 +21,20 @@
     price: 1
 
 - type: entity
-  id: Cartridge.45_ACPFMJ
+  id: Cartridge45_ACPFMJ
   name: cartridge (.45 ACP FMJ)
-  parent: BaseCartridge.45_ACP
+  parent: BaseCartridge45_ACP
   components:
   - type: CartridgeAmmo
-    proto: Bullet.45_ACP
+    proto: Bullet45_ACP
 
 - type: entity
-  id: Cartridge.45_ACPPractice
+  id: Cartridge45_ACPPractice
   name: cartridge (.45 ACP practice)
-  parent: BaseCartridge.45_ACP
+  parent: BaseCartridge45_ACP
   components:
   - type: CartridgeAmmo
-    proto: Bullet.45_ACPPractice
+    proto: Bullet45_ACPPractice
   -  type: Sprite
      layers:
        - state: base
@@ -44,12 +44,12 @@
          color: "#dbdbdb"
 
 - type: entity
-  id: Cartridge.45_ACPIncendiary
+  id: Cartridge45_ACPIncendiary
   name: cartridge (.45 ACP incendiary)
-  parent: BaseCartridge.45_ACP
+  parent: BaseCartridge45_ACP
   components:
   - type: CartridgeAmmo
-    proto: Bullet.45_ACPIncendiary
+    proto: Bullet45_ACPIncendiary
   - type: Sprite
     layers:
       - state: base
@@ -59,12 +59,12 @@
         color: "#ff6e52"
 
 - type: entity
-  id: Cartridge.45_ACPUranium
+  id: Cartridge45_ACPUranium
   name: cartridge (.45 ACP uranium)
-  parent: BaseCartridge.45_ACP
+  parent: BaseCartridge45_ACP
   components:
   - type: CartridgeAmmo
-    proto: Bullet.45_ACPUranium
+    proto: Bullet45_ACPUranium
   - type: Sprite
     layers:
       - state: base
@@ -75,12 +75,12 @@
 
 # Upstream
 - type: entity
-  id: Cartridge.45_ACPRubber
+  id: Cartridge45_ACPRubber
   name: cartridge (.45 ACP rubber)
-  parent: BaseCartridge.45_ACP
+  parent: BaseCartridge45_ACP
   components:
   - type: CartridgeAmmo
-    proto: Bullet.45_ACPRubber
+    proto: Bullet45_ACPRubber
   - type: Sprite
     layers:
       - state: base
@@ -91,12 +91,12 @@
 
 # Frontier
 - type: entity
-  id: Cartridge.45_ACPEmp
+  id: Cartridge45_ACPEmp
   name: cartridge (.45 ACP emp)
-  parent: BaseCartridge.45_ACP
+  parent: BaseCartridge45_ACP
   components:
   - type: CartridgeAmmo
-    proto: Bullet.45_ACPEmp
+    proto: Bullet45_ACPEmp
   - type: EmpDescription
     range: 0.3
     energyConsumption: 2700000

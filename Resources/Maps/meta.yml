@@ -131971,14 +131971,14 @@ entities:
     - type: Transform
       pos: -44.5,-21.5
       parent: 5350
-- proto: MagazineBox.45_magnumPractice
+- proto: MagazineBox45_magnumPractice
   entities:
   - uid: 22264
     components:
     - type: Transform
       pos: -15.199577,42.62874
       parent: 5350
-- proto: MagazineBoxPistolPractice
+- proto: MagazineBox9x19mmPractice
   entities:
   - uid: 13619
     components:
@@ -152594,7 +152594,7 @@ entities:
     - type: Transform
       pos: -2.5,38.5
       parent: 5350
-- proto: SpeedLoader.45_magnumPractice
+- proto: SpeedLoader45_magnumPractice
   entities:
   - uid: 10328
     components:

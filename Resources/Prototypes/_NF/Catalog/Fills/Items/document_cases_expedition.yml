@@ -16,10 +16,10 @@
     # - id: NFBlueprintMagazineBox7.62x39mmUranium
       # prob: 0.2
       # orGroup: Blueprints
-    # - id: NFBlueprintMagazineBox.45_magnumUranium
+    # - id: NFBlueprintMagazineBox45_magnumUranium
       # prob: 0.2
       # orGroup: Blueprints
-    # - id: NFBlueprintMagazineBoxPistolUranium
+    # - id: NFBlueprintMagazineBox9x19mmUranium
       # prob: 0.2
       # orGroup: Blueprints
     # - id: NFBlueprintBox12GaugeIncendiary
@@ -28,7 +28,7 @@
     # - id: NFBlueprintMagazineBox5.56x45mmIncendiary
       # prob: 0.2
       # orGroup: Blueprints
-    # - id: NFBlueprintMagazineBox.45_magnumIncendiary
+    # - id: NFBlueprintMagazineBox45_magnumIncendiary
       # prob: 0.2
       # orGroup: Blueprints
     - id: NFBlueprintWeaponLaserCannon

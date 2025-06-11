@@ -99,8 +99,8 @@
   id: NFSalvageTechfabDeprecatedEmag
   recipes:
     - ShellTranquilizer
-    - MagazineBoxPistol
-    - MagazineBox.45_magnum
+    - MagazineBox9x19mm
+    - MagazineBox45_magnum
     - MagazineBox5.56x45mm
     - MagazineBox7.62x39mm
 #       - 40mmGrenadeThermobaric

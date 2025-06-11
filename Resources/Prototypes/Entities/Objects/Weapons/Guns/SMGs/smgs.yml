@@ -161,21 +161,21 @@
       slots:
         gun_magazine:
           name: Magazine
-          startingItem: Magazine.45_ACPSubMachineGun
+          startingItem: Magazine45_ACPSubMachineGun
           insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
           ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
           priority: 2
           whitelist:
             tags:
-              - Magazine.45_ACPSubMachineGun
+              - Magazine45_ACPSubMachineGun
           whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:
           name: Chamber
-          startingItem: Cartridge.45_ACPFMJ
+          startingItem: Cartridge45_ACPFMJ
           priority: 1
           whitelist:
             tags:
-              - Cartridge.45_ACPFMJ
+              - Cartridge45_ACPFMJ
     - type: MagazineVisuals
       magState: mag
       steps: 1

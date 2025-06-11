@@ -1,6 +1,8 @@
 - type: Tag
   id: CassetteTape
 
+#7.62x51mm tags
+
 - type: Tag
   id: Cartridge7.62x51mmFMJ
 
@@ -13,6 +15,8 @@
 - type: Tag
   id: Magazine7.62x51mmBox
 
+#7.62x54mmR tags
+
 - type: Tag
   id: Cartridge7.62x54mmRFMJ
 
@@ -22,6 +26,19 @@
 - type: Tag
   id: Magazine7.62x54mmRBox
 
+#5.56x45mm tags
+
+- type: Tag
+  id: Cartridge5.56x45mmFMJ
+
+- type: Tag
+  id: Magazine5.56x45mmFMJ
+
+- type: Tag
+  id: Magazine5.56x45mmBox
+
+#7.62x39mm tags
+
 - type: Tag
   id: Cartridge7.62x39mmFMJ
 
@@ -29,4 +46,67 @@
   id: Magazine7.62x39mmFMJ
 
 - type: Tag
+  id: Magazine7.62x39mmLowCapacity
+
+- type: Tag
   id: Magazine7.62x39mmBox
+
+#4.6x30mm tags
+
+- type: Tag
+  id: Cartridge4.6x30mmFMJ
+
+- type: Tag
+  id: Magazine4.6x30mmFMJ
+
+- type: Tag
+  id: Magazine4.6x30mmHighCapacity
+
+- type: Tag
+  id: Magazine4.6x30mmSubMachineGun
+
+- type: Tag
+  id: Magazine4.6x30mmSubMachineGunTopMounted
+
+- type: Tag
+  id: Magazine4.6x30mmFMJBox
+
+#45 ACP tags
+
+- type: Tag
+  id: Cartridge45_ACPFMJ
+
+- type: Tag
+  id: Magazine45_ACPFMJ
+
+- type: Tag
+  id: Magazine45_ACPHighCapacity
+
+- type: Tag
+  id: Magazine45_ACPSubMachineGun
+
+- type: Tag
+  id: Magazine45_ACPSubMachineGunTopMounted
+
+- type: Tag
+  id: Magazine45_ACPFMJBox
+
+#9x19mm tags
+
+- type: Tag
+  id: Cartridge9x19mmFMJ
+
+- type: Tag
+  id: Magazine9x19mmFMJ
+
+- type: Tag
+  id: Magazine9x19mmHighCapacity
+
+- type: Tag
+  id: Magazine9x19mmSubMachineGun
+
+- type: Tag
+  id: Magazine9x19mmSubMachineGunTopMounted
+
+- type: Tag
+  id: Magazine9x19mmFMJBox

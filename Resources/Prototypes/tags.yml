@@ -277,13 +277,7 @@
   id: CartridgeCHIMP
 
 - type: Tag
-  id: Cartridge.45_magnum
-
-- type: Tag
-  id: Cartridge9x19mmFMJ
-
-- type: Tag
-  id: Cartridge5.56x45mm
+  id: Cartridge45_magnum
 
 - type: Tag
   id: CartridgeRocket
@@ -809,40 +803,22 @@
   id: MagazineRifle
 
 - type: Tag
-  id: Magazine5.56x45mmBox
-
-- type: Tag
   id: Magazine7.62x39mmPan
 
 - type: Tag
-  id: Magazine.45_magnum
-
-- type: Tag
-  id: Magazine9x19mmFMJ
+  id: Magazine45_magnum
 
 - type: Tag
   id: Magazine6.35x40mmCaselessPistol
 
 - type: Tag
-  id: Magazine9x19mmHighCapacity
-
-- type: Tag
-  id: Magazine9x19mmSubMachineGunTopMounted
-
-- type: Tag
-  id: Magazine5.56x45mmFMJ
-
-- type: Tag
   id: MagazineShotgun
 
 - type: Tag
-  id: Magazine.45_magnumSubMachineGun
+  id: Magazine45_magnumSubMachineGun
 
 - type: Tag
   id: MagazineDMR # mono
-
-- type: Tag
-  id: Magazine9x19mmSubMachineGun
 
 - type: Tag
   id: Magazine40mm
@@ -1208,7 +1184,7 @@
   id: SpeedLoaderCap
 
 - type: Tag
-  id: SpeedLoader.45_magnum
+  id: SpeedLoader45_magnum
 
 - type: Tag
   id: SpeedLoader9x19mm
