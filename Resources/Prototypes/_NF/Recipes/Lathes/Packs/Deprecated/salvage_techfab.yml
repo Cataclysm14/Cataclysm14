@@ -99,5 +99,4 @@
   id: NFSalvageTechfabDeprecatedEmag
   recipes:
     - ShellTranquilizer
-#       - 40mmGrenadeThermobaric
     - ClothingHeadHelmetCosmonaut

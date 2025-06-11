@@ -23,7 +23,6 @@
   - GyroscopeNfsdMachineCircuitboard
   - SmallGyroscopeNfsdMachineCircuitboard
   - ClothingOuterHardsuitEVAPrisoner
-  - Box12GaugeBeanbag
   - WeaponDisabler
   - ContrabandAppraisalTool
   - HoloprojectorNfsd
@@ -33,21 +32,12 @@
   - PowerCageMedium
   - PowerCageSmall
   - Signaller
-  - MagazineNovaliteC1Empty
-  - MagazineNovaliteC1
-  - MagazineNovaliteC1Rubber
-  - MagazineDMR # mono
-  - MagazineDMREmpty # mono
-  - MagazineBoxDMR # mono
 
 - type: latheRecipePack
   id: NFNfsdTechfabDeprecated
   recipes:
   - ExplosivePayload
   - FlashPayload
-  - 40mmGrenadeThermobaric
-  - 40mmGrenadeEMP
-  - 40mmGrenadeFlash
   - PortableRecharger
   - SignalTrigger
   - TelescopicShield
@@ -63,4 +53,4 @@
 - type: latheRecipePack
   id: NFNfsdTechfabDeprecatedEmag
   recipes:
-  - Magazine40mmEmpty
+  - Wirecutter

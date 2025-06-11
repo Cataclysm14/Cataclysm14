@@ -15,11 +15,6 @@
 - type: latheRecipePack
   id: SecurityPracticeStatic
   recipes:
-  - Box12GaugePractice
-  - MagazineBox7.62x39mmPractice
-  - MagazineBox45_magnumPractice
-  - MagazineBox9x19mmPractice
-  - MagazineBox5.56x45mmPractice
   - WeaponDisablerPractice
   - WeaponLaserCarbinePractice
   # - WeaponFlareGunSecurity # Frontier
@@ -28,12 +23,7 @@
 - type: latheRecipePack
   id: SecurityAmmoStatic
   recipes:
-  - MagazineNovaliteC1Empty # Frontier
-  - MagazineNovaliteC1 # Frontier
-  - MagazineNovaliteC1Rubber # Frontier
-  - MagazineDMR # mono
-  - MagazineDMREmpty # mono
-  - MagazineBoxDMR # mono
+  - Wirecutter 
 
 - type: latheRecipePack
   id: SecurityWeaponsStatic
@@ -71,37 +61,12 @@
   id: SecurityExplosives
   recipes:
   - ExplosivePayload
-  - 40mmGrenadeThermobaric
-  - 40mmGrenadeEMP
-  - 40mmGrenadeFlash
-  - Magazine40mmEmpty
 
 # Shared between secfab and emagged protolathe
 - type: latheRecipePack
   id: SecurityAmmo
   recipes:
-  # - Box12GaugeIncendiary # Frontier
-  # - Box12GaugeUranium # Frontier
-  - Box12GaugeTranquilizer
-  # - MagazineBox7.62x39mmIncendiary # Frontier
-  # - MagazineBox7.62x39mmUranium # Frontier
-  # - MagazineBox45_magnumIncendiary # Frontier
-  # - MagazineBox45_magnumUranium # Frontier
-  # - MagazineBox9x19mmIncendiary # Frontier
-  # - MagazineBox9x19mmUranium # Frontier
-  # - MagazineBox5.56x45mmIncendiary # Frontier
-  # - MagazineBox5.56x45mmUranium # Frontier
-  # - Magazine7.62x39mmIncendiary # Frontier
-  # - Magazine7.62x39mmUranium # Frontier
-  # - Magazine9x19mmPistolIncendiary # Frontier
-  # - Magazine9x19mmPistolUranium # Frontier
-  # - Magazine9x19mmSubMachineGunIncendiary # Frontier
-  # - Magazine9x19mmSubMachineGunUranium # Frontier
-  # - Magazine5.56x45mmIncendiary # Frontier
-  # - Magazine5.56x45mmUranium # Frontier
-  # - MagazineShotgunIncendiary # Frontier
-  # - SpeedLoader45_magnumIncendiary # Frontier
-  # - SpeedLoader45_magnumUranium # Frontier
+  - Wirecutter
 
 - type: latheRecipePack
   id: SecurityWeapons

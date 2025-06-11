@@ -89,14 +89,6 @@
   - BaseBallBatNF
   - CrossbowModern
   - WeaponPistolPollock
-## Ammo boxes
-  - Box12GaugeBuckshot
-## Mags / Speedloaders / Clips
-  - MagazineNovaliteC1Empty
-  - MagazineNovaliteC1
-  - MagazineNovaliteC1Rubber
-  - MagazineDMREmpty # mono
-  - MagazineBoxDMR # mono
   ## Cyborg Modules
   - BorgModuleMercenary # mono
 
@@ -178,5 +170,4 @@
 - type: latheRecipePack
   id: NFMercenaryTechfabDeprecatedEmag
   recipes:
-  - Box12GaugeIncendiary
-  - Box12GaugeUranium
+  - Wirecutter
