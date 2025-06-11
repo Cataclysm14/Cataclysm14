@@ -87,11 +87,11 @@
     variation: 0.125
   sounds:
     Scream:
-      collection: MaleScreams
+      collection: VulpkaninMaleScreams # Monolith
     Laugh:
-      collection: MaleLaugh
+      collection: VulpkaninLaugh # Monolith
     Sneeze:
-      collection: MaleSneezes
+      collection: VulpkaninSneezes # Monolith
     Cough:
       collection: MaleCoughs
     Yawn:
@@ -103,7 +103,7 @@
     Sigh:
       collection: MaleSigh
     Crying:
-      collection: MaleCry
+      collection: VulpkaninCry # Monolith
     Whistle:
       collection: Whistles
     Weh:
@@ -111,7 +111,7 @@
     Hew:
       collection: Hew
     Growl:
-      collection: VulpkaninGrowls
+      collection: VulpkaninMaleGrowl # Monolith
     Snarl:
       collection: VulpkaninSnarls
     Bark:
@@ -119,9 +119,9 @@
     Whine:
       collection: VulpkaninWhines
     Howl:
-      collection: VulpkaninHowls
+      collection: VulpkaninMaleHowl # Monolith
     Awoo:
-      collection: VulpkaninHowls
+      collection: VulpkaninMaleHowl # Monolith
     Gasp:
       collection: MaleGasp
     DefaultDeathgasp:
@@ -135,11 +135,11 @@
     variation: 0.125
   sounds:
     Scream:
-      collection: FemaleScreams
+      collection: VulpkaninFemaleScreams # Monolith
     Laugh:
-      collection: FemaleLaugh
+      collection: VulpkaninLaugh # Monolith
     Sneeze:
-      collection: FemaleSneezes
+      collection: VulpkaninSneezes # Monolith
     Cough:
       collection: FemaleCoughs
     Yawn:
@@ -151,7 +151,7 @@
     Sigh:
       collection: FemaleSigh
     Crying:
-      collection: FemaleCry
+      collection: VulpkaninCry # Monolith
     Whistle:
       collection: Whistles
     Weh:
@@ -159,7 +159,7 @@
     Hew:
       collection: Hew
     Growl:
-      collection: VulpkaninGrowls
+      collection: VulpkaninFemaleGrowl # Monolith
     Snarl:
       collection: VulpkaninSnarls
     Bark:
@@ -167,9 +167,9 @@
     Whine:
       collection: VulpkaninWhines
     Howl:
-      collection: VulpkaninHowls
+      collection: VulpkaninFemaleHowl # Monolith
     Awoo:
-      collection: VulpkaninHowls
+      collection: VulpkaninFemaleHowl # Monolith
     Gasp:
       collection: FemaleGasp
     DefaultDeathgasp:
