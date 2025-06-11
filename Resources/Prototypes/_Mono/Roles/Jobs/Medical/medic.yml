@@ -24,7 +24,7 @@
         factions:
         - TSFMC
       - type: SurgerySpeedModifier
-        SpeedModifier: 2
+        SpeedModifier: 1.75
   - !type:GiveItemOnHolidaySpecial
     holiday: FrontierBirthday
     prototype: FrontierBirthdayGift
