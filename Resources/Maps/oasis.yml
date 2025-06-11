@@ -144823,7 +144823,7 @@ entities:
     - type: Transform
       pos: -47.520466,-22.794298
       parent: 2
-- proto: Magazine45_magnum
+- proto: Magazine45_magnumFMJ
   entities:
   - uid: 4205
     components:

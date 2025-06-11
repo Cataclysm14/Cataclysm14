@@ -9,7 +9,7 @@
       - Cartridge
       - Cartridge5.7x28mmFMJ
   - type: CartridgeAmmo
-    proto: Bullet5.7x28mm
+    proto: Bullet5.7x28mmFMJ
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:
@@ -26,7 +26,7 @@
   parent: BaseCartridge5.7x28mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet5.7x28mm
+    proto: Bullet5.7x28mmFMJ
 
 - type: entity
   id: Cartridge5.7x28mmPractice

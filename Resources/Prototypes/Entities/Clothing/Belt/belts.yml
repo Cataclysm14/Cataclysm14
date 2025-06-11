@@ -481,7 +481,7 @@
   #       - Radio
   #       - Sidearm
   #       - Magazine9x19mmFMJ
-  #       - Magazine45_magnum
+  #       - Magazine45_magnumFMJ
   #       - CombatKnife
   #       - Truncheon
   #     components:

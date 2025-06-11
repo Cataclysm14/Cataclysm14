@@ -38,11 +38,11 @@
         priority: 2
         whitelist:
           tags:
-            - Magazine45_magnum
+            - Magazine45_magnumFMJ
       gun_chamber:
         name: Chamber
         startingItem: Cartridge45_magnumRubber
         priority: 1
         whitelist:
           tags:
-            - Cartridge45_magnum
+            - Cartrdige45_magnumFMJ

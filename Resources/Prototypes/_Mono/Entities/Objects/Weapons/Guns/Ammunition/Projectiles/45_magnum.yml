@@ -1,28 +1,28 @@
 - type: entity
-  id: Bullet45_ACP
-  name: bullet (.45 ACP FMJ)
+  id: Bullet45_magnumFMJ
+  name: bullet (.45 magnum)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types:
-        Piercing: 16
+        Piercing: 35
 
 - type: entity
-  id: Bullet45_ACPPractice
-  name: bullet (.45 ACP practice)
+  id: Bullet45_magnumPractice
+  name: bullet (.45 magnum practice)
   parent: BaseBulletPractice
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types:
-        Blunt: 2
+        Blunt: 1
 
 - type: entity
-  id: Bullet45_ACPRubber
-  name: bullet (.45 ACP rubber)
+  id: Bullet45_magnumRubber
+  name: bullet (.45 magnum rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
   components:
@@ -30,39 +30,41 @@
     damage:
       types:
         Blunt: 3
+  - type: StaminaDamageOnCollide
+    damage: 35 # 3 hits to stun cuz revolver
 
 - type: entity
-  id: Bullet45_ACPIncendiary
+  id: Bullet45_magnumIncendiary
   parent: BaseBulletIncendiary
-  name: bullet (.45 ACP incendiary)
+  name: bullet (.45 magnum incendiary)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types:
-        Blunt: 2
-        Heat: 14
+        Blunt: 3
+        Heat: 32
 
 - type: entity
-  id: Bullet45_ACPUranium
+  id: Bullet45_magnumAP
+  name: bullet (.45 magnum armor-piercing)
+  parent: BaseBulletAP
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 26 # 20% decrease
+    ignoreResistances: true
+
+- type: entity
+  id: Bullet45_magnumUranium
+  name: bullet (.45 magnum uranium)
   parent: BaseBulletUranium
-  name: bullet (.45 ACP uranium)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types:
-        Radiation: 6
-        Piercing: 10
-
-# Upstream
-- type: entity
-  id: Bullet45_ACPEmp
-  name: bullet (.45 ACP emp)
-  parent: BaseBulletEmp
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Shock: 0
+        Radiation: 15
+        Piercing: 20

@@ -85,7 +85,7 @@
       prototypes:
         - SyndicateNavalCaptainGearB
     - type: BasicEntityAmmoProvider
-      proto: Bullet45_magnum
+      proto: Bullet45_magnumFMJ
       capacity: 1
       count: 1
 
@@ -98,7 +98,7 @@
       prototypes:
         - SyndicateNavalCaptainGearC
     - type: BasicEntityAmmoProvider
-      proto: Bullet45_magnum
+      proto: Bullet45_magnumFMJ
       capacity: 1
       count: 1
 
@@ -111,7 +111,7 @@
       prototypes:
         - SyndicateNavalCaptainGearD
     - type: BasicEntityAmmoProvider
-      proto: Bullet45_magnum
+      proto: Bullet45_magnumFMJ
       capacity: 1
       count: 1
 
@@ -316,7 +316,7 @@
       rechargeSound:
         path: /Audio/_NF/Effects/silence.ogg
     - type: BasicEntityAmmoProvider
-      proto: Bullet9x19mm
+      proto: Bullet9x19mmFMJ
       capacity: 7
       count: 7
     - type: Gun
@@ -560,7 +560,7 @@
       prototypes:
         - SyndicateNavalCommanderGearB
     - type: BasicEntityAmmoProvider
-      proto: Cartridge5.56x45mm
+      proto: Cartridge5.56x45mmFMJ
       capacity: 4
       count: 4
     - type: Gun
@@ -605,7 +605,7 @@
       rechargeSound:
         path: /Audio/_NF/Effects/silence.ogg
     - type: BasicEntityAmmoProvider
-      proto: Bullet9x19mm
+      proto: Bullet9x19mmFMJ
       capacity: 4
       count: 4
     - type: Gun
@@ -747,7 +747,7 @@
       prototypes:
         - SyndicateNavalCaptainVoidGear
     - type: BasicEntityAmmoProvider
-      proto: Bullet45_magnum
+      proto: Bullet45_magnumFMJ
       capacity: 1
       count: 1
 

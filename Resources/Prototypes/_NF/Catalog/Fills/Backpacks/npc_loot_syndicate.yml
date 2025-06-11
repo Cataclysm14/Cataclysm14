@@ -482,8 +482,8 @@
   components:
   - type: SpawnItemsOnUse
     items:
-      - id: MagazineBox9x19mm
-      - id: MagazineBox9x19mm
+      - id: MagazineBox9x19mmFMJ
+      - id: MagazineBox9x19mmFMJ
       - id: SpaceCash1000
       - id: SpaceCash500
       # Bonus Loot T3

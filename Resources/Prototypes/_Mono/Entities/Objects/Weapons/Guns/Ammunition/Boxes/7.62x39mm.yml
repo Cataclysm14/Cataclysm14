@@ -27,7 +27,7 @@
 # Boxes
 - type: entity
   parent: BaseMagazineBox7.62x39mm
-  id: MagazineBox7.62x39mmBig
+  id: MagazineBox7.62x39mmBigFMJ
   name: ammunition box (7.62x39mm FMJ)
   suffix: Big
   components:
@@ -47,7 +47,7 @@
 
 - type: entity
   parent: BaseMagazineBox7.62x39mm
-  id: MagazineBox7.62x39mm
+  id: MagazineBox7.62x39mmFMJ
   name: ammunition box (7.62x39mm FMJ)
   components:
   - type: BallisticAmmoProvider
@@ -121,7 +121,7 @@
     - state: rubber
 
 - type: entity
-  parent: MagazineBox7.62x39mmBig
+  parent: MagazineBox7.62x39mmBigFMJ
   id: MagazineBox7.62x39mmRubberBig
   name: ammunition box (7.62x39mm rubber)
   suffix: Big

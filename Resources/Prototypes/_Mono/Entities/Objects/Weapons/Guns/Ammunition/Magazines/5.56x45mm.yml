@@ -14,7 +14,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge5.56x45mm
+        - Cartridge5.56x45mmFMJ
     capacity: 30
   - type: ContainerContainer
     containers:
@@ -39,7 +39,7 @@
   parent: BaseMagazine5.56x45mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mm
+    proto: Cartridge5.56x45mmFMJ
   - type: Sprite
     layers:
     - state: base
@@ -128,7 +128,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge5.56x45mm
+        - Cartridge5.56x45mmFMJ
     capacity: 25
   - type: ContainerContainer
     containers:
@@ -153,7 +153,7 @@
   suffix: full
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mm
+    proto: Cartridge5.56x45mmFMJ
   - type: Sprite
     layers:
     - state: base

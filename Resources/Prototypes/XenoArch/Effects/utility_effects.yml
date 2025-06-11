@@ -165,9 +165,9 @@
   - type: RevolverAmmoProvider
     whitelist:
       tags:
-      - Cartridge45_magnum
+      - Cartrdige45_magnumFMJ
       - SpeedLoader45_magnum
-    proto: Cartridge45_magnum
+    proto: Cartrdige45_magnumFMJ
     capacity: 7
     chambers: [ True, True, True, True, True, True, True ]
     ammoSlots: [ null, null, null, null, null, null, null ]

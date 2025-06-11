@@ -1,5 +1,5 @@
 - type: entity
-  id: Bullet7.62x51mm
+  id: Bullet7.62x51mmFMJ
   name: bullet (7.62x51mm FMJ)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]

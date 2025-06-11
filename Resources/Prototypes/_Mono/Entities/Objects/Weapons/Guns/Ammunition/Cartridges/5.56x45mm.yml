@@ -7,9 +7,9 @@
   - type: Tag
     tags:
       - Cartridge
-      - Cartridge5.56x45mm
+      - Cartridge5.56x45mmFMJ
   - type: CartridgeAmmo
-    proto: Bullet5.56x45mm
+    proto: Bullet5.56x45mmFMJ
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:
@@ -21,12 +21,12 @@
     price: 1
 
 - type: entity
-  id: Cartridge5.56x45mm
+  id: Cartridge5.56x45mmFMJ
   name: cartridge (5.56x45mm FMJ)
   parent: BaseCartridge5.56x45mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet5.56x45mm
+    proto: Bullet5.56x45mmFMJ
 
 - type: entity
   id: Cartridge5.56x45mmPractice

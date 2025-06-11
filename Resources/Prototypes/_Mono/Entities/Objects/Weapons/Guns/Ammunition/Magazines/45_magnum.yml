@@ -6,12 +6,12 @@
   components:
   - type: Tag
     tags:
-      - Magazine45_magnum
+      - Magazine45_magnumFMJ
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge45_magnum
+        - Cartrdige45_magnumFMJ
     capacity: 7
 
 - type: entity
@@ -27,7 +27,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge45_magnum
+        - Cartrdige45_magnumFMJ
     capacity: 25
   - type: Item
     size: Small
@@ -63,12 +63,12 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine45_magnum
+  id: Magazine45_magnumFMJ
   name: pistol magazine (.45 magnum FMJ)
   parent: BaseMagazine45_magnum
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge45_magnum
+    proto: Cartrdige45_magnumFMJ
   - type: Sprite
     layers:
     - state: base
@@ -140,7 +140,7 @@
   parent: BaseMagazine45_magnumSubMachineGun
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge45_magnum
+    proto: Cartrdige45_magnumFMJ
   - type: Sprite
     layers:
     - state: base

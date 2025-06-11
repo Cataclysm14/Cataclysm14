@@ -4,14 +4,14 @@
     MagazineBox6.35x40mmCaseless: 6
     MagazineBox6.35x40mmCaselessPractice: 3
 
-    MagazineBox7.62x39mmBig: 6
+    MagazineBox7.62x39mmBigFMJ: 6
     MagazineBox7.62x39mmPractice: 3
 
     MagazineBox45_magnum: 6
     MagazineBox45_magnumPractice: 3
 
-    MagazineBox9x19mm: 6
+    MagazineBox9x19mmFMJ: 6
     MagazineBox9x19mmPractice: 3
 
-    MagazineBox5.56x45mm: 6
+    MagazineBox5.56x45mmFMJ: 6
     MagazineBox5.56x45mmPractice: 3

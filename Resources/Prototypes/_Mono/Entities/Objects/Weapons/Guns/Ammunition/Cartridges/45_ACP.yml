@@ -9,7 +9,7 @@
       - Cartridge
       - Cartridge45_ACPFMJ
   - type: CartridgeAmmo
-    proto: Bullet45_ACP
+    proto: Bullet45_ACPFMJ
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:
@@ -26,7 +26,7 @@
   parent: BaseCartridge45_ACP
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_ACP
+    proto: Bullet45_ACPFMJ
 
 - type: entity
   id: Cartridge45_ACPPractice

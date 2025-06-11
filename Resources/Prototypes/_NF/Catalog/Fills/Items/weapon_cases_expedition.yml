@@ -23,7 +23,7 @@
     contents:
     - id: WeaponPistolN1984
       amount: 1
-    - id: Magazine45_magnum
+    - id: Magazine45_magnumFMJ
       amount: 2
 
 - type: entity
@@ -290,7 +290,7 @@
       amount: 1
     - id: Magazine9x19mmSubMachineGunTopMounted
       amount: 2
-    - id: MagazineBox9x19mm
+    - id: MagazineBox9x19mmFMJ
       amount: 1
 
 - type: entity
@@ -305,7 +305,7 @@
       amount: 1
     - id: Magazine9x19mmSubMachineGun
       amount: 2
-    - id: MagazineBox9x19mm
+    - id: MagazineBox9x19mmFMJ
       amount: 2
 
 - type: entity
@@ -320,7 +320,7 @@
       amount: 1
     - id: Magazine9x19mmSubMachineGun
       amount: 2
-    - id: MagazineBox9x19mm
+    - id: MagazineBox9x19mmFMJ
       amount: 1
 
 - type: entity
@@ -335,7 +335,7 @@
       amount: 1
     - id: Magazine9x19mmSubMachineGun
       amount: 2
-    - id: MagazineBox9x19mm
+    - id: MagazineBox9x19mmFMJ
       amount: 2
 
 - type: entity
@@ -350,7 +350,7 @@
       amount: 1
     - id: Magazine9x19mmSubMachineGun
       amount: 2
-    - id: MagazineBox9x19mm
+    - id: MagazineBox9x19mmFMJ
       amount: 2
 
 # Rifles
@@ -549,7 +549,7 @@
     contents:
     - id: WeaponSniperMosinExpedition
       amount: 1
-    - id: MagazineBox7.62x39mm
+    - id: MagazineBox7.62x39mmFMJ
       amount: 2
 
 - type: entity
@@ -601,7 +601,7 @@
     contents:
     - id: WeaponSniperCeremonialExpedition
       amount: 1
-    - id: MagazineBox7.62x39mm
+    - id: MagazineBox7.62x39mmFMJ
       amount: 2
 
 # Launchers

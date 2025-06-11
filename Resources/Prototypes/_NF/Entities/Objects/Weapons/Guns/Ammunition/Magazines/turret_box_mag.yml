@@ -17,7 +17,7 @@
     whitelist:
       tags:
         - Cartridge9x19mmFMJ
-        - Cartridge5.56x45mm
+        - Cartridge5.56x45mmFMJ
         - Cartridge7.62x39mmFMJ
         - Cartridge6.35x40mmCaseless
     capacity: 50

@@ -32,9 +32,6 @@
   id: Cartridge5.56x45mmFMJ
 
 - type: Tag
-  id: Cartridge5.56x45mm
-
-- type: Tag
   id: Magazine5.56x45mmFMJ
 
 - type: Tag

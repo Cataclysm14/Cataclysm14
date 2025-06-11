@@ -15720,7 +15720,7 @@ entities:
     - type: Transform
       pos: -25.5,-12.5
       parent: 1
-- proto: MagazineBox9x19mm
+- proto: MagazineBox9x19mmFMJ
   entities:
   - uid: 2292
     components:

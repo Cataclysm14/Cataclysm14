@@ -129,7 +129,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: ProjectileBatteryAmmoProvider
-    proto: Bullet9x19mm
+    proto: Bullet9x19mmFMJ
     fireCost: 100
   - type: Battery
     maxCharge: 1000
@@ -164,7 +164,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: ProjectileBatteryAmmoProvider
-    proto: Bullet9x19mm
+    proto: Bullet9x19mmFMJ
     fireCost: 100
   - type: Battery
     maxCharge: 1000
@@ -228,7 +228,7 @@
   name: mk 58
   parent: [BaseWeaponPistol, BaseC1Contraband] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable<BaseC1Contraband to match weapon description
   id: WeaponPistolMk58
-  description: A cheap, civilian grade, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Uses 9x19mm ammo.
+  description: A cheap, civilian grade, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Uses .45 ACP ammo.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
@@ -247,6 +247,25 @@
       path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
   - type: PirateBountyItem # Frontier
     id: WeaponPistolMk58 # Frontier
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine45_ACPFMJ
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine45_ACPFMJ
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge45_ACPFMJ
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge45_ACPFMJ
 
 - type: entity
   name: N1984
@@ -277,18 +296,18 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine45_magnum
+        startingItem: Magazine45_magnumFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine45_magnum
+            - Magazine45_magnumFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge45_magnum
+        startingItem: Cartrdige45_magnumFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge45_magnum
+            - Cartrdige45_magnumFMJ

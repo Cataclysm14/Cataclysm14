@@ -27,7 +27,7 @@
 # Boxes
 - type: entity # Mono Big Pistol Mags
   parent: BaseMagazineBox45_ACP
-  id: MagazineBox45_ACPBig
+  id: MagazineBox45_ACPBigFMJ
   name: ammunition box (.45 ACP FMJ)
   suffix: Big
   components:
@@ -48,7 +48,7 @@
 
 - type: entity
   parent: BaseMagazineBox45_ACP
-  id: MagazineBox45_ACP
+  id: MagazineBox45_ACPFMJ
   name: ammunition box (.45 ACP FMJ)
   components:
   - type: BallisticAmmoProvider

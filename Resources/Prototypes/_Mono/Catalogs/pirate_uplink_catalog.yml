@@ -496,7 +496,7 @@
   id: UplinkPirate7.62x39mmMagazineBoxBig
   name: uplink-pirate-light-rifle-magazine-box-big-name
   description: uplink-pirate-light-rifle-magazine-box-big-desc
-  productEntity: MagazineBox7.62x39mmBig
+  productEntity: MagazineBox7.62x39mmBigFMJ
   cost:
     Doubloon: 2
   categories:

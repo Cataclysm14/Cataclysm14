@@ -1,28 +1,28 @@
 - type: entity
-  id: Bullet45_magnum
-  name: bullet (.45 magnum)
+  id: Bullet45_ACPFMJ
+  name: bullet (.45 ACP FMJ)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types:
-        Piercing: 35
+        Piercing: 16
 
 - type: entity
-  id: Bullet45_magnumPractice
-  name: bullet (.45 magnum practice)
+  id: Bullet45_ACPPractice
+  name: bullet (.45 ACP practice)
   parent: BaseBulletPractice
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types:
-        Blunt: 1
+        Blunt: 2
 
 - type: entity
-  id: Bullet45_magnumRubber
-  name: bullet (.45 magnum rubber)
+  id: Bullet45_ACPRubber
+  name: bullet (.45 ACP rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
   components:
@@ -30,41 +30,39 @@
     damage:
       types:
         Blunt: 3
-  - type: StaminaDamageOnCollide
-    damage: 35 # 3 hits to stun cuz revolver
 
 - type: entity
-  id: Bullet45_magnumIncendiary
+  id: Bullet45_ACPIncendiary
   parent: BaseBulletIncendiary
-  name: bullet (.45 magnum incendiary)
+  name: bullet (.45 ACP incendiary)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types:
-        Blunt: 3
-        Heat: 32
+        Blunt: 2
+        Heat: 14
 
 - type: entity
-  id: Bullet45_magnumAP
-  name: bullet (.45 magnum armor-piercing)
-  parent: BaseBulletAP
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Piercing: 26 # 20% decrease
-    ignoreResistances: true
-
-- type: entity
-  id: Bullet45_magnumUranium
-  name: bullet (.45 magnum uranium)
+  id: Bullet45_ACPUranium
   parent: BaseBulletUranium
+  name: bullet (.45 ACP uranium)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types:
-        Radiation: 15
-        Piercing: 20
+        Radiation: 6
+        Piercing: 10
+
+# Upstream
+- type: entity
+  id: Bullet45_ACPEmp
+  name: bullet (.45 ACP emp)
+  parent: BaseBulletEmp
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Shock: 0

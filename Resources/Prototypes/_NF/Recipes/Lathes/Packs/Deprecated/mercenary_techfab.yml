@@ -91,9 +91,9 @@
   - WeaponPistolPollock
 ## Ammo boxes
   - Box12GaugeBuckshot
-  - MagazineBox7.62x39mm
-  - MagazineBox9x19mm
-  - MagazineBox5.56x45mm
+  - MagazineBox7.62x39mmFMJ
+  - MagazineBox9x19mmFMJ
+  - MagazineBox5.56x45mmFMJ
   - CrossbowBolt
   - CrossbowBoltBroadhead
   - Box12GaugeBeanbag

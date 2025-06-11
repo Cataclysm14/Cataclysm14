@@ -7,8 +7,8 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge5.56x45mm
-    proto: Cartridge5.56x45mm
+        - Cartridge5.56x45mmFMJ
+    proto: Cartridge5.56x45mmFMJ
     capacity: 50
   - type: Item
     size: Small
@@ -26,13 +26,13 @@
 # Boxes
 - type: entity
   parent: BaseMagazineBox5.56x45mm
-  id: MagazineBox5.56x45mmBig
+  id: MagazineBox5.56x45mmBigFMJ
   name: ammunition box (5.56x45mm FMJ)
   suffix: Big
   components:
   - type: BallisticAmmoProvider
     capacity: 200
-    proto: Cartridge5.56x45mm
+    proto: Cartridge5.56x45mmFMJ
   - type: Sprite
     layers:
     - state: base-b # Frontier: base-big<base-b
@@ -47,11 +47,11 @@
 
 - type: entity
   parent: BaseMagazineBox5.56x45mm
-  id: MagazineBox5.56x45mm
+  id: MagazineBox5.56x45mmFMJ
   name: ammunition box (5.56x45mm FMJ)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mm
+    proto: Cartridge5.56x45mmFMJ
   - type: Sprite
     layers:
     - state: base
@@ -105,7 +105,7 @@
     - state: uranium
 
 - type: entity
-  parent: MagazineBox5.56x45mmBig
+  parent: MagazineBox5.56x45mmBigFMJ
   id: MagazineBox5.56x45mmBigRubber
   name: ammunition box (5.56x45mm rubber)
   components:

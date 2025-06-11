@@ -30,13 +30,13 @@
   recipes:
   - Box12GaugeBuckshot
   - Box12GaugeSlug
-  - MagazineBox7.62x39mm
+  - MagazineBox7.62x39mmFMJ
   - MagazineBox7.62x39mmRubber # Frontier
   - MagazineBox45_magnum
   - MagazineBox45_magnumRubber # Frontier
-  - MagazineBox9x19mm
+  - MagazineBox9x19mmFMJ
   - MagazineBox9x19mmRubber # Frontier
-  - MagazineBox5.56x45mm
+  - MagazineBox5.56x45mmFMJ
   - MagazineBox5.56x45mmRubber # Frontier
   - Magazine7.62x39mmFMJ
   - Magazine7.62x39mmRubber # Frontier

@@ -280,8 +280,8 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: MagazineBox9x19mm
-  result: MagazineBox9x19mm
+  id: MagazineBox9x19mmFMJ
+  result: MagazineBox9x19mmFMJ
   materials:
     Steel: 600
 
@@ -372,15 +372,15 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: MagazineBox5.56x45mm
-  result: MagazineBox5.56x45mm
+  id: MagazineBox5.56x45mmFMJ
+  result: MagazineBox5.56x45mmFMJ
   materials:
     Steel: 750
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: MagazineBox7.62x39mm
-  result: MagazineBox7.62x39mm
+  id: MagazineBox7.62x39mmFMJ
+  result: MagazineBox7.62x39mmFMJ
   materials:
     Steel: 900
 

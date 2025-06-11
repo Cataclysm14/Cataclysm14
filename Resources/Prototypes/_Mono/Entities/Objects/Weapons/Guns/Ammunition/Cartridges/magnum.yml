@@ -7,9 +7,9 @@
   - type: Tag
     tags:
       - Cartridge
-      - Cartridge45_magnum
+      - Cartrdige45_magnumFMJ
   - type: CartridgeAmmo
-    proto: Bullet45_magnum
+    proto: Bullet45_magnumFMJ
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:
@@ -21,12 +21,12 @@
     price: 1
 
 - type: entity
-  id: Cartridge45_magnum
+  id: Cartrdige45_magnumFMJ
   name: cartridge (.45 magnum)
   parent: BaseCartridge45_magnum
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_magnum
+    proto: Bullet45_magnumFMJ
 
 - type: entity
   id: Cartridge45_magnumPractice

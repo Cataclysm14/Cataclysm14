@@ -11,7 +11,7 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - Cartridge5.56x45mm
+        - Cartridge5.56x45mmFMJ
     capacity: 8
   - type: Sprite
   - type: ContainerContainer
@@ -25,7 +25,7 @@
   parent: BaseSpeedLoader5.56x45mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mm
+    proto: Cartridge5.56x45mmFMJ
   - type: Icon
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/5.56x45mm/argenti_speed_loader.rsi
     state: icon

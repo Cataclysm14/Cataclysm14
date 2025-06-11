@@ -23,7 +23,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.56x45mm
+            - Cartridge5.56x45mmFMJ
 
 #Delta-V
 - type: entity
@@ -175,11 +175,11 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge5.56x45mm
+        startingItem: Cartridge5.56x45mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.56x45mm
+            - Cartridge5.56x45mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -213,7 +213,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.56x45mm
+            - Cartridge5.56x45mmFMJ
 
 - type: entity
   id: WeaponRifleSVS

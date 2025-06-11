@@ -27,7 +27,7 @@
 # Boxes
 - type: entity # Mono Big Pistol Mags
   parent: BaseMagazineBox9x19mm
-  id: MagazineBox9x19mmBig
+  id: MagazineBox9x19mmBigFMJ
   name: ammunition box (9x19mm FMJ)
   suffix: Big
   components:
@@ -48,7 +48,7 @@
 
 - type: entity
   parent: BaseMagazineBox9x19mm
-  id: MagazineBox9x19mm
+  id: MagazineBox9x19mmFMJ
   name: ammunition box (9x19mm FMJ)
   components:
   - type: BallisticAmmoProvider

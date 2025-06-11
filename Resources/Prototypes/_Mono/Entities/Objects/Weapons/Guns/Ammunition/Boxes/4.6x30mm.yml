@@ -48,7 +48,7 @@
 
 - type: entity
   parent: BaseMagazineBox4.6x30mm
-  id: MagazineBox4.6x30mm
+  id: MagazineBox4.6X30mmFMJ
   name: ammunition box (4.6x30mm FMJ)
   components:
   - type: BallisticAmmoProvider
