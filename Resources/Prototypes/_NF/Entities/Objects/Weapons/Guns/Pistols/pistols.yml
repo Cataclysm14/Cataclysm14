@@ -7,20 +7,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine9x19mmRubber
+        startingItem: Magazine45_ACPRubber
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine9x19mmPistolFMJ
+            - Magazine45_ACPPistolFMJ
+            - Magazine45_ACPPistolHighCapacityFMJ
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge9x19mmRubber
+        startingItem: Cartridge45_ACPRubber
         priority: 1
         whitelist:
           tags:
-            - Cartridge9x19mmFMJ
+            - Cartridge45_ACPFMJ
 
 - type: entity
   name: N1984 (.45 magnum)
