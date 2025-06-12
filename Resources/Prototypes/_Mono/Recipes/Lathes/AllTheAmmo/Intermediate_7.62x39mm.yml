@@ -2,64 +2,64 @@
 
 - type: latheRecipe
   parent: BaseAmmoFMJIntermediateMagazineRecipe
-  id: Magazine7.62x39mmmFMJ
-  result: Magazine7.62x39mmmFMJ
+  id: Magazine7.62x39mmFMJ
+  result: Magazine7.62x39mmFMJ
 
 - type: latheRecipe
   parent: BaseAmmoRubberIntermediateMagazineRecipe
-  id: Magazine7.62x39mmmRubber
-  result: Magazine7.62x39mmmRubber
+  id: Magazine7.62x39mmRubber
+  result: Magazine7.62x39mmRubber
 
 - type: latheRecipe
   parent: BaseAmmoIncendiaryIntermediateMagazineRecipe
-  id: Magazine7.62x39mmmIncendiary
-  result: Magazine7.62x39mmmIncendiary
+  id: Magazine7.62x39mmIncendiary
+  result: Magazine7.62x39mmIncendiary
 
 - type: latheRecipe
   parent: BaseAmmoPracticeIntermediateMagazineRecipe
-  id: Magazine7.62x39mmmPractice
-  result: Magazine7.62x39mmmPractice
+  id: Magazine7.62x39mmPractice
+  result: Magazine7.62x39mmPractice
 
 - type: latheRecipe
   parent: BaseAmmoEmptyIntermediateMagazineRecipe
-  id: Magazine7.62x39mmmEmpty
-  result: Magazine7.62x39mmmEmpty
+  id: Magazine7.62x39mmEmpty
+  result: Magazine7.62x39mmEmpty
 
 - type: latheRecipe
   parent: BaseAmmoUraniumIntermediateMagazineRecipe
-  id: Magazine7.62x39mmmUranium
-  result: Magazine7.62x39mmmUranium
+  id: Magazine7.62x39mmUranium
+  result: Magazine7.62x39mmUranium
 
 #Speedloaders
 
 - type: latheRecipe
   parent: BaseAmmoFMJIntermediateSpeedloaderRecipe
-  id: SpeedLoader7.62x39mmmFMJ
-  result: SpeedLoader7.62x39mmmFMJ
+  id: SpeedLoader7.62x39mmFMJ
+  result: SpeedLoader7.62x39mmFMJ
 
 #Boxes
 
 - type: latheRecipe
   parent: BaseAmmoFMJIntermediateAmmoBoxRecipe
-  id: AmmoBox7.62x39mmmFMJ
-  result: AmmoBox7.62x39mmmFMJ
+  id: AmmoBox7.62x39mmFMJ
+  result: AmmoBox7.62x39mmFMJ
 
 - type: latheRecipe
   parent: BaseAmmoRubberIntermediateAmmoBoxRecipe
-  id: AmmoBox7.62x39mmmRubber
-  result: AmmoBox7.62x39mmmRubber
+  id: AmmoBox7.62x39mmRubber
+  result: AmmoBox7.62x39mmRubber
 
 - type: latheRecipe
   parent: BaseAmmoIncendiaryIntermediateAmmoBoxRecipe
-  id: AmmoBox7.62x39mmmIncendiary
-  result: AmmoBox7.62x39mmmIncendiary
+  id: AmmoBox7.62x39mmIncendiary
+  result: AmmoBox7.62x39mmIncendiary
 
 - type: latheRecipe
   parent: BaseAmmoPracticeIntermediateAmmoBoxRecipe
-  id: AmmoBox7.62x39mmmPractice
-  result: AmmoBox7.62x39mmmPractice
+  id: AmmoBox7.62x39mmPractice
+  result: AmmoBox7.62x39mmPractice
 
 - type: latheRecipe
   parent: BaseAmmoUraniumIntermediateAmmoBoxRecipe
-  id: AmmoBox7.62x39mmmUranium
-  result: AmmoBox7.62x39mmmUranium
+  id: AmmoBox7.62x39mmUranium
+  result: AmmoBox7.62x39mmUranium

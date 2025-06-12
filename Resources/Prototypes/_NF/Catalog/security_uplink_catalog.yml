@@ -85,8 +85,8 @@
 
 - type: listing
   id: UplinkSecurityCommandHardsuit
-  name:  uplink-security-hardsuit-commmand-name
-  description: uplink-security-hardsuit-commmand-desc
+  name:  uplink-security-hardsuit-command-name
+  description: uplink-security-hardsuit-command-desc
   productEntity: ClothingOuterHardsuitNfsdCommand
   icon: { sprite: _NF/Clothing/OuterClothing/Hardsuits/nfsd_command.rsi, state: icon }
   cost:
