@@ -32,14 +32,19 @@
   - type: Appearance
 
 - type: entity
+<<<<<<< HEAD
   id: BaseMagazine9x19mmPistolHighCapacityFMJ  
+=======
+  id: BaseMagazine9x19mmPistolHighCapacity
+>>>>>>> parent of f04f219a48 (welpfuck)
   name: machine pistol magazine (9x19mm FMJ)
   parent: [BaseItem, BaseC1Contraband, RecyclableItemSteelTiny] # Frontier: added RecyclableItemSteelTiny, BaseC1Contraband
   abstract: true
   components:
   - type: Tag
     tags:
-      - Magazine9x19mmPistolHighCapacityFMJ  - type: BallisticAmmoProvider
+      - Magazine9x19mmPistolHighCapacity
+  - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
@@ -64,14 +69,19 @@
   - type: Appearance
 
 - type: entity
+<<<<<<< HEAD
   id: BaseMagazine9x19mmSubMachineGunFMJ  
+=======
+  id: BaseMagazine9x19mmSubMachineGun
+>>>>>>> parent of f04f219a48 (welpfuck)
   name: SMG magazine (9x19mm FMJ)
   parent: [BaseItem, BaseC1Contraband, RecyclableItemSteelTiny] # Frontier: added RecyclableItemSteelTiny, BaseSecurityContraband<BaseC1Contraband
   abstract: true
   components:
   - type: Tag
     tags:
-      - Magazine9x19mmSubMachineGunFMJ  - type: BallisticAmmoProvider
+      - Magazine9x19mmSubMachineGun
+  - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
@@ -165,7 +175,11 @@
   id: Magazine9x19mmPistolHighCapacityEmpty
   name: machine pistol magazine (9x19mm any)
   suffix: empty
+<<<<<<< HEAD
   parent: BaseMagazine9x19mmPistolHighCapacityFMJ 
+=======
+  parent: BaseMagazine9x19mmPistolHighCapacity
+>>>>>>> parent of f04f219a48 (welpfuck)
   components:
   - type: BallisticAmmoProvider
     proto: null
@@ -177,9 +191,15 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
+<<<<<<< HEAD
   id: Magazine9x19mmPistolHighCapacityFMJ  
   name: machine pistol magazine (9x19mm FMJ)
   parent: BaseMagazine9x19mmPistolHighCapacityFMJ 
+=======
+  id: Magazine9x19mmPistolHighCapacity
+  name: machine pistol magazine (9x19mm FMJ)
+  parent: BaseMagazine9x19mmPistolHighCapacity
+>>>>>>> parent of f04f219a48 (welpfuck)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmFMJ
@@ -193,7 +213,11 @@
 - type: entity
   id: Magazine9x19mmPistolHighCapacityPractice
   name: machine pistol magazine (9x19mm practice)
+<<<<<<< HEAD
   parent: BaseMagazine9x19mmPistolHighCapacityFMJ
+=======
+  parent: BaseMagazine9x19mmPistolHighCapacity
+>>>>>>> parent of f04f219a48 (welpfuck)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmFMJ
@@ -205,9 +229,15 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
+<<<<<<< HEAD
   id: Magazine9x19mmSubMachineGunFMJ  
   name: SMG magazine (9x19mm FMJ)
   parent: BaseMagazine9x19mmSubMachineGunFMJ  
+=======
+  id: Magazine9x19mmSubMachineGun
+  name: SMG magazine (9x19mm FMJ)
+  parent: BaseMagazine9x19mmSubMachineGun
+>>>>>>> parent of f04f219a48 (welpfuck)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmFMJ
@@ -227,7 +257,11 @@
   id: Magazine9x19mmSubMachineGunEmpty
   name: SMG magazine (9x19mm any)
   suffix: empty
+<<<<<<< HEAD
   parent: BaseMagazine9x19mmSubMachineGunFMJ  
+=======
+  parent: BaseMagazine9x19mmSubMachineGun
+>>>>>>> parent of f04f219a48 (welpfuck)
   components:
   - type: BallisticAmmoProvider
     proto: null
@@ -241,7 +275,11 @@
 - type: entity
   id: Magazine9x19mmSubMachineGunPractice
   name: SMG magazine (9x19mm practice)
+<<<<<<< HEAD
   parent: BaseMagazine9x19mmSubMachineGunFMJ  
+=======
+  parent: BaseMagazine9x19mmSubMachineGun
+>>>>>>> parent of f04f219a48 (welpfuck)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmPractice
@@ -255,7 +293,11 @@
 - type: entity
   id: Magazine9x19mmSubMachineGunUranium
   name: SMG magazine (9x19mm uranium)
+<<<<<<< HEAD
   parent: BaseMagazine9x19mmSubMachineGunFMJ  
+=======
+  parent: BaseMagazine9x19mmSubMachineGun
+>>>>>>> parent of f04f219a48 (welpfuck)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmUranium
@@ -267,7 +309,11 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
+<<<<<<< HEAD
   parent: BaseMagazine9x19mmSubMachineGunFMJ  
+=======
+  parent: BaseMagazine9x19mmSubMachineGun
+>>>>>>> parent of f04f219a48 (welpfuck)
   id: Magazine9x19mmSubMachineGunIncendiary
   name: SMG magazine (9x19mm incendiary)
   components:
@@ -292,7 +338,11 @@
 - type: entity
   id: Magazine9x19mmSubMachineGunRubber
   name: SMG magazine (9x19mm rubber)
+<<<<<<< HEAD
   parent: BaseMagazine9x19mmSubMachineGunFMJ  
+=======
+  parent: BaseMagazine9x19mmSubMachineGun
+>>>>>>> parent of f04f219a48 (welpfuck)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmRubber
@@ -308,7 +358,11 @@
 - type: entity
   id: Magazine9x19mmPistolHighCapacityRubber
   name: machine pistol magazine (9x19mm rubber)
+<<<<<<< HEAD
   parent: BaseMagazine9x19mmPistolHighCapacityFMJ  
+=======
+  parent: BaseMagazine9x19mmPistolHighCapacity
+>>>>>>> parent of f04f219a48 (welpfuck)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmFMJ
@@ -324,7 +378,11 @@
 - type: entity
   id: Magazine9x19mmSubMachineGunEmp
   name: SMG magazine (9x19mm emp)
+<<<<<<< HEAD
   parent: BaseMagazine9x19mmSubMachineGunFMJ  
+=======
+  parent: BaseMagazine9x19mmSubMachineGun
+>>>>>>> parent of f04f219a48 (welpfuck)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmEmp

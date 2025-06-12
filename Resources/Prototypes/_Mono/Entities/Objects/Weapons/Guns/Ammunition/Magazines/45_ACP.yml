@@ -32,14 +32,20 @@
   - type: Appearance
 
 - type: entity
+<<<<<<< HEAD
   id: BaseMagazine45_ACPPistolHighCapacityFMJ  
   name: machine pistol magazine (45_ACP FMJ)
+=======
+  id: BaseMagazine45_ACPPistolHighCapacity
+  name: machine pistol magazine (.45 ACP FMJ)
+>>>>>>> parent of f04f219a48 (welpfuck)
   parent: [BaseItem, BaseC1Contraband, RecyclableItemSteelTiny] # Frontier: added RecyclableItemSteelTiny, BaseC1Contraband
   abstract: true
   components:
   - type: Tag
     tags:
-      - Magazine45_ACPPistolHighCapacityFMJ  - type: BallisticAmmoProvider
+      - Magazine45_ACPPistolHighCapacity
+  - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
@@ -64,14 +70,20 @@
   - type: Appearance
 
 - type: entity
+<<<<<<< HEAD
   id: BaseMagazine45_ACPSubMachineGunFMJ  
   name: SMG magazine (45_ACP FMJ)
+=======
+  id: BaseMagazine45_ACPSubMachineGun
+  name: SMG magazine (.45 ACP FMJ)
+>>>>>>> parent of f04f219a48 (welpfuck)
   parent: [BaseItem, BaseC1Contraband, RecyclableItemSteelTiny] # Frontier: added RecyclableItemSteelTiny, BaseSecurityContraband<BaseC1Contraband
   abstract: true
   components:
   - type: Tag
     tags:
-      - Magazine45_ACPSubMachineGunFMJ  - type: BallisticAmmoProvider
+      - Magazine45_ACPSubMachineGun
+  - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
@@ -165,7 +177,11 @@
   id: Magazine45_ACPPistolHighCapacityEmpty
   name: machine pistol magazine (45_ACP any)
   suffix: empty
+<<<<<<< HEAD
   parent: BaseMagazine45_ACPPistolHighCapacityFMJ 
+=======
+  parent: BaseMagazine45_ACPPistolHighCapacity
+>>>>>>> parent of f04f219a48 (welpfuck)
   components:
   - type: BallisticAmmoProvider
     proto: null
@@ -177,9 +193,15 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
+<<<<<<< HEAD
   id: Magazine45_ACPPistolHighCapacityFMJ  
   name: machine pistol magazine (45_ACP FMJ)
   parent: BaseMagazine45_ACPPistolHighCapacityFMJ 
+=======
+  id: Magazine45_ACPPistolHighCapacity
+  name: machine pistol magazine (.45 ACP FMJ)
+  parent: BaseMagazine45_ACPPistolHighCapacity
+>>>>>>> parent of f04f219a48 (welpfuck)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge45_ACPFMJ
@@ -192,8 +214,13 @@
 
 - type: entity
   id: Magazine45_ACPPistolHighCapacityPractice
+<<<<<<< HEAD
   name: machine pistol magazine (45_ACP practice)
   parent: BaseMagazine45_ACPPistolHighCapacityFMJ
+=======
+  name: machine pistol magazine (.45 ACP practice)
+  parent: BaseMagazine45_ACPPistolHighCapacity
+>>>>>>> parent of f04f219a48 (welpfuck)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge45_ACPFMJ
@@ -205,9 +232,15 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
+<<<<<<< HEAD
   id: Magazine45_ACPSubMachineGunFMJ  
   name: SMG magazine (45_ACP FMJ)
   parent: BaseMagazine45_ACPSubMachineGunFMJ  
+=======
+  id: Magazine45_ACPSubMachineGun
+  name: SMG magazine (.45 ACP FMJ)
+  parent: BaseMagazine45_ACPSubMachineGun
+>>>>>>> parent of f04f219a48 (welpfuck)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge45_ACPFMJ
@@ -227,7 +260,11 @@
   id: Magazine45_ACPSubMachineGunEmpty
   name: SMG magazine (45_ACP any)
   suffix: empty
+<<<<<<< HEAD
   parent: BaseMagazine45_ACPSubMachineGunFMJ  
+=======
+  parent: BaseMagazine45_ACPSubMachineGun
+>>>>>>> parent of f04f219a48 (welpfuck)
   components:
   - type: BallisticAmmoProvider
     proto: null
@@ -240,8 +277,13 @@
 
 - type: entity
   id: Magazine45_ACPSubMachineGunPractice
+<<<<<<< HEAD
   name: SMG magazine (45_ACP practice)
   parent: BaseMagazine45_ACPSubMachineGunFMJ  
+=======
+  name: SMG magazine (.45 ACP practice)
+  parent: BaseMagazine45_ACPSubMachineGun
+>>>>>>> parent of f04f219a48 (welpfuck)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge45_ACPPractice
@@ -254,8 +296,13 @@
 
 - type: entity
   id: Magazine45_ACPSubMachineGunUranium
+<<<<<<< HEAD
   name: SMG magazine (45_ACP uranium)
   parent: BaseMagazine45_ACPSubMachineGunFMJ  
+=======
+  name: SMG magazine (.45 ACP uranium)
+  parent: BaseMagazine45_ACPSubMachineGun
+>>>>>>> parent of f04f219a48 (welpfuck)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge45_ACPUranium
@@ -267,9 +314,15 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
+<<<<<<< HEAD
   parent: BaseMagazine45_ACPSubMachineGunFMJ  
   id: Magazine45_ACPSubMachineGunIncendiary
   name: SMG magazine (45_ACP incendiary)
+=======
+  parent: BaseMagazine45_ACPSubMachineGun
+  id: Magazine45_ACPSubMachineGunIncendiary
+  name: SMG magazine (.45 ACP incendiary)
+>>>>>>> parent of f04f219a48 (welpfuck)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge45_ACPIncendiary
@@ -291,8 +344,13 @@
 
 - type: entity
   id: Magazine45_ACPSubMachineGunRubber
+<<<<<<< HEAD
   name: SMG magazine (45_ACP rubber)
   parent: BaseMagazine45_ACPSubMachineGunFMJ  
+=======
+  name: SMG magazine (.45 ACP rubber)
+  parent: BaseMagazine45_ACPSubMachineGun
+>>>>>>> parent of f04f219a48 (welpfuck)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge45_ACPRubber
@@ -307,8 +365,13 @@
 
 - type: entity
   id: Magazine45_ACPPistolHighCapacityRubber
+<<<<<<< HEAD
   name: machine pistol magazine (45_ACP rubber)
   parent: BaseMagazine45_ACPPistolHighCapacityFMJ  
+=======
+  name: machine pistol magazine (.45 ACP rubber)
+  parent: BaseMagazine45_ACPPistolHighCapacity
+>>>>>>> parent of f04f219a48 (welpfuck)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge45_ACPFMJ
@@ -323,8 +386,13 @@
 # Frontier
 - type: entity
   id: Magazine45_ACPSubMachineGunEmp
+<<<<<<< HEAD
   name: SMG magazine (45_ACP emp)
   parent: BaseMagazine45_ACPSubMachineGunFMJ  
+=======
+  name: SMG magazine (.45 ACP emp)
+  parent: BaseMagazine45_ACPSubMachineGun
+>>>>>>> parent of f04f219a48 (welpfuck)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge45_ACPEmp
