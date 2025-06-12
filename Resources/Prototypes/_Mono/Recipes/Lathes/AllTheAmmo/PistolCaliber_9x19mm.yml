@@ -62,6 +62,38 @@
   id: Magazine9x19mmSMGUranium
   result: Magazine9x19mmSMGUranium
 
+#Speedloaders
+
+- type: latheRecipe
+  parent: BaseAmmoFMJPistolCaliberSpeedloaderRecipe
+  id: SpeedLoader9x19mmFMJ
+  result: SpeedLoader9x19mmFMJ
+
+- type: latheRecipe
+  parent: BaseAmmoRubberPistolCaliberSpeedloaderRecipe
+  id: SpeedLoader9x19mmRubber
+  result: SpeedLoader9x19mmRubber
+
+- type: latheRecipe
+  parent: BaseAmmoIncendiaryPistolCaliberSpeedloaderRecipe
+  id: SpeedLoader9x19mmIncendiary
+  result: SpeedLoader9x19mmIncendiary
+
+- type: latheRecipe
+  parent: BaseAmmoPracticePistolCaliberSpeedloaderRecipe
+  id: SpeedLoader9x19mmPractice
+  result: SpeedLoader9x19mmPractice
+
+- type: latheRecipe
+  parent: BaseAmmoEmptyPistolCaliberSpeedloaderRecipe
+  id: SpeedLoader9x19mmEmpty
+  result: SpeedLoader9x19mmEmpty
+
+- type: latheRecipe
+  parent: BaseAmmoUraniumPistolCaliberSpeedloaderRecipe
+  id: SpeedLoader9x19mmUranium
+  result: SpeedLoader9x19mmUranium
+
 #Boxes
 
 - type: latheRecipe

@@ -30,6 +30,38 @@
   id: Magazine5.56x45mmUranium
   result: Magazine5.56x45mmUranium
 
+#Speedloaders
+
+- type: latheRecipe
+  parent: BaseAmmoFMJIntermediateSpeedloaderRecipe
+  id: SpeedLoader5.56x45mmFMJ
+  result: SpeedLoader5.56x45mmFMJ
+
+- type: latheRecipe
+  parent: BaseAmmoRubberIntermediateSpeedloaderRecipe
+  id: SpeedLoader5.56x45mmRubber
+  result: SpeedLoader5.56x45mmRubber
+
+- type: latheRecipe
+  parent: BaseAmmoIncendiaryIntermediateSpeedloaderRecipe
+  id: SpeedLoader5.56x45mmIncendiary
+  result: SpeedLoader5.56x45mmIncendiary
+
+- type: latheRecipe
+  parent: BaseAmmoPracticeIntermediateSpeedloaderRecipe
+  id: SpeedLoader5.56x45mmPractice
+  result: SpeedLoader5.56x45mmPractice
+
+- type: latheRecipe
+  parent: BaseAmmoEmptyIntermediateSpeedloaderRecipe
+  id: SpeedLoader5.56x45mmEmpty
+  result: SpeedLoader5.56x45mmEmpty
+
+- type: latheRecipe
+  parent: BaseAmmoUraniumIntermediateSpeedloaderRecipe
+  id: SpeedLoader5.56x45mmUranium
+  result: SpeedLoader5.56x45mmUranium
+
 #Boxes
 
 - type: latheRecipe

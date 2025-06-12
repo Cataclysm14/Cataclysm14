@@ -1,0 +1,95 @@
+#Magazines
+
+- type: latheRecipe
+  parent: BaseAmmoFMJIntermediateRecipe
+  id: Magazine45_magnumPistolFMJ
+  result: Magazine45_magnumPistolFMJ
+
+- type: latheRecipe
+  parent: BaseAmmoRubberIntermediateRecipe
+  id: Magazine45_magnumPistolRubber
+  result: Magazine45_magnumPistolRubber
+
+- type: latheRecipe
+  parent: BaseAmmoIncendiaryIntermediateRecipe
+  id: Magazine45_magnumPistolIncendiary
+  result: Magazine45_magnumPistolIncendiary
+
+- type: latheRecipe
+  parent: BaseAmmoPracticeIntermediateRecipe
+  id: Magazine45_magnumPistolPractice
+  result: Magazine45_magnumPistolPractice
+
+- type: latheRecipe
+  parent: BaseAmmoEmptyIntermediateRecipe
+  id: Magazine45_magnumPistolEmpty
+  result: Magazine45_magnumPistolEmpty
+
+- type: latheRecipe
+  parent: BaseAmmoUraniumIntermediateRecipe
+  id: Magazine45_magnumPistolUranium
+  result: Magazine45_magnumPistolUranium
+  
+#Speedloaders
+
+- type: latheRecipe
+  parent: BaseAmmoFMJIntermediateSpeedloaderRecipe
+  id: SpeedLoader45_magnumFMJ
+  result: SpeedLoader45_magnumFMJ
+
+- type: latheRecipe
+  parent: BaseAmmoRubberIntermediateSpeedloaderRecipe
+  id: SpeedLoader45_magnumRubber
+  result: SpeedLoader45_magnumRubber
+
+- type: latheRecipe
+  parent: BaseAmmoIncendiaryIntermediateSpeedloaderRecipe
+  id: SpeedLoader45_magnumIncendiary
+  result: SpeedLoader45_magnumIncendiary
+
+- type: latheRecipe
+  parent: BaseAmmoPracticeIntermediateSpeedloaderRecipe
+  id: SpeedLoader45_magnumPractice
+  result: SpeedLoader45_magnumPractice
+
+- type: latheRecipe
+  parent: BaseAmmoEmptyIntermediateSpeedloaderRecipe
+  id: SpeedLoader45_magnumEmpty
+  result: SpeedLoader45_magnumEmpty
+
+- type: latheRecipe
+  parent: BaseAmmoUraniumIntermediateSpeedloaderRecipe
+  id: SpeedLoader45_magnumUranium
+  result: SpeedLoader45_magnumUranium
+
+#Boxes
+
+- type: latheRecipe
+  parent: BaseAmmoFMJIntermediateAmmoBoxRecipe
+  id: AmmoBox45_magnumFMJ
+  result: AmmoBox45_magnumFMJ
+
+- type: latheRecipe
+  parent: BaseAmmoRubberIntermediateAmmoBoxRecipe
+  id: AmmoBox45_magnumRubber
+  result: AmmoBox45_magnumRubber
+
+- type: latheRecipe
+  parent: BaseAmmoIncendiaryIntermediateAmmoBoxRecipe
+  id: AmmoBox45_magnumIncendiary
+  result: AmmoBox45_magnumIncendiary
+
+- type: latheRecipe
+  parent: BaseAmmoPracticeIntermediateAmmoBoxRecipe
+  id: AmmoBox45_magnumPractice
+  result: AmmoBox45_magnumPractice
+
+- type: latheRecipe
+  parent: BaseAmmoEmptyIntermediateAmmoBoxRecipe
+  id: AmmoBox45_magnumEmpty
+  result: AmmoBox45_magnumEmpty
+
+- type: latheRecipe
+  parent: BaseAmmoUraniumIntermediateAmmoBoxRecipe
+  id: AmmoBox45_magnumUranium
+  result: AmmoBox45_magnumUranium

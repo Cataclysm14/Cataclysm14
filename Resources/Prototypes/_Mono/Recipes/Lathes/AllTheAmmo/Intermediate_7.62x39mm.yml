@@ -30,6 +30,13 @@
   id: Magazine7.62x39mmmUranium
   result: Magazine7.62x39mmmUranium
 
+#Speedloaders
+
+- type: latheRecipe
+  parent: BaseAmmoFMJIntermediateSpeedloaderRecipe
+  id: SpeedLoader7.62x39mmmFMJ
+  result: SpeedLoader7.62x39mmmFMJ
+
 #Boxes
 
 - type: latheRecipe

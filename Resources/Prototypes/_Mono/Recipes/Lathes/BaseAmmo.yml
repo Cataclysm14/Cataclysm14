@@ -51,6 +51,55 @@
     Steel: 175
     Uranium: 300
 
+#Base intermediate ammo speedloaders for .45 magnum, 5.56, 5.45, 7.62x39mm and potential others 
+#speedloaders:     [TOTAL = 175]
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoFMJIntermediateSpeedloaderRecipe
+  abstract: true
+  materials:
+    Steel: 175
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoRubberIntermediateSpeedloaderRecipe
+  abstract: true
+  materials:
+    Steel: 40
+    Plastic: 135
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoIncendiaryIntermediateSpeedloaderRecipe
+  abstract: true
+  materials:
+    Steel: 25
+    Plastic: 50
+    Plasma: 100
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoPracticeIntermediateSpeedloaderRecipe
+  abstract: true
+  materials:
+    Steel: 17
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoEmptyIntermediateSpeedloaderRecipe
+  abstract: true
+  materials:
+    Steel: 17
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoUraniumIntermediateSpeedloaderRecipe
+  abstract: true
+  materials:
+    Steel: 60
+    Uranium: 125
+
 #Base intermediate ammo boxes for 5.56, 5.45, 7.62x39mm and potential others 
 #Boxes:     [TOTAL = 1425]
 
@@ -295,6 +344,55 @@
   materials:
     Steel: 125
     Uranium: 250
+    
+#Base PistolCaliber ammo speedloaders for .45 magnum, 5.56, 5.45, 7.62x39mm and potential others 
+#speedloaders:     [TOTAL = 175]
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoFMJPistolCaliberSpeedloaderRecipe
+  abstract: true
+  materials:
+    Steel: 175
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoRubberPistolCaliberSpeedloaderRecipe
+  abstract: true
+  materials:
+    Steel: 40
+    Plastic: 135
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoIncendiaryPistolCaliberSpeedloaderRecipe
+  abstract: true
+  materials:
+    Steel: 25
+    Plastic: 50
+    Plasma: 100
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoPracticePistolCaliberSpeedloaderRecipe
+  abstract: true
+  materials:
+    Steel: 17
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoEmptyPistolCaliberSpeedloaderRecipe
+  abstract: true
+  materials:
+    Steel: 17
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BaseAmmoUraniumPistolCaliberSpeedloaderRecipe
+  abstract: true
+  materials:
+    Steel: 60
+    Uranium: 125
 
 #Base pistol caliber ammo boxes for .45 ACP, 9mm, 5.7mm, 4.6mm
 #Boxes:     [TOTAL = 1125]
