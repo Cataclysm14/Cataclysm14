@@ -2854,12 +2854,6 @@ entities:
     - type: Transform
       pos: -1.5,4.5
       parent: 1
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: Battery
-      startingCharge: 27.333656
-    - type: ApcPowerReceiverBattery
-      enabled: True
 - proto: GunSafe
   entities:
   - uid: 343

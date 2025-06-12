@@ -45,11 +45,6 @@
 
 - type: latheRecipe
   parent: BaseGoldCircuitboardRecipe
-  id: MachineGCSStationCircuitboard
-  result: MachineGCSStationCircuitboard
-
-- type: latheRecipe
-  parent: BaseGoldCircuitboardRecipe
   id: AdvancedRadarConsoleCircuitboard
   result: AdvancedRadarConsoleCircuitboard
 

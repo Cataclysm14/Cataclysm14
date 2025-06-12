@@ -2162,10 +2162,6 @@ entities:
     - type: Transform
       pos: -1.5,2.5
       parent: 1
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: Battery
-      startingCharge: 0
   - uid: 348
     components:
     - type: Transform

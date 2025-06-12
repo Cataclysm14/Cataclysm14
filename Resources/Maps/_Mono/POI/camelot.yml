@@ -57538,10 +57538,6 @@ entities:
     - type: Transform
       pos: -3.5,31.5
       parent: 1
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: Battery
-      startingCharge: 0
     - type: Godmode
       oldDamage: {}
 - proto: HandheldHealthAnalyzerEmpty

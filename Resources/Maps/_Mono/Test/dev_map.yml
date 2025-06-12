@@ -5537,10 +5537,6 @@ entities:
     - type: Transform
       pos: 10.5,7.5
       parent: 2
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: Battery
-      startingCharge: 0
 - proto: GunSafeShuttleCaptain
   entities:
   - uid: 767

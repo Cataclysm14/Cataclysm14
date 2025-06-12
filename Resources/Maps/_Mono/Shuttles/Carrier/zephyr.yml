@@ -675,10 +675,6 @@ entities:
     - type: Transform
       pos: -0.5,-1.5
       parent: 1
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: Battery
-      startingCharge: 0
 - proto: PlasmaReinforcedWindowDirectional
   entities:
   - uid: 82

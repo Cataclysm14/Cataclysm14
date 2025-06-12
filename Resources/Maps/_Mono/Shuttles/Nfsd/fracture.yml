@@ -2142,10 +2142,6 @@ entities:
     - type: Transform
       pos: -5.5,-5.5
       parent: 1
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: Battery
-      startingCharge: 0
 - proto: GyroscopeNfsd
   entities:
   - uid: 261
