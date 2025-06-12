@@ -16,6 +16,7 @@ using Content.Shared.Shuttles.Components;
 using Robust.Shared.Timing;
 using Content.Shared.Interaction;
 using Content.Shared._Mono.ShipGuns;
+using Content.Shared.Examine;
 
 namespace Content.Server._Mono.FireControl;
 
@@ -38,6 +39,7 @@ public sealed partial class FireControlSystem : EntitySystem
         base.Initialize();
         SubscribeLocalEvent<FireControlServerComponent, PowerChangedEvent>(OnPowerChanged);
         SubscribeLocalEvent<FireControlServerComponent, ComponentShutdown>(OnShutdown);
+        SubscribeLocalEvent<FireControlServerComponent, ExaminedEvent>(OnExamined);
 
         SubscribeLocalEvent<FireControllableComponent, PowerChangedEvent>(OnControllablePowerChanged);
         SubscribeLocalEvent<FireControllableComponent, ComponentShutdown>(OnControllableShutdown);
@@ -61,6 +63,20 @@ public sealed partial class FireControlSystem : EntitySystem
     private void OnShutdown(EntityUid uid, FireControlServerComponent component, ComponentShutdown args)
     {
         Disconnect(uid, component);
+    }
+
+    private void OnExamined(EntityUid uid, FireControlServerComponent component, ExaminedEvent args)
+    {
+        if (!args.IsInDetailsRange)
+            return;
+        args.PushMarkup(
+            Loc.GetString(
+                "gunnery-server-examine-detail",
+                ("usedProcessingPower", component.UsedProcessingPower),
+                ("processingPower", component.ProcessingPower),
+                ("valueColor", component.UsedProcessingPower <= component.ProcessingPower - 2 ? "green" : "yellow")
+            )
+        );
     }
 
     private void OnControllablePowerChanged(EntityUid uid, FireControllableComponent component, PowerChangedEvent args)
@@ -221,7 +237,7 @@ public sealed partial class FireControlSystem : EntitySystem
         }
     }
 
-    private int GetRemainingProcessingPower(EntityUid server, FireControlServerComponent? component = null)
+    public int GetRemainingProcessingPower(EntityUid server, FireControlServerComponent? component = null)
     {
         if (!Resolve(server, ref component))
             return 0;
@@ -229,7 +245,7 @@ public sealed partial class FireControlSystem : EntitySystem
         return component.ProcessingPower - component.UsedProcessingPower;
     }
 
-    private int GetProcessingPowerCost(EntityUid controllable, FireControllableComponent? component = null)
+    public int GetProcessingPowerCost(EntityUid controllable, FireControllableComponent? component = null)
     {
         if (!Resolve(controllable, ref component))
             return 0;
