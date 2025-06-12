@@ -34,33 +34,33 @@
 
 - type: latheRecipe
   parent: BaseAmmoFMJPistolCaliberSubMachineGunMagazineRecipe
-  id: Magazine5.7x28mmSMGFMJ
-  result: Magazine5.7x28mmSMGFMJ
+  id: Magazine5.7x28mmSubMachineGunFMJ
+  result: Magazine5.7x28mmSubMachineGunFMJ
 
 - type: latheRecipe
   parent: BaseAmmoRubberPistolCaliberSubMachineGunMagazineRecipe
-  id: Magazine5.7x28mmSMGRubber
-  result: Magazine5.7x28mmSMGRubber
+  id: Magazine5.7x28mmSubMachineGunRubber
+  result: Magazine5.7x28mmSubMachineGunRubber
 
 - type: latheRecipe
   parent: BaseAmmoIncendiaryPistolCaliberSubMachineGunMagazineRecipe
-  id: Magazine5.7x28mmSMGIncendiary
-  result: Magazine5.7x28mmSMGIncendiary
+  id: Magazine5.7x28mmSubMachineGunIncendiary
+  result: Magazine5.7x28mmSubMachineGunIncendiary
 
 - type: latheRecipe
   parent: BaseAmmoPracticePistolCaliberSubMachineGunMagazineRecipe
-  id: Magazine5.7x28mmSMGPractice
-  result: Magazine5.7x28mmSMGPractice
+  id: Magazine5.7x28mmSubMachineGunPractice
+  result: Magazine5.7x28mmSubMachineGunPractice
 
 - type: latheRecipe
   parent: BaseAmmoEmptyPistolCaliberSubMachineGunMagazineRecipe
-  id: Magazine5.7x28mmSMGEmpty
-  result: Magazine5.7x28mmSMGEmpty
+  id: Magazine5.7x28mmSubMachineGunEmpty
+  result: Magazine5.7x28mmSubMachineGunEmpty
 
 - type: latheRecipe
   parent: BaseAmmoUraniumPistolCaliberSubMachineGunMagazineRecipe
-  id: Magazine5.7x28mmSMGUranium
-  result: Magazine5.7x28mmSMGUranium
+  id: Magazine5.7x28mmSubMachineGunUranium
+  result: Magazine5.7x28mmSubMachineGunUranium
 
 #Boxes
 

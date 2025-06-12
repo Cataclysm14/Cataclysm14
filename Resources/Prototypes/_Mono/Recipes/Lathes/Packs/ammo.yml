@@ -9,12 +9,12 @@
   - Magazine45_ACPPistolPractice
   - Magazine45_ACPPistolEmpty
   - Magazine45_ACPPistolUranium
-  - Magazine45_ACPSMGFMJ
-  - Magazine45_ACPSMGRubber
-  - Magazine45_ACPSMGIncendiary
-  - Magazine45_ACPSMGPractice
-  - Magazine45_ACPSMGEmpty
-  - Magazine45_ACPSMGUranium
+  - Magazine45_ACPSubMachineGunFMJ
+  - Magazine45_ACPSubMachineGunRubber
+  - Magazine45_ACPSubMachineGunIncendiary
+  - Magazine45_ACPSubMachineGunPractice
+  - Magazine45_ACPSubMachineGunEmpty
+  - Magazine45_ACPSubMachineGunUranium
   - AmmoBox45_ACPFMJ
   - AmmoBox45_ACPRubber
   - AmmoBox45_ACPIncendiary
@@ -27,12 +27,12 @@
   - Magazine9x19mmPistolPractice
   - Magazine9x19mmPistolEmpty
   - Magazine9x19mmPistolUranium
-  - Magazine9x19mmSMGFMJ
-  - Magazine9x19mmSMGRubber
-  - Magazine9x19mmSMGIncendiary
-  - Magazine9x19mmSMGPractice
-  - Magazine9x19mmSMGEmpty
-  - Magazine9x19mmSMGUranium
+  - Magazine9x19mmSubMachineGunFMJ
+  - Magazine9x19mmSubMachineGunRubber
+  - Magazine9x19mmSubMachineGunIncendiary
+  - Magazine9x19mmSubMachineGunPractice
+  - Magazine9x19mmSubMachineGunEmpty
+  - Magazine9x19mmSubMachineGunUranium
   - SpeedLoader9x19mmFMJ
   - SpeedLoader9x19mmRubber
   - SpeedLoader9x19mmIncendiary
@@ -51,12 +51,12 @@
   - Magazine5.7x28mmPistolPractice
   - Magazine5.7x28mmPistolEmpty
   - Magazine5.7x28mmPistolUranium
-  - Magazine5.7x28mmSMGFMJ
-  - Magazine5.7x28mmSMGRubber
-  - Magazine5.7x28mmSMGIncendiary
-  - Magazine5.7x28mmSMGPractice
-  - Magazine5.7x28mmSMGEmpty
-  - Magazine5.7x28mmSMGUranium
+  - Magazine5.7x28mmSubMachineGunFMJ
+  - Magazine5.7x28mmSubMachineGunRubber
+  - Magazine5.7x28mmSubMachineGunIncendiary
+  - Magazine5.7x28mmSubMachineGunPractice
+  - Magazine5.7x28mmSubMachineGunEmpty
+  - Magazine5.7x28mmSubMachineGunUranium
   - AmmoBox5.7x28mmFMJ
   - AmmoBox5.7x28mmRubber
   - AmmoBox5.7x28mmIncendiary
@@ -69,12 +69,12 @@
   - Magazine4.6x30mmPistolPractice
   - Magazine4.6x30mmPistolEmpty
   - Magazine4.6x30mmPistolUranium
-  - Magazine4.6x30mmSMGFMJ
-  - Magazine4.6x30mmSMGRubber
-  - Magazine4.6x30mmSMGIncendiary
-  - Magazine4.6x30mmSMGPractice
-  - Magazine4.6x30mmSMGEmpty
-  - Magazine4.6x30mmSMGUranium
+  - Magazine4.6x30mmSubMachineGunFMJ
+  - Magazine4.6x30mmSubMachineGunRubber
+  - Magazine4.6x30mmSubMachineGunIncendiary
+  - Magazine4.6x30mmSubMachineGunPractice
+  - Magazine4.6x30mmSubMachineGunEmpty
+  - Magazine4.6x30mmSubMachineGunUranium
   - AmmoBox4.6x30mmFMJ
   - AmmoBox4.6x30mmRubber
   - AmmoBox4.6x30mmIncendiary
@@ -161,17 +161,17 @@
 #Uranium recipes
 
   - Magazine45_ACPPistolUranium
-  - Magazine45_ACPSMGUranium
+  - Magazine45_ACPSubMachineGunUranium
   - AmmoBox45_ACPUranium
   - Magazine9x19mmPistolUranium
-  - Magazine9x19mmSMGUranium
+  - Magazine9x19mmSubMachineGunUranium
   - SpeedLoader9x19mmUranium
   - AmmoBox9x19mmUranium
   - Magazine5.7x28mmPistolUranium
-  - Magazine5.7x28mmSMGUranium
+  - Magazine5.7x28mmSubMachineGunUranium
   - AmmoBox5.7x28mmUranium
   - Magazine4.6x30mmPistolUranium
-  - Magazine4.6x30mmSMGUranium
+  - Magazine4.6x30mmSubMachineGunUranium
   - AmmoBox4.6x30mmUranium
   - Magazine45_magnumPistolUranium
   - SpeedLoader45_magnumUranium
@@ -190,17 +190,17 @@
 
   - Magazine8x65mmEmpty
   - Magazine45_ACPPistolEmpty
-  - Magazine45_ACPSMGEmpty
+  - Magazine45_ACPSubMachineGunEmpty
   - AmmoBox45_ACPEmpty
   - Magazine9x19mmPistolEmpty
-  - Magazine9x19mmSMGEmpty
+  - Magazine9x19mmSubMachineGunEmpty
   - SpeedLoader9x19mmEmpty
   - AmmoBox9x19mmEmpty
   - Magazine5.7x28mmPistolEmpty
-  - Magazine5.7x28mmSMGEmpty
+  - Magazine5.7x28mmSubMachineGunEmpty
   - AmmoBox5.7x28mmEmpty
   - Magazine4.6x30mmPistolEmpty
-  - Magazine4.6x30mmSMGEmpty
+  - Magazine4.6x30mmSubMachineGunEmpty
   - AmmoBox4.6x30mmEmpty
   - Magazine45_magnumPistolEmpty
   - SpeedLoader45_magnumEmpty
@@ -219,17 +219,17 @@
 #Practice recipes
 
   - Magazine45_ACPPistolPractice
-  - Magazine45_ACPSMGPractice
+  - Magazine45_ACPSubMachineGunPractice
   - AmmoBox45_ACPPractice
   - Magazine9x19mmPistolPractice
-  - Magazine9x19mmSMGPractice
+  - Magazine9x19mmSubMachineGunPractice
   - SpeedLoader9x19mmPractice
   - AmmoBox9x19mmPractice
   - Magazine5.7x28mmPistolPractice
-  - Magazine5.7x28mmSMGPractice
+  - Magazine5.7x28mmSubMachineGunPractice
   - AmmoBox5.7x28mmPractice
   - Magazine4.6x30mmPistolPractice
-  - Magazine4.6x30mmSMGPractice
+  - Magazine4.6x30mmSubMachineGunPractice
   - AmmoBox4.6x30mmPractice
   - Magazine45_magnumPistolPractice
   - SpeedLoader45_magnumPractice
@@ -247,17 +247,17 @@
 #Incendiary recipes
 
   - Magazine45_ACPPistolIncendiary
-  - Magazine45_ACPSMGIncendiary
+  - Magazine45_ACPSubMachineGunIncendiary
   - AmmoBox45_ACPIncendiary
   - Magazine9x19mmPistolIncendiary
-  - Magazine9x19mmSMGIncendiary
+  - Magazine9x19mmSubMachineGunIncendiary
   - SpeedLoader9x19mmIncendiary
   - AmmoBox9x19mmIncendiary
   - Magazine5.7x28mmPistolIncendiary
-  - Magazine5.7x28mmSMGIncendiary
+  - Magazine5.7x28mmSubMachineGunIncendiary
   - AmmoBox5.7x28mmIncendiary
   - Magazine4.6x30mmPistolIncendiary
-  - Magazine4.6x30mmSMGIncendiary
+  - Magazine4.6x30mmSubMachineGunIncendiary
   - AmmoBox4.6x30mmIncendiary
   - Magazine45_magnumPistolIncendiary
   - SpeedLoader45_magnumIncendiary
@@ -275,17 +275,17 @@
 #Rubber recipes
 
   - Magazine45_ACPPistolRubber
-  - Magazine45_ACPSMGRubber
+  - Magazine45_ACPSubMachineGunRubber
   - AmmoBox45_ACPRubber
   - Magazine9x19mmPistolRubber
-  - Magazine9x19mmSMGRubber
+  - Magazine9x19mmSubMachineGunRubber
   - SpeedLoader9x19mmRubber
   - AmmoBox9x19mmRubber
   - Magazine5.7x28mmPistolRubber
-  - Magazine5.7x28mmSMGRubber
+  - Magazine5.7x28mmSubMachineGunRubber
   - AmmoBox5.7x28mmRubber
   - Magazine4.6x30mmPistolRubber
-  - Magazine4.6x30mmSMGRubber
+  - Magazine4.6x30mmSubMachineGunRubber
   - AmmoBox4.6x30mmRubber
   - Magazine45_magnumPistolRubber
   - SpeedLoader45_magnumRubber
@@ -305,17 +305,17 @@
   - Magazine8x65mmSKR
   - AmmoBox8x65mmSKR
   - Magazine45_ACPPistolFMJ
-  - Magazine45_ACPSMGFMJ
+  - Magazine45_ACPSubMachineGunFMJ
   - AmmoBox45_ACPFMJ
   - Magazine9x19mmPistolFMJ
-  - Magazine9x19mmSMGFMJ
+  - Magazine9x19mmSubMachineGunFMJ
   - SpeedLoader9x19mmFMJ
   - AmmoBox9x19mmFMJ
   - Magazine5.7x28mmPistolFMJ
-  - Magazine5.7x28mmSMGFMJ
+  - Magazine5.7x28mmSubMachineGunFMJ
   - AmmoBox5.7x28mmFMJ
   - Magazine4.6x30mmPistolFMJ
-  - Magazine4.6x30mmSMGFMJ
+  - Magazine4.6x30mmSubMachineGunFMJ
   - AmmoBox4.6x30mmFMJ
   - Magazine45_magnumPistolFMJ
   - SpeedLoader45_magnumFMJ
@@ -339,17 +339,17 @@
   #Empty>
   - Magazine8x65mmEmpty
   - Magazine45_ACPPistolEmpty
-  - Magazine45_ACPSMGEmpty
+  - Magazine45_ACPSubMachineGunEmpty
   - AmmoBox45_ACPEmpty
   - Magazine9x19mmPistolEmpty
-  - Magazine9x19mmSMGEmpty
+  - Magazine9x19mmSubMachineGunEmpty
   - SpeedLoader9x19mmEmpty
   - AmmoBox9x19mmEmpty
   - Magazine5.7x28mmPistolEmpty
-  - Magazine5.7x28mmSMGEmpty
+  - Magazine5.7x28mmSubMachineGunEmpty
   - AmmoBox5.7x28mmEmpty
   - Magazine4.6x30mmPistolEmpty
-  - Magazine4.6x30mmSMGEmpty
+  - Magazine4.6x30mmSubMachineGunEmpty
   - AmmoBox4.6x30mmEmpty
   - Magazine45_magnumPistolEmpty
   - SpeedLoader45_magnumEmpty
@@ -368,17 +368,17 @@
   - Magazine8x65mmSKR
   - AmmoBox8x65mmSKR
   - Magazine45_ACPPistolFMJ
-  - Magazine45_ACPSMGFMJ
+  - Magazine45_ACPSubMachineGunFMJ
   - AmmoBox45_ACPFMJ
   - Magazine9x19mmPistolFMJ
-  - Magazine9x19mmSMGFMJ
+  - Magazine9x19mmSubMachineGunFMJ
   - SpeedLoader9x19mmFMJ
   - AmmoBox9x19mmFMJ
   - Magazine5.7x28mmPistolFMJ
-  - Magazine5.7x28mmSMGFMJ
+  - Magazine5.7x28mmSubMachineGunFMJ
   - AmmoBox5.7x28mmFMJ
   - Magazine4.6x30mmPistolFMJ
-  - Magazine4.6x30mmSMGFMJ
+  - Magazine4.6x30mmSubMachineGunFMJ
   - AmmoBox4.6x30mmFMJ
   - Magazine45_magnumPistolFMJ
   - SpeedLoader45_magnumFMJ
@@ -395,17 +395,17 @@
   - AmmoBox7.62x51mmFMJ
 #Practice>
   - Magazine45_ACPPistolPractice
-  - Magazine45_ACPSMGPractice
+  - Magazine45_ACPSubMachineGunPractice
   - AmmoBox45_ACPPractice
   - Magazine9x19mmPistolPractice
-  - Magazine9x19mmSMGPractice
+  - Magazine9x19mmSubMachineGunPractice
   - SpeedLoader9x19mmPractice
   - AmmoBox9x19mmPractice
   - Magazine5.7x28mmPistolPractice
-  - Magazine5.7x28mmSMGPractice
+  - Magazine5.7x28mmSubMachineGunPractice
   - AmmoBox5.7x28mmPractice
   - Magazine4.6x30mmPistolPractice
-  - Magazine4.6x30mmSMGPractice
+  - Magazine4.6x30mmSubMachineGunPractice
   - AmmoBox4.6x30mmPractice
   - Magazine45_magnumPistolPractice
   - SpeedLoader45_magnumPractice
@@ -421,17 +421,17 @@
   - AmmoBox7.62x51mmPractice
 #Rubber>
   - Magazine45_ACPPistolRubber
-  - Magazine45_ACPSMGRubber
+  - Magazine45_ACPSubMachineGunRubber
   - AmmoBox45_ACPRubber
   - Magazine9x19mmPistolRubber
-  - Magazine9x19mmSMGRubber
+  - Magazine9x19mmSubMachineGunRubber
   - SpeedLoader9x19mmRubber
   - AmmoBox9x19mmRubber
   - Magazine5.7x28mmPistolRubber
-  - Magazine5.7x28mmSMGRubber
+  - Magazine5.7x28mmSubMachineGunRubber
   - AmmoBox5.7x28mmRubber
   - Magazine4.6x30mmPistolRubber
-  - Magazine4.6x30mmSMGRubber
+  - Magazine4.6x30mmSubMachineGunRubber
   - AmmoBox4.6x30mmRubber
   - Magazine45_magnumPistolRubber
   - SpeedLoader45_magnumRubber
@@ -453,17 +453,17 @@
   recipes:
 #Incendiary>
   - Magazine45_ACPPistolIncendiary
-  - Magazine45_ACPSMGIncendiary
+  - Magazine45_ACPSubMachineGunIncendiary
   - AmmoBox45_ACPIncendiary
   - Magazine9x19mmPistolIncendiary
-  - Magazine9x19mmSMGIncendiary
+  - Magazine9x19mmSubMachineGunIncendiary
   - SpeedLoader9x19mmIncendiary
   - AmmoBox9x19mmIncendiary
   - Magazine5.7x28mmPistolIncendiary
-  - Magazine5.7x28mmSMGIncendiary
+  - Magazine5.7x28mmSubMachineGunIncendiary
   - AmmoBox5.7x28mmIncendiary
   - Magazine4.6x30mmPistolIncendiary
-  - Magazine4.6x30mmSMGIncendiary
+  - Magazine4.6x30mmSubMachineGunIncendiary
   - AmmoBox4.6x30mmIncendiary
   - Magazine45_magnumPistolIncendiary
   - SpeedLoader45_magnumIncendiary
@@ -479,17 +479,17 @@
   - AmmoBox7.62x51mmIncendiary
 #Uranium>
   - Magazine45_ACPPistolUranium
-  - Magazine45_ACPSMGUranium
+  - Magazine45_ACPSubMachineGunUranium
   - AmmoBox45_ACPUranium
   - Magazine9x19mmPistolUranium
-  - Magazine9x19mmSMGUranium
+  - Magazine9x19mmSubMachineGunUranium
   - SpeedLoader9x19mmUranium
   - AmmoBox9x19mmUranium
   - Magazine5.7x28mmPistolUranium
-  - Magazine5.7x28mmSMGUranium
+  - Magazine5.7x28mmSubMachineGunUranium
   - AmmoBox5.7x28mmUranium
   - Magazine4.6x30mmPistolUranium
-  - Magazine4.6x30mmSMGUranium
+  - Magazine4.6x30mmSubMachineGunUranium
   - AmmoBox4.6x30mmUranium
   - Magazine45_magnumPistolUranium
   - SpeedLoader45_magnumUranium
