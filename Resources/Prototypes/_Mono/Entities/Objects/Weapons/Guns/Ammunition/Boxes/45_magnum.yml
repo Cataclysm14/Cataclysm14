@@ -26,8 +26,8 @@
 # Boxes
 - type: entity
   parent: BaseAmmoBox45_magnum
-  id: AmmoBox45_magnum
-  name: ammunition box (.45 magnum)
+  id: AmmoBox45_magnumFMJ
+  name: ammunition box (.45 magnum FMJ)
   components:
   - type: BallisticAmmoProvider
     proto: Cartrdige45_magnumFMJ

@@ -245,6 +245,6 @@
   components:
   - type: StorageFill
     contents:
-      - id: SpeedLoader45_magnum
+      - id: SpeedLoader45_magnumFMJ
         amount: 4
 #mono edit end

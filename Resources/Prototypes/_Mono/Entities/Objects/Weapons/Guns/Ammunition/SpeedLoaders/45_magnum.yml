@@ -6,7 +6,7 @@
   components:
   - type: Tag
     tags:
-      - SpeedLoader45_magnum
+      - SpeedLoader45_magnumFMJ
   - type: SpeedLoader
   - type: BallisticAmmoProvider
     whitelist:
@@ -20,8 +20,8 @@
         ents: []
 
 - type: entity
-  id: SpeedLoader45_magnum
-  name: "speed loader (.45 magnum)"
+  id: SpeedLoader45_magnumFMJ
+  name: "speed loader (.45 magnum FMJ)"
   parent: BaseSpeedLoader45_magnum
   components:
   - type: BallisticAmmoProvider
@@ -42,7 +42,7 @@
 - type: entity
   id: SpeedLoader45_magnumEmpty
   name: "speed loader (.45 magnum any)"
-  parent: SpeedLoader45_magnum
+  parent: SpeedLoader45_magnumFMJ
   components:
   - type: BallisticAmmoProvider
     proto: null
@@ -60,7 +60,7 @@
 - type: entity
   id: SpeedLoader45_magnumIncendiary
   name: "speed loader (.45 magnum incendiary)"
-  parent: SpeedLoader45_magnum
+  parent: SpeedLoader45_magnumFMJ
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge45_magnumIncendiary

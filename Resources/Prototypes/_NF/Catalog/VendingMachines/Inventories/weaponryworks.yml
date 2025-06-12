@@ -19,7 +19,7 @@
     AmmoBox7.62x39mmRubber: 2
     AmmoBox9x19mmFMJ: 2
     AmmoBox9x19mmRubber: 2
-    AmmoBox45_magnum: 2
+    AmmoBox45_magnumFMJ: 2
     AmmoBox45_magnumRubber: 2
     SpeedLoader5.56x45mmEmpty: 1
     MagazineNovaliteC1Empty: 1
@@ -49,7 +49,7 @@
     AmmoBox7.62x39mmRubber: 4294967295
     AmmoBox9x19mmFMJ: 4294967295
     AmmoBox9x19mmRubber: 4294967295
-    AmmoBox45_magnum: 4294967295
+    AmmoBox45_magnumFMJ: 4294967295
     AmmoBox45_magnumRubber: 4294967295
     SpeedLoader5.56x45mmEmpty: 4294967295
     MagazineNovaliteC1Empty: 4294967295
@@ -93,6 +93,6 @@
     AmmoBox6.35x40mmCaselessBig: 4294967295 # .25
     AmmoBox7.62x39mmBigFMJ: 4294967295 # .30
     AmmoBox9x19mmBig: 4294967295 # .35
-    AmmoBox45_magnum: 4294967295 # .45
+    AmmoBox45_magnumFMJ: 4294967295 # .45
     Box12GaugeSlug: 4294967295
     Box12GaugeBuckshot: 4294967295

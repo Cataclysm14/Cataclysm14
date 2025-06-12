@@ -331,7 +331,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: AmmoBox45_magnum
+    - id: AmmoBox45_magnumFMJ
       amount: 4
 
 - type: entity # Rubber

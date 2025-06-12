@@ -104,8 +104,8 @@
   - type: SpawnItemsOnUse
     items:
       - id: WeaponRevolverPython
-      - id: SpeedLoader45_magnum
-      - id: SpeedLoader45_magnum
+      - id: SpeedLoader45_magnumFMJ
+      - id: SpeedLoader45_magnumFMJ
       - id: SpaceCash2500
       # Bonus Loot T3
       - id: SpaceCash1000
@@ -133,7 +133,7 @@
   components:
   - type: SpawnItemsOnUse
     items:
-      - id: SpeedLoader45_magnum
+      - id: SpeedLoader45_magnumFMJ
       - id: SpaceCash2500
       # Bonus Loot T3
       - id: SpaceCash1000
