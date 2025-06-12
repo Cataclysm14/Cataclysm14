@@ -635,6 +635,21 @@
   description: uplink-pirate-energy-cutlass-desc
   productEntity: EnergyCutlass
   cost:
+    Doubloon: 3
+  categories:
+  - UplinkPirateWeapons
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateEnergySword
+  name: uplink-pirate-energy-sword-name
+  description: uplink-pirate-energy-sword-desc
+  productEntity: EnergySword
+  cost:
     Doubloon: 6
   categories:
   - UplinkPirateWeapons
@@ -644,21 +659,21 @@
       tags:
       - PirateUplink
 
-- type: listing
-  id: UplinkPirateVT7
-  name: uplink-pirate-vt7-name
-  description: uplink-pirate-vt7-desc
-  productEntity: WeaponVT7
-  icon: { sprite: _Mono/Objects/Weapons/Melee/murasama.rsi, state: icon }
-  cost:
-    Doubloon: 12
-  categories:
-  - UplinkPirateWeapons
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - PirateUplink
+# - type: listing
+#   id: UplinkPirateVT7
+#   name: uplink-pirate-vt7-name
+#   description: uplink-pirate-vt7-desc
+#   productEntity: WeaponVT7
+#   icon: { sprite: _Mono/Objects/Weapons/Melee/murasama.rsi, state: icon }
+#   cost:
+#     Doubloon: 12
+#   categories:
+#   - UplinkPirateWeapons
+#   conditions:
+#   - !type:StoreWhitelistCondition
+#     whitelist:
+#       tags:
+#       - PirateUplink
 
 - type: listing
   id: UplinkPirateC20
@@ -667,7 +682,7 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledSMG
   icon: { sprite: Objects/Weapons/Guns/SMGs/c20r.rsi, state: icon }
   cost:
-    Doubloon: 10
+    Doubloon: 4
   categories:
   - UplinkPirateWeapons
   conditions:
@@ -746,7 +761,7 @@
   description: uplink-pirate-kanabou-desc
   productEntity: Kanabou
   cost:
-    Doubloon: 6
+    Doubloon: 4
   categories:
   - UplinkPirateWeapons
   conditions:
@@ -762,7 +777,7 @@
   productEntity: WeaponRifleAk
   icon: { sprite: Objects/Weapons/Guns/Rifles/ak.rsi, state: icon }
   cost:
-    Doubloon: 8
+    Doubloon: 3
   categories:
   - UplinkPirateWeapons
   conditions:
@@ -932,20 +947,20 @@
       tags:
       - PirateUplink
 
-- type: listing
-  id: UplinkPirateModsuit
-  name: uplink-pirate-modsuit-name
-  description: uplink-pirate-modsuit-desc
-  productEntity: ClothingModsuitRoguePowerCell
-  cost:
-    Doubloon: 25
-  categories:
-  - UplinkPirateEquipment
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - PirateUplink
+# - type: listing
+#   id: UplinkPirateModsuit
+#   name: uplink-pirate-modsuit-name
+#   description: uplink-pirate-modsuit-desc
+#   productEntity: ClothingModsuitRoguePowerCell
+#   cost:
+#     Doubloon: 25
+#   categories:
+#   - UplinkPirateEquipment
+#   conditions:
+#   - !type:StoreWhitelistCondition
+#     whitelist:
+#       tags:
+#       - PirateUplink
 
 #MARK: Explosives
 

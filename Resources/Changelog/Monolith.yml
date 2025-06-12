@@ -3810,3 +3810,134 @@ Entries:
   id: 459
   time: '2025-06-07T22:27:02.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/754
+- author: EctoplasmIsGood
+  changes:
+    - type: Remove
+      message: Temporarily disabled the rogue, USSP, and TSF speed suits
+    - type: Remove
+      message: Temporarily disabled the HF katana and VT7
+  id: 460
+  time: '2025-06-10T02:00:49.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/771
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: EG-4 does slightly more damage
+  id: 461
+  time: '2025-06-10T02:01:23.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/761
+- author: BlueHNT
+  changes:
+    - type: Fix
+      message: Fixed FTL resale profiteering
+  id: 462
+  time: '2025-06-10T02:01:52.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/765
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: ADS requires more players to spawn
+  id: 463
+  time: '2025-06-10T02:07:29.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/760
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Expedition windows no longer block laser
+    - type: Tweak
+      message: Expeditions mob prying speed doubled
+    - type: Tweak
+      message: Starting crowbar in loadout now the same speed as normal crowbars.
+  id: 464
+  time: '2025-06-10T02:09:19.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/758
+- author: mikusssssss
+  changes:
+    - type: Tweak
+      message: >-
+        Brigmedics now do surgery at a 1.65x modifier instead of the previous
+        1.5x. I am not being held hostage.
+  id: 465
+  time: '2025-06-10T02:10:09.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/763
+- author: BlueHNT
+  changes:
+    - type: Add
+      message: Added Taxes.
+    - type: Remove
+      message: Removed Freedom.
+    - type: Tweak
+      message: Rogues no longer get taxed by CO, money instead goes into BlackMarket.
+    - type: Tweak
+      message: >-
+        Increased payouts to CO/TSF/MD Station Administration Consoles to
+        properly pay their employees.
+  id: 466
+  time: '2025-06-10T02:12:11.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/750
+- author: RikuTheKiller
+  changes:
+    - type: Fix
+      message: >-
+        The FTL orientation indicator actually points in the right direction,
+        rather than being mirrored over the X axis.
+  id: 467
+  time: '2025-06-11T01:49:17.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/775
+- author: EctoplasmIsGood
+  changes:
+    - type: Tweak
+      message: Rewrote ADS laws
+  id: 468
+  time: '2025-06-11T01:57:36.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/777
+- author: Scryon
+  changes:
+    - type: Tweak
+      message: Changed Vulpkanin sounds to better ones.
+  id: 469
+  time: '2025-06-11T02:02:18.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/770
+- author: Onezero0
+  changes:
+    - type: Add
+      message: Added a recipe for Barozine.
+  id: 470
+  time: '2025-06-11T02:09:04.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/780
+- author: Ark
+  changes:
+    - type: Tweak
+      message: Rodentia are no longer hidden from the character menu.
+  id: 471
+  time: '2025-06-11T02:11:09.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/784
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Colonel spawns with a Mateba.
+    - type: Tweak
+      message: TSFMC/USSP spawns with Handicomms
+    - type: Tweak
+      message: Renamed CO radio channels.
+  id: 472
+  time: '2025-06-11T02:14:13.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/769
+- author: BlueHNT
+  changes:
+    - type: Add
+      message: Added normal e-sword to rogues.
+    - type: Tweak
+      message: Buying guns as Rogue doesn't cost your life savings anymore.
+  id: 473
+  time: '2025-06-11T02:16:20.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/776
+- author: Onezero0
+  changes:
+    - type: Tweak
+      message: >-
+        Tweaked some parts of the razor, less maneuverable but faster with an
+        upgraded FTL drive and forwards thrusters.
+  id: 474
+  time: '2025-06-11T02:48:08.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/779
