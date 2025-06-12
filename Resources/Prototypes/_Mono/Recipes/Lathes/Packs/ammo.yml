@@ -19,7 +19,6 @@
   - AmmoBox45_ACPRubber
   - AmmoBox45_ACPIncendiary
   - AmmoBox45_ACPPractice
-  - AmmoBox45_ACPEmpty
   - AmmoBox45_ACPUranium
   - Magazine9x19mmPistolFMJ
   - Magazine9x19mmPistolRubber
@@ -43,7 +42,6 @@
   - AmmoBox9x19mmRubber
   - AmmoBox9x19mmIncendiary
   - AmmoBox9x19mmPractice
-  - AmmoBox9x19mmEmpty
   - AmmoBox9x19mmUranium
   - Magazine5.7x28mmPistolFMJ
   - Magazine5.7x28mmPistolRubber
@@ -61,7 +59,6 @@
   - AmmoBox5.7x28mmRubber
   - AmmoBox5.7x28mmIncendiary
   - AmmoBox5.7x28mmPractice
-  - AmmoBox5.7x28mmEmpty
   - AmmoBox5.7x28mmUranium
   - Magazine4.6x30mmPistolFMJ
   - Magazine4.6x30mmPistolRubber
@@ -79,7 +76,6 @@
   - AmmoBox4.6x30mmRubber
   - AmmoBox4.6x30mmIncendiary
   - AmmoBox4.6x30mmPractice
-  - AmmoBox4.6x30mmEmpty
   - AmmoBox4.6x30mmUranium
   - Magazine45_magnumPistolFMJ
   - Magazine45_magnumPistolRubber
@@ -97,7 +93,6 @@
   - AmmoBox45_magnumRubber
   - AmmoBox45_magnumIncendiary
   - AmmoBox45_magnumPractice
-  - AmmoBox45_magnumEmpty
   - AmmoBox45_magnumUranium
   - Magazine7.62x39mmmFMJ
   - Magazine7.62x39mmmRubber
@@ -110,7 +105,6 @@
   - AmmoBox7.62x39mmmRubber
   - AmmoBox7.62x39mmmIncendiary
   - AmmoBox7.62x39mmmPractice
-  - AmmoBox7.62x39mmmEmpty
   - AmmoBox7.62x39mmmUranium
   - Magazine5.56x45mmFMJ
   - Magazine5.56x45mmRubber
@@ -128,7 +122,6 @@
   - AmmoBox5.56x45mmRubber
   - AmmoBox5.56x45mmIncendiary
   - AmmoBox5.56x45mmPractice
-  - AmmoBox5.56x45mmEmpty
   - AmmoBox5.56x45mmUranium
   - Magazine8x65mmSKR
   - Magazine8x65mmEmpty
@@ -143,7 +136,6 @@
   - AmmoBox7.62x54mmRRubber
   - AmmoBox7.62x54mmRIncendiary
   - AmmoBox7.62x54mmRPractice
-  - AmmoBox7.62x54mmREmpty
   - AmmoBox7.62x54mmRUranium
   - Magazine7.62x51mmFMJ
   - Magazine7.62x51mmRubber
@@ -155,7 +147,6 @@
   - AmmoBox7.62x51mmRubber
   - AmmoBox7.62x51mmIncendiary
   - AmmoBox7.62x51mmPractice
-  - AmmoBox7.62x51mmEmpty
   - AmmoBox7.62x51mmUranium
 
 #Uranium recipes
@@ -191,30 +182,21 @@
   - Magazine8x65mmEmpty
   - Magazine45_ACPPistolEmpty
   - Magazine45_ACPSubMachineGunEmpty
-  - AmmoBox45_ACPEmpty
   - Magazine9x19mmPistolEmpty
   - Magazine9x19mmSubMachineGunEmpty
   - SpeedLoader9x19mmEmpty
-  - AmmoBox9x19mmEmpty
   - Magazine5.7x28mmPistolEmpty
   - Magazine5.7x28mmSubMachineGunEmpty
-  - AmmoBox5.7x28mmEmpty
   - Magazine4.6x30mmPistolEmpty
   - Magazine4.6x30mmSubMachineGunEmpty
-  - AmmoBox4.6x30mmEmpty
   - Magazine45_magnumPistolEmpty
   - SpeedLoader45_magnumEmpty
-  - AmmoBox45_magnumEmpty
   - Magazine7.62x39mmmEmpty
-  - AmmoBox7.62x39mmmEmpty
   - Magazine5.56x45mmEmpty
   - SpeedLoader5.56x45mmEmpty
-  - AmmoBox5.56x45mmEmpty
   - Magazine8x65mmEmpty
   - Magazine7.62x54mmREmpty
-  - AmmoBox7.62x54mmREmpty
   - Magazine7.62x51mmEmpty
-  - AmmoBox7.62x51mmEmpty
 
 #Practice recipes
 
@@ -340,30 +322,21 @@
   - Magazine8x65mmEmpty
   - Magazine45_ACPPistolEmpty
   - Magazine45_ACPSubMachineGunEmpty
-  - AmmoBox45_ACPEmpty
   - Magazine9x19mmPistolEmpty
   - Magazine9x19mmSubMachineGunEmpty
   - SpeedLoader9x19mmEmpty
-  - AmmoBox9x19mmEmpty
   - Magazine5.7x28mmPistolEmpty
   - Magazine5.7x28mmSubMachineGunEmpty
-  - AmmoBox5.7x28mmEmpty
   - Magazine4.6x30mmPistolEmpty
   - Magazine4.6x30mmSubMachineGunEmpty
-  - AmmoBox4.6x30mmEmpty
   - Magazine45_magnumPistolEmpty
   - SpeedLoader45_magnumEmpty
-  - AmmoBox45_magnumEmpty
   - Magazine7.62x39mmmEmpty
-  - AmmoBox7.62x39mmmEmpty
   - Magazine5.56x45mmEmpty
   - SpeedLoader5.56x45mmEmpty
-  - AmmoBox5.56x45mmEmpty
   - Magazine8x65mmEmpty
   - Magazine7.62x54mmREmpty
-  - AmmoBox7.62x54mmREmpty
   - Magazine7.62x51mmEmpty
-  - AmmoBox7.62x51mmEmpty
 #FMJ>
   - Magazine8x65mmSKR
   - AmmoBox8x65mmSKR

@@ -85,11 +85,6 @@
   result: AmmoBox5.7x28mmPractice
 
 - type: latheRecipe
-  parent: BaseAmmoEmptyPistolCaliberAmmoBoxRecipe
-  id: AmmoBox5.7x28mmEmpty
-  result: AmmoBox5.7x28mmEmpty
-
-- type: latheRecipe
   parent: BaseAmmoUraniumPistolCaliberAmmoBoxRecipe
   id: AmmoBox5.7x28mmUranium
   result: AmmoBox5.7x28mmUranium

@@ -85,11 +85,6 @@
   result: AmmoBox5.56x45mmPractice
 
 - type: latheRecipe
-  parent: BaseAmmoEmptyIntermediateAmmoBoxRecipe
-  id: AmmoBox5.56x45mmEmpty
-  result: AmmoBox5.56x45mmEmpty
-
-- type: latheRecipe
   parent: BaseAmmoUraniumIntermediateAmmoBoxRecipe
   id: AmmoBox5.56x45mmUranium
   result: AmmoBox5.56x45mmUranium

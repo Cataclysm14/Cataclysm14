@@ -136,13 +136,6 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: BaseAmmoEmptyIntermediateAmmoBoxRecipe
-  abstract: true
-  materials:
-    Steel: 142
-
-- type: latheRecipe
-  parent: BaseAmmoRecipe
   id: BaseAmmoUraniumIntermediateAmmoBoxRecipe
   abstract: true
   materials:
@@ -228,13 +221,6 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoPracticeFullyPoweredAmmoBoxRecipe
-  abstract: true
-  materials:
-    Steel: 172
-
-- type: latheRecipe
-  parent: BaseAmmoRecipe
-  id: BaseAmmoEmptyFullyPoweredAmmoBoxRecipe
   abstract: true
   materials:
     Steel: 172
@@ -344,7 +330,7 @@
   materials:
     Steel: 125
     Uranium: 250
-    
+
 #Base PistolCaliber ammo speedloaders for .45 magnum, 5.56, 5.45, 7.62x39mm and potential others 
 #speedloaders:     [TOTAL = 175]
 
@@ -428,12 +414,6 @@
   materials:
     Steel: 112
 
-- type: latheRecipe
-  parent: BaseAmmoRecipe
-  id: BaseAmmoEmptyPistolCaliberAmmoBoxRecipe
-  abstract: true
-  materials:
-    Steel: 112
 
 - type: latheRecipe
   parent: BaseAmmoRecipe

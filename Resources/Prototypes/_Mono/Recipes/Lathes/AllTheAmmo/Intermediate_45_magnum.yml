@@ -83,12 +83,7 @@
   parent: BaseAmmoPracticeIntermediateAmmoBoxRecipe
   id: AmmoBox45_magnumPractice
   result: AmmoBox45_magnumPractice
-
-- type: latheRecipe
-  parent: BaseAmmoEmptyIntermediateAmmoBoxRecipe
-  id: AmmoBox45_magnumEmpty
-  result: AmmoBox45_magnumEmpty
-
+  
 - type: latheRecipe
   parent: BaseAmmoUraniumIntermediateAmmoBoxRecipe
   id: AmmoBox45_magnumUranium

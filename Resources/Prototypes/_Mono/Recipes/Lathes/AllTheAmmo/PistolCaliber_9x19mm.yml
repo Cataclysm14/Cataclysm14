@@ -115,12 +115,7 @@
   parent: BaseAmmoPracticePistolCaliberAmmoBoxRecipe
   id: AmmoBox9x19mmPractice
   result: AmmoBox9x19mmPractice
-
-- type: latheRecipe
-  parent: BaseAmmoEmptyPistolCaliberAmmoBoxRecipe
-  id: AmmoBox9x19mmEmpty
-  result: AmmoBox9x19mmEmpty
-
+  
 - type: latheRecipe
   parent: BaseAmmoUraniumPistolCaliberAmmoBoxRecipe
   id: AmmoBox9x19mmUranium

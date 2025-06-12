@@ -85,11 +85,6 @@
   result: AmmoBox45_ACPPractice
 
 - type: latheRecipe
-  parent: BaseAmmoEmptyPistolCaliberAmmoBoxRecipe
-  id: AmmoBox45_ACPEmpty
-  result: AmmoBox45_ACPEmpty
-
-- type: latheRecipe
   parent: BaseAmmoUraniumPistolCaliberAmmoBoxRecipe
   id: AmmoBox45_ACPUranium
   result: AmmoBox45_ACPUranium

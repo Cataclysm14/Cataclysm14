@@ -53,11 +53,6 @@
   result: AmmoBox7.62x54mmRPractice
 
 - type: latheRecipe
-  parent: BaseAmmoEmptyFullyPoweredAmmoBoxRecipe
-  id: AmmoBox7.62x54mmREmpty
-  result: AmmoBox7.62x54mmREmpty
-
-- type: latheRecipe
   parent: BaseAmmoUraniumFullyPoweredAmmoBoxRecipe
   id: AmmoBox7.62x54mmRUranium
   result: AmmoBox7.62x54mmRUranium
