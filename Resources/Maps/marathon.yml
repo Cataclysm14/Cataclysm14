@@ -105147,7 +105147,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: Magazine9x19mmSubMachineGunTopMountedFMJ
+- proto: Magazine9x19mmSubMachineGunTopMounted
   entities:
   - uid: 1999
     components:
