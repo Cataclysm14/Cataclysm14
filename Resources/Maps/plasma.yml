@@ -136891,7 +136891,7 @@ entities:
     - type: Transform
       pos: -46.5,-7.5
       parent: 2
-- proto: ShellTranquilizer
+- proto: ShellShotgun12gaugeTranquilizer
   entities:
   - uid: 11626
     components:

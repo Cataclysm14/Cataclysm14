@@ -166,7 +166,7 @@
   id: Box12GaugeTranquilizer
   components:
     - type: BallisticAmmoProvider
-      proto: ShellTranquilizer
+      proto: ShellShotgun12gaugeTranquilizer
     - type: MagazineVisuals
       magState: mag-tranq
       steps: 5

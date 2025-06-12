@@ -114,7 +114,7 @@
     state: "practice"
 
 - type: entity
-  id: ShellTranquilizer
+  id: ShellShotgun12gaugeTranquilizer
   name: shotgun shell (12 gauge tranquilizer)
   parent: BaseShellShotgun12gauge # Frontier: remove BaseSecurityContraband
   components:
