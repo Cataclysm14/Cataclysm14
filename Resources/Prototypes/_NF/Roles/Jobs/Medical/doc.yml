@@ -31,7 +31,7 @@
       - type: CommandStaff
       - type: NpcFactionMember
         factions:
-        - TSFMC
+        - MD # mono faction
       - type: SurgerySpeedModifier
         SpeedModifier: 2
   - !type:GiveItemOnHolidaySpecial

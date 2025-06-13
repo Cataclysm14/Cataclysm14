@@ -22,7 +22,7 @@
     components:
       - type: NpcFactionMember
         factions:
-        - TSFMC
+        - MD
       - type: SurgerySpeedModifier
         SpeedModifier: 1.75
   - !type:GiveItemOnHolidaySpecial
