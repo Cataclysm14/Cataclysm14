@@ -7,7 +7,7 @@
   - type: Mail
     contents:
     - id: WeaponSubMachineGunC20r
-    - id: MagazinePistolSubMachineGun
+    - id: Magazine9x19mmSubMachineGunFMJ
       amount: 3
 
 - type: entity
@@ -19,7 +19,7 @@
   - type: Mail
     contents:
     - id: WeaponRifleAk
-    - id: MagazineLightRifle
+    - id: Magazine7.62x39mmFMJ
       amount: 3
 
 - type: entity
