@@ -82,7 +82,7 @@
   - type: Appearance
 
 - type: entity
-  id: Magazine6.35x40mm6.35x40mmCaseless
+  id: Magazine6.35x40mmCaselessBig
   name: "box magazine (6.35x40mm Caseless)"
   parent: BaseMagazine6.35x40mmCaseless
   components:
@@ -146,6 +146,20 @@
   - type: Sprite
     layers:
     - state: red
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: Magazine6.35x40mmCaselessRubber
+  name: "magazine (6.35x40mm Caseless)"
+  parent: BaseMagazine6.35x40mmCaseless
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge6.35x40mmCaselessRubber
+  - type: Sprite
+    layers:
+    - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]

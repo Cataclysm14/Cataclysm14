@@ -495,7 +495,7 @@
         prob: 0.7
       - id: SpawnDungeonLootMaterialsValuableFull
         prob: 0.7
-      - id: AmmoBox9x19mmBig # Mono
+      - id: AmmoBox9x19mmBigFMJ # Mono
       - prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2

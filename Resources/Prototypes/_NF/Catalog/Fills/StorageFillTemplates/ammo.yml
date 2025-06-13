@@ -148,7 +148,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: AmmoBox9x19mmBig
+    - id: AmmoBox9x19mmBigFMJ
       amount: 4
 
 - type: entity # Rubber

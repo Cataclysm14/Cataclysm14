@@ -117,7 +117,7 @@
   - id: 40mmGrenadeFlash
   - id: 40mmGrenadeThermobaric
   - id: 40mmGrenadeFragmentation
-  - id: GrenadeBaton
+  - id: 40mmGrenadeBaton
   - id: SoapSyndie
     amount: 0
     maxAmount: 3
@@ -128,7 +128,7 @@
     maxAmount: 15
   - id: Magazine6.35x40mmCaseless
     maxAmount: 15
-  - id: Magazine6.35x40mm6.35x40mmCaseless
+  - id: Magazine6.35x40mmCaselessBig
     maxAmount: 15
   - id: Magazine6.35x40mmCaselessPistol
     maxAmount: 15
