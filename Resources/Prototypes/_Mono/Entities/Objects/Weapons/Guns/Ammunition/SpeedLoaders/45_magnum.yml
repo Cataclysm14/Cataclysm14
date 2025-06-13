@@ -11,7 +11,7 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - Cartrdige45_magnumFMJ
+        - Cartridge45_magnumFMJ
     capacity: 6
   - type: Sprite
   - type: ContainerContainer
@@ -25,7 +25,7 @@
   parent: BaseSpeedLoader45_magnum
   components:
   - type: BallisticAmmoProvider
-    proto: Cartrdige45_magnumFMJ
+    proto: Cartridge45_magnumFMJ
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
     layers:

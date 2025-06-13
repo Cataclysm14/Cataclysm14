@@ -307,8 +307,8 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartrdige45_magnumFMJ
+        startingItem: Cartridge45_magnumFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartrdige45_magnumFMJ
+            - Cartridge45_magnumFMJ

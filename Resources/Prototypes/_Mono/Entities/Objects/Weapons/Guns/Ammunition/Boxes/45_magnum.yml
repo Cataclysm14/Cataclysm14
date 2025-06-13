@@ -7,8 +7,8 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartrdige45_magnumFMJ
-    proto: Cartrdige45_magnumFMJ
+        - Cartridge45_magnumFMJ
+    proto: Cartridge45_magnumFMJ
     capacity: 12
   - type: Item
     size: Small
@@ -30,7 +30,7 @@
   name: ammunition box (.45 magnum FMJ)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartrdige45_magnumFMJ
+    proto: Cartridge45_magnumFMJ
   - type: Sprite
     layers:
     - state: base

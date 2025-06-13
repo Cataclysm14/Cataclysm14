@@ -23,6 +23,6 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - Cartrdige45_magnumFMJ
+      - Cartridge45_magnumFMJ
     capacity: 7
-    proto: Cartrdige45_magnumFMJ
+    proto: Cartridge45_magnumFMJ

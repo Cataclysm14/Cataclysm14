@@ -47,7 +47,7 @@ Bullet9x19mmHighVelocity: Bullet9x19mmFMJ
 Bullet5.56x45mmHighVelocity: Bullet5.56x45mmFMJ
 Cartridge6.35x40mmCaselessHighVelocity: Cartridge6.35x40mmCaseless
 Cartridge7.62x39mmHighVelocity: Cartridge7.62x39mmFMJ
-Cartridge45_magnumHighVelocity: Cartrdige45_magnumFMJ
+Cartridge45_magnumHighVelocity: Cartridge45_magnumFMJ
 Cartridge9x19mmHighVelocity: Cartridge9x19mmFMJ
 Cartridge5.56x45mmHighVelocity: Cartridge5.56x45mmFMJ
 AmmoBox6.35x40mmCaselessHighVelocity: AmmoBox6.35x40mmCaseless
@@ -295,7 +295,7 @@ BodyBag_Folded: BodyBagFolded
 # Bullet5.56x45mmRubber: Bullet5.56x45mmFMJ # Frontier
 # Bullet6.35x40mmCaselessRubber: Bullet6.35x40mmCaseless # Frontier
 # Cartridge9x19mmRubber: Cartridge9x19mmFMJ # Frontier
-# Cartridge45_magnumRubber: Cartrdige45_magnumFMJ # Frontier
+# Cartridge45_magnumRubber: Cartridge45_magnumFMJ # Frontier
 # Cartridge7.62x39mmRubber: Cartridge7.62x39mmFMJ # Frontier
 # Cartridge5.56x45mmRubber: Cartridge5.56x45mmFMJ # Frontier
 # Cartridge6.35x40mmCaselessRubber: Cartridge6.35x40mmCaseless # Frontier
