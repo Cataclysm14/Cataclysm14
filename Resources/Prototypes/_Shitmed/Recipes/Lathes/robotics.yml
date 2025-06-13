@@ -87,7 +87,6 @@
 - type: latheRecipe
   id: DexLeftHand
   result: DexLeftHand
-  category: Robotics
   completetime: 5
   materials:
     Steel: 500
@@ -99,7 +98,6 @@
 - type: latheRecipe
   id: DexRightHand
   result: DexRightHand
-  category: Robotics
   completetime: 5
   materials:
     Steel: 500
