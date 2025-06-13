@@ -268,7 +268,7 @@
     capacity: 35
   - type: Sprite
     layers:
-    - state: red
+    - state: rubber
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
