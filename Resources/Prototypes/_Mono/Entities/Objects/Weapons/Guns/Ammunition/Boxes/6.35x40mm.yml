@@ -9,7 +9,7 @@
       tags:
         - Cartridge6.35x40mmCaseless
     proto: Cartridge6.35x40mmCaseless
-    capacity: 60
+    capacity: 80
   - type: Item
     size: Small
   - type: ContainerContainer

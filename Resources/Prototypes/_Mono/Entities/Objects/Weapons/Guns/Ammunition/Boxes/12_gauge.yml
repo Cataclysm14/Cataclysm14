@@ -23,7 +23,7 @@
       whitelist:
         tags:
         - ShellShotgun12_gauge
-      capacity: 30
+      capacity: 32
     - type: MagazineVisuals
       magState: mag
       steps: 5

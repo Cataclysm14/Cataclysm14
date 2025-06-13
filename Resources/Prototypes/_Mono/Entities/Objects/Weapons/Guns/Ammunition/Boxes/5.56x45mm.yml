@@ -9,7 +9,7 @@
       tags:
         - Cartridge5.56x45mmFMJ
     proto: Cartridge5.56x45mmFMJ
-    capacity: 50
+    capacity: 80
   - type: Item
     size: Small
   - type: ContainerContainer
