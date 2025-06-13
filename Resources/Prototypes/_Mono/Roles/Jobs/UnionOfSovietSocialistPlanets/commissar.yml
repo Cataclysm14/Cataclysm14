@@ -43,3 +43,6 @@
   equipment:
     pocket1: WeaponRevolverMatebaAP
     pocket2: SpeedLoader45_magnumAP
+  storage:
+    back:
+    - RadioHandheldNF
