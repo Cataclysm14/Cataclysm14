@@ -95,6 +95,22 @@
       tags:
       - SecurityUplink
 
+- type: listing
+  id: UplinkSecurityNavyOfficerSword
+  name:  uplink-security-navyofficersword-name
+  description: uplink-security-navyofficersword-desc
+  productEntity: ClothingBeltSheathFilledNavy
+  icon: { sprite: _Mono/Objects/Weapons/Melee/ccsabre.rsi, state: icon }
+  cost:
+    FederationMilitaryCredit: 2 #From 10 to 2
+  categories:
+    - UplinkSecurityWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
 # - type: listing
 #   id: UplinkSecurityAuroraExosuit
 #   name:  uplink-exosuit-aurora-name
