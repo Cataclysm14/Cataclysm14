@@ -63,21 +63,21 @@
   price: 0
   storage:
     back:
-    - BoxMagazine5.56x45mm
+    - BoxMagazine5.56x45mmFMJ
 
 - type: loadout
   id: Tsfmc9x19mmPistolMagLoadout
   price: 0
   storage:
     back:
-    - BoxMagazine9x19mm
+    - BoxMagazine9x19mmFMJ
 
 - type: loadout
   id: Tsfmc45_ACPPistolMagLoadout
   price: 0
   storage:
     back:
-    - BoxMagazine45_ACP
+    - BoxMagazine45_ACPFMJ
 
 - type: loadout
   id: Tsfmc7.62x51mmMagLoadout

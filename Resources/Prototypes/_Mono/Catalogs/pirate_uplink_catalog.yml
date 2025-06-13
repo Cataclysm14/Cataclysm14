@@ -527,7 +527,7 @@
   id: UplinkPirateAmmoBox45_magnum
   name: uplink-pirate-magazine-box-45_magnum-name
   description: uplink-pirate-magazine-box-45_magnum-desc
-  productEntity: BoxMagazine45_magnum
+  productEntity: BoxMagazine45_magnumFMJ
   cost:
     Doubloon: 1
   categories:
@@ -539,10 +539,10 @@
       - PirateUplink
 
 - type: listing
-  id: UplinkPirateBoxMagazine7.62x39mm
+  id: UplinkPirateBoxMagazine7.62x39mmFMJ
   name: uplink-pirate-box-magazine-light-rifle-name
   description: uplink-pirate-box-magazine-light-rifle-desc
-  productEntity: BoxMagazine7.62x39mm
+  productEntity: BoxMagazine7.62x39mmFMJ
   cost:
     Doubloon: 1
   categories:
@@ -584,10 +584,10 @@
       - PirateUplink
 
 - type: listing
-  id: UplinkPirateBoxMagazine9x19mm
+  id: UplinkPirateBoxMagazine9x19mmFMJ
   name: uplink-pirate-box-magazine-pistol-name
   description: uplink-pirate-box-magazine-pistol-desc
-  productEntity: BoxMagazine9x19mm
+  productEntity: BoxMagazine9x19mmFMJ
   cost:
     Doubloon: 1
   categories:

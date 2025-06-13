@@ -7494,7 +7494,7 @@ entities:
     - type: Transform
       pos: 34.536674,-20.85105
       parent: 1668
-- proto: BoxMagazine7.62x39mm
+- proto: BoxMagazine7.62x39mmFMJ
   entities:
   - uid: 2337
     components:
@@ -7554,7 +7554,7 @@ entities:
     - type: Transform
       pos: 16.465034,26.837893
       parent: 1668
-- proto: BoxMagazine5.56x45mm
+- proto: BoxMagazine5.56x45mmFMJ
   entities:
   - uid: 2335
     components:

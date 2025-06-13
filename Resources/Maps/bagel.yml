@@ -17218,7 +17218,7 @@ entities:
     - type: Transform
       pos: 0.43422604,17.607504
       parent: 60
-- proto: BoxMagazine9x19mm
+- proto: BoxMagazine9x19mmFMJ
   entities:
   - uid: 6546
     components:

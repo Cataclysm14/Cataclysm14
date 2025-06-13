@@ -23419,7 +23419,7 @@ entities:
     - type: Transform
       pos: -45.725807,-31.611805
       parent: 5350
-- proto: BoxMagazine9x19mm
+- proto: BoxMagazine9x19mmFMJ
   entities:
   - uid: 1376
     components:

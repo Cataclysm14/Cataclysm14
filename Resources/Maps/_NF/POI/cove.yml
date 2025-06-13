@@ -3277,7 +3277,7 @@ entities:
     - type: Transform
       pos: 1.5,11.5
       parent: 1
-- proto: BoxMagazine9x19mm
+- proto: BoxMagazine9x19mmFMJ
   entities:
   - uid: 275
     components:

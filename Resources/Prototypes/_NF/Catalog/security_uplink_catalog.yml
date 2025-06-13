@@ -636,7 +636,7 @@
   id: UplinkSecurityPistolMagazine
   name:  uplink-security-Magazine9x19mmPistolFMJ-name
   description: uplink-security-Magazine9x19mmPistolFMJ-desc
-  productEntity: BoxMagazine9x19mm
+  productEntity: BoxMagazine9x19mmFMJ
   icon: { sprite: Objects/Storage/boxes.rsi, state: box }
   cost:
     FederationMilitaryCredit: 1
@@ -649,10 +649,10 @@
           - SecurityUplink
 
 - type: listing
-  id: UplinkSecurity20RifleMagazine
-  name:  uplink-security-20riflemagazine-name
-  description: uplink-security-20riflemagazine-desc
-  productEntity: BoxMagazine5.56x45mm
+  id: UplinkSecurity5.56x45mmMagazine
+  name:  uplink-security-5.56x45mmMagazine-name
+  description: uplink-security-5.56x45mmMagazine-desc
+  productEntity: BoxMagazine5.56x45mmFMJ
   icon: { sprite: Objects/Storage/boxes.rsi, state: box }
   cost:
     FederationMilitaryCredit: 1
@@ -665,10 +665,42 @@
           - SecurityUplink
 
 - type: listing
-  id: UplinkSecurity30RifleMagazine
-  name:  uplink-security-30riflemagazine-name
-  description: uplink-security-30riflemagazine-desc
-  productEntity: BoxMagazine7.62x39mm
+  id: UplinkSecurity7.62x51mmMagazine
+  name:  uplink-security-7.62x51mmMagazine-name
+  description: uplink-security-7.62x51mmMagazine-desc
+  productEntity: BoxMagazine7.62x51mmFMJ
+  icon: { sprite: Objects/Storage/boxes.rsi, state: box }
+  cost:
+    FederationMilitaryCredit: 1
+  categories:
+    - UplinkSecurityAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: UplinkSecurity7.62x51mmMagazineRubber
+  name: uplink-security-7.62x51mmMagazine-rubber-name
+  description: uplink-security-7.62x51mmMagazine-rubber-desc
+  productEntity: BoxMagazine7.62x51mmRubber
+  icon: { sprite: Objects/Storage/boxes.rsi, state: box }
+  cost:
+    FederationMilitaryCredit: 1
+  categories:
+    - UplinkSecurityAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: UplinkSecurity7.62x39mmMagazine
+  name:  uplink-security-7.62x39mmMagazine-name
+  description: uplink-security-7.62x39mmMagazine-desc
+  productEntity: BoxMagazine7.62x39mmFMJ
   icon: { sprite: Objects/Storage/boxes.rsi, state: box }
   cost:
     FederationMilitaryCredit: 1
@@ -713,9 +745,9 @@
           - SecurityUplink
 
 - type: listing
-  id: UplinkSecurity20RifleMagazineRubber
-  name: uplink-security-20riflemagazine-rubber-name
-  description: uplink-security-20riflemagazine-rubber-desc
+  id: UplinkSecurity5.56x45mmMagazineRubber
+  name: uplink-security-5.56x45mmMagazine-rubber-name
+  description: uplink-security-5.56x45mmMagazine-rubber-desc
   productEntity: BoxMagazine5.56x45mmRubber
   icon: { sprite: Objects/Storage/boxes.rsi, state: box }
   cost:
@@ -729,9 +761,9 @@
           - SecurityUplink
 
 - type: listing
-  id: UplinkSecurity30RifleMagazineRubber
-  name: uplink-security-30riflemagazine-rubber-name
-  description: uplink-security-30riflemagazine-rubber-desc
+  id: UplinkSecurity7.62x39mmMagazineRubber
+  name: uplink-security-7.62x39mmMagazine-rubber-name
+  description: uplink-security-7.62x39mmMagazine-rubber-desc
   productEntity: BoxMagazine7.62x39mmRubber
   icon: { sprite: Objects/Storage/boxes.rsi, state: box }
   cost:
