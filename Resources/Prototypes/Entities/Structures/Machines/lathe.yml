@@ -237,6 +237,8 @@
     - SecurityEquipment
     - SecurityWeapons
     - SyringeGuns # Delta-V
+    emagStaticPacks:
+    - CivilianAmmoRecipePack
 
 - type: entity
   id: ProtolatheHyperConvection
@@ -445,6 +447,7 @@
     - SMCybernetics
     # Mono - Mechs
     - WeaponMechCombatArsenal
+    - AdvancedAmmoRecipePack
   - type: MaterialStorage
     whitelist:
       tags:
@@ -481,9 +484,6 @@
     staticPacks:
     - CivilianAmmoRecipePack
     dynamicPacks:
-    - AdvancedAmmoRecipePack
-  - type: EmagLatheRecipes
-    emagStaticPacks:
     - AdvancedAmmoRecipePack
   - type: MaterialStorage
     whitelist:

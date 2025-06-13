@@ -59,18 +59,25 @@
     - BoxMagazine45_ACPSubMachineGunEmp
 
 - type: loadout
-  id: TsfmcRifleMagLoadout
+  id: Tsfmc5.56x45mmMagLoadout
   price: 0
   storage:
     back:
     - BoxMagazine5.56x45mm
 
 - type: loadout
-  id: TsfmcPistolMagLoadout
+  id: Tsfmc9x19mmPistolMagLoadout
   price: 0
   storage:
     back:
     - BoxMagazine9x19mm
+
+- type: loadout
+  id: Tsfmc45_ACPPistolMagLoadout
+  price: 0
+  storage:
+    back:
+    - BoxMagazine45_ACP
 
 - type: loadout
   id: Tsfmc7.62x51mmMagLoadout

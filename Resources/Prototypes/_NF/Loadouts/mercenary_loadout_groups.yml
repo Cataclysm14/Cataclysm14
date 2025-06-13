@@ -154,3 +154,16 @@
   - MercenaryClothingBeltSecurity
   subgroups:
   - ContractorBelt
+
+- type: loadoutGroup
+  id: MercenaryFirearm
+  name: loadout-group-mercenary-weapon
+  minLimit: 1
+  loadouts:
+  - MercenaryWt550Loadout
+  - MercenaryC20rLoadout
+  - MercenaryKammererLoadout
+  - MercenaryLecterLoadout
+  - MercenaryDrozdLoadout
+  fallbacks:
+  - MercenaryWt550Loadout

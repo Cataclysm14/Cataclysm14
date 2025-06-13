@@ -1,0 +1,36 @@
+# the GUNS
+
+- type: loadout
+  id: MercenaryDrozdLoadout
+  price: 25000
+  storage:
+    back:
+    - WeaponSubMachineGunDrozdPMC
+
+- type: loadout
+  id: MercenaryLecterLoadout
+  price: 25000
+  storage:
+    back:
+    - WeaponRifleLecterPMC
+
+- type: loadout
+  id: MercenaryKammererLoadout
+  price: 15000
+  storage:
+    back:
+    - WeaponShotgunKammererPMC
+
+- type: loadout
+  id: MercenaryC20rLoadout
+  price: 44000
+  storage:
+    back:
+    - WeaponSubMachineGunC20rPMC
+
+- type: loadout
+  id: MercenaryWt550Loadout
+  price: 32000
+  storage:
+    back:
+    - WeaponSubMachineGunWt550PMC
