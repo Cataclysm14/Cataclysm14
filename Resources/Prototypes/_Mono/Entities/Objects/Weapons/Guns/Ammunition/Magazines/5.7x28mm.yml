@@ -351,13 +351,13 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine5.7x28mmSubMachineGunTopMounted
+  id: Magazine5.7x28mmSubMachineGunTopMountedFMJ
   name: WT550 magazine (5.7x28mm top-mounted)
   parent: [ BaseItem, BaseC1Contraband, RecyclableItemSteelTiny ] # Frontier: BaseSecurityContraband<BaseC1Contraband, added RecyclableItemSteelTiny
   components:
   - type: Tag
     tags:
-      - Magazine5.7x28mmSubMachineGunTopMounted
+      - Magazine5.7x28mmSubMachineGunTopMountedFMJ
   - type: BallisticAmmoProvider
     mayTransfer: true
     proto: Cartridge5.7x28mmFMJ
@@ -384,7 +384,7 @@
 - type: entity
   id: Magazine5.7x28mmSubMachineGunTopMountedEmpty
   name: WT550 magazine (5.7x28mm top-mounted any)
-  parent: Magazine5.7x28mmSubMachineGunTopMounted
+  parent: Magazine5.7x28mmSubMachineGunTopMountedFMJ
   components:
   - type: BallisticAmmoProvider
     proto: null

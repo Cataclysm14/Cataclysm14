@@ -288,9 +288,9 @@
     contents:
     - id: WeaponSubMachineGunWt550Expedition
       amount: 1
-    - id: Magazine4.6x30mmSubMachineGunTopMounted
+    - id: Magazine4.6x30mmSubMachineGunTopMountedFMJ
       amount: 2
-    - id: AmmoBox9x19mmFMJ
+    - id: AmmoBox4.6x30mmFMJ
       amount: 1
 
 - type: entity
@@ -303,9 +303,9 @@
     contents:
     - id: WeaponSubMachineGunAtreidesExpedition
       amount: 1
-    - id: Magazine9x19mmSubMachineGunFMJ
+    - id: Magazine5.7x28mmSubMachineGunFMJ
       amount: 2
-    - id: AmmoBox9x19mmFMJ
+    - id: AmmoBox5.7x28mmFMJ
       amount: 2
 
 - type: entity
@@ -318,9 +318,9 @@
     contents:
     - id: WeaponSubMachineGunDrozdExpedition
       amount: 1
-    - id: Magazine9x19mmSubMachineGunFMJ
+    - id: Magazine45_ACPSubMachineGunFMJ
       amount: 2
-    - id: AmmoBox9x19mmFMJ
+    - id: AmmoBox45_ACPFMJ
       amount: 1
 
 - type: entity
@@ -348,9 +348,9 @@
     contents:
     - id: WeaponSubMachineGunTypewriterExpedition
       amount: 1
-    - id: Magazine9x19mmSubMachineGunFMJ
+    - id: Magazine45_ACPSubMachineGunFMJ
       amount: 2
-    - id: AmmoBox9x19mmFMJ
+    - id: AmmoBox45_ACPFMJ
       amount: 2
 
 # Rifles
@@ -429,7 +429,7 @@
     contents:
     - id: WeaponRifleSVS
       amount: 1
-    - id: Magazine7.62x39mmLowCapacityFMJ
+    - id: Magazine7.62x54mmRFMJ
       amount: 2
 
 - type: entity
@@ -442,7 +442,7 @@
     contents:
     - id: WeaponRifleVulcanExpedition
       amount: 1
-    - id: Magazine7.62x39mmFMJ
+    - id: Magazine7.62x51mmFMJ
       amount: 2
 
 - type: entity
