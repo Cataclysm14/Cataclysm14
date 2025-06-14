@@ -23,7 +23,7 @@
       whitelist:
         tags:
         - ShellShotgun
-      capacity: 16
+      capacity: 32 # Mono 16->32
     - type: MagazineVisuals
       magState: mag
       steps: 5
