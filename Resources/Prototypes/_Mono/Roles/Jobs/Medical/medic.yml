@@ -14,11 +14,8 @@
   displayWeight: 55 # Second from the top
   canBeAntag: false
   accessGroups:
-  - GeneralAccess # Add medical when it exists
-  # - MDAccess
-  - !type:GiveItemOnHolidaySpecial
-    holiday: DoctorDay
-    prototype: WehMedipen
+  - GeneralAccess
+  - Medical
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, TrackingImplant ]
