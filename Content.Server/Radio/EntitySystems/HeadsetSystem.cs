@@ -5,6 +5,8 @@ using Content.Shared.Inventory.Events;
 using Content.Shared.Radio;
 using Content.Shared.Radio.Components;
 using Content.Shared.Radio.EntitySystems;
+using Robust.Shared.Audio;
+using Robust.Shared.Audio.Systems;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 
@@ -14,6 +16,7 @@ public sealed class HeadsetSystem : SharedHeadsetSystem
 {
     [Dependency] private readonly INetManager _netMan = default!;
     [Dependency] private readonly RadioSystem _radio = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
 
     public override void Initialize()
     {
@@ -101,6 +104,19 @@ public sealed class HeadsetSystem : SharedHeadsetSystem
     {
         if (TryComp(Transform(uid).ParentUid, out ActorComponent? actor))
             _netMan.ServerSendMessage(args.ChatMsg, actor.PlayerSession.Channel);
+
+        switch (args.Channel.ID)
+        {
+            case "Common":          // Broadband
+                _audio.PlayPvs("/Audio/_Crescent/Radio/radio_broadband.ogg", uid, AudioParams.Default.WithMaxDistance(1));
+                break;
+            case "Traffic":         // Shortband
+                _audio.PlayPvs("/Audio/_Crescent/Radio/radio_shortband.ogg", uid, AudioParams.Default.WithMaxDistance(1));
+                break;
+            default:                // Special
+                _audio.PlayPvs("/Audio/_Crescent/Radio/radio_other.ogg", uid, AudioParams.Default.WithMaxDistance(1));
+                break;
+        }
     }
 
     private void OnEmpPulse(EntityUid uid, HeadsetComponent component, ref EmpPulseEvent args)
