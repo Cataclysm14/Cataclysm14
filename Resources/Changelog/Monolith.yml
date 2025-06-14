@@ -4165,3 +4165,38 @@ Entries:
   id: 499
   time: '2025-06-14T10:47:49.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/816
+- author: RikuTheKiller
+  changes:
+    - type: Tweak
+      message: >-
+        Advanced radar consoles have been retired, all other radar consoles have
+        the increased range now.
+  id: 500
+  time: '2025-06-14T10:58:54.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/819
+- author: BlueHNT
+  changes:
+    - type: Add
+      message: >-
+        Humans and dwarves now interact about 20% faster. This is tied to human
+        hands, each hand gives 10% do-after speed boost.
+    - type: Add
+      message: Added D.E.X hands to research that give 20% faster interaction each.
+    - type: Tweak
+      message: >-
+        Dwarves no longer have faster do-afters like humans but instead they are
+        not poisoned by ethanol and heal twice as much by metabolizing it.
+  id: 501
+  time: '2025-06-14T11:00:34.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/813
+- author: RikuTheKiller
+  changes:
+    - type: Tweak
+      message: >-
+        [EXPERIMENTAL] All shipgun projectiles are 3 times faster, ranges have
+        been tweaked and missile tracking works better. Report any and all
+        issues you have with this change, it's up for debate and needs live
+        testing.
+  id: 502
+  time: '2025-06-14T11:01:44.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/820
