@@ -94,6 +94,16 @@
   id: SpeedLoader9x19mmUranium
   result: SpeedLoader9x19mmUranium
 
+- type: latheRecipe
+  parent: BaseAmmoFMJPistolCaliberSubMachineGunMagazineRecipe
+  id: Magazine9x19mmSubMachineGunTopMountedFMJ
+  result: Magazine9x19mmSubMachineGunTopMountedFMJ
+
+- type: latheRecipe
+  parent: BaseAmmoEmptyPistolCaliberSubMachineGunMagazineRecipe
+  id: Magazine9x19mmSubMachineGunTopMountedEmpty
+  result: Magazine9x19mmSubMachineGunTopMountedEmpty
+
 #Boxes
 
 - type: latheRecipe
@@ -115,7 +125,7 @@
   parent: BaseAmmoPracticePistolCaliberAmmoBoxRecipe
   id: AmmoBox9x19mmPractice
   result: AmmoBox9x19mmPractice
-  
+
 - type: latheRecipe
   parent: BaseAmmoUraniumPistolCaliberAmmoBoxRecipe
   id: AmmoBox9x19mmUranium

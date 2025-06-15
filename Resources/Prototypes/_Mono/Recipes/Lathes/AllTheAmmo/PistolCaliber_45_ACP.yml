@@ -62,6 +62,16 @@
   id: Magazine45_ACPSubMachineGunUranium
   result: Magazine45_ACPSubMachineGunUranium
 
+- type: latheRecipe
+  parent: BaseAmmoFMJPistolCaliberSubMachineGunMagazineRecipe
+  id: Magazine45_ACPSubMachineGunTopMountedFMJ
+  result: Magazine45_ACPSubMachineGunTopMountedFMJ
+
+- type: latheRecipe
+  parent: BaseAmmoEmptyPistolCaliberSubMachineGunMagazineRecipe
+  id: Magazine45_ACPSubMachineGunTopMountedEmpty
+  result: Magazine45_ACPSubMachineGunTopMountedEmpty
+
 #Boxes
 
 - type: latheRecipe

@@ -56,6 +56,8 @@
   - AmmoBox7.62x54mmRIncendiary
   - Magazine7.62x51mmIncendiary
   - AmmoBox7.62x51mmIncendiary
+  - Magazine12_gaugeIncendiary
+  - AmmoBox12_gaugeIncendiary
 
 - type: technology
   id: WeaponizedLaserManipulation
@@ -120,6 +122,8 @@
   - AmmoBox7.62x54mmRUranium
   - Magazine7.62x51mmUranium
   - AmmoBox7.62x51mmUranium
+  - Magazine12_gaugeUranium
+  - AmmoBox12_gaugeUranium
 
 - type: technology
   id: AdvancedRiotControl

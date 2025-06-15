@@ -62,6 +62,16 @@
   id: Magazine5.7x28mmSubMachineGunUranium
   result: Magazine5.7x28mmSubMachineGunUranium
 
+- type: latheRecipe
+  parent: BaseAmmoFMJPistolCaliberSubMachineGunMagazineRecipe
+  id: Magazine5.7x28mmSubMachineGunTopMountedFMJ
+  result: Magazine5.7x28mmSubMachineGunTopMountedFMJ
+
+- type: latheRecipe
+  parent: BaseAmmoEmptyPistolCaliberSubMachineGunMagazineRecipe
+  id: Magazine5.7x28mmSubMachineGunTopMountedEmpty
+  result: Magazine5.7x28mmSubMachineGunTopMountedEmpty
+
 #Boxes
 
 - type: latheRecipe

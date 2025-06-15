@@ -160,7 +160,14 @@
   - AmmoBox12_gaugeIncendiary
   - AmmoBox12_gaugePractice
   - AmmoBox12_gaugeUranium
-
+  - Magazine45_ACPSubMachineGunTopMountedFMJ
+  - Magazine45_ACPSubMachineGunTopMountedEmpty
+  - Magazine9x19mmSubMachineGunTopMountedFMJ
+  - Magazine9x19mmSubMachineGunTopMountedEmpty
+  - Magazine5.7x28mmSubMachineGunTopMountedFMJ
+  - Magazine5.7x28mmSubMachineGunTopMountedEmpty
+  - Magazine4.6x30mmSubMachineGunTopMountedFMJ
+  - Magazine4.6x30mmSubMachineGunTopMountedEmpty
 #Uranium recipes
 
   - Magazine45_ACPPistolUranium
@@ -212,6 +219,10 @@
   - Magazine7.62x54mmREmpty
   - Magazine7.62x51mmEmpty
   - Magazine12_gaugeEmpty
+  - Magazine45_ACPSubMachineGunTopMountedEmpty
+  - Magazine9x19mmSubMachineGunTopMountedEmpty
+  - Magazine5.7x28mmSubMachineGunTopMountedEmpty
+  - Magazine4.6x30mmSubMachineGunTopMountedEmpty
 
 #Practice recipes
 
@@ -336,6 +347,10 @@
   - AmmoBox7.62x51mmFMJ
   - Magazine12_gaugeBuckshot
   - AmmoBox12_gaugeBuckshot
+  - Magazine45_ACPSubMachineGunTopMountedFMJ
+  - Magazine9x19mmSubMachineGunTopMountedFMJ
+  - Magazine5.7x28mmSubMachineGunTopMountedFMJ
+  - Magazine4.6x30mmSubMachineGunTopMountedFMJ
 
 #civilian = FMJ + practice + empty + rubber
 
@@ -362,6 +377,10 @@
   - Magazine7.62x54mmREmpty
   - Magazine7.62x51mmEmpty
   - Magazine12_gaugeEmpty
+  - Magazine45_ACPSubMachineGunTopMountedEmpty
+  - Magazine9x19mmSubMachineGunTopMountedEmpty
+  - Magazine5.7x28mmSubMachineGunTopMountedEmpty
+  - Magazine4.6x30mmSubMachineGunTopMountedEmpty
 #FMJ>
   - Magazine8x65mmSKR
   - AmmoBox8x65mmSKR
@@ -394,6 +413,10 @@
   - AmmoBox7.62x51mmFMJ
   - Magazine12_gaugeBuckshot
   - AmmoBox12_gaugeBuckshot
+  - Magazine45_ACPSubMachineGunTopMountedFMJ
+  - Magazine9x19mmSubMachineGunTopMountedFMJ
+  - Magazine5.7x28mmSubMachineGunTopMountedFMJ
+  - Magazine4.6x30mmSubMachineGunTopMountedFMJ
 #Practice>
   - Magazine45_ACPPistolPractice
   - Magazine45_ACPSubMachineGunPractice
