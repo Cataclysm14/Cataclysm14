@@ -4207,3 +4207,91 @@ Entries:
   id: 503
   time: '2025-06-14T11:10:35.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/821
+- author: BlueHNT
+  changes:
+    - type: Tweak
+      message: Spyglass tweak (Added second APC, Added Sink, Added Bedroll in locker)
+  id: 504
+  time: '2025-06-14T17:32:39.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/823
+- author: BlueHNT
+  changes:
+    - type: Add
+      message: Added Emergency Responder
+    - type: Tweak
+      message: Changed requirements for Director of Care
+  id: 505
+  time: '2025-06-14T17:33:44.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/787
+- author: Junerisms
+  changes:
+    - type: Add
+      message: >-
+        Added the Jitterbug. A cheap yet purely botanical shuttle. Farm away
+        farmers.
+  id: 506
+  time: '2025-06-14T18:27:33.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/597
+- author: Redrover1760
+  changes:
+    - type: Add
+      message: Jukebox Flatpack to Flatpackvend
+  id: 507
+  time: '2025-06-15T01:43:09.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/824
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Bodies in cryo get deleted after 6 hours instead of 3.
+  id: 508
+  time: '2025-06-15T01:45:13.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/825
+- author: RikuTheKiller
+  changes:
+    - type: Tweak
+      message: Missiles track significantly better now.
+  id: 509
+  time: '2025-06-15T01:47:25.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/826
+- author: Ark
+  changes:
+    - type: Fix
+      message: Replacement gunnery servers should properly sync/refresh now.
+  id: 510
+  time: '2025-06-15T01:56:35.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/828
+- author: Ark
+  changes:
+    - type: Fix
+      message: Camelot High Command jobs should now have air alarm access.
+  id: 511
+  time: '2025-06-15T03:46:22.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/830
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Failed exped cooldown 20 minutes->7.5 minutes.
+  id: 512
+  time: '2025-06-15T04:06:19.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/831
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Gauze and bloodpacks now more affordable
+  id: 513
+  time: '2025-06-15T08:36:36.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/832
+- author: Ark
+  changes:
+    - type: Fix
+      message: Compatibility Mode should no longer crash your client.
+  id: 514
+  time: '2025-06-15T08:37:19.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/833
+- author: RikuTheKiller
+  changes:
+    - type: Fix
+      message: Compat mode doesn't crash AND the consoles aren't 1 pixel wide.
+  id: 515
+  time: '2025-06-15T12:11:23.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/835
