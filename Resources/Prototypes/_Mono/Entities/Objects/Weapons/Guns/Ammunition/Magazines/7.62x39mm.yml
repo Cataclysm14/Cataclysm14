@@ -271,20 +271,6 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine7.62x39mmLowCapacityUranium
-  name: "low cap magazine (7.62x39mm uranium)"
-  parent: Magazine7.62x39mmLowCapacityFMJ
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge7.62x39mmUranium
-  - type: Sprite
-    layers:
-    - state: uranium
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
   id: Magazine7.62x39mmSubsonic
   name: "magazine (7.62x39mm subsonic)"
   parent: BaseMagazine7.62x39mm
