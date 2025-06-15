@@ -98,6 +98,12 @@
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge7.62x51mmIncendiary
+  - type: Sprite
+    layers:
+    - state: red
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
   id: Magazine7.62x51mmRubber
@@ -193,6 +199,20 @@
   - type: Sprite
     layers:
     - state: uranium
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: Magazine7.62x51mmLowCapacityIncendiary
+  name: "low cap magazine (7.62x51mm incendiary)"
+  parent: Magazine7.62x51mmLowCapacityFMJ
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge7.62x51mmIncendiary
+  - type: Sprite
+    layers:
+    - state: red
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
