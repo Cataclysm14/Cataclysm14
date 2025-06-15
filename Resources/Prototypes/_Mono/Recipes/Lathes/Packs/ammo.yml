@@ -197,7 +197,8 @@
   - AmmoBox7.62x51mmUranium
   - Magazine12_gaugeUranium
   - AmmoBox12_gaugeUranium
-
+  - Magazine12_gaugeSlug
+  - AmmoBox12_gaugeSlug
 #Empty recipes
 
   - Magazine8x65mmEmpty
@@ -351,6 +352,8 @@
   - Magazine9x19mmSubMachineGunTopMountedFMJ
   - Magazine5.7x28mmSubMachineGunTopMountedFMJ
   - Magazine4.6x30mmSubMachineGunTopMountedFMJ
+  - Magazine12_gaugeSlug
+  - AmmoBox12_gaugeSlug
 
 #civilian = FMJ + practice + empty + rubber
 
@@ -417,6 +420,8 @@
   - Magazine9x19mmSubMachineGunTopMountedFMJ
   - Magazine5.7x28mmSubMachineGunTopMountedFMJ
   - Magazine4.6x30mmSubMachineGunTopMountedFMJ
+  - Magazine12_gaugeSlug
+  - AmmoBox12_gaugeSlug
 #Practice>
   - Magazine45_ACPPistolPractice
   - Magazine45_ACPSubMachineGunPractice
