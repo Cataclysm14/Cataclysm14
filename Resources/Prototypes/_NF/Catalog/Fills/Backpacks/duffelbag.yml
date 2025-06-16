@@ -46,6 +46,7 @@
       - id: Drill
       - id: Hemostat
       - id: Retractor
+      - id: NitrousOxideTankFilled # Mono
 
 - type: entity
   parent: ClothingBackpackDuffelNfsdBrown
