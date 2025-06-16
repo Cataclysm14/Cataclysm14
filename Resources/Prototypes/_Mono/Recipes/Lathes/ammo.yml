@@ -1,8 +1,0 @@
-- type: latheRecipe
-  parent: BaseWeaponRecipeLong
-  id: CartridgeRocket
-  result: CartridgeRocket
-  materials:
-    Steel: 250
-    Plastic: 250
-    Plasma: 1000

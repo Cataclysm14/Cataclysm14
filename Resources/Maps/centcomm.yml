@@ -7487,14 +7487,14 @@ entities:
     - type: Transform
       pos: -0.5,-45.5
       parent: 1668
-- proto: BoxLethalshot
+- proto: AmmoBox12_gaugeBuckshot
   entities:
   - uid: 1093
     components:
     - type: Transform
       pos: 34.536674,-20.85105
       parent: 1668
-- proto: BoxMagazineLightRifle
+- proto: BoxMagazine7.62x39mmFMJ
   entities:
   - uid: 2337
     components:
@@ -7506,14 +7506,14 @@ entities:
     - type: Transform
       pos: 11.480659,26.619143
       parent: 1668
-- proto: BoxMagazinePistolPractice
+- proto: BoxMagazine9x19mmPractice
   entities:
   - uid: 2984
     components:
     - type: Transform
       pos: 11.430329,8.720324
       parent: 1668
-- proto: BoxMagazinePistolSubMachineGun
+- proto: BoxMagazine9x19mmSubMachineGunFMJ
   entities:
   - uid: 2314
     components:
@@ -7535,14 +7535,14 @@ entities:
     - type: Transform
       pos: 11.511909,22.641312
       parent: 1668
-- proto: BoxMagazinePistolSubMachineGunPractice
+- proto: BoxMagazine9x19mmSubMachineGunPractice
   entities:
   - uid: 1742
     components:
     - type: Transform
       pos: 11.445954,9.423449
       parent: 1668
-- proto: BoxMagazinePistolSubMachineGunTopMounted
+- proto: BoxMagazine4.6x30mmSubMachineGunTopMountedFMJ
   entities:
   - uid: 2334
     components:
@@ -7554,7 +7554,7 @@ entities:
     - type: Transform
       pos: 16.465034,26.837893
       parent: 1668
-- proto: BoxMagazineRifle
+- proto: BoxMagazine5.56x45mmFMJ
   entities:
   - uid: 2335
     components:
@@ -7595,14 +7595,14 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: BoxMagazineRiflePractice
+- proto: BoxMagazine5.56x45mmPractice
   entities:
   - uid: 1735
     components:
     - type: Transform
       pos: 11.430329,9.079699
       parent: 1668
-- proto: BoxMagazineShotgun
+- proto: BoxMagazine12_gauge
   entities:
   - uid: 2362
     components:
@@ -7614,7 +7614,7 @@ entities:
     - type: Transform
       pos: 16.162495,24.820536
       parent: 1668
-- proto: BoxMagazineShotgunBeanbag
+- proto: BoxMagazine12_gaugeBeanbag
   entities:
   - uid: 2365
     components:
@@ -7626,7 +7626,7 @@ entities:
     - type: Transform
       pos: 16.610413,24.49762
       parent: 1668
-- proto: BoxMagazineShotgunIncendiary
+- proto: BoxMagazine12_gaugeIncendiary
   entities:
   - uid: 2364
     components:
@@ -7638,7 +7638,7 @@ entities:
     - type: Transform
       pos: 16.152079,24.508036
       parent: 1668
-- proto: BoxMagazineShotgunSlug
+- proto: BoxMagazine12_gaugeSlug
   entities:
   - uid: 2363
     components:
@@ -7669,35 +7669,35 @@ entities:
     - type: Transform
       pos: -31.416765,-8.047967
       parent: 1668
-- proto: BoxShellTranquilizer
+- proto: AmmoBox12_gaugeTranquilizer
   entities:
   - uid: 1323
     components:
     - type: Transform
       pos: 34.536674,-21.41355
       parent: 1668
-- proto: BoxShotgunFlare
+- proto: AmmoBox12_gaugeFlare
   entities:
   - uid: 1329
     components:
     - type: Transform
       pos: 34.567924,-22.2573
       parent: 1668
-- proto: BoxShotgunIncendiary
+- proto: AmmoBox12_gaugeIncendiary
   entities:
   - uid: 1311
     components:
     - type: Transform
       pos: 34.52105,-21.1323
       parent: 1668
-- proto: BoxShotgunSlug
+- proto: AmmoBox12_gaugeSlug
   entities:
   - uid: 1335
     components:
     - type: Transform
       pos: 34.5523,-21.72605
       parent: 1668
-- proto: BoxShotgunUranium
+- proto: AmmoBox12_gaugeUranium
   entities:
   - uid: 1334
     components:
@@ -38738,7 +38738,7 @@ entities:
     - type: Transform
       pos: 14.708689,30.81574
       parent: 1668
-- proto: GrenadeIncendiary
+- proto: 40mmGrenadeIncendiary
   entities:
   - uid: 2601
     components:
@@ -38760,7 +38760,7 @@ entities:
     - type: Transform
       pos: 14.906606,30.826159
       parent: 1668
-- proto: GrenadeShrapnel
+- proto: 40mmGrenadeShrapnel
   entities:
   - uid: 2141
     components:
@@ -38782,7 +38782,7 @@ entities:
     - type: Transform
       pos: 14.292023,30.40949
       parent: 1668
-- proto: GrenadeStinger
+- proto: 40mmGrenadeStinger
   entities:
   - uid: 3019
     components:
@@ -42125,7 +42125,7 @@ entities:
     - type: Transform
       pos: 7.5,-8.5
       parent: 1668
-- proto: MagazineMagnum
+- proto: Magazine45_magnumPistolFMJ
   entities:
   - uid: 6885
     components:
@@ -49183,7 +49183,7 @@ entities:
     - type: Transform
       pos: 6.5,18.5
       parent: 1668
-- proto: SpeedLoaderMagnumAP
+- proto: SpeedLoader45_magnumAP
   entities:
   - uid: 2431
     components:

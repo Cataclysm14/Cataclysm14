@@ -15441,7 +15441,7 @@ entities:
     - type: Transform
       pos: -7.493107,-6.5537953
       parent: 30
-- proto: BoxBeanbag
+- proto: AmmoBox12_gaugeBeanbag
   entities:
   - uid: 444
     components:
@@ -15627,7 +15627,7 @@ entities:
     - type: Transform
       pos: -15.496401,-18.280874
       parent: 30
-- proto: BoxLethalshot
+- proto: AmmoBox12_gaugeBuckshot
   entities:
   - uid: 16932
     components:
@@ -105132,7 +105132,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -22.5,-44.5
       parent: 30
-- proto: MagazinePistolSubMachineGun
+- proto: Magazine9x19mmSubMachineGunFMJ
   entities:
   - uid: 19841
     components:
@@ -105148,7 +105148,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: MagazinePistolSubMachineGunTopMounted
+- proto: Magazine4.6x30mmSubMachineGunTopMountedFMJ
   entities:
   - uid: 1999
     components:
@@ -105160,7 +105160,7 @@ entities:
     - type: Transform
       pos: -22.54349,53.796127
       parent: 30
-- proto: MagazineRifle
+- proto: Magazine5.56x45mmFMJ
   entities:
   - uid: 21283
     components:

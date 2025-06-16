@@ -1393,7 +1393,7 @@ entities:
       - device-button-6
       - device-button-7
       - device-button-8
-- proto: ComputerWallmountAdvancedRadar
+- proto: ComputerWallmountRadar
   entities:
   - uid: 191
     components:
@@ -1801,17 +1801,13 @@ entities:
       rot: 3.141592653589793 rad
       pos: -3.5,-5.5
       parent: 1
-- proto: GunneryServer
+- proto: GunneryServerMedium
   entities:
   - uid: 250
     components:
     - type: Transform
       pos: -1.5,-7.5
       parent: 1
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: Battery
-      startingCharge: 0
 - proto: Gyroscope
   entities:
   - uid: 251

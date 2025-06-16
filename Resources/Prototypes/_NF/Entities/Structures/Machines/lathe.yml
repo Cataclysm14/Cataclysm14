@@ -143,8 +143,10 @@
     runningState: icon
     staticPacks:
     - NFNfsdTechfabDeprecatedStatic
+    - CivilianAmmoRecipePack
     dynamicPacks:
     - NFNfsdTechfabDeprecated
+    - AdvancedAmmoRecipePack
   - type: EmagLatheRecipes
     emagStaticPacks:
     - NFNfsdTechfabDeprecatedEmag
@@ -177,8 +179,10 @@
     runningState: icon
     staticPacks:
     - NFMercenaryTechfabDeprecatedStatic
+    - CivilianAmmoRecipePack
     dynamicPacks:
     - NFMercenaryTechfabDeprecated
+    - AdvancedAmmoRecipePack
   - type: EmagLatheRecipes
     emagStaticPacks:
     - NFMercenaryTechfabDeprecatedEmag
@@ -224,8 +228,10 @@
     runningState: icon
     staticPacks:
     - NFHackedMercenaryTechfabDeprecatedStatic
+    - CivilianAmmoRecipePack
     dynamicPacks:
     - NFHackedMercenaryTechfabDeprecated
+    - AdvancedAmmoRecipePack
   - type: PirateBountyItem # Mono
     id: Techfab
 

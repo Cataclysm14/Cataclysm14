@@ -8,23 +8,23 @@
     WeaponRifleNovaliteC1: 1
     WeaponShotgunDoubleBarreled: 1
     WeaponRevolverArgenti: 1
-    WeaponPistolUniversal: 1
+    WeaponPistolMk32: 1
     WeaponRevolverFaith: 1
-    BoxShotgunSlug: 1
-    BoxLethalshot: 1
-    BoxBeanbag: 1
-    MagazineBoxRifle: 2
-    MagazineBoxRifleRubber: 2
-    MagazineBoxLightRifle: 2
-    MagazineBoxLightRifleRubber: 2
-    MagazineBoxPistol: 2
-    MagazineBoxPistolRubber: 2
-    MagazineBoxMagnum: 2
-    MagazineBoxMagnumRubber: 2
-    SpeedLoaderRifleHeavyEmpty: 1
+    AmmoBox12_gaugeSlug: 1
+    AmmoBox12_gaugeBuckshot: 1
+    AmmoBox12_gaugeBeanbag: 1
+    AmmoBox5.56x45mmFMJ: 2
+    AmmoBox5.56x45mmRubber: 2
+    AmmoBox7.62x39mmFMJ: 2
+    AmmoBox7.62x39mmRubber: 2
+    AmmoBox9x19mmFMJ: 2
+    AmmoBox9x19mmRubber: 2
+    AmmoBox45_magnumFMJ: 2
+    AmmoBox45_magnumRubber: 2
+    SpeedLoader5.56x45mmEmpty: 1
     MagazineNovaliteC1Empty: 1
-    MagazineLightRifleLowCapacityEmpty: 1
-    MagazinePistolEmpty: 1
+    Magazine7.62x39mmLowCapacityEmpty: 1
+    Magazine9x19mmPistolEmpty: 1
   emaggedInventory:
     WeaponPistolViper: 1
 
@@ -38,54 +38,74 @@
     WeaponRifleNovaliteC1: 4294967295
     WeaponShotgunDoubleBarreled: 4294967295
     WeaponRevolverArgenti: 4294967295
-    WeaponPistolUniversal: 4294967295
+    WeaponPistolMk32: 4294967295
     WeaponRevolverFaith: 4294967295
-    BoxShotgunSlug: 4294967295
-    BoxLethalshot: 4294967295
-    BoxBeanbag: 4294967295
-    MagazineBoxRifle: 4294967295
-    MagazineBoxRifleRubber: 4294967295
-    MagazineBoxLightRifle: 4294967295
-    MagazineBoxLightRifleRubber: 4294967295
-    MagazineBoxPistol: 4294967295
-    MagazineBoxPistolRubber: 4294967295
-    MagazineBoxMagnum: 4294967295
-    MagazineBoxMagnumRubber: 4294967295
-    SpeedLoaderRifleHeavyEmpty: 4294967295
-    MagazineNovaliteC1Empty: 4294967295
-    MagazineLightRifleLowCapacityEmpty: 4294967295
-    MagazinePistolEmpty: 4294967295
+# Magazines
+    Magazine9x19mmPistolFMJ: 4294967295 # 9x19mm Pistol
+    Magazine45_ACPPistolFMJ: 4294967295 # .45 ACP Pistol
+    Magazine9x19mmSubMachineGunFMJ: 4294967295 # 9x19mm C20r
+    Magazine45_ACPSubMachineGunFMJ: 4294967295 # .45 ACP Drzozd
+    Magazine4.6x30mmSubMachineGunTopMountedFMJ: 4294967295 # 4.6x30mm WT550
+    Magazine5.56x45mmFMJ: 4294967295 # 5.56x45mm Lecter
+    Magazine7.62x39mmLowCapacityFMJ: 4294967295 # 7.62x39mm Gestio/AKM
+    Magazine7.62x39mmFMJ: 4294967295 # 7.62x39mm Gestio/AKM
+    Magazine7.62x54mmRFMJ: 4294967295 # 7.62x54mmR SVS
+    SpeedLoader7.62x39mmFMJ: 4294967295 # 7.62x39mm Gestio/AKM
+    SpeedLoader7.62x54mmRFMJ: 4294967295 # 7.62x54mmR SVS
+    SpeedLoader45_magnumFMJ: 4294967295 # .45 magnum revolvers
+# Ammo
+    AmmoBox5.56x45mmBigFMJ: 4294967295 # 5.56x45mm
+    AmmoBox7.62x39mmBigFMJ: 4294967295 # 7.62x39mm
+    AmmoBox9x19mmBigFMJ: 4294967295 # 9x19mm
+    AmmoBox45_magnumFMJ: 4294967295 # .45 magnum
+    AmmoBox12_gaugeSlug: 4294967295 # 12 gauge
+    AmmoBox12_gaugeBuckshot: 4294967295 # 12 gauge
+    AmmoBox12_gaugeBeanbag: 4294967295 # 12 gauge
   emaggedInventory:
     WeaponPistolViper: 1
 
 - type: vendingMachineInventory # Mono - this entire thing is mono
   id: WeaponryWorksVendPOIMercInventory
   startingInventory:
+# SMGs
+    WeaponSubMachineGunC20rPMC: 4294967295
     WeaponSubMachineGunWt550PMC: 4294967295
     WeaponRifleLecterPMC: 4294967295
-    WeaponSubMachineGunC20rPMC: 4294967295
     WeaponSubMachineGunDrozdPMC: 4294967295
+# Shotguns
     WeaponShotgunEnforcerPMC: 4294967295
-    WeaponEnergyShotgunPMC: 4294967295
-    WeaponEnergyGunPMC: 4294967295
+    WeaponShotgunKammererPMC: 4294967295
+# Energy
     WeaponLaserCannonPMC: 4294967295
+    WeaponEnergyGunPMC: 4294967295
     WeaponLaserCarbinePMC: 4294967295
     WeaponDisablerSMGPMC: 4294967295
+# Sidearms
+    WeaponShotgunSawn: 4294967295
     WeaponPistolViperPMC: 4294967295
-    WeaponPistolUniversal: 4294967295
-    SurvivalKnife: 4294967295
-    MagazinePistolSubMachineGun: 4294967295
-    MagazinePistolSubMachineGunTopMounted: 4294967295
-    MagazineRifle: 4294967295
-    MagazinePistol: 4294967295
-    MagazineBoxRifle: 4294967295
-    MagazineBoxRifleBig: 4294967295
-    MagazineBoxLightRifle: 4294967295
-    MagazineBoxLightRifleBig: 4294967295
-    MagazineBoxPistol: 4294967295
-    MagazineBoxPistolBig: 4294967295
-    MagazineBoxMagnum: 4294967295
-    BoxShotgunSlug: 4294967295
-    BoxLethalshot: 4294967295
-    MagazineLightRifleLowCapacityEmpty: 4294967295
-    SpeedLoaderLightRifle: 4294967295
+    WeaponPistolMk32: 4294967295
+    Machete: 4294967295
+    KukriKnife: 4294967295
+    CombatKnife: 4294967295
+    SurvivalKnifePMC: 4294967295
+# Magazines
+    Magazine9x19mmPistolFMJ: 4294967295 # 9x19mm Pistol
+    Magazine45_ACPPistolFMJ: 4294967295 # .45 ACP Pistol
+    Magazine9x19mmSubMachineGunFMJ: 4294967295 # 9x19mm C20r
+    Magazine45_ACPSubMachineGunFMJ: 4294967295 # .45 ACP Drozd
+    Magazine4.6x30mmSubMachineGunTopMountedFMJ: 4294967295 # 4.6x30mm WT550
+    Magazine5.56x45mmFMJ: 4294967295 # 5.56x45mm Lecter
+    Magazine7.62x39mmLowCapacityFMJ: 4294967295 # 7.62x39mm Gestio/AKM
+    Magazine7.62x39mmFMJ: 4294967295 # 7.62x39mm Gestio/AKM
+    Magazine7.62x54mmRFMJ: 4294967295 # 7.62x54mmR SVS
+    SpeedLoader7.62x39mmFMJ: 4294967295 # 7.62x39mm Gestio/AKM
+    SpeedLoader7.62x54mmRFMJ: 4294967295 # 7.62x54mmR SVS
+    SpeedLoader45_magnumFMJ: 4294967295 # .45 magnum revolvers
+# Ammo
+    AmmoBox5.56x45mmBigFMJ: 4294967295 # 5.56x45mm
+    AmmoBox7.62x39mmBigFMJ: 4294967295 # 7.62x39mm
+    AmmoBox9x19mmBigFMJ: 4294967295 # 9x19mm
+    AmmoBox45_magnumFMJ: 4294967295 # .45 magnum
+    AmmoBox12_gaugeSlug: 4294967295 # 12 gauge
+    AmmoBox12_gaugeBuckshot: 4294967295 # 12 gauge
+    AmmoBox12_gaugeBeanbag: 4294967295 # 12 gauge

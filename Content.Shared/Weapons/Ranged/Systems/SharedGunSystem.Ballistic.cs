@@ -96,7 +96,7 @@ public abstract partial class SharedGunSystem
             // Continuous loading
             _doAfter.TryStartDoAfter(new DoAfterArgs(EntityManager, args.User, fillDelay, new AmmoFillDoAfterEvent(), used: uid, target: args.Target, eventTarget: uid) // Frontier: component.FillDelay<fillDelay
             {
-                BreakOnMove = true,
+                // BreakOnMove = true, // Goobstation - no
                 BreakOnDamage = false,
                 NeedHand = true
             });
@@ -288,6 +288,10 @@ public abstract partial class SharedGunSystem
                 entity = component.Entities[^1];
 
                 args.Ammo.Add((entity, EnsureShootable(entity)));
+
+                if (!component.AutoCycle) //  Goobstation - do not remove spent ammo from the gun it doesn't autocycle
+                    break;
+
                 component.Entities.RemoveAt(component.Entities.Count - 1);
                 DirtyField(uid, component, nameof(BallisticAmmoProviderComponent.Entities));
                 Containers.Remove(entity, component.Container);
@@ -298,6 +302,15 @@ public abstract partial class SharedGunSystem
                 DirtyField(uid, component, nameof(BallisticAmmoProviderComponent.UnspawnedCount));
                 entity = Spawn(component.Proto, args.Coordinates);
                 args.Ammo.Add((entity, EnsureShootable(entity)));
+
+                // Goobstation - put spent ammo back in the gun if it doesn't autocycle
+                if (!component.AutoCycle)
+                {
+                    component.Entities.Add(entity);
+                    Containers.Insert(entity, component.Container);
+                    DirtyField(uid, component, nameof(BallisticAmmoProviderComponent.Entities));
+                }
+                // Goobstation - end
             }
         }
 

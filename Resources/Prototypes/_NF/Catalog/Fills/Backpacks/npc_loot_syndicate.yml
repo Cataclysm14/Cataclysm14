@@ -74,8 +74,8 @@
   - type: SpawnItemsOnUse
     items:
       - id: WeaponRevolverPythonAP
-      - id: SpeedLoaderMagnumAP
-      - id: SpeedLoaderMagnumAP
+      - id: SpeedLoader45_magnumAP
+      - id: SpeedLoader45_magnumAP
       - id: SpaceCash5000
       # Bonus Loot T3
       - id: SpaceCash1000
@@ -104,8 +104,8 @@
   - type: SpawnItemsOnUse
     items:
       - id: WeaponRevolverPython
-      - id: SpeedLoaderMagnum
-      - id: SpeedLoaderMagnum
+      - id: SpeedLoader45_magnumFMJ
+      - id: SpeedLoader45_magnumFMJ
       - id: SpaceCash2500
       # Bonus Loot T3
       - id: SpaceCash1000
@@ -133,7 +133,7 @@
   components:
   - type: SpawnItemsOnUse
     items:
-      - id: SpeedLoaderMagnum
+      - id: SpeedLoader45_magnumFMJ
       - id: SpaceCash2500
       # Bonus Loot T3
       - id: SpaceCash1000
@@ -306,8 +306,8 @@
   - type: SpawnItemsOnUse
     items:
       - id: WeaponRifleMR8C # mono - change from AK
-      - id: MagazineDMR
-      - id: MagazineDMR
+      - id: Magazine8x65mmSKR
+      - id: Magazine8x65mmSKR
       - id: ClothingShoesBootsMagSyndie
       - id: SpaceCash10000
       # Bonus Loot T4
@@ -335,8 +335,8 @@
   - type: SpawnItemsOnUse
     items:
       - id: WeaponRifleLecter
-      - id: MagazineRifle
-      - id: MagazineRifle
+      - id: Magazine5.56x45mmFMJ
+      - id: Magazine5.56x45mmFMJ
       - id: ClothingShoesBootsMagSyndie
       - id: SpaceCash10000
       # Bonus Loot T4
@@ -363,8 +363,8 @@
   components:
   - type: SpawnItemsOnUse
     items:
-      - id: MagazineLightRifle
-      - id: MagazineLightRifle
+      - id: Magazine7.62x39mmFMJ
+      - id: Magazine7.62x39mmFMJ
       - id: ClothingShoesBootsMagSyndie
       - id: SpaceCash10000
       # Bonus Loot T4
@@ -418,8 +418,8 @@
   - type: SpawnItemsOnUse
     items:
       - id: WeaponSubMachineGunAtreidesExpedition
-      - id: MagazinePistolSubMachineGun
-      - id: MagazinePistolSubMachineGun
+      - id: Magazine5.7x28mmSubMachineGunFMJ
+      - id: Magazine5.7x28mmSubMachineGunFMJ
       - id: SpaceCash1000
       - id: SpaceCash1000
       # Bonus Loot T3
@@ -451,7 +451,7 @@
   - type: SpawnItemsOnUse
     items:
       - id: WeaponSubMachineGunWt550Expedition
-      - id: MagazinePistolSubMachineGunTopMounted
+      - id: Magazine4.6x30mmSubMachineGunTopMountedFMJ
       - id: SpaceCash1000
       - id: SpaceCash500
       # Bonus Loot T3
@@ -482,8 +482,8 @@
   components:
   - type: SpawnItemsOnUse
     items:
-      - id: MagazineBoxPistol
-      - id: MagazineBoxPistol
+      - id: AmmoBox9x19mmFMJ
+      - id: AmmoBox9x19mmFMJ
       - id: SpaceCash1000
       - id: SpaceCash500
       # Bonus Loot T3
@@ -495,7 +495,7 @@
         prob: 0.7
       - id: SpawnDungeonLootMaterialsValuableFull
         prob: 0.7
-      - id: MagazineBoxPistolBig # Mono
+      - id: AmmoBox9x19mmBigFMJ # Mono
       - prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
@@ -544,8 +544,8 @@
   - type: SpawnItemsOnUse
     items:
       - id: WeaponPistolViper
-      - id: MagazinePistol
-      - id: MagazinePistol
+      - id: Magazine9x19mmPistolFMJ
+      - id: Magazine9x19mmPistolFMJ
       - id: SpaceCash1000
       # Bonus Loot T1
       - id: SpaceCash500
@@ -565,7 +565,7 @@
   - type: SpawnItemsOnUse
     items:
       - id: WeaponPistolMk58Expedition
-      - id: MagazinePistol
+      - id: Magazine9x19mmPistolFMJ
       - id: SpaceCash1000
       # Bonus Loot T1
       - id: SpaceCash500
@@ -584,8 +584,8 @@
   components:
   - type: SpawnItemsOnUse
     items:
-      - id: MagazinePistol
-      - id: MagazinePistol
+      - id: Magazine9x19mmPistolFMJ
+      - id: Magazine9x19mmPistolFMJ
       - id: SpaceCash1000
       # Bonus Loot T1
       - id: SpaceCash500
@@ -739,7 +739,7 @@
     items:
       - id: WeaponShotgunKammererExpedition
       - id: SyndicateJawsOfLife
-      - id: BoxShotgunSlug
+      - id: AmmoBox12_gaugeSlug
       - id: SpaceCash1000
       - id: SpaceCash1000
       # Bonus Loot T2

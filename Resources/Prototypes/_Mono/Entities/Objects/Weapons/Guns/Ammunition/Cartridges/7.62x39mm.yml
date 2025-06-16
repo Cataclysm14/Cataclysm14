@@ -1,0 +1,109 @@
+- type: entity
+  id: BaseCartridge7.62x39mm
+  name: cartridge (7.62x39mm FMJ)
+  parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge7.62x39mmFMJ
+  - type: CartridgeAmmo
+    proto: Bullet7.62x39mmFMJ
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+
+- type: entity
+  id: Cartridge7.62x39mmFMJ
+  name: cartridge (7.62x39mm FMJ)
+  parent: BaseCartridge7.62x39mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7.62x39mmFMJ
+
+- type: entity
+  id: Cartridge7.62x39mmPractice
+  name: cartridge (7.62x39mm practice)
+  parent: BaseCartridge7.62x39mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7.62x39mmPractice
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#dbdbdb"
+
+- type: entity
+  id: Cartridge7.62x39mmIncendiary
+  name: cartridge (7.62x39mm incendiary)
+  parent: BaseCartridge7.62x39mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7.62x39mmIncendiary
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#ff6e52"
+
+- type: entity
+  id: Cartridge7.62x39mmUranium
+  name: cartridge (7.62x39mm uranium)
+  parent: BaseCartridge7.62x39mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7.62x39mmUranium
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#65fe08"
+
+- type: entity
+  id: Cartridge7.62x39mmRubber
+  name: cartridge (7.62x39mm rubber)
+  parent: BaseCartridge7.62x39mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7.62x39mmRubber
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#43c4f7"
+
+- type: entity
+  id: Cartridge7.62x39mmSubsonic
+  name: cartridge (7.62x39mm subsonic)
+  parent: BaseCartridge7.62x39mm
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge7.62x39mmFMJ
+    - Cartridge7.62x39mmSubsonic
+  - type: CartridgeAmmo
+    proto: Bullet7.62x39mmSubsonic
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#00f8ff"

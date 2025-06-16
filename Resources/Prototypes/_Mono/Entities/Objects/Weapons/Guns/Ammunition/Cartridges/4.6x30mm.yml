@@ -1,0 +1,103 @@
+- type: entity
+  id: BaseCartridge4.6x30mm
+  name: cartridge (4.6x30mm FMJ)
+  parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - Cartridge4.6x30mmFMJ
+  - type: CartridgeAmmo
+    proto: Bullet4.6x30mm
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+
+- type: entity
+  id: Cartridge4.6x30mmFMJ
+  name: cartridge (4.6x30mm FMJ)
+  parent: BaseCartridge4.6x30mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet4.6x30mm
+
+- type: entity
+  id: Cartridge4.6x30mmPractice
+  name: cartridge (4.6x30mm practice)
+  parent: BaseCartridge4.6x30mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet4.6x30mmPractice
+  -  type: Sprite
+     layers:
+       - state: base
+         map: [ "enum.AmmoVisualLayers.Base" ]
+       - state: tip
+         map: [ "enum.AmmoVisualLayers.Tip" ]
+         color: "#dbdbdb"
+
+- type: entity
+  id: Cartridge4.6x30mmIncendiary
+  name: cartridge (4.6x30mm incendiary)
+  parent: BaseCartridge4.6x30mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet4.6x30mmIncendiary
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#ff6e52"
+
+- type: entity
+  id: Cartridge4.6x30mmUranium
+  name: cartridge (4.6x30mm uranium)
+  parent: BaseCartridge4.6x30mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet4.6x30mmUranium
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#65fe08"
+
+# Upstream
+- type: entity
+  id: Cartridge4.6x30mmRubber
+  name: cartridge (4.6x30mm rubber)
+  parent: BaseCartridge4.6x30mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet4.6x30mmRubber
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#43c4f7"
+
+# Frontier
+- type: entity
+  id: Cartridge4.6x30mmEmp
+  name: cartridge (4.6x30mm emp)
+  parent: BaseCartridge4.6x30mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet4.6x30mmEmp
+  - type: EmpDescription
+    range: 0.3
+    energyConsumption: 2700000
+    disableDuration: 10

@@ -1,0 +1,68 @@
+- type: entity
+  id: Bullet45_ACPFMJ
+  name: bullet (.45 ACP FMJ)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 18
+
+- type: entity
+  id: Bullet45_ACPPractice
+  name: bullet (.45 ACP practice)
+  parent: BaseBulletPractice
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 2
+
+- type: entity
+  id: Bullet45_ACPRubber
+  name: bullet (.45 ACP rubber)
+  parent: BaseBulletRubber
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 4
+
+- type: entity
+  id: Bullet45_ACPIncendiary
+  parent: BaseBulletIncendiary
+  name: bullet (.45 ACP incendiary)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 2
+        Heat: 16
+
+- type: entity
+  id: Bullet45_ACPUranium
+  parent: BaseBulletUranium
+  name: bullet (.45 ACP uranium)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Radiation: 6
+        Piercing: 12
+
+# Upstream
+- type: entity
+  id: Bullet45_ACPEmp
+  name: bullet (.45 ACP emp)
+  parent: BaseBulletEmp
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Shock: 0

@@ -429,13 +429,29 @@
       tags:
       - PirateUplink
 
+- type: listing
+  id: UplinkPirateCash100000
+  name: uplink-pirate-cash100000-name
+  description: uplink-pirate-cash100000-desc
+  productEntity: SpaceCash100000
+  icon: { sprite: _NF/Objects/Economy/cash.rsi, state: cash_100000 }
+  cost:
+    Doubloon: 10
+  categories:
+  - UplinkPirateUtility
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
 #MARK: Ammunition
 #TODO: Make boxes of ammo similar to TSFMC
 - type: listing
   id: UplinkPirateShotgunDrum
   name: uplink-pirate-box-bulldog-ammo-name
   description: uplink-pirate-box-bulldog-ammo-desc
-  productEntity: BoxMagazineShotgun
+  productEntity: BoxMagazine12_gauge
   cost:
     Doubloon: 1
   categories:
@@ -450,7 +466,7 @@
   id: UplinkPirateShotgunDrumSlug
   name: uplink-pirate-box-bulldog-slug-ammo-name
   description: uplink-pirate-box-bulldog-slug-ammo-desc
-  productEntity: BoxMagazineShotgunSlug
+  productEntity: BoxMagazine12_gaugeSlug
   cost:
     Doubloon: 1
   categories:
@@ -465,7 +481,7 @@
   id: UplinkPirateSMGMag
   name: uplink-pirate-box-smg-magazine-name
   description: uplink-pirate-box-smg-magazine-desc
-  productEntity: BoxMagazinePistolSubMachineGun
+  productEntity: BoxMagazine9x19mmSubMachineGunFMJ
   cost:
     Doubloon: 1
   categories:
@@ -480,8 +496,8 @@
   id: UplinkPirateShellBoxLethal
   name: uplink-pirate-shell-box-lethal-name
   description: uplink-pirate-shell-box-lethal-desc
-  productEntity: BoxLethalshot
-  icon: { sprite: Objects/Weapons/Guns/Ammunition/Boxes/shotgun.rsi, state: lethal }
+  productEntity: AmmoBox12_gaugeBuckshot
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/12_gauge.rsi, state: lethal }
   cost:
     Doubloon: 1
   categories:
@@ -493,10 +509,10 @@
       - PirateUplink
 
 - type: listing
-  id: UplinkPirateLightRifleMagazineBoxBig
+  id: UplinkPirate7.62x39mmAmmoBoxBig
   name: uplink-pirate-light-rifle-magazine-box-big-name
   description: uplink-pirate-light-rifle-magazine-box-big-desc
-  productEntity: MagazineBoxLightRifleBig
+  productEntity: AmmoBox7.62x39mmBigFMJ
   cost:
     Doubloon: 2
   categories:
@@ -508,10 +524,10 @@
       - PirateUplink
 
 - type: listing
-  id: UplinkPirateMagazineBoxMagnum
-  name: uplink-pirate-magazine-box-magnum-name
-  description: uplink-pirate-magazine-box-magnum-desc
-  productEntity: BoxMagazineMagnum
+  id: UplinkPirateAmmoBox45_magnum
+  name: uplink-pirate-magazine-box-45_magnum-name
+  description: uplink-pirate-magazine-box-45_magnum-desc
+  productEntity: BoxMagazine45_magnumFMJ
   cost:
     Doubloon: 1
   categories:
@@ -523,10 +539,10 @@
       - PirateUplink
 
 - type: listing
-  id: UplinkPirateBoxMagazineLightRifle
+  id: UplinkPirateBoxMagazine7.62x39mmFMJ
   name: uplink-pirate-box-magazine-light-rifle-name
   description: uplink-pirate-box-magazine-light-rifle-desc
-  productEntity: BoxMagazineLightRifle
+  productEntity: BoxMagazine7.62x39mmFMJ
   cost:
     Doubloon: 1
   categories:
@@ -541,7 +557,7 @@
   id: UplinkPirateMagazineSubsonic
   name: uplink-subsonic-mag-name
   description: uplink-subsonic-mag-desc
-  productEntity: MagazineLightRifleSubsonic
+  productEntity: Magazine7.62x39mmSubsonic
   cost:
     Doubloon: 1
   categories:
@@ -556,7 +572,7 @@
   id: UplinkPirateBoxSubsonic
   name: uplink-subsonic-box-name
   description: uplink-subsonic-box-desc
-  productEntity: MagazineBoxLightRifleSubsonic
+  productEntity: AmmoBox7.62x39mmSubsonic
   cost:
     Doubloon: 2
   categories:
@@ -568,10 +584,10 @@
       - PirateUplink
 
 - type: listing
-  id: UplinkPirateBoxMagazinePistol
+  id: UplinkPirateBoxMagazine9x19mmFMJ
   name: uplink-pirate-box-magazine-pistol-name
   description: uplink-pirate-box-magazine-pistol-desc
-  productEntity: BoxMagazinePistol
+  productEntity: BoxMagazine9x19mmFMJ
   cost:
     Doubloon: 1
   categories:
@@ -586,7 +602,7 @@
   id: UplinkPirateBurnerBox
   name: uplink-pirate-box-highcal-name
   description: uplink-pirate-box-highcal-desc
-  productEntity: MagazineBoxHighCaliber
+  productEntity: AmmoBox12.7x99mm
   cost:
     Doubloon: 3
   categories:
@@ -601,7 +617,7 @@
   id: UplinkPirateBurnerBoxHE
   name: uplink-pirate-box-highcal-he-name
   description: uplink-pirate-box-highcal-he-desc
-  productEntity: MagazineBoxHighCaliberExplosive
+  productEntity: AmmoBox12.7x99mmExplosive
   cost:
     Doubloon: 6
   categories:
@@ -635,6 +651,21 @@
   description: uplink-pirate-energy-cutlass-desc
   productEntity: EnergyCutlass
   cost:
+    Doubloon: 3
+  categories:
+  - UplinkPirateWeapons
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateEnergySword
+  name: uplink-pirate-energy-sword-name
+  description: uplink-pirate-energy-sword-desc
+  productEntity: EnergySword
+  cost:
     Doubloon: 6
   categories:
   - UplinkPirateWeapons
@@ -644,21 +675,21 @@
       tags:
       - PirateUplink
 
-- type: listing
-  id: UplinkPirateVT7
-  name: uplink-pirate-vt7-name
-  description: uplink-pirate-vt7-desc
-  productEntity: WeaponVT7
-  icon: { sprite: _Mono/Objects/Weapons/Melee/murasama.rsi, state: icon }
-  cost:
-    Doubloon: 12
-  categories:
-  - UplinkPirateWeapons
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - PirateUplink
+# - type: listing
+#   id: UplinkPirateVT7
+#   name: uplink-pirate-vt7-name
+#   description: uplink-pirate-vt7-desc
+#   productEntity: WeaponVT7
+#   icon: { sprite: _Mono/Objects/Weapons/Melee/murasama.rsi, state: icon }
+#   cost:
+#     Doubloon: 12
+#   categories:
+#   - UplinkPirateWeapons
+#   conditions:
+#   - !type:StoreWhitelistCondition
+#     whitelist:
+#       tags:
+#       - PirateUplink
 
 - type: listing
   id: UplinkPirateC20
@@ -667,7 +698,7 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledSMG
   icon: { sprite: Objects/Weapons/Guns/SMGs/c20r.rsi, state: icon }
   cost:
-    Doubloon: 10
+    Doubloon: 4
   categories:
   - UplinkPirateWeapons
   conditions:
@@ -746,7 +777,7 @@
   description: uplink-pirate-kanabou-desc
   productEntity: Kanabou
   cost:
-    Doubloon: 6
+    Doubloon: 4
   categories:
   - UplinkPirateWeapons
   conditions:
@@ -762,7 +793,7 @@
   productEntity: WeaponRifleAk
   icon: { sprite: Objects/Weapons/Guns/Rifles/ak.rsi, state: icon }
   cost:
-    Doubloon: 8
+    Doubloon: 3
   categories:
   - UplinkPirateWeapons
   conditions:
@@ -932,20 +963,20 @@
       tags:
       - PirateUplink
 
-- type: listing
-  id: UplinkPirateModsuit
-  name: uplink-pirate-modsuit-name
-  description: uplink-pirate-modsuit-desc
-  productEntity: ClothingModsuitRoguePowerCell
-  cost:
-    Doubloon: 25
-  categories:
-  - UplinkPirateEquipment
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - PirateUplink
+# - type: listing
+#   id: UplinkPirateModsuit
+#   name: uplink-pirate-modsuit-name
+#   description: uplink-pirate-modsuit-desc
+#   productEntity: ClothingModsuitRoguePowerCell
+#   cost:
+#     Doubloon: 25
+#   categories:
+#   - UplinkPirateEquipment
+#   conditions:
+#   - !type:StoreWhitelistCondition
+#     whitelist:
+#       tags:
+#       - PirateUplink
 
 #MARK: Explosives
 

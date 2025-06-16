@@ -82,7 +82,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1000 # Default (300) / Monolith (1000)
+        damage: 2500 # Default (300) / Monolith (1000) / CombatOverhaul (2500)
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]

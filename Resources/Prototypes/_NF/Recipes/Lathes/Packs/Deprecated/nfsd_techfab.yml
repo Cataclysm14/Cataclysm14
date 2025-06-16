@@ -4,53 +4,17 @@
 - type: latheRecipePack
   id: NFNfsdTechfabDeprecatedStatic
   recipes:
-  - BoxLethalshot
-  - BoxShotgunPractice
-  - BoxShotgunSlug
   - ClothingEyesHudNfsd
   - CombatKnife
   - Flash
   - ForensicPad
   - Handcuffs
-  - MagazineBoxLightRifle
-  - MagazineBoxLightRiflePractice
-  - MagazineBoxMagnum
-  - MagazineBoxMagnumPractice
-  - MagazineBoxPistol
-  - MagazineBoxPistolPractice
-  - MagazineBoxRifle
-  - MagazineBoxRiflePractice
-  - MagazineLightRifle
-  - MagazineLightRifleEmpty
-  - MagazinePistol
-  - MagazinePistolEmpty
-  - MagazinePistolSubMachineGun
-  - MagazinePistolSubMachineGunEmpty
-  - MagazinePistolSubMachineGunTopMounted
-  - MagazinePistolSubMachineGunTopMountedEmpty
-  - MagazineRifle
-  - MagazineRifleEmpty
-  - MagazineShotgun
-  - MagazineShotgunEmpty
-  - MagazineShotgunSlug
   - RiotShield
-  - SpeedLoaderMagnum
-  - SpeedLoaderMagnumEmpty
-  - SpeedLoaderRifleHeavy
-  - SpeedLoaderRifleHeavyEmpty
   - Stunbaton
   - TargetClown
   - TargetHuman
   - TargetSyndicate
   - WeaponDisablerPractice
-  - SpeedLoaderRifleHeavyRubber
-  - SpeedLoaderMagnumRubber
-  - MagazineRifleRubber
-  - MagazineShotgunBeanbag
-  - MagazineShotgunSlug
-  - MagazinePistolRubber
-  - MagazinePistolSubMachineGunRubber
-  - MagazineLightRifleRubber
 #      - WeaponFlareGunSecurity
   - WeaponLaserCarbinePractice
   - Zipties
@@ -59,12 +23,6 @@
   - GyroscopeNfsdMachineCircuitboard
   - SmallGyroscopeNfsdMachineCircuitboard
   - ClothingOuterHardsuitEVAPrisoner
-  - BoxBeanbag
-  - MagazineBoxLightRifleRubber
-  - MagazineBoxMagnumRubber
-  - MagazineBoxPistolRubber
-  - MagazineBoxRifleRubber
-  - MagazineShotgunBeanbag
   - WeaponDisabler
   - ContrabandAppraisalTool
   - HoloprojectorNfsd
@@ -74,22 +32,12 @@
   - PowerCageMedium
   - PowerCageSmall
   - Signaller
-  - MagazineNovaliteC1Empty
-  - MagazineNovaliteC1
-  - MagazineNovaliteC1Rubber
-  - MagazineDMR # mono
-  - MagazineDMREmpty # mono
-  - MagazineBoxDMR # mono
 
 - type: latheRecipePack
   id: NFNfsdTechfabDeprecated
   recipes:
-  - BoxShellTranquilizer
   - ExplosivePayload
   - FlashPayload
-  - GrenadeBlast
-  - GrenadeEMP
-  - GrenadeFlash
   - PortableRecharger
   - SignalTrigger
   - TelescopicShield
@@ -105,25 +53,4 @@
 - type: latheRecipePack
   id: NFNfsdTechfabDeprecatedEmag
   recipes:
-  - BoxShotgunIncendiary
-  - BoxShotgunUranium
-  - MagazineBoxLightRifleIncendiary
-  - MagazineBoxLightRifleUranium
-  - MagazineBoxMagnumIncendiary
-  - MagazineBoxMagnumUranium
-  - MagazineBoxPistolIncendiary
-  - MagazineBoxPistolUranium
-  - MagazineBoxRifleIncendiary
-  - MagazineBoxRifleUranium
-  - MagazineGrenadeEmpty
-  - MagazineLightRifleIncendiary
-  - MagazineLightRifleUranium
-  - MagazinePistolIncendiary
-  - MagazinePistolUranium
-  - MagazineRifleIncendiary
-  - MagazineRifleUranium
-  - MagazineShotgunIncendiary
-  - SpeedLoaderMagnumIncendiary
-  - SpeedLoaderMagnumUranium
-  - SpeedLoaderRifleHeavyIncendiary
-  - SpeedLoaderRifleHeavyUranium
+  - Wirecutter

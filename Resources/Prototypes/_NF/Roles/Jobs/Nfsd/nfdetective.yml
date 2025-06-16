@@ -44,8 +44,8 @@
   storage:
     back:
     - Flash
-    - SpeedLoaderMagnum
-    - SpeedLoaderMagnumRubber
+    - SpeedLoader45_magnumFMJ
+    - SpeedLoader45_magnumRubber
     - ForensicPad
     - ForensicScanner
     - FederationMilitaryCredit10

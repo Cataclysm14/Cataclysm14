@@ -39,12 +39,12 @@
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol
+            - Cartridge9x19mmFMJ
 
 - type: entity
   id: MagazinePistolDebug
   name: bang, ded mag
-  parent: BaseMagazinePistol
+  parent: BaseMagazine9x19mm
   suffix: DEBUG
   components:
   - type: Tag
@@ -54,7 +54,7 @@
     proto: CartridgeDebug
     capacity: 1000
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/9x19mm/9x19mm_pistol_mag.rsi
 
 - type: entity
   id: BulletDebug
@@ -74,7 +74,7 @@
 - type: entity
   id: CartridgeDebug
   name: bang, ded cartridge
-  parent: BaseCartridgePistol
+  parent: BaseCartridge9x19mm
   suffix: DEBUG
   components:
   - type: Tag

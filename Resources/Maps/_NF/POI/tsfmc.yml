@@ -3401,7 +3401,7 @@ entities:
     - type: Transform
       pos: 27.5,16.5
       parent: 1
-- proto: BoxMagazinePistol
+- proto: BoxMagazine9x19mmFMJ
   entities:
   - uid: 204
     components:
@@ -3445,7 +3445,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: BoxMagazinePistolSubMachineGun
+- proto: BoxMagazine9x19mmSubMachineGunFMJ
   entities:
   - uid: 217
     components:
@@ -3489,7 +3489,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: BoxMagazineRifle
+- proto: BoxMagazine5.56x45mmFMJ
   entities:
   - uid: 230
     components:
@@ -8865,7 +8865,7 @@ entities:
     - type: Transform
       pos: -30.5,7.5
       parent: 1
-- proto: ComputerAdvancedRadar
+- proto: ComputerRadar
   entities:
   - uid: 1287
     components:
@@ -15697,17 +15697,13 @@ entities:
     - type: Transform
       pos: 8.5,1.5
       parent: 1
-- proto: GunneryServer
+- proto: GunneryServerStation
   entities:
   - uid: 2234
     components:
     - type: Transform
       pos: 30.5,1.5
       parent: 1
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: Battery
-      startingCharge: 0
 - proto: GunSafeBaseSecure
   entities:
   - uid: 203
@@ -15947,7 +15943,7 @@ entities:
     - type: Transform
       pos: -27.5,7.5
       parent: 1
-- proto: MagazineBoxLightRiflePractice
+- proto: AmmoBox7.62x39mmPractice
   entities:
   - uid: 2263
     components:
@@ -15959,7 +15955,7 @@ entities:
     - type: Transform
       pos: -14.463586,16.659513
       parent: 1
-- proto: MagazineBoxPistolPractice
+- proto: AmmoBox9x19mmPractice
   entities:
   - uid: 2265
     components:
@@ -15976,7 +15972,7 @@ entities:
     - type: Transform
       pos: -14.139512,16.44655
       parent: 1
-- proto: MagazineBoxRiflePractice
+- proto: AmmoBox5.56x45mmPractice
   entities:
   - uid: 2268
     components:

@@ -445,7 +445,7 @@
     - SemiAuto
     soundGunshot: /Audio/Weapons/Guns/Gunshots/pistol.ogg
   - type: BallisticAmmoProvider
-    proto: CartridgeCaselessRifle
+    proto: Cartridge6.35x40mmCaseless
     capacity: 500
   - type: CombatMode
   - type: HTN
@@ -3686,6 +3686,10 @@
     reformTime: 10
     popupText: diona-reform-attempt
     reformPrototype: MobDionaReformed
+  - type: PseudoItem # Mono - Baggable
+    storedOffset: 0,0
+    shape:
+      - 0, 0, 3, 3
 
 - type: entity
   parent: MobDionaNymph

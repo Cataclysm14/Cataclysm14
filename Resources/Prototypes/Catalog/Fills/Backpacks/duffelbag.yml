@@ -41,9 +41,9 @@
   - type: StorageFill
     contents:
       - id: WeaponShotgunBulldog
-      - id: MagazineShotgun
-      - id: MagazineShotgun
-      - id: MagazineShotgun
+      - id: Magazine12_gaugeBuckshot
+      - id: Magazine12_gaugeBuckshot
+      - id: Magazine12_gaugeBuckshot
 #     - id: ThermalImagingGoggles
 
 - type: entity
@@ -55,7 +55,7 @@
   - type: StorageFill
     contents:
       - id: WeaponSubMachineGunC20r
-      - id: MagazinePistolSubMachineGun
+      - id: Magazine9x19mmSubMachineGunFMJ
         amount: 3
 #     - id: SMGSuppressor
 # Mono edit
@@ -68,7 +68,7 @@
   - type: StorageFill
     contents:
       - id: WeaponSubMachineGunAtreides
-      - id: MagazinePistolSubMachineGun
+      - id: Magazine9x19mmSubMachineGunFMJ
         amount: 3
 #     - id: SMGSuppressor
 # Mono edit end
@@ -76,12 +76,12 @@
   parent: ClothingBackpackDuffelSyndicateBundle
   id: ClothingBackpackDuffelSyndicateFilledRevolver
   name: Python bundle
-  description: "Go loud and proud with a fully loaded Magnum Python, bundled with two speed loaders."
+  description: "Go loud and proud with a fully loaded 45_magnum Python, bundled with two speed loaders."
   components:
   - type: StorageFill
     contents:
       - id: WeaponRevolverPythonAP
-      - id: SpeedLoaderMagnumAP
+      - id: SpeedLoader45_magnumAP
         amount: 2
 
 - type: entity
@@ -93,7 +93,7 @@
   - type: StorageFill
     contents:
       - id: WeaponLightMachineGunL6
-      - id: MagazineLightRifleBox
+      - id: Magazine7.62x39mmBox
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
@@ -104,9 +104,9 @@
   - type: StorageFill
     contents:
       - id: WeaponLauncherChinaLake
-      - id: GrenadeBlast
+      - id: 40mmGrenadeThermobaric
         amount: 4
-      - id: GrenadeFrag
+      - id: 40mmGrenadeFragmentation
         amount: 4
 
 - type: entity
@@ -118,13 +118,13 @@
   - type: StorageFill
     contents:
       - id: WeaponRifleM90GrenadeLauncher
-      - id: MagazineRifle
+      - id: Magazine5.56x45mmFMJ
         amount: 2
-      - id: GrenadeBlast
+      - id: 40mmGrenadeThermobaric
         amount: 2
-      - id: GrenadeFlash
+      - id: 40mmGrenadeFlash
         amount: 2
-      - id: GrenadeFrag
+      - id: 40mmGrenadeFragmentation
         amount: 2
 
 - type: entity
@@ -135,15 +135,15 @@
   components:
   - type: StorageFill
     contents:
-      - id: MagazinePistolSubMachineGun
+      - id: Magazine9x19mmSubMachineGunFMJ
         amount: 4
-      - id: MagazineShotgun
+      - id: Magazine12_gaugeBuckshot
         amount: 4
-      - id: MagazineLightRifleBox
+      - id: Magazine7.62x39mmBox
         amount: 2
-      - id: MagazineHighCaliber # Goobstation - Burner Heavy Assault Rifle
+      - id: Magazine12.7x99mm # Goobstation - Burner Heavy Assault Rifle
         amount: 1
-      - id: MagazineHighCaliberExplosive # Goobstation - Burner Heavy Assault Rifle
+      - id: Magazine12.7x99mmExplosive # Goobstation - Burner Heavy Assault Rifle
 
 
 - type: entity
@@ -323,7 +323,7 @@
     contents:
       - id: SyringeRomerol
       - id: WeaponRevolverPython
-      - id: MagazineBoxMagnumIncendiary
+      - id: AmmoBox45_magnumIncendiary
       - id: PillAmbuzolPlus
       - id: PillAmbuzol
         amount: 3

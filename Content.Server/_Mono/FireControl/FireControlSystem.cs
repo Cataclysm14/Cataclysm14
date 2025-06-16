@@ -15,6 +15,8 @@ using Content.Server.Power.EntitySystems;
 using Content.Shared.Shuttles.Components;
 using Robust.Shared.Timing;
 using Content.Shared.Interaction;
+using Content.Shared._Mono.ShipGuns;
+using Content.Shared.Examine;
 
 namespace Content.Server._Mono.FireControl;
 
@@ -37,6 +39,8 @@ public sealed partial class FireControlSystem : EntitySystem
         base.Initialize();
         SubscribeLocalEvent<FireControlServerComponent, PowerChangedEvent>(OnPowerChanged);
         SubscribeLocalEvent<FireControlServerComponent, ComponentShutdown>(OnShutdown);
+        SubscribeLocalEvent<FireControlServerComponent, ExaminedEvent>(OnExamined);
+        SubscribeLocalEvent<FireControlServerComponent, EntityTerminatingEvent>(OnServerTerminating);
 
         SubscribeLocalEvent<FireControllableComponent, PowerChangedEvent>(OnControllablePowerChanged);
         SubscribeLocalEvent<FireControllableComponent, ComponentShutdown>(OnControllableShutdown);
@@ -60,6 +64,25 @@ public sealed partial class FireControlSystem : EntitySystem
     private void OnShutdown(EntityUid uid, FireControlServerComponent component, ComponentShutdown args)
     {
         Disconnect(uid, component);
+    }
+
+    private void OnServerTerminating(EntityUid uid, FireControlServerComponent component, ref EntityTerminatingEvent args)
+    {
+        Disconnect(uid, component);
+    }
+
+    private void OnExamined(EntityUid uid, FireControlServerComponent component, ExaminedEvent args)
+    {
+        if (!args.IsInDetailsRange)
+            return;
+        args.PushMarkup(
+            Loc.GetString(
+                "gunnery-server-examine-detail",
+                ("usedProcessingPower", component.UsedProcessingPower),
+                ("processingPower", component.ProcessingPower),
+                ("valueColor", component.UsedProcessingPower <= component.ProcessingPower - 2 ? "green" : "yellow")
+            )
+        );
     }
 
     private void OnControllablePowerChanged(EntityUid uid, FireControllableComponent component, PowerChangedEvent args)
@@ -118,20 +141,37 @@ public sealed partial class FireControlSystem : EntitySystem
         if (!Resolve(server, ref component))
             return;
 
-        if (!Exists(component.ConnectedGrid) || !TryComp<FireControlGridComponent>(component.ConnectedGrid, out var controlGrid))
-            return;
-
-        if (controlGrid.ControllingServer == server)
+        // Clean up grid connection if it exists
+        if (component.ConnectedGrid != null && Exists(component.ConnectedGrid) && TryComp<FireControlGridComponent>(component.ConnectedGrid, out var controlGrid))
         {
-            controlGrid.ControllingServer = null;
-            RemComp<FireControlGridComponent>((EntityUid)component.ConnectedGrid);
+            if (controlGrid.ControllingServer == server)
+            {
+                controlGrid.ControllingServer = null;
+                RemComp<FireControlGridComponent>((EntityUid)component.ConnectedGrid);
+            }
         }
 
-        foreach (var controllable in(component.Controlled))
-            Unregister(controllable);
+        // Unregister all controlled entities
+        var controlledCopy = component.Controlled.ToList(); // Create copy to avoid modification during iteration
+        foreach (var controllable in controlledCopy)
+        {
+            if (Exists(controllable))
+                Unregister(controllable);
+        }
 
-        foreach (var console in component.Consoles)
-            UnregisterConsole(console);
+        // Unregister all consoles
+        var consolesCopy = component.Consoles.ToList(); // Create copy to avoid modification during iteration
+        foreach (var console in consolesCopy)
+        {
+            if (Exists(console))
+                UnregisterConsole(console);
+        }
+
+        // Clear the server's state
+        component.Controlled.Clear();
+        component.Consoles.Clear();
+        component.ConnectedGrid = null;
+        component.UsedProcessingPower = 0;
     }
 
     public void RefreshControllables(EntityUid grid, FireControlGridComponent? component = null)
@@ -139,10 +179,19 @@ public sealed partial class FireControlSystem : EntitySystem
         if (!Resolve(grid, ref component))
             return;
 
-        if (component.ControllingServer == null || !TryComp<FireControlServerComponent>(component.ControllingServer, out var server))
+        if (component.ControllingServer == null)
             return;
 
+        // Check if the controlling server still exists
+        if (!Exists(component.ControllingServer) || !TryComp<FireControlServerComponent>(component.ControllingServer, out var server))
+        {
+            // Clear the invalid reference
+            component.ControllingServer = null;
+            return;
+        }
+
         server.Controlled.Clear();
+        server.UsedProcessingPower = 0;
 
         var query = EntityQueryEnumerator<FireControllableComponent>();
 
@@ -168,8 +217,20 @@ public sealed partial class FireControlSystem : EntitySystem
 
         var controlGrid = EnsureComp<FireControlGridComponent>((EntityUid)grid);
 
+        // Check if there's already a controlling server and if it's valid
         if (controlGrid.ControllingServer != null)
-            return false;
+        {
+            // If the controlling server no longer exists, clear the reference
+            if (!Exists(controlGrid.ControllingServer) || !TryComp<FireControlServerComponent>(controlGrid.ControllingServer, out _))
+            {
+                controlGrid.ControllingServer = null;
+            }
+            else
+            {
+                // Valid server already exists, cannot connect
+                return false;
+            }
+        }
 
         controlGrid.ControllingServer = server;
         component.ConnectedGrid = grid;
@@ -188,6 +249,7 @@ public sealed partial class FireControlSystem : EntitySystem
             return;
 
         controlComp.Controlled.Remove(controllable);
+        controlComp.UsedProcessingPower -= GetProcessingPowerCost(controllable, component);
         component.ControllingServer = null;
     }
 
@@ -198,11 +260,17 @@ public sealed partial class FireControlSystem : EntitySystem
 
         var gridServer = TryGetGridServer(controllable);
 
-        if (gridServer.ServerComponent == null)
+        if (gridServer.ServerUid == null || gridServer.ServerComponent == null)
+            return false;
+
+        var processingPowerCost = GetProcessingPowerCost(controllable, component);
+
+        if (processingPowerCost > GetRemainingProcessingPower(gridServer.ServerUid.Value, gridServer.ServerComponent))
             return false;
 
         if (gridServer.ServerComponent.Controlled.Add(controllable))
         {
+            gridServer.ServerComponent.UsedProcessingPower += processingPowerCost;
             component.ControllingServer = gridServer.ServerUid;
             return true;
         }
@@ -210,6 +278,31 @@ public sealed partial class FireControlSystem : EntitySystem
         {
             return false;
         }
+    }
+
+    public int GetRemainingProcessingPower(EntityUid server, FireControlServerComponent? component = null)
+    {
+        if (!Resolve(server, ref component))
+            return 0;
+
+        return component.ProcessingPower - component.UsedProcessingPower;
+    }
+
+    public int GetProcessingPowerCost(EntityUid controllable, FireControllableComponent? component = null)
+    {
+        if (!Resolve(controllable, ref component))
+            return 0;
+
+        if (!TryComp<ShipGunClassComponent>(controllable, out var classComponent))
+            return 0;
+
+        return classComponent.Class switch
+        {
+            ShipGunClass.Light => 1,
+            ShipGunClass.Medium => 2,
+            ShipGunClass.Heavy => 4,
+            _ => 0,
+        };
     }
 
     private (EntityUid? ServerUid, FireControlServerComponent? ServerComponent) TryGetGridServer(EntityUid uid)
@@ -222,10 +315,56 @@ public sealed partial class FireControlSystem : EntitySystem
         if (!TryComp<FireControlGridComponent>(grid, out var controlGrid))
             return (null, null);
 
-        if (controlGrid.ControllingServer == null || !TryComp<FireControlServerComponent>(controlGrid.ControllingServer, out var server))
+        if (controlGrid.ControllingServer == null)
             return (null, null);
 
+        // Check if the controlling server still exists and has the component
+        if (!Exists(controlGrid.ControllingServer) || !TryComp<FireControlServerComponent>(controlGrid.ControllingServer, out var server))
+        {
+            // Clear the invalid reference
+            controlGrid.ControllingServer = null;
+            return (null, null);
+        }
+
         return (controlGrid.ControllingServer, server);
+    }
+
+    /// <summary>
+    /// Cleans up all invalid server references across all grids
+    /// </summary>
+    public void CleanupInvalidServerReferences()
+    {
+        var gridQuery = EntityQueryEnumerator<FireControlGridComponent>();
+
+        while (gridQuery.MoveNext(out var gridUid, out var gridComponent))
+        {
+            if (gridComponent.ControllingServer != null)
+            {
+                if (!Exists(gridComponent.ControllingServer) || !TryComp<FireControlServerComponent>(gridComponent.ControllingServer, out _))
+                {
+                    gridComponent.ControllingServer = null;
+                    RemComp<FireControlGridComponent>(gridUid);
+                }
+            }
+        }
+    }
+
+    /// <summary>
+    /// Forces all powered servers on a specific grid to attempt reconnection
+    /// </summary>
+    public void ForceServerReconnectionOnGrid(EntityUid gridUid)
+    {
+        var serverQuery = EntityQueryEnumerator<FireControlServerComponent>();
+
+        while (serverQuery.MoveNext(out var serverUid, out var serverComponent))
+        {
+            var serverGrid = _xform.GetGrid(serverUid);
+            if (serverGrid == gridUid && _power.IsPowered(serverUid))
+            {
+                // Force reconnection attempt
+                TryConnect(serverUid, serverComponent);
+            }
+        }
     }
 
     public void FireWeapons(EntityUid server, List<NetEntity> weapons, NetCoordinates coordinates, FireControlServerComponent? component = null)

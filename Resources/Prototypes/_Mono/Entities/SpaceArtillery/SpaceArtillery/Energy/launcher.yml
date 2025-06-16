@@ -22,7 +22,7 @@
     range: 500
   - type: Gun
     fireRate: 0.5
-    projectileSpeed: 60
+    projectileSpeed: 180
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon2.ogg
     soundEmpty:
@@ -60,6 +60,8 @@
     scale: 2
   - type: ShipGunType
     shipType: Energy
+  - type: ShipGunClass
+    shipClass: Medium
 
 # RUBICON
 
@@ -85,7 +87,7 @@
     range: 500
   - type: Gun
     fireRate: 0.2
-    projectileSpeed: 40
+    projectileSpeed: 120
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon2.ogg
     soundEmpty:
@@ -123,6 +125,8 @@
     scale: 2
   - type: ShipGunType
     shipType: Energy
+  - type: ShipGunClass
+    shipClass: Medium
 
 # DYMERE
 
@@ -155,7 +159,7 @@
           bounds: "-0.75,-0.75,0.75,0.75"
         density: 1500
   - type: Gun
-    projectileSpeed: 95
+    projectileSpeed: 285
     fireRate: 0.75
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/laserfire.ogg
@@ -177,3 +181,5 @@
     scale: 3
   - type: ShipGunType
     shipType: Energy
+  - type: ShipGunClass
+    shipClass: Medium

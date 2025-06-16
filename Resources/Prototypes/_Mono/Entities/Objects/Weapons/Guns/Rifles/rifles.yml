@@ -1,5 +1,5 @@
 - type: entity
-  name: MR-8C BR
+  name: MR-8C BR (8x65mm SKR)
   parent: [BaseWeaponRifle, BaseGunWieldable, BaseC3Contraband]
   id: WeaponRifleMR8C
   description: The BR variant of the MR-8 series, firing with incredible accuracy. Chambered in 8x65mm SKR.
@@ -30,21 +30,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineDMR
+        startingItem: Magazine8x65mmSKR
         insertSound: /Audio/Weapons/Guns/MagIn/sfrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/hpistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazineDMR
+            - Magazine8x65mmSKR
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeDMR
+        startingItem: Cartridge8x65mmSKR
         priority: 1
         whitelist:
           tags:
-            - CartridgeDMR
+            - Cartridge8x65mmSKR
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -70,10 +70,10 @@
   #  pvsIncrease: 0.5
 
 - type: entity
-  name: AK-502
+  name: AK-502 (7.62x39mm)
   parent: [BaseWeaponRifle, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
   id: WeaponRifleAK502
-  description: A standard-issue USSP combat rifle. Uses .30 rifle ammo.
+  description: A standard-issue USSP combat rifle. Uses 7.62x39mm ammo.
   components:
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Rifles/ak502.rsi
@@ -99,21 +99,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineLightRifle
+        startingItem: Magazine7.62x39mmFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/sfrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/hpistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - MagazineLightRifle
+          - Magazine7.62x39mmFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeLightRifle
+        startingItem: Cartridge7.62x39mmFMJ
         priority: 1
         whitelist:
           tags:
-          - CartridgeLightRifle
+          - Cartridge7.62x39mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -123,3 +123,6 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: StaticPrice
+    price: 100
+    vendPrice: 9000

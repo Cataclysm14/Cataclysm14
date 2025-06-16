@@ -3988,7 +3988,7 @@ entities:
     - type: Transform
       pos: -15.5,1.5
       parent: 2
-- proto: ComputerAdvancedRadar
+- proto: ComputerRadar
   entities:
   - uid: 574
     components:
@@ -5530,17 +5530,13 @@ entities:
     - type: Transform
       pos: 10.5,16.5
       parent: 2
-- proto: GunneryServer
+- proto: GunneryServerStation
   entities:
   - uid: 766
     components:
     - type: Transform
       pos: 10.5,7.5
       parent: 2
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: Battery
-      startingCharge: 0
 - proto: GunSafeShuttleCaptain
   entities:
   - uid: 767
@@ -10815,7 +10811,7 @@ entities:
     - type: Transform
       pos: -2.2278144,-1.5651634
       parent: 2
-- proto: WeaponPistolUniversal
+- proto: WeaponPistolMk32
   entities:
   - uid: 1572
     components:
