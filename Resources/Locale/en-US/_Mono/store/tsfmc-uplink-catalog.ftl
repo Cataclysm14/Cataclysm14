@@ -18,3 +18,6 @@ uplink-security-hfblade-desc = A tool of justice.
 
 uplink-exosuit-aurora-name = M-320X AURORA
 uplink-exosuit-aurora-desc = A prototype exosuit for the future of warfare. Utilizes nanomachines in a basic amount to protect the wearer from vacuum, and protects very well against HF blades, while enhancing the wearers mobility.
+
+uplink-security-ashstorm-name = EM72 Ashstorm
+uplink-security-ashstorm-desc = The TSF-EM72 Ashstorm is a directed-energy light machine gun developed by Aetherion Dynamics under TSF weapons contract 934A.
