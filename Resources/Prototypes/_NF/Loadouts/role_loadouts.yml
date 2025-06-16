@@ -204,6 +204,8 @@
   - SecurityGuardFace
   - SecurityGuardBelt
   - SecurityGuardEars
+  - SecurityGuardFirearm # Mono
+  - SecurityGuardPistol # Mono
   - NfsdBoxSurvival
   - SecurityGuardPDA
   - ContractorWallet

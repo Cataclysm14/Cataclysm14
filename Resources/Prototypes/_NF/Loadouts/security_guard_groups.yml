@@ -91,3 +91,36 @@
   - SecurityClothingMaskGasSecurity
   fallbacks:
   - SecurityClothingMaskGasSecurity
+
+# Mono Begin
+
+- type: loadoutGroup
+  id: SecurityGuardFirearm
+  name: loadout-group-securityguard-weapon
+  minLimit: 0
+  loadouts:
+  - SecurityGuardWt550Loadout
+  - SecurityGuardC20rLoadout
+  - SecurityGuardKammererLoadout
+  - SecurityGuardEnforcerLoadout
+  - SecurityGuardLecterLoadout
+  - SecurityGuardDrozdLoadout
+  - SecurityGuardEnergyGunLoadout
+  - SecurityGuardLaserCarbineLoadout
+  - SecurityGuardLaserCannonLoadout
+  - SecurityGuardDisablerSMGLoadout
+  fallbacks:
+  - SecurityGuardWt550Loadout
+
+- type: loadoutGroup
+  id: SecurityGuardPistol
+  name: loadout-group-securityguard-pistol
+  minLimit: 0
+  loadouts:
+  - SecurityGuardViperLoadout
+  - SecurityGuardMk32Loadout
+  - SecurityGuardSawedOffLoadout
+  fallbacks:
+  - SecurityGuardViperLoadout
+
+# Mono End
