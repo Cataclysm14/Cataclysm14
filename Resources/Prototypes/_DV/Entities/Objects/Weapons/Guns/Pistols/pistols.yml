@@ -1,7 +1,7 @@
 - type: entity
   name: Mk32 "Universal" (9x19mm)
   parent: [BaseWeaponPistol, BaseC1Contraband]
-  id: WeaponPistolMk32 
+  id: WeaponPistolMk32
   description: A cheap, civilian grade, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Uses 9x19mm ammo.
   components:
   - type: Sprite
@@ -45,10 +45,10 @@
       gun_chamber: !type:ContainerSlot
 
 - type: entity
-  name: Pollock (9x19mm)
+  name: Pollock (5.7x28mm)
   parent: [BaseWeaponPistol, BaseC1Contraband]
   id: WeaponPistolPollock
-  description: A compact and mass-produced combat pistol. Uses 9x19mm ammo.
+  description: A compact and mass-produced combat pistol. Uses 5.7x28mm ammo.
   components:
   - type: Sprite
     sprite: _DV/Objects/Weapons/Guns/Pistols/pollock.rsi
@@ -62,22 +62,22 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine9x19mmPistolFMJ
+        startingItem: Magazine5.7x28mmPistolFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine9x19mmPistolFMJ
-            - Magazine9x19mmPistolHighCapacityFMJ
+            - Magazine5.7x28mmPistolFMJ
+            - Magazine5.7x28mmPistolHighCapacityFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge9x19mmFMJ
+        startingItem: Cartridge5.7x28mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge9x19mmFMJ
+            - Cartridge5.7x28mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
