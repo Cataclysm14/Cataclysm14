@@ -161,7 +161,3 @@
     tags:
       - Cooked
       - Meat
-  - type: Construction
-    graph: ResomiBucket
-    node: bucket
-    defaultTarget: bucket of fried resomi

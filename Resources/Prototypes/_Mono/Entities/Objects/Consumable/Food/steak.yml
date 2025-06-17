@@ -14,7 +14,7 @@
       - minTemperature: 335
 
   - node: resomi steak
-    entity: FoodMeatResomiSteakCooked
+    entity: FoodMeatResomiSteak
 
 # Resomi cutlet
 - type: constructionGraph
