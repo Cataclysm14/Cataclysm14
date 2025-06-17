@@ -325,5 +325,5 @@
   - type: PseudoItem # Mono - Everyone bluespace baggable
     storedOffset: -10,0
     shape:
-      - 0, 0, 4, 3
-      - 0, 3, 6, 7
+      - 0, 0, 4, 4
+      - 0, 3, 6, 5
