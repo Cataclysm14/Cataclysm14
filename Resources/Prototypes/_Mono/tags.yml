@@ -130,3 +130,9 @@
 
 - type: Tag
   id: Magazine5.7x28mmFMJBox
+
+- type: Tag
+  id: MilitaryPowerCellMG
+
+- type: Tag
+  id: MagazineDP29

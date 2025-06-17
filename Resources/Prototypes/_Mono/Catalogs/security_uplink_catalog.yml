@@ -29,6 +29,21 @@
       - SecurityUplink
 
 - type: listing
+  id: UplinkSecurityAshstorm
+  name:  uplink-security-ashstorm-name
+  description: uplink-security-ashstorm-desc
+  productEntity: ClothingBackpackDuffelAshstormBundle
+  cost:
+    FederationMilitaryCredit: 25
+  categories:
+    - UplinkSecurityWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
   id: UplinkSecuritySurgeryDuffel
   name:  uplink-security-surgery-duffel-name
   description: uplink-security-surgery-duffel-desc

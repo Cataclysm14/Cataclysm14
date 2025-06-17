@@ -1,6 +1,7 @@
 ﻿- type: vendingMachineInventory
   id: USSPVendInventory
   startingInventory:
+    MagazineDP29: 4294967295 # Infinite
     Magazine7.62x39mmFMJ: 4294967295 # Infinite
     Magazine7.62x39mmLowCapacityFMJ: 4294967295 # Infinite
     Magazine7.62x54mmRFMJ: 4294967295 # Infinite
@@ -24,3 +25,4 @@
     ClothingHeadHelmetHeavyUSSP: 4294967295 # Infinite
     EmergencyMedipen: 4294967295 # Infinite
     WeaponRifleAK502: 4294967295 # Infinite
+    WeaponDP29: 4294967295 # Infinite

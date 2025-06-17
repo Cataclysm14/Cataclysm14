@@ -4355,3 +4355,56 @@ Entries:
   id: 521
   time: '2025-06-16T02:00:20.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/837
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: N2O tanks added to surgery duffels
+  id: 522
+  time: '2025-06-16T21:09:02.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/846
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Canisters have more 1.5x more volume
+    - type: Tweak
+      message: Gases sell for more
+  id: 523
+  time: '2025-06-16T21:10:54.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/845
+- author: norycS
+  changes:
+    - type: Add
+      message: Added 2 new machine guns Ashstorm and DP-29 for TSFMC and USSP.
+    - type: Tweak
+      message: Added L6 saw to rogue uplink.
+  id: 524
+  time: '2025-06-16T21:13:35.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/841
+- author: BlueHNT
+  changes:
+    - type: Add
+      message: >-
+        Added Roleplay Rule 8, Safe Zone as there was a lot to mention
+        surrounding it.
+    - type: Tweak
+      message: Refactored Conflict Rule 2
+    - type: Tweak
+      message: Refactored Conflict Rule 3
+    - type: Tweak
+      message: Updates rules (Refactor, Stylization, Explaining
+  id: 525
+  time: '2025-06-16T23:28:31.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/836
+- author: Redrover1760
+  changes:
+    - type: Add
+      message: Weapons to security guard loadout.
+    - type: Add
+      message: CL starts with a hybrid energy gun.
+    - type: Fix
+      message: Atreides bundle has the correct magazines
+    - type: Tweak
+      message: Rarer weapons spawn in armories more often in expeds.
+  id: 526
+  time: '2025-06-16T23:49:55.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/847
