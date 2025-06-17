@@ -3,8 +3,8 @@
   id: MeatResomi
   name: food-sequence-content-resomi
   sprites:
-  - sprite: Objects/Consumable/Food/meat.rsi
-    state: chicken-fried
+  - sprite: _Mono/Objects/Consumable/Food/meat.rsi
+    state: bird-resomi
   tags:
   - Cooked
   - Meat
@@ -14,21 +14,10 @@
   id: MeatFriedResomi
   name: food-sequence-content-fried-resomi
   sprites:
-  - sprite: Objects/Consumable/Food/meat.rsi
-    state: chicken-fried
-  - sprite: Objects/Consumable/Food/meat.rsi
-    state: chicken2-fried
-  tags:
-  - Cooked
-  - Meat
-
-# Kentucky Fried Resomi / Resomi Bucket
-- type: foodSequenceElement
-  id: MeatResomiBucket
-  name: food-sequence-content-resomi-bucket
-  sprites:
   - sprite: _Mono/Objects/Consumable/Food/meat.rsi
     state: resomi-fried
+  - sprite: _Mono/Objects/Consumable/Food/meat.rsi
+    state: resomi2-fried
   tags:
   - Cooked
   - Meat

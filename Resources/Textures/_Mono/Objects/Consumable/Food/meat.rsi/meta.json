@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-NC-SA-3.0",
-  "copyright": "resomi meat-stuffs and fried chicken made by BluHNT",
+  "copyright": "resomi meat-stuffs, fried chicken made by BluHNT[except bird-resomi, resomi-cooked, and resomi-fried made by taro_varne]",
   "size": {
     "x": 32,
     "y": 32
@@ -9,6 +9,9 @@
   "states": [
     {
       "name": "resomi-fried"
+    },
+    {
+      "name": "resomi2-fried"
     },
     {
       "name": "resomi-bucket"

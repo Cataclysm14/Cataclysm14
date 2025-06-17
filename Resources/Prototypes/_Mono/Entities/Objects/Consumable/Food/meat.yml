@@ -6,7 +6,8 @@
   components:
   - type: Sprite
     sprite: _Mono/Objects/Consumable/Food/meat.rsi
-    state: bird-resomi
+    layers:
+    - state: bird-resomi
   - type: SolutionContainerManager
     solutions:
       food:
@@ -34,7 +35,8 @@
   components:
   - type: Sprite
     sprite: _NF/Objects/Consumable/Food/meat.rsi
-    state: chicken-battered
+    layers:
+    - state: chicken-battered
   - type: DeepFrySpawn
     cycles: 2
     output: FoodMeatResomiFried
@@ -51,8 +53,12 @@
   description: A perfectly cooked resomi steak. Surprisingly tender.
   components:
   - type: Sprite
-    sprite: _Mono/Objects/Consumable/Food/meat.rsi
-    state: resomi-cooked
+    layers:
+    - state: resomi-cooked
+  - type: FoodSequenceElement
+    entries:
+      Burger: MeatResomi
+      Taco: MeatResomi
   - type: Tag
     tags:
       - Meat
@@ -79,11 +85,14 @@
   components:
   - type: Sprite
     sprite: _Mono/Objects/Consumable/Food/meat.rsi
-    state: resomi-fried
-  - type: Tag
-    tags:
-      - Cooked
-      - Meat
+    layers:
+    - state: resomi-fried
+      map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: RandomSprite
+    available:
+      - enum.DamageStateVisualLayers.Base:
+          resomi-fried: ""
+          resomi2-fried: ""
   - type: SolutionContainerManager
     solutions:
       food:
@@ -92,6 +101,10 @@
           Quantity: 8
         - ReagentId: Protein
           Quantity: 5
+  - type: FoodSequenceElement
+    entries:
+      Burger: MeatFriedResomi
+      Taco: MeatFriedResomi
   - type: FlavorProfile
     flavors:
       - oily
@@ -105,8 +118,8 @@
   description: A thin slice of raw resomi meat, ready for breading or frying.
   components:
   - type: Sprite
-    sprite: _Mono/Objects/Consumable/Food/meat.rsi
-    state: resomi-cutlet
+    layers:
+    - state: resomi-cutlet
   - type: Tag
     tags:
       - Raw
@@ -131,8 +144,8 @@
   description: A cooked slice of resomi meat, golden and juicy.
   components:
   - type: Sprite
-    sprite: _Mono/Objects/Consumable/Food/meat.rsi
-    state: resomi-cutlet-cooked
+    layers:
+    - state: resomi-cutlet-cooked
   - type: Tag
     tags:
       - Cooked
@@ -164,7 +177,8 @@
   components:
   - type: Sprite
     sprite: _Mono/Objects/Consumable/Food/meat.rsi
-    state: resomi-bucket
+    layers:
+    - state: resomi-bucket
   - type: FlavorProfile
     flavors:
       - cooked
@@ -196,7 +210,8 @@
   components:
   - type: Sprite
     sprite: _Mono/Objects/Consumable/Food/meat.rsi
-    state: chicken-bucket
+    layers:
+    - state: chicken-bucket
   - type: FlavorProfile
     flavors:
       - cooked
