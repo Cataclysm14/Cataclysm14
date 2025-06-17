@@ -171,8 +171,8 @@
     autoRecharge: true
     autoRechargeRate: 81600
   - type: SpaceArtillery
-    powerChargeRate: 0
-    powerUsePassive: 0
+    powerChargeRate: 81600
+    powerUsePassive: 25000
     powerUseActive: 0
   - type: Actions
   - type: ProjectileBatteryAmmoProvider
