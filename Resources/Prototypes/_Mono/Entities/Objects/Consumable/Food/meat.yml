@@ -1,0 +1,167 @@
+- type: entity
+  name: raw resomi meat
+  parent: FoodMeatRawBase
+  id: FoodMeatResomi
+  description: A slab of raw resomi. Remember to wash your hands!
+  components:
+  - type: Sprite
+    state: bird
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 12
+        - ReagentId: Fat
+          Quantity: 6
+  - type: InternalTemperature
+    conductivity: 0.41
+  - type: Construction
+    graph: ResomiSteak
+    node: start
+    defaultTarget: cooked resomi
+
+- type: entity
+  name: breaded resomi
+  parent: FoodMeatResomi
+  id: FoodMeatResomiBattered
+  description: A resomi fillet dredged in a gloopy flour and egg mixture.
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Consumable/Food/meat.rsi
+    state: chicken-battered
+  - type: DeepFrySpawn
+    cycles: 2
+    output: FoodMeatResomiFried
+
+- type: entity
+  name: cooked resomi steak
+  parent: FoodMeatResomi
+  id: FoodMeatResomiSteak
+  description: A perfectly cooked resomi steak. Surprisingly tender.
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi
+    state: bird-cooked
+  - type: Tag
+    tags:
+      - Meat
+      - Steak
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 6
+
+- type: entity
+  name: fried resomi
+  parent: FoodMeatResomiBattered
+  id: FoodMeatResomiFried
+  description: A crispy fried resomi fillet. Tastes like space chicken.
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi
+    state: chicken-fried
+  - type: Tag
+    tags:
+      - Cooked
+      - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Protein
+          Quantity: 5
+
+- type: entity
+  name: raw resomi cutlet
+  parent: FoodMeatResomi
+  id: FoodMeatResomiCutlet
+  description: A thin slice of raw resomi meat, ready for breading or frying.
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi
+    state: cutlet
+  - type: Tag
+    tags:
+      - Meat
+      - Cutlet
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 4
+        - ReagentId: Fat
+          Quantity: 2
+  - type: Construction
+    graph: ResomiCutlet
+    node: start
+    defaultTarget: resomi cutlet cooked
+
+- type: entity
+  name: cooked resomi cutlet
+  parent: FoodMeatResomiCutlet
+  id: FoodMeatResomiCutletCooked
+  description: A cooked slice of resomi meat, golden and juicy.
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi
+    state: cutlet-cooked
+  - type: Tag
+    tags:
+      - Meat
+      - Cutlet
+      - Cooked
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Protein
+          Quantity: 3
+  - type: Construction
+    graph: ResomiCutlet
+    node: cutlet cooked
+    defaultTarget: resomi cutlet cooked
+
+- type: entity
+  name: bucket of fried resomi
+  parent: FoodMeatBase
+  id: FoodMeatResomiBucket
+  description: A bucket filled with several crispy fried resomi pieces.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - oily
+      - salty
+      - resomi
+  - type: Sprite
+    sprite: _Mono/Objects/Consumable/Food/meat.rsi
+    state: resomi-fried
+  - type: Item
+  - type: Food
+    trash:
+      - BucketPaper
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 40
+        - ReagentId: Protein
+          Quantity: 25
+  - type: Tag
+    tags:
+      - Cooked
+      - Meat
+  - type: Construction
+    graph: ResomiBucket
+    node: bucket
+    defaultTarget: bucket of fried resomi
