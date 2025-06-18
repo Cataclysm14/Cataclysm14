@@ -150,7 +150,8 @@ namespace Content.Shared.Damage
         ///     The damage changed event is used by other systems, such as damage thresholds.
         /// </remarks>
         public void DamageChanged(EntityUid uid, DamageableComponent component, DamageSpecifier? damageDelta = null,
-            bool interruptsDoAfters = true, EntityUid? origin = null, bool? canSever = null) // Shitmed Change
+            bool interruptsDoAfters = true, EntityUid? origin = null, bool? canSever = null,
+                        float armorPenetration = 0f) // Shitmed Change, Goobstation Partial Piercing
         {
             component.Damage.GetDamagePerGroup(_prototypeManager, component.DamagePerGroup);
             component.TotalDamage = component.Damage.GetTotal();
@@ -199,7 +200,7 @@ namespace Content.Shared.Damage
                 return null;
 
             // Shitmed Change Start
-            var partDamage = new TryChangePartDamageEvent(damage, origin, targetPart, ignoreResistances, canSever ?? true, canEvade ?? false, partMultiplier ?? 1.00f);
+            var partDamage = new TryChangePartDamageEvent(damage, origin, targetPart, ignoreResistances, armorPenetration, canSever ?? true, canEvade ?? false, partMultiplier ?? 1.00f); // Goobstation Partial Piercing
             RaiseLocalEvent(uid.Value, ref partDamage);
 
             if (partDamage.Evaded || partDamage.Cancelled)
@@ -219,7 +220,7 @@ namespace Content.Shared.Damage
                     damage = DamageSpecifier.ApplyModifierSet(damage, modifierSet);
                 }
 
-                var ev = new DamageModifyEvent(damage, origin, targetPart); // Shitmed Change
+                var ev = new DamageModifyEvent(damage, origin, targetPart, armorPenetration); // Shitmed Change
                 RaiseLocalEvent(uid.Value, ev);
                 damage = ev.Damage;
 
@@ -413,6 +414,7 @@ namespace Content.Shared.Damage
         EntityUid? Origin = null,
         TargetBodyPart? TargetPart = null,
         bool IgnoreResistances = false,
+        float ArmorPenetration = 0f,
         bool CanSever = true,
         bool CanEvade = false,
         float PartMultiplier = 1.00f,
@@ -435,13 +437,15 @@ namespace Content.Shared.Damage
         public DamageSpecifier Damage;
         public EntityUid? Origin;
         public readonly TargetBodyPart? TargetPart; // Shitmed Change
+        public float ArmorPenetration; // Goobstation
 
-        public DamageModifyEvent(DamageSpecifier damage, EntityUid? origin = null, TargetBodyPart? targetPart = null) // Shitmed Change
+        public DamageModifyEvent(DamageSpecifier damage, EntityUid? origin = null, TargetBodyPart? targetPart = null, float armorPenetration = 0) // Shitmed Change
         {
             OriginalDamage = damage;
             Damage = damage;
             Origin = origin;
             TargetPart = targetPart; // Shitmed Change
+            ArmorPenetration = armorPenetration; // Goobstation
         }
     }
 

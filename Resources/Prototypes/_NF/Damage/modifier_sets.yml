@@ -6,6 +6,7 @@
     Piercing: 1.1 # 1.2->1.1
     Poison: 0.75
     Caustic: 0.9
+  ignoreArmorPierceFlags: All # Goobstation
 
 - type: damageModifierSet
   id: MobHostileDamageModifierSetLow

@@ -83,3 +83,4 @@
     Bloodloss: 0.9
     Poison: 0.0 # Yea, heroin is heaps good for ya
     Radiation : 0.7 # Engie yowies need some help against anti-rads
+  ignoreArmorPierceFlags: All # Goobstation

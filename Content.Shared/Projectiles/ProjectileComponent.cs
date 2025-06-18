@@ -85,7 +85,7 @@ public sealed partial class ProjectileComponent : Component
     ///     When a projectile has this threshold set, it will continue to penetrate entities until the damage dealt reaches this threshold.
     /// </summary>
     [DataField]
-    public FixedPoint2 PenetrationThreshold = FixedPoint2.Zero;
+    public FixedPoint2 PenetrationThreshold = 10f;
 
     /// <summary>
     ///     If set, the projectile will not penetrate objects that lack the ability to take these damage types.
@@ -99,6 +99,8 @@ public sealed partial class ProjectileComponent : Component
     [DataField]
     public FixedPoint2 PenetrationAmount = FixedPoint2.Zero;
 
+    [DataField]
+    public float ArmorPenetration;
     /// <summary>
     /// Frontier: Chance for a blind effect bonus to occur (1 = 100%).
     /// </summary>

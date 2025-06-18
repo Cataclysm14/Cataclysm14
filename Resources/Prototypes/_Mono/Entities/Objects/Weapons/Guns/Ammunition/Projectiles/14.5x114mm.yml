@@ -5,12 +5,13 @@
   name: bullet (14.5x114mm)
   components:
   - type: Projectile
+    armorPenetration: 0.5 # Goobstation
     damage:
       types:
-        Piercing: 80
+        Piercing: 75
         Structural: 4000
     penetrationThreshold: 360
     penetrationDamageTypeRequirement:
     - Structural
   - type: StaminaDamageOnCollide
-    damage: 60
+    damage: 115 # Goob edit

@@ -150,7 +150,7 @@ public partial class SharedBodySystem
             if (targetPart == null)
                 return;
 
-            if (!TryChangePartDamage(ent, args.Damage, args.IgnoreResistances, args.CanSever, args.CanEvade, args.PartMultiplier, targetPart.Value)
+            if (!TryChangePartDamage(ent, args.Damage, args.IgnoreResistances, args.ArmorPenetration, args.CanSever, args.CanEvade, args.PartMultiplier, targetPart.Value, out var evaded)
                 && args.CanEvade)
             {
                 if (_net.IsServer)
@@ -177,7 +177,8 @@ public partial class SharedBodySystem
             _inventory.RelayEvent((partEnt.Comp.Body.Value, inventory), ref args);
 
         if (Prototypes.TryIndex<DamageModifierSetPrototype>("PartDamage", out var partModifierSet))
-            args.Damage = DamageSpecifier.ApplyModifierSet(args.Damage, partModifierSet);
+            args.Damage = DamageSpecifier.ApplyModifierSet(args.Damage,
+                DamageSpecifier.PenetrateArmor(partModifierSet, args.ArmorPenetration));
 
         args.Damage *= GetPartDamageModifier(partEnt.Comp.PartType);
     }
@@ -185,6 +186,7 @@ public partial class SharedBodySystem
     private bool TryChangePartDamage(EntityUid entity,
         DamageSpecifier damage,
         bool ignoreResistances,
+        float armorPenetration,
         bool canSever,
         bool canEvade,
         float partMultiplier,
@@ -203,7 +205,7 @@ public partial class SharedBodySystem
                 if (canEvade && TryEvadeDamage(entity, GetEvadeChance(targetType)))
                     continue;
 
-                var damageResult = _damageable.TryChangeDamage(part.FirstOrDefault().Id, damage * partMultiplier, ignoreResistances, canSever: canSever);
+                var damageResult = _damageable.TryChangeDamage(part.FirstOrDefault().Id, damage * partMultiplier, ignoreResistances, canSever: canSever, armorPenetration: armorPenetration);
                 if (damageResult != null && damageResult.GetTotal() != 0)
                     landed = true;
             }
