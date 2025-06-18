@@ -16974,7 +16974,7 @@ entities:
     - type: Transform
       pos: -44.920177,-3.377149
       parent: 60
-- proto: BoxBeanbag
+- proto: AmmoBox12_gaugeBeanbag
   entities:
   - uid: 2177
     components:
@@ -17218,7 +17218,7 @@ entities:
     - type: Transform
       pos: 0.43422604,17.607504
       parent: 60
-- proto: BoxMagazinePistol
+- proto: BoxMagazine9x19mmFMJ
   entities:
   - uid: 6546
     components:
@@ -17246,7 +17246,7 @@ entities:
     - type: Transform
       pos: 38.117302,-32.42313
       parent: 60
-- proto: BoxShotgunFlare
+- proto: AmmoBox12_gaugeFlare
   entities:
   - uid: 2178
     components:
@@ -112005,7 +112005,7 @@ entities:
     - type: Transform
       pos: 4.5,-44.5
       parent: 60
-- proto: MagazineLightRifle
+- proto: Magazine7.62x39mmFMJ
   entities:
   - uid: 1863
     components:
@@ -112017,7 +112017,7 @@ entities:
     - type: Transform
       pos: -24.246445,1.6150734
       parent: 60
-- proto: MagazinePistolSubMachineGunTopMounted
+- proto: Magazine4.6x30mmSubMachineGunTopMountedFMJ
   entities:
   - uid: 1902
     components:
@@ -114719,7 +114719,7 @@ entities:
     - type: Transform
       pos: 54.5,-7.5
       parent: 60
-- proto: PosterLegit12Gauge
+- proto: PosterLegit12_gauge
   entities:
   - uid: 2172
     components:

@@ -12329,7 +12329,7 @@ entities:
     - type: Transform
       pos: -33.393288,32.64253
       parent: 2
-- proto: BoxShotgunFlare
+- proto: AmmoBox12_gaugeFlare
   entities:
   - uid: 3447
     components:
@@ -35587,7 +35587,7 @@ entities:
     - type: Transform
       pos: -9.5,24.5
       parent: 2
-- proto: CartridgePistolPractice
+- proto: Cartridge9x19mmPractice
   entities:
   - uid: 17219
     components:
@@ -77354,14 +77354,14 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -63.5,-3.5
       parent: 2
-- proto: MagazinePistolSubMachineGunPractice
+- proto: Magazine9x19mmSubMachineGunPractice
   entities:
   - uid: 17217
     components:
     - type: Transform
       pos: 29.182188,37.520115
       parent: 2
-- proto: MagazinePistolSubMachineGunTopMounted
+- proto: Magazine4.6x30mmSubMachineGunTopMountedFMJ
   entities:
   - uid: 2542
     components:
@@ -79442,7 +79442,7 @@ entities:
     - type: Transform
       pos: 21.5,-3.5
       parent: 2
-- proto: PosterLegit12Gauge
+- proto: PosterLegit12_gauge
   entities:
   - uid: 13794
     components:

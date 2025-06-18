@@ -42,7 +42,7 @@
   id: USSPCommissarGear
   equipment:
     pocket1: WeaponRevolverMatebaAP
-    pocket2: SpeedLoaderMagnumAP
+    pocket2: SpeedLoader45_magnumAP
   storage:
     back:
     - RadioHandheldNF

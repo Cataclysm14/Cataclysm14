@@ -1,0 +1,68 @@
+- type: entity
+  id: Bullet4.6x30mm
+  name: bullet (4.6x30mm FMJ)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 14
+
+- type: entity
+  id: Bullet4.6x30mmPractice
+  name: bullet (4.6x30mm practice)
+  parent: BaseBulletPractice
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 2
+
+- type: entity
+  id: Bullet4.6x30mmRubber
+  name: bullet (4.6x30mm rubber)
+  parent: BaseBulletRubber
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 3
+
+- type: entity
+  id: Bullet4.6x30mmIncendiary
+  parent: BaseBulletIncendiary
+  name: bullet (4.6x30mm incendiary)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 2
+        Heat: 12
+
+- type: entity
+  id: Bullet4.6x30mmUranium
+  parent: BaseBulletUranium
+  name: bullet (4.6x30mm uranium)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Radiation: 6
+        Piercing: 8
+
+# Upstream
+- type: entity
+  id: Bullet4.6x30mmEmp
+  name: bullet (4.6x30mm emp)
+  parent: BaseBulletEmp
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Shock: 0

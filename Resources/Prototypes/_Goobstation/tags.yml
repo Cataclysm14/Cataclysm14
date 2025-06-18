@@ -1,14 +1,14 @@
 - type: Tag
-  id: MagazineLightRifleSubsonic
+  id: Magazine7.62x39mmSubsonic
 
 - type: Tag
-  id: MagazineHighCaliber
+  id: Magazine12.7x99mm
 
 - type: Tag
-  id: CartridgeLightRifleSubsonic
+  id: Cartridge7.62x39mmSubsonic
 
 - type: Tag
-  id: CartridgeHighCaliber
+  id: Cartridge12.7x99mm
 
 # Mechs
 
@@ -114,6 +114,27 @@
 
 - type: Tag
   id: Gygax
+
+- type: Tag
+  id: LaserLMG
+
+- type: Tag
+  id: LaserLMGBackpack
+
+- type: Tag
+  id: MilitaryPowerCell
+
+- type: Tag
+  id: MilitaryPowerCellLMG
+
+- type: Tag
+  id: MilitaryPowerCellRevolver
+
+- type: Tag
+  id: MilitaryPowerCellSniper
+
+- type: Tag
+  id: MilitaryPowerCellSMG
 
 - type: Tag
   id: ModsuitPart

@@ -23062,7 +23062,7 @@ entities:
     - type: Transform
       pos: -18.52302,-24.35315
       parent: 5350
-- proto: BoxBeanbag
+- proto: AmmoBox12_gaugeBeanbag
   entities:
   - uid: 3114
     components:
@@ -23374,7 +23374,7 @@ entities:
     - type: Transform
       pos: 47.486122,-24.404968
       parent: 5350
-- proto: BoxLethalshot
+- proto: AmmoBox12_gaugeBuckshot
   entities:
   - uid: 3056
     components:
@@ -23419,7 +23419,7 @@ entities:
     - type: Transform
       pos: -45.725807,-31.611805
       parent: 5350
-- proto: BoxMagazinePistol
+- proto: BoxMagazine9x19mmFMJ
   entities:
   - uid: 1376
     components:
@@ -23443,7 +23443,7 @@ entities:
     - type: Transform
       pos: -46.819557,-31.22118
       parent: 5350
-- proto: BoxShotgunPractice
+- proto: AmmoBox12_gaugePractice
   entities:
   - uid: 7275
     components:
@@ -131971,14 +131971,14 @@ entities:
     - type: Transform
       pos: -44.5,-21.5
       parent: 5350
-- proto: MagazineBoxMagnumPractice
+- proto: AmmoBox45_magnumPractice
   entities:
   - uid: 22264
     components:
     - type: Transform
       pos: -15.199577,42.62874
       parent: 5350
-- proto: MagazineBoxPistolPractice
+- proto: AmmoBox9x19mmPractice
   entities:
   - uid: 13619
     components:
@@ -131990,14 +131990,14 @@ entities:
     - type: Transform
       pos: -15.574577,42.476746
       parent: 5350
-- proto: MagazineBoxRiflePractice
+- proto: AmmoBox5.56x45mmPractice
   entities:
   - uid: 22344
     components:
     - type: Transform
       pos: -15.720936,42.71257
       parent: 5350
-- proto: MagazinePistolPractice
+- proto: Magazine9x19mmPistolPractice
   entities:
   - uid: 22240
     components:
@@ -132009,7 +132009,7 @@ entities:
     - type: Transform
       pos: -15.689243,42.42685
       parent: 5350
-- proto: MagazinePistolSubMachineGun
+- proto: Magazine9x19mmSubMachineGunFMJ
   entities:
   - uid: 14878
     components:
@@ -132025,7 +132025,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: MagazinePistolSubMachineGunPractice
+- proto: Magazine9x19mmSubMachineGunPractice
   entities:
   - uid: 22238
     components:
@@ -132037,7 +132037,7 @@ entities:
     - type: Transform
       pos: -15.387077,43.488113
       parent: 5350
-- proto: MagazinePistolSubMachineGunTopMounted
+- proto: Magazine4.6x30mmSubMachineGunTopMountedFMJ
   entities:
   - uid: 10438
     components:
@@ -132053,7 +132053,7 @@ entities:
       parent: 5350
     - type: BallisticAmmoProvider
       unspawnedCount: 30
-- proto: MagazineRifle
+- proto: Magazine5.56x45mmFMJ
   entities:
   - uid: 28208
     components:
@@ -132069,7 +132069,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: MagazineRiflePractice
+- proto: Magazine5.56x45mmPractice
   entities:
   - uid: 22345
     components:
@@ -146601,7 +146601,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: ShellShotgunBeanbag
+- proto: ShellShotgun12_gaugeBeanbag
   entities:
   - uid: 9472
     components:
@@ -152594,7 +152594,7 @@ entities:
     - type: Transform
       pos: -2.5,38.5
       parent: 5350
-- proto: SpeedLoaderMagnumPractice
+- proto: SpeedLoader45_magnumPractice
   entities:
   - uid: 10328
     components:

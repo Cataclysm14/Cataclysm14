@@ -712,7 +712,7 @@
     energy: 0.5
 
 - type: entity
-  id: BulletGrenadeBaton
+  id: Bullet40mmGrenadeBaton
   name: baton grenade
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -732,7 +732,7 @@
     damage: 80
 
 - type: entity
-  id: BulletGrenadeBlast
+  id: Bullet40mmGrenadeThermobaric
   name: blast grenade
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
@@ -749,7 +749,7 @@
     maxIntensity: 10
 
 - type: entity
-  id: BulletGrenadeFlash
+  id: Bullet40mmGrenadeFlash
   name: flash grenade
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
@@ -768,7 +768,7 @@
 
 # This is supposed to spawn shrapnel and stuff so uhh... TODO?
 - type: entity
-  id: BulletGrenadeFrag
+  id: Bullet40mmGrenadeFragmentation
   name: frag grenade
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
@@ -785,7 +785,7 @@
     maxIntensity: 10
 
 - type: entity
-  id: BulletGrenadeEMP
+  id: Bullet40mmGrenadeEMP
   name: EMP rocket
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]

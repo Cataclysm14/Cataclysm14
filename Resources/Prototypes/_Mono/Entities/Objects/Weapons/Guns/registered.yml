@@ -6,9 +6,9 @@
   parent:
   - BaseC2ContrabandMercenary
   - WeaponPistolViper
-  name: PMC Viper
+  name: PMC Viper (9x19mm)
   id: WeaponPistolViperPMC
-  description: A Viper that has been properly registered for private security and mercenary use. A small underpowered gun retrofitted with a fully automatic receiver. It is favored by Syndicate agents for being easily concealable. Uses .35 auto ammo.
+  description: A Viper that has been properly registered for private security and mercenary use. A small underpowered gun retrofitted with a fully automatic receiver. It is favored by Syndicate agents for being easily concealable. Uses 9x19mm ammo.
   components:
   - type: StaticPrice
     price: 200
@@ -27,9 +27,9 @@
   parent:
   - BaseC2ContrabandMercenary
   - WeaponSubMachineGunWt550
-  name: PMC WT-550
+  name: PMC WT-550 (4.6x30mm)
   id: WeaponSubMachineGunWt550PMC
-  description: A WT-550 that has been properly registered for private security and mercenary use. A compact personal defense sub-machine gun. Lightweight build allows for ease of use without wielding a grip. Uses .35 auto ammo.'
+  description: A WT-550 that has been properly registered for private security and mercenary use. A compact personal defense sub-machine gun. Lightweight build allows for ease of use without wielding a grip. Uses 4.6x30mm ammo.'
   components:
   - type: StaticPrice
     price: 2200
@@ -38,9 +38,9 @@
   parent:
   - BaseC2ContrabandMercenary
   - WeaponSubMachineGunDrozd
-  name: PMC Drozd
+  name: PMC Drozd (.45 ACP)
   id: WeaponSubMachineGunDrozdPMC
-  description: A Drozd that has been properly registered for private security and mercenary use. An old and cheap fully automatic Heavy SMG. Beloved by Mercenaries for it's affordability. Uses .35 auto ammo.
+  description: A Drozd that has been properly registered for private security and mercenary use. An old and cheap fully automatic Heavy SMG. Beloved by Mercenaries for it's affordability. Uses 9x19mm ammo.
   components:
   - type: StaticPrice
     price: 1350
@@ -49,9 +49,9 @@
   parent:
   - BaseC2ContrabandMercenary
   - WeaponSubMachineGunC20r
-  name: PMC C-20r
+  name: PMC C-20r (9x19mm)
   id: WeaponSubMachineGunC20rPMC
-  description: A C-20r that has been properly registered for private security and mercenary use. A fast firing sub-machine gun that is often used by the infamous rogue insurgency. Uses .35 auto ammo.
+  description: A C-20r that has been properly registered for private security and mercenary use. A fast firing sub-machine gun that is often used by the infamous rogue insurgency. Uses 9x19mm ammo.
   components:
   - type: PirateBountyItem
     id: StandardTSFLongarm
@@ -64,9 +64,9 @@
   parent:
   - BaseC2ContrabandMercenary
   - WeaponRifleLecter
-  name: PMC Lecter
+  name: PMC Lecter (5.56x45mm)
   id: WeaponRifleLecterPMC
-  description: A Lecter that has been properly registered for private security and mercenary use. A high end military grade assault rifle. Is a common primary carried by Trans-Solar Federation Marines due to it's high accuracy and cheap manufacturing costs. Uses .20 rifle ammo.
+  description: A Lecter that has been properly registered for private security and mercenary use. A high end military grade assault rifle. Is a common primary carried by Trans-Solar Federation Marines due to it's high accuracy and cheap manufacturing costs. Uses 5.56x45mm ammo.
   components:
   - type: StaticPrice
     price: 1500
@@ -77,9 +77,9 @@
   parent:
   - BaseC2ContrabandMercenary
   - WeaponShotgunKammerer
-  name: PMC Kammerer
+  name: PMC Kammerer (12 gauge)
   id: WeaponShotgunKammererPMC
-  description: A Kammerer that has been properly registered for private security and mercenary use. An old yet faithfully designed shotgun. Is a favorite among Mercenaries on many worlds. Uses .50 shotgun shells.
+  description: A Kammerer that has been properly registered for private security and mercenary use. An old yet faithfully designed shotgun. Is a favorite among Mercenaries on many worlds. Uses 12 gauge shotgun shells.
   components:
   - type: StaticPrice
     price: 800

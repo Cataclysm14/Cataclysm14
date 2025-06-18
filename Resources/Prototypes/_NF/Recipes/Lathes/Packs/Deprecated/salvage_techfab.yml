@@ -99,10 +99,4 @@
 - type: latheRecipePack
   id: NFSalvageTechfabDeprecatedEmag
   recipes:
-    - ShellTranquilizer
-    - MagazineBoxPistol
-    - MagazineBoxMagnum
-    - MagazineBoxRifle
-    - MagazineBoxLightRifle
-#       - GrenadeBlast
     - ClothingHeadHelmetCosmonaut

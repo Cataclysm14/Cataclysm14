@@ -1151,7 +1151,7 @@
     contents:
     - id: ClothingHeadHatPwig
     - id: Musket
-    - id: CartridgeAntiMateriel
+    - id: Cartridge14.5x114mm
       amount: 2
     - id: PaperMailNTMusket
 
@@ -1224,7 +1224,7 @@
   components:
   - type: Mail
     contents:
-    - id: Kardashev-MosinNonlethal
+    - id: WeaponSniperMosinNonlethal
     - id: ClothingHeadHatUshanka
     - id: SyndicateWhistle
     - id: PaperMailNTConscript

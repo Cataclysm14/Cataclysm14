@@ -1205,7 +1205,7 @@ entities:
     - type: Transform
       pos: 2.5,-9.5
       parent: 2
-- proto: BoxBeanbag
+- proto: AmmoBox12_gaugeBeanbag
   entities:
   - uid: 533
     components:

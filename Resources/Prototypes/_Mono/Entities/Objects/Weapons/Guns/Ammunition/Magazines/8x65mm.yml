@@ -1,0 +1,61 @@
+- type: entity
+  id: BaseMagazine8x65mm
+  name: MR-8C magazine (8x65mm SKR)
+  parent: [BaseItem, RecyclableItemSteelTiny] # Frontier: added RecyclableItemSteelTiny
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Magazine8x65mmSKR
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge8x65mmSKR
+    capacity: 20
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/8x65mm/8x65mm.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: Magazine8x65mmEmpty
+  name: MR-8C magazine (8x65mm SKR any)
+  suffix: empty
+  parent: BaseMagazine8x65mm
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: Magazine8x65mmSKR
+  name: MR-8C magazine (8x65mm SKR)
+  parent: BaseMagazine8x65mm
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge8x65mmSKR
+  - type: Sprite
+    layers:
+    - state: red
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

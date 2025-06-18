@@ -7,7 +7,7 @@
   - type: StorageFill
     contents:
       - id: WeaponLauncherChinaLakeEmp
-      - id: GrenadeEMP
+      - id: 40mmGrenadeEMP
         amount: 8
 
 - type: entity
@@ -46,6 +46,7 @@
       - id: Drill
       - id: Hemostat
       - id: Retractor
+      - id: NitrousOxideTankFilled # Mono
 
 - type: entity
   parent: ClothingBackpackDuffelNfsdBrown
@@ -67,7 +68,7 @@
   - type: StorageFill
     contents:
       - id: WeaponLauncherNfsdLake
-      - id: GrenadeEMP
+      - id: 40mmGrenadeEMP
         amount: 12
 
 # Not a duffelbag, but stored with other uplink-related backpacks

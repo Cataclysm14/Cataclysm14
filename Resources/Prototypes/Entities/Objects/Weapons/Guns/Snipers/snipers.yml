@@ -28,10 +28,10 @@
     projectileSpeed: 65 # Mono
   - type: BallisticAmmoProvider
     capacity: 10
-    proto: CartridgeLightRifle
+    proto: Cartridge7.62x39mmFMJ
     whitelist:
       tags:
-      - CartridgeLightRifle
+      - Cartridge7.62x39mmFMJ
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -43,10 +43,10 @@
       nfsd: 0.2
 
 - type: entity
-  name: Kardashev-Mosin
+  name: Kardashev-Mosin (7.62x54mmR)
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseGunMelee, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband, added BaseGunMelee
   id: WeaponSniperMosin
-  description: A weapon for hunting, or endless trench warfare. Uses .30 rifle ammo. Equipped with bayonet. # Frontier: bayonet
+  description: A weapon for hunting, or endless trench warfare. Uses 7.62x54mmR ammo. Equipped with bayonet. # Frontier: bayonet
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi
@@ -56,17 +56,23 @@
     pvsIncrease: 0.15 # Frontier
   - type: AltFireMelee # Frontier
     attackType: Light # Frontier
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - Cartridge7.62x54mmRFMJ
+    capacity: 5
+    proto: Cartridge7.62x54mmRFMJ
 
 - type: entity
-  name: Hristov
+  name: Hristov (14.5x114mm)
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
   id: WeaponSniperHristov
-  description: A portable anti-materiel rifle. Fires armor piercing 14.5mm shells. Uses .60 anti-materiel ammo.
+  description: A portable anti-material rifle. Fires high velocity 14.5mm shells. Uses 14.5x114mm ammo.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Snipers/heavy_sniper.rsi
+    sprite: Objects/Weapons/Guns/Snipers/hristov.rsi
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Snipers/heavy_sniper.rsi
+    sprite: Objects/Weapons/Guns/Snipers/hristov.rsi
   - type: GunRequiresWield
   - type: Gun
     fireRate: 0.4
@@ -78,9 +84,9 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - CartridgeAntiMateriel
+      - Cartridge14.5x114mm
     capacity: 5
-    proto: CartridgeAntiMateriel
+    proto: Cartridge14.5x114mm
   - type: SpeedModifiedOnWield
     walkModifier: 0.25
     sprintModifier: 0.25
@@ -95,7 +101,7 @@
   name: musket
   parent: [ BaseWeaponSniper, BaseGunWieldable, BaseGunMelee, BaseC2Contraband ] # Frontier: BaseMinorContraband<BaseC2Contraband, add BaseGunMelee
   id: Musket
-  description: This should've been in a museum long before you were born. Uses .60 anti-materiel ammo.
+  description: This should've been in a museum long before you were born. Uses 14.5x114mm ammo.
   components:
   - type: Sharp
   - type: Item
@@ -116,9 +122,9 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - CartridgeAntiMateriel
+      - Cartridge14.5x114mm
     capacity: 1
-    proto: CartridgeAntiMateriel
+    proto: Cartridge14.5x114mm
   - type: MeleeWeapon
     wideAnimationRotation: -135
     damage:
@@ -136,7 +142,7 @@
   name: flintlock pistol
   parent: [BaseWeaponSniper, BaseC3PirateContraband] # Frontier: BaseMinorContraband<BaseC3PirateContraband
   id: WeaponPistolFlintlock
-  description: A pirate's companion. Yarrr! Uses .60 anti-materiel ammo. An illegal weapon often used by pirates.
+  description: A pirate's companion. Yarrr! Uses 14.5x114mm ammo. An illegal weapon often used by pirates.
   components:
   - type: Gun
     minAngle: 0
@@ -155,9 +161,9 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - CartridgeAntiMateriel
+        - Cartridge14.5x114mm
     capacity: 1
-    proto: CartridgeAntiMateriel
+    proto: Cartridge14.5x114mm
   - type: StaticPrice
     price: 0
 

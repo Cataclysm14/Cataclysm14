@@ -12045,7 +12045,7 @@ entities:
     - type: Transform
       pos: 3.5,-28.5
       parent: 4812
-- proto: BoxBeanbag
+- proto: AmmoBox12_gaugeBeanbag
   entities:
   - uid: 1656
     components:
@@ -63316,7 +63316,7 @@ entities:
     - type: Transform
       pos: 4.5,-40.5
       parent: 4812
-- proto: MagazinePistolSubMachineGunTopMounted
+- proto: Magazine4.6x30mmSubMachineGunTopMountedFMJ
   entities:
   - uid: 2914
     components:

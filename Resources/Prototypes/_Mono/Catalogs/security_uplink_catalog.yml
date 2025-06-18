@@ -29,6 +29,21 @@
       - SecurityUplink
 
 - type: listing
+  id: UplinkSecurityAshstorm
+  name:  uplink-security-ashstorm-name
+  description: uplink-security-ashstorm-desc
+  productEntity: ClothingBackpackDuffelAshstormBundle
+  cost:
+    FederationMilitaryCredit: 25
+  categories:
+    - UplinkSecurityWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
   id: UplinkSecuritySurgeryDuffel
   name:  uplink-security-surgery-duffel-name
   description: uplink-security-surgery-duffel-desc
@@ -85,7 +100,7 @@
   id: UplinkSecurityMagazineSubsonic
   name:  uplink-subsonic-mag-name
   description: uplink-subsonic-mag-desc
-  productEntity: MagazineLightRifleSubsonic
+  productEntity: Magazine7.62x39mmSubsonic
   cost:
     FederationMilitaryCredit: 1
   categories:
@@ -100,7 +115,7 @@
   id: UplinkSecurityBoxSubsonic
   name:  uplink-subsonic-box-name
   description: uplink-subsonic-box-desc
-  productEntity: MagazineBoxLightRifleSubsonic
+  productEntity: AmmoBox7.62x39mmSubsonic
   cost:
     FederationMilitaryCredit: 3
   categories:

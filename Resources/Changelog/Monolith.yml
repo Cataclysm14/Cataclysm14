@@ -4207,3 +4207,213 @@ Entries:
   id: 503
   time: '2025-06-14T11:10:35.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/821
+- author: BlueHNT
+  changes:
+    - type: Tweak
+      message: Spyglass tweak (Added second APC, Added Sink, Added Bedroll in locker)
+  id: 504
+  time: '2025-06-14T17:32:39.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/823
+- author: BlueHNT
+  changes:
+    - type: Add
+      message: Added Emergency Responder
+    - type: Tweak
+      message: Changed requirements for Director of Care
+  id: 505
+  time: '2025-06-14T17:33:44.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/787
+- author: Junerisms
+  changes:
+    - type: Add
+      message: >-
+        Added the Jitterbug. A cheap yet purely botanical shuttle. Farm away
+        farmers.
+  id: 506
+  time: '2025-06-14T18:27:33.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/597
+- author: Redrover1760
+  changes:
+    - type: Add
+      message: Jukebox Flatpack to Flatpackvend
+  id: 507
+  time: '2025-06-15T01:43:09.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/824
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Bodies in cryo get deleted after 6 hours instead of 3.
+  id: 508
+  time: '2025-06-15T01:45:13.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/825
+- author: RikuTheKiller
+  changes:
+    - type: Tweak
+      message: Missiles track significantly better now.
+  id: 509
+  time: '2025-06-15T01:47:25.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/826
+- author: Ark
+  changes:
+    - type: Fix
+      message: Replacement gunnery servers should properly sync/refresh now.
+  id: 510
+  time: '2025-06-15T01:56:35.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/828
+- author: Ark
+  changes:
+    - type: Fix
+      message: Camelot High Command jobs should now have air alarm access.
+  id: 511
+  time: '2025-06-15T03:46:22.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/830
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Failed exped cooldown 20 minutes->7.5 minutes.
+  id: 512
+  time: '2025-06-15T04:06:19.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/831
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Gauze and bloodpacks now more affordable
+  id: 513
+  time: '2025-06-15T08:36:36.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/832
+- author: Ark
+  changes:
+    - type: Fix
+      message: Compatibility Mode should no longer crash your client.
+  id: 514
+  time: '2025-06-15T08:37:19.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/833
+- author: RikuTheKiller
+  changes:
+    - type: Fix
+      message: Compat mode doesn't crash AND the consoles aren't 1 pixel wide.
+  id: 515
+  time: '2025-06-15T12:11:23.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/835
+- author: core-mene
+  changes:
+    - type: Tweak
+      message: Ammo damages tweaked.
+    - type: Add
+      message: New weapon calibers.
+    - type: Fix
+      message: Missing magazines added. (Uranium 12 gauge drums, etc)
+    - type: Remove
+      message: No more wizcode for ammo types.
+  id: 516
+  time: '2025-06-16T00:40:18.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/764
+- author: RikuTheKiller
+  changes:
+    - type: Tweak
+      message: TARNYX EMPs are weaker now.
+    - type: Fix
+      message: Weapon guidebook entries are now mostly correct again.
+  id: 517
+  time: '2025-06-16T00:43:51.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/827
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        Framework capable of going on expeditions, if you manage to find a
+        console for it.
+  id: 518
+  time: '2025-06-16T00:44:57.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/840
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Secondary FOB more hidden, camelot and rogue outpost moved appropiately
+  id: 519
+  time: '2025-06-16T00:47:25.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/839
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        Big carp (Sharkminnows) have space animal lungs and a heart with
+        pressure immunity.
+  id: 520
+  time: '2025-06-16T00:50:32.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/838
+- author: Redrover1760
+  changes:
+    - type: Add
+      message: >-
+        Can now print the biosynthetic head to replace missing heads in the
+        biofabricator
+    - type: Fix
+      message: Resomi lag.
+    - type: Add
+      message: Can now stuff diona nymphs in bags similar to the small species.
+  id: 521
+  time: '2025-06-16T02:00:20.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/837
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: N2O tanks added to surgery duffels
+  id: 522
+  time: '2025-06-16T21:09:02.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/846
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Canisters have more 1.5x more volume
+    - type: Tweak
+      message: Gases sell for more
+  id: 523
+  time: '2025-06-16T21:10:54.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/845
+- author: norycS
+  changes:
+    - type: Add
+      message: Added 2 new machine guns Ashstorm and DP-29 for TSFMC and USSP.
+    - type: Tweak
+      message: Added L6 saw to rogue uplink.
+  id: 524
+  time: '2025-06-16T21:13:35.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/841
+- author: BlueHNT
+  changes:
+    - type: Add
+      message: >-
+        Added Roleplay Rule 8, Safe Zone as there was a lot to mention
+        surrounding it.
+    - type: Tweak
+      message: Refactored Conflict Rule 2
+    - type: Tweak
+      message: Refactored Conflict Rule 3
+    - type: Tweak
+      message: Updates rules (Refactor, Stylization, Explaining
+  id: 525
+  time: '2025-06-16T23:28:31.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/836
+- author: Redrover1760
+  changes:
+    - type: Add
+      message: Weapons to security guard loadout.
+    - type: Add
+      message: CL starts with a hybrid energy gun.
+    - type: Fix
+      message: Atreides bundle has the correct magazines
+    - type: Tweak
+      message: Rarer weapons spawn in armories more often in expeds.
+  id: 526
+  time: '2025-06-16T23:49:55.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/847
+- author: BlueHNT
+  changes:
+    - type: Add
+      message: Resomi are now made of Resomi Flesh
+    - type: Add
+      message: Kentucky Fried Resomi is real now
+  id: 527
+  time: '2025-06-17T21:53:28.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/852

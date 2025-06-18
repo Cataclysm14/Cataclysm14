@@ -10811,7 +10811,7 @@ entities:
     - type: Transform
       pos: -2.2278144,-1.5651634
       parent: 2
-- proto: WeaponPistolUniversal
+- proto: WeaponPistolMk32
   entities:
   - uid: 1572
     components:

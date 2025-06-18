@@ -38599,7 +38599,9 @@ entities:
     - type: Transform
       pos: 14.5,10.5
       parent: 1
-- proto: MagazineBoxMagnum
+    - type: Godmode
+      oldDamage: {}
+- proto: AmmoBox45_magnumFMJ
   entities:
   - uid: 5585
     components:
@@ -38619,7 +38621,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: MagazineLightRifle
+- proto: Magazine7.62x39mmFMJ
   entities:
   - uid: 5587
     components:
@@ -38648,7 +38650,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: MagazineLightRifleLowCapacity
+- proto: Magazine7.62x39mmLowCapacityFMJ
   entities:
   - uid: 5581
     components:

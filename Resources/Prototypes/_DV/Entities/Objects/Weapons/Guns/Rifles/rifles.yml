@@ -1,8 +1,8 @@
 - type: entity
-  name: Vulcan
-  parent: [BaseWeaponRifle, BaseGunWieldable, BaseC1Contraband] # Frontier: add BaseC1Contraband
+  name: Vulcan (7.62x51mm)
+  parent: [BaseWeaponLightMachineGun, BaseGunWieldable, BaseC1Contraband] # Frontier: add BaseC1Contraband
   id: WeaponRifleVulcan
-  description: One of the heaviest small arms to grace Security's armory, this rifle is a modern take on a classic, informally dubbed the "Right Arm of the Free World". Uses .30 rifle ammo.
+  description: One of the heaviest small arms to grace Security's armory, this rifle is a modern take on a classic, informally dubbed the "Right Arm of the Free World". Uses 7.62x51mm ammo.
   components:
   - type: Sprite
     sprite: _DV/Objects/Weapons/Guns/Rifles/vulcan.rsi
@@ -12,14 +12,14 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: GunWieldBonus
-    minAngle: -20
-    maxAngle: -46
+    minAngle: -19
+    maxAngle: -16
   - type: Gun
     minAngle: 21
-    maxAngle: 54
-    angleIncrease: 3
+    maxAngle: 32
+    angleIncrease: 10
     angleDecay: 24
-    fireRate: 5
+    fireRate: 4
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -29,21 +29,22 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineLightRifle
+        startingItem: Magazine7.62x51mmFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazineLightRifle
+            - Magazine7.62x51mmFMJ
+            - Magazine7.62x51mmLowCapacityFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeLightRifle
+        startingItem: Cartridge7.62x51mmFMJ
         priority: 1
         whitelist:
           tags:
-            - CartridgeLightRifle
+            - Cartridge7.62x51mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -61,10 +62,10 @@
   #  price: 1300
 
 - type: entity
-  name: ceremonial rifle
+  name: ceremonial rifle (7.62x51mm)
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseC1Contraband] # Frontier: add BaseGunWieldable, BaseC1Contraband
   id: WeaponSniperCeremonial
-  description: A ceremonial variant of the Mark 1 Rifle, in tasteful blue and white. Uses .30 rifle ammo.
+  description: A ceremonial variant of the Mark 1 Rifle, in tasteful blue and white. Uses 7.62x51mm ammo.
   components:
   - type: Sprite
     sprite: _DV/Objects/Weapons/Guns/Rifles/ceremonial_grand.rsi
@@ -79,20 +80,20 @@
       path: /Audio/Weapons/Guns/Gunshots/rifle2.ogg
   - type: BallisticAmmoProvider
     capacity: 5
-    proto: CartridgeLightRifle
+    proto: Cartridge7.62x51mmFMJ
     whitelist:
       tags:
-      - CartridgeLightRifle
+      - Cartridge7.62x51mmFMJ
   - type: CursorOffsetRequiresWield # Frontier
   - type: EyeCursorOffset # Frontier
     maxOffset: 1.5 # Frontier
     pvsIncrease: 0.15 # Frontier
 
 - type: entity
-  name: CAWS-25 Jackdaw
+  name: CAWS-25 Jackdaw (6.35x40mm)
   parent: [BaseWeaponRifle, BaseGunWieldable, BaseC3Contraband] # Frontier: add BaseC3Contraband
   id: WeaponRifleJackdaw
-  description: The beginning of the end is heralded by the song of a Jackdaw. Uses .25 caseless ammo.
+  description: The beginning of the end is heralded by the song of a Jackdaw. Uses 6.35x40mm Caseless ammo.
   components:
   - type: Item
     size: Large
@@ -115,27 +116,29 @@
     - SemiAuto
     - FullAuto
     soundGunshot:
-      path: /Audio/_DV/Weapons/Guns/Gunshots/jackdaw.ogg
+      path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
+      params:
+        volume: -1
   - type: ChamberMagazineAmmoProvider
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineCaselessRifle
+        startingItem: Magazine6.35x40mmCaseless
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazineCaselessRifle
+            - Magazine6.35x40mmCaseless
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeCaselessRifle
+        startingItem: Cartridge6.35x40mmCaseless
         priority: 1
         whitelist:
           tags:
-            - CartridgeCaselessRifle
+            - Cartridge6.35x40mmCaseless
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

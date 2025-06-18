@@ -36,7 +36,7 @@
   id: USSPSergeantGear
   equipment:
     pocket1: WeaponPistolPollock
-    pocket2: MagazinePistol
+    pocket2: Magazine9x19mmPistolFMJ
   storage:
     back:
     - WeaponRifleAK502

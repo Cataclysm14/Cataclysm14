@@ -4,7 +4,8 @@
   suffix: Non-lethal
   components:
   - type: BallisticAmmoProvider
-    proto: ShellShotgunBeanbag
+    capacity: 2
+    proto: ShellShotgun12_gaugeBeanbag
 
 - type: entity
   parent: WeaponShotgunKammerer
@@ -12,4 +13,5 @@
   suffix: Non-lethal
   components:
   - type: BallisticAmmoProvider
-    proto: ShellShotgunBeanbag
+    capacity: 4
+    proto: ShellShotgun12_gaugeBeanbag
