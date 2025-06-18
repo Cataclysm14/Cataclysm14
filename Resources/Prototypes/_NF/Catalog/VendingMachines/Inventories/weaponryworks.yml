@@ -73,8 +73,8 @@
   id: WeaponryWorksVendPOIMercInventory
   startingInventory:
 # Rifles
-    WeaponRifleLecterPMC: 4294967295
     WeaponRifleVulcanCFCM: 4294967295
+    WeaponRifleLecterPMC: 4294967295
 # SMGs
     WeaponSubMachineGunC20rPMC: 4294967295
     WeaponSubMachineGunWt550PMC: 4294967295

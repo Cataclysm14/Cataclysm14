@@ -235,7 +235,7 @@
     - Back
     - suitStorage
   - type: Gun
-    fireRate: 1.9
+    fireRate: 2.2
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
