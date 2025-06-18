@@ -85,7 +85,7 @@ public sealed partial class ShuttleSystem
             return;
         }
 
-        // Clamp the speed between 0 and 30
+        // Clamp the speed between 0 and 80
         var maxSpeed = Math.Clamp(args.MaxSpeed, 0f, 80f);
         
         // Don't do anything if the value didn't change
