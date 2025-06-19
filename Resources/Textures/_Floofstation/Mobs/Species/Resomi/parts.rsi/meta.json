@@ -59,11 +59,7 @@
             "directions": 4
         },
         {
-            "name": "groin_f",
-            "directions": 4
-        },
-        {
-            "name": "groin_m",
+            "name": "groin",
             "directions": 4
         },
         {
