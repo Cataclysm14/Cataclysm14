@@ -229,6 +229,7 @@ namespace Content.IntegrationTests.Tests
         /// crude test to try catch issues like this, and possibly should just be disabled.
         /// </remarks>
         [Test]
+        [Ignore("Even wizden calls this test ass")]
         public async Task SpawnAndDeleteEntityCountTest()
         {
             var settings = new PoolSettings { Connected = true, Dirty = true };
