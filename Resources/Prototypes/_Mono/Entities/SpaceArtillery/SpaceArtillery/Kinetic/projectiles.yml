@@ -108,15 +108,15 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 5
+    lifetime: 3.5
   - type: PointLight
     color: "#FCBA03"
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBomb
-    totalIntensity: 15
-    intensitySlope: 2.5
-    maxIntensity: 15
+    totalIntensity: 40
+    intensitySlope: 5
+    maxIntensity: 25
     maxTileBreak: 1
 
 # 90mm
@@ -155,9 +155,9 @@
     layers:
     - state: base-projectile
   - type: Explosive
-    maxIntensity: 50
+    totalIntensity: 25 # totalIntensity goes first, please.
     intensitySlope: 2
-    totalIntensity: 4
+    maxIntensity: 5
     maxTileBreak: 1
   - type: PointLight
     color: orange
