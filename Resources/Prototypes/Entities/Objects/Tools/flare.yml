@@ -8,7 +8,7 @@
     tags:
     - Flare
     - Trash
-  - type: SpaceGarbage # Mono: removed SpaceGarbage
+  - type: SpaceGarbage
   - type: ExpendableLight
     spentName: expendable-light-spent-flare-name
     spentDesc: expendable-light-spent-flare-desc
