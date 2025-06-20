@@ -44,4 +44,5 @@
         - type: StationDeadDropReporting
           messageSet: Pirate
         - type: StationDeadDropHintExempt
-#        - type: TradeCrateWildcardDestination # Mono
+        - type: TradeCrateWildcardDestination
+          valueMultiplier: 0.7

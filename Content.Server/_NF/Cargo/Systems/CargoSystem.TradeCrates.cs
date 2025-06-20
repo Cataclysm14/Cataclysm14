@@ -37,6 +37,14 @@ public sealed partial class CargoSystem
             else if (_timing.CurTime > ent.Comp.ExpressDeliveryTime)
                 ev.Price -= ent.Comp.ExpressLatePenalty;
         }
+        // Mono Begin
+        var valueMultiplier = 1f;
+        if (TryComp<TradeCrateWildcardDestinationComponent>(owningStation, out var wildcardComp))
+        {
+            valueMultiplier = wildcardComp.ValueMultiplier;
+        }
+        ev.Price *= valueMultiplier;
+        // Mono End
         ev.Price = double.Max(0.0, ev.Price); // Ensure non-negative values.
     }
 
