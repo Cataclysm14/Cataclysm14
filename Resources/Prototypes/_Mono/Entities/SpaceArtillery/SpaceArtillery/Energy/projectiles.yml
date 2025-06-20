@@ -10,7 +10,7 @@
     damage:
       types:
         Radiation: 1250
-        Structural: 4250
+        Structural: 4750
         Heat: 350
         Ion: 350
   - type: Sprite
@@ -32,10 +32,10 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    maxIntensity: 125
-    intensitySlope: 3
-    totalIntensity: 95
-    maxTileBreak: 1
+    maxIntensity: 135
+    intensitySlope: 4
+    totalIntensity: 100
+    maxTileBreak: 3
 
 # RUBICON
 
