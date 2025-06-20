@@ -1,13 +1,13 @@
 - type: entity
   parent: BaseClothingModsuitHelmet
-  id: ClothingModsuitHelmetUSSPEnforcer
+  id: ClothingModsuitHelmetUSSPVaryag
   name: USSP Enforcer Modsuit Helmet
   description: A heavy-duty modsuit helmet designed for USSP security forces. It provides excellent protection against various hazards and is equipped with a sealing mechanism to maintain internal pressure in space environments.
   categories: [ HideSpawnMenu ]
   components:
   - type: Appearance
   - type: Sprite
-    sprite: _Mono/Clothing/Head/Modsuits/ussp-enforcer.rsi
+    sprite: _Mono/Clothing/Head/Modsuits/ussp-varyag.rsi
     layers:
     - state: helmet
     - state: helmet-sealed

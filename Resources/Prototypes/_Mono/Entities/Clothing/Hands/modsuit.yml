@@ -1,13 +1,13 @@
 - type: entity
   parent: ClothingHandsBase
-  id: ClothingModsuitGauntletsUSSPEnforcer
+  id: ClothingModsuitGauntletsUSSPVaryag
   name: Security Modsuit Gauntlets
   description: A heavy-duty modsuit gauntlets designed for USSP security forces. They provide excellent protection against various hazards and are equipped with a sealing mechanism to maintain internal pressure in space environments.
   categories: [ HideSpawnMenu ]
   components:
   - type: Appearance
   - type: Sprite
-    sprite: _Mono/Clothing/Hands/Modsuits/ussp-enforcer.rsi
+    sprite: _Mono/Clothing/Hands/Modsuits/ussp-varyag.rsi
     layers:
     - state: gauntlets
     - state: gauntlets-sealed

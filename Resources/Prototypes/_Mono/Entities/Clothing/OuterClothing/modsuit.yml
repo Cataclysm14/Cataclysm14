@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingOuterBase
-  id: ClothingModsuitChestplateUSSPEnforcer
+  id: ClothingModsuitChestplateUSSPVaryag
   name: Security Modsuit Chestplate
   description: A heavy-duty modsuit chestplate designed for security personnel. It provides excellent protection against various hazards and is equipped with a sealing mechanism to maintain internal pressure in space environments.
   categories: [ HideSpawnMenu ]
@@ -8,7 +8,7 @@
   - type: Appearance
   - type: AllowSuitStorage
   - type: Sprite
-    sprite: _Mono/Clothing/OuterClothing/Modsuits/ussp-enforcer.rsi
+    sprite: _Mono/Clothing/OuterClothing/Modsuits/ussp-varyag.rsi
     layers:
     - state: chestplate
     - state: chestplate-sealed

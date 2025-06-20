@@ -1,13 +1,13 @@
 - type: entity
   parent: ClothingShoesBase
-  id: ClothingModsuitBootsUSSPEnforcer
+  id: ClothingModsuitBootsUSSPVaryag
   name: Security Modsuit Boots
   description: A heavy-duty modsuit boots designed for USSP security forces. They provide excellent protection against various hazards and are equipped with a sealing mechanism to maintain internal pressure in space environments.
   categories: [ HideSpawnMenu ]
   components:
   - type: Appearance
   - type: Sprite
-    sprite: _Mono/Clothing/Shoes/Modsuits/ussp-enforcer.rsi
+    sprite: _Mono/Clothing/Shoes/Modsuits/ussp-varyag.rsi
     layers:
     - state: boots
     - state: boots-sealed
