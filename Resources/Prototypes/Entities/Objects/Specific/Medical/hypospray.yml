@@ -129,7 +129,7 @@
   - type: PhysicalComposition
     materialComposition:
       Plastic: 50
-  - type: SpaceGarbage
+#  - type: SpaceGarbage # Mono: SpaceGarbage removed
   - type: StaticPrice
     price: 35 # These are limited supply items.
   - type: TrashOnSolutionEmpty
