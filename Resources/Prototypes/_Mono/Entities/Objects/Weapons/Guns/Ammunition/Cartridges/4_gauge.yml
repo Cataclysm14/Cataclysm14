@@ -12,7 +12,7 @@
     soundEject:
       collection: ShellEject
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/4_gauge_shell.rsi
     layers:
       - state: base
         map: [ "enum.AmmoVisualLayers.Base" ]
@@ -46,10 +46,12 @@
   components:
   - type: Sprite
     layers:
-      - state: base
+      - state: dozd
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
     proto: Pellet23x75mmDozdSpread
+  - type: SpentAmmoVisuals
+    state: "dozd"
 
 - type: entity
   id: ShellShotgun23x75mmSlug
@@ -148,9 +150,9 @@
     - ShellShotgun23x75mmBuckshot
   - type: Sprite
     layers:
-      - state: flare
+      - state: flashbang
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
     proto: Pellet23x75mmFlashbang
   - type: SpentAmmoVisuals
-    state: "incendiary"
+    state: "flashbang"
