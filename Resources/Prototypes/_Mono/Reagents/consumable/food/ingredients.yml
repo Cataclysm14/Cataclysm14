@@ -1,0 +1,101 @@
+- type: reagent
+  id: BlackTeaPowder
+  name: reagent-name-black-tea-powder
+  desc: reagent-desc-black-tea-powder
+  physicalDesc: reagent-physical-desc-powdery
+  flavor: tea-black
+  color: "#3B2F2F"
+  group: Foods
+  metabolisms:
+    Food:
+      effects:
+      - !type:SatiateThirst
+        factor: -0.2
+      - !type:AdjustReagent
+        reagent: Nutriment
+        amount: 0.1
+
+- type: reagent
+  id: GreenTeaPowder
+  name: reagent-name-green-tea-powder
+  desc: reagent-desc-green-tea-powder
+  physicalDesc: reagent-physical-desc-powdery
+  flavor: tea-green
+  color: "#6B8E23"
+  group: Foods
+  metabolisms:
+    Food:
+      effects:
+      - !type:SatiateThirst
+        factor: -0.2
+      - !type:AdjustReagent
+        reagent: Nutriment
+        amount: 0.1
+
+- type: reagent
+  id: ChamomileTeaPowder
+  name: reagent-name-chamomile-tea-powder
+  desc: reagent-desc-chamomile-tea-powder
+  physicalDesc: reagent-physical-desc-powdery
+  flavor: tea-chamomile
+  color: "#EEDC82"
+  group: Foods
+  metabolisms:
+    Food:
+      effects:
+      - !type:SatiateThirst
+        factor: -0.2
+      - !type:AdjustReagent
+        reagent: Nutriment
+        amount: 0.1
+
+- type: reagent
+  id: BerryTeaPowder
+  name: reagent-name-berry-tea-powder
+  desc: reagent-desc-berry-tea-powder
+  physicalDesc: reagent-physical-desc-powdery
+  flavor: tea-berry
+  color: "#A23E48"
+  group: Foods
+  metabolisms:
+    Food:
+      effects:
+      - !type:SatiateThirst
+        factor: -0.2
+      - !type:AdjustReagent
+        reagent: Nutriment
+        amount: 0.1
+
+- type: reagent
+  id: FruitTeaPowder
+  name: reagent-name-fruit-tea-powder
+  desc: reagent-desc-fruit-tea-powder
+  physicalDesc: reagent-physical-desc-powdery
+  flavor: tea-fruit
+  color: "#FFB347"
+  group: Foods
+  metabolisms:
+    Food:
+      effects:
+      - !type:SatiateThirst
+        factor: -0.2
+      - !type:AdjustReagent
+        reagent: Nutriment
+        amount: 0.1
+
+- type: reagent
+  id: YorkshireTeaPowder
+  name: reagent-name-yorkshire-tea-powder
+  desc: reagent-desc-yorkshire-tea-powder
+  physicalDesc: reagent-physical-desc-powdery
+  flavor: tea-yorkshire
+  color: "#4B3621"
+  group: Foods
+  metabolisms:
+    Food:
+      effects:
+      - !type:SatiateThirst
+        factor: -0.2
+      - !type:AdjustReagent
+        reagent: Nutriment
+        amount: 0.1

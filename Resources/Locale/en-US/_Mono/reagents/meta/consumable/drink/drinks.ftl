@@ -1,0 +1,38 @@
+# MOTD: Teas
+
+reagent-name-black-tea = black tea
+reagent-desc-black-tea = A classic, robust black tea with a deep, rich flavor.
+
+reagent-name-black-tea-powder = black tea powder
+reagent-desc-black-tea-powder = Finely ground black tea leaves, perfect for brewing a strong cup.
+
+reagent-name-green-tea = green tea
+reagent-desc-green-tea = A delicate, grassy tea with a refreshing taste.
+
+reagent-name-green-tea-powder = green tea powder
+reagent-desc-green-tea-powder = Finely ground green tea leaves, perfect for brewing.
+
+reagent-name-chamomile-tea = chamomile tea
+reagent-desc-chamomile-tea = A calming herbal tea with a gentle floral aroma.
+
+reagent-name-chamomile-tea-powder = chamomile tea powder
+reagent-desc-chamomile-tea-powder = Dried and crushed chamomile flowers for a soothing brew.
+
+reagent-name-berry-tea = berry tea
+reagent-desc-berry-tea = A sweet and tangy tea bursting with berry flavor.
+
+reagent-name-berry-tea-powder = berry tea powder
+reagent-desc-berry-tea-powder = Powdered blend of assorted berries for a fruity infusion.
+
+reagent-name-fruit-tea = fruit tea
+reagent-desc-fruit-tea = A vibrant tea with a medley of fruit flavors.
+
+reagent-name-fruit-tea-powder = fruit tea powder
+reagent-desc-fruit-tea-powder = Mixed fruit powder, ready to steep into a delicious tea.
+
+reagent-name-yorkshire-tea = Yorkshire tea
+reagent-desc-yorkshire-tea = A robust and hearty black tea blend, perfect for breakfast.
+
+reagent-name-yorkshire-tea-powder = Yorkshire tea powder
+reagent-desc-yorkshire-tea-powder = A special blend of black tea leaves, ground for a strong cup.
+
