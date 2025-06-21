@@ -33,7 +33,7 @@ entities:
   - uid: 1
     components:
     - type: MetaData
-      name: Legionnaire-ASM
+      name: Legionnaire
     - type: Transform
       pos: 0.5,0.5
       parent: invalid
@@ -73,7 +73,7 @@ entities:
     - type: Fixtures
       fixtures: {}
     - type: BecomesStation
-      id: Legionnaire-ASM
+      id: Legionnaire
     - type: OccluderTree
     - type: Shuttle
     - type: GridPathfinding

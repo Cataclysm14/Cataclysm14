@@ -4,7 +4,7 @@
 - type: vessel
   id: Legionnaire
   parent: BaseVesselAntag
-  name: TSF-SKR Legionnaire-ASM
+  name: TSF-SKR Legionnaire
   description: A light ship equipped with EMP weaponry and a prison cell. It's very cramped. This ship has a TSF IFF designation.
   price: 59300
   category: Small
@@ -19,8 +19,8 @@
   - Uranium
 
 - type: gameMap
-  id: Legionnaire-ASM
-  mapName: 'Legionnaire-ASM'
+  id: Legionnaire
+  mapName: 'Legionnaire'
   mapPath: /Maps/_Mono/Shuttles/Nfsd/legionnaire-ASM.yml
   minPlayers: 0
   stations:
@@ -28,7 +28,7 @@
       stationProto: StandardFrontierSecurityVessel
       components:
       - type: StationNameSetup
-        mapNameTemplate: 'Legionnaire-ASM TSF{1}'
+        mapNameTemplate: 'Legionnaire TSF{1}'
         nameGenerator:
           !type:NanotrasenNameGenerator
           prefixCreator: '14'
