@@ -190,7 +190,7 @@
   - type: MiningGatheringHard
   - type: TargetSeeking
     acceleration: 80
-    detectionRange: 500
+    detectionRange: 300
     scanArc: 50
     launchSpeed: 100
     maxSpeed: 300

@@ -179,7 +179,7 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
-    fireRate: 1.5
+    fireRate: 0.2
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
     soundEmpty:
@@ -194,7 +194,7 @@
   - type: Actions
   - type: ProjectileBatteryAmmoProvider
     proto: ShipMissileASM557
-    fireCost: 17500
+    fireCost: 12500
   - type: RadarBlip
     radarColor: "#035EFC"
     scale: 2
