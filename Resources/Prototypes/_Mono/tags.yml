@@ -139,6 +139,9 @@
 - type: Tag
   id: WeaponShotgunBigLeady
 
+- type: Tag
+  id: WeaponShotgunBigJohnny
+
 #random IDs
 
 - type: Tag

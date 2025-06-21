@@ -1,38 +1,6 @@
-- type: entity
-  parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseAmmoProvider
-  abstract: true
-  components:
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
-  - type: Item
-    size: Normal
-  - type: Sprite
-    sprite: Objects/Storage/boxes.rsi
-
-- type: entity
-  parent: [BaseAmmoProvider, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: AmmoProviderShotgunShell
-  abstract: true
-  components:
-    - type: Sprite
-      sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/23x75mm.rsi
-    - type: BallisticAmmoProvider
-      mayTransfer: true
-      whitelist:
-        tags:
-        - ShellShotgun23x75mmBuckshot
-      capacity: 16
-    - type: MagazineVisuals
-      magState: mag
-      steps: 5
-      zeroVisible: false
-    - type: Appearance
-
 # Shotgun Shells
 - type: entity
-  parent: AmmoProviderShotgunShell
+  parent: AmmoProvider23x75mmShotgunShell
   id: AmmoBox23x75mmBeanbag
   name: shotgun shell box (4 gauge beanbag)
   components:
@@ -52,7 +20,7 @@
 
 - type: entity
   name: shotgun shell box (4 gauge buckshot)
-  parent: AmmoProviderShotgunShell
+  parent: AmmoProvider23x75mmShotgunShell
   id: AmmoBox23x75mmBuckshot
   components:
     - type: BallisticAmmoProvider
@@ -67,7 +35,7 @@
 
 - type: entity
   name: shotgun shell box (4 gauge Dozd)
-  parent: AmmoProviderShotgunShell
+  parent: AmmoProvider23x75mmShotgunShell
   id: AmmoBox23x75mmDozd
   components:
     - type: BallisticAmmoProvider
@@ -82,7 +50,7 @@
 
 - type: entity
   name: shotgun shell box (4 gauge slug)
-  parent: AmmoProviderShotgunShell
+  parent: AmmoProvider23x75mmShotgunShell
   id: AmmoBox23x75mmSlug
   components:
     - type: BallisticAmmoProvider
@@ -101,7 +69,7 @@
 
 - type: entity
   name: flare shell box (4 gauge flare)
-  parent: AmmoProviderShotgunShell
+  parent: AmmoProvider23x75mmShotgunShell
   id: AmmoBox23x75mmFlare
   components:
     - type: BallisticAmmoProvider
@@ -120,7 +88,7 @@
 
 - type: entity
   name: shotgun shell box (4 gauge incendiary)
-  parent: AmmoProviderShotgunShell
+  parent: AmmoProvider23x75mmShotgunShell
   id: AmmoBox23x75mmIncendiary
   components:
     - type: BallisticAmmoProvider
@@ -140,7 +108,7 @@
 
 - type: entity
   name: shotgun shell box (4 gauge flashbang)
-  parent: AmmoProviderShotgunShell
+  parent: AmmoProvider23x75mmShotgunShell
   id: AmmoBox23x75mmFlashbang
   components:
     - type: BallisticAmmoProvider
@@ -159,7 +127,7 @@
 
 - type: entity
   name: shotgun shell box (4 gauge uranium)
-  parent: AmmoProviderShotgunShell
+  parent: AmmoProvider23x75mmShotgunShell
   id: AmmoBox23x75mmUranium
   components:
     - type: BallisticAmmoProvider
@@ -178,7 +146,7 @@
 
 - type: entity
   name: shotgun shell box (4 gauge practice)
-  parent: AmmoProviderShotgunShell
+  parent: AmmoProvider23x75mmShotgunShell
   id: AmmoBox23x75mmPractice
   components:
     - type: BallisticAmmoProvider
@@ -197,7 +165,7 @@
 
 - type: entity
   name: shotgun shell box (4 gauge tranquilizer)
-  parent: AmmoProviderShotgunShell
+  parent: AmmoProvider23x75mmShotgunShell
   id: AmmoBox23x75mmTranquilizer
   components:
     - type: BallisticAmmoProvider
