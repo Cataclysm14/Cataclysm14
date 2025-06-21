@@ -1,15 +1,4 @@
 - type: reaction
-  id: BlackTea
-  minTemp: 369.15 # 96C (recommended)
-  reactants:
-    BlackTeaPowder:
-      amount: 1
-    Water:
-      amount: 5
-  products:
-    BlackTea: 5
-
-- type: reaction
   id: GreenTea
   minTemp: 353.15 # 80C
   reactants:

@@ -1,46 +1,4 @@
 - type: reagent
-  id: BlackTea
-  name: reagent-name-tea-black
-  parent: BaseDrink
-  desc: reagent-desc-tea-black
-  physicalDesc: reagent-physical-desc-robust
-  flavor: teaBlack
-  color: "#3B2F2F"
-  metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/greenteaglass.rsi # TODO: Update sprite
-    state: icon_empty
-  metamorphicMaxFillLevels: 4
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
-  metabolisms:
-    Drink:
-      effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:GenericStatusEffect
-        key: Drowsiness
-        time: 1.0
-        type: Remove
-      - !type:AdjustReagent
-        reagent: Theobromine
-        amount: 0.025
-
-- type: reagent
-  id: GreenTea
-  name: reagent-name-tea-green
-  parent: BaseDrink
-  desc: reagent-desc-tea-green
-  physicalDesc: reagent-physical-desc-refreshing
-  flavor: teaGreen
-  color: "#6B8E23"
-  metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/greenteaglass.rsi # TODO: Update sprite
-    state: icon_empty
-  metamorphicMaxFillLevels: 4
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
-
-- type: reagent
   id: ChamomileTea
   name: reagent-name-tea-chamomile
   parent: BaseDrink
@@ -49,7 +7,7 @@
   flavor: teaChamomile
   color: "#EEDC82"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/chamomileteaglass.rsi # TODO: Update sprite
+    sprite: _Mono/Objects/Consumable/Drinks/chamomileteaglass.rsi # TODO: Update sprite
     state: icon_empty
   metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
@@ -64,7 +22,7 @@
   flavor: teaBerry
   color: "#A23E48"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/berryteaglass.rsi # TODO: Update sprite
+    sprite: _Mono/Objects/Consumable/Drinks/berryteaglass.rsi # TODO: Update sprite
     state: icon_empty
   metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
@@ -79,7 +37,7 @@
   flavor: teaFruit
   color: "#FFB347"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/fruitteaglass.rsi # TODO: Update sprite
+    sprite: _Mono/Objects/Consumable/Drinks/fruitteaglass.rsi # TODO: Update sprite
     state: icon_empty
   metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
@@ -94,7 +52,7 @@
   flavor: teaYorkshire
   color: "#4B3621"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/yorkshireteaglass.rsi # TODO: Update sprite
+    sprite: _Mono/Objects/Consumable/Drinks/yorkshireteaglass.rsi # TODO: Update sprite
     state: icon_empty
   metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
@@ -109,7 +67,7 @@
   flavor: teaDecafBlack
   color: "#4A3B2F"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/greenteaglass.rsi # TODO: Update sprite
+    sprite: _Mono/Objects/Consumable/Drinks/yorkshireteaglass.rsi # TODO: Update sprite
     state: icon_empty
   metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-

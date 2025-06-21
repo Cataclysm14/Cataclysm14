@@ -1,14 +1,5 @@
 # MOTD: Teas
 
-reagent-name-black-tea = black tea
-reagent-desc-black-tea = A classic, robust black tea with a deep, rich flavor.
-
-reagent-name-black-tea-powder = black tea powder
-reagent-desc-black-tea-powder = Finely ground black tea leaves, perfect for brewing a strong cup.
-
-reagent-name-green-tea = green tea
-reagent-desc-green-tea = A delicate, grassy tea with a refreshing taste.
-
 reagent-name-green-tea-powder = green tea powder
 reagent-desc-green-tea-powder = Finely ground green tea leaves, perfect for brewing.
 
