@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseClothingModsuitHelmet
   id: ClothingModsuitHelmetUSSPVaryag
-  name: USSP Enforcer Modsuit Helmet
-  description: A heavy-duty modsuit helmet designed for the USSP. It provides excellent protection against various hazards and is equipped with a sealing mechanism to maintain internal pressure in space environments.
+  name: Shlem Varyaga
+  description: Sealed, reinforced, and intimidating.
   categories: [ HideSpawnMenu ]
   components:
   - type: Appearance
@@ -87,8 +87,8 @@
 - type: entity
   parent: BaseClothingModsuitHelmet
   id: ClothingModsuitHelmetUSSPZastavnik
-  name: Head of Security Modsuit Helmet
-  description: A heavy-duty modsuit helmet designed for the USSP. It provides excellent protection against various hazards and is equipped with a sealing mechanism to maintain internal pressure in space environments.
+  name: Shlem Zastavnik
+  description: A reinforced helmet with deep armor plating and visor shielding. Favored by serzhants for frontline presence.
   categories: [ HideSpawnMenu ]
   components:
   - type: Appearance

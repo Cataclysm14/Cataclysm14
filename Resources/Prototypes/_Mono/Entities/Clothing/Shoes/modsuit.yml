@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingShoesBase
   id: ClothingModsuitBootsUSSPVaryag
-  name: Varyag Modsuit Boots
-  description: A heavy-duty modsuit boots designed for USSP Varyag. They provide excellent protection against various hazards and are equipped with a sealing mechanism to maintain internal pressure in space environments.
+  name: Marshevyye Varyag
+  description: Heavy-duty boots designed for combat and EVA.
   categories: [ HideSpawnMenu ]
   components:
   - type: Appearance
@@ -35,8 +35,8 @@
 - type: entity
   parent: ClothingShoesBase
   id: ClothingModsuitBootsUSSPZastavnik
-  name: Zastavnik Modsuit Boots
-  description: A heavy-duty modsuit boots designed for USSP. They provide excellent protection against various hazards and are equipped with a sealing mechanism to maintain internal pressure in space environments.
+  name: Sapogi Zastavnika
+  description: Thick, reinforced boots with magnetic stabilizers and shock absorption.
   categories: [ HideSpawnMenu ]
   components:
   - type: Appearance

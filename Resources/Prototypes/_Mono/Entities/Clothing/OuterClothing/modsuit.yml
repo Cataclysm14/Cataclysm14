@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingOuterBase
   id: ClothingModsuitChestplateUSSPVaryag
-  name: USSP Varyag Modsuit Chestplate
-  description: A heavy-duty modsuit chestplate designed for USSP Varyag. It provides excellent protection against various hazards and is equipped with a sealing mechanism to maintain internal pressure in space environments.
+  name: Panzerkorps Varyag
+  description: Thick plating fused with internal atmosphere control.
   categories: [ HideSpawnMenu ]
   components:
   - type: Appearance
@@ -37,7 +37,7 @@
       coefficients:
         Blunt: 0.6
         Slash: 0.5
-        Piercing: 0.4
+        Piercing: 0.35
         Heat: 0.7
         Radiation: 0.6
         Caustic: 0.6
@@ -55,8 +55,8 @@
 - type: entity
   parent: ClothingOuterBase
   id: ClothingModsuitChestplateUSSPZastavnik
-  name: Zastavnik Modsuit Chestplate
-  description: A heavy-duty modsuit chestplate designed for USSP. It provides excellent protection against various hazards and is equipped with a sealing mechanism to maintain internal pressure in space environments.
+  name: Brust Zastavnika
+  description: An imposing armored shell designed to absorb punishment and maintain stability under pressure.
   categories: [ HideSpawnMenu ]
   components:
   - type: Appearance
@@ -91,7 +91,7 @@
       coefficients:
         Blunt: 0.35
         Slash: 0.45
-        Piercing: 0.45
+        Piercing: 0.25
         Heat: 0.5
         Caustic: 0.35
         Radiation: 0.2

@@ -1,8 +1,8 @@
 - type: entity
   parent: [Clothing, ContentsExplosionResistanceBase]
   id: ClothingModsuitUSSPVaryag
-  name: USSP Varyag Modsuit
-  description: A heavy-duty modsuit designed for USSP security forces. It provides excellent protection against various hazards and is equipped with a sealing mechanism to maintain internal pressure in space environments.
+  name: USSP Varyag Modsuit Core
+  description: The power and life-support core of the Varyag modsuit.
   components:
   - type: Appearance
   - type: Sprite
@@ -91,8 +91,8 @@
 - type: entity
   parent: [Clothing, ContentsExplosionResistanceBase]
   id: ClothingModsuitUSSPZastavnik
-  name: USSP Zastavnik Modsuit
-  description: A heavy-duty modsuit designed for USSP security forces. It provides excellent protection against various hazards and is equipped with a sealing mechanism to maintain internal pressure in space environments.
+  name: USSP Zastavnik Modsuit Core
+  description: The sealed backpack unit powering the Zastavnik suit’s life support and locking mechanisms.
   components:
   - type: Appearance
   - type: Sprite
