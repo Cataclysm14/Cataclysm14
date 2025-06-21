@@ -1,10 +1,10 @@
 - type: reagent
   id: BlackTea
   name: reagent-name-tea-black
-  parent: BaseAlcohol
+  parent: BaseDrink
   desc: reagent-desc-tea-black
   physicalDesc: reagent-physical-desc-robust
-  flavor: flavor-complex-tea-black
+  flavor: teaBlack
   color: "#3B2F2F"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/greenteaglass.rsi # TODO: Update sprite
@@ -28,10 +28,10 @@
 - type: reagent
   id: GreenTea
   name: reagent-name-tea-green
-  parent: BaseAlcohol
+  parent: BaseDrink
   desc: reagent-desc-tea-green
   physicalDesc: reagent-physical-desc-refreshing
-  flavor: flavor-complex-tea-green
+  flavor: teaGreen
   color: "#6B8E23"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/greenteaglass.rsi # TODO: Update sprite
@@ -43,10 +43,10 @@
 - type: reagent
   id: ChamomileTea
   name: reagent-name-tea-chamomile
-  parent: BaseAlcohol
+  parent: BaseDrink
   desc: reagent-desc-tea-chamomile
   physicalDesc: reagent-physical-desc-calming
-  flavor: flavor-complex-tea-chamomile
+  flavor: teaChamomile
   color: "#EEDC82"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/chamomileteaglass.rsi # TODO: Update sprite
@@ -58,10 +58,10 @@
 - type: reagent
   id: BerryTea
   name: reagent-name-tea-berry
-  parent: BaseAlcohol
+  parent: BaseDrink
   desc: reagent-desc-tea-berry
   physicalDesc: reagent-physical-desc-fruity
-  flavor: flavor-complex-tea-berry
+  flavor: teaBerry
   color: "#A23E48"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/berryteaglass.rsi # TODO: Update sprite
@@ -73,10 +73,10 @@
 - type: reagent
   id: FruitTea
   name: reagent-name-tea-fruit
-  parent: BaseAlcohol
+  parent: BaseDrink
   desc: reagent-desc-tea-fruit
   physicalDesc: reagent-physical-desc-fruity
-  flavor: flavor-complex-tea-fruit
+  flavor: teaFruit
   color: "#FFB347"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/fruitteaglass.rsi # TODO: Update sprite
@@ -88,10 +88,10 @@
 - type: reagent
   id: YorkshireTea
   name: reagent-name-tea-yorkshire
-  parent: BaseAlcohol
+  parent: BaseDrink
   desc: reagent-desc-tea-yorkshire
   physicalDesc: reagent-physical-desc-robust
-  flavor: flavor-complex-tea-yorkshire
+  flavor: teaYorkshire
   color: "#4B3621"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/yorkshireteaglass.rsi # TODO: Update sprite
@@ -103,10 +103,10 @@
 - type: reagent
   id: DecafBlackTea
   name: reagent-name-decaf-black-tea
-  parent: BaseAlcohol
+  parent: BaseDrink
   desc: reagent-desc-decaf-black-tea
   physicalDesc: reagent-physical-desc-robust
-  flavor: flavor-complex-tea-black
+  flavor: teaDecafBlack
   color: "#4A3B2F"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/greenteaglass.rsi # TODO: Update sprite
