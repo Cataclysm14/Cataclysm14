@@ -43,6 +43,5 @@
     back:
     - EncryptionKeyMedical
     - Magazine9x19mmPistolFMJ
-    - FederationMilitaryCredit10
     - BaseSecurityUplinkRadioDeputy #Mono: Added Deputy uplink
     - RadioHandheldNF # Mono
