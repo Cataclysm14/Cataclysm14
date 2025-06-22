@@ -2,7 +2,7 @@
 # Minor edits + Refit by Redrover
 
 - type: vessel
-  id: LegionnaireTOV
+  id: Legionnaire-TOV
   parent: BaseVesselAntag
   name: TSF-SKR Legionnaire-TOV
   description: An experimental refit of the popular Legionnaire with Tovek EMP missiles and Marauders. It's just as cramped. This ship has a TSF IFF designation.
