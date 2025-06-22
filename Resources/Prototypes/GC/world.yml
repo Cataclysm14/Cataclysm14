@@ -3,4 +3,4 @@
   depth: 400 # Mono
   minDepthToProcess: 50 # Mono
 #  trySkipQueue: true  # Frontier - Attempt immediate removal if possible # Mono Revert
-  maximumTickTime: 0:0:0.005 # Mono
+  maximumTickTime: 0:0:0.003 # Mono
