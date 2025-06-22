@@ -86,12 +86,17 @@ public sealed partial class MoveToOperator : HTNOperator, IHtnConditionalShutdow
             return (false, null);
 
         if (!_entManager.TryGetComponent<MapGridComponent>(xform.GridUid, out var ownerGrid) ||
-            !_entManager.TryGetComponent<MapGridComponent>(targetCoordinates.GetGridUid(_entManager), out var targetGrid))
+            !_entManager.TryGetComponent<MapGridComponent>(_transform.GetGrid(targetCoordinates), out var targetGrid))
         {
             return (false, null);
         }
 
+        var pos = _transform.GetWorldPosition(owner);
+        var nearest = _steering.GetNearestPlayerEntity(pos);
         var range = blackboard.GetValueOrDefault<float>(RangeKey, _entManager);
+
+        if (nearest != null && nearest.Value.Distance > 2000f || nearest == null)
+            return (false, null);
 
         if (xform.Coordinates.TryDistance(_entManager, targetCoordinates, out var distance) && distance <= range)
         {
@@ -155,8 +160,8 @@ public sealed partial class MoveToOperator : HTNOperator, IHtnConditionalShutdow
         {
             if (blackboard.TryGetValue<EntityCoordinates>(NPCBlackboard.OwnerCoordinates, out var coordinates, _entManager))
             {
-                var mapCoords = coordinates.ToMap(_entManager, _transform);
-                _steering.PrunePath(uid, mapCoords, targetCoordinates.ToMapPos(_entManager, _transform) - mapCoords.Position, result.Path);
+                var mapCoords = _transform.ToMapCoordinates(coordinates);
+                _steering.PrunePath(uid, mapCoords, _transform.ToMapCoordinates(targetCoordinates).Position - mapCoords.Position, result.Path);
             }
 
             comp.CurrentPath = new Queue<PathPoly>(result.Path);
