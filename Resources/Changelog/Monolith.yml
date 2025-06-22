@@ -4703,3 +4703,10 @@ Entries:
   id: 558
   time: '2025-06-22T09:36:27.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/907
+- author: Redrover1760
+  changes:
+    - type: Fix
+      message: Lag fix round two
+  id: 559
+  time: '2025-06-22T17:19:17.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/915
