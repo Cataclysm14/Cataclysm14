@@ -84,13 +84,13 @@
   - type: StaticPrice
     price: 800
 
-- type: entity
+- type: entity #Enforcer
   parent:
   - BaseC2ContrabandMercenary
   - WeaponShotgunEnforcer
-  name: PMC Enforcer
+  name: PMC Enforcer (12 gauge)
   id: WeaponShotgunEnforcerPMC
-  description: An Enforcer that has been properly registered for private security and mercenary use.
+  description: An Enforcer that has been properly registered for private security and mercenary use. A premium semi-automatic shotgun, and the pride of all security forces. Uses 12 gauge shotgun shells.
   components:
   - type: StaticPrice
     price: 1800
