@@ -74,7 +74,7 @@
   description: Sells a variety of coffees, teas, and pastries.
   components:
   - type: VendingMachine
-    pack: BaristaInventory
+    pack: BaristaVendInventory
     dispenseOnHitChance: 0.25
     dispenseOnHitThreshold: 2
     offState: off

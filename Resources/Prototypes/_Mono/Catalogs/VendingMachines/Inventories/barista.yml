@@ -1,5 +1,5 @@
 - type: vendingMachineInventory
-  id: BaristaInventory
+  id: BaristaVendInventory
   startingInventory:
     ReagentContainerBlackTeaPouch: 2
     ReagentContainerGreenTeaPouch: 2
