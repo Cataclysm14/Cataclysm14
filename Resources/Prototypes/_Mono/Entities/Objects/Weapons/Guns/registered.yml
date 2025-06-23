@@ -40,7 +40,7 @@
   - WeaponSubMachineGunDrozd
   name: PMC Drozd (.45 ACP)
   id: WeaponSubMachineGunDrozdPMC
-  description: A Drozd that has been properly registered for private security and mercenary use. An old and cheap fully automatic Heavy SMG. Beloved by Mercenaries for it's affordability. Uses 9x19mm ammo.
+  description: A Drozd that has been properly registered for private security and mercenary use. An old and cheap fully automatic Heavy SMG. Beloved by Mercenaries for it's affordability. Uses .45 ACP ammo.
   components:
   - type: StaticPrice
     price: 1350
