@@ -230,9 +230,10 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
 
         foreach (var playerData in allPlayerData)
         {
-            var session = _playerManager.GetSessionById(playerData.UserId);
+            var exists = _playerManager.TryGetSessionById(playerData.UserId, out var session);
 
-            if (session.AttachedEntity is not { Valid: true } playerEnt
+            if (!exists || session == null
+                || session.AttachedEntity is not { Valid: true } playerEnt
                 || HasComp<GhostComponent>(playerEnt)
                 || TryComp<MobStateComponent>(playerEnt, out var state) && state.CurrentState != MobState.Alive)
                 continue;

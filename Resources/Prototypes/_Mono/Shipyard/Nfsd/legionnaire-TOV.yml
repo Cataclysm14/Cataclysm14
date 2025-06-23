@@ -1,16 +1,16 @@
 # Ship by Starch
-# Minor edits by Redrover
+# Minor edits + Refit by Redrover
 
 - type: vessel
-  id: Legionnaire
+  id: Legionnaire-TOV
   parent: BaseVesselAntag
-  name: TSF-SKR Legionnaire
-  description: A light ship equipped with EMP weaponry and a prison cell. It's very cramped. This ship has a TSF IFF designation.
-  price: 55300
+  name: TSF-SKR Legionnaire-TOV
+  description: An experimental refit of the popular Legionnaire with Tovek EMP missiles and Marauders. It's just as cramped. This ship has a TSF IFF designation.
+  price: 68300
   category: Small
   group: Security
   access: Security
-  shuttlePath: /Maps/_Mono/Shuttles/Nfsd/legionnaire.yml
+  shuttlePath: /Maps/_Mono/Shuttles/Nfsd/legionnaire-TOV.yml
   guidebookPage: Null
   class:
   - Patrol
@@ -19,16 +19,16 @@
   - Uranium
 
 - type: gameMap
-  id: Legionnaire
-  mapName: 'Legionnaire'
-  mapPath: /Maps/_Mono/Shuttles/Nfsd/legionnaire.yml
+  id: Legionnaire-TOV
+  mapName: 'Legionnaire-TOV'
+  mapPath: /Maps/_Mono/Shuttles/Nfsd/legionnaire-TOV.yml
   minPlayers: 0
   stations:
-    Legionnaire:
+    Legionnaire-TOV:
       stationProto: StandardFrontierSecurityVessel
       components:
       - type: StationNameSetup
-        mapNameTemplate: 'Legionnaire TSF{1}'
+        mapNameTemplate: 'Legionnaire-TOV TSF{1}'
         nameGenerator:
           !type:NanotrasenNameGenerator
           prefixCreator: '14'
