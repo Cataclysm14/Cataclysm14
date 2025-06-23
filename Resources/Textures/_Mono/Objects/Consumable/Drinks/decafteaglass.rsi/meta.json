@@ -20,12 +20,12 @@
       "name": "fill-2"
     },
     {
-      "name": "inhand_left"
-	  "directions": 4
+      "name": "inhand_left",
+	    "directions": 4
     },
     {
-      "name": "inhand_right"
-	  "directions": 4
+      "name": "inhand_right",
+	    "directions": 4
     }
   ]
 }
