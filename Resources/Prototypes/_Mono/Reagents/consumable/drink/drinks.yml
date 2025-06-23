@@ -60,11 +60,11 @@
 
 - type: reagent
   id: DecafBlackTea
-  name: reagent-name-decaf-black-tea
+  name: reagent-name-tea-decaf-black
   parent: BaseDrink
-  desc: reagent-desc-decaf-black-tea
+  desc: reagent-desc-tea-decaf-black
   physicalDesc: reagent-physical-desc-robust
-  flavor: teaDecafBlack
+  flavor: tea-decaf-black
   color: "#4A3B2F"
   metamorphicSprite:
     sprite: _Mono/Objects/Consumable/Drinks/decafteaglass.rsi
@@ -74,7 +74,7 @@
   metamorphicChangeColor: false
 
 - type: reagent
-  id: SyndieTea
+  id: SyndicateTea
   name: reagent-name-tea-syndie
   parent: BaseDrink
   desc: reagent-desc-tea-syndie

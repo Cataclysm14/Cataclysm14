@@ -1,40 +1,49 @@
-# MOTD: Teas
+# MARK: Powders
+reagent-name-tea-powder-green = green tea powder
+reagent-desc-tea-powder-green = Finely ground green tea leaves, perfect for brewing.
 
-reagent-name-green-tea-powder = green tea powder
-reagent-desc-green-tea-powder = Finely ground green tea leaves, perfect for brewing.
+reagent-name-tea-powder-chamomile = chamomile tea powder
+reagent-desc-tea-powder-chamomile = Dried and crushed chamomile flowers for a soothing brew.
 
-reagent-name-chamomile-tea = chamomile tea
-reagent-desc-chamomile-tea = A calming herbal tea with a gentle floral aroma.
+reagent-name-tea-powder-berry = berry tea powder
+reagent-desc-tea-powder-berry = Powdered blend of assorted berries for a fruity infusion.
 
-reagent-name-chamomile-tea-powder = chamomile tea powder
-reagent-desc-chamomile-tea-powder = Dried and crushed chamomile flowers for a soothing brew.
+reagent-name-tea-powder-fruit = fruit tea powder
+reagent-desc-tea-powder-fruit = Mixed fruit powder, ready to steep into a delicious tea.
 
-reagent-name-berry-tea = berry tea
-reagent-desc-berry-tea = A sweet and tangy tea bursting with berry flavor.
+reagent-name-tea-powder-yorkshire = Yorkshire tea powder
+reagent-desc-tea-powder-yorkshire = A special blend of black tea leaves, ground for a strong cup.
 
-reagent-name-berry-tea-powder = berry tea powder
-reagent-desc-berry-tea-powder = Powdered blend of assorted berries for a fruity infusion.
+reagent-name-tea-powder-decaf-black = decaf black tea powder
+reagent-desc-tea-powder-decaf-black = Finely ground decaffeinated black tea leaves, perfect for a gentle brew.
 
-reagent-name-fruit-tea = fruit tea
-reagent-desc-fruit-tea = A vibrant tea with a medley of fruit flavors.
+reagent-name-tea-powder-syndie = Waffle Co. Coffee Delight Powder
+reagent-desc-tea-powder-syndie = A synthetic coffee-flavored powder that dissolves in water, mimicking the taste of coffee.
 
-reagent-name-fruit-tea-powder = fruit tea powder
-reagent-desc-fruit-tea-powder = Mixed fruit powder, ready to steep into a delicious tea.
+reagent-name-coffee-powder-decaf = decaf coffee powder
+reagent-desc-coffee-powder-decaf = Finely ground decaffeinated coffee beans
 
-reagent-name-yorkshire-tea = Yorkshire tea
-reagent-desc-yorkshire-tea = A robust and hearty black tea blend, perfect for breakfast.
+# MARK: Teas
 
-reagent-name-yorkshire-tea-powder = Yorkshire tea powder
-reagent-desc-yorkshire-tea-powder = A special blend of black tea leaves, ground for a strong cup.
+reagent-name-tea-chamomile = chamomile tea
+reagent-desc-tea-chamomile = A calming herbal tea with a gentle floral aroma.
 
-reagent-name-decaf-black-tea = decaf black tea
-reagent-desc-decaf-black-tea = A classic black tea with the caffeine removed, but all the flavor remains.
+reagent-name-tea-berry = berry tea
+reagent-desc-tea-berry = A sweet and tangy tea bursting with berry flavor.
 
-reagent-name-decaf-black-tea-powder = decaf black tea powder
-reagent-desc-decaf-black-tea-powder = Finely ground decaffeinated black tea leaves, perfect for a gentle brew.
+reagent-name-tea-fruit = fruit tea
+reagent-desc-tea-fruit = A vibrant tea with a medley of fruit flavors.
 
-reagent-name-syndie-tea = Waffle Co. Coffee Delight
-reagent-desc-syndie-tea = A synthetic beverage that mimics the taste of coffee, but with a watery texture and artificial flavor.
+reagent-name-tea-yorkshire = Yorkshire tea
+reagent-desc-tea-yorkshire = A robust and hearty black tea blend, perfect for breakfast.
+
+reagent-name-tea-decaf-black = decaf black tea
+reagent-desc-tea-decaf-black = A classic black tea with the caffeine removed, but all the flavor remains.
+
+reagent-name-tea-syndie = Waffle Co. Coffee Delight
+reagent-desc-tea-syndie = A synthetic beverage that mimics the taste of coffee, but with a watery texture and artificial flavor.
+
+# MARK: Coffees
 
 reagent-name-decaf-coffee = decaf coffee
 reagent-desc-decaf-coffee = A cup of coffee with all the flavor, but none of the caffeine.
