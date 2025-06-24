@@ -4,7 +4,7 @@
   id: WeaponTurretL85Autocannon
   name: L85 20mm autocannon
   parent: BallisticArtillery
-  description: A cheap and light 20mm autocannon. Can be remotely activated, or linked up to a GCS.
+  description: A light 20mm ballistic autocannon designed for rapid fire and suppressing smaller targets at close range. Cheap, light, and can be remotely activated or linked up to a GCS.
   components:
   - type: StaticPrice
     price: 250
@@ -60,7 +60,7 @@
   id: WeaponTurretDravon
   name: ADBP-7 DRAVON 57mm Autocannon
   parent: BallisticArtillery
-  description: A single-barrel autocannon made by Aetherion Dynamics. High fire rate, but relatively low impact. Can be remotely activated, or linked up to a GCS.
+  description: A single-barrel autocannon made by Aetherion Dynamics. Medium artillery piece with high fire rate but relatively low impact, firing HEAT shells to damage ship armor and systems. Can be remotely activated or linked up to a GCS.
   components:
   - type: StaticPrice
     price: 650
@@ -108,7 +108,7 @@
   id: WeaponTurretAK570
   name: AK570 90mm heavy autocannon
   parent: BallisticArtillery
-  description: A dual barrel, heavy autocannon. Can be remotely activated, or linked up to a GCS.
+  description: A dual-barrel, heavy 90mm autocannon firing general-purpose APHE rounds, effective for sustained fire against medium targets. Can be remotely activated or linked up to a GCS.
   components:
   - type: StaticPrice
     price: 1250
@@ -161,7 +161,7 @@
   id: WeaponTurretTarnyx
   name: ADBX-31 TARNYX 150mm EMP Cannon
   parent: BallisticArtilleryUnanchorable
-  description: A heavy EMP Cannon made by Aetherion Dynamics. It can disable massive parts of an enemy ship, making it effective in asymmetric combat. Can be remotely activated, or linked up to a GCS.
+  description: A heavy EMP cannon made by Aetherion Dynamics, designed to disable large sections of enemy ships with a single, powerful shot. Effective in asymmetric combat. Can be remotely activated or linked up to a GCS.
   components:
   - type: StaticPrice
     price: 10000
@@ -209,7 +209,7 @@
   id: WeaponTurretCyrexa
   name: CYREXA 220mm cannon
   parent: BallisticArtilleryUnanchorable
-  description: A dual barrel, main-battery cannon firing 220mm auto shells with slight reduction in brute strength. Can be remotely activated, or linked up to a GCS.
+  description: A main battery with dual barrels, delivering rapid, punishing salvos at extreme range. Fires 220mm auto shells with slightly reduced brute strength. Can be remotely activated or linked up to a GCS.
   components:
   - type: StaticPrice
     price: 20000
@@ -274,7 +274,7 @@
   id: WeaponTurretCharon
   name: M381 CHARON mass driver
   parent: BallisticArtilleryUnanchorable
-  description: A heavy linear accelerator, capable of devastating targets with kinetic energy. Can be remotely activated, or linked up to a GCS.
+  description: A capital-class railgun that fires a massive slug at extreme velocity, capable of catastrophic damage to enemy ships. Heavy linear accelerator, can be remotely activated or linked up to a GCS.
   components:
   - type: StaticPrice
     price: 40000
@@ -350,7 +350,7 @@
   id: WeaponTurretBofors
   name: Bofors 255mm cannon
   parent: BallisticArtilleryUnanchorable
-  description: A single barrelled, heavy artillery cannon. Can be remotely activated, or linked up to a GCS.
+  description: A single-barrel, heavy artillery cannon designed for cruisers, delivering massive impact with each long-range shot. Can be remotely activated or linked up to a GCS.
   components:
   - type: StaticPrice
     price: 20000
@@ -411,7 +411,7 @@
   id: WeaponTurretKargil
   name: Kargil 203mm cannon
   parent: BallisticArtilleryUnanchorable
-  description: A single barrelled, medium-heavy artillery cannon. Can be remotely activated, or linked up to a GCS.
+  description: A cruiser artillery cannon that launches devastating 203mm shells for long-range ship-to-ship combat. Can be remotely activated or linked up to a GCS.
   components:
   - type: StaticPrice
     price: 20000
