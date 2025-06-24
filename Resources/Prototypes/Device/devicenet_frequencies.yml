@@ -112,3 +112,8 @@
   id: BasicDevice
   name: device-frequency-prototype-name-basic-device
   frequency: 1280
+
+- type: deviceFrequency
+  id: SurveillanceCameraTSF
+  name: device-frequency-prototype-name-surveillance-camera-tsf
+  frequency: 1941

@@ -230,3 +230,17 @@
     mode: SnapgridCenter
     snap:
       - Wallmount
+
+# mono
+- type: entity
+  parent: SurveillanceCameraBase
+  id: SurveillanceCameraTSF
+  name: camera
+  suffix: TSF
+  components:
+  - type: DeviceNetwork
+    deviceNetId: Wired
+    receiveFrequencyId: SurveillanceCameraTSF
+    transmitFrequencyId: SurveillanceCamera
+  - type: SurveillanceCamera
+    networkSet: true

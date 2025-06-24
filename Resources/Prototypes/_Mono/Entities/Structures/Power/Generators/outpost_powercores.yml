@@ -18,7 +18,7 @@
       - state: outpostcore
       - state: outpostcore_on
         map: ["enum.PowerDeviceVisualLayers.Powered"]
-        visible: false
+        visible: true
         shader: unshaded
         color: "#62D6B9"
     - type: PowerSupplier
@@ -35,12 +35,7 @@
         behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
-      - trigger:
-          !type:DamageTrigger
-          damage: 1000
-        behaviors:
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
+        - !type:ExplodeBehavior
         - !type:PlaySoundBehavior
           sound:
             collection: MetalBreak
@@ -56,7 +51,10 @@
       delay: 10
     - type: Explosive
       explosionType: Default
-      totalIntensity: 60 # same as welding fuel tank, really only for the funny
+      totalIntensity: 1600
+      intensitySlope: 2
+      maxIntensity: 300 # like a smaller hardbomb, less than half area but good damage
+      maxTileBreak: 1
     - type: AmbientSound
       volume: -1
       range: 8
@@ -68,3 +66,5 @@
           enum.PowerDeviceVisualLayers.Powered:
             True: { visible: true }
             False: { visible: false }
+# visuals are broken but this thing is going to be unanchorable anyway so who cares
+## this probably is a problem with my implementation of the enum anchored visual system

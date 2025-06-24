@@ -44,6 +44,7 @@
         - SurveillanceCameraGeneral
         - SurveillanceCameraMedical
         - SurveillanceCameraCommand
+        - SurveillanceCameraTSF
 
 - type: entity
   parent: SurveillanceCameraRouterBase
@@ -165,3 +166,13 @@
   components:
     - type: SurveillanceCameraRouter
       subnetFrequency: SurveillanceCameraEntertainment
+
+# mono
+- type: entity
+  parent: SurveillanceCameraRouterBase
+  id: SurveillanceCameraRouterTSF
+  name: tsfmc camera router
+  suffix: TSFMC
+  components:
+    - type: SurveillanceCameraRouter
+      subnetFrequency: SurveillanceCameraTSF
