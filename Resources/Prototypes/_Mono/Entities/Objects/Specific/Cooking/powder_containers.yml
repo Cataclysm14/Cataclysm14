@@ -106,8 +106,8 @@
   description: A pouch of decaf black tea powder. Good for brewing tea!
   components:
   - type: Sprite
-    sprite: _NF/Objects/Consumable/Food/ingredients.rsi #TODO: Update sprite
-    state: cocoa-chip-big
+    sprite: _Mono/Objects/Consumable/Food/teabags.rsi #TODO: Update sprite
+    state: decafBlackBag
   - type: SolutionContainerManager
     solutions:
       food:
@@ -122,8 +122,8 @@
   description: A pouch of suspiciously spicy tea powder. Good for brewing... something!
   components:
   - type: Sprite
-    sprite: _NF/Objects/Consumable/Food/ingredients.rsi #TODO: Update sprite
-    state: cocoa-chip-big
+    sprite: _Mono/Objects/Consumable/Food/teabags.rsi #TODO: Update sprite
+    state: syndieBag
   - type: SolutionContainerManager
     solutions:
       food:
@@ -138,8 +138,8 @@
   description: A pouch of coffee grounds. Good for brewing coffee!
   components:
   - type: Sprite
-    sprite: _NF/Objects/Consumable/Food/ingredients.rsi #TODO: Update sprite
-    state: cocoa-chip-big
+    sprite: _Mono/Objects/Consumable/Food/teabags.rsi #TODO: Update sprite
+    state: coffeeBag
   - type: SolutionContainerManager
     solutions:
       food:
@@ -154,8 +154,8 @@
   description: A pouch of decaffeinated coffee grounds. Good for brewing coffee!
   components:
   - type: Sprite
-    sprite: _NF/Objects/Consumable/Food/ingredients.rsi #TODO: Update sprite
-    state: cocoa-chip-big
+    sprite: _Mono/Objects/Consumable/Food/teabags.rsi #TODO: Update sprite
+    state: decafCoffeeBag
   - type: SolutionContainerManager
     solutions:
       food:

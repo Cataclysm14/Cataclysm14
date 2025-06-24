@@ -10,7 +10,8 @@
   description: A simple dry cookie, perfect pair for some tea or coffee.
   components:
   - type: Sprite
-    state: cookie-sugar #TODO: Update sprite
+    sprite: Objects/Consumable/Food/Baked/misc.rsi #TODO: Update sprite
+    state: cookie-simple
   - type: Tag
     tags: 
     - SimpleCookie

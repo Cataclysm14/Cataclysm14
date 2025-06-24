@@ -18,7 +18,7 @@ reagent-name-tea-powder-decaf-black = decaf black tea powder
 reagent-desc-tea-powder-decaf-black = Finely ground decaffeinated black tea leaves, perfect for a gentle brew.
 
 reagent-name-tea-powder-syndie = Waffle Co. Coffee Delight Powder
-reagent-desc-tea-powder-syndie = A synthetic coffee-flavored powder that dissolves in water, mimicking the taste of coffee.
+reagent-desc-tea-powder-syndie = An extremely cheap caffeine-infused powder made by Waffle Co., used by underpaid interns everywhere.
 
 reagent-name-coffee-powder-decaf = decaf coffee powder
 reagent-desc-coffee-powder-decaf = Finely ground decaffeinated coffee beans
@@ -41,7 +41,7 @@ reagent-name-tea-decaf-black = decaf black tea
 reagent-desc-tea-decaf-black = A classic black tea with the caffeine removed, but all the flavor remains.
 
 reagent-name-tea-syndie = Waffle Co. Coffee Delight
-reagent-desc-tea-syndie = A synthetic beverage that mimics the taste of coffee, but with a watery texture and artificial flavor.
+reagent-desc-tea-syndie = A synthetic beverage brewed from Waffle Co. powder, favored by Cybersun operatives to avoid faceplanting from exhaustion.
 
 # MARK: Coffees
 
