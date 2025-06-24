@@ -5,8 +5,8 @@
   description: A pouch of black tea powder. Good for brewing tea!
   components:
   - type: Sprite
-    sprite: _NF/Objects/Consumable/Food/ingredients.rsi #TODO: Update sprite
-    state: cocoa-chip-big
+    sprite: _Mono/Objects/Consumable/Food/teabags.rsi # TODO: Add sprite
+    state: blackBag
   - type: SolutionContainerManager
     solutions:
       food:
@@ -21,8 +21,8 @@
   description: A pouch of green tea powder. Good for brewing tea!
   components:
   - type: Sprite
-    sprite: _NF/Objects/Consumable/Food/ingredients.rsi #TODO: Update sprite
-    state: cocoa-chip-big
+    sprite: _Mono/Objects/Consumable/Food/teabags.rsi # TODO: Add sprite
+    state: greenBag
   - type: SolutionContainerManager
     solutions:
       food:
@@ -37,8 +37,8 @@
   description: A pouch of chamomile tea powder. Good for brewing tea!
   components:
   - type: Sprite
-    sprite: _NF/Objects/Consumable/Food/ingredients.rsi #TODO: Update sprite
-    state: cocoa-chip-big
+    sprite: _Mono/Objects/Consumable/Food/teabags.rsi
+    state: chamomileBag
   - type: SolutionContainerManager
     solutions:
       food:
@@ -53,8 +53,8 @@
   description: A pouch of berry tea powder. Good for brewing tea!
   components:
   - type: Sprite
-    sprite: _NF/Objects/Consumable/Food/ingredients.rsi #TODO: Update sprite
-    state: cocoa-chip-big
+    sprite: _Mono/Objects/Consumable/Food/teabags.rsi
+    state: berryBag
   - type: SolutionContainerManager
     solutions:
       food:
@@ -69,8 +69,8 @@
   description: A pouch of fruit tea powder. Good for brewing tea!
   components:
   - type: Sprite
-    sprite: _NF/Objects/Consumable/Food/ingredients.rsi #TODO: Update sprite
-    state: cocoa-chip-big
+    sprite: _Mono/Objects/Consumable/Food/teabags.rsi
+    state: fruitBag
   - type: SolutionContainerManager
     solutions:
       food:
@@ -85,8 +85,8 @@
   description: A pouch of Yorkshire tea powder. Good for brewing tea!
   components:
   - type: Sprite
-    sprite: _NF/Objects/Consumable/Food/ingredients.rsi #TODO: Update sprite
-    state: cocoa-chip-big
+    sprite: _Mono/Objects/Consumable/Food/teabags.rsi
+    state: yorkshireBag
   - type: SolutionContainerManager
     solutions:
       food:

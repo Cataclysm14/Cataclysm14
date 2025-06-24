@@ -8,8 +8,9 @@
     canRestock:
     - BaristaVendInventory
   - type: Sprite
+    sprite: Objects/Specific/Service/vending_machine_restock.rsi
     layers:
     - state: base
     - state: green_bit
       shader: unshaded
-    - state: refill_medical #TODO: Update sprites
+    - state: refill_barista
