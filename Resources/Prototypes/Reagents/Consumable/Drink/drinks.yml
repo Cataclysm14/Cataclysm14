@@ -438,7 +438,7 @@
         type: Remove
 
 - type: reagent
-  id: Black Tea # Mono edit
+  id: Tea # Mono edit
   name: reagent-name-tea
   parent: BaseDrink
   desc: reagent-desc-tea

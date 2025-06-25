@@ -43,9 +43,9 @@
   - Assembler
 
 - type: microwaveMealRecipe
-  id: RecipeCookieSimple
+  id: RecipeBiscuitSimple
   name: simple cookie recipe
-  result: FoodBakedCookieSimple
+  result: FoodBakedBiscuitSimple
   resultCount: 4 # Frontier
   time: 10 # Frontier - 5<10
   group: BarsAndCookies

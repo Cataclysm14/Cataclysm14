@@ -13,11 +13,6 @@
 # MARK: Teas
 
 - type: flavor
-  id: teaBlack
-  flavorType: Complex
-  description: flavor-complex-tea-black
-
-- type: flavor
   id: teaGreen
   flavorType: Complex
   description: flavor-complex-tea-green
@@ -51,3 +46,10 @@
   id: teaSyndie
   flavorType: Complex
   description: flavor-complex-tea-syndie
+
+# MARK: Coffee
+
+- type: flavor
+  id: coffeeDecaf
+  flavorType: Complex
+  description: flavor-complex-coffee-decaf

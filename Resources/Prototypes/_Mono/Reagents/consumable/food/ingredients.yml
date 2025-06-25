@@ -8,7 +8,7 @@
   name: reagent-name-tea-powder-green
   desc: reagent-desc-tea-powder-green
   physicalDesc: reagent-physical-desc-powdery
-  flavor: tea-green
+  flavor: teaGreen
   color: "#6B8E23"
   group: Foods
   metabolisms:
@@ -25,7 +25,7 @@
   name: reagent-name-tea-powder-chamomile
   desc: reagent-desc-tea-powder-chamomile
   physicalDesc: reagent-physical-desc-powdery
-  flavor: tea-chamomile
+  flavor: teaChamomile
   color: "#EEDC82"
   group: Foods
   metabolisms:
@@ -42,7 +42,7 @@
   name: reagent-name-tea-powder-berry
   desc: reagent-desc-tea-powder-berry
   physicalDesc: reagent-physical-desc-powdery
-  flavor: tea-berry
+  flavor: teaBerry
   color: "#A23E48"
   group: Foods
   metabolisms:
@@ -59,7 +59,7 @@
   name: reagent-name-tea-powder-fruit
   desc: reagent-desc-tea-powder-fruit
   physicalDesc: reagent-physical-desc-powdery
-  flavor: tea-fruit
+  flavor: teaFruit
   color: "#FFB347"
   group: Foods
   metabolisms:
@@ -76,7 +76,7 @@
   name: reagent-name-tea-powder-yorkshire
   desc: reagent-desc-tea-powder-yorkshire
   physicalDesc: reagent-physical-desc-powdery
-  flavor: tea-yorkshire
+  flavor: teaYorkshire
   color: "#4B3621"
   group: Foods
   metabolisms:
@@ -93,7 +93,7 @@
   name: reagent-name-tea-powder-decaf-black
   desc: reagent-desc-tea-powder-decaf-black
   physicalDesc: reagent-physical-desc-powdery
-  flavor: tea-black
+  flavor: teaDecafBlack
   color: "#4A3B2F"
   group: Foods
   metabolisms:
@@ -110,7 +110,7 @@
   name: reagent-name-tea-powder-syndie
   desc: reagent-desc-tea-powder-syndie
   physicalDesc: reagent-physical-desc-powdery
-  flavor: tea-syndie
+  flavor: teaSyndie
   color: "#FF0000"
   group: Foods
   metabolisms:
@@ -127,7 +127,7 @@
   name: reagent-name-coffee-powder-decaf
   desc: reagent-desc-coffee-powder-decaf
   physicalDesc: reagent-physical-desc-powdery
-  flavor: coffee-decaf
+  flavor: coffeeDecaf
   color: "#4A3B2F"
   group: Foods
   metabolisms:
