@@ -69,7 +69,7 @@
   parent: BaseDrink
   desc: reagent-desc-tea-decaf-black
   physicalDesc: reagent-physical-desc-robust
-  flavor: tea-decaf-black
+  flavor: teaDecafBlack
   color: "#4A3B2F"
   metamorphicSprite:
     sprite: _Mono/Objects/Consumable/Drinks/decafteaglass.rsi
