@@ -1539,10 +1539,10 @@
   id: Mask
 
 - type: Tag
-  id: SugarCookie
+  id: SugarBiscuit
 
 - type: Tag
-  id: OatmealCookie
+  id: OatmealBiscuit
 
 - type: Tag
-  id: SimpleCookie
+  id: SimpleBiscuit

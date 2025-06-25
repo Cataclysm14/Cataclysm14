@@ -5,12 +5,12 @@
 
 - type: entity
   parent: [ BoxCardboard, BaseBagOpenClose ]
-  id: FoodBoxCookieSimple
-  name: Simple Cookie Box
-  description: A box containing simple cookies. Perfect for a snack!
+  id: FoodBoxBiscuitSimple
+  name: Simple Biscuit Box
+  description: A box containing simple biscuits. Perfect for a snack!
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Baked/nuggets.rsi #TODO: Update sprite
+    sprite: _Mono/Objects/Consumable/Food/cookiebox.rsi
     state: box
     layers:
     - state: box
@@ -40,16 +40,16 @@
     grid:
     - 0,0,1,2
   - type: Item
-    sprite: Objects/Consumable/Food/Baked/nuggets.rsi #TODO: Update sprite
+    sprite: _Mono/Objects/Consumable/Food/cookiebox.rsi
     size: Small
     heldPrefix: box
   - type: StorageFill
     contents:
-    - id: FoodBakedCookieSimple #TODO: Add it
+    - id: FoodBakedBiscuitSimple
       amount: 6
   - type: ItemCounter
     count:
-      tags: [SimpleCookie]
+      tags: [SimpleBiscuit]
     composite: true
     layerStates:
     - box1
@@ -62,12 +62,12 @@
 
 - type: entity
   parent: [ BoxCardboard, BaseBagOpenClose ]
-  id: FoodBoxCookieSugar
-  name: Sugar Cookie Box
-  description: A box containing sugar cookies. Perfect for a snack!
+  id: FoodBoxBiscuitSugar
+  name: Sugar Biscuit Box
+  description: A box containing sugar biscuits. Perfect for a snack!
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Baked/nuggets.rsi #TODO: Update sprite
+    sprite: _Mono/Objects/Consumable/Food/cookiebox.rsi
     state: box
     layers:
     - state: box
@@ -97,16 +97,16 @@
     grid:
     - 0,0,1,2
   - type: Item
-    sprite: Objects/Consumable/Food/Baked/nuggets.rsi #TODO: Update sprite
+    sprite: _Mono/Objects/Consumable/Food/cookiebox.rsi
     size: Small
     heldPrefix: box
   - type: StorageFill
     contents:
-    - id: FoodBakedCookieSugar
+    - id: FoodBakedBiscuitSugar
       amount: 6
   - type: ItemCounter
     count:
-      tags: [SugarCookie]
+      tags: [SugarBiscuit]
     composite: true
     layerStates:
     - box1
@@ -119,12 +119,12 @@
 
 - type: entity
   parent: [ BoxCardboard, BaseBagOpenClose ]
-  id: FoodBoxCookieOatmeal
-  name: Oatmeal Cookie Box
-  description: A box containing oatmeal cookies. Perfect for a snack!
+  id: FoodBoxBiscuitOatmeal
+  name: Oatmeal Biscuit Box
+  description: A box containing oatmeal biscuit. Perfect for a snack!
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Baked/nuggets.rsi #TODO: Update sprite
+    sprite: _Mono/Objects/Consumable/Food/cookiebox.rsi
     state: box
     layers:
     - state: box
@@ -154,16 +154,16 @@
     grid:
     - 0,0,1,2
   - type: Item
-    sprite: Objects/Consumable/Food/Baked/nuggets.rsi #TODO: Update sprite
+    sprite: _Mono/Objects/Consumable/Food/cookiebox.rsi
     size: Small
     heldPrefix: box
   - type: StorageFill
     contents:
-    - id: FoodBakedCookieOatmeal
+    - id: FoodBakedBiscuitOatmeal
       amount: 6
   - type: ItemCounter
     count:
-      tags: [OatmealCookie]
+      tags: [OatmealBiscuit]
     composite: true
     layerStates:
     - box1
