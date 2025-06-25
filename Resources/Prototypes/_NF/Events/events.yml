@@ -371,9 +371,13 @@
     - Supply
     - Traffic # Frontier
     - Nfsd # Frontier
-    extraCount: 2
+    - Syndicate # Mono
+    - Freelance # Mono
+    - Ussp # Mono
+    - UsspCommand # Mono
+    extraCount: 6
     lightBreakChancePerSecond: 0.0003
-    doorToggleChancePerSecond: 0.001
+    doorToggleChancePerSecond: 0 # Mono
 
 - type: entity
   id: VentClog
