@@ -50,9 +50,9 @@ public sealed class CircularShieldProjectileSystem : EntitySystem
     private void UpdateActiveShields()
     {
         _activeShields.Clear();
-        var query = EntityQueryEnumerator<TransformComponent, CircularShieldComponent>();
+        var query = EntityQueryEnumerator<CircularShieldComponent, TransformComponent>();
 
-        while (query.MoveNext(out var shieldUid, out _, out var shield))
+        while (query.MoveNext(out _, out var shieldUid, out var shield))
         {
             if (shield.Effects.Count == 0 || !shield.CanWork)
                 continue;
