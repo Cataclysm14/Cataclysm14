@@ -232,7 +232,7 @@ public sealed partial class MapScreen : BoxContainer
         }
 
         RebuildMapObjects();
-        
+
         // Immediately add all objects to the map instead of queueing them
         foreach (var mapObj in _pendingMapObjects)
         {
@@ -251,9 +251,11 @@ public sealed partial class MapScreen : BoxContainer
 
     private void MapRebuildPressed(BaseButton.ButtonEventArgs obj)
     {
-        PingMap();
-        // Show FTL range circle without targeting elements
         MapRadar.ShowFTLRangeOnly = true;
+        PingMap();
+
+        // Reset range back after map pinging is complete.
+        MapRadar.ShowFTLRangeOnly = MapFTLButton.Pressed;
     }
 
     /// <summary>
