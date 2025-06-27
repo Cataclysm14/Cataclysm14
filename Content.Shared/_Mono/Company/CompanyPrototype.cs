@@ -32,7 +32,7 @@ public sealed class CompanyPrototype : IPrototype
     /// The description of the company.
     /// </summary>
     [DataField("description", required: false)]
-    public string Description { get; private set; } = default!;
+    public string Description { get; private set; } = string.Empty;
 
     /// <summary>
     /// The color used to display the company name in examine text.
