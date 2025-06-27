@@ -1,10 +1,3 @@
-// SPDX-FileCopyrightText: 2025 Ark
-// SPDX-FileCopyrightText: 2025 HacksLua
-// SPDX-FileCopyrightText: 2025 LukeZurg22
-// SPDX-FileCopyrightText: 2025 ark1368
-//
-// SPDX-License-Identifier: AGPL-3.0-or-later
-
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared._Mono.Company;
@@ -39,7 +32,7 @@ public sealed class CompanyPrototype : IPrototype
     /// The description of the company.
     /// </summary>
     [DataField("description", required: false)]
-    public string Description { get; private set; } = string.Empty;
+    public string Description { get; private set; } = default!;
 
     /// <summary>
     /// The color used to display the company name in examine text.
