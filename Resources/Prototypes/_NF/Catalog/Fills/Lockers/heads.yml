@@ -58,6 +58,11 @@
       - id: CommsComputerCircuitboard # Frontier
       - id: MedalCaseNfsd # Frontier
       - id: Demag # Frontier
+      - id: RubberStampSheriff
+      - id: WeaponRevolverMateba #WeaponPistolMk58Nonlethal - Mono
+      - id: SpeedLoader45_magnumFMJ # Mono
+      - id: RadioHandheldNF # Mono
+      - id: NfsdTechFabFlatpack
 
 - type: entity
   parent: GunSafe

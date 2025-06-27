@@ -51,15 +51,10 @@
 - type: startingGear
   id: SheriffGear
   equipment:
-    pocket1: WeaponRevolverMateba #WeaponPistolMk58Nonlethal - Mono
-    pocket2: WeaponEnergyGunMultiphase # DeltaV gun
+    pocket1: WeaponEnergyGunMultiphase # DeltaV gun
   storage:
     back:
-    - NfsdTechFabFlatpack
     - Multitool
     - DoorRemoteNfsd
     - BaseSecurityUplinkRadioSheriff
-    - RubberStampSheriff
-    - SpeedLoader45_magnumFMJ # Mono
-    - RadioHandheldNF # Mono
     - ShipVoucherTsfmcColonel
