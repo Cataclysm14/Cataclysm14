@@ -1,4 +1,10 @@
-﻿using Robust.Shared.Configuration;
+// SPDX-FileCopyrightText: 2024 Simon
+// SPDX-FileCopyrightText: 2025 GreaseMonk
+// SPDX-FileCopyrightText: 2025 sleepyyapril
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Robust.Shared.Configuration;
 
 namespace Content.Shared.CCVar;
 
