@@ -423,6 +423,9 @@
   id: CartridgeRocket
 
 - type: Tag
+  id: CartridgeRocketEmp # mono
+
+- type: Tag
   id: Cartridge8x65mmSKR # mono
 
 # Allows you to walk over tile entities such as lava without steptrigger

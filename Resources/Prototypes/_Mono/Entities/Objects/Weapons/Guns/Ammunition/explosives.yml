@@ -209,6 +209,7 @@
   - type: Tag
     tags:
       - CartridgeRocket
+      - CartridgeRocketEmp
   - type: Item
     size: Tiny
   - type: CartridgeAmmo
