@@ -22,6 +22,7 @@ using Robust.Shared.Enums;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Utility;
 
 namespace Content.Server._NF.GameRule;
 
@@ -42,6 +43,17 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
     private readonly HttpClient _httpClient = new();
 
     private readonly ProtoId<GamePresetPrototype> _fallbackPresetID = "NFPirates";
+
+    private const int LeaderboardLimit = 20;
+
+    private readonly LocId _summaryProfitLocId = "adventure-list-profit";
+    private readonly LocId _summaryLossLocId = "adventure-list-loss";
+    private readonly LocId _summaryAdventureHighLocId = "adventure-list-high";
+    private readonly LocId _summaryAdventureLowLocId = "adventure-list-low";
+    private readonly LocId _summaryAdventureNoEntriesLocId = "adventure-webhook-list-no-entries";
+
+    private readonly string _summaryProfitColor = "[color=#d19e5e]";
+    private readonly string _summaryLossColor = "[color=#659cc9]";
 
     public sealed class PlayerRoundBankInformation
     {
@@ -81,11 +93,23 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
     protected override void AppendRoundEndText(EntityUid uid, NFAdventureRuleComponent component, GameRuleComponent gameRule, ref RoundEndTextAppendEvent ev)
     {
         ev.AddLine(Loc.GetString("adventure-list-start"));
-        var allScore = new List<Tuple<string, int>>();
+        var allScores = new List<BankData>();
 
+        GetBuiltRoundEndSummary(ref ev, ref allScores);
+
+        if (allScores.Count == 0)
+            return;
+
+        HandleHighestLowestEarners(allScores);
+        ReportLedger();
+    }
+
+    private void GetBuiltRoundEndSummary(ref RoundEndTextAppendEvent ev, ref List<BankData> bankData)
+    {
         foreach (var (player, playerInfo) in _players)
         {
             var endBalance = playerInfo.EndBalance;
+
             if (_bank.TryGetBalance(player, out var bankBalance))
             {
                 endBalance = bankBalance;
@@ -95,52 +119,79 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
             if (endBalance < 0)
                 continue;
 
-            // WIP: Replace += string appends w. StringBuilder.
             var profit = endBalance - playerInfo.StartBalance;
-            string summaryText;
-            if (profit < 0)
-            {
-                summaryText = Loc.GetString("adventure-list-loss", ("amount", BankSystemExtensions.ToSpesoString(-profit)));
-            }
-            else
-            {
-                summaryText = Loc.GetString("adventure-list-profit", ("amount", BankSystemExtensions.ToSpesoString(profit)));
-            }
+            var profitInSpesos = BankSystemExtensions.ToSpesoString(profit);
+            var localeId = profit >= 0 ? _summaryProfitLocId : _summaryLossLocId;
+            var color = profit >= 0 ? _summaryProfitColor : _summaryLossColor;
+
+            var amountText = $"{color}{profitInSpesos}[/color]";
+            var summaryText = Loc.GetString(localeId, ("amount", amountText));
+
+            var data = new BankData(playerInfo.Name, profit);
+
             ev.AddLine($"- {playerInfo.Name} {summaryText}");
-            allScore.Add(new Tuple<string, int>(playerInfo.Name, profit));
+            bankData.Add(data);
         }
+    }
 
-        if (!(allScore.Count >= 1))
-            return;
+    private string GetTopFor(List<BankData> orderedData, LocId adventureWebhookId, bool reverse = false)
+    {
+        if (reverse)
+            orderedData.Reverse();
 
-        var relayText = Loc.GetString("adventure-webhook-list-high");
-        relayText += '\n';
-        var highScore = allScore.OrderByDescending(h => h.Item2).ToList();
+        var noEntries = Loc.GetString(_summaryAdventureNoEntriesLocId);
+        var builder = new StringBuilder();
+        var takeAmount = LeaderboardLimit / 2;
 
-        for (var i = 0; i < 10 && highScore.Count > 0; i++)
+        if (orderedData.Count == 0)
         {
-            if (highScore.First().Item2 < 0)
-                break;
-            var profitText = Loc.GetString("adventure-webhook-top-profit", ("amount", BankSystemExtensions.ToSpesoString(highScore.First().Item2)));
-            relayText += $"{highScore.First().Item1} {profitText}";
-            relayText += '\n';
-            highScore.RemoveAt(0);
+            builder.Append(noEntries);
+            return builder.ToString();
         }
-        relayText += '\n'; // Extra line separating the highest and lowest scores
-        relayText += Loc.GetString("adventure-webhook-list-low");
-        relayText += '\n';
-        highScore.Reverse();
-        for (var i = 0; i < 10 && highScore.Count > 0; i++)
+
+        for (var i = 0; i < takeAmount; i++)
         {
-            if (highScore.First().Item2 > 0)
+            if (orderedData.Count == 0)
                 break;
-            var lossText = Loc.GetString("adventure-webhook-top-loss", ("amount", BankSystemExtensions.ToSpesoString(-highScore.First().Item2)));
-            relayText += $"{highScore.First().Item1} {lossText}";
-            relayText += '\n';
-            highScore.RemoveAt(0);
+
+            var first = orderedData.First();
+
+            // If we're reversing it, assume we want only losses. Otherwise, only profit.
+            if (reverse && first.Profit > 0 || !reverse && first.Profit < 0)
+                break;
+
+            var profit = Math.Abs(first.Profit);
+            var profitInSpesos = BankSystemExtensions.ToSpesoString(profit);
+            var profitText = Loc.GetString(adventureWebhookId, ("amount", profitInSpesos));
+            var realText = $"{first.PlayerName} {profitText}";
+
+            builder.AppendLine(realText);
+            orderedData.RemoveAt(0);
         }
-        ReportRound(relayText);
-        ReportLedger();
+
+        var finalString = builder.ToString();
+        return string.IsNullOrWhiteSpace(finalString) ? noEntries : finalString;
+    }
+
+    private void HandleHighestLowestEarners(List<BankData> bankData)
+    {
+        var builder = new StringBuilder();
+        var orderedData = bankData.OrderByDescending(data => data.Profit).ToList();
+
+        var highestProfits = GetTopFor(orderedData, _summaryProfitLocId);
+        var highestLosses = GetTopFor(orderedData, _summaryLossLocId, reverse: true);
+
+        var highText = Loc.GetString("adventure-webhook-list-high");
+        var lowText = Loc.GetString("adventure-webhook-list-low");
+
+        builder.AppendLine(highText);
+        builder.AppendLine(highestProfits);
+
+        builder.AppendLine(lowText);
+        builder.AppendLine(highestLosses);
+
+        var finalRelayText = FormattedMessage.RemoveMarkupPermissive(builder.ToString());
+        ReportRound(finalRelayText);
     }
 
     private void OnPlayerSpawningEvent(PlayerSpawnCompleteEvent ev)
@@ -235,7 +286,7 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
         }
 
         // Strip color markup tags for Discord
-        summaryText = System.Text.RegularExpressions.Regex.Replace(summaryText, @"\[color=[^\]]*\]|\[/color\]", "");
+        summaryText = FormattedMessage.RemoveMarkupPermissive(summaryText);
 
         return $"- {playerInfo.Name} {summaryText}";
     }
@@ -299,7 +350,8 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
     private async Task ReportRound(string message, int color = 0x77DDE7)
     {
         Logger.InfoS("discord", message);
-        string webhookUrl = _cfg.GetCVar(NFCCVars.DiscordLeaderboardWebhook);
+        var webhookUrl = _cfg.GetCVar(NFCCVars.DiscordLeaderboardWebhook);
+
         if (webhookUrl == string.Empty)
             return;
 
@@ -365,6 +417,7 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
 
             ],
         };
+
         await SendWebhookPayload(webhookUrl, payload);
     }
 
@@ -377,6 +430,18 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
         if (!request.IsSuccessStatusCode)
         {
             Logger.ErrorS("mining", $"Discord returned bad status code when posting message: {request.StatusCode}\nResponse: {reply}");
+        }
+    }
+
+    internal struct BankData
+    {
+        public string PlayerName { get; set; }
+        public int Profit { get; set; }
+
+        public BankData(string playerName, int profit)
+        {
+            PlayerName = playerName;
+            Profit = profit;
         }
     }
 
