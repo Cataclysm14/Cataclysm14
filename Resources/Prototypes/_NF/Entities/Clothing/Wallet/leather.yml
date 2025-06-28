@@ -8,7 +8,7 @@
   parent: NFBaseWallet
   id: ClothingWalletLeatherBrown
   name: leather wallet
-  description: Surprisingly thick. Careful not to lose it, and don't sit on it. Comes with a little money magnet. # Mono
+  description: Surprisingly thick. Careful not to lose it, and don't sit on it. Comes with a little money vacuum. # Mono
   components:
   - type: Sprite
     sprite: _NF/Clothing/Wallet/leather.rsi
