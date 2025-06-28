@@ -4,8 +4,8 @@ meta:
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 06/28/2025 21:59:29
-  entityCount: 233
+  time: 06/28/2025 22:29:17
+  entityCount: 229
 maps: []
 grids:
 - 2
@@ -208,20 +208,20 @@ entities:
             color: '#FFFFFFFF'
             id: WarnCornerSE
           decals:
-            120: -3,-2
+            119: -3,-2
         - node:
             cleanable: True
             color: '#FFFFFFFF'
             id: WarnCornerSmallSE
           decals:
-            117: -3,1
+            121: -3,1
         - node:
             cleanable: True
             color: '#FFFFFFFF'
             id: WarnLineE
           decals:
-            118: -3,0
-            119: -3,-1
+            117: -3,0
+            118: -3,-1
         - node:
             color: '#FFFFFFFF'
             id: WarnLineN
@@ -243,35 +243,34 @@ entities:
             color: '#FFFFFFFF'
             id: WarnLineW
           decals:
-            116: -3,1
+            120: -3,1
     - type: GridAtmosphere
       version: 2
       data:
         tiles:
           0,0:
-            0: 16423
-            1: 4096
+            0: 20519
           0,-1:
             0: 28723
           -1,0:
             0: 50431
           0,1:
             0: 1
-            2: 512
+            1: 512
           -1,1:
             0: 13
-            2: 512
+            1: 512
           0,-2:
             0: 13057
           -1,-2:
             0: 60428
-            2: 16
+            1: 16
           -1,-1:
             0: 63310
           -2,0:
             0: 2184
           -2,1:
-            2: 4
+            1: 4
             0: 8
           -2,-1:
             0: 34824
@@ -283,21 +282,6 @@ entities:
           moles:
           - 21.824879
           - 82.10312
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.14996
-          moles:
-          - 21.813705
-          - 82.06108
           - 0
           - 0
           - 0
@@ -326,37 +310,6 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
-- proto: ActionToggleInternals
-  entities:
-  - uid: 232
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 202
-    - type: InstantAction
-      originalIconColor: '#FFFFFFFF'
-      container: 202
-  - uid: 233
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 196
-    - type: InstantAction
-      originalIconColor: '#FFFFFFFF'
-      container: 196
-- proto: ActionToggleJetpack
-  entities:
-  - uid: 231
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 202
-    - type: InstantAction
-      originalIconColor: '#FFFFFFFF'
-      container: 202
 - proto: AirAlarm
   entities:
   - uid: 59
@@ -931,16 +884,8 @@ entities:
     components:
     - type: Transform
       parent: 102
-    - type: GasTank
-      toggleActionEntity: 233
     - type: Physics
       canCollide: False
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 233
     - type: InsideEntityStorage
 - proto: EmergencyLight
   entities:
@@ -1023,6 +968,7 @@ entities:
     - type: GasMixer
       inletTwoConcentration: 0.22000003
       inletOneConcentration: 0.78
+      enabled: True
 - proto: GasPassiveVent
   entities:
   - uid: 122
@@ -1177,6 +1123,9 @@ entities:
     - type: Transform
       pos: -1.5,-5.5
       parent: 2
+    - type: GasPressurePump
+      targetPressure: 4500
+      enabled: True
 - proto: GasVentPump
   entities:
   - uid: 1
@@ -1305,62 +1254,50 @@ entities:
     components:
     - type: Transform
       parent: 102
-    - type: GasTank
-      toggleActionEntity: 232
-    - type: Jetpack
-      toggleActionEntity: 231
     - type: Physics
       canCollide: False
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 231
-          - 232
     - type: InsideEntityStorage
-- proto: LockerWallColorSalvage
+- proto: LockerQuarterMaster
   entities:
   - uid: 102
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 1.5,3.5
+      pos: 0.5,3.5
       parent: 2
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14923
+        moles:
+        - 1.8856695
+        - 7.0937095
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
     - type: ContainerContainer
       containers:
         entity_storage: !type:Container
           showEnts: False
           occludes: True
           ents:
-          - 208
-          - 202
-          - 221
           - 196
-          - 213
+          - 202
           - 207
+          - 208
+          - 213
+          - 221
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
           ent: null
-    - type: EntityStorage
-      air:
-        volume: 200
-        immutable: False
-        temperature: 293.1493
-        moles:
-        - 1.8968438
-        - 7.1357465
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
 - proto: MachineFTLDrive
   entities:
   - uid: 229
@@ -1407,7 +1344,7 @@ entities:
         Engineering systems report no°482:
 
 
-        Ideal power output is 18kW.
+        Ideal power output is 19kW.
 - proto: PlasticFlapsAirtightClear
   entities:
   - uid: 10
@@ -1437,11 +1374,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 0.5,-5.5
-      parent: 2
-  - uid: 230
-    components:
-    - type: Transform
-      pos: 1.5,1.5
       parent: 2
 - proto: Poweredlight
   entities:
