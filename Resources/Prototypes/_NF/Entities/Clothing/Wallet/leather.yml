@@ -62,7 +62,7 @@
 - type: entity
   parent: ClothingWalletLeatherBrown
   id: ClothingWalletLeatherMail
-  description: On the inside is an embroidered picture of a cat, a heart, and the word "CLIPPY". Comes with a little money magnet. # Mono
+  description: On the inside is an embroidered picture of a cat, a heart, and the word "CLIPPY". Comes with a little money vacuum. # Mono
   components:
   - type: Sprite
     layers:
