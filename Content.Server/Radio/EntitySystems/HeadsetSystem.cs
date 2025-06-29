@@ -7,6 +7,7 @@
 // SPDX-FileCopyrightText: 2023 deltanedas
 // SPDX-FileCopyrightText: 2023 metalgearsloth
 // SPDX-FileCopyrightText: 2024 LordCarve
+// SPDX-FileCopyrightText: 2025 Ark
 // SPDX-FileCopyrightText: 2025 ark1368
 // SPDX-FileCopyrightText: 2025 point2
 //
