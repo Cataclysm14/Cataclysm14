@@ -84,13 +84,13 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: GunWieldBonus
     minAngle: -21
-    maxAngle: -47
+    maxAngle: -27
   - type: Gun
-    minAngle: 21
-    maxAngle: 52
+    minAngle: 34
+    maxAngle: 49
     angleIncrease: 8
     angleDecay: 19
-    fireRate: 3 # 180 rpm
+    fireRate: 6 # 360 rpm
     selectedMode: FullAuto
     availableModes:
     - SemiAuto
@@ -133,5 +133,5 @@
     price: 2500
   - type: SpeedModifiedOnWield
     walkModifier: 0.8
-    sprintModifier: 0.55
+    sprintModifier: 0.75
   - type: GunRequiresWield
