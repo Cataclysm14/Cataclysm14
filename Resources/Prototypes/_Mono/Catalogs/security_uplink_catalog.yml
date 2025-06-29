@@ -44,9 +44,9 @@
       - SecurityUplink
 
 - type: listing
-  id: UplinkSecurityMR8D
-  name:  uplink-security-mr8d-name
-  description: uplink-security-mr8d-desc
+  id: UplinkSecurityMR8B
+  name:  uplink-security-mr8b-name
+  description: uplink-security-mr8b-desc
   productEntity: WeaponLMGMR8B
   cost:
     FederationMilitaryCredit: 25
