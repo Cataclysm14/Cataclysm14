@@ -42,7 +42,7 @@
   mapPath: /Maps/_Mono/Shuttles/pluto.yml
   minPlayers: 0
   stations:
-    Twilight:
+    Pluto:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
