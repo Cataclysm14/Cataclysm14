@@ -173,7 +173,7 @@
 
 - type: listing
   id: UplinkSecurityMagazineBox8x65mm
-  name: uplink-security-8x65mm-boxmag-desc
+  name: uplink-security-8x65mm-boxmag-name
   description: uplink-security-8x65mm-boxmag-desc
   productEntity: Magazine8x65mmSKRBox
   cost:
