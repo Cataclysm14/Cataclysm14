@@ -13,4 +13,11 @@ public sealed partial class MonoCVars
     /// </summary>
     public static readonly CVarDef<float> SpaceGarbageCleanupInterval =
         CVarDef.Create("mono.space_garbage_cleanup_interval", 1800.0f, CVar.SERVERONLY);
+		
+	/// <summary>
+    ///     Whether to play radio static/noise sounds when receiving radio messages on headsets.
+    /// </summary>
+    public static readonly CVarDef<bool> RadioNoiseEnabled =
+        CVarDef.Create("mono.radio_noise_enabled", true, CVar.ARCHIVE | CVar.CLIENTONLY);
+
 }
