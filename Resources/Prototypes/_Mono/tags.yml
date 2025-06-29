@@ -137,6 +137,17 @@
 - type: Tag
   id: MagazineDP29
 
+#8x65mm SKR tags
+
+- type: Tag
+  id: Cartridge8x65mmSKR
+
+- type: Tag
+  id: Magazine8x65mmSKR
+
+- type: Tag
+  id: MagazineBox8x65mmSKR
+
   #Misc emote tags
 
 - type: Tag
