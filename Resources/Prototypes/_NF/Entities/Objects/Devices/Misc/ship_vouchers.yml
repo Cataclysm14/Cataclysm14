@@ -26,7 +26,7 @@
 - type: entity
   parent: BaseShipVoucher
   id: ShipVoucherNfsdSergeant
-  name: TSFMC lieutenant ship voucher
+  name: TSFMC medium ship voucher
   description: Allows for one free small to medium TSFMC ship purchase. Destroyed on sale.
   components:
   - type: Sprite
@@ -46,7 +46,7 @@
 - type: entity
   parent: ShipVoucherNfsdSergeant
   id: ShipVoucherNfsdBailiff
-  name: TSFMC captain ship voucher
+  name: TSFMC capital ship voucher
   description: Allows for one free small to capital TSFMC ship purchase. Destroyed on sale.
   components:
   - type: Sprite

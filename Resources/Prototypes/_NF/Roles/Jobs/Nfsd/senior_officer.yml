@@ -50,5 +50,5 @@
     back:
     - Magazine9x19mmPistolFMJ
     - BaseSecurityUplinkRadioOfficer
-    - ShipVoucherNfsdSergeant
+#    - ShipVoucherNfsdSergeant # Mono
     - RadioHandheldNF # Mono

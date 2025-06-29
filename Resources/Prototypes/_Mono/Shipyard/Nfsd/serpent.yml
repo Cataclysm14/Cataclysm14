@@ -8,10 +8,10 @@
   parent: BaseVesselAntag
   name: TSF-SKR Serpent
   description: A experimental heavy frigate, with heavy spinal and broadside firepower.
-  price: 272250
+  price: 347250
   category: Large
   group: Security
-  access: HeadOfSecurity
+  access: Bailiff
   shuttlePath: /Maps/_Mono/Shuttles/Nfsd/serpent.yml
   guidebookPage: Null
   class:

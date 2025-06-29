@@ -23,6 +23,11 @@
   id: UplinkSecurityExplosives
   name: store-category-secexplosives
 # mono edit
+
+- type: storeCategory
+  id: UplinkSecurityVouchers
+  name: store-category-secvouchers
+
 # MARK: Rogue
 - type: storeCategory
   id: UplinkPirateBundles

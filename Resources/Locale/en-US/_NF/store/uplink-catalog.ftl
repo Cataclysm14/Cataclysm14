@@ -9,7 +9,7 @@ store-category-secutility = Utility
 store-category-secammo = Ammunition
 store-category-secexplosives = Explosives
 store-category-secbundles = Bundles
-
+store-category-secvouchers = Vouchers
 
 uplink-security-hardsuit-name = Bronze Patrol Suit
 uplink-security-hardsuit-desc = The standard-issue TSFMC space proof suit for patrol duty. This bronze variant has cadet rank markings.

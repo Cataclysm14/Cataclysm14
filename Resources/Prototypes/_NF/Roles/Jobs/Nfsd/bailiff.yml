@@ -56,6 +56,6 @@
     back:
     - Magazine9x19mmPistolFMJ
     - BaseSecurityUplinkRadioOfficer
-    - ShipVoucherNfsdBailiff
+#    - ShipVoucherNfsdBailiff
     - RubberStampBailiff
     - RadioHandheldNF # Mono
