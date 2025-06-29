@@ -45,11 +45,7 @@ using Content.Server.StationEvents.Components;
 using Content.Shared._Mono.Company;
 using Content.Shared.Forensics.Components;
 using Content.Shared.Shuttles.Components;
-using Robust.Server.Player;
 using Robust.Shared.Player;
-using Content.Server.Shuttles.Components;
-using Content.Server.Shuttles.Systems;
-using Robust.Shared.Log;
 using Robust.Shared.Timing;
 
 namespace Content.Server._NF.Shipyard.Systems;
@@ -324,6 +320,9 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
         _records.Synchronize(station);
 
         EntityManager.AddComponents(shuttleUid, vessel.AddComponents);
+
+        // Add ship access control
+        AddShipAccessToEntities(shuttleUid);
 
         // Ensure cleanup on ship sale
         EnsureComp<LinkedLifecycleGridParentComponent>(shuttleUid);
