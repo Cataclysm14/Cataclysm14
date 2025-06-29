@@ -1,3 +1,17 @@
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 IrisTheAmped <iristheamped@gmail.com>
+# SPDX-FileCopyrightText: 2025 Marty <martynashagriefer@gmail.com>
+# SPDX-FileCopyrightText: 2025 NotActuallyMarty <martynashagriefer@gmail.com>
+# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   parent: [Clothing, ContentsExplosionResistanceBase]
   id: ClothingModsuitStandard
@@ -69,10 +83,10 @@
   - type: SealableClothingControl
   - type: SealableClothingRequiresPower
   - type: SealableClothingVisuals
-    visualLayers:
+    spriteLayer: sealed
+    clothingVisuals:
       back:
       - state: equipped-BACKPACK-sealed
-        shader: unshaded
   - type: Construction
     graph: Modsuit
     node: standard
@@ -162,10 +176,10 @@
   - type: SealableClothingControl
   - type: SealableClothingRequiresPower
   - type: SealableClothingVisuals
-    visualLayers:
+    spriteLayer: sealed
+    clothingVisuals:
       back:
       - state: equipped-BACKPACK-sealed
-        shader: unshaded
   - type: Construction
     graph: Modsuit
     node: security
@@ -191,6 +205,12 @@
   description: A robust modular HARDERsuit control module unit for the head of security.
   components:
   - type: Appearance
+  - type: Clothing
+    clothingVisuals:
+      back:
+      - state: equipped-BACKPACK
+      back-resomi:
+      - state: equipped-BACKPACK-resomi
   - type: Sprite
     sprite: _Goobstation/Clothing/Back/Modsuits/headofsecurity.rsi
     layers:
@@ -255,10 +275,12 @@
   - type: SealableClothingControl
   - type: SealableClothingRequiresPower
   - type: SealableClothingVisuals
-    visualLayers:
+    spriteLayer: sealed
+    clothingVisuals:
       back:
       - state: equipped-BACKPACK-sealed
-        shader: unshaded
+      back-resomi:
+      - state: equipped-BACKPACK-sealed-resomi
   - type: Construction
     graph: Modsuit
     node: headofsecurity
@@ -350,10 +372,10 @@
   - type: SealableClothingControl
   - type: SealableClothingRequiresPower
   - type: SealableClothingVisuals
-    visualLayers:
+    spriteLayer: sealed
+    clothingVisuals:
       back:
       - state: equipped-BACKPACK-sealed
-        shader: unshaded
   - type: Construction
     graph: Modsuit
     node: paramedic
@@ -443,10 +465,12 @@
   - type: SealableClothingControl
   - type: SealableClothingRequiresPower
   - type: SealableClothingVisuals
-    visualLayers:
+    spriteLayer: sealed
+    clothingVisuals:
       back:
       - state: equipped-BACKPACK-sealed
-        shader: unshaded
+      back-resomi:
+      - state: equipped-BACKPACK-sealed-resomi
   - type: Construction
     graph: Modsuit
     node: engineer
@@ -536,10 +560,12 @@
   - type: SealableClothingControl
   - type: SealableClothingRequiresPower
   - type: SealableClothingVisuals
-    visualLayers:
+    spriteLayer: sealed
+    clothingVisuals:
       back:
       - state: equipped-BACKPACK-sealed
-        shader: unshaded
+      back-resomi:
+      - state: equipped-BACKPACK-sealed-resomi
   - type: Construction
     graph: Modsuit
     node: atmostech
@@ -629,10 +655,10 @@
   - type: SealableClothingControl
   - type: SealableClothingRequiresPower
   - type: SealableClothingVisuals
-    visualLayers:
+    spriteLayer: sealed
+    clothingVisuals:
       back:
       - state: equipped-BACKPACK-sealed
-        shader: unshaded
   - type: Construction
     graph: Modsuit
     node: rd
@@ -724,10 +750,12 @@
   - type: SealableClothingControl
   - type: SealableClothingRequiresPower
   - type: SealableClothingVisuals
-    visualLayers:
+    spriteLayer: sealed
+    clothingVisuals:
       back:
       - state: equipped-BACKPACK-sealed
-        shader: unshaded
+      back-resomi:
+      - state: equipped-BACKPACK-sealed-resomi
   - type: Construction
     graph: Modsuit
     node: captain

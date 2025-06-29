@@ -62,9 +62,12 @@
     sealUpPopup: sealable-clothing-seal-up-helmet
     sealDownPopup: sealable-clothing-seal-down-helmet
   - type: SealableClothingVisuals
-    visualLayers:
+    spriteLayer: sealed
+    clothingVisuals:
       head:
       - state: equipped-HEAD-sealed
+      head-resomi:
+      - state: equipped-HEAD-sealed-resomi
   - type: Armor
     modifiers:
       coefficients:
@@ -135,6 +138,12 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Appearance
+  - type: Clothing
+    clothingVisuals:
+      head:
+      - state: equipped-HEAD
+      head-resomi:
+      - state: equipped-HEAD-resomi
   - type: Sprite
     sprite: _Goobstation/Clothing/Head/Modsuits/security.rsi
     layers:
@@ -149,9 +158,12 @@
     sealUpPopup: sealable-clothing-seal-up-helmet
     sealDownPopup: sealable-clothing-seal-down-helmet
   - type: SealableClothingVisuals
-    visualLayers:
+    spriteLayer: sealed
+    clothingVisuals:
       head:
       - state: equipped-HEAD-sealed
+      head-resomi:
+      - state: equipped-HEAD-sealed-resomi
   - type: Armor
     modifiers:
       coefficients:
@@ -223,6 +235,12 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Appearance
+  - type: Clothing
+    clothingVisuals:
+      head:
+      - state: equipped-HEAD
+      head-resomi:
+      - state: equipped-HEAD-resomi
   - type: Sprite
     sprite: _Goobstation/Clothing/Head/Modsuits/headofsecurity.rsi
     layers:
@@ -237,9 +255,12 @@
     sealUpPopup: sealable-clothing-seal-up-helmet
     sealDownPopup: sealable-clothing-seal-down-helmet
   - type: SealableClothingVisuals
-    visualLayers:
+    spriteLayer: sealed
+    clothingVisuals:
       head:
       - state: equipped-HEAD-sealed
+      head-resomi:
+      - state: equipped-HEAD-sealed-resomi
   - type: Armor
     modifiers:
       coefficients:
@@ -324,7 +345,8 @@
     sealUpPopup: sealable-clothing-seal-up-helmet
     sealDownPopup: sealable-clothing-seal-down-helmet
   - type: SealableClothingVisuals
-    visualLayers:
+    spriteLayer: sealed
+    clothingVisuals:
       head:
       - state: equipped-HEAD-sealed
   - type: Armor
@@ -411,7 +433,8 @@
     sealUpPopup: sealable-clothing-seal-up-helmet
     sealDownPopup: sealable-clothing-seal-down-helmet
   - type: SealableClothingVisuals
-    visualLayers:
+    spriteLayer: sealed
+    clothingVisuals:
       head:
       - state: equipped-HEAD-sealed
   - type: Armor
@@ -494,13 +517,22 @@
   - type: HideLayerClothing
     slots:
     - Snout
+  - type: Clothing
+    clothingVisuals:
+      head:
+      - state: equipped-HEAD
+      head-resomi:
+      - state: equipped-HEAD-resomi
   - type: SealableClothing
     sealUpPopup: sealable-clothing-seal-up-helmet
     sealDownPopup: sealable-clothing-seal-down-helmet
   - type: SealableClothingVisuals
-    visualLayers:
+    spriteLayer: sealed
+    clothingVisuals:
       head:
       - state: equipped-HEAD-sealed
+      head-resomi:
+      - state: equipped-HEAD-sealed-resomi
   - type: Armor
     modifiers:
       coefficients:
@@ -585,7 +617,8 @@
     sealUpPopup: sealable-clothing-seal-up-helmet
     sealDownPopup: sealable-clothing-seal-down-helmet
   - type: SealableClothingVisuals
-    visualLayers:
+    spriteLayer: sealed
+    clothingVisuals:
       head:
       - state: equipped-HEAD-sealed
   - type: Armor
@@ -658,6 +691,12 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Appearance
+  - type: Clothing
+    clothingVisuals:
+      head:
+      - state: equipped-HEAD
+      head-resomi:
+      - state: equipped-HEAD-resomi
   - type: Sprite
     sprite: _Goobstation/Clothing/Head/Modsuits/captain.rsi
     layers:
@@ -672,9 +711,12 @@
     sealUpPopup: sealable-clothing-seal-up-helmet
     sealDownPopup: sealable-clothing-seal-down-helmet
   - type: SealableClothingVisuals
-    visualLayers:
+    spriteLayer: sealed
+    clothingVisuals:
       head:
       - state: equipped-HEAD-sealed
+      head-resomi:
+      - state: equipped-HEAD-sealed-resomi
   - type: Armor
     modifiers:
       coefficients:
