@@ -107,14 +107,14 @@ public sealed class HeadsetSystem : SharedHeadsetSystem
 
         switch (args.Channel.ID)
         {
-            case "Common":          // Broadband
-                _audio.PlayPvs("/Audio/_Crescent/Radio/radio_broadband.ogg", uid, AudioParams.Default.WithMaxDistance(1));
+            case "Common": // Broadband
+                _audio.PlayPvs(new SoundPathSpecifier("/Audio/_Crescent/Radio/radio_broadband.ogg"), uid, AudioParams.Default.WithMaxDistance(1));
                 break;
-            case "Traffic":         // Shortband
-                _audio.PlayPvs("/Audio/_Crescent/Radio/radio_shortband.ogg", uid, AudioParams.Default.WithMaxDistance(1));
+            case "Traffic": // Shortband
+                _audio.PlayPvs(new SoundPathSpecifier("/Audio/_Crescent/Radio/radio_shortband.ogg"), uid, AudioParams.Default.WithMaxDistance(1));
                 break;
-            default:                // Special
-                _audio.PlayPvs("/Audio/_Crescent/Radio/radio_other.ogg", uid, AudioParams.Default.WithMaxDistance(1));
+            default: // Special
+                _audio.PlayPvs(new SoundPathSpecifier("/Audio/_Crescent/Radio/radio_other.ogg"), uid, AudioParams.Default.WithMaxDistance(1));
                 break;
         }
     }
