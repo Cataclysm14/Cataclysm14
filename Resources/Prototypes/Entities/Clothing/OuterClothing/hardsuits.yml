@@ -614,7 +614,7 @@
     - Hardsuit
     - WhitelistChameleon
   - type: StaminaDamageResistance # Mono - Stamres
-    coefficient: 0.2
+    coefficient: 0.5
 
 # Syndicate Medic Hardsuit
 - type: entity
@@ -668,11 +668,11 @@
     damageCoefficient: 0.2
   - type: FireProtection
     reduction: 0.8
-  - type: Armor
+  - type: Armor # Mono - Armor Value Changes
     modifiers:
       coefficients:
-        Blunt: 0.55 # 0.6 -> 0.55 Mono
-        Slash: 0.55 # 0.6 -> 0.55 Mono
+        Blunt: 0.5 # 0.6 -> 0.5 Mono
+        Slash: 0.5 # 0.6 -> 0.5 Mono
         Piercing: 0.45 # 0.6 -> 0.45 Mono
         Heat: 0.2
         Radiation: 0.01
@@ -684,7 +684,7 @@
     sprintModifier: 1.0 # 0.9-> 1 Mono
   - type: HeldSpeedModifier
   - type: StaminaDamageResistance # Mono - Stamres
-    coefficient: 0.2
+    coefficient: 0.45
   - type: ToggleableClothing # Goobstation - Modsuits change
     clothingPrototypes:
       head: ClothingHeadHelmetHardsuitSyndieElite
@@ -705,13 +705,13 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.5
-  - type: Armor
+  - type: Armor # Mono - Armor Value Changes
     modifiers:
       coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.3
-        Heat: 0.5
+        Blunt: 0.35
+        Slash: 0.35
+        Piercing: 0.27
+        Heat: 0.4
         Radiation: 0.25
         Caustic: 0.4
   - type: ClothingSpeedModifier
@@ -722,7 +722,7 @@
     clothingPrototypes:
       head: ClothingHeadHelmetHardsuitSyndieCommander
   - type: StaminaDamageResistance # Mono - Stamres
-    coefficient: 0.2
+    coefficient: 0.3
 
 #Cybersun Juggernaut Hardsuit
 - type: entity
@@ -739,7 +739,7 @@
     highPressureMultiplier: 0.2
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
-    damageCoefficient: 0.3
+    damageCoefficient: 0.2 # 0.3->0.2
   - type: Armor
     modifiers:
       coefficients:
@@ -757,7 +757,7 @@
     clothingPrototypes:
       head: ClothingHeadHelmetHardsuitCybersun
   - type: StaminaDamageResistance # Mono - Stamres
-    coefficient: 0.1
+    coefficient: 0.3
 
 #Wizard Hardsuit
 - type: entity
