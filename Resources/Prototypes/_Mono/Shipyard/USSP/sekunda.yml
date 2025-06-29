@@ -1,7 +1,7 @@
 - type: vessel
   id: Sekunda
   parent: BaseVesselAntag
-  name: NCMS Sekunda
+  name: NCS Sekunda
   description: A USSP corpsman and fire support ship, comes with an FTL drive, tiny medical and chemical bay, light arnament and a cramped interior.
   price: 35500
   category: Medium
