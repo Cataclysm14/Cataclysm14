@@ -249,7 +249,7 @@
         # prob: 0.05
       # - id: Telecrystal
         # prob: 0.01
-      # - id: Telecrystal5
+      # - id: Telecrystal25 # Mono
         # prob: 0.01
       - id: CyberPen
         prob: 0.10

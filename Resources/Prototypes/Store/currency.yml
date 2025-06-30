@@ -2,7 +2,7 @@
   id: Telecrystal
   displayName: store-currency-display-telecrystal
   cash:
-    1: Telecrystal1
+    1: Telecrystal5 # Mono
   canWithdraw: true
 
 - type: currency

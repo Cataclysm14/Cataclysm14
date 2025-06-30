@@ -13617,7 +13617,7 @@ entities:
     - type: Transform
       pos: 14.341918,-16.877413
       parent: 104
-- proto: Telecrystal1
+- proto: Telecrystal5 # Mono
   entities:
   - uid: 2474
     components:

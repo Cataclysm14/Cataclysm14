@@ -52849,7 +52849,7 @@ entities:
     - type: Transform
       pos: -9.5,-9.5
       parent: 1668
-- proto: Telecrystal5
+- proto: Telecrystal25 # Mono
   entities:
   - uid: 2919
     components:

@@ -2,4 +2,4 @@
   id: Telecrystal
   name: telecrystal
   icon: Objects/Specific/Syndicate/telecrystal.rsi
-  spawn: Telecrystal1
+  spawn: Telecrystal5 # Mono

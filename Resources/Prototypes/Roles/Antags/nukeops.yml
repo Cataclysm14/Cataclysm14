@@ -63,7 +63,7 @@
   id: SyndicateOperativeGearFull
   parent: SyndicateOperativeGearFullNoUplink
   equipment:
-    pocket2: BaseUplinkRadio40TC
+    pocket2: BaseUplinkRadio200TC # Mono
 
 #Nuclear Operative Commander Gear
 - type: startingGear
@@ -103,4 +103,4 @@
   id: SyndicateLoneOperativeGearFull
   parent: SyndicateOperativeGearFull
   equipment:
-    pocket2: BaseUplinkRadio60TC
+    pocket2: BaseUplinkRadio300TC # Mono

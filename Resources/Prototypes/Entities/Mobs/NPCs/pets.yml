@@ -561,7 +561,7 @@
     spawned:
     - id: FoodMeat
       amount: 3
-    - id: Telecrystal5
+    - id: Telecrystal25 # Mono
       amount: 1
   - type: Grammar
     attributes:
