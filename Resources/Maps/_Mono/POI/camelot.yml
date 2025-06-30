@@ -37692,6 +37692,8 @@ entities:
       startingCharge: 0
     - type: ApcPowerReceiver
       powerLoad: 50
+    - type: FireControlServer
+      enforceMaxConsoles: true
 - proto: HandheldHealthAnalyzerEmpty
   entities:
   - uid: 5485
