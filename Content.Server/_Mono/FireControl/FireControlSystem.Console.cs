@@ -78,7 +78,9 @@ public sealed partial class FireControlSystem : EntitySystem
 
     private void OnFire(EntityUid uid, FireControlConsoleComponent component, FireControlConsoleFireMessage args)
     {
-        if (component.ConnectedServer == null || !TryComp<FireControlServerComponent>(component.ConnectedServer, out var server))
+        if (component.ConnectedServer == null
+            || !TryComp<FireControlServerComponent>(component.ConnectedServer, out var server)
+            || !server.Consoles.Contains(uid))
             return;
 
         // Fire the actual weapons
@@ -165,6 +167,9 @@ public sealed partial class FireControlSystem : EntitySystem
         List<FireControllableEntry> controllables = new();
         if (component.ConnectedServer != null && TryComp<FireControlServerComponent>(component.ConnectedServer, out var server))
         {
+            if (!server.Consoles.Contains(uid))
+                return;
+
             foreach (var controllable in server.Controlled)
             {
                 var controlled = new FireControllableEntry();
