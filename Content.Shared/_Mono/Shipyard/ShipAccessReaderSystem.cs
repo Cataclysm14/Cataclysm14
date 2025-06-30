@@ -1,3 +1,5 @@
+// SPDX-FileCopyrightText: 2025 Ark
+// SPDX-FileCopyrightText: 2025 Redrover1760
 // SPDX-FileCopyrightText: 2025 ark1368
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
@@ -11,6 +13,10 @@ using Content.Shared.Inventory;
 using Content.Shared.Popups;
 using Content.Shared.Storage.Components;
 using Content.Shared.Lock;
+using Content.Shared._NF.Whitelist.Components;
+using Content.Shared.Silicons.Borgs.Components;
+using Content.Shared._Mono.Company;
+using Content.Shared.Ghost;
 using Robust.Shared.Map;
 
 namespace Content.Shared._Mono.Shipyard;
@@ -87,6 +93,13 @@ public sealed class ShipAccessReaderSystem : EntitySystem
     /// <returns>True if access is granted, false otherwise</returns>
     public bool HasShipAccess(EntityUid user, EntityUid target, ShipAccessReaderComponent component, bool silent = false)
     {
+        // Allow admin ghosts to bypass ship access checks
+        if (TryComp<GhostComponent>(user, out var ghost) && ghost.CanGhostInteract)
+        {
+            // Log.Debug("ShipAccess: Admin ghost {0} bypassing ship access check", user);
+            return true; // Admin ghosts can access everything
+        }
+
         // Get the grid the target entity is on
         var targetTransform = Transform(target);
         if (targetTransform.GridUid == null)
@@ -106,6 +119,25 @@ public sealed class ShipAccessReaderSystem : EntitySystem
 
         // Find all accessible ID cards for the user
         var accessibleCards = FindAccessibleIdCards(user);
+
+        // Check for company-based access (USSP, Rogue, TSF) using ID card company
+        if (TryComp<CompanyComponent>(gridUid, out var shipCompany))
+        {
+            // Check if ship has one of the special company designations
+            if (shipCompany.CompanyName == "USSP" || shipCompany.CompanyName == "Rogue" || shipCompany.CompanyName == "TSF")
+            {
+                // Check each accessible ID card for matching company
+                foreach (var cardUid in accessibleCards)
+                {
+                    if (TryComp<IdCardComponent>(cardUid, out var idCard) &&
+                        idCard.CompanyName == shipCompany.CompanyName)
+                    {
+                        // Log.Debug("ShipAccess: User {0} has company access to {1} ship via ID card {2}", user, shipCompany.CompanyName, cardUid);
+                        return true; // ID card company matches ship company
+                    }
+                }
+            }
+        }
         // Log.Debug("ShipAccess: User {0} has {1} accessible ID cards: {2}", user, accessibleCards.Count, string.Join(", ", accessibleCards));
 
         // Check if any of the user's ID cards have a deed for this specific ship
@@ -123,11 +155,37 @@ public sealed class ShipAccessReaderSystem : EntitySystem
             }
         }
 
+        // Find all accessible vouchers for the user
+        var accessibleVouchers = FindAccessibleVouchers(user);
+        // Log.Debug("ShipAccess: User {0} has {1} accessible vouchers: {2}", user, accessibleVouchers.Count, string.Join(", ", accessibleVouchers));
+
+        // Check if any of the user's vouchers have a deed for this specific ship
+        foreach (var voucherUid in accessibleVouchers)
+        {
+            if (TryComp<ShuttleDeedComponent>(voucherUid, out var voucherDeed))
+            {
+                // Log.Debug("ShipAccess: Voucher {0} has deed for shuttle {1}, target ship is {2}", voucherUid, voucherDeed.ShuttleUid, shipDeed.ShuttleUid);
+                // Check if this deed is for the same ship
+                if (voucherDeed.ShuttleUid == shipDeed.ShuttleUid)
+                {
+                    // Log.Debug("ShipAccess: User {0} has correct deed access via voucher {1}", user, voucherUid);
+                    return true; // User has the correct deed
+                }
+            }
+        }
+
         // Check if any of the user's ID cards have guest access to this ship
         if (TryComp<ShipGuestAccessComponent>(gridUid, out var guestAccess))
         {
             // Log.Debug("ShipAccess: Grid {0} has guest access component with {1} guest cards: {2}",
             //     gridUid, guestAccess.GuestIdCards.Count, string.Join(", ", guestAccess.GuestIdCards));
+
+            // Check if the user is a cyborg with guest access
+            if (TryComp<BorgChassisComponent>(user, out _) && guestAccess.GuestCyborgs.Contains(user))
+            {
+                // Log.Debug("ShipAccess: Cyborg {0} has guest access", user);
+                return true; // Cyborg has guest access
+            }
 
             foreach (var cardUid in accessibleCards)
             {
@@ -135,6 +193,16 @@ public sealed class ShipAccessReaderSystem : EntitySystem
                 {
                     // Log.Debug("ShipAccess: User {0} has guest access via card {1}", user, cardUid);
                     return true; // User's ID card has guest access
+                }
+            }
+
+            // Also check if any vouchers have guest access
+            foreach (var voucherUid in accessibleVouchers)
+            {
+                if (guestAccess.GuestIdCards.Contains(voucherUid))
+                {
+                    // Log.Debug("ShipAccess: User {0} has guest access via voucher {1}", user, voucherUid);
+                    return true; // User's voucher has guest access
                 }
             }
         }
@@ -188,5 +256,33 @@ public sealed class ShipAccessReaderSystem : EntitySystem
         }
 
         return cards;
+    }
+
+    /// <summary>
+    /// Finds all vouchers that the user can access (in hands or inventory).
+    /// </summary>
+    /// <param name="user">The user to check</param>
+    /// <returns>Collection of accessible voucher entities</returns>
+    private HashSet<EntityUid> FindAccessibleVouchers(EntityUid user)
+    {
+        var vouchers = new HashSet<EntityUid>();
+
+        // Check items in hands for vouchers
+        foreach (var item in _handsSystem.EnumerateHeld(user))
+        {
+            // Check if the item is a voucher
+            if (HasComp<NFShipyardVoucherComponent>(item))
+                vouchers.Add(item);
+        }
+
+        // Check ID slot in inventory for vouchers (in case someone puts a voucher in the ID slot)
+        if (_inventorySystem.TryGetSlotEntity(user, "id", out var idUid))
+        {
+            // Check if the item is a voucher
+            if (HasComp<NFShipyardVoucherComponent>(idUid.Value))
+                vouchers.Add(idUid.Value);
+        }
+
+        return vouchers;
     }
 }
