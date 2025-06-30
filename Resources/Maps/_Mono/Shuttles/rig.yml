@@ -1,27 +1,10 @@
-# SPDX-FileCopyrightText: 2023 Alexander Evgrashin
-# SPDX-FileCopyrightText: 2023 Banshee
-# SPDX-FileCopyrightText: 2023 Cheackraze
-# SPDX-FileCopyrightText: 2023 RealIHaveANameOfficial
-# SPDX-FileCopyrightText: 2024 Checkraze
-# SPDX-FileCopyrightText: 2024 Dvir
-# SPDX-FileCopyrightText: 2024 ErhardSteinhauer
-# SPDX-FileCopyrightText: 2024 Salvantrix
-# SPDX-FileCopyrightText: 2024 dustylens
-# SPDX-FileCopyrightText: 2025 Alkheemist
-# SPDX-FileCopyrightText: 2025 RikuTheKiller
-# SPDX-FileCopyrightText: 2025 UnicornOnLSD
-# SPDX-FileCopyrightText: 2025 Whatstone
-# SPDX-FileCopyrightText: 2025 starch
-#
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
 meta:
   format: 7
   category: Grid
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 06/29/2025 23:30:41
+  time: 06/30/2025 11:11:12
   entityCount: 496
 maps: []
 grids:
@@ -389,59 +372,58 @@ entities:
             0: 6651
           0,-1:
             0: 64291
-            1: 8
+            2: 8
           -1,0:
-            0: 61497
-            2: 2
+            0: 61499
           0,1:
             0: 12561
-            1: 68
-            3: 32904
+            2: 68
+            1: 32904
           -1,1:
             0: 65535
           0,2:
             0: 12339
-            3: 2184
+            1: 2184
           -1,2:
             0: 63679
           0,3:
             0: 275
-            3: 8192
-            1: 1024
+            1: 8192
+            2: 1024
           -1,3:
             0: 2184
-            1: 48
-            3: 16384
+            2: 48
+            1: 16384
           1,0:
             0: 16
           1,-1:
             0: 4096
-            3: 1
+            1: 1
           -2,0:
             0: 8
-            1: 17408
+            2: 17408
           -2,1:
-            3: 17472
+            1: 17472
           -2,-1:
             0: 34952
           -2,3:
-            3: 128
+            1: 128
           -1,-1:
             0: 64443
           -2,-2:
-            3: 1088
+            1: 1088
           -2,-3:
-            1: 32768
+            2: 32768
           -1,-2:
             0: 47610
           -1,-3:
-            1: 3584
+            2: 3584
           0,-3:
-            1: 768
+            2: 768
           0,-2:
             0: 14199
           1,-2:
-            3: 4368
+            1: 4368
         uniqueMixes:
         - volume: 2500
           temperature: 293.15
@@ -459,37 +441,22 @@ entities:
           - 0
           - 0
         - volume: 2500
-          temperature: 293.15
-          moles:
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.14996
-          moles:
-          - 21.824879
-          - 82.10312
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
           immutable: True
+          moles:
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
           moles:
           - 0
           - 0
@@ -580,12 +547,26 @@ entities:
       - 356
       - 363
       - 250
+- proto: Airlock
+  entities:
+  - uid: 147
+    components:
+    - type: Transform
+      pos: -1.5,11.5
+      parent: 1
 - proto: AirlockCargo
   entities:
   - uid: 57
     components:
     - type: Transform
       pos: -0.5,-2.5
+      parent: 1
+- proto: AirlockCargoGlass
+  entities:
+  - uid: 205
+    components:
+    - type: Transform
+      pos: 0.5,2.5
       parent: 1
 - proto: AirlockCommand
   entities:
@@ -622,31 +603,17 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 2.5,1.5
       parent: 1
-- proto: AirlockMaintLocked
-  entities:
-  - uid: 98
-    components:
-    - type: Transform
-      pos: -3.5,-5.5
-      parent: 1
-  - uid: 147
-    components:
-    - type: Transform
-      pos: -1.5,-6.5
-      parent: 1
-- proto: AirlockSalvageGlassLocked
+- proto: AirlockMaint
   entities:
   - uid: 59
     components:
     - type: Transform
-      pos: 0.5,2.5
+      pos: -1.5,-6.5
       parent: 1
-- proto: AirlockServiceLocked
-  entities:
-  - uid: 205
+  - uid: 98
     components:
     - type: Transform
-      pos: -1.5,11.5
+      pos: -3.5,-5.5
       parent: 1
 - proto: AirlockShuttle
   entities:
@@ -3010,7 +2977,7 @@ entities:
       parent: 1
     - type: DeviceLinkSource
       linkedPorts:
-        205:
+        147:
         - Pressed: DoorBolt
   - uid: 234
     components:
