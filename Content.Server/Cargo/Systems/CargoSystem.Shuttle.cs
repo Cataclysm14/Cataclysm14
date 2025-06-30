@@ -13,7 +13,8 @@ using Content.Shared._NF.Bank.Components; // Frontier
 using Content.Shared.Mobs;
 using Robust.Shared.Containers; // Frontier
 using Content.Shared._Mono.ItemTax.Components; // Mono
-using Content.Server._NF.Bank; // Mono
+using Content.Server._NF.Bank;
+using Content.Server._NF.Trade; // Mono
 using Content.Shared._NF.Bank.BUI;
 using Robust.Shared.Toolshed.Commands.Math; // Mono
 
@@ -73,20 +74,33 @@ public sealed partial class CargoSystem
     {
         if (Transform(uid).GridUid is not EntityUid gridUid)
         {
-            _uiSystem.SetUiState(uid.Owner, CargoPalletConsoleUiKey.Sale, // Frontier: uid<uid.Owner
-            new CargoPalletConsoleInterfaceState(0, 0, false));
+            _uiSystem.SetUiState(uid.Owner,
+                CargoPalletConsoleUiKey.Sale, // Frontier: uid<uid.Owner
+                new CargoPalletConsoleInterfaceState(0, 0, false));
             return;
         }
+
         // Frontier: per-object market modification
         GetPalletGoods(uid, gridUid, out var toSell, out var amount, out var noModAmount, out var blackMarketTaxAmount, out var frontierTaxAmount, out var nfsdTaxAmount, out var medicalTaxAmount);
+
         if (TryComp<MarketModifierComponent>(uid, out var priceMod))
         {
             amount *= priceMod.Mod;
         }
+
         amount += noModAmount;
+
         // End Frontier
-        _uiSystem.SetUiState(uid.Owner, CargoPalletConsoleUiKey.Sale, // Frontier: uid<uid.Owner
-            new CargoPalletConsoleInterfaceState((int)amount, toSell.Count, true));
+        var multiplier = 1f;
+        var station = _station.GetOwningStation(uid);
+
+        if (station != null
+            && TryComp<TradeCrateWildcardDestinationComponent>(station, out var wildcard))
+            multiplier = wildcard.ValueMultiplier;
+
+        _uiSystem.SetUiState(uid.Owner,
+            CargoPalletConsoleUiKey.Sale, // Frontier: uid<uid.Owner
+            new CargoPalletConsoleInterfaceState((int)amount, toSell.Count, true, multiplier));
     }
 
     private void OnPalletUIOpen(EntityUid uid, CargoPalletConsoleComponent component, BoundUIOpenedEvent args)

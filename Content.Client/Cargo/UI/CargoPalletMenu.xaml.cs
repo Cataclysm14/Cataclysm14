@@ -29,6 +29,12 @@ public sealed partial class CargoPalletMenu : FancyWindow
     {
         CountLabel.Text = count.ToString();
     }
+
+    public void SetMultiplier(float multiplier)
+    {
+        MultiplierLabel.Text = $"{multiplier.ToString("0.00")}x";
+    }
+
     public void SetEnabled(bool enabled)
     {
         AppraiseButton.Disabled = !enabled;

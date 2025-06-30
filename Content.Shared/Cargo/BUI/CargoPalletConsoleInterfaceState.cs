@@ -20,10 +20,16 @@ public sealed class CargoPalletConsoleInterfaceState : BoundUserInterfaceState
     /// </summary>
     public bool Enabled;
 
-    public CargoPalletConsoleInterfaceState(int appraisal, int count, bool enabled)
+    /// <summary>
+    /// the multiplier for the given cargo sell
+    /// </summary>
+    public float? Multiplier;
+
+    public CargoPalletConsoleInterfaceState(int appraisal, int count, bool enabled, float multiplier = 1f)
     {
         Appraisal = appraisal;
         Count = count;
         Enabled = enabled;
+        Multiplier = multiplier;
     }
 }
