@@ -205,12 +205,6 @@
   description: A robust modular HARDERsuit control module unit for the head of security.
   components:
   - type: Appearance
-  - type: Clothing
-    clothingVisuals:
-      back:
-      - state: equipped-BACKPACK
-      back-resomi:
-      - state: equipped-BACKPACK-resomi
   - type: Sprite
     sprite: _Goobstation/Clothing/Back/Modsuits/headofsecurity.rsi
     layers:
@@ -225,6 +219,11 @@
     quickEquip: false
     slots:
     - back
+    clothingVisuals:
+      back:
+      - state: equipped-BACKPACK
+      back-resomi:
+      - state: equipped-BACKPACK-resomi
   - type: Storage
     grid:
     - 0,0,6,3
