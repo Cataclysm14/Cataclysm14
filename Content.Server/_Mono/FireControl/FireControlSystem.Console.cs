@@ -111,6 +111,19 @@ public sealed partial class FireControlSystem : EntitySystem
         component.ConnectedServer = null;
         UpdateUi(console, component);
     }
+
+    private bool CanRegister((EntityUid? ServerUid, FireControlServerComponent? ServerComponent) gridServer)
+    {
+        if (gridServer.ServerComponent == null)
+            return false;
+
+        if (gridServer.ServerComponent.EnforceMaxConsoles
+            && gridServer.ServerComponent.Consoles.Count >= gridServer.ServerComponent.MaxConsoles)
+            return false;
+
+        return true;
+    }
+
     private bool TryRegisterConsole(EntityUid console, FireControlConsoleComponent? consoleComponent = null)
     {
         if (!Resolve(console, ref consoleComponent))
@@ -130,16 +143,16 @@ public sealed partial class FireControlSystem : EntitySystem
         if (gridServer.ServerUid == null || gridServer.ServerComponent == null)
             return false;
 
-        if (gridServer.ServerComponent.Consoles.Add(console))
+        var canRegister = CanRegister(gridServer);
+
+        if (canRegister && gridServer.ServerComponent.Consoles.Add(console))
         {
             consoleComponent.ConnectedServer = gridServer.ServerUid;
             UpdateUi(console, consoleComponent);
             return true;
         }
-        else
-        {
-            return false;
-        }
+
+        return false;
     }
 
     private void UpdateUi(EntityUid uid, FireControlConsoleComponent? component = null)

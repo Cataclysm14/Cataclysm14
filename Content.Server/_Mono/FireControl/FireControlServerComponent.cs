@@ -23,4 +23,10 @@ public sealed partial class FireControlServerComponent : Component
 
     [ViewVariables]
     public int UsedProcessingPower;
+
+    [ViewVariables, DataField]
+    public int MaxConsoles = 1;
+
+    [ViewVariables, DataField]
+    public bool EnforceMaxConsoles;
 }
