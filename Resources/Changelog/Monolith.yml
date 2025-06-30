@@ -5076,3 +5076,33 @@ Entries:
   id: 603
   time: '2025-06-29T10:09:10.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1013
+- author: ScyronX
+  changes:
+    - type: Tweak
+      message: Unanchored artillery can no longer be fired with a gunnery console!
+  id: 604
+  time: '2025-06-30T00:52:09.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1014
+- author: ScyronX
+  changes:
+    - type: Fix
+      message: Fixed secret door sprite
+  id: 605
+  time: '2025-06-30T00:59:45.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1011
+- author: Mr T
+  changes:
+    - type: Add
+      message: Gives Wallmount Substations a UI!
+  id: 606
+  time: '2025-06-30T01:03:42.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1017
+- author: sleepyyapril
+  changes:
+    - type: Tweak
+      message: The shipyard directions now also state the name of your ship.
+    - type: Fix
+      message: Fixed shipyard directions on purchase being inaccurate.
+  id: 607
+  time: '2025-06-30T03:20:28.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1030
