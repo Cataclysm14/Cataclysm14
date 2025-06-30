@@ -24,7 +24,7 @@
   - type: Contraband
     severity: Class3Chem
     turnInValues:
-      FederationMilitaryCredit: 2 # set to 2 now that FMC values are multiplied by 5
+      FederationMilitaryCredit: 1 # set to 1 now that FMC values are multiplied by 5
 
 # These are compatibility prototypes to work with ported definitions
 # They simply map to the appropriate NF/Mono contraband equivalents
