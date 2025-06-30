@@ -1,9 +1,18 @@
+# SPDX-FileCopyrightText: 2024 Checkraze
+# SPDX-FileCopyrightText: 2024 Dvir
+# SPDX-FileCopyrightText: 2024 Salvantrix
+# SPDX-FileCopyrightText: 2024 Whatstone
+# SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: vessel
   id: Vega
   parent: BaseVesselAntag
-  name: RG Vega
+  name: ASR Vega
   description: A frame manufactured from the remains of mothballed TSFMC ships. Carries a single CYREXA as its main armament.
-  price: 68450
+  price: 71450
   category: Medium
   group: BlackMarket
   shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/vega.yml
@@ -15,7 +24,7 @@
 
 - type: gameMap
   id: Vega
-  mapName: 'Vega'
+  mapName: 'ASR Vega'
   mapPath: /Maps/_Mono/Shuttles/BlackMarket/vega.yml
   minPlayers: 0
   stations:

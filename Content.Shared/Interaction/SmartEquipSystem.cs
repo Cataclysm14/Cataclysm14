@@ -1,3 +1,12 @@
+// SPDX-FileCopyrightText: 2023 Kara
+// SPDX-FileCopyrightText: 2024 Nemanja
+// SPDX-FileCopyrightText: 2024 Plykiya
+// SPDX-FileCopyrightText: 2024 themias
+// SPDX-FileCopyrightText: 2025 ErhardSteinhauer
+// SPDX-FileCopyrightText: 2025 monolith8319
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Shared.ActionBlocker;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Hands.Components;
@@ -35,6 +44,7 @@ public sealed class SmartEquipSystem : EntitySystem
         CommandBinds.Builder
             .Bind(ContentKeyFunctions.SmartEquipBackpack, InputCmdHandler.FromDelegate(HandleSmartEquipBackpack, handle: false, outsidePrediction: false))
             .Bind(ContentKeyFunctions.SmartEquipBelt, InputCmdHandler.FromDelegate(HandleSmartEquipBelt, handle: false, outsidePrediction: false))
+            .Bind(ContentKeyFunctions.SmartEquipWallet, InputCmdHandler.FromDelegate(HandleSmartEquipWallet, handle: false, outsidePrediction: false)) // Frontier
             .Register<SmartEquipSystem>();
     }
 
@@ -54,7 +64,12 @@ public sealed class SmartEquipSystem : EntitySystem
     {
         HandleSmartEquip(session, "belt");
     }
-
+    // Frontier: smart-equip to wallet
+    private void HandleSmartEquipWallet(ICommonSession? session)
+    {
+        HandleSmartEquip(session, "wallet");
+    }
+    // End Frontier: smart-equip to wallet
     private void HandleSmartEquip(ICommonSession? session, string equipmentSlot)
     {
         if (session is not { } playerSession)

@@ -1,7 +1,7 @@
 ﻿<Document>
-  # ADMX-23 Tovek Hybrid EMP Missile System
+  # ADMX-23 TOVEK Cruiser Hybrid EMP Missile System
 
-  A hybrid EMP [color=GreenYellow]missile[/color] pod that fires EMPHE shells meant to disable enemy ships and weaken their armor.
+A hybrid EMP [color=GreenYellow]missile[/color] pod turret that fires EMPHE warheads to disable and weaken enemy ships at long range.
 
   <Box>
     <GuideEntityEmbed Entity="WeaponTurretTovek"/>
@@ -9,11 +9,13 @@
 
   ## Pod Specifications
 
-  - Firerate: [color=crimson] 90 RPM [/color]/[color=deepskyblue] 1.5 RPS [/color]
+  - Firerate: [color=crimson] 12 RPM [/color]/[color=deepskyblue] 0.2 RPS [/color]
   - Sell Value: [color=greenyellow][bold]3000 Spesos[/bold][/color]
+  - Power Usage (Passive): [color=turquoise]2500u/s[/color]
   - Capacitor Storage: [color=orange]40000u[/color]
   - Capacitor Recharge: [color=turquoise]1312u/s[/color]
-  - Capacitor Fire Cost: [color=turquoise]17500u[/color]
+  - Capacitor Fire Cost: [color=turquoise]12500u[/color]
+  - Firing Mode: [color=gold]Automatic[/color]
 
   <Box>
     <GuideEntityEmbed Entity="ShipMissileASM557"/>
@@ -22,7 +24,7 @@
   ## Missile Specifications
 
   - Acceleration: [color=mediumspringgreen][bold]80 m/s²[/bold][/color]
-  - Tracking Range: [color=orangered][bold]500m[/bold][/color]
+  - Tracking Range: [color=orangered][bold]300m[/bold][/color]
   - Scanning Arc: [color=teal]50 degrees[/color]
   - Launch Speed: [color=darkorange]100 m/s[/color]
   - Max Speed: [color=darkorange]300 m/s[/color]

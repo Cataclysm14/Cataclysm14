@@ -1,3 +1,15 @@
+# SPDX-FileCopyrightText: 2025 Blu
+# SPDX-FileCopyrightText: 2025 BlueHNT
+# SPDX-FileCopyrightText: 2025 Disguised Bear
+# SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 RikuTheKiller
+# SPDX-FileCopyrightText: 2025 core-mene
+# SPDX-FileCopyrightText: 2025 kyres1
+# SPDX-FileCopyrightText: 2025 monolith8319
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 # MARAUDER
 
 - type: entity
@@ -69,7 +81,7 @@
   id: WeaponTurretM220
   name: M220 RUBICON EMP launcher
   parent: BallisticArtillery
-  description: Launches EMP projectiles at ships. Can be remotely activated, or linked up to a GCS.
+  description: Launches EMP projectiles at ships, disabling systems with powerful electromagnetic pulses. Ideal for non-lethal engagements and can be remotely activated or linked to a GCS.
   components:
   - type: StaticPrice
     price: 5000
@@ -134,7 +146,7 @@
   id: WeaponTurretDymere
   name: ADEX-9 DYMERE Turbolaser
   parent: BallisticArtilleryUnanchorable
-  description: Aetherion Dynamics Weapons Development Branch's most iconic product. Ionized gas projectiles will melt through anything you put in front of them. Can be remotely activated, or linked up to a GCS.
+  description: Aetherion Dynamics' most iconic supercapital battery. Fires enormous ionized gas projectiles that melt through the toughest ship armor. Can be remotely activated or linked to a GCS.
   components:
   - type: StaticPrice
     price: 60000
