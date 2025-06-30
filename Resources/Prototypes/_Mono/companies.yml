@@ -82,6 +82,7 @@
   name: Drake Industries
   description: drake-industries-description
   color: "#C97D7D"
+  image: /Textures/_Mono/Companies/drake_industries.png
 
 # ====Rogue / Antag. Companies====
 - type: company
