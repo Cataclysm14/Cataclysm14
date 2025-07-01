@@ -1494,7 +1494,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: TSFMC Sector Fob
+      id: TSFMCHalcyon
   - uid: 2
     components:
     - type: MetaData

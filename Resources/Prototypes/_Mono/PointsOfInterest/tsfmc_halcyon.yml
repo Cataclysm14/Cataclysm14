@@ -11,9 +11,9 @@
 # Notes: Wow.
 #
 - type: pointOfInterest
-  id: Nfsd
+  id: TSFMCHalcyon
   parent: BasePOI
-  name: 'TSFMC Sector FOB'
+  name: 'TSFMC Flagship Halcyon'
   minimumDistance: 2500 # Mono
   maximumDistance: 4000 # Mono
   spawnGroup: Required
@@ -24,12 +24,12 @@
     readOnly: true # mono
 
 - type: gameMap
-  id: Nfsd
+  id: TSFMCHalcyon
   mapName: 'TSFMC Flagship Halcyon'
   mapPath: /Maps/_Mono/POI/tsfmc_halcyon.yml
   minPlayers: 0
   stations:
-    NFSD:
+    TSFMCHalcyon:
       stationProto: SecurityFrontierOutpost
       components:
         - type: StationNameSetup
