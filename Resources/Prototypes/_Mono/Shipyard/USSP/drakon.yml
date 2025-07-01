@@ -11,6 +11,7 @@
   guidebookPage: Null
   class:
   - Pursuit
+  - Corvette
   engine:
   - AME
 
