@@ -43,7 +43,7 @@ public sealed partial class CircularShieldComponent : Component
     public int Radius;
 
     // Power surge mechanics when taking damage
-    [DataField] // Mono
+    [DataField("wattDamageRatio")] // Mono
     public float ProjectileWattPerImpact = 25f; // Watts per point of projectile damage
 
     [DataField] // Mono
