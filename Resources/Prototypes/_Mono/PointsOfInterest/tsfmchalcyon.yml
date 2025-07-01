@@ -30,6 +30,7 @@
   mapName: 'TSFMC Flagship Halcyon'
   mapPath: /Maps/_Mono/POI/tsfmchalcyon.yml
   minPlayers: 0
+  randomRotation: false
   stations:
     TSFMCHalcyon:
       stationProto: SecurityFrontierOutpost
