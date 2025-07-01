@@ -22,8 +22,8 @@
   id: Brute
   parent: BaseVessel
   name: DIS Brute
-  description: Business on front and naked on back, the brute-type cargo freighter is one of a kind. This FTL (type 25) capable cruiser packs large cargo holds secured under heavy layers of steel. At the cost of manoeuverability and a quite unusual design. 
-  price: 54900
+  description: When a dubious ship designer came to the DIS board explaining they had a revolutionnary idea for a contraband scanner proof ship, they bought it. Not realising what they meant by that is a flying, cruiser-siezd with a more than scuffed design. It may not stop sensors from scanning your cargo, but at least it keeps a lot of it safely.
+  price: 77850
   category: Medium
   group: Shipyard
   shuttlePath: /Maps/_Mono/Shuttles/brute.yml
