@@ -1,3 +1,27 @@
+// SPDX-FileCopyrightText: 2023 Cheackraze
+// SPDX-FileCopyrightText: 2023 Debug
+// SPDX-FileCopyrightText: 2023 FoxxoTrystan
+// SPDX-FileCopyrightText: 2023 InsanityMoose
+// SPDX-FileCopyrightText: 2024 Alice "Arimah" Heurlin
+// SPDX-FileCopyrightText: 2024 Arimah
+// SPDX-FileCopyrightText: 2024 Checkraze
+// SPDX-FileCopyrightText: 2024 Dvir
+// SPDX-FileCopyrightText: 2024 GreaseMonk
+// SPDX-FileCopyrightText: 2024 Mnemotechnican
+// SPDX-FileCopyrightText: 2024 Salvantrix
+// SPDX-FileCopyrightText: 2024 Shroomerian
+// SPDX-FileCopyrightText: 2024 checkraze
+// SPDX-FileCopyrightText: 2024 neuPanda
+// SPDX-FileCopyrightText: 2025 Alkheemist
+// SPDX-FileCopyrightText: 2025 Ark
+// SPDX-FileCopyrightText: 2025 LukeZurg22
+// SPDX-FileCopyrightText: 2025 Redrover1760
+// SPDX-FileCopyrightText: 2025 Whatstone
+// SPDX-FileCopyrightText: 2025 ark1368
+// SPDX-FileCopyrightText: 2025 sleepyyapril
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Server.Access.Systems;
 using Content.Server.Popups;
 using Content.Server.Radio.EntitySystems;
@@ -45,10 +69,10 @@ using Content.Server.StationEvents.Components;
 using Content.Shared._Mono.Company;
 using Content.Shared.Forensics.Components;
 using Content.Shared.Shuttles.Components;
-using Robust.Server.Player;
 using Robust.Shared.Player;
 using Content.Server.Shuttles.Components;
 using Content.Server.Shuttles.Systems;
+using Content.Shared._Mono.Ships.Components;
 using Robust.Shared.Log;
 using Robust.Shared.Timing;
 
@@ -134,8 +158,12 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
         }
 
         var name = vessel.Name;
+
         if (vessel.Price <= 0)
             return;
+
+        if (!vessel.RequireCrew && vessel.Classes.Contains(VesselClass.Capital))
+            vessel.RequireCrew = true;
 
         if (_station.GetOwningStation(shipyardConsoleUid) is not { Valid: true } station)
         {
@@ -205,12 +233,12 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
             return;
         }
 
-        // Add company information to the shuttle
-        if (TryComp<CompanyComponent>(player, out var playerCompany) &&
-            !string.IsNullOrEmpty(playerCompany.CompanyName))
+        // Add company information to the shuttle from the ID card
+        if (TryComp<IdCardComponent>(targetId, out var idCardCompany) &&
+            !string.IsNullOrEmpty(idCardCompany.CompanyName))
         {
             var shipCompany = EnsureComp<CompanyComponent>(shuttleUid);
-            shipCompany.CompanyName = playerCompany.CompanyName;
+            shipCompany.CompanyName = idCardCompany.CompanyName;
             Dirty(shuttleUid, shipCompany);
         }
 
@@ -325,6 +353,9 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
 
         EntityManager.AddComponents(shuttleUid, vessel.AddComponents);
 
+        // Add ship access control
+        AddShipAccessToEntities(shuttleUid);
+
         // Ensure cleanup on ship sale
         EnsureComp<LinkedLifecycleGridParentComponent>(shuttleUid);
 
@@ -345,6 +376,9 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
 
         // Mono
         Get<ShipyardDirectionSystem>().SendShipDirectionMessage(player, shuttleUid);
+
+        if (vessel.RequireCrew)
+            EnsureComp<CrewedShuttleComponent>(shuttleUid);
 
         PlayConfirmSound(player, shipyardConsoleUid, component);
         if (voucherUsed)
@@ -484,7 +518,7 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
             foreach (var (account, taxCoeff) in component.TaxAccounts)
             {
                 var tax = CalculateSalesTax(originalBill, taxCoeff);
-                _bank.TrySectorDeposit(account, tax, LedgerEntryType.BlackMarketShipyardTax);
+                _bank.TrySectorDeposit(account, tax, LedgerEntryType.ShipyardTax); // BlackMarketShipyardTax->ShipyardTAx
                 bill -= tax;
             }
             bill = int.Max(0, bill);
@@ -524,11 +558,11 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
     {
         if (!TryComp<ShipyardUnassignCooldownComponent>(player, out var cooldown))
             return null;
-            
+
         var currentTime = _timing.CurTime;
         if (currentTime >= cooldown.NextUnassignTime)
             return null;
-            
+
         return cooldown.NextUnassignTime - currentTime;
     }
 
@@ -1036,14 +1070,14 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
         // Check if the player is on cooldown
         var cooldown = EnsureComp<ShipyardUnassignCooldownComponent>(player);
         var currentTime = _timing.CurTime;
-        
+
         if (currentTime < cooldown.NextUnassignTime)
         {
             // Calculate remaining time
             var timeRemaining = cooldown.NextUnassignTime - currentTime;
             var hoursRemaining = (int)timeRemaining.TotalHours;
             var minutesRemaining = (int)timeRemaining.TotalMinutes % 60;
-            
+
             // Display cooldown message
             var cooldownMessage = Loc.GetString(
                 "shipyard-console-unassign-cooldown",
@@ -1057,25 +1091,25 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
 
         // Get the name of the ship before we remove the component
         var shipName = GetFullName(deed);
-        
+
         // Remove the deed component from the ID card
         RemComp<ShuttleDeedComponent>(targetId);
-        
+
         // Set the cooldown
         cooldown.NextUnassignTime = currentTime + cooldown.CooldownDuration;
-        
+
         ConsolePopup(player, Loc.GetString("shipyard-console-deed-unassigned"));
         PlayConfirmSound(player, uid, component);
-        
+
         // Get the player's balance or use 0 if they don't have a bank account
         int balance = 0;
         if (TryComp<BankAccountComponent>(player, out var bank))
             balance = bank.Balance;
-        
+
         // Update the UI
         RefreshState(uid, balance, true, null, 0, targetId, (ShipyardConsoleUiKey)args.UiKey, false);
-        
-        _adminLogger.Add(LogType.ShipYardUsage, LogImpact.Low, 
+
+        _adminLogger.Add(LogType.ShipYardUsage, LogImpact.Low,
             $"{ToPrettyString(player):actor} unassigned deed for ship '{shipName}' from {ToPrettyString(targetId)} via {ToPrettyString(uid)}");
     }
 }

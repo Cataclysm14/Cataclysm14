@@ -144,7 +144,7 @@ public sealed partial class ShuttleMapControl : BaseShuttleControl
         // Scroll handles FTL rotation if you're in FTL mode.
         if (FtlMode)
         {
-            _ftlAngle += Angle.FromDegrees(15f) * args.Delta.Y;
+            _ftlAngle -= Angle.FromDegrees(15f) * args.Delta.Y; // Mono Edit: Subtract instead of add to preserve clockwise rotation when scrolling up. (positive angles are actually counter-clockwise)
             _ftlAngle = _ftlAngle.Reduced();
             return;
         }
@@ -304,7 +304,7 @@ public sealed partial class ShuttleMapControl : BaseShuttleControl
             }
 
             var adjustedPos = Vector2.Transform(mapCoords.Position, matty);
-            var localPos = ScalePosition(adjustedPos with { Y = -adjustedPos.Y});
+            var localPos = ScalePosition(adjustedPos with { Y = -adjustedPos.Y });
             handle.DrawCircle(localPos, exclusion.Range * MinimapScale, exclusionColor.WithAlpha(0.05f));
             handle.DrawCircle(localPos, exclusion.Range * MinimapScale, exclusionColor, filled: false);
 
@@ -503,17 +503,17 @@ public sealed partial class ShuttleMapControl : BaseShuttleControl
 
                     // Draw line from our shuttle to target
                     // Might need to clip the line if it's too far? But my brain wasn't working so F.
-                    handle.DrawDottedLine(gridUiPos, mouseLocalPos, color, (float) realTime.TotalSeconds * 30f);
+                    handle.DrawDottedLine(gridUiPos, mouseLocalPos, color, (float)realTime.TotalSeconds * 30f);
 
                     // Draw shuttle pre-vis
-                    var mouseVerts = GetMapObject(mouseLocalPos, _ftlAngle, scale: MinimapScale);
+                    var mouseVerts = GetMapObject(mouseLocalPos, -_ftlAngle, scale: MinimapScale); // Mono Edit: UI controls and the map are in different coordinate orientations, so the angle has to be negated. (shuttle Y is UI control -Y)
 
                     handle.DrawPrimitives(DrawPrimitiveTopology.TriangleFan, mouseVerts.Span, color.WithAlpha(0.05f));
                     handle.DrawPrimitives(DrawPrimitiveTopology.LineLoop, mouseVerts.Span, color);
 
                     // Draw a notch indicating direction.
                     var ftlLength = GetMapObjectRadius() + 16f;
-                    var ftlEnd = mouseLocalPos + _ftlAngle.RotateVec(new Vector2(0f, -ftlLength));
+                    var ftlEnd = mouseLocalPos + (-_ftlAngle).RotateVec(new Vector2(0f, -ftlLength)); // Mono Edit: UI controls and the map are in different coordinate orientations, so the angle has to be negated. (shuttle Y is UI control -Y)
 
                     handle.DrawLine(mouseLocalPos, ftlEnd, color);
                 }

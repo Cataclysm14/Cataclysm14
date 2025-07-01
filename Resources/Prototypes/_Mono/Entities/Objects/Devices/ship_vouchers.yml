@@ -1,3 +1,9 @@
+# SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 sleepyyapril
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   parent: BaseShipVoucher
   id: ShipVoucherDebug
@@ -31,3 +37,23 @@
     - USSPGadyuka # SHITCODE!!!
   - type: StaticPrice
     vendPrice: 12500
+
+- type: entity
+  parent: ShipVoucherNfsdBailiff
+  id: ShipVoucherTsfmcColonel
+  name: TSFMC colonel ship voucher
+  description: Allows for two TSFMC ship purchases of any size. Destroyed on sale.
+  components:
+  - type: Sprite
+    layers:
+    - state: nfsd
+    - state: voucherbailiff
+  - type: ShipyardVoucher
+    redemptionsLeft: 2
+    access:
+    - Armory
+    - Sergeant # Frontier
+    - Bailiff # Frontier
+    - HeadOfSecurity # Monolith
+    accessGroups: # Frontier
+    - GeneralNfsdAccess # Frontier

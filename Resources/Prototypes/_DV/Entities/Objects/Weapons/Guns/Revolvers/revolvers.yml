@@ -1,8 +1,8 @@
 - type: entity
-  name: Fitz Special
+  name: Fitz Special (.45 magnum)
   parent: [BaseWeaponRevolver, BaseC1Contraband]
   id: WeaponRevolverFitz
-  description: A compact and concealable self defence snub revolver. Uses .45 ammo.
+  description: A compact and concealable self defence snub revolver. Uses .45 magnum ammo.
   components:
   - type: Sprite
     sprite: _DV/Objects/Weapons/Guns/Revolvers/fitz.rsi
@@ -14,7 +14,7 @@
     availableModes:
     - SemiAuto
   - type: RevolverAmmoProvider
-    proto: CartridgeMagnum
+    proto: Cartridge45_magnumFMJ
     capacity: 6
     chambers: [ True, True, True, True, True, True ]
     ammoSlots: [ null, null, null, null, null, null ]
@@ -22,10 +22,10 @@
     price: 340
 
 - type: entity
-  name: Faith
+  name: Faith (.45 magnum)
   parent: [BaseWeaponRevolver, BaseC1Contraband]
   id: WeaponRevolverFaith
-  description: Delivers blessings in bullet form. Uses .45 ammo.
+  description: Delivers blessings in bullet form. Uses .45 magnum ammo.
   components:
   - type: Sprite
     sprite: _DV/Objects/Weapons/Guns/Revolvers/faith.rsi
@@ -37,7 +37,7 @@
     availableModes:
     - SemiAuto
   - type: RevolverAmmoProvider
-    proto: CartridgeMagnum
+    proto: Cartridge45_magnumFMJ
     capacity: 4
     chambers: [ True, True, True, True ]
     ammoSlots: [ null, null, null, null ]
@@ -45,10 +45,10 @@
     price: 240
 
 - type: entity
-  name: Lucky 37
+  name: Lucky 37 (.45 magnum)
   parent: [BaseWeaponRevolver, BaseC1Contraband]
   id: WeaponRevolverLucky
-  description: Luck always beats skill, ya weasel. Uses .45 ammo.
+  description: Luck always beats skill, ya weasel. Uses .45 magnum ammo.
   components:
   - type: Sprite
     sprite: _DV/Objects/Weapons/Guns/Revolvers/lucky.rsi
@@ -60,7 +60,7 @@
     availableModes:
     - SemiAuto
   - type: RevolverAmmoProvider
-    proto: CartridgeMagnum
+    proto: Cartridge45_magnumFMJ
     chambers: [ True, True, True, True, True, True ]
     ammoSlots: [ null, null, null, null, null, null ]
   - type: StaticPrice

@@ -17,6 +17,8 @@
   - MercenaryBelt
   - ContractorEncryptionKey
   - MercenaryGlasses
+  - RogueFirearm
+  - RogueMag
   canCustomizeName: true
 
 - type: roleLoadout
@@ -38,6 +40,8 @@
   - MercenaryBelt
   - ContractorEncryptionKey
   - MercenaryGlasses
+  - RogueFirearm
+  - RogueMag
   canCustomizeName: true
 - type: roleLoadout
   id: JobPirateCaptain
@@ -58,4 +62,6 @@
   - MercenaryBelt
   - ContractorEncryptionKey
   - MercenaryGlasses
-  canCustomizeName: true 
+  - RogueFirearm
+  - RogueMag
+  canCustomizeName: true

@@ -1,3 +1,14 @@
+# SPDX-FileCopyrightText: 2025 Ark
+# SPDX-FileCopyrightText: 2025 BlueHNT
+# SPDX-FileCopyrightText: 2025 HungryCuban
+# SPDX-FileCopyrightText: 2025 Whatstone
+# SPDX-FileCopyrightText: 2025 core-mene
+# SPDX-FileCopyrightText: 2025 deltanedas
+# SPDX-FileCopyrightText: 2025 slarticodefast
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 ## Static recipes
 
 - type: latheRecipePack
@@ -15,11 +26,6 @@
 - type: latheRecipePack
   id: SecurityPracticeStatic
   recipes:
-  - BoxShotgunPractice
-  - MagazineBoxLightRiflePractice
-  - MagazineBoxMagnumPractice
-  - MagazineBoxPistolPractice
-  - MagazineBoxRiflePractice
   - WeaponDisablerPractice
   - WeaponLaserCarbinePractice
   # - WeaponFlareGunSecurity # Frontier
@@ -28,43 +34,7 @@
 - type: latheRecipePack
   id: SecurityAmmoStatic
   recipes:
-  - BoxLethalshot
-  - BoxShotgunSlug
-  - MagazineBoxLightRifle
-  - MagazineBoxLightRifleRubber # Frontier
-  - MagazineBoxMagnum
-  - MagazineBoxMagnumRubber # Frontier
-  - MagazineBoxPistol
-  - MagazineBoxPistolRubber # Frontier
-  - MagazineBoxRifle
-  - MagazineBoxRifleRubber # Frontier
-  - MagazineLightRifle
-  - MagazineLightRifleRubber # Frontier
-  - MagazineLightRifleEmpty
-  - MagazinePistol
-  - MagazinePistolRubber # Frontier
-  - MagazinePistolEmpty
-  - MagazinePistolSubMachineGun
-  - MagazinePistolSubMachineGunRubber # Frontier
-  - MagazinePistolSubMachineGunEmpty
-  - MagazinePistolSubMachineGunTopMounted
-  - MagazinePistolSubMachineGunTopMountedEmpty
-  - MagazineRifle
-  - MagazineRifleEmpty
-  - MagazineShotgun
-  - MagazineShotgunEmpty
-  - MagazineShotgunSlug
-  - SpeedLoaderMagnum
-  - SpeedLoaderMagnumEmpty
-  - SpeedLoaderRifleHeavy # Frontier
-  - SpeedLoaderRifleHeavyEmpty # Frontier
-  - MagazineNovaliteC1Empty # Frontier
-  - MagazineNovaliteC1 # Frontier
-  - MagazineNovaliteC1Rubber # Frontier
-  - MagazineDMR # mono
-  - MagazineDMREmpty # mono
-  - MagazineBoxDMR # mono
-  - MagazineLightRifleLowCapacity # mono
+  - Wirecutter 
 
 - type: latheRecipePack
   id: SecurityWeaponsStatic
@@ -89,7 +59,7 @@
 
 - type: latheRecipePack
   id: SecurityBoards
-  abstract: true # Frontier: finally, spammable shuttle guns
+  # abstract: true # Frontier: finally, spammable shuttle guns
   recipes:
   - ShuttleGunDusterCircuitboard
   - ShuttleGunFriendshipCircuitboard
@@ -102,39 +72,12 @@
   id: SecurityExplosives
   recipes:
   - ExplosivePayload
-  - GrenadeBlast
-  - GrenadeEMP
-  - GrenadeFlash
-  - MagazineGrenadeEmpty
 
 # Shared between secfab and emagged protolathe
 - type: latheRecipePack
   id: SecurityAmmo
   recipes:
-  - BoxBeanbag
-  # - BoxShotgunIncendiary # Frontier
-  # - BoxShotgunUranium # Frontier
-  - BoxShellTranquilizer
-  # - MagazineBoxLightRifleIncendiary # Frontier
-  # - MagazineBoxLightRifleUranium # Frontier
-  # - MagazineBoxMagnumIncendiary # Frontier
-  # - MagazineBoxMagnumUranium # Frontier
-  # - MagazineBoxPistolIncendiary # Frontier
-  # - MagazineBoxPistolUranium # Frontier
-  # - MagazineBoxRifleIncendiary # Frontier
-  # - MagazineBoxRifleUranium # Frontier
-  # - MagazineLightRifleIncendiary # Frontier
-  # - MagazineLightRifleUranium # Frontier
-  # - MagazinePistolIncendiary # Frontier
-  # - MagazinePistolUranium # Frontier
-  # - MagazinePistolSubMachineGunIncendiary # Frontier
-  # - MagazinePistolSubMachineGunUranium # Frontier
-  # - MagazineRifleIncendiary # Frontier
-  # - MagazineRifleUranium # Frontier
-  - MagazineShotgunBeanbag
-  # - MagazineShotgunIncendiary # Frontier
-  # - SpeedLoaderMagnumIncendiary # Frontier
-  # - SpeedLoaderMagnumUranium # Frontier
+  - Wirecutter
 
 - type: latheRecipePack
   id: SecurityWeapons

@@ -19,7 +19,7 @@
 - type: entity
   parent:
   - BaseC2ExpeditionContraband
-  - WeaponPistolUniversal
+  - WeaponPistolMk32
   categories: [ HideSpawnMenu ]
   id: WeaponPistolUniversalExpedition
 

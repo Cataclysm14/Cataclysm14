@@ -1,0 +1,54 @@
+- type: entity
+  id: BaseCartridge6.35x40mmCaseless
+  name: cartridge (.25 rifle)
+  parent: [ BaseCartridge, BaseC3SyndicateContrabandNoValue ] # Frontier: BaseSecurityContraband<BaseC3SyndicateContraband
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - Cartridge6.35x40mmCaseless
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+  - type: Sprite
+    noRot: false
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+
+- type: entity
+  id: Cartridge6.35x40mmCaseless
+  name: cartridge (6.35x40mm Caseless)
+  parent: BaseCartridge6.35x40mmCaseless
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet6.35x40mmCaseless
+
+- type: entity
+  id: Cartridge6.35x40mmCaselessRubber
+  name: cartridge (6.35x40mm Caseless rubber)
+  parent: BaseCartridge6.35x40mmCaseless
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet6.35x40mmCaselessRubber
+
+- type: entity
+  id: Cartridge6.35x40mmCaselessPractice
+  name: cartridge (6.35x40mm Caseless practice)
+  parent: BaseCartridge6.35x40mmCaseless
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet6.35x40mmCaselessPractice
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#dbdbdb"
+

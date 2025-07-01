@@ -1,9 +1,14 @@
+# SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: vessel
   id: Tunguska
   parent: BaseVesselAntag
   name: NCS Tunguska
   description: A refitted Seraphim with as many guns as it could sustain. Prepare for a onslaught of autocannon fire.
-  price: 195700
+  price: 215700
   category: Large
   group: Ussp
   access: USSP
@@ -12,6 +17,7 @@
   class:
   - Patrol
   - Capital
+  - Frigate
   engine:
   - AME
 

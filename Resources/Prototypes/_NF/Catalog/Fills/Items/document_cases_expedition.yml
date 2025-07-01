@@ -7,28 +7,28 @@
   components:
   - type: StorageFill
     contents:
-    # - id: NFBlueprintBoxShotgunUranium # While funny I think we should move this to events
+    # - id: NFBlueprintAmmoBox12_gaugeUranium # While funny I think we should move this to events
       # prob: 0.2
       # orGroup: Blueprints
-    # - id: NFBlueprintMagazineBoxRifleUranium
+    # - id: NFBlueprintAmmoBox5.56x45mmUranium
       # prob: 0.2
       # orGroup: Blueprints
-    # - id: NFBlueprintMagazineBoxLightRifleUranium
+    # - id: NFBlueprintAmmoBox7.62x39mmUranium
       # prob: 0.2
       # orGroup: Blueprints
-    # - id: NFBlueprintMagazineBoxMagnumUranium
+    # - id: NFBlueprintAmmoBox45_magnumUranium
       # prob: 0.2
       # orGroup: Blueprints
-    # - id: NFBlueprintMagazineBoxPistolUranium
+    # - id: NFBlueprintAmmoBox9x19mmUranium
       # prob: 0.2
       # orGroup: Blueprints
-    # - id: NFBlueprintBoxShotgunIncendiary
+    # - id: NFBlueprintAmmoBox12_gaugeIncendiary
       # prob: 0.2
       # orGroup: Blueprints
-    # - id: NFBlueprintMagazineBoxRifleIncendiary
+    # - id: NFBlueprintAmmoBox5.56x45mmIncendiary
       # prob: 0.2
       # orGroup: Blueprints
-    # - id: NFBlueprintMagazineBoxMagnumIncendiary
+    # - id: NFBlueprintAmmoBox45_magnumIncendiary
       # prob: 0.2
       # orGroup: Blueprints
     - id: NFBlueprintWeaponLaserCannon

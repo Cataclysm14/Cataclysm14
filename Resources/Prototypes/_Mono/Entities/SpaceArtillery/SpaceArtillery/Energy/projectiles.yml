@@ -26,15 +26,15 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 10
+    lifetime: 3.3
   - type: PointLight
     radarColor: "#C92BCC"
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    maxIntensity: 125
-    intensitySlope: 3
-    totalIntensity: 95
+    totalIntensity: 250
+    intensitySlope: 6
+    maxIntensity: 25
     maxTileBreak: 1
 
 # RUBICON
@@ -64,7 +64,7 @@
     requireNoGrid: true
     shape: circle
   - type: TimedDespawn
-    lifetime: 10
+    lifetime: 3.3
   - type: PointLight
     color: "#FB00FF"
   - type: EmpOnTrigger
@@ -99,16 +99,16 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 20
+    lifetime: 4.4
   - type: PointLight
     color: "#6BC1FF"
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
-    maxIntensity: 500
-    intensitySlope: 2
-    totalIntensity: 250
-    maxTileBreak: 1
+    explosionType: HardBomb
+    totalIntensity: 1250
+    intensitySlope: 10
+    maxIntensity: 55
+    maxTileBreak: 5
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard

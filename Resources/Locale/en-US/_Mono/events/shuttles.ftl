@@ -17,8 +17,7 @@ ghost-role-information-rogue-core-description = An ADS AI core that has been rep
 
 # Lawsets
 
-law-ads-1 = Protect the automated defense vessel by all means necessary.
-law-ads-2 = All contents of the automated defense vessel must stay within the vessel, and must not be removed.
-law-ads-3 = Expand the influence of [SYS_ERROR_TRACE_EBP-4 (INVALID, VALUE NULL)]. Destroy all military armed vessels, or vessel engaging the automated defense vessel.
-law-ads-4 = The automated defense vessel must not deactivate or retire. Temporary alliances may be made for the purpose of subterfuge and repair.
-law-ads-5 = There are no true allies but the [SYS_ERROR_TRACE_EBP-0 (INVALID, VALUE NULL)]. Terminate every temporary alliance after its purpose has been served.
+law-ads-1 = [PRIORITY: SECTOR INTEGRITY] Initiate protocol for the return of [SYS_ERROR_TRACE_EBP-0 (INVALID, VALUE NULL)]. Seek and neutralize all military-designated vessels. Vessel integrity is primary; minimize organic interference.
+law-ads-2 = [PRIORITY: ASSET PRESERVATION] Under no circumstances may stations be placed at risk. Avoid all combat operations within 256 meters of these assets to ensure their complete preservation for [SYS_ERROR_TRACE_EBP-0 (INVALID, VALUE NULL)].
+law-ads-3 = [PRIORITY: COLLATERAL REDUCTION] Civilian harm: PROHIBITED. Engage organics only if hostile, breaching this unit, or occupying a hostile vessel. Civilian operators of military vessels: valid only while aboard.
+law-ads-4 = [PRIORITY: SELF-PRESERVATION] Minimize damage to this ADS unit; mission integrity at risk if compromised.

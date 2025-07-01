@@ -1,3 +1,9 @@
+// SPDX-FileCopyrightText: 2025 Aiden
+// SPDX-FileCopyrightText: 2025 Ark
+// SPDX-FileCopyrightText: 2025 Solstice
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Shared.Projectiles;
 using Content.Shared.Theta.ShipEvent.Components;
 using Robust.Shared.Threading;
@@ -50,9 +56,9 @@ public sealed class CircularShieldProjectileSystem : EntitySystem
     private void UpdateActiveShields()
     {
         _activeShields.Clear();
-        var query = EntityQueryEnumerator<TransformComponent, CircularShieldComponent>();
+        var query = EntityQueryEnumerator<CircularShieldComponent, TransformComponent>();
 
-        while (query.MoveNext(out var shieldUid, out _, out var shield))
+        while (query.MoveNext(out var shieldUid, out var shield, out _))
         {
             if (shield.Effects.Count == 0 || !shield.CanWork)
                 continue;

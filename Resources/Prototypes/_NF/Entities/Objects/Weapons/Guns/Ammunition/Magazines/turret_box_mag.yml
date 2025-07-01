@@ -1,6 +1,6 @@
 # Empty mags
 - type: entity
-  parent: BaseMagazinePistolHighCapacity
+  parent: BaseMagazine9x19mmPistolHighCapacityFMJ
   id: MagazineAsmgtUniversalEmpty
   name: "ASMGT-compatible ammo box"
   description: |-
@@ -16,10 +16,10 @@
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgePistol
-        - CartridgeRifle
-        - CartridgeLightRifle
-        - CartridgeCaselessRifle
+        - Cartridge9x19mmFMJ
+        - Cartridge5.56x45mmFMJ
+        - Cartridge7.62x39mmFMJ
+        - Cartridge6.35x40mmCaseless
     capacity: 50
   - type: ContainerContainer
     containers:
@@ -44,7 +44,7 @@
   suffix: loaded .35 pistol
   components:
   - type: BallisticAmmoProvider
-    proto: CartridgePistol
+    proto: Cartridge9x19mmFMJ
   - type: Sprite
     layers:
     - state: base

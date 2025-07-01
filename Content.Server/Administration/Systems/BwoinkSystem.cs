@@ -282,6 +282,18 @@ namespace Content.Server.Administration.Systems
                 var discordMessage = GenerateAHelpMessage(messageParams);
                 queue.Enqueue(discordMessage);
             }
+
+            // Send to Discord chat link (thread-based integration)
+            // Fire and forget - don't block the main thread
+            _ = Task.Run(async () =>
+            {
+                var lookup = await _playerLocator.LookupIdAsync(session.UserId);
+                var playerName = lookup?.Username ?? "Unknown";
+                var roundId = _gameTicker.RoundId;
+                var characterName = _minds.GetCharacterName(session.UserId);
+                var discordMessage = $"{session.Name} {message}";
+                _discordChatLink.SendAhelpMessage(session.UserId, playerName, "System", discordMessage, true, roundId, characterName);
+            });
         }
 
         private void OnGameRunLevelChanged(GameRunLevelChangedEvent args)
@@ -729,7 +741,7 @@ namespace Content.Server.Administration.Systems
                 bwoinkText = $"{senderName}";
             }
 
-            bwoinkText = $"{(fromWebhook ? Loc.GetString("bwoink-message-discord") : "")}{(message.AdminOnly ? Loc.GetString("bwoink-message-admin-only") : !message.PlaySound ? Loc.GetString("bwoink-message-silent") : "")} {bwoinkText}: {escapedText}";
+            bwoinkText = $"{(fromWebhook ? Loc.GetString("bwoink-message-discord") : "")}{(message.AdminOnly ? " " + Loc.GetString("bwoink-message-admin-only") : !message.PlaySound ? " " + Loc.GetString("bwoink-message-silent") : "")} {bwoinkText}: {escapedText}";
 
             var senderAHelpAdmin = senderAdmin?.HasFlag(AdminFlags.Adminhelp) ?? false;
             // If it's not an admin / admin chooses to keep the sound and message is not an admin only message, then play it.

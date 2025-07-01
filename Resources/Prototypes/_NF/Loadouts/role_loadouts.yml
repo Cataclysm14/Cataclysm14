@@ -67,6 +67,8 @@
   - MercenaryGlasses
   - MercenaryBelt
   - MercenaryEars
+  - MercenaryFirearm
+  - MercenaryPistol
   - ContractorEncryptionKey
   - ContractorBoxSurvival
   - MercenaryPDA
@@ -180,6 +182,7 @@
   - ContractorGlasses
   - ContractorBelt
   - StationRepEars
+  - StationRepFirearm # Mono
   - ContractorBoxSurvival
   - StationRepPDA
   - ContractorWallet
@@ -202,6 +205,8 @@
   - SecurityGuardFace
   - SecurityGuardBelt
   - SecurityGuardEars
+  - SecurityGuardFirearm # Mono
+  - SecurityGuardPistol # Mono
   - NfsdBoxSurvival
   - SecurityGuardPDA
   - ContractorWallet
@@ -220,7 +225,7 @@
   - DocNeck
   - DocJumpsuit
   - DocGloves
-  - DocBackpack
+  - MdMedicBackpack
   - ContractorOuterClothing
   - DocShoes
   - ContractorFace

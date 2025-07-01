@@ -1,3 +1,22 @@
+# SPDX-FileCopyrightText: 2024 AndresE55
+# SPDX-FileCopyrightText: 2024 Dvir
+# SPDX-FileCopyrightText: 2024 ErhardSteinhauer
+# SPDX-FileCopyrightText: 2024 Salvantrix
+# SPDX-FileCopyrightText: 2024 Shroomerian
+# SPDX-FileCopyrightText: 2025 Blu
+# SPDX-FileCopyrightText: 2025 EctoplasmIsGood
+# SPDX-FileCopyrightText: 2025 HungryCuban
+# SPDX-FileCopyrightText: 2025 Jakumba
+# SPDX-FileCopyrightText: 2025 KiraZen_
+# SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 SupernoobTheN1
+# SPDX-FileCopyrightText: 2025 Whatstone
+# SPDX-FileCopyrightText: 2025 Your Name
+# SPDX-FileCopyrightText: 2025 core-mene
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: listing
   id: UplinkSecurityHardsuit
   name:  uplink-security-hardsuit-name
@@ -85,8 +104,8 @@
 
 - type: listing
   id: UplinkSecurityCommandHardsuit
-  name:  uplink-security-hardsuit-commmand-name
-  description: uplink-security-hardsuit-commmand-desc
+  name:  uplink-security-hardsuit-command-name
+  description: uplink-security-hardsuit-command-desc
   productEntity: ClothingOuterHardsuitNfsdCommand
   icon: { sprite: _NF/Clothing/OuterClothing/Hardsuits/nfsd_command.rsi, state: icon }
   cost:
@@ -126,7 +145,7 @@
   productEntity: ClothingOuterHardsuitNfsdSheriff
   icon: { sprite: _NF/Clothing/OuterClothing/Hardsuits/nfsd_sheriff.rsi, state: icon }
   cost:
-    FederationMilitaryCredit: 3
+    FederationMilitaryCredit: 8
   categories:
     - UplinkSecurityHardsuits
   conditions:
@@ -234,21 +253,21 @@
         tags:
           - SecurityUplink
 
-- type: listing # Mono - this entire listing
-  id: UplinkSecurityHFBlade
-  name:  uplink-security-hfblade-name
-  description: uplink-security-hfblade-desc
-  productEntity: WeaponHFKatana
-  icon: { sprite: _Mono/Objects/Weapons/Melee/hfblade.rsi, state: icon }
-  cost:
-    FederationMilitaryCredit: 10
-  categories:
-    - UplinkSecurityWeapons
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - SecurityUplink
+# - type: listing # Mono - this entire listing
+#   id: UplinkSecurityHFBlade
+#   name:  uplink-security-hfblade-name
+#   description: uplink-security-hfblade-desc
+#   productEntity: WeaponHFKatana
+#   icon: { sprite: _Mono/Objects/Weapons/Melee/hfblade.rsi, state: icon }
+#   cost:
+#     FederationMilitaryCredit: 10
+#   categories:
+#     - UplinkSecurityWeapons
+#   conditions:
+#     - !type:StoreWhitelistCondition
+#       whitelist:
+#         tags:
+#           - SecurityUplink
 
 - type: listing
   id: UplinkSecurityVulcan
@@ -305,7 +324,7 @@
   productEntity: EnergySwordNfsd
   icon: { sprite: Objects/Weapons/Melee/e_sword.rsi, state: e_sword }
   cost:
-    FederationMilitaryCredit: 7 #Mono: from 5 to 7
+    FederationMilitaryCredit: 6 #Mono: from 5 to 6
   categories:
     - UplinkSecurityWeapons
   conditions:
@@ -605,7 +624,7 @@
   name:  uplink-security-emprocket-name
   description: uplink-security-emprocket-desc
   productEntity: CartridgeRocketEmp
-  icon: { sprite: _NF/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: rpg-emp }
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: rpg-emp }
   cost:
     FederationMilitaryCredit: 1
   categories:
@@ -634,9 +653,9 @@
 
 - type: listing
   id: UplinkSecurityPistolMagazine
-  name:  uplink-security-magazinepistol-name
-  description: uplink-security-magazinepistol-desc
-  productEntity: BoxMagazinePistol
+  name:  uplink-security-Magazine9x19mmPistolFMJ-name
+  description: uplink-security-Magazine9x19mmPistolFMJ-desc
+  productEntity: BoxMagazine9x19mmFMJ
   icon: { sprite: Objects/Storage/boxes.rsi, state: box }
   cost:
     FederationMilitaryCredit: 1
@@ -649,10 +668,10 @@
           - SecurityUplink
 
 - type: listing
-  id: UplinkSecurity20RifleMagazine
-  name:  uplink-security-20riflemagazine-name
-  description: uplink-security-20riflemagazine-desc
-  productEntity: BoxMagazineRifle
+  id: UplinkSecurity5.56x45mmMagazine
+  name:  uplink-security-5-56x45mmMagazine-name
+  description: uplink-security-5-56x45mmMagazine-desc
+  productEntity: BoxMagazine5.56x45mmFMJ
   icon: { sprite: Objects/Storage/boxes.rsi, state: box }
   cost:
     FederationMilitaryCredit: 1
@@ -665,10 +684,42 @@
           - SecurityUplink
 
 - type: listing
-  id: UplinkSecurity30RifleMagazine
-  name:  uplink-security-30riflemagazine-name
-  description: uplink-security-30riflemagazine-desc
-  productEntity: BoxMagazineLightRifle
+  id: UplinkSecurity7.62x51mmMagazine
+  name:  uplink-security-7-62x51mmMagazine-name
+  description: uplink-security-7-62x51mmMagazine-desc
+  productEntity: BoxMagazine7.62x51mmFMJ
+  icon: { sprite: Objects/Storage/boxes.rsi, state: box }
+  cost:
+    FederationMilitaryCredit: 1
+  categories:
+    - UplinkSecurityAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: UplinkSecurity7.62x51mmMagazineRubber
+  name: uplink-security-7-62x51mmMagazine-rubber-name
+  description: uplink-security-7-62x51mmMagazine-rubber-desc
+  productEntity: BoxMagazine7.62x51mmRubber
+  icon: { sprite: Objects/Storage/boxes.rsi, state: box }
+  cost:
+    FederationMilitaryCredit: 1
+  categories:
+    - UplinkSecurityAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: UplinkSecurity7.62x39mmMagazine
+  name:  uplink-security-7-62x39mmMagazine-name
+  description: uplink-security-7-62x39mmMagazine-desc
+  productEntity: BoxMagazine7.62x39mmFMJ
   icon: { sprite: Objects/Storage/boxes.rsi, state: box }
   cost:
     FederationMilitaryCredit: 1
@@ -684,7 +735,7 @@
   id: UplinkSecurityWT550Magazine
   name:  uplink-security-wt550magazine-name
   description: uplink-security-wt550magazine-desc
-  productEntity: BoxMagazinePistolSubMachineGunTopMounted
+  productEntity: BoxMagazine4.6x30mmSubMachineGunTopMountedFMJ
   icon: { sprite: Objects/Storage/boxes.rsi, state: box }
   cost:
     FederationMilitaryCredit: 1
@@ -698,9 +749,9 @@
 
 - type: listing
   id: UplinkSecurityPistolMagazineRubber
-  name:  uplink-security-magazinepistol-rubber-name
-  description: uplink-security-magazinepistol-rubber-desc
-  productEntity: BoxMagazinePistolRubber
+  name:  uplink-security-Magazine9x19mmPistolFMJ-rubber-name
+  description: uplink-security-Magazine9x19mmPistolFMJ-rubber-desc
+  productEntity: BoxMagazine9x19mmRubber
   icon: { sprite: Objects/Storage/boxes.rsi, state: box }
   cost:
     FederationMilitaryCredit: 1
@@ -713,10 +764,10 @@
           - SecurityUplink
 
 - type: listing
-  id: UplinkSecurity20RifleMagazineRubber
-  name: uplink-security-20riflemagazine-rubber-name
-  description: uplink-security-20riflemagazine-rubber-desc
-  productEntity: BoxMagazineRifleRubber
+  id: UplinkSecurity5.56x45mmMagazineRubber
+  name: uplink-security-5-56x45mmMagazine-rubber-name
+  description: uplink-security-5-56x45mmMagazine-rubber-desc
+  productEntity: BoxMagazine5.56x45mmRubber
   icon: { sprite: Objects/Storage/boxes.rsi, state: box }
   cost:
     FederationMilitaryCredit: 1
@@ -729,10 +780,10 @@
           - SecurityUplink
 
 - type: listing
-  id: UplinkSecurity30RifleMagazineRubber
-  name: uplink-security-30riflemagazine-rubber-name
-  description: uplink-security-30riflemagazine-rubber-desc
-  productEntity: BoxMagazineLightRifleRubber
+  id: UplinkSecurity7.62x39mmMagazineRubber
+  name: uplink-security-7-62x39mmMagazine-rubber-name
+  description: uplink-security-7-62x39mmMagazine-rubber-desc
+  productEntity: BoxMagazine7.62x39mmRubber
   icon: { sprite: Objects/Storage/boxes.rsi, state: box }
   cost:
     FederationMilitaryCredit: 1
@@ -873,22 +924,22 @@
       whitelist:
         tags:
           - SecurityUplink
-
-- type: listing
-  id: UplinkSecurityCaptainSword
-  name:  uplink-security-captainsword-name
-  description: uplink-security-captainsword-desc
-  productEntity: ClothingBeltSheathFilled
-  icon: { sprite: Objects/Weapons/Melee/captain_sabre.rsi, state: icon }
-  cost:
-    FederationMilitaryCredit: 2 #From 10 to 2
-  categories:
-    - UplinkSecurityWeapons
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - SecurityUplink
+# Mono
+#- type: listing
+#  id: UplinkSecurityCaptainSword
+#  name:  uplink-security-captainsword-name
+#  description: uplink-security-captainsword-desc
+#  productEntity: ClothingBeltSheathFilled
+#  icon: { sprite: Objects/Weapons/Melee/captain_sabre.rsi, state: icon }
+#  cost:
+#    FederationMilitaryCredit: 2 #From 10 to 2
+#  categories:
+#    - UplinkSecurityWeapons
+#  conditions:
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - SecurityUplink
 
 - type: listing
   id: UplinkSecurityPulsePistol
@@ -1005,8 +1056,8 @@
   id: UplinkSecuritySpeedloader
   name:  uplink-security-speedloader-name
   description: uplink-security-speedloader-desc
-  productEntity: SpeedLoaderMagnum
-  icon: { sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi, state: base }
+  productEntity: SpeedLoader45_magnumFMJ
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi, state: base }
   cost:
     FederationMilitaryCredit: 1
   categories:
@@ -1021,8 +1072,8 @@
   id: UplinkSecuritySpeedloaderRubber
   name:  uplink-security-speedloaderrubber-name
   description: uplink-security-speedloaderrubber-desc
-  productEntity: SpeedLoaderMagnumRubber
-  icon: { sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi, state: base }
+  productEntity: SpeedLoader45_magnumRubber
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi, state: base }
   cost:
     FederationMilitaryCredit: 1
   categories:
@@ -1037,7 +1088,7 @@
   id: UplinkSecurityShotLethal
   name:  uplink-security-shotlethal-name
   description: uplink-security-shotlethal-desc
-  productEntity: BoxLethalshot
+  productEntity: AmmoBox12_gaugeBuckshot
   icon: { sprite: Objects/Storage/boxes.rsi, state: box }
   cost:
     FederationMilitaryCredit: 1
@@ -1053,7 +1104,7 @@
   id: UplinkSecurityShotBeanbag
   name:  uplink-security-shotbeanbag-name
   description: uplink-security-shotbeanbag-desc
-  productEntity: BoxBeanbag
+  productEntity: AmmoBox12_gaugeBeanbag
   icon: { sprite: Objects/Storage/boxes.rsi, state: box }
   cost:
     FederationMilitaryCredit: 1
@@ -1069,7 +1120,7 @@
   id: UplinkSecurityShotIncend
   name:  uplink-security-shotincend-name
   description: uplink-security-shotincend-desc
-  productEntity: BoxShotgunIncendiary
+  productEntity: AmmoBox12_gaugeIncendiary
   icon: { sprite: Objects/Storage/boxes.rsi, state: box }
   cost:
     FederationMilitaryCredit: 2
@@ -1085,7 +1136,7 @@
   id: UplinkSecurityShotSlug
   name:  uplink-security-shotslug-name
   description: uplink-security-shotslug-desc
-  productEntity: BoxShotgunSlug
+  productEntity: AmmoBox12_gaugeSlug
   icon: { sprite: Objects/Storage/boxes.rsi, state: box }
   cost:
     FederationMilitaryCredit: 1

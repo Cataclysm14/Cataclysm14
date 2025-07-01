@@ -6674,14 +6674,14 @@ entities:
     - type: Transform
       pos: -13.494709,9.54891
       parent: 104
-- proto: BoxMagazinePistolCaselessRiflePractice
+- proto: BoxMagazine6.35x40mmCaselessPistolPractice
   entities:
   - uid: 1635
     components:
     - type: Transform
       pos: 5.4970627,10.597828
       parent: 104
-- proto: BoxMagazinePistolSubMachineGunPractice
+- proto: BoxMagazine9x19mmSubMachineGunPractice
   entities:
   - uid: 1634
     components:
@@ -6695,7 +6695,7 @@ entities:
     - type: Transform
       pos: 7.629849,-12.44286
       parent: 104
-- proto: BoxShotgunPractice
+- proto: AmmoBox12_gaugePractice
   entities:
   - uid: 1633
     components:
@@ -11152,7 +11152,7 @@ entities:
     - type: Transform
       pos: 3.5,-12.5
       parent: 104
-- proto: MagazinePistolSubMachineGunPractice
+- proto: Magazine9x19mmSubMachineGunPractice
   entities:
   - uid: 1648
     components:

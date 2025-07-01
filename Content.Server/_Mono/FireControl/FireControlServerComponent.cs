@@ -1,3 +1,10 @@
+// SPDX-FileCopyrightText: 2025 Ark
+// SPDX-FileCopyrightText: 2025 RikuTheKiller
+// SPDX-FileCopyrightText: 2025 ark1368
+// SPDX-FileCopyrightText: 2025 sleepyyapril
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 // Copyright Rane (elijahrane@gmail.com) 2025
 // All rights reserved. Relicensed under AGPL with permission
 
@@ -10,11 +17,23 @@ public sealed partial class FireControlServerComponent : Component
     public EntityUid? ConnectedGrid = null;
 
     [ViewVariables]
-    public HashSet<EntityUid> Controlled = new();
+    public HashSet<EntityUid> Controlled = [];
 
     [ViewVariables]
-    public HashSet<EntityUid> Consoles = new();
+    public HashSet<EntityUid> Consoles = [];
 
     [ViewVariables]
     public Dictionary<EntityUid, EntityUid> Leases;
+
+    [ViewVariables, DataField]
+    public int ProcessingPower;
+
+    [ViewVariables]
+    public int UsedProcessingPower;
+
+    [ViewVariables, DataField]
+    public int MaxConsoles = 1;
+
+    [ViewVariables, DataField]
+    public bool EnforceMaxConsoles;
 }

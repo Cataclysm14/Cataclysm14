@@ -93,6 +93,9 @@
       paper_label: !type:ContainerSlot
   - type: ItemSlots
   - type: RequireProjectileTarget
+  - type: ItemTax # Mono
+    taxAccounts:
+      Frontier: 0.3
 
 - type: entity
   parent:
@@ -117,7 +120,7 @@
   - type: Contraband
     turnInValues:
       FederationMilitaryCredit: 3
-      Doubloon: 2
+      Doubloon: 3 # 2->3 - Mono
   - type: ShipyardSellCondition
     blockSale: true
     reason: shipyard-console-contraband-onboard
@@ -126,3 +129,7 @@
     - BlackMarket
   - type: PirateBountyItem
     id: ContrabandCrate
+  - type: ItemTax # Mono
+    taxAccounts:
+      BlackMarket: 0.3
+      nfsd: -0.15

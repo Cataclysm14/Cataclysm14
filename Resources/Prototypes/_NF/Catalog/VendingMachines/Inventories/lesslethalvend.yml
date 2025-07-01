@@ -2,20 +2,20 @@
   id: LessLethalVendInventory
   startingInventory:
     WeaponDisabler: 10
-#    Kardashev-MosinNonlethal: 10
+#    WeaponSniperMosinNonlethal: 10
     WeaponRevolverArgentiNonlethal: 10
     WeaponShotgunDoubleBarreledRubber: 10
     NFWeaponHoloflareGun: 5
-    BoxBeanbag: 8
-    MagazineBoxRifleRubber: 8
-    MagazineBoxCaselessRifleRubber: 10
-    MagazineBoxLightRifleRubber: 5
-    MagazineBoxPistolRubber: 10
-    MagazineBoxMagnumRubber: 10
+    AmmoBox12_gaugeBeanbag: 8
+    AmmoBox5.56x45mmRubber: 8
+    AmmoBox6.35x40mmCaselessRubber: 10
+    AmmoBox7.62x39mmRubber: 5
+    AmmoBox9x19mmRubber: 10
+    AmmoBox45_magnumRubber: 10
   contrabandInventory:
-    SpeedLoaderRifleHeavyRubber: 3
-    SpeedLoaderPistolRubber: 3
-    SpeedLoaderMagnumRubber: 3
+    SpeedLoader5.56x45mmRubber: 3
+    SpeedLoader9x19mmRubber: 3
+    SpeedLoader45_magnumRubber: 3
     WeaponRifleBBEmpty: 2
     BoxCartridgeBB: 10
   emaggedInventory:
@@ -26,20 +26,20 @@
   id: LessLethalVendPOIInventory
   startingInventory:
     WeaponDisabler: 4294967295 # Infinite
-#    Kardashev-MosinNonlethal: 4294967295 # Infinite
+#    WeaponSniperMosinNonlethal: 4294967295 # Infinite
     WeaponRevolverArgentiNonlethal: 4294967295 # Infinite
     WeaponShotgunDoubleBarreledRubber: 4294967295 # Infinite
     NFWeaponHoloflareGun: 4294967295 # Infinite
-    BoxBeanbag: 4294967295 # Infinite
-    MagazineBoxRifleRubber: 4294967295 # Infinite
-    MagazineBoxCaselessRifleRubber: 4294967295 # Infinite
-    MagazineBoxLightRifleRubber: 4294967295 # Infinite
-    MagazineBoxPistolRubber: 4294967295 # Infinite
-    MagazineBoxMagnumRubber: 4294967295 # Infinite
+    AmmoBox12_gaugeBeanbag: 4294967295 # Infinite
+    AmmoBox5.56x45mmRubber: 4294967295 # Infinite
+    AmmoBox6.35x40mmCaselessRubber: 4294967295 # Infinite
+    AmmoBox7.62x39mmRubber: 4294967295 # Infinite
+    AmmoBox9x19mmRubber: 4294967295 # Infinite
+    AmmoBox45_magnumRubber: 4294967295 # Infinite
   contrabandInventory:
-    SpeedLoaderRifleHeavyRubber: 3
-    SpeedLoaderPistolRubber: 3
-    SpeedLoaderMagnumRubber: 3
+    SpeedLoader5.56x45mmRubber: 3
+    SpeedLoader9x19mmRubber: 3
+    SpeedLoader45_magnumRubber: 3
     WeaponRifleBBEmpty: 2
     BoxCartridgeBB: 10
   emaggedInventory:

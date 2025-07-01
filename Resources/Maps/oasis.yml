@@ -1,3 +1,60 @@
+# SPDX-FileCopyrightText: 2021 20kdc
+# SPDX-FileCopyrightText: 2021 E F R
+# SPDX-FileCopyrightText: 2021 Elijahrane
+# SPDX-FileCopyrightText: 2021 Mith-randalf
+# SPDX-FileCopyrightText: 2021 Paul Ritter
+# SPDX-FileCopyrightText: 2021 buletsponge
+# SPDX-FileCopyrightText: 2021 wrexbe
+# SPDX-FileCopyrightText: 2022 Cheackraze
+# SPDX-FileCopyrightText: 2022 Jacob Tong
+# SPDX-FileCopyrightText: 2022 Kara
+# SPDX-FileCopyrightText: 2022 Moony
+# SPDX-FileCopyrightText: 2022 Morbo
+# SPDX-FileCopyrightText: 2022 Peptide90
+# SPDX-FileCopyrightText: 2022 ShadowCommander
+# SPDX-FileCopyrightText: 2022 TaralGit
+# SPDX-FileCopyrightText: 2022 TimrodDX
+# SPDX-FileCopyrightText: 2022 and_a
+# SPDX-FileCopyrightText: 2022 metalgearsloth
+# SPDX-FileCopyrightText: 2022 mirrorcult
+# SPDX-FileCopyrightText: 2022 moonheart08
+# SPDX-FileCopyrightText: 2023 Aexxie
+# SPDX-FileCopyrightText: 2023 DerbyX
+# SPDX-FileCopyrightText: 2023 DrSmugleaf
+# SPDX-FileCopyrightText: 2023 Eoin Mcloughlin
+# SPDX-FileCopyrightText: 2023 Kevin Zheng
+# SPDX-FileCopyrightText: 2023 Leon Friedrich
+# SPDX-FileCopyrightText: 2023 MisterMecky
+# SPDX-FileCopyrightText: 2023 Nemanja
+# SPDX-FileCopyrightText: 2023 PeterFuto
+# SPDX-FileCopyrightText: 2023 Sailor
+# SPDX-FileCopyrightText: 2023 TsjipTsjip
+# SPDX-FileCopyrightText: 2023 Ubaser
+# SPDX-FileCopyrightText: 2023 eoineoineoin
+# SPDX-FileCopyrightText: 2023 qwerltaz
+# SPDX-FileCopyrightText: 2024 AJCM-git
+# SPDX-FileCopyrightText: 2024 August Sun
+# SPDX-FileCopyrightText: 2024 Boaz1111
+# SPDX-FileCopyrightText: 2024 Brandon Hu
+# SPDX-FileCopyrightText: 2024 Emisse
+# SPDX-FileCopyrightText: 2024 Errant
+# SPDX-FileCopyrightText: 2024 Krunklehorn
+# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers
+# SPDX-FileCopyrightText: 2024 ScarKy0
+# SPDX-FileCopyrightText: 2024 Scribbles0
+# SPDX-FileCopyrightText: 2024 Wiebe Geertsma
+# SPDX-FileCopyrightText: 2024 brainfood1183
+# SPDX-FileCopyrightText: 2024 deltanedas
+# SPDX-FileCopyrightText: 2024 joshepvodka
+# SPDX-FileCopyrightText: 2025 ArtisticRoomba
+# SPDX-FileCopyrightText: 2025 BlueHNT
+# SPDX-FileCopyrightText: 2025 Booblesnoot42
+# SPDX-FileCopyrightText: 2025 IProduceWidgets
+# SPDX-FileCopyrightText: 2025 Orange-Winds
+# SPDX-FileCopyrightText: 2025 core-mene
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 meta:
   format: 6
   postmapinit: false
@@ -38299,23 +38356,23 @@ entities:
         [head=2][color=darkgrey][bold]Troubleshooting[/bold][/color][/head]
 
 
-        [bolditalic]Problem: 
+        [bolditalic]Problem:
 
-        The dock doesn’t respond when you approach.[/bolditalic]  
+        The dock doesn’t respond when you approach.[/bolditalic]
 
         Solution: It’s just being shy. Give it some encouragement by knocking lightly on the hull, or jostling the [color=darkorange][bolditalic]Aether Coil Modulator[/bolditalic][/color]. If no response, consult the  [color=blue][bold]Technical Support AI[/bold][/color] (usually known as "Door Stuck").
 
 
-        [bolditalic]Problem: 
+        [bolditalic]Problem:
 
-        The shuttle is stuck halfway through the docking process.[/bolditalic]  
+        The shuttle is stuck halfway through the docking process.[/bolditalic]
 
         Solution: This is an unfortunate but expected outcome. Reboot the dock, reattempt the process, and pray. Alternatively, try "tugging" the shuttle out, but be prepared for the consequences.
 
 
-        [bolditalic]Problem: 
+        [bolditalic]Problem:
 
-        The dock has *disengaged itself* mid-operation.[/bolditalic]  
+        The dock has *disengaged itself* mid-operation.[/bolditalic]
 
         Solution: This is a feature of the  [color=darkblue][bold]NanoTrasen Smart Dock Mk VII™[/bold][/color], called the  [color=darkorange][bolditalic]Premature Release Safety Protocol™[/bolditalic][/color]. It's designed to keep you on your toes. Simply re-dock and hope it doesn’t happen again (spoiler: it will).
 
@@ -38346,17 +38403,17 @@ entities:
         [head=2][color=darkgrey][bold]FAQ: Frequently Avoided Questions[/bold][/color][/head]
 
 
-        [bolditalic]Q: What do I do if the dock’s lights go out suddenly?[/bolditalic]  
+        [bolditalic]Q: What do I do if the dock’s lights go out suddenly?[/bolditalic]
 
         A: Nothing. Just accept the darkness. The dock has either entered [color=darkorange][bolditalic]Sleep Mode™[/bolditalic][/color], or something unspeakable is about to happen.
 
 
-        [bolditalic]Q: Why does the dock occasionally whisper my name?[/bolditalic]  
+        [bolditalic]Q: Why does the dock occasionally whisper my name?[/bolditalic]
 
         A: The dock is semi-sentient and enjoys toying with your mental state. We suggest playing along until it decides you’re no longer amusing.
 
 
-        [bolditalic]Q: How do I know if the docking process is complete?[/bolditalic]  
+        [bolditalic]Q: How do I know if the docking process is complete?[/bolditalic]
 
         A: You'll know it's done when your shuttle stops shaking violently and the alarms stop blaring. Or when you black out—whichever comes first.
 
@@ -38405,23 +38462,23 @@ entities:
         [head=2][color=darkgrey][bold]Troubleshooting[/bold][/color][/head]
 
 
-        [bolditalic]Problem: 
+        [bolditalic]Problem:
 
-        The dock doesn’t respond when you approach.[/bolditalic]  
+        The dock doesn’t respond when you approach.[/bolditalic]
 
         Solution: It’s just being shy. Give it some encouragement by knocking lightly on the hull, or jostling the [color=darkorange][bolditalic]Aether Coil Modulator[/bolditalic][/color]. If no response, consult the  [color=blue][bold]Technical Support AI[/bold][/color] (usually known as "Door Stuck").
 
 
-        [bolditalic]Problem: 
+        [bolditalic]Problem:
 
-        The shuttle is stuck halfway through the docking process.[/bolditalic]  
+        The shuttle is stuck halfway through the docking process.[/bolditalic]
 
         Solution: This is an unfortunate but expected outcome. Reboot the dock, reattempt the process, and pray. Alternatively, try "tugging" the shuttle out, but be prepared for the consequences.
 
 
-        [bolditalic]Problem: 
+        [bolditalic]Problem:
 
-        The dock has *disengaged itself* mid-operation.[/bolditalic]  
+        The dock has *disengaged itself* mid-operation.[/bolditalic]
 
         Solution: This is a feature of the  [color=darkblue][bold]NanoTrasen Smart Dock Mk VII™[/bold][/color], called the  [color=darkorange][bolditalic]Premature Release Safety Protocol™[/bolditalic][/color]. It's designed to keep you on your toes. Simply re-dock and hope it doesn’t happen again (spoiler: it will).
 
@@ -38452,17 +38509,17 @@ entities:
         [head=2][color=darkgrey][bold]FAQ: Frequently Avoided Questions[/bold][/color][/head]
 
 
-        [bolditalic]Q: What do I do if the dock’s lights go out suddenly?[/bolditalic]  
+        [bolditalic]Q: What do I do if the dock’s lights go out suddenly?[/bolditalic]
 
         A: Nothing. Just accept the darkness. The dock has either entered [color=darkorange][bolditalic]Sleep Mode™[/bolditalic][/color], or something unspeakable is about to happen.
 
 
-        [bolditalic]Q: Why does the dock occasionally whisper my name?[/bolditalic]  
+        [bolditalic]Q: Why does the dock occasionally whisper my name?[/bolditalic]
 
         A: The dock is semi-sentient and enjoys toying with your mental state. We suggest playing along until it decides you’re no longer amusing.
 
 
-        [bolditalic]Q: How do I know if the docking process is complete?[/bolditalic]  
+        [bolditalic]Q: How do I know if the docking process is complete?[/bolditalic]
 
         A: You'll know it's done when your shuttle stops shaking violently and the alarms stop blaring. Or when you black out—whichever comes first.
 
@@ -38511,23 +38568,23 @@ entities:
         [head=2][color=darkgrey][bold]Troubleshooting[/bold][/color][/head]
 
 
-        [bolditalic]Problem: 
+        [bolditalic]Problem:
 
-        The dock doesn’t respond when you approach.[/bolditalic]  
+        The dock doesn’t respond when you approach.[/bolditalic]
 
         Solution: It’s just being shy. Give it some encouragement by knocking lightly on the hull, or jostling the [color=darkorange][bolditalic]Aether Coil Modulator[/bolditalic][/color]. If no response, consult the  [color=blue][bold]Technical Support AI[/bold][/color] (usually known as "Door Stuck").
 
 
-        [bolditalic]Problem: 
+        [bolditalic]Problem:
 
-        The shuttle is stuck halfway through the docking process.[/bolditalic]  
+        The shuttle is stuck halfway through the docking process.[/bolditalic]
 
         Solution: This is an unfortunate but expected outcome. Reboot the dock, reattempt the process, and pray. Alternatively, try "tugging" the shuttle out, but be prepared for the consequences.
 
 
-        [bolditalic]Problem: 
+        [bolditalic]Problem:
 
-        The dock has *disengaged itself* mid-operation.[/bolditalic]  
+        The dock has *disengaged itself* mid-operation.[/bolditalic]
 
         Solution: This is a feature of the  [color=darkblue][bold]NanoTrasen Smart Dock Mk VII™[/bold][/color], called the  [color=darkorange][bolditalic]Premature Release Safety Protocol™[/bolditalic][/color]. It's designed to keep you on your toes. Simply re-dock and hope it doesn’t happen again (spoiler: it will).
 
@@ -38558,17 +38615,17 @@ entities:
         [head=2][color=darkgrey][bold]FAQ: Frequently Avoided Questions[/bold][/color][/head]
 
 
-        [bolditalic]Q: What do I do if the dock’s lights go out suddenly?[/bolditalic]  
+        [bolditalic]Q: What do I do if the dock’s lights go out suddenly?[/bolditalic]
 
         A: Nothing. Just accept the darkness. The dock has either entered [color=darkorange][bolditalic]Sleep Mode™[/bolditalic][/color], or something unspeakable is about to happen.
 
 
-        [bolditalic]Q: Why does the dock occasionally whisper my name?[/bolditalic]  
+        [bolditalic]Q: Why does the dock occasionally whisper my name?[/bolditalic]
 
         A: The dock is semi-sentient and enjoys toying with your mental state. We suggest playing along until it decides you’re no longer amusing.
 
 
-        [bolditalic]Q: How do I know if the docking process is complete?[/bolditalic]  
+        [bolditalic]Q: How do I know if the docking process is complete?[/bolditalic]
 
         A: You'll know it's done when your shuttle stops shaking violently and the alarms stop blaring. Or when you black out—whichever comes first.
 
@@ -38619,23 +38676,23 @@ entities:
         [head=2][color=darkgrey][bold]Troubleshooting[/bold][/color][/head]
 
 
-        [bolditalic]Problem: 
+        [bolditalic]Problem:
 
-        The dock doesn’t respond when you approach.[/bolditalic]  
+        The dock doesn’t respond when you approach.[/bolditalic]
 
         Solution: It’s just being shy. Give it some encouragement by knocking lightly on the hull, or jostling the [color=darkorange][bolditalic]Aether Coil Modulator[/bolditalic][/color]. If no response, consult the  [color=blue][bold]Technical Support AI[/bold][/color] (usually known as "Door Stuck").
 
 
-        [bolditalic]Problem: 
+        [bolditalic]Problem:
 
-        The shuttle is stuck halfway through the docking process.[/bolditalic]  
+        The shuttle is stuck halfway through the docking process.[/bolditalic]
 
         Solution: This is an unfortunate but expected outcome. Reboot the dock, reattempt the process, and pray. Alternatively, try "tugging" the shuttle out, but be prepared for the consequences.
 
 
-        [bolditalic]Problem: 
+        [bolditalic]Problem:
 
-        The dock has *disengaged itself* mid-operation.[/bolditalic]  
+        The dock has *disengaged itself* mid-operation.[/bolditalic]
 
         Solution: This is a feature of the  [color=darkblue][bold]NanoTrasen Smart Dock Mk VII™[/bold][/color], called the  [color=darkorange][bolditalic]Premature Release Safety Protocol™[/bolditalic][/color]. It's designed to keep you on your toes. Simply re-dock and hope it doesn’t happen again (spoiler: it will).
 
@@ -38666,17 +38723,17 @@ entities:
         [head=2][color=darkgrey][bold]FAQ: Frequently Avoided Questions[/bold][/color][/head]
 
 
-        [bolditalic]Q: What do I do if the dock’s lights go out suddenly?[/bolditalic]  
+        [bolditalic]Q: What do I do if the dock’s lights go out suddenly?[/bolditalic]
 
         A: Nothing. Just accept the darkness. The dock has either entered [color=darkorange][bolditalic]Sleep Mode™[/bolditalic][/color], or something unspeakable is about to happen.
 
 
-        [bolditalic]Q: Why does the dock occasionally whisper my name?[/bolditalic]  
+        [bolditalic]Q: Why does the dock occasionally whisper my name?[/bolditalic]
 
         A: The dock is semi-sentient and enjoys toying with your mental state. We suggest playing along until it decides you’re no longer amusing.
 
 
-        [bolditalic]Q: How do I know if the docking process is complete?[/bolditalic]  
+        [bolditalic]Q: How do I know if the docking process is complete?[/bolditalic]
 
         A: You'll know it's done when your shuttle stops shaking violently and the alarms stop blaring. Or when you black out—whichever comes first.
 
@@ -39398,7 +39455,7 @@ entities:
     - type: Transform
       pos: -28.464748,-17.253857
       parent: 2
-- proto: BoxLethalshot
+- proto: AmmoBox12_gaugeBuckshot
   entities:
   - uid: 4197
     components:
@@ -39456,14 +39513,14 @@ entities:
     - type: Transform
       pos: 27.126343,-29.311195
       parent: 21002
-- proto: BoxShellTranquilizer
+- proto: AmmoBox12_gaugeTranquilizer
   entities:
   - uid: 4195
     components:
     - type: Transform
       pos: -18.456379,-2.4510403
       parent: 2
-- proto: BoxShotgunSlug
+- proto: AmmoBox12_gaugeSlug
   entities:
   - uid: 4199
     components:
@@ -144823,14 +144880,14 @@ entities:
     - type: Transform
       pos: -47.520466,-22.794298
       parent: 2
-- proto: MagazineMagnum
+- proto: Magazine45_magnumPistolFMJ
   entities:
   - uid: 4205
     components:
     - type: Transform
       pos: 32.59941,-20.510296
       parent: 2
-- proto: MagazinePistolSubMachineGunTopMounted
+- proto: Magazine4.6x30mmSubMachineGunTopMountedFMJ
   entities:
   - uid: 14233
     components:
@@ -160298,7 +160355,7 @@ entities:
       rot: 6.283185307179586 rad
       pos: 15.087707,39.601242
       parent: 2
-- proto: ShellShotgunSlug
+- proto: ShellShotgun12_gaugeSlug
   entities:
   - uid: 19082
     components:

@@ -33,7 +33,7 @@
       proto: BulletRocketMiniNF
       deleteOnSpawn: true
     - type: Sprite
-      sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+      sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
       state: frag
     - type: StaticPrice
       price: 20

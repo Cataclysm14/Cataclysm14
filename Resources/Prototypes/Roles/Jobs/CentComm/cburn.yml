@@ -31,7 +31,7 @@
   storage:
     back:
     - WeaponShotgunDoubleBarreled
-    - BoxShotgunIncendiary
+    - AmmoBox12_gaugeIncendiary
     - GrenadeFlashBang
     - PillAmbuzolPlus
     - PillAmbuzol

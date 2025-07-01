@@ -341,7 +341,7 @@
     offset: 0.0
     rarePrototypes:
     - SpawnDungeonLootGunT5
-    rareChance: 0.1
+    rareChance: 0.3 # Mono
 
 - type: entity
   name: random weapon
@@ -465,7 +465,7 @@
     - WeaponCaseShortAmmoBoxLethal30
     - WeaponCaseShortAmmoBoxLethal35
     - WeaponCaseShortAmmoBoxLethal25
-    - WeaponCaseShortAmmoBoxLethalShotgun
+    - WeaponCaseShortAmmoAmmoBox12_gaugeBuckshotgun
     - WeaponCaseShortAmmoBoxSlugShotgun
     - WeaponCaseShortAmmoBoxLethal45
     chance: 0.8

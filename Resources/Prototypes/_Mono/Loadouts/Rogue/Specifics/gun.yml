@@ -1,0 +1,24 @@
+- type: loadoutGroup
+  id: RogueFirearm
+  name: loadout-group-rogue-weapon
+  minLimit: 1
+  loadouts:
+  - RogueC20RLoadout
+  - RogueWt550Loadout
+  - RogueLecterLoadout
+  - RogueEnergyGunLoadout
+  fallbacks:
+  - RogueC20RLoadout
+
+- type: loadoutGroup
+  id: RogueMag
+  name: loadout-group-rogue-magazine
+  minLimit: 1
+  loadouts:
+  - RogueRifleSmgMagLoadout
+  - RoguePistolSubMachineGunTopMounted
+  - RogueRifleMagLoadout
+  - RogueLightRifleMagLoadout
+  fallbacks:
+  - RogueRifleSmgMagLoadout
+

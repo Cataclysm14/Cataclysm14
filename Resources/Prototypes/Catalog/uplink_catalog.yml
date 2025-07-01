@@ -148,7 +148,7 @@
   id: UplinkSniperBundle
   name: uplink-sniper-bundle-name
   description: uplink-sniper-bundle-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Snipers/heavy_sniper.rsi, state: base }
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Snipers/hristov.rsi, state: base }
   productEntity: BriefcaseSyndieSniperBundleFilled
   discountCategory: usualDiscounts
   discountDownTo:
@@ -466,8 +466,8 @@
   id: UplinkPistol9mmMagazine
   name: uplink-pistol-magazine-name
   description: uplink-pistol-magazine-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi, state: red-icon }
-  productEntity: MagazinePistol
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/9x19mm/9x19mm_pistol_mag.rsi, state: red-icon }
+  productEntity: Magazine9x19mmPistolFMJ
   cost:
     Telecrystal: 1
   categories:
@@ -475,11 +475,11 @@
 
 # For the C20R
 - type: listing
-  id: UplinkMagazinePistolSubMachineGun
+  id: UplinkMagazine9x19mmSubMachineGunFMJ
   name: uplink-pistol-magazine-c20r-name
   description: uplink-pistol-magazine-c20r-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi, state: red-icon }
-  productEntity: MagazinePistolSubMachineGun
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/9x19mm/9x19mm_smg_mag.rsi, state: red-icon }
+  productEntity: Magazine9x19mmSubMachineGunFMJ
   cost:
     Telecrystal: 2
   categories:
@@ -487,11 +487,11 @@
 
 # For the Cobra
 - type: listing
-  id: UplinkMagazinePistolCaselessRifle
+  id: UplinkMagazine6.35x40mmCaselessPistol
   name: uplink-pistol-magazine-caseless-name
   description: uplink-pistol-magazine-caseless-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_pistol_mag.rsi, state: red-icon }
-  productEntity: MagazinePistolCaselessRifle
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/6.35x40mm_caseless/6.35x40mm_caseless_pistol_mag.rsi, state: red-icon }
+  productEntity: Magazine6.35x40mmCaselessPistol
   cost:
     Telecrystal: 1
   categories:
@@ -499,11 +499,11 @@
 
 # For the Python
 - type: listing
-  id: UplinkSpeedLoaderMagnumAP
-  name: uplink-speedloader-magnum-name
+  id: UplinkSpeedLoader45_magnumAP
+  name: uplink-speedloader-45_magnum-name
   description: uplink-speedloader-magnu-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi, state: icon }
-  productEntity: SpeedLoaderMagnumAP
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi, state: icon }
+  productEntity: SpeedLoader45_magnumAP
   cost:
     Telecrystal: 3
   categories:
@@ -514,7 +514,7 @@
   id: UplinkMosinAmmo
   name: uplink-mosin-ammo-name
   description: uplink-mosin-ammo-desc
-  productEntity: MagazineBoxLightRifle
+  productEntity: AmmoBox7.62x39mmFMJ
   cost:
     Telecrystal: 1
   categories:
@@ -525,7 +525,7 @@
   id: UplinkHristovAmmo
   name: uplink-sniper-ammo-name
   description: uplink-sniper-ammo-desc
-  productEntity: MagazineBoxAntiMateriel
+  productEntity: AmmoBox14.5x114mm
   cost:
     Telecrystal: 2
   categories:

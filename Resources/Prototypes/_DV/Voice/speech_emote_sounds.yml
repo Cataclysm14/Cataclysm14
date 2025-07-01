@@ -111,7 +111,7 @@
     Hew:
       collection: Hew
     Growl:
-      collection: VulpkaninGrowls
+      collection: VulpkaninMaleGrowl #Monolith
     Snarl:
       collection: VulpkaninSnarls
     Bark:
@@ -119,9 +119,9 @@
     Whine:
       collection: VulpkaninWhines
     Howl:
-      collection: VulpkaninHowls
+      collection: VulpkaninMaleHowl #Monolith
     Awoo:
-      collection: VulpkaninHowls
+      collection: VulpkaninMaleHowl #Monolith
     Gasp:
       collection: MaleGasp
     DefaultDeathgasp:
@@ -159,7 +159,7 @@
     Hew:
       collection: Hew
     Growl:
-      collection: VulpkaninGrowls
+      collection: VulpkaninFemaleGrowl #Monolith
     Snarl:
       collection: VulpkaninSnarls
     Bark:
@@ -167,9 +167,9 @@
     Whine:
       collection: VulpkaninWhines
     Howl:
-      collection: VulpkaninHowls
+      collection: VulpkaninFemaleHowl #Monolith
     Awoo:
-      collection: VulpkaninHowls
+      collection: VulpkaninFemaleHowl #Monolith
     Gasp:
       collection: FemaleGasp
     DefaultDeathgasp:

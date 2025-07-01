@@ -89,44 +89,6 @@
   - BaseBallBatNF
   - CrossbowModern
   - WeaponPistolPollock
-## Ammo boxes
-  - BoxLethalshot
-  - MagazineBoxLightRifle
-  - MagazineBoxPistol
-  - MagazineBoxRifle
-  - CrossbowBolt
-  - CrossbowBoltBroadhead
-  - BoxBeanbag
-  - BoxShotgunSlug
-  - MagazineBoxLightRifleRubber
-  - MagazineBoxMagnumRubber
-  - MagazineBoxPistolRubber
-  - MagazineBoxRifleRubber
-## Mags / Speedloaders / Clips
-  - MagazineNovaliteC1Empty
-  - MagazineNovaliteC1
-  - MagazineNovaliteC1Rubber
-  - MagazineLightRifleLowCapacityEmpty
-  - MagazineLightRifleLowCapacity
-  - MagazineLightRifleLowCapacityRubber
-  - MagazineLightRifle
-  - MagazineLightRifleEmpty
-  - MagazineRifle
-  - MagazineRifleEmpty
-  - MagazinePistol
-  - MagazinePistolEmpty
-  - SpeedLoaderRifleHeavy
-  - SpeedLoaderRifleHeavyEmpty
-  - SpeedLoaderRifleHeavyRubber
-  - SpeedLoaderMagnumRubber
-  - MagazineRifleRubber
-  - MagazineShotgunSlug
-  - MagazinePistolRubber
-  - MagazineLightRifleRubber
-  - MagazineShotgunBeanbag
-  - MagazineDMR # mono
-  - MagazineDMREmpty # mono
-  - MagazineBoxDMR # mono
   ## Cyborg Modules
   - BorgModuleMercenary # mono
 
@@ -204,36 +166,8 @@
   - WeaponLaserCannon
   - WeaponXrayCannon
 ## Ammo boxes
-  - BoxBeanbag
-  - BoxShellTranquilizer
-  - MagazineBoxLightRifleRubber
-  - MagazineBoxMagnumRubber
-  - MagazineBoxPistolRubber
-  - MagazineBoxRifleRubber
-  - MagazineShotgunBeanbag
 
 - type: latheRecipePack
   id: NFMercenaryTechfabDeprecatedEmag
   recipes:
-  - BoxShotgunIncendiary
-  - BoxShotgunUranium
-  - MagazineBoxLightRifleIncendiary
-  - MagazineBoxLightRifleUranium
-  - MagazineBoxMagnumIncendiary
-  - MagazineBoxMagnumUranium
-  - MagazineBoxPistolIncendiary
-  - MagazineBoxPistolUranium
-  - MagazineBoxRifleIncendiary
-  - MagazineBoxRifleUranium
-  - MagazineGrenadeEmpty
-  - MagazineLightRifleIncendiary
-  - MagazineLightRifleUranium
-  - MagazinePistolIncendiary
-  - MagazinePistolUranium
-  - MagazineRifleIncendiary
-  - MagazineRifleUranium
-  - MagazineShotgunIncendiary
-  - SpeedLoaderMagnumIncendiary
-  - SpeedLoaderMagnumUranium
-  - SpeedLoaderRifleHeavyIncendiary
-  - SpeedLoaderRifleHeavyUranium
+  - Wirecutter

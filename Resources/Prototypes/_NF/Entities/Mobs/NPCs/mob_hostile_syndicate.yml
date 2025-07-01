@@ -54,7 +54,7 @@
   name: syndicate captain
   parent: MobSyndicateNavalBase
   id: MobSyndicateNavalCaptainA
-  description: The executive officer in lieu of the commander, syndicate captains ensure operations onboard go smoothly. Equipped with a magnum revolver.
+  description: The executive officer in lieu of the commander, syndicate captains ensure operations onboard go smoothly. Equipped with a 45_magnum revolver.
   categories: [ HideSpawnMenu ]
   components:
     - type: Loadout
@@ -65,7 +65,7 @@
       rechargeSound:
         path: /Audio/_NF/Effects/silence.ogg
     - type: BasicEntityAmmoProvider
-      proto: BulletMagnumAP
+      proto: Bullet45_magnumAP
       capacity: 1
       count: 1
     - type: Gun
@@ -85,7 +85,7 @@
       prototypes:
         - SyndicateNavalCaptainGearB
     - type: BasicEntityAmmoProvider
-      proto: BulletMagnum
+      proto: Bullet45_magnumFMJ
       capacity: 1
       count: 1
 
@@ -98,7 +98,7 @@
       prototypes:
         - SyndicateNavalCaptainGearC
     - type: BasicEntityAmmoProvider
-      proto: BulletMagnum
+      proto: Bullet45_magnumFMJ
       capacity: 1
       count: 1
 
@@ -111,7 +111,7 @@
       prototypes:
         - SyndicateNavalCaptainGearD
     - type: BasicEntityAmmoProvider
-      proto: BulletMagnum
+      proto: Bullet45_magnumFMJ
       capacity: 1
       count: 1
 
@@ -131,7 +131,7 @@
       rechargeSound:
         path: /Audio/_NF/Effects/silence.ogg
     - type: BasicEntityAmmoProvider
-      proto: ShellShotgunSlug
+      proto: ShellShotgun12_gaugeSlug
       capacity: 1
       count: 1
     - type: Gun
@@ -151,7 +151,7 @@
       prototypes:
         - SyndicateNavalEngineerGearB
     - type: BasicEntityAmmoProvider
-      proto: ShellShotgun
+      proto: ShellShotgun12_gauge
       capacity: 1
       count: 1
 
@@ -316,7 +316,7 @@
       rechargeSound:
         path: /Audio/_NF/Effects/silence.ogg
     - type: BasicEntityAmmoProvider
-      proto: BulletPistol
+      proto: Bullet9x19mmFMJ
       capacity: 7
       count: 7
     - type: Gun
@@ -378,7 +378,7 @@
       rechargeSound:
         path: /Audio/_NF/Effects/silence.ogg
     - type: BasicEntityAmmoProvider
-      proto: GrenadeFrag
+      proto: 40mmGrenadeFragmentation
       capacity: 1
       count: 1
     - type: Gun
@@ -398,7 +398,7 @@
       prototypes:
         - SyndicateNavalGrenadierGearB
     - type: BasicEntityAmmoProvider
-      proto: GrenadeBlast
+      proto: 40mmGrenadeThermobaric
       capacity: 1
       count: 1
 
@@ -411,7 +411,7 @@
       prototypes:
         - SyndicateNavalGrenadierGearC
     - type: BasicEntityAmmoProvider
-      proto: GrenadeBaton
+      proto: 40mmGrenadeBaton
       capacity: 1
       count: 1
 
@@ -424,7 +424,7 @@
       prototypes:
         - SyndicateNavalGrenadierGearD
     - type: BasicEntityAmmoProvider
-      proto: GrenadeFlash
+      proto: 40mmGrenadeFlash
       capacity: 2
       count: 2
 
@@ -444,7 +444,7 @@
       rechargeSound:
         path: /Audio/_NF/Effects/silence.ogg
     - type: BasicEntityAmmoProvider
-      proto: BulletPistolEmp
+      proto: Bullet9x19mmEmp
       capacity: 4
       count: 4
     - type: Gun
@@ -540,7 +540,7 @@
       rechargeSound:
         path: /Audio/_NF/Effects/silence.ogg
     - type: BasicEntityAmmoProvider
-      proto: CartridgeLightRifle
+      proto: Cartridge7.62x39mmFMJ
       capacity: 4
       count: 4
     - type: Gun
@@ -560,7 +560,7 @@
       prototypes:
         - SyndicateNavalCommanderGearB
     - type: BasicEntityAmmoProvider
-      proto: CartridgeRifle
+      proto: Cartridge5.56x45mmFMJ
       capacity: 4
       count: 4
     - type: Gun
@@ -605,7 +605,7 @@
       rechargeSound:
         path: /Audio/_NF/Effects/silence.ogg
     - type: BasicEntityAmmoProvider
-      proto: BulletPistol
+      proto: Bullet9x19mmFMJ
       capacity: 4
       count: 4
     - type: Gun
@@ -747,7 +747,7 @@
       prototypes:
         - SyndicateNavalCaptainVoidGear
     - type: BasicEntityAmmoProvider
-      proto: BulletMagnum
+      proto: Bullet45_magnumFMJ
       capacity: 1
       count: 1
 
@@ -789,7 +789,7 @@
       prototypes:
         - SyndicateNavalEngineerVoidGear
     - type: BasicEntityAmmoProvider
-      proto: ShellShotgun
+      proto: ShellShotgun12_gauge
       capacity: 1
       count: 1
 

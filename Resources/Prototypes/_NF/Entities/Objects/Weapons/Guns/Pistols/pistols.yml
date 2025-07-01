@@ -7,23 +7,24 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistolRubber
+        startingItem: Magazine45_ACPPistolRubber
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistol
+            - Magazine45_ACPPistolFMJ
+            - Magazine45_ACPPistolHighCapacityFMJ
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistolRubber
+        startingItem: Cartridge45_ACPRubber
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol
+            - Cartridge45_ACPFMJ
 
 - type: entity
-  name: N1984
+  name: N1984 (.45 magnum)
   parent: WeaponPistolN1984
   id: WeaponPistolN1984Nonlethal
   suffix: Non-lethal
@@ -32,17 +33,17 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineMagnumRubber
+        startingItem: Magazine45_magnumPistolRubber
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazineMagnum
+            - Magazine45_magnumPistolFMJ
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeMagnumRubber
+        startingItem: Cartridge45_magnumRubber
         priority: 1
         whitelist:
           tags:
-            - CartridgeMagnum
+            - Cartridge45_magnumFMJ

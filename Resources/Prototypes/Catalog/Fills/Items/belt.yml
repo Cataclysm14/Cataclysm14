@@ -196,7 +196,7 @@
   - type: StorageFill
     contents:
         - id: WeaponRevolverInspector
-        - id: SpeedLoaderMagnum
+        - id: SpeedLoader45_magnumFMJ
 
 - type: entity
   id: ClothingBeltChefFilled

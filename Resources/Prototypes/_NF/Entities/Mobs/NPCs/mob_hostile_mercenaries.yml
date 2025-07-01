@@ -142,7 +142,7 @@
       color: "#a9b6bd"
       shader: unshaded
   - type: BasicEntityAmmoProvider
-    proto: BulletPistol
+    proto: Bullet9x19mmFMJ
     capacity: 4
     count: 4
   - type: Gun
@@ -184,7 +184,7 @@
       color: "#a9b6bd"
       shader: unshaded
   - type: BasicEntityAmmoProvider
-    proto: CartridgeRifle
+    proto: Cartridge5.56x45mmFMJ
     capacity: 10
     count: 10
   - type: Gun
@@ -277,7 +277,7 @@
       color: "#a9b6bd"
       shader: unshaded
   - type: BasicEntityAmmoProvider
-    proto: CartridgeRifle
+    proto: Cartridge5.56x45mmFMJ
     capacity: 8
     count: 8
   - type: Gun
@@ -325,7 +325,7 @@
     rechargeSound:
       path: /Audio/_NF/Effects/silence.ogg
   - type: BasicEntityAmmoProvider
-    proto: ShellShotgun
+    proto: ShellShotgun12_gauge
     capacity: 1
     count: 1
   - type: Gun
@@ -434,7 +434,7 @@
       color: "#a9b6bd"
       shader: unshaded
   - type: BasicEntityAmmoProvider
-    proto: CartridgeRifle
+    proto: Cartridge5.56x45mmFMJ
     capacity: 2
     count: 2
   - type: RechargeBasicEntityAmmo
@@ -487,7 +487,7 @@
       color: "#a9b6bd"
       shader: unshaded
   - type: BasicEntityAmmoProvider
-    proto: CartridgeMagnum
+    proto: Cartridge45_magnumFMJ
     capacity: 10
     count: 10
   - type: Gun
