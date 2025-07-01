@@ -244,11 +244,15 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
         if (!_access.IsAllowed(user, uid)) // Frontier: check access
             return false; // Frontier
 
-        // Check if console is locked
-        if (TryComp<ShuttleConsoleLockComponent>(uid, out var lockComp) && lockComp.Locked)
+        // Check if console is locked using effective lock state (considers grid-level locks)
+        if (TryComp<ShuttleConsoleLockComponent>(uid, out var lockComp))
         {
-            // _popup.PopupEntity(Loc.GetString("shuttle-console-locked"), uid, user); // Mono
-            return false;
+            var lockSystem = EntityManager.EntitySysManager.GetEntitySystem<SharedShuttleConsoleLockSystem>();
+            if (lockSystem.GetEffectiveLockState(uid, lockComp))
+            {
+                // _popup.PopupEntity(Loc.GetString("shuttle-console-locked"), uid, user); // Mono
+                return false;
+            }
         }
 
         var pilotComponent = EnsureComp<PilotComponent>(user);
