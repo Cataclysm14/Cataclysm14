@@ -1,13 +1,9 @@
 using Content.Shared.Access.Components;
-using Content.Shared.Interaction;
 using Content.Shared.Shuttles.Components;
 using Content.Shared._NF.Shipyard.Components;
 using Content.Shared.Popups;
-using Robust.Shared.Player;
 using Robust.Shared.Timing;
-using Content.Shared.Access;
 using Content.Shared.Examine;
-using Robust.Shared.Audio.Systems;
 
 namespace Content.Shared.Shuttles.Systems;
 
@@ -47,7 +43,7 @@ public abstract class SharedShuttleConsoleLockSystem : EntitySystem
         // Get the grid this console is on
         var transform = Transform(console);
         if (transform.GridUid == null)
-            return component.Locked || component.EmergencyLocked;
+            return component.Locked;
 
         var gridUid = transform.GridUid.Value;
 
@@ -56,11 +52,11 @@ public abstract class SharedShuttleConsoleLockSystem : EntitySystem
             TryComp<ShipGridLockComponent>(gridUid, out var gridLock))
         {
             // Grid lock state takes complete precedence over individual console state
-            return gridLock.Locked || gridLock.EmergencyLocked;
+            return gridLock.Locked;
         }
 
         // No grid lock, use individual console lock state
-        return component.Locked || component.EmergencyLocked;
+        return component.Locked;
     }
 
     protected void UpdateAppearance(EntityUid uid, ShuttleConsoleLockComponent? component = null)
@@ -93,20 +89,7 @@ public abstract class SharedShuttleConsoleLockSystem : EntitySystem
         Dirty(gridUid, gridLock);
     }
 
-    /// <summary>
-    /// Sets the emergency lock state for a ship grid
-    /// </summary>
-    protected void SetGridEmergencyLockState(EntityUid gridUid, bool emergencyLocked)
-    {
-        if (!TryComp<ShipGridLockComponent>(gridUid, out var gridLock))
-        {
-            // Create the component if it doesn't exist
-            gridLock = AddComp<ShipGridLockComponent>(gridUid);
-        }
 
-        gridLock.EmergencyLocked = emergencyLocked;
-        Dirty(gridUid, gridLock);
-    }
 
     /// <summary>
     /// Ensures a grid has a ShipGridLockComponent if it has a deed

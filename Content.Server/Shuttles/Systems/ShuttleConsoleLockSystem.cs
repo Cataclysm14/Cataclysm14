@@ -241,22 +241,6 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
         // If locked, try to unlock
         if (effectiveLocked)
         {
-            // Handle emergency lock case first
-            var transform = Transform(uid);
-            var isEmergencyLocked = component.EmergencyLocked;
-
-            // Check for grid-level emergency lock
-            if (transform.GridUid != null &&
-                TryComp<ShipGridLockComponent>(transform.GridUid.Value, out var gridLock))
-            {
-                isEmergencyLocked = gridLock.EmergencyLocked;
-            }
-
-            if (isEmergencyLocked)
-                Popup.PopupEntity(Loc.GetString("shuttle-console-emergency-locked"),
-                    uid,
-                    user); // For emergency mode, just show the emergency message and don't try to unlock with deeds
-            //return;
 
             // Normal unlock procedure for non-emergency locks
             // Try each ID card the user has
@@ -575,46 +559,7 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
             // Use grid lock state for ships with deeds
         }
 
-        // Special handling for emergency locks - requires TSF company access
-        var isEmergencyLocked = gridLock?.EmergencyLocked ?? lockComp.EmergencyLocked;
-        if (isEmergencyLocked)
-        {
-            // Check if the ID card or user has TSF company access
-            var hasTsfAccess = false;
 
-            // Check for access tags on the ID card
-            if (TryComp<AccessComponent>(idCard, out var access))
-                hasTsfAccess = access.Tags.Contains("Nfsd") || access.Tags.Contains("Security"); // Check if ID has TSF or Security access
-
-            // Check for TSF company membership directly on the user entity
-            if (!hasTsfAccess && user != null && TryComp<CompanyComponent>(user, out var userCompany))
-                hasTsfAccess = userCompany.CompanyName is "TSF" or "TSFHighCommand";
-
-            if (!hasTsfAccess)
-            {
-                _audio.PlayPvs(idComp.ErrorSound, console);
-                Popup.PopupEntity(Loc.GetString("shuttle-console-emergency-locked"), console);
-                return false;
-            }
-
-            // Success! Clear the emergency lock state
-            if (gridLock != null)
-            {
-                // Clear grid-level emergency lock
-                SetGridEmergencyLockState(gridUid!.Value, false);
-                SetGridLockState(gridUid!.Value, false);
-            }
-            else
-            {
-                // Clear individual console emergency lock
-                lockComp.EmergencyLocked = false;
-                lockComp.Locked = false;
-            }
-
-            _audio.PlayPvs(idComp.SwipeSound, console);
-            Popup.PopupEntity(Loc.GetString("shuttle-console-emergency-unlocked"), console);
-            return true;
-        }
 
         // If there's no shuttle ID, there's nothing to unlock against
         var shuttleId = gridLock?.ShuttleId ?? lockComp.ShuttleId;
@@ -733,70 +678,6 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
         foreach (var pilot in pilots)
             _consoleSystem.RemovePilot(pilot);
 
-    }
-
-    /// <summary>
-    /// Sets a console into emergency locked mode
-    /// </summary>
-    public void SetEmergencyLock(EntityUid console, bool enabled)
-    {
-        var lockComp = EnsureComp<ShuttleConsoleLockComponent>(console);
-
-        // Update existing component
-        lockComp.Locked = enabled || !string.IsNullOrEmpty(lockComp.ShuttleId);
-        lockComp.EmergencyLocked = enabled;
-
-        // Handle IFF visibility
-        if (Transform(console).GridUid is not { } iffVisibilityGridUid)
-            return;
-
-        HandleIff(enabled, iffVisibilityGridUid, lockComp);
-
-        Dirty(console, lockComp);
-
-        // Remove any pilots when locking the console
-        if (!lockComp.Locked || !TryComp<ShuttleConsoleComponent>(console, out var shuttleComp))
-            return;
-
-        // Clone the list to avoid modification during enumeration
-        var pilots = shuttleComp.SubscribedPilots.ToList();
-        foreach (var pilot in pilots)
-            _consoleSystem.RemovePilot(pilot);
-    }
-
-    private void HandleIff(bool enabled, EntityUid iffVisibilityGridUid, ShuttleConsoleLockComponent lockComp)
-    {
-        if (enabled)
-        {
-            // Save current IFF flags and make visible
-            if (TryComp<IFFComponent>(iffVisibilityGridUid, out var iff))
-            {
-                lockComp.OriginalIFFFlags = iff.Flags;
-
-                // Remove hiding flags
-                _shuttleSystem.RemoveIFFFlag(iffVisibilityGridUid, IFFFlags.Hide | IFFFlags.HideLabel);
-            }
-            else
-            {
-                // If no IFF component exists, add one that's visible
-                var iffComp = EnsureComp<IFFComponent>(iffVisibilityGridUid);
-                lockComp.OriginalIFFFlags = iffComp.Flags;
-            }
-
-            return;
-        }
-
-        // Restore original flags
-        if (!TryComp<IFFComponent>(iffVisibilityGridUid, out _))
-            return;
-        // Clear all flags first
-        _shuttleSystem.RemoveIFFFlag(iffVisibilityGridUid, IFFFlags.Hide | IFFFlags.HideLabel);
-        // Then restore the original flags that were hiding
-        if ((lockComp.OriginalIFFFlags & IFFFlags.Hide) != 0)
-            _shuttleSystem.AddIFFFlag(iffVisibilityGridUid, IFFFlags.Hide);
-
-        if ((lockComp.OriginalIFFFlags & IFFFlags.HideLabel) != 0)
-            _shuttleSystem.AddIFFFlag(iffVisibilityGridUid, IFFFlags.HideLabel);
     }
 
     /// <summary>

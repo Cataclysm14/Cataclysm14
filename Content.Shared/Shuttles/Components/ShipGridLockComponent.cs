@@ -21,10 +21,4 @@ public sealed partial class ShipGridLockComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public string? ShuttleId;
-
-    /// <summary>
-    /// Whether the grid is locked due to an emergency broadcast.
-    /// </summary>
-    [DataField, AutoNetworkedField]
-    public bool EmergencyLocked;
 }

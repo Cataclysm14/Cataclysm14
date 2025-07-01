@@ -89,14 +89,13 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
 
         _sawmill = _log.GetSawmill("shuttle-console");
 
-        InitializeDeviceLinking(); // Initialize device linking functionality
+        InitializeDeviceLinking();
 
         SubscribeLocalEvent<ShuttleConsoleComponent, ComponentStartup>(OnConsoleStartup);
         SubscribeLocalEvent<ShuttleConsoleComponent, ComponentShutdown>(OnConsoleShutdown);
         SubscribeLocalEvent<ShuttleConsoleComponent, PowerChangedEvent>(OnConsolePowerChange);
         SubscribeLocalEvent<ShuttleConsoleComponent, AnchorStateChangedEvent>(OnConsoleAnchorChange);
         SubscribeLocalEvent<ShuttleConsoleComponent, ActivatableUIOpenAttemptEvent>(OnConsoleUIOpenAttempt);
-        SubscribeLocalEvent<ShuttleConsoleComponent, GetVerbsEvent<Verb>>(AddPanicButtonVerb);
         Subs.BuiEvents<ShuttleConsoleComponent>(ShuttleConsoleUiKey.Key, subs =>
         {
             subs.Event<ShuttleConsoleFTLBeaconMessage>(OnBeaconFTLMessage);
@@ -625,70 +624,6 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
             stateDuration,
             beacons ?? new List<ShuttleBeaconObject>(),
             exclusions ?? new List<ShuttleExclusionObject>());
-    }
-
-    /// <summary>
-    /// Adds the panic button verb to the shuttle console
-    /// </summary>
-    private void AddPanicButtonVerb(EntityUid uid, ShuttleConsoleComponent component, GetVerbsEvent<Verb> args)
-    {
-        if (!args.CanAccess || !args.CanInteract || !this.IsPowered(uid, EntityManager))
-            return;
-
-        // Don't show the panic button if the console is locked (either emergency locked or normally locked)
-        if (TryComp<ShuttleConsoleLockComponent>(uid, out var lockComp) && (lockComp.EmergencyLocked || lockComp.Locked))
-            return;
-
-        // Create the panic button verb
-        Verb verb = new()
-        {
-            Act = () => SendPanicSignal(uid, args.User),
-            Text = Loc.GetString("shuttle-console-panic-button"),
-            Priority = 1,
-        };
-
-        args.Verbs.Add(verb);
-    }
-
-    /// <summary>
-    /// Sends an emergency signal to the TSFMC radio channel with the shuttle's name and location
-    /// </summary>
-    private void SendPanicSignal(EntityUid uid, EntityUid user, ShuttleConsoleComponent? component = null, MetaDataComponent? gridMeta = null)
-    {
-        if (!Resolve(uid, ref component))
-            return;
-
-        // Get the grid entity
-        if (Transform(uid).GridUid is not {} gridUid)
-        {
-            _popup.PopupEntity(Loc.GetString("shuttle-console-panic-no-grid"), uid, user);
-            return;
-        }
-
-        // Get grid name
-        if (!Resolve(gridUid, ref gridMeta))
-        {
-            _popup.PopupEntity(Loc.GetString("shuttle-console-panic-failed"), uid, user);
-            return;
-        }
-
-        var gridName = gridMeta.EntityName;
-        var mapCoordinates = _transform.ToMapCoordinates(Transform(uid).Coordinates);
-
-        // Construct emergency message
-        var message = Loc.GetString("shuttle-console-panic-message",
-            ("gridName", gridName),
-            ("coordinates", $"{mapCoordinates.Position.X:0.0}, {mapCoordinates.Position.Y:0.0}"));
-
-        // Send to TSFMC radio channel
-        _radioSystem.SendRadioMessage(user, message, "Nfsd", uid); // god bro why.
-
-        // Lock the console in emergency mode
-        var lockSystem = EntityManager.EntitySysManager.GetEntitySystem<ShuttleConsoleLockSystem>();
-        lockSystem.SetEmergencyLock(uid, true);
-
-        // Show confirmation popup
-        _popup.PopupEntity(Loc.GetString("shuttle-console-panic-sent"), uid, user);
     }
 
     /// <summary>
