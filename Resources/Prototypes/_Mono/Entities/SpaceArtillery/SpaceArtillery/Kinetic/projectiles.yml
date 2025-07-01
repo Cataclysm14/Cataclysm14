@@ -1,3 +1,15 @@
+# SPDX-FileCopyrightText: 2025 Ark
+# SPDX-FileCopyrightText: 2025 Blu
+# SPDX-FileCopyrightText: 2025 BlueHNT
+# SPDX-FileCopyrightText: 2025 Disguised Bear
+# SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 RikuTheKiller
+# SPDX-FileCopyrightText: 2025 core-mene
+# SPDX-FileCopyrightText: 2025 monolith8319
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 # CHARON
 
 - type: entity
@@ -94,6 +106,7 @@
     damage:
       types:
         Structural: 420
+        Blunt: 100
         Piercing: 210
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
@@ -108,15 +121,15 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 5
+    lifetime: 3.5
   - type: PointLight
     color: "#FCBA03"
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBomb
-    totalIntensity: 15
-    intensitySlope: 2.5
-    maxIntensity: 15
+    totalIntensity: 40
+    intensitySlope: 5
+    maxIntensity: 25
     maxTileBreak: 1
 
 # 90mm
@@ -150,14 +163,16 @@
     damage:
       types:
         Structural: 875
+        Blunt: 50
+        Piercing: 150
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
     layers:
     - state: base-projectile
   - type: Explosive
-    maxIntensity: 50
+    totalIntensity: 25 # totalIntensity goes first, please.
     intensitySlope: 2
-    totalIntensity: 4
+    maxIntensity: 5
     maxTileBreak: 1
   - type: PointLight
     color: orange
@@ -206,7 +221,7 @@
   - type: EmpOnTrigger
     range: 10
     energyConsumption: 2700000
-    disableDuration: 5
+    disableDuration: 7.5
 
 # 220mm Cyrexa
 
@@ -275,15 +290,15 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 8.3
+    lifetime: 5
   - type: PointLight
-    color: "#FCBA03"
+    color: "#fc5a03"
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBomb
-    totalIntensity: 700
-    intensitySlope: 35
-    maxIntensity: 1300
+    totalIntensity: 1000
+    intensitySlope: 25
+    maxIntensity: 75
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
@@ -315,15 +330,15 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 8.3
+    lifetime: 5
   - type: PointLight
-    color: "#FCBA03"
+    color: "#fc8c03"
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBomb
-    totalIntensity: 300
-    intensitySlope: 30
-    maxIntensity: 600
+    totalIntensity: 750
+    intensitySlope: 35
+    maxIntensity: 50
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard

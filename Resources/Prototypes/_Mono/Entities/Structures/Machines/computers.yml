@@ -1,0 +1,12 @@
+- type: entity
+  id: StationAiUploadComputerUnlocked
+  parent: StationAiUploadComputer
+  name: AI upload console
+  description: Used to update the laws of the vessel AI.
+  suffix: Unlocked
+  components:
+  - type: Computer
+    board: StationAiUploadCircuitboardUnlocked
+  - type: AccessReader
+    enabled: false
+

@@ -1,3 +1,14 @@
+// SPDX-FileCopyrightText: 2024 Baptr0b0t
+// SPDX-FileCopyrightText: 2024 Fildrance
+// SPDX-FileCopyrightText: 2024 ScarKy0
+// SPDX-FileCopyrightText: 2024 metalgearsloth
+// SPDX-FileCopyrightText: 2024 slarticodefast
+// SPDX-FileCopyrightText: 2025 Blu
+// SPDX-FileCopyrightText: 2025 ark1368
+// SPDX-FileCopyrightText: 2025 chromiumboy
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Shared.ActionBlocker;
 using Content.Shared.Actions;
 using Content.Shared.Administration.Managers;
@@ -71,6 +82,16 @@ public abstract partial class SharedStationAiSystem : EntitySystem
     private static readonly EntProtoId DefaultAi = "StationAiBrain";
 
     private const float MaxVisionMultiplier = 5f;
+
+    /// <summary>
+    /// Mono: Rate limit for "device not responding" popup messages in seconds.
+    /// </summary>
+    private const float DeviceNotRespondingCooldown = 1.5f;
+
+    /// <summary>
+    /// Mono: Tracks the last time a "device not responding" popup was shown for each entity.
+    /// </summary>
+    private readonly Dictionary<EntityUid, TimeSpan> _lastDeviceNotRespondingPopup = new();
 
     public override void Initialize()
     {
@@ -530,7 +551,22 @@ public abstract partial class SharedStationAiSystem : EntitySystem
             return false;
         }
 
-        return _blocker.CanComplexInteract(entity.Owner);
+        // Check if the AI core can perform complex interactions.
+        if (!_blocker.CanComplexInteract(entity.Owner))
+        {
+            return false;
+        }
+
+        // Check if the AI core is anchored.
+        if (!TryGetCore(entity.Owner, out var core))
+        {
+            return false;
+        }
+
+        // AI core must be anchored to interact with whitelisted entities.
+        var coreTransform = Transform(core.Owner);
+
+        return coreTransform.Anchored;
     }
 }
 

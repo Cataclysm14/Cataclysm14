@@ -1,3 +1,22 @@
+// SPDX-FileCopyrightText: 2024 ArchRBX
+// SPDX-FileCopyrightText: 2024 ErhardSteinhauer
+// SPDX-FileCopyrightText: 2024 Nemanja
+// SPDX-FileCopyrightText: 2024 Wiebe Geertsma
+// SPDX-FileCopyrightText: 2024 eoineoineoin
+// SPDX-FileCopyrightText: 2024 exincore
+// SPDX-FileCopyrightText: 2024 leonarudo
+// SPDX-FileCopyrightText: 2024 metalgearsloth
+// SPDX-FileCopyrightText: 2024 neuPanda
+// SPDX-FileCopyrightText: 2025 Alex Parrill
+// SPDX-FileCopyrightText: 2025 Ark
+// SPDX-FileCopyrightText: 2025 BlueHNT
+// SPDX-FileCopyrightText: 2025 GreaseMonk
+// SPDX-FileCopyrightText: 2025 LukeZurg22
+// SPDX-FileCopyrightText: 2025 RikuTheKiller
+// SPDX-FileCopyrightText: 2025 Whatstone
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Numerics;
 using Content.Client.Station; // Frontier
 using Content.Shared.Shuttles.BUIStates;
@@ -565,9 +584,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
             {
                 if (blip.Shape == RadarBlipShape.Ring)
                 {
-                    // For Ring shapes, use the real radius (scaled by MinimapScale) for position
-                    // but use a separate drawing method that keeps a constant ring thickness
-                    DrawShieldRing(handle, blipPosInView, blip.Scale * MinimapScale, blip.Color.WithAlpha(0.8f));
+                    DrawShieldRing(handle, blipPosInView, blip.Scale, blip.Color.WithAlpha(0.8f));
                 }
                 else
                 {
@@ -810,15 +827,17 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
     /// <summary>
     /// Draws a shield ring with constant thickness regardless of zoom level.
     /// </summary>
-    private void DrawShieldRing(DrawingHandleScreen handle, Vector2 position, float radius, Color color)
+    private void DrawShieldRing(DrawingHandleScreen handle, Vector2 position, float worldRadius, Color color)
     {
+        var displayRadius = worldRadius * MinimapScale * 0.85f;
+
         // Draw the shield outline as a ring with constant thickness
         const float ringThickness = 2.0f; // Fixed thickness in pixels
 
         // Draw multiple circles with slightly different radii to create a solid ring effect
         for (float offset = 0; offset <= ringThickness; offset += 0.5f)
         {
-            handle.DrawCircle(position, radius + offset, color.WithAlpha(0.5f), false);
+            handle.DrawCircle(position, displayRadius + offset, color.WithAlpha(0.5f), false);
         }
     }
 }

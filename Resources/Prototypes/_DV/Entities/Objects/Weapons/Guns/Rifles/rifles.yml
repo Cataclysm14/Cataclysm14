@@ -1,3 +1,12 @@
+# SPDX-FileCopyrightText: 2025 Dvir
+# SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 Whatstone
+# SPDX-FileCopyrightText: 2025 core-mene
+# SPDX-FileCopyrightText: 2025 sleepyyapril
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   name: FCM Vulcan (7.62x51mm)
   parent: [BaseWeaponLightMachineGun, BaseGunWieldable, BaseC1Contraband] # Frontier: add BaseC1Contraband
@@ -15,11 +24,11 @@
     minAngle: -19
     maxAngle: -16
   - type: Gun
-    minAngle: 21
-    maxAngle: 32
-    angleIncrease: 10
-    angleDecay: 24
-    fireRate: 4
+    minAngle: 13
+    maxAngle: 20
+    angleIncrease: 5
+    angleDecay: 25
+    fireRate: 3
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -45,6 +54,9 @@
         whitelist:
           tags:
             - Cartridge7.62x51mmFMJ
+  - type: SpeedModifiedOnWield # Mono
+    walkModifier: 1
+    sprintModifier: 1
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

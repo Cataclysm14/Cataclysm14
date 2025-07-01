@@ -1,3 +1,15 @@
+// SPDX-FileCopyrightText: 2024 Checkraze
+// SPDX-FileCopyrightText: 2024 Dvir
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers
+// SPDX-FileCopyrightText: 2024 Plykiya
+// SPDX-FileCopyrightText: 2024 SlamBamActionman
+// SPDX-FileCopyrightText: 2024 Whatstone
+// SPDX-FileCopyrightText: 2024 metalgearsloth
+// SPDX-FileCopyrightText: 2025 Ark
+// SPDX-FileCopyrightText: 2025 sleepyyapril
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Linq;
 using System.Numerics;
 using Content.Client.Shuttles.Systems;
@@ -190,6 +202,7 @@ public sealed partial class MapScreen : BoxContainer
     private void FtlPreviewToggled(BaseButton.ButtonToggledEventArgs obj)
     {
         MapRadar.FtlMode = obj.Pressed;
+
         // When FTL button is toggled, disable the ShowFTLRangeOnly mode
         if (obj.Pressed)
         {
@@ -232,7 +245,7 @@ public sealed partial class MapScreen : BoxContainer
         }
 
         RebuildMapObjects();
-        
+
         // Immediately add all objects to the map instead of queueing them
         foreach (var mapObj in _pendingMapObjects)
         {
@@ -251,9 +264,11 @@ public sealed partial class MapScreen : BoxContainer
 
     private void MapRebuildPressed(BaseButton.ButtonEventArgs obj)
     {
-        PingMap();
-        // Show FTL range circle without targeting elements
         MapRadar.ShowFTLRangeOnly = true;
+        PingMap();
+
+        // Reset range back after map pinging is complete.
+        MapRadar.ShowFTLRangeOnly = !MapFTLButton.Pressed;
     }
 
     /// <summary>

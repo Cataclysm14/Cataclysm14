@@ -19,3 +19,12 @@
       state: cpu_command
     - type: ComputerBoard
       prototype: ComputerGunneryConsole
+
+- type: entity
+  parent: StationAiUploadCircuitboard
+  id: StationAiUploadCircuitboardUnlocked
+  suffix: Unlocked
+  description: A computer printed circuit board for a AI upload console.
+  components:
+    - type: ComputerBoard
+      prototype: StationAiUploadComputerUnlocked
