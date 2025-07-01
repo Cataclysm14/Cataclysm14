@@ -1,7 +1,7 @@
 # Author Info
 # GitHub: onezerooo0, Redrover1760
 # Discord: onezero00, Gnarlysheep
--
+# -
 # Maintainer Info
 # GitHub: Redrover1760
 # Discord: Gnarlysheep
@@ -21,6 +21,9 @@
   addComponents:
   - type: IFF
     color: "#047abd"
+  - type: SolarPoweredGrid
+    trackOnInit: true
+    doNotCull: true
 
 - type: gameMap
   id: TSFMCHalcyon
