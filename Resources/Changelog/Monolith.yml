@@ -5323,3 +5323,12 @@ Entries:
   id: 630
   time: '2025-07-01T01:49:35.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1059
+- author: Ark
+  changes:
+    - type: Add
+      message: >-
+        You are now told your coordinates when you spawn in. This is for those
+        Rogues who have forgotten.
+  id: 631
+  time: '2025-07-01T02:15:33.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1063
