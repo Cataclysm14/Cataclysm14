@@ -133,3 +133,5 @@
   - type: StaticPrice
     price: 100
     vendPrice: 9000
+  - type: PirateBountyItem
+    id: StandardFactionLongarm

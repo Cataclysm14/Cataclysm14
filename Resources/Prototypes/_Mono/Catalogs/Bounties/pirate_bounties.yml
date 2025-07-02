@@ -141,7 +141,7 @@
   entries:
   - name: pirate-bounty-item-encryption-key-TSFMC
     amount: 1
-    id: EncryptionKeyNfsd
+    id: EncryptionKeyFaction # Mono
 
 - type: pirateBounty
   id: PirateBountyTechfab

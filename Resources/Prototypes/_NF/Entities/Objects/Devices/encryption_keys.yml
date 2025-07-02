@@ -50,7 +50,7 @@
     - state: crypt_gray
     - state: nfsd_label
   - type: PirateBountyItem # Mono
-    id: EncryptionKeyNfsd
+    id: EncryptionKeyFaction
 
 
 - type: entity

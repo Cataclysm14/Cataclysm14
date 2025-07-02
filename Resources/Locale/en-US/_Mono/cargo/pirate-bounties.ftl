@@ -9,13 +9,13 @@ pirate-bounty-item-fentanyl = Fentanyl Crystal
 pirate-bounty-item-ftldrive = Bluespace Drive
 pirate-bounty-item-shield = Ship Shield System
 pirate-bounty-item-gcs = Gunnery Control Server
-pirate-bounty-item-encryption-key-TSFMC = TSFMC Encryption Key
+pirate-bounty-item-encryption-key-faction = Faction Encryption Key
 pirate-bounty-item-cybernetics = Bionic Limbs
 pirate-bounty-item-techfab = Techfab
 pirate-bounty-item-rtg = RTG
 
 pirate-bounty-description-generic = The Insurgency is in need of this.
-pirate-bounty-description-encryption-key-TSFMC = Make sure to pop the encryption key out with a screwdriver first, we don't care for the headset itself.
+pirate-bounty-description-encryption-key-faction = Only TSF and USSP encryption keys count. Remove the key from the headset with a screwdriver; the headset itself is not needed.
 pirate-bounty-description-merc-suit = SCAF suits, Mercernary Hardsuits, and PMC Hardsuits count equally towards this. Not your own SCAF suits though.
 pirate-bounty-description-faction-tacsuit = Any faction hardsuit except mercenary hardsuits counts towards this.
 pirate-bounty-description-faction-tacsuit-high = Any advanced faction tacsuit counts towards this. This includes the TSFMC Tacsuit, TSFMC Hardsuit, and TSFMC Advanced Hardsuit.
