@@ -1,7 +1,7 @@
 - type: latheRecipe
   id: BucketPaper
   result: BucketPaper
-  categories: [KitchenNF]
+  categories: 
   completetime: 0.4
   materials:
     Paper: 50

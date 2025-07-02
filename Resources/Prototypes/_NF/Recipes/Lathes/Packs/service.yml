@@ -19,6 +19,7 @@
   recipes:
   - Durathread # Frontier
   - FoodCondimentSqueezeBottleClear # Frontier
+  - BucketPaper # Mono
   - PaperCup # Mono
 
 - type: latheRecipePack
