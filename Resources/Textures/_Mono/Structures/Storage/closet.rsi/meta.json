@@ -4,7 +4,7 @@
     "x": 32,
     "y": 32
   },
-  "copyright": "Drake Industries locker sprited by UnicornOnLSD (github)",
+  "copyright": "Generic taken from tgstation, Drake Industries locker & hauler door sprited by UnicornOnLSD (github)",
   "license": "CC-BY-SA-3.0",
   "states": [
     {
@@ -15,6 +15,16 @@
     },
     {
       "name": "DI_locker_open"
+    },
+    {
+      "name": "generic"
+    },
+    {
+      "name": "generic_door"
+    },
+    {
+      "name": "generic_open"
     }
+
   ]
 }

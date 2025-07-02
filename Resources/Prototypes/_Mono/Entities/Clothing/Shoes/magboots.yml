@@ -1,0 +1,10 @@
+- type: entity
+  parent: [ClothingShoesBootsMagBase]
+  id: ClothingShoesBootsMagDrakeIndustries
+  name: painted magboots
+  description: Yep, that's just repainted science boots.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Shoes/Boots/magboots-drake_industries.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Shoes/Boots/magboots-drake_industries.rsi
