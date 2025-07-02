@@ -19,6 +19,7 @@
   recipes:
   - Durathread # Frontier
   - FoodCondimentSqueezeBottleClear # Frontier
+  - PaperCup # Mono
 
 - type: latheRecipePack
   id: NFService

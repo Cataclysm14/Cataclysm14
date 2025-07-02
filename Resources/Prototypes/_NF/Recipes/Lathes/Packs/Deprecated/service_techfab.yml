@@ -108,6 +108,7 @@
     - CondimentCup
     - FoodCondimentSqueezeBottleClear
     - BucketPaper # Mono
+    - PaperCup # Mono
   ## EVA
     - ClothingOuterEVASuitHydro
     - ClothingOuterEVASuitJanitor
