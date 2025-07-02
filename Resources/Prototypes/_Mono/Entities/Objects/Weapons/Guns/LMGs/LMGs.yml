@@ -68,6 +68,8 @@
     walkModifier: 0.8
     sprintModifier: 0.65
   - type: GunRequiresWield
+  - type: PirateBountyItem # Mono
+    id: ExperimentalFactionWeapon
 
 - type: entity
   name: MR-8B LWMMG (8x65mm SKR)
@@ -135,3 +137,5 @@
     walkModifier: 0.8
     sprintModifier: 0.75
   - type: GunRequiresWield
+  - type: PirateBountyItem # Mono
+    id: ExperimentalFactionWeapon

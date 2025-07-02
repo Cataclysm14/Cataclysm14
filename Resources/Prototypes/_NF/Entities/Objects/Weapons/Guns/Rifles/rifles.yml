@@ -289,3 +289,5 @@
     pvsIncrease: 0.15
   - type: AltFireMelee
     attackType: Light
+  - type: PirateBountyItem # Mono
+    id: StandardFactionLongarm

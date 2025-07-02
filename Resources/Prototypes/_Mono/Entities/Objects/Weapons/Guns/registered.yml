@@ -46,7 +46,7 @@
   description: A C-20r that has been properly registered for private security and mercenary use. A fast firing sub-machine gun that is often used by the infamous rogue insurgency. Uses 9x19mm ammo.
   components:
   - type: PirateBountyItem
-    id: StandardTSFLongarm
+    id: StandardFactionLongarm
   - type: StaticPrice
     price: 2500
 

@@ -79,6 +79,8 @@
     clothingVisuals:
       back:
       - state: equipped-BACKPACK-sealed
+  - type: PirateBountyItem # Mono
+    id: ClothingOuterHardsuitTacsuit
 
 - type: entity
   parent: ClothingModsuitUSSPVaryag
@@ -172,6 +174,8 @@
   - type: Construction
     graph: Modsuit
     node: headofsecurity
+  - type: PirateBountyItem # Mono
+    id: ClothingOuterHardsuitTacsuitHighValue
 
 - type: entity
   parent: ClothingModsuitUSSPZastavnik

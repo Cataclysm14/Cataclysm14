@@ -56,7 +56,7 @@
     zeroVisible: true
   - type: Appearance
   - type: PirateBountyItem # Mono
-    id: ExperimentalTSFWeapon
+    id: ExperimentalFactionWeapon
 
 - type: entity
   name: WSPR (7.62x39mm)

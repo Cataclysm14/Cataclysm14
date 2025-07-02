@@ -206,7 +206,7 @@
     - type: StaticPrice # Mono
       price: 525
     - type: PirateBountyItem # Mono
-      id: StandardTSFLongarm
+      id: StandardFactionLongarm
 
 
 - type: entity
@@ -273,4 +273,4 @@
   - type: StaticPrice # Mono
     price: 1000
   - type: PirateBountyItem # Mono
-    id: StandardTSFLongarm
+    id: StandardFactionLongarm
