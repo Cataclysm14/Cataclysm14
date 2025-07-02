@@ -295,7 +295,7 @@
     sprite: _Mono/Objects/ShuttleWeapons/hades.rsi
     layers:
     - state: space_artillery
-    scale: 1, 1
+    scale: 1.15, 1.15
   - type: Appearance
   - type: AmmoCounter
   - type: Battery
