@@ -18,7 +18,7 @@ public sealed partial class ShuttleConsoleSystem
     [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
     [Dependency] private readonly SharedShuttleSystem _sharedShuttle = default!;
 
-    private const float ShuttleFTLRange = 100f;
+    private const float ShuttleFTLRange = 200f;
     private const float ShuttleFTLMassThreshold = 50f;
 
     private void InitializeFTL()
