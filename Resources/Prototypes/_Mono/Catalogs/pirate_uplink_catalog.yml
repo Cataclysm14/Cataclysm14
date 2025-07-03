@@ -35,7 +35,7 @@
   description: uplink-pirate-interdyne-defibrillator-desc
   productEntity: DefibrillatorSyndicate
   cost:
-    Doubloon: 50
+    Doubloon: 60
   categories:
   - UplinkPirateMedical
   conditions:
@@ -67,7 +67,7 @@
   productEntity: MedkitCombatFilled
   icon: { sprite: Objects/Specific/Medical/firstaidkits.rsi, state: blackkit }
   cost:
-    Doubloon: 40
+    Doubloon: 25
   categories:
   - UplinkPirateMedical
   conditions:
@@ -82,7 +82,7 @@
   description: uplink-pirate-syringe-case-desc
   productEntity: SyringeCaseAltFilled
   cost:
-    Doubloon: 70
+    Doubloon: 40
   categories:
   - UplinkPirateMedical
   conditions:
@@ -98,7 +98,7 @@
   productEntity: CombatMedipen
   icon: { sprite: Objects/Specific/Medical/medipen.rsi, state: morphen }
   cost:
-    Doubloon: 15
+    Doubloon: 5
   categories:
     - UplinkPirateMedical
   conditions:
@@ -114,7 +114,7 @@
   productEntity: AntiPoisonMedipen
   icon: { sprite: Objects/Specific/Medical/medipen.rsi, state: penacid }
   cost:
-    Doubloon: 20
+    Doubloon: 10
   categories:
   - UplinkPirateMedical
   conditions:
@@ -130,7 +130,7 @@
   productEntity: PunctAutoInjector
   icon: { sprite: Objects/Specific/Medical/medipen.rsi, state: punctpen }
   cost:
-    Doubloon: 20
+    Doubloon: 10
   categories:
   - UplinkPirateMedical
   conditions:
@@ -146,7 +146,7 @@
   productEntity: PyraAutoInjector
   icon: { sprite: Objects/Specific/Medical/medipen.rsi, state: pyrapen }
   cost:
-    Doubloon: 20
+    Doubloon: 10
   categories:
   - UplinkPirateMedical
   conditions:
@@ -162,7 +162,7 @@
   productEntity: RadAutoInjector
   icon: { sprite: Objects/Specific/Medical/medipen.rsi, state: arithpen }
   cost:
-    Doubloon: 20
+    Doubloon: 10
   categories:
   - UplinkPirateMedical
   conditions:
@@ -178,7 +178,7 @@
   productEntity: Stimpack
   icon: { sprite: Objects/Specific/Medical/medipen.rsi, state: stimpen }
   cost:
-    Doubloon: 25
+    Doubloon: 15
   categories:
   - UplinkPirateMedical
   conditions:
@@ -277,7 +277,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Melee/e_shield.rsi, state: eshield-on }
   productEntity: EnergyShield
   cost:
-    Doubloon: 70
+    Doubloon: 20
   categories:
   - UplinkPirateUtility
   conditions:
@@ -293,7 +293,7 @@
   icon: { sprite: Objects/Storage/boxes.rsi, state: box}
   productEntity: BoxT3SuperCapacitor
   cost:
-    Doubloon: 55
+    Doubloon: 15
   categories:
   - UplinkPirateUtility
   conditions:
@@ -308,7 +308,7 @@
   description: uplink-pirate-agent-id-card-desc
   productEntity: AgentIDCard
   cost:
-    Doubloon: 25
+    Doubloon: 15
   categories:
   - UplinkPirateUtility
   conditions:
@@ -323,7 +323,7 @@
   description: uplink-pirate-radio-jammer-desc
   productEntity: RadioJammer
   cost:
-    Doubloon: 20
+    Doubloon: 10
   categories:
   - UplinkPirateUtility
   conditions:
@@ -355,7 +355,7 @@
   productEntity: Emag
   icon: { sprite: Objects/Tools/emag.rsi, state: icon }
   cost:
-    Doubloon: 60
+    Doubloon: 30
   categories:
   - UplinkPirateUtility
   conditions:
@@ -371,7 +371,7 @@
   productEntity: AccessBreaker
   icon: { sprite: Objects/Tools/access_breaker.rsi, state: icon }
   cost:
-    Doubloon: 60
+    Doubloon: 20
   categories:
   - UplinkPirateUtility
   conditions:
@@ -387,7 +387,7 @@
   productEntity: SyndicateJawsOfLife
   icon: { sprite: Objects/Tools/jaws_of_life.rsi, state: syn_jaws_pry }
   cost:
-    Doubloon: 25
+    Doubloon: 15
   categories:
   - UplinkPirateUtility
   conditions:
@@ -403,7 +403,7 @@
   icon: { sprite: Objects/Devices/encryption_keys.rsi, state: pirate_label }
   productEntity: RadioImplanterFreelance
   cost:
-    Doubloon: 20
+    Doubloon: 10
   categories:
   - UplinkPirateUtility
   conditions:
@@ -649,7 +649,7 @@
   description: uplink-pirate-box-highcal-he-desc
   productEntity: AmmoBox12.7x99mmExplosive
   cost:
-    Doubloon: 50
+    Doubloon: 30
   categories:
   - UplinkPirateAmmo
   conditions:
@@ -664,7 +664,7 @@
   description: uplink-pirate-emp-rocket-desc
   productEntity: CartridgeRocketEmp
   cost:
-    Doubloon: 20
+    Doubloon: 10
   categories:
   - UplinkPirateAmmo
   conditions:
@@ -681,7 +681,7 @@
   description: uplink-pirate-energy-cutlass-desc
   productEntity: EnergyCutlass
   cost:
-    Doubloon: 65
+    Doubloon: 15
   categories:
   - UplinkPirateWeapons
   conditions:
@@ -696,7 +696,7 @@
   description: uplink-pirate-energy-sword-desc
   productEntity: EnergySword
   cost:
-    Doubloon: 76
+    Doubloon: 30
   categories:
   - UplinkPirateWeapons
   conditions:
@@ -744,7 +744,7 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledAtreides
   icon: { sprite: Objects/Weapons/Guns/SMGs/atreides.rsi, state: icon }
   cost:
-    Doubloon: 120
+    Doubloon: 100
   categories:
   - UplinkPirateWeapons
   conditions:
@@ -760,7 +760,7 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledShotgun
   icon: { sprite: Objects/Weapons/Guns/Shotguns/bulldog.rsi, state: icon }
   cost:
-    Doubloon: 65
+    Doubloon: 75
   categories:
   - UplinkPirateWeapons
   conditions:
@@ -776,7 +776,7 @@
   productEntity: WeaponRevolverPython
   icon: { sprite: Objects/Weapons/Guns/Revolvers/python.rsi, state: icon }
   cost:
-    Doubloon: 40
+    Doubloon: 20
   categories:
   - UplinkPirateWeapons
   conditions:
@@ -807,7 +807,7 @@
   description: uplink-pirate-kanabou-desc
   productEntity: Kanabou
   cost:
-    Doubloon: 40
+    Doubloon: 20
   categories:
   - UplinkPirateWeapons
   conditions:
@@ -823,7 +823,7 @@
   productEntity: WeaponRifleAk
   icon: { sprite: Objects/Weapons/Guns/Rifles/ak.rsi, state: icon }
   cost:
-    Doubloon: 65
+    Doubloon: 25
   categories:
   - UplinkPirateWeapons
   conditions:
@@ -839,7 +839,7 @@
   productEntity: ClothingBackpackDuffelSyndicateBurner
   icon: { sprite: _Goobstation/Objects/Weapons/Guns/Rifles/burner.rsi, state: icon }
   cost:
-    Doubloon: 250
+    Doubloon: 125
   categories:
   - UplinkPirateWeapons
   conditions:
@@ -855,7 +855,7 @@
   productEntity: WeaponPistolAnaconda
   icon: { sprite: _Goobstation/Objects/Weapons/Guns/Pistols/anaconda.rsi, state: icon }
   cost:
-    Doubloon: 75
+    Doubloon: 50
   categories:
   - UplinkPirateWeapons
   conditions:
@@ -871,7 +871,7 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledWSPR
   icon: { sprite: _Goobstation/Objects/Weapons/Guns/Rifles/wspr.rsi, state: icon }
   cost:
-    Doubloon: 125
+    Doubloon: 75
   categories:
   - UplinkPirateWeapons
   conditions:
@@ -887,7 +887,7 @@
   productEntity: WeaponLaserGun
   icon: { sprite: Objects/Weapons/Guns/Battery/laser_retro.rsi, state: icon }
   cost:
-    Doubloon: 50
+    Doubloon: 10
   categories:
   - UplinkPirateWeapons
   conditions:
@@ -902,7 +902,7 @@
   description: uplink-pirate-blueprint-launcher-rocket-desc
   productEntity: BlueprintLauncherRocket
   cost:
-    Doubloon: 750
+    Doubloon: 150
   categories:
   - UplinkPirateWeapons
   conditions:
@@ -918,7 +918,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/LMGs/l6.rsi, state: icon }
   productEntity: ClothingBackpackDuffelSyndicateFilledLMG
   cost:
-    Doubloon: 300
+    Doubloon: 100
   categories:
   - UplinkPirateWeapons
   conditions:
@@ -952,7 +952,7 @@
   productEntity: ClothingOuterHardsuitViperGroupStandard
   icon: { sprite: _Mono/Clothing/OuterClothing/Hardsuits/viper_group_standard.rsi, state: icon }
   cost:
-    Doubloon: 450
+    Doubloon: 75
   categories:
   - UplinkPirateEquipment
   conditions:
@@ -968,7 +968,7 @@
   productEntity: ClothingOuterHardsuitViperGroupMedic
   icon: { sprite: _Mono/Clothing/OuterClothing/Hardsuits/viper_group_medic.rsi, state: icon }
   cost:
-    Doubloon: 175
+    Doubloon: 25
   categories:
   - UplinkPirateEquipment
   conditions:
@@ -1000,7 +1000,7 @@
   productEntity: ClothingMaskGasSyndicate
   icon: { sprite: Clothing/Mask/gassyndicate.rsi, state: icon }
   cost:
-    Doubloon: 45
+    Doubloon: 15
   categories:
   - UplinkPirateEquipment
   conditions:
@@ -1151,21 +1151,6 @@
       whitelist:
         tags:
           - PirateUplink
-
-- type: listing
-  id: UplinkPirateProwlerVoucher
-  name: uplink-pirate-prowler-voucher-name
-  description: uplink-pirate-prowler-voucher-desc
-  productEntity: ShipVoucherProwler
-  cost:
-    Doubloon: 300
-  categories:
-  - UplinkPirateUtility
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - PirateUplink
 
 #MARK: $Gambling$
 
