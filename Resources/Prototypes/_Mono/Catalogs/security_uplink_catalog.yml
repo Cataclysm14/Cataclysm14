@@ -14,7 +14,7 @@
   description: uplink-security-annie-desc
   productEntity: WeaponRifleAnnie
   cost:
-    FederationMilitaryCredit: 150
+    FederationMilitaryCredit: 75
   categories:
     - UplinkSecurityWeapons
   conditions:
@@ -29,7 +29,7 @@
   description: uplink-security-eg4-desc
   productEntity: WeaponEnergyRevolver
   cost:
-    FederationMilitaryCredit: 85
+    FederationMilitaryCredit: 35
   categories:
   - UplinkSecurityWeapons
   conditions:
@@ -44,7 +44,7 @@
   description: uplink-security-mr8c-desc
   productEntity: WeaponRifleMR8C
   cost:
-    FederationMilitaryCredit: 175
+    FederationMilitaryCredit: 125
   categories:
   - UplinkSecurityWeapons
   conditions:
@@ -59,7 +59,7 @@
   description: uplink-security-mr8b-desc
   productEntity: WeaponLMGMR8B
   cost:
-    FederationMilitaryCredit: 350
+    FederationMilitaryCredit: 250
   categories:
   - UplinkSecurityWeapons
   conditions:
@@ -74,7 +74,7 @@
   description: uplink-security-ashstorm-desc
   productEntity: ClothingBackpackDuffelAshstormBundle
   cost:
-    FederationMilitaryCredit: 350
+    FederationMilitaryCredit: 250
   categories:
     - UplinkSecurityWeapons
   conditions:
@@ -111,7 +111,7 @@
   description: uplink-security-portable-recharger-desc
   productEntity: PortableRecharger
   cost:
-    FederationMilitaryCredit: 65
+    FederationMilitaryCredit: 35
   categories:
   - UplinkSecurityUtility
   conditions:
@@ -218,7 +218,7 @@
   productEntity: ClothingBeltSheathFilledNavy
   icon: { sprite: _Mono/Objects/Weapons/Melee/ccsabre.rsi, state: icon }
   cost:
-    FederationMilitaryCredit: 20
+    FederationMilitaryCredit: 10
   categories:
     - UplinkSecurityWeapons
   conditions:
@@ -233,7 +233,7 @@
   description: uplink-security-medium-voucher-desc
   productEntity: ShipVoucherNfsdSergeant
   cost:
-    FederationMilitaryCredit: 75
+    FederationMilitaryCredit: 25
   categories:
   - UplinkSecurityVouchers
   conditions:
@@ -253,7 +253,7 @@
   description: uplink-security-capital-voucher-desc
   productEntity: ShipVoucherNfsdBailiff
   cost:
-    FederationMilitaryCredit: 200
+    FederationMilitaryCredit: 125
   categories:
   - UplinkSecurityVouchers
   conditions:
@@ -265,25 +265,6 @@
       whitelist:
         - Bailiff
         - Sheriff
-
-- type: listing
-  id: UplinkSecurityFlyssaVoucher
-  name:  uplink-security-flyssa-voucher-name
-  description: uplink-security-flyssa-voucher-desc
-  productEntity: ShipVoucherFlyssa
-  cost:
-    FederationMilitaryCredit: 750
-  categories:
-  - UplinkSecurityVouchers
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - SecurityUplink
-  - !type:BuyerJobCondition
-    whitelist:
-    - Bailiff
-    - Sheriff
 
 # - type: listing
 #   id: UplinkSecurityAuroraExosuit
