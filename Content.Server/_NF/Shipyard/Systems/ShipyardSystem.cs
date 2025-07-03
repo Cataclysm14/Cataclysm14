@@ -157,7 +157,6 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
         var price = _pricing.AppraiseGrid(shuttleGrid.Value, null);
         var targetGrid = _station.GetLargestGrid(stationData);
 
-
         if (targetGrid == null) //how are we even here with no station grid
         {
             QueueDel(shuttleGrid);

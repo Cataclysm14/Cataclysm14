@@ -156,7 +156,12 @@
 - type: Tag
   id: MagazineBox8x65mmSKR
 
-  #Misc emote tags
+#Misc emote tags
 
 - type: Tag
   id: ReptilianEmotes
+
+# Ship tags
+
+- type: Tag
+  id: CrewedShuttle
