@@ -1,9 +1,7 @@
 using System.Numerics;
-using Content.Server.Theta.ShipEvent.Components;
 using Content.Shared._Mono.Radar;
 using Content.Shared.Projectiles;
 using Content.Shared.Shuttles.Components;
-using Robust.Shared.Map.Components;
 
 namespace Content.Server._Mono.Radar;
 
@@ -73,24 +71,24 @@ public sealed partial class RadarBlipSystem : EntitySystem
 
                 var blipGrid = _xform.GetGrid(blipUid);
 
-                if (HasComp<CircularShieldRadarComponent>(blipUid))
-                {
-                    // Skip if in FTL
-                    if (isFtlMap)
-                        continue;
-
-                    // Skip if no grid
-                    if (blipGrid == null)
-                        continue;
-
-                    // Ensure the grid is a valid MapGrid
-                    if (!HasComp<MapGridComponent>(blipGrid.Value))
-                        continue;
-
-                    // Ensure the shield is a direct child of the grid
-                    if (blipXform.ParentUid != blipGrid)
-                        continue;
-                }
+                // if (HasComp<CircularShieldRadarComponent>(blipUid))
+                // {
+                //     // Skip if in FTL
+                //     if (isFtlMap)
+                //         continue;
+                //
+                //     // Skip if no grid
+                //     if (blipGrid == null)
+                //         continue;
+                //
+                //     // Ensure the grid is a valid MapGrid
+                //     if (!HasComp<MapGridComponent>(blipGrid.Value))
+                //         continue;
+                //
+                //     // Ensure the shield is a direct child of the grid
+                //     if (blipXform.ParentUid != blipGrid)
+                //         continue;
+                // }
 
                 var blipPosition = _xform.GetWorldPosition(blipUid);
                 var distance = (blipPosition - radarPosition).Length();
