@@ -700,7 +700,6 @@
   conditions:
     - !type:TileNotBlocked
 
-
 # Altars
 - type: construction
   id: AltarToolbox
