@@ -53,7 +53,7 @@
     - state: voucherstationguard
   - type: ShipyardVoucher
     destroyOnEmpty: true
-    consoleType: BlackMarket
+    consoleType: USSP
     access:
     - VoucherProwler # SHITCODE!!!
   - type: StaticPrice
@@ -71,7 +71,7 @@
     - state: voucherstationguard
   - type: ShipyardVoucher
     destroyOnEmpty: true
-    consoleType: Security
+    consoleType: USSP
     access:
     - VoucherFlyssa # SHITCODE!!!
   - type: StaticPrice
