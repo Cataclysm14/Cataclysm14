@@ -1,14 +1,12 @@
 using System.Numerics;
 using Content.Shared._Crescent.ShipShields;
 using Content.Shared.Physics;
-using Content.Shared.Weapons.Ranged.Systems;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Physics.Collision.Shapes;
 using Robust.Shared.Physics.Components;
 using Robust.Server.GameObjects;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Physics.Events;
-using Robust.Shared.Random;
 using Robust.Server.GameStates;
 using Content.Server.Power.Components;
 using Robust.Shared.Physics;
@@ -188,6 +186,14 @@ public sealed partial class ShipShieldsSystem : EntitySystem
         var shieldComp = EnsureComp<ShipShieldComponent>(shield);
         shieldComp.Shielded = entity;
         shieldComp.Source = source;
+
+        // Copy shield color from the generator to the shield visuals
+        var shieldVisuals = EnsureComp<ShipShieldVisualsComponent>(shield);
+        if (source != null && TryComp<ShipShieldEmitterComponent>(source.Value, out var emitter))
+        {
+            shieldVisuals.ShieldColor = emitter.ShieldColor;
+            Dirty(shield, shieldVisuals);
+        }
 
         _transformSystem.SetLocalPosition(shield, mapGrid.LocalAABB.Center);
         _transformSystem.SetWorldRotation(shield, _transformSystem.GetWorldRotation(entity));

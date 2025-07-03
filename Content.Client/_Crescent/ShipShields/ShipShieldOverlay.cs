@@ -57,11 +57,11 @@ public sealed class ShipShieldOverlay : Overlay
 
             var texture = _resourceCache.GetTexture("/Textures/_Crescent/ShipShields/shieldtex.png");
 
-            DrawShield(handle, uid, chain, xform, texture);
+            DrawShield(handle, uid, chain, xform, texture, visuals.ShieldColor);
         }
     }
 
-    private void DrawShield(DrawingHandleWorld handle, EntityUid uid, ChainShape chain, TransformComponent xform, Texture tex)
+    private void DrawShield(DrawingHandleWorld handle, EntityUid uid, ChainShape chain, TransformComponent xform, Texture tex, Color color)
     {
         List<DrawVertexUV2D> verts = new List<DrawVertexUV2D>();
 
@@ -99,7 +99,7 @@ public sealed class ShipShieldOverlay : Overlay
             verts.Add(new DrawVertexUV2D(rightCorner, new Vector2(1, 0)));
         }
 
-        handle.DrawPrimitives(DrawPrimitiveTopology.TriangleList, texture: tex, verts.ToArray().AsSpan(), Color.White);
+        handle.DrawPrimitives(DrawPrimitiveTopology.TriangleList, texture: tex, verts.ToArray().AsSpan(), color);
     }
 
     private Vector2 VertexToWorldPos(Vector2 vertexPos, Transform transform)

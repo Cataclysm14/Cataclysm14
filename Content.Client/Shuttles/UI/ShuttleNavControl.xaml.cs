@@ -823,7 +823,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
     private void DrawShields(DrawingHandleScreen handle, TransformComponent consoleXform, Matrix3x2 matrix)
     {
         var shields = EntManager.AllEntityQueryEnumerator<ShipShieldVisualsComponent, FixturesComponent, TransformComponent>();
-        while (shields.MoveNext(out var uid, out var _, out var fixtures, out var xform))
+        while (shields.MoveNext(out var uid, out var visuals, out var fixtures, out var xform))
         {
             if (!EntManager.TryGetComponent<TransformComponent>(xform.GridUid, out var parentXform))
                 continue;
@@ -855,7 +855,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
                 v2 = Vector2.Transform(v2, matrix);
                 v2.Y = -v2.Y;
                 v2 = ScalePosition(v2);
-                handle.DrawLine(v1, v2, Color.LightSkyBlue);
+                handle.DrawLine(v1, v2, visuals.ShieldColor);
             }
         }
     }
