@@ -266,6 +266,25 @@
         - Bailiff
         - Sheriff
 
+- type: listing
+  id: UplinkSecurityFlyssaVoucher
+  name:  uplink-security-flyssa-voucher-name
+  description: uplink-security-flyssa-voucher-desc
+  productEntity: ShipVoucherFlyssa
+  cost:
+    FederationMilitaryCredit: 750
+  categories:
+  - UplinkSecurityVouchers
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - SecurityUplink
+  - !type:BuyerJobCondition
+    whitelist:
+    - Bailiff
+    - Sheriff
+
 # - type: listing
 #   id: UplinkSecurityAuroraExosuit
 #   name:  uplink-exosuit-aurora-name
