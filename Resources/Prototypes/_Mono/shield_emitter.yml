@@ -1,0 +1,68 @@
+- type: entity
+  id: ShieldEmitter
+  parent: BaseMachinePowered
+  name: MS-225 shield generator
+  components:
+  - type: AmbientOnPowered
+  - type: AmbientSound
+    volume: -5
+    range: 30
+    enabled: false
+    sound:
+      path: /Audio/Ambience/Objects/anomaly_generator.ogg
+  - type: Sprite
+    sprite: _Mono/Structures/ShuttleComponents/shield.rsi
+    snapCardinals: true
+    layers:
+    - state: control
+    - state: control_on
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+      visible: false
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.PowerDeviceVisualLayers.Powered:
+          True: { visible: true }
+          False: { visible: false }
+    snapCardinals: true
+  - type: Physics
+    bodyType: Static
+  - type: Transform
+    noRot: true
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalGlassBreak
+  - type: Repairable
+    doAfterDelay: 8
+  - type: PointLight
+    enabled: false
+    castShadows: true
+    radius: 2
+    energy: 1.5
+    color: "#FF0040"
+  - type: AnimationPlayer
+  - type: LitOnPowered
+  - type: PowerSwitch
+  - type: ApcPowerReceiver
+    powerLoad: 60000
+  - type: Appearance
+  - type: ShipShieldEmitter
+    DamageLimit: 25000
+    DamageOverloadTimePunishment: 120
+    powerUpSound: !type:SoundPathSpecifier
+        path: "/Audio/Effects/teleport_arrival.ogg"
+        params:
+          pitch: 0.5
+    powerDownSound: !type:SoundPathSpecifier
+        path: "/Audio/Effects/teleport_departure.ogg"
+        params:
+          pitch: 0.5
