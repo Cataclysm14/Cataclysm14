@@ -28,7 +28,7 @@
     whitelist:
       tags:
         - Cartridge8x65mmSKR
-    capacity: 20
+    capacity: 25
   - type: Item
     size: Small
   - type: ContainerContainer
@@ -90,7 +90,7 @@
     whitelist:
       tags:
       - Cartridge8x65mmSKR
-    capacity: 150
+    capacity: 100
   - type: Item
     size: Small
   - type: ContainerContainer
