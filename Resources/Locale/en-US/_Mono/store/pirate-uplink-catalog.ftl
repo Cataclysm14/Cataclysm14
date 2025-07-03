@@ -225,6 +225,9 @@ uplink-pirate-shrapnelgrenade-box-desc = A box containing 4 shrapnel grenades.
 uplink-pirate-explosivegrenade-box-name = Explosive Grenade Box
 uplink-pirate-explosivegrenade-box-desc = A box containing 4 explosive grenades.
 
+uplink-pirate-prowler-voucher-name = Prowler Ship Voucher
+uplink-pirate-prowler-voucher-desc = A single use voucher for a Prowler-pattern stealth craft.
+
 
 # MARK: $Gambling$
 

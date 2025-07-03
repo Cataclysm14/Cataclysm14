@@ -72,3 +72,6 @@ uplink-security-medium-voucher-desc = A single use voucher for any small to medi
 
 uplink-security-capital-voucher-name = TSFMC Capital Ship Voucher
 uplink-security-capital-voucher-desc = A single use voucher for any small to capital sized ship.
+
+uplink-security-flyssa-voucher-name = TSFMC Flyssa Ship Voucher
+uplink-security-flyssa-voucher-desc = A single use voucher for the Flyssa.

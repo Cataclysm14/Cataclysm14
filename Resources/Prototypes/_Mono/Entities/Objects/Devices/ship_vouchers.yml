@@ -7,7 +7,7 @@
 - type: entity
   parent: BaseShipVoucher
   id: ShipVoucherUSSP
-  name: USSP Gadyuka voucher
+  name: USSP gadyuka voucher
   description: A small card that authorizes the acquisition of a Gadyuka for free.
   components:
   - type: Sprite
@@ -40,3 +40,39 @@
     - Bailiff
     accessGroups:
     - GeneralNfsdAccess
+
+- type: entity
+  parent: BaseShipVoucher
+  id: ShipVoucherProwler
+  name: rogue prowler voucher
+  description: A small card that authorizes the procurement of a Prowler.
+  components:
+  - type: Sprite
+    layers:
+    - state: nfsd
+    - state: voucherstationguard
+  - type: ShipyardVoucher
+    destroyOnEmpty: true
+    consoleType: USSP
+    access:
+    - VoucherProwler # SHITCODE!!!
+  - type: StaticPrice
+    vendPrice: 500000
+
+- type: entity
+  parent: BaseShipVoucher
+  id: ShipVoucherFlyssa
+  name: TSF flyssa voucher
+  description: A small card that authorizes the procurement of a Flyssa.
+  components:
+  - type: Sprite
+    layers:
+    - state: nfsd
+    - state: voucherstationguard
+  - type: ShipyardVoucher
+    destroyOnEmpty: true
+    consoleType: USSP
+    access:
+    - VoucherFlyssa # SHITCODE!!!
+  - type: StaticPrice
+    vendPrice: 500000

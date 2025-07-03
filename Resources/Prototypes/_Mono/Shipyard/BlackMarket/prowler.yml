@@ -11,11 +11,11 @@
   id: Prowler
   parent: BaseVesselAntag
   name: ASR Prowler
-  description: A dedicated boarding ship, capable of hiding its radar signature fully. Incapable of mounting any ship weapons.
+  description: A dedicated boarding ship, capable of hiding its radar signature fully. Incapable of mounting any ship weapons. Due to the resources required for its construction, procurement is only permitted via vouchers.
   price: 55460
   category: Small
   group: BlackMarket
-  access: RogueCommander
+  access: VoucherProwler
   shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/prowler.yml
   guidebookPage: Null
   class:
