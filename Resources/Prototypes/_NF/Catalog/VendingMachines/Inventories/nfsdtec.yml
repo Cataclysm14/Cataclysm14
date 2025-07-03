@@ -13,20 +13,20 @@
     Flash: 10
     FlashlightNfsdLite: 10
     HoloprojectorNfsd: 4
-    Tourniquet: 5
-    ClothingEyesGlassesSunglasses: 5
+    Tourniquet: 8
+    ClothingEyesGlassesSunglasses: 6
     RiotShield: 3
     RiotLaserShield: 3
     RiotBulletShield: 3
-    Stunbaton: 4
-    WeaponDisabler: 4
+    Stunbaton: 8
+    WeaponDisabler: 8
     WeaponCapacitorRechargerFlatpack: 10
     Multitool: 8
     ContrabandAppraisalTool: 5 # Frontier
     CrowbarRed: 10 # Frontier
-    ForensicScanner: 3 # Frontier
-    BoxForensicPad: 3 # Frontier
-    LogProbeCartridge: 3 # Frontier
+    ForensicScanner: 8 # Frontier
+    BoxForensicPad: 5 # Frontier
+    LogProbeCartridge: 5 # Frontier
     TrackingImplanter: 5 # Frontier
 #    MindShieldImplanter: 5 # Frontier
   # security officers need to follow a diet regimen!
