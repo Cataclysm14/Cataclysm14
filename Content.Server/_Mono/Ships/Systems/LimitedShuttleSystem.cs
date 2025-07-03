@@ -2,6 +2,7 @@ using Content.Server.GameTicking;
 using Content.Server.Power.Components;
 using Content.Shared._Mono.Ships.Components;
 using Content.Shared._Mono.Shipyard;
+using Content.Shared._NF.Shipyard;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
@@ -15,6 +16,7 @@ public sealed class LimitedShuttleSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly IGameTiming _gameTiming = default!;
+    [Dependency] private readonly ShuttleDeedSystem _shuttleDeed = default!;
 
     private TimeSpan _lastUpdate = TimeSpan.Zero;
     private TimeSpan _interval = TimeSpan.FromMinutes(1);
@@ -104,6 +106,10 @@ public sealed class LimitedShuttleSystem : EntitySystem
 
         var totalPowerEntities = 0;
         var powered = 0;
+
+        // If the deed has no owner, it's inactive.
+        if (!_shuttleDeed.HasOwner(vessel.Owner))
+            return false;
 
         foreach (var ent in powerEntities)
         {
