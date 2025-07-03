@@ -658,13 +658,43 @@
       tags:
       - PirateUplink
 
+#- type: listing
+#  id: UplinkPirateEmpRocket
+#  name: uplink-pirate-emp-rocket-name
+#  description: uplink-pirate-emp-rocket-desc
+#  productEntity: CartridgeRocketEmp
+#  cost:
+#    Doubloon: 10
+#  categories:
+#  - UplinkPirateAmmo
+#  conditions:
+#  - !type:StoreWhitelistCondition
+#    whitelist:
+#      tags:
+#      - PirateUplink
+
 - type: listing
-  id: UplinkPirateEmpRocket
-  name: uplink-pirate-emp-rocket-name
-  description: uplink-pirate-emp-rocket-desc
-  productEntity: CartridgeRocketEmp
+  id: UplinkPirateFragGrenade
+  name: uplink-pirate-frag-grenade-name
+  description: uplink-pirate-frag-grenade-desc
+  productEntity: Bullet40mmGrenadeFragmentation
   cost:
-    Doubloon: 10
+    Doubloon: 16
+  categories:
+  - UplinkPirateAmmo
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateBlastGrenade
+  name: uplink-pirate-blast-grenade-name
+  description: uplink-pirate-blast-grenade-desc
+  productEntity: Bullet40mmGrenadeThermobaric
+  cost:
+    Doubloon: 32
   categories:
   - UplinkPirateAmmo
   conditions:
@@ -896,16 +926,31 @@
       tags:
       - PirateUplink
 
-- type: listing
-  id: UplinkPirateBlueprintLauncherRocket
-  name: uplink-pirate-blueprint-launcher-rocket-name
-  description: uplink-pirate-blueprint-launcher-rocket-desc
-  productEntity: BlueprintLauncherRocket
+#- type: listing
+#  id: UplinkPirateBlueprintLauncherRocket
+#  name: uplink-pirate-blueprint-launcher-rocket-name
+#  description: uplink-pirate-blueprint-launcher-rocket-desc
+#  productEntity: BlueprintLauncherRocket
+#  cost:
+#    Doubloon: 150
+#  categories:
+#  - UplinkPirateWeapons
+#  conditions:
+#  - !type:StoreWhitelistCondition
+#    whitelist:
+#      tags:
+#      - PirateUplink
+
+- type: listing # Mono revert, re-adds China Lake
+  id: UplinkPirateGrenadeLauncherBundle
+  name: uplink-pirate-grenade-launcher-bundle-name
+  description: uplink-pirate-grenade-launcher-bundle-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Launchers/china_lake.rsi, state: icon }
+  productEntity: ClothingBackpackDuffelSyndicateFilledGrenadeLauncher
   cost:
-    Doubloon: 150
+    Telecrystal: 150 # Mono #25 Mono Edit
   categories:
   - UplinkPirateWeapons
-  conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
