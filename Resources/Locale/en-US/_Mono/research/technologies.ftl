@@ -35,3 +35,4 @@ research-technology-rogue-hristov = Heavy Ballistics
 research-technology-rogue-prowler-voucher = Stealthcraft Technologies
 research-technology-rogue-energy-weapon = Advanced Plasma Weaponization
 research-technology-rogue-access-breaker = Advanced Hacking Procedures
+research-technology-rogue-hf-sword = Weaponised Resonance Technology
