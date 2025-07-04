@@ -21,8 +21,7 @@
   - Uranium
   cloakHunter: true
   company:
-  - Rogue
-  - USSP
+  - TSF
 
 - type: gameMap
   id: Spear

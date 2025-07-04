@@ -131,7 +131,7 @@ public sealed class VesselPrototype : IPrototype, IInheritingPrototype
     public bool CloakHunter;
 
     /// <summary>
-    /// List of company names whose ships this vessel can suppress IFF flags for.
+    /// List of company names whose ships this vessel will not suppress IFF flags for.
     /// </summary>
     [DataField]
     public List<string> Company = new();
