@@ -1,4 +1,5 @@
 # SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 sleepyyapril
 # SPDX-FileCopyrightText: 2025 starch
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
@@ -8,10 +9,11 @@
   parent: BaseVesselAntag
   name: TSF-SKR Flyssa-K
   description: Lended over from the TSF navy for you marines. A one-ship fleet on this scale of combat.
-  price: 426050
+  limit: 1
+  price: 1225950
   category: Large
   group: Security
-  access: HeadOfSecurity
+  access: VoucherFlyssa
   shuttlePath: /Maps/_Mono/Shuttles/Capitals/flyssa.yml
   guidebookPage: Null
   class:

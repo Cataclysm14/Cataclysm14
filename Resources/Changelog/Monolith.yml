@@ -5492,3 +5492,321 @@ Entries:
   id: 647
   time: '2025-07-02T12:16:11.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1089
+- author: crazy1112345
+  changes:
+    - type: Add
+      message: Added the HES Arribane atmospherics ship. Viva Atmosia.
+  id: 648
+  time: '2025-07-02T21:05:57.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1041
+- author: BlueHNT
+  changes:
+    - type: Add
+      message: >-
+        Added a higher tier of tacsuits for redeeming as Rogue advanced tacsuits
+        like the TSF M92 or USSP Modsuits.
+    - type: Tweak
+      message: >-
+        Refactored Rogue Bounties to include USSP versions and renamed entires
+        from `TSF` to `Faction` based.
+    - type: Fix
+      message: >-
+        Fixed not being able to redeem cybernetic limbs as Rogue in the
+        bounties.
+  id: 649
+  time: '2025-07-02T21:11:08.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1094
+- author: HungryCuban
+  changes:
+    - type: Add
+      message: USSP can give access with card console
+    - type: Fix
+      message: Colonel could open Rogue locked doors
+  id: 650
+  time: '2025-07-02T21:12:11.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1088
+- author: UnicornOnLSD
+  changes:
+    - type: Add
+      message: Harmony Medical Entreprises now available to pick as in game company.
+  id: 651
+  time: '2025-07-02T21:12:56.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1070
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        Ctla startup increased from 2.5 to 4.2, cooldown from 5 to 7.5, and
+        travel time from 10 to 15.
+  id: 652
+  time: '2025-07-02T21:14:15.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1093
+- author: starch70
+  changes:
+    - type: Fix
+      message: Fixed some bugs with the Flyssa.
+  id: 653
+  time: '2025-07-02T21:58:43.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1101
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Added Prowler as a fullcloak ship for rogues (and thus support for
+        future fullcloak ships)
+    - type: Tweak
+      message: Changed Colonel ship voucher to not be able to buy Flyssa.
+    - type: Tweak
+      message: Greatly increased Flyssa price. (~1.2m now after feedback)
+  id: 654
+  time: '2025-07-02T23:45:16.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1102
+- author: sleepyyapril
+  changes:
+    - type: Tweak
+      message: Nerfed the LWMMG.
+  id: 655
+  time: '2025-07-03T02:01:20.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1104
+- author: starch70
+  changes:
+    - type: Tweak
+      message: Rogues now need a commander to adjust slots on ships/hideout.
+    - type: Tweak
+      message: Rogues no longer get infinite slots.
+    - type: Tweak
+      message: Prowler price has been increased.
+    - type: Tweak
+      message: >-
+        Punct, omni, meth, and dexalin no longer like to mix. Go get a new strat
+        losers.
+  id: 656
+  time: '2025-07-03T05:13:49.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1106
+- author: BlueHNT
+  changes:
+    - type: Add
+      message: Adds PaperCup to service TechFab.
+    - type: Add
+      message: Adds Paper explaining how to make tea(for vessel).
+  id: 657
+  time: '2025-07-03T07:18:37.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1090
+- author: Ark
+  changes:
+    - type: Add
+      message: Ported oval shields from Crescent.
+    - type: Remove
+      message: Sunset circular shields from Theta.
+  id: 658
+  time: '2025-07-03T09:31:40.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1110
+- author: starch70
+  changes:
+    - type: Tweak
+      message: Lowered Prowler voucher price to 300 DC from 500 DC.
+    - type: Fix
+      message: Fixed Flyssa and Prowler voucher not working.
+  id: 659
+  time: '2025-07-03T10:07:34.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1111
+- author: sleepyyapril
+  changes:
+    - type: Tweak
+      message: Flyssa limited to one active at a time.
+    - type: Tweak
+      message: Serpent, Vulture, Prowler, and Tunguska limited to two active at a time.
+  id: 660
+  time: '2025-07-03T12:37:10.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1112
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Flyssa/Prowler requires buying a voucher in the uplink to buy
+    - type: Tweak
+      message: Contraband crates give 12 FMC/DC per instead of 15
+    - type: Tweak
+      message: Medipens made pricier
+  id: 661
+  time: '2025-07-03T12:42:28.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1115
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: RPG replaced with China Lake in the rogue uplink.
+  id: 662
+  time: '2025-07-03T13:36:52.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1116
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        DP-29 and LWMMG LMGs less accurate as a whole. DP-29 functions better in
+        long bursts, LWMMGs in shorter bursts. LWMMG slows you down more.
+    - type: Tweak
+      message: L6 now reasonably accurate. Less slowdown too.
+    - type: Tweak
+      message: >-
+        Subsonic ammo less expensive for rogues/tsf. LWMMG ammo tweaked to be
+        better priced.
+  id: 663
+  time: '2025-07-03T13:42:23.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1105
+- author: OneZerooo0
+  changes:
+    - type: Add
+      message: >-
+        Replaced old TSFMC fob with a newer, fancier version, complete with a
+        'fortress shield' and reactor.
+    - type: Fix
+      message: ADS ships and the Halycon have full damper controls.
+  id: 664
+  time: '2025-07-03T16:07:13.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/692
+- author: grandalff
+  changes:
+    - type: Tweak
+      message: >-
+        Added medical bed to Sekunda, made the heatingpad or whatever you nerds
+        call it into a flatpack, as it breaks otherwise and needs
+        deconstructing, and idk how bugs work. Balls.
+  id: 665
+  time: '2025-07-03T21:06:15.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1118
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: TSFMCTech has more items in it, especially forensic scanners
+  id: 666
+  time: '2025-07-03T22:21:24.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1120
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Prowler price bumped to 750 DC pending proper fullcloak mechanics.
+  id: 667
+  time: '2025-07-04T02:35:26.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1121
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Rogue base remapped fully. The frontier dock layouts were too small for
+        12 rogues at once.
+  id: 668
+  time: '2025-07-04T04:19:16.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1123
+- author: Redrover1760
+  changes:
+    - type: Add
+      message: >-
+        New Resomi Hardsuit Sprites for most of our hardsuits (Sprites by
+        f0x-n3rd/bloo_slime)
+  id: 669
+  time: '2025-07-04T04:21:12.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1122
+- author: starch70
+  changes:
+    - type: Add
+      message: Added faction-specific research disciplines for TSF and Rogues.
+    - type: Tweak
+      message: >-
+        Rogue base and TSFMC base now use their faction-specific R&D servers.
+        (and now have the assemblers for faction-research gear)
+    - type: Fix
+      message: Fixed new Rogue base not having telecomms or turrets.
+  id: 670
+  time: '2025-07-04T08:11:17.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1125
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Halcyon not potentially mobile anymore.
+  id: 671
+  time: '2025-07-04T09:12:09.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1126
+- author: UnicornOnLSD
+  changes:
+    - type: Add
+      message: Drake industries items part 1 (not mapped yet)
+  id: 672
+  time: '2025-07-04T09:28:19.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1099
+- author: RealSchepka
+  changes:
+    - type: Add
+      message: >-
+        Added DME Shareholder. An affordable salvage shuttle with a luxurious
+        lounge that, for certain, did not drain the whole budget.
+  id: 673
+  time: '2025-07-04T09:30:09.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1095
+- author: Ark
+  changes:
+    - type: Add
+      message: Spear now is a Stealth Killer ship. Escort your Capitals!
+    - type: Tweak
+      message: Added factions to their respective voucher. Mostly.
+    - type: Tweak
+      message: Prowler DC price reduced (750 DC -> 300 DC).
+  id: 674
+  time: '2025-07-04T09:38:21.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1127
+- author: starch70
+  changes:
+    - type: Fix
+      message: >-
+        Fixed some problems and missing shit with the new Rogue hideout.
+        (missing armory, wiring, fuelvend, minor changes in some spaces, station
+        beacons, station maps, etc)
+  id: 675
+  time: '2025-07-04T10:24:03.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1128
+- author: grandalff
+  changes:
+    - type: Add
+      message: Added NCS Gruznyk, an armored and armed USSP cargo hauler.
+  id: 676
+  time: '2025-07-04T11:34:19.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1100
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Faction lathes and R&D servers are in TSF and Rogue uplinks now (100
+        FMC/DC for server, 50 FMC/DC for assembler)
+    - type: Tweak
+      message: >-
+        Changed the icon of both Rogue and TSF discipline to the unused
+        biochemical icon. Hopefully temporary. I'm too lazy to sprite a new one.
+    - type: Fix
+      message: >-
+        Fixed Rogue discipline color being nearly identical to Arsenal
+        discipline.
+  id: 677
+  time: '2025-07-04T11:49:32.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1129
+- author: starch70
+  changes:
+    - type: Add
+      message: Added Splinter as a TSF equivalent to the Spyglass
+    - type: Add
+      message: >-
+        Added nanolaminate foam as a stronger, faster version of metal foam to
+        T2 TSF.
+    - type: Fix
+      message: >-
+        Fixed ammunition missing from faction lathes. Ammunition is researched
+        with the earliest possible weapon that uses it now.
+  id: 678
+  time: '2025-07-04T14:40:40.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1131
+- author: tonotom1
+  changes:
+    - type: Add
+      message: >-
+        Added the Takeaway, a Kitchen-Botany shuttle with a space-facing counter
+        for meals to-go.
+  id: 679
+  time: '2025-07-04T14:41:57.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1055
