@@ -15,6 +15,15 @@
   - WeaponRifleLecterTSF
   - WeaponRifleVulcanTSF
   - WeaponSubMachineGunDrozdTSF
+  - Magazine5.56x45mmFMJ
+  - Magazine5.56x45mmEmpty
+  - AmmoBox5.56x45mmFMJ
+  - Magazine7.62x51mmFMJ
+  - Magazine7.62x51mmEmpty
+  - AmmoBox7.62x51mmFMJ
+  - Magazine45_ACPSubMachineGunFMJ
+  - Magazine45_ACPSubMachineGunEmpty
+  - AmmoBox45_ACPFMJ
 
 - type: technology
   id: TsfAnnie
@@ -27,6 +36,9 @@
   cost: 15000
   recipeUnlocks:
   - WeaponRifleAnnieTSF
+  - Magazine7.62x39mmFMJ
+  - Magazine7.62x39mmEmpty
+  - AmmoBox7.62x39mmFMJ
   technologyPrerequisites:
   - TsfBasicGuns
 
@@ -42,6 +54,11 @@
   recipeUnlocks:
   - WeaponLMGMR8BTSF
   - WeaponRifleMR8CTSF
+  - Magazine8x65mmSKR
+  - Magazine8x65mmEmpty
+  - Magazine8x65mmSKRBox
+  - Magazine8x65mmEmptyBox
+  - AmmoBox8x65mmSKR
   technologyPrerequisites:
   - TsfBasicGuns
   - TsfAnnie
