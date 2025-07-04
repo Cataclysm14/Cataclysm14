@@ -145,7 +145,7 @@
   name:  uplink-security-hardsuit-sheriff-name
   description: uplink-security-hardsuit-sheriff-desc
   productEntity: ClothingOuterHardsuitNfsdSheriff
-  icon: { sprite: _Mono/Clothing/OuterClothing/Hardsuits/tsfmc_sheriff.rsi, state: icon }
+  icon: { sprite: _Mono/Clothing/OuterClothing/Hardsuits/tsfmc_colonel.rsi, state: icon }
   cost:
     FederationMilitaryCredit: 40
   categories:
