@@ -5680,3 +5680,10 @@ Entries:
   id: 666
   time: '2025-07-03T22:21:24.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1120
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Prowler price bumped to 750 DC pending proper fullcloak mechanics.
+  id: 667
+  time: '2025-07-04T02:35:26.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1121

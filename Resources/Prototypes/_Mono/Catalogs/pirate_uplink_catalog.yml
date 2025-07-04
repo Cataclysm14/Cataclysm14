@@ -1204,7 +1204,7 @@
   description: uplink-pirate-prowler-voucher-desc
   productEntity: ShipVoucherProwler
   cost:
-    Doubloon: 300
+    Doubloon: 750
   categories:
   - UplinkPirateUtility
   conditions:
