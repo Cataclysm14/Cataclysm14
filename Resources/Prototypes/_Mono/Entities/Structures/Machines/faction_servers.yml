@@ -65,6 +65,7 @@
   - type: TechnologyDatabase
     supportedDisciplines:
     - Tsfmc
+    - Arsenal
 
 - type: entity
   id: ResearchAndDevelopmentServerRogues
@@ -75,3 +76,4 @@
   - type: TechnologyDatabase
     supportedDisciplines:
     - Rogue
+    - Arsenal
