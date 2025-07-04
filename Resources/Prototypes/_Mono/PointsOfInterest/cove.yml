@@ -25,7 +25,7 @@
   maximumDistance: 24000 # Mono
   spawnGamePreset: [ NFPirate ]
   spawnGroup: Required
-  gridPath: /Maps/_NF/POI/cove.yml
+  gridPath: /Maps/_Mono/POI/cove.yml
   hideWarp: true
   addComponents:
   - type: IFF
@@ -36,7 +36,7 @@
 - type: gameMap
   id: Cove
   mapName: 'Rogue Insurgency Hideout'
-  mapPath: /Maps/_NF/POI/cove.yml
+  mapPath: /Maps/_Mono/POI/cove.yml
   minPlayers: 0
   stations:
     Cove:
