@@ -17,9 +17,9 @@
     
 - type: entity
   parent: ClothingNeckMonoCompanyBadgeBase
-  id: ClothingNeckMonoDrakeIndustriesBadge
+  id: ClothingNeckDrakeIndustriesBadge
   name: Drake Industries company badge
-  description: To show off you're part of Drake Industries ! Looks like some cheap plastic with a silver colored spray on top.
+  description: To show off you're part of Drake Industries! Looks like some cheap plastic with a silver colored spray on top.
   components:
   - type: Sprite
     state: DI-badge

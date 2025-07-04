@@ -132,3 +132,16 @@
     sprite: _Mono/Clothing/Uniforms/Jumpsuit/di-hauler.rsi
   - type: SuitSensor
     randomMode: true
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitDITrucker
+  name: trucker jumpsuit
+  description: This one can hold your fav smokes. Oh, nevermind, the pocket's fake.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/di-trucker.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/di-trucker.rsi
+  - type: SuitSensor
+    randomMode: true
