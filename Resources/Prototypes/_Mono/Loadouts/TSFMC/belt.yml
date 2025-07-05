@@ -37,5 +37,6 @@
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
-      !type:OverallPlaytimeRequirement
-      time: 3600000 # Pro
+      !type:RoleTimeRequirement
+      role: JobTsfEngineer
+      time: 54000 # 15hrs
