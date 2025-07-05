@@ -50,7 +50,7 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
     }
 
     /// <summary>
-    /// Initializes the lock component, ensuring consoles respect grid lock state when available
+    /// Initializes the lock component, ensuring all grids with shuttle consoles have grid lock components
     /// </summary>
     private void OnShuttleConsoleLockInit(EntityUid uid, ShuttleConsoleLockComponent component, ComponentInit args)
     {
@@ -66,24 +66,38 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
 
         var gridUid = transform.GridUid.Value;
 
-        // If the grid has a deed and grid lock component, the console should respect the grid state
-        if (TryComp<ShuttleDeedComponent>(gridUid, out var deed) &&
-            TryComp<ShipGridLockComponent>(gridUid, out var gridLock))
+        // Ensure this grid has a grid lock component
+        if (!TryComp<ShipGridLockComponent>(gridUid, out var gridLock))
+        {
+            // Create grid lock component for this grid
+            gridLock = AddComp<ShipGridLockComponent>(gridUid);
+            gridLock.Locked = !string.IsNullOrEmpty(component.ShuttleId); // Lock if it has a shuttle ID
+            gridLock.ShuttleId = component.ShuttleId;
+            Dirty(gridUid, gridLock);
+            Log.Debug("Created grid lock component for grid {0} with shuttle ID {1}", gridUid, component.ShuttleId);
+        }
+
+        // If the grid has a deed, ensure the shuttle ID is set correctly
+        if (TryComp<ShuttleDeedComponent>(gridUid, out var deed))
         {
             // Console is on a ship grid - ensure it has the correct shuttle ID
             if (string.IsNullOrEmpty(component.ShuttleId) && deed.ShuttleUid != null)
             {
                 component.ShuttleId = deed.ShuttleUid.Value.ToString();
+                gridLock.ShuttleId = component.ShuttleId;
+                Dirty(gridUid, gridLock);
                 Log.Debug("Assigned shuttle ID {0} to console {1} on ship grid {2}", component.ShuttleId, uid, gridUid);
             }
-
-            // Grid lock state takes precedence over individual console lock state
-            return;
         }
-
-        // Not on a ship grid, use individual console logic
-        if (string.IsNullOrEmpty(component.ShuttleId))
-            component.Locked = false;
+        else
+        {
+            // Not on a ship grid with deed, but still use grid-based locking
+            if (string.IsNullOrEmpty(component.ShuttleId))
+            {
+                gridLock.Locked = false;
+                Dirty(gridUid, gridLock);
+            }
+        }
     }
 
     /// <summary>
@@ -369,12 +383,33 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
             return false;
 
         // If the console is already unlocked, do nothing
-        if (!lockComp.Locked)
+        if (!GetEffectiveLockState(console, lockComp))
             return false;
 
-        // Can't unlock a console without a shuttle ID
-        if (string.IsNullOrEmpty(lockComp.ShuttleId))
-            return false;
+        // Get grid information for grid-based locking
+        var transform = Transform(console);
+        var gridUid = transform.GridUid;
+        ShipGridLockComponent? gridLock = null;
+
+        if (gridUid != null && TryComp<ShipGridLockComponent>(gridUid.Value, out gridLock))
+        {
+            // Use grid lock state for ships with deeds
+        }
+
+        // If there's no shuttle ID, there's nothing to unlock against
+        var shuttleId = gridLock?.ShuttleId ?? lockComp.ShuttleId;
+        if (string.IsNullOrEmpty(shuttleId))
+        {
+            if (gridLock != null)
+            {
+                SetGridLockState(gridUid!.Value, false);
+            }
+            else
+            {
+                lockComp.Locked = false;
+            }
+            return true;
+        }
 
         // Get the voucher's UID
         var voucherUid = voucher.ToString();
@@ -388,8 +423,8 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
             // Check if this deed was purchased with this specific voucher and matches the shuttle ID
             if (!deed.PurchasedWithVoucher ||
                 deed.ShuttleUid == null ||
-                lockComp.ShuttleId == null ||
-                deedShuttleId != lockComp.ShuttleId ||
+                shuttleId == null ||
+                deedShuttleId != shuttleId ||
                 deed.PurchaseVoucherUid != voucherUid)
                 continue;
             deedFound = true;
@@ -406,7 +441,18 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
 
         // Success! Unlock the console
         Log.Debug("Successfully unlocked shuttle console {0} with voucher {1}", console, voucher);
-        lockComp.Locked = false;
+
+        if (gridLock != null)
+        {
+            // Unlock at grid level
+            SetGridLockState(gridUid!.Value, false);
+        }
+        else
+        {
+            // Unlock individual console
+            lockComp.Locked = false;
+        }
+
         _audio.PlayPvs(new SoundPathSpecifier("/Audio/Machines/id_swipe.ogg"), console);
         Popup.PopupEntity(Loc.GetString("shuttle-console-unlocked"), console);
         return true;
@@ -421,11 +467,22 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
             return false;
 
         // If the console is already locked, do nothing
-        if (lockComp.Locked)
+        if (GetEffectiveLockState(console, lockComp))
             return false;
 
-        // Can't lock a console without a shuttle ID
-        if (string.IsNullOrEmpty(lockComp.ShuttleId))
+        // Get grid information for grid-based locking
+        var transform = Transform(console);
+        var gridUid = transform.GridUid;
+        ShipGridLockComponent? gridLock = null;
+
+        if (gridUid != null && TryComp<ShipGridLockComponent>(gridUid.Value, out gridLock))
+        {
+            // Use grid lock state for ships with deeds
+        }
+
+        // If there's no shuttle ID, there's nothing to lock against
+        var shuttleId = gridLock?.ShuttleId ?? lockComp.ShuttleId;
+        if (string.IsNullOrEmpty(shuttleId))
             return false;
 
         // Get the voucher's UID
@@ -440,8 +497,8 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
             // Check if this deed was purchased with this specific voucher and matches the shuttle ID
             if (!deed.PurchasedWithVoucher ||
                 deed.ShuttleUid == null ||
-                lockComp.ShuttleId == null ||
-                deedShuttleId != lockComp.ShuttleId ||
+                shuttleId == null ||
+                deedShuttleId != shuttleId ||
                 deed.PurchaseVoucherUid != voucherUid)
                 continue;
 
@@ -459,7 +516,18 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
 
         // Success! Lock the console
         Log.Debug("Successfully locked shuttle console {0} with voucher {1}", console, voucher);
-        lockComp.Locked = true;
+
+        if (gridLock != null)
+        {
+            // Lock at grid level
+            SetGridLockState(gridUid!.Value, true);
+        }
+        else
+        {
+            // Lock individual console
+            lockComp.Locked = true;
+        }
+
         _audio.PlayPvs(new SoundPathSpecifier("/Audio/Machines/id_swipe.ogg"), console);
         Popup.PopupEntity(Loc.GetString("shuttle-console-locked-success"), console);
 
@@ -666,11 +734,26 @@ public sealed class ShuttleConsoleLockSystem : SharedShuttleConsoleLockSystem
 
         lockComp.ShuttleId = shuttleId;
 
-        // Only lock if there's a valid shuttle ID
-        lockComp.Locked = !string.IsNullOrEmpty(shuttleId);
+        // Get grid information for grid-based locking
+        var transform = Transform(console);
+        var gridUid = transform.GridUid;
+        var shouldLock = !string.IsNullOrEmpty(shuttleId);
+
+        if (gridUid != null && TryComp<ShipGridLockComponent>(gridUid.Value, out var gridLock))
+        {
+            // Update grid lock state
+            gridLock.ShuttleId = shuttleId;
+            gridLock.Locked = shouldLock;
+            Dirty(gridUid.Value, gridLock);
+        }
+        else
+        {
+            // Fallback to individual console lock
+            lockComp.Locked = shouldLock;
+        }
 
         // Remove any pilots when locking the console
-        if (!lockComp.Locked || !TryComp<ShuttleConsoleComponent>(console, out var shuttleComp))
+        if (!shouldLock || !TryComp<ShuttleConsoleComponent>(console, out var shuttleComp))
             return;
 
         // Clone the list to avoid modification during enumeration

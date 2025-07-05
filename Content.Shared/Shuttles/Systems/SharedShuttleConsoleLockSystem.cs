@@ -42,7 +42,7 @@ public abstract class SharedShuttleConsoleLockSystem : EntitySystem
     }
 
     /// <summary>
-    /// Gets the effective lock state for a console, considering grid-level locks when available
+    /// Gets the effective lock state for a console, using grid-level locks when available
     /// </summary>
     public bool GetEffectiveLockState(EntityUid console, ShuttleConsoleLockComponent component)
     {
@@ -53,15 +53,14 @@ public abstract class SharedShuttleConsoleLockSystem : EntitySystem
 
         var gridUid = transform.GridUid.Value;
 
-        // If the grid has a deed and grid lock component, use grid lock state ONLY
-        if (TryComp<ShuttleDeedComponent>(gridUid, out _) &&
-            TryComp<ShipGridLockComponent>(gridUid, out var gridLock))
+        // If the grid has a grid lock component, use grid lock state
+        if (TryComp<ShipGridLockComponent>(gridUid, out var gridLock))
         {
             // Grid lock state takes complete precedence over individual console state
             return gridLock.Locked;
         }
 
-        // No grid lock, use individual console lock state
+        // No grid lock, use individual console lock state (fallback for legacy consoles)
         return component.Locked;
     }
 
