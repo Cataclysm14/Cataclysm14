@@ -15,6 +15,7 @@ research-technology-tsfmc-advanced-meds = Reconstructive Technologies
 # T3 TSFMC
 research-technology-tsfmc-flyssa-voucher = Flyssa Procurement License
 research-technology-tsfmc-mr8 = MARSOC Firearms Development
+research-technology-tsfmc-xlr556 = Infantry Combat Weapon System
 
 
 research-discipline-rogue = Rogue Technology

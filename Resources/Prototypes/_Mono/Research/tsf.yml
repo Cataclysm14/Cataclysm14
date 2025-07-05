@@ -64,6 +64,22 @@
   - TsfAnnie
 
 - type: technology
+  id: TsfIcws
+  name: research-technology-tsfmc-xlr556
+  icon:
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/xlr556.rsi
+    state: icon
+  discipline: Tsfmc
+  tier: 3
+  cost: 15000
+  recipeUnlocks:
+  - WeaponRifleXlr556Tsf
+  technologyPrerequisites:
+  - TsfBasicGuns
+  - TsfAnnie
+  - TsfMarsocGuns
+
+- type: technology
   id: TsfForensics
   name: research-technology-tsfmc-forensics
   icon:

@@ -86,6 +86,19 @@
     Plasma: 800
     Silver: 500
 
+# TSF ICWS
+
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
+  id: WeaponRifleXlr556Tsf
+  result: WeaponRifleXlr556
+  materials:
+    Steel: 1500
+    Plasteel: 4500
+    Plastic: 2500
+    Plasma: 800
+    Silver: 750
+
 # syndicate ballistics
 
 - type: latheRecipe
