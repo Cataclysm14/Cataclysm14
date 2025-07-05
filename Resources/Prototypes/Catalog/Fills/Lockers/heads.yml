@@ -43,7 +43,8 @@
     #      prob: 0.25 # Frontier
     #    - id: ClothingBeltSheathFilled # Frontier
     #    - id: ClothingHeadsetAltCommand # Frontier
-    - id: ClothingOuterArmorCaptainCarapace
+    - id: UndeterminedVoidsuitCap
+    #    - id: ClothingOuterArmorCaptainCarapace
     #    - id: CommsComputerCircuitboard # Frontier
     #    - id: DoorRemoteCommand # Frontier
     #    - id: MedalCase # Frontier
@@ -70,7 +71,8 @@
   id: FillCaptainHardsuit
   table: !type:AllSelector
     children:
-    - id: ClothingOuterHardsuitCap
+    - id: UndeterminedVoidsuitCap
+#        - id: ClothingOuterHardsuitCap
     - id: ClothingMaskGasCaptain
     #    - id: JetpackCaptainFilled # Frontier
     #    - id: OxygenTankFilled # Frontier
@@ -299,7 +301,8 @@
   table: !type:AllSelector
     children:
     - id: ClothingMaskBreath
-    - id: ClothingOuterHardsuitRd
+    - id: UndeterminedVoidsuitRD
+#        - id: ClothingOuterHardsuitRd
     - id: OxygenTankFilled
     - id: NitrogenTankFilled
     - id: JetpackMiniFilled # Frontier
