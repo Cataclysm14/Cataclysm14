@@ -67,10 +67,17 @@ public sealed class ReflectSystem : EntitySystem
         if (args.Reflected)
             return;
 
-        foreach (var ent in _inventorySystem.GetHandOrInventoryEntities(uid, SlotFlags.All & ~SlotFlags.POCKET))
+        // Get all reflective items - from hands and vest slot
+        var reflectiveItems = new List<(EntityUid Entity, ReflectComponent Component)>();
+
+        // Check if the entity has hands component
+        if (TryComp<HandsComponent>(uid, out var handsComp))
         {
-            if (!TryReflectHitscan(uid, ent, args.Shooter, args.SourceItem, args.Direction, args.Damage, out var dir))
-                continue;
+            // Check items in hands
+            foreach (var hand in handsComp.Hands.Values)
+            {
+                if (hand.HeldEntity == null)
+                    continue;
 
                 var ent = hand.HeldEntity.Value;
                 if (TryComp<ReflectComponent>(ent, out var reflectComp) &&
@@ -111,13 +118,12 @@ public sealed class ReflectSystem : EntitySystem
         var bestReflector = reflectiveItems[0];
 
         // Try to reflect with the best reflector
-        if (TryReflectHitscan(uid, bestReflector.Entity, args.Shooter, args.SourceItem, args.Direction, out var dir))
+        if (TryReflectHitscan(uid, bestReflector.Entity, args.Shooter, args.SourceItem, args.Direction, args.Damage, out var dir))
         {
             args.Direction = dir.Value;
             args.Reflected = true;
         }
     }
-
     private void OnReflectUserCollide(EntityUid uid, ReflectUserComponent component, ref ProjectileReflectAttemptEvent args)
     {
         // First, check the projectile's reflective type
