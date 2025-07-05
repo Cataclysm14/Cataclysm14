@@ -347,7 +347,7 @@
       params:
         variation: 0.12
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 3
+    rechargeCooldown: 1
     rechargeSound:
       path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
       params:
@@ -362,3 +362,6 @@
   - type: ExtensionCableReceiver # Frontier
   - type: ApcPowerReceiver # Frontier
     powerLoad: 1500 # Frontier
+  - type: FireControllable
+  - type: ShipGunClass
+    shipClass: Light
