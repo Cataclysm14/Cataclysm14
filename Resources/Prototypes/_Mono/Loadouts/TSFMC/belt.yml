@@ -35,8 +35,6 @@
 - type: loadoutEffectGroup
   id: ProTsfEngineer
   effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
   - !type:RoleTimeRequirement
     role: JobTsfEngineer # only a real PRO can get this
     time: 54000 # 15 hrs
