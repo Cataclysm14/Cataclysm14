@@ -75,9 +75,9 @@
   hidden: true # No point in showing this, it gets auto-selected.
   minLimit: 1
   loadouts:
-  - ClothingBeltUtilityEngineering
+  - TsfClothingBeltUtilityEngineering
   fallbacks:
-  - ClothingBeltUtilityEngineering
+  - TsfClothingBeltUtilityEngineering
 
 - type: loadoutGroup
   id: TsfmcBrigmedicBelt

@@ -156,7 +156,7 @@
   canCustomizeName: true
 
 - type: roleLoadout
-  id: JobIconTSFEngi
+  id: JobTsfEngineer
   groups:
   - TsfmcNeck
   - TsfmcJumpsuitEngi
@@ -165,7 +165,7 @@
   - TsfmcOuterClothing
   - TsfmcShoes
   - TsfmcFace
-  - TsfmcGlasses
+  - TsfmcEngiGlasses
   - TsfmcUtilBelt
   - TsfmcEars
   - NfsdBoxSurvival

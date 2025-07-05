@@ -14,7 +14,7 @@
   id: JobUSSPSergeant
 
 - type: playTimeTracker
-  id: JobTSFEngi
+  id: JobTsfEngineer
 
 - type: playTimeTracker
   id: MdMedic

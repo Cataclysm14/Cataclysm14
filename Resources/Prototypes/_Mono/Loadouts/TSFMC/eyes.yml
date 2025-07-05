@@ -7,3 +7,22 @@
   id: TsfmcMedSec
   equipment:
     eyes: ClothingEyesHudMedSec
+
+- type: loadoutGroup
+  id: TsfmcEngiGlasses
+  name: loadout-group-contractor-glasses
+  loadouts:
+  - TsfmcEngiGoggles
+  - TsfmcDiagnostic
+  fallbacks:
+  - TsfmcEngiGoggles
+
+- type: loadout
+  id: TsfmcEngiGoggles
+  equipment:
+    eyes: ClothingEyesGlassesMeson
+
+- type: loadout
+  id: TsfmcDiagnostic
+  equipment:
+    eyes: ClothingEyesHudDiagnostic

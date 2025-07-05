@@ -124,6 +124,7 @@
   - Sheriff # Frontier
   - SeniorOfficer # Frontier
   - PublicAffairsLiaison # Frontier
+  - TsfEngineer # Mono
 
 - type: department
   id: Science

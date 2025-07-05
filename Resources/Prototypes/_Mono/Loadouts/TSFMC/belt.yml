@@ -10,3 +10,10 @@
   name: chest rig (medical)
   equipment:
     belt: ClothingBeltMilitaryWebbingMed
+
+# engi
+- type: loadout
+  id: TsfClothingBeltUtilityEngineering
+  name: chest rig
+  equipment:
+    belt: ClothingBeltUtilityEngineering
