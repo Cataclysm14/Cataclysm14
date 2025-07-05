@@ -35,5 +35,7 @@
 - type: loadoutEffectGroup
   id: ProTsfEngineer
   effects:
-  - !type:OverallPlaytimeRequirement
-    time: 3600000 # 1000 hrs
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:OverallPlaytimeRequirement
+      time: 3600000 # Pro
