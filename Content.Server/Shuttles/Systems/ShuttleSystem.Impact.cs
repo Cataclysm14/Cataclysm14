@@ -144,7 +144,10 @@ public sealed partial class ShuttleSystem
         var ourProtected = HasComp<GridGodModeComponent>(args.OurEntity) || HasComp<ForceAnchorComponent>(args.OurEntity);
         var otherProtected = HasComp<GridGodModeComponent>(args.OtherEntity) || HasComp<ForceAnchorComponent>(args.OtherEntity);
 
-        if (ourProtected || otherProtected)
+        // Check if the grids are docked together to prevent impact
+        var areGridsDocked = _dockSystem.AreGridsDocked(args.OurEntity, args.OtherEntity);
+
+        if (ourProtected || otherProtected || areGridsDocked)
             return;
 
         // Convert the collision point directly to tile indices
