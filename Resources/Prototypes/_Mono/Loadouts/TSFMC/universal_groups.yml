@@ -86,10 +86,10 @@
 - type: loadoutGroup
   id: TsfmcUtilBelt
   name: loadout-group-contractor-belt
-  hidden: true # No point in showing this, it gets auto-selected.
   minLimit: 1
   loadouts:
   - TsfClothingBeltUtilityEngineering
+  - TsfClothingBeltUtilityEngineeringPro
   fallbacks:
   - TsfClothingBeltUtilityEngineering
 
