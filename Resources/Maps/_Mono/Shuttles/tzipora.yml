@@ -959,7 +959,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 3
     components:
     - type: MetaData
@@ -972,7 +971,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 4
     components:
     - type: MetaData
@@ -985,7 +983,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 395
     components:
     - type: MetaData
@@ -998,7 +995,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
 - proto: AirAlarm
   entities:
   - uid: 5
@@ -3109,14 +3105,6 @@ entities:
     components:
     - type: Transform
       pos: 6.5,2.5
-      parent: 1
-- proto: CircularShieldConsole
-  entities:
-  - uid: 396
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 4.5,2.5
       parent: 1
 - proto: CloningPod
   entities:

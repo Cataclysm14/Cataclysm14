@@ -924,7 +924,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 3
     components:
     - type: MetaData
@@ -937,7 +936,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 4
     components:
     - type: MetaData
@@ -950,7 +948,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 5
     components:
     - type: MetaData
@@ -963,7 +960,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 6
     components:
     - type: MetaData
@@ -976,7 +972,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 7
     components:
     - type: MetaData
@@ -989,7 +984,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 8
     components:
     - type: MetaData
@@ -1002,7 +996,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 597
     components:
     - type: MetaData
@@ -1015,7 +1008,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
 - proto: AirAlarm
   entities:
   - uid: 9
@@ -4127,8 +4119,6 @@ entities:
     - type: Transform
       pos: -1.5,-18.5
       parent: 1
-    - type: CircularShield
-      width: 6.283185307179586 rad
     - type: Fixtures
       fixtures:
         fix1:
@@ -4163,19 +4153,6 @@ entities:
           friction: 0.4
     - type: ApcPowerReceiver
       powerLoad: 0
-- proto: CircularShieldConsole
-  entities:
-  - uid: 598
-    components:
-    - type: Transform
-      pos: -1.5,-5.5
-      parent: 1
-    - type: DeviceLinkSource
-      linkedPorts:
-        596:
-        - CircularShieldConsoleSender: CircularShieldConsoleReceiver
-    - type: ApcPowerReceiver
-      powerLoad: 5
 - proto: ComputerRadar
   entities:
   - uid: 599

@@ -11261,16 +11261,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -20.5,0.5
       parent: 1
-- proto: CircularShieldConsole
-  entities:
-  - uid: 1863
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -21.5,1.5
-      parent: 1
-    - type: ApcPowerReceiver
-      powerLoad: 5
 - proto: ClothingHeadHatBizarreSoft
   entities:
   - uid: 1864

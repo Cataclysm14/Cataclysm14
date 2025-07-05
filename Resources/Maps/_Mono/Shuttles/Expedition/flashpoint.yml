@@ -1477,7 +1477,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 3
     components:
     - type: MetaData
@@ -1490,7 +1489,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 4
     components:
     - type: MetaData
@@ -1503,7 +1501,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 5
     components:
     - type: MetaData
@@ -1516,7 +1513,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 6
     components:
     - type: MetaData
@@ -1529,7 +1525,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 7
     components:
     - type: MetaData
@@ -1542,7 +1537,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 8
     components:
     - type: MetaData
@@ -1555,7 +1549,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 9
     components:
     - type: MetaData
@@ -1568,7 +1561,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 10
     components:
     - type: MetaData
@@ -1581,7 +1573,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 11
     components:
     - type: MetaData
@@ -1594,7 +1585,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 12
     components:
     - type: MetaData
@@ -1607,7 +1597,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 13
     components:
     - type: MetaData
@@ -1620,7 +1609,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 14
     components:
     - type: MetaData
@@ -1633,7 +1621,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 15
     components:
     - type: MetaData
@@ -1646,7 +1633,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 826
     components:
     - type: MetaData
@@ -1659,7 +1645,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
 - proto: AirAlarm
   entities:
   - uid: 16
@@ -6328,8 +6313,6 @@ entities:
     - type: Transform
       pos: 10.5,13.5
       parent: 1
-    - type: CircularShield
-      width: 6.283185307179586 rad
     - type: Fixtures
       fixtures:
         fix1:
@@ -6364,19 +6347,6 @@ entities:
           friction: 0.4
     - type: ApcPowerReceiver
       powerLoad: 0
-- proto: CircularShieldConsole
-  entities:
-  - uid: 827
-    components:
-    - type: Transform
-      pos: 18.5,-2.5
-      parent: 1
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: DeviceLinkSource
-      linkedPorts:
-        825:
-        - CircularShieldConsoleSender: CircularShieldConsoleReceiver
 - proto: ClothingEyesGlassesSunglasses
   entities:
   - uid: 830

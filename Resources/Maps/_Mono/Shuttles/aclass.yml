@@ -893,7 +893,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 478
     components:
     - type: MetaData
@@ -906,7 +905,6 @@ entities:
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
 - proto: AirAlarm
   entities:
   - uid: 3
@@ -3548,8 +3546,6 @@ entities:
     - type: Transform
       pos: 4.5,7.5
       parent: 1
-    - type: CircularShield
-      width: 6.283185307179586 rad
     - type: ApcPowerReceiver
       powerLoad: 0
     - type: Fixtures
@@ -3584,19 +3580,6 @@ entities:
           hard: False
           restitution: 0
           friction: 0.4
-- proto: CircularShieldConsole
-  entities:
-  - uid: 479
-    components:
-    - type: Transform
-      pos: -0.5,14.5
-      parent: 1
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: DeviceLinkSource
-      linkedPorts:
-        477:
-        - CircularShieldConsoleSender: CircularShieldConsoleReceiver
 - proto: ClosetO2N2Filled
   entities:
   - uid: 480
