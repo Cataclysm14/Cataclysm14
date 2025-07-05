@@ -117,8 +117,7 @@
     #      prob: 0.25 # Frontier
     #    - id: ClothingBeltSheathFilled # Frontier
     #    - id: ClothingHeadsetAltCommand # Frontier
-    - id: UndeterminedVoidsuitCap
-    #    - id: ClothingOuterArmorCaptainCarapace
+    - id: ClothingOuterArmorCaptainCarapace
     #    - id: CommsComputerCircuitboard # Frontier
     #    - id: DoorRemoteCommand # Frontier
     #    - id: MedalCase # Frontier
