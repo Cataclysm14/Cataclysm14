@@ -14,6 +14,7 @@
 // SPDX-FileCopyrightText: 2024 Whatstone
 // SPDX-FileCopyrightText: 2024 neuPanda
 // SPDX-FileCopyrightText: 2025 Ark
+// SPDX-FileCopyrightText: 2025 core-mene
 // SPDX-FileCopyrightText: 2025 gus
 // SPDX-FileCopyrightText: 2025 sleepyyapril
 //

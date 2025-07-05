@@ -1,3 +1,9 @@
+// SPDX-FileCopyrightText: 2025 Ark
+// SPDX-FileCopyrightText: 2025 Solstice
+// SPDX-FileCopyrightText: 2025 core-mene
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Shared.Theta.ShipEvent.Components;
 using Content.Shared.Theta.ShipEvent.UI;
 using JetBrains.Annotations;

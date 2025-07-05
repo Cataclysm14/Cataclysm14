@@ -1,3 +1,11 @@
+// SPDX-FileCopyrightText: 2024 Salvantrix
+// SPDX-FileCopyrightText: 2024 Whatstone
+// SPDX-FileCopyrightText: 2025 Ark
+// SPDX-FileCopyrightText: 2025 Dvir
+// SPDX-FileCopyrightText: 2025 core-mene
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Shared.Access;
 using Content.Shared._NF.Shipyard;
 using Robust.Shared.Prototypes;
