@@ -11,15 +11,6 @@
       "name": "icon"
     },
     {
-      "name": "base",
-      "delays": [
-        [
-          0.2,
-          0.2
-        ]
-      ]
-    },
-    {
       "name": "inhand-right",
       "directions": 4
     },
@@ -42,15 +33,6 @@
     {
       "name": "equipped-SUITSTORAGE",
       "directions": 4
-    },
-    {
-      "name": "bolt-open",
-      "delays": [
-        [
-          0.2,
-          0.2
-        ]
-      ]
     },
     {
       "name": "mag-0"
