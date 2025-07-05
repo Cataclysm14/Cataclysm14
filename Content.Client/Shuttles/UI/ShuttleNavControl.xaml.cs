@@ -9,11 +9,13 @@
 // SPDX-FileCopyrightText: 2024 neuPanda
 // SPDX-FileCopyrightText: 2025 Alex Parrill
 // SPDX-FileCopyrightText: 2025 Ark
+// SPDX-FileCopyrightText: 2025 Blu
 // SPDX-FileCopyrightText: 2025 BlueHNT
 // SPDX-FileCopyrightText: 2025 GreaseMonk
 // SPDX-FileCopyrightText: 2025 LukeZurg22
 // SPDX-FileCopyrightText: 2025 RikuTheKiller
 // SPDX-FileCopyrightText: 2025 Whatstone
+// SPDX-FileCopyrightText: 2025 core-mene
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 

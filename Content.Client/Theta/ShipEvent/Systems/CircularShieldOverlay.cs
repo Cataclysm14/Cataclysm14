@@ -1,3 +1,8 @@
+// SPDX-FileCopyrightText: 2025 Ark
+// SPDX-FileCopyrightText: 2025 core-mene
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Numerics;
 using Content.Shared.Theta.ShipEvent.Components;
 using Robust.Client.GameObjects;
