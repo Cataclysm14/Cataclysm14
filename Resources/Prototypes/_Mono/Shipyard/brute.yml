@@ -19,32 +19,31 @@
 # Shuttle Notes:
 #
 - type: vessel
-  id: Rig
+  id: Brute
   parent: BaseVessel
-  name: DIS Rig
-  description: A hybrid heavy-class straight from the DIS. Both capable to hold a decent amount of cargo and process ores in bulk. In sum, a flying refinery.
-  price: 75000
+  name: DIS Brute
+  description: What is essentially a heavy-class cargo freighter is being advertised by the DIS marketing department as a new wonder of cargo transportation. With quadruple the layer of walls to protect your precious cargo while drunk driving.
+  price: 77850
   category: Medium
   group: Shipyard
-  shuttlePath: /Maps/_Mono/Shuttles/rig.yml
+  shuttlePath: /Maps/_Mono/Shuttles/brute.yml
   guidebookPage: null
   class:
   - Cargo
-  - Salvage
   engine:
   - Uranium
 
 - type: gameMap
-  id: Rig
-  mapName: 'DIS Rig'
-  mapPath: /Maps/_Mono/Shuttles/rig.yml
+  id: Brute
+  mapName: 'DIS Brute'
+  mapPath: /Maps/_Mono/Shuttles/brute.yml
   minPlayers: 0
   stations:
-    Rig:
+    Brute:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Rig CIV{1}'
+          mapNameTemplate: 'Brute CIV{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

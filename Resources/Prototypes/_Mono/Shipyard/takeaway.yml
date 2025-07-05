@@ -5,46 +5,49 @@
 # SPDX-FileCopyrightText: 2024 Long YM
 # SPDX-FileCopyrightText: 2024 Maxtone
 # SPDX-FileCopyrightText: 2024 Whatstone
-# SPDX-FileCopyrightText: 2025 KM-Catman
-# SPDX-FileCopyrightText: 2025 UnicornOnLSD
-# SPDX-FileCopyrightText: 2025 plethorian
+# SPDX-FileCopyrightText: 2025 Junerisms
+# SPDX-FileCopyrightText: 2025 Redrover1760
 # SPDX-FileCopyrightText: 2025 starch
+# SPDX-FileCopyrightText: 2025 tonotom
+# SPDX-FileCopyrightText: 2025 tonotom1
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 # Author Info
-# GitHub: UnicornOnLSD
-# Discord: unicornonlsd
+# GitHub: tonotom1
+# Discord: rws
 
 # Shuttle Notes:
-#
+# hi
+
 - type: vessel
-  id: Rig
+  id: Takeaway
   parent: BaseVessel
-  name: DIS Rig
-  description: A hybrid heavy-class straight from the DIS. Both capable to hold a decent amount of cargo and process ores in bulk. In sum, a flying refinery.
-  price: 75000
+  name: UW Takeaway
+  description: An aptly named medium botanical-kitchen vessel with a customer-facing gantry for ordering to-go.
+  price: 62000
   category: Medium
   group: Shipyard
-  shuttlePath: /Maps/_Mono/Shuttles/rig.yml
+  shuttlePath: /Maps/_Mono/Shuttles/takeaway.yml
   guidebookPage: null
   class:
-  - Cargo
-  - Salvage
+  - Civilian
+  - Kitchen
+  - Botany
   engine:
   - Uranium
 
 - type: gameMap
-  id: Rig
-  mapName: 'DIS Rig'
-  mapPath: /Maps/_Mono/Shuttles/rig.yml
+  id: Takeaway
+  mapName: 'UW Takeaway'
+  mapPath: /Maps/_Mono/Shuttles/takeaway.yml
   minPlayers: 0
   stations:
-    Rig:
+    Takeaway:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Rig CIV{1}'
+          mapNameTemplate: 'Takeaway CIV{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

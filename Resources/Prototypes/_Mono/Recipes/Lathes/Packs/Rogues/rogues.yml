@@ -1,3 +1,4 @@
+# SPDX-FileCopyrightText: 2025 HungryCuban
 # SPDX-FileCopyrightText: 2025 starch
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
@@ -8,6 +9,7 @@
   - EnergySwordRogue
   - EnergyDaggerRogue
   - EnergyShieldRogue
+  - HFSwordVT7
 
 - type: latheRecipePack
   id: MonoRogueWeaponsDynamicRanged

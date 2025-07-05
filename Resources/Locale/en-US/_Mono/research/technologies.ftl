@@ -7,6 +7,7 @@ research-technology-tsfmc-pocket-crowbar = Compact Prying Technology
 
 # T2 TSFMC
 research-technology-tsfmc-annie = Annie
+research-technology-tsfmc-nanofoam = Nanomaterial Growth
 research-technology-tsfmc-demag = System Reset Technology
 research-technology-tsfmc-eshield = Energy Shielding
 research-technology-tsfmc-advanced-meds = Reconstructive Technologies
@@ -34,3 +35,4 @@ research-technology-rogue-hristov = Heavy Ballistics
 research-technology-rogue-prowler-voucher = Stealthcraft Technologies
 research-technology-rogue-energy-weapon = Advanced Plasma Weaponization
 research-technology-rogue-access-breaker = Advanced Hacking Procedures
+research-technology-rogue-hf-sword = Weaponised Resonance Technology

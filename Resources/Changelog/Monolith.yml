@@ -5762,3 +5762,128 @@ Entries:
   id: 675
   time: '2025-07-04T10:24:03.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1128
+- author: grandalff
+  changes:
+    - type: Add
+      message: Added NCS Gruznyk, an armored and armed USSP cargo hauler.
+  id: 676
+  time: '2025-07-04T11:34:19.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1100
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Faction lathes and R&D servers are in TSF and Rogue uplinks now (100
+        FMC/DC for server, 50 FMC/DC for assembler)
+    - type: Tweak
+      message: >-
+        Changed the icon of both Rogue and TSF discipline to the unused
+        biochemical icon. Hopefully temporary. I'm too lazy to sprite a new one.
+    - type: Fix
+      message: >-
+        Fixed Rogue discipline color being nearly identical to Arsenal
+        discipline.
+  id: 677
+  time: '2025-07-04T11:49:32.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1129
+- author: starch70
+  changes:
+    - type: Add
+      message: Added Splinter as a TSF equivalent to the Spyglass
+    - type: Add
+      message: >-
+        Added nanolaminate foam as a stronger, faster version of metal foam to
+        T2 TSF.
+    - type: Fix
+      message: >-
+        Fixed ammunition missing from faction lathes. Ammunition is researched
+        with the earliest possible weapon that uses it now.
+  id: 678
+  time: '2025-07-04T14:40:40.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1131
+- author: tonotom1
+  changes:
+    - type: Add
+      message: >-
+        Added the Takeaway, a Kitchen-Botany shuttle with a space-facing counter
+        for meals to-go.
+  id: 679
+  time: '2025-07-04T14:41:57.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1055
+- author: UnicornOnLSD
+  changes:
+    - type: Add
+      message: >-
+        After lot of hair ripping from the ad department. The DIS Brute, a
+        superheavy cruiser-type cargo hauler is out crushing the competition
+        under it's girth.
+  id: 680
+  time: '2025-07-04T15:23:17.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1058
+- author: UnicornOnLSD
+  changes:
+    - type: Fix
+      message: fix references to size classes in DIS Pluto and DIS Rig descriptions
+  id: 681
+  time: '2025-07-04T15:26:12.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1132
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Minor Halcyon edits
+  id: 682
+  time: '2025-07-04T16:33:14.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1133
+- author: starch70
+  changes:
+    - type: Tweak
+      message: >-
+        Due to recent nerfs/buffs (Spear AEW, ship limits, etc), the Prowler is
+        now purchasable again (for $300k)
+    - type: Tweak
+      message: >-
+        Ship voucher lathe recipes have had their material costs reduced, and
+        have had the construction time reduced from 240/600 seconds for
+        Prowler/Flyssa to 5/10 seconds.
+  id: 683
+  time: '2025-07-04T18:26:01.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1134
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        hunter killer adjusted to not reveal allied companies instead of only
+        enemy ones
+  id: 684
+  time: '2025-07-04T19:10:08.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1135
+- author: HungryCuban
+  changes:
+    - type: Add
+      message: >-
+        Researchable VT7 blade to the rogue server and make able in the military
+        fabricator
+    - type: Tweak
+      message: Re adds USSP M-10 (nerfed) suit to the vendor
+    - type: Tweak
+      message: Re adds VT7 high frequency blade to the uplink
+  id: 685
+  time: '2025-07-04T20:03:03.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1138
+- author: Redrover1760
+  changes:
+    - type: Fix
+      message: Ships will no longer be made permanently invisible from spears ftling
+  id: 686
+  time: '2025-07-04T20:54:47.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1139
+- author: grandalff
+  changes:
+    - type: Tweak
+      message: >-
+        Added firelocks, fire alarms, fire extinguishers to NCS Gruznyk and
+        slightly modified hull, so 20mm wont shoot eachother, aswell as adding
+        grilles to the frontmost thrusters.
+  id: 687
+  time: '2025-07-04T22:26:38.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1141

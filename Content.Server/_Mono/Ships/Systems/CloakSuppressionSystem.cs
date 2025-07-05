@@ -1,3 +1,5 @@
+// SPDX-FileCopyrightText: 2025 Ark
+// SPDX-FileCopyrightText: 2025 Redrover1760
 // SPDX-FileCopyrightText: 2025 ark1368
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
@@ -126,8 +128,11 @@ public sealed class CloakSuppressionSystem : EntitySystem
                 (iffComp.Flags & IFFFlags.Hide) == 0)
                 continue;
 
+            if (HasComp<TemporaryFtlIffStorageComponent>(shipUid))
+                continue;
+
             // Check if the target ship has a matching company
-            if (!ShouldSuppressShip(shipUid, hunterPrototype))
+            if (ShouldNotSuppressShip(shipUid, hunterPrototype))
                 continue;
 
             var shipPos = _transform.GetMapCoordinates(shipUid, xform: shipXform);
@@ -144,19 +149,19 @@ public sealed class CloakSuppressionSystem : EntitySystem
     /// <summary>
     /// Checks if a ship should be suppressed based on company matching.
     /// </summary>
-    private bool ShouldSuppressShip(EntityUid shipUid, VesselPrototype hunterPrototype)
+    private bool ShouldNotSuppressShip(EntityUid shipUid, VesselPrototype hunterPrototype)
     {
         // If no companies specified, suppress all ships
         if (hunterPrototype.Company.Count == 0)
-            return true;
+            return false;
 
-        // Check if the ship has a company component that matches any of the hunter's target companies
+        // Check if the ship has a company component that matches any of the hunter's allied companies
         if (TryComp<CompanyComponent>(shipUid, out var companyComp))
         {
             return hunterPrototype.Company.Contains(companyComp.CompanyName);
         }
 
-        // If ship has no company component, don't suppress
+        // If ship has no company component, suppress it
         return false;
     }
 

@@ -31,10 +31,12 @@
     - MonoRogueWeaponsDynamicRanged
     - MonoRogueVouchersDynamic
     - MonoRogueMiscDynamic
+    - MonoRogueAmmo
     - MonoTSFWeaponsDynamicMelee
     - MonoTSFWeaponsDynamicRanged
     - MonoTSFVouchersDynamic
     - MonoTSFMiscDynamic
+    - MonoTSFAmmo
   - type: MaterialStorage
     whitelist:
       tags:

@@ -2,7 +2,9 @@
 // SPDX-FileCopyrightText: 2024 TsjipTsjip
 // SPDX-FileCopyrightText: 2024 Whatstone
 // SPDX-FileCopyrightText: 2024 neuPanda
+// SPDX-FileCopyrightText: 2025 Ark
 // SPDX-FileCopyrightText: 2025 Dvir
+// SPDX-FileCopyrightText: 2025 Redrover1760
 // SPDX-FileCopyrightText: 2025 ark1368
 // SPDX-FileCopyrightText: 2025 sleepyyapril
 // SPDX-FileCopyrightText: 2025 starch
@@ -131,7 +133,7 @@ public sealed class VesselPrototype : IPrototype, IInheritingPrototype
     public bool CloakHunter;
 
     /// <summary>
-    /// List of company names whose ships this vessel can suppress IFF flags for.
+    /// List of company names whose ships this vessel will not suppress IFF flags for.
     /// </summary>
     [DataField]
     public List<string> Company = new();
