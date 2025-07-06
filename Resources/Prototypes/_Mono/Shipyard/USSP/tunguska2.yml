@@ -14,7 +14,7 @@
   category: Large
   group: Ussp
   access: USSP
-  shuttlePath: /Maps/_Mono/Shuttles/USSP/tunguska2.yml
+  shuttlePath: /Maps/_Mono/Shuttles/USSP/tunguska-c.yml
   guidebookPage: Null
   class:
   - Patrol
@@ -26,10 +26,10 @@
 - type: gameMap
   id: TunguskaC
   mapName: 'Tunguska-C'
-  mapPath: /Maps/_Mono/Shuttles/USSP/tunguska2.yml
+  mapPath: /Maps/_Mono/Shuttles/USSP/tunguska-c.yml
   minPlayers: 0
   stations:
-    Tunguska:
+    Tunguska-C:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
