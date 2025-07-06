@@ -12,6 +12,8 @@ research-discipline-rogue-shipyard = Rogue Heavy Industry
 research-technology-tsfmc-guns = Ballistics Production
 research-technology-tsfmc-forensics = Forensics Analysis
 research-technology-tsfmc-pocket-crowbar = Compact Prying Technology
+research-technology-tsfmc-industrial-storage = Material Storage Solutions
+research-technology-tsfmc-industrial-processing = Industrial Processing
 
 # T2 TSFMC
 research-technology-tsfmc-annie = Annie

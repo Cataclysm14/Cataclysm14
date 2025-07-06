@@ -39,6 +39,7 @@
     - MonoTSFMiscDynamic
     - MonoTSFAmmo
     - MonoTSFGearDynamic
+    - MonoTSFStructuresDynamic
   - type: MaterialStorage
     whitelist:
       tags:

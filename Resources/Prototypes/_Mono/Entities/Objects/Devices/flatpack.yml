@@ -146,3 +146,25 @@
   - type: StaticPrice
     price: 1500
 
+- type: entity
+  parent: BaseNFFlatpack
+  id: OreBoxFlatpack
+  name: ore box flatpack
+  description: A flatpack used for constructing an ore box.
+  components:
+  - type: Flatpack
+    entity: OreBox
+  - type: StaticPrice
+    price: 500
+
+- type: entity
+  parent: BaseNFFlatpack
+  id: MaterialBoxFlatpack
+  name: construction box flatpack
+  description: A flatpack used for constructing a construction box.
+  components:
+  - type: Flatpack
+    entity: ConstructionBox
+  - type: StaticPrice
+    price: 500
+

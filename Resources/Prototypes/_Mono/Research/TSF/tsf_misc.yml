@@ -57,7 +57,7 @@
     sprite: _NF/Objects/Misc/shipyard_voucher.rsi
     state: nfsd
   discipline: TsfmcShipyard
-  tier: 1
+  tier: 3
   cost: 100000
   recipeUnlocks:
   - FlyssaVoucherTSF
@@ -100,3 +100,28 @@
   cost: 50000
   recipeUnlocks:
     - SynthalloyProductionTsf
+
+- type: technology
+  id: TsfIndustrialStorage
+  name: research-technology-tsfmc-industrial-storage
+  icon:
+    sprite: Structures/Machines/autolathe.rsi
+    state: icon
+  discipline: TsfmcShipyard
+  tier: 1
+  cost: 7500
+  recipeUnlocks:
+    - OreBoxFlatpackTSF
+    - MaterialBoxFlatpackTSF
+
+- type: technology
+  id: TsfIndustrialProcessing
+  name: research-technology-tsfmc-industrial-processing
+  icon:
+    sprite: Structures/Machines/ore_processor_industrial.rsi
+    state: icon
+  discipline: TsfmcShipyard
+  tier: 1
+  cost: 15000
+  recipeUnlocks:
+    - OreProcessorIndustrialMachineCircuitboard

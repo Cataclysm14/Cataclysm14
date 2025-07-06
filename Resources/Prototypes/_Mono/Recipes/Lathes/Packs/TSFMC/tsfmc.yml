@@ -33,3 +33,10 @@
   - MeshTSF
   - NanolaminateFoamGrenadeTSF
   - SynthalloyProductionTsf
+
+- type: latheRecipePack
+  id: MonoTSFStructuresDynamic
+  recipes:
+  - OreProcessorIndustrialMachineCircuitboard
+  - MaterialBoxFlatpackTSF
+  - OreBoxFlatpackTSF
