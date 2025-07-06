@@ -27,9 +27,12 @@
 - type: entity # Mono Big Pistol Mags
   parent: BaseAmmoBox45_ACP
   id: AmmoBox45_ACPBigFMJ
-  name: ammunition box (.45 ACP FMJ)
+  name: big ammunition box (.45 ACP FMJ)
   suffix: Big
   components:
+  - type: Item
+    shape:
+    - 0,0,1,1
   - type: BallisticAmmoProvider
     capacity: 280 # 8 mags per box similar to rifle box
     proto: Cartridge45_ACPFMJ

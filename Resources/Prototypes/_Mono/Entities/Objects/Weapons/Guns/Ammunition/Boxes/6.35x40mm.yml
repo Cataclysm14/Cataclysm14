@@ -56,8 +56,12 @@
 - type: entity
   parent: BaseAmmoBox6.35x40mmCaseless
   id: AmmoBox6.35x40mmCaselessBigRubber
-  name: ammunition box (6.35x40mm Caseless rubber)
+  name: big ammunition box (6.35x40mm Caseless rubber)
+  suffix: Big
   components:
+  - type: Item
+    shape:
+    - 0,0,1,1
   - type: BallisticAmmoProvider
     capacity: 200
     proto: Cartridge6.35x40mmCaselessRubber
@@ -94,8 +98,12 @@
 - type: entity
   parent: BaseAmmoBox6.35x40mmCaseless
   id: AmmoBox6.35x40mmCaselessBig
-  name: ammunition box (6.35x40mm Caseless)
+  name: big ammunition box (6.35x40mm Caseless)
+  suffix: Big
   components:
+  - type: Item
+    shape:
+    - 0,0,1,1
   - type: BallisticAmmoProvider
     capacity: 200
     proto: Cartridge6.35x40mmCaseless

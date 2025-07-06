@@ -41,9 +41,12 @@
 - type: entity
   parent: BaseAmmoBox14.5x114mm
   id: AmmoBox14.5x114mmBig
-  name: ammunition box (14.5x114mm)
-  suffix: 30
+  name: big ammunition box (14.5x114mm)
+  suffix: Big (30)
   components:
+  - type: Item
+    shape:
+    - 0,0,1,1
   - type: BallisticAmmoProvider
     capacity: 30
     proto: Cartridge14.5x114mm

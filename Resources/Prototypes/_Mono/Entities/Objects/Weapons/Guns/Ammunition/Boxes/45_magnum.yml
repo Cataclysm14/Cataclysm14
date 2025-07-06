@@ -24,6 +24,30 @@
   - type: Appearance
 
 # Boxes
+- type: entity # Mono Big Pistol Mags
+  parent: BaseAmmoBox45_magnum
+  id: AmmoBox45_magnumBigFMJ
+  name: big ammunition box (.45 magnum FMJ)
+  suffix: Big
+  components:
+  - type: Item
+    shape:
+    - 0,0,1,1
+  - type: BallisticAmmoProvider
+    capacity: 80
+    proto: Cartridge45_magnumFMJ
+  - type: Sprite
+    layers:
+    - state: base-b # Frontier: base-big<base-b
+      map: ["enum.GunVisualLayers.Base"]
+    - state: magb-1 # Frontier: mag-big-1<magb-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: magb # Frontier: mag-big<magb
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+
 - type: entity
   parent: BaseAmmoBox45_magnum
   id: AmmoBox45_magnumFMJ

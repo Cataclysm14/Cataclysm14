@@ -28,9 +28,12 @@
 - type: entity # Mono Big Pistol Mags
   parent: BaseAmmoBox4.6x30mm
   id: AmmoBox4.6x30mmBig
-  name: ammunition box (4.6x30mm FMJ)
+  name: big ammunition box (4.6x30mm FMJ)
   suffix: Big
   components:
+  - type: Item
+    shape:
+    - 0,0,1,1
   - type: BallisticAmmoProvider
     capacity: 280 # 8 mags per box similar to rifle box
     proto: Cartridge4.6x30mmFMJ
