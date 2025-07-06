@@ -157,6 +157,17 @@
 - type: Tag
   id: MagazineBox8x65mmSKR
 
+#4 gauge tags
+
+- type: Tag
+  id: WeaponShotgunBigLeady
+
+- type: Tag
+  id: WeaponShotgunBigJohnny
+
+- type: Tag
+  id: ShellShotgun23x75mm
+
 #Misc emote tags
 
 - type: Tag

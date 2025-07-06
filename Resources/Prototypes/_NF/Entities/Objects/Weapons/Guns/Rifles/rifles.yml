@@ -39,7 +39,7 @@
 
 #Delta-V
 - type: entity
-  name: Vulcan (7.62x51mm)
+  name: FCM Vulcan (7.62x51mm)
   parent: WeaponRifleVulcan
   id: WeaponRifleVulcanRubber
   suffix: Non-lethal
