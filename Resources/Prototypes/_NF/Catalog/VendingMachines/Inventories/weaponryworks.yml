@@ -60,7 +60,7 @@
     AmmoBox9x19mmBigFMJ: 4294967295 # 9x19mm
     AmmoBox45_ACPFMJ: 4294967295 # .45 ACP
     AmmoBox45_ACPBigFMJ: 4294967295 # .45 ACP
-    AmmoBox4.6x30mmPFMJ: 4294967295 # 4.6x30mm
+    AmmoBox4.6x30mmFMJ: 4294967295 # 4.6x30mm
     AmmoBox4.6x30mmBigFMJ: 4294967295 # 4.6x30mm
     AmmoBox45_magnumFMJ: 4294967295 # .45 magnum
     AmmoBox12_gaugeSlug: 4294967295 # 12 gauge
