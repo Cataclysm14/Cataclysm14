@@ -137,7 +137,7 @@
 
 - type: techDiscipline
   id: UsspWeapons
-  name: research-discipline-ussp-weapons
+  name: research-discipline-ussp-weaponry
   color: "#52c08d"
   icon:
     sprite: _Mono/Interface/Misc/research_disciplines_ussp.rsi
