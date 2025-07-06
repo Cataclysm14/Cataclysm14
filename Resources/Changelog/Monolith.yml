@@ -6021,3 +6021,10 @@ Entries:
   id: 701
   time: '2025-07-06T00:43:05.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1151
+- author: Redrover1760
+  changes:
+    - type: Fix
+      message: Fixed mech ships
+  id: 702
+  time: '2025-07-06T01:53:18.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1167
