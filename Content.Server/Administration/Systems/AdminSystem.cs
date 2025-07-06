@@ -24,11 +24,18 @@
 // SPDX-FileCopyrightText: 2024 deltanedas
 // SPDX-FileCopyrightText: 2024 nikthechampiongr
 // SPDX-FileCopyrightText: 2024 slarticodefast
+<<<<<<< HEAD
 // SPDX-FileCopyrightText: 2025 Blu
 // SPDX-FileCopyrightText: 2025 Errant
 // SPDX-FileCopyrightText: 2025 Myra
 // SPDX-FileCopyrightText: 2025 Zachary Higgs
 // SPDX-FileCopyrightText: 2025 core-mene
+=======
+// SPDX-FileCopyrightText: 2025 BlueHNT
+// SPDX-FileCopyrightText: 2025 Errant
+// SPDX-FileCopyrightText: 2025 Myra
+// SPDX-FileCopyrightText: 2025 Zachary Higgs
+>>>>>>> parent of 1ab453cadc (Revert "agrhfsqdhqzrg")
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -422,7 +429,7 @@ public sealed class AdminSystem : EntitySystem
                 _popup.PopupCoordinates(Loc.GetString("admin-erase-popup", ("user", name)), coordinates, PopupType.LargeCaution);
                 var filter = Filter.Pvs(coordinates, 1, EntityManager, _playerManager);
                 var audioParams = new AudioParams().WithVolume(3);
-                _audio.PlayStatic("/Audio/Effects/pop_high.ogg", filter, coordinates, true, audioParams);
+                _audio.PlayStatic("/Audio/_EinsteinEngines/Misc/reducedtoatmos.ogg", filter, coordinates, true, audioParams); // Mono sound edit
             }
 
             foreach (var item in _inventory.GetHandOrInventoryEntities(entity))

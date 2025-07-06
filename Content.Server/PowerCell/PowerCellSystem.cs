@@ -17,14 +17,21 @@
 // SPDX-FileCopyrightText: 2023 Visne
 // SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
 // SPDX-FileCopyrightText: 2023 keronshb
+<<<<<<< HEAD
+=======
+// SPDX-FileCopyrightText: 2024 Aviu00
+>>>>>>> parent of 1ab453cadc (Revert "agrhfsqdhqzrg")
 // SPDX-FileCopyrightText: 2024 Pieter-Jan Briers
 // SPDX-FileCopyrightText: 2024 Tayrtahn
 // SPDX-FileCopyrightText: 2024 deltanedas
 // SPDX-FileCopyrightText: 2024 metalgearsloth
 // SPDX-FileCopyrightText: 2024 slarticodefast
 // SPDX-FileCopyrightText: 2025 Ark
+<<<<<<< HEAD
 // SPDX-FileCopyrightText: 2025 Redrover1760
 // SPDX-FileCopyrightText: 2025 core-mene
+=======
+>>>>>>> parent of 1ab453cadc (Revert "agrhfsqdhqzrg")
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -262,9 +269,9 @@ public sealed partial class PowerCellSystem : SharedPowerCellSystem
         OnBatteryExamined(batteryEnt.GetValueOrDefault(uid), battery, args); // Goobstation
     }
 
-    private void OnBatteryExamined(EntityUid uid, BatteryComponent? component, ExaminedEvent args)
+    public void OnBatteryExamined(EntityUid uid, BatteryComponent? component, ExaminedEvent args) // WD EDIT
     {
-        if (component != null)
+        if (Resolve(uid, ref component, false)) // WD EDIT
         {
             var charge = component.CurrentCharge / component.MaxCharge * 100;
             args.PushMarkup(Loc.GetString("power-cell-component-examine-details", ("currentCharge", $"{charge:F0}")));

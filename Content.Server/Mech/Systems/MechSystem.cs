@@ -23,7 +23,10 @@
 // SPDX-FileCopyrightText: 2025 BeeRobynn
 // SPDX-FileCopyrightText: 2025 Blu
 // SPDX-FileCopyrightText: 2025 ScyronX
+<<<<<<< HEAD
 // SPDX-FileCopyrightText: 2025 core-mene
+=======
+>>>>>>> parent of 1ab453cadc (Revert "agrhfsqdhqzrg")
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -32,6 +35,7 @@ using Content.Server.Atmos.EntitySystems;
 using Content.Server.Mech.Components;
 using Content.Server.Power.Components;
 using Content.Server.Power.EntitySystems;
+using Content.Server.Emp; // Monolith
 using Content.Shared.ActionBlocker;
 using Content.Shared.Damage;
 using Content.Shared.DoAfter;
@@ -89,6 +93,7 @@ public sealed partial class MechSystem : SharedMechSystem
         SubscribeLocalEvent<MechComponent, MechExitEvent>(OnMechExit);
 
         SubscribeLocalEvent<MechComponent, DamageChangedEvent>(OnDamageChanged);
+        SubscribeLocalEvent<MechComponent, EmpAttemptEvent>(OnEmpAttempt);
         SubscribeLocalEvent<MechComponent, MechEquipmentRemoveMessage>(OnRemoveEquipmentMessage);
 
         SubscribeLocalEvent<MechComponent, UpdateCanMoveEvent>(OnMechCanMoveEvent);
@@ -319,6 +324,11 @@ public sealed partial class MechSystem : SharedMechSystem
 
         if (TryComp<MobStateComponent>(component.PilotSlot.ContainedEntity, out var state) && state.CurrentState != MobState.Alive) // Frontier - Eject players from mechs when they go crit
             TryEject(uid, component);
+    }
+
+    private void OnEmpAttempt(EntityUid uid, MechComponent comp, EmpAttemptEvent args) // Monolith
+    {
+                base.BreakMech(uid, comp);
     }
 
     private void ToggleMechUi(EntityUid uid, MechComponent? component = null, EntityUid? user = null)

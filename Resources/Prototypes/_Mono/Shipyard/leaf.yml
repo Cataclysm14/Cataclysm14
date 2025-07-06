@@ -5,43 +5,43 @@
 # SPDX-FileCopyrightText: 2024 Long YM
 # SPDX-FileCopyrightText: 2024 Maxtone
 # SPDX-FileCopyrightText: 2024 Whatstone
-# SPDX-FileCopyrightText: 2025 KM-Catman
-# SPDX-FileCopyrightText: 2025 monolith8319
+# SPDX-FileCopyrightText: 2025 RealSchepka
 # SPDX-FileCopyrightText: 2025 starch
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 # Author Info
-# GitHub: KM-Catman
-# Discord: mow_mow
+# GitHub: RealSchepka
+# Discord: schepka
 
+# Shuttle Notes:
+#
 - type: vessel
-  id: Leaf
+  id: Shareholder
   parent: BaseVessel
-  name: BBI Leaf
-  description: An unsurprisingly leaf-shaped botanical vessel. Comes with a moderate 20 trays. Wine not included.
-  price: 40000
-  category: Medium
+  name: DME Shareholder
+  description: Cheap and affordable salvage vessel that comes with a comfortable lounge at the cost of leaving no budget for the rest.
+  price: 18000
+  category: Small
   group: Shipyard
-  shuttlePath: /Maps/_Mono/Shuttles/leaf.yml
+  shuttlePath: /Maps/_Mono/Shuttles/shareholder.yml
   guidebookPage: null
   class:
-  - Civilian
-  - Botany
+  - Salvage
   engine:
-  - Uranium
+  - Plasma
 
 - type: gameMap
-  id: Leaf
-  mapName: 'BBI Leaf'
-  mapPath: /Maps/_Mono/Shuttles/leaf.yml
+  id: Shareholder
+  mapName: 'DME Shareholder'
+  mapPath: /Maps/_Mono/Shuttles/shareholder.yml
   minPlayers: 0
   stations:
-    Leaf:
+    Shareholder:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Leaf CIV{1}'
+          mapNameTemplate: 'Shareholder CIV{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

@@ -16,6 +16,10 @@
 // SPDX-FileCopyrightText: 2023 and_a
 // SPDX-FileCopyrightText: 2023 deltanedas
 // SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+<<<<<<< HEAD
+=======
+// SPDX-FileCopyrightText: 2024 Aviu00
+>>>>>>> parent of 1ab453cadc (Revert "agrhfsqdhqzrg")
 // SPDX-FileCopyrightText: 2024 Bixkitts
 // SPDX-FileCopyrightText: 2024 Cojoke
 // SPDX-FileCopyrightText: 2024 DrSmugleaf
@@ -34,9 +38,13 @@
 // SPDX-FileCopyrightText: 2024 nikthechampiongr
 // SPDX-FileCopyrightText: 2025 Ark
 // SPDX-FileCopyrightText: 2025 Leon Friedrich
+<<<<<<< HEAD
 // SPDX-FileCopyrightText: 2025 Redrover1760
 // SPDX-FileCopyrightText: 2025 SlamBamActionman
 // SPDX-FileCopyrightText: 2025 core-mene
+=======
+// SPDX-FileCopyrightText: 2025 SlamBamActionman
+>>>>>>> parent of 1ab453cadc (Revert "agrhfsqdhqzrg")
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -253,7 +261,7 @@ public sealed partial class GunSystem : SharedGunSystem
 
                             FireEffects(fromEffect, result.Distance, dir.Normalized().ToAngle(), hitscan, hit, user);
 
-                            var ev = new HitScanReflectAttemptEvent(user, gunUid, hitscan.Reflective, dir, false);
+                            var ev = new HitScanReflectAttemptEvent(user, gunUid, hitscan.Reflective, dir, false, hitscan.Damage); // WD EDIT
                             RaiseLocalEvent(hit, ref ev);
 
                             if (!ev.Reflected)
