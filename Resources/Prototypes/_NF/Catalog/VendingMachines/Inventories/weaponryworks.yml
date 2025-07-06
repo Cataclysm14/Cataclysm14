@@ -116,6 +116,8 @@
     AmmoBox7.62x54mmRBigFMJ: 4294967295 # 7.62x54mmR
     AmmoBox9x19mmFMJ: 4294967295 # 9x19mm
     AmmoBox9x19mmBigFMJ: 4294967295 # 9x19mm
+    AmmoBox45_ACPFMJ: 4294967295 # .45 ACP
+    AmmoBox45_ACPBigFMJ: 4294967295 # .45 ACP
     AmmoBox45_magnumFMJ: 4294967295 # .45 magnum
     AmmoBox12_gaugeSlug: 4294967295 # 12 gauge
     AmmoBox12_gaugeBuckshot: 4294967295 # 12 gauge
