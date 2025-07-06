@@ -76,14 +76,15 @@ research-technology-rogue-experimental-equipment = Experimental Rogue Equipment
 research-technology-ussp-guns-basic = USSP Basic Armaments
 research-technology-ussp-ships-basic = USSP Tier I Ships
 research-technology-ussp-suits-basic = USSP Basic Equipment
+research-technology-ussp-explosives = Explosive charges
 
 # T2 USSP
 research-technology-ussp-guns-medium = USSP Standard Armaments
 research-technology-ussp-ships-medium = USSP Tier II Ships
 research-technology-ussp-suits-medium = USSP Basic Equipment
-research-technology-ussp-explosives = Explosive charges
 
 # T3 USSP
 research-technology-ussp-guns-advanced = USSP Advanced Armaments
 research-technology-ussp-ships-advanced = USSP Tier III Ships
 research-technology-ussp-suits-advanced = USSP Advanced Equipment
+research-technology-ussp-ammo-advanced = AP Ammunition

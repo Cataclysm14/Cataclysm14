@@ -8,8 +8,8 @@
   id: ClothingOuterHardsuitUsspL10UssP
   result: ClothingOuterHardsuitUsspL10
   materials:
-    Steel: 8500
-    Plasteel: 5000
+    Steel: 1000
+    Plasteel: 1500
     Cloth: 1500
 
 - type: latheRecipe
@@ -17,8 +17,8 @@
   id: ClothingOuterHardsuitUsspL10AUssP
   result: ClothingOuterHardsuitUsspL10A
   materials:
-    Steel: 8500
-    Plasteel: 5000
+    Steel: 1000
+    Plasteel: 1500
     Cloth: 1500
 
 - type: latheRecipe
@@ -26,7 +26,7 @@
   id: ClothingOuterHardsuitUsspL27UssP
   result: ClothingOuterHardsuitUsspL27
   materials:
-    Steel: 8500
+    Steel: 3000
     Plasteel: 5000
     Cloth: 1500
 
@@ -35,7 +35,7 @@
   id: ClothingOuterHardsuitUsspM10UssP
   result: ClothingOuterHardsuitUsspM10
   materials:
-    Steel: 8500
+    Steel: 3000
     Plasteel: 5000
     Cloth: 1500
     Gold: 1500
@@ -45,7 +45,7 @@
   id: ClothingModsuitChestplateUSSPVaryagUssP
   result: ClothingModsuitChestplateUSSPVaryag
   materials:
-    Steel: 10000
+    Steel: 85000
     Plasteel: 7000
     Cloth: 1500
     Gold: 1500
@@ -55,7 +55,7 @@
   id: ClothingModsuitChestplateUSSPZastavnikUssP
   result: ClothingModsuitChestplateUSSPZastavnik
   materials:
-    Steel: 20000
+    Steel: 85000
     Plasteel: 10000
     Cloth: 1500
     Gold: 3000

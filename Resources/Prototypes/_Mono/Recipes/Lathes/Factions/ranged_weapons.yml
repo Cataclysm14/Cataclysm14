@@ -211,8 +211,8 @@
 
 - type: latheRecipe
   parent: BaseWeaponRecipeLong
-  id: WeaponPistolN1984USSP
-  result: WeaponPistolN1984
+  id: WeaponRevolverMatebaUSSP
+  result: WeaponRevolverMateba
   materials:
     Steel: 1000
     Plasteel: 1500

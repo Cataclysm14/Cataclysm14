@@ -29,7 +29,7 @@
   parent: BaseAmmoUraniumIntermediateMagazineRecipe
   id: Magazine45_magnumPistolUranium
   result: Magazine45_magnumPistolUranium
-  
+
 #Speedloaders
 
 - type: latheRecipe
@@ -83,8 +83,13 @@
   parent: BaseAmmoPracticeIntermediateAmmoBoxRecipe
   id: AmmoBox45_magnumPractice
   result: AmmoBox45_magnumPractice
-  
+
 - type: latheRecipe
   parent: BaseAmmoUraniumIntermediateAmmoBoxRecipe
   id: AmmoBox45_magnumUranium
   result: AmmoBox45_magnumUranium
+
+- type: latheRecipe
+  parent: BaseAmmoFMJIntermediateAmmoBoxRecipe
+  id: AmmoBox45_magnumAP
+  result: AmmoBox45_magnumAP

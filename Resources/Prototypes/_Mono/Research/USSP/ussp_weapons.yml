@@ -31,11 +31,12 @@
   cost: 20000
   recipeUnlocks:
   - WeaponRifleAK502USSP
-  - WeaponPistolN1984USSP
+  - WeaponRevolverMatebaUSSP
   - Magazine7.62x39mmFMJ
   - SpeedLoader45_magnumFMJ
   - AmmoBox7.62x39mmFMJ
   - AmmoBox45_magnumFMJ
+  - Magazine7.62x39mmEmpty
   technologyPrerequisites:
   - UsspBasicGuns
 
@@ -54,3 +55,17 @@
   technologyPrerequisites:
   - UsspMediumGuns
 
+- type: technology
+  id: UsspAdvancedAmmo
+  name: research-technology-ussp-ammo-advanced
+  icon:
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/45_magnum.rsi
+    state: base
+  discipline: UsspWeapons
+  tier: 3
+  cost: 20000
+  recipeUnlocks:
+  - AmmoBox7.62x39mmSubsonic
+  - AmmoBox45_magnumAP
+  technologyPrerequisites:
+  - UsspAdvancedGuns
