@@ -196,9 +196,10 @@
   id: WeaponRifleAK502USSP
   result: WeaponRifleAK502
   materials:
-    Steel: 1200
-    Plasteel: 1000
-    Plastic: 500
+    Steel: 1800
+    Plasteel: 800
+    Plastic: 1200
+    Silver: 100
 
 - type: latheRecipe
   parent: BaseWeaponRecipeLong
