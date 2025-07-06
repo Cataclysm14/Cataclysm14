@@ -8,7 +8,7 @@
   result: BroadswordHarness
   completetime: 10
   materials:
-    Steel: 3500
+    Steel: 6500
     Glass: 3000
 
 - type: latheRecipe
@@ -16,7 +16,7 @@
   result: BroadswordHead
   completetime: 10
   materials:
-    Steel: 2500
+    Steel: 4500
     Glass: 600
     Uranium: 100
 
@@ -25,35 +25,35 @@
   result: BroadswordLArm
   completetime: 10
   materials:
-    Steel: 2000
+    Steel: 4000
 
 - type: latheRecipe
   id: BroadswordLLeg
   result: BroadswordLLeg
   completetime: 10
   materials:
-    Steel: 2000
+    Steel: 4000
 
 - type: latheRecipe
   id: BroadswordRLeg
   result: BroadswordRLeg
   completetime: 10
   materials:
-    Steel: 2200
+    Steel: 4200
 
 - type: latheRecipe
   id: BroadswordRArm
   result: BroadswordRArm
   completetime: 10
   materials:
-    Steel: 2200
+    Steel: 4200
 
 - type: latheRecipe
   id: HalberdHarness
   result: HalberdHarness
   completetime: 10
   materials:
-    Steel: 4000
+    Steel: 8000
     Glass: 3000
 
 - type: latheRecipe
@@ -61,7 +61,7 @@
   result: SabreHarness
   completetime: 10
   materials:
-    Steel: 3500
+    Steel: 4500
     Glass: 3000
 
 #S4 Mechs
@@ -70,7 +70,7 @@
   result: FlailHarness
   completetime: 10
   materials:
-    Steel: 8000
+    Steel: 16000
     Glass: 3000
 
 - type: latheRecipe
@@ -78,7 +78,7 @@
   result: FlailHead
   completetime: 10
   materials:
-    Steel: 3500
+    Steel: 4500
     Glass: 250
     Diamond: 200
 
@@ -87,28 +87,28 @@
   result: FlailLArm
   completetime: 10
   materials:
-    Steel: 4000
+    Steel: 8000
 
 - type: latheRecipe
   id: FlailLLeg
   result: FlailLLeg
   completetime: 10
   materials:
-    Steel: 2500
+    Steel: 4500
 
 - type: latheRecipe
   id: FlailRLeg
   result: FlailRLeg
   completetime: 10
   materials:
-    Steel: 2500
+    Steel: 4500
 
 - type: latheRecipe
   id: FlailRArm
   result: FlailRArm
   completetime: 10
   materials:
-    Steel: 4000
+    Steel: 8000
 
 - type: latheRecipe
   id: SpyglassHarness
@@ -124,7 +124,7 @@
   result: MaceHarness
   completetime: 10
   materials:
-    Steel: 6500
+    Steel: 10500
     Glass: 1500
 
 - type: latheRecipe
