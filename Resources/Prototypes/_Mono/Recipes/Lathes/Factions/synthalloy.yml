@@ -1,7 +1,7 @@
 - type: latheRecipe
   id: SynthalloyProductionTsf
   result: MaterialSynthalloy10
-  completetime: 20
+  completetime: 4
   materials:
     Plasteel: 1500
     Plastic: 500
