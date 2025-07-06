@@ -1777,4 +1777,4 @@
     proto: ContractorT3
   price: 1250
   equipment:
-    jumpsuit: ClothingUniformJabroni
+    jumpsuit: UniformJabroni
