@@ -449,6 +449,14 @@
       types:
         Blunt: 15 # Frontier 30<0.5, monolith 0.5<15
         Structural: 15 # Frontier 35<1, monolith 1<15
+    ignoreWeaponGrid: true # Mono
+    # Mono start
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    scale: 0.65
+    requireNoGrid: true
+    shape: triangle
+    # Mono end
   - type: Ammo
     muzzleFlash: HitscanEffect
   - type: TimedDespawn

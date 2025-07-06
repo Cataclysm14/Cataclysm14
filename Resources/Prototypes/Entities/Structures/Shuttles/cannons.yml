@@ -378,6 +378,13 @@
   - type: ExtensionCableReceiver # Frontier
   - type: ApcPowerReceiver # Frontier
     powerLoad: 1500 # Frontier
+    # Mono Start
   - type: FireControllable
   - type: ShipGunClass
     shipClass: Light
+  - type: RadarBlip
+    radarColor: "#FF0040"
+    scale: 1.25
+  - type: ShipGunType
+    shipType: Ballistic
+    # Mono End
