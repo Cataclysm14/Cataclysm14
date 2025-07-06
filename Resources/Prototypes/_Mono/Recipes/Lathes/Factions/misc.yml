@@ -116,3 +116,21 @@
     Plastic: 200
     Plasma: 100
     Gold: 50
+
+- type: latheRecipe
+  parent: BaseToolRecipe
+  id: SeismicChargeUSSP
+  result: SeismicCharge
+  completetime: 2
+  materials:
+    Plastic: 100
+    Plasma: 200
+
+- type: latheRecipe
+  parent: BaseToolRecipe
+  id: TearGasGrenadeUSSP
+  result: TearGasGrenade
+  completetime: 2
+  materials:
+    Steel: 100
+    Plasma: 200

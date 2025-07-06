@@ -1,0 +1,35 @@
+
+- type: latheRecipePack
+  id: MonoUSSPWeaponsDynamicRanged
+  recipes:
+  - WeaponRifleAK502USSP
+  - WeaponPistolN1984USSP
+  - WeaponDP29USSP
+  - WeaponRifleSVSUSSP
+  - WeaponSniperMosinUSSP
+
+- type: latheRecipePack
+  id: MonoUSSPMiscDynamic
+  recipes:
+  - SeismicChargeUSSP
+  - TearGasGrenadeUSSP
+
+- type: latheRecipePack
+  id: MonoUSSPArmorDynamic
+  recipes:
+  - ClothingOuterHardsuitUsspL10UssP
+  - ClothingOuterHardsuitUsspL10AUssP
+  - ClothingOuterHardsuitUsspL27UssP
+  - ClothingOuterHardsuitUsspM10UssP
+  - ClothingModsuitChestplateUSSPVaryagUssP
+  - ClothingModsuitChestplateUSSPZastavnikUssP
+
+- type: latheRecipePack
+  id: MonoUSSPVouchersDynamic
+  recipes:
+  - GadyukaVoucherUssp
+  - NatiskVoucherUssp
+  - GruznykVoucherUssp
+  - DrakonVoucherUssp
+  - SekundaVoucherUssp
+  - TunguskaVoucherUssp

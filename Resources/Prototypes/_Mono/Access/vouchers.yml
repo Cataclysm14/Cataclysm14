@@ -8,6 +8,26 @@
   name: id-card-access-level-voucher
 
 - type: accessLevel
+  id: USSPTunguska
+  name: id-card-access-level-voucher
+
+- type: accessLevel
+  id: USSPGruznyk
+  name: id-card-access-level-voucher
+
+- type: accessLevel
+  id: USSPDrakon
+  name: id-card-access-level-voucher
+
+- type: accessLevel
+  id: USSPNatisk
+  name: id-card-access-level-voucher
+
+- type: accessLevel
+  id: USSPSekunda
+  name: id-card-access-level-voucher
+
+- type: accessLevel
   id: VoucherProwler
   name: id-card-access-level-voucher
 

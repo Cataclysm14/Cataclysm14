@@ -174,3 +174,48 @@
     Plastic: 500
     Silver: 900
     Uranium: 200
+
+# Ussp guns
+
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
+  id: WeaponRifleSVSUSSP
+  result: WeaponRifleSVS
+  materials:
+    Steel: 100
+    Wood: 1000
+
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
+  id: WeaponSniperMosinUSSP
+  result: WeaponSniperMosin
+  materials:
+    Steel: 100
+    Plasteel: 100
+    Wood: 1000
+
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
+  id: WeaponRifleAK502USSP
+  result: WeaponRifleAK502
+  materials:
+    Steel: 1200
+    Plasteel: 1000
+    Plastic: 500
+
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
+  id: WeaponDP29USSP
+  result: WeaponDP29
+  materials:
+    Steel: 2500
+    Plasteel: 2000
+    Plastic: 1500
+
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
+  id: WeaponPistolN1984USSP
+  result: WeaponPistolN1984
+  materials:
+    Steel: 1000
+    Plasteel: 1500

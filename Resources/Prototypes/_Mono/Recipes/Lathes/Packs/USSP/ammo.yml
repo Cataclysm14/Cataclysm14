@@ -1,0 +1,12 @@
+
+- type: latheRecipePack
+  id: MonoUSSPAmmo
+  recipes:
+  - MagazineDP29
+  - Magazine7.62x39mmFMJ
+  - SpeedLoader45_magnumFMJ
+  - AmmoBox7.62x39mmFMJ
+  - AmmoBox45_magnumFMJ
+  - Magazine7.62x54mmRFMJ
+  - SpeedLoader7.62x54mmRFMJ
+  - AmmoBox7.62x54mmRFMJ

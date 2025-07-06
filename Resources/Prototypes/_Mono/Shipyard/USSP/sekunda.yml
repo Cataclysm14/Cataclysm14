@@ -10,7 +10,7 @@
   price: 55000
   category: Medium
   group: Ussp
-  access: USSP
+  access: USSPSekunda
   shuttlePath: /Maps/_Mono/Shuttles/USSP/sekunda.yml
   guidebookPage: Null
   class:

@@ -81,3 +81,14 @@
     supportedDisciplines:
     - Rogue
     - Arsenal
+
+- type: entity
+  id: ResearchAndDevelopmentServerUssp
+  parent: BaseRdServerFaction
+  name: Ussp R&D server
+  description: Contains the collective knowledge of the Ussp in this sector.
+  components:
+  - type: TechnologyDatabase
+    supportedDisciplines:
+    - Ussp
+    - Arsenal

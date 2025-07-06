@@ -1,6 +1,6 @@
 - type: cargoBounty
   id: USSPBountyArtifact
-  reward: 8500
+  reward: 20000
   description: ussp-bounty-description-artifact
   idPrefix: USSP
   entries:
