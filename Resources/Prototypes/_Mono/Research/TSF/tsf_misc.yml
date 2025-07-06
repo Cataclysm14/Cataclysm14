@@ -86,3 +86,17 @@
   cost: 10000
   recipeUnlocks:
   - NanolaminateFoamGrenadeTSF
+  technologyPrerequisites:
+    - TsfSynthalloy
+
+- type: technology
+  id: TsfSynthalloy
+  name: research-technology-tsfmc-synthalloy
+  icon:
+    sprite: Objects/Weapons/Grenades/metalfoam.rsi
+    state: icon
+  discipline: TsfmcGear
+  tier: 3
+  cost: 50000
+  recipeUnlocks:
+    - SynthalloyProductionTsf

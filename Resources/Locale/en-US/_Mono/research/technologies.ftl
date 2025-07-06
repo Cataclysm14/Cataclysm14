@@ -24,6 +24,7 @@ research-technology-tsfmc-advanced-meds = Reconstructive Technologies
 research-technology-tsfmc-flyssa-voucher = Flyssa Procurement License
 research-technology-tsfmc-mr8 = MARSOC Firearms Development
 research-technology-tsfmc-xlr556 = Infantry Combat Weapon System
+research-technology-tsfmc-synthalloy = Experimental Material Science
 
 # T1 rogue
 research-technology-rogue-jaws = Advanced Jaws of Life

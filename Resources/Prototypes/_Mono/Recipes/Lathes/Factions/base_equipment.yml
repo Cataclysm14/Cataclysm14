@@ -36,12 +36,10 @@
   parent: MonoHardsuitT1Recipe
   completetime: 15
   materials:
-    Glass: 400
-    Steel: 5000
-    Plastic: 2500
-    Plasteel: 7000
+    Plastic: 200
+    Steel: 4000
+    Synthalloy: 2500
+    Plasteel: 4000
     Durathread: 3500
-    Bluespace: 100
-    Silver: 750
-    Gold: 750
-    Uranium: 500
+    Silver: 500
+    Gold: 500
