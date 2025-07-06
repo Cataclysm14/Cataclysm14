@@ -68,8 +68,10 @@
   components:
   - type: TechnologyDatabase
     supportedDisciplines:
-    - Tsfmc
-    - Arsenal
+    - TsfmcWeaponry
+    - TsfmcGear
+    - TsfmcEquipment
+    - TsfmcShipyard
 
 - type: entity
   id: ResearchAndDevelopmentServerRogues
@@ -79,5 +81,7 @@
   components:
   - type: TechnologyDatabase
     supportedDisciplines:
-    - Rogue
-    - Arsenal
+    - RogueWeaponry
+    - RogueGear
+    - RogueEquipment
+    - RogueShipyard
