@@ -97,6 +97,7 @@
   - type: TechnologyDatabase
     supportedDisciplines:
     - Ussp
-    - UsspWeapons
     - UsspShipyard
     - UsspEquipment
+    - UsspWeapons
+

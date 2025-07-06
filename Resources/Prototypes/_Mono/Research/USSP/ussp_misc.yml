@@ -9,7 +9,7 @@
     sprite: Objects/Weapons/Bombs/seismic.rsi
     state: icon
   discipline: Ussp
-  tier: 2
+  tier: 1
   cost: 20000
   recipeUnlocks:
   - SeismicChargeUSSP
