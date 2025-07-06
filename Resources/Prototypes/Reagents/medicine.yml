@@ -248,7 +248,7 @@
         damage:
           types:
             Heat: -2
-            Shock: -2 
+            Shock: -2
             Cold: -2 # Was 1.5, Buffed due to limb damage changes(GoobStation)
       - !type:HealthChange
         conditions:
@@ -872,13 +872,27 @@
   metabolisms:
     Medicine:
       effects:
-      - !type:HealthChange
+      - !type:HealthChange # Mono
+        conditions:
+        - !type:ReagentThreshold
+          min: 0
+          max: 30
         damage:
           groups:
             Burn: -3
             Toxin: -3
             Airloss: -3
             Brute: -3 # Was 2, Buffed due to limb damage changes(GoobStation)
+      - !type:HealthChange # Mono - Added overdose
+        conditions:
+        - !type:ReagentThreshold
+          min: 30
+        damage:
+          groups:
+            Burn: 1
+            Toxin: 1
+            Airloss: 1
+            Brute: 1
 
 - type: reagent
   id: Ultravasculine
