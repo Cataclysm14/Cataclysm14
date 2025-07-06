@@ -108,8 +108,8 @@
     state: gear
   tierPrerequisites:
     1: 0
-    2: 0.75
-    3: 0.75
+    2: 0.50
+    3: 0.50
 
 - type: techDiscipline
   id: UsspShipyard
@@ -120,8 +120,8 @@
     state: shipyard
   tierPrerequisites:
     1: 0
-    2: 0.75
-    3: 0.75
+    2: 0.50
+    3: 0.50
 
 - type: techDiscipline
   id: UsspEquipment
@@ -132,8 +132,8 @@
     state: equipment
   tierPrerequisites:
     1: 0
-    2: 0.75
-    3: 0.75
+    2: 0.50
+    3: 0.50
 
 - type: techDiscipline
   id: UsspWeapons

@@ -6,7 +6,7 @@
   id: UsspBasicShips
   name: research-technology-ussp-ships-basic
   icon:
-    sprite: _Mono/Research/Ussp/ships.rsi
+    sprite: _Mono/Interface/Misc/research_icons_ussp.rsi
     state: icon-tier1
   discipline: UsspShipyard
   tier: 1
@@ -20,7 +20,7 @@
   id: UsspMediumShips
   name: research-technology-ussp-ships-medium
   icon:
-    sprite: _Mono/Research/Ussp/ships.rsi
+    sprite: _Mono/Interface/Misc/research_icons_ussp.rsi
     state: icon-tier2
   discipline: UsspShipyard
   tier: 2
@@ -35,7 +35,7 @@
   id: UsspAdvancedShips
   name: research-technology-ussp-ships-advanced
   icon:
-    sprite: _Mono/Research/Ussp/ships.rsi
+    sprite: _Mono/Interface/Misc/research_icons_ussp.rsi
     state: icon-tier3
   discipline: UsspShipyard
   tier: 3
