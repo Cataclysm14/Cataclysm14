@@ -109,7 +109,7 @@
     Plasma: 7500
     Uranium: 5000
     Silver: 10000
-    Gold: 10000
+    Gold: 5000
 # Rogues
 - type: latheRecipe
   parent: BaseVoucherRecipe
