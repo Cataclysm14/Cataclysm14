@@ -451,7 +451,7 @@
   description: uplink-security-omnizine-jug-desc
   productEntity: JugOmnizine
   cost:
-    FederationMilitaryCredit: 100
+    FederationMilitaryCredit: 96
   categories:
     - UplinkSecurityUtility
   conditions:

@@ -99,7 +99,7 @@
   description: uplink-pirate-omnizine-jug-desc
   productEntity: JugOmnizine
   cost:
-    Doubloon: 100
+    Doubloon: 96
   categories:
   - UplinkPirateMedical
   conditions:
