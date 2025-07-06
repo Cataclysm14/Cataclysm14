@@ -72,7 +72,7 @@
     brokenState: broadsword-broken
     mechToPilotDamageMultiplier: 0
     airtight: true
-    maxIntegrity: 400
+    maxIntegrity: 600
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -162,7 +162,7 @@
     brokenState: broadsword-broken
     mechToPilotDamageMultiplier: 0
     airtight: true
-    maxIntegrity: 300
+    maxIntegrity: 450
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -206,7 +206,7 @@
 
 - type: entity
   id: AFInterceptorG
-  parent: [ BaseMech, LightMechMount, BaseRestrictedContraband ]
+  parent: [ BaseMech, LightMultiroleMountEquipment, BaseRestrictedContraband ]
   name: AF-28-G "Sabre"
   description: A modification of the Broadsword, the Sabre sacrifices it's jetpack and spaceproof shielding to function on planets. Has two hardpoints, which can carry Light or Medium hardpoints.
   components:
@@ -242,7 +242,7 @@
     brokenState: broadsword-broken
     mechToPilotDamageMultiplier: 0
     airtight: false
-    maxIntegrity: 450
+    maxIntegrity: 800
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -322,7 +322,7 @@
     brokenState: flail-broken
     mechToPilotDamageMultiplier: 0
     airtight: true
-    maxIntegrity: 600
+    maxIntegrity: 900
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -402,7 +402,7 @@
     brokenState: flail-broken
     mechToPilotDamageMultiplier: 0
     airtight: true
-    maxIntegrity: 450
+    maxIntegrity: 500
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -483,7 +483,7 @@
     mechToPilotDamageMultiplier: 0
     maxEquipmentAmount: 1
     airtight: true
-    maxIntegrity: 400
+    maxIntegrity: 600
     pilotWhitelist:
       components:
         - HumanoidAppearance

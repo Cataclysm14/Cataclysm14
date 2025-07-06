@@ -1,28 +1,11 @@
-# SPDX-FileCopyrightText: 2023 Leon Friedrich
-# SPDX-FileCopyrightText: 2023 Nemanja
-# SPDX-FileCopyrightText: 2023 Scribbles0
-# SPDX-FileCopyrightText: 2023 TsjipTsjip
-# SPDX-FileCopyrightText: 2024 Kara
-# SPDX-FileCopyrightText: 2024 Mr. 27
-# SPDX-FileCopyrightText: 2024 QueerNB
-# SPDX-FileCopyrightText: 2024 ScarKy0
-# SPDX-FileCopyrightText: 2024 metalgearsloth
-# SPDX-FileCopyrightText: 2025 Ark
-# SPDX-FileCopyrightText: 2025 RikuTheKiller
-# SPDX-FileCopyrightText: 2025 core-mene
-# SPDX-FileCopyrightText: 2025 revoemagcoconut
-# SPDX-FileCopyrightText: 2025 wewman222
-#
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
 meta:
   format: 7
   category: Grid
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 07/06/2025 00:08:37
-  entityCount: 2133
+  time: 07/06/2025 06:29:51
+  entityCount: 2144
 maps: []
 grids:
 - 1
@@ -1885,7 +1868,7 @@ entities:
       pos: 14.5,-6.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -9445.277
+      secondsUntilStateChange: -9527.011
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1913,7 +1896,7 @@ entities:
       pos: 19.5,-11.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -22388.959
+      secondsUntilStateChange: -22470.693
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1932,7 +1915,7 @@ entities:
       pos: 11.5,11.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -32427.932
+      secondsUntilStateChange: -32509.666
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1954,7 +1937,7 @@ entities:
       pos: 14.5,-25.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -24767.133
+      secondsUntilStateChange: -24848.867
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1965,7 +1948,7 @@ entities:
       pos: 12.5,-25.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -19331.52
+      secondsUntilStateChange: -19413.254
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1991,7 +1974,7 @@ entities:
       pos: 23.5,-14.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -20963.719
+      secondsUntilStateChange: -21045.453
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2011,7 +1994,7 @@ entities:
       pos: 5.5,-14.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -9686.877
+      secondsUntilStateChange: -9768.61
       state: Opening
     - type: DeviceLinkSink
       invokeCounter: 4
@@ -2086,7 +2069,7 @@ entities:
       pos: 10.5,5.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -37990.016
+      secondsUntilStateChange: -38071.75
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2098,7 +2081,7 @@ entities:
       pos: 11.5,5.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -37990.547
+      secondsUntilStateChange: -38072.28
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2122,7 +2105,7 @@ entities:
       pos: 10.5,-1.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -34477.527
+      secondsUntilStateChange: -34559.26
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2151,7 +2134,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -28778.06
+      secondsUntilStateChange: -28859.795
       state: Opening
   - uid: 65
     components:
@@ -10233,6 +10216,65 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+- proto: MechAirTank
+  entities:
+  - uid: 2118
+    components:
+    - type: Transform
+      pos: 11.384234,3.8759973
+      parent: 1
+  - uid: 2119
+    components:
+    - type: Transform
+      pos: 7.5092344,-7.437969
+      parent: 1
+  - uid: 2120
+    components:
+    - type: Transform
+      pos: 7.3686094,-8.453594
+      parent: 1
+  - uid: 2140
+    components:
+    - type: Transform
+      pos: 9.752421,-20.46373
+      parent: 1
+  - uid: 2141
+    components:
+    - type: Transform
+      pos: 9.783671,-17.104355
+      parent: 1
+- proto: MechThruster
+  entities:
+  - uid: 2121
+    components:
+    - type: Transform
+      pos: 9.149859,-10.266094
+      parent: 1
+  - uid: 2122
+    components:
+    - type: Transform
+      pos: 8.852984,-8.625469
+      parent: 1
+  - uid: 2129
+    components:
+    - type: Transform
+      pos: 12.254236,3.8208508
+      parent: 1
+  - uid: 2130
+    components:
+    - type: Transform
+      pos: 9.722986,-0.28852415
+      parent: 1
+  - uid: 2135
+    components:
+    - type: Transform
+      pos: 9.658671,-21.30748
+      parent: 1
+  - uid: 2139
+    components:
+    - type: Transform
+      pos: 9.799296,-18.05748
+      parent: 1
 - proto: MediumMechDMR
   entities:
   - uid: 1543
