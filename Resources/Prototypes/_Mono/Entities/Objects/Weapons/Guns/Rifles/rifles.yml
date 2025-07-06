@@ -1,5 +1,3 @@
-# SPDX-FileCopyrightText: 2025 Blu
-# SPDX-FileCopyrightText: 2025 BlueHNT
 # SPDX-FileCopyrightText: 2025 HungryCuban
 # SPDX-FileCopyrightText: 2025 core-mene
 # SPDX-FileCopyrightText: 2025 starch
@@ -134,70 +132,53 @@
   - type: StaticPrice
     price: 100
     vendPrice: 9000
-  - type: PirateBountyItem
-    id: StandardFactionLongarm
 
+#Mercenary vulcan
 - type: entity
-  name: XLR-556 ICWS (5.56x45mm)
-  parent: [BaseWeaponRifle, BaseGunWieldable, BaseC2ContrabandUnredeemable]
-  id: WeaponRifleXlr556
-  description: A proposed "next-gen" rifle for TSF standard infantry.
+  name: FCM-C Vulcan (7.62x51mm)
+  parent: WeaponRifleVulcan
+  id: WeaponRifleVulcanCFCM
+  description: The "Vulcan" Civilian Medium combat rifle (Fusil de Combat Moyen Civil) in 7.62x51mm, this civilian version only has semi-automatic mode and reduced firerate.
   components:
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Rifles/xlr556.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/WeaponRifleVulcanCFCM.rsi
     layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-0
-      map: ["enum.GunVisualLayers.Mag"]
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
   - type: GunWieldBonus
     minAngle: -20
-    maxAngle: -47
+    maxAngle: -50
   - type: Gun
-    minAngle: 23
-    maxAngle: 73
-    angleIncrease: 9
-    angleDecay: 20
-    fireRate: 11 # 660 rpm
-    shotsPerBurst: 3
+    minAngle: 21
+    maxAngle: 52
+    angleIncrease: 1.4
+    angleDecay: 24
+    fireRate: 2.25
+    selectedMode: SemiAuto
     availableModes:
-    - Burst
-    - FullAuto
     - SemiAuto
-    soundGunshot:
-      path: /Audio/_Goobstation/Weapons/Guns/Gunshots/thock.ogg
-  - type: Clothing
-    sprite: _Mono/Objects/Weapons/Guns/Rifles/xlr556.rsi
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmFMJ
-        insertSound: /Audio/Weapons/Guns/MagIn/sfrifle_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/hpistol_magout.ogg
+        startingItem: Magazine7.62x51mmFMJ
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - Magazine5.56x45mmFMJ
+            - Magazine7.62x51mmFMJ
+            - Magazine7.62x51mmLowCapacityFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge5.56x45mmFMJ
+        startingItem: Cartridge7.62x51mmFMJ
         priority: 1
         whitelist:
           tags:
-          - Cartridge5.56x45mmFMJ
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
-  - type: MagazineVisuals
-    magState: mag
-    steps: 1
-    zeroVisible: true
-  - type: Appearance
+            - Cartridge7.62x51mmFMJ
   - type: StaticPrice
-    price: 3500
-    vendPrice: 9000
-  - type: PirateBountyItem
-    id: StandardFactionLongarm
+    price: 4000
+    vendPrice: 33200

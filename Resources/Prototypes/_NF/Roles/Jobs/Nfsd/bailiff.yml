@@ -102,7 +102,7 @@
     pocket1: WeaponPistolMk58 #WeaponPistolMk58Nonlethal
   storage:
     back:
-    - Magazine45_ACPPistolFMJ
+    - Magazine9x19mmPistolFMJ
     - BaseSecurityUplinkRadioOfficer
     - ShipVoucherNfsdBailiff
     - RubberStampBailiff

@@ -71,7 +71,7 @@
     pocket2: BookSecurity
   storage:
     back:
-    - Magazine45_ACPPistolFMJ
+    - Magazine9x19mmPistolFMJ
     - FederationMilitaryCredit50
     - BaseSecurityUplinkRadio
     - RadioHandheldNF # Mono

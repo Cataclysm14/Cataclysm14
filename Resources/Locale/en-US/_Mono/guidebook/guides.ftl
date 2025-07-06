@@ -1,8 +1,7 @@
 # Shipyard entries
 guide-entry-shipyard-argent = Argent
-guide-entry-shipyard-judiciary = Judiciary
 guide-entry-shipyard-sabine = Sabine
-guide-entry-shipyard-takeaway = Takeaway
+guide-entry-shipyard-judiciary = Judiciary
 
 # Gunnery Guides
 guide-entry-gunnery = Ship Warfare

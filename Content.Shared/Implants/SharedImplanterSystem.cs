@@ -1,21 +1,3 @@
-// SPDX-FileCopyrightText: 2022 keronshb
-// SPDX-FileCopyrightText: 2023 Bakke
-// SPDX-FileCopyrightText: 2023 Checkraze
-// SPDX-FileCopyrightText: 2023 DrSmugleaf
-// SPDX-FileCopyrightText: 2023 Leon Friedrich
-// SPDX-FileCopyrightText: 2023 TemporalOroboros
-// SPDX-FileCopyrightText: 2023 Vordenburg
-// SPDX-FileCopyrightText: 2023 deltanedas
-// SPDX-FileCopyrightText: 2023 metalgearsloth
-// SPDX-FileCopyrightText: 2023 themias
-// SPDX-FileCopyrightText: 2024 Plykiya
-// SPDX-FileCopyrightText: 2024 Tayrtahn
-// SPDX-FileCopyrightText: 2025 Redrover1760
-// SPDX-FileCopyrightText: 2025 SlamBamActionman
-// SPDX-FileCopyrightText: 2025 Zachary Higgs
-//
-// SPDX-License-Identifier: AGPL-3.0-or-later
-
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Shared.Containers.ItemSlots;
@@ -273,7 +255,7 @@ public abstract class SharedImplanterSystem : EntitySystem
                 }
                 else
                 {
-                    DrawFailure(implanter, target, user);
+                    DrawCatastrophicFailure(implanter, component, user);
                 }
             }
 
@@ -282,7 +264,7 @@ public abstract class SharedImplanterSystem : EntitySystem
         }
         else
         {
-            DrawFailure(implanter, target, user);
+            DrawCatastrophicFailure(implanter, component, user);
         }
     }
 
@@ -305,10 +287,12 @@ public abstract class SharedImplanterSystem : EntitySystem
         RaiseLocalEvent(target, ref ev);
     }
 
-    private void DrawFailure(EntityUid implant, EntityUid target, EntityUid user) // Mono - removed backfire
+    private void DrawCatastrophicFailure(EntityUid implanter, ImplanterComponent component, EntityUid user)
     {
-        var failedMessage = Loc.GetString("implanter-draw-failed");
-        _popup.PopupEntity(failedMessage, target, user);
+        _damageableSystem.TryChangeDamage(user, component.DeimplantFailureDamage, ignoreResistances: true, origin: implanter);
+        var userName = Identity.Entity(user, EntityManager);
+        var failedCatastrophicallyMessage = Loc.GetString("implanter-draw-failed-catastrophically", ("user", userName));
+        _popup.PopupEntity(failedCatastrophicallyMessage, user, PopupType.MediumCaution);
     }
 
     private void ImplantMode(EntityUid uid, ImplanterComponent component)
