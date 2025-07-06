@@ -597,6 +597,7 @@
     sprite: Clothing/Mask/neckgaiter.rsi
   - type: Clothing
     sprite: Clothing/Mask/neckgaiter.rsi
+  - type: BreathMask
   - type: IdentityBlocker
     coverage: MOUTH
   - type: Tag
