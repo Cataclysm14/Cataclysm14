@@ -82,7 +82,6 @@
     Silver: 5000
     Gold: 5000
 
-
 - type: latheRecipe
   parent: BaseVoucherRecipe
   id: TunguskaVoucherUssp

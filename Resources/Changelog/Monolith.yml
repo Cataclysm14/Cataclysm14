@@ -6142,3 +6142,36 @@ Entries:
   id: 711
   time: '2025-07-06T10:24:41.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1174
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Ported new airlock open/close and bolt/unbolt SFX from SS13
+        Paradise/Funky/Null.
+  id: 712
+  time: '2025-07-06T13:34:41.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1178
+- author: starch70
+  changes:
+    - type: Add
+      message: Added a new material for top-tier TSF lathe recipes.
+    - type: Add
+      message: >-
+        Split faction trees into 4 disciplines. Should help with getting more
+        specific techs.
+    - type: Add
+      message: >-
+        Rogues can make thermals now, TSF can make NVGs, portable rechargers,
+        ore/construction boxes, and industrial ore processor boards.
+    - type: Tweak
+      message: Prowler voucher research cost halved.
+  id: 713
+  time: '2025-07-06T13:35:08.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1177
+- author: BlueHNT
+  changes:
+    - type: Tweak
+      message: Tweaked admin erase sound
+  id: 714
+  time: '2025-07-06T13:36:15.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1176

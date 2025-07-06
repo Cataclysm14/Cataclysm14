@@ -44,6 +44,7 @@
     - MonoUSSPArmorDynamic
     - MonoUSSPMiscDynamic
     - MonoUSSPWeaponsDynamicRanged
+    - MonoTSFStructuresDynamic
   - type: MaterialStorage
     whitelist:
       tags:
