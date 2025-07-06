@@ -518,21 +518,21 @@
         tags:
           - SecurityUplink
 
-- type: listing
-  id: UplinkSecurityCombatPen
-  name:  uplink-security-combat-pen-name
-  description: uplink-security-combat-pen-desc
-  productEntity: CombatMedipen
-  icon: { sprite: Objects/Specific/Medical/medipen.rsi, state: morphen }
-  cost:
-    FederationMilitaryCredit: 12
-  categories:
-    - UplinkSecurityUtility
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - SecurityUplink
+#- type: listing
+#  id: UplinkSecurityCombatPen
+#  name:  uplink-security-combat-pen-name
+#  description: uplink-security-combat-pen-desc
+#  productEntity: CombatMedipen
+#  icon: { sprite: Objects/Specific/Medical/medipen.rsi, state: morphen }
+#  cost:
+#    FederationMilitaryCredit: 12
+#  categories:
+#    - UplinkSecurityUtility
+#  conditions:
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - SecurityUplink
 
 - type: listing
   id: UplinkSecurityCyborgModule
