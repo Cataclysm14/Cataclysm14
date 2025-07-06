@@ -12,7 +12,7 @@
     whitelist:
       tags:
         - Cartridge4.6x30mmFMJ
-    capacity: 14
+    capacity: 21
   - type: Item
     size: Small
   - type: ContainerContainer
@@ -45,7 +45,7 @@
     whitelist:
       tags:
         - Cartridge4.6x30mmFMJ
-    capacity: 22
+    capacity: 38
   - type: Item
     size: Small
   - type: ContainerContainer
