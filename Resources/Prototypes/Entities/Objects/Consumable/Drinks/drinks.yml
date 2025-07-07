@@ -2162,7 +2162,8 @@
     sprite: Objects/Consumable/Drinks/ginvodkaglass.rsi
     state: icon
   - type: Tag
-    tags: VodkaBounty
+    tags:
+    - VodkaBounty
 
 - type: entity
   parent: DrinkGlass
