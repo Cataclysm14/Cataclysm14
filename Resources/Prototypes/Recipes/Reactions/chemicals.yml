@@ -530,17 +530,16 @@
   products:
     SodiumPolyacrylate: 4
 
-# Balancing
-#- type: reaction
-#  id: Nocturine
-#  impact: High
-#  reactants:
-#    Impedrezene:
-#      amount: 2
-#    Vestine:
-#      amount: 1
-#  products:
-#    Nocturine: 1
+- type: reaction
+  id: Nocturine
+  impact: High
+  reactants:
+    Impedrezene:
+      amount: 2
+    Vestine:
+      amount: 1
+  products:
+    Nocturine: 1
 
 - type: reaction
   id: Tazinide
