@@ -15,9 +15,10 @@
   guidebookPage: Null
   class:
   - Patrol
+  - Mining
+  - Salvage
   engine:
   - Uranium
-  cloakHunter: true
   company:
   - TSF
 
