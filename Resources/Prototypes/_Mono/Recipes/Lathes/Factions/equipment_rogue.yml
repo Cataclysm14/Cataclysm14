@@ -33,17 +33,19 @@
   parent: MonoHardsuitT2Recipe
   result: ClothingOuterHardsuitSyndieElite
 
+# T2 stealthsuit
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitCybersunStealthRogue
+  parent: MonoHardsuitT3Recipe
+  result: ClothingOuterHardsuitCybersunStealth
+
 # T3 synthalloy
 
 - type: latheRecipe
   id: ClothingOuterHardsuitJuggernautRogue
   parent: MonoHardsuitT3TsfRecipe
   result: ClothingOuterHardsuitJuggernaut
-
-- type: latheRecipe
-  id: ClothingOuterHardsuitCybersunStealthRogue
-  parent: MonoHardsuitT3Recipe
-  result: ClothingOuterHardsuitCybersunStealth
 
 - type: latheRecipe
   id: ClothingOuterHardsuitSyndieCommanderRogue

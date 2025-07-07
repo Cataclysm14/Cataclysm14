@@ -48,6 +48,7 @@ research-technology-rogue-cqc-guns = Close-Quarters Combat
 research-technology-rogue-hypospray = Rapid Reagent Administration
 research-technology-rogue-emag = Basic Hacking Procedures
 research-technology-rogue-hristov = Heavy Ballistics
+research-technology-rogue-stealthsuit = Metamaterial Fibers
 
 # T3 rogue
 research-technology-rogue-prowler-voucher = Stealthcraft Technologies

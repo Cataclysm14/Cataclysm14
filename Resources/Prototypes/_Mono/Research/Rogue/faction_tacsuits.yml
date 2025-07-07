@@ -49,10 +49,26 @@
   - RogueAdvancedEquipment
 
 - type: technology
+  id: RogueStealthsuit
+  name: research-technology-rogue-stealthsuit
+  icon:
+    sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/cybersunstealth.rsi
+    state: icon
+  discipline: RogueEquipment
+  tier: 2
+  cost: 20000
+  recipeUnlocks:
+  - ClothingOuterHardsuitCybersunStealthRogue
+  technologyPrerequisites:
+  - RogueBasicEquipment
+  - RogueAdvancedEquipment
+  - RogueSyndicateTacsuits
+
+- type: technology
   id: RogueSyndicateTacsuitsT3
   name: research-technology-rogue-syndicate-tacsuits-t3
   icon:
-    sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/cybersunstealth.rsi
+    sprite: Clothing/OuterClothing/Hardsuits/cybersun.rsi
     state: icon
   discipline: RogueEquipment
   tier: 3
@@ -60,7 +76,6 @@
   recipeUnlocks:
   - ClothingOuterHardsuitJuggernautRogue
   - ClothingOuterHardsuitSyndieCommanderRogue
-  - ClothingOuterHardsuitCybersunStealthRogue
   technologyPrerequisites:
   - RogueBasicEquipment
   - RogueAdvancedEquipment
