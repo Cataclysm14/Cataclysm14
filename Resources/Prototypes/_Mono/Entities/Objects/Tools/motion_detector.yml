@@ -6,14 +6,8 @@
   components:
   - type: Item
   - type: Sprite
-    sprite: Objects/Tools/handheld_mass_scanner.rsi
-    state: icon
-    layers:
-      - state: icon
-      - state: scanner
-        shader: unshaded
-        visible: true
-        map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+    sprite: _RMC14/Objects/Tools/motion_detector.rsi
+    state: detector
   - type: ItemToggle
   - type: ProximityDetector
     criteria:
@@ -30,12 +24,6 @@
     beepSound:
       path: "/Audio/Items/locator_beep.ogg"
   - type: Appearance
-  - type: GenericVisualizer
-    visuals:
-      enum.PowerCellSlotVisuals.Enabled:
-        enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
   - type: PowerCellDraw
     drawRate: 1.0
   - type: ToggleCellDraw
@@ -51,15 +39,6 @@
     slots:
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-  - type: Sprite
-    sprite: Objects/Tools/handheld_mass_scanner.rsi
-    state: icon
-    layers:
-      - state: icon
-      - state: scanner
-        shader: unshaded
-        visible: false
-        map: [ "enum.PowerDeviceVisualLayers.Powered" ]
 
 - type: entity
   id: MotionDetectorBorg
