@@ -345,7 +345,7 @@
   - type: ShipGunClass
     shipClass: Heavy
 
-# CHARON
+# MiniCHARON
 
 - type: entity
   id: WeaponTurretCharonette
@@ -383,7 +383,7 @@
     powerUseActive: 4000
   - type: Actions
   - type: ProjectileBatteryAmmoProvider
-    proto: ShipMininsRailgunProjectile
+    proto: ShipMiniRailgunProjectile
     fireCost: 1000
   - type: Fixtures
     fixtures:
