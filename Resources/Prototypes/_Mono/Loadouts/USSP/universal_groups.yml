@@ -18,7 +18,7 @@
   - USSPModsuitUSSPVaryag
   fallbacks:
   - USSPBackpack
-  subgroups: 
+  subgroups:
   - USSPBackpack
 
 - type: loadoutGroup
@@ -29,7 +29,7 @@
   - USSPModsuitUSSPVaryag
   fallbacks:
   - USSPBackpack
-  subgroups: 
+  subgroups:
   - USSPBackpack
 
 - type: loadoutGroup
@@ -38,12 +38,16 @@
   loadouts:
   - USSPClothingCoat
   - USSPClothingL10A
+  subgroups:
+  - TsfmcOuterClothing
 
 - type: loadoutGroup
   id: USSPOuterClothing
   name: loadout-group-contractor-outerclothing
   loadouts:
   - USSPClothingL10
+  subgroups:
+  - TsfmcOuterClothing
 
 - type: loadoutGroup
   id: USSPJumpsuit
