@@ -162,8 +162,8 @@ public sealed class ProjectileSystem : SharedProjectileSystem
     {
         base.Update(frameTime);
 
-        var query = EntityQueryEnumerator<ProjectileComponent, PhysicsComponent, TransformComponent, FixturesComponent>();
-        while (query.MoveNext(out var uid, out var projectileComp, out var physicsComp, out var xform, out var fixturesComp))
+        var query = EntityQueryEnumerator<ProjectileComponent, PhysicsComponent, TransformComponent>();
+        while (query.MoveNext(out var uid, out var projectileComp, out var physicsComp, out var xform))
         {
             if (projectileComp.ProjectileSpent)
                 continue;
