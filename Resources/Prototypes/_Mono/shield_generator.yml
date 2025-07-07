@@ -99,7 +99,7 @@
   - type: Appearance
   - type: ShipShieldEmitter
     damageLimit: 50000
-    damageOverloadTimePunishment: 60
+    damageOverloadTimePunishment: 120
     shieldColor: "#FF3333"
     powerUpSound: !type:SoundPathSpecifier
         path: "/Audio/Effects/teleport_arrival.ogg"
@@ -123,7 +123,7 @@
     maxDraw: 80000 # Base is 150000
     unpoweredBonus: 3 # Base is 6
     damageLimit: 30000
-    damageOverloadTimePunishment: 50
+    damageOverloadTimePunishment: 100
     shieldColor: "#9933FF"
   - type: Sprite
     sprite: _Mono/Structures/ShuttleComponents/shield.rsi
@@ -157,7 +157,7 @@
     maxDraw: 60000
     unpoweredBonus: 2.5
     damageLimit: 15000 # Mono
-    damageOverloadTimePunishment: 40 # Mono
+    damageOverloadTimePunishment: 80
     shieldColor: "#3399FF"
   - type: Sprite
     sprite: _Mono/Structures/ShuttleComponents/shield.rsi
