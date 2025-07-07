@@ -54,6 +54,8 @@ research-technology-rogue-prowler-voucher = Stealthcraft Technologies
 research-technology-rogue-energy-weapon = Advanced Plasma Weaponization
 research-technology-rogue-access-breaker = Advanced Hacking Procedures
 research-technology-rogue-hf-sword = Weaponised Resonance Technology
+research-technology-rogue-syndicate-tacsuits = Blood-Red Engineering
+research-technology-rogue-syndicate-tacsuits-t3 = Synthalloy Utilization
 
 # Space Mecha Technologies
 research-technology-broadsword = Armored Frame Production

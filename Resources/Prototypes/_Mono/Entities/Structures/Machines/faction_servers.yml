@@ -101,3 +101,28 @@
     - UsspEquipment
     - UsspWeapons
 
+- type: entity
+  id: ResearchAndDevelopmentServerDebug
+  parent: BaseRdServerFaction
+  name: debug R&D server
+  description: Contains the collective knowledge of Everyone. Damn
+  components:
+  - type: TechnologyDatabase
+    supportedDisciplines:
+    - Industrial
+    - Arsenal
+    - Experimental
+    - CivilianServices
+    - TsfmcWeaponry
+    - TsfmcGear
+    - TsfmcEquipment
+    - TsfmcShipyard
+    - RogueWeaponry
+    - RogueGear
+    - RogueEquipment
+    - RogueShipyard
+    - Ussp
+    - UsspShipyard
+    - UsspEquipment
+    - UsspWeapons
+

@@ -28,23 +28,27 @@
     idleState: icon
     runningState: icon
     dynamicPacks:
+    # rogue start
     - MonoRogueWeaponsDynamicMelee
     - MonoRogueWeaponsDynamicRanged
     - MonoRogueVouchersDynamic
     - MonoRogueMiscDynamic
     - MonoRogueAmmo
     - MonoRogueGearDynamic
+    - MonoRogueGearProDynamic
+    # TSF start
     - MonoTSFWeaponsDynamicMelee
     - MonoTSFWeaponsDynamicRanged
     - MonoTSFVouchersDynamic
     - MonoTSFMiscDynamic
     - MonoTSFAmmo
     - MonoTSFGearDynamic
+    - MonoTSFStructuresDynamic
+    # USSP start
     - MonoUSSPVouchersDynamic
     - MonoUSSPArmorDynamic
     - MonoUSSPMiscDynamic
     - MonoUSSPWeaponsDynamicRanged
-    - MonoTSFStructuresDynamic
     - MonoUSSPAmmo
   - type: MaterialStorage
     whitelist:

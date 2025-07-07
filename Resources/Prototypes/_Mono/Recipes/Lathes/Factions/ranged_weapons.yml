@@ -130,8 +130,8 @@
 
 - type: latheRecipe
   parent: BaseWeaponRecipeLong
-  id: WeaponRifleAK502Rogue
-  result: WeaponRifleAK502
+  id: WeaponRifleM90Rogue
+  result: WeaponRifleM90
   materials:
     Steel: 1800
     Plasteel: 800
