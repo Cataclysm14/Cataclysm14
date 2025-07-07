@@ -36,6 +36,7 @@
   access:
   - Pirate
   - VoucherProwler
+  - RogueCommander
   accessGroups:
   - GeneralAccess
   special:
