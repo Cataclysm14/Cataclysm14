@@ -38,7 +38,7 @@
         - MidImpassable
         - HighImpassable
         - LowImpassable
-        hard: False
+        hard: false
   - type: Projectile
     impactEffect: BulletImpactEffect
     damage:
@@ -57,6 +57,7 @@
   components:
   - type: TriggerOnCollide
     fixtureID: projectile
+    ignoreFixtureCheck: false
   - type: Projectile
     damage:
       types:

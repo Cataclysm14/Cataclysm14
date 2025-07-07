@@ -268,7 +268,7 @@
 - type: entity
   id: ShipCyrexaProjectile
   name: CYREXA 220mm projectile
-  parent: BaseBulletTrigger
+  parent: BaseBulletArtilleryTrigger
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
