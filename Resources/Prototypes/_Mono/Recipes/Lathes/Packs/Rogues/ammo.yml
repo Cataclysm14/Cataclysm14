@@ -5,6 +5,9 @@
 - type: latheRecipePack
   id: MonoRogueAmmo
   recipes:
+  - Magazine7.62x39mmFMJ
+  - Magazine7.62x39mmEmpty
+  - AmmoBox7.62x39mmFMJ
   - Magazine7.62x51mmFMJ
   - Magazine7.62x51mmEmpty
   - AmmoBox7.62x51mmFMJ
