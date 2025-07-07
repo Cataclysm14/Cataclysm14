@@ -350,7 +350,7 @@
 - type: entity
   id: WeaponTurretCharonette
   name: M194 CHARONETTE mass driver
-  parent: BallisticArtillery
+  parent: BallisticArtilleryUnanchorable
   description: A smaller, more compact railgun that fires a large slug at rapid velocity, capable of big damage to enemy ships. Medium linear accelerator, can be remotely activated or linked up to a GCS.
   components:
   - type: StaticPrice
@@ -419,7 +419,7 @@
   - type: ShipGunType
     shipType: Ballistic
   - type: ShipGunClass
-    shipClass: Heavy
+    shipClass: Medium
 
 # CHARON
 
