@@ -10,35 +10,32 @@ public sealed partial class PointDiskConsoleComponent : Component
     /// <summary>
     /// How much it costs to print a 1k point disk
     /// </summary>
-    [DataField("pricePerSmallDisk"), ViewVariables(VVAccess.ReadWrite)]
+    [DataField("pricePer1KDisk"), ViewVariables(VVAccess.ReadWrite)]
     public int PricePer1KDisk = 1000;
 
     /// <summary>
     /// How much it costs to print a 5k point disk
     /// </summary>
-    [DataField("pricePerMediumDisk"), ViewVariables(VVAccess.ReadWrite)]
+    [DataField("pricePer5KDisk"), ViewVariables(VVAccess.ReadWrite)]
     public int PricePer5KDisk = 5000;
 
     /// <summary>
     /// How much it costs to print a 10k point disk
     /// </summary>
-    [DataField("pricePerMediumDisk"), ViewVariables(VVAccess.ReadWrite)]
+    [DataField("pricePer10KDisk"), ViewVariables(VVAccess.ReadWrite)]
     public int PricePer10KDisk = 10000;
 
     /// <summary>
     /// The prototype of what's being printed
     /// </summary>
     [DataField("diskPrototype1K", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>)), ViewVariables(VVAccess.ReadWrite)]
-    public string Disk1KPrototype = "PointDisk1K";
+    public string Disk1KPrototype = "ResearchDisk";
 
     [DataField("diskPrototype5K", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>)), ViewVariables(VVAccess.ReadWrite)]
-    public string Disk5KPrototype = "PointDisk5K";
+    public string Disk5KPrototype = "ResearchDisk5K";
 
     [DataField("diskPrototype10K", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>)), ViewVariables(VVAccess.ReadWrite)]
-    public string Disk10KPrototype = "PointDisk10K";
-
-    [DataField, ViewVariables(VVAccess.ReadWrite)] // Frontier
-    public bool DiskRare = false; // Frontier
+    public string Disk10KPrototype = "ResearchDisk10K";
 
     /// <summary>
     /// How long it takes to print <see cref="DiskPrototype"/>
