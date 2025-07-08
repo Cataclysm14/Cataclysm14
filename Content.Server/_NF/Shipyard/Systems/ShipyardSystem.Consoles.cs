@@ -198,7 +198,7 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
         {
             PlayDenySound(player, shipyardConsoleUid, component);
             ConsolePopup(player, Loc.GetString(ev.CancelReason));
-            TryQueueDel(shuttleUid);
+            Del(shuttleUid);
             return;
         }
 
