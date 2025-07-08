@@ -100,6 +100,10 @@ namespace Content.Client.Popups
             if (message == null)
                 return;
 
+            // Filter out specific messages
+            if (message.StartsWith("+") || message.StartsWith("combat", StringComparison.OrdinalIgnoreCase))
+                return;
+
             if (recordReplay && _replayRecording.IsRecording)
             {
                 if (entity != null)
