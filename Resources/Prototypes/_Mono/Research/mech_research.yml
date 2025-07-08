@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 wewman222
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: technology
   id: Broadsword
   name: research-technology-broadsword
