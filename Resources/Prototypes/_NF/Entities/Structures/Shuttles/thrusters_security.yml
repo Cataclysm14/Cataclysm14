@@ -10,10 +10,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 600  # Considering we need a lot of thrusters didn't want to make an individual one too tanky
+        damage: 1500  # Considering we need a lot of thrusters didn't want to make an individual one too tanky
       behaviors:
         - !type:DoActsBehavior
           acts: ["Destruction"]
+  - type: Thruster # Mono
+    baseThrust: 65
+    thrust: 65
   - type: Machine
     board: ThrusterSecurityMachineCircuitboard
 
@@ -29,12 +32,15 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 600  # Considering we need a lot of thrusters didn't want to make an individual one too tanky
+        damage: 1500  # Considering we need a lot of thrusters didn't want to make an individual one too tanky
       behaviors:
         - !type:DoActsBehavior
           acts: ["Destruction"]
   - type: Machine
     board: ThrusterSecurityMachineCircuitboard
+  - type: Thruster # Mono
+    baseThrust: 65
+    thrust: 65
   - type: ContainerContainer
     containers:
       machine_board: !type:Container # FIXME: Why do these need to be defined here?  What's missing?
@@ -60,6 +66,9 @@
     sprite: _NF/Structures/Shuttles/gyroscope.rsi
   - type: Machine
     board: GyroscopeSecurityMachineCircuitboard
+  - type: Thruster # Mono
+    baseThrust: 65
+    thrust: 65
   - type: ContainerContainer
     containers:
       machine_board: !type:Container # FIXME: Why do these need to be defined here?  What's missing?
@@ -72,8 +81,8 @@
   suffix: Security
   components:
   - type: Thruster
-    baseThrust: 250
-    thrust: 250
+    baseThrust: 150 # Mono
+    thrust: 150 # Mono
   - type: ApcPowerReceiver
     powerLoad: 200
   - type: Sprite
