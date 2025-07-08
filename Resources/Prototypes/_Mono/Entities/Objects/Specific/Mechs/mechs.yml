@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 ScyronX
 # SPDX-FileCopyrightText: 2025 wewman222
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
@@ -101,7 +103,7 @@
     mechToPilotDamageMultiplier: 0
     maxEquipmentAmount: 3
     airtight: true
-    maxIntegrity: 400
+    maxIntegrity: 600
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -192,7 +194,7 @@
     mechToPilotDamageMultiplier: 0
     maxEquipmentAmount: 3
     airtight: true
-    maxIntegrity: 300
+    maxIntegrity: 450
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -233,10 +235,11 @@
     - DoorBumpOpener
     - FootstepSound
     - Halberd
+    - MilitaryMechBounty
 
 - type: entity
   id: AFInterceptorG
-  parent: [ BaseMech, LightMechMount, BaseRestrictedContraband ]
+  parent: [ BaseMech, LightMultiroleMountEquipment, BaseRestrictedContraband ]
   name: AF-28-G "Sabre"
   description: A modification of the Broadsword, the Sabre sacrifices it's jetpack and spaceproof shielding to function on planets. Has two hardpoints, which can carry Light or Medium hardpoints.
   components:
@@ -273,7 +276,7 @@
     mechToPilotDamageMultiplier: 0
     maxEquipmentAmount: 3
     airtight: false
-    maxIntegrity: 450
+    maxIntegrity: 500
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -313,6 +316,7 @@
     - DoorBumpOpener
     - FootstepSound
     - Sabre
+    - MilitaryMechBounty
 
 #4x4 mechas
 - type: entity
@@ -354,7 +358,7 @@
     mechToPilotDamageMultiplier: 0
     maxEquipmentAmount: 3
     airtight: true
-    maxIntegrity: 600
+    maxIntegrity: 900
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -395,6 +399,7 @@
     - DoorBumpOpener
     - FootstepSound
     - Flail
+    - MilitaryMechBounty
 
 - type: entity
   id: AFFlailE
@@ -435,7 +440,7 @@
     mechToPilotDamageMultiplier: 0
     maxEquipmentAmount: 3
     airtight: true
-    maxIntegrity: 450
+    maxIntegrity: 500
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -476,6 +481,7 @@
     - DoorBumpOpener
     - FootstepSound
     - Spyglass
+    - MilitaryMechBounty
 
 - type: entity
   id: AFMace
@@ -516,7 +522,7 @@
     mechToPilotDamageMultiplier: 0
     maxEquipmentAmount: 2
     airtight: true
-    maxIntegrity: 400
+    maxIntegrity: 600
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -557,3 +563,4 @@
     - DoorBumpOpener
     - FootstepSound
     - Mace
+    - MilitaryMechBounty
