@@ -683,9 +683,10 @@ public sealed partial class ShuttleMapControl : BaseShuttleControl
     /// </summary>
     protected void DrawData(DrawingHandleScreen handle, string text, Color color)
     {
+        var margin = 5f;
         var font = _font;
         var dimensions = handle.GetDimensions(font, text, 1f);
-        var position = new Vector2(15f, Height - dimensions.Y - 15f);
+        var position = new Vector2(margin, PixelHeight - dimensions.Y - margin);
         handle.DrawString(font, position, text, color);
     }
 }
