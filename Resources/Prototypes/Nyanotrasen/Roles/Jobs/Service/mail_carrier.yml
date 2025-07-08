@@ -1,7 +1,7 @@
 - type: job
   id: MailCarrier
   name: job-name-mail-carrier
-  description: job-name-mail-carrier
+  description: job-description-mail-carrier # Mono
   startingGear: MailCarrierGear
   alwaysUseSpawner: true
   playTimeTracker: JobMailCarrier
