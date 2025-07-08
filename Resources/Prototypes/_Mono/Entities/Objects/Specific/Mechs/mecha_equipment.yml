@@ -59,15 +59,3 @@
     - IFFMechMount
   - type: StaticPrice
     price: 500
-
-#Some bullshit here so tags don't eat my face
-- type: entity
-  id: LightMultiroleMountEquipment
-  abstract: true
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Tag
-    tags:
-    - LightMultiroleMount
-  - type: StaticPrice
-    price: 500
