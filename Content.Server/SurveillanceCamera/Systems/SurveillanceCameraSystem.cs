@@ -6,6 +6,8 @@ using Content.Server.Power.Components;
 using Content.Shared.ActionBlocker;
 using Content.Shared.DeviceNetwork;
 using Content.Shared.Power;
+using Content.Shared.Silicons.StationAi;
+using Content.Shared.StationAi;
 using Content.Shared.SurveillanceCamera;
 using Content.Shared.Verbs;
 using Robust.Server.GameObjects;
@@ -22,6 +24,7 @@ public sealed class SurveillanceCameraSystem : EntitySystem
     [Dependency] private readonly DeviceNetworkSystem _deviceNetworkSystem = default!;
     [Dependency] private readonly UserInterfaceSystem _userInterface = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
+    [Dependency] private readonly SharedStationAiSystem _stationAi = default!;
 
     // Pings a surveillance camera subnet. All cameras will always respond
     // with a data message if they are on the same subnet.
@@ -253,6 +256,12 @@ public sealed class SurveillanceCameraSystem : EntitySystem
         RemoveActiveViewers(camera, new(component.ActiveViewers), null, component);
         component.Active = false;
 
+        // Disable AI vision when camera is deactivated
+        if (TryComp<StationAiVisionComponent>(camera, out var visionComp))
+        {
+            _stationAi.SetVisionEnabled((camera, visionComp), false);
+        }
+
         // Send a targetted event to all monitors.
         foreach (var monitor in component.ActiveMonitors)
         {
@@ -281,6 +290,12 @@ public sealed class SurveillanceCameraSystem : EntitySystem
             if (attemptEv.Cancelled)
                 return;
             component.Active = setting;
+
+            // Enable AI vision when camera is activated
+            if (TryComp<StationAiVisionComponent>(camera, out var visionComp))
+            {
+                _stationAi.SetVisionEnabled((camera, visionComp), true);
+            }
         }
         else
         {
