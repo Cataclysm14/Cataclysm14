@@ -145,12 +145,6 @@
       shoes:
       - state: equipped-FEET-sealed
 
-  - type: ComponentToggler
-    components:
-    - type: ClothingSpeedModifier
-      walkModifier: 1.2
-      sprintModifier: 1.2
-
 # Volta
 - type: entity
   parent: ClothingShoesBase
