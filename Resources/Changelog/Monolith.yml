@@ -6467,3 +6467,10 @@ Entries:
   id: 744
   time: '2025-07-07T21:55:42.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1218
+- author: Onezero0
+  changes:
+    - type: Add
+      message: Added the TSF Welder, a small engineering/resource extraction vessel.
+  id: 745
+  time: '2025-07-08T01:38:04.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1209
