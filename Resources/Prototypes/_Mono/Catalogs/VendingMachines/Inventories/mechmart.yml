@@ -1,0 +1,13 @@
+﻿- type: vendingMachineInventory
+  id: MechMartVendInventory
+  startingInventory:
+    BroadswordFlatpack: 4294967295 # Infinite (was limited before but swadian kept malding)
+    HalberdFlatpack: 4294967295 # Infinite (was limited before but swadian kept malding)
+    SabreFlatpack: 4294967295 # Infinite (was limited before but swadian kept malding)
+    LightMechaAutocannon: 4294967295 # Infinite (was limited before but swadian kept malding)
+    LightMechaSMG: 4294967295 # Infinite (was limited before but swadian kept malding)
+    LightMechaShotgun: 4294967295 # Infinite (was limited before but swadian kept malding)
+    MediumMechDMR: 4294967295 # Infinite (was limited before but swadian kept malding)
+    MediumMechCoilgun: 4294967295 # Infinite (was limited before but swadian kept malding)
+    MediumMechTOW: 4294967295 # Infinite (was limited before but swadian kept malding)
+    PowerCageMech: 4294967295 # Infinite (was limited before but swadian kept malding)

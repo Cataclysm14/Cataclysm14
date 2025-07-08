@@ -412,6 +412,8 @@
   - type: Battery
     maxCharge: 3000
     startingCharge: 3000
+  - type: StaticPrice
+    price: 100
 
 - type: entity
   id: PowerCageHigh

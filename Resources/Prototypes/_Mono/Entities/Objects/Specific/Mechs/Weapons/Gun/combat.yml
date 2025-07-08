@@ -29,6 +29,8 @@
     fireCost: 60
   - type: Appearance
   - type: AmmoCounter
+  - type: StaticPrice
+    price: 900
 
 - type: entity
   id: LightMechaSMG
@@ -55,7 +57,8 @@
     fireCost: 20
   - type: Appearance
   - type: AmmoCounter
-
+  - type: StaticPrice
+    price: 650
 
 - type: entity
   id: LightMechaShotgun
@@ -82,6 +85,8 @@
     fireCost: 100
   - type: Appearance
   - type: AmmoCounter
+  - type: StaticPrice
+    price: 1150
 
 #Medium Weapons
 - type: entity
@@ -111,6 +116,8 @@
     fireCost: 200
   - type: Appearance
   - type: AmmoCounter
+  - type: StaticPrice
+    price: 1800
 
 - type: entity
   id: MediumMechCoilgun
@@ -139,6 +146,8 @@
     fireCost: 400
   - type: Appearance
   - type: AmmoCounter
+  - type: StaticPrice
+    price: 3000
 
 - type: entity
   id: MediumMechTOW
@@ -164,9 +173,11 @@
     maxCharge: 500
   - type: ProjectileBatteryAmmoProvider
     proto: ShipMissileASM302
-    fireCost: 600
+    fireCost: 500
   - type: Appearance
   - type: AmmoCounter
+  - type: StaticPrice
+    price: 2500
 
 #Heavy Weapons
 - type: entity

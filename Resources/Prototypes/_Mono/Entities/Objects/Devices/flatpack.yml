@@ -183,3 +183,36 @@
   - type: StaticPrice
     price: 500
 
+# Mech Flatpacks
+- type: entity
+  parent: BaseNFFlatpack
+  id: BroadswordFlatpack
+  name: broadsword flatpack
+  description: A flatpack used for constructing a surplus broadsword Armored Frame
+  components:
+  - type: Flatpack
+    entity: AFInterceptor
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  parent: BaseNFFlatpack
+  id: HalberdFlatpack
+  name: halberd flatpack
+  description: A flatpack used for constructing a surplus Halberd Armored Frame
+  components:
+  - type: Flatpack
+    entity: AFInterceptorM
+  - type: StaticPrice
+    price: 2500
+
+- type: entity
+  parent: BaseNFFlatpack
+  id: SabreFlatpack
+  name: sabre flatpack
+  description: A flatpack used for constructing a surplus Sabre Armored Frame
+  components:
+  - type: Flatpack
+    entity: AFInterceptorG
+  - type: StaticPrice
+    price: 1500

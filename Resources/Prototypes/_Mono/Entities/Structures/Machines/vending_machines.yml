@@ -134,3 +134,28 @@
     # denyState: deny-unshaded
     ejectDelay: 1.9
     initialStockQuality: 0.35
+
+- type: entity
+  parent: [VendingMachineAstroVend, BaseStructureDisableAnchoring]
+  id: VendingMachineMechFlatpacks
+  name: Mech-O-Mart
+  description: Sells flatpacked surplus mechs, and assorted gear.
+  suffix: POI
+  components:
+  - type: VendingMachine
+    pack: MechMartVendInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: MarketModifier
+    mod: 10 # for the love of god don't ever set this to 1 again
+  - type: Sprite
+    sprite: _Mono/Structures/Machines/VendingMachines/drivevend.rsi
+    layers:
+    - state: "off"
+      map: [ "enum.VendingMachineVisualLayers.Base" ]
+    - state: "off"
+      map: [ "enum.VendingMachineVisualLayers.BaseUnshaded" ]
+      shader: unshaded
+    - state: panel
+      map: [ "enum.WiresVisualLayers.MaintenancePanel" ]

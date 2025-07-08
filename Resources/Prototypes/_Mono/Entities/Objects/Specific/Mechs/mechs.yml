@@ -67,7 +67,7 @@
       state: paper
   - type: FootstepModifier
     footstepSoundCollection:
-      path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+      path: /Audio/Mecha/mechmove02.ogg
   - type: Mech
     baseState: broadsword
     openState: broadsword-open
@@ -116,15 +116,6 @@
     - FootstepSound
     - Broadsword
 
-- type: entity
-  id: AFInterceptorBattery
-  parent: AFInterceptor
-  suffix: Battery
-  components:
-  - type: ContainerFill
-    containers:
-      mech-battery-slot:
-      - PowerCageHigh
 
 - type: entity
   id: AFInterceptorM
@@ -157,7 +148,7 @@
       state: paper
   - type: FootstepModifier
     footstepSoundCollection:
-      path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+      path: /Audio/Mecha/mechmove02.ogg
   - type: Mech
     baseState: broadsword
     openState: broadsword-open
@@ -238,7 +229,7 @@
       state: paper
   - type: FootstepModifier
     footstepSoundCollection:
-      path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+      path: /Audio/Mecha/mechmove02.ogg
   - type: Mech
     baseState: broadsword
     openState: broadsword-open
@@ -266,8 +257,8 @@
   - type: MovementAlwaysTouching
   # Only ground-based mecha so far. Don't use it in space. Can't move in space.
   - type: MovementSpeedModifier
-    baseWalkSpeed: 3
-    baseSprintSpeed: 6
+    baseWalkSpeed: 2
+    baseSprintSpeed: 4
   - type: Damageable
     damageModifierSet: MediumArmorNT
   - type: RadarBlip
@@ -319,7 +310,7 @@
       state: paper
   - type: FootstepModifier
     footstepSoundCollection:
-      path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+      path: /Audio/Mecha/mechmove01.ogg
   - type: Mech
     baseState: flail
     openState: flail-open
@@ -400,7 +391,7 @@
       state: paper
   - type: FootstepModifier
     footstepSoundCollection:
-      path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+      path: /Audio/Mecha/mechmove01.ogg
   - type: Mech
     baseState: flail
     openState: flail-open
@@ -481,7 +472,7 @@
       state: paper
   - type: FootstepModifier
     footstepSoundCollection:
-      path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+      path: /Audio/Mecha/mechmove01.ogg
   - type: Mech
     baseState: flail
     openState: flail-open
@@ -531,3 +522,4 @@
     - FootstepSound
     - Mace
     - MilitaryMechBounty
+
