@@ -155,6 +155,7 @@
 # SPDX-FileCopyrightText: 2025 Redrover1760
 # SPDX-FileCopyrightText: 2025 Southbridge
 # SPDX-FileCopyrightText: 2025 Velken
+# SPDX-FileCopyrightText: 2025 ark1368
 # SPDX-FileCopyrightText: 2025 core-mene
 # SPDX-FileCopyrightText: 2025 deltanedas
 # SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
@@ -163,6 +164,7 @@
 # SPDX-FileCopyrightText: 2025 mikus
 # SPDX-FileCopyrightText: 2025 slarticodefast
 # SPDX-FileCopyrightText: 2025 starch
+# SPDX-FileCopyrightText: 2025 wewman222
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -223,7 +225,7 @@
   - type: ResearchClient
   - type: TechnologyDatabase
   - type: MaterialStorageMagnetPickup # Frontier
-    range: 0.30 # Frontier
+    range: 1.50 # Mono
 
 # a lathe that can be sped up with space lube / slowed down with glue
 - type: entity
@@ -308,10 +310,10 @@
     - NFSalvageStatic # Frontier
     - NFLights # Frontier
     - NFServiceStatic # Frontier
+    - MonoRestraintsStatic # Mono
   - type: EmagLatheRecipes
     emagStaticPacks:
     - CivilianAmmoRecipePack
-    - MonoRestraintsStatic # Mono
   - type: BlueprintReceiver
     whitelist:
       tags:
@@ -467,6 +469,7 @@
     - MonoAdvancedShuttleComponents # Mono
     - MechBoardsPlus
     - AiCoreBoard
+    - S2MechBoards
   - type: MaterialStorage
     whitelist:
       tags:
@@ -528,6 +531,10 @@
     - MechWeapons
     - RipleyUpgrade
     - WeaponMechCombatArsenal
+    # Mono - Space Mecha
+    - S2Mechs
+    - SpaceMechaWeapons
+    - SpaceMechaIFF
   - type: MaterialStorage
     whitelist:
       tags:

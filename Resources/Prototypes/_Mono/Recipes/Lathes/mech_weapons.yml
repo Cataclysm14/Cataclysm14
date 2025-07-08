@@ -1,0 +1,183 @@
+# SPDX-FileCopyrightText: 2025 wewman222
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+#Light Weapons
+- type: latheRecipe
+  id: LightMechaAutocannon
+  result: LightMechaAutocannon
+  completetime: 10
+  materials:
+    Steel: 1000
+    Plastic: 200
+
+- type: latheRecipe
+  id: LightMechaSMG
+  result: LightMechaSMG
+  completetime: 10
+  materials:
+    Steel: 1000
+    Plastic: 200
+
+- type: latheRecipe
+  id: LightMechaShotgun
+  result: LightMechaShotgun
+  completetime: 10
+  materials:
+    Steel: 1000
+    Plastic: 200
+
+#Medium Weapons
+- type: latheRecipe
+  id: MediumMechDMR
+  result: MediumMechDMR
+  completetime: 10
+  materials:
+    Steel: 2000
+    Plastic: 400
+
+- type: latheRecipe
+  id: MediumMechCoilgun
+  result: MediumMechCoilgun
+  completetime: 10
+  materials:
+    Steel: 2000
+    Plastic: 400
+    Glass: 1000
+
+- type: latheRecipe
+  id: MediumMechTOW
+  result: MediumMechTOW
+  completetime: 10
+  materials:
+    Steel: 1000
+    Plastic: 200
+
+#Heavy Weapons
+- type: latheRecipe
+  id: HeavyMechRPG
+  result: HeavyMechRPG
+  completetime: 10
+  materials:
+    Steel: 6000
+    Plastic: 400
+
+- type: latheRecipe
+  id: HeavyMechCannon
+  result: HeavyMechCannon
+  completetime: 10
+  materials:
+    Steel: 6000
+    Plastic: 200
+
+- type: latheRecipe
+  id: HeavyMechProjector
+  result: HeavyMechProjector
+  completetime: 10
+  materials:
+    Steel: 6000
+    Plastic: 200
+
+- type: latheRecipe
+  id: EWACMechaFlares
+  result: EWACMechaFlares
+  completetime: 10
+  materials:
+    Steel: 4000
+    Plastic: 200
+    Gold: 5000
+    Silver: 3000
+
+
+- type: latheRecipe
+  id: EWACMechaJammer
+  result: EWACMechaJammer
+  completetime: 10
+  materials:
+    Steel: 3000
+    Plastic: 200
+    Gold: 2000
+
+- type: latheRecipe
+  id: IFFMechaBlueSquare
+  result: IFFMechaBlueSquare
+  completetime: 10
+  materials:
+    Steel: 1000
+
+- type: latheRecipe
+  id: IFFMechaBlueCircle
+  result: IFFMechaBlueCircle
+  completetime: 10
+  materials:
+    Steel: 1000
+
+- type: latheRecipe
+  id: IFFMechaBlueTriangle
+  result: IFFMechaBlueTriangle
+  completetime: 10
+  materials:
+    Steel: 1000
+
+- type: latheRecipe
+  id: IFFMechaRedSquare
+  result: IFFMechaRedSquare
+  completetime: 10
+  materials:
+    Steel: 1000
+
+- type: latheRecipe
+  id: IFFMechaRedCircle
+  result: IFFMechaRedCircle
+  completetime: 10
+  materials:
+    Steel: 1000
+
+- type: latheRecipe
+  id: IFFMechaRedTriangle
+  result: IFFMechaRedTriangle
+  completetime: 10
+  materials:
+    Steel: 1000
+
+- type: latheRecipe
+  id: IFFMechaYellowSquare
+  result: IFFMechaYellowSquare
+  completetime: 10
+  materials:
+    Steel: 1000
+
+- type: latheRecipe
+  id: IFFMechaYellowCircle
+  result: IFFMechaYellowCircle
+  completetime: 10
+  materials:
+    Steel: 1000
+
+- type: latheRecipe
+  id: IFFMechaYellowTriangle
+  result: IFFMechaYellowTriangle
+  completetime: 10
+  materials:
+    Steel: 1000
+
+- type: latheRecipe
+  id: IFFMechaGreenSquare
+  result: IFFMechaGreenSquare
+  completetime: 10
+  materials:
+    Steel: 1000
+
+- type: latheRecipe
+  id: IFFMechaGreenCircle
+  result: IFFMechaGreenCircle
+  completetime: 10
+  materials:
+    Steel: 1000
+
+- type: latheRecipe
+  id: IFFMechaGreenTriangle
+  result: IFFMechaGreenTriangle
+  completetime: 10
+  materials:
+    Steel: 1000
