@@ -239,7 +239,7 @@
 
 - type: entity
   id: AFInterceptorG
-  parent: [ BaseMech, LightMultiroleMountEquipment, BaseRestrictedContraband ]
+  parent: [ BaseMech, LightMultiroleMount, BaseRestrictedContraband ]
   name: AF-28-G "Sabre"
   description: A modification of the Broadsword, the Sabre sacrifices it's jetpack and spaceproof shielding to function on planets. Has two hardpoints, which can carry Light or Medium hardpoints.
   components:
