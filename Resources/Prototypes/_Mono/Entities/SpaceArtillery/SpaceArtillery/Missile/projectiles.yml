@@ -193,4 +193,4 @@
     detectionRange: 300
     scanArc: 50
     launchSpeed: 100
-    maxSpeed: 300
+    maxSpeed: 250
