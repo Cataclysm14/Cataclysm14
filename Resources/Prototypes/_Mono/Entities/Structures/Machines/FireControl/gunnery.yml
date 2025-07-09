@@ -132,7 +132,7 @@
 
 - type: entity
   id: GunneryServerOmega
-  parent: [GunneryServerBase]
+  parent: [BaseStructureDisableToolUse, GunneryServerBase]
   name: omega-high-power gunnery control server
   components:
   - type: Machine
@@ -148,6 +148,8 @@
     idleLoad: 100
     batteryRechargeRate: 4800
     batteryRechargeEfficiency: 0.95
+  - type: Anchorable # Sorry Flyssa, but I am NOT risking this being used for a missile bus.
+    flags: Anchorable
 
 - type: entity
   id: GunneryServerStation
