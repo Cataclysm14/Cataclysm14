@@ -110,6 +110,14 @@
   color: "#FC7303"
   image: /Textures/_Mono/Companies/HME.png
 
+  - type: company
+  id: UniversalStatesOfAmerica
+  form: Protagonist
+  name: Universal States of America
+  description: universal-states-of-america-description
+  color: "#0A3161"
+  image: /Textures/_Mono/Companies/UNSA.png
+
 # core corporations
 
 - type: company
