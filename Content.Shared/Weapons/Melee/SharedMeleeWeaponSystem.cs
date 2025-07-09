@@ -177,6 +177,13 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         if (args.SenderSession.AttachedEntity is not {} user)
             return;
 
+        // Validate that the user entity is valid
+        if (!user.IsValid())
+        {
+            Log.Error($"OnLightAttack received invalid user entity: {user} from session {args.SenderSession}");
+            return;
+        }
+
         if (!TryGetWeapon(user, out var weaponUid, out var weapon) ||
             weaponUid != GetEntity(msg.Weapon))
         {
@@ -190,6 +197,13 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
     {
         if (args.SenderSession.AttachedEntity is not {} user)
             return;
+
+        // Validate that the user entity is valid
+        if (!user.IsValid())
+        {
+            Log.Error($"OnHeavyAttack received invalid user entity: {user} from session {args.SenderSession}");
+            return;
+        }
 
         if (!TryGetWeapon(user, out var weaponUid, out var weapon) ||
             weaponUid != GetEntity(msg.Weapon) ||
@@ -205,6 +219,13 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
     {
         if (args.SenderSession.AttachedEntity is not {} user)
             return;
+
+        // Validate that the user entity is valid
+        if (!user.IsValid())
+        {
+            Log.Error($"OnDisarmAttack received invalid user entity: {user} from session {args.SenderSession}");
+            return;
+        }
 
         if (TryGetWeapon(user, out var weaponUid, out var weapon))
             AttemptAttack(user, weaponUid, weapon, msg, args.SenderSession);
@@ -551,6 +572,14 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
     private bool DoHeavyAttack(EntityUid user, HeavyAttackEvent ev, EntityUid meleeUid, MeleeWeaponComponent component, ICommonSession? session)
     {
         // TODO: This is copy-paste as fuck with DoPreciseAttack
+
+        // Validate that the user entity is valid
+        if (!user.IsValid())
+        {
+            Log.Error($"DoHeavyAttack called with invalid user entity: {user}");
+            return false;
+        }
+
         if (!TryComp(user, out TransformComponent? userXform))
             return false;
 

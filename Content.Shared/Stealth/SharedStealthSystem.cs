@@ -122,6 +122,13 @@ public abstract class SharedStealthSystem : EntitySystem
         if (args.NewPosition.EntityId != args.OldPosition.EntityId)
             return;
 
+        // Check if the entity has a StealthComponent
+        if (!HasComp<StealthComponent>(uid))
+        {
+            Log.Warning($"Entity {ToPrettyString(uid)} has StealthOnMoveComponent but is missing required StealthComponent!");
+            return;
+        }
+
         var delta = component.MovementVisibilityRate * (args.NewPosition.Position - args.OldPosition.Position).Length();
         ModifyVisibility(uid, delta);
     }
