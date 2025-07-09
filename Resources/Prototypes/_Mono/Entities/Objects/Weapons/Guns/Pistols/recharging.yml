@@ -16,21 +16,32 @@
     - suitStorage
     - Belt
   - type: Gun
-    fireRate: 4
+    fireRate: 2
     projectileSpeed: 65
     availableModes:
     - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
   - type: BasicEntityAmmoProvider
-    proto: BulletAnaconda
-    capacity: 15
-    count: 15
+    proto: BulletHawk
+    capacity: 12
+    count: 12
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 2
+    rechargeCooldown: 5
     rechargeSound:
       path: /Audio/Weapons/Guns/Cock/shotgun_close.ogg
   - type: AmmoCounter
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
+
+- type: entity
+  id: BulletHawk
+  name: bullet (7x30mm caseless)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 45
