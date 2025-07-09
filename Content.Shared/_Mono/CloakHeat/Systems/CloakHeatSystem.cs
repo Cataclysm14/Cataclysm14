@@ -20,7 +20,7 @@ public sealed class CloakHeatSystem : EntitySystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly SharedShuttleSystem _shuttle = default!;
 
-    private bool isMoving = false;
+    private bool isMoving;
 
     public override void Initialize()
     {
