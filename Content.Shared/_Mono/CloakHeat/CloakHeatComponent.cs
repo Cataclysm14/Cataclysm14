@@ -58,7 +58,7 @@ public sealed partial class CloakHeatComponent : Component
     /// Rate at which heat builds up when cloaking is active (per second).
     /// </summary>
     [DataField]
-    public float HeatBuildupRate = 1f / 240f; // 1.0 heat over 4 minutes
+    public float HeatBuildupRate = 1f / 60f; // 1.0 heat over 4 minutes
 
     /// <summary>
     /// Rate at which heat dissipates when cloaking is inactive (per second).
