@@ -85,6 +85,7 @@
   id: PirateCaptainOuterClothing
   name: loadout-group-contractor-outerclothing
   hidden: false
+  minLimit: 0
   loadouts:
   - PirateCaptainClothingOuterCoatPirate
   subgroups: # mono
@@ -137,6 +138,7 @@
 - type: loadoutGroup
   id: PirateFirstMateOuterClothing
   name: loadout-group-contractor-outerclothing
+  minLimit: 0
   loadouts:
   - PirateFirstMateClothingOuterCoatGentle
   subgroups: # mono
