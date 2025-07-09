@@ -10,7 +10,7 @@
     state: icon
   discipline: Ussp
   tier: 1
-  cost: 10000
+  cost: 20000
   recipeUnlocks:
   - SeismicChargeUSSP
   - TearGasGrenadeUSSP

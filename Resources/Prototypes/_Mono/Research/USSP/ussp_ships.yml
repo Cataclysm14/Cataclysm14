@@ -10,7 +10,7 @@
     state: icon-tier1
   discipline: UsspShipyard
   tier: 1
-  cost: 30000
+  cost: 45000
   recipeUnlocks:
   - GadyukaVoucherUssp
   - NatiskVoucherUssp
@@ -24,7 +24,7 @@
     state: icon-tier2
   discipline: UsspShipyard
   tier: 2
-  cost: 35000
+  cost: 65000
   recipeUnlocks:
   - DrakonVoucherUssp
   - SekundaVoucherUssp
@@ -39,7 +39,7 @@
     state: icon-tier3
   discipline: UsspShipyard
   tier: 3
-  cost: 70000
+  cost: 95000
   recipeUnlocks:
   - TunguskaVoucherUssp
   technologyPrerequisites:
