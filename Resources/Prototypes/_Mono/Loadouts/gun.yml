@@ -441,6 +441,20 @@
     back:
     - BoxMagazineDP29
 
+- type: loadout #Ak150
+  id: FactionAk150Loadout
+  price: 0
+  storage:
+    back:
+    - WeaponLMGHammer
+
+- type: loadout #Ak150 Ammo
+  id: FactionAk150AmmoLoadout
+  price: 0
+  storage:
+    back:
+    - BoxMagazineL6
+
 # Energy
 
 - type: loadout #Energy Gun
