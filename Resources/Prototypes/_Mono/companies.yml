@@ -111,7 +111,7 @@
   color: "#FC7303"
   image: /Textures/_Mono/Companies/HME.png
 
-  - type: company
+- type: company
   id: UniversalStatesOfAmerica
   form: Protagonist
   name: Universal States of America
