@@ -21,7 +21,9 @@ public sealed partial class ShipGunClassComponent : Component
 [Serializable, NetSerializable]
 public enum ShipGunClass
 {
+    Superlight,
     Light,
     Medium,
-    Heavy
+    Heavy,
+    Superheavy
 }
