@@ -44,7 +44,7 @@ public sealed class PointDiskConsoleSystem : EntitySystem
             RemComp(uid, printing);
             if (!console.Disk1KPrototype)
                 Spawn(console.Disk1KPrototype, xform.Coordinates);
-
+            
             if (!console.Disk5KPrototype)
                 Spawn(console.Disk5KPrototype, xform.Coordinates);
 
