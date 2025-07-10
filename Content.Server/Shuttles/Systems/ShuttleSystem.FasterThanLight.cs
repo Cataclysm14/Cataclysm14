@@ -16,6 +16,7 @@ using Content.Shared.Shuttles.Systems;
 using Content.Shared.StatusEffect;
 using Content.Shared.Timing;
 using Content.Shared.Whitelist;
+using Content.Shared._Mono.CloakHeat;
 using JetBrains.Annotations;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Components;
@@ -242,6 +243,16 @@ public sealed partial class ShuttleSystem
         {
             reason = Loc.GetString("shuttle-console-prevent");
             return false;
+        }
+
+        // Mono - Checks for excessive cloak heating
+        if (TryComp<CloakHeatComponent>(shuttleUid, out var cloakHeat))
+        {
+            if (cloakHeat.CurrentHeat >= 0.05)
+            {
+                reason = Loc.GetString("shuttle-console-cloakheat");
+                return false;
+            }
         }
 
         // Check if the shuttle is in an expedition
