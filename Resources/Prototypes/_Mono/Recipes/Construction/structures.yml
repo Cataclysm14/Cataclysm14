@@ -33,7 +33,7 @@
     state: state0
   objectType: Structure
   placementMode: SnapgridCenter
-  canRotate: true
+  canRotate: false
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
