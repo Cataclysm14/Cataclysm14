@@ -42,13 +42,13 @@ public sealed class PointDiskConsoleSystem : EntitySystem
                 continue;
 
             RemComp(uid, printing);
-            if (!console.Disk1KPrototype)
+            if (!console.Disk1K)
                 Spawn(console.Disk1KPrototype, xform.Coordinates);
-            
-            if (!console.Disk5KPrototype)
+
+            if (!console.Disk5K)
                 Spawn(console.Disk5KPrototype, xform.Coordinates);
 
-            if (!console.Disk10KPrototype)
+            if (!console.Disk10K)
                 Spawn(console.Disk10KPrototype, xform.Coordinates);
         }
     }
@@ -91,7 +91,7 @@ public sealed class PointDiskConsoleSystem : EntitySystem
         UpdateUserInterface(uid, component);
     }
 
-    private void OnPrint10KDisk(EntityUid uid, PointDiskConsoleComponent component, PointDiskConsolePrint5KDiskMessage args)
+    private void OnPrint10KDisk(EntityUid uid, PointDiskConsoleComponent component, PointDiskConsolePrint10KDiskMessage args)
     {
         if (HasComp<PointDiskConsolePrintingComponent>(uid))
             return;
