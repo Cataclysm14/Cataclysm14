@@ -8,6 +8,16 @@ public sealed class IFFConsoleBoundUserInterfaceState : BoundUserInterfaceState
 {
     public IFFFlags AllowedFlags;
     public IFFFlags Flags;
+
+    /// <summary>
+    /// the current cloak heat
+    /// </summary>
+    public float CloakHeat;
+
+    public IFFConsoleBoundUserInterfaceState(float cloakHeat = 0)
+    {
+        CloakHeat = cloakHeat;
+    }
 }
 
 [Serializable, NetSerializable]

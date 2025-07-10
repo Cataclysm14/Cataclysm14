@@ -34,6 +34,7 @@ public sealed class IFFConsoleBoundUserInterface : BoundUserInterface
             return;
 
         _window?.UpdateState(bState);
+        _window?.SetVesselHeat(bState.CloakHeat);
     }
 
     private void SendIFFMessage(bool obj)

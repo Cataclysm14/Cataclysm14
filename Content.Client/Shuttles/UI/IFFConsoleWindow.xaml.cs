@@ -41,6 +41,11 @@ public sealed partial class IFFConsoleWindow : FancyWindow,
         ShowVessel?.Invoke(pressed);
     }
 
+    public void SetVesselHeat(float currentHeat)
+    {
+        HeatPercentageLabel.Text = $"{currentHeat:0}%";
+    }
+
     public void UpdateState(IFFConsoleBoundUserInterfaceState state)
     {
         if ((state.AllowedFlags & IFFFlags.HideLabel) != 0x0)
