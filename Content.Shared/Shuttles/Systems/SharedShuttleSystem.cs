@@ -22,7 +22,7 @@ public abstract partial class SharedShuttleSystem : EntitySystem
     [Dependency] private readonly SharedPowerReceiverSystem _powerReceiverSystem = default!;
 
     public const float FTLRange = 0f;
-    public const float FTLBufferRange = 8f;
+    public const float FTLBufferRange = 20f;
 
     private EntityQuery<MapGridComponent> _gridQuery;
     private EntityQuery<PhysicsComponent> _physicsQuery;
