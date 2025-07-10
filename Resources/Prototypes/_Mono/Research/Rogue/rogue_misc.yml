@@ -76,3 +76,17 @@
   cost: 15000
   recipeUnlocks:
   - ClothingEyesThermalVisionGoggles
+
+- type: technology
+  id: RogueRadioJammer
+  name: research-technology-rogue-jammer
+  icon:
+    sprite: Objects/Devices/jammer.rsi
+    state: jammer
+  discipline: RogueGear
+  tier: 1
+  cost: 22500
+  recipeUnlocks:
+  - RadioJammerRogue
+  technologyPrerequisites:
+  - RogueEmag

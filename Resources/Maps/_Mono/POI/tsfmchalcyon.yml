@@ -8885,7 +8885,7 @@ entities:
       pos: -3.5,9.5
       parent: 1
     - type: ResearchPointSource
-      pointspersecond: 35
+      pointspersecond: 10
     missingComponents:
     - Anchorable
 - proto: Bed

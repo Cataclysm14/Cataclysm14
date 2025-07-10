@@ -2352,7 +2352,7 @@ entities:
       pos: 1.5,0.5
       parent: 1
     - type: ResearchPointSource
-      pointspersecond: 35
+      pointspersecond: 10
 - proto: Bed
   entities:
   - uid: 148

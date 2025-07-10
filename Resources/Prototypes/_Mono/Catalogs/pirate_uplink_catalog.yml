@@ -371,14 +371,14 @@
   description: uplink-pirate-radio-jammer-desc
   productEntity: RadioJammer
   cost:
-    Doubloon: 30
+    Doubloon: 35
   categories:
   - UplinkPirateUtility
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
       tags:
-      - PirateUplinkCommander
+      - PirateUplink
 
 - type: listing
   id: UplinkPirateHypopen

@@ -92,13 +92,9 @@
     state: icon
   discipline: RogueWeaponry
   tier: 2
-  cost: 35000
+  cost: 25000
   recipeUnlocks:
-  - WeaponSubMachineGunAtreidesRogue
   - WeaponShotgunBulldogRogue
-  - Magazine5.7x28mmSubMachineGunFMJ
-  - Magazine5.7x28mmSubMachineGunEmpty
-  - AmmoBox5.7x28mmFMJ
   - Magazine12_gaugeBuckshot
   - Magazine12_gaugeSlug
   - Magazine12_gaugeEmpty
@@ -108,17 +104,21 @@
   - RogueBasicGuns
 
 - type: technology
-  id: RogueHristov
-  name: research-technology-rogue-hristov
+  id: RogueT3Ballistics
+  name: research-technology-rogue-t3-ballistics
   icon:
     sprite: Objects/Weapons/Guns/Snipers/hristov.rsi
     state: base
   discipline: RogueWeaponry
   tier: 3
-  cost: 35000
+  cost: 60000
   recipeUnlocks:
   - WeaponSniperHristovRogue
   - AmmoBox145x114mmBig
+  - WeaponSubMachineGunAtreidesRogue
+  - Magazine5.7x28mmSubMachineGunFMJ
+  - Magazine5.7x28mmSubMachineGunEmpty
+  - AmmoBox5.7x28mmFMJ
   technologyPrerequisites:
   - RogueBasicGuns
   - RogueAdvancedGuns
@@ -131,7 +131,7 @@
     state: icon
   discipline: RogueWeaponry
   tier: 2
-  cost: 25000
+  cost: 20000
   recipeUnlocks:
   - WeaponRifleWSPRRogue
   - WeaponSubMachineGunMla73Rogue

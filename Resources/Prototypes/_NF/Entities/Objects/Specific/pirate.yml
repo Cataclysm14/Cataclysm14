@@ -98,11 +98,11 @@
 - type: entity
   parent: BasePirateUplink
   id: BasePirateUplinkRadioPirateCaptain
-  suffix: Commander 120
+  suffix: Commander 135
   components:
   - type: Store
     balance:
-      Doubloon: 120
+      Doubloon: 135
   - type: Tag
     tags:
     - PirateUplink
@@ -111,8 +111,8 @@
 - type: entity
   parent: BasePirateUplink
   id: BasePirateUplinkPirateCrew
-  suffix: Agent 50
+  suffix: Agent 60
   components:
   - type: Store
     balance:
-      Doubloon: 50
+      Doubloon: 60

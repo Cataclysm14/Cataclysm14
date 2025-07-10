@@ -28,11 +28,6 @@
   parent: MonoHardsuitT2Recipe
   result: ClothingOuterHardsuitSyndie
 
-- type: latheRecipe
-  id: ClothingOuterHardsuitSyndieEliteRogue
-  parent: MonoHardsuitT2Recipe
-  result: ClothingOuterHardsuitSyndieElite
-
 # T2 stealthsuit
 
 - type: latheRecipe
@@ -46,6 +41,13 @@
   id: ClothingModsuitRoguePowerCellRogue
   parent: MonoHardsuitT3Recipe
   result: ClothingModsuitRoguePowerCell
+
+# T3 syndie
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitSyndieEliteRogue
+  parent: MonoHardsuitT3Recipe
+  result: ClothingOuterHardsuitSyndieElite
 
 # T3 synthalloy
 

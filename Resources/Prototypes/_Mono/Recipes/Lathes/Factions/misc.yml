@@ -17,6 +17,17 @@
 
 - type: latheRecipe
   parent: BaseToolRecipe
+  id: RadioJammerRogue
+  result: RadioJammer
+  completetime: 2
+  materials:
+    Steel: 1500
+    Glass: 1200
+    Gold: 100
+    Silver: 100
+
+- type: latheRecipe
+  parent: BaseToolRecipe
   id: ForensicsScannerTSF
   result: ForensicScanner
   completetime: 3
