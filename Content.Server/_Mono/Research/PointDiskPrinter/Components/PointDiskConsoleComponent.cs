@@ -47,7 +47,7 @@ public sealed partial class PointDiskConsoleComponent : Component
     public bool Disk10K = true;
 
     /// <summary>
-    /// How long it takes to print <see cref="DiskPrototype"/>
+    /// How long it takes to print <see cref="PointDiskPrototype"/>
     /// </summary>
     [DataField("printDuration"), ViewVariables(VVAccess.ReadWrite)]
     public TimeSpan PrintDuration = TimeSpan.FromSeconds(1);

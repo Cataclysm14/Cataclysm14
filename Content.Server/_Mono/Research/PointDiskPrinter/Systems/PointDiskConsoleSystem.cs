@@ -42,20 +42,20 @@ public sealed class PointDiskConsoleSystem : EntitySystem
                 continue;
 
             RemComp(uid, printing);
-            if (!console.Disk1K)
+            if (console.Disk1K)
                 Spawn(console.Disk1KPrototype, xform.Coordinates);
 
-            if (!console.Disk5K)
+            if (console.Disk5K)
                 Spawn(console.Disk5KPrototype, xform.Coordinates);
 
-            if (!console.Disk10K)
+            if (console.Disk10K)
                 Spawn(console.Disk10KPrototype, xform.Coordinates);
         }
     }
 
     private void OnPrint1KDisk(EntityUid uid, PointDiskConsoleComponent component, PointDiskConsolePrint1KDiskMessage args)
     {
-        if (HasComp<DiskConsolePrintingComponent>(uid))
+        if (HasComp<PointDiskConsolePrintingComponent>(uid))
             return;
 
         if (!_research.TryGetClientServer(uid, out var server, out var serverComp))
@@ -105,7 +105,7 @@ public sealed class PointDiskConsoleSystem : EntitySystem
         _research.ModifyServerPoints(server.Value, -component.PricePer10KDisk, serverComp);
         _audio.PlayPvs(component.PrintSound, uid);
 
-        var printing = EnsureComp<DiskConsolePrintingComponent>(uid);
+        var printing = EnsureComp<PointDiskConsolePrintingComponent>(uid);
         printing.FinishTime = _timing.CurTime + component.PrintDuration;
         UpdateUserInterface(uid, component);
     }
@@ -136,13 +136,13 @@ public sealed class PointDiskConsoleSystem : EntitySystem
             totalPoints = server.Points;
         }
 
-        var canPrint1K = !(TryComp<DiskConsolePrintingComponent>(uid, out var printing1K) && printing1K.FinishTime >= _timing.CurTime) &&
+        var canPrint1K = !(TryComp<PointDiskConsolePrintingComponent>(uid, out var printing1K) && printing1K.FinishTime >= _timing.CurTime) &&
                        totalPoints >= component.PricePer1KDisk;
 
-        var canPrint5K = !(TryComp<DiskConsolePrintingComponent>(uid, out var printing5K) && printing5K.FinishTime >= _timing.CurTime) &&
+        var canPrint5K = !(TryComp<PointDiskConsolePrintingComponent>(uid, out var printing5K) && printing5K.FinishTime >= _timing.CurTime) &&
                        totalPoints >= component.PricePer5KDisk;
 
-        var canPrint10K = !(TryComp<DiskConsolePrintingComponent>(uid, out var printing10K) && printing10K.FinishTime >= _timing.CurTime) &&
+        var canPrint10K = !(TryComp<PointDiskConsolePrintingComponent>(uid, out var printing10K) && printing10K.FinishTime >= _timing.CurTime) &&
                        totalPoints >= component.PricePer10KDisk;
 
         var state = new PointDiskConsoleBoundUserInterfaceState(totalPoints, component.PricePer1KDisk, component.PricePer5KDisk, component.PricePer10KDisk, canPrint1K, canPrint5K, canPrint10K);

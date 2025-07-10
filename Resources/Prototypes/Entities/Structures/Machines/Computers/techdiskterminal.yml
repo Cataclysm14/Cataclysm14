@@ -21,7 +21,7 @@
   - type: ActivatableUIRequiresPower
   - type: UserInterface
     interfaces:
-      enum.DiskConsoleUiKey.Key:
+      enum.PointDiskConsoleUiKey.Key:
         type: PointDiskConsoleBoundUserInterface # mono
       enum.ResearchClientUiKey.Key:
         type: ResearchClientBoundUserInterface
