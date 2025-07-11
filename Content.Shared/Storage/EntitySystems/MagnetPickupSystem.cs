@@ -46,6 +46,7 @@ public sealed class MagnetPickupSystem : EntitySystem
 
 
     private static readonly TimeSpan ScanDelay = TimeSpan.FromSeconds(1);
+    public TimeSpan NextScan = TimeSpan.Zero;
     private const int MaxEntitiesToInsert = 15; // Frontier
 
     private EntityQuery<PhysicsComponent> _physicsQuery;
@@ -54,16 +55,18 @@ public sealed class MagnetPickupSystem : EntitySystem
     {
         base.Initialize();
         _physicsQuery = GetEntityQuery<PhysicsComponent>();
-        SubscribeLocalEvent<MagnetPickupComponent, MapInitEvent>(OnMagnetMapInit);
+        //SubscribeLocalEvent<MagnetPickupComponent, MapInitEvent>(OnMagnetMapInit);
         SubscribeLocalEvent<MagnetPickupComponent, ExaminedEvent>(OnExamined); // Frontier
         SubscribeLocalEvent<MagnetPickupComponent, GetVerbsEvent<AlternativeVerb>>(AddToggleMagnetVerb); // Frontier
+        NextScan = _timing.CurTime + ScanDelay;
     }
 
+    /*
     private void OnMagnetMapInit(EntityUid uid, MagnetPickupComponent component, MapInitEvent args)
     {
         component.NextScan = _timing.CurTime;
     }
-
+    */ // Mono
 
     // Frontier: togglable magnets
     private void AddToggleMagnetVerb(EntityUid uid, MagnetPickupComponent component, GetVerbsEvent<AlternativeVerb> args)
@@ -120,16 +123,16 @@ public sealed class MagnetPickupSystem : EntitySystem
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
-        var query = EntityQueryEnumerator<MagnetPickupComponent, StorageComponent, TransformComponent, MetaDataComponent>();
         var currentTime = _timing.CurTime;
 
+        if (currentTime < NextScan) // Mono - Optimized Magnets
+            return;
+
+        NextScan += ScanDelay;
+
+        var query = EntityQueryEnumerator<MagnetPickupComponent, StorageComponent, TransformComponent, MetaDataComponent>();
         while (query.MoveNext(out var uid, out var comp, out var storage, out var xform, out var meta))
         {
-            if (comp.NextScan > currentTime)
-                continue;
-
-            comp.NextScan = currentTime + ScanDelay; // Frontier: no need to rerun if built late in-round
-
             // Frontier: combine DeltaV/White Dream's magnet toggle with old system
             if (comp.MagnetCanBeEnabled)
             {
