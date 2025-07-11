@@ -1,3 +1,9 @@
+# SPDX-FileCopyrightText: 2024 Alice "Arimah" Heurlin
+# SPDX-FileCopyrightText: 2024 Whatstone
+# SPDX-FileCopyrightText: 2025 MrTswe
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 # The machines here are to separate out the recipes that different microwave-based machines can make.
 - type: entity
   id: KitchenElectricRange

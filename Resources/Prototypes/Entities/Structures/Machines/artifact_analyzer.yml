@@ -1,3 +1,23 @@
+# SPDX-FileCopyrightText: 2023 AJCM-git
+# SPDX-FileCopyrightText: 2023 Julian Giebel
+# SPDX-FileCopyrightText: 2023 deltanedas
+# SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2023 lzk
+# SPDX-FileCopyrightText: 2024 Boaz1111
+# SPDX-FileCopyrightText: 2024 Cojoke
+# SPDX-FileCopyrightText: 2024 Dakamakat
+# SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson
+# SPDX-FileCopyrightText: 2024 Nemanja
+# SPDX-FileCopyrightText: 2024 Tayrtahn
+# SPDX-FileCopyrightText: 2024 checkraze
+# SPDX-FileCopyrightText: 2024 eoineoineoin
+# SPDX-FileCopyrightText: 2024 spacedwarf14
+# SPDX-FileCopyrightText: 2025 MrTswe
+# SPDX-FileCopyrightText: 2025 metalgearsloth
+# SPDX-FileCopyrightText: 2025 slarticodefast
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   id: MachineArtifactAnalyzer
   parent: [ BaseMachinePowered, SmallConstructibleMachine ]
