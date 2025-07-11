@@ -23,7 +23,6 @@ public sealed class MaterialStorageMagnetPickupSystem : EntitySystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly SharedMaterialStorageSystem _storage = default!;
-    [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
 
     private static readonly TimeSpan ScanDelay = TimeSpan.FromSeconds(1);
     private const int MaxEntitiesToInsert = 15; // Mono
