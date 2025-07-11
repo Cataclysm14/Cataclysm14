@@ -18,7 +18,7 @@ using Content.Server._NF.CryoSleep;
 namespace Content.Server._Mono;
 
 /// <summary>
-/// System that handles the GridPacifierComponent, which applies Pacified status to all organic entities on a grid.
+/// System that handles the GridPacifiedComponent, which has the GridPacifierComponent apply pacification to certain entities within range.
 /// </summary>
 public sealed class GridPacifiedSystem : EntitySystem
 {

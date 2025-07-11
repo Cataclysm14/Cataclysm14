@@ -10,17 +10,10 @@ namespace Content.Shared._Mono;
 public sealed partial class GridPacifiedComponent : Component
 {
     /// <summary>
-    /// The list of entities that have been pacified by this component.
+    /// A way to override with VV
     /// </summary>
-    [DataField]
-    public HashSet<EntityUid> PacifiedEntities = new();
-
-    /// <summary>
-    /// Entities that are pending pacification with their entry timestamps.
-    /// After 1 second, they will be moved to PacifiedEntities.
-    /// </summary>
-    [DataField]
-    public Dictionary<EntityUid, TimeSpan> PendingEntities = new();
+    [ViewVariables(VVAccess.ReadWrite), DataField]
+    public bool Override = false;
 
     /// <summary>
     /// A check for if an entity is pre-pacified
@@ -41,10 +34,10 @@ public sealed partial class GridPacifiedComponent : Component
     public TimeSpan NextUpdate;
 
     /// <summary>
-    /// How frequently to check all entities on the grid for changes (in seconds)
+    /// How frequently to check the entity for changes
     /// </summary>
     [DataField]
-    public TimeSpan UpdateInterval = TimeSpan.FromSeconds(5);
+    public TimeSpan UpdateInterval = TimeSpan.FromSeconds(2);
 
     /// <summary>
     /// The radius from a GridPacifier that a GridPacified entity is pacified.
