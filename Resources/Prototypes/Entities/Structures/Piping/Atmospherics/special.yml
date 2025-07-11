@@ -25,6 +25,19 @@
   - type: Tag
     tags:
       - SpreaderIgnore
+  - type: Destructible # Mono - destructible tiny/directional fans
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+  - type: Anchorable # Mono
+    delay: 6
 
 - type: entity
   id: AtmosDeviceFanDirectional
@@ -54,3 +67,16 @@
   - type: Tag
     tags:
       - SpreaderIgnore
+  - type: Destructible # Mono - destructible tiny/directional fans
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+  - type: Anchorable # Mono
+    delay: 6
