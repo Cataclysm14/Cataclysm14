@@ -1,3 +1,8 @@
+// SPDX-FileCopyrightText: 2024 Dvir
+// SPDX-FileCopyrightText: 2025 Redrover1760
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 namespace Content.Server.Storage.Components;
 
 /// <summary>
