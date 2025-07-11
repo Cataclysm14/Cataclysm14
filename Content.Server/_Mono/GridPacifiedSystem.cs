@@ -38,13 +38,14 @@ public sealed class GridPacifiedSystem : EntitySystem
 
         SubscribeLocalEvent<GridPacifiedComponent, ComponentStartup>(OnGridPacifiedStartup);
         SubscribeLocalEvent<GridPacifiedComponent, ComponentShutdown>(OnGridPacifiedShutdown);
-        SubscribeLocalEvent<ActorComponent, ComponentStartup>(OnActorStartup);
-        SubscribeLocalEvent<ActorComponent, ComponentShutdown>(OnActorShutdown);
+        SubscribeLocalEvent<PlayerAttachedEvent>(OnPlayerAttached);
+        SubscribeLocalEvent<PlayerDetachedEvent>(OnPlayerDetached);
     }
 
-    private void OnActorStartup(EntityUid uid, ActorComponent component, ComponentStartup args)
+    private void OnPlayerAttached(PlayerAttachedEvent ev)
     {
-        var player = component.PlayerSession;
+        var uid = ev.Entity;
+        var player = ev.Player;
         // Only affect players with less than 1 hour of overall playtime
         var getTime = _playTimeTracking.TryGetTrackerTimes(player, out var time);
 
@@ -63,8 +64,9 @@ public sealed class GridPacifiedSystem : EntitySystem
         }
     }
 
-    private void OnActorShutdown(EntityUid uid, ActorComponent component, ComponentShutdown args)
+    private void OnPlayerDetached(PlayerDetachedEvent ev)
     {
+        var uid = ev.Entity;
         RemComp<GridPacifiedComponent>(uid);
         return;
     }
