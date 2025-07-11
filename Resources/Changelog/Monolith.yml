@@ -6984,3 +6984,36 @@ Entries:
   id: 801
   time: '2025-07-10T15:12:55.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1305
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Charon has much smaller but more intense explosion.
+    - type: Tweak
+      message: 57mm explosion damage reduced.
+  id: 802
+  time: '2025-07-11T00:57:25.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1318
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Magnet optimizations
+  id: 803
+  time: '2025-07-11T02:30:01.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1321
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Replaced M73 and M93 hardsuits with ones that dont look like dogshit for
+        TSF. M92/M92-X remains unchanged because I was too lazy to get better
+        sprites.
+  id: 804
+  time: '2025-07-11T03:29:10.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1323
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Fridges now have 99% blast resistance.
+  id: 805
+  time: '2025-07-11T03:30:42.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1317
