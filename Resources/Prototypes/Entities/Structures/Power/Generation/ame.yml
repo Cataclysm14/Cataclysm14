@@ -161,7 +161,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 100
+        damage: 1800 # Mono
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
