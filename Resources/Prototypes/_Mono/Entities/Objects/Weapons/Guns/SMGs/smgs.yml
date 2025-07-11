@@ -27,7 +27,7 @@
     maxAngle: 38
     angleIncrease: 5
     angleDecay: 20
-    fireRate: 8
+    fireRate: 9.5
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
   - type: ChamberMagazineAmmoProvider
