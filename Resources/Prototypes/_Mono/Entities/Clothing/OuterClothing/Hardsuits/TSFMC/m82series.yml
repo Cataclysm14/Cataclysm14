@@ -6,8 +6,8 @@
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseC2ContrabandUnredeemable]
   id: ClothingOuterHardsuitM82c
-  name: M82-C hardsuit
-  description: placeholder description
+  name: M82c hardsuit
+  description: A hardsuit issued to marines operating in low-pressure and high-risk environments.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Hardsuits/m82c.rsi
@@ -32,8 +32,8 @@
   - type: StaminaDamageResistance
     coefficient: 0.5
   - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
+    walkModifier: 0.875
+    sprintModifier: 0.875
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototypes:
@@ -45,8 +45,8 @@
 - type: entity
   parent: ClothingOuterHardsuitM82c
   id: ClothingOuterHardsuitM82b
-  name: M82-B hardsuit
-  description: Brigmedic variant of the M92-C outfitted with caustic and radiological shielding. Some of the blunt-absorbent gel layer is sacrificed for the NBC protection.
+  name: M82b hardsuit
+  description: Corpsman variant of the M82c outfitted with caustic and radiological shielding. Some of the blunt-absorbent gel layer is sacrificed for the NBC protection.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Hardsuits/m82b.rsi
@@ -65,5 +65,5 @@
         Caustic: 0.2
         Toxin: 0.9
   - type: ClothingSpeedModifier
-    walkModifier: 0.925
-    sprintModifier: 0.925
+    walkModifier: 0.9
+    sprintModifier: 0.9
