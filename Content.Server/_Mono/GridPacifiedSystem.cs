@@ -119,7 +119,6 @@ public sealed class GridPacifiedSystem : EntitySystem
     private void ProcessPacificationRange(EntityUid uid, GridPacifiedComponent component, TransformComponent xform)
     {
         var uidPos = _transform.GetMapCoordinates(uid, xform);
-        _logger?.Info($"Found GridPacified Player: {uid} location: {uidPos}");
         var query = EntityQueryEnumerator<GridPacifierComponent, TransformComponent>();
         while (query.MoveNext(out var gridUid, out var gridComponent, out var gridXform))
         {
@@ -129,7 +128,6 @@ public sealed class GridPacifiedSystem : EntitySystem
 
             var gridPos = _transform.GetMapCoordinates(gridUid, gridXform);
             var distance = (gridPos.Position - uidPos.Position).Length();
-            _logger?.Info($"Found GridPacifier Grid: {gridUid} location: {gridPos}. Distance between gridpacified player and gridpacifier {distance}");
             if (component.PacifyRadius > distance)
             {
                 ApplyPacified(uid, component);
