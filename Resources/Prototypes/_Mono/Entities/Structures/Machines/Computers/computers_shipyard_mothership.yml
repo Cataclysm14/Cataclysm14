@@ -15,8 +15,8 @@
 
 # The empty console
 - type: entity
-  id: SellOnlyMothershipComputer
-  parent: BaseMothershipComputer
+  id: SellOnlyCarrierComputer
+  parent: BaseCarrierComputer
   name: sell only shipyard console
 
 # EXAMPLE LISTING - DO NOT UNCOMMENT
