@@ -18,6 +18,9 @@
   addComponents:
   - type: IFF
     color: "#ccaa55"
+  - type: SolarPoweredGrid
+    trackOnInit: true
+    doNotCull: true
 
 - type: gameMap
   id: Lancelot
@@ -29,8 +32,8 @@
       stationProto: RecordsFrontierOutpostCargo
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Camelot Station'
+          mapNameTemplate: 'Lancelot Mining Outpost'
         - type: StationDeadDrop
-          maxDeadDrops: 2
+          maxDeadDrops: 6
         - type: TradeCrateWildcardDestination
-          valueMultiplier: 0.5
+          valueMultiplier: 1.5
