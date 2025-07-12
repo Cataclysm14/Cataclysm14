@@ -63,6 +63,8 @@
     back:
     - ClothingMaskGasExplorer
 
+
+
 - type: loadout
   id: ContractorClothingMaskGasCaptain
   effects:
@@ -83,6 +85,15 @@
     back:
     - ClothingMaskGasAtmos
 
+- type: loadout
+  id: ContractorClothingMaskDrakeIndustries
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1250
+  storage:
+    back:
+    - ClothingMaskDrakeIndustries
 - type: loadout
   id: ContractorClothingMaskPlague
   effects:

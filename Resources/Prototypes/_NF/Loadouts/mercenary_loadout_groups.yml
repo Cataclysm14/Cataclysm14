@@ -151,6 +151,7 @@
   loadouts:
   - MercenaryClothingMaskGasMercenary
   - MercenaryClothingMaskGasSecurity
+  - MercenaryClothingMaskDrakeIndustriesWatchdog
   subgroups:
   - PilotFace
   - ContractorFace

@@ -300,6 +300,9 @@
   - ContractorClothingBackpackMessengerColorPurple
   - ContractorClothingBackpackMessengerColorBrownLight
   - ContractorClothingBackpackMessengerColorBrown
+  - ContractorClothingBackpackDrakeIndustries
+  - ContractorClothingBackpackDuffelDrakeIndustries
+  - ContractorClothingBackpackSatchelDrakeIndustries
   - ContractorClothingBackpackClown
   - ContractorClothingBackpackDuffelClown
   - ContractorClothingBackpackSatchelClown
@@ -419,6 +422,7 @@
   - ContractorClothingBeltUtilityFilled
   - ContractorClothingBeltSalvageWebbing
   - ContractorClothingBeltSalvageWebbingFilledNF
+  - ContractorClothingBeltDrakeIndustries
   - ContractorBoxFolderClipboard
   - ContractorClothingBeltPilot
   - ContractorClothingBeltPilotFilled
@@ -808,6 +812,7 @@
   - ContractorClothingMaskGasExplorer
   - ContractorClothingMaskGasCaptain
   - ContractorClothingMaskGasAtmos
+  - ContractorClothingMaskDrakeIndustries
   - ContractorClothingMaskPlague
   - ContractorClothingMaskMime
   - ContractorClothingMaskScaredMime

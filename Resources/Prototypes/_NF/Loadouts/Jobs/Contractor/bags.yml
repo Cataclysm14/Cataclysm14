@@ -537,6 +537,33 @@
 
 #T2
 - type: loadout
+  id: ContractorClothingBackpackDrakeIndustries
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1250
+  equipment:
+    back: ClothingBackpackDrakeIndustries
+
+- type: loadout
+  id: ContractorClothingBackpackDuffelDrakeIndustries
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 2000
+  equipment:
+    back: ClothingBackpackDuffelDrakeIndustries
+    
+- type: loadout
+  id: ContractorClothingBackpackSatchelDrakeIndustries 
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1250
+  equipment:
+    back: ClothingBackpackSatchelDrakeIndustries 
+    
+- type: loadout
   id: ContractorClothingBackpackClown
   effects:
   - !type:GroupLoadoutEffect

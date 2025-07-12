@@ -82,6 +82,11 @@
   equipment:
     belt: ClothingBeltSalvageWebbingFilledNF
 
+- type: loadout
+  id: ContractorClothingBeltDrakeIndustries
+  price: 750
+  equipment:
+    belt: ClothingBeltDrakeIndustries
 #T1
 - type: loadout
   id: ContractorBoxFolderClipboard

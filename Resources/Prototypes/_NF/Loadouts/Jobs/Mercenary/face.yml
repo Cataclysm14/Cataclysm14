@@ -11,3 +11,11 @@
   storage:
     back:
     - ClothingMaskGasSecurity
+
+#T3
+- type: loadout
+  id: MercenaryClothingMaskDrakeIndustriesWatchdog
+  price: 1000
+  storage:
+    back:
+    - ClothingMaskDrakeIndustriesWatchdog
