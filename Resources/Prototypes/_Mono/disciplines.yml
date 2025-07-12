@@ -8,7 +8,7 @@
   name: research-discipline-faction-universal
   color: "#03cafc"
   icon:
-    sprite: Interface/Misc/research_disciplines_ussp.rsi
+    sprite: Interface/Misc/research_disciplines.rsi
     state: biochemical
   tierPrerequisites:
     1: 0
