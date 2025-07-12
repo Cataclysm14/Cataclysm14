@@ -126,7 +126,7 @@
         - FullTileMask
         layer:
         - WallLayer
-        density: 1000
+        density: 750 # 1000->750 Mono
   - type: Occluder
   - type: Airtight
   - type: StaticPrice
@@ -249,7 +249,7 @@
         - FullTileMask
         layer:
         - WallLayer
-        density: 8000 # really good ramming wall, bananium is rare so it's probably fine
+        density: 6500 # 8000->6500 # Mono
 
 - type: entity
   parent: BaseWall
@@ -429,7 +429,7 @@
         - FullTileMask
         layer:
         - WallLayer
-        density: 4000
+        density: 3000 # 4000->3000 - Mono
   - type: IconSmooth
     key: walls
     base: gold
@@ -583,7 +583,7 @@
         - FullTileMask
         layer:
         - WallLayer
-        density: 4000
+        density: 3000 # 4000->3000 - Mono
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallicStrong
@@ -780,7 +780,7 @@
         - FullTileMask
         layer:
         - WallLayer
-        density: 2000
+        density: 1500 # 2000->1500 - Mono
   - type: RCDDeconstructable #Frontier
     cost: 6 #Frontier
     delay: 8 #Frontier
@@ -1045,7 +1045,7 @@
         - FullTileMask
         layer:
         - WallLayer
-        density: 2000
+        density: 1500 # 2000->1500 Mono
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallic
@@ -1151,7 +1151,7 @@
         - FullTileMask
         layer:
         - WallLayer
-        density: 2000
+        density: 1500 # 2000->1500 - Mono
   - type: RCDDeconstructable #Frontier
     cost: 6 #Frontier
     delay: 8 #Frontier
@@ -1377,7 +1377,7 @@
         - FullTileMask
         layer:
         - WallLayer
-        density: 6000
+        density: 5000 # 6000->5000 - Mono
   - type: IconSmooth
     key: walls
     base: uranium
