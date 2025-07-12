@@ -60,14 +60,6 @@ research-technology-rogue-syndicate-tacsuits = Blood-Red Engineering
 research-technology-rogue-syndicate-tacsuits-t3 = Synthalloy Utilization
 research-technology-rogue-rx01 = RX-01 Modsuit
 
-# Space Mecha Technologies
-research-technology-broadsword = Armored Frame Production
-research-technology-halberd = Multirole Armored Frames
-research-technology-sabre = Gravity Adapted Armored Frames
-research-technology-flail = Armored Strike Frames
-research-technology-spyglass = EWACS Frames
-research-technology-mace = Rapid Strike Frames
-
 # Faction Assembler Equipment
 
 research-technology-tsfmc-basic-equipment = Basic TSFMC Equipment
