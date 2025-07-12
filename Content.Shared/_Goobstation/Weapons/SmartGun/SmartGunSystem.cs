@@ -1,3 +1,4 @@
+// SPDX-FileCopyrightText: 2025 Ark
 // SPDX-FileCopyrightText: 2025 Aviu00
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
@@ -26,6 +27,9 @@ public sealed class SmartGunSystem : EntitySystem
             return;
 
         if (comp.RequiresWield && !(TryComp(uid, out WieldableComponent? wieldable) && wieldable.Wielded))
+            return;
+
+        if (gun.Target == Transform(uid).ParentUid)
             return;
 
         foreach (var projectile in args.FiredProjectiles)

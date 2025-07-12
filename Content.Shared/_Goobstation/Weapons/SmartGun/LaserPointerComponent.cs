@@ -1,3 +1,4 @@
+// SPDX-FileCopyrightText: 2025 Ark
 // SPDX-FileCopyrightText: 2025 Aviu00
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
@@ -28,4 +29,10 @@ public sealed partial class LaserPointerComponent : Component
 
     [DataField]
     public Color DefaultColor = Color.Red;
+
+    [ViewVariables]
+    public TimeSpan LastNetworkEventTime = TimeSpan.Zero;
+
+    [DataField]
+    public TimeSpan MaxDelayBetweenNetworkEvents = TimeSpan.FromSeconds(0.5);
 }

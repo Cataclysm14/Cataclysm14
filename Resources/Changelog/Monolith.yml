@@ -7155,3 +7155,48 @@ Entries:
   id: 821
   time: '2025-07-12T05:21:50.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1341
+- author: starch70
+  changes:
+    - type: Tweak
+      message: Smart SMG has offset (like Hristov/MR-8C) now.
+    - type: Fix
+      message: >-
+        Ported bugfixes for Smart SMG laser (such as being able to target
+        yourself)
+  id: 822
+  time: '2025-07-12T15:44:21.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1342
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Added MlA-79 smart LMG as rare expedition loot. Credits to RMC14 for
+        sprites.
+  id: 823
+  time: '2025-07-12T16:43:01.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1344
+- author: core-mene
+  changes:
+    - type: Tweak
+      message: doubled pistol mags capacity
+    - type: Tweak
+      message: laser pointer real for some guns
+    - type: Add
+      message: Civilian version of the vulcan
+    - type: Add
+      message: KS23-like 4 gauge shotguns for mercenary and USSP
+    - type: Remove
+      message: Starch type balancing
+  id: 824
+  time: '2025-07-12T18:26:45.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1188
+- author: UnicornOnLSD
+  changes:
+    - type: Add
+      message: >-
+        Drake Industries merch is all over the sector. Show proudly who you're
+        working for (all clothing & new company badge available in loadouts or
+        affiliated DIS ships.)
+  id: 825
+  time: '2025-07-12T18:31:17.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1347

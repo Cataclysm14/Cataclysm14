@@ -200,3 +200,53 @@
     vendPrice: 9000
   - type: PirateBountyItem
     id: StandardFactionLongarm
+
+#Mercenary vulcan
+- type: entity
+  name: FCM-C Vulcan (7.62x51mm)
+  parent: WeaponRifleVulcan
+  id: WeaponRifleVulcanFCMC
+  description: The "Vulcan" Civilian Medium combat rifle (Fusil de Combat Moyen Civil) in 7.62x51mm, this civilian version only has semi-automatic mode and reduced firerate.
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/WeaponRifleVulcanFCMC.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -50
+  - type: Gun
+    minAngle: 21
+    maxAngle: 52
+    angleIncrease: 1.4
+    angleDecay: 24
+    fireRate: 4 #240 RPM, its semi-auto anyway
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine7.62x51mmFMJ
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine7.62x51mmFMJ
+            - Magazine7.62x51mmLowCapacityFMJ
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge7.62x51mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge7.62x51mmFMJ
+  - type: StaticPrice
+    price: 4000
+    vendPrice: 33200
