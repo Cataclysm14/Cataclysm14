@@ -34,7 +34,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 3.5
+    lifetime: 10.5
   - type: PointLight
     radius: 3.5
     color: orange
@@ -49,11 +49,12 @@
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
-    acceleration: 150
-    detectionRange: 200
-    scanArc: 40
-    launchSpeed: 300
-    maxSpeed: 360
+    acceleration: 30
+    detectionRange: 300
+    scanArc: 70
+    launchSpeed: 60
+    maxSpeed: 240
+    trackDelay: 1
 
 # ASM-302
 
@@ -82,7 +83,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 3
+    lifetime: 9
   - type: PointLight
     radius: 3.5
     color: orange
@@ -97,11 +98,12 @@
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
-    acceleration: 200
-    detectionRange: 300
-    scanArc: 40
-    launchSpeed: 180
-    maxSpeed: 420
+    acceleration: 40
+    detectionRange: 450
+    scanArc: 70
+    launchSpeed: 80
+    maxSpeed: 280
+    trackDelay: 2
 
 # ASM-501
 
@@ -130,7 +132,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 10
+    lifetime: 15
   - type: PointLight
     radius: 5
     color: orange
@@ -145,11 +147,12 @@
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
-    acceleration: 50
+    acceleration: 20
     detectionRange: 500
-    scanArc: 50
-    launchSpeed: 50
+    scanArc: 80
+    launchSpeed: 30
     maxSpeed: 60
+    trackDelay: 2.5
 
 # TOVEK
 
@@ -178,7 +181,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 4.2
+    lifetime: 12.6
   - type: PointLight
     radius: 3.5
     color: orange
@@ -198,8 +201,9 @@
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
-    acceleration: 80
-    detectionRange: 300
-    scanArc: 50
-    launchSpeed: 100
-    maxSpeed: 250
+    acceleration: 15
+    detectionRange: 450
+    scanArc: 80
+    launchSpeed: 20
+    maxSpeed: 160
+    trackDelay: 2

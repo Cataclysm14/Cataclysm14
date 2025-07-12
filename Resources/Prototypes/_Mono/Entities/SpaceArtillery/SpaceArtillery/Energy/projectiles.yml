@@ -35,7 +35,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 3.3
+    lifetime: 9.9
   - type: PointLight
     radarColor: "#C92BCC"
   - type: ExplodeOnTrigger
@@ -73,7 +73,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 3
+    lifetime: 9
   - type: PointLight
     radarColor: "#C92BCC"
   - type: GatheringProjectile
@@ -107,7 +107,7 @@
     requireNoGrid: true
     shape: circle
   - type: TimedDespawn
-    lifetime: 3.3
+    lifetime: 9.9
   - type: PointLight
     color: "#FB00FF"
   - type: EmpOnTrigger
@@ -142,7 +142,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 4.4
+    lifetime: 13.2
   - type: PointLight
     color: "#6BC1FF"
   - type: ExplodeOnTrigger

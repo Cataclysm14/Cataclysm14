@@ -36,7 +36,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 1.5
+    lifetime: 4.5
   - type: PointLight
     color: "#19AFFF"
   - type: ExplodeOnTrigger
@@ -77,7 +77,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 1.5
+    lifetime: 4.5
   - type: PointLight
     color: "#19AFFF"
   - type: ExplodeOnTrigger
@@ -107,7 +107,7 @@
     ignoreWeaponGrid: true
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 1
+    lifetime: 3
   - type: PointLight
     radius: 3.5
     energy: 0.5
@@ -161,7 +161,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 3.5
+    lifetime: 10.5
   - type: PointLight
     color: "#FCBA03"
   - type: ExplodeOnTrigger
@@ -182,7 +182,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
-    lifetime: 2.1
+    lifetime: 6.3
   - type: PointLight
     radius: 3.5
     energy: 0.5
@@ -255,7 +255,7 @@
     requireNoGrid: true
     shape: circle
   - type: TimedDespawn
-    lifetime: 3
+    lifetime: 9
   - type: PointLight
     color: "#FB00FF"
   - type: EmpOnTrigger
@@ -290,7 +290,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 4
+    lifetime: 12
   - type: PointLight
     color: "#FCBA03"
   - type: ExplodeOnTrigger
@@ -330,7 +330,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 5
+    lifetime: 15
   - type: PointLight
     color: "#fc5a03"
   - type: ExplodeOnTrigger
@@ -370,7 +370,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 5
+    lifetime: 15
   - type: PointLight
     color: "#fc8c03"
   - type: ExplodeOnTrigger
@@ -411,7 +411,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 5
+    lifetime: 15
   - type: PointLight
     color: "#FCBA03"
   - type: ExplodeOnTrigger

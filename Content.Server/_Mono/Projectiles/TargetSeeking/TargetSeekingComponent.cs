@@ -63,6 +63,12 @@ public sealed partial class TargetSeekingComponent : Component
     public float CurrentSpeed;
 
     /// <summary>
+    /// The amount of time in seconds left the missile starts searching for targets. // Mono
+    /// </summary>
+    [DataField]
+    public float TrackDelay = 0f;
+
+    /// <summary>
     /// Field of view in degrees for target detection.
     /// </summary>
     [DataField]
