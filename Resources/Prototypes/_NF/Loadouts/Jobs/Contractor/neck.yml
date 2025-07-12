@@ -70,6 +70,15 @@
   price: 500
   equipment:
     neck: ClothingNeckLawyerbadge
+    
+- type: loadout
+  id: ContractorClothingNeckDrakeIndustriesBadge
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    neck: ClothingNeckDrakeIndustriesBadge
 
 - type: loadout
   id: ContractorClothingNeckHeadphones
@@ -133,15 +142,6 @@
   price: 500
   equipment:
     neck: ClothingOuterPonchoClassic
-    
-- type: loadout
-  id: ContractorClothingNeckDrakeIndustriesBadge
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: ContractorT1
-  price: 0
-  equipment:
-    neck: ClothingNeckDrakeIndustriesBadge
 
 #T2
 - type: loadout

@@ -4,9 +4,9 @@
   loadouts:
   - PilotClothingUniformJumpsuitPilot
   - PilotClothingUniformJumpsuitMilitaryPilot
+  - PilotClothingUniformDrakeIndustriesTrucker
   - PilotClothingUniformJumpsuitMilitaryContractor
   - PilotClothingUniformJumpsuitMilitaryContractorTac
-  - PilotClothingUniformDrakeIndustriesTrucker
   subgroups:
   - ContractorJumpsuit
   fallbacks:
@@ -32,8 +32,9 @@
   minLimit: 0
   loadouts:
   - PilotClothingOuterCoatBomber
-  - PilotClothingOuterHardsuitPilot
   - PilotClothingOuterDrakeIndustriesTruckerPuffyVest
+  - PilotClothingOuterHardsuitPilot
+  
   subgroups:
   - ContractorOuterClothing
 

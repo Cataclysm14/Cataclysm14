@@ -99,7 +99,6 @@
   - ContractorClothingUniformJumpskirtLawyerBlack
   - ContractorClothingUniformJumpsuitLawyerGood
   - ContractorClothingUniformJumpskirtLawyerGood
-  - ContractorClothingUniformDrakeIndustriesHauler
   - ContractorClothingUniformRandomPunkCroptop # Punkish (Randomized visuals)
   - ContractorClothingUniformRandomPunkTanktop # Punkish (Randomized visuals)
   - ContractorClothingUniformRandomArmlessNoSkirt # Punkish (Randomized visuals)
@@ -166,6 +165,7 @@
   - ContractorClothingUniformJumpsuitMilitarySalvageSpecialist
   - ContractorClothingUniformJumpsuitMilitaryCargo
   - ContractorClothingUniformJumpsuitMilitaryQM
+  - ContractorClothingUniformDrakeIndustriesHauler
   - ContractorClothingUniformJumpsuitMilitaryMedicalDoctor
   - ContractorClothingUniformJumpsuitMilitaryParamedic
   - ContractorClothingUniformJumpsuitMilitaryChemistry

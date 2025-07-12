@@ -78,6 +78,15 @@
     jumpsuit: ClothingUniformJumpsuitMilitaryTurtleneckBlueMercenaryCaptain
 
 - type: loadout
+  id: MercenaryClothingUniformJumpsitDrakeIndustriesWatchdog
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT3
+  price: 650
+  equipment:
+    jumpsuit: ClothingUniformDrakeIndustriesWatchdog
+
+- type: loadout
   id: MercenaryClothingUniformJumpsuitMilitaryPilot
   effects:
   - !type:GroupLoadoutEffect
