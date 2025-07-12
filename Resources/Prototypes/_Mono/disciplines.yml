@@ -4,6 +4,18 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: techDiscipline
+  id: FactionUniversal
+  name: research-discipline-faction-universal
+  color: "#03cafc"
+  icon:
+    sprite: Interface/Misc/research_disciplines_ussp.rsi
+    state: biochemical
+  tierPrerequisites:
+    1: 0
+    2: 0.75
+    3: 0.75
+
+- type: techDiscipline
   id: TsfmcWeaponry
   name: research-discipline-tsfmc-weaponry
   color: "#f10945"

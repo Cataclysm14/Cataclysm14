@@ -247,6 +247,9 @@
     - WeaponCaseLongLaserCarbineExpedition
     - WeaponCaseShortSvalinnExpedition
     - WeaponCaseShortAdvancedLaserExpedition
+    - WeaponCaseShortEg4 # Mono
+    - WeaponCaseShortAnaconda # Mono
+    - WeaponCaseMla73 # Mono
     - Type35Flatpack
     - AK570Flatpack
     #- WeaponCaseLongMusketExpedition
@@ -337,6 +340,9 @@
     - WeaponCaseLongEnforcerExpedition
     - WeaponCaseLongLaserCannonExpedition
     - WeaponCaseLongVulcanExpedition
+    - WeaponCaseAbielle # Mono
+    - WeaponCaseWspr # Mono
+    - WeaponCaseAnnie # Mono
     chance: 1.0
     offset: 0.0
     rarePrototypes:
@@ -419,7 +425,7 @@
     - WeaponCaseLongJackdaw
     - WeaponCaseLongTypewriterExpedition
     - WeaponCaseLongHristovExpedition
-    - WeaponRifleMR8C # Mono
+    - WeaponCaseMr8c # Mono
     chance: 1.0
     offset: 0.0
 
