@@ -39,7 +39,7 @@
     - Toggle
   - type: Gun
     fireRate: 12
-    projectileSpeed: 180
+    projectileSpeed: 60
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
     soundEmpty:
@@ -91,7 +91,7 @@
     range: 500
   - type: Gun
     fireRate: 1.5
-    projectileSpeed: 322
+    projectileSpeed: 108
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/mortar.ogg
     soundEmpty:
@@ -139,7 +139,7 @@
     range: 500
   - type: Gun
     fireRate: 2.5
-    projectileSpeed: 240
+    projectileSpeed: 80
     burstCooldown: 0.5
     burstFireRate: 10
     shotsPerBurst: 2
@@ -192,7 +192,7 @@
     range: 500
   - type: Gun
     fireRate: 0.05
-    projectileSpeed: 400
+    projectileSpeed: 135
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/ship_duster.ogg
     soundEmpty:
@@ -251,7 +251,7 @@
         layer:
         - MachineLayer
   - type: Gun
-    projectileSpeed: 315
+    projectileSpeed: 105
     fireRate: 0.2
     burstCooldown: 10
     burstFireRate: 2
@@ -316,7 +316,7 @@
         layer:
         - MachineLayer
   - type: Gun
-    projectileSpeed: 450
+    projectileSpeed: 150
     fireRate: 0.2
     burstCooldown: 10
     burstFireRate: 2
@@ -370,7 +370,7 @@
     range: 500
   - type: Gun
     fireRate: 0.05
-    projectileSpeed: 800
+    projectileSpeed: 270
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/leviathan_fire.ogg
     soundEmpty:
@@ -446,7 +446,7 @@
     range: 500
   - type: Gun
     fireRate: 0.05
-    projectileSpeed: 1250
+    projectileSpeed: 420
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/leviathan_fire.ogg
     soundEmpty:
@@ -533,7 +533,7 @@
         layer:
         - MachineLayer
   - type: Gun
-    projectileSpeed: 315
+    projectileSpeed: 105
     fireRate: 0.1
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/cannon.ogg
@@ -594,7 +594,7 @@
         layer:
         - MachineLayer
   - type: Gun
-    projectileSpeed: 315
+    projectileSpeed: 105
     fireRate: 0.2
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/cannon.ogg
