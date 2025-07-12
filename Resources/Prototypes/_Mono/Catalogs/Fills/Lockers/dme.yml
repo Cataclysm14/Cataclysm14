@@ -1,0 +1,91 @@
+- type: entity
+  id: LockerDMEScienceFilled
+  suffix: Filled
+  parent: LockerDMEGeneric
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingHandsGlovesLatex
+      - id: ClothingMaskSterile
+      - id: AnomalyScanner
+      - id: NodeScanner
+      - id: ClothingBeltUtilityEngineering
+      - id: Pulsepen
+
+- type: entity
+  id: LockerDMELeaderFilled
+  parent: LockerDMELeader
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: UndeterminedVoidsuitCap
+    - id: ClothingMaskGasCaptain
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
+    - id: JetpackMiniFilled
+    - id: RubberStampCaptain
+    - id: Pulsepen
+
+- type: entity
+  id: LockerDMECEFilled
+  parent: LockerDMECE
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: AccessConfigurator
+    - id: CigarCase
+      prob: 0.15
+    - id: ClothingEyesGlassesMeson
+    - id: ClothingHandsGlovesColorYellow
+    - id: ClothingHeadsetAltEngineering
+    - id: ConstructionBag
+    - id: RCD
+    - id: RCDAmmo
+    - id: RubberStampCE
+    - id: trayScanner
+    - id: ClothingMaskGasAtmos
+    - id: ClothingOuterHardsuitEngineeringWhite
+    - id: ClothingShoesBootsMagAdv
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
+    - id: JetpackMiniFilled
+    - id: ClothingBeltUtilityEngineering
+    - id: Pulsepen
+
+- type: entity
+  id: LockerDMEEngiFilled
+  parent: LockerDMEEngi
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: UndeterminedVoidsuitEngineer
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
+    - id: ClothingHandsGlovesColorYellow
+    - id: ClothingMaskGas
+    - id: ClothingShoesBootsMag
+    - id: ConstructionBag
+    - id: trayScanner
+    - id: JetpackMiniFilled
+    - id: ClothingBeltUtilityEngineering
+    - id: Pulsepen
+
+- type: entity
+  id: LockerDMERDFilled
+  parent: LockerDMERD
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingBeltUtilityEngineering
+    - id: ClothingHeadsetAltScience
+    - id: RubberStampRd
+    - id: ClothingMaskBreath
+    - id: UndeterminedVoidsuitRD
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
+    - id: JetpackMiniFilled
+    - id: Pulsepen

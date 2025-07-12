@@ -1,0 +1,47 @@
+
+- type: entity
+  name: DME Branded Pulsepen
+  parent: BasePulsePen
+  id: Pulsepen
+  description: Fancy DME pen fresh from local RnD department, featuring a microbattery with built-in pulsing device. It has "To pulse is to hijack" written across it.
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Misc/pulsepen.rsi
+    state: icon
+  - type: Item
+    heldPrefix: icon
+
+- type: entity
+  id: BasePulsePen
+  parent: PenEmbeddable
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - Write
+    - Pen
+    - Multitool
+    - DoorElectronicsConfigurator
+  - type: MeleeWeapon
+    wideAnimationRotation: -45
+    damage:
+      types:
+        Piercing: 13
+        Shock: 2
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Tool
+    qualities:
+    - Pulsing
+  - type: NetworkConfigurator
+  - type: ActivatableUI
+    key: enum.NetworkConfiguratorUiKey.List
+    inHandsOnly: true
+  - type: UserInterface
+    interfaces:
+      enum.NetworkConfiguratorUiKey.List:
+        type: NetworkConfiguratorBoundUserInterface
+      enum.NetworkConfiguratorUiKey.Configure:
+        type: NetworkConfiguratorBoundUserInterface
+      enum.NetworkConfiguratorUiKey.Link:
+        type: NetworkConfiguratorBoundUserInterface

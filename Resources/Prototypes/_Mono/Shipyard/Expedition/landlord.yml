@@ -1,0 +1,40 @@
+# Author Info
+# GitHub: Schepka
+# Discord: schepka
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Landlord
+  parent: BaseVessel
+  name: DME Landlord
+  description: A heavy duty research vessel commissioned by DME, originally intended for transport and combat deployment of combat mechs.
+  price: 83000
+  category: Medium
+  group: Expedition
+  shuttlePath: /Maps/_Mono/Shuttles/Expedition/landlord.yml
+  guidebookPage: null
+  class:
+  - Expedition
+  engine:
+  - AME
+
+- type: gameMap
+  id: Landlord
+  mapName: 'Landlord'
+  mapPath: /Maps/_Mono/Shuttles/Expedition/landlord.yml
+  minPlayers: 0
+  stations:
+    Landlord:
+      stationProto: StandardFrontierExpeditionVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Landlord EXP{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]

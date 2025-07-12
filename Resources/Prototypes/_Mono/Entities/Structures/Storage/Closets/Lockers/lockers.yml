@@ -21,3 +21,63 @@
     stateBaseClosed: DI_locker
     stateDoorOpen: DI_locker_open
     stateDoorClosed: DI_locker_hauler_door
+  
+- type: entity
+  id: LockerDMEGeneric
+  parent: MonoLockerBaseSecure
+  name: DME Locker
+  description: Locker to lock you and your fair share of honest trading business in.
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: DME_generic
+    stateDoorOpen: DME_generic_open
+    stateDoorClosed: DME_generic_door
+
+- type: entity
+  id: LockerDMELeader
+  parent: MonoLockerBaseSecure
+  name: DME Captain Locker
+  description: This locker almost screams with royalty, somewhat twice as regal as the regular counterpart.
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: DME_Leader
+    stateDoorOpen: DME_Leader_open
+    stateDoorClosed: DME_Leader_door
+
+- type: entity
+  id: LockerDMECE
+  parent: MonoLockerBaseSecure
+  name: DME Chief Engineer Locker
+  description: Locker of the most succesfull and profitable engineering minds.
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: DME_Leader
+    stateDoorOpen: DME_Leader_open
+    stateDoorClosed: DME_CE_door
+  
+- type: entity
+  id: LockerDMEEngi
+  parent: MonoLockerBaseSecure
+  name: DME Engineer Locker
+  description: Locker of an aspiring high earning engineer.
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: DME_Engi
+    stateDoorOpen: DME_Engi_open
+    stateDoorClosed: DME_Engi_door
+
+- type: entity
+  id: LockerDMERD
+  parent: MonoLockerBaseSecure
+  name: DME Research Director Locker
+  description: Locker of the most innovative and profitable researching minds.
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: DME_Leader
+    stateDoorOpen: DME_Leader_open
+    stateDoorClosed: DME_RD_door
