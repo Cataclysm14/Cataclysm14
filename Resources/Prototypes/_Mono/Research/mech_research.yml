@@ -1,12 +1,17 @@
+# SPDX-FileCopyrightText: 2025 starch
+# SPDX-FileCopyrightText: 2025 wewman222
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: technology
   id: Broadsword
-  name: research-technology-broadsword
+  name: research-technology-mech-base
   icon:
     sprite: _Mono/Objects/Specific/Mech/mechaS2.rsi
     state: broadsword
   discipline: Arsenal
-  tier: 2
-  cost: 8000
+  tier: 3
+  cost: 50000
   recipeUnlocks:
   - BroadswordHarness
   - BroadswordHead
@@ -21,6 +26,18 @@
   - LightMechaSMG
   - LightMechaShotgun
   - PowerCageMech
+  - IFFMechaBlueSquare
+  - IFFMechaBlueCircle
+  - IFFMechaBlueTriangle
+  - IFFMechaRedSquare
+  - IFFMechaRedCircle
+  - IFFMechaRedTriangle
+  - IFFMechaYellowSquare
+  - IFFMechaYellowCircle
+  - IFFMechaYellowTriangle
+  - IFFMechaGreenSquare
+  - IFFMechaGreenCircle
+  - IFFMechaGreenTriangle
   technologyPrerequisites:
   - Gygax
 
@@ -31,8 +48,8 @@
     sprite: _Mono/Objects/Specific/Mech/mechaS2.rsi
     state: broadsword
   discipline: Arsenal
-  tier: 2
-  cost: 5000
+  tier: 3
+  cost: 30000
   recipeUnlocks:
   - HalberdHarness
   - MediumMechDMR
@@ -48,12 +65,13 @@
     sprite: _Mono/Objects/Specific/Mech/mechaS2.rsi
     state: broadsword
   discipline: Arsenal
-  tier: 2
-  cost: 5000
+  tier: 3
+  cost: 50000 # gygax+ bro i've seen how fast that shit is in grav
   recipeUnlocks:
   - SabreHarness
   technologyPrerequisites:
   - Broadsword
+  - Halberd
 
 - type: technology
   id: Flail
@@ -63,7 +81,7 @@
     state: flail
   discipline: Arsenal
   tier: 3
-  cost: 12000
+  cost: 90000
   recipeUnlocks:
   - FlailHarness
   - FlailHead
@@ -88,7 +106,7 @@
     state: flail
   discipline: Arsenal
   tier: 3
-  cost: 13000
+  cost: 22500
   recipeUnlocks:
   - SpyglassHarness
   - EWACMechaFlares
@@ -104,7 +122,7 @@
     state: flail
   discipline: Arsenal
   tier: 3
-  cost: 9000
+  cost: 22500
   recipeUnlocks:
   - MaceHarness
   technologyPrerequisites:

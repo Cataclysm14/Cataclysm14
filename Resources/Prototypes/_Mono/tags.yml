@@ -1,4 +1,5 @@
 # SPDX-FileCopyrightText: 2025 LukeZurg22
+# SPDX-FileCopyrightText: 2025 Redrover1760
 # SPDX-FileCopyrightText: 2025 ScyronX
 # SPDX-FileCopyrightText: 2025 core-mene
 # SPDX-FileCopyrightText: 2025 mikusssssss
@@ -201,6 +202,9 @@
 
 - type: Tag
   id: EWARMechMount
+
+- type: Tag
+  id: IFFMechMount
 #Mech Tags
 
 - type: Tag
@@ -268,3 +272,20 @@
 
 - type: Tag
   id: FlailTargetingControlModule
+
+# USSP Bounty
+
+- type: Tag
+  id: VodkaBounty
+
+- type: Tag
+  id: EnergySword
+
+- type: Tag
+  id: MilitaryMechBounty
+
+- type: Tag
+  id: CivilianMechBounty
+
+- type: Tag
+  id: BiomassBounty

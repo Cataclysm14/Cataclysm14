@@ -73,11 +73,11 @@
   tier: 2
   cost: 35000
   recipeUnlocks:
-  - WeaponRifleAK502Rogue
+  - WeaponRifleM90Rogue
   - WeaponSubMachineGunWt550Rogue
-  - Magazine7.62x39mmFMJ
-  - Magazine7.62x39mmEmpty
-  - AmmoBox7.62x39mmFMJ
+  - Magazine7.62x51mmFMJ
+  - Magazine7.62x51mmEmpty
+  - AmmoBox7.62x51mmFMJ
   - Magazine4.6x30mmSubMachineGunTopMountedFMJ
   - Magazine4.6x30mmSubMachineGunTopMountedEmpty
   - AmmoBox4.6x30mmFMJ
@@ -119,6 +119,24 @@
   recipeUnlocks:
   - WeaponSniperHristovRogue
   - AmmoBox145x114mmBig
+  technologyPrerequisites:
+  - RogueBasicGuns
+  - RogueAdvancedGuns
+
+- type: technology
+  id: RogueSubsonic
+  name: research-technology-rogue-subsonic
+  icon:
+    sprite: _Mono/Objects/Weapons/Guns/SMGs/mla73.rsi
+    state: icon
+  discipline: RogueWeaponry
+  tier: 2
+  cost: 25000
+  recipeUnlocks:
+  - WeaponRifleWSPRRogue
+  - WeaponSubMachineGunMla73Rogue
+  - Magazine635x40mmCaseless
+  - AmmoBox635x40mmCaseless
   technologyPrerequisites:
   - RogueBasicGuns
   - RogueAdvancedGuns

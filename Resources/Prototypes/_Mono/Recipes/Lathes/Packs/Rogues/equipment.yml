@@ -12,3 +12,13 @@
   - ClothingShoesBootsMagSyndieRogue
   - ClothingMaskGasSyndicateRogue
   - ClothingEyesThermalVisionGoggles
+  - ClothingModsuitRoguePowerCellRogue
+
+- type: latheRecipePack
+  id: MonoRogueGearProDynamic # for syndie hardsuits and shit
+  recipes:
+  - ClothingOuterHardsuitSyndieRogue
+  - ClothingOuterHardsuitSyndieEliteRogue
+  - ClothingOuterHardsuitJuggernautRogue
+  - ClothingOuterHardsuitCybersunStealthRogue
+  - ClothingOuterHardsuitSyndieCommanderRogue

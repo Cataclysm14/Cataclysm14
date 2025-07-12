@@ -14,8 +14,10 @@
 # SPDX-FileCopyrightText: 2025 HungryCuban
 # SPDX-FileCopyrightText: 2025 Maxtone
 # SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 ScyronX
 # SPDX-FileCopyrightText: 2025 Whatstone
 # SPDX-FileCopyrightText: 2025 dustylens
+# SPDX-FileCopyrightText: 2025 gixer94
 # SPDX-FileCopyrightText: 2025 starch
 # SPDX-FileCopyrightText: 2025 the-hivequeen
 #
@@ -646,6 +648,7 @@
   - ContractorClothingNeckStethoscope
   - ContractorClothingOuterPoncho
   - ContractorClothingOuterPonchoClassic
+  - ContractorClothingNeckCloakBlack # Monolith
   - ContractorClothingNeckCloakMiner
   - ContractorClothingNeckCloakMoth
   - ContractorClothingNeckScarfChaplainStole
@@ -679,6 +682,7 @@
   - ContractorClothingNeckMantleCE
   - ContractorClothingNeckCloakVoid
   - ContractorClothingNeckBling
+  - ContractorClothingNeckUNSAArmband
 
 - type: loadoutGroup
   id: ContractorPDA
