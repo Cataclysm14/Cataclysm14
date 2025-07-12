@@ -10,8 +10,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 50
-        Structural: 30
+        Piercing: 40
 
 - type: entity
   id: MechPelletShotgunSpread
