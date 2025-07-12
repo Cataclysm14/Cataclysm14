@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 500
+        Piercing: 200
         Shock: 0
   - type: EmpOnTrigger
     range: 4

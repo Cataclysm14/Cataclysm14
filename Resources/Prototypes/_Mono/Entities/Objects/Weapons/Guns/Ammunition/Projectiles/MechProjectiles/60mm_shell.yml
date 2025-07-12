@@ -15,8 +15,8 @@
     requireNoGrid: true
     shape: triangle
   - type: Explosive
-    explosionType: HardBomb
-    totalIntensity: 40
+    explosionType: HardBombShipGun
+    totalIntensity: 10
     intensitySlope: 5
     maxIntensity: 25
     maxTileBreak: 1

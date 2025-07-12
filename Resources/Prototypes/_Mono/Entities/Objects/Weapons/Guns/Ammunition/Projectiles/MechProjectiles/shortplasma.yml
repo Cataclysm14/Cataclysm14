@@ -7,12 +7,12 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 1250
-        Structural: 4250
+        Piercing: 650
+        Structural: 2250
         Heat: 350
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: HardBomb
+    explosionType: HardBombShipGun
     maxIntensity: 250
     intensitySlope: 6
     totalIntensity: 25

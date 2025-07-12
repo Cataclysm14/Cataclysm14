@@ -7,8 +7,8 @@
   - type: Projectile
     damage:
       types:
-        Structural: 20000
-        Blunt: 2000
+        Structural: 6500
+        Blunt: 1500
         Heat: 500
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
@@ -30,10 +30,10 @@
     energy: 2
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
-    maxIntensity: 8000
+    explosionType: DefaultShipGun
+    maxIntensity: 6000
     intensitySlope: 30
-    totalIntensity: 8000
+    totalIntensity: 2500
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
