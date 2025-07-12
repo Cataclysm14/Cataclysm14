@@ -1,40 +1,11 @@
-# SPDX-FileCopyrightText: 2021 AJCM-git
-# SPDX-FileCopyrightText: 2021 Paul Ritter
-# SPDX-FileCopyrightText: 2021 wrexbe
-# SPDX-FileCopyrightText: 2022 20kdc
-# SPDX-FileCopyrightText: 2022 Kara
-# SPDX-FileCopyrightText: 2022 LittleBuilderJane
-# SPDX-FileCopyrightText: 2022 Peptide90
-# SPDX-FileCopyrightText: 2022 metalgearsloth
-# SPDX-FileCopyrightText: 2022 mirrorcult
-# SPDX-FileCopyrightText: 2023 Alexander Evgrashin
-# SPDX-FileCopyrightText: 2023 AndresE55
-# SPDX-FileCopyrightText: 2023 Banshee
-# SPDX-FileCopyrightText: 2023 Cheackraze
-# SPDX-FileCopyrightText: 2023 Emisse
-# SPDX-FileCopyrightText: 2023 Leander-0
-# SPDX-FileCopyrightText: 2023 Mnemosyne
-# SPDX-FileCopyrightText: 2024 Dvir
-# SPDX-FileCopyrightText: 2024 ErhardSteinhauer
-# SPDX-FileCopyrightText: 2024 Mnemotechnican
-# SPDX-FileCopyrightText: 2024 TsjipTsjip
-# SPDX-FileCopyrightText: 2024 Whatstone
-# SPDX-FileCopyrightText: 2024 Wiebe Geertsma
-# SPDX-FileCopyrightText: 2024 dustylens
-# SPDX-FileCopyrightText: 2025 Checkraze
-# SPDX-FileCopyrightText: 2025 UnicornOnLSD
-# SPDX-FileCopyrightText: 2025 core-mene
-#
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
 meta:
   format: 7
   category: Grid
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 07/12/2025 21:41:39
-  entityCount: 2798
+  time: 07/12/2025 22:17:58
+  entityCount: 2839
 maps: []
 grids:
 - 1
@@ -7676,12 +7647,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -1.5,-32.5
       parent: 1
-  - uid: 1157
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 3.5,-34.5
-      parent: 1
 - proto: ChairWoodFancyRed
   entities:
   - uid: 1342
@@ -8101,19 +8066,7 @@ entities:
       parent: 1
 - proto: ComputerAdvancedRadar
   entities:
-  - uid: 351
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 3.5,-32.5
-      parent: 1
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: Battery
-      startingCharge: 0
-- proto: ComputerAtmosMonitoring
-  entities:
-  - uid: 2469
+  - uid: 1157
     components:
     - type: Transform
       pos: -1.5,-31.5
@@ -8190,11 +8143,11 @@ entities:
       startingCharge: 0
 - proto: ComputerSurveillanceCameraMonitor
   entities:
-  - uid: 1156
+  - uid: 351
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 2.5,-34.5
+      rot: -1.5707963267948966 rad
+      pos: 3.5,-32.5
       parent: 1
     - type: ApcPowerReceiver
       powerLoad: 5
@@ -9047,6 +9000,268 @@ entities:
     components:
     - type: Transform
       pos: 4.5,-31.5
+      parent: 1
+- proto: DisposalBend
+  entities:
+  - uid: 2805
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 0.5,-32.5
+      parent: 1
+  - uid: 2806
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 8.5,-30.5
+      parent: 1
+  - uid: 2807
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 7.5,-34.5
+      parent: 1
+  - uid: 2808
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 9.5,-30.5
+      parent: 1
+  - uid: 2809
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 7.5,-40.5
+      parent: 1
+  - uid: 2810
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 9.5,-27.5
+      parent: 1
+  - uid: 2811
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 10.5,-36.5
+      parent: 1
+  - uid: 2812
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 8.5,-34.5
+      parent: 1
+- proto: DisposalJunction
+  entities:
+  - uid: 2833
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 7.5,-36.5
+      parent: 1
+- proto: DisposalJunctionFlipped
+  entities:
+  - uid: 1156
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 8.5,-32.5
+      parent: 1
+- proto: DisposalPipe
+  entities:
+  - uid: 2803
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 9.5,-29.5
+      parent: 1
+  - uid: 2813
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 0.5,-31.5
+      parent: 1
+  - uid: 2814
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 10.5,-35.5
+      parent: 1
+  - uid: 2815
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 1.5,-32.5
+      parent: 1
+  - uid: 2816
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 2.5,-32.5
+      parent: 1
+  - uid: 2817
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 3.5,-32.5
+      parent: 1
+  - uid: 2818
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 4.5,-32.5
+      parent: 1
+  - uid: 2819
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 5.5,-32.5
+      parent: 1
+  - uid: 2820
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 6.5,-32.5
+      parent: 1
+  - uid: 2821
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 7.5,-32.5
+      parent: 1
+  - uid: 2822
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 6.5,-40.5
+      parent: 1
+  - uid: 2823
+    components:
+    - type: Transform
+      pos: 8.5,-33.5
+      parent: 1
+  - uid: 2824
+    components:
+    - type: Transform
+      pos: 7.5,-35.5
+      parent: 1
+  - uid: 2825
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 9.5,-28.5
+      parent: 1
+  - uid: 2826
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 9.5,-36.5
+      parent: 1
+  - uid: 2827
+    components:
+    - type: Transform
+      pos: 7.5,-39.5
+      parent: 1
+  - uid: 2828
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 10.5,-34.5
+      parent: 1
+  - uid: 2829
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 10.5,-33.5
+      parent: 1
+  - uid: 2830
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 8.5,-36.5
+      parent: 1
+  - uid: 2831
+    components:
+    - type: Transform
+      pos: 7.5,-38.5
+      parent: 1
+  - uid: 2832
+    components:
+    - type: Transform
+      pos: 7.5,-37.5
+      parent: 1
+  - uid: 2834
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 5.5,-40.5
+      parent: 1
+  - uid: 2835
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 4.5,-40.5
+      parent: 1
+  - uid: 2836
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 3.5,-40.5
+      parent: 1
+  - uid: 2837
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 10.5,-27.5
+      parent: 1
+  - uid: 2838
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 11.5,-27.5
+      parent: 1
+- proto: DisposalPipeBroken
+  entities:
+  - uid: 2839
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 12.5,-27.5
+      parent: 1
+- proto: DisposalTrunk
+  entities:
+  - uid: 2801
+    components:
+    - type: Transform
+      pos: 0.5,-30.5
+      parent: 1
+  - uid: 2802
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 2.5,-40.5
+      parent: 1
+  - uid: 2804
+    components:
+    - type: Transform
+      pos: 10.5,-32.5
+      parent: 1
+- proto: DisposalUnit
+  entities:
+  - uid: 1158
+    components:
+    - type: Transform
+      pos: 10.5,-32.5
+      parent: 1
+  - uid: 2469
+    components:
+    - type: Transform
+      pos: 2.5,-40.5
+      parent: 1
+  - uid: 2799
+    components:
+    - type: Transform
+      pos: 0.5,-30.5
       parent: 1
 - proto: DoubleEmergencyAirTankFilled
   entities:
@@ -15141,21 +15356,6 @@ entities:
       canCollide: False
     - type: Fixtures
       fixtures: {}
-  - uid: 1158
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -13.5,-22.5
-      parent: 1
-    - type: SurveillanceCamera
-      setupAvailableNetworks:
-      - SurveillanceCameraSecurity
-      nameSet: True
-      id: Starboard Beam
-    - type: Physics
-      canCollide: False
-    - type: Fixtures
-      fixtures: {}
   - uid: 1159
     components:
     - type: Transform
@@ -15166,6 +15366,21 @@ entities:
       - SurveillanceCameraSecurity
       nameSet: True
       id: Port Bow
+    - type: Physics
+      canCollide: False
+    - type: Fixtures
+      fixtures: {}
+  - uid: 1229
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -13.5,-22.5
+      parent: 1
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraSecurity
+      nameSet: True
+      id: Port beam
     - type: Physics
       canCollide: False
     - type: Fixtures
@@ -19464,10 +19679,10 @@ entities:
       parent: 1
 - proto: WaterCooler
   entities:
-  - uid: 1229
+  - uid: 2800
     components:
     - type: Transform
-      pos: -1.5,-34.5
+      pos: 3.5,-34.5
       parent: 1
 - proto: WeaponProtoKineticAcceleratorSawn
   entities:
