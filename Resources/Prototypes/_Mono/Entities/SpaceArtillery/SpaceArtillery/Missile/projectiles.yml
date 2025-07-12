@@ -132,7 +132,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 15
+    lifetime: 25
   - type: PointLight
     radius: 5
     color: orange
@@ -147,12 +147,12 @@
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
-    acceleration: 20
+    acceleration: 15
     detectionRange: 500
     scanArc: 80
-    launchSpeed: 30
+    launchSpeed: 20
     maxSpeed: 60
-    trackDelay: 2.5
+    trackDelay: 5
 
 # TOVEK
 
@@ -204,6 +204,6 @@
     acceleration: 15
     detectionRange: 450
     scanArc: 80
-    launchSpeed: 20
+    launchSpeed: 30
     maxSpeed: 160
     trackDelay: 2

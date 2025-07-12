@@ -23,11 +23,13 @@ A [color=GreenYellow]missile[/color] cruiser torpedo launcher that fires heavy t
 
   ## Missile Specifications
 
-  - Acceleration: [color=mediumspringgreen][bold]50 m/s²[/bold][/color]
+  - Acceleration: [color=mediumspringgreen][bold]15 m/s²[/bold][/color]
   - Tracking Range: [color=orangered][bold]500m[/bold][/color]
-  - Scanning Arc: [color=teal]30 degrees[/color]
-  - Launch Speed: [color=darkorange]60 m/s[/color]
+  - Scanning Arc: [color=teal]80 degrees[/color]
+  - Launch Speed: [color=darkorange]20 m/s[/color]
   - Max Speed: [color=darkorange]60 m/s[/color]
-  - Range: [color=orange]1000m[/color]
+  - Missile Lifetime: [color=orange]25 seconds[/color]
+  - Tracking Delay: [color=orange]5 seconds[/color]
+
 
 </Document>

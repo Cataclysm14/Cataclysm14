@@ -23,11 +23,12 @@ A hybrid EMP [color=GreenYellow]missile[/color] pod turret that fires EMPHE warh
 
   ## Missile Specifications
 
-  - Acceleration: [color=mediumspringgreen][bold]80 m/s²[/bold][/color]
-  - Tracking Range: [color=orangered][bold]300m[/bold][/color]
-  - Scanning Arc: [color=teal]50 degrees[/color]
-  - Launch Speed: [color=darkorange]100 m/s[/color]
-  - Max Speed: [color=darkorange]250 m/s[/color]
-  - Range: [color=orange]1260m[/color]
+  - Acceleration: [color=mediumspringgreen][bold]15 m/s²[/bold][/color]
+  - Tracking Range: [color=orangered][bold]450m[/bold][/color]
+  - Scanning Arc: [color=teal]80 degrees[/color]
+  - Launch Speed: [color=darkorange]30 m/s[/color]
+  - Max Speed: [color=darkorange]160 m/s[/color]
+  - Missile Lifetime: [color=orange]12.6 seconds[/color]
+  - Tracking Delay: [color=orange]2 seconds[/color]
 
 </Document>
