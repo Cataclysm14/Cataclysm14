@@ -339,6 +339,8 @@
   - type: Sprite
     layers:
     - state: service_tray
+  - type: StaticPrice # Mono
+    price: 250
 
 - type: entity
   parent: UniformPrinterFlatpack
