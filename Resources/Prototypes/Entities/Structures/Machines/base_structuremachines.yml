@@ -55,6 +55,7 @@
   - type: ApcPowerReceiver
     powerLoad: 1000
   - type: ExtensionCableReceiver
+  - type: StationAiWhitelist # Mono
   - type: LightningTarget
     priority: 1
 
