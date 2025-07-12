@@ -8,8 +8,8 @@
   name: research-discipline-mechs
   color: "#24a1bd"
   icon:
-    sprite: _Mono/Interface/Misc/research_disciplines_tsf.rsi
-    state: shipyard
+    sprite: _Mono/Interface/Misc/research_disciplines_misc.rsi
+    state: mechaengineering
   tierPrerequisites:
     1: 0
     2: 0.5
