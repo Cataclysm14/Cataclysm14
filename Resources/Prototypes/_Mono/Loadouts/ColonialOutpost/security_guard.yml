@@ -20,11 +20,18 @@
   loadouts:
   - MonoSecurityGuardWebbing
   - MonoSecurityGuardAssaultBelt
+  - MonoSecurityGuardSecurityCarrier
   fallbacks:
-  - MonoSecurityGuardWebbing
+  - ClothingBeltSecurityWebbingFilled
 
 - type: loadout
   id: MonoSecurityGuardWebbing
+  name: security carrier (filled)
+  equipment:
+    belt: ClothingBeltSecurityWebbingFilled
+
+- type: loadout
+  id: MonoSecurityGuardSecurityCarrier
   name: chest rig
   equipment:
     belt: ClothingBeltMilitaryWebbing
