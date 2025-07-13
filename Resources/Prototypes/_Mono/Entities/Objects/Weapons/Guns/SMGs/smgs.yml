@@ -6,7 +6,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: SKR MLA-73 (6.35x40mm caseless)
+  name: SKR-WS MLA-73 (6.35x40mm caseless)
   parent: [BaseWeaponSubMachineGun, BaseGunWieldable, BaseC2Contraband] # Frontier: added BaseC2Contraband
   id: WeaponSubMachineGunMla73
   description: A reliable PDW design, commonly issued to pilots and AFV crewmen. This one has been modified with an integral suppressor. Legends around this weapons say it's a Corporate-Era schematic that's been built by The Ashen Republic.

@@ -252,7 +252,7 @@
     vendPrice: 33200
 
 - type: entity
-  name: SKR MLA-34 smartgun (.160 smart) # TODO - make like 5.56 level smartgun ammo for these
+  name: SKR-WS MLA-34 smartgun (.160 smart) # TODO - make like 5.56 level smartgun ammo for these
   parent: [BaseWeaponRifle, BaseGunWieldable, BaseC2Contraband]
   id: WeaponRifleMla34
   description: A limited-production special smartgun made as a self-defense weapon for untrained ship crew.
