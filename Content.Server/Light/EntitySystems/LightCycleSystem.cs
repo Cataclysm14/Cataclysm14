@@ -4,7 +4,6 @@
 
 using Content.Shared;
 using Content.Shared.Light.Components;
-using Content.Shared.Light.EntitySystems;
 using Robust.Shared.Random;
 
 namespace Content.Server.Light.EntitySystems;
@@ -20,7 +19,8 @@ public sealed class LightCycleSystem : SharedLightCycleSystem
 
         if (ent.Comp.InitialOffset)
         {
-            SetOffset(ent, _random.Next(ent.Comp.Duration));
+            ent.Comp.Offset = _random.Next(ent.Comp.Duration);
+            Dirty(ent);
         }
     }
 }

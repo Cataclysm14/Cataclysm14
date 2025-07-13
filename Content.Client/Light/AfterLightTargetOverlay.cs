@@ -58,6 +58,6 @@ public sealed class AfterLightTargetOverlay : Overlay
 
                 worldHandle.SetTransform(localMatrix);
                 worldHandle.DrawTextureRectRegion(lightOverlay.EnlargedLightTarget.Texture, bounds, subRegion: subRegion);
-            }, Color.Transparent);
+            }, null);
     }
 }

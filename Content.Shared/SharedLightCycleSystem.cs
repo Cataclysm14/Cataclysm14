@@ -1,7 +1,7 @@
 using Content.Shared.Light.Components;
 using Robust.Shared.Map.Components;
 
-namespace Content.Shared.Light.EntitySystems;
+namespace Content.Shared;
 
 public abstract class SharedLightCycleSystem : EntitySystem
 {
@@ -28,15 +28,6 @@ public abstract class SharedLightCycleSystem : EntitySystem
             mapLight.AmbientLightColor = ent.Comp.OriginalColor;
             Dirty(ent.Owner, mapLight);
         }
-    }
-
-    public void SetOffset(Entity<LightCycleComponent> entity, TimeSpan offset)
-    {
-        entity.Comp.Offset = offset;
-        var ev = new LightCycleOffsetEvent(offset);
-
-        RaiseLocalEvent(entity, ref ev);
-        Dirty(entity);
     }
 
     public static Color GetColor(Entity<LightCycleComponent> cycle, Color color, float time)
@@ -122,13 +113,4 @@ public abstract class SharedLightCycleSystem : EntitySystem
         var sen = MathF.Pow(MathF.Sin((MathF.PI * (phase + x)) / waveLength), exponent);
         return (crest - shift) * sen + shift;
     }
-}
-
-/// <summary>
-/// Raised when the offset on <see cref="LightCycleComponent"/> changes.
-/// </summary>
-[ByRefEvent]
-public record struct LightCycleOffsetEvent(TimeSpan Offset)
-{
-    public readonly TimeSpan Offset = Offset;
 }
