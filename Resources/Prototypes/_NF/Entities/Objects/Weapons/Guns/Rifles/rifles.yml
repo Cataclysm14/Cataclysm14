@@ -1,6 +1,7 @@
 # SPDX-FileCopyrightText: 2024 Dvir
 # SPDX-FileCopyrightText: 2024 ErhardSteinhauer
 # SPDX-FileCopyrightText: 2025 Ark
+# SPDX-FileCopyrightText: 2025 Blu
 # SPDX-FileCopyrightText: 2025 BlueHNT
 # SPDX-FileCopyrightText: 2025 Jakumba
 # SPDX-FileCopyrightText: 2025 LukeZurg22
@@ -39,7 +40,7 @@
 
 #Delta-V
 - type: entity
-  name: Vulcan (7.62x51mm)
+  name: FCM Vulcan (7.62x51mm)
   parent: WeaponRifleVulcan
   id: WeaponRifleVulcanRubber
   suffix: Non-lethal

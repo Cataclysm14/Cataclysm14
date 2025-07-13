@@ -25,8 +25,8 @@ meta:
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 07/05/2025 18:47:25
-  entityCount: 256
+  time: 07/12/2025 15:04:23
+  entityCount: 262
 maps: []
 grids:
 - 2
@@ -329,7 +329,7 @@ entities:
           - 0
           - 0
         - volume: 2500
-          temperature: 293.1499
+          temperature: 293.14984
           moles:
           - 20.078888
           - 75.53487
@@ -499,15 +499,6 @@ entities:
     - type: Transform
       pos: -0.5,-2.5
       parent: 2
-- proto: AppraisalTool
-  entities:
-  - uid: 29
-    components:
-    - type: Transform
-      parent: 28
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: AtmosDeviceFanDirectional
   entities:
   - uid: 3
@@ -905,9 +896,55 @@ entities:
       rot: 3.141592653589793 rad
       pos: -0.5,-6.5
       parent: 2
-- proto: ClothingBeltUtilityEngineering
+- proto: ClothingBeltDrakeIndustries
   entities:
   - uid: 30
+    components:
+    - type: Transform
+      parent: 28
+    - type: Storage
+      storedItems:
+        52:
+          position: 0,0
+          _rotation: South
+        77:
+          position: 1,0
+          _rotation: South
+        102:
+          position: 2,0
+          _rotation: South
+        196:
+          position: 3,0
+          _rotation: South
+        257:
+          position: 4,0
+          _rotation: South
+        258:
+          position: 5,0
+          _rotation: South
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 52
+          - 77
+          - 102
+          - 196
+          - 257
+          - 258
+    - type: UserInterface
+      actors:
+        enum.StorageUiKey.Key:
+        - invalid
+    - type: Physics
+      canCollide: False
+    - type: ActiveUserInterface
+    - type: InsideEntityStorage
+- proto: ClothingNeckDrakeIndustriesBadge
+  entities:
+  - uid: 29
     components:
     - type: Transform
       parent: 28
@@ -916,48 +953,16 @@ entities:
     - type: InsideEntityStorage
 - proto: ClothingOuterHardsuitSpatio
   entities:
-  - uid: 102
+  - uid: 259
     components:
     - type: Transform
       parent: 28
-    - type: GroupExamine
-      group:
-      - hoverMessage: ""
-        contextText: verb-examine-group-other
-        icon: /Textures/Interface/examine-star.png
-        components:
-        - Armor
-        - ClothingSpeedModifier
-        entries:
-        - message: >-
-            This decreases your running speed by [color=yellow]20%[/color].
-
-            This decreases your walking speed by [color=yellow]10%[/color].
-          priority: 0
-          component: ClothingSpeedModifier
-        - message: >-
-            It provides the following protection:
-
-            - [color=yellow]Blunt[/color] damage reduced by [color=lightblue]10%[/color].
-
-            - [color=yellow]Slash[/color] damage reduced by [color=lightblue]10%[/color].
-
-            - [color=yellow]Piercing[/color] damage reduced by [color=lightblue]10%[/color].
-
-            - [color=yellow]Radiation[/color] damage reduced by [color=lightblue]70%[/color].
-
-            - [color=yellow]Caustic[/color] damage reduced by [color=lightblue]20%[/color].
-
-            - [color=aqua]Stamina[/color] damage reduced by [color=lightblue]39.999996185302734%[/color].
-          priority: 0
-          component: Armor
-        title: null
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
 - proto: ClothingShoesBootsMagDrakeIndustries
   entities:
-  - uid: 196
+  - uid: 261
     components:
     - type: Transform
       parent: 28
@@ -1093,6 +1098,14 @@ entities:
     - type: Transform
       pos: -3.479999,2.6452453
       parent: 2
+- proto: Crowbar
+  entities:
+  - uid: 52
+    components:
+    - type: Transform
+      parent: 30
+    - type: Physics
+      canCollide: False
 - proto: DefibrillatorCabinetFilled
   entities:
   - uid: 211
@@ -1102,7 +1115,7 @@ entities:
       parent: 2
 - proto: DoubleEmergencyAirTankFilled
   entities:
-  - uid: 52
+  - uid: 260
     components:
     - type: Transform
       parent: 28
@@ -1549,14 +1562,14 @@ entities:
       parent: 2
 - proto: JetpackMiniFilled
   entities:
-  - uid: 77
+  - uid: 262
     components:
     - type: Transform
       parent: 28
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: LockerDrakeIndustriesHauler
+- proto: LockerDrakeIndustriesTrucker
   entities:
   - uid: 28
     components:
@@ -1567,7 +1580,7 @@ entities:
       air:
         volume: 200
         immutable: False
-        temperature: 293.14914
+        temperature: 293.14908
         moles:
         - 1.7459903
         - 6.568249
@@ -1589,10 +1602,10 @@ entities:
           ents:
           - 29
           - 30
-          - 52
-          - 77
-          - 102
-          - 196
+          - 259
+          - 260
+          - 261
+          - 262
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -1604,6 +1617,14 @@ entities:
     - type: Transform
       pos: -4.5,2.5
       parent: 2
+- proto: Multitool
+  entities:
+  - uid: 102
+    components:
+    - type: Transform
+      parent: 30
+    - type: Physics
+      canCollide: False
 - proto: NFHolopadShip
   entities:
   - uid: 83
@@ -1760,6 +1781,14 @@ entities:
     - type: Transform
       pos: -2.5,6.5
       parent: 2
+- proto: Screwdriver
+  entities:
+  - uid: 196
+    components:
+    - type: Transform
+      parent: 30
+    - type: Physics
+      canCollide: False
 - proto: SignalButtonDirectional
   entities:
   - uid: 59
@@ -2153,4 +2182,28 @@ entities:
     - type: Transform
       pos: -1.5,0.5
       parent: 2
+- proto: Welder
+  entities:
+  - uid: 258
+    components:
+    - type: Transform
+      parent: 30
+    - type: Physics
+      canCollide: False
+- proto: Wirecutter
+  entities:
+  - uid: 77
+    components:
+    - type: Transform
+      parent: 30
+    - type: Physics
+      canCollide: False
+- proto: Wrench
+  entities:
+  - uid: 257
+    components:
+    - type: Transform
+      parent: 30
+    - type: Physics
+      canCollide: False
 ...
