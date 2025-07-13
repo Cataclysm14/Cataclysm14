@@ -55,7 +55,7 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
-  
+
 - type: entity
   name: Vector (9x19mm)
   parent: [BaseWeaponSubMachineGun, BaseGunWieldable, BaseC2Contraband] # Frontier: added BaseC2Contraband
@@ -84,7 +84,7 @@
     - SemiAuto
     - FullAuto
     burstCooldown: 0.5
-    burstFireRate: 30
+    burstFireRate: 14
     shotsPerBurst: 3
   - type: ItemSlots
     slots:
@@ -138,7 +138,7 @@
     - SemiAuto
     - FullAuto
     burstCooldown: 0.5
-    burstFireRate: 30
+    burstFireRate: 14
     shotsPerBurst: 3
   - type: ItemSlots
     slots:
