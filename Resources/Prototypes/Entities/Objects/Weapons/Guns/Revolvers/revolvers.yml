@@ -101,7 +101,7 @@
       nfsd: 0.2
 
 - type: entity
-  name: Deckard (.45 magnum)
+  name: NT Deckard (.45 magnum)
   parent: [BaseWeaponRevolver, BaseC1Contraband] # Frontier: BaseSecurityCommandContraband<BaseC1Contraband
   id: WeaponRevolverDeckard
   description: A rare, civilian grade custom-built revolver. Use when there is no time for Voight-Kampff test. Uses .45 magnum ammo.
@@ -144,7 +144,7 @@
     ammoSlots: [ null, null, null, null, null, null ]
 
 - type: entity
-  name: Mateba (.45 magnum)
+  name: NT Mateba (.45 magnum)
   parent: [BaseWeaponRevolver, BaseC2ContrabandUnredeemable] # Frontier: BaseMajorContraband<BaseC2ContrabandUnredeemable
   id: WeaponRevolverMateba
   description: A legendary sidearm from the Corporate Era, once used by corporate kill-teams, it now belongs to TSF Officers across the galaxy. Uses .45 magnum ammo. On the handle is a label that says 'for authorized use only.'
@@ -167,7 +167,7 @@
     proto: Cartridge45_magnumAP
 
 - type: entity
-  name: Python (.45 magnum)
+  name: LWC Python (.45 magnum)
   parent: [BaseWeaponRevolver, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
   id: WeaponRevolverPython
   description: An revolver that is commonly found around Ashen Republic space, it's typically used by high-ranking insurgents. Uses .45 magnum ammo. # Frontier

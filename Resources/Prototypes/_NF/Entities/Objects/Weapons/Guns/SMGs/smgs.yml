@@ -1,6 +1,5 @@
 # Rubber
 - type: entity
-  name: Drozd (.45 ACP)
   parent: WeaponSubMachineGunDrozd
   id: WeaponSubMachineGunDrozdRubber
   suffix: Non-Lethal

@@ -335,7 +335,7 @@
     id: StandardFactionLongarm
 
 - type: entity
-  name: pulse pistol
+  name: LWC pulse pistol
   parent: [BaseWeaponBatterySmall, BaseC2ContrabandUnredeemable] # Frontier: added BaseC2ContrabandUnredeemable
   id: WeaponPulsePistol
   description: A state of the art energy pistol favoured as a sidearm by the TSFN and TSFMC. On the handle is a label that says 'for authorized use only.'
@@ -371,7 +371,7 @@
     id: ExperimentalFactionWeapon
 
 - type: entity
-  name: pulse carbine
+  name: LWC pulse carbine
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseC2ContrabandUnredeemable] # Frontier: added BaseC2ContrabandUnredeemable
   id: WeaponPulseCarbine
   description: A high tech energy carbine favoured by The Agency and the ever-elusive Winter Solstice. On the handle is a label that says 'for authorized use only.'
@@ -409,7 +409,7 @@
     id: ExperimentalFactionWeapon
 
 - type: entity
-  name: pulse rifle
+  name: NT pulse rifle
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseC2ContrabandUnredeemable] # Frontier: added BaseC2ContrabandUnredeemable
   id: WeaponPulseRifle
   description: A weapon that is almost as infamous as its users. On the handle is a label that says 'for authorized use only.'
@@ -853,7 +853,7 @@
     price: 750
 
 - type: entity
-  name: energy shotgun
+  name: NT energy shotgun
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseC2ContrabandUnredeemable] # Frontier: BaseGrandTheftContraband<BaseC2ContrabandUnredeemable
   id: WeaponEnergyShotgun
   description: A one-of-a-kind prototype energy weapon that uses various shotgun configurations. It offers the possibility of both lethal and non-lethal shots, making it a versatile weapon.

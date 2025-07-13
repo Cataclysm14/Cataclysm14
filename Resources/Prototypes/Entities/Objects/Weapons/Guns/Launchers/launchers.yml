@@ -60,7 +60,7 @@
         ents: []
 
 - type: entity
-  name: china lake
+  name: PA china lake
   parent: [BaseWeaponLauncher, BaseGunWieldable, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
   id: WeaponLauncherChinaLake
   description: PLOOP.
@@ -93,7 +93,7 @@
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
 
 - type: entity
-  name: RPG-7
+  name: PA RPG-7
   parent: [ BaseWeaponLauncher, BaseC3Contraband ] # Frontier: BaseMajorContraband<BaseC3Contraband
   id: WeaponLauncherRocket
   description: A modified ancient rocket-propelled grenade launcher.

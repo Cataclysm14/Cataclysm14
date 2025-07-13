@@ -131,7 +131,7 @@
           Special: { state: mode-stun } # Unused
 
 - type: entity
-  name: X-01 multiphase energy gun
+  name: LWC X-01 multiphase energy gun
   parent: [BaseWeaponBatterySmall, BaseCommandContraband] # Frontier: added BaseCommandContraband
   categories: [DoNotMap] # Frontier / Monolith - this is the colonel /sheriff's gun
   id: WeaponEnergyGunMultiphase
