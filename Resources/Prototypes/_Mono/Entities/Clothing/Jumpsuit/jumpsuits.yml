@@ -255,3 +255,46 @@
         color: "#cd6b6b"
       - state: equipped-decor-shoulder-patch
         color: "#cd6b6b"
+
+#PMC camo suits
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCCEBasic
+  name: CCE combat uniform (basic)
+  description: Woodland CCE camouflaged combat suit. Camo in space... This one has been lightly used and retain its original camo.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_base.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_base.rsi
+  - type: SuitSensor
+    randomMode: false
+    mode: SensorVitals
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCCEWorn
+  name: CCE combat uniform (Worn)
+  description: Woodland CCE camouflaged combat suit. Camo in space... This one has been used quite a lot and has darkenned over time.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_worn.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_worn.rsi
+  - type: SuitSensor
+    randomMode: false
+    mode: SensorVitals
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCCEBleached
+  name: CCE combat uniform (bleached)
+  description: Woodland CCE camouflaged combat suit. Camo in space... This one has been bleached for some reasons.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_bleached.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_bleached.rsi
+  - type: SuitSensor
+    randomMode: false
+    mode: SensorVitals
