@@ -99,17 +99,22 @@
 - type: loadoutGroup
   id: MonoSecurityGuardJumpsuit
   name: loadout-group-contractor-jumpsuit
-  hidden: true # No point in showing this, it gets auto-selected.
   minLimit: 1
   loadouts:
-  - MonoSecJumpsuit
+  - MonoSecJumpsuitRed
+  - MonoSecJumpsuitMaroon
   fallbacks:
-  - MonoSecJumpsuit
+  - MonoSecJumpsuitRed
 
 - type: loadout
-  id: MonoSecJumpsuit
+  id: MonoSecJumpsuitRed
   equipment:
     jumpsuit: ClothingUniformJumpsuitMilitaryColorRed
+
+- type: loadout
+  id: MonoSecJumpsuitMaroon
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorMaroon
 
 - type: loadoutGroup
   id: MonoSecurityGuardBack
