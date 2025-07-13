@@ -147,7 +147,7 @@
   name: Mateba (.45 magnum)
   parent: [BaseWeaponRevolver, BaseC2ContrabandUnredeemable] # Frontier: BaseMajorContraband<BaseC2ContrabandUnredeemable
   id: WeaponRevolverMateba
-  description: A legendary sidearm from the Corporate Era, once used by corporate kill-teams, it now belongs to TSF Colonel's around the galaxy. Uses .45 magnum ammo. On the handle is a label that says 'for authorized use only.'
+  description: A legendary sidearm from the Corporate Era, once used by corporate kill-teams, it now belongs to TSF Officers across the galaxy. Uses .45 magnum ammo. On the handle is a label that says 'for authorized use only.'
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/mateba.rsi
