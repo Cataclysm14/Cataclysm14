@@ -1,25 +1,10 @@
-# SPDX-FileCopyrightText: 2023 Cheackraze
-# SPDX-FileCopyrightText: 2023 Checkraze
-# SPDX-FileCopyrightText: 2023 Vera Aguilera Puerto
-# SPDX-FileCopyrightText: 2024 Dvir
-# SPDX-FileCopyrightText: 2024 ErhardSteinhauer
-# SPDX-FileCopyrightText: 2024 TsjipTsjip
-# SPDX-FileCopyrightText: 2024 checkraze
-# SPDX-FileCopyrightText: 2025 Redrover1760
-# SPDX-FileCopyrightText: 2025 RikuTheKiller
-# SPDX-FileCopyrightText: 2025 UnicornOnLSD
-# SPDX-FileCopyrightText: 2025 Whatstone
-# SPDX-FileCopyrightText: 2025 starch
-#
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
 meta:
   format: 7
   category: Grid
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 07/12/2025 15:09:11
+  time: 07/13/2025 10:55:01
   entityCount: 747
 maps: []
 grids:
@@ -3711,15 +3696,21 @@ entities:
   - uid: 643
     components:
     - type: Transform
+      anchored: True
       pos: 2.5,-14.5
       parent: 1
+    - type: Physics
+      bodyType: Static
 - proto: OxygenCanister
   entities:
   - uid: 642
     components:
     - type: Transform
+      anchored: True
       pos: 1.5,-14.5
       parent: 1
+    - type: Physics
+      bodyType: Static
 - proto: Paper
   entities:
   - uid: 722
@@ -3807,12 +3798,9 @@ entities:
   - uid: 384
     components:
     - type: Transform
-      anchored: False
       rot: 1.5707963267948966 rad
       pos: 7.5,-6.5
       parent: 1
-    - type: Physics
-      bodyType: Dynamic
   - uid: 385
     components:
     - type: Transform
@@ -4104,17 +4092,20 @@ entities:
   - uid: 425
     components:
     - type: Transform
-      pos: 7.5,-2.5
+      rot: -1.5707963267948966 rad
+      pos: 7.5,-4.5
       parent: 1
   - uid: 426
     components:
     - type: Transform
+      rot: -1.5707963267948966 rad
       pos: 7.5,-3.5
       parent: 1
   - uid: 427
     components:
     - type: Transform
-      pos: 7.5,-4.5
+      rot: -1.5707963267948966 rad
+      pos: 7.5,-2.5
       parent: 1
   - uid: 428
     components:
@@ -4136,11 +4127,11 @@ entities:
       parent: 1
     - type: DeviceLinkSource
       linkedPorts:
-        427:
+        425:
         - Pressed: Toggle
         426:
         - Pressed: Toggle
-        425:
+        427:
         - Pressed: Toggle
   - uid: 432
     components:
