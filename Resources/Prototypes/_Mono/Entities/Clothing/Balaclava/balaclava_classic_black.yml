@@ -16,23 +16,11 @@
     - HeadSide
     hideOnToggle: true
   - type: Sprite
-    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
-    layers:
-    - state: icon
+    sprite: _Mono/Clothing/Balaclavas/balaclava.rsi
+    color: "#3e3e48"
   - type: Clothing
-    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    sprite: _Mono/Clothing/Balaclavas/balaclava.rsi
     clothingVisuals:
-      mask:
-      - state: equipped-MASK
-        color: "#3e3e48"
-      BALACLAVA:
+      balaclava:
       - state: equipped-BALACLAVA
-        color: "#3e3e48"
-  - type: Item
-    inhandVisuals:
-      left:
-      - state: inhand-left
-        color: "#3e3e48"
-      right:
-      - state: inhand-right
         color: "#3e3e48"
