@@ -406,7 +406,7 @@
   components:
   - type: RoundstartStationVariationRule
     rules:
-    - id: BasicPoweredLightVariationPass
+    #- id: BasicPoweredLightVariationPass # Mono
     - id: BasicTrashVariationPass
 #    - id: SolidWallRustingVariationPass # Frontier - disabled becuase mismatched types and sprites
 #    - id: ReinforcedWallRustingVariationPass # Frontier
