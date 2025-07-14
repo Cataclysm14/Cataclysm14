@@ -40,7 +40,7 @@
   minPlayers: 0
   stations:
     Cove:
-      stationProto: RecordsFrontierOutpost
+      stationProto: RecordsFrontierOutpostCargo
       components:
         - type: StationNameSetup
           mapNameTemplate: 'Rogue Insurgency Hideout'
