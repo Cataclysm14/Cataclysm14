@@ -27,6 +27,7 @@ civil-defense-milita-description = A fairly new company founded within the Colos
 
 southern-peak-mercenaries-description = “A good rogue is a dead rogue.” says the slogan of this vicious mercenary company. The Southern Peaks were formed along the TSF-Rogue space border out retaliation against encroaching pirates and insurgents in combination with a sheer distrust of the TSFMC. Without the need of any other organization, TSP aims to fight back the Rogue Sector on its own.
 
+ullman-industries-description = It's not a warcrime the first time. // TBA //
 
 #Religious groups
 

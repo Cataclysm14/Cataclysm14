@@ -135,6 +135,13 @@
   name: Civil Defense Militia
   description: civil-defense-milita-description
   color: "#666600"
+  
+- type: company
+  id: UllmanIndustries
+  form: Protagonist
+  name: Ullman Industries
+  description: ullman-industries-description
+  color: "#52326a"
 
 # Religious groups
 
