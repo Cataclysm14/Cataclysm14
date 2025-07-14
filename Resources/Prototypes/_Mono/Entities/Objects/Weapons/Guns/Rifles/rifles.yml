@@ -268,17 +268,13 @@
     minAngle: -23
     maxAngle: -32
   - type: Gun
-    minAngle: 23
-    maxAngle: 35
-    angleIncrease: 9
+    minAngle: 45
+    maxAngle: 74
+    angleIncrease: 12
     angleDecay: 20
-    burstFireRate: 35
-    lockOnTargetBurst: true
     cameraRecoilScalar: 0
     fireRate: 4.5
-    shotsPerBurst: 5
     availableModes:
-    - Burst
     - FullAuto
     soundGunshot:
       path: /Audio/_Goobstation/Weapons/Guns/Gunshots/smartgun_shoot.ogg
