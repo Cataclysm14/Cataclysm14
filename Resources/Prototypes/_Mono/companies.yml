@@ -127,6 +127,14 @@
   name: Aetherion Dynamics
   description: aetherion-dynamics-description
   color: "#7E72B2"
+  
+- type: company
+  id: HorizonEnergy
+  form: Protagonist
+  name: Horizon Energy
+  description: horizon-energy-description
+  color: "#69E37F"
+  image: /Textures/_Mono/Companies/horizon_energy.png
 
 # Minor companies
 
@@ -151,7 +159,7 @@
   name: Ullman Industries
   description: ullman-industries-description
   color: "#52326a"
-
+  image: /Textures/_Mono/Companies/ullman_industries.png
 # Religious groups
 
 - type: company
