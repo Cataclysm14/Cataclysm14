@@ -9,6 +9,7 @@
   parent:
   - MobNonHumanHostileBase
   - MobHumanoidHostileAISimpleMelee
+  - MobLaserReflect
   id: MonoBaseMobFleshLetoferol
   name: letoferol flesh
   description: A shambling mass of flesh, made with the horrors of Letoferol.
@@ -39,7 +40,8 @@
     - id: FoodMeat
       amount: 4
   - type: Bloodstream
-    bloodMaxVolume: 200
+    bloodReagent: Letoferol
+    bloodMaxVolume: 300
   - type: MeleeWeapon
     attackRate: 1.5
     soundHit:
@@ -57,11 +59,11 @@
     solutions:
       melee:
         reagents:
-        - ReagentId: Letoferol
+        - ReagentId: NaturalLetoferol
           Quantity: 90
   - type: MeleeChemicalInjector
     solution: melee
-    transferAmount: 3.5
+    transferAmount: 2.5
   - type: MovementSpeedModifier
     baseWalkSpeed : 3.5
     baseSprintSpeed : 4.25
@@ -73,6 +75,16 @@
   - type: Tag
     tags:
     - CanPilot
+    - DoorBumpOpener
+  - type: PassiveDamage
+    allowedStates:
+    - Alive
+    - Dead
+    damage:
+      types:
+        Heat: -0.25
+      groups:
+        Brute: -0.25
   - type: Targeting
   - type: Puller
     needsHands: false
@@ -116,6 +128,7 @@
         Blunt: 1.4
         Slash: 1.2
         Piercing: 0.65 # spear is clunky
+        Heat: 0.5 # fire is scary (esword is op)
 
 - type: entity
   parent: MonoBaseMobFleshLetoferol
@@ -144,22 +157,96 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      400: Dead
+      450: Dead
+    allowRevives: true
   - type: SlowOnDamage
     speedModifierThresholds:
       120: 0.7
       250: 0.5
   - type: MeleeWeapon
     autoAttack: true
-    attackRate: 0.3
+    attackRate: 1.2
     soundHit:
       path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
     angle: 60
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 14
-        Blunt: 21
-        Poison: 10
-        Pierce: 5
+        Slash: 17
+        Poison: 4
+        Pierce: 2
         Structural: 75
+  - type: ActionGun
+    action: ActionLetoferolSpike
+    gunProto: LetoferolSpikeGun
+
+- type: entity
+  id: LetoferolSpikeGun
+  name: letoferol bone spike
+  description: Shoots a short salvo of bone spikes.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 5
+    rechargeSound:
+      path: /Audio/Animals/space_dragon_roar.ogg
+  - type: BasicEntityAmmoProvider
+    proto: LetoferolHorrorSpikeSpread #DartAberrantFleshHorrorSpike
+    capacity: 2
+    count: 2
+  - type: Gun
+    minAngle: 5
+    maxAngle: 15
+    fireRate: 4
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Items/bow_pull.ogg
+    soundEmpty: null
+    projectileSpeed: 30
+
+- type: entity
+  id: LetoferolHorrorSpikeSpread
+  parent: LetoferolHorrorSpike
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ProjectileSpread
+    proto: LetoferolHorrorSpike
+    count: 5
+    spread: 4
+
+- type: entity
+  id: LetoferolHorrorSpike
+  name: letoferol bone spike
+  parent: DartAberrantFleshHorrorSpike
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      ammo:
+        maxVol: 3
+        reagents:
+        - ReagentId: NaturalLetoferol
+          Quantity: 1.5
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    fillBaseName: spikeSolution
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 4
+
+- type: entity
+  id: ActionLetoferolSpike
+  categories: [ HideSpawnMenu ]
+  name: "[color=yellow]Bone Spike[/color]"
+  description: "Shoot a short salvo of bone spikes laced with letoferol. [color=yellow]5 second cooldown.[/color]"
+  components:
+  - type: WorldTargetAction
+    icon: { sprite : _NF/Mobs/Aliens/flesh.rsi, state: spike }
+    event: !type:ActionGunShootEvent
+    priority: 2
+    checkCanAccess: false
+    range: 0
+    itemIconStyle: BigAction

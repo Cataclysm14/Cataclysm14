@@ -14,3 +14,16 @@
     polymorphSound: /Audio/Effects/Fluids/splat.ogg
     exitPolymorphSound: /Audio/Effects/Fluids/glug.ogg
     allowRepeatedMorphs: true
+
+- type: polymorph
+  id: LetoferolMutationNatural
+  configuration:
+    entity: MobLetoferolHorror
+    forced: true
+    inventory: Drop
+    transferName: true
+    revertOnCrit: false
+    revertOnDeath: false
+    polymorphSound: /Audio/Effects/Fluids/splat.ogg
+    exitPolymorphSound: /Audio/Effects/Fluids/glug.ogg
+    allowRepeatedMorphs: true
