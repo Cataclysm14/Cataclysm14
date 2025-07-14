@@ -102,6 +102,15 @@
   color: "#FC7303"
   image: /Textures/_Mono/Companies/HME.png
 
+- type: company
+  id: MidnightArmsCo
+  form: Protagonist
+  name: Midnight Arms Co.
+  description: midnight-arms-co-description
+  color: "#FF2E2E"
+  image: /Textures/_Mono/Companies/MACo.png
+  
+  
 # Major companies
 
 - type: company

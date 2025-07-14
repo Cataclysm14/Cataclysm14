@@ -1,9 +1,9 @@
-#Admin companies
+# Admin companies
 
 winter-solstice-description = All three branches of the Trans-Solar Marines Federation fall under the direction of the Federation's unified high command, known as Winter Solstice.
 
 
-#Core companies
+# Core companies
 
 drake-industries-description = Titan of the trade routes & Core company. What started of as a small transport fleet quickly became the lead in bulk transport & refining within the boundaries of the Colossus sector. Owning a monopoly in these domains allowed this corporation to grow exponentially amidst the high tensions in the sector and trade with all major groups without bias. The exclusive, hyper optimised ship-set it brought upon the market as part of it's expansion is highly prized for freelancers & corporation traders alike, despite the lack of comfort. Officially, it discourages any kind of hostilities performed by the members of the company. It promises easy profits to all capable pilots, traders & private securities who wish to apply. Don't act surprised when the working conditions are composed of throat-cutting deadlines, no bathroom breaks & sleeping on a dirty bedroll, though.
 
@@ -11,15 +11,17 @@ steel-hammer-description = Massive industrial conglomerate, and Core Company. Sp
 
 harmony-medical-enterprises-description = Harmony Medical Enterprises is a corporation based solely within medical practices and supplies, when you get hit in the battlefield? HME is the one that's provided your higher-ups with a discount deal on combat pens and various meds that keep you in the fight for longer. Harmony Medical Enterprises are the primary manufacturers that push things like medkits, combat pens, medipen cases, medical equipment, all of the lifesaving technology into the sector. While they have no dominion over cloning? They have the next best thing, medicine for the living.
 
+midnight-arms-co-description = Midnight Arms Company took advantage of a recently remade galaxy, one that lacked and forbid mega-corporations in all capacities. Midnight Arms provides independent masses and various other corporations armaments for whatever they need them for, what they are used for, well that is up to those that buy them. Guns are needed for all things in this age, self defense, expeditions, bounty hunting. All are jobs that need weapons to carry them out, MACo just finds itself to be the primary provider.
 
-#Major companies
+
+# Major companies
 
 dark-matter-enterprises-description = A corporate conglomerate of mercenaries, scientists, physicians, engineers, merchants, contractors, and clowns all of which vary in qualifications, if any. Founded by unhinged ex-Nanotrasen Contractors, DME operates with one goal in mind: Profit. All members of the DME operate towards maximizing profit margins, for themselves alongside subsidiaries under the organization. DME functions under one core tenant called the Golden Rule which states “No infighting between enterprise members as this negatively affects profit margins.”
 
 aetherion-dynamics-description = Representing the forefront of technological innovation, Aetherion Dynamics is renowned for their invention of the Compressed Gas Launch and Projectile (CGLP) system used in the ADEX-9 Dymere turbolaser battery, and additional innovative weapons with little to no consistent design philosophy. Between all of their famous ship guns, they began the Gunnery Revolution in the buildup to the conflict in Colossus Sector. They have a reputation as high quality manufacturers and designers, more interested in building an effective product than on making a profit.
 
 
-#Minor companies
+# Minor companies
 
 universal-states-of-america-description = The Universal States of America is a group of fanatical mercenaries that wish to bring the values of the ancient United States to the 25th century. They practically function as a PMC group, outsourcing patriotic militiamen as mercenaries, under the name 'Vanguards' to fund their dreams of creating a vast and powerful nation akin to the U.S.A, a dream in which they will most likely never fulfill. But, in their eyes, logic and common sense are no match for freedom. Exercise your right to the Second Amendment, scream at a chef because he calls his fries Space Fries instead of Freedom Fries, and make it known that you are a gun-lovin', weak-defendin', burger eatin', space truckin', Universal frickin' patriot! 
 
@@ -29,13 +31,13 @@ southern-peak-mercenaries-description = “A good rogue is a dead rogue.” says
 
 ullman-industries-description = It's not a warcrime the first time. // TBA //
 
-#Religious groups
+# Religious groups
 
 zealots-of-balaam-description = The Zealots and pilgrims of Balaam are luddites with a extreme aversion to the use of Hi-tech. They are overtly isolationist, preferring to raid convoys that move too far into space. As a follower of the blessed god, work underneath a senior zealot to help them levy their tithes. Never listen to the blasphemy of the other companies. Kill those who profane Balaam's eye with the use of shield tech and FTL, heavy industry is not safe either.
 
 cult-of-the-machine-god-description = The flesh is weak. To walk the path of the Cult of the Machine God is to reject the chaos of flesh and embrace the divine order of logic. The faithful act with precision and purpose, never swayed by emotion or impulse. Advancement comes not through passion, but through calculated improvement and unwavering discipline. Those who command in the Cult do so through algorithmic clarity, deploying Ascended operatives with mechanical efficiency and spreading influence through hidden Devotees or roaming Vessels led by Techpriests. Whether enforcing doctrine in distant sectors or executing cold, strategic dominion, every action must serve the grand equation. In all things, reason must rule, and through it, the Machine God's will is made manifest...
 
 
-#Hostile/rogue affiliated companies
+# Hostile/rogue affiliated companies
 
 viper-group-description = Formerly a privateering company domineered by military discipline with the sole mission of intercepting, disrupting and confiscating through TSF shipping routes along the fringes of USSP-TSF space in Sector 2. The Viper Group (VG) abruptly switched allegiances after a substantial number of tragic events in series. The TSF had offered the former-USSP backed organization substantial payment for subterfuge operations against the USSP, only to reveal them to the USSP soon after. Driven away by false bribes and murderous betrayal, TVG leadership was left to fester; often violently switching hands until “greed is good” eventually became the unspoken oath of membership. equitable relations with the Rogue Sector quickly expedited their arrival to rogue space. If you yearn for danger and wealth, join The Viper Group!
