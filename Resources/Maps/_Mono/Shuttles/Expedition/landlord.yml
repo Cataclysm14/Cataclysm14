@@ -1,34 +1,11 @@
-# SPDX-FileCopyrightText: 2021 AJCM-git
-# SPDX-FileCopyrightText: 2021 Paul Ritter
-# SPDX-FileCopyrightText: 2021 wrexbe
-# SPDX-FileCopyrightText: 2022 20kdc
-# SPDX-FileCopyrightText: 2022 Kara
-# SPDX-FileCopyrightText: 2022 LittleBuilderJane
-# SPDX-FileCopyrightText: 2022 Peptide90
-# SPDX-FileCopyrightText: 2022 metalgearsloth
-# SPDX-FileCopyrightText: 2022 mirrorcult
-# SPDX-FileCopyrightText: 2023 Alexander Evgrashin
-# SPDX-FileCopyrightText: 2023 Cheackraze
-# SPDX-FileCopyrightText: 2023 Checkraze
-# SPDX-FileCopyrightText: 2023 Emisse
-# SPDX-FileCopyrightText: 2023 YumiGumi
-# SPDX-FileCopyrightText: 2023 crystalHex
-# SPDX-FileCopyrightText: 2024 Dvir
-# SPDX-FileCopyrightText: 2024 ErhardSteinhauer
-# SPDX-FileCopyrightText: 2024 Minty Moo
-# SPDX-FileCopyrightText: 2024 TsjipTsjip
-# SPDX-FileCopyrightText: 2025 Schepka
-#
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
 meta:
   format: 7
   category: Grid
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 07/12/2025 18:28:57
-  entityCount: 921
+  time: 07/14/2025 11:27:42
+  entityCount: 932
 maps: []
 grids:
 - 1
@@ -42,9 +19,11 @@ tilemap:
   5: FloorDarkMono
   1: FloorDarkMonoAlt
   4: FloorDarkPlastic
+  14: FloorElevatorShaft
   3: FloorHull
   6: FloorHullReinforced
   7: FloorMetalDiamond
+  15: FloorMining
   0: FloorReinforced
   9: FloorReinforcedHardened
   13: FloorSteelMono
@@ -64,7 +43,7 @@ entities:
       chunks:
         0,0:
           ind: 0,0
-          tiles: AAAAAAAAAQAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAwAAAAAABAAAAAAABAAAAAAABAAAAAAABAAAAAAABQAAAAAABAAAAAAABAAAAAAABAAAAAAABAAAAAAABgAAAAAABgAAAAAABgAAAAAAAQAAAAAAAQAAAAAAAQAAAAAABwAAAAAABAAAAAAABAAAAAAABAAAAAAABAAAAAAABQAAAAAABAAAAAAABAAAAAAABAAAAAAABAAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAQAAAAAAAQAAAAAAAQAAAAAABwAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAgAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAgAAAAAACAAAAAAAAgAAAAAADQAAAAAADQAAAAAAAQAAAAAABwAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAgAAAAAACAAAAAAAAgAAAAAADQAAAAAADQAAAAAAAQAAAAAABwAAAAAAAgAAAAAACQAAAAAACQAAAAAACQAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAACAAAAAAACAAAAAAAAgAAAAAADQAAAAAADQAAAAAAAQAAAAAAAwAAAAAAAgAAAAAACQAAAAAACQAAAAAACQAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAACAAAAAAACAAAAAAAAgAAAAAADQAAAAAADQAAAAAAAQAAAAAABwAAAAAAAgAAAAAACQAAAAAACQAAAAAACQAAAAAAAgAAAAAAAQAAAAAAAgAAAAAAAQAAAAAAAgAAAAAACAAAAAAACAAAAAAAAgAAAAAADQAAAAAADQAAAAAAAQAAAAAABwAAAAAAAgAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAgAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAQAAAAAAAQAAAAAAAQAAAAAABwAAAAAACgAAAAAACgAAAAAACgAAAAAACgAAAAAACgAAAAAACgAAAAAACgAAAAAACgAAAAAAAQAAAAAABgAAAAAABgAAAAAABgAAAAAAAQAAAAAAAQAAAAAAAQAAAAAABwAAAAAACgAAAAAACgAAAAAACgAAAAAACgAAAAAACgAAAAAACgAAAAAACgAAAAAACgAAAAAAAQAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAwAAAAAACgAAAAAACgAAAAAACgAAAAAACgAAAAAACgAAAAAACgAAAAAACgAAAAAACgAAAAAAAQAAAAAAAgAAAAAACAAAAAAADAAAAAAABgAAAAAABgAAAAAABgAAAAAAAgAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAgAAAAAACAAAAAAACAAAAAAABgAAAAAABgAAAAAABgAAAAAACAAAAAAAAgAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAgAAAAAABAAAAAAABAAAAAAABAAAAAAAAgAAAAAADAAAAAAACAAAAAAACAAAAAAADAAAAAAABgAAAAAADAAAAAAACAAAAAAABgAAAAAACQAAAAAACQAAAAAACQAAAAAAAgAAAAAABAAAAAAABAAAAAAABAAAAAAAAgAAAAAADAAAAAAACAAAAAAACAAAAAAACAAAAAAACAAAAAAACAAAAAAACAAAAAAABgAAAAAACQAAAAAACQAAAAAACQAAAAAAAgAAAAAABAAAAAAABAAAAAAABAAAAAAAAgAAAAAADAAAAAAACAAAAAAACAAAAAAACAAAAAAACAAAAAAACAAAAAAACAAAAAAA
+          tiles: AAAAAAAAAQAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAADgAAAAAADgAAAAAADgAAAAAAAwAAAAAABAAAAAAABAAAAAAABAAAAAAABAAAAAAABQAAAAAABAAAAAAABAAAAAAABAAAAAAABAAAAAAABgAAAAAABgAAAAAABgAAAAAADgAAAAAABwAAAAAADgAAAAAADgAAAAAABAAAAAAABAAAAAAABAAAAAAABAAAAAAABQAAAAAABAAAAAAABAAAAAAABAAAAAAABAAAAAAAAgAAAAAAAgAAAAAAAgAAAAAADgAAAAAADgAAAAAADgAAAAAADgAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAgAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAgAAAAAACAAAAAAAAgAAAAAADQAAAAAADQAAAAAADgAAAAAADgAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAgAAAAAACAAAAAAAAgAAAAAADQAAAAAADQAAAAAADgAAAAAADgAAAAAAAgAAAAAACQAAAAAACQAAAAAACQAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAACAAAAAAACAAAAAAAAgAAAAAADQAAAAAADQAAAAAADgAAAAAAAwAAAAAAAgAAAAAACQAAAAAADwAAAAAACQAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAACAAAAAAACAAAAAAAAgAAAAAADQAAAAAADQAAAAAADgAAAAAADgAAAAAAAgAAAAAACQAAAAAACQAAAAAACQAAAAAAAgAAAAAAAQAAAAAAAgAAAAAAAQAAAAAAAgAAAAAACAAAAAAACAAAAAAAAgAAAAAADQAAAAAADQAAAAAADgAAAAAADgAAAAAAAgAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAgAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAgAAAAAAAgAAAAAAAgAAAAAAAgAAAAAADgAAAAAADgAAAAAADgAAAAAADgAAAAAACwAAAAAACwAAAAAACwAAAAAACwAAAAAACwAAAAAACgAAAAAACgAAAAAACgAAAAAAAQAAAAAABgAAAAAABgAAAAAABgAAAAAADgAAAAAABwAAAAAADgAAAAAADgAAAAAACwAAAAAACwAAAAAACwAAAAAACwAAAAAACwAAAAAACgAAAAAACgAAAAAACgAAAAAAAQAAAAAAAgAAAAAAAgAAAAAAAgAAAAAADgAAAAAADgAAAAAADgAAAAAAAwAAAAAACwAAAAAACwAAAAAACwAAAAAACwAAAAAACwAAAAAACgAAAAAACgAAAAAACgAAAAAAAQAAAAAAAgAAAAAACAAAAAAADAAAAAAABgAAAAAABgAAAAAABgAAAAAAAgAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAQAAAAAAAgAAAAAACAAAAAAACAAAAAAABgAAAAAABgAAAAAABgAAAAAACAAAAAAAAgAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAgAAAAAABAAAAAAABAAAAAAABAAAAAAAAgAAAAAADAAAAAAACAAAAAAACAAAAAAADAAAAAAABgAAAAAADAAAAAAACAAAAAAABgAAAAAACQAAAAAACQAAAAAACQAAAAAAAgAAAAAABAAAAAAABAAAAAAABAAAAAAAAgAAAAAADAAAAAAACAAAAAAACAAAAAAACAAAAAAACAAAAAAACAAAAAAACAAAAAAABgAAAAAACQAAAAAADwAAAAAACQAAAAAAAgAAAAAABAAAAAAABAAAAAAABAAAAAAAAgAAAAAADAAAAAAACAAAAAAACAAAAAAACAAAAAAACAAAAAAACAAAAAAACAAAAAAA
           version: 6
         0,-1:
           ind: 0,-1
@@ -111,6 +90,11 @@ entities:
         version: 2
         nodes:
         - node:
+            color: '#FFFFFFFF'
+            id: Bot
+          decals:
+            313: 6,10
+        - node:
             color: '#8C347F96'
             id: BrickTileSteelCornerNe
           decals:
@@ -130,12 +114,6 @@ entities:
             id: BrickTileSteelLineW
           decals:
             81: 5,14
-        - node:
-            color: '#8C347F96'
-            id: BrickTileWhiteBox
-          decals:
-            76: -2,12
-            77: -1,12
         - node:
             color: '#8C347F96'
             id: BrickTileWhiteCornerNe
@@ -206,12 +184,279 @@ entities:
             44: 17,7
             45: 17,6
         - node:
-            color: '#8C347FCD'
+            color: '#8C347F96'
+            id: HalfTileOverlayGreyscale270
+          decals:
+            294: 0,9
+            295: 0,10
+            296: 0,11
+        - node:
+            color: '#8C347F96'
+            id: HalfTileOverlayGreyscale90
+          decals:
+            291: 4,9
+            292: 4,10
+            293: 4,11
+        - node:
+            color: '#8C347F96'
             id: MonoOverlay
           decals:
-            108: 6,8
-            109: -1,12
-            110: -2,12
+            287: -1,12
+            288: -2,12
+            289: 6,8
+        - node:
+            color: '#FFFFFFFF'
+            id: TechCornerE
+          decals:
+            305: 1,14
+            306: 1,5
+        - node:
+            color: '#FFFFFFFF'
+            id: TechCornerN
+          decals:
+            200: 15,7
+            307: 3,5
+            308: 3,14
+        - node:
+            color: '#FFFFFFFF'
+            id: TechCornerS
+          decals:
+            275: -4,1
+            311: 1,16
+            312: 1,7
+        - node:
+            color: '#FFFFFFFF'
+            id: TechCornerW
+          decals:
+            248: 15,3
+            274: 1,1
+            309: 3,16
+            310: 3,7
+        - node:
+            color: '#FFFFFFFF'
+            id: TechE
+          decals:
+            298: 1,6
+            302: 1,15
+        - node:
+            color: '#FFFFFFFF'
+            id: TechN
+          decals:
+            199: 13,10
+            297: 2,5
+            303: 2,14
+        - node:
+            color: '#FFFFFFFF'
+            id: TechNE
+          decals:
+            182: 14,10
+        - node:
+            color: '#FFFFFFFF'
+            id: TechNW
+          decals:
+            172: 12,2
+            183: 12,10
+            195: 14,7
+            196: 14,7
+            202: 15,9
+        - node:
+            color: '#FFFFFFFF'
+            id: TechS
+          decals:
+            166: 13,0
+            270: -3,1
+            271: -2,1
+            272: -1,1
+            273: 0,1
+            277: -2,-4
+            278: -1,-4
+            299: 2,7
+            304: 2,16
+        - node:
+            color: '#FFFFFFFF'
+            id: TechSE
+          decals:
+            167: 14,0
+        - node:
+            color: '#FFFFFFFF'
+            id: TechSW
+          decals:
+            165: 12,0
+            185: 12,8
+            191: 14,3
+            204: 15,1
+            276: -3,-4
+        - node:
+            color: '#FFFFFFFF'
+            id: TechW
+          decals:
+            184: 12,9
+            186: 12,1
+            194: 14,6
+            197: 14,4
+            198: 14,5
+            201: 15,8
+            203: 15,2
+            279: -3,-3
+            280: -3,-2
+            281: -3,-1
+            300: 3,6
+            301: 3,15
+        - node:
+            color: '#8C347F96'
+            id: ThreeQuarterTileOverlayGreyscale
+          decals:
+            283: -6,7
+        - node:
+            color: '#8C347F96'
+            id: ThreeQuarterTileOverlayGreyscale180
+          decals:
+            285: -4,5
+        - node:
+            color: '#8C347F96'
+            id: ThreeQuarterTileOverlayGreyscale270
+          decals:
+            284: -6,5
+        - node:
+            color: '#8C347F96'
+            id: ThreeQuarterTileOverlayGreyscale90
+          decals:
+            282: -4,7
+        - node:
+            color: '#5E7C1696'
+            id: TrimWarnNorth
+          decals:
+            267: 6,2
+            268: 7,2
+        - node:
+            color: '#5E7C1696'
+            id: TrimWarnNorthEast
+          decals:
+            264: 8,2
+        - node:
+            color: '#5E7C1696'
+            id: TrimWarnNorthWest
+          decals:
+            258: 5,2
+        - node:
+            color: '#5E7C1696'
+            id: TrimWarnSouth
+          decals:
+            259: 7,1
+            269: 6,1
+        - node:
+            color: '#5E7C1696'
+            id: TrimWarnSouthEast
+          decals:
+            257: 8,1
+        - node:
+            color: '#5E7C1696'
+            id: TrimWarnSouthWest
+          decals:
+            261: 5,1
+        - node:
+            color: '#334E6DC8'
+            id: TrimlineEast
+          decals:
+            234: 2,-2
+            235: 2,-3
+        - node:
+            color: '#8C347F96'
+            id: TrimlineEast
+          decals:
+            206: -1,5
+            207: -1,6
+            210: -1,4
+            224: -4,4
+            245: 8,9
+        - node:
+            color: '#5E7C1696'
+            id: TrimlineNorth
+          decals:
+            253: 5,3
+            254: 6,3
+            255: 7,3
+            256: 8,3
+        - node:
+            color: '#8C347F96'
+            id: TrimlineNorth
+          decals:
+            213: 0,3
+            214: 1,3
+            215: 2,3
+            216: 3,3
+            222: -3,3
+            236: 0,12
+            237: 1,12
+            240: 3,12
+            241: 4,12
+            242: 5,12
+            243: 6,12
+            244: 7,12
+        - node:
+            color: '#334E6DC8'
+            id: TrimlineNorthEast
+          decals:
+            227: 2,-1
+        - node:
+            color: '#8C347F96'
+            id: TrimlineNorthEastCorner
+          decals:
+            212: -1,3
+            223: -4,3
+            238: 2,12
+        - node:
+            color: '#334E6DC8'
+            id: TrimlineNorthWest
+          decals:
+            233: 1,-1
+        - node:
+            color: '#8C347F96'
+            id: TrimlineNorthWest
+          decals:
+            226: -7,7
+        - node:
+            color: '#8C347F96'
+            id: TrimlineNorthWestCorner
+          decals:
+            221: -2,3
+            239: 2,12
+        - node:
+            color: '#334E6DC8'
+            id: TrimlineSouthEast
+          decals:
+            228: 2,-4
+        - node:
+            color: '#8C347F96'
+            id: TrimlineSouthEastCorner
+          decals:
+            251: 7,8
+            252: 5,8
+        - node:
+            color: '#334E6DC8'
+            id: TrimlineSouthWest
+          decals:
+            229: 1,-4
+        - node:
+            color: '#8C347F96'
+            id: TrimlineSouthWestCorner
+          decals:
+            249: 5,8
+            250: 7,8
+        - node:
+            color: '#334E6DC8'
+            id: TrimlineWest
+          decals:
+            230: 1,-3
+            231: 1,-2
+        - node:
+            color: '#8C347F96'
+            id: TrimlineWest
+          decals:
+            208: -2,6
+            209: -2,5
+            211: -2,4
+            225: -7,6
         - node:
             color: '#EFB34196'
             id: WarnCornerNE
@@ -340,6 +585,22 @@ entities:
           decals:
             113: -6,2
         - node:
+            color: '#FFFFFFFF'
+            id: electricdanger
+          decals:
+            314: 6,11
+        - node:
+            color: '#FFFFFFFF'
+            id: exclamationmark
+          decals:
+            315: 7,10
+            316: 5,10
+        - node:
+            color: '#FFFFFFFF'
+            id: firedanger
+          decals:
+            317: 6,9
+        - node:
             color: '#D4D4D496'
             id: m
           decals:
@@ -398,7 +659,8 @@ entities:
           3,0:
             0: 65535
           3,1:
-            0: 65535
+            2: 1
+            0: 65534
           3,2:
             0: 12287
           3,-1:
@@ -483,6 +745,21 @@ entities:
           moles:
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.14996
+          moles:
+          - 21.824879
+          - 82.10312
           - 0
           - 0
           - 0
@@ -661,11 +938,23 @@ entities:
     - type: Transform
       pos: 13.5,11.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        681:
+        - DoorStatus: DoorBolt
   - uid: 681
     components:
     - type: Transform
       pos: 13.5,13.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        680:
+        - DoorStatus: DoorBolt
 - proto: AirlockMercenaryGlass
   entities:
   - uid: 266
@@ -1034,6 +1323,12 @@ entities:
     - type: Transform
       pos: 7.5,7.5
       parent: 1
+  - uid: 932
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 13.5,13.5
+      parent: 1
 - proto: Autolathe
   entities:
   - uid: 653
@@ -1132,6 +1427,13 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 20.5,9.5
+      parent: 1
+- proto: BookAtmosAirAlarms
+  entities:
+  - uid: 925
+    components:
+    - type: Transform
+      pos: 12.566474,5.5414896
       parent: 1
 - proto: BrbSign
   entities:
@@ -2299,6 +2601,11 @@ entities:
       rot: 3.141592653589793 rad
       pos: 1.5,3.5
       parent: 1
+  - uid: 926
+    components:
+    - type: Transform
+      pos: 13.378974,5.4789896
+      parent: 1
 - proto: ChairOfficeLight
   entities:
   - uid: 57
@@ -2796,6 +3103,25 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 6.8167152,-4.1332893
+      parent: 1
+- proto: DrinkWineBottleFull
+  entities:
+  - uid: 922
+    components:
+    - type: Transform
+      pos: 12.425849,4.9789896
+      parent: 1
+- proto: DrinkWineGlass
+  entities:
+  - uid: 923
+    components:
+    - type: Transform
+      pos: 12.707099,4.7289896
+      parent: 1
+  - uid: 924
+    components:
+    - type: Transform
+      pos: 12.472724,4.5414896
       parent: 1
 - proto: EncryptionKeyCommon
   entities:
@@ -4068,11 +4394,6 @@ entities:
     - type: Transform
       pos: 12.5,6.5
       parent: 1
-  - uid: 86
-    components:
-    - type: Transform
-      pos: 12.5,4.5
-      parent: 1
 - proto: LockerDMELeaderFilled
   entities:
   - uid: 13
@@ -4223,6 +4544,38 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Static
+- proto: PlasmaWindowDirectional
+  entities:
+  - uid: 928
+    components:
+    - type: Transform
+      pos: 6.5,10.5
+      parent: 1
+  - uid: 929
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 6.5,10.5
+      parent: 1
+  - uid: 930
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 6.5,10.5
+      parent: 1
+  - uid: 931
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 6.5,10.5
+      parent: 1
+- proto: PlushieHuman
+  entities:
+  - uid: 927
+    components:
+    - type: Transform
+      pos: 6.5,10.5
+      parent: 1
 - proto: PottedPlantRandom
   entities:
   - uid: 629
@@ -5091,10 +5444,17 @@ entities:
     - type: Transform
       pos: 6.5,-3.5
       parent: 1
-  - uid: 767
+- proto: TableCounterMetal
+  entities:
+  - uid: 86
     components:
     - type: Transform
       pos: 12.5,5.5
+      parent: 1
+  - uid: 767
+    components:
+    - type: Transform
+      pos: 12.5,4.5
       parent: 1
 - proto: TablePlasmaGlass
   entities:
