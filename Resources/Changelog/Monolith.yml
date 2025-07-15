@@ -7407,3 +7407,110 @@ Entries:
   id: 850
   time: '2025-07-14T08:35:17.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1384
+- author: starch70
+  changes:
+    - type: Remove
+      message: >-
+        Disabled roundstart light variation pass (no more random
+        broken/flickering lights on ships/POIs, they will still break over time
+        though)
+    - type: Tweak
+      message: >-
+        Hopefully made Rogue base layout slightly better (added more hallways,
+        etc, no more having to walk through depressurized rock to get to
+        northern docks)
+    - type: Tweak
+      message: Increased the minimum distance that the Rogue base can spawn from 0, 0
+    - type: Fix
+      message: Fixed Rogue base cargo not working.
+  id: 851
+  time: '2025-07-14T17:14:23.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1399
+- author: UnicornOnLSD
+  changes:
+    - type: Tweak
+      message: >-
+        The DIS ships has received a change to their locking system (see PR for
+        details). DIS Rig had a second dock added for better stability after
+        customer feedback.
+  id: 852
+  time: '2025-07-14T17:15:31.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1391
+- author: starch70
+  changes:
+    - type: Tweak
+      message: added gamer loot to Lancelot
+  id: 853
+  time: '2025-07-14T17:20:19.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1385
+- author: starch70
+  changes:
+    - type: Tweak
+      message: >-
+        Changed the coloring of the MLA-34 icon sprites again, I wasnt satisfied
+        with the outlines.
+  id: 854
+  time: '2025-07-14T17:22:23.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1389
+- author: Scyron
+  changes:
+    - type: Add
+      message: Added a cloak for Rogue commander!
+  id: 855
+  time: '2025-07-14T17:23:52.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1393
+- author: starch70
+  changes:
+    - type: Remove
+      message: Removed burst fire from MLA-79 and MLA-34 smartguns.
+    - type: Tweak
+      message: >-
+        Smartguns now have dogshit unguided accuracy (so you need to rely on the
+        smart lock nerd)
+  id: 856
+  time: '2025-07-14T17:26:13.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1400
+- author: starch70
+  changes:
+    - type: Fix
+      message: Special guns in Civilian loadouts should be legal now.
+  id: 857
+  time: '2025-07-14T17:33:17.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1388
+- author: starch70
+  changes:
+    - type: Tweak
+      message: >-
+        Edited a lot about Letoferol fleshmobs (ranged bone spike attack,
+        non-primary infected is permanent, bloodstream is now letoferol, can now
+        walk into doors to open, edited melee attack to not be as dogshit,
+        passive regen)
+  id: 858
+  time: '2025-07-14T21:51:44.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1403
+- author: SarahRaven
+  changes:
+    - type: Add
+      message: >-
+        Medical Borgs Surgery and Advanced Surgery modules now allow organ
+        pickup/drop. Xop Glorp "Surgery"
+    - type: Tweak
+      message: >-
+        Increased borg chassis max module slots by two. Now use that GPS and
+        Jetpack module slot without limiting your role.
+  id: 859
+  time: '2025-07-15T03:05:06.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1404
+- author: EctoplasmIsGood
+  changes:
+    - type: Tweak
+      message: Letoferol monsters have been renamed to chimera fleshbeasts
+    - type: Tweak
+      message: Fleshbeasts now have normal blood, a bit more HP, and thermal vision
+    - type: Tweak
+      message: Fleshbeast projectiles no longer infect you, and do a bit more damage
+    - type: Tweak
+      message: Fleshbeast infection is no longer permanent, and reverts upon death
+  id: 860
+  time: '2025-07-15T04:00:28.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1414

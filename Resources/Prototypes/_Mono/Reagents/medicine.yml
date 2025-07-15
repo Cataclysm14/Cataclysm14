@@ -156,3 +156,32 @@
           conditions:
             - !type:ReagentThreshold
               min: 6
+
+- type: reagent
+  id: NaturalLetoferol
+  name: reagent-name-nat-letoferol
+  group: Special
+  desc: reagent-desc-nat-letoferol
+  physicalDesc: reagent-physical-desc-necrotic
+  flavor: acid
+  color: "#ebba34"
+  worksOnTheDead: true
+  metabolisms:
+    Poison:
+      metabolismRate: 0.2
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Cellular: 0.5
+      - !type:Polymorph
+        prototype: LetoferolMutationNatural
+        conditions:
+        - !type:ReagentThreshold
+          min: 15
+      - !type:AdjustReagent
+        reagent: NaturalLetoferol
+        amount: -2.5
+        conditions:
+        - !type:ReagentThreshold
+          min: 15
