@@ -24,12 +24,10 @@
     drawdepth: Mobs
     sprite: _NF/Mobs/Aliens/flesh.rsi
   - type: MobState
-    allowedStates:
-    - Alive
-    - Dead
   - type: MobThresholds
     thresholds:
       0: Alive
+      200: Critical
       400: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
@@ -112,6 +110,7 @@
   - type: PassiveDamage
     allowedStates:
     - Alive
+    - Critical
     damage:
       groups:
         Brute: -0.45
@@ -191,7 +190,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      500: Dead
+      500: Critical
+      800: Dead
     allowRevives: true
   - type: SlowOnDamage
     speedModifierThresholds:
