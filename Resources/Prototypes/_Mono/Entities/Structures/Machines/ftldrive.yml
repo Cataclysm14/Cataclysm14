@@ -119,7 +119,7 @@
       color: "#7E16F7"
   - type: FTLDrive
     range: 25000
-    cooldown: 20
+    cooldown: 30
     hyperSpaceTime: 7.5
     startupTime: 20
   - type: ApcPowerReceiver
