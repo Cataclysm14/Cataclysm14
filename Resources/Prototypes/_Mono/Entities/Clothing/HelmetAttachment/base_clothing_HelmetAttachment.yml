@@ -15,3 +15,13 @@
     - HELMETATTACHMENT
   - type: Sprite
     state: icon
+
+#not that awful solution
+- type: entity
+  parent: ClothingHelmetAttachmentBase
+  id: ClothingHeadHelmetAttachmentBlock
+  name: Blocked
+  description: Can't fit anything there
+  components:
+  - type: Sprite
+    sprite: Markers/cross.rsi

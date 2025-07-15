@@ -17,4 +17,14 @@
     state: icon
   - type: Tag
     tags:
-    - kevlar
+    - Kevlar
+
+#not that awful solution
+- type: entity
+  parent: ClothingHelmetCoverBase
+  id: ClothingHeadHelmetCoverBlock
+  name: Blocked
+  description: Can't fit anything there
+  components:
+  - type: Sprite
+    sprite: Markers/cross.rsi

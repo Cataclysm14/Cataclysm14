@@ -94,9 +94,14 @@
     vendPrice: 2000 # Frontier
   - type: StaminaDamageResistance # Mono - Stamres
     coefficient: 0.6
-  - type: ToggleableClothing # Goobstation - Modsuits change
+  - type: ToggleableClothing # Goobstation - Modsuits change - Mono - this is a solution for helmet attachment/cover to not fit on hardsuits
+    requiredSlot: outerclothing
+    blockUnequipWhenAttached: true
+    replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHeadHelmetHardsuitBasic
+      helmetcover: ClothingHeadHelmetCoverBlock
+      helmetattachment: ClothingHeadHelmetAttachmentBlock
 
 #Atmospherics Hardsuit
 - type: entity
