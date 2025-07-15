@@ -279,7 +279,7 @@ public sealed class SpawnSalvageMissionJob : Job<bool>
         if (shuttleUid is { Valid: true })
         {
             var shuttle = _entManager.GetComponent<ShuttleComponent>(shuttleUid.Value);
-            _shuttle.FTLToCoordinates(shuttleUid.Value, shuttle, new EntityCoordinates(mapUid, coords), 0f, 5.5f, 50f);
+            _shuttle.FTLToCoordinates(shuttleUid.Value, shuttle, new EntityCoordinates(mapUid, coords), 0f, 30f, 35f); // StartupTime 5.5f->30f, 50f->35f
         }
 
         List<Vector2i> reservedTiles = new();
