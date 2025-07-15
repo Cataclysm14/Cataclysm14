@@ -56,16 +56,3 @@
       amount: 0.25
   products:
     Mesotaxinide: 5
-
-- type: reaction
-  id: Letoferol
-  minTemp: 352
-  reactants:
-    Romerol:
-      amount: 2
-    Mesotaxinide:
-      amount: 4
-    TranexamicAcid:
-      amount: 2
-  products:
-    Letoferol: 5

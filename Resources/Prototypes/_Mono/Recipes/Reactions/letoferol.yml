@@ -1,0 +1,37 @@
+- type: reaction
+  id: Letoferol
+  minTemp: 352
+  reactants:
+    Romerol:
+      amount: 2
+    Mesotaxinide:
+      amount: 4
+    TranexamicAcid:
+      amount: 2
+  products:
+    Letoferol: 5
+
+- type: reaction
+  id: LetoferolGrowth
+  minTemp: 305 #avg body temp
+  reactants:
+    Letoferol:
+      amount: 1
+    Blood:
+      amount: 3
+    Celoxradine:
+      amount: 1
+  products:
+    Blood: 1
+    NaturalLetoferol: 3
+
+- type: reaction
+  id: NaturalLetoferolGrowth
+  minTemp: 305 #avg body temp
+  reactants:
+    NaturalLetoferol:
+      amount: 1
+    Blood:
+      amount: 7
+  products:
+    NaturalLetoferol: 2.5
