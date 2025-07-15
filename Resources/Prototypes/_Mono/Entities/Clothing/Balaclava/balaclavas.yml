@@ -9,7 +9,7 @@
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskBlack
   name: black ski mask balaclava
-  description: A black balaclava to make you look menacing.
+  description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
@@ -29,6 +29,170 @@
       - state: inhand-right
         color: "#3e3e48"
 
+- type: entity
+  parent: ClothingBalaclavaBase
+  id: ClothingBalaclavaSkiMaskGray
+  name: gray ski mask balaclava
+  description: A colored balaclava to make you look menacing.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    color: "#6A6A6A"
+  - type: Clothing
+    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    clothingVisuals:
+      balaclava:
+      - state: equipped-BALACLAVA
+        color: "#6A6A6A"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#6A6A6A"
+      right:
+      - state: inhand-right
+        color: "#6A6A6A"
+
+- type: entity
+  parent: ClothingBalaclavaBase
+  id: ClothingBalaclavaSkiMaskWhite
+  name: white ski mask balaclava
+  description: A colored balaclava to make you look menacing.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    clothingVisuals:
+      balaclava:
+      - state: equipped-BALACLAVA
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+
+- type: entity
+  parent: ClothingBalaclavaBase
+  id: ClothingBalaclavaSkiMaskRed
+  name: red ski mask balaclava
+  description: A colored balaclava to make you look menacing.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    color: "#ff2c2c"
+  - type: Clothing
+    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    clothingVisuals:
+      balaclava:
+      - state: equipped-BALACLAVA
+        color: "#ff2c2c"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#ff2c2c"
+      right:
+      - state: inhand-right
+        color: "#ff2c2c"
+
+- type: entity
+  parent: ClothingBalaclavaBase
+  id: ClothingBalaclavaSkiMaskGreen
+  name: green ski mask balaclava
+  description: A colored balaclava to make you look menacing.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    color: "#4CBB17"
+  - type: Clothing
+    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    clothingVisuals:
+      balaclava:
+      - state: equipped-BALACLAVA
+        color: "#4CBB17"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#4CBB17"
+      right:
+      - state: inhand-right
+        color: "#4CBB17"
+
+- type: entity
+  parent: ClothingBalaclavaBase
+  id: ClothingBalaclavaSkiMaskBlue
+  name: blue ski mask balaclava
+  description: A colored balaclava to make you look menacing.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    color: "#2832C2"
+  - type: Clothing
+    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    clothingVisuals:
+      balaclava:
+      - state: equipped-BALACLAVA
+        color: "#2832C2"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#2832C2"
+      right:
+      - state: inhand-right
+        color: "#2832C2"
+
+- type: entity
+  parent: ClothingBalaclavaBase
+  id: ClothingBalaclavaSkiMaskPurple
+  name: purple ski mask balaclava
+  description: A colored balaclava to make you look menacing.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    color: "#B200ED"
+  - type: Clothing
+    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    clothingVisuals:
+      balaclava:
+      - state: equipped-BALACLAVA
+        color: "#B200ED"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#B200ED"
+      right:
+      - state: inhand-right
+        color: "#B200ED"
+
+- type: entity
+  parent: ClothingBalaclavaBase
+  id: ClothingBalaclavaSkiMaskYellow
+  name: yellow ski mask balaclava
+  description: A colored balaclava to make you look menacing.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    color: "#FFF200"
+  - type: Clothing
+    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    clothingVisuals:
+      balaclava:
+      - state: equipped-BALACLAVA
+        color: "#FFF200"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#FFF200"
+      right:
+      - state: inhand-right
+        color: "#FFF200"
+
 #ski mask + hole
 
 
@@ -36,7 +200,7 @@
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaSkiMaskMouthBlack
   name: black ski mask balaclava (mouth)
-  description: A black balaclava to make you look menacing.
+  description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask_mouth.rsi
@@ -64,7 +228,7 @@
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicBlack
   name: black classic balaclava
-  description: A black balaclava to make you look menacing.
+  description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/Balaclavas/balaclava_classic.rsi
@@ -91,7 +255,7 @@
   parent: ClothingBalaclavaBase
   id: ClothingBalaclavaClassicMouthBlack
   name: black classic balaclava (mouth)
-  description: A black balaclava to make you look menacing.
+  description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/Balaclavas/balaclava_classic_mouth.rsi
