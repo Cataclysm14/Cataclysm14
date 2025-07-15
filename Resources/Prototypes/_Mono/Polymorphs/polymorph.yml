@@ -23,7 +23,7 @@
     inventory: Drop
     transferName: true
     revertOnCrit: false
-    revertOnDeath: false
+    revertOnDeath: true
     polymorphSound: /Audio/Effects/Fluids/splat.ogg
     exitPolymorphSound: /Audio/Effects/Fluids/glug.ogg
     allowRepeatedMorphs: true
