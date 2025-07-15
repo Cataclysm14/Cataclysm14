@@ -158,8 +158,17 @@
   form: Protagonist
   name: Ullman Industries
   description: ullman-industries-description
-  color: "#52326a"
+  color: "#52326A"
   image: /Textures/_Mono/Companies/ullman_industries.png
+  
+- type: company
+  id: NosskeEienResearchandDevelopment
+  form: Protagonist
+  name: Nosske-Eien Research and Development
+  description: nosske-eien-rnd-description
+  color: "#5B358C"
+  image: /Textures/_Mono/Companies/ne_rd.png
+  
 # Religious groups
 
 - type: company

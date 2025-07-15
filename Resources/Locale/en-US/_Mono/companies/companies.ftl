@@ -21,6 +21,8 @@ dark-matter-enterprises-description = A corporate conglomerate of mercenaries, s
 aetherion-dynamics-description = Representing the forefront of technological innovation, Aetherion Dynamics is renowned for their invention of the Compressed Gas Launch and Projectile (CGLP) system used in the ADEX-9 Dymere turbolaser battery, and additional innovative weapons with little to no consistent design philosophy. Between all of their famous ship guns, they began the Gunnery Revolution in the buildup to the conflict in Colossus Sector. They have a reputation as high quality manufacturers and designers, more interested in building an effective product than on making a profit.
 
 horizon-energy-description = The lead in gas extraction, from the monolith's valuable Prismatic Plasma, to the gas filled asteroids of the outer rim in the Colossus sector. They are the current industry leaders when it comes to the atmospherics extraction & engineering field.  They provide services useful for both new and enterprising miners, to the veteran and experienced gassers alike. Chances are, the air the regular spacer breathes and gas trail their ship leaves behind came from Horizon Energy.
+
+
 # Minor companies
 
 universal-states-of-america-description = The Universal States of America is a group of fanatical mercenaries that wish to bring the values of the ancient United States to the 25th century. They practically function as a PMC group, outsourcing patriotic militiamen as mercenaries, under the name 'Vanguards' to fund their dreams of creating a vast and powerful nation akin to the U.S.A, a dream in which they will most likely never fulfill. But, in their eyes, logic and common sense are no match for freedom. Exercise your right to the Second Amendment, scream at a chef because he calls his fries Space Fries instead of Freedom Fries, and make it known that you are a gun-lovin', weak-defendin', burger eatin', space truckin', Universal frickin' patriot! 
@@ -29,7 +31,10 @@ civil-defense-milita-description = A fairly new company founded within the Colos
 
 southern-peak-mercenaries-description = “A good rogue is a dead rogue.” says the slogan of this vicious mercenary company. The Southern Peaks were formed along the TSF-Rogue space border out retaliation against encroaching pirates and insurgents in combination with a sheer distrust of the TSFMC. Without the need of any other organization, TSP aims to fight back the Rogue Sector on its own.
 
-ullman-industries-description = It's not a warcrime the first time. // TBA //
+ullman-industries-description = It's not a warcrime the first time. Originally a staple company in the lawless sector for small arms production and pharmaceuticals, once the TSF arrived, most companies went public sector- registering and abiding "safe work practices" and paying employees a "living wage"- as well as pursuing company leaders for charges of "war crimes". Ullman Industries broke this trend by staying true to their roots as a fringe element, supplying arms, armor, ships, you name it to any and all customers in the Ashen Republic. Bottom line is- if it's illegal in Federation space, it's probably sold by Ullman Industries. Hell, they're probably the ones who built it.
+
+nosske-eien-rnd-description = Renowned in other sectors for their cutting edge technology and advancements, Nosske-Eien had began branching out and dipping their toes in the Rogue sector by contracting local workforce, be it regular civilians, pilots or mercenaries, for the research regarding the local xenoarchaeology, xenobiology and technological advancements. Nosske-Eien has been the primary source for the recent science technological advancements and equipment, as well as high-tech asteroid mining equipment and soon, shuttlecraft. Though, there are rumours of their contractors randomly disappearing from time to time, let's hope it's just a ruse and nothing to worry about, huh?
+
 
 # Religious groups
 
