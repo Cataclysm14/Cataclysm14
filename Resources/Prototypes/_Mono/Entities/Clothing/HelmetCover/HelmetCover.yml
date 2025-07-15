@@ -1,0 +1,24 @@
+
+- type: entity
+  parent: ClothingBalaclavaBase
+  id: ClothingBalaclavaSkiMaskBlack
+  name: black ski mask balaclava
+  description: A colored balaclava to make you look menacing.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    color: "#3e3e48"
+  - type: Clothing
+    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    clothingVisuals:
+      balaclava:
+      - state: equipped-BALACLAVA
+        color: "#3e3e48"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#3e3e48"
+      right:
+      - state: inhand-right
+        color: "#3e3e48"
