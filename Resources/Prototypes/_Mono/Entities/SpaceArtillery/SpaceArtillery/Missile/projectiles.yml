@@ -103,7 +103,7 @@
     scanArc: 70
     launchSpeed: 180
     maxSpeed: 420
-    trackDelay: 0.8
+    trackDelay: 0.7
 
 # ASM-501
 
@@ -148,11 +148,11 @@
   - type: MiningGatheringHard
   - type: TargetSeeking
     acceleration: 50
-    detectionRange: 500
-    scanArc: 80
+    detectionRange: 300
+    scanArc: 50
     launchSpeed: 50
     maxSpeed: 60
-    trackDelay: 3
+    trackDelay: 4
 
 # TOVEK
 
