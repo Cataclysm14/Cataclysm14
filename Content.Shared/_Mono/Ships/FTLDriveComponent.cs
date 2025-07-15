@@ -22,7 +22,7 @@ public sealed partial class FTLDriveComponent : Component
     /// </summary>
     [DataField]
     [AutoNetworkedField]
-    public float Cooldown = 10f;
+    public float Cooldown = 45f; // Mono
 
 
     /// <summary>
@@ -30,12 +30,12 @@ public sealed partial class FTLDriveComponent : Component
     /// </summary>
     [DataField]
     [AutoNetworkedField]
-    public float HyperSpaceTime = 20f;
+    public float HyperSpaceTime = 15f; // Mono
 
     /// <summary>
     /// The FTL duration until the jump starts.
     /// </summary>
     [DataField]
     [AutoNetworkedField]
-    public float StartupTime = 5.5f;
+    public float StartupTime = 30f; // Mono
 }

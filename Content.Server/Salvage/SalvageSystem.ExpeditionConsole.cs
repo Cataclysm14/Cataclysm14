@@ -36,7 +36,7 @@ public sealed partial class SalvageSystem
 {
     [ValidatePrototypeId<EntityPrototype>]
     public const string CoordinatesDisk = "CoordinatesDisk";
-    private const float ShuttleFTLRange = 1f;
+    private const float ShuttleFTLRange = 0f;
     private const float ShuttleFTLMassThreshold = 50f;
 
     [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
