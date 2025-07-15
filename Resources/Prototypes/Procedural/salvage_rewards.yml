@@ -29,7 +29,7 @@
     SheetUranium: 1.0
     CratePartsT3: 1.0
     CratePartsT3T4: 0.5
-    TechnologyDiskRare: 0.5
+    # TechnologyDiskRare: 0.5 # Mono
     # cloning boards
     CloningPodMachineCircuitboard: 0.5
     MedicalScannerMachineCircuitboard: 0.5
