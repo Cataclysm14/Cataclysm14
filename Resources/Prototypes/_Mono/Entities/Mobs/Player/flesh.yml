@@ -134,7 +134,7 @@
   parent: MonoBaseMobFleshLetoferol
   id: MobLetoferolHorror
   name: chimera fleshbeast
-  description:
+  description: A once sentient being covered in putrid flesh and bone. You can see a glimpse of humanity left in its eyes, like whoever it was is still awake.
   components:
   - type: MovementSpeedModifier
     baseWalkSpeed : 2.7
