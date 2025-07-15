@@ -1,15 +1,9 @@
 using Content.Server.Polymorph.Components;
-using System.Linq;
-using Content.Server.Administration;
 using Content.Server.Polymorph.Systems;
-using Content.Server.Polymorph.Toolshed;
 using Content.Shared.EntityEffects;
 using Content.Shared.Polymorph;
-using Content.Server.Polymorph.Systems;
-using Content.Shared.Administration;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
-using Robust.Shared.Toolshed;
 
 namespace Content.Server.EntityEffects.Effects;
 
