@@ -309,3 +309,5 @@ Resources/MapImages
 
 # Link Files
 *.lnk
+/Resources/Prototypes/_Mono/companies.yml
+/.gitignore
