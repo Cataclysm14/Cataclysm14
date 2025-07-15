@@ -28,7 +28,7 @@ using Robust.Shared.Physics.Systems;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 
-namespace Content.Server.Shuttles.Systems;
+namespace Content.Server.Shuttles.Systems.ThrusterSystem;
 
 /// <summary>
 /// Updates a thruster entity's thrust contribution to the ShuttleComponent that they are attached to.

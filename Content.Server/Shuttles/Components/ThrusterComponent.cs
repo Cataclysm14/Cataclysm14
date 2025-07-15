@@ -9,7 +9,7 @@ using Content.Shared.Damage;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
-namespace Content.Server.Shuttles.Components;
+namespace Content.Server.Shuttles.Components.ThrusterComponent;
 
 /// <summary>
 /// Entities with this component act as a thruster, contributing potential impulse or a
