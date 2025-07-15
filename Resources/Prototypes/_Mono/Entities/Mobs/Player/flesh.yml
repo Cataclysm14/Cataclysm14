@@ -41,7 +41,7 @@
     - id: FoodMeat
       amount: 4
   - type: Bloodstream
-    bloodReagent: Blood
+    bloodReagent: NaturalLetoferol
     bloodMaxVolume: 300
   - type: MeleeWeapon
     attackRate: 1.5
