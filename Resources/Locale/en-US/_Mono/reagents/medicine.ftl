@@ -7,6 +7,9 @@ reagent-desc-rhymatine = An unusual chemical for treating cellular damage, tradi
 reagent-name-mesotaxinide = mesotaxinide
 reagent-desc-mesotaxinide = A refined chemical from Ambuzol+ capable of healing large amounts of toxin damage easily. It can dissolve Latoferol-based lifeforms easily. Capable of reverting natural Letoferol mutations.
 
+reagent-name-mesophenerol = mesophenerol
+reagent-desc-mesophenerol = A cheaper alternative to mesotaxinide that only reverts a natural chimera infection, and purges a system of Letoferol.
+
 reagent-name-letoferol = Letoferol
 reagent-desc-letoferol = A highly illegal bioweapon developed as a refined form of Romerol. Turns the user into more than just a mindless zombie. The usage of this is considered a violation of humanoid rights everywhere.
 

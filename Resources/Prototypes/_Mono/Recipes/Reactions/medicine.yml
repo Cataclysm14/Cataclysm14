@@ -58,6 +58,20 @@
     Mesotaxinide: 5
 
 - type: reaction
+  id: Mesophenerol
+  reactants:
+    Bicaridine:
+      amount: 2
+    Dylovene:
+      amount: 2
+    Kelotane:
+      amount: 2
+    Dexalin:
+      amount: 2
+  products:
+    Mesophenerol: 6
+
+- type: reaction
   id: Letoferol
   minTemp: 352
   reactants:

@@ -140,7 +140,7 @@
             Burn: -2
             Brute: -1.5
     - reagents: [Mesotaxinide]
-      methods: [Touch, Ingestion]
+      methods: [Touch]
       effects:
       - !type:HealthChange
         scaleByQuantity: true
