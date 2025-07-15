@@ -10,7 +10,7 @@
   id: MachineFTLDrive
   parent: BaseMachinePowered
   name: CTLA-25 bluespace drive
-  description: A FTL drive that extends a ship's FTL range to ~5 kilometers. Does not stack.
+  description: A FTL drive that extends a ship's FTL range to ~25 kilometers. Does not stack.
   placement:
     mode: SnapgridCenter
   components:
@@ -29,7 +29,10 @@
         shader: unshaded
         color: "#349BEB"
     - type: FTLDrive
-      range: 5000
+      range: 25000
+      cooldown: 45
+      hyperSpaceTime: 15
+      startupTime: 45
     - type: ApcPowerReceiver
       powerLoad: 2000
     - type: PointLight
@@ -71,7 +74,7 @@
   parent: MachineFTLDrive
   id: MachineFTLDrive50
   name: CTLA-50 bluespace drive
-  description: A FTL drive that extends a ship's FTL range to ~10 kilometers. Does not stack.
+  description: A FTL drive that extends a ship's FTL range to ~50 kilometers. Does not stack.
   components:
   - type: Sprite
     sprite: _Mono/Structures/ShuttleComponents/drive.rsi
@@ -84,7 +87,10 @@
       shader: unshaded
       color: "#E6173E"
   - type: FTLDrive
-    range: 10000
+    range: 50000
+    cooldown: 45
+    hyperSpaceTime: 20
+    startupTime: 45
   - type: ApcPowerReceiver
     powerLoad: 4000
   - type: PointLight
@@ -99,7 +105,7 @@
   parent: MachineFTLDrive
   id: MachineFTLDrive25S
   name: CTLA-25s bluespace drive
-  description: An advanced FTL drive that extends a ship's FTL range to ~5 kilometers, but with upgrades to allow for faster recharge and flight times. Does not stack.
+  description: An advanced FTL drive that extends a ship's FTL range to ~25 kilometers, but with upgrades to allow for faster recharge and less of a cooldown. Does not stack.
   components:
   - type: Sprite
     sprite: _Mono/Structures/ShuttleComponents/drive.rsi
@@ -112,10 +118,10 @@
       shader: unshaded
       color: "#7E16F7"
   - type: FTLDrive
-    range: 5000
-    cooldown: 7.5
-    hyperSpaceTime: 15
-    startupTime: 4.2
+    range: 25000
+    cooldown: 30
+    hyperSpaceTime: 7.5
+    startupTime: 30
   - type: ApcPowerReceiver
     powerLoad: 4000
   - type: PointLight
