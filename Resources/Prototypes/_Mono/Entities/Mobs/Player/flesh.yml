@@ -123,6 +123,7 @@
         Radiation: -0.1
         Poison: -0.1
       groups:
+        Airloss: -0.45
         Brute: -0.45
         Burn: -0.45
         Genetic: -0.1
