@@ -116,8 +116,8 @@
   - Electrolysis
   reactants:
     NaturalLetoferol:
-      amount: 1
+      amount: 4
   products:
     ProtoLetoferol: 2
-    Carbon: 2
-    Protein: 3
+    Carbon: 0.5
+    Protein: 1.5
