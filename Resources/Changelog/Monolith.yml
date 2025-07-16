@@ -7488,3 +7488,140 @@ Entries:
   id: 858
   time: '2025-07-14T21:51:44.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1403
+- author: SarahRaven
+  changes:
+    - type: Add
+      message: >-
+        Medical Borgs Surgery and Advanced Surgery modules now allow organ
+        pickup/drop. Xop Glorp "Surgery"
+    - type: Tweak
+      message: >-
+        Increased borg chassis max module slots by two. Now use that GPS and
+        Jetpack module slot without limiting your role.
+  id: 859
+  time: '2025-07-15T03:05:06.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1404
+- author: EctoplasmIsGood
+  changes:
+    - type: Tweak
+      message: Letoferol monsters have been renamed to chimera fleshbeasts
+    - type: Tweak
+      message: Fleshbeasts now have normal blood, a bit more HP, and thermal vision
+    - type: Tweak
+      message: Fleshbeast projectiles no longer infect you, and do a bit more damage
+    - type: Tweak
+      message: Fleshbeast infection is no longer permanent, and reverts upon death
+  id: 860
+  time: '2025-07-15T04:00:28.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1414
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Letoferol requires 24u to turn people now
+  id: 861
+  time: '2025-07-15T13:14:06.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1422
+- author: HungryCuban
+  changes:
+    - type: Add
+      message: PMC combat suit WarlorD, a new option for mercs
+  id: 862
+  time: '2025-07-15T17:34:38.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1412
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        Missiles now have a set delay depending on missile that delays locking
+        onto targets (aka won't lock onto ships within close range). Missile
+        detection range and scaning arc buffed in exchange. Check guidebook for
+        exact numbers per missile type.
+  id: 863
+  time: '2025-07-15T17:35:33.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1418
+- author: ScyronX
+  changes:
+    - type: Remove
+      message: Removed radar blips from jetpacks and vehicles!
+  id: 864
+  time: '2025-07-15T17:45:37.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1398
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Chimeras now have an internal 5x5 storage, and access to a collective
+        mind ("+" prefix)
+    - type: Tweak
+      message: >-
+        Changed up the Chimera bone spike gun, Chimeras can now regen more
+        damage types (genetic and toxin)
+    - type: Tweak
+      message: >-
+        Mesotaxinide description now makes it more obvious that it can do
+        caustic to Chimeras.
+    - type: Fix
+      message: Fixed a lot of bugs with Chimeras.
+  id: 865
+  time: '2025-07-15T18:08:31.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1417
+- author: starch70
+  changes:
+    - type: Add
+      message: Natural Letoferol can be grown outside a chimera w/ blood now.
+    - type: Tweak
+      message: Letoferol needs a syringe-full now (15u) instead of 24u to infect.
+    - type: Tweak
+      message: >-
+        Natural Letoferol needs less to infect now (9u or 4 ish melee hits from
+        a Chimera)
+    - type: Tweak
+      message: Chimera melee rate lowered from 1.5 to 1 per second
+  id: 866
+  time: '2025-07-15T20:03:13.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1427
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Added a cheap alternative to Mesotaxinide, Mesophenerol. I'm a master at
+        naming things.
+    - type: Add
+      message: >-
+        Mesotaxinide and Mesophenerol can now revert (natural) letoferol
+        Chimeras.
+    - type: Tweak
+      message: >-
+        Chimeras can process chems now, take extra fire damage, aren't damaged
+        from mesotaxinide ingestion (skin contact will still hurt), and natural
+        Letoferol mutations don't revert on death anymore (use chems to revert
+        it). Chimera blood is also natural letoferol again.
+    - type: Fix
+      message: Fixed Chimeras not having organs.
+  id: 867
+  time: '2025-07-15T22:19:49.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1430
+- author: grandalff
+  changes:
+    - type: Tweak
+      message: Turned Gadyuka into a cloakHunter
+  id: 868
+  time: '2025-07-15T22:25:50.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1424
+- author: starch70
+  changes:
+    - type: Fix
+      message: Chimeras shouldn't run out of melee reagent to inject now.
+    - type: Fix
+      message: >-
+        Fixed that thing with chimeras where heavily damaged bodies would spam
+        gib.
+    - type: Fix
+      message: Chimeras can regen airloss damage now.
+    - type: Tweak
+      message: >-
+        Chimeras do less melee damage now, so you shouldnt be killing people as
+        fast when you try to infect them.
+  id: 869
+  time: '2025-07-16T03:44:34.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1431
