@@ -24,7 +24,7 @@ namespace Content.Server._Crescent.ShipShields;
 public sealed partial class ShipShieldsSystem : EntitySystem
 {
     private const string ShipShieldPrototype = "ShipShield";
-    private const float Padding = 50f;
+    private const float Padding = 10f;
     private const float CollisionThreshold = 50f;
     //private const float DeflectionSpread = 25f;
     private const float EmitterUpdateRate = 1.5f;
@@ -110,6 +110,7 @@ public sealed partial class ShipShieldsSystem : EntitySystem
     {
         base.Initialize();
         SubscribeLocalEvent<ShipShieldComponent, StartCollideEvent>(OnCollide);
+        SubscribeLocalEvent<ShipShieldEmitterComponent, ComponentShutdown>(OnEmitterShutdown); // Mono
 
         InitializeCommands();
         InitializeEmitters();
@@ -170,6 +171,14 @@ public sealed partial class ShipShieldsSystem : EntitySystem
         }
     }
 
+    private void OnEmitterShutdown(EntityUid uid, ShipShieldEmitterComponent emitter, ComponentShutdown args) // Mono 
+    {
+        if (emitter.Shielded != null)
+        {
+            UnshieldEntity(emitter.Shielded.Value);
+        }
+    }
+
     /// <summary>
     /// Produces a shield around a grid entity, if it doesn't already exist.
     /// </summary>
@@ -223,8 +232,8 @@ public sealed partial class ShipShieldsSystem : EntitySystem
         internalPoly.Set(roughPoly);
 
         _fixtureSystem.TryCreateFixture(shield, internalPoly, "internalShield",
-            hard: false,
-            collisionLayer: (int) CollisionGroup.FullTileLayer,
+            hard: true, // Mono - Set to hard
+            collisionLayer: (int)CollisionGroup.BulletImpassable, // Mono - Only blocks bullets
             body: shieldPhysics);
 
         _physicsSystem.WakeBody(shield, body: shieldPhysics);
