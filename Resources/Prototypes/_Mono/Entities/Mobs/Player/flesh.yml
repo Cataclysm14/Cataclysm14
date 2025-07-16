@@ -62,6 +62,12 @@
         reagents:
         - ReagentId: NaturalLetoferol
           Quantity: 90
+  - type: SolutionRegeneration
+    solution: melee
+    generated:
+      reagents:
+      - ReagentId: NaturalLetoferol
+        Quantity: 90
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
