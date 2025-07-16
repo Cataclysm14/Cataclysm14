@@ -24,7 +24,7 @@ namespace Content.Server._Crescent.ShipShields;
 public sealed partial class ShipShieldsSystem : EntitySystem
 {
     private const string ShipShieldPrototype = "ShipShield";
-    private const float Padding = 10f;
+    private const float Padding = 50f;
     private const float CollisionThreshold = 50f;
     //private const float DeflectionSpread = 25f;
     private const float EmitterUpdateRate = 1.5f;
@@ -116,6 +116,8 @@ public sealed partial class ShipShieldsSystem : EntitySystem
         InitializeEmitters();
     }
 
+
+    // Mono notes: THIS CODE BASICALLY DOES NOT WORK (especially for raycasted projectiles)
     private void OnCollide(EntityUid uid, ShipShieldComponent component, StartCollideEvent args)
     {
         if (Transform(args.OtherEntity).Anchored)
@@ -234,7 +236,7 @@ public sealed partial class ShipShieldsSystem : EntitySystem
         internalPoly.Set(roughPoly);
 
         _fixtureSystem.TryCreateFixture(shield, internalPoly, "internalShield",
-            hard: false, // Mono - Set to hard
+            hard: false, // To be set to Hard once code is made to actually make this shit work
             collisionLayer: (int)CollisionGroup.BulletImpassable, // Mono - Only blocks bullets
             body: shieldPhysics);
 
