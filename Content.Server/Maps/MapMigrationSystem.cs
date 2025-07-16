@@ -33,14 +33,14 @@ public sealed class MapMigrationSystem : EntitySystem
             return;
 
         // Verify that all of the entries map to valid entity prototypes.
-        foreach (var node in mappings.Children.Values)
+        // Delta-V: use list of migrations
+        foreach (var mapping in mappings)
         {
             foreach (var node in mapping.Values)
             {
                 var newId = ((ValueDataNode)node).Value;
                 if (!string.IsNullOrEmpty(newId) && newId != "null")
-                    DebugTools.Assert(_protoMan.HasIndex<EntityPrototype>(newId),
-                        $"{newId} is not an entity prototype.");
+                    DebugTools.Assert(_protoMan.HasIndex<EntityPrototype>(newId), $"{newId} is not an entity prototype.");
             }
         }
         // End Delta-V
@@ -89,19 +89,21 @@ public sealed class MapMigrationSystem : EntitySystem
     {
         if (!TryReadFiles(out var mappings))
             return;
-    // Delta-V: apply a set of mappings
-    foreach (var mapping in mappings)
-    {
-        foreach (var (key, value) in mappings)
+
+        // Delta-V: apply a set of mappings
+        foreach (var mapping in mappings)
         {
-            if (value is not ValueDataNode valueNode)
-                continue;
+            foreach (var (key, value) in mapping)
+            {
+                if (value is not ValueDataNode valueNode)
+                    continue;
 
-
-            if (string.IsNullOrWhiteSpace(valueNode.Value) || valueNode.Value == "null")
-                ev.DeletedPrototypes.Add(key);
-            else
-                ev.RenamedPrototypes.Add(key, valueNode.Value);
+                if (string.IsNullOrWhiteSpace(valueNode.Value) || valueNode.Value == "null")
+                    ev.DeletedPrototypes.Add(key);
+                else
+                    ev.RenamedPrototypes.Add(key, valueNode.Value);
+            }
         }
+        // End Delta-V
     }
 }
