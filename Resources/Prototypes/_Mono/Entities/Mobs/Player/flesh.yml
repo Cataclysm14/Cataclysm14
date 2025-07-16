@@ -222,9 +222,7 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 17
-        Poison: 4
-        Pierce: 2
+        Slash: 14
         Structural: 75
   - type: ActionGun
     action: ActionLetoferolSpike
