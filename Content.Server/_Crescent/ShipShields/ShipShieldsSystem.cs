@@ -176,6 +176,8 @@ public sealed partial class ShipShieldsSystem : EntitySystem
         if (emitter.Shielded != null)
         {
             UnshieldEntity(emitter.Shielded.Value);
+            emitter.Shield = null;
+            emitter.Shielded = null;
         }
     }
 
