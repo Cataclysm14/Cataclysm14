@@ -30,7 +30,7 @@
       stationProto: StandardFrontierVessel
       components:
       - type: StationNameSetup
-        mapNameTemplate: 'Antlion DIS{1}'
+        mapNameTemplate: 'Antlion SNB{1}'
         nameGenerator:
           !type:NanotrasenNameGenerator
           prefixCreator: '14'

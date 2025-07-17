@@ -29,7 +29,7 @@
       stationProto: StandardFrontierVessel
       components:
       - type: StationNameSetup
-        mapNameTemplate: 'Strato-Rat HES{1}'
+        mapNameTemplate: 'Strato-Rat SNB{1}'
         nameGenerator:
           !type:NanotrasenNameGenerator
           prefixCreator: '14'
