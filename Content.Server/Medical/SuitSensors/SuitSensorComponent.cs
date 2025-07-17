@@ -98,4 +98,10 @@ public sealed partial class SuitSensorComponent : Component
     /// </summary>
     [DataField]
     public bool Jammed;
+
+    /// <summary>
+    ///     Monolith: variable checking if the suits IFF signature is enabled.
+    /// </summary>
+    [DataField]
+    public bool IFFSignatureEnabled = false;
 }
