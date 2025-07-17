@@ -7685,3 +7685,116 @@ Entries:
   id: 873
   time: '2025-07-16T19:14:29.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1408
+- author: starch70
+  changes:
+    - type: Add
+      message: Added Sirius to Expedition shipyard.
+    - type: Tweak
+      message: Lowered Picses price by ~2k.
+  id: 874
+  time: '2025-07-16T20:10:22.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1433
+- author: starch70
+  changes:
+    - type: Fix
+      message: Fixed Calypso not having a fax machine.
+  id: 875
+  time: '2025-07-16T20:11:20.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1435
+- author: Redrover1760
+  changes:
+    - type: Fix
+      message: Fixed atrocious clientside memory hell from drawing shields
+    - type: Fix
+      message: >-
+        Deleting a shield generator will no longer result in the shield left
+        behind.
+  id: 876
+  time: '2025-07-16T22:58:25.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1438
+- author: Ark
+  changes:
+    - type: Fix
+      message: >-
+        You should no longer redock with ships you previously performed FTL
+        with.
+  id: 877
+  time: '2025-07-16T23:10:14.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1440
+- author: starch70
+  changes:
+    - type: Add
+      message: Added In Amber Clad from Halo 2 to the lobby songs.
+  id: 878
+  time: '2025-07-17T02:55:52.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1437
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Shields no longer overlap onto grids/entities
+  id: 879
+  time: '2025-07-17T03:16:26.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1444
+- author: Redrover1760
+  changes:
+    - type: Remove
+      message: CTLA 25s/50 from Drivevend
+    - type: Remove
+      message: CTLA 25s from Fracture
+  id: 880
+  time: '2025-07-17T05:37:21.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1450
+- author: starch70
+  changes:
+    - type: Remove
+      message: >-
+        Removed Romerol/Letoferol from Rogue Hideout/Uplink and Lancelot.
+        Lancelot syringes replaced with MLA-79 gun case. You can probably still
+        get Letoferol from TSF uplink Ambuzol.
+    - type: Tweak
+      message: All TSF roles can buy Ambuzol in their uplink now.
+    - type: Tweak
+      message: Letoferol (not natural Letoferol) infects with 10u now instead of 24u.
+    - type: Tweak
+      message: Syndicate uplink now sells Letoferol syringes for 350 TC.
+  id: 881
+  time: '2025-07-17T05:50:35.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1447
+- author: BoskiYourk
+  changes:
+    - type: Add
+      message: Added Baikal Station
+    - type: Remove
+      message: Removed Camelot Station
+  id: 882
+  time: '2025-07-17T05:53:10.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1449
+- author: Redrover1760
+  changes:
+    - type: Add
+      message: Adds cool colored widebrim hats to contractor loadout.
+  id: 883
+  time: '2025-07-17T05:53:57.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1445
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        Mindshield implant description no longer states that they "ensure
+        loyalty" in desc
+  id: 884
+  time: '2025-07-17T05:55:20.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1446
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Ported Harmony's Bandit DMR (with some edits for Mono). In TSF T1
+        weapons tech.
+    - type: Tweak
+      message: >-
+        8x65mm SKR STANAG and boxes moved to TSF T1 weapons tech. Box magazines
+        remain in MARSOC tech.
+  id: 885
+  time: '2025-07-17T07:11:53.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1452
