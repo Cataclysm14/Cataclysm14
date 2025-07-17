@@ -7785,3 +7785,16 @@ Entries:
   id: 884
   time: '2025-07-17T05:55:20.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1446
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Ported Harmony's Bandit DMR (with some edits for Mono). In TSF T1
+        weapons tech.
+    - type: Tweak
+      message: >-
+        8x65mm SKR STANAG and boxes moved to TSF T1 weapons tech. Box magazines
+        remain in MARSOC tech.
+  id: 885
+  time: '2025-07-17T07:11:53.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1452
