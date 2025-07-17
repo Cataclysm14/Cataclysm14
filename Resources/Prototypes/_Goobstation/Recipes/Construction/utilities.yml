@@ -14,3 +14,30 @@
   conditions:
   - !type:NoUnstackableInTile
 
+- type: construction
+  id: HeatExchangerInline
+  name: inline radiator
+  description: Transfers heat between the pipe and its surroundings. Doesn't need gas flow.
+  graph: GasBinary
+  startNode: start
+  targetNode: inlineradiator
+  category: construction-category-utilities
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  icon:
+    sprite: _Goobstation/Structures/Piping/inlineradiator.rsi
+    state: heInlineStraight
+
+- type: construction
+  id: HeatExchangerInlineBend
+  name: inline radiator bend
+  description: Transfers heat between the pipe and its surroundings. Doesn't need gas flow.
+  graph: GasBinary
+  startNode: start
+  targetNode: bendinlineradiator
+  category: construction-category-utilities
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  icon:
+    sprite: _Goobstation/Structures/Piping/inlineradiator.rsi
+    state: heInlineBend
