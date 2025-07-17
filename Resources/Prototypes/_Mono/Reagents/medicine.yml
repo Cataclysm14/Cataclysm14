@@ -1,3 +1,4 @@
+# SPDX-FileCopyrightText: 2025 Redrover1760
 # SPDX-FileCopyrightText: 2025 starch
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
@@ -125,6 +126,46 @@
         conditions:
         - !type:ReagentThreshold
           min: 40
+      - !type:RevertPolymorph
+        prototype: LetoferolMutationNatural
+        conditions:
+        - !type:ReagentThreshold
+          min: 15
+      - !type:AdjustReagent
+        reagent: Letoferol
+        amount: -7.5
+      - !type:AdjustReagent
+        reagent: NaturalLetoferol
+        amount: -7.5
+
+# cheap alternative to mesotaxinide
+
+- type: reagent
+  id: Mesophenerol
+  name: reagent-name-mesophenerol
+  group: Special
+  desc: reagent-desc-mesophenerol
+  physicalDesc: reagent-physical-desc-translucent
+  flavor: medicine
+  color: "#4ca832"
+  worksOnTheDead: true
+  metabolisms:
+    Medicine:
+      metabolismRate: 1
+      effects:
+      - !type:RevertPolymorph
+        prototype: LetoferolMutationNatural
+        conditions:
+        - !type:ReagentThreshold
+          min: 40
+      - !type:AdjustReagent
+        reagent: Letoferol
+        amount: -3
+      - !type:AdjustReagent
+        reagent: NaturalLetoferol
+        amount: -3
+
+
 
 # romerol plus real
 
@@ -138,38 +179,67 @@
   color: "#a84387"
   worksOnTheDead: true
   metabolisms:
-    Medicine:
-      metabolismRate: 0.5
+    Poison:
+      metabolismRate: 0.2
       effects:
-      - !type:CauseZombieInfection
-        conditions:
-        - !type:ReagentThreshold
-          min: 0.5
+        - !type:HealthChange
+          damage:
+            types:
+              Cellular: 0.5
+        - !type:Polymorph
+          prototype: LetoferolMutation
+          conditions:
+            - !type:ReagentThreshold
+              min: 10
+        - !type:AdjustReagent
+          reagent: Letoferol
+          amount: -0.5
+          conditions:
+            - !type:ReagentThreshold
+              min: 10
+
+- type: reagent
+  id: NaturalLetoferol
+  name: reagent-name-nat-letoferol
+  group: Special
+  desc: reagent-desc-nat-letoferol
+  physicalDesc: reagent-physical-desc-opaque
+  flavor: acid
+  color: "#ebba34"
+  worksOnTheDead: true
+  metabolisms:
+    Poison:
+      metabolismRate: 0.2
+      effects:
       - !type:HealthChange
         damage:
           types:
-            Cellular: 3.5
-            Poison: 4
-            Caustic: 8
+            Cellular: 0.5
+      - !type:Polymorph
+        prototype: LetoferolMutationNatural
+        conditions:
+        - !type:ReagentThreshold
+          min: 15
+      - !type:AdjustReagent
+        reagent: NaturalLetoferol
+        amount: -2.5
+        conditions:
+        - !type:ReagentThreshold
+          min: 15
+
+- type: reagent
+  id: ProtoLetoferol
+  name: reagent-name-protoletoferol
+  group: Special
+  desc: reagent-desc-protoletoferol
+  physicalDesc: reagent-physical-desc-opaque
+  flavor: acid
+  color: "#a85832"
+  metabolisms:
+    Poison:
+      metabolismRate: 0.2
+      effects:
       - !type:HealthChange
-        conditions:
-        - !type:OrganType
-          type: Yowie
-          shouldHave: false
-        - !type:ReagentThreshold
-          min: 15
         damage:
-          groups:
-            Brute: -0.25
-      - !type:Jitter
-        conditions:
-        - !type:ReagentThreshold
-          min: 15
-      - !type:ChemVomit
-        conditions:
-        - !type:OrganType
-          type: Yowie
-          shouldHave: false
-        - !type:ReagentThreshold
-          min: 15
-        probability: 0.85
+          types:
+            Poison: 1
