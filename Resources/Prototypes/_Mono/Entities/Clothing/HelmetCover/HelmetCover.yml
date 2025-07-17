@@ -165,7 +165,7 @@
 - type: entity
   parent: ClothingHelmetCoverBase
   id: ClothingHelmetCoverWhite
-  name: black helmet cover
+  name: white helmet cover
   description: A colored helmet cover for your tactical fashion needs or to mount attachments.
   components:
   - type: Sprite
