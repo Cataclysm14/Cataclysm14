@@ -58,6 +58,36 @@
   - type: ExplosionResistance
     damageCoefficient: 0.80
 
+#heavy bulletproof stats -> less protective than jugg and slower
+- type: entity
+  parent: ClothingOuterArmorBasic
+  id: ClothingOuterArmorBPVestHeavy
+  name: heavy bulletproof vest
+  description: A simple kevlar vest of unknown origin. This juggernaut vest makes you practically a walking tank at, at the cose of heat protection and extreme bulk.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/OuterClothing/Armor/bulletproof_heavy.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/OuterClothing/Armor/bulletproof_heavy.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.3
+        Slash: 0.3
+        Piercing: 0.25
+        Heat: 0.9
+        Caustic: 0.3 # Frontier
+  - type: Tag  # Mono
+    tags:
+    - Kevlar
+  - type: StaminaDamageResistance # Mono - Stamres
+    coefficient: 0.40
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.55
+    walkModifier: 0.65
+  - type: ExplosionResistance
+    damageCoefficient: 0.60
+
 #polyvalent bulletproof stats -> slightly less protective than light but added blunt/sharp
 - type: entity
   parent: ClothingOuterArmorBasic
