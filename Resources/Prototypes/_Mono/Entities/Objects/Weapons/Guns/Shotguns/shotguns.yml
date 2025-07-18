@@ -88,6 +88,6 @@
     sprite: _Mono/Objects/Weapons/Guns/Shotguns/Hokkaido.rsi
   - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
   - type: BallisticAmmoProvider
-    capacity: 12 # shotgun was inspired from has 15 but we're making an upgraded enforcer here, so 12.
+    capacity: 12 # shotgun was inspired from has 15 but we're making an upgraded enforcer here, so for now 12.
   - type: Gun
     fireRate: 2.6
