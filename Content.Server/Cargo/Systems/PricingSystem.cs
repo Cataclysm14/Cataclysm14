@@ -529,13 +529,13 @@ public sealed class PricingSystem : EntitySystem
         var price = 0.0;
 
         // Prefer static price to stack price component, take the first positive value read.
-        if (prototype.Components.TryGetValue(_factory.GetComponentName(typeof(StaticPriceComponent)), out var staticProto))
+        if (prototype.Components.TryGetValue(Factory.GetComponentName(typeof(StaticPriceComponent)), out var staticProto))
         {
             var staticComp = (StaticPriceComponent) staticProto.Component;
             if (staticComp.VendPrice > 0.0)
                 price += staticComp.VendPrice;
         }
-        if (price == 0.0 && prototype.Components.TryGetValue(_factory.GetComponentName(typeof(StackPriceComponent)), out var stackProto))
+        if (price == 0.0 && prototype.Components.TryGetValue(Factory.GetComponentName(typeof(StackPriceComponent)), out var stackProto))
         {
             var stackComp = (StackPriceComponent) stackProto.Component;
             if (stackComp.VendPrice > 0.0)
