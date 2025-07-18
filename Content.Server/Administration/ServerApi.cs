@@ -54,7 +54,6 @@ public sealed partial class ServerApi : IPostInjectInit
     [Dependency] private readonly IGameMapManager _gameMapManager = default!;
     [Dependency] private readonly IServerNetManager _netManager = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
-    [Dependency] private readonly IComponentFactory _componentFactory = default!;
     [Dependency] private readonly ITaskManager _taskManager = default!;
     [Dependency] private readonly EntityManager _entityManager = default!;
     [Dependency] private readonly ILogManager _logManager = default!;
@@ -476,7 +475,7 @@ public sealed partial class ServerApi : IPostInjectInit
             if (gameRule.Abstract)
                 continue;
 
-            if (gameRule.HasComponent<GameRuleComponent>(_componentFactory))
+            if (gameRule.HasComponent<GameRuleComponent>(_entityManager.ComponentFactory))
                 gameRules.Add(gameRule.ID);
         }
 
