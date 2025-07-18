@@ -36,7 +36,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 21
+        Piercing: 25
 
 - type: entity
   id: Bullet7.62x39mmPractice
@@ -69,8 +69,8 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 4
-        Heat: 17
+        Blunt: 5
+        Heat: 18
 
 - type: entity
   id: Bullet7.62x39mmUranium
@@ -81,8 +81,8 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 9
-        Piercing: 12
+        Radiation: 10
+        Piercing: 13
 
 - type: entity
   id: Bullet7.62x39mmSubsonic
