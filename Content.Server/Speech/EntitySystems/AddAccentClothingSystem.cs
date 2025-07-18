@@ -68,7 +68,7 @@ public sealed class AddAccentClothingSystem : EntitySystem
         if (component.IsActive)
         {
             // try to remove the accent if it's enabled
-            var componentType = _componentFactory.GetRegistration(component.Accent).Type;
+            var componentType = Factory.GetRegistration(component.Accent).Type;
             RemComp(component.Wearer, componentType);
             component.IsActive = false;
             // we don't wipe out wearer in this case
@@ -77,12 +77,12 @@ public sealed class AddAccentClothingSystem : EntitySystem
         {
             // try to add the accent as if we are equipping this item again
             // does the user already has this accent?
-            var componentType = _componentFactory.GetRegistration(component.Accent).Type;
+            var componentType = Factory.GetRegistration(component.Accent).Type;
             if (HasComp(component.Wearer, componentType))
                 return;
 
             // add accent to the user
-            var accentComponent = (Component)_componentFactory.GetComponent(componentType);
+            var accentComponent = (Component) Factory.GetComponent(componentType);
             AddComp(component.Wearer, accentComponent);
 
             // snowflake case for replacement accent
