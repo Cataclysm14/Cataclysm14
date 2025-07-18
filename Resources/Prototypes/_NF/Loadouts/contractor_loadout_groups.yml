@@ -191,7 +191,6 @@
   - ContractorClothingUniformJumpsuitMilitarySalvageSpecialist
   - ContractorClothingUniformJumpsuitMilitaryCargo
   - ContractorClothingUniformJumpsuitMilitaryQM
-  - ContractorClothingUniformDrakeIndustriesHauler
   - ContractorClothingUniformJumpsuitMilitaryMedicalDoctor
   - ContractorClothingUniformJumpsuitMilitaryParamedic
   - ContractorClothingUniformJumpsuitMilitaryChemistry
@@ -233,6 +232,7 @@
   - ContractorClothingUniformJumpskirtYellowTurtleneckDress
   - ContractorClothingUniformJumpskirtYellowOldDress
   - ContractorClothingUniformJabroni
+  - ContractorClothingUniformDrakeIndustriesHauler
 
   fallbacks:
   - ContractorClothingUniformJumpsuitColorGrey
@@ -301,9 +301,6 @@
   - ContractorClothingBackpackMessengerColorPurple
   - ContractorClothingBackpackMessengerColorBrownLight
   - ContractorClothingBackpackMessengerColorBrown
-  - ContractorClothingBackpackDrakeIndustries
-  - ContractorClothingBackpackDuffelDrakeIndustries
-  - ContractorClothingBackpackSatchelDrakeIndustries
   - ContractorClothingBackpackClown
   - ContractorClothingBackpackDuffelClown
   - ContractorClothingBackpackSatchelClown
@@ -312,6 +309,10 @@
   - ContractorClothingBackpackDuffelMime
   - ContractorClothingBackpackSatchelMime
   - ContractorClothingBackpackMessengerMime
+  - ContractorClothingBackpackDrakeIndustries
+  - ContractorClothingBackpackDuffelDrakeIndustries
+  - ContractorClothingBackpackSatchelDrakeIndustries
+  - ContractorClothingBackpackMessengerDrakeIndustries
   fallbacks:
   - ContractorClothingBackpack
 
@@ -423,7 +424,6 @@
   - ContractorClothingBeltUtilityFilled
   - ContractorClothingBeltSalvageWebbing
   - ContractorClothingBeltSalvageWebbingFilledNF
-  - ContractorClothingBeltDrakeIndustries
   - ContractorBoxFolderClipboard
   - ContractorClothingBeltPilot
   - ContractorClothingBeltPilotFilled
@@ -441,6 +441,7 @@
   - ContractorClothingBeltPunkRandomizedFilled # Punkish (Randomized visuals)
   - ContractorClothingBeltSheathFilled # Mono
   - ContractorClothingBeltChampion
+  - ContractorClothingBeltDrakeIndustries
 
 - type: loadoutGroup
   id: ContractorShoes
@@ -653,7 +654,6 @@
   - ContractorClothingNeckTieRed
   - ContractorClothingNeckTieSci
   - ContractorClothingNeckLawyerbadge
-  - ContractorClothingNeckDrakeIndustriesBadge
   - ContractorClothingNeckHeadphones
   - ContractorClothingNeckCrucifix
   - ContractorClothingNeckBellCollar
@@ -696,6 +696,7 @@
   - ContractorClothingNeckCloakVoid
   - ContractorClothingNeckBling
   - ContractorClothingNeckUNSAArmband
+  - ContractorClothingNeckDrakeIndustriesBadge
 
 - type: loadoutGroup
   id: ContractorPDA
@@ -819,7 +820,6 @@
   - ContractorClothingMaskGasExplorer
   - ContractorClothingMaskGasCaptain
   - ContractorClothingMaskGasAtmos
-  - ContractorClothingMaskDrakeIndustries
   - ContractorClothingMaskPlague
   - ContractorClothingMaskMime
   - ContractorClothingMaskScaredMime
@@ -828,6 +828,7 @@
   - ContractorClothingMaskNeckGaiter
   - ContractorClothingMaskNeckGaiterRed
   - ContractorClothingMaskGasSecurity
+  - ContractorClothingMaskDrakeIndustries
   fallbacks:
   - ContractorClothingMaskBreath
 

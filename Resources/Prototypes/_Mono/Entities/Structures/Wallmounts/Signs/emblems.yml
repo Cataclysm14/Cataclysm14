@@ -53,7 +53,7 @@
   parent: EmblemBase
   id: EmblemDrakeIndustries
   name: Drake Industries Emblem
-  description: "The emblem of Drake Industries, shining in an ivory white. Looks really expensive, or at least that's the aim."
+  description: "The emblem of Drake Industries, shining in an silvery white. Looks quite expensive, or at least that's the aim."
   components:
   - type: Sprite
     state: Drake_Industries_Emblem
@@ -78,7 +78,7 @@
 - type: entity
   parent: EmblemBroken
   id: EmblemBrokenDrakeIndustries
-  name: "Silvery metal bits"
+  name: silvery metal bits
   description: "A few scraps of shattered metal inteweaved with welding marks, uncovering some cheap pale red alloys underneath a thin silver layer."
   components:
   - type: Sprite
@@ -114,7 +114,7 @@
 - type: entity
   parent: EmblemBroken
   id: EmblemBrokenSteelHammer
-  name: "Silvery metal bits"
+  name: scrapped metal bits
   description: "A few scraps of chipped paint and shattered metal, the remnants of a plasteel symbol."
   components:
   - type: Sprite

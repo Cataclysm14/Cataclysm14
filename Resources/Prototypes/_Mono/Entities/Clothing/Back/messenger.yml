@@ -1,0 +1,8 @@
+- type: entity
+  parent: NFClothingMessenger
+  id: ClothingBackpackMessengerDrakeIndustries
+  name: drake industries messenger bag
+  description: A thick, cheap messenger bag. Mass produced for the more.. fashionable members of Drake Industries.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Back/Messengers/di.rsi
