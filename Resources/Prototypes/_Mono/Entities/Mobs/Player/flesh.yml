@@ -283,7 +283,7 @@
          maxVol: 3
          reagents:
          - ReagentId: NaturalLetoferol
-           Quantity: 0.25
+           Quantity: 2
   - type: SolutionContainerVisuals
     maxFillLevels: 1
     fillBaseName: spikeSolution

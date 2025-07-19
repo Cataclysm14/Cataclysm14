@@ -34,7 +34,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 250
+        damage: 125
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -42,8 +42,7 @@
     damage:
       types:
         Slash: 1.5
-        Piercing: 1.5
-        Poison: 1.5
+        Piercing: 0.25
     ignoreWhitelist:
       tags:
       - Chimera
