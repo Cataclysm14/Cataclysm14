@@ -116,16 +116,107 @@
   cost: 1
 
 # Weather mods
+
+- type: salvageWeatherMod
+  id: Hail
+  desc: salvage-weather-mod-heavy-hail
+  weather: Hail
+  cost: 2
+  biomes:
+  - Snow
+
 - type: salvageWeatherMod
   id: SnowfallHeavy
   desc: salvage-weather-mod-heavy-snowfall
   weather: SnowfallHeavy
-  cost: 1
+  cost: 2
+  biomes:
+  - Snow
+
+- type: salvageWeatherMod
+  id: SnowfallMedium
+  desc: salvage-weather-mod-medium-snowfall
+  weather: SnowfallMedium
+  biomes:
+  - Grasslands
+  - Snow
+
+- type: salvageWeatherMod
+  id: SnowfallLight
+  desc: salvage-weather-mod-light-snowfall
+  weather: SnowfallLight
+  biomes:
+  - Grasslands
+  - Snow
+
+- type: salvageWeatherMod
+  id: AshfallHeavy
+  desc: salvage-weather-mod-heavy-ashfall
+  weather: AshfallHeavy
+  cost: 6
+  biomes:
+  - Lava
+
+- type: salvageWeatherMod
+  id: Ashfall
+  desc: salvage-weather-mod-medium-ashfall
+  weather: Ashfall
+  cost: 4
+  biomes:
+  - Asteroid
+  - Lava
+  - LowDesert
+  - Shadow
+
+- type: salvageWeatherMod
+  id: AshfallLight
+  desc: salvage-weather-mod-light-ashfall
+  weather: AshfallLight
+  cost: 3
+
+- type: salvageWeatherMod
+  id: Fallout
+  desc: salvage-weather-mod-fallout
+  weather: Fallout
+  cost: 4
+
+- type: salvageWeatherMod
+  id: SandstormHeavy
+  desc: salvage-weather-mod-heavy-sandstorm
+  weather: SandstormHeavy
+  cost: 3
+  biomes:
+  - Asteroid
+  - LowDesert
+
+- type: salvageWeatherMod
+  id: Sandstorm
+  desc: salvage-weather-mod-sandstorm
+  weather: Sandstorm
+  biomes:
+  - Asteroid
+  - LowDesert
+  - Caves
 
 - type: salvageWeatherMod
   id: Rain
   desc: salvage-weather-mod-rain
   weather: Rain
+  biomes:
+  - Grasslands
+  - Asteroid
+  - Shadow
+  - LowDesert
+  - Lava # primordial planet or something idk
+
+- type: salvageWeatherMod
+  id: Storm
+  desc: salvage-weather-mod-storm
+  weather: Storm
+  biomes:
+  - Grasslands
+  - Asteroid
+  - Shadow
 
 # Air mixtures
 - type: salvageAirMod
