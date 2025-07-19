@@ -6,10 +6,10 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 # TODO - new sprites
-# TODO - hivemind (goob type shi)
 
 - type: entity
   parent:
+  - StripableInventoryBase
   - MobNonHumanHostileBase
   - MobHumanoidHostileAISimpleMelee
   - MobLaserReflect
@@ -25,6 +25,8 @@
     drawdepth: Mobs
     sprite: _NF/Mobs/Aliens/flesh.rsi
   - type: MobState
+  - type: DoAfter
+  - type: Stripping
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -40,6 +42,8 @@
     spawned:
     - id: FoodMeat
       amount: 4
+  - type: Inventory
+    templateId: chimera
   - type: Bloodstream
     bloodReagent: NaturalLetoferol
     bloodMaxVolume: 300
@@ -76,6 +80,8 @@
     interfaces:
       enum.StorageUiKey.Key:
         type: StorageBoundUserInterface
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
   - type: MeleeChemicalInjector
     solution: melee
     transferAmount: 2.5
@@ -180,6 +186,8 @@
     damage: #per second, scales with number of fire 'stacks'
       types:
         Heat: 8
+  - type: Clickable
+  - type: ZombieImmune
 
 - type: entity
   parent: MonoBaseMobFleshLetoferol
