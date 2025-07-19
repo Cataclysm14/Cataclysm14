@@ -42,7 +42,7 @@
     capacity: 7
     count: 7
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 4
+    rechargeCooldown: 1 # Mono
     rechargeSound:
       path: /Audio/Weapons/Guns/Cock/shotgun_close.ogg
   - type: AmmoCounter
