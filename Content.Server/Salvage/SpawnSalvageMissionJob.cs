@@ -193,9 +193,12 @@ public sealed class SpawnSalvageMissionJob : Job<bool>
             _entManager.System<AtmosphereSystem>().SetMapSpace(mapUid, air.Space, atmos);
             _entManager.System<AtmosphereSystem>().SetMapGasMixture(mapUid, new GasMixture(moles, mission.Temperature), atmos);
 
-            var weather = _entManager.EnsureComponent<WeatherComponent>(mapUid);
-            _entManager.System<WeatherSystem>().SetWeather(mapId, _prototypeManager.Index<WeatherPrototype>(missionWeather.WeatherPrototype), null);
-            _entManager.Dirty(mapUid, weather);
+            if (!air.Space)
+            {
+                var weather = _entManager.EnsureComponent<WeatherComponent>(mapUid);
+                _entManager.System<WeatherSystem>().SetWeather(mapId, _prototypeManager.Index<WeatherPrototype>(missionWeather.WeatherPrototype), null);
+                _entManager.Dirty(mapUid, weather);
+            }
 
             if (mission.Color != null)
             {

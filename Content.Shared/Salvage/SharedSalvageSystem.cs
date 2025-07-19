@@ -118,8 +118,9 @@ public abstract partial class SharedSalvageSystem : EntitySystem
             mods.Add(Loc.GetString(temp.Description));
         }
 
-        var weather = GetBiomeMod<SalvageWeatherMod>(biome.ID, rand, ref rating); // This is the stupidest variable name i have ever seen
-        if (weather.Description != string.Empty)
+        // only show the description if there is an atmosphere since wont matter otherwise
+        var weather = GetBiomeMod<SalvageWeatherMod>(biome.ID, rand, ref rating);
+        if (weather.Description != string.Empty && !air.Space)
         {
             mods.Add(Loc.GetString(weather.Description));
         }
