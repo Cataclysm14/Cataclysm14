@@ -118,6 +118,12 @@ public abstract partial class SharedSalvageSystem : EntitySystem
             mods.Add(Loc.GetString(temp.Description));
         }
 
+        var weather = GetBiomeMod<SalvageWeatherMod>(biome.ID, rand, ref rating); // This is the stupidest variable name i have ever seen
+        if (weather.Description != string.Empty)
+        {
+            mods.Add(Loc.GetString(weather.Description));
+        }
+
         var light = GetBiomeMod<SalvageLightMod>(biome.ID, rand, ref rating);
         if (light.Description != string.Empty)
         {
@@ -136,7 +142,7 @@ public abstract partial class SharedSalvageSystem : EntitySystem
         }
 
         var rewards = GetRewards(difficulty, rand);
-        return new SalvageMission(seed, difficulty, dungeon.ID, faction.ID, config, biome.ID, air.ID, temp.Temperature, light.Color, duration, rewards, mods);
+        return new SalvageMission(seed, difficulty, dungeon.ID, faction.ID, config, biome.ID, weather.ID, air.ID, temp.Temperature, light.Color, duration, rewards, mods);
     }
 
     public T GetBiomeMod<T>(string biome, System.Random rand, ref float rating) where T : class, IPrototype, IBiomeSpecificMod

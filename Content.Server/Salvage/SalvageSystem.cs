@@ -17,6 +17,8 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Timing;
 using Robust.Shared.EntitySerialization.Systems;
+using Content.Server.Weather;
+using Content.Shared.Weather;
 
 namespace Content.Server.Salvage
 {
@@ -29,6 +31,7 @@ namespace Content.Server.Salvage
         [Dependency] private readonly IRobustRandom _random = default!;
         [Dependency] private readonly AnchorableSystem _anchorable = default!;
         [Dependency] private readonly BiomeSystem _biome = default!;
+        [Dependency] private readonly WeatherSystem _weather = default!;
         [Dependency] private readonly DungeonSystem _dungeon = default!;
         [Dependency] private readonly GravitySystem _gravity = default!;
         [Dependency] private readonly MapLoaderSystem _loader = default!;
