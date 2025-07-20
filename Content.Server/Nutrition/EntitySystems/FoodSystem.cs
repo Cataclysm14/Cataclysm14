@@ -307,7 +307,8 @@ public sealed class FoodSystem : EntitySystem
 
         args.Repeat = !forceFeed;
 
-        _solutionContainer.SetCapacity(soln.Value, soln.Value.Comp.Solution.MaxVolume - transferAmount); // Frontier: remove food capacity after taking a bite.
+// Mono: Shut off. We love emergent mechanics!
+//        _solutionContainer.SetCapacity(soln.Value, soln.Value.Comp.Solution.MaxVolume - transferAmount); // Frontier: remove food capacity after taking a bite.
 
         if (TryComp<StackComponent>(entity, out var stack))
         {
