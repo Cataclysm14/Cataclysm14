@@ -7,3 +7,18 @@
     containers:
       item:
       - NavyOfficerSabre
+
+- type: entity
+  id: ClothingBeltDrakeIndustriesFilledTools
+  parent: ClothingBeltDrakeIndustries
+  suffix: Filled, Tools
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - id: Crowbar
+      - id: Wrench
+      - id: Screwdriver
+      - id: Wirecutter
+      - id: Welder
+      - id: Multitool
