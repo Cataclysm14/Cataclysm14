@@ -76,7 +76,7 @@
       # Delicious!
       effects:
       - !type:SatiateHunger
-        factor: 0.125 # Mono 1 >> 0.125 - Partial walk-back enabling slimepeople to directly feed people, but they will have to bleed 8x more for it. Cute species quirk!
+        factor: 0.6 # Mono 1 >> 0.6 - Partial walk-back enabling slimepeople to directly feed people, but need 5x of it in volume. Cute species quirk!
   footstepSound:
     collection: FootstepBlood
     params:
