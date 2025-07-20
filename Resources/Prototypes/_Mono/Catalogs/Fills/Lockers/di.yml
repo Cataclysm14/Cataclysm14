@@ -1,0 +1,46 @@
+# Drake Industries
+
+- type: entity
+  id: LockerDrakeIndustriesGruntFilled
+  suffix: Filled
+  parent: LockerDrakeIndustriesGrunt
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingBeltDrakeIndustriesFilledTools
+      - id: ClothingNeckDrakeIndustriesBadge
+      - id: ClothingShoesBootsMagDrakeIndustries
+      - id: DoubleEmergencyAirTank
+
+- type: entity
+  id: LockerDrakeIndustriesTruckerFilled
+  suffix: Filled
+  parent: LockerDrakeIndustriesTrucker
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingBeltDrakeIndustries
+      - id: ClothingNeckDrakeIndustriesBadge
+      - id: ClothingShoesBootsMagDrakeIndustries
+      - id: ClothingOuterDrakeIndustriesTruckerPuffyVest
+      - id: DoubleEmergencyAirTank
+      
+- type: entity
+  id: LockerDrakeIndustriesWatchdogFilled
+  suffix: Filled
+  parent: LockerDrakeIndustriesWatchdog
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingBeltDrakeIndustries
+      - id: ClothingNeckDrakeIndustriesBadge
+      - id: ClothingShoesBootsMagDrakeIndustries
+      - id: DoubleEmergencyAirTank
+      #mercenary locker content
+      - id: PinpointerUniversal  
+      - id: HandHeldMassScanner
+      - id: WeaponGrapplingGun
+      - id: BoxZiptie
+      #todo add watchdog armor
+
+# TODO HARDSUIT FILLED VERSIONS FOR EACH

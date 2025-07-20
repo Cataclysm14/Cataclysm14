@@ -11,9 +11,9 @@
     sprite: _Mono/Structures/Storage/closet.rsi
 
 - type: entity
-  id: LockerDrakeIndustriesHauler
+  id: LockerDrakeIndustriesGrunt
   parent: MonoLockerBaseSecure
-  name: hauler's locker
+  name: grunt's locker
   description: Sure has a fancy color, truth be told it's just steel sprayed with Drake Industries' colors. This ones bears the symbol of a hauler.
   components:
   - type: Appearance
@@ -21,23 +21,41 @@
     stateBaseClosed: DI_locker
     stateDoorOpen: DI_locker_open
     stateDoorClosed: DI_locker_hauler_door
+  - type: AccessReader
+    access: [["DI"]]
     
 - type: entity
   id: LockerDrakeIndustriesTrucker
-  parent: LockerDrakeIndustriesHauler
+  parent: LockerDrakeIndustriesGrunt
   name: trucker's locker
   description: Sure has a fancy color, truth be told it's just steel sprayed with Drake Industries' colors. This ones bears the symbol of a trucker.
   components:
   - type: Appearance
   - type: EntityStorageVisuals
     stateDoorClosed: DI_locker_trucker_door
-    
+  - type: AccessReader
+    access: [["DIPilot"]]
+
 - type: entity
   id: LockerDrakeIndustriesWatchdog
-  parent: LockerDrakeIndustriesHauler
+  parent: LockerDrakeIndustriesGrunt
   name: watchdog's locker
   description: Sure has a fancy color, truth be told it's just steel sprayed with Drake Industries' colors. This ones bears the symbol of a watchdog.
   components:
   - type: Appearance
   - type: EntityStorageVisuals
     stateDoorClosed: DI_locker_watchdog_door
+  - type: AccessReader
+    access: [["DISecurity"]]
+
+- type: entity
+  id: LockerDrakeIndustriesOverseer
+  parent: LockerDrakeIndustriesGrunt
+  name: overseer's locker
+  description: Sure has a fancy color, truth be told it's just steel sprayed with Drake Industries' colors. This ones bears the symbol of a watchdog.
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateDoorClosed: DI_locker_watchdog_door
+  - type: AccessReader
+    access: [["DICommand"]]
