@@ -71,12 +71,12 @@
   viscosity: 0.25
   tileReactions:
     - !type:SpillTileReaction
-#  metabolisms: # Frontier
-#    Food: # Frontier
-#      # Delicious! # Frontier
-#      effects: # Frontier
-#      - !type:SatiateHunger # Frontier
-#        factor: 1 # Frontier
+  metabolisms:
+    Food:
+      # Delicious!
+      effects:
+      - !type:SatiateHunger
+        factor: 0.125 # Mono 1 >> 0.125 - Partial walk-back enabling slimepeople to directly feed people, but they will have to bleed 8x more for it. Cute species quirk!
   footstepSound:
     collection: FootstepBlood
     params:
