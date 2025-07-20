@@ -3,16 +3,15 @@
   id: JobDIGrunt
   groups:
   - DIJumpsuitGrunt
-  - TsfmcGloves
   - DIBackpack
-  #- DIOuterClothing TODO add hardsuits, maybe special harness for grunt
-  - DIShoes
-  - DIMaskBase
   - DIBelt
+  - DIMaskBase
   - DIEars
+  - TsfmcGloves
+  - DIShoes
   - DINeck
-  - NfsdBoxSurvival
   - DIGruntPDA
+  - NfsdBoxSurvival
   - ContractorWallet
   - ContractorEncryptionKey
   - NfsdSpeciesSpecific
@@ -22,16 +21,16 @@
   id: JobDITrucker
   groups:
   - DIJumpsuitTrucker
-  - TsfmcGloves
   - DIBackpack
-  - DIOuterClothing
-  - DIShoes
-  - DIMaskBase
   - DIBelt
+  - DIOuterClothing
+  - DIMaskBase
   - DIEars
+  - TsfmcGloves
+  - DIShoes
   - DINeck
-  - NfsdBoxSurvival
   - DITruckerPDA
+  - NfsdBoxSurvival
   - ContractorWallet
   - ContractorEncryptionKey
   - NfsdSpeciesSpecific
@@ -42,43 +41,42 @@
   id: JobDIWatchdog
   groups:
   - DIJumpsuitWatchdog
-  - TsfmcGloves
   - DIBackpack
-  #- DIOuterClothing TODO add hardsuits + armor
-  - DIShoes
-  - DIMaskSec
   - DIBelt
+  - DIOuterClothingSec
+  - DIGun #Hokkaido for now
+  - DIAmmo #Buckshot for Hokkaido
+  - DIMaskSec
   - DIEars
+  - TsfmcGloves
+  - DIShoes
   - DINeck
-  - NfsdBoxSurvival
   - DIWatchdogPDA
+  - NfsdBoxSurvival
   - ContractorWallet
   - ContractorEncryptionKey
   - NfsdSpeciesSpecific
   - ContractorTrinkets
-  - DIGun #Hokkaido for now
-  - DIAmmo #Buckshot for Hokkaido
-  - DIOuterClothingSec
+  
   
 # Overseer /// Will need much more fluff long term, actually expensive, good looking gear to contrast with the rest of DI's cheap looking stuff. For now cosmetic freedom
 - type: roleLoadout 
   id: JobDIOverseer 
   groups:
   - DIJumpsuitOverseer
-  - TsfmcGloves
-  - DIBackpack
-  #- DIOuterClothing TODO add hardsuits + armor
-  - DIShoes
-  - DIMaskSec
+ - DIBackpack
   - DIBelt
+  - DIOuterClothingSec
+  - DIGun
+  - DIAmmo
+  - DIMaskSec
   - DIEars
+  - TsfmcGloves
+  - DIShoes
   - DINeck
-  - NfsdBoxSurvival
   - DIOverseerPDA
+  - NfsdBoxSurvival
   - ContractorWallet
   - ContractorEncryptionKey
   - NfsdSpeciesSpecific
   - ContractorTrinkets
-  - DIGun
-  - DIAmmo
-  - DIOuterClothingSec

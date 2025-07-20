@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ClothingOuterArmorRiot, BaseC1Contraband]
+  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseC1Contraband]
   id: ClothingOuterDrakeIndustriesArmorRiot
   name: watchdog plated suit #TL:DR see sprite, riot suit +5% slowdown but better prot
-  description: A tinkered military-grade riot suit plated with an unknown alloy and bearing the colors of Drake Industries. Granting it more protection, at the cost of a heavier carry weight
+  description: A tinkered military-grade riot suit plated with a classified alloy bearing the colors of Drake Industries. Granting it more protection, at the cost of a heavier carry weight.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Armor/di_riot.rsi
