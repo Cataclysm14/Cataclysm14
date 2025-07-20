@@ -19,7 +19,10 @@ public enum ShipyardConsoleUiKey : byte
     Scrap,
     Sr,
     Medical,
-    Ussp, // mono
+    // Mono start
+    Ussp,
+    SHM,
+    DrakeIndustries,
     // Add ships to this key if they are only available from mothership consoles. Shipyards using it are inherently empty and are populated using the ShipyardListingComponent.
     Custom
 }
