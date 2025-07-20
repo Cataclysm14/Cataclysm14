@@ -91,6 +91,12 @@ public sealed partial class ToggleableClothingComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public bool ReplaceCurrentClothing = false;
+
+    /// <summary>
+    ///     Monolith - Variable deciding wether the ToggleClothingAction uses radial menu.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool UseRadialMenu = false;
 }
 
 [Serializable, NetSerializable]
