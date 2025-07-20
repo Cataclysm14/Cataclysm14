@@ -4,9 +4,9 @@
 
 - type: entity
   id: ChimeraFleshKudzu
-  name: chimera hive tendons
+  name: chimera hive biomass
   parent: BaseKudzu
-  description: A rapidly growing cluster of chimera tendons. WHY ARE YOU STOPPING TO LOOK AT IT?!
+  description: A rapidly growing cluster of chimera biomass. WHY ARE YOU STOPPING TO LOOK AT IT?!
   placement:
     mode: SnapgridCenter
     snap:
@@ -38,18 +38,11 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 125
+        damage: 40
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-  - type: DamageContacts
-    damage:
-      types:
-        Slash: 1.5
-        Piercing: 0.25
-    ignoreWhitelist:
-      tags:
-      - Chimera
+  - type: TrayScanReveal
   - type: Kudzu
     growthTickChance: 0.2
     spreadChance: 0.5
@@ -67,8 +60,8 @@
         Heat: 3
   - type: AtmosExposed
   - type: SpeedModifierContacts
-    walkSpeedModifier: 0.3
-    sprintSpeedModifier: 0.3
+    walkSpeedModifier: 0.15
+    sprintSpeedModifier: 0.15
     ignoreWhitelist:
       tags:
       - Chimera
