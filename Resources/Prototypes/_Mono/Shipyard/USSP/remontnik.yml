@@ -16,8 +16,8 @@
   shuttlePath: /Maps/_Mono/Shuttles/USSP/remontnik.yml
   guidebookPage: Null
   class:
-  - Engineering
   - Mining
+  - Engineering
   engine:
   - AME
 
