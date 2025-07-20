@@ -7,6 +7,4 @@ namespace Content.Server._Mono.FireControl;
 
 [RegisterComponent]
 public sealed partial class FireControlRotateComponent : Component;
-// component that should prevent a grid from being able to use spaceartillery
-// intended for fullcloak ships
-// i ape hullrot at every turn...
+// Give this to ship guns you want to rotate when firing.
