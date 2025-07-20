@@ -26,8 +26,8 @@
   components:
   - type: Holopad
     useStationName: false
-  - type: ApcPowerReceiver
-    powerDisabled: true #starts off
+  #- type: ApcPowerReceiver # Mono - comment out
+  #  powerDisabled: true #starts off
 
 - type: entity
   parent: [BaseStructureDisableToolUse, BaseStructureIndestructible, NFHolopadShip]

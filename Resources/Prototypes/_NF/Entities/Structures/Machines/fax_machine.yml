@@ -14,8 +14,8 @@
   components:
   - type: FaxMachine
     useStationName: true
-  - type: ApcPowerReceiver
-    powerDisabled: true #starts off
+  #- type: ApcPowerReceiver # Mono - comment out this
+  #  powerDisabled: true #starts off
 
 # Outpost
 - type: entity
@@ -81,8 +81,8 @@
   components:
   - type: FaxMachine
     name: "Listening Point: Bravo"
-  - type: ApcPowerReceiver
-    powerDisabled: true #starts off
+  #- type: ApcPowerReceiver # Mono - comment out
+  #  powerDisabled: true #starts off
 
 - type: entity
   parent: [BaseStructureDisableToolUse, FaxMachineBase]
@@ -246,8 +246,8 @@
   components:
   - type: FaxMachine
     name: "Unknown"
-  - type: ApcPowerReceiver
-    powerDisabled: false #starts off
+  #- type: ApcPowerReceiver # Mono - comment out
+  #  powerDisabled: false #starts off
 
 # Ships
 - type: entity
