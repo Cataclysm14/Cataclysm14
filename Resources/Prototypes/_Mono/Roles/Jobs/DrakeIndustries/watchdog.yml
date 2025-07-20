@@ -1,0 +1,35 @@
+- type: job
+  id: DIWatchdog
+  name: job-name-di-watchdog
+  description: job-description-di-watchdog
+  playTimeTracker: JobDIWatchdog
+  requirements:
+  - !type:RoleTimeRequirement
+      role: JobMercenary
+      time: 10800 # 3 hours
+  alwaysUseSpawner: true
+  hideConsoleVisibility: true
+  icon: "JobIconDIWatchdog"
+  supervisors: job-supervisors-di-overseer
+  canBeAntag: false
+  weight: 15
+  displayWeight: 15
+  #special:
+  #- !type:AddComponentSpecial
+    #components:
+    #- type: NpcFactionMember todo company member DI
+    #  factions:
+    #  - USSP
+  accessGroups:
+  - GeneralAccess
+  - DISec
+
+- type: startingGear
+  id: DIWatchdogGear
+  equipment:
+    pocket1: WeaponPistolPollock
+    pocket2: Magazine9x19mmPistolFMJ
+  storage:
+    back:
+    - MedkitCombatFilled
+    - RadioHandheldNF

@@ -82,3 +82,53 @@
     sprite: _NF/Markers/jobs.rsi
     layers:
     - state: green
+
+# Drake Industries
+
+- type: entity
+  id: SpawnPointDrakeIndustriesGrunt
+  parent: SpawnPointJobBase
+  name: DI Grunt
+  components:
+  - type: SpawnPoint
+    job_id: DIGrunt
+  - type: Sprite
+    sprite: _NF/Markers/jobs.rsi
+    layers:
+    - state: green
+
+- type: entity
+  id: SpawnPointDrakeIndustriesTrucker
+  parent: SpawnPointJobBase
+  name: DI Trucker
+  components:
+  - type: SpawnPoint
+    job_id: DITrucker
+  - type: Sprite
+    sprite: _NF/Markers/jobs.rsi
+    layers:
+    - state: green
+    
+- type: entity
+  id: SpawnPointDrakeIndustriesWatchdog
+  parent: SpawnPointJobBase
+  name: DI Watchdog
+  components:
+  - type: SpawnPoint
+    job_id: DIWatchdog
+  - type: Sprite
+    sprite: _NF/Markers/jobs.rsi
+    layers:
+    - state: green
+    
+- type: entity
+  id: SpawnPointDrakeIndustriesOverseer
+  parent: SpawnPointJobBase
+  name: DI Overseer
+  components:
+  - type: SpawnPoint
+    job_id: DIOverseer
+  - type: Sprite
+    sprite: _NF/Markers/jobs.rsi
+    layers:
+    - state: green

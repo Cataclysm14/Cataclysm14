@@ -1,0 +1,38 @@
+- type: job
+  id: DITrucker
+  name: job-name-di-trucker
+  description: job-description-di-trucker
+  playTimeTracker: JobDITrucker
+  requirements:
+  - !type:RoleTimeRequirement
+      role: JobPilot
+      time: 10800 # 3 hours
+  startingGear: DITruckerGear
+  alwaysUseSpawner: true
+  hideConsoleVisibility: true
+  icon: "JobIconDITrucker"
+  supervisors: job-supervisors-di-overseer
+  canBeAntag: false
+  weight: 15
+  displayWeight: 15
+  #special:
+  #- !type:AddComponentSpecial
+    #components:
+    #- type: NpcFactionMember todo company member DI
+    #  factions:
+    #  - USSP
+  accessGroups:
+  - GeneralAccess
+  access:
+  - DI
+  - DIPilot
+
+- type: startingGear
+  id: DITruckerGear
+  equipment:
+    pocket1: WeaponPistolPollock
+    pocket2: Magazine9x19mmPistolFMJ
+  storage:
+    back:
+    - MedkitCombatFilled
+    - RadioHandheldNF

@@ -9,24 +9,30 @@
   name: id-card-access-level-di
   
 - type: accessLevel
+  id: DIPilot
+  name: id-card-access-level-di-pilot
+  
+- type: accessLevel
   id: DISecurity
   name: id-card-access-level-di-security
   
 - type: accessLevel
   id: DICommand
   name: id-card-access-level-di-command
-  
+
 - type: accessGroup
-  id: DIWatchdog
+  id: DISec
   tags:
   - DI
+  - DIPilot
   - DISecurity
   - Mercenary
 
 - type: accessGroup
-  id: DIOverseer
+  id: DIAA
   tags:
   - DI
-  - DISecurity
   - DICommand
+  - DIPilot
+  - DISecurity
   - Mercenary

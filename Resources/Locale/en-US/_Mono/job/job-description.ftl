@@ -10,3 +10,10 @@ job-description-md-medic = Traverse the space to provide life-saving care aboard
 
 # MARK: TSF
 job-description-tsf-engineer = Maintain the integrity of the flagship, get laughed at for not being a real soldier.
+
+# MARK: DI
+
+job-description-di-grunt = The cogs of the machine. Push crates, keep the ship systems in check. 
+job-description-di-overseer = Organise cargo runs, maintain the company's reputation, manage payments & order your crew around in promises of those sweet credits.
+job-description-di-trucker = Chart & plan high-speed courses to deliver the cargo in time.
+job-description-di-watchdog = Keep the cargo and crew safe, liquidate any would be trouble-makers rising against the company.

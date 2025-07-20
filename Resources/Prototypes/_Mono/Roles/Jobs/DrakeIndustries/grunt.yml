@@ -1,0 +1,33 @@
+- type: job
+  id: DIGrunt
+  name: job-name-di-grunt
+  description: job-description-di-grunt
+  playTimeTracker: JobDIGrunt
+  startingGear: DIGruntGear
+  alwaysUseSpawner: true
+  hideConsoleVisibility: true
+  icon: "JobIconDIGrunt"
+  supervisors: job-supervisors-di-overseer
+  canBeAntag: false
+  weight: 15
+  displayWeight: 15
+  #special:
+  #- !type:AddComponentSpecial
+    #components:
+    #- type: NpcFactionMember todo company member DI
+    #  factions:
+    #  - USSP
+  accessGroups:
+  - GeneralAccess
+  access:
+  - DI
+
+- type: startingGear
+  id: DIGruntGear
+  equipment:
+    pocket1: WeaponPistolPollock
+    pocket2: Magazine9x19mmPistolFMJ
+  storage:
+    back:
+    - MedkitCombatFilled
+    - RadioHandheldNF

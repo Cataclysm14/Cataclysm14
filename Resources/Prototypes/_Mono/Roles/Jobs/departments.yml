@@ -22,3 +22,16 @@
   - USSPMedic
   - USSPRifleman
   primary: false
+
+- type: department
+  id: DrakeIndustries
+  name: department-DrakeIndustries
+  description: department-DrakeIndustries-description
+  color: "#CD6B6B"
+  weight: 0
+  roles:
+  - DIOverseer
+  - DIWatchdog
+  - DITrucker
+  - DIGrunt
+  primary: false

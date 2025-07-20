@@ -112,3 +112,73 @@
     sprite: _NF/Objects/Misc/id_cards.rsi
   - type: Item
     heldPrefix: nfsd
+
+# MARK: DI
+
+- type: entity
+  parent: IDCardStandard
+  id: DrakeIndustriesGruntIDCard
+  name: DI grunt ID card
+  components:
+  - type: PresetIdCard
+    job: DIGrunt
+  - type: Sprite
+    sprite: _Mono/Objects/Misc/id_cards.rsi
+    layers:
+    - state: silver
+    - state: idgrunt
+  - type: Clothing
+    sprite: _Mono/Objects/Misc/id_cards.rsi
+  - type: Item
+    heldPrefix: silver
+    
+- type: entity
+  parent: IDCardStandard
+  id: DrakeIndustriesTruckerIDCard
+  name: DI trucker ID card
+  components:
+  - type: PresetIdCard
+    job: DITrucker
+  - type: Sprite
+    sprite: _Mono/Objects/Misc/id_cards.rsi
+    layers:
+    - state: silver
+    - state: idtrucker
+  - type: Clothing
+    sprite: _Mono/Objects/Misc/id_cards.rsi
+  - type: Item
+    heldPrefix: silver
+    
+- type: entity
+  parent: IDCardStandard
+  id: DrakeIndustriesWatchdogIDCard
+  name: DI watchdog ID card
+  components:
+  - type: PresetIdCard
+    job: DIWatchdog
+  - type: Sprite
+    sprite: _Mono/Objects/Misc/id_cards.rsi
+    layers:
+    - state: silver
+    - state: idwatchdog
+  - type: Clothing
+    sprite: _Mono/Objects/Misc/id_cards.rsi
+  - type: Item
+    heldPrefix: silver
+    
+- type: entity
+  parent: IDCardStandard
+  id: DrakeIndustriesOverseerIDCard
+  name: DI overseer ID card
+  components:
+  - type: PresetIdCard
+    job: DIOverseer
+  - type: Sprite
+    sprite: _Mono/Objects/Misc/id_cards.rsi
+    layers:
+    - state: gold
+    - state: idoverseer
+  - type: Clothing
+    sprite: _Mono/Objects/Misc/id_cards.rsi
+  - type: Item
+    heldPrefix: gold

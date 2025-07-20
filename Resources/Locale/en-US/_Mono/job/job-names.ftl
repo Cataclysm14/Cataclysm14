@@ -13,3 +13,9 @@ job-name-md-medic = Emergency Responder
 
 # MARK: TSF
 job-name-tsf-engineer = TSFMC Engineer
+
+# MARK: DI
+job-name-di-overseer = Overseer
+job-name-di-watchdog = Watchdog
+job-name-di-trucker = Trucker
+job-name-di-grunt = Grunt
