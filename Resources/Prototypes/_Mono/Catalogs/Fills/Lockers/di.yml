@@ -38,6 +38,7 @@
     contents:
       - id: ClothingBeltDrakeIndustries
       - id: ClothingNeckDrakeIndustriesBadge
+      - id: ClothingOuterDrakeIndustriesArmorRiot
       - id: ClothingShoesBootsMagDrakeIndustries
       - id: DoubleEmergencyAirTank
       #mercenary locker content
@@ -45,6 +46,5 @@
       - id: HandHeldMassScanner
       - id: WeaponGrapplingGun
       - id: BoxZiptie
-      #todo add watchdog armor
 
 # TODO HARDSUIT FILLED VERSIONS FOR EACH
