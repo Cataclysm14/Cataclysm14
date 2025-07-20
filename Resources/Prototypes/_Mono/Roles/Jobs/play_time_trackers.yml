@@ -27,13 +27,13 @@
 # DI Jobs
 
 - type: playTimeTracker
-  id: JobDIGrunt
-
-- type: playTimeTracker
   id: JobDIPOverseer
-
-- type: playTimeTracker
-  id: JobDITrucker
-  
+    
 - type: playTimeTracker
   id: JobDIWatchdog
+  
+- type: playTimeTracker
+  id: JobDITrucker
+
+- type: playTimeTracker
+  id: JobDIGrunt
