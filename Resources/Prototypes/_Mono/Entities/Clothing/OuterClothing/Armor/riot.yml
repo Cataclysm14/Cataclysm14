@@ -1,0 +1,29 @@
+- type: entity
+  parent: [ClothingOuterArmorRiot, BaseC1Contraband]
+  id: ClothingOuterDrakeIndustriesArmorRiot
+  name: watchdog plated suit #TL:DR see sprite, riot suit +5% slowdown but better prot
+  description: A tinkered military-grade riot suit plated with an unknown alloy and bearing the colors of Drake Industries. Granting it more protection, at the cost of a heavier carry weight
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/OuterClothing/Armor/di_riot.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/OuterClothing/Armor/di_riot.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.35
+        Slash: 0.35
+        Piercing: 0.65
+        Heat: 0.95 #them alloys not protect from heat
+        Caustic: 0.9 # Frontier
+  - type: ExplosionResistance
+    damageCoefficient: 0.85 #them alloys protect from kaboom
+  - type: ClothingSpeedModifier #them alloys heavy
+    walkModifier: 0.85 
+    sprintModifier: 0.85
+  - type: GroupExamine
+  - type: StaminaDamageResistance # Mono - Stamres
+    coefficient: 0.2
+  - type: Tag  # Mono
+    tags:
+    - Kevlar

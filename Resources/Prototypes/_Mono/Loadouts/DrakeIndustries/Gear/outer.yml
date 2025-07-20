@@ -2,5 +2,11 @@
   id: DIVestTrucker
   equipment:
     outerClothing: ClothingOuterDrakeIndustriesTruckerPuffyVest
+
+- type: loadout
+  id: DIArmorWatchdogRiot
+  price: 2500 #them good prots come at a price
+  equipment:
+    outerClothing: ClothingOuterDrakeIndustriesArmorRiot
     
 # TO DO add the two/three hardsuits for: grunt&trucker, watchdog&/overseer

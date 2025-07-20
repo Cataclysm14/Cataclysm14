@@ -108,6 +108,15 @@
   fallbacks:
   - DIVestTrucker
 
+- type: loadoutGroup
+  id: DIOuterClothingSec
+  name: loadout-group-contractor-outerclothing
+  minLimit: 1
+  loadouts:
+  - DIArmorWatchdogRiot
+  fallbacks:
+  - DIArmorWatchdogRiot
+
 #neck
 
 - type: loadoutGroup

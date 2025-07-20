@@ -58,10 +58,11 @@
   - ContractorTrinkets
   - DIGun #Hokkaido for now
   - DIAmmo #Buckshot for Hokkaido
+  - DIOuterClothingSec
   
-# Overseer
-- type: roleLoadout
-  id: JobDIOverseer
+# Overseer /// Will need much more fluff long term, actually expensive, good looking gear to contrast with the rest of DI's cheap looking stuff. For now cosmetic freedom
+- type: roleLoadout 
+  id: JobDIOverseer 
   groups:
   - DIJumpsuitOverseer
   - TsfmcGloves
@@ -80,3 +81,4 @@
   - ContractorTrinkets
   - DIGun
   - DIAmmo
+  - DIOuterClothingSec
