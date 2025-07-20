@@ -1,0 +1,29 @@
+- type: loadout
+  id: MercenaryClothingBackpackDuffelTacticalDuffelTan
+  equipment:
+    back: ClothingBackpackDuffelTacticalDuffelTan
+
+- type: loadout
+  id: MercenaryClothingBackpackDuffelTacticalDuffelOlive
+  equipment:
+    back: ClothingBackpackDuffelTacticalDuffelOlive
+
+- type: loadout
+  id: MercenaryClothingBackpackDuffelTacticalDuffelBlack
+  equipment:
+    back: ClothingBackpackDuffelTacticalDuffelBlack
+
+- type: loadout
+  id: MercenaryClothingBackpackDuffelTacticalDuffelRangerGreen
+  equipment:
+    back: ClothingBackpackDuffelTacticalDuffelRangerGreen
+
+- type: loadout
+  id: MercenaryClothingBackpackDuffelTacticalDuffelCoyoteBrown
+  equipment:
+    back: ClothingBackpackDuffelTacticalDuffelCoyoteBrown
+
+- type: loadout
+  id: MercenaryClothingBackpackDuffelTacticalDuffelWhite
+  equipment:
+    back: ClothingBackpackDuffelTacticalDuffelWhite

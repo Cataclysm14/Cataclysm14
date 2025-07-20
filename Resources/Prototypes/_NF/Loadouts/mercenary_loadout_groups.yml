@@ -28,6 +28,7 @@
   - MercenaryClothingUniformJumpsuitMilitaryTurtleneckBlueMercenaryCaptain
   - MercenaryClothingUniformJumpsitDrakeIndustriesWatchdog
   subgroups:
+  - MonoMercenaryJumpsuit # Mono
   - PilotJumpsuit
   - ContractorJumpsuit
   fallbacks:
@@ -46,6 +47,7 @@
   - SecuritySatchel
   - SecurityDuffel
   subgroups:
+  - MonoMercenaryBackpack # Mono
   - PilotBackpack
   - ContractorBackpack
   fallbacks:
@@ -64,6 +66,7 @@
   - MercenaryClothingOuterArmorPunkRandomized # Punkish (Randomized visuals)
   - MercenaryClothingOuterArmorCaptainCarapace
   subgroups:
+  - MonoMercenaryOuterClothing # Mono
   - PilotOuterClothing
   - ContractorOuterClothing
 
@@ -121,6 +124,7 @@
   - MercenaryClothingHandsMercenaryGlovesCombat
   - MercenaryClothingHandsGlovesCombat
   subgroups:
+  - MonoMercenaryGloves # Mono
   - PilotGloves
   - ContractorGloves
 
@@ -143,6 +147,7 @@
   - MercenaryClothingEyesGlassesMercenary
   - MercenaryClothingEyesGlassesSunglasses
   subgroups:
+  - MonoMercenaryBallisticGoggles # Mono
   - PilotGlasses
   - ContractorGlasses
 
@@ -169,4 +174,5 @@
   - MercenaryClothingBeltMilitaryWebbingMed
   - MercenaryClothingBeltSecurity
   subgroups:
+  - MonoMercenaryChestrig # Mono
   - ContractorBelt
