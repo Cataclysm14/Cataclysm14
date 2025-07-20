@@ -1,0 +1,24 @@
+- type: technology
+  id: UniversalRailgunAmmo
+  name: research-technology-universal-railgun-ammo
+  icon:
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/charonslug.rsi
+    state: railgun_slug
+  discipline: FactionUniversal
+  tier: 1
+  cost: 20000
+  recipeUnlocks:
+  - CharonSlugUniversal
+
+- type: technology
+  id: UniversalTorpedoAmmo
+  name: research-technology-universal-asm220-ammo
+  icon:
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/asm220.rsi
+    state: standard
+  discipline: FactionUniversal
+  tier: 1
+  cost: 40000
+  recipeUnlocks:
+  - ASM220TorpedoHEUniversal
+  - ASM220TorpedoECMUniversal

@@ -1,0 +1,10 @@
+- type: latheRecipePack
+  id: UniversalTorpedoAmmo
+  recipes:
+  - ASM220TorpedoHEUniversal
+  - ASM220TorpedoECMUniversal
+
+- type: latheRecipePack
+  id: UniversalRailgunAmmo
+  recipes:
+  - CharonSlugUniversal
