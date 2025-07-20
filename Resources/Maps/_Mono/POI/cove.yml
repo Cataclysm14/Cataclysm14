@@ -26,7 +26,7 @@ meta:
   engineVersion: 260.2.0
   forkId: ""
   forkVersion: ""
-  time: 07/20/2025 16:00:27
+  time: 07/20/2025 17:18:42
   entityCount: 4730
 maps: []
 grids:
@@ -14162,6 +14162,8 @@ entities:
       rot: 3.141592653589793 rad
       pos: 16.5,22.5
       parent: 1
+    - type: AtmosPipeColor
+      color: '#00AACCFF'
   - uid: 2077
     components:
     - type: Transform
@@ -14756,6 +14758,8 @@ entities:
     - type: Transform
       pos: -0.5,13.5
       parent: 1
+    - type: AtmosPipeColor
+      color: '#00AACCFF'
   - uid: 2155
     components:
     - type: Transform
@@ -17260,6 +17264,8 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 16.5,22.5
       parent: 1
+    - type: AtmosPipeColor
+      color: '#DD0075FF'
   - uid: 2481
     components:
     - type: Transform
