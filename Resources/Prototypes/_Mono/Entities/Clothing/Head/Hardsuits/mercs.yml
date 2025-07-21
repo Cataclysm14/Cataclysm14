@@ -7,7 +7,7 @@
   parent: [ClothingHeadHardsuitBase, BaseC3SyndicateContraband, ClothingHeadSuitWithLightBase]
   id: ClothingHelmetHardsuitMercenaryWarlord
   name: WL-01 helmet
-  description: A heavy headgear piece accompanying the WarlorD suit, it offers flash inmunity aswell mass scanner support at the expenses of lacking a light emmiter.
+  description: A heavy headgear piece accompanying the Warlord suit, it offers flash inmunity aswell mass scanner support.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/Head/Hardsuits/merc_warlordsuit.rsi
