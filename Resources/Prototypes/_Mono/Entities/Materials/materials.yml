@@ -45,3 +45,11 @@
   components:
   - type: Stack
     count: 10
+
+- type: entity
+  parent: MaterialDiamond
+  id: MaterialDiamond5
+  suffix: Salvage
+  components:
+  - type: Stack
+    count: 5
