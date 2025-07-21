@@ -1,21 +1,11 @@
 - type: reagent
   id: PrismaticPlasma
   name: reagent-name-prismaticplasma
-  group: Narcotics
   desc: reagent-desc-prismaticplasma
   physicalDesc: reagent-physical-desc-enigmatic
   flavor: bitter
   color: "#f52f95"
   metabolisms:
-    Medicine:
-      metabolismRate: 1
-      effects:
-      - !type:HealthChange
-        conditions:
-        - !type:ReagentThreshold
-          max: 5
-        damage:
-          Genetic: -0.5
     Narcotic:
       metabolismRate: 1
       effects:
@@ -49,7 +39,7 @@
           min: 10
         damage:
           types:
-            Cellular: 5.5 # for fun
+            Cellular: 5.5
       - !type:PopupMessage
         conditions:
         - !type:ReagentThreshold
@@ -62,18 +52,18 @@
 - type: reagent
   id: NightFluid
   name: reagent-name-nightfluid
-  group: Narcotics
   desc: reagent-desc-nightfluid
   physicalDesc: reagent-physical-desc-viscous
   flavor: bitter
   color: "#000000"
   metabolisms:
-    Medicine:
+    Poison:
       metabolismRate: 0.1
       effects:
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          max: 5
+          min: 1
         damage:
+          types:
             Cellular: 0.2
