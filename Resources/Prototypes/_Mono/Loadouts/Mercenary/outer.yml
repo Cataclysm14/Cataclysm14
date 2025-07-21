@@ -67,6 +67,12 @@
     outerClothing: ClothingOuterHardsuitMercenary
 
 - type: loadout
+  id: MercenaryClothingOuterHardsuitPrivateSecurity
+  price: 15000
+  equipment:
+    outerClothing: ClothingOuterHardsuitPrivateSecurity
+
+- type: loadout
   id: MercenaryClothingOuterHardsuitScaf
   price: 50000
   equipment:
