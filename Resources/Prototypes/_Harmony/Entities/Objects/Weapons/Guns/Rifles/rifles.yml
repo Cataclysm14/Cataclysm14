@@ -66,4 +66,7 @@
   - type: EyeCursorOffset
     maxOffset: 6.5
     pvsIncrease: 0.65
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.75
+    sprintModifier: 0.75
     # Mono end
