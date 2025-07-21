@@ -17,6 +17,7 @@
             Access="Public"
             ToolTip=""
             Text="{Loc 'shipyard-console-purchase-available'}"
+            ConfirmationText="{Loc 'shipyard-console-confirm-unassign'}"
             StyleClasses="LabelSubText"
             MinWidth="130"
             HorizontalAlignment="Right" /> <!-- 130 px: approximate width of "Purchase"-->
