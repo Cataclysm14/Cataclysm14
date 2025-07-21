@@ -8348,3 +8348,41 @@ Entries:
   id: 942
   time: '2025-07-21T09:16:33.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1534
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: >-
+        It is now statistically possible to find bluespace, diamond, and
+        bananium on wrecks. High value tech disk are up too.
+    - type: Tweak
+      message: >-
+        Reintroduced liquid oxygen, nitrogen, and carbon dioxide canisters to
+        random gas can spawns.
+  id: 943
+  time: '2025-07-21T16:49:04.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1540
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: >-
+        Monkey cubes and crayons are now nutriment-bearing again. Ook ook
+        crunch.
+  id: 944
+  time: '2025-07-21T16:51:54.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1538
+- author: HungryCuban
+  changes:
+    - type: Tweak
+      message: WarlorD suit name changed to "PMC WL-01"
+    - type: Tweak
+      message: PMC WL-01 NVG changed for less speed penalty
+  id: 945
+  time: '2025-07-21T17:03:53.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1541
+- author: Da_Shadow_Wizard
+  changes:
+    - type: Add
+      message: Added a Lorepage to the Guidebook
+  id: 946
+  time: '2025-07-21T17:23:48.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1526
