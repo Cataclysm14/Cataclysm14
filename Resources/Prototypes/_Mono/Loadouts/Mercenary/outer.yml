@@ -45,3 +45,10 @@
   price: 250
   equipment:
     outerClothing: ClothingOuterArmorBPVestStabproof
+
+- type: loadout
+  id: MercenaryClothingOuterHardsuitMercenaryWarlord
+  price: 50000
+  equipment:
+    outerClothing: ClothingOuterHardsuitMercenaryWarlord
+    
