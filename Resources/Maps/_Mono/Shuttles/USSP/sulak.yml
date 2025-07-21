@@ -20,7 +20,7 @@ meta:
   engineVersion: 260.2.0
   forkId: ""
   forkVersion: ""
-  time: 07/21/2025 10:00:15
+  time: 07/21/2025 10:24:40
   entityCount: 843
 maps: []
 grids:
@@ -2576,11 +2576,11 @@ entities:
       parent: 1
 - proto: ComputerCrewMonitoring
   entities:
-  - uid: 573
+  - uid: 719
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -0.5,0.5
+      pos: 5.5,4.5
       parent: 1
     - type: ApcPowerReceiver
       powerLoad: 5
@@ -2649,6 +2649,13 @@ entities:
     components:
     - type: Transform
       pos: 6.5,7.5
+      parent: 1
+- proto: FaxMachineShip
+  entities:
+  - uid: 744
+    components:
+    - type: Transform
+      pos: -0.5,0.5
       parent: 1
 - proto: FireAlarm
   entities:
@@ -3804,26 +3811,19 @@ entities:
     - type: Transform
       pos: 7.5,4.5
       parent: 1
-- proto: MedkitAdvancedFilled
-  entities:
-  - uid: 748
-    components:
-    - type: Transform
-      pos: 5.4986744,4.7546287
-      parent: 1
-- proto: MedkitOxygenFilled
-  entities:
-  - uid: 747
-    components:
-    - type: Transform
-      pos: 5.5142994,4.4108787
-      parent: 1
 - proto: MercenaryTechFab
   entities:
   - uid: 797
     components:
     - type: Transform
       pos: -5.5,0.5
+      parent: 1
+- proto: NFHolopadShip
+  entities:
+  - uid: 746
+    components:
+    - type: Transform
+      pos: 0.5,0.5
       parent: 1
 - proto: NFSignEms2
   entities:
@@ -4188,13 +4188,12 @@ entities:
     - type: Transform
       pos: 1.5,-1.5
       parent: 1
-- proto: TableGlass
+- proto: TableReinforced
   entities:
-  - uid: 746
+  - uid: 573
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 5.5,4.5
+      pos: -0.5,0.5
       parent: 1
 - proto: Thruster
   entities:
