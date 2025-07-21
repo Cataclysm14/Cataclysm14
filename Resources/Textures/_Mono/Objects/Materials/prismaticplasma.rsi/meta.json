@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made for the Monolith server by Onezero00, based on sprites forked from Wizden",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "prismaticplasma"
+    },
+    {
+      "name": "prismaticplasma_2"
+    },
+    {
+      "name": "prismaticplasma_3"
+    }
+  ]
+}

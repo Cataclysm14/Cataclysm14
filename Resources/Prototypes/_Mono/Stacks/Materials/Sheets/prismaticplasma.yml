@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: stack
+  id: PrismaticPlasma
+  name: prismatic plasma
+  icon: { sprite: /Textures/_Mono/Objects/Materials/synthalloy.rsi, state: synthalloy }
+  spawn: SheetPrismaticPlasma1
+  maxCount: 50

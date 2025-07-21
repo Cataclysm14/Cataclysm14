@@ -1,0 +1,53 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: reaction
+  id: PrismaticPlasmaSolidification
+  impact: Low
+  reactants:
+    PrismaticPlasma:
+      amount: 5
+    NightFluid:
+      amount: 0.5
+  products:
+    Letoferol: 1
+  effects:
+  - !type:CreateEntityReactionEffect
+    entity: SheetPrismaticPlasma1
+
+- type: reaction
+  id: PrismaticPlasmaBreakdown
+  source: true
+  requiredMixerCategories:
+  - Centrifuge
+  reactants:
+    PrismaticPlasma:
+      amount: 10
+  products:
+    Plasma: 5
+    NightFluid: 2
+    Protein: 0.5
+
+- type: reaction
+  id: PrismaticPlasmaElectrolysis
+  source: true
+  requiredMixerCategories:
+  - Electrolysis
+  reactants:
+    PrismaticPlasma:
+      amount: 3
+  products:
+    Plasma: 1.5
+    Vestine: 1.5
+
+- type: reaction
+  id: PrismaticPlasmaCognizine # because cog is FUN, goddamnit
+  impact: Low
+  reactants:
+    PrismaticPlasma:
+      amount: 1
+    CarpoToxin:
+      amount: 3
+    Acetone:
+      amount: 2
+  products:
+    Cognizine: 2

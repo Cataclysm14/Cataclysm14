@@ -54,3 +54,88 @@
   components:
   - type: Stack
     count: 5
+
+# Synthalloy end
+
+- type: material
+  id: PrismaticPlasma
+  stackEntity: SheetPrismaticPlasma1
+  name: materials-prismaticplasma
+  unit: materials-unit-sheet
+  icon: { sprite: /Textures/_Mono/Objects/Materials/prismaticplasma.rsi, state: prismaticplasma }
+  color: "#FFFFFF"
+  price: 10 # 1000/sheet
+
+- type: entity
+  parent: SheetOtherBase
+  id: SheetPrismaticPlasma
+  name: prismatic plasma
+  suffix: Full
+  components:
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      PrismaticPlasma: 100
+  - type: Stack
+    stackType: PrismaticPlasma
+    baseLayer: base
+    layerStates:
+    - plasma
+    - plasma_2
+    - plasma_3
+  - type: Sprite
+    state: plasma
+    layers:
+    - state: plasma_3
+      map: ["base"]
+  - type: Item
+    heldPrefix: prismatic plasma
+  - type: Appearance
+  - type: Extractable
+    grindableSolutionName: PrismaticPlasma
+  - type: SolutionContainerManager
+    solutions:
+      PrismaticPlasma:
+        reagents:
+        - ReagentId: PrismaticPlasma
+          Quantity: 5
+        canReact: false
+  - type: Tag
+    tags:
+    - Sheet
+  - type: PointLight
+    radius: 1.5
+    energy: 2
+  - type: RgbLightController
+    layers: [ 0 ]
+
+- type: entity
+  parent: SheetPrismaticPlasma
+  id: SheetPrismaticPlasma10
+  suffix: 10
+  components:
+  - type: Sprite
+    state: plasma
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: SheetPrismaticPlasma
+  id: SheetPrismaticPlasma5
+  suffix: 5
+  components:
+  - type: Sprite
+    state: plasma
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: SheetPrismaticPlasma
+  id: SheetPrismaticPlasma1
+  name: prismatic plasma
+  suffix: Single
+  components:
+  - type: Sprite
+    state: prismaticplasma
+  - type: Stack
+    count: 1
