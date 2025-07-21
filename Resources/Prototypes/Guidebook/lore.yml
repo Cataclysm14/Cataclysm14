@@ -12,17 +12,14 @@
 - type: guideEntry
   id: AshenRepublic
   name: Ashen Republic
-  ruleEntry: true
   text: "/ServerInfo/Guidebook/Lore/AshenRepublic.xml"
 
 - type: guideEntry
   id: Trans-SolarFederation
   name: Trans-Solar Federation
-  ruleEntry: true
   text: "/ServerInfo/Guidebook/Lore/Trans-SolarFederation.xml"
 
 - type: guideEntry
   id: UnitedSovietSocialistPlanets
   name: United Soviet Socialist Planets
-  ruleEntry: true
   text: "/ServerInfo/Guidebook/Lore/UnitedSovietSocialistPlanets.xml"
