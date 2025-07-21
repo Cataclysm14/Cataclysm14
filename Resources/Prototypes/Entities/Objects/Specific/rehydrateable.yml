@@ -11,7 +11,7 @@
       cube:
         maxVol: 11 # needs room for water
         reagents:
-        - ReagentId: Enzyme # Nutriment<Enzyme
+        - ReagentId: Nutriment
           Quantity: 10
   - type: Food
     solution: cube
