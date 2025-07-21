@@ -20,8 +20,8 @@ meta:
   engineVersion: 260.2.0
   forkId: ""
   forkVersion: ""
-  time: 07/21/2025 21:15:24
-  entityCount: 836
+  time: 07/21/2025 22:37:14
+  entityCount: 837
 maps: []
 grids:
 - 1
@@ -768,59 +768,50 @@ entities:
   - uid: 391
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 5.5,0.5
-      parent: 1
-  - uid: 392
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 6.5,0.5
-      parent: 1
-  - uid: 397
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 7.5,0.5
-      parent: 1
-  - uid: 398
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 7.5,1.5
-      parent: 1
-  - uid: 399
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
       pos: 6.5,1.5
       parent: 1
     - type: PointLight
       radius: 2
       enabled: True
+  - uid: 392
+    components:
+    - type: Transform
+      pos: 6.5,2.5
+      parent: 1
+  - uid: 397
+    components:
+    - type: Transform
+      pos: 6.5,0.5
+      parent: 1
+  - uid: 398
+    components:
+    - type: Transform
+      pos: 5.5,0.5
+      parent: 1
+  - uid: 399
+    components:
+    - type: Transform
+      pos: 7.5,0.5
+      parent: 1
   - uid: 400
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 5.5,1.5
+      pos: 7.5,2.5
       parent: 1
   - uid: 401
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 5.5,2.5
+      pos: 5.5,1.5
       parent: 1
   - uid: 402
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 6.5,2.5
+      pos: 7.5,1.5
       parent: 1
-  - uid: 403
+  - uid: 831
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 7.5,2.5
+      pos: 5.5,2.5
       parent: 1
 - proto: AmmoBox7.62x39mmFMJ
   entities:
@@ -1555,6 +1546,16 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 2.5,5.5
+      parent: 1
+- proto: Bucket
+  entities:
+  - uid: 403
+    components:
+    - type: MetaData
+      desc: Due to budget cuts this is all you have.
+      name: The Sh*t Bucket
+    - type: Transform
+      pos: -5.6403146,4.8071237
       parent: 1
 - proto: ButtonFrameCautionSecurity
   entities:
