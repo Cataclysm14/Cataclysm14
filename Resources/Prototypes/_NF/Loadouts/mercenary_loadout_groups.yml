@@ -10,6 +10,7 @@
 # SPDX-FileCopyrightText: 2025 UnicornOnLSD
 # SPDX-FileCopyrightText: 2025 Whatstone
 # SPDX-FileCopyrightText: 2025 core-mene
+# SPDX-FileCopyrightText: 2025 starch
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -33,6 +34,7 @@
   - MercenaryClothingUniformJumpsuitBHGrey
   - MercenaryClothingUniformJumpskirtBHGrey
   subgroups:
+  - MonoMercenaryJumpsuit # Mono
   - PilotJumpsuit
   - ContractorJumpsuit
   fallbacks:
@@ -52,6 +54,7 @@
   - SecuritySatchel
   - SecurityDuffel
   subgroups:
+  - MonoMercenaryBackpack # Mono
   - PilotBackpack
   - ContractorBackpack
   fallbacks:
@@ -82,6 +85,7 @@
   - MercenaryClothingOuterHardsuitScaf # Mono
   - MercenaryClothingOuterHardsuitMercenaryWarlord # Mono
   subgroups:
+  - MonoMercenaryOuterClothing # Mono
   - PilotOuterClothing
   - ContractorOuterClothing
 
@@ -140,6 +144,7 @@
   - MercenaryClothingHandsMercenaryGlovesCombat
   - MercenaryClothingHandsGlovesCombat
   subgroups:
+  - MonoMercenaryGloves # Mono
   - PilotGloves
   - ContractorGloves
 
@@ -162,6 +167,7 @@
   - MercenaryClothingEyesGlassesMercenary
   - MercenaryClothingEyesGlassesSunglasses
   subgroups:
+  - MonoMercenaryBallisticGoggles # Mono
   - PilotGlasses
   - ContractorGlasses
 
@@ -188,4 +194,5 @@
   - MercenaryClothingBeltMilitaryWebbingMed
   - MercenaryClothingBeltSecurity
   subgroups:
+  - MonoMercenaryChestrig # Mono
   - ContractorBelt
