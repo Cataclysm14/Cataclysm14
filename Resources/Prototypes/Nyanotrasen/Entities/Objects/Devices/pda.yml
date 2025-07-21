@@ -26,12 +26,12 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
         !type:String
-        pda-valet
+        pda-cargo-assistant
   - type: PdaBorderColor
-    borderColor: "#860000"
-    accentVColor: "#F2F2F2"
+    borderColor: "#bdbdbd"
+    accentVColor: "#8f7145"
   - type: Icon
-    state: pda-valet
+    state: pda-cargo-assistant
 
 - type: entity
   parent: BaseSecurityPDA
