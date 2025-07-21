@@ -11,6 +11,13 @@
 
 - type: latheRecipe
   parent: BaseShipgunAmmoRecipe
+  id: Base150mmShellAmmoRecipe
+  abstract: true
+  materials:
+    Steel: 1200
+
+- type: latheRecipe
+  parent: BaseShipgunAmmoRecipe
   id: BaseRailgunSlugRecipe
   abstract: true
   materials:
@@ -43,3 +50,13 @@
   id: ASM220TorpedoECMUniversal
   parent: BaseTorpedoRecipe
   result: Asm220TorpedoECM
+
+- type: latheRecipe
+  id: 150mmApShellUniversal
+  parent: Base150mmShellAmmoRecipe
+  result: 150mmApShell
+
+- type: latheRecipe
+  id: 150mmEmpShellUniversal
+  parent: Base150mmShellAmmoRecipe
+  result: 150mmEmpShell

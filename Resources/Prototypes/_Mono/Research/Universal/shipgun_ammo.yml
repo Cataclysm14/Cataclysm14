@@ -18,11 +18,24 @@
   id: UniversalTorpedoAmmo
   name: research-technology-universal-asm220-ammo
   icon:
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/asm220.rsi
-    state: standard
+    sprite: _Mono/Objects/ShuttleWeapons/asm220.rsi
+    state: space_artillery
   discipline: FactionUniversal
-  tier: 1
+  tier: 2
   cost: 40000
   recipeUnlocks:
   - ASM220TorpedoHEUniversal
   - ASM220TorpedoECMUniversal
+
+- type: technology
+  id: Universal150mmAmmo
+  name: research-technology-universal-150mm-ammo
+  icon:
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/150mmtarnyx.rsi
+    state: 150mm_standard
+  discipline: FactionUniversal
+  tier: 1
+  cost: 15000
+  recipeUnlocks:
+  - 150mmApShellUniversal
+  - 150mmEmpShellUniversal

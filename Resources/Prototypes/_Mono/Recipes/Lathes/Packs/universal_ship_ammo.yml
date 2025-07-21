@@ -12,3 +12,9 @@
   id: UniversalRailgunAmmo
   recipes:
   - CharonSlugUniversal
+
+- type: latheRecipePack
+  id: UniversalShellAmmo
+  recipes:
+  - 150mmApShellUniversal
+  - 150mmEmpShellUniversal
