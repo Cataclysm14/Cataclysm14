@@ -20,7 +20,7 @@
   # - !type:RoleTimeRequirement
       # role: JobDIWatchdog
       # time: 3600 # 1 hr
-  #startingGear: DIOverseerGear nothing special for now
+  startingGear: DIOverseerGear
   alwaysUseSpawner: true
   hideConsoleVisibility: true
   icon: "JobIconDIOverseer"
@@ -32,3 +32,5 @@
   - GeneralAccess
   - DIOverseerAccess
 
+- type: startingGear
+  id: DIOverseerGear

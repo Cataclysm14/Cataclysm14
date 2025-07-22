@@ -73,7 +73,7 @@
 - type: loadoutGroup
   id: DIBelt
   name: loadout-group-contractor-belt
-  minLimit: 1
+  minLimit: 0
   loadouts:
   - DIWebbing
   - DIWebbingFilledTools
@@ -83,12 +83,14 @@
 - type: loadoutGroup
   id: DIBeltSec
   name: loadout-group-contractor-belt
-  minLimit: 1
+  minLimit: 0
   loadouts:
   - MercenaryClothingBeltWebbingsNormalBlack
   - MercenaryClothingBeltWebbingsBigBlack
   subgroups:
   - DIBelt
+  fallbacks:
+  - DIWebbing
 
 #gloves
 
@@ -129,6 +131,7 @@
 - type: loadoutGroup
   id: DIMaskBase
   name: loadout-group-contractor-face
+  minlimit: 1
   hidden: true # No point in showing this, it gets auto-selected.
   loadouts:
   - DIGasmask
@@ -137,6 +140,7 @@
 
 - type: loadoutGroup
   id: DIMaskSec
+  minlimit: 1
   name: loadout-group-contractor-face
   loadouts:
   - DIGasmask
@@ -168,7 +172,7 @@
 - type: loadoutGroup
   id: DIOuterClothingSec
   name: loadout-group-contractor-outerclothing
-  minLimit: 1
+  minLimit: 0
   loadouts:
   - MercenaryClothingOuterVestWebMercenaryBlack
   - DIArmorWatchdogRiot
