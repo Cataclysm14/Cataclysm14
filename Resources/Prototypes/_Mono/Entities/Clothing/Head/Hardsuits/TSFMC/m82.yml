@@ -1,10 +1,11 @@
 # SPDX-FileCopyrightText: 2025 core-mene
 # SPDX-FileCopyrightText: 2025 starch
+# SPDX-FileCopyrightText: 2025 darkest08
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  parent: [ClothingHeadHardsuitBase, BaseC2ContrabandUnredeemable]
+  parent: [ClothingHeadHardsuitBase, BaseC2ContrabandUnredeemable, ShowMedicalIcons]
   id: ClothingHeadHelmetHardsuitM82
   name: M82 helmet
   description: The interchangeable helmet system for the majority of M82 hardsuits.
@@ -16,6 +17,7 @@
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
+  - type: ShowHealthBars
   - type: Armor
     modifiers:
       coefficients:

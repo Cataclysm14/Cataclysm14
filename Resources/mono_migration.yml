@@ -15,22 +15,22 @@ CircularShieldBase: ShieldGeneratorSmall
 # Frontier NFSD hardsuits to Mono TSF revamp hardsuits - fuck these shit ass rank specific hardsuits absolute bloat
 
 # T1 wall suitstorages
-SuitStorageWallmountCadet: SuitStorageWallmountM82c
-SuitStorageWallmountDeputy: SuitStorageWallmountM82c
-SuitStorageWallmountSergeant: SuitStorageWallmountM82c
-SuitStorageWallmountBailiff: SuitStorageWallmountM82c
-SuitStorageWallmountBrigmedic: SuitStorageWallmountM82b
+SuitStorageWallmountCadet: SuitStorageWallmountM82
+SuitStorageWallmountDeputy: SuitStorageWallmountM82
+SuitStorageWallmountSergeant: SuitStorageWallmountM82
+SuitStorageWallmountBailiff: SuitStorageWallmountM82
+SuitStorageWallmountBrigmedic: SuitStorageWallmountM82
 # T1 suitstorages
-SuitStorageCadet: SuitStorageM82c
-SuitStorageDeputy: SuitStorageM82c
-SuitStorageSergeant: SuitStorageM82c
-SuitStorageBailiff: SuitStorageM82c
-SuitStorageBrigmedic: SuitStorageM82b
+SuitStorageCadet: SuitStorageM82
+SuitStorageDeputy: SuitStorageM82
+SuitStorageSergeant: SuitStorageM82
+SuitStorageBailiff: SuitStorageM82
+SuitStorageBrigmedic: SuitStorageM82
 # T1 hardsuits
-ClothingOuterHardsuitNfsdBronze: ClothingOuterHardsuitM82c
-ClothingOuterHardsuitNfsdSilver: ClothingOuterHardsuitM82c
-ClothingOuterHardsuitNfsdGold: ClothingOuterHardsuitM82c
-ClothingOuterHardsuitNfsdBrigmedic: ClothingOuterHardsuitM82b
+ClothingOuterHardsuitNfsdBronze: ClothingOuterHardsuitM82
+ClothingOuterHardsuitNfsdSilver: ClothingOuterHardsuitM82
+ClothingOuterHardsuitNfsdGold: ClothingOuterHardsuitM82
+ClothingOuterHardsuitNfsdBrigmedic: ClothingOuterHardsuitM82
 # T2 wall suitstorages
 SuitStorageWallmountNfsdCombat: SuitStorageWallmountM86
 SuitStorageWallmountNfsdCommand: SuitStorageWallmountM86

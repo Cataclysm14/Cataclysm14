@@ -6,14 +6,13 @@
   id: TsfmcBasicEquipment
   name: research-technology-tsfmc-basic-equipment
   icon:
-    sprite: _Mono/Clothing/OuterClothing/Hardsuits/m82c.rsi
+    sprite: _Mono/Clothing/OuterClothing/Hardsuits/m82.rsi
     state: icon
   discipline: TsfmcEquipment
   tier: 1
   cost: 20000
   recipeUnlocks:
-  - ClothingOuterHardsuitM82cTsf
-  - ClothingOuterHardsuitM82bTsf
+  - ClothingOuterHardsuitM82Tsf
 
 - type: technology
   id: TsfmcAdvancedEquipment
@@ -39,7 +38,7 @@
   tier: 3
   cost: 85000
   recipeUnlocks:
-  - ClothingOuterHardsuitM92XTsf # MAYBE THIS WILL GET YOU TO DO RESEARCH BRO
+  - ClothingOuterHardsuitM88Tsf # MAYBE THIS WILL GET YOU TO DO RESEARCH BRO
   technologyPrerequisites:
   - TsfmcBasicEquipment
   - TsfmcAdvancedEquipment

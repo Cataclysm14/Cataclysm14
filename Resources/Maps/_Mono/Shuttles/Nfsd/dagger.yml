@@ -3789,7 +3789,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 1.5,-28.5
       parent: 1
-- proto: SuitStorageWallmountM82c
+- proto: SuitStorageWallmountM82
   entities:
   - uid: 726
     components:

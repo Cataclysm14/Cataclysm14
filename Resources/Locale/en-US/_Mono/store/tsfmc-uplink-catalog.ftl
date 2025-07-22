@@ -83,8 +83,5 @@ uplink-security-capital-voucher-desc = A single use voucher for any small to cap
 uplink-security-flyssa-voucher-name = TSFMC Flyssa Ship Voucher
 uplink-security-flyssa-voucher-desc = A single use voucher for the Flyssa.
 
-uplink-security-hardsuit-m82b-name = M82b Hardsuit
-uplink-security-hardsuit-m82b-desc = A variant of the M-82c for NBC protection, usually utilized by corpsmen.
-
-uplink-security-hardsuit-m82c-name = M82c Hardsuit
-uplink-security-hardsuit-m82c-desc = A basic protective system for dangerous environments (such as space). Takes the role of an armor vest in the average TSF marine's gear.
+uplink-security-hardsuit-m82-name = M82 Hardsuit
+uplink-security-hardsuit-m82-desc = A basic protective system for dangerous environments (such as space). Takes the role of an armor vest in the average TSF marine's gear.

@@ -3377,7 +3377,7 @@ entities:
     - type: Transform
       pos: -0.5,-15.5
       parent: 1
-- proto: SuitStorageWallmountM82c
+- proto: SuitStorageWallmountM82
   entities:
   - uid: 481
     components:

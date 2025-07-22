@@ -45934,14 +45934,14 @@ entities:
     - type: Transform
       pos: 7.5,13.5
       parent: 1
-- proto: SuitStorageM82b
+- proto: SuitStorageM82
   entities:
   - uid: 7049
     components:
     - type: Transform
       pos: 24.5,-14.5
       parent: 1
-- proto: SuitStorageM82c
+- proto: SuitStorageM82
   entities:
   - uid: 7050
     components:
@@ -45977,7 +45977,7 @@ entities:
     - type: Transform
       pos: -4.5,29.5
       parent: 1
-- proto: SuitStorageWallmountM82b
+- proto: SuitStorageWallmountM82
   entities:
   - uid: 7056
     components:

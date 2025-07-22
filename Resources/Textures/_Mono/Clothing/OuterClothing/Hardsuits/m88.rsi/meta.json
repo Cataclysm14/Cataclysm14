@@ -1,18 +1,25 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from NSV-13",
+  "copyright": "darkest08; inhand sprites taken from NSV-13",
   "size": {
     "x": 32,
     "y": 32
    },
     "states": [
         {
-            "name": "icon"
+          "name": "icon"
         },
         {
-            "name": "equipped-OUTERCLOTHING",
-            "directions": 4
+          "name": "light-overlay"
+        },
+        {
+          "name": "equipped-OUTERCLOTHING",
+          "directions": 4
+        },
+        {
+          "name": "equipped-OUTERCLOTHING-light",
+          "directions": 4
         },
         {
             "name": "inhand-left",

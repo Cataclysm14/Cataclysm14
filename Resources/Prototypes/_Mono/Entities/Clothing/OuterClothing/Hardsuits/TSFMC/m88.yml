@@ -1,51 +1,48 @@
-# SPDX-FileCopyrightText: 2025 Redrover1760
-# SPDX-FileCopyrightText: 2025 core-mene
-# SPDX-FileCopyrightText: 2025 starch
 # SPDX-FileCopyrightText: 2025 darkest08
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
   parent: [ClothingOuterHardsuitBase, ClothingOuterHardsuitM82, BaseC2ContrabandUnredeemable]
-  id: ClothingOuterHardsuitM86
-  name: M86 hardsuit
-  description: An armored hardsuit, designed to be an upgrade for the M82 series. The extra armor gives it some more weight to move around.
+  id: ClothingOuterHardsuitM88
+  name: M88 hardsuit
+  description: An armored hardsuit, latest in m-series equiped with high-tech armor and synth muscules.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/OuterClothing/Hardsuits/m86.rsi
+    sprite: _Mono/Clothing/OuterClothing/Hardsuits/m88.rsi
   - type: Item
     size: Huge
   - type: Clothing
-    sprite: _Mono/Clothing/OuterClothing/Hardsuits/m86.rsi
+    sprite: _Mono/Clothing/OuterClothing/Hardsuits/m88.rsi
   - type: PressureProtection
-    highPressureMultiplier: 0.03
+    highPressureMultiplier: 0.01
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.3
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.5
-        Slash: 0.5
+        Blunt: 0.45
+        Slash: 0.45
         Piercing: 0.4
         Shock: 0.7
-        Heat: 0.4
-        Radiation: 0.5
-        Caustic: 0.6
+        Heat: 0.3
+        Radiation: 0.1
+        Caustic: 0.4
   - type: StaminaDamageResistance
     coefficient: 0.35
   - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
+    walkModifier: 0.95
+    sprintModifier: 0.95
   - type: HeldSpeedModifier
   - type: ToggleableClothing # Goobstation - Modsuits change - Mono - this is a solution for helmet attachment/cover to not fit on hardsuits
     requiredSlot: outerclothing
     blockUnequipWhenAttached: false
     replaceCurrentClothing: true
     clothingPrototypes:
-      head: ClothingHeadHelmetHardsuitM86
+      head: ClothingHeadHelmetHardsuitM88
       helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaticPrice
-    price: 8000
-    vendPrice: 20000
+    price: 16000
+    vendPrice: 64000

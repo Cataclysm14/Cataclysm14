@@ -368,15 +368,11 @@
   id: SuitStorageWallmountNfsdCommand
   parent: [SuitStorageWallmount, SuitStorageNfsdCommand]
 
-# M82c/b
+# M82/b
 
 - type: entity
-  parent: [ SuitStorageWallmount, SuitStorageM82c ]
-  id: SuitStorageWallmountM82c
-
-- type: entity
-  parent: [ SuitStorageWallmount, SuitStorageM82b ]
-  id: SuitStorageWallmountM82b
+  parent: [ SuitStorageWallmount, SuitStorageM82 ]
+  id: SuitStorageWallmountM82
 
 # M86
 
