@@ -131,7 +131,7 @@
 - type: loadoutGroup
   id: DIMaskBase
   name: loadout-group-contractor-face
-  minlimit: 1
+  minLimit: 1
   hidden: true # No point in showing this, it gets auto-selected.
   loadouts:
   - DIGasmask
@@ -140,7 +140,7 @@
 
 - type: loadoutGroup
   id: DIMaskSec
-  minlimit: 1
+  minLimit: 1
   name: loadout-group-contractor-face
   loadouts:
   - DIGasmask
