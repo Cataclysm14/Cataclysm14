@@ -65,6 +65,7 @@
   - DIHeadsetAlt
   fallbacks:
   - DIHeadset
+  
 
 #belts
 
@@ -113,7 +114,7 @@
 # balaclavas
 
 - type: loadoutGroup
-  id: DIBalaclava
+  id: DIBalaclava #TODO add this to watchdog once helmets are in too
   name: loadout-group-contractor-balaclava
   minLimit: 0
   maxLimit: 1

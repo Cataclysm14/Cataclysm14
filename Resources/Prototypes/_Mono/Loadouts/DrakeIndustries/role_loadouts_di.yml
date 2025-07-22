@@ -8,6 +8,7 @@
   - DIOuterClothingHardsuit
   - DIMaskBase
   - DIEars
+  - ContractorGlasses
   - DIGloves
   - DIShoes
   - DINeck
@@ -27,6 +28,7 @@
   - DIOuterClothingTrucker
   - DIMaskBase
   - DIEars
+  - ContractorGlasses
   - DIGloves
   - DIShoes
   - DINeck
@@ -45,12 +47,11 @@
   - DIBackpack
   - DIBeltSec
   - DIOuterClothingSec
-  - MonoMercenaryBallisticGoggles
   - DIMaskSec
   - DIEars
+  - ContractorGlasses
   - DIGlovesSec
   - DIShoes
-  - DIBalaclava
   - DINeck
   - DIGun #Hokkaido for now
   - MercenaryPistol
@@ -73,9 +74,9 @@
   - DIOuterClothingSec
   - DIMaskSec
   - DIEars
+  - ContractorGlasses
   - DIGlovesSec
   - DIShoes
-  - DIBalaclava
   - DINeck
   - DIGun 
   - MercenaryPistol
