@@ -696,7 +696,7 @@
   - ContractorClothingNeckMantleCE
   - ContractorClothingNeckCloakVoid
   - ContractorClothingNeckBling
-  - ContractorClothingNeckUNSAArmband
+  - ContractorClothingNeckArmbandUNSA
   - ContractorClothingNeckMantleBH # Mono
 
 - type: loadoutGroup

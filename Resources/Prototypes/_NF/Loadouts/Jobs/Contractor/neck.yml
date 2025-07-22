@@ -21,8 +21,8 @@
   equipment:
     neck: ClothingNeckScarfStripedBlack
 
-- type: loadout
-  id: ContractorClothingArmbandUNSA
+- type: loadout # Mono
+  id: ContractorClothingNeckArmbandUNSA
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT1
