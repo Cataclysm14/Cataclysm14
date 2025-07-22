@@ -697,7 +697,8 @@
   - ContractorClothingNeckMantleCE
   - ContractorClothingNeckCloakVoid
   - ContractorClothingNeckBling
-  - ContractorClothingArmbandUNSA
+  - ContractorClothingNeckArmbandUNSA
+  - ContractorClothingNeckMantleBH # Mono
   - ContractorClothingNeckDrakeIndustriesBadge
 
 - type: loadoutGroup
