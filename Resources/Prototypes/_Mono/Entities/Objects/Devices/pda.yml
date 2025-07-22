@@ -210,7 +210,7 @@
     
 - type: entity
   parent: BaseDrakeIndustriesPDA
-  id: DrakeIndustriesGruntPDA
+  id: DrakeIndustriesPDAGrunt
   name: grunt PDA
   components:
   - type: Pda
@@ -228,7 +228,7 @@
 
 - type: entity
   parent: BaseDrakeIndustriesPDA
-  id: DrakeIndustriesTruckerPDA
+  id: DrakeIndustriesPDATrucker
   name: trucker PDA
   description: A standard DI personal computer, running a modified version of the standard PDA OS.
   components:
@@ -247,7 +247,7 @@
     
 - type: entity
   parent: BaseDrakeIndustriesPDA
-  id: DrakeIndustriesWatchdogPDA
+  id: DrakeIndustriesPDAWatchdog
   name: watchdog PDA
   description: A reinforced DI personal computer. Comes with metal corners and extra thick screen protection. It's running a simpler, meaner version of the standard PDA OS.
   components:
@@ -266,7 +266,7 @@
     
 - type: entity
   parent: BaseDrakeIndustriesPDA
-  id: DrakeIndustriesOverseerPDA
+  id: DrakeIndustriesPDAOverseer
   name: overseer PDA
   description: An expensive DI personal computer, accompanied by a real gold trimming and made out of a material soft to the touch. It's running a modified, more elegant and advanced version of the standard PDA OS.
   components:
