@@ -41,10 +41,10 @@
   parent: BaseItem
   id: ChitinChunk
   name: chitin chunk
-  description: A highly durable piece of chitin. It looks like it'd fetch a rather high price.
+  description: A highly durable piece of chitin. Might fetch a rather high price.
   components:
   - type: StaticPrice
-    price: 1000
+    price: 2500
   - type: Sprite
     sprite: _Mono\Objects\Specific\Xeno\xeno_materials.rsi 
     state: chitin-chunk
