@@ -67,6 +67,8 @@
     - OreBagOfHolding
     - HandHeldMassScanner
     - SpawnDungeonLootHardsuitsSalvage
+    - AmeJarHighCapacity # Mono
+    - AmeJar # Mono
     rareChance: 0.05
 
 # Clothes
@@ -293,6 +295,8 @@
     - ShuttleGunSvalinnMachineGunCircuitboard
     #- SecurityTechFabCircuitboard
     - ComputerIFFCircuitboard
+    - AmeJarHighCapacity # Mono
+    - AmeJar # Mono
     rareChance: 0.03
 
 - type: entity

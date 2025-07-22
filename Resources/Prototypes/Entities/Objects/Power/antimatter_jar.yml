@@ -4,18 +4,20 @@
   parent: BaseItem
   id: AmeJar
   name: AME fuel jar
-  description: A hermetically sealed jar containing antimatter for use in an antimatter reactor.
+  description: A mass-produced magnetically sealed jar containing antimatter for usage as fuel in an antimatter reactor.
   components:
   - type: Item
-    size: Normal
+    size: Large # Mono
     sprite: Objects/Power/AME/ame_jar.rsi
   - type: Sprite
     sprite: Objects/Power/AME/ame_jar.rsi
     state: jar
   - type: AmeFuelContainer
+    fuelAmount: 400
+    fuelCapacity: 400
   - type: StaticPrice
     price: 400
-    vendPrice: 4000 # Frontier: FuelVend price
+    vendPrice: 6500 # Mono - its FUCKING ANTIMATTER
   - type: GuideHelp
     guides: [ AME, Power ]
   - type: Tag # Frontier
