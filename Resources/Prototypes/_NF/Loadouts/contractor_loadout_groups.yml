@@ -773,6 +773,7 @@
   - ContractorAnomalyScanner
   - ContractorBucket
   - ContractorGeigerCounter
+  - ContractorBinoculars
   - ContractorWeaponProtoKineticAccelerator
   - ContractorPinpointerUniversal
   - ContractorShipyardRCD
