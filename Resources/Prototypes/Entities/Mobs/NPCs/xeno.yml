@@ -96,6 +96,8 @@
     spawned:
     - id: FoodMeatXeno
       amount: 5
+      id: ResinJelly # Mono
+      id: ChitinChunk # Mono
   - type: GhostRole
     allowMovement: true
     allowSpeech: true
