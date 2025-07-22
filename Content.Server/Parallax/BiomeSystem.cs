@@ -49,7 +49,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Threading;
 using Robust.Shared.Utility;
-using Robust.Shared.Timing;
+using Robust.Shared.Timing; // Mono
 using ChunkIndicesEnumerator = Robust.Shared.Map.Enumerators.ChunkIndicesEnumerator;
 
 namespace Content.Server.Parallax;
@@ -281,7 +281,7 @@ public sealed partial class BiomeSystem : SharedBiomeSystem
         if (!TryComp<BiomeComponent>(targetMapUid, out var biome))
             return;
 
-        var preloadArea = new Vector2(256f, 256f);
+        var preloadArea = new Vector2(256f, 256f); // 32->256 Mono
         var targetArea = new Box2(targetMap.Position - preloadArea, targetMap.Position + preloadArea);
         Preload(targetMapUid, biome, targetArea);
     }
@@ -350,7 +350,7 @@ public sealed partial class BiomeSystem : SharedBiomeSystem
     {
         base.Update(frameTime);
         var biomes = AllEntityQuery<BiomeComponent>();
-        var overallWatch = new Stopwatch();
+        var overallWatch = new Stopwatch(); // Mono
 
         while (biomes.MoveNext(out var biome))
         {
@@ -403,10 +403,10 @@ public sealed partial class BiomeSystem : SharedBiomeSystem
 
         var loadBiomes = AllEntityQuery<BiomeComponent, MapGridComponent>();
 
-        overallWatch.Start();
+        overallWatch.Start(); // Mono
         while (loadBiomes.MoveNext(out var gridUid, out var biome, out var grid))
         {
-            if (overallWatch.Elapsed > _maximumProcessTime)
+            if (overallWatch.Elapsed > _maximumProcessTime) // Mono
                 return;
 
             // If not MapInit don't run it.
@@ -419,7 +419,7 @@ public sealed partial class BiomeSystem : SharedBiomeSystem
             // Load new chunks
             LoadChunks(biome, gridUid, grid, biome.Seed);
             // Unload old chunks
-            //UnloadChunks(biome, gridUid, grid, biome.Seed);
+            //UnloadChunks(biome, gridUid, grid, biome.Seed); // Mono this fixes lag no really
         }
 
         _handledEntities.Clear();
