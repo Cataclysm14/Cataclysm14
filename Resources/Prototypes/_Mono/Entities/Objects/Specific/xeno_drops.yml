@@ -9,20 +9,21 @@
   description: An odd jelly, applying it will rapidly stimulate limb health at the cost of pain.
   components:
   - type: Sprite
-    sprite: _Mono\Objects\Specific\Xeno\xeno_materials.rsi # DeltaV - Resprited some medical items
+    sprite: _Mono\Objects\Specific\Xeno\xeno_materials.rsi 
+    state: resin_jelly
   - type: Item
     size: Small
-    sprite: _DV/Objects/Specific/medical.rsi # DeltaV - Resprited some medical items
+    sprite: _DV/Objects/Specific/medical.rsi 
     heldPrefix: ointment
   - type: Healing
     damageContainers:
     - Biological
     damage:
       types:
-        Brute: -100 # was 10 for each, now 20 for each type in the group, Buffed due to surgery changes (Goobstation)
-        Burn: -100 # was 10 for each, now 20 for each type in the group, Buffed due to surgery changes (Goobstation)
+        Brute: -120 # 40 per type~?
+        Burn: -100 # 40 or 60 per type?
         Bloodloss: -50
-        Poison: 5  # was 10 for each, now 20 for each type in the group, Buffed due to surgery changes (Goobstation)
+        Poison: 5  
     healingBeginSound:
       path: "/Audio/Items/Medical/ointment_begin.ogg"
       params:
@@ -39,8 +40,13 @@
 - type: entity # Note: TC worth 5x as much here than on wizden, like goob.
   parent: BaseItem
   id: ChitinChunk
+  name: chitin chunk
+  description: A highly durable piece of chitin. It looks like it'd fetch a rather high price.
   components:
   - type: StaticPrice
     price: 1000
   - type: Sprite
-    sprite: _Mono\Objects\Specific\Xeno\xeno_materials.rsi # DeltaV - Resprited some medical items
+    sprite: _Mono\Objects\Specific\Xeno\xeno_materials.rsi 
+    state: chitin-chunk
+  - type: Item
+    size: Small
