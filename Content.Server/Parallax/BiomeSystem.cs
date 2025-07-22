@@ -264,7 +264,7 @@ public sealed partial class BiomeSystem : SharedBiomeSystem
         if (!TryComp<BiomeComponent>(targetMapUid, out var biome))
             return;
 
-        var preloadArea = new Vector2(32f, 32f);
+        var preloadArea = new Vector2(256f, 256f);
         var targetArea = new Box2(targetMap.Position - preloadArea, targetMap.Position + preloadArea);
         Preload(targetMapUid, biome, targetArea);
     }
@@ -343,7 +343,6 @@ public sealed partial class BiomeSystem : SharedBiomeSystem
             _activeChunks.Add(biome, _tilePool.Get());
             _markerChunks.GetOrNew(biome);
         }
-
         // Get chunks in range
         foreach (var pSession in Filter.GetAllPlayers(_playerManager))
         {
@@ -403,7 +402,7 @@ public sealed partial class BiomeSystem : SharedBiomeSystem
             // Load new chunks
             LoadChunks(biome, gridUid, grid, biome.Seed);
             // Unload old chunks
-            UnloadChunks(biome, gridUid, grid, biome.Seed);
+            //UnloadChunks(biome, gridUid, grid, biome.Seed);
         }
 
         _handledEntities.Clear();
