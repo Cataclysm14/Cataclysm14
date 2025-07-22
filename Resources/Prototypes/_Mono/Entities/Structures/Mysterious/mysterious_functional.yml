@@ -1,0 +1,41 @@
+- type: entity
+  name: forbidden sink
+  id: NightFluidSource
+  suffix: Empty
+  description: Don't wash your hands here. Just don't.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: Structures/Furniture/sink.rsi
+    layers:
+    - state: sink_stem
+    - map: [ "enum.SolutionContainerLayers.Fill" ]
+      state: sink-fill-1
+      visible: false
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    fillBaseName: sink-fill-
+    solutionName: drainBuffer
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        maxVol: 100
+  - type: SolutionRegeneration
+    solution: tank
+    generated:
+      reagents:
+      - ReagentId: NightFluid
+        Quantity: 0.05
+  - type: DrainableSolution
+    solution: tank
+  - type: ReagentTank
+  - type: AmbientSound
+    enabled: false
+    volume: -8
+    range: 8
+    sound:
+      path: /Audio/Ambience/Objects/drain.ogg

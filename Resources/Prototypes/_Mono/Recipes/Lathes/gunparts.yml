@@ -1,0 +1,24 @@
+- type: latheRecipe
+  id: BarrelGunpart
+  result: BarrelGunpart
+  completetime: 7
+  materials:
+    Steel: 1500
+    Plasteel: 1000
+
+- type: latheRecipe
+  id: GripGunpart
+  result: GripGunpart
+  completetime: 7
+  materials:
+    Steel: 1000
+    Plastic: 1500
+
+- type: latheRecipe
+  id: StockGunpart
+  result: StockGunpart
+  completetime: 7
+  materials:
+    Steel: 1000
+    Plastic: 1000
+    Plasteel: 1000

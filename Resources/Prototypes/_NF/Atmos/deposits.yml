@@ -128,3 +128,18 @@
   -  1000,  2000  # ammonia
   -  2000,  4000  # n2o
   -     0,     0  # frezon
+
+# _Mono
+- type: gasDeposit
+  id: MonolithPrismaticPlasma
+  gases:
+  -     0,     0  # oxygen
+  -     0,     0  # nitrogen
+  -     0,     0  # carbon dioxide
+  -   500,  2000  # plasma
+  -     0,     0  # tritium
+  -   100,   600  # water vapor
+  -     0,     0  # ammonia
+  -     0,     0  # n2o
+  -     0,     0  # frezon
+  -  3000,  6000  # prismatic plasma

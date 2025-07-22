@@ -1,6 +1,18 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: reaction
+  id: NightFluidBreakdown
+  source: true
+  requiredMixerCategories:
+  - Centrifuge
+  reactants:
+    NightFluid:
+      amount: 10
+  products:
+    PrismaticPlasma: 8
+    VentCrud: 2
+
+- type: reaction
   id: PrismaticPlasmaSolidification
   impact: Low
   reactants:

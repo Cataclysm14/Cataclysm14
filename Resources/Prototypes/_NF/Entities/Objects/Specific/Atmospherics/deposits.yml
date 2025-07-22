@@ -58,7 +58,7 @@
   - type: Sprite
     scale: 1.2, 1.2
 # endregion Base Deposits
-  
+
 # region Standard Deposits
 - type: entity
   parent: BaseGasDeposit
@@ -446,6 +446,33 @@
   id: GasDepositMuddlePlasmaVeryLarge
   suffix: Muddled P+, Very Large
 # endregion Very Large Deposits
+
+# region Monolith Prismatic Plasma deposits (_Mono)
+- type: entity
+  parent: BaseGasDepositSmall
+  id: GasDepositMonolithPrismaticPlasmaSmall
+  name: prismatic vein
+  description: A fracture in the dark, tenebrous structure of the monolithic anomaly. From within, there are faint, multicolored traces of light seeping out; Maybe you can extract some gas from this, with the right equipment.
+  suffix: Monolith Prismatic Plasma, Small
+  components:
+  - type: RandomGasDeposit
+    depositPrototype: MonolithPrismaticPlasma
+  - type: Sprite
+    color: "#BE6EE6"
+
+- type: entity
+  parent: BaseGasDepositLarge
+  id: GasDepositMonolithPrismaticPlasmaLarge
+  name: prismatic vein
+  description: A significant fracture in the dark, tenebrous structure of the monolithic anomaly. From deep within, there is a large pool of multicolored light seeping out; You can extract a lot of gas from this, with the right equipment.
+  suffix: Monolith Prismatic Plasma, Large
+  components:
+  - type: RandomGasDeposit
+    depositPrototype: MonolithPrismaticPlasma
+  - type: Sprite
+    color: "#BE6EE6"
+
+# endregion Monolith Prismatic Plasma deposits (_Mono)
 
 # Debug item for detecting gas deposits
 - type: entity

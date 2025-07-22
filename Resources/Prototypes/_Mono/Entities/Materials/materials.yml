@@ -64,7 +64,7 @@
   unit: materials-unit-sheet
   icon: { sprite: /Textures/_Mono/Objects/Materials/prismaticplasma.rsi, state: prismaticplasma }
   color: "#FFFFFF"
-  price: 10 # 1000/sheet
+  price: 7 # 700/sheet
 
 - type: entity
   parent: SheetOtherBase
