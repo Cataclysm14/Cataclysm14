@@ -80,7 +80,7 @@
     animation: WeaponArcBite
     damage:
       groups:
-        Brute: 6
+        Brute: 18
   - type: DamageStateVisuals
     rotate: true
     states:
@@ -186,7 +186,7 @@
   - type: MeleeWeapon
     damage:
       groups:
-        Brute: 6
+        Brute: 18
   - type: MovementSpeedModifier
     baseSprintSpeed: 4
   - type: Fixtures
@@ -225,7 +225,7 @@
   - type: MeleeWeapon
     damage:
      groups:
-       Brute: 12
+       Brute: 36 # Mono
   - type: Fixtures
     fixtures:
       fix1:
@@ -263,7 +263,7 @@
   - type: MeleeWeapon
     damage:
      groups:
-       Brute: 10
+       Brute: 36
   - type: SlowOnDamage
     speedModifierThresholds:
       50: 0.7
@@ -297,7 +297,8 @@
   - type: MeleeWeapon
     damage:
      groups:
-       Brute: 5
+       Brute: 12
+    attackRate: 2.5
   - type: Fixtures
     fixtures:
       fix1:
@@ -342,7 +343,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      50: Dead
+      75: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
       25: 0.7
@@ -350,13 +351,13 @@
     rootTask:
       task: SimpleRangedHostileCompound
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 0.75
+    rechargeCooldown: 0.1
   - type: BasicEntityAmmoProvider
     proto: BulletAcid
     capacity: 1
     count: 1
   - type: Gun
-    fireRate: 0.75
+    fireRate: 1.5
     useKey: false
     selectedMode: FullAuto
     availableModes:
