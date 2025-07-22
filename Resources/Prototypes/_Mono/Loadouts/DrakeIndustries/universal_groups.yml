@@ -27,7 +27,7 @@
   loadouts:
   - DIClothingJumpsuitWatchdog
   fallbacks:
-  - DIClothingJumpsuiWatchdog
+  - DIClothingJumpsuitWatchdog
   
 - type: loadoutGroup 
   id: DIJumpsuitOverseer
@@ -101,7 +101,7 @@
   hidden: true # No point in showing this, it gets auto-selected.
   loadouts:
   - MercenaryClothingHandsGlovesCombat
-  fallback:
+  fallbacks:
   - MercenaryClothingHandsGlovesCombat
   
 - type: loadoutGroup
@@ -111,7 +111,7 @@
   loadouts:
   - MercenaryClothingHandsGlovesCombat
   - MercenaryClothingHandsGlovesTacticalCombatBlack
-  fallback:
+  fallbacks:
   - MercenaryClothingHandsGlovesCombat
 
 # balaclavas

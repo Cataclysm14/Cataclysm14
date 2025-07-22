@@ -28,7 +28,7 @@
 # DI Jobs
 
 - type: playTimeTracker
-  id: JobDIPOverseer
+  id: JobDIOverseer
     
 - type: playTimeTracker
   id: JobDIWatchdog
