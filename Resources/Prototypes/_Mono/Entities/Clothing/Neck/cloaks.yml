@@ -47,7 +47,7 @@
     sprite: _Mono/Clothing/Neck/Cloaks/cogcloak.rsi
   - type: ToggleableClothing
     requiredSlot: neck
-    blockUnequipWhenAttached: true
+    blockUnequipWhenAttached: false
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHeadHatCOG
