@@ -3,25 +3,17 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  parent: [ClothingHeadHardsuitBase, BaseC2ContrabandUnredeemable, ShowMedicalIcons]
+  parent: [ClothingHeadHelmetHardsuitM82]
   id: ClothingHeadHelmetHardsuitM88
   name: M88 helmet
   description: Latest and better armored m-series helmet equiped with high-tech optics.
   components:
-  - type: Sprite
-    sprite: _Mono/Clothing/Head/Hardsuits/m88.rsi
-  - type: Clothing
-    sprite: _Mono/Clothing/Head/Hardsuits/m88.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.08
-    lowPressureMultiplier: 1000
   - type: ThermalVision
     flashDurationMultiplier: 2
     pulseTime: 4
     isEquipment: true
     color: "#ED7B2D"
     toggleAction: PulseThermalVision
-  - type: ShowHealthBars
   - type: Armor
     modifiers:
       coefficients:
@@ -29,9 +21,3 @@
         Slash: 0.95
         Piercing: 0.95
         Heat: 0.95
-  - type: HideLayerClothing
-    slots:
-    - Hair
-    - Snout
-    - HeadTop
-    - HeadSide

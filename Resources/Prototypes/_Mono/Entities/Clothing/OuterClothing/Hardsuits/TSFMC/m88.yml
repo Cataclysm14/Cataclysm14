@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, ClothingOuterHardsuitM82, BaseC2ContrabandUnredeemable]
+  parent: [ClothingOuterHardsuitBase, BaseC2ContrabandUnredeemable]
   id: ClothingOuterHardsuitM88
   name: M88 hardsuit
   description: An armored hardsuit, latest in m-series equiped with high-tech armor and synth muscules.
@@ -40,7 +40,7 @@
     blockUnequipWhenAttached: false
     replaceCurrentClothing: true
     clothingPrototypes:
-      head: ClothingHeadHelmetHardsuitM88
+      head: ClothingHeadHelmetHardsuitM86
       helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaticPrice

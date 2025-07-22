@@ -11,14 +11,7 @@
           "name": "icon"
         },
         {
-          "name": "light-overlay"
-        },
-        {
           "name": "equipped-OUTERCLOTHING",
-          "directions": 4
-        },
-        {
-          "name": "equipped-OUTERCLOTHING-light",
           "directions": 4
         },
         {

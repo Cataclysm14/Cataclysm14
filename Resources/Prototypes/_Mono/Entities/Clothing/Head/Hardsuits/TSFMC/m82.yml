@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  parent: [ClothingHeadHardsuitBase, BaseC2ContrabandUnredeemable, ShowMedicalIcons]
+  parent: [ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, BaseC2ContrabandUnredeemable, ShowMedicalIcons]
   id: ClothingHeadHelmetHardsuitM82
   name: M82 helmet
   description: The interchangeable helmet system for the majority of M82 hardsuits.
@@ -14,6 +14,9 @@
     sprite: _Mono/Clothing/Head/Hardsuits/m82.rsi
   - type: Clothing
     sprite: _Mono/Clothing/Head/Hardsuits/m82.rsi
+  - type: PointLight
+    color: "#95dc9a"
+    radius: 12
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
