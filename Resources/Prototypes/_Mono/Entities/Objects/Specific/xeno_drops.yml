@@ -21,7 +21,7 @@
     damage:
       types:
         Brute: -120 # 40 per type~?
-        Burn: -100 # 40 or 60 per type?
+        Burn: -120 # 40 or 60 per type?
         Bloodloss: -50
         Poison: 5  
     healingBeginSound:
