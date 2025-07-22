@@ -149,7 +149,8 @@
   - type: Clothing
     sprite: _Mono/Clothing/Uniforms/Jumpsuit/di-grunt.rsi
   - type: SuitSensor
-    randomMode: true
+    randomMode: false
+    mode: SensorVitals
 
 - type: entity
   parent: ClothingUniformBase
@@ -206,7 +207,8 @@
       - state: equipped-decor-shoulder-patch
         color: "#cd6b6b"
   - type: SuitSensor
-    randomMode: true
+    randomMode: false
+    mode: SensorVitals
 
 - type: entity
   parent: ClothingUniformBase
@@ -258,6 +260,79 @@
         color: "#cd6b6b"
       - state: equipped-decor-shoulder-patch
         color: "#cd6b6b"
+  - type: SuitSensor
+    randomMode: false
+    mode: SensorVitals
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformDrakeIndustriesOverseer
+  name: overseer jumpsuit
+  description: All quality is of the highest crafstmanship. A military-grade suit designed for the Overseers managing Drake Industries members.
+  suffix: Military
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
+    layers:
+    - state: icon-base-bottom
+      color: "#424242"
+    - state: icon-base-top-jumpsuit
+      color: "#424242"
+    - state: icon-decor-department
+      color: "#cd6b6b"
+    - state: icon-belt
+      color: "#cd6b6b"
+    - state: icon-belt-buckle
+      color: "#c19c51"
+    - state: icon-decor-epaulets
+      color: "#c19c51"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-base-bottom
+        color: "#424242"
+      - state: inhand-left-base-top-jumpsuit
+        color: "#424242"
+      - state: inhand-left-decor-department
+        color: "#cd6b6b"
+      - state: inhand-left-belt
+        color: "#cd6b6b"
+      - state: inhand-left-belt-buckle
+        color: "#c19c51"
+      - state: inhand-left-decor-epaulets
+        color: "#c19c51"
+      right:
+      - state: inhand-right-base-bottom
+        color: "#424242"
+      - state: inhand-right-base-top-jumpsuit
+        color: "#424242"
+      - state: inhand-right-decor-department
+        color: "#cd6b6b"
+      - state: inhand-right-belt
+        color: "#cd6b6b"
+      - state: inhand-right-belt-buckle
+        color: "#c19c51"
+      - state: inhand-right-decor-epaulets
+        color: "#c19c51"
+  - type: Clothing
+    sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-base-bottom
+        color: "#424242"
+      - state: equipped-base-top-jumpsuit
+        color: "#424242"
+      - state: equipped-decor-department
+        color: "#cd6b6b"
+      - state: equipped-belt
+        color: "#cd6b6b"
+      - state: equipped-belt-buckle
+        color: "#c19c51"
+      - state: equipped-decor-epaulets
+        color: "#c19c51"
+  - type: SuitSensor
+    randomMode: false
+    mode: SensorVitals
 
 #PMC camo suits
 - type: entity

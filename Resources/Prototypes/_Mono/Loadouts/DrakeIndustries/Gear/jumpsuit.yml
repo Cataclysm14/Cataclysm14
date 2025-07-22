@@ -16,3 +16,8 @@
   id: DIClothingJumpsuitWatchdog
   equipment:
     jumpsuit: ClothingUniformDrakeIndustriesWatchdog
+    
+- type: loadout
+  id: DIClothingJumpsuitOverseer
+  equipment:
+    jumpsuit: ClothingUniformDrakeIndustriesOverseer

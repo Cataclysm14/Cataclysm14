@@ -33,12 +33,13 @@
   id: DIJumpsuitOverseer
   name: loadout-group-contractor-jumpsuit
   minLimit: 1
-  loadouts: #TODO make a unique uniform jumpsuit/jumpskirt for Overseers to choose from
+  loadouts:
+  - DIClothingJumpsuitOverseer
   - DIClothingJumpsuitGrunt
   - DIClothingJumpsuitWatchdog
   - DIClothingJumpsuitTrucker
   fallbacks:
-  - DIClothingJumpsuitWatchdog
+  - DIClothingJumpsuitOverseer
   
 #backpacks
 
