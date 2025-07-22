@@ -20,7 +20,7 @@ meta:
   engineVersion: 260.2.0
   forkId: ""
   forkVersion: ""
-  time: 07/22/2025 17:52:39
+  time: 07/22/2025 18:08:25
   entityCount: 860
 maps: []
 grids:
@@ -5508,6 +5508,16 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 3.5,-4.5
       parent: 1
+  - uid: 228
+    components:
+    - type: Transform
+      pos: -2.5,-4.5
+      parent: 1
+  - uid: 229
+    components:
+    - type: Transform
+      pos: -2.5,-3.5
+      parent: 1
   - uid: 232
     components:
     - type: Transform
@@ -5863,18 +5873,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -6.5,-6.5
-      parent: 1
-- proto: WallSolid
-  entities:
-  - uid: 228
-    components:
-    - type: Transform
-      pos: -2.5,-4.5
-      parent: 1
-  - uid: 229
-    components:
-    - type: Transform
-      pos: -2.5,-3.5
       parent: 1
 - proto: WarningN2
   entities:
