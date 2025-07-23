@@ -2,8 +2,8 @@
   id: evac_pod
   parent: BaseVessel
   name: PPU Evacuation Pod
-  description: A fighter refurbished from recovered remnant Razor hulls.
-  price: 55000
+  description: An emergency evacuation pod, for when shit goes down.
+  price: 5500
   category: Small
   group: Custom
   mapchecker_group_override: Shipyard  # Treat this as a Shipyard vessel for mapchecker purposes
@@ -20,7 +20,7 @@
   mapPath: /Maps/_Mono/Shuttles/Carrier/evac_pod.yml
   minPlayers: 0
   stations:
-    Zephyr:
+    evac_pod:
       stationProto: StandardFrontierVessel
       components:
       - type: StationNameSetup
