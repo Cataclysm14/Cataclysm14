@@ -9,7 +9,7 @@
   id: Sulak
   parent: BaseVesselAntag
   name: NCS Sulak
-  description: A medium sized destroyer armed a Charon Massdriver for taking down large targets.
+  description: A medium sized destroyer armed with a Charon Massdriver for taking down large targets.
   price: 142500
   category: Medium
   group: Ussp
