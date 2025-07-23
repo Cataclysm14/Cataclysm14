@@ -280,7 +280,7 @@ public sealed partial class BiomeSystem : SharedBiomeSystem
         if (!TryComp<BiomeComponent>(targetMapUid, out var biome))
             return;
 
-        var preloadArea = new Vector2(128f, 128f); // 32->128 Mono
+        var preloadArea = new Vector2(32f, 32f);
         var targetArea = new Box2(targetMap.Position - preloadArea, targetMap.Position + preloadArea);
         Preload(targetMapUid, biome, targetArea);
     }
