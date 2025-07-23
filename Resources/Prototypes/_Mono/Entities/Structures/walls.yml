@@ -139,13 +139,13 @@
     tags:
     - Wall
   - type: Sprite
-    sprite: _Mono/Structures/Walls/Monolith_Epidermis.rsi
-    color: "#000000"
+    sprite: _Mono/Structures/Walls/monolith_epidermis.rsi
+    #color: "#000000"
   - type: Icon
-    sprite: _Mono/Structures/Walls/Monolith_Epidermis.rsi
+    sprite: _Mono/Structures/Walls/monolith_epidermis.rsi
   - type: IconSmooth
     key: walls
-    mode: NoSprite
+    base: monolith-epidermis
   - type: Fixtures
     fixtures:
       fix1:
