@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by Onezero0 for Monolith",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "monolith-epidermis-full"
+    },
+    {
+      "name": "monolith-epidermis0",
+      "directions": 4
+    },
+    {
+      "name": "monolith-epidermis1",
+      "directions": 4
+    },
+    {
+      "name": "monolith-epidermis2",
+      "directions": 4
+    },
+    {
+      "name": "monolith-epidermis3",
+      "directions": 4
+    },
+    {
+      "name": "monolith-epidermis4",
+      "directions": 4
+    },
+    {
+      "name": "monolith-epidermis5",
+      "directions": 4
+    },
+    {
+      "name": "monolith-epidermis6",
+      "directions": 4
+    },
+    {
+      "name": "monolith-epidermis7",
+      "directions": 4
+    }
+  ]
+}
