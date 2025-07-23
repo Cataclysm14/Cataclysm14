@@ -2,7 +2,7 @@
   id: evac_pod
   parent: BaseVessel
   name: PPU Evacuation Pod
-  description: An emergency evacuation pod, for when shit goes down.
+  description: An emergency evacuation pod, for when shit goes down. It is recommended you use the breaking function [space] while turning, as it does not impact speed, but makes turning less violent.
   price: 5500
   category: Small
   group: Custom

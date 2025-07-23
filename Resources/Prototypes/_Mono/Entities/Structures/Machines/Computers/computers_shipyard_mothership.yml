@@ -58,7 +58,7 @@
 - type: entity
   id: EvacCarrierComputer
   parent: BaseCarrierComputer
-  name: Evac_pod console
+  name: Evacuation pod console
   components:
   - type: ShipyardListing
     shuttles:
