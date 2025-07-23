@@ -65,6 +65,11 @@
     bodyType: static
   - type: StaticPrice
     price: 12 # Frontier: 30<12
+  - type: AmbientSound # Mono
+    volume: -8
+    range: 1 # we don't want you hearing pipes in walls since they aren't covered like ones under tile
+    sound:
+      path: /Audio/_Mono/Effects/Ambience/airflow.ogg
 
 #Note: The PipeDirection of the PipeNode should be the south-facing version, because the entity starts at an angle of 0 (south)
 
