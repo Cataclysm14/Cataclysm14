@@ -8590,3 +8590,20 @@ Entries:
   id: 966
   time: '2025-07-23T03:37:50.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1566
+- author: SarahRaven
+  changes:
+    - type: Fix
+      message: >-
+        Fixed tagging issue with Biomass. You can finally use the Medical
+        Biofabricator on the Tzipora to print organs. No more "why isn't biomass
+        inserting??"
+  id: 967
+  time: '2025-07-23T17:34:42.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1581
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: AME fuel changes undone. 1250 for now.
+  id: 968
+  time: '2025-07-23T18:16:42.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1582
