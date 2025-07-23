@@ -229,6 +229,8 @@
   color: "#5050ff"
   boilingPoint: 165
   meltingPoint: -87
+  tileReactions: # Mono - alien romulus
+  - !type:PryTileReaction
   reactiveEffects:
     Acidic:
       methods: [ Touch ]

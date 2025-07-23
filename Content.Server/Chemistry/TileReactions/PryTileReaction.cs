@@ -19,7 +19,7 @@ public sealed partial class PryTileReaction : ITileReaction
         List<ReagentData>? data)
     {
         var sys = entityManager.System<TileSystem>();
-        sys.PryTile(tile);
+        sys.DeconstructTile(tile); // Mono - change from PryTile
         return reactVolume;
     }
 }
