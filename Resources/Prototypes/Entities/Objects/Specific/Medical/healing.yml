@@ -191,7 +191,7 @@
     - Biological
     damage:
       groups:
-        Brute: -15 # Mono
+        Brute: -30 # Mono
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
       params:
@@ -246,7 +246,7 @@
     - Biological
     damage:
       groups:
-        Brute: -25 # Mono
+        Brute: -48 # Mono
     bloodlossModifier: -2.25 # Mono - tourniquet up
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
