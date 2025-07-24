@@ -27,8 +27,8 @@
   - type: GasTank
     outputPressure: 21.3
     air:
-      # If gas tank volume is changed, adjust MinimumTritiumOxyburnEnergy in Atmospherics.cs by the same proportions
-      volume: 5
+      # If gas tank volume is changed, adjust MinimumTritiumOxyburnEnergy in Atmospherics.cs by the same proportions # Eh probably will be fine to not do that - Mono
+      volume: 10 # Mono
       temperature: 293.15
     tankLowPressure: 30.0
   - type: Explosive
