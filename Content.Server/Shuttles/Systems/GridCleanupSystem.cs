@@ -174,7 +174,7 @@ public sealed class GridCleanupSystem : EntitySystem
 
             // Check to ensure no mobs will be deleted
             var mobQuery = AllEntityQuery<MobStateComponent, TransformComponent>();
-            while (mobQuery.MoveNext(out var mobUid, out _, out var mobxform))
+            while (mobQuery.MoveNext(out var _, out _, out var mobxform))
             {
                 if (mobxform.GridUid == null || mobxform.MapUid == null || xform.GridUid == xform.GridUid)
                 {
