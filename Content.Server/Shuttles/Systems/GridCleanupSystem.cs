@@ -6,8 +6,10 @@ using Content.Shared.Mobs.Components;
 
 namespace Content.Server.Shuttles.Systems;
 
+/// TODO: Move to Mono Namespace
+
 /// <summary>
-/// This system cleans up small grid fragments that have less than a specified number of tiles after a delay. TODO: Move to Mono Namespace
+/// This system cleans up small grid fragments that have less than a specified number of tiles after a delay. 
 /// </summary>
 public sealed class GridCleanupSystem : EntitySystem
 {
