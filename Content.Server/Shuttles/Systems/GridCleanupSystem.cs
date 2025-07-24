@@ -2,6 +2,7 @@ using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Timing;
 using Content.Server.Salvage.Expeditions;
+using Content.Shared.Mobs.Components;
 
 namespace Content.Server.Shuttles.Systems;
 
@@ -18,7 +19,7 @@ public sealed class GridCleanupSystem : EntitySystem
     private const int MinimumTiles = 10;
 
     // The delay before cleaning up a small grid (in seconds)
-    private const float CleanupDelay = 300.0f;
+    private const float CleanupDelay = 1800.0f;
 
     // Dictionary to track grids scheduled for deletion
     private readonly Dictionary<EntityUid, TimeSpan> _pendingCleanup = new();
@@ -171,10 +172,22 @@ public sealed class GridCleanupSystem : EntitySystem
                 continue;
             }
 
-            // Queue the grid for deletion
-            QueueDel(gridUid);
-            Logger.DebugS("salvage", $"Update: Queuing grid {gridUid} for deletion with {CountTiles((gridUid, grid))} tiles");
+            // Check to ensure no mobs will be deleted
+            var mobQuery = AllEntityQuery<MobStateComponent, TransformComponent>();
+            while (mobQuery.MoveNext(out var mobUid, out _, out var mobxform))
+            {
+                if (mobxform.GridUid == null || mobxform.MapUid == null || xform.GridUid == xform.GridUid)
+                {
+                    toRemove.Add(gridUid);
+                    continue;
+                }
+
+            }
+
+            // Delete the grid immediately to prevent the possibility of a mob entering after deletion is queued
+            Logger.DebugS("salvage", $"Update: Deleting {gridUid} with {CountTiles((gridUid, grid))} tiles");
             toRemove.Add(gridUid);
+            Del(gridUid);
         }
 
         // Remove processed grids from the pending list
@@ -193,8 +206,8 @@ public sealed class GridCleanupSystem : EntitySystem
         var aabb = grid.LocalAABB;
 
         // Convert to grid coordinates
-        var localTL = new Vector2i((int) Math.Floor(aabb.Left), (int) Math.Floor(aabb.Bottom));
-        var localBR = new Vector2i((int) Math.Ceiling(aabb.Right), (int) Math.Ceiling(aabb.Top));
+        var localTL = new Vector2i((int)Math.Floor(aabb.Left), (int)Math.Floor(aabb.Bottom));
+        var localBR = new Vector2i((int)Math.Ceiling(aabb.Right), (int)Math.Ceiling(aabb.Top));
 
         // Iterate through all tiles in the grid's area
         for (var x = localTL.X; x < localBR.X; x++)
