@@ -198,12 +198,6 @@ public sealed partial class PlantAnalyzerWindow : FancyWindow
             output.Append(IndentedNewline);
             output.Append(Loc.GetString("gases-frezon"));
         }
-        // _Mono
-        if (flags.HasFlag(GasFlags.PrismaticPlasma))
-        {
-            output.Append(IndentedNewline);
-            output.Append(Loc.GetString("gases-prismaticplasma"));
-        }
         return output;
     }
 }

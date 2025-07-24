@@ -133,8 +133,8 @@
   id: 9
   name: gases-prismaticplasma
   specificHeat: 220
-  heatCapacityRatio: 2
-  molarMass: 160
+  heatCapacityRatio: 1.9
+  molarMass: 120
   gasOverlaySprite: /Textures/_DV/Effects/atmospherics.rsi # Mono/DV Sprites
   gasOverlayState: plasma
   color: FF8000

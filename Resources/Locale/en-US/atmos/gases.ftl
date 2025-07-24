@@ -8,4 +8,6 @@ gas-plasma-abbreviation = P
 gas-tritium-abbreviation = T
 gas-water-vapor-abbreviation = H₂O
 gas-unknown-abbreviation = X
+# _Mono start
 gas-prismaticplasma-abbreviation = PX₂
+# _Mono end

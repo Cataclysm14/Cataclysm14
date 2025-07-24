@@ -174,7 +174,7 @@ namespace Content.Shared.Atmos
             [Gas.Plasma] = Loc.GetString("gas-plasma-abbreviation"),
             [Gas.Tritium] = Loc.GetString("gas-tritium-abbreviation"),
             [Gas.WaterVapor] = Loc.GetString("gas-water-vapor-abbreviation"),
-            [Gas.PrismaticPlasma] = Loc.GetString("gas-water-prismaticplasma-abbreviation"),
+            [Gas.PrismaticPlasma] = Loc.GetString("gas-prismaticplasma-abbreviation"),
         };
 
         #region Excited Groups
@@ -372,7 +372,7 @@ namespace Content.Shared.Atmos
         WaterVapor = 5,
         Ammonia = 6,
         NitrousOxide = 7,
-        Frezon = 8
+        Frezon = 8,
         PrismaticPlasma = 9
     }
 }

@@ -71,20 +71,20 @@ public sealed partial class AtmosphereSystem
        // Frontier - 8: Oxygen Shuttle (GM)
        mixtures[8].AdjustMoles(Gas.Oxygen, Atmospherics.MolesCellShuttle);
 
-       // Frontier - 9: Nitrogen Shuttle (GM)
-       mixtures[9].AdjustMoles(Gas.Nitrogen, Atmospherics.MolesCellShuttle);
+       // Frontier - 10: Nitrogen Shuttle (GM) // _Mono: Changed ID
+       mixtures[10].AdjustMoles(Gas.Nitrogen, Atmospherics.MolesCellShuttle);
 
-       // Frontier - 10: Plasma Shuttle (GM)
-       mixtures[10].AdjustMoles(Gas.Plasma, Atmospherics.MolesCellShuttle);
+       // Frontier - 11: Plasma Shuttle (GM) // _Mono: Changed ID
+       mixtures[11].AdjustMoles(Gas.Plasma, Atmospherics.MolesCellShuttle);
 
-       // Frontier - 11: Sauna (GM)
-       mixtures[11].AdjustMoles(Gas.Oxygen, Atmospherics.OxygenMolesStandard);
-       mixtures[11].AdjustMoles(Gas.Nitrogen, Atmospherics.NitrogenMolesStandard);
-       mixtures[11].AdjustMoles(Gas.WaterVapor, Atmospherics.NitrogenMolesStandard);
-       mixtures[11].Temperature = 340f; // Sauna
+       // Frontier - 12: Sauna (GM) // _Mono: Changed ID
+       mixtures[12].AdjustMoles(Gas.Oxygen, Atmospherics.OxygenMolesStandard);
+       mixtures[12].AdjustMoles(Gas.Nitrogen, Atmospherics.NitrogenMolesStandard);
+       mixtures[12].AdjustMoles(Gas.WaterVapor, Atmospherics.NitrogenMolesStandard);
+       mixtures[12].Temperature = 340f; // Sauna
 
-       // Mono: Monolith Prismatic Plasma (GM)
-       mixtures[4].AdjustMoles(Gas.PrismaticPlasma, Atmospherics.MolesCellGasMiner);
+       // Mono - 9: Monolith Prismatic Plasma (GM)
+       mixtures[9].AdjustMoles(Gas.PrismaticPlasma, Atmospherics.MolesCellGasMiner);
 
        foreach (var arg in args)
        {

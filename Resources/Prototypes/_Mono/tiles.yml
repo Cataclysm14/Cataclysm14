@@ -104,3 +104,17 @@
   footstepSounds:
     collection: FootstepTile
   heatCapacity: 10000
+
+- type: tile
+  id: FloorMonolithTile
+  name: tiles-monolith-tile
+  sprite: /Textures/_Mono/Tiles/monolith_tile.png
+  variants: 3
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepTile
+  heatCapacity: 10000
