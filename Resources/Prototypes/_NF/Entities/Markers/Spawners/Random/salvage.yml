@@ -596,9 +596,9 @@
     - NFCrateSalvageAssortedGoodiesTrashCart
     chance: 0.95
     rarePrototypes:
-    - CrateTradeSecureNormal
-    - CrateTradeSecureHigh
-    - CrateSalvageEquipment
+#    - CrateTradeSecureNormal
+#    - CrateTradeSecureHigh #Mono - Replace these with special medium-value non-express crate later?
+#    - CrateSalvageEquipment #Mono
     - CrateTrashCartFilled
     - CrateArtifactContainer
     rareChance: 0.03
@@ -617,7 +617,7 @@
       state: fueltank
   - type: RandomSpawner
     prototypes:
-#    - WeldingFuelTankHighCapacity
+    - WeldingFuelTankHighCapacity #Mono in
     - WaterTankHighCapacity
     chance: 0.95
 
@@ -633,21 +633,26 @@
       state: alien
   - type: RandomSpawner
     prototypes:
-    - ClosetToolFilled
-    - LockerElectricalSuppliesFilled
-    - LockerWeldingSuppliesFilled
+#    - ClosetToolFilled #Mono out
+#    - LockerElectricalSuppliesFilled # Mono out
+#    - LockerWeldingSuppliesFilled # Mono out
 #    - ClosetEmergencyFilledRandom # Medical gameplay anyone?
-    - ClosetMaintenanceFilledRandom
+    - ClosetMaintenanceFilledRandomMono #Mono : ClosetMaintenanceFilledRandom >> ClosetMaintenanceFilledRandomMono
     chance: 0.95
     rarePrototypes:
-#    - LockerMedicineFilled # Medical gameplay anyone?
-#    - LockerMedicalFilled # Medical gameplay anyone?
-#    - LockerChemistryFilled # Medical gameplay anyone?
 #    - LockerParamedicFilled # Medical gameplay anyone?
-    - LockerAtmosphericsFilledHardsuit
+#    - LockerMedicalFilled # Medical gameplay anyone?
+    - LockerMedicineFilled # Mono in
+    - ClosetEmergencyFilledRandom # Mono in
+    - ClosetEmergencyN2FilledRandom # Mono in
+    - LockerChemistryFilled # Mono in
+    - ClosetToolFilled #Mono in
+    - LockerElectricalSuppliesFilled # Mono in
+    - LockerWeldingSuppliesFilled # Mono in
+#    - LockerAtmosphericsFilledHardsuit #Mono out
     - LockerAtmosphericsFilled
-    - LockerSalvageSpecialistFilledHardsuit
-    - LockerEngineerFilledHardsuit
+#    - LockerSalvageSpecialistFilledHardsuit #Mono out
+#    - LockerEngineerFilledHardsuit #Mono out
     - NFLockerSecurityFilled
     - NFClosetBombFilled
     - ClosetFireFilled
@@ -658,7 +663,7 @@
     - ClosetRadiationSuitFilled
     - LockerSalvageSpecialistFilled
     - ClosetL3Filled
-    rareChance: 0.25
+    rareChance: 0.35 #Mono 0.25 >> 0.35
     offset: 0.0
 
 - type: entity
@@ -726,10 +731,12 @@
       state: base
   - type: RandomSpawner
     prototypes:
+    - SuitStorageBase #Mono in
     - SuitStorageEVA
     - SuitStorageEVAAlternate
     - SuitStorageEVAEmergency
-#    - SuitStorageEVAPrisoner
+    - SuitStorageEVAPrisoner #Mono in
+    - SuitStorageEVAContractor #Mono in
 #    - SuitStorageEVAPirate
     - SuitStorageBasic
     - SuitStorageEngi
@@ -737,7 +744,9 @@
     - SuitStorageSalv
     chance: 0.95
     rarePrototypes:
-    - SuitStorageBase
+#    - SuitStorageBase #Mono out
+    - SuitStorageMining #Mono in
+    - SuitStorageQuartermaster #Mono in
     rareChance: 0.05
     offset: 0.0
 
@@ -757,7 +766,8 @@
     chance: 0.5
     rarePrototypes:
     - PortableGeneratorSuperPacman
-    - PortableGeneratorJrPacman
+    - PortableGeneratorPacman #Mono in
+#    - PortableGeneratorJrPacman #Mono out
     rareChance: 0.3
     offset: 0.0
 

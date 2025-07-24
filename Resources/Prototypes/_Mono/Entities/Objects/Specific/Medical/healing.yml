@@ -1,0 +1,13 @@
+#Pills
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterStrange
+  suffix: Strange, 10
+  components:
+  - type: Label
+    currentLabel: ???
+  - type: StorageFill
+    contents:
+    - id: StrangePill
+      amount: 10
