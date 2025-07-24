@@ -86,7 +86,6 @@
     sprite: _Goobstation/Objects/Weapons/Guns/Rifles/wspr.rsi
   - type: Gun
     availableModes:
-    - FullAuto
     - Burst
     selectedMode: Burst
     burstFireRate: 20 # Mono
