@@ -457,6 +457,8 @@
       - id: AppraisalTool
       - id: RadioHandheldNF
       - id: DrinkGlass
+      - id: AmeJar
+        weight: 0.5
       #Survival box
       - !type:GroupSelector
         children:
