@@ -1,5 +1,5 @@
 - type: entityTable
-  id: MaintenanceLockerLootMono
+  id: MaintenanceLockerLootMono #Tables are in salvmaint_locker.yml
   table: !type:AllSelector
     children:
     - id: StrangePill
@@ -12,7 +12,7 @@
     # Fluff
     - !type:NestedSelector
       tableId: MonoMaintFluffTable
-      prob: 0.33
+      prob: 0.5
       rolls: !type:RangeNumberSelector
         range: 1, 2
     # Plushies
@@ -28,11 +28,7 @@
     # Gacha
     - !type:NestedSelector
       tableId: MonoMaintGachaTable
-      prob: 0.296
-    # Syndie Loot
-#    - !type:NestedSelector # Frontier: remove syndie maints
-#      tableId: SyndieMaintLoot # Frontier: remove syndie maints
-#      prob: 0.05 # Frontier: remove syndie maints
+      prob: 0.006
     # Recursive
     - id: ClosetMaintenanceFilledRandomMono # Frontier: don't trust this #Mono BUT WE WILL
       prob: 0.01 # Frontier: don't trust this #Mono BUT WE WILL

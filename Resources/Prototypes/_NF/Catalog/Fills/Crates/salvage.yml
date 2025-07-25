@@ -35,7 +35,7 @@
     - id: MaterialWoodPlank
     - id: MaterialCloth
     - id: MaterialDurathread
-      weight: 0.2 #0.01 >> 0.17
+      weight: 0.1 #0.01 >> 0.1
     - id: MaterialCardboard
       weight: 0.1
     - id: SheetPaper
@@ -43,11 +43,11 @@
     - id: SheetBrass
       weight: 0.1
     - id: MaterialBananium
-      weight: 0.2 #0.00001 >> 0.17
+      weight: 0.05 #0.00001 >> 0.05
     - id: MaterialDiamond5 # MaterialDiamond >> MaterialDiamond5
-      weight: 0.03 #0.0000001 >> 0.03
+      weight: 0.01 #0.0000001 >> 0.01
     - id: MaterialBluespace
-      weight: 0.03 #0.00000001 Yes they meant it >> 0.03
+      weight: 0.01 #0.00000001 Yes they meant it >> 0.01
       # Disk
     - id: ResearchDisk5000
       weight: 0.1 #0.001 >> 0.1

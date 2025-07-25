@@ -31,8 +31,8 @@
       prob: 0.2
     - id: WeaponFlareGun
       prob: 0.1
-#    - id: BoxMRE # Frontier
-#      prob: 0.1 # Frontier
+    - id: BoxMRE
+      prob: 0.1
 
 - type: entity
   id: ClosetEmergencyFilledRandom
@@ -128,7 +128,7 @@
     - id: WeaponSniperMosin
       weight: 2
 
-- type: entityTable
+- type: entityTable #Mono note: Still used for POI maints lockers. Refer to _Mono\Catalogs\Fills\Lockers\misc.yml for salv maint locker.
   id: MaintenanceLockerLoot
   table: !type:AllSelector
     children:

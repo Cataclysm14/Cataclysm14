@@ -534,7 +534,7 @@
     - VendingMachineMagivend
     - VendingMachineArcadia
     - VendingMachineBountyVendPunk
-    # - VendingMachineSyndieDrobe # A bit less Syndicate loot
+    - VendingMachineSyndieDrobe #Mono in
     - VendingMachineSyndieContraband
     - SpawnDungeonMachineFrame
     rareChance: 0.03
@@ -733,10 +733,10 @@
     offset: 0.0
     rarePrototypes:
     - CloningPodMachineCircuitboard
-#    - MedicalScannerMachineCircuitboard
+    - MedicalScannerMachineCircuitboard #Mono in: Needed for cloning
     - StasisBedMachineCircuitboard
 #    - GasRecyclerMachineCircuitboard
-    - BodyScannerComputerCircuitboard
+#    - BodyScannerComputerCircuitboard #Mono out: Currently serves no use
     - CloningConsoleComputerCircuitboard
     rareChance: 0.01
 
