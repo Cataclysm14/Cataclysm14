@@ -70,10 +70,12 @@
           - !type:AllSelector
             children:
             - id: SmokingPipe
-            - id: TobaccoPouchRedFilled
-            - id: TobaccoPouchBrownFilled
-            - id: TobaccoPouchBlueFilled
-            - id: TobaccoPouchPurpleFilled
+              - !type:GroupSelector
+              children:
+              - id: TobaccoPouchRedFilled
+              - id: TobaccoPouchBrownFilled
+              - id: TobaccoPouchBlueFilled
+              - id: TobaccoPouchPurpleFilled
       # Gar glasses
       - !type:GroupSelector
         children:
