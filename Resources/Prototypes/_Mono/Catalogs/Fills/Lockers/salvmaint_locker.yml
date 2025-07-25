@@ -4,7 +4,7 @@
     children:
     # Common Group
     - !type:GroupSelector
-      weight: 75
+      weight: 69
       children:
       # Smoker's specialty
       - !type:AllSelector
@@ -103,7 +103,7 @@
       - id: ClothingHeadHatCowboyRed
     # Uncommon Group
     - !type:GroupSelector
-      weight: 23
+      weight: 28
       children:
       # Cloaks
       - !type:GroupSelector
@@ -256,7 +256,7 @@
           - id: VibraphoneInstrument
     # Rare Group
     - !type:GroupSelector
-      weight: 2
+      weight: 3
       children:
       - id: Skub
       - id: PonderingOrb
@@ -306,7 +306,7 @@
     children:
     # Common Group
     - !type:GroupSelector
-      weight: 75
+      weight: 69
       children:
       #Toolboxes
       - !type:GroupSelector
@@ -396,7 +396,7 @@
       - id: ClothingMaskBreath
     # Uncommon Group
     - !type:GroupSelector
-      weight: 23
+      weight: 28
       children:
       - id: ClothingHeadHatCone
       - id: Bucket
@@ -410,13 +410,11 @@
       - id: DrinkGlass
       #Survival box
       - !type:GroupSelector
-        weight: 0.5
         children:
         - id: BoxSurvivalNFOxygen
         - id: BoxSurvivalNFNitrogen
       #Salvagecore bevvy
       - !type:GroupSelector
-        weight: 0.5
         children:
         - id: DrinkBeerBottleFull
         - id: DrinkAleBottleFull
@@ -446,7 +444,6 @@
         weight: 0.5
       #Medkits
       - !type:GroupSelector
-        weight: 0.5
         children:
         - id: MedkitFilled
           weight: 2
@@ -461,7 +458,6 @@
         - id: DrinkSpaceLube
       #Cubes
       - !type:GroupSelector
-        weight: 0.5
         children:
         - id: MonkeyCubeWrapped
         - id: KoboldCubeWrapped
@@ -475,7 +471,6 @@
           weight: 0.5
       #Service Resupplies
       - !type:GroupSelector
-        weight: 0.5
         children:
         - id: VendingMachineRestockBooze
         - id: VendingMachineRestockChefVend
@@ -488,7 +483,7 @@
         - id: VendingMachineRestockHotDrinks
     # Rare Group
     - !type:GroupSelector
-      weight: 2
+      weight: 3
       children:
       #Cartridges
       - !type:GroupSelector

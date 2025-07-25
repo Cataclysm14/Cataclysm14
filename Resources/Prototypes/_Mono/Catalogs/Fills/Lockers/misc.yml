@@ -8,11 +8,11 @@
     - !type:NestedSelector
       tableId: MonoMaintToolsTable
       rolls: !type:RangeNumberSelector
-        range: 2, 6
+        range: 2, 5
     # Fluff
     - !type:NestedSelector
       tableId: MonoMaintFluffTable
-      prob: 0.5
+      prob: 0.75
       rolls: !type:RangeNumberSelector
         range: 1, 2
     # Plushies
