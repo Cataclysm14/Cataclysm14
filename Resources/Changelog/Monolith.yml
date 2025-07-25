@@ -8707,3 +8707,45 @@ Entries:
   id: 980
   time: '2025-07-24T16:52:11.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1583
+- author: Redrover1760
+  changes:
+    - type: Fix
+      message: Players shouldn't be deleted by grid cleanup anymore
+  id: 981
+  time: '2025-07-24T17:39:25.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1596
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Cap hardsuit slowdown reduced from 20% to 10%
+  id: 982
+  time: '2025-07-24T17:49:12.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1597
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Prowler is voucher only now (aka locked behind the t3 tech and mats)
+  id: 983
+  time: '2025-07-24T19:26:03.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1599
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Server base research increased to 60
+  id: 984
+  time: '2025-07-25T00:46:20.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1600
+- author: starch70
+  changes:
+    - type: Fix
+      message: Fixed the Anaconda's CHARON not being manual reload.
+  id: 985
+  time: '2025-07-25T00:47:45.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1602
+- author: BoskiYourk
+  changes:
+    - type: Add
+      message: Added large thrusters for capital ships
+  id: 986
+  time: '2025-07-25T04:43:30.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1604
