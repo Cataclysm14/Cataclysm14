@@ -597,7 +597,7 @@
   id: MonoMaintGachaTable #It's overall not a very exciting prize table, but we can make iteration with ideas
   table: !type:GroupSelector
     children:
-  #Coal prize: Uncomment and set weight to modulate gacha pull frequency if a 1/166 pull rate is fucked
+  #Coal prize: Uncomment and set weight to modulate gacha pull frequency if a 1/100 pull rate is fucked.
 #    - !type:GroupSelector
 #      weight: 1
 #      children:

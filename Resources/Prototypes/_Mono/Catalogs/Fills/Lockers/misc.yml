@@ -8,7 +8,7 @@
     - !type:NestedSelector
       tableId: MonoMaintToolsTable
       rolls: !type:RangeNumberSelector
-        range: 2, 5
+        range: 2, 6
     # Fluff
     - !type:NestedSelector
       tableId: MonoMaintFluffTable
@@ -28,7 +28,7 @@
     # Gacha
     - !type:NestedSelector
       tableId: MonoMaintGachaTable
-      prob: 0.006
+      prob: 0.01
     # Recursive
     - id: ClosetMaintenanceFilledRandomMono # Frontier: don't trust this #Mono BUT WE WILL
       prob: 0.01 # Frontier: don't trust this #Mono BUT WE WILL

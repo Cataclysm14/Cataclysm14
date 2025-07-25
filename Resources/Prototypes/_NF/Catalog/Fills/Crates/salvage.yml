@@ -43,11 +43,11 @@
     - id: SheetBrass
       weight: 0.1
     - id: MaterialBananium
-      weight: 0.05 #0.00001 >> 0.05
+      weight: 0.06 #0.00001 >> 0.06
     - id: MaterialDiamond5 # MaterialDiamond >> MaterialDiamond5
-      weight: 0.01 #0.0000001 >> 0.01
+      weight: 0.02 #0.0000001 >> 0.02
     - id: MaterialBluespace
-      weight: 0.01 #0.00000001 Yes they meant it >> 0.01
+      weight: 0.02 #0.00000001 Yes they meant it >> 0.02
       # Disk
     - id: ResearchDisk5000
       weight: 0.1 #0.001 >> 0.1

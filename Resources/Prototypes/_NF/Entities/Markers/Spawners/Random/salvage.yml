@@ -663,7 +663,7 @@
     - ClosetRadiationSuitFilled
     - LockerSalvageSpecialistFilled
     - ClosetL3Filled
-    rareChance: 0.35 #Mono 0.25 >> 0.35
+    rareChance: 0.25
     offset: 0.0
 
 - type: entity
