@@ -239,9 +239,9 @@
   - type: Projectile
     damage:
       types:
-        Structural: 8500
-        Blunt: 12000
-        Ion: 20000
+        Structural: 6500
+        Blunt: 10000
+        Ion: 17500
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
     layers:
