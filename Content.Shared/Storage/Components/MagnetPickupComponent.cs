@@ -1,3 +1,14 @@
+// SPDX-FileCopyrightText: 2023 Stray-Pyramid
+// SPDX-FileCopyrightText: 2023 crystalHex
+// SPDX-FileCopyrightText: 2023 metalgearsloth
+// SPDX-FileCopyrightText: 2024 Mnemotechnican
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers
+// SPDX-FileCopyrightText: 2025 Dvir
+// SPDX-FileCopyrightText: 2025 Redrover1760
+// SPDX-FileCopyrightText: 2025 cheetah1984
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Shared.Inventory;
 using Robust.Shared.GameStates; // Frontier
 

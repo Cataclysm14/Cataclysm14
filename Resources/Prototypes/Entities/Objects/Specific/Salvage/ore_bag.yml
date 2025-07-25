@@ -1,3 +1,17 @@
+# SPDX-FileCopyrightText: 2022 Kara
+# SPDX-FileCopyrightText: 2022 ninruB
+# SPDX-FileCopyrightText: 2023 Nemanja
+# SPDX-FileCopyrightText: 2023 checkraze
+# SPDX-FileCopyrightText: 2023 liltenhead
+# SPDX-FileCopyrightText: 2023 lzk
+# SPDX-FileCopyrightText: 2023 metalgearsloth
+# SPDX-FileCopyrightText: 2023 sTiKyt
+# SPDX-FileCopyrightText: 2025 Dvir
+# SPDX-FileCopyrightText: 2025 Whatstone
+# SPDX-FileCopyrightText: 2025 cheetah1984
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   name: ore bag
   id: OreBag
