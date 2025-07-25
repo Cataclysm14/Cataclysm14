@@ -30,7 +30,7 @@
   mapPath: /Maps/_Mono/Shuttles/intermission.yml
   minPlayers: 0
   stations:
-    Moonlight:
+    Intermission:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
