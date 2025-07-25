@@ -200,9 +200,6 @@
     onUse: false # Frontier
     onAltUse: true # Frontier
     onActivate: false # Frontier
-  - type: ItemToggleExamine
-    on: item-toggle-examine-magnet-on
-    off: item-toggle-examine-magnet-off
   - type: Appearance
   - type: GenericVisualizer
     visuals:

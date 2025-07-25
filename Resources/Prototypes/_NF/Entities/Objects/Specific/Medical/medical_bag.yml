@@ -3,7 +3,7 @@
   id: MedicalBag
   parent: BaseStorageItem
   description: A medical bag designed to hold topicals and small reagent containers. For the medic on the go.
-  components:  
+  components:
   - type: Sprite
     sprite: _NF/Objects/Specific/Medical/medical_bag.rsi
     layers:
@@ -51,9 +51,6 @@
     onUse: false
     onAltUse: true
     onActivate: false
-  - type: ItemToggleExamine
-    on: item-toggle-examine-magnet-on
-    off: item-toggle-examine-magnet-off
   - type: Appearance
   - type: GenericVisualizer
     visuals:

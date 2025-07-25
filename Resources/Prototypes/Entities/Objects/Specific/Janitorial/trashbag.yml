@@ -73,9 +73,6 @@
     onUse: false
     onAltUse: true
     onActivate: false
-  - type: ItemToggleExamine
-    on: item-toggle-examine-magnet-on
-    off: item-toggle-examine-magnet-off
 
 - type: entity
   name: trash bag
