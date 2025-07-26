@@ -661,7 +661,7 @@
     - LockerElectricalSuppliesFilled # Mono in
     - LockerWeldingSuppliesFilled # Mono in
     - LockerAtmosphericsFilledHardsuit
-    - LockerAtmosphericsFilled #Mono out
+#    - LockerAtmosphericsFilled #Mono out
     - LockerSalvageSpecialistFilledHardsuit
     - LockerEngineerFilledHardsuit
 #    - NFLockerSecurityFilled #Mono out
