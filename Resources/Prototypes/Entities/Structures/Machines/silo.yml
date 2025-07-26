@@ -1,4 +1,8 @@
-﻿- type: entity
+# SPDX-FileCopyrightText: 2025 cheetah1984
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
   id: MachineMaterialSilo
   parent: [ BaseMachinePowered, ConstructibleMachine ]
   name: material silo

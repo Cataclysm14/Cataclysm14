@@ -1,4 +1,8 @@
-﻿using Content.Server.Pinpointer;
+// SPDX-FileCopyrightText: 2025 cheetah1984
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Server.Pinpointer;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Materials.OreSilo;
 using Robust.Server.GameStates;

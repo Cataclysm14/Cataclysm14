@@ -1,4 +1,8 @@
-﻿using Content.Shared.Power.EntitySystems;
+// SPDX-FileCopyrightText: 2025 cheetah1984
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Shared.Power.EntitySystems;
 using JetBrains.Annotations;
 using Robust.Shared.Utility;
 
