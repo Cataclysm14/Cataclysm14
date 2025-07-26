@@ -12,7 +12,7 @@
   price: 132500 # appraises at like 50k but the capabilities are crazy
   category: Medium
   group: Medical
-  shuttlePath: /Maps/_Mono/Shuttles/Shirokami.yml
+  shuttlePath: /Maps/_Mono/Shuttles/shirokami.yml
   guidebookPage: null
   class:
   - Medical
@@ -23,7 +23,7 @@
 - type: gameMap
   id: Shirokami
   mapName: 'SKR-KRG Shirokami'
-  mapPath: /Maps/_Mono/Shuttles/Shirokami.yml
+  mapPath: /Maps/_Mono/Shuttles/shirokami.yml
   minPlayers: 0
   stations:
     Shirokami:
