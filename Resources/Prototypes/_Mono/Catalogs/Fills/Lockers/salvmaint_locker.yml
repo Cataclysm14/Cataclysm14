@@ -526,9 +526,9 @@
       - !type:GroupSelector
         children:
         - id: VendingMachineRestockBooze
-        - id: VendingMachineRestockChefVend
+        - id: VendingMachineRestockChefvend
         - id: VendingMachineRestockCondimentStation
-        - id: VendingMachineRestockGetMoreChocolateCorp
+        - id: VendingMachineRestockGetmoreChocolateCorp
         - id: VendingMachineRestockDiscountDans
         - id: VendingMachineRestockChang
         - id: VendingMachineRestockDonut
