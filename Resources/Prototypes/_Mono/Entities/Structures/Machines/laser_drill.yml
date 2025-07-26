@@ -17,7 +17,7 @@
   - type: TelecrystalMiner # Trust the process sir, its definitely not a hijacked version of Goob TC miner
     prototypes:
     - SpawnLootOres15
-    miningInterval: 5
+    miningInterval: 15
   - type: Battery
     maxCharge: 1000
     pricePerJoule: 0.0003
