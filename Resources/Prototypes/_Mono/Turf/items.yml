@@ -215,7 +215,7 @@
 - type: stack
   id: FloorTileDarkSteelMonoAlt
   name: commercial mono dark steel tile
-  spawn: FloorTileItemDarkSteelMonoCommercial
+  spawn: FloorTileItemSteelDarkMonoCommercial
   maxCount: 30
 
 # alt techmaint
@@ -234,7 +234,7 @@
     - Plating
     - FloorTechMaintAlt
   - type: Stack
-    stackType: FloorTechMaintAlt
+    stackType: FloorTileTechMaintAlt
 
 - type: stack
   id: FloorTileTechMaintAlt
@@ -287,5 +287,5 @@
 - type: stack
   id: FloorTileGreySteelMonoAlt
   name: commercial mono grey steel tile
-  spawn: FloorTileItemGreySteelMonoCommercial
+  spawn: FloorTileItemSteelGreyMonoCommercial
   maxCount: 30
