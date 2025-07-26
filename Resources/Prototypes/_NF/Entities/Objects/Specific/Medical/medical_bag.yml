@@ -52,8 +52,6 @@
         - Bottle
   - type: Dumpable
   - type: MagnetPickup
-    magnetEnabled: false
-    magnetCanBeEnabled: false
   # Frontier: toggle magnet from White Dream (keeping this in case it's useful as a future note)
   - type: ItemToggle
     soundActivate: &soundActivate

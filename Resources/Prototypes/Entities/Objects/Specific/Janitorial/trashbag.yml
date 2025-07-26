@@ -63,8 +63,6 @@
   - type: Item
     size: Normal
   - type: MagnetPickup # Frontier
-    magnetEnabled: false # Mono
-    magnetCanBeEnabled: false # Mono
   - type: ItemToggle
     soundActivate: &soundActivate
       collection: sparks

@@ -47,8 +47,6 @@
           - Write
     - type: Dumpable
     - type: MagnetPickup # Frontier
-      magnetEnabled: false # Frontier
-      magnetCanBeEnabled: false # Frontier
     - type: NFBookBag # Frontier
     # Begin Frontier Additions: toggle magnet from White Dream
     - type: ItemToggle

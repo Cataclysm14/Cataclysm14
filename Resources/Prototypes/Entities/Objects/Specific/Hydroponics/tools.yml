@@ -189,8 +189,6 @@
       - Seed
   - type: Dumpable
   - type: MagnetPickup # Frontier
-    magnetEnabled: false # Frontier
-    magnetCanBeEnabled: false # Frontier
   - type: NFPlantBag # Frontier
   # Begin DeltaV Additions: toggle magnet from White Dream
   - type: ItemToggle

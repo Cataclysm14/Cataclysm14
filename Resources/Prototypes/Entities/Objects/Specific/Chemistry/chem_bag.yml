@@ -50,8 +50,6 @@
         - Dropper
   - type: Dumpable
   - type: MagnetPickup # Frontier
-    magnetEnabled: false # Frontier
-    magnetCanBeEnabled: false # Frontier
   # Frontier: toggle magnet from White Dream
   - type: ItemToggle
     soundActivate: &soundActivate
