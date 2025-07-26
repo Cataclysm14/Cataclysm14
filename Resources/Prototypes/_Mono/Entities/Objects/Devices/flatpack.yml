@@ -175,6 +175,17 @@
 
 - type: entity
   parent: BaseNFFlatpack
+  id: MaterialSiloFlatpack
+  name: Material Silo flatpack
+  description: A flatpack used for constructing a Material Silo.
+  components:
+  - type: Flatpack
+    entity: MachineMaterialSilo
+  - type: StaticPrice
+    price: 400
+
+- type: entity
+  parent: BaseNFFlatpack
   id: OreBoxFlatpack
   name: ore box flatpack
   description: A flatpack used for constructing an ore box.
@@ -204,7 +215,7 @@
   - type: Flatpack
     entity: TegCirculator
   - type: StaticPrice
-    price: 1000 
+    price: 1000
 
 - type: entity
   parent: BaseNFFlatpack
@@ -215,5 +226,5 @@
   - type: Flatpack
     entity: TegCenter
   - type: StaticPrice
-    price: 2000 
+    price: 2000
 
