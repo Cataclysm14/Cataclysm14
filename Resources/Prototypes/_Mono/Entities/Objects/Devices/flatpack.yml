@@ -228,4 +228,5 @@
     entity: LaserDrill
   - type: StaticPrice
     price: 3000
+    vendPrice: 20000
 
