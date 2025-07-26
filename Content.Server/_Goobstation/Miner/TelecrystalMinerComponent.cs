@@ -40,7 +40,7 @@ public sealed partial class TelecrystalMinerComponent : Component
     /// Power consumption
     /// </summary>
     [DataField("powerDraw")]
-    public float PowerDraw = 10000f;
+    public float PowerDraw = 30000f;
 
     /// <summary>
     /// List of entities that can be spawned by this component. One will be randomly
