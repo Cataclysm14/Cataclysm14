@@ -659,19 +659,19 @@
     - ClosetToolFilled #Mono in
     - LockerElectricalSuppliesFilled # Mono in
     - LockerWeldingSuppliesFilled # Mono in
-#    - LockerAtmosphericsFilledHardsuit #Mono out
-    - LockerAtmosphericsFilled
-#    - LockerSalvageSpecialistFilledHardsuit #Mono out
-#    - LockerEngineerFilledHardsuit #Mono out
+    - LockerAtmosphericsFilledHardsuit
+    - LockerAtmosphericsFilled #Mono out
+    - LockerSalvageSpecialistFilledHardsuit
+    - LockerEngineerFilledHardsui
 #    - NFLockerSecurityFilled #Mono out
     - NFClosetBombFilled
     - ClosetFireFilled
     - LockerScienceFilled
     - ClosetJanitorFilled
     - LockerBotanistFilled
-    - LockerEngineerFilled
+#    - LockerEngineerFilled #Mono out
     - ClosetRadiationSuitFilled
-    - LockerSalvageSpecialistFilled
+#    - LockerSalvageSpecialistFilled #Mono out
     - ClosetL3Filled
     rareChance: 0.25
     offset: 0.0
