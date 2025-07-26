@@ -606,8 +606,9 @@
     chance: 0.95
     rarePrototypes:
 #    - CrateTradeSecureNormal
-#    - CrateTradeSecureHigh #Mono - Replace these with special medium-value non-express crate later?
-#    - CrateSalvageEquipment #Mono
+#    - CrateTradeSecureHigh #Mono out - Replace these with special medium-value non-express crate later?
+#    - CrateSalvageEquipment #Mono out
+    - CrateTradeSecureSalvage #Mono in
     - CrateTrashCartFilled
     - CrateArtifactContainer
     rareChance: 0.03
