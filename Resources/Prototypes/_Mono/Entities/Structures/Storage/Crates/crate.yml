@@ -2,7 +2,7 @@
   parent: CrateTradeBaseSecure
   id: CrateTradeSecureSalvage
   name: abandoned cargo crate
-  description: Forgotten export from an era bygone. The exterior has held fast, keeping its contents commercially viable despite countless cycles of solar radiation. The delivery label indicates a fivefold freight commission upon completion.
+  description: Forgotten export from an era bygone. The exterior has held fast, keeping its contents commercially viable despite countless cycles of solar radiation. The label indicates a fivefold freight commission upon delivery.
   components:
   - type: TradeCrate
     valueAtDestination: 15000
