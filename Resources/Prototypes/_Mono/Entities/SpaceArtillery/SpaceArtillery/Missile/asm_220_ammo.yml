@@ -46,8 +46,8 @@
     acceleration: 125
     detectionRange: 750
     scanArc: 75
-    launchSpeed: 1
-    maxSpeed: 1
+    launchSpeed: 70
+    maxSpeed: 250
     trackDelay: 3
 
 - type: entity
