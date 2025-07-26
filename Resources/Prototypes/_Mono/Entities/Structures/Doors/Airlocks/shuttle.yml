@@ -63,7 +63,7 @@
 
 - type: entity
   parent: AirlockShuttle
-  id: AirlockExternalShuttleDrakeIndustriesLocked
+  id: AirlockShuttleDrakeIndustriesLocked
   suffix: DI, Locked
   components:
   - type: ContainerFill
@@ -72,7 +72,7 @@
 
 - type: entity
   parent: AirlockGlassShuttle
-  id: AirlockExternalGlassShuttleDrakeIndustriesLocked
+  id: AirlockGlassShuttleDrakeIndustriesLocked
   suffix: DI, Glass, Locked
   components:
   - type: ContainerFill
