@@ -1,0 +1,48 @@
+# Author Info
+# GitHub: UnicornOnLSD
+# Discord: UnicornOnLSD
+
+# Maintainer Info
+# GitHub: UnicornOnLSD
+# Discord: unicornonlsd
+
+# Notes:
+# spawn point for DI, trade area too. Currently market selling is worse than trade mall. (base instead of x1.25)
+
+- type: pointOfInterest
+  id: DragonsBreathRefinery
+  parent: BasePOI
+  name: "Dragon's Breath Refinery"
+  minimumDistance: 3500
+  maximumDistance: 6500
+  spawnGroup: Required
+  gridPath: /Maps/_Mono/POI/dragons_breath_refinery.yml
+  addComponents:
+  - type: SolarPoweredGrid
+    trackOnInit: true
+    doNotCull: true
+
+- type: gameMap
+  id: DragonsBreathRefinery
+  mapName: "Dragon's Breath Refinery"
+  mapPath: /Maps/_Mono/POI/dragons_breath_refinery.yml
+  minPlayers: 0
+  stations:
+    DragonsBreathRefinery:
+      stationProto: MarketFrontierOutpost
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Dragons Breath Refinery'
+        - type: ExtraStationInformation
+          iconPath: /Textures/_Mono/Structures/Wallmounts/emblems.rsi/Drake_Industries_Emblem.png
+          stationSubtext: 'frontier-lobby-di-refinery-subtext'
+          stationDescription: 'frontier-lobby-di-refinery-description'
+          lobbySortOrder: 6
+        - type: StationJobs
+          availableJobs:
+            DIOverseer: [1, 1]
+            DIWatchdog: [4, 4]
+            DITrucker: [6, 6]
+            DIGrunt: [-1, -1]
+          tags:
+          - DICommand

@@ -3,3 +3,6 @@ frontier-lobby-tsfmc-secondary-description = The TFSMC Secondary Outpost is a al
 
 frontier-lobby-camelot-subtext = A military station operated by the USSP.
 frontier-lobby-camelot-description = This is NOT a safezone. This is not a recommended spawn point for new players. Both a expedition and standard shipyard is available here however.
+
+frontier-lobby-di-refinery-subtext = The headquarters of Drake Industries.
+frontier-lobby-di-refinery-description = This is a spawnpoint for Drake Industries roles. It contains a basic shipyard and trade docks.
