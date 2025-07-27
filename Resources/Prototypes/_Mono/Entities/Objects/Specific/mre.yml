@@ -15,7 +15,7 @@
       tags:
       - MREFood
   - type: Item
-    size: Normal
+    size: Small
   - type: GenericVisualizer
     visuals:
       enum.StorageVisuals.Open:
