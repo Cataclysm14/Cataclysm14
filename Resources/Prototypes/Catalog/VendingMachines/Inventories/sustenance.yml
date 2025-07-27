@@ -13,7 +13,7 @@
     FoodSnackNutribrick: 5
     FoodSnackMREBrownie: 5
     FoodCondimentPacketKetchup: 5
-    MonoMREFilled: 10 # Mono
+    MonoMRE: 10 # Mono
   contrabandInventory:
     FoodTinMRE: 3
     FoodTinBeans: 3
