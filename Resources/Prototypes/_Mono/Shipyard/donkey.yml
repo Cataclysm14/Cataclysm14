@@ -1,0 +1,55 @@
+# SPDX-FileCopyrightText: 2023 IHAN <IHAN>
+# SPDX-FileCopyrightText: 2023 Kennedy
+# SPDX-FileCopyrightText: 2023 PECK
+# SPDX-FileCopyrightText: 2023 RealIHaveANameOfficial
+# SPDX-FileCopyrightText: 2024 Debug
+# SPDX-FileCopyrightText: 2024 Dvir
+# SPDX-FileCopyrightText: 2024 Maxtone
+# SPDX-FileCopyrightText: 2024 Salvantrix
+# SPDX-FileCopyrightText: 2024 Whatstone
+# SPDX-FileCopyrightText: 2025 Carolyn3114
+# SPDX-FileCopyrightText: 2025 Rubeebeebee
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Author Info
+# GitHub: Rubeebeebee
+# Discord: rubeebee
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Donkey
+  parent: BaseVessel
+  name: BBS Donkey
+  description: Originating from the early days of the TFS, the BBS Donkey is an old, but reliable cargo freighter, capable of carrying 90+ cargo crates. 
+  price: 96000
+  category: Large
+  group: Shipyard
+  shuttlePath: /Maps/_Mono/Shuttles/donkey.yml
+  guidebookPage: Null
+  class:
+  - Cargo
+  engine:
+  - Bananium
+
+- type: gameMap
+  id: Donkey
+  mapName: 'BBS Donkey'
+  mapPath: /Maps/_Mono/Shuttles/donkey.yml
+  minPlayers: 0
+  stations:
+    Donkey:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Donkey CIV{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
