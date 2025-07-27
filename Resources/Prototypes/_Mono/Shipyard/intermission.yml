@@ -23,7 +23,7 @@
 - type: vessel
   id: Intermission
   parent: BaseVessel
-  name: WA-SKR Intermission
+  name: WA Intermission
   description: A large medical vessel with a lobby, bar, food, and medical care facilities, Capable of saving lives and then saving appetites all in one go.
   price: 134750
   category: Large
@@ -40,7 +40,7 @@
 
 - type: gameMap
   id: Intermission
-  mapName: 'WA-SKR Intermission'
+  mapName: 'WA Intermission'
   mapPath: /Maps/_Mono/Shuttles/intermission.yml
   minPlayers: 0
   stations:
