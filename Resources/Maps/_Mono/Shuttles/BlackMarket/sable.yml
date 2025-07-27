@@ -1,3 +1,8 @@
+# SPDX-FileCopyrightText: 2025 SunoFang
+# SPDX-FileCopyrightText: 2025 sunofang
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 meta:
   format: 7
   category: Grid
@@ -97,7 +102,7 @@ entities:
     - type: ShipGridLock
       locked: False
     - type: BecomesStation
-      id: TORP
+      id: Sable
 - proto: AirlockShuttleSyndicate
   entities:
   - uid: 2
