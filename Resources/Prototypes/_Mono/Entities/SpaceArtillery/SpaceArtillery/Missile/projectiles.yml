@@ -49,11 +49,11 @@
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
-    acceleration: 150
+    acceleration: 75
     detectionRange: 300
     scanArc: 70
-    launchSpeed: 300
-    maxSpeed: 360
+    launchSpeed: 75
+    maxSpeed: 150
     trackDelay: 0.3
 
 # ASM-302
@@ -98,11 +98,11 @@
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
-    acceleration: 200
+    acceleration: 100
     detectionRange: 450
     scanArc: 70
-    launchSpeed: 180
-    maxSpeed: 420
+    launchSpeed: 100
+    maxSpeed: 280
     trackDelay: 0.7
 
 # ASM-501
@@ -147,11 +147,11 @@
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
-    acceleration: 50
+    acceleration: 25
     detectionRange: 300
     scanArc: 50
-    launchSpeed: 50
-    maxSpeed: 60
+    launchSpeed: 30
+    maxSpeed: 30
     trackDelay: 4
 
 # TOVEK
@@ -201,9 +201,9 @@
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
-    acceleration: 80
+    acceleration: 50
     detectionRange: 450
     scanArc: 80
-    launchSpeed: 100
-    maxSpeed: 250
+    launchSpeed: 75
+    maxSpeed: 150
     trackDelay: 1.2
