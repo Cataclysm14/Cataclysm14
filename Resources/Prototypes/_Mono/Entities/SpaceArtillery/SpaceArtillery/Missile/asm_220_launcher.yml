@@ -35,6 +35,17 @@
     capacity: 4
     soundInsert:
       path: /Audio/Items/rped.ogg
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 25000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
   - type: Actions
   - type: RadarBlip
     radarColor: "#ff9d00"
