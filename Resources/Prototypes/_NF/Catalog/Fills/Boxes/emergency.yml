@@ -8,8 +8,7 @@
       - id: EmergencyOxygenTankFilled
       - id: SpaceMedipen
       - id: EmergencyMedipen
-      - id: FoodPSB
-      - id: DrinkWaterBottleFull
+      - id: MonoMREFilled # Mono - replace PSB and water bottle w/ MRE
       - id: Flare
   - type: Sprite
     layers:
@@ -26,8 +25,7 @@
       - id: EmergencyNitrogenTankFilled
       - id: SpaceMedipen
       - id: EmergencyMedipen
-      - id: FoodPSB
-      - id: DrinkWaterBottleFull
+      - id: MonoMREFilled # Mono - replace PSB and water bottle w/ MRE
       - id: Flare
   - type: Sprite
     layers:
@@ -44,8 +42,7 @@
       - id: DoubleEmergencyOxygenTankFilled
       - id: SpaceMedipen
       - id: EmergencyMedipen
-      - id: FoodPSB
-      - id: DrinkWaterBottleFull
+      - id: MonoMREFilled # Mono - replace PSB and water bottle w/ MRE
       - id: CrowbarPocket
   - type: Sprite
     layers:
@@ -62,8 +59,7 @@
       - id: DoubleEmergencyNitrogenTankFilled
       - id: SpaceMedipen
       - id: EmergencyMedipen
-      - id: FoodPSB
-      - id: DrinkWaterBottleFull
+      - id: MonoMREFilled # Mono - replace PSB and water bottle w/ MRE
       - id: CrowbarPocket
   - type: Sprite
     layers:

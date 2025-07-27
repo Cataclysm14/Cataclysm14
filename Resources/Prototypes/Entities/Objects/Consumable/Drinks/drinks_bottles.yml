@@ -65,6 +65,7 @@
   - type: Tag
     tags:
     - DrinkBottle
+    - MREFood # Mono
   - type: Openable
     sound:
       collection: bottleOpenSounds
