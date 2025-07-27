@@ -230,3 +230,15 @@
   - type: StaticPrice
     price: 2000
 
+- type: entity
+  parent: BaseFlatpack
+  id: LaserDrillFlatpack
+  name: laser drill flatpack
+  description: A flatpack used for constructing an automated laser drill.
+  components:
+  - type: Flatpack
+    entity: LaserDrill
+  - type: StaticPrice
+    price: 3000
+    vendPrice: 20000
+

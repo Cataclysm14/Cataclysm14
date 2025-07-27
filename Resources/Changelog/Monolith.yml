@@ -8918,3 +8918,70 @@ Entries:
   id: 1001
   time: '2025-07-26T14:07:55.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1620
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Added automated ore drills (only works on exped planets/ships on exped)
+        that generate 15 of a random ore (minus bluespace/bananiun) every 5
+        seconds when fed with 50 kW of HV. Buy at exped lodge flatpackvend.
+  id: 1002
+  time: '2025-07-26T20:18:56.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1623
+- author: Rubeebeebee
+  changes:
+    - type: Add
+      message: UNSA Fortunate, a MIL ship made for boarding
+  id: 1003
+  time: '2025-07-26T20:20:02.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1558
+- author: Onezero0
+  changes:
+    - type: Tweak
+      message: >-
+        You can now shoot down ASM-220 torpedoes, L85 isn't just useful for
+        lagging out the server anymore.
+  id: 1004
+  time: '2025-07-26T23:03:29.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1627
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        PSBs and water bottles in survival-boxes have been replaced with a more
+        space-efficient MRE.
+    - type: Tweak
+      message: >-
+        Adjusted the color of dark steel tiles and trims, so they should be
+        unified now (minus commercial dark steel tiles). No more dark steel mono
+        tiles looking out of place.
+  id: 1005
+  time: '2025-07-27T01:14:12.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1630
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: minimum range to FTL away from other ships is now 256m
+  id: 1006
+  time: '2025-07-27T02:16:06.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1092
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        Mass scanners/ship consoles/etc reduced to 512m. Only advanced radar is
+        768m range, again. 
+    - type: Tweak
+      message: >-
+        Re-adds advanced radar to places it was removed from. The mass scanner
+        console is a shit sprite anyways.
+  id: 1007
+  time: '2025-07-27T04:05:59.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1633
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Projectile speeds of shipguns and ship missiles halved.
+  id: 1008
+  time: '2025-07-27T04:11:45.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1638
