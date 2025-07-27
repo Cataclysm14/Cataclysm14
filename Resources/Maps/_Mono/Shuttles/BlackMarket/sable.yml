@@ -101,7 +101,7 @@ entities:
     - type: ShipGridLock
       locked: False
     - type: BecomesStation
-      id: TORP
+      id: Sable
 - proto: AirlockShuttleSyndicate
   entities:
   - uid: 2
