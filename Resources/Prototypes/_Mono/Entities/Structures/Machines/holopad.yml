@@ -17,3 +17,11 @@
   components:
   - type: Label
     currentLabel: holopad-ussp-commissar
+
+- type: entity
+  parent: NFHolopadPoiBase
+  id: HolopadDIRefinery
+  suffix: DI Refinery, POI
+  components:
+  - type: Label
+    currentLabel: holopad-di-refinery

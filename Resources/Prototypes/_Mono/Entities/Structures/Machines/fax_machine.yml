@@ -18,3 +18,11 @@
   components:
   - type: FaxMachine
     name: "USSP Station Baikal Commisar"
+
+- type: entity
+  parent: [BaseStructureDisableToolUse, FaxMachineBase]
+  id: FaxMachineDI
+  suffix: POI, DI
+  components:
+  - type: FaxMachine
+    name: "D.I Dragon's Breath Refinery"
