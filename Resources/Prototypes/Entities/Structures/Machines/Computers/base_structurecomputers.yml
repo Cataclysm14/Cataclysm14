@@ -120,7 +120,7 @@
   - type: SpamEmitSoundRequirePower
   - type: SpamEmitSound
     minInterval: 12
-    maxInterval: 20
+    maxInterval: 36
     sound:
       collection: MonoComputerSFX
       params:
