@@ -225,6 +225,11 @@
   - type: StaticPrice
     price: 800
   - type: ResearchClient
+  - type: AutomationSlots # Goobstation
+    slots:
+    - !type:AutomatedMaterialStorage
+      input: AutomationSlotMaterials
+      output: null
   - type: TechnologyDatabase
   - type: MaterialStorageMagnetPickup # Frontier
     range: 1.50 # Mono
@@ -475,6 +480,7 @@
     - MechBoardsPlus
     - AiCoreBoard
     - S2MechBoards
+    - EngineeringBoardsGoob #Goob Factorio port
   - type: MaterialStorage
     whitelist:
       tags:
