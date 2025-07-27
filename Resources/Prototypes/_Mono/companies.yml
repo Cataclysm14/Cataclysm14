@@ -209,19 +209,20 @@
 # Black Market Companies
 
 - type: company
-  id: paycheckbratva
+  id: PaycheckBratva
   form: Antagonist
   name: Paycheck Bratva
   description: paycheck-bratva-description
   color: "#7a0303"
 
 - type: company
-  id: cerberussurplusprovisions
+  id: CerberusSurplusProvisions
   form: Antagonist
   name: Cerberus Surplus Provisionaries
   description: cerberus-surplus-provisions
   color: "#aa1010"
   image: /Textures/_Mono/Companies/CSP.png
+  disabled: true
   logins:
     - GoobieWoob
     - Coolzman
