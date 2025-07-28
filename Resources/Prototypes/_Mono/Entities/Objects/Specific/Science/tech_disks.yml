@@ -460,8 +460,6 @@
     recipes:
     - RCD
     - RCDAmmo
-    - ShipyardRCD
-    - ShipyardRCDAmmo
     - NFBlueprintRCDAmmo
 
 # Factionlathe only recipes
