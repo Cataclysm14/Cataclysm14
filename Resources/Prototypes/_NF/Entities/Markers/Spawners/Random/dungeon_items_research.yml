@@ -28,6 +28,7 @@
     - SpawnDungeonLootClothesScience
     - SpawnDungeonLootRnDDisk
     - SpawnDungeonLootVendingRestocks
+    - SpawnLootTechDisksT1 # Mono
     chance: 1
     offset: 0.0
     rarePrototypes:
@@ -326,6 +327,7 @@
     - NTDefaultCircuitBoard
     - CorporateCircuitBoard
     - AsimovCircuitBoard
+    - SpawnLootTechDisksT1 # Mono
     chance: 0.9
     offset: 0.0
     rarePrototypes:

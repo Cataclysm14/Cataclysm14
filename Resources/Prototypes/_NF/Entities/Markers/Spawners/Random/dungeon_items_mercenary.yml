@@ -27,6 +27,7 @@
     - Zipties
     - Handcuffs
     - ComputerIFFCircuitboard
+    - SpawnLootTechDisksT1 # Mono
     chance: 0.9
     offset: 0.0
     rarePrototypes:
