@@ -26,6 +26,12 @@
     access:
     - USSP
     - USSPCommand
+    - USSPGadyuka
+    - USSPTunguska
+    - USSPDrakon
+    - USSPNatisk
+    - USSPSekunda
+    - USSPGruznyk
 
 - type: entity
   parent: BaseShipVoucher
