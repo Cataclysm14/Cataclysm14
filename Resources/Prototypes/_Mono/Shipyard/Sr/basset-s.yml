@@ -1,0 +1,41 @@
+# SPDX-FileCopyrightText: 2025 Junerisms
+# SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 Rubeebee
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Author Info
+# Github: Rubeebeebee
+# Discord: rubeebee
+
+- type: vessel
+  id: Basset-S
+  parent: BaseVessel
+  name: Basset-S
+  description: DESCRIPTIONMOMENT
+  price: 111
+  category: Medium
+  group: Sr
+  access: Brig # Oddball, matches guard ID, specific enough to exclude cadets
+  mapchecker_group_override: Security  # Treat this as a security vessel for mapchecker purposes
+  shuttlePath: /Maps/_Mono/Shuttles/basset-s.yml
+  guidebookPage: Null
+  class:
+  - Civilian
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Basset-S
+  mapName: 'Basset-S'
+  mapPath: /Maps/_Mono/Shuttles/basset-s.yml
+  minPlayers: 0
+  stations:
+    Basset-S:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Basset-S SEC{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
