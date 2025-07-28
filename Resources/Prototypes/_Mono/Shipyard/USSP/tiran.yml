@@ -10,7 +10,7 @@
   price: 400000 #original is like 350, I tried to reduce plasti walls too.
   category: Large
   group: Ussp
-  access: USSPTunguska
+  access: USSPCommand
   shuttlePath: /Maps/_Mono/Shuttles/USSP/tiran.yml
   guidebookPage: Null
   class:
