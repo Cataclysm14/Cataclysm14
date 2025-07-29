@@ -98,8 +98,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Critical
-      200: Dead
+      150: Critical # Monolith
+      250: Dead # Monolith
     stateAlertDict:
       Alive: BorgHealth
       Critical: BorgCrit
@@ -160,7 +160,7 @@
   - type: ZombieImmune
   - type: Repairable
     doAfterDelay: 10
-    allowSelfRepair: false
+    allowSelfRepair: true
   - type: BorgChassis
   - type: LockingWhitelist
     blacklist:
@@ -228,6 +228,7 @@
   - type: LockedWiresPanel
   - type: Damageable
     damageContainer: Silicon
+    damageModifierSet: BaseBorgChassis
   - type: Destructible
     thresholds:
     - trigger:
@@ -241,7 +242,7 @@
             volume: 5
     - trigger:
         !type:DamageTrigger
-        damage: 300
+         damage: 350 # Monolith
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -301,6 +302,7 @@
       flatReductions:
         Heat: 10 # capable of touching light bulbs and stoves without feeling pain!
   - type: PreventDropOnDowned # Frontier: borgs don't drop items when falling (e.g. critical/dead)
+  - type: Magboots # Monolith
 
 - type: entity
   abstract: true
