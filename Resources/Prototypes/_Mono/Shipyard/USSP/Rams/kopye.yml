@@ -7,13 +7,13 @@
   category: Large
   group: Custom
   access: USSPLedokolRam
-  shuttlePath: /Maps/_Mono/Shuttles/USSP/Attatchments/kopye.yml
+  shuttlePath: /Maps/_Mono/Shuttles/USSP/Ledokol/Attatchments/kopye.yml
   guidebookPage: Null
 
 - type: gameMap
   id: Kopye
   mapName: 'Kopye'
-  mapPath: /Maps/_Mono/Shuttles/USSP/Attatchments/kopye.yml
+  mapPath: /Maps/_Mono/Shuttles/USSP/Ledokol/Attatchments/kopye.yml
   minPlayers: 0
   stations:
     Kopye:

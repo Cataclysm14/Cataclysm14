@@ -8,13 +8,13 @@
   category: Small
   group: Custom
   access: USSPLedokolAttatchment
-  shuttlePath: /Maps/_Mono/Shuttles/USSP/Attatchments/kupol.yml
+  shuttlePath: /Maps/_Mono/Shuttles/USSP/Ledokol/Attatchments/kupol.yml
   guidebookPage: Null
 
 - type: gameMap
   id: Kupol
   mapName: 'Kupol'
-  mapPath: /Maps/_Mono/Shuttles/USSP/Attatchments/kupol.yml
+  mapPath: /Maps/_Mono/Shuttles/USSP/Ledokol/Attatchments/kupol.yml
   minPlayers: 0
   stations:
     Kupol:

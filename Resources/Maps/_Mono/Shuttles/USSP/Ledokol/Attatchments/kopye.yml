@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/28/2025 08:06:31
-  entityCount: 298
+  time: 07/29/2025 22:55:47
+  entityCount: 314
 maps: []
 grids:
 - 1
@@ -168,6 +168,88 @@ entities:
     components:
     - type: Transform
       pos: 7.5,0.5
+      parent: 1
+- proto: AtmosFixBlockerMarker
+  entities:
+  - uid: 295
+    components:
+    - type: Transform
+      pos: 7.5,39.5
+      parent: 1
+  - uid: 296
+    components:
+    - type: Transform
+      pos: 9.5,39.5
+      parent: 1
+  - uid: 301
+    components:
+    - type: Transform
+      pos: 6.5,33.5
+      parent: 1
+  - uid: 302
+    components:
+    - type: Transform
+      pos: 10.5,33.5
+      parent: 1
+  - uid: 303
+    components:
+    - type: Transform
+      pos: 11.5,22.5
+      parent: 1
+  - uid: 304
+    components:
+    - type: Transform
+      pos: 5.5,22.5
+      parent: 1
+  - uid: 305
+    components:
+    - type: Transform
+      pos: 4.5,16.5
+      parent: 1
+  - uid: 306
+    components:
+    - type: Transform
+      pos: 12.5,16.5
+      parent: 1
+  - uid: 307
+    components:
+    - type: Transform
+      pos: 3.5,12.5
+      parent: 1
+  - uid: 308
+    components:
+    - type: Transform
+      pos: 13.5,12.5
+      parent: 1
+  - uid: 309
+    components:
+    - type: Transform
+      pos: 14.5,8.5
+      parent: 1
+  - uid: 310
+    components:
+    - type: Transform
+      pos: 2.5,8.5
+      parent: 1
+  - uid: 311
+    components:
+    - type: Transform
+      pos: 1.5,5.5
+      parent: 1
+  - uid: 312
+    components:
+    - type: Transform
+      pos: 15.5,5.5
+      parent: 1
+  - uid: 313
+    components:
+    - type: Transform
+      pos: 16.5,2.5
+      parent: 1
+  - uid: 314
+    components:
+    - type: Transform
+      pos: 0.5,2.5
       parent: 1
 - proto: WallPlastitanium
   entities:

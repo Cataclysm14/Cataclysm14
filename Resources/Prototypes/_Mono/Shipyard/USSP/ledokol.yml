@@ -8,7 +8,7 @@
   category: Large
   group: Ussp
   access: USSPLedokol
-  shuttlePath: /Maps/_Mono/Shuttles/USSP/ledokol.yml
+  shuttlePath: /Maps/_Mono/Shuttles/USSP/Ledokol/ledokol.yml
   guidebookPage: Null
   class:
   - Capital
@@ -21,7 +21,7 @@
 - type: gameMap
   id: Ledokol
   mapName: 'Ledokol'
-  mapPath: /Maps/_Mono/Shuttles/USSP/ledokol.yml
+  mapPath: /Maps/_Mono/Shuttles/USSP/Ledokol/ledokol.yml
   minPlayers: 0
   stations:
     Ledokol:
