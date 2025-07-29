@@ -17,7 +17,7 @@
   - type: ItemGenerator
     prototypes:
     - SpawnLootOres15
-    miningInterval: 15
+    miningInterval: 10
     powerDraw: 50000
     requireExpedition: true
   - type: Battery
