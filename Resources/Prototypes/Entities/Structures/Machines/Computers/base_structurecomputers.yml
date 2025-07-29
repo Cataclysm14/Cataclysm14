@@ -120,13 +120,13 @@
   - type: SpamEmitSoundRequirePower
   - type: SpamEmitSound
     minInterval: 12
-    maxInterval: 20
+    maxInterval: 36
     sound:
       collection: MonoComputerSFX
       params:
-        volume: -6
+        volume: -12
         maxDistance: 4
-        variation: 0.1
+        variation: 0.05
   # Mono changes end
 #
 #     This is overwritten by children, so needs to be defined there
