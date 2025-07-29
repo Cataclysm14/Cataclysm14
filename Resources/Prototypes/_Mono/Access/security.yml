@@ -31,6 +31,8 @@
   - USSPNatisk
   - USSPSekunda
   - USSPGruznyk
+  - USSPLedokol
+  - USSPLedokolRam
   - USSPLedokolAttatchment
 
 - type: accessGroup

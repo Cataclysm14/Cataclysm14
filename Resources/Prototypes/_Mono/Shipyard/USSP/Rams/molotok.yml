@@ -3,7 +3,7 @@
   parent: BaseVesselAntag
   name: BYP Molotok
   description: A broad-headed ram made to fit the connection port of the Ledokol.
-  price: 1
+  price: 60000
   category: Large
   group: Custom
   access: USSPLedokolRam
