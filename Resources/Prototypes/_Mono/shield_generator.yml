@@ -115,6 +115,20 @@
         path: "/Audio/Effects/teleport_departure.ogg"
         params:
           pitch: 0.5
+  - type: Machine
+    board: MachineShieldMS500Circuitboard
+  - type: Construction
+    graph: Machine
+    node: machine
+    containers:
+    - machine_board
+    - machine_parts
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+  - type: PirateBountyItem
+    id: ShipShield
 
 # Medium-End
 - type: entity
@@ -149,6 +163,20 @@
     radius: 2
     energy: 1.5
     color: "#9933FF"
+  - type: Machine
+    board: MachineShieldMS250Circuitboard
+  - type: Construction
+    graph: Machine
+    node: machine
+    containers:
+    - machine_board
+    - machine_parts
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+  - type: PirateBountyItem
+    id: ShipShield
 
 # Low-End
 - type: entity
@@ -183,3 +211,17 @@
     radius: 2
     energy: 1.5
     color: "#3399FF"
+  - type: Machine
+    board: MachineShieldMS100Circuitboard
+  - type: Construction
+    graph: Machine
+    node: machine
+    containers:
+    - machine_board
+    - machine_parts
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+  - type: PirateBountyItem
+    id: ShipShield
