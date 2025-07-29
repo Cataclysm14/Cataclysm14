@@ -429,6 +429,66 @@
 
 - type: entity
   parent: BaseItem
+  id: TechDiskCivMicroreactors
+  name: civilian high-efficiency power cells tech disk
+  description: A disk capable of adding microreactors and hyper-capacity cells to a server's recipes.
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Specific/Research/researchdisk.rsi
+    layers:
+    - state: icon
+      map: ["enum.DamageStateVisualLayers.Base"]
+      color: "#395933"
+    - state: label
+    - state: protect
+    - state: civilian
+  - type: TechnologyDisk
+    recipes:
+    - PowerCellMicroreactor
+    - PowerCellHyperNF
+
+- type: entity
+  parent: BaseItem
+  id: TechDiskCivAdvancedTools
+  name: civilian power tools tech disk
+  description: A disk capable of adding jaws of life and power drills to a server's recipes.
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Specific/Research/researchdisk.rsi
+    layers:
+    - state: icon
+      map: ["enum.DamageStateVisualLayers.Base"]
+      color: "#395933"
+    - state: label
+    - state: protect
+    - state: civilian
+  - type: TechnologyDisk
+    recipes:
+    - JawsOfLife
+    - PowerDrill
+
+- type: entity
+  parent: BaseItem
+  id: TechDiskCivBackpackWaterTank
+  name: civilian power washer tech disk
+  description: A disk capable of adding high-capacity fluid sprays & tanks to a server's recipes. It would never be used for a flamethrower, I swear!
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Specific/Research/researchdisk.rsi
+    layers:
+    - state: icon
+      map: ["enum.DamageStateVisualLayers.Base"]
+      color: "#395933"
+    - state: label
+    - state: protect
+    - state: civilian
+  - type: TechnologyDisk
+    recipes:
+    - WeaponSprayNozzle
+    - ClothingBackpackWaterTank
+
+- type: entity
+  parent: BaseItem
   id: TechDiskCivShipComps
   name: civilian ship components tech disk
   description: A disk capable of adding basic shields and FTL drives to a server's recipes.
