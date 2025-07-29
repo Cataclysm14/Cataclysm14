@@ -12,7 +12,7 @@
   description: A gross refitting of the classic Pluto done by the Paycheck Bravta, intended to be used as a fast, somewhat camouflaged robbery ship. The cockpit was made sturdier with plating, at the cost of being much more cramped, at least it has an IFF console. The cargo bay was turned into a boarding pad. FTL capable, and equipped with two frontal facing dravons.
   price: 38800
   category: Small
-  group: Shipyard
+  # group: Shipyard TO DO: ADD IT TO BLACKMARKET/PBR SHIPYARD ONCE IT'S REAL
   shuttlePath: /Maps/_Mono/Shuttles/pluto_var_paycheckbravta.yml
   guidebookPage: Null
   class:
