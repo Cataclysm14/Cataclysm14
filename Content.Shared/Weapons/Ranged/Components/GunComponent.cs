@@ -264,6 +264,13 @@ public sealed partial class GunComponent : Component
     [AutoNetworkedField]
     public SelectiveFire AvailableModes = SelectiveFire.SemiAuto;
 
+
+    /// <summary>
+    /// Frontier: add gun caliber text
+    /// </summary>
+    [DataField]
+    public LocId? ExamineCaliber;
+    
     /// <summary>
     /// What firemode is currently selected.
     /// </summary>
