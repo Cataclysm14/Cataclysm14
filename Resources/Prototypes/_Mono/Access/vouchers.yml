@@ -11,6 +11,8 @@
   - USSPBasic
   - USSPIntermediate
   - USSPAdvanced
+  - VoucherProwler
+  - VoucherFlyssa
 
 - type: accessLevel
   id: USSPBasic
