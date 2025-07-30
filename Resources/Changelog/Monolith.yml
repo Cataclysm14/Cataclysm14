@@ -9146,3 +9146,37 @@ Entries:
   id: 1023
   time: '2025-07-29T03:40:46.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1673
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Merc, TSF, and Security techfabs can now make SOME faction recipes
+        (mostly the guns and tools, not armor and vouchers and whatnot). Not
+        ALL. Merc techfabs can also make smartguns now.
+    - type: Add
+      message: >-
+        Added a lot more tech disks to the pool, mainly for rogue weapons, FTL
+        drives, advanced tools/microreactors, and finally adding a way to get
+        the higher-power shield gens (MS-250 and MS-500)
+    - type: Tweak
+      message: >-
+        Shield gens are deconstructible machines again w/ machine boards. Still
+        as expensive as the old ones were.
+    - type: Fix
+      message: Fixed Bandit tech disk referencing Lecter in description.
+    - type: Fix
+      message: >-
+        Finally fucking fixed shield gens not working for the Rogue ship shield
+        system bounty.
+  id: 1024
+  time: '2025-07-29T15:39:02.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1674
+- author: Nelliel-ss14
+  changes:
+    - type: Add
+      message: >-
+        The Intermission, new large service medical vessel fitted out to save
+        lives and save appetites.
+  id: 1025
+  time: '2025-07-29T15:44:00.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1612
