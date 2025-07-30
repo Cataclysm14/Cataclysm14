@@ -216,19 +216,24 @@
   color: "#7a0303"
 
 - type: company
-  id: cerberussurplusprovisions
+  id: CerberusSurplusProvisions
   form: Antagonist
   name: Cerberus Surplus Provisionaries
   description: cerberus-surplus-provisions
   color: "#aa1010"
   image: /Textures/_Mono/Companies/CSP.png
+  disabled: true
   logins:
     - GoobieWoob
     - Coolzman
     - Lumpy_the_Clown
     - coolfied
     - Callington
-
+    - Operator_Talon5
+    - CdrGreenwall
+    - MarssSett18
+    - Administratorx # Hopefully this doesnt get denied because it has adminstrator in it smh
+    
 # ====Rogue / Antag. Companies====
 - type: company
   id: TheViperGroup

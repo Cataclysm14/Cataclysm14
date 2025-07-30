@@ -9017,3 +9017,132 @@ Entries:
   id: 1012
   time: '2025-07-27T10:50:29.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1643
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Added a lot more sounds to the ambient computer SFX because hearing the
+        same 10 beeps got old.
+    - type: Tweak
+      message: Sfx volume reduced slightly, computer beeps less often
+  id: 1013
+  time: '2025-07-27T18:14:06.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1647
+- author: starch70
+  changes:
+    - type: Fix
+      message: You can no longer use emags on mechs (no more 120mm on ripleys)
+  id: 1014
+  time: '2025-07-27T20:34:00.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1648
+- author: Redrover1760
+  changes:
+    - type: Fix
+      message: >-
+        WSPR now shows its theoretical firerate on examine with well timed
+        bursts of a 7.5 firerate instead of 5 firerate. (This does not actually
+        change how the weapon handles at all)
+  id: 1015
+  time: '2025-07-27T20:35:35.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1651
+- author: Redrover1760
+  changes:
+    - type: Fix
+      message: Lecter spawns in weapon cases now.
+    - type: Tweak
+      message: Heavy weapon cases have more space now.
+  id: 1016
+  time: '2025-07-27T20:36:13.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1650
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: >-
+        Salvage wreck maints lockers more common and loot pool expanded.
+        Hopefully they should be a bit more fun to open.
+    - type: Tweak
+      message: >-
+        Unremoved exped cloning scanner, syndiedrobe and salvage high cap
+        welding fuel, PACMAN
+    - type: Tweak
+      message: >-
+        Actual salvage bananium, bluespace, and diamonds rates were higher than
+        planned and had to be reduced. Sorry.
+    - type: Tweak
+      message: >-
+        Cargo crates from wrecks have been revised to be much more rewarding and
+        less disruptive to the salvage gameloop.
+    - type: Add
+      message: >-
+        Pill bottle with ten strange pills. Yes, all random. This can be found
+        in the rare salvmaint gacha pool.
+  id: 1017
+  time: '2025-07-27T21:17:58.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1606
+- author: starch70
+  changes:
+    - type: Remove
+      message: Retired Orit, Miriam, and Eden.
+    - type: Fix
+      message: >-
+        Fixed a minor typo in Tzipora description. Also fixed it being exped
+        capable.
+  id: 1018
+  time: '2025-07-27T21:20:32.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1646
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Added tech disks to exped & salvage loot. Various faction, mech, and civ
+        equipment (like bags of holding, RCDs, and speed-boots, less efficient
+        synthalloy) can be researched via these. Now I can get my free auth
+        disruptor as TSF. Ez.
+    - type: Remove
+      message: >-
+        Removed bags of holding and speed boots from research (now in tech
+        disks!)
+  id: 1019
+  time: '2025-07-28T04:52:58.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1663
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Minor halcyon tweaks
+  id: 1020
+  time: '2025-07-28T13:29:10.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1662
+- author: starch70
+  changes:
+    - type: Tweak
+      message: >-
+        Updated railing sprite to use you-know-what sprites. Reduced railing
+        hitbox size so now Onis and whatnot aren't defeated by railings.
+  id: 1021
+  time: '2025-07-28T21:30:32.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1665
+- author: Scyron
+  changes:
+    - type: Remove
+      message: Removed fail roleplay.
+  id: 1022
+  time: '2025-07-29T03:33:55.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1671
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Added a tech disk printer & a new POI that uses the tech disk printer.
+        Come to Sevastopol w/ spare AME fuel for Fragfest 2425. No you can't
+        steal it - only a real fragger deserves the right to print speed boots.
+    - type: Tweak
+      message: Indestructible walls arent fucking green anymore.
+    - type: Tweak
+      message: Buffed shields.
+    - type: Fix
+      message: >-
+        Fixed the laser part of laser drills being affected by shading. Now it
+        glows in the dark!
+  id: 1023
+  time: '2025-07-29T03:40:46.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1673
