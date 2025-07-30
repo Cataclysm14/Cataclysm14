@@ -78,7 +78,7 @@
 - type: entity
   parent: CadetIDCard
   id: DeputyIDCard
-  name: TSFMC corporal ID card
+  name: TSFMC marine ID card
   components:
   - type: PresetIdCard
     job: Deputy
@@ -91,7 +91,7 @@
 - type: entity
   parent: CadetIDCard
   id: BrigmedicNFIDCard
-  name: TSFMC brigmedic ID card
+  name: TSFMC corpsman ID card
   components:
   - type: PresetIdCard
     job: Brigmedic
@@ -104,7 +104,7 @@
 - type: entity
   parent: CadetIDCard
   id: SergeantIDCard
-  name: TSFMC lieutenant ID card
+  name: TSFMC fireteam leader ID card
   components:
   - type: PresetIdCard
     job: SeniorOfficer

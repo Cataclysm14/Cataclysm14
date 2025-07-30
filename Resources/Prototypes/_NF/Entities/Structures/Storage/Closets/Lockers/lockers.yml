@@ -132,7 +132,7 @@
   id: LockerNfsdSilver
   parent: [NFLockerBaseSecure, LockerSecurity]
   name: TSFMC locker
-  suffix: Silver
+  suffix: Marine
   components:
   - type: EntityStorageVisuals
     stateBaseClosed: nfsd_silver
@@ -144,7 +144,7 @@
   id: LockerNfsdBrigmedic
   parent: [NFLockerBaseSecure, LockerSecurity]
   name: TSFMC locker
-  suffix: Brigmedic
+  suffix: Corpsman
   components:
   - type: EntityStorageVisuals
     stateBaseClosed: nfsd_brigmed
@@ -156,7 +156,7 @@
   id: LockerNfsdSergeant
   parent: NFLockerBaseSecure
   name: TSFMC locker
-  suffix: Sergeant
+  suffix: Fireteam Leader
   components:
   - type: EntityStorageVisuals
     stateBaseClosed: nfsd_gold

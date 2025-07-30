@@ -310,7 +310,7 @@
 - type: entity
   id: SuitStorageDeputy
   parent: SuitStorageBase
-  suffix: TSFMC Corporal
+  suffix: TSFMC Marine
   components:
   - type: StorageFill
     contents:
@@ -327,7 +327,7 @@
 - type: entity
   id: SuitStorageBrigmedic
   parent: SuitStorageBase
-  suffix: TSFMC Brigmedic
+  suffix: TSFMC Corpsman
   components:
   - type: StorageFill
     contents:
@@ -344,7 +344,7 @@
 - type: entity
   id: SuitStorageSergeant
   parent: SuitStorageBase
-  suffix: TSFMC Lieutenant
+  suffix: TSFMC Fireteam Leader
   components:
   - type: StorageFill
     contents:
