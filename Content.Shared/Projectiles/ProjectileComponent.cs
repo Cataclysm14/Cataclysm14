@@ -104,4 +104,10 @@ public sealed partial class ProjectileComponent : Component
     /// </summary>
     [DataField]
     public float RandomBlindChance { get; set; } = 0;
+
+    // Goobstation Start
+    [DataField]
+    public float ArmorPenetration;
+    // Goobstation End
+
 }
