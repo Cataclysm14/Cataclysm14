@@ -1,3 +1,4 @@
+# SPDX-FileCopyrightText: 2025 BoskiYourk
 # SPDX-FileCopyrightText: 2025 HungryCuban
 # SPDX-FileCopyrightText: 2025 Redrover1760
 # SPDX-FileCopyrightText: 2025 starch
@@ -25,12 +26,9 @@
   - Mercenary
   - Cryogenics
   # SHIPS BECAUSE VOUCHER SHITCODE - DO NOT USE THESE FOR **ANYTHING**!!!
-  - USSPGadyuka
-  - USSPTunguska
-  - USSPDrakon
-  - USSPNatisk
-  - USSPSekunda
-  - USSPGruznyk
+  - USSPBasic
+  - USSPIntermediate
+  - USSPAdvanced
 
 - type: accessGroup
   id: USSPHigh
@@ -39,12 +37,9 @@
   - USSPHigh
   - Mercenary
   # SHIPS BECAUSE VOUCHER SHITCODE - DO NOT USE THESE FOR **ANYTHING**!!!
-  - USSPGadyuka
-  - USSPTunguska
-  - USSPDrakon
-  - USSPNatisk
-  - USSPSekunda
-  - USSPGruznyk
+  - USSPBasic
+  - USSPIntermediate
+  - USSPAdvanced
 
 - type: accessGroup
   id: USSPLow
@@ -52,9 +47,6 @@
   - USSP
   - Mercenary
   # SHIPS BECAUSE VOUCHER SHITCODE - DO NOT USE THESE FOR **ANYTHING**!!!
-  - USSPGadyuka
-  - USSPTunguska
-  - USSPDrakon
-  - USSPNatisk
-  - USSPSekunda
-  - USSPGruznyk
+  - USSPBasic
+  - USSPIntermediate
+  - USSPAdvanced
