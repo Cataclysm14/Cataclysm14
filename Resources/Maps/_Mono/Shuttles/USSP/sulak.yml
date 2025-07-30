@@ -20,8 +20,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/29/2025 02:43:38
-  entityCount: 855
+  time: 07/30/2025 23:47:29
+  entityCount: 852
 maps: []
 grids:
 - 1
@@ -3226,7 +3226,6 @@ entities:
     - type: Transform
       pos: -5.5,-7.5
       parent: 1
-    - type: GasPressurePump
       enabled: True
     - type: AtmosPipeColor
       color: '#DD0075FF'
@@ -4179,11 +4178,11 @@ entities:
         weapon1: !type:ContainerSlot
           showEnts: False
           occludes: True
-          ent: 786
+          ent: null
         weapon2: !type:ContainerSlot
           showEnts: False
           occludes: True
-          ent: 787
+          ent: null
         weapon3: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -4195,7 +4194,7 @@ entities:
         weapon5: !type:ContainerSlot
           showEnts: False
           occludes: True
-          ent: 790
+          ent: null
 - proto: StructureMeleeWeaponRack
   entities:
   - uid: 791
@@ -5869,18 +5868,6 @@ entities:
       parent: 1
 - proto: WeaponRifleAK502
   entities:
-  - uid: 786
-    components:
-    - type: Transform
-      parent: 785
-    - type: Physics
-      canCollide: False
-  - uid: 787
-    components:
-    - type: Transform
-      parent: 785
-    - type: Physics
-      canCollide: False
   - uid: 788
     components:
     - type: Transform
@@ -5888,12 +5875,6 @@ entities:
     - type: Physics
       canCollide: False
   - uid: 789
-    components:
-    - type: Transform
-      parent: 785
-    - type: Physics
-      canCollide: False
-  - uid: 790
     components:
     - type: Transform
       parent: 785

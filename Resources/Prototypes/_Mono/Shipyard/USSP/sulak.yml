@@ -13,7 +13,7 @@
   price: 142500
   category: Medium
   group: Ussp
-  access: USSPSulak
+  access: USSPAdvanced
   shuttlePath: /Maps/_Mono/Shuttles/USSP/sulak.yml
   guidebookPage: Null
   class:

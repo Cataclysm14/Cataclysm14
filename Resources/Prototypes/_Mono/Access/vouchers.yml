@@ -8,42 +8,22 @@
 - type: accessGroup
   id: AllVouchersAccess
   tags:
-  - USSPGadyuka
-  - USSPTunguska
-  - USSPGruznyk
-  - USSPDrakon
-  - USSPNatisk
-  - USSPSekunda
-  - USSPSulak
+  - USSPBasic
+  - USSPIntermediate
+  - USSPAdvanced
   - VoucherProwler
   - VoucherFlyssa
 
 - type: accessLevel
-  id: USSPGadyuka
+  id: USSPBasic
   name: id-card-access-level-voucher
 
 - type: accessLevel
-  id: USSPTunguska
+  id: USSPIntermediate
   name: id-card-access-level-voucher
 
 - type: accessLevel
-  id: USSPGruznyk
-  name: id-card-access-level-voucher
-
-- type: accessLevel
-  id: USSPDrakon
-  name: id-card-access-level-voucher
-
-- type: accessLevel
-  id: USSPNatisk
-  name: id-card-access-level-voucher
-
-- type: accessLevel
-  id: USSPSekunda
-  name: id-card-access-level-voucher
-
-- type: accessLevel
-  id: USSPSulak
+  id: USSPAdvanced
   name: id-card-access-level-voucher
 
 - type: accessLevel
