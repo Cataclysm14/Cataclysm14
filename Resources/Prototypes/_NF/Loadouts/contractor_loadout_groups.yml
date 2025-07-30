@@ -17,6 +17,7 @@
 # SPDX-FileCopyrightText: 2025 ScyronX
 # SPDX-FileCopyrightText: 2025 UnicornOnLSD
 # SPDX-FileCopyrightText: 2025 Whatstone
+# SPDX-FileCopyrightText: 2025 core-mene
 # SPDX-FileCopyrightText: 2025 dustylens
 # SPDX-FileCopyrightText: 2025 gixer94
 # SPDX-FileCopyrightText: 2025 starch
@@ -662,6 +663,7 @@
   - ContractorClothingOuterPoncho
   - ContractorClothingOuterPonchoClassic
   - ContractorClothingNeckCloakBlack # Monolith
+  - ContractorClothingNeckCloakCOG # Monolith
   - ContractorClothingNeckCloakMiner
   - ContractorClothingNeckCloakMoth
   - ContractorClothingNeckScarfChaplainStole
@@ -695,7 +697,8 @@
   - ContractorClothingNeckMantleCE
   - ContractorClothingNeckCloakVoid
   - ContractorClothingNeckBling
-  - ContractorClothingNeckUNSAArmband
+  - ContractorClothingNeckArmbandUNSA
+  - ContractorClothingNeckMantleBH # Mono
 
 - type: loadoutGroup
   id: ContractorPDA
@@ -770,6 +773,7 @@
   - ContractorAnomalyScanner
   - ContractorBucket
   - ContractorGeigerCounter
+  - ContractorBinoculars
   - ContractorWeaponProtoKineticAccelerator
   - ContractorPinpointerUniversal
   - ContractorShipyardRCD
@@ -811,6 +815,7 @@
   id: ContractorFace
   name: loadout-group-contractor-face
   loadouts:
+  - ContractorClothingMaskCOG # MONO
   - ContractorClothingMaskBreath
   - ContractorClothingMaskBreathMedical
   - ContractorClothingMaskSterile

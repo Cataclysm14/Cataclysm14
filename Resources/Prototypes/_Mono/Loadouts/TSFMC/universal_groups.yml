@@ -13,6 +13,9 @@
   - TsfmcClothingBackpack
   - TsfmcClothingSatchel
   - TsfmcClothingDuffel
+  - MonoSecurityGuardBackpack
+  - MonoSecurityGuardSatchel
+  - MonoSecurityGuardDuffel
   fallbacks:
   - TsfmcClothingBackpack
 
@@ -26,36 +29,41 @@
   - TsfmcClothingBackpack
   - TsfmcClothingSatchel
   - TsfmcClothingDuffel
+  - MonoSecurityGuardBackpack
+  - MonoSecurityGuardSatchel
+  - MonoSecurityGuardDuffel
   fallbacks:
   - TsfmcEngiClothingModsuit
 
 - type: loadoutGroup
   id: TsfmcJumpsuit
   name: loadout-group-contractor-jumpsuit
-  hidden: true # No point in showing this, it gets auto-selected.
   minLimit: 1
   loadouts:
   - TsfmcClothingJumpsuit
+  - TsfmcClothingJumpsuitType47D
   fallbacks:
   - TsfmcClothingJumpsuit
 
 - type: loadoutGroup
   id: TsfmcJumpsuitEngi
   name: loadout-group-contractor-jumpsuit
-  hidden: true # No point in showing this, it gets auto-selected.
   minLimit: 1
   loadouts:
   - TsfmcEngineeringClothingJumpsuit
+  - TsfmcClothingJumpsuit
+  - TsfmcClothingJumpsuitType47D
   fallbacks:
   - TsfmcEngineeringClothingJumpsuit
 
 - type: loadoutGroup
   id: TsfmcShoes
   name: loadout-group-contractor-shoes
-  hidden: true # No point in showing this, it gets auto-selected.
   minLimit: 1
+  maxLimit: 1
   loadouts:
   - TsfmcCombatBoots
+  - TsfmcJackboots
   fallbacks:
   - TsfmcCombatBoots
 
@@ -73,6 +81,7 @@
   id: TsfmcBrigmedicGloves
   name: loadout-group-contractor-gloves
   minLimit: 1
+  maxLimit: 1
   loadouts:
   - TsfmcCombatGloves
   - TsfmcNitrileGloves
@@ -83,10 +92,11 @@
 - type: loadoutGroup
   id: TsfmcBelt
   name: loadout-group-contractor-belt
-  hidden: true # No point in showing this, it gets auto-selected.
   minLimit: 1
+  maxLimit: 1
   loadouts:
   - TsfmcCombatWebbing
+  - TsfmcCombatWebbingLarge
   fallbacks:
   - TsfmcCombatWebbing
 
@@ -94,6 +104,7 @@
   id: TsfmcUtilBelt
   name: loadout-group-contractor-belt
   minLimit: 1
+  maxLimit: 1
   loadouts:
   - TsfClothingBeltUtilityEngineering
   - TsfClothingBeltUtilityEngineeringPro
@@ -103,21 +114,34 @@
 - type: loadoutGroup
   id: TsfmcBrigmedicBelt
   name: loadout-group-contractor-belt
-  hidden: true # No point in showing this, it gets auto-selected.
   minLimit: 1
+  maxLimit: 1
   loadouts:
   - TsfmcCombatWebbingMedical
+  - TsfmcCombatWebbing
+  - TsfmcCombatWebbingLarge
   fallbacks:
   - TsfmcCombatWebbingMedical
 
 - type: loadoutGroup
   id: TsfmcFace
   name: loadout-group-contractor-face
-  hidden: true # No point in showing this, it gets auto-selected.
+  minLimit: 1
+  maxLimit: 1
   loadouts:
+  - TsfmcGaiter
   - TsfmcGasmask
   fallbacks:
-  - TsfmcGasmask
+  - TsfmcGaiter
+
+- type: loadoutGroup
+  id: TsfmcBalaclava
+  name: loadout-group-contractor-balaclava
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - TsfmcBalaclava
+  - TsfmcBalaclavaAlt
 
 - type: loadoutGroup
   id: TsfmcGlasses
@@ -167,6 +191,7 @@
 - type: loadoutGroup
   id: TsfmcHead
   name: loadout-group-contractor-head
+  minLimit: 0
   loadouts:
   - TsfmcHelmet
   - TsfmcBeret
@@ -174,6 +199,7 @@
 - type: loadoutGroup
   id: TsfmcHeadMedic
   name: loadout-group-contractor-head
+  minLimit: 0
   loadouts:
   - TsfmcHelmet
   - TsfmcBeret
@@ -182,6 +208,7 @@
 - type: loadoutGroup
   id: TsfmcHeadEngi
   name: loadout-group-contractor-head
+  minLimit: 0
   loadouts:
   - TsfmcBeretEngineer
 

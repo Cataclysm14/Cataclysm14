@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: loadout
+  id: TsfmcBalaclava
+  equipment:
+    balaclava: ClothingBalaclavaSkiMaskBlack
+
+- type: loadout
+  id: TsfmcBalaclavaAlt
+  equipment:
+    balaclava: ClothingBalaclavaSkiMaskGray

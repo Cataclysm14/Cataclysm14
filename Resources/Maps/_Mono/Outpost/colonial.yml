@@ -69,9 +69,7 @@ entities:
     - type: Transform
     - type: Map
       mapPaused: True
-    - type: PhysicsMap
     - type: GridTree
-    - type: MovedGrids
     - type: Broadphase
     - type: Parallax
       parallax: FrontierStation
@@ -13786,7 +13784,7 @@ entities:
       powerLoad: 5
     - type: Battery
       startingCharge: 0
-- proto: ComputerWallmountRadar
+- proto: ComputerWallmountAdvancedRadar
   entities:
   - uid: 1688
     components:

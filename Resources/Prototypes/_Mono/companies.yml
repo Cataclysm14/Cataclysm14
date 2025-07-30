@@ -15,8 +15,10 @@
 # SPDX-FileCopyrightText: 2025 gixer94
 # SPDX-FileCopyrightText: 2025 marklyfie4
 # SPDX-FileCopyrightText: 2025 marklyfied
+# SPDX-FileCopyrightText: 2025 pumpkin-pwr
 # SPDX-FileCopyrightText: 2025 significant harassment
 # SPDX-FileCopyrightText: 2025 starch
+# SPDX-FileCopyrightText: 2025 thoughtlessuser
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -110,8 +112,8 @@
   description: midnight-arms-co-description
   color: "#FF2E2E"
   image: /Textures/_Mono/Companies/MACo.png
-  
-  
+
+
 # Major companies
 
 - type: company
@@ -128,7 +130,7 @@
   name: Aetherion Dynamics
   description: aetherion-dynamics-description
   color: "#7E72B2"
-  
+
 - type: company
   id: HorizonEnergy
   form: Protagonist
@@ -154,7 +156,7 @@
   name: Civil Defense Militia
   description: civil-defense-milita-description
   color: "#666600"
-  
+
 - type: company
   id: UllmanIndustries
   form: Protagonist
@@ -162,7 +164,7 @@
   description: ullman-industries-description
   color: "#52326A"
   image: /Textures/_Mono/Companies/ullman_industries.png
-  
+
 - type: company
   id: NosskeEienResearchandDevelopment
   form: Protagonist
@@ -197,6 +199,12 @@
   color: "#DEBC50"
   image: /Textures/_Mono/Companies/CMG.png
 
+- type: company
+  id: TheHive
+  form: Protagonist
+  name: The Hive
+  description: The-Hive-description
+  color: "#5918a8"
 
 # Black Market Companies
 
@@ -207,7 +215,25 @@
   description: paycheck-bratva-description
   color: "#7a0303"
 
-  
+- type: company
+  id: CerberusSurplusProvisions
+  form: Antagonist
+  name: Cerberus Surplus Provisionaries
+  description: cerberus-surplus-provisions
+  color: "#aa1010"
+  image: /Textures/_Mono/Companies/CSP.png
+  disabled: true
+  logins:
+    - GoobieWoob
+    - Coolzman
+    - Lumpy_the_Clown
+    - coolfied
+    - Callington
+    - Operator_Talon5
+    - CdrGreenwall
+    - MarssSett18
+    - Administratorx # Hopefully this doesnt get denied because it has adminstrator in it smh
+    
 # ====Rogue / Antag. Companies====
 - type: company
   id: TheViperGroup

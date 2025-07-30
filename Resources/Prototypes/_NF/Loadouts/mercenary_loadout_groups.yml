@@ -6,9 +6,11 @@
 # SPDX-FileCopyrightText: 2024 steinhauer.erhard
 # SPDX-FileCopyrightText: 2025 Bonaout
 # SPDX-FileCopyrightText: 2025 Daniel Lenrd
+# SPDX-FileCopyrightText: 2025 Redrover1760
 # SPDX-FileCopyrightText: 2025 UnicornOnLSD
 # SPDX-FileCopyrightText: 2025 Whatstone
 # SPDX-FileCopyrightText: 2025 core-mene
+# SPDX-FileCopyrightText: 2025 starch
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -28,6 +30,7 @@
   - MercenaryClothingUniformJumpsuitMilitaryTurtleneckBlueMercenaryCaptain
   - MercenaryClothingUniformJumpsitDrakeIndustriesWatchdog
   subgroups:
+  - MonoMercenaryJumpsuit # Mono
   - PilotJumpsuit
   - ContractorJumpsuit
   fallbacks:
@@ -46,6 +49,7 @@
   - SecuritySatchel
   - SecurityDuffel
   subgroups:
+  - MonoMercenaryBackpack # Mono
   - PilotBackpack
   - ContractorBackpack
   fallbacks:
@@ -64,6 +68,7 @@
   - MercenaryClothingOuterArmorPunkRandomized # Punkish (Randomized visuals)
   - MercenaryClothingOuterArmorCaptainCarapace
   subgroups:
+  - MonoMercenaryOuterClothing # Mono
   - PilotOuterClothing
   - ContractorOuterClothing
 
@@ -97,6 +102,7 @@
   subgroups:
   - PilotHead
   - ContractorHead
+  - MonoMercenaryHead
 
 - type: loadoutGroup
   id: MercenaryEars
@@ -121,6 +127,7 @@
   - MercenaryClothingHandsMercenaryGlovesCombat
   - MercenaryClothingHandsGlovesCombat
   subgroups:
+  - MonoMercenaryGloves # Mono
   - PilotGloves
   - ContractorGloves
 
@@ -143,6 +150,7 @@
   - MercenaryClothingEyesGlassesMercenary
   - MercenaryClothingEyesGlassesSunglasses
   subgroups:
+  - MonoMercenaryBallisticGoggles # Mono
   - PilotGlasses
   - ContractorGlasses
 
@@ -169,4 +177,5 @@
   - MercenaryClothingBeltMilitaryWebbingMed
   - MercenaryClothingBeltSecurity
   subgroups:
+  - MonoMercenaryChestrig # Mono
   - ContractorBelt

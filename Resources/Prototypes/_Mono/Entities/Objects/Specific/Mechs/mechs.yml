@@ -1,5 +1,6 @@
 # SPDX-FileCopyrightText: 2025 Redrover1760
 # SPDX-FileCopyrightText: 2025 ScyronX
+# SPDX-FileCopyrightText: 2025 starch
 # SPDX-FileCopyrightText: 2025 wewman222
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
@@ -103,7 +104,7 @@
     mechToPilotDamageMultiplier: 0
     maxEquipmentAmount: 3
     airtight: true
-    maxIntegrity: 1200
+    maxIntegrity: 2400
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -115,6 +116,19 @@
       types:
         Blunt: 25
         Structural: 0
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 4800
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: start
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
   - type: RadarConsole
     maxRange: 256
     followEntity: true
@@ -194,7 +208,7 @@
     mechToPilotDamageMultiplier: 0
     maxEquipmentAmount: 3
     airtight: true
-    maxIntegrity: 900
+    maxIntegrity: 1800
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -206,6 +220,19 @@
       types:
         Blunt: 25
         Structural: 0
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 3600
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: start
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
   - type: RadarConsole
     maxRange: 256
     followEntity: true
@@ -276,7 +303,7 @@
     mechToPilotDamageMultiplier: 0
     maxEquipmentAmount: 3
     airtight: false
-    maxIntegrity: 500
+    maxIntegrity: 1000
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -288,6 +315,19 @@
       types:
         Blunt: 25
         Structural: 0
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 2000
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: start
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
   # Terrible radar, mostly good for navigating planets
   - type: RadarConsole
     maxRange: 56
@@ -358,7 +398,7 @@
     mechToPilotDamageMultiplier: 0
     maxEquipmentAmount: 3
     airtight: true
-    maxIntegrity: 1800
+    maxIntegrity: 4000
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -370,6 +410,19 @@
       types:
         Blunt: 50
         Structural: 0
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 8000
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: start
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
   - type: RadarConsole
     maxRange: 256
     followEntity: true
@@ -440,7 +493,7 @@
     mechToPilotDamageMultiplier: 0
     maxEquipmentAmount: 3
     airtight: true
-    maxIntegrity: 1000
+    maxIntegrity: 2250
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -452,6 +505,19 @@
       types:
         Blunt: 50
         Structural: 0
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 4500
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: start
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
   - type: RadarConsole
     maxRange: 768 #It's a radar/EWAC platform.
     followEntity: true
@@ -522,7 +588,7 @@
     mechToPilotDamageMultiplier: 0
     maxEquipmentAmount: 2
     airtight: true
-    maxIntegrity: 1200
+    maxIntegrity: 2000
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -534,6 +600,19 @@
       types:
         Blunt: 50
         Structural: 0
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 4000
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: start
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
   - type: RadarConsole
     maxRange: 256
     followEntity: true

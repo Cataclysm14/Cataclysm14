@@ -6,7 +6,13 @@
   id: TsfmcCombatWebbing
   name: chest rig
   equipment:
-    belt: ClothingBeltMilitaryWebbing
+    belt: ClothingBeltWebbingsNormalTSFMC
+
+- type: loadout
+  id: TsfmcCombatWebbingLarge
+  name: large chest rig
+  equipment:
+    belt: ClothingBeltWebbingsBigTSFMC
 
 # Brigmedic
 - type: loadout

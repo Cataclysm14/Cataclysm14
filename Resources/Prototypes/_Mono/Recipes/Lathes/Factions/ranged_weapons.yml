@@ -1,3 +1,4 @@
+# SPDX-FileCopyrightText: 2025 BoskiYourk
 # SPDX-FileCopyrightText: 2025 HungryCuban
 # SPDX-FileCopyrightText: 2025 Redrover1760
 # SPDX-FileCopyrightText: 2025 starch
@@ -85,15 +86,15 @@
 
 # TSF MR-8
 
-- type: latheRecipe
-  parent: BaseWeaponRecipeLong
-  id: WeaponLMGMR8BTSF
-  result: WeaponLMGMR8B
-  materials:
-    Steel: 6000
-    Plasteel: 3000
-    Synthalloy: 2500
-    Silver: 1500
+#- type: latheRecipe
+#  parent: BaseWeaponRecipeLong
+#  id: WeaponLMGMR8BTSF
+#  result: WeaponLMGMR8B
+#  materials:
+#    Steel: 6000
+#    Plasteel: 3000
+#    Synthalloy: 2500
+#    Silver: 1500
 
 - type: latheRecipe
   parent: BaseWeaponRecipeLong
@@ -240,3 +241,13 @@
     Plasteel: 3000
     Wood: 1000
     Uranium: 1500
+
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
+  id: WeaponShotgunBigLeadyUSSP
+  result: WeaponShotgunBigLeady
+  materials:
+    Steel: 2500
+    Plasteel: 2000
+    Plastic: 1500
+    Wood: 1000
