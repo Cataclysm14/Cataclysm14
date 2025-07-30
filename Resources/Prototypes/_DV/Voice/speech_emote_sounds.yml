@@ -72,6 +72,8 @@
       collection: Weh
     Hew:
       collection: Hew
+    Bagawk: # Mono
+      collection: Bagawk # Mono
     Gasp:
       collection: HarpyGasp
     DefaultDeathgasp:

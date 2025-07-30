@@ -250,6 +250,10 @@
       path: /Audio/Voice/Vox/shriek1.ogg
     Laugh:
       path: /Audio/Voice/Vox/vox_laugh.ogg
+    Bagawk: # Mono
+      collection: Bagawk # Mono
+    Chirp:
+      collection: ResomiChirp
     Honk:
       collection: BikeHorn
     Weh:
