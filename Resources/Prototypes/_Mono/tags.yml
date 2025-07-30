@@ -315,6 +315,9 @@
 - type: Tag
   id: 150mmShell
 
+- type: Tag
+  id: LightFighterOrdinance
+
 # Kudzu ignore tag
 
 - type: Tag

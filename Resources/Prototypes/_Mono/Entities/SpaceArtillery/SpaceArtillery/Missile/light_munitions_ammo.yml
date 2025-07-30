@@ -16,10 +16,10 @@
         Blunt: 7500
         Heat: 500
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/mini_rocket.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/GPO.rsi
     layers:
-    - state: mini-rocket
-    scale: 3, 3
+    - state: GPO
+    scale: 1, 1
   - type: Ammo
     muzzleFlash: null
   - type: ShipWeaponProjectile
@@ -87,11 +87,11 @@
     proto: LightFighterOrdinanceGPOProjectile
     deleteOnSpawn: true
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/asm220.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/GPO.rsi
     layers:
-    - state: standard
+    - state: GPO
       map: ["enum.AmmoVisualLayers.Base"]
-    scale: 0.4, 0.4
+    scale: 1, 1
   - type: Appearance
   - type: SpentAmmoVisuals
 
@@ -110,10 +110,10 @@
         Blunt: 600
         Heat: 1000
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/mini_rocket.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/Zenith.rsi
     layers:
-    - state: mini-rocket
-    scale: 3, 3
+    - state: Zenith
+    scale: 1.3, 1
   - type: Ammo
     muzzleFlash: null
   - type: ShipWeaponProjectile
@@ -123,7 +123,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 15
+    lifetime: 10
   - type: PointLight
     radius: 5
     color: orange
@@ -133,7 +133,7 @@
     explosionType: HardBombShipGun
     maxIntensity: 1000
     intensitySlope: 10
-    totalIntensity: 2000
+    totalIntensity: 4000
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
@@ -192,11 +192,11 @@
     proto: LightFighterOrdinanceZenithProjectile
     deleteOnSpawn: true
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/asm220.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/Zenith.rsi
     layers:
-    - state: ecm
+    - state: Zenith
       map: ["enum.AmmoVisualLayers.Base"]
-    scale: 0.55, 0.5
+    scale: 1.3, 1
   - type: Appearance
   - type: SpentAmmoVisuals
 
@@ -211,13 +211,13 @@
   - type: Projectile
     damage:
       types:
-        Structural: 10000
+        Structural: 15000
         Pierce: 1500
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/mini_rocket.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/quasar.rsi
     layers:
-    - state: mini-rocket
-    scale: 0.5, 0.5
+    - state: quasarshot
+    scale: 0.7, 0.7
   - type: Ammo
     muzzleFlash: null
   - type: ShipWeaponProjectile
@@ -227,17 +227,17 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 0.75
+    lifetime: 0.8
   - type: PointLight
     radius: 5
-    color: orange
+    color: green
     energy: 2
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBombShipGun
-    maxIntensity: 1000
+    maxIntensity: 500
     intensitySlope: 10
-    totalIntensity: 1000
+    totalIntensity: 500
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
@@ -263,11 +263,11 @@
     proto: LightFighterOrdinanceQuasarProjectile
     deleteOnSpawn: true
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/asm220.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/quasar.rsi
     layers:
-    - state: ecm
+    - state: quasar
       map: ["enum.AmmoVisualLayers.Base"]
-    scale: 0.5, 0.5
+    scale: 1, 1
   - type: Appearance
   - type: SpentAmmoVisuals
 
