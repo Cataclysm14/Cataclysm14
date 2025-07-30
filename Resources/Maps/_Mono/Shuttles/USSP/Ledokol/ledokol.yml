@@ -1,24 +1,11 @@
-# SPDX-FileCopyrightText: 2023 Leon Friedrich
-# SPDX-FileCopyrightText: 2023 Nemanja
-# SPDX-FileCopyrightText: 2023 Scribbles0
-# SPDX-FileCopyrightText: 2023 TsjipTsjip
-# SPDX-FileCopyrightText: 2024 Kara
-# SPDX-FileCopyrightText: 2024 Mr. 27
-# SPDX-FileCopyrightText: 2024 QueerNB
-# SPDX-FileCopyrightText: 2024 ScarKy0
-# SPDX-FileCopyrightText: 2024 metalgearsloth
-# SPDX-FileCopyrightText: 2025 BoskiYourk
-#
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
 meta:
   format: 7
   category: Grid
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/30/2025 00:08:53
-  entityCount: 2629
+  time: 07/30/2025 03:00:20
+  entityCount: 2636
 maps: []
 grids:
 - 1
@@ -1402,13 +1389,13 @@ entities:
     - type: Transform
       pos: 51.5,12.5
       parent: 1
-- proto: AirlockShuttle
+- proto: AirlockExternalShuttleUSSPLocked
   entities:
   - uid: 232
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: 26.5,30.5
+      pos: 28.5,30.5
       parent: 1
   - uid: 751
     components:
@@ -1420,33 +1407,31 @@ entities:
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: 28.5,30.5
+      pos: 26.5,30.5
       parent: 1
-- proto: AirlockShuttleSyndicate
-  entities:
   - uid: 767
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 54.5,13.5
-      parent: 1
-  - uid: 768
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 54.5,14.5
       parent: 1
+  - uid: 768
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 54.5,13.5
+      parent: 1
   - uid: 769
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
-      pos: 0.5,13.5
+      pos: 0.5,14.5
       parent: 1
   - uid: 770
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
-      pos: 0.5,14.5
+      pos: 0.5,13.5
       parent: 1
 - proto: AirlockUSSP
   entities:
@@ -1501,7 +1486,7 @@ entities:
       pos: 28.5,15.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -3263.6716
+      secondsUntilStateChange: -3536.6553
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1552,7 +1537,7 @@ entities:
       pos: 34.5,20.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -3285.7383
+      secondsUntilStateChange: -3558.722
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1563,7 +1548,7 @@ entities:
       pos: 20.5,13.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -3648.4043
+      secondsUntilStateChange: -3921.388
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1887,6 +1872,50 @@ entities:
     components:
     - type: Transform
       pos: 52.5,16.5
+      parent: 1
+- proto: AtmosDeviceFanDirectional
+  entities:
+  - uid: 1085
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 0.5,13.5
+      parent: 1
+  - uid: 2631
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 0.5,14.5
+      parent: 1
+  - uid: 2632
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 26.5,30.5
+      parent: 1
+  - uid: 2633
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 27.5,30.5
+      parent: 1
+  - uid: 2634
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 28.5,30.5
+      parent: 1
+  - uid: 2635
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 54.5,14.5
+      parent: 1
+  - uid: 2636
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 54.5,13.5
       parent: 1
 - proto: AtmosFixBlockerMarker
   entities:
@@ -11726,17 +11755,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 28.5,26.5
       parent: 1
-    - type: DeviceLinkSource
-      linkedPorts:
-        751:
-        - - Pressed
-          - DoorBolt
-        232:
-        - - Pressed
-          - DoorBolt
-        764:
-        - - Pressed
-          - DoorBolt
 - proto: LockerWallMaterialsFuelAmeJarFilled
   entities:
   - uid: 2074
