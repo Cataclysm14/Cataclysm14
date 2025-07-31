@@ -28,4 +28,4 @@
   recipes:
   - OreProcessorIndustrialMachineCircuitboard
   # - CargoTelepadMachineCircuitboard # Frontier
-  # - ShuttleGunKineticCircuitboard # Frontier
+  - ShuttleGunKineticCircuitboard
