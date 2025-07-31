@@ -10,7 +10,7 @@
             </PanelContainer.PanelOverride>
             <BoxContainer Orientation="Vertical">
         <BoxContainer Orientation="Horizontal">
-            <PanelContainer VerticalExpand="True" HorizontalExpand="True">
+            <PanelContainer VerticalExpand="True" HorizontalExpand="True" Margin="2 2">
                 <PanelContainer.PanelOverride>
                     <gfx:StyleBoxFlat BorderThickness="3" BorderColor="#303030" BackgroundColor="#0f0f0f"/>
                 </PanelContainer.PanelOverride>
@@ -25,8 +25,8 @@
             </PanelContainer>
         </BoxContainer>
         <LineEdit Name="WithdrawEdit" MinSize="80 0"
-                  PlaceHolder="{Loc 'bank-atm-menu-withdraw-amount'}"/>
-        <PanelContainer VerticalExpand="False" HorizontalExpand="True">
+                  PlaceHolder="{Loc 'bank-atm-menu-withdraw-amount'}" Margin="2 2"/>
+        <PanelContainer VerticalExpand="False" HorizontalExpand="True" Margin="2 2">
             <PanelContainer.PanelOverride>
                 <gfx:StyleBoxFlat BorderThickness="3" BorderColor="#3d3d3d" BackgroundColor="#111111" />
             </PanelContainer.PanelOverride>
@@ -35,12 +35,12 @@
                 StyleClasses="ButtonSquare"
                 Margin="4 4 4 4"/>
         </PanelContainer>
-        <PanelContainer VerticalExpand="False" HorizontalExpand="True">
+        <PanelContainer VerticalExpand="False" HorizontalExpand="True" Margin="2 2">
             <PanelContainer.PanelOverride>
                 <gfx:StyleBoxFlat BorderThickness="2" BorderColor="#262626" BackgroundColor="#111111" />
             </PanelContainer.PanelOverride>
         <BoxContainer Orientation="Horizontal">
-            <PanelContainer VerticalExpand="True" HorizontalExpand="True">
+            <PanelContainer VerticalExpand="True" HorizontalExpand="True" Margin="2 2">
                 <PanelContainer.PanelOverride>
                     <gfx:StyleBoxFlat BorderThickness="3" BorderColor="#303030" BackgroundColor="#0f0f0f"/>
                 </PanelContainer.PanelOverride>
@@ -55,7 +55,7 @@
             </PanelContainer>
         </BoxContainer>
         </PanelContainer>
-        <PanelContainer VerticalExpand="False" HorizontalExpand="True">
+        <PanelContainer VerticalExpand="False" HorizontalExpand="True" Margin="2 2">
             <PanelContainer.PanelOverride>
                 <gfx:StyleBoxFlat BorderThickness="3" BorderColor="#3d3d3d" BackgroundColor="#111111" />
             </PanelContainer.PanelOverride>
