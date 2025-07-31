@@ -1432,10 +1432,11 @@
       Min: 1
       Max: 5
       PotencyDivisor: 20
-  seedless: true # Frontier
-  preventSwabbing: true # Frontier
-  preventClipping: true # Frontier
-  permanentlySeedless: true # Frontier
+#Mono - antifun disabled
+#  seedless: true # Frontier
+#  preventSwabbing: true # Frontier
+#  preventClipping: true # Frontier
+#  permanentlySeedless: true # Frontier
 
 - type: seed
   id: fakeCapfruit
@@ -1462,10 +1463,11 @@
       Min: 1
       Max: 5
       PotencyDivisor: 20
-  seedless: true # Frontier
-  preventSwabbing: true # Frontier
-  preventClipping: true # Frontier
-  permanentlySeedless: true # Frontier
+#Mono - antifun disabled
+#  seedless: true # Frontier
+#  preventSwabbing: true # Frontier
+#  preventClipping: true # Frontier
+#  permanentlySeedless: true # Frontier
 
 - type: seed
   id: realCapfruit
@@ -1492,10 +1494,11 @@
       Min: 1
       Max: 5
       PotencyDivisor: 20
-  seedless: true # Frontier
-  preventSwabbing: true # Frontier
-  preventClipping: true # Frontier
-  permanentlySeedless: true # Frontier
+#Mono - antifun disabled
+#  seedless: true # Frontier
+#  preventSwabbing: true # Frontier
+#  preventClipping: true # Frontier
+#  permanentlySeedless: true # Frontier
 
 - type: seed
   id: rice

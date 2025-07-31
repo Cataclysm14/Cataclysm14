@@ -246,4 +246,5 @@
       Min: 1
       Max: 4
       PotencyDivisor: 25
-  preventSwabbing: true # they're bees
+#Mono - antifun disabled: we can just pretend bees are affected because they eat pollen so we can keep the FUN aspects of botany intact
+#  preventSwabbing: true # they're bees
