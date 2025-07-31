@@ -8,7 +8,7 @@
   id: Elektritchka
   parent: BaseVessel
   name: UNR Eletritchka
-  description:  An unregistered combat outfited electric train, armored and made space faring by the Paycheck Bratva, for the end of illegal activities. Usually found in the hands of ne'er do wells. Runs on bananium generators, and has a MIL IFF.
+  description:  An unregistered combat outfited electric train, armored and made space faring by the Paycheck Bratva, for the end of illegal activities. Usually found in the hands of ne'er do wells. Runs on bananium generators.
   price: 79000 # its cheap since if in combat, it can easily be broken in half. Also sub-par guns.
   category: Medium
   group: Expedition
