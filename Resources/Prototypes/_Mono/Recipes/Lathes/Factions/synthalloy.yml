@@ -5,6 +5,8 @@
 - type: latheRecipe
   id: SynthalloyProductionTsf
   result: MaterialSynthalloy10
+  categories:
+  - FactionEquipment
   completetime: 1
   materials:
     Plasteel: 1500
@@ -14,6 +16,8 @@
 - type: latheRecipe
   id: SynthalloyProductionTechDisk
   result: MaterialSynthalloy10
+  categories:
+  - FactionEquipment
   completetime: 2
   materials:
     Plasteel: 5000

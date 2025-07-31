@@ -3,6 +3,10 @@
   id: WeaponLaserPistolNF
   parent: BaseWeaponRecipeLong
   result: WeaponLaserPistolNF
+  categories: # Mono
+  - Sidearms
+  - Energy
+  - Weapons
   materials:
     Steel: 1200
     Glass: 800
@@ -12,6 +16,10 @@
   id: WeaponRevolverArgenti
   parent: BaseWeaponRecipeLong
   result: WeaponRevolverArgenti
+  categories: # Mono
+  - Sidearms
+  - Ballistic
+  - Weapons
   materials:
     Steel: 1500
     Plasteel: 500
@@ -20,6 +28,10 @@
   id: WeaponPistolMk58NF
   parent: BaseWeaponRecipeLong
   result: WeaponPistolMk58
+  categories: # Mono
+  - Sidearms
+  - Ballistic
+  - Weapons
   materials:
     Steel: 1000
     Plasteel: 1200
@@ -29,6 +41,10 @@
   id: WeaponShotgunDoubleBarreled
   parent: BaseWeaponRecipeLong
   result: WeaponShotgunDoubleBarreled
+  categories: # Mono
+  - Shotguns
+  - Ballistic
+  - Weapons
   materials:
     Steel: 2000
     Plasteel: 800
@@ -38,6 +54,10 @@
   id: WeaponShotgunKammererNF
   parent: BaseWeaponRecipeLong
   result: WeaponShotgunKammerer
+  categories: # Mono
+  - Shotguns
+  - Ballistic
+  - Weapons
   materials:
     Steel: 500
     Plasteel: 1500
@@ -48,6 +68,10 @@
   id: WeaponRifleNovaliteC1
   parent: BaseWeaponRecipeLong
   result: WeaponRifleNovaliteC1
+  categories: # Mono
+  - Rifles
+  - Ballistic
+  - Weapons
   materials:
     Steel: 2500
     Plasteel: 1200
@@ -57,6 +81,10 @@
   id: WeaponRifleGestio
   parent: BaseWeaponRecipeLong
   result: WeaponRifleGestio
+  categories: # Mono
+  - Rifles
+  - Ballistic
+  - Weapons
   materials:
     Steel: 2500
     Plasteel: 1200
@@ -66,6 +94,9 @@
   id: CrossbowModern
   parent: BaseWeaponRecipeLong
   result: CrossbowModern
+  categories: # Mono
+  - Ballistic
+  - Weapons
   materials:
     Steel: 1000
     Plasteel: 500

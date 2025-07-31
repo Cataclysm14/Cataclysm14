@@ -5,6 +5,8 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseShipgunAmmoRecipe
+  categories:
+  - ShipAmmo
   abstract: true
   materials:
     Steel: 2000

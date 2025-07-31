@@ -26,6 +26,9 @@
   abstract: true
   id: NFBaseMaskArmoredRecipe
   parent: NFBaseArmorRecipe
+  categories: # Mono
+  - ArmorNF
+  - ClothesNF
   completetime: 2
   materials:
     Durathread: 300

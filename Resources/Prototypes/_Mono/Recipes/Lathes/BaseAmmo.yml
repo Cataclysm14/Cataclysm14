@@ -2,12 +2,15 @@
 # boxes = magazine * 3-ish
 #.45 magnum gonna use intermediate
 
-#Base intermediate ammo magazines for 5.56, 5.45, 7.62x39mm and potential others 
+#Base intermediate ammo magazines for 5.56, 5.45, 7.62x39mm and potential others
 #Magazines:     [TOTAL = 475]
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoFMJIntermediateMagazineRecipe
+  categories:
+  - FmjAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 475
@@ -15,6 +18,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoRubberIntermediateMagazineRecipe
+  categories:
+  - MiscAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 75
@@ -23,6 +29,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoIncendiaryIntermediateMagazineRecipe
+  categories:
+  - IncenAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 75
@@ -32,6 +41,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoPracticeIntermediateMagazineRecipe
+  categories:
+  - PracticeAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 47
@@ -39,6 +51,8 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoEmptyIntermediateMagazineRecipe
+  categories:
+  - Ammo
   abstract: true
   materials:
     Steel: 47
@@ -46,17 +60,23 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoUraniumIntermediateMagazineRecipe
+  categories:
+  - UraniumAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 175
     Uranium: 300
 
-#Base intermediate ammo speedloaders for .45 magnum, 5.56, 5.45, 7.62x39mm and potential others 
+#Base intermediate ammo speedloaders for .45 magnum, 5.56, 5.45, 7.62x39mm and potential others
 #speedloaders:     [TOTAL = 175]
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoFMJIntermediateSpeedloaderRecipe
+  categories:
+  - FmjAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 175
@@ -64,6 +84,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoRubberIntermediateSpeedloaderRecipe
+  categories:
+  - MiscAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 40
@@ -72,6 +95,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoIncendiaryIntermediateSpeedloaderRecipe
+  categories:
+  - IncenAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 25
@@ -81,6 +107,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoPracticeIntermediateSpeedloaderRecipe
+  categories:
+  - PracticeAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 17
@@ -95,17 +124,23 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoUraniumIntermediateSpeedloaderRecipe
+  categories:
+  - UraniumAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 60
     Uranium: 125
 
-#Base intermediate ammo boxes for 5.56, 5.45, 7.62x39mm and potential others 
+#Base intermediate ammo boxes for 5.56, 5.45, 7.62x39mm and potential others
 #Boxes:     [TOTAL = 1425]
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoFMJIntermediateAmmoBoxRecipe
+  categories:
+  - FmjAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 1425
@@ -113,6 +148,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoRubberIntermediateAmmoBoxRecipe
+  categories:
+  - MiscAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 570
@@ -121,6 +159,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoIncendiaryIntermediateAmmoBoxRecipe
+  categories:
+  - IncenAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 285
@@ -130,6 +171,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoPracticeIntermediateAmmoBoxRecipe
+  categories:
+  - PracticeAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 142
@@ -137,17 +181,23 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoUraniumIntermediateAmmoBoxRecipe
+  categories:
+  - UraniumAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 570
     Uranium: 855
 
-#Base Fully powered ammo magazines for all the other 7.62 (-7.62x39mm) 
+#Base Fully powered ammo magazines for all the other 7.62 (-7.62x39mm)
 #Magazines: [TOTAL = 575]
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoFMJFullyPoweredMagazineRecipe
+  categories:
+  - FmjAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 575
@@ -155,6 +205,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoRubberFullyPoweredMagazineRecipe
+  categories:
+  - MiscAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 125
@@ -163,6 +216,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoIncendiaryFullyPoweredMagazineRecipe
+  categories:
+  - IncenAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 100
@@ -172,6 +228,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoPracticeFullyPoweredMagazineRecipe
+  categories:
+  - PracticeAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 57
@@ -186,17 +245,23 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoUraniumFullyPoweredMagazineRecipe
+  categories:
+  - UraniumAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 200
     Uranium: 375
 
-#Base Fully powered ammo boxes for all the other 7.62 (-7.62x39mm) 
+#Base Fully powered ammo boxes for all the other 7.62 (-7.62x39mm)
 #Boxes:     [TOTAL = 1725]
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoFMJFullyPoweredAmmoBoxRecipe
+  categories:
+  - FmjAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 1725
@@ -204,6 +269,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoRubberFullyPoweredAmmoBoxRecipe
+  categories:
+  - MiscAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 345
@@ -212,6 +280,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoIncendiaryFullyPoweredAmmoBoxRecipe
+  categories:
+  - IncenAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 345
@@ -221,6 +292,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoPracticeFullyPoweredAmmoBoxRecipe
+  categories:
+  - PracticeAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 172
@@ -228,17 +302,23 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoUraniumFullyPoweredAmmoBoxRecipe
+  categories:
+  - UraniumAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 575
     Uranium: 1150
 
-#Base Fully powered ammo magazines for all the other 7.62 (-7.62x39mm) 
+#Base Fully powered ammo magazines for all the other 7.62 (-7.62x39mm)
 #speedloaders:     [TOTAL = 225]
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoFMJFullyPoweredSpeedloaderRecipe
+  categories:
+  - FmjAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 225
@@ -249,6 +329,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoFMJPistolCaliberPistolMagazineRecipe
+  categories:
+  - FmjAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 175
@@ -256,6 +339,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoRubberPistolCaliberPistolMagazineRecipe
+  categories:
+  - MiscAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 40
@@ -264,6 +350,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoIncendiaryPistolCaliberPistolMagazineRecipe
+  categories:
+  - IncenAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 25
@@ -273,6 +362,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoPracticePistolCaliberPistolMagazineRecipe
+  categories:
+  - PracticeAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 17
@@ -287,6 +379,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoUraniumPistolCaliberPistolMagazineRecipe
+  categories:
+  - UraniumAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 60
@@ -298,6 +393,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoFMJPistolCaliberSubMachineGunMagazineRecipe
+  categories:
+  - FmjAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 375
@@ -305,6 +403,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoRubberPistolCaliberSubMachineGunMagazineRecipe
+  categories:
+  - MiscAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 50
@@ -313,6 +414,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoIncendiaryPistolCaliberSubMachineGunMagazineRecipe
+  categories:
+  - IncenAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 75
@@ -322,6 +426,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoPracticePistolCaliberSubMachineGunMagazineRecipe
+  categories:
+  - PracticeAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 37
@@ -336,17 +443,23 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoUraniumPistolCaliberSubMachineGunMagazineRecipe
+  categories:
+  - UraniumAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 125
     Uranium: 250
 
-#Base PistolCaliber ammo speedloaders for .45 magnum, 5.56, 5.45, 7.62x39mm and potential others 
+#Base PistolCaliber ammo speedloaders for .45 magnum, 5.56, 5.45, 7.62x39mm and potential others
 #speedloaders:     [TOTAL = 175]
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoFMJPistolCaliberSpeedloaderRecipe
+  categories:
+  - FmjAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 175
@@ -354,6 +467,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoRubberPistolCaliberSpeedloaderRecipe
+  categories:
+  - MiscAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 40
@@ -362,6 +478,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoIncendiaryPistolCaliberSpeedloaderRecipe
+  categories:
+  - IncenAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 25
@@ -371,6 +490,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoPracticePistolCaliberSpeedloaderRecipe
+  categories:
+  - PracticeAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 17
@@ -385,6 +507,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoUraniumPistolCaliberSpeedloaderRecipe
+  categories:
+  - UraniumAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 60
@@ -396,6 +521,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoFMJPistolCaliberAmmoBoxRecipe
+  categories:
+  - FmjAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 1125
@@ -403,6 +531,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoRubberPistolCaliberAmmoBoxRecipe
+  categories:
+  - MiscAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 175
@@ -411,6 +542,9 @@
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoIncendiaryPistolCaliberAmmoBoxRecipe
+  categories:
+  - IncenAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 225
@@ -424,10 +558,12 @@
   materials:
     Steel: 112
 
-
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BaseAmmoUraniumPistolCaliberAmmoBoxRecipe
+  categories:
+  - UraniumAmmo
+  - Ammo
   abstract: true
   materials:
     Steel: 375

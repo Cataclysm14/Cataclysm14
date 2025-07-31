@@ -14,3 +14,7 @@
 - type: latheCategory
   id: DangerousAnimals
   name: lathe-category-dangerous-animals
+
+- type: latheCategory
+  id: Vouchers
+  name: lathe-category-vouchers

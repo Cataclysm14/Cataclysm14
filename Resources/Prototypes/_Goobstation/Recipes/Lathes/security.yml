@@ -101,6 +101,11 @@
   parent: BaseWeaponRecipeLong
   id: WeaponSubMachineSmart
   result: WeaponSubMachineSmart
+  categories: # Mono
+  - SMGs
+  - SmartGuns
+  - Ballistic
+  - Weapons
   materials:
     Steel: 1800
     Plastic: 750
@@ -111,5 +116,8 @@
   parent: BaseAmmoRecipe
   id: MagazineSmart
   result: MagazineSmart
+  categories: # Mono
+  - MiscAmmo
+  - Ammo
   materials:
     Steel: 550

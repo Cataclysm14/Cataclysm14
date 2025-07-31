@@ -7,6 +7,8 @@
 - type: latheRecipe
   abstract: true
   id: BaseVoucherRecipe
+  categories:
+  - Vouchers
   completetime: 120
 #Ussp
 - type: latheRecipe

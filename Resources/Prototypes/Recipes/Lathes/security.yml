@@ -67,6 +67,10 @@
   parent: BaseWeaponRecipeLong
   id: WeaponLaserCarbine
   result: WeaponLaserCarbine
+  categories: # Mono
+  - Weapons
+  - Energy
+  - Rifles
   materials:
     Steel: 2000
     Glass: 800
@@ -76,6 +80,10 @@
   parent: BaseWeaponRecipeLong
   id: WeaponAdvancedLaser
   result: WeaponAdvancedLaser
+  categories: # Mono
+  - Weapons
+  - Energy
+  - Sidearms
   materials:
     Steel: 1500
     Glass: 1000
@@ -85,6 +93,11 @@
   parent: BaseWeaponRecipeLong
   id: WeaponLaserCannon
   result: WeaponLaserCannon
+  categories: # Mono
+  - Weapons
+  - Energy
+  - Rifles
+  - AntiMaterial
   materials:
     Steel: 1250
     Plastic: 750
@@ -94,6 +107,10 @@
   parent: BaseWeaponRecipeLong
   id: WeaponLaserSvalinn
   result: WeaponLaserSvalinn
+  categories: # Mono
+  - Weapons
+  - Energy
+  - Sidearms
   materials:
     Steel: 2000
     Gold: 500
@@ -102,6 +119,10 @@
   parent: BaseWeaponRecipeLong
   id: WeaponXrayCannon
   result: WeaponXrayCannon
+  categories: # Mono
+  - Weapons
+  - Energy
+  - AntiMaterial
   materials:
     Steel: 1500
     Glass: 500
@@ -170,6 +191,9 @@
   parent: BaseAmmoRecipe
   id: AmmoBox12_gaugeTranquilizer
   result: AmmoBox12_gaugeTranquilizer
+  categories: # Mono
+  - MiscAmmo
+  - Ammo
   materials:
     Plastic: 240
     Steel: 160
@@ -238,6 +262,10 @@
   parent: WeaponDisabler
   id: WeaponDisablerSMG
   result: WeaponDisablerSMG
+  categories: # Mono
+  - Weapons
+  - Energy
+  - SMGs
   materials:
     Steel: 1000
     Glass: 500
@@ -254,6 +282,9 @@
 - type: latheRecipe
   id: 40mmGrenadeEMP
   result: 40mmGrenadeEMP
+  categories: # Mono
+  - MiscAmmo
+  - Ammo
   completetime: 3
   materials:
     Steel: 150
@@ -263,6 +294,9 @@
 - type: latheRecipe
   id: 40mmGrenadeThermobaric
   result: 40mmGrenadeThermobaric
+  categories: # Mono
+  - MiscAmmo
+  - Ammo
   completetime: 3
   materials:
     Steel: 450
@@ -272,6 +306,9 @@
 - type: latheRecipe
   id: 40mmGrenadeFlash
   result: 40mmGrenadeFlash
+  categories: # Mono
+  - MiscAmmo
+  - Ammo
   completetime: 3
   materials:
     Steel: 150
@@ -288,10 +325,6 @@
     Plastic: 1000
     Plasma: 500
     Glass: 500
-
-# mono changes start
-
-# mono changes end
 
 # Shitmed Recipes
 

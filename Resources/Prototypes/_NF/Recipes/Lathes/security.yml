@@ -6,6 +6,9 @@
   id: CrossbowBolt
   parent: BaseAmmoRecipe
   result: CrossbowBolt
+  categories: # Mono
+  - MiscAmmo
+  - Ammo
   materials:
     Steel: 20
 
@@ -13,14 +16,19 @@
   id: CrossbowBoltBroadhead
   parent: BaseAmmoRecipe
   result: CrossbowBoltBroadhead
+  categories: # Mono
+  - MiscAmmo
+  - Ammo
   materials:
     Steel: 25
-    
+
 - type: latheRecipe
   id: WeaponPistolPollock
   result: WeaponPistolPollock
   categories:
   - Weapons
+  - Sidearms # Mono
+  - Ballistic # Mono
   completetime: 3
   materials:
     Steel: 1000

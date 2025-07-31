@@ -1,6 +1,10 @@
 - type: latheRecipe
   id: ClothingOuterHardsuitSyndieReverseEngineered
   result: ClothingOuterHardsuitSyndieReverseEngineered
+  categories: # Mono
+  - CombatEva
+  - ArmorNF
+  - EVASuits
   completetime: 25
   materials:
      Steel: 6000
@@ -12,6 +16,10 @@
 - type: latheRecipe
   id: ClothingOuterHardsuitJuggernautReverseEngineered
   result: ClothingOuterHardsuitJuggernautReverseEngineered
+  categories: # Mono
+  - CombatEva
+  - ArmorNF
+  - EVASuits
   completetime: 25
   materials:
      Steel: 12000
