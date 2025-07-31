@@ -65,10 +65,7 @@ public sealed class CompanySystem : EntitySystem
     };
 	private readonly HashSet<string> _diJobs = new()
     {
-        "DIOverseer",
-        "DIWatchdog",
-        "DITrucker",
-        "DIGrunt"
+        "DIEmployee"
     };
 
     private readonly HashSet<string> _mdJobs = new()
