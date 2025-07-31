@@ -31,5 +31,7 @@ namespace Content.Server.Atmos.Piping.Trinary.Components
         /// </summary>
         [DataField]
         public bool StartOnMapInit { get; set; } = false;
+        [DataField]
+        public HashSet<Gas> FilterGases = new HashSet<Gas>();
     }
 }
