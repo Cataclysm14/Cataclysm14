@@ -1,7 +1,7 @@
 <Document>
   # ADEX-9 DYMERE Supercapital Energy Battery / Turbolaser
 
-An [color=MediumVioletRed]energy[/color] supercapital battery that fires enormous, slow death balls ionized gas projectiles, capable of melting through the toughest ship armor.
+An [color=MediumVioletRed]energy[/color] supercapital battery that fires enormous ionized gas projectiles, capable of melting through the toughest ship armor.
 
   <Box>
     <GuideEntityEmbed Entity="WeaponTurretDymere"/>
