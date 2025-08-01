@@ -1,6 +1,7 @@
 // SPDX-FileCopyrightText: 2024 Simon
 // SPDX-FileCopyrightText: 2025 GreaseMonk
 // SPDX-FileCopyrightText: 2025 sleepyyapril
+// SPDX-FileCopyrightText: 2025 tonotom
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
