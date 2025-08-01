@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/01/2025 02:19:12
-  entityCount: 333
+  time: 08/01/2025 02:54:42
+  entityCount: 277
 maps: []
 grids:
 - 1
@@ -199,39 +199,55 @@ entities:
       data:
         tiles:
           0,0:
-            0: 58607
+            0: 58575
+            1: 32
           0,-1:
             0: 65351
           -1,0:
-            1: 35012
+            2: 35012
           0,1:
-            1: 2576
+            2: 2576
             0: 1102
           -1,1:
-            1: 8
+            2: 8
           1,1:
-            1: 18
+            2: 18
           1,-1:
             0: 12800
-            1: 67
+            2: 67
           1,0:
             0: 2
-            1: 8768
+            2: 8768
           -1,-2:
-            1: 32768
+            2: 32768
           -1,-1:
-            1: 17600
+            2: 17600
           0,-2:
-            1: 2560
+            2: 2560
             0: 16384
           1,-2:
-            1: 12288
+            2: 12288
         uniqueMixes:
         - volume: 2500
           temperature: 293.15
           moles:
           - 21.824879
           - 82.10312
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 21.6852
+          - 81.57766
           - 0
           - 0
           - 0
@@ -302,468 +318,6 @@ entities:
     - type: ContainedSolution
       containerName: food
       container: 41
-  - uid: 79
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - food
-    - type: Transform
-      parent: 78
-    - type: Solution
-      solution:
-        maxVol: 20
-        name: food
-        reagents:
-        - data: []
-          ReagentId: Tricordrazine
-          Quantity: 10
-    - type: ContainedSolution
-      containerName: food
-      container: 78
-  - uid: 81
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - food
-    - type: Transform
-      parent: 80
-    - type: Solution
-      solution:
-        maxVol: 20
-        name: food
-        reagents:
-        - data: []
-          ReagentId: Tricordrazine
-          Quantity: 10
-    - type: ContainedSolution
-      containerName: food
-      container: 80
-  - uid: 88
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - food
-    - type: Transform
-      parent: 86
-    - type: Solution
-      solution:
-        maxVol: 20
-        name: food
-        reagents:
-        - data: []
-          ReagentId: Tricordrazine
-          Quantity: 10
-    - type: ContainedSolution
-      containerName: food
-      container: 86
-  - uid: 112
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - food
-    - type: Transform
-      parent: 104
-    - type: Solution
-      solution:
-        maxVol: 20
-        name: food
-        reagents:
-        - data: []
-          ReagentId: Tricordrazine
-          Quantity: 10
-    - type: ContainedSolution
-      containerName: food
-      container: 104
-  - uid: 120
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - food
-    - type: Transform
-      parent: 113
-    - type: Solution
-      solution:
-        maxVol: 20
-        name: food
-        reagents:
-        - data: []
-          ReagentId: Tricordrazine
-          Quantity: 10
-    - type: ContainedSolution
-      containerName: food
-      container: 113
-  - uid: 165
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - food
-    - type: Transform
-      parent: 164
-    - type: Solution
-      solution:
-        maxVol: 20
-        name: food
-        reagents:
-        - data: []
-          ReagentId: Tricordrazine
-          Quantity: 10
-    - type: ContainedSolution
-      containerName: food
-      container: 164
-  - uid: 171
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - food
-    - type: Transform
-      parent: 166
-    - type: Solution
-      solution:
-        maxVol: 20
-        name: food
-        reagents:
-        - data: []
-          ReagentId: Tricordrazine
-          Quantity: 10
-    - type: ContainedSolution
-      containerName: food
-      container: 166
-  - uid: 173
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - food
-    - type: Transform
-      parent: 172
-    - type: Solution
-      solution:
-        maxVol: 20
-        name: food
-        reagents:
-        - data: []
-          ReagentId: Tricordrazine
-          Quantity: 10
-    - type: ContainedSolution
-      containerName: food
-      container: 172
-  - uid: 175
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - food
-    - type: Transform
-      parent: 174
-    - type: Solution
-      solution:
-        maxVol: 20
-        name: food
-        reagents:
-        - data: []
-          ReagentId: Tricordrazine
-          Quantity: 10
-    - type: ContainedSolution
-      containerName: food
-      container: 174
-  - uid: 177
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - food
-    - type: Transform
-      parent: 176
-    - type: Solution
-      solution:
-        maxVol: 20
-        name: food
-        reagents:
-        - data: []
-          ReagentId: Tricordrazine
-          Quantity: 10
-    - type: ContainedSolution
-      containerName: food
-      container: 176
-  - uid: 183
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - injector
-    - type: Transform
-      parent: 182
-    - type: Solution
-      solution:
-        maxVol: 15
-        name: injector
-        reagents: []
-    - type: ContainedSolution
-      containerName: injector
-      container: 182
-  - uid: 202
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - injector
-    - type: Transform
-      parent: 188
-    - type: Solution
-      solution:
-        maxVol: 15
-        name: injector
-        reagents:
-        - data: []
-          ReagentId: Inaprovaline
-          Quantity: 15
-    - type: ContainedSolution
-      containerName: injector
-      container: 188
-  - uid: 212
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - injector
-    - type: Transform
-      parent: 203
-    - type: Solution
-      solution:
-        maxVol: 15
-        name: injector
-        reagents: []
-    - type: ContainedSolution
-      containerName: injector
-      container: 203
-  - uid: 217
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - injector
-    - type: Transform
-      parent: 216
-    - type: Solution
-      solution:
-        maxVol: 15
-        name: injector
-        reagents: []
-    - type: ContainedSolution
-      containerName: injector
-      container: 216
-  - uid: 229
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - injector
-    - type: Transform
-      parent: 227
-    - type: Solution
-      solution:
-        maxVol: 15
-        name: injector
-        reagents: []
-    - type: ContainedSolution
-      containerName: injector
-      container: 227
-  - uid: 231
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - injector
-    - type: Transform
-      parent: 230
-    - type: Solution
-      solution:
-        maxVol: 15
-        name: injector
-        reagents:
-        - data: []
-          ReagentId: Inaprovaline
-          Quantity: 15
-    - type: ContainedSolution
-      containerName: injector
-      container: 230
-  - uid: 233
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - injector
-    - type: Transform
-      parent: 232
-    - type: Solution
-      solution:
-        maxVol: 15
-        name: injector
-        reagents:
-        - data: []
-          ReagentId: Inaprovaline
-          Quantity: 15
-    - type: ContainedSolution
-      containerName: injector
-      container: 232
-  - uid: 235
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - injector
-    - type: Transform
-      parent: 234
-    - type: Solution
-      solution:
-        maxVol: 15
-        name: injector
-        reagents:
-        - data: []
-          ReagentId: Inaprovaline
-          Quantity: 15
-    - type: ContainedSolution
-      containerName: injector
-      container: 234
-  - uid: 244
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - pen
-    - type: Transform
-      parent: 243
-    - type: Solution
-      solution:
-        maxVol: 15
-        name: pen
-        reagents:
-        - data: []
-          ReagentId: Epinephrine
-          Quantity: 12
-        - data: []
-          ReagentId: TranexamicAcid
-          Quantity: 3
-    - type: ContainedSolution
-      containerName: pen
-      container: 243
-  - uid: 246
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - pen
-    - type: Transform
-      parent: 245
-    - type: Solution
-      solution:
-        maxVol: 15
-        name: pen
-        reagents:
-        - data: []
-          ReagentId: Epinephrine
-          Quantity: 12
-        - data: []
-          ReagentId: TranexamicAcid
-          Quantity: 3
-    - type: ContainedSolution
-      containerName: pen
-      container: 245
-  - uid: 248
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - pen
-    - type: Transform
-      parent: 247
-    - type: Solution
-      solution:
-        maxVol: 15
-        name: pen
-        reagents:
-        - data: []
-          ReagentId: Epinephrine
-          Quantity: 12
-        - data: []
-          ReagentId: TranexamicAcid
-          Quantity: 3
-    - type: ContainedSolution
-      containerName: pen
-      container: 247
-  - uid: 255
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - pen
-    - type: Transform
-      parent: 254
-    - type: Solution
-      solution:
-        maxVol: 15
-        name: pen
-        reagents:
-        - data: []
-          ReagentId: Epinephrine
-          Quantity: 12
-        - data: []
-          ReagentId: TranexamicAcid
-          Quantity: 3
-    - type: ContainedSolution
-      containerName: pen
-      container: 254
-  - uid: 257
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - pen
-    - type: Transform
-      parent: 256
-    - type: Solution
-      solution:
-        maxVol: 15
-        name: pen
-        reagents:
-        - data: []
-          ReagentId: Epinephrine
-          Quantity: 12
-        - data: []
-          ReagentId: TranexamicAcid
-          Quantity: 3
-    - type: ContainedSolution
-      containerName: pen
-      container: 256
-  - uid: 259
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: solution - pen
-    - type: Transform
-      parent: 258
-    - type: Solution
-      solution:
-        maxVol: 15
-        name: pen
-        reagents:
-        - data: []
-          ReagentId: Epinephrine
-          Quantity: 12
-        - data: []
-          ReagentId: TranexamicAcid
-          Quantity: 3
-    - type: ContainedSolution
-      containerName: pen
-      container: 258
 - proto: ActionToggleInternals
   entities:
   - uid: 297
@@ -1072,70 +626,6 @@ entities:
     - type: Transform
       pos: 6.5,1.5
       parent: 1
-- proto: Bloodpack
-  entities:
-  - uid: 241
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 238
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-  - uid: 252
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 249
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-- proto: Brutepack
-  entities:
-  - uid: 44
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 43
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-  - uid: 156
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 153
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-  - uid: 239
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 238
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-  - uid: 250
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 249
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
 - proto: ButtonFrameExit
   entities:
   - uid: 47
@@ -1523,121 +1013,19 @@ entities:
       parent: 1
 - proto: ClothingBeltMedicalEMTFilled
   entities:
-  - uid: 238
-    mapInit: true
-    paused: true
+  - uid: 88
     components:
     - type: Transform
       parent: 13
-    - type: Storage
-      storedItems:
-        239:
-          position: 0,0
-          _rotation: South
-        240:
-          position: 1,0
-          _rotation: South
-        241:
-          position: 2,0
-          _rotation: South
-        242:
-          position: 3,0
-          _rotation: South
-        243:
-          position: 4,0
-          _rotation: South
-        245:
-          position: 5,0
-          _rotation: South
-        247:
-          position: 6,0
-          _rotation: South
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 239
-          - 240
-          - 241
-          - 242
-          - 243
-          - 245
-          - 247
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
     - type: Physics
       canCollide: False
-    - type: UseDelay
-      delays:
-        default:
-          endTime: 1670.3321854
-          startTime: 1225.7321076
-          length: 1
-        quickInsert:
-          endTime: 443.6000778
-          length: 0.5
-        storage:
-          endTime: 1669.3321854
-          startTime: 1225.7321076
     - type: InsideEntityStorage
-  - uid: 249
-    mapInit: true
-    paused: true
+  - uid: 112
     components:
     - type: Transform
       parent: 13
-    - type: Storage
-      storedItems:
-        250:
-          position: 0,0
-          _rotation: South
-        251:
-          position: 1,0
-          _rotation: South
-        252:
-          position: 2,0
-          _rotation: South
-        253:
-          position: 3,0
-          _rotation: South
-        254:
-          position: 4,0
-          _rotation: South
-        256:
-          position: 5,0
-          _rotation: South
-        258:
-          position: 6,0
-          _rotation: South
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 250
-          - 251
-          - 252
-          - 253
-          - 254
-          - 256
-          - 258
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
     - type: Physics
       canCollide: False
-    - type: UseDelay
-      delays:
-        default:
-          endTime: 443.6000778
-          length: 1
-        quickInsert:
-          endTime: 443.6000778
-          length: 0.5
-        storage:
-          endTime: 443.6000778
     - type: InsideEntityStorage
 - proto: ClothingEyesHudMedical
   entities:
@@ -1843,116 +1231,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 0.5,-2.5
       parent: 1
-- proto: EmergencyMedipen
-  entities:
-  - uid: 243
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 238
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - pen
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-    - type: ContainerContainer
-      containers:
-        solution@pen: !type:ContainerSlot
-          ent: 244
-  - uid: 245
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 238
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - pen
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-    - type: ContainerContainer
-      containers:
-        solution@pen: !type:ContainerSlot
-          ent: 246
-  - uid: 247
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 238
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - pen
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-    - type: ContainerContainer
-      containers:
-        solution@pen: !type:ContainerSlot
-          ent: 248
-  - uid: 254
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 249
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - pen
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-    - type: ContainerContainer
-      containers:
-        solution@pen: !type:ContainerSlot
-          ent: 255
-  - uid: 256
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 249
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - pen
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-    - type: ContainerContainer
-      containers:
-        solution@pen: !type:ContainerSlot
-          ent: 257
-  - uid: 258
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 249
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - pen
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-    - type: ContainerContainer
-      containers:
-        solution@pen: !type:ContainerSlot
-          ent: 259
 - proto: EmergencyRollerBed
   entities:
   - uid: 326
@@ -2291,48 +1569,6 @@ entities:
       - 2
     - type: AtmosPipeColor
       color: '#990000FF'
-- proto: Gauze
-  entities:
-  - uid: 76
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 43
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-  - uid: 160
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 153
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-  - uid: 242
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 238
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-  - uid: 253
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 249
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
 - proto: GravityGeneratorMini
   entities:
   - uid: 272
@@ -2509,21 +1745,21 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 237
-          - 236
-          - 181
-          - 180
-          - 178
-          - 153
+          - 86
           - 43
-          - 41
-          - 39
-          - 20
-          - 14
-          - 15
+          - 112
+          - 104
+          - 88
           - 16
-          - 238
-          - 249
+          - 15
+          - 14
+          - 20
+          - 39
+          - 41
+          - 178
+          - 180
+          - 236
+          - 237
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -2534,8 +1770,8 @@ entities:
         immutable: False
         temperature: 293.14923
         moles:
-        - 1.7459903
-        - 6.568249
+        - 1.8856695
+        - 7.0937095
         - 0
         - 0
         - 0
@@ -2563,466 +1799,20 @@ entities:
       parent: 1
 - proto: MedkitFilled
   entities:
-  - uid: 43
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 13
-    - type: Storage
-      storedItems:
-        44:
-          position: 0,0
-          _rotation: South
-        50:
-          position: 1,0
-          _rotation: South
-        76:
-          position: 2,0
-          _rotation: South
-        77:
-          position: 3,0
-          _rotation: South
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 44
-          - 50
-          - 76
-          - 77
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-    - type: UseDelay
-      delays:
-        default:
-          endTime: 443.6000778
-          length: 1
-        quickInsert:
-          endTime: 443.6000778
-          length: 0.5
-        storage:
-          endTime: 443.6000778
-    - type: InsideEntityStorage
-  - uid: 153
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 13
-    - type: Storage
-      storedItems:
-        156:
-          position: 0,0
-          _rotation: South
-        159:
-          position: 1,0
-          _rotation: South
-        160:
-          position: 2,0
-          _rotation: South
-        161:
-          position: 3,0
-          _rotation: South
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 156
-          - 159
-          - 160
-          - 161
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-    - type: UseDelay
-      delays:
-        default:
-          endTime: 443.6000778
-          length: 1
-        quickInsert:
-          endTime: 443.6000778
-          length: 0.5
-        storage:
-          endTime: 443.6000778
-    - type: InsideEntityStorage
-- proto: Ointment
-  entities:
-  - uid: 50
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 43
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-  - uid: 159
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 153
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-  - uid: 240
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 238
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-  - uid: 251
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 249
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-- proto: PillCanisterTricordrazine
-  entities:
-  - uid: 77
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: pill canister (tricordrazine 10u)
-    - type: Transform
-      parent: 43
-    - type: Storage
-      storedItems:
-        78:
-          position: 0,0
-          _rotation: South
-        80:
-          position: 1,0
-          _rotation: South
-        86:
-          position: 2,0
-          _rotation: South
-        104:
-          position: 3,0
-          _rotation: South
-        113:
-          position: 4,0
-          _rotation: South
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 78
-          - 80
-          - 86
-          - 104
-          - 113
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-    - type: UseDelay
-      delays:
-        default:
-          endTime: 443.6000778
-          length: 1
-        quickInsert:
-          endTime: 443.6000778
-          length: 0.5
-        storage:
-          endTime: 443.6000778
-    - type: NameModifier
-      baseName: pill canister
-  - uid: 161
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: pill canister (tricordrazine 10u)
-    - type: Transform
-      parent: 153
-    - type: Storage
-      storedItems:
-        164:
-          position: 0,0
-          _rotation: South
-        166:
-          position: 1,0
-          _rotation: South
-        172:
-          position: 2,0
-          _rotation: South
-        174:
-          position: 3,0
-          _rotation: South
-        176:
-          position: 4,0
-          _rotation: South
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 164
-          - 166
-          - 172
-          - 174
-          - 176
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-    - type: UseDelay
-      delays:
-        default:
-          endTime: 443.6000778
-          length: 1
-        quickInsert:
-          endTime: 443.6000778
-          length: 0.5
-        storage:
-          endTime: 443.6000778
-    - type: NameModifier
-      baseName: pill canister
-- proto: PillTricordrazine
-  entities:
-  - uid: 78
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: pill (tricordrazine 10u)
-    - type: Transform
-      parent: 77
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - food
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-    - type: NameModifier
-      baseName: pill
-    - type: ContainerContainer
-      containers:
-        solution@food: !type:ContainerSlot
-          ent: 79
-  - uid: 80
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: pill (tricordrazine 10u)
-    - type: Transform
-      parent: 77
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - food
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-    - type: NameModifier
-      baseName: pill
-    - type: ContainerContainer
-      containers:
-        solution@food: !type:ContainerSlot
-          ent: 81
   - uid: 86
-    mapInit: true
-    paused: true
     components:
-    - type: MetaData
-      name: pill (tricordrazine 10u)
     - type: Transform
-      parent: 77
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - food
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
+      parent: 13
     - type: Physics
       canCollide: False
-    - type: NameModifier
-      baseName: pill
-    - type: ContainerContainer
-      containers:
-        solution@food: !type:ContainerSlot
-          ent: 88
+    - type: InsideEntityStorage
   - uid: 104
-    mapInit: true
-    paused: true
     components:
-    - type: MetaData
-      name: pill (tricordrazine 10u)
     - type: Transform
-      parent: 77
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - food
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
+      parent: 13
     - type: Physics
       canCollide: False
-    - type: NameModifier
-      baseName: pill
-    - type: ContainerContainer
-      containers:
-        solution@food: !type:ContainerSlot
-          ent: 112
-  - uid: 113
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: pill (tricordrazine 10u)
-    - type: Transform
-      parent: 77
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - food
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-    - type: NameModifier
-      baseName: pill
-    - type: ContainerContainer
-      containers:
-        solution@food: !type:ContainerSlot
-          ent: 120
-  - uid: 164
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: pill (tricordrazine 10u)
-    - type: Transform
-      parent: 161
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - food
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-    - type: NameModifier
-      baseName: pill
-    - type: ContainerContainer
-      containers:
-        solution@food: !type:ContainerSlot
-          ent: 165
-  - uid: 166
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: pill (tricordrazine 10u)
-    - type: Transform
-      parent: 161
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - food
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-    - type: NameModifier
-      baseName: pill
-    - type: ContainerContainer
-      containers:
-        solution@food: !type:ContainerSlot
-          ent: 171
-  - uid: 172
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: pill (tricordrazine 10u)
-    - type: Transform
-      parent: 161
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - food
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-    - type: NameModifier
-      baseName: pill
-    - type: ContainerContainer
-      containers:
-        solution@food: !type:ContainerSlot
-          ent: 173
-  - uid: 174
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: pill (tricordrazine 10u)
-    - type: Transform
-      parent: 161
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - food
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-    - type: NameModifier
-      baseName: pill
-    - type: ContainerContainer
-      containers:
-        solution@food: !type:ContainerSlot
-          ent: 175
-  - uid: 176
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: pill (tricordrazine 10u)
-    - type: Transform
-      parent: 161
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - food
-    - type: EmitSoundOnCollide
-      nextSound: -1371.1267165
-    - type: Physics
-      canCollide: False
-    - type: NameModifier
-      baseName: pill
-    - type: ContainerContainer
-      containers:
-        solution@food: !type:ContainerSlot
-          ent: 177
+    - type: InsideEntityStorage
 - proto: PortableGeneratorSuperPacmanShuttle
   entities:
   - uid: 154
@@ -3095,94 +1885,30 @@ entities:
       parent: 1
 - proto: PrefilledSyringe
   entities:
-  - uid: 182
-    mapInit: true
-    paused: true
+  - uid: 76
     components:
     - type: Transform
-      parent: 181
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - injector
-    - type: Tag
-      tags:
-      - Syringe
-      - Trash
-    - type: EmitSoundOnCollide
-      nextSound: -1814.7267943
+      parent: 43
     - type: Physics
       canCollide: False
-    - type: ContainerContainer
-      containers:
-        solution@injector: !type:ContainerSlot
-          ent: 183
-  - uid: 203
-    mapInit: true
-    paused: true
+  - uid: 77
     components:
     - type: Transform
-      parent: 181
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - injector
-    - type: Tag
-      tags:
-      - Syringe
-      - Trash
-    - type: EmitSoundOnCollide
-      nextSound: -1814.7267943
+      parent: 43
     - type: Physics
       canCollide: False
-    - type: ContainerContainer
-      containers:
-        solution@injector: !type:ContainerSlot
-          ent: 212
-  - uid: 216
-    mapInit: true
-    paused: true
+  - uid: 78
     components:
     - type: Transform
-      parent: 181
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - injector
-    - type: Tag
-      tags:
-      - Syringe
-      - Trash
-    - type: EmitSoundOnCollide
-      nextSound: -1814.7267943
+      parent: 43
     - type: Physics
       canCollide: False
-    - type: ContainerContainer
-      containers:
-        solution@injector: !type:ContainerSlot
-          ent: 217
-  - uid: 227
-    mapInit: true
-    paused: true
+  - uid: 79
     components:
     - type: Transform
-      parent: 181
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - injector
-    - type: Tag
-      tags:
-      - Syringe
-      - Trash
-    - type: EmitSoundOnCollide
-      nextSound: -1814.7267943
+      parent: 43
     - type: Physics
       canCollide: False
-    - type: ContainerContainer
-      containers:
-        solution@injector: !type:ContainerSlot
-          ent: 229
 - proto: ReinforcedPlasmaWindow
   entities:
   - uid: 286
@@ -3341,36 +2067,34 @@ entities:
           - 307
 - proto: SyringeCase
   entities:
-  - uid: 181
-    mapInit: true
-    paused: true
+  - uid: 43
     components:
     - type: Transform
       parent: 13
     - type: Storage
       storedItems:
-        182:
+        44:
           position: 0,0
           _rotation: South
-        203:
+        50:
           position: 1,0
           _rotation: South
-        227:
-          position: 0,1
-          _rotation: South
-        216:
-          position: 1,1
-          _rotation: South
-        230:
-          position: 3,0
-          _rotation: South
-        188:
+        76:
           position: 2,0
           _rotation: South
-        234:
+        77:
+          position: 3,0
+          _rotation: South
+        78:
+          position: 0,1
+          _rotation: South
+        79:
+          position: 1,1
+          _rotation: South
+        80:
           position: 2,1
           _rotation: South
-        232:
+        81:
           position: 3,1
           _rotation: South
     - type: ContainerContainer
@@ -3379,128 +2103,43 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 182
-          - 203
-          - 227
-          - 216
-          - 230
-          - 188
-          - 234
-          - 232
-    - type: EmitSoundOnCollide
-      nextSound: -1814.7267943
+          - 44
+          - 50
+          - 76
+          - 77
+          - 78
+          - 79
+          - 80
+          - 81
     - type: Physics
       canCollide: False
-    - type: UseDelay
-      delays:
-        default:
-          endTime: 1784.4982165
-          startTime: 1783.4982165
-          length: 1
-        quickInsert:
-          length: 0.5
-        storage:
-          endTime: 1783.4982165
-          startTime: 1783.4982165
     - type: InsideEntityStorage
 - proto: SyringeInaprovaline
   entities:
-  - uid: 188
-    mapInit: true
-    paused: true
+  - uid: 44
     components:
-    - type: MetaData
-      name: syringe (inaprovaline)
     - type: Transform
-      parent: 181
-    - type: Label
-      currentLabel: inaprovaline
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - injector
-    - type: EmitSoundOnCollide
-      nextSound: -1814.7267943
+      parent: 43
     - type: Physics
       canCollide: False
-    - type: NameModifier
-      baseName: syringe
-    - type: ContainerContainer
-      containers:
-        solution@injector: !type:ContainerSlot
-          ent: 202
-  - uid: 230
-    mapInit: true
-    paused: true
+  - uid: 50
     components:
-    - type: MetaData
-      name: syringe (inaprovaline)
     - type: Transform
-      parent: 181
-    - type: Label
-      currentLabel: inaprovaline
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - injector
-    - type: EmitSoundOnCollide
-      nextSound: -1814.7267943
+      parent: 43
     - type: Physics
       canCollide: False
-    - type: NameModifier
-      baseName: syringe
-    - type: ContainerContainer
-      containers:
-        solution@injector: !type:ContainerSlot
-          ent: 231
-  - uid: 232
-    mapInit: true
-    paused: true
+  - uid: 80
     components:
-    - type: MetaData
-      name: syringe (inaprovaline)
     - type: Transform
-      parent: 181
-    - type: Label
-      currentLabel: inaprovaline
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - injector
-    - type: EmitSoundOnCollide
-      nextSound: -1814.7267943
+      parent: 43
     - type: Physics
       canCollide: False
-    - type: NameModifier
-      baseName: syringe
-    - type: ContainerContainer
-      containers:
-        solution@injector: !type:ContainerSlot
-          ent: 233
-  - uid: 234
-    mapInit: true
-    paused: true
+  - uid: 81
     components:
-    - type: MetaData
-      name: syringe (inaprovaline)
     - type: Transform
-      parent: 181
-    - type: Label
-      currentLabel: inaprovaline
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - injector
-    - type: EmitSoundOnCollide
-      nextSound: -1814.7267943
+      parent: 43
     - type: Physics
       canCollide: False
-    - type: NameModifier
-      baseName: syringe
-    - type: ContainerContainer
-      containers:
-        solution@injector: !type:ContainerSlot
-          ent: 235
 - proto: Thruster
   entities:
   - uid: 184
