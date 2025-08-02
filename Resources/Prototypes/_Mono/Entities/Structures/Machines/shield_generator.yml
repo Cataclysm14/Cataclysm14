@@ -17,7 +17,7 @@
     baseDraw: 80000
     maxDraw: 150000
     unpoweredBonus: 8
-    damageLimit: 1000000
+    damageLimit: 150000
     damageOverloadTimePunishment: 30
     shieldColor: "#FF9933"
   - type: Sprite
