@@ -14,6 +14,7 @@
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
+    scale: 0.7,0.7
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice

@@ -11,10 +11,11 @@
   - type: CartridgeAmmo
     proto: Bullet4.6x30mm
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/4.6x30mm_casing.rsi
     layers:
       - state: base
         map: [ "enum.AmmoVisualLayers.Base" ]
+    scale: 0.5, 0.35 #odd number for accurate shape
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice

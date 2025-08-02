@@ -18,10 +18,11 @@
     deleteOnSpawn: true
     proto: Bullet55_SAM
   - type: Sprite
-    sprite: _Goobstation/Objects/Weapons/Guns/Ammunition/Casings/smartgun.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/55_SAM_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
+    scale: 0.4, 0.4
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice

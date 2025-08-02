@@ -16,7 +16,7 @@
     deleteOnSpawn: true
     proto: BulletSmart
   - type: Sprite
-    sprite: _Goobstation/Objects/Weapons/Guns/Ammunition/Casings/smartgun.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/160_smart_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
