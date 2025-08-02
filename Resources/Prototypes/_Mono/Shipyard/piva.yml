@@ -8,7 +8,10 @@
 # SPDX-FileCopyrightText: 2024 Salvantrix
 # SPDX-FileCopyrightText: 2024 Whatstone
 # SPDX-FileCopyrightText: 2025 Carolyn3114
+# SPDX-FileCopyrightText: 2025 KM-Catman
+# SPDX-FileCopyrightText: 2025 Redrover1760
 # SPDX-FileCopyrightText: 2025 Rubeebeebee
+# SPDX-FileCopyrightText: 2025 significant harassment
 # SPDX-FileCopyrightText: 2025 starch
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
@@ -23,8 +26,13 @@
   id: Piva
   parent: BaseVessel
   name: PB Piva
+<<<<<<< HEAD
   description: A small yet agile cargo shuttle, sporting a sideway shutter in order to facilitate the exchange of cargo in space without docking. 
   price: 25001 # upped the price to 25k, due to FTL drive being present. 
+=======
+  description: A small yet agile entry level cargo shuttle with ftl, sporting a sideway shutter in order to facilitate the exchange of cargo in space without docking. 
+  price: 25000 # its probably okay to stay around the 21k mark, since its BARELY got anything going for it. 
+>>>>>>> 9ec59f710018dcd1d49c6561230c75f654cb86fb
   category: Small
   group: Shipyard
   shuttlePath: /Maps/_Mono/Shuttles/piva.yml
