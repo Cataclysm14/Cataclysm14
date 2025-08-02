@@ -60,7 +60,7 @@
   - type: Projectile
     damage:
       types:
-        Structural: 75
+        Structural: 300
         Blunt: 75
         Piercing: 100
     ignoreWeaponGrid: true
