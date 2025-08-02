@@ -26,8 +26,8 @@
   id: Piva
   parent: BaseVessel
   name: PB Piva
-  description: A small yet agile cargo shuttle, sporting a sideway shutter in order to facilitate the exchange of cargo in space without docking. 
-  price: 21000 # its probably okay to stay around the 21k mark, since its BARELY got anything going for it. 
+  description: A small yet agile entry level cargo shuttle with ftl, sporting a sideway shutter in order to facilitate the exchange of cargo in space without docking. 
+  price: 25000 # its probably okay to stay around the 21k mark, since its BARELY got anything going for it. 
   category: Small
   group: Shipyard
   shuttlePath: /Maps/_Mono/Shuttles/piva.yml
