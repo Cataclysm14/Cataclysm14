@@ -1,0 +1,42 @@
+# Author Info
+# GitHub: Rubeebeebee
+# Discord: rubeebee
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Lobster
+  parent: BaseVessel
+  name: Lobster
+  description: A retired balaamite battleship, the lobster is now seeing its twilight years as a botany/chemistry ship.
+  price: 45000
+  category: Medium
+  group: Medical
+  shuttlePath: /Maps/_Mono/Shuttles/lobster.yml
+  guidebookPage: null
+  class:
+  - Botany
+  - Chemistry
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Lobster
+  mapName: 'Lobster'
+  mapPath: /Maps/_Mono/Shuttles/lobster.yml
+  minPlayers: 0
+  stations:
+    Lobster:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Lobster MED{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            MdMedic: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
