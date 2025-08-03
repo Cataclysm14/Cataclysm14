@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/26/2025 19:09:24
-  entityCount: 2388
+  time: 08/02/2025 23:41:12
+  entityCount: 2396
 maps: []
 grids:
 - 1
@@ -1554,6 +1554,14 @@ entities:
     - type: Transform
       pos: 17.5,11.5
       parent: 1
+    - type: AmeController
+      injecting: True
+    - type: ContainerContainer
+      containers:
+        fuelSlot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 2389
 - proto: AmeJar
   entities:
   - uid: 2349
@@ -1577,6 +1585,12 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+  - uid: 2389
+    components:
+    - type: Transform
+      parent: 2197
+    - type: Physics
+      canCollide: False
 - proto: AmeShielding
   entities:
   - uid: 68
@@ -1599,6 +1613,9 @@ entities:
     - type: Transform
       pos: 16.5,13.5
       parent: 1
+    - type: PointLight
+      radius: 2
+      enabled: True
   - uid: 2123
     components:
     - type: Transform
@@ -4855,6 +4872,41 @@ entities:
     components:
     - type: Transform
       pos: 16.5,11.5
+      parent: 1
+  - uid: 2390
+    components:
+    - type: Transform
+      pos: 0.5,14.5
+      parent: 1
+  - uid: 2391
+    components:
+    - type: Transform
+      pos: 0.5,15.5
+      parent: 1
+  - uid: 2392
+    components:
+    - type: Transform
+      pos: 0.5,16.5
+      parent: 1
+  - uid: 2393
+    components:
+    - type: Transform
+      pos: 0.5,17.5
+      parent: 1
+  - uid: 2394
+    components:
+    - type: Transform
+      pos: 0.5,18.5
+      parent: 1
+  - uid: 2395
+    components:
+    - type: Transform
+      pos: 0.5,19.5
+      parent: 1
+  - uid: 2396
+    components:
+    - type: Transform
+      pos: 0.5,20.5
       parent: 1
 - proto: CableHV
   entities:
@@ -16162,7 +16214,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -5495.6895
+      secondsUntilStateChange: -5571.006
       state: Opening
     - type: Airlock
       autoClose: False
