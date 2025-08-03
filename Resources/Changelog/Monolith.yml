@@ -9624,3 +9624,15 @@ Entries:
   id: 1076
   time: '2025-08-02T19:10:32.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1718
+- author: Removed
+  changes: []
+  id: 1077
+  time: '2025-08-02T23:30:05.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1751
+- author: Redrover1760
+  changes:
+    - type: Fix
+      message: Buggy cryo sleep chamber in padval removed
+  id: 1078
+  time: '2025-08-03T00:43:29.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1753
