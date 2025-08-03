@@ -105,10 +105,8 @@
     sprite: _NF/Clothing/Head/Hardsuits/nfsd.rsi
   - type: Clothing
     sprite: _NF/Clothing/Head/Hardsuits/nfsd.rsi
-  - type: NightVision
-    flashDurationMultiplier: 3.5
-    isEquipment: true
-    color: "#516573"
+  - type: PointLight
+    color: "#ffeead"
   - type: Armor
     modifiers:
       coefficients:
@@ -162,6 +160,10 @@
     sprite: _NF/Clothing/Head/Hardsuits/nfsd_sheriff.rsi
   - type: Clothing
     sprite: _NF/Clothing/Head/Hardsuits/nfsd_sheriff.rsi
+  - type: NightVision
+    flashDurationMultiplier: 3.5
+    isEquipment: true
+    color: "#516573"
 
 - type: entity
   parent: NFClothingHeadHardsuitWithLightBaseNfsd
@@ -177,6 +179,10 @@
   - type: PressureProtection
     highPressureMultiplier: 0.3
     lowPressureMultiplier: 1000
+  - type: NightVision
+    flashDurationMultiplier: 3.5
+    isEquipment: true
+    color: "#516573"
   - type: Armor
     modifiers:
       coefficients:
