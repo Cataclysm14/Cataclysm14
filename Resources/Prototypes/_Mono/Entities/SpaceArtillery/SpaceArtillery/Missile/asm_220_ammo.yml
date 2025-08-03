@@ -175,6 +175,11 @@
     launchSpeed: 45
     maxSpeed: 250
     trackDelay: 1
+  - type: Explosive
+    explosionType: HardBombShipGun
+    maxIntensity: 300
+    intensitySlope: 90
+    totalIntensity: 500
   # destructible components below
   - type: Fixtures
     fixtures:
@@ -195,15 +200,16 @@
   - type: Meteor
     damageTypes:
       types:
-        Blunt: 15
+        Blunt: 5
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 70000
+        damage: 85000
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+      - !type:ExplodeBehavior
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
