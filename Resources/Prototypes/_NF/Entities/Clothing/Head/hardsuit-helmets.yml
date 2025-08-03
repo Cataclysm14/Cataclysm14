@@ -203,10 +203,8 @@
     sprite: _NF/Clothing/Head/Hardsuits/nfsd_combat.rsi
   - type: Clothing
     sprite: _NF/Clothing/Head/Hardsuits/nfsd_combat.rsi
-  - type: NightVision
-    flashDurationMultiplier: 3.5
-    isEquipment: true
-    color: "#516573"
+  - type: PointLight
+    color: "#79bb66"
   - type: PressureProtection
     highPressureMultiplier: 0.525
     lowPressureMultiplier: 1000
