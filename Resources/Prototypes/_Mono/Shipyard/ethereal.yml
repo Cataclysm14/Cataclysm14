@@ -32,7 +32,9 @@
   engine:
   - AME
   - Solar
-
+  addComponents:
+  - type: SolarPoweredGrid
+    doNotCull: true
 - type: gameMap
   id: Ethereal
   mapName: 'NS Ethereal'
