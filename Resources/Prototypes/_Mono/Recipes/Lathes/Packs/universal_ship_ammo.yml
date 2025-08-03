@@ -3,11 +3,14 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
+# dont bloat up this file type for every ammo u add
+
 - type: latheRecipePack
-  id: UniversalTorpedoAmmo
+  id: UniversalMissileAmmo
   recipes:
   - ASM220TorpedoHEUniversal
   - ASM220TorpedoECMUniversal
+  - ASM220TorpedoLOSATUniversal
 
 - type: latheRecipePack
   id: UniversalRailgunAmmo
@@ -21,12 +24,8 @@
   - 150mmEmpShellUniversal
 
 - type: latheRecipePack
-  id: UniversalLightOrdinance
+  id: UniversalOrdinance
   recipes:
   - GPOL50BombUniversal
   - ZenithRocketUniversal
-
-- type: latheRecipePack
-  id: UniversalAdvancedLightOrdinance
-  recipes:
   - QuasarAcceleratorUniversal
