@@ -1,27 +1,11 @@
-# SPDX-FileCopyrightText: 2023 Cheackraze
-# SPDX-FileCopyrightText: 2023 Checkraze
-# SPDX-FileCopyrightText: 2023 Vera Aguilera Puerto
-# SPDX-FileCopyrightText: 2024 Dvir
-# SPDX-FileCopyrightText: 2024 ErhardSteinhauer
-# SPDX-FileCopyrightText: 2024 TsjipTsjip
-# SPDX-FileCopyrightText: 2024 checkraze
-# SPDX-FileCopyrightText: 2025 Ark
-# SPDX-FileCopyrightText: 2025 Redrover1760
-# SPDX-FileCopyrightText: 2025 RikuTheKiller
-# SPDX-FileCopyrightText: 2025 Rubeebeebee
-# SPDX-FileCopyrightText: 2025 Whatstone
-# SPDX-FileCopyrightText: 2025 starch
-#
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
 meta:
   format: 7
   category: Grid
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/04/2025 03:25:33
-  entityCount: 875
+  time: 08/04/2025 08:53:20
+  entityCount: 878
 maps: []
 grids:
 - 1
@@ -2952,6 +2936,20 @@ entities:
     - type: Transform
       pos: -6.5,-2.5
       parent: 1
+- proto: DefibrillatorCabinetFilled
+  entities:
+  - uid: 877
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 5.5,1.5
+      parent: 1
+  - uid: 878
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -10.5,-0.5
+      parent: 1
 - proto: FaxMachineBase
   entities:
   - uid: 234
@@ -5807,6 +5805,13 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-10.5
+      parent: 1
+- proto: WallWeaponCapacitorRechargerOmnidirectional
+  entities:
+  - uid: 876
+    components:
+    - type: Transform
+      pos: 5.5,-1.5
       parent: 1
 - proto: WarpPoint
   entities:
