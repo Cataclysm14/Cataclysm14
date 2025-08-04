@@ -17,7 +17,7 @@
   name: 'Lancelot Mining Outpost'
   minimumDistance: 19650
   maximumDistance: 25400
-  spawnGroup: Required
+  spawnGroup: Optional
   gridPath: /Maps/_Mono/POI/lancelot.yml
   addComponents:
   - type: IFF

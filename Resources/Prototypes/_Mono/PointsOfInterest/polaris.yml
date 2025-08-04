@@ -18,7 +18,7 @@
   name: 'Polaris Bioresearch Center'
   minimumDistance: 5500
   maximumDistance: 12500
-  spawnGroup: Required
+  spawnGroup: Optional
   gridPath: /Maps/_Mono/POI/polaris.yml
   addComponents:
   - type: IFF
