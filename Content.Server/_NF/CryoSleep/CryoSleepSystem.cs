@@ -102,6 +102,8 @@ public sealed partial class CryoSleepSystem : SharedCryoSleepSystem
         InitReturning();
     }
 
+    private Vector2 cryoCoords = Vector2.Zero; // Mono
+    private Vector2 _cryoDistance = Vector2.Create(0, 2); // Mono
     private EntityUid GetStorageMap()
     {
         if (Deleted(_storageMap))
@@ -397,7 +399,8 @@ public sealed partial class CryoSleepSystem : SharedCryoSleepSystem
         var storage = GetStorageMap();
         var bodyTransform = Transform(bodyId);
         _container.Remove(bodyId, cryo.BodyContainer, reparent: false, force: true);
-        bodyTransform.Coordinates = new EntityCoordinates(storage, Vector2.Zero);
+        bodyTransform.Coordinates = new EntityCoordinates(storage, cryoCoords); // Mono, replaced Vector.Zero with cryoCoords
+        cryoCoords = Vector2.Add(cryoCoords, _cryoDistance); // Mono
 
         RaiseLocalEvent(bodyId, new CryosleepEnterEvent(cryopod, mind?.UserId), true);
 
