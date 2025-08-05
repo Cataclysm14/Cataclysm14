@@ -161,11 +161,6 @@
         key: Jitter
         time: 3.0
         type: Remove
-      - !type:GenericStatusEffect
-        key: Drowsiness
-        time: 1.5
-        type: Add
-        refresh: false
       - !type:HealthChange
         damage:
           types:
@@ -717,7 +712,7 @@
             Cellular: -0.3
             Radiation: 0.15
             Caustic: 0.15
-      - !type:HealthChange
+      - !type:ChemVomit
         conditions:
         - !type:OrganType # Goobstation - Yowie
           type: Yowie
