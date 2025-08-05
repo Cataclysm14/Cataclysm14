@@ -34,7 +34,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 7
+    lifetime: 3.5
   - type: PointLight
     radius: 3.5
     color: orange
@@ -51,7 +51,7 @@
   - type: TargetSeeking
     acceleration: 75
     detectionRange: 300
-    scanArc: 70
+    scanArc: 35
     launchSpeed: 150
     maxSpeed: 180
     trackDelay: 0.3
@@ -83,7 +83,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 7
+    lifetime: 4.5
   - type: PointLight
     radius: 3.5
     color: orange
@@ -100,7 +100,7 @@
   - type: TargetSeeking
     acceleration: 100
     detectionRange: 450
-    scanArc: 70
+    scanArc: 40
     launchSpeed: 90
     maxSpeed: 210
     trackDelay: 0.7
@@ -132,7 +132,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 20
+    lifetime: 15
   - type: PointLight
     radius: 5
     color: orange
@@ -149,7 +149,7 @@
   - type: TargetSeeking
     acceleration: 25
     detectionRange: 300
-    scanArc: 50
+    scanArc: 30
     launchSpeed: 25
     maxSpeed: 30
     trackDelay: 4
@@ -181,7 +181,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 8.2
+    lifetime: 6.5
   - type: PointLight
     radius: 3.5
     color: orange
@@ -203,7 +203,7 @@
   - type: TargetSeeking
     acceleration: 40
     detectionRange: 450
-    scanArc: 80
+    scanArc: 45
     launchSpeed: 50
     maxSpeed: 125
     trackDelay: 1.2
