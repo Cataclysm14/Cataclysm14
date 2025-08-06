@@ -75,7 +75,7 @@
   cost: 65000
   recipeUnlocks:
   - ClothingOuterHardsuitJuggernautRogue
-  - ClothingOuterHardsuitSyndieCommanderRogue
+# - ClothingOuterHardsuitSyndieCommanderRogue
   technologyPrerequisites:
   - RogueBasicEquipment
   - RogueAdvancedEquipment
