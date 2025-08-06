@@ -19,7 +19,7 @@
   minimumDistance: 8500
   maximumDistance: 9500
   spawnGroup: Optional
-  gridPath: /Maps/_Mono/POI/ruin_tanker.yml
+  gridPath: /Maps/_Mono/POI/Dungeons/ruin_tanker.yml
   addComponents:
   - type: IFF
     color: "#328da8"
@@ -29,7 +29,7 @@
 - type: gameMap
   id: AutomatedTanker
   mapName: 'Automated Inter-Sector Tanker'
-  mapPath: /Maps/_Mono/POI/ruin_tanker.yml
+  mapPath: /Maps/_Mono/POI/Dungeons/ruin_tanker.yml
   minPlayers: 0
   stations:
     AutomatedTanker:

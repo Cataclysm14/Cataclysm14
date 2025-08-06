@@ -19,7 +19,7 @@
   minimumDistance: 12500
   maximumDistance: 16500
   spawnGroup: Optional
-  gridPath: /Maps/_Mono/POI/zenith.yml
+  gridPath: /Maps/_Mono/POI/Dungeons/zenith.yml
   addComponents:
   - type: IFF
     color: "#328da8"
@@ -28,7 +28,7 @@
 - type: gameMap
   id: Zenith
   mapName: 'ADS Zenith CK-395'
-  mapPath: /Maps/_Mono/POI/zenith.yml
+  mapPath: /Maps/_Mono/POI/Dungeons/zenith.yml
   minPlayers: 0
   stations:
     Zenith:
