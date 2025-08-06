@@ -18,6 +18,7 @@
   - MercenaryLaserCarbineLoadout
   - MercenaryEnergyGunLoadout
   - MercenaryLaserCannonLoadout
+  - MercenaryAk220Loadout
 
 - type: loadoutGroup
   id: MercenaryPistol

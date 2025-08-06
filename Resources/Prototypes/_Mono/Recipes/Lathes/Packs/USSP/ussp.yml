@@ -13,6 +13,7 @@
   - WeaponRifleSVSUSSP
   - WeaponSniperMosinUSSP
   - WeaponShotgunBigLeadyUSSP
+  - WeaponSubMachineGunAK220USSP
 
 - type: latheRecipePack
   id: MonoUSSPMiscDynamic

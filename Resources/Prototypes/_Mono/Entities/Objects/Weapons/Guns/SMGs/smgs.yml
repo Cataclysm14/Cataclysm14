@@ -60,7 +60,7 @@
 
 - type: entity
   name: NCI AK-220 (9x19mm)
-  parent: [BaseWeaponSubMachineGun, BaseGunWieldable]
+  parent: [BaseWeaponSubMachineGun, BaseGunWieldable, BaseC1Contraband]
   id: WeaponSubMachineGunAK220
   description: A mass produced 9x19mm bullpup SMG. The design originates from the USSP, but various TSF and ASR manufacturers produce it via licenses or suspiciously similar "original" designs.
   components:
@@ -82,7 +82,7 @@
   - type: Gun
     minAngle: 21
     maxAngle: 39
-    fireRate: 5
+    fireRate: 4
     angleIncrease: 7
     angleDecay: 15
     selectedMode: FullAuto
