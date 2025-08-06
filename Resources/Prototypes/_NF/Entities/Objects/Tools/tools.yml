@@ -45,7 +45,7 @@
     attackRate: 0.66 #Mono 0.75 >> 0.66
     damage:
       types:
-        Blunt: 12 #Mono 10 >> 12
+        Blunt: 16 #Mono 10 >> 16
         Structural: 5
     soundHit:
       collection: MetalThud
@@ -53,7 +53,7 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 16
+        Blunt: 12
         Structural: 15 #Mono end
   - type: Item
     size: Large #Mono: Huge > Large
