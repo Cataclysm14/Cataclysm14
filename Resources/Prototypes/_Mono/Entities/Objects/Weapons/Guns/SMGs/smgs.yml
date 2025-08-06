@@ -80,8 +80,8 @@
   - type: Clothing
     sprite: _Mono/Objects/Weapons/Guns/SMGs/ak220.rsi
   - type: Gun
-    minAngle: 21
-    maxAngle: 39
+    minAngle: 22
+    maxAngle: 40
     fireRate: 4
     angleIncrease: 7
     angleDecay: 15
