@@ -54,7 +54,7 @@
     damage:
       types:
         Blunt: 12
-        Structural: 15 #Mono end
+        Structural: 5 #Mono end
   - type: Item
     size: Large #Mono: Huge > Large
     shape: 
