@@ -128,7 +128,7 @@
   hideEffects:
   - !type:GroupLoadoutEffect
     proto: ShoesCapableNF
-  price: 2000
+  price: 1000 # 2000->1000 Mono
   equipment:
     shoes: ClothingShoesBootsMag
 

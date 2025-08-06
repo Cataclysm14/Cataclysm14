@@ -20,6 +20,8 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepHeavySuit
+  - type: ClothingSlowOnDamageModifier # Mono
+    modifier: 0.25 # Mono
 
 - type: entity
   parent: ClothingShoesBootsChrono

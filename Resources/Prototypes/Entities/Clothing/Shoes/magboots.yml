@@ -20,8 +20,8 @@
     - type: NoSlip
   - type: Magboots
   - type: ClothingSpeedModifier
-    walkModifier: 0.85
-    sprintModifier: 0.8
+    walkModifier: 0.9 # Mono
+    sprintModifier: 0.85 # 0.8->0.85 - Mono
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -95,8 +95,8 @@
   - type: Clothing
     sprite: Clothing/Shoes/Boots/magboots-syndicate.rsi
   - type: ClothingSpeedModifier
-    walkModifier: 0.95
-    sprintModifier: 0.9
+    walkModifier: 0.9
+    sprintModifier: 0.85 # 0.9->0.85 Mono
   - type: GasTank
     outputPressure: 42.6
     air:
@@ -109,6 +109,8 @@
   - type: Item
     sprite: null
     size: Normal
+  - type: ClothingSlowOnDamageModifier # Mono
+    modifier: 0.75 # Mono
 
 - type: entity
   id: ActionToggleMagboots
