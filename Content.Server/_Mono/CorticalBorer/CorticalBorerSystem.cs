@@ -14,6 +14,7 @@ using Content.Shared.Inventory;
 using Content.Shared.MedicalScanner;
 using Content.Shared.Mind;
 using Content.Shared.Popups;
+using Content.Shared.Speech;
 using Robust.Server.GameObjects;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
@@ -42,7 +43,6 @@ public sealed partial class CorticalBorerSystem : SharedCorticalBorerSystem
         SubscribeLocalEvent<CorticalBorerComponent, CorticalBorerDispenserInjectMessage>(OnInjectReagentMessage);
         SubscribeLocalEvent<CorticalBorerComponent, CorticalBorerDispenserSetInjectAmountMessage>(OnSetInjectAmountMessage);
 
-        SubscribeLocalEvent<CorticalBorerComponent, ReceiverOverrideEvent>(OnSpeakAttempt);
         SubscribeLocalEvent<InventoryComponent, InfestHostAttempt>(OnInfestHostAttempt);
 
     }
@@ -91,18 +91,6 @@ public sealed partial class CorticalBorerSystem : SharedCorticalBorerSystem
         comp.ChemicalPoints += change;
 
         Dirty(ent);
-    }
-
-    public void OnSpeakAttempt(Entity<CorticalBorerComponent> ent, ref ReceiverOverrideEvent args)
-    {
-        if (!ent.Comp.Host.HasValue)
-            return;
-
-        var listenerList =  new List<EntityUid>();
-        listenerList.Add(ent.Comp.Host.Value);
-        listenerList.Add(ent.Owner);
-
-        args.ReciverUidOverride = listenerList;
     }
 
     public void OnInfestHostAttempt(Entity<InventoryComponent> entity, ref InfestHostAttempt args)
