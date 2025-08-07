@@ -1,0 +1,46 @@
+- type: entity
+  id: BaseCartridge68x52mmCaseless
+  name: cartridge (6.8x52mm Caseless)
+  parent: BaseCartridge
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - Cartridge68x52mmCaseless
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+  - type: Sprite
+    noRot: false
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+
+- type: entity
+  id: Cartridge68x52mmCaseless
+  name: cartridge (6.8x52mm Caseless)
+  parent: BaseCartridge68x52mmCaseless
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet68x52mmCaseless
+
+- type: entity
+  id: Cartridge68x52mmCaselessPractice
+  name: cartridge (6.8x52mm Caseless practice)
+  parent: BaseCartridge68x52mmCaseless
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet68x52mmCaselessPractice
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#dbdbdb"
+
