@@ -4,7 +4,7 @@
 
 - type: entity
   id: BaseCartridge68x52mmCaseless
-  name: cartridge (6.8x52mm Caseless)
+  name: cartridge (6.8x52mm STANAG Caseless)
   description: A new intermediate caseless round developed in recent TSF standardization programs, using experience from old corporate war caseless ammunition to enhance the performance of rifles across the sectors.
   parent: BaseCartridge
   abstract: true
@@ -28,7 +28,7 @@
 
 - type: entity
   id: Cartridge68x52mmCaseless
-  name: cartridge (6.8x52mm Caseless)
+  name: cartridge (6.8x52mm STANAG Caseless)
   parent: BaseCartridge68x52mmCaseless
   components:
   - type: CartridgeAmmo
@@ -36,7 +36,7 @@
 
 - type: entity
   id: Cartridge68x52mmCaselessRubber
-  name: cartridge (6.8x52mm Caseless rubber)
+  name: cartridge (6.8x52mm STANAG Caseless rubber)
   parent: BaseCartridge68x52mmCaseless
   components:
   - type: CartridgeAmmo
@@ -44,7 +44,7 @@
 
 - type: entity
   id: Cartridge68x52mmCaselessPractice
-  name: cartridge (6.8x52mm Caseless practice)
+  name: cartridge (6.8x52mm STANAG Caseless practice)
   parent: BaseCartridge68x52mmCaseless
   components:
   - type: CartridgeAmmo

@@ -45,7 +45,7 @@
 - type: entity
   parent: BaseAmmoBox68x52mmCaseless
   id: AmmoBox68x52mmCaseless
-  name: ammunition box (6.8x52mm Caseless)
+  name: ammunition box (6.8x52mm STANAG Caseless)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge68x52mmCaseless
@@ -59,7 +59,7 @@
 - type: entity
   parent: BaseAmmoBox68x52mmCaseless
   id: AmmoBox68x52mmCaselessPractice
-  name: ammunition box (6.8x52mm Caseless practice)
+  name: ammunition box (6.8x52mm STANAG Caseless practice)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge68x52mmCaselessPractice
@@ -74,7 +74,7 @@
 - type: entity
   parent: BaseAmmoBox68x52mmCaseless
   id: AmmoBox68x52mmCaselessRubber
-  name: ammunition box (6.8x52mm Caseless rubber)
+  name: ammunition box (6.8x52mm STANAG Caseless rubber)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge68x52mmCaselessRubber
@@ -90,7 +90,7 @@
 - type: entity
   parent: BaseAmmoBox68x52mmCaseless
   id: AmmoBox68x52mmCaselessBig
-  name: big ammunition box (6.8x52mm Caseless)
+  name: big ammunition box (6.8x52mm STANAG Caseless)
   suffix: Big
   components:
   - type: Item
