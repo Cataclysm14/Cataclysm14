@@ -1,0 +1,11 @@
+- type: latheRecipe
+  id: WeaponSubMachineGunKnallstock
+  parent: BaseWeaponRecipeLong
+  result: WeaponSubMachineGunKnallstock
+  categories: # Mono
+  - Ballistic
+  - Weapons
+  materials:
+    Steel: 2500
+    Plasteel: 1200
+    Plastic: 1500
