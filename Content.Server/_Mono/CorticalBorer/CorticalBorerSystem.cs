@@ -187,7 +187,7 @@ public sealed partial class CorticalBorerSystem : SharedCorticalBorerSystem
         CorticalBorerChemicalPrototype? chemProto = null;
         foreach (var chem in _proto.EnumeratePrototypes<CorticalBorerChemicalPrototype>())
         {
-            if (chem.Reagent.ToLower() == message.ChemProtoId)
+            if (chem.Reagent.Equals(message.ChemProtoId))
             {
                 chemProto = chem;
                 break;
@@ -214,13 +214,14 @@ public sealed partial class CorticalBorerSystem : SharedCorticalBorerSystem
             if (!_proto.TryIndex(prototype.Reagent, out ReagentPrototype? proto))
                 continue;
 
-            var reagentId = proto.LocalizedName;
+            var reagentName = proto.LocalizedName;
+            var reagentId = proto.ID;
             var cost = prototype.Cost;
             var amount = ent.Comp.InjectAmount;
             var chems = ent.Comp.ChemicalPoints;
             var color = proto.SubstanceColor;
 
-            clones.Add(new CorticalBorerDispenserItem(reagentId, cost, amount, chems, color)); // need color and name
+            clones.Add(new CorticalBorerDispenserItem(reagentName,reagentId, cost, amount, chems, color)); // need color and name
         }
 
         return clones;

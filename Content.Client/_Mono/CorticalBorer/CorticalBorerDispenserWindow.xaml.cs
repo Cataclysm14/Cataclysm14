@@ -32,7 +32,7 @@ public sealed partial class CorticalBorerDispenserWindow : FancyWindow
 
         ReagentList.Children.Clear();
 
-        chemicals.Sort((x, y) => x.ReagentId.CompareTo(y.ReagentId));
+        chemicals.Sort((x, y) => x.ReagentName.CompareTo(y.ReagentName));
 
         foreach (var chem in chemicals)
         {
