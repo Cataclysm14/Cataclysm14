@@ -28,6 +28,7 @@ public partial class SharedBodySystem
 {
     [Dependency] private readonly RandomHelperSystem _randomHelper = default!; // Shitmed Change
     [Dependency] private readonly InventorySystem _inventorySystem = default!; // Shitmed Change
+    [Dependency] private readonly SharedContainerSystem _container = default!; // Mono Change
 
     private void InitializeParts()
     {
@@ -58,7 +59,7 @@ public partial class SharedBodySystem
         // Mono change
         if (ent.Comp.PartType == BodyPartType.Head)
         {
-            _slots.AddItemSlot(ent, ent.Comp.ContainerName, ent.Comp.InfestationSlot);
+            ent.Comp.InfestationContainer = _container.EnsureContainer<Container>(ent, "InfestationContainer");
             Dirty(ent, ent.Comp);
         }
 

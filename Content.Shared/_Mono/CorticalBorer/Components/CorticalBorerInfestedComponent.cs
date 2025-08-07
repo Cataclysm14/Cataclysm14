@@ -16,7 +16,7 @@ public sealed partial class CorticalBorerInfestedComponent : Robust.Shared.GameO
     /// <summary>
     /// is the person under the borer's control
     /// </summary>
-    [ViewVariables]
+    [ViewVariables(VVAccess.ReadWrite)]
     public TimeSpan? ControlTimeEnd;
 
     [ViewVariables]

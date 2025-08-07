@@ -33,7 +33,7 @@ public sealed class CorticalBorerInfestedSystem : EntitySystem
             return;
 
         var timeRemaining = Math.Floor((cte - _timing.CurTime).TotalSeconds);
+        args.PushMarkup(Loc.GetString("cortical-borer-self-examine", ("chempoints", infected.Comp.Borer.Comp.ChemicalPoints)));
         args.PushMarkup(Loc.GetString("infested-control-examined", ("timeremaining", timeRemaining)));
     }
-
 }

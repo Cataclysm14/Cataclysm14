@@ -9,7 +9,7 @@ using Content.Shared.MedicalScanner;
 using Content.Shared.Popups;
 using Content.Shared.StatusEffect;
 using Content.Shared.Coordinates;
-using Content.Shared.IdentityManagement;
+using Robust.Shared.Containers;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared._Mono.CorticalBorer;
@@ -23,6 +23,7 @@ public partial class SharedCorticalBorerSystem : EntitySystem
     [Dependency] protected readonly SharedPopupSystem _popup = default!;
     [Dependency] protected readonly SharedUserInterfaceSystem _ui = default!;
     [Dependency] protected readonly SharedActionsSystem _actions = default!;
+    [Dependency] protected readonly SharedContainerSystem _container = default!;
 
     public override void Initialize()
     {
@@ -35,7 +36,7 @@ public partial class SharedCorticalBorerSystem : EntitySystem
             || args.Examined != args.Examiner)
             return;
 
-        args.PushMarkup(Loc.GetString("cortical-borer-self-examine", ("chempoints", worm.Comp.ChemicalPoints))); // bro why the fuck is this mispredicting
+        args.PushMarkup(Loc.GetString("cortical-borer-self-examine", ("chempoints", worm.Comp.ChemicalPoints)));
     }
 
     public bool CanUseAbility(Entity<CorticalBorerComponent> ent, EntityUid target)
@@ -65,7 +66,7 @@ public partial class SharedCorticalBorerSystem : EntitySystem
             return;
 
         // Make sure they get into the target
-        if (!_itemSlotsSystem.TryInsertSetAudio(target, head.InfestationSlot, uid, null))
+        if (!_container.Insert(uid, head.InfestationContainer))
             return;
 
         // Make sure the infected person is infected right
@@ -88,9 +89,9 @@ public partial class SharedCorticalBorerSystem : EntitySystem
         BodyPartComponent? head = null;
 
         // check every head because what if it's not in the first one somehow
-        foreach (var (__, comp) in headSlots)
+        foreach (var (uid, comp) in headSlots)
         {
-            if (comp.InfestationSlot.Item == ent.Owner)
+            if (_container.ContainsEntity(uid, ent))
             {
                 head = comp;
                 break;
@@ -102,7 +103,7 @@ public partial class SharedCorticalBorerSystem : EntitySystem
             return false;
 
         // Make sure they get out of the host
-        if (!_itemSlotsSystem.TryEjectSetAudio(host, head.InfestationSlot, user, out var ___))
+        if (!_container.TryRemoveFromContainer(ent.Owner))
             return false;
 
         // close all the UIs that relate to host
