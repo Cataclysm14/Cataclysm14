@@ -9740,3 +9740,136 @@ Entries:
   id: 1087
   time: '2025-08-05T02:58:33.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1772
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Ported recent wizden chem rebalances (and uncucked cryoxadone). Some
+        chems should heal more but slower over time, and Bicaridine wont make
+        Razorium with other brute chems anymore.
+  id: 1088
+  time: '2025-08-05T18:23:58.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1776
+- author: Catazeus
+  changes:
+    - type: Add
+      message: Ported Funky mindshield icon resprite.
+  id: 1089
+  time: '2025-08-06T00:00:53.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1777
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Ramming damage halved.
+  id: 1090
+  time: '2025-08-06T00:15:17.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1779
+- author: Onezero0
+  changes:
+    - type: Tweak
+      message: Edited the TSFMC Halcyon a bit. Have fun, LARPers.
+  id: 1091
+  time: '2025-08-06T01:18:24.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1778
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: >-
+        The maints jack is now more usable as an improv weapon, can be wielded,
+        is smaller in storage, and can pry.
+  id: 1092
+  time: '2025-08-06T17:20:24.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1786
+- author: Honestly101
+  changes:
+    - type: Add
+      message: Added more faction thrusters.
+  id: 1093
+  time: '2025-08-06T17:44:18.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1780
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        Syndie commander suit removed from tech. One exists in rogue base now
+        roundstart for the commander, don't lose it.
+    - type: Tweak
+      message: TSFMC get proper security magboots and jetpacks in their lockers again.
+    - type: Tweak
+      message: USSP Suitstorages get void jetpacks.
+    - type: Tweak
+      message: Void jetpack tech moved to tier 2 civilian, cost reduced to 7500.
+  id: 1094
+  time: '2025-08-06T22:04:27.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1788
+- author: starch70
+  changes:
+    - type: Add
+      message: Added 2 more IFF-hidden POIs.
+    - type: Tweak
+      message: >-
+        Changed Lancelot to be IFF-hidden. Lancelot will also not spawn
+        dead-drop notes now because of this.
+  id: 1095
+  time: '2025-08-06T22:05:05.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1782
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        All magboots except advanced magboots now have 15% slowdown when active.
+        Syndicate magboots included.
+    - type: Tweak
+      message: All combat boots/jackboots/etc now grant 50% less slowdown from damage.
+    - type: Tweak
+      message: >-
+        All security/military/syndie/combat/etc magboots now grant 25% less
+        slowdown from damage.
+  id: 1096
+  time: '2025-08-06T22:42:30.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1789
+- author: BoskiYourk
+  changes:
+    - type: Remove
+      message: Removed the Ability for the Commissar to buy a Ledokol Round-Start
+    - type: Tweak
+      message: Updated Engineering in Dorms in the Ledokol
+  id: 1097
+  time: '2025-08-07T06:44:46.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1793
+- author: BoskiYourk
+  changes:
+    - type: Tweak
+      message: Updated Baikal to be more in line with other stations
+  id: 1098
+  time: '2025-08-07T06:46:03.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1792
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Added AK-220 as a shitty cheap SMG to Mercenary loadouts, USSP T1 guns,
+        liberation stations (both PMC and normal), and low-tier expedition loot.
+    - type: Tweak
+      message: USSP can make 9x19mm FMJ/incen/practice SMG mags/ammo boxes now.
+  id: 1099
+  time: '2025-08-07T07:03:32.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1784
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        Rule 1 tweak, justified diplomacy, truces, temporary deals, etc allowed.
+        Permanent, cooperative alliances banned.
+  id: 1100
+  time: '2025-08-07T14:04:41.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1711
+- author: tonotom1
+  changes:
+    - type: Add
+      message: Maints jack wield sprite
+    - type: Tweak
+      message: Maints jack combat stats tweaked to be inline with pickaxe.
+  id: 1101
+  time: '2025-08-07T20:07:42.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1798

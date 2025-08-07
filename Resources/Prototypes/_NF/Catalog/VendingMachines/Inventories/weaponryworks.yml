@@ -2,8 +2,10 @@
 # SPDX-FileCopyrightText: 2025 Daniel Lenrd
 # SPDX-FileCopyrightText: 2025 FireFoxPhoenix
 # SPDX-FileCopyrightText: 2025 HungryCuban
+# SPDX-FileCopyrightText: 2025 Onezero0
 # SPDX-FileCopyrightText: 2025 Redrover1760
 # SPDX-FileCopyrightText: 2025 core-mene
+# SPDX-FileCopyrightText: 2025 significant harassment
 # SPDX-FileCopyrightText: 2025 starch
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
@@ -20,6 +22,7 @@
     WeaponRevolverArgenti: 1
     WeaponPistolMk32: 1
     WeaponRevolverFaith: 1
+    WeaponSubMachineGunAK220: 1
     AmmoBox12_gaugeSlug: 1
     AmmoBox12_gaugeBuckshot: 1
     AmmoBox12_gaugeBeanbag: 1
@@ -50,6 +53,7 @@
     WeaponRevolverArgenti: 4294967295
     WeaponPistolMk32: 4294967295
     WeaponRevolverFaith: 4294967295
+    WeaponSubMachineGunAK220: 4294967295
 # Magazines
     Magazine9x19mmPistolFMJ: 4294967295 # 9x19mm Pistol
     Magazine45_ACPPistolFMJ: 4294967295 # .45 ACP Pistol
@@ -87,6 +91,12 @@
 # Rifles
     WeaponRifleGestio: 4294967295
     WeaponRifleNovaliteC1: 4294967295
+    # WeaponSubMachineGunC20rPMC: 4294967295
+    # WeaponSubMachineGunWt550PMC: 4294967295
+    # WeaponRifleLecterPMC: 4294967295
+    # WeaponRifleVulcanFCMC: 4294967295
+    # WeaponSubMachineGunDrozdPMC: 4294967295
+    # WeaponSubMachineGunAK220: 4294967295
 # Shotguns
     # WeaponShotgunBigJohnny: 4294967295
     # WeaponShotgunEnforcerPMC: 4294967295
