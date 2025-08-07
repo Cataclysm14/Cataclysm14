@@ -435,20 +435,28 @@ public abstract partial class SharedSurgerySystem
         if (!TryComp(args.Part, out BodyPartComponent? partComp) || partComp.PartType != BodyPartType.Head)
             return;
 
-        if (partComp.InfestationContainer.ContainedEntities.Count == 0)
+        Entity<CorticalBorerComponent>? borer = null;
+
+        if (partComp.InfestationContainer.ContainedEntities.Count != 0)
         {
             foreach (var contained in partComp.InfestationContainer.ContainedEntities)
             {
-                if(TryComp<CorticalBorerComponent>(contained, out var borerComponent))
-                    _corticalBorer.TryEjectBorer((contained, borerComponent), args.User);
+                if (TryComp<CorticalBorerComponent>(contained, out var borerComponent))
+                {
+                    borer = (contained, borerComponent);
+                    break;
+                }
             }
         }
+
+        if(borer.HasValue)
+            _corticalBorer.TryEjectBorer(borer.Value);
     }
 
     private void OnCorticalBorerRemovalCheck(Entity<SurgeryStepRemoveCorticalBorerComponent> ent, ref SurgeryStepCompleteCheckEvent args)
     {
-        if (!TryComp(args.Part, out BodyPartComponent? partComp) ||
-            partComp.InfestationContainer.ContainedEntities.Count != 0)
+        if (!HasComp<BodyPartComponent>(args.Part) ||
+            HasComp<CorticalBorerInfestedComponent>(args.Body))
             args.Cancelled = true;
     }
 

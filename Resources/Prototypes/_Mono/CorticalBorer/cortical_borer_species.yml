@@ -73,6 +73,7 @@
   - type: HealthAnalyzer
     silent: true
     MaxScanRange: .5
+  - type: CanEscapeInventory
 
 - type: entity
   parent: BaseItem
