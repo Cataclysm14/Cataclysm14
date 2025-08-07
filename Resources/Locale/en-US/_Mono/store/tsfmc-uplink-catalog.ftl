@@ -49,6 +49,12 @@ uplink-security-8x65mm-boxmag-desc = Compatible with the MR-8B only. Contains 75
 uplink-security-8x65mm-box-name = 8x65mm SKR Box
 uplink-security-8x65mm-box-desc = Used to refill magazines/boxes for the MR-8C and MR-8B. Contains 100 rounds.
 
+uplink-security-68x52mm-magazine-name = 6.8x52mm Caseless Magazine
+uplink-security-68x52mm-magazine-desc = Compatible with the Lecter. Contains 30 rounds.
+
+uplink-security-68x52mm-box-name = 6.8x52mm Caseless Box
+uplink-security-68x52mm-box-desc = Used to refill magazines for the Lecter. Contains 200 rounds.
+
 uplink-security-portable-recharger-name = Portable Recharger
 uplink-security-portable-recharger-desc = An experimental portable recharger equipped with an inbuilt microreactor.
 

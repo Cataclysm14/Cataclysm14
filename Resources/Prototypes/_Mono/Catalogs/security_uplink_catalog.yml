@@ -182,6 +182,36 @@
       - SecurityUplink
 
 - type: listing
+  id: UplinkSecurityMagazine68x52mm
+  name:  uplink-security-68x52mm-magazine-name
+  description: uplink-security-68x52mm-magazine-desc
+  productEntity: Magazine68x52mmCaseless
+  cost:
+    FederationMilitaryCredit: 2
+  categories:
+  - UplinkSecurityAmmo
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - SecurityUplink
+
+- type: listing
+  id: UplinkSecurityBox68x52mm
+  name:  uplink-security-68x52mm-box-name
+  description: uplink-security-68x52mm-box-desc
+  productEntity: AmmoBox68x52mmCaselessBig
+  cost:
+    FederationMilitaryCredit: 8
+  categories:
+  - UplinkSecurityAmmo
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - SecurityUplink
+
+- type: listing
   id: UplinkSecurityNavyOfficerSword
   name:  uplink-security-navyofficersword-name
   description: uplink-security-navyofficersword-desc
