@@ -143,8 +143,8 @@
   description: A cybernetic left leg that allows its wearer to run faster.
   components:
   - type: MovementBodyPart
-    walkSpeed: 3.125
-    sprintSpeed: 5.625
+    walkSpeed: 2.875 # Mono
+    sprintSpeed: 5.175 # Mono
   - type: BodyPart
     onAdd:
     - type: NoSlip
@@ -157,8 +157,8 @@
   description: A cybernetic left leg that allows its wearer to run faster.
   components:
   - type: MovementBodyPart
-    walkSpeed: 3.125
-    sprintSpeed: 5.625
+    walkSpeed: 2.875 # Mono
+    sprintSpeed: 5.175 # Mono
   - type: BodyPart
     onAdd:
     - type: NoSlip
