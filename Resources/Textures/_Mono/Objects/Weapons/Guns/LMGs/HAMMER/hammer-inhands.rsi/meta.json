@@ -1,24 +1,12 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Sprite made by plethorian (discord).",
+    "copyright": "Sprites made by BoskiYourk (GitHub).",
     "size": {
         "x": 32,
         "y": 32
     },
     "states": [
-        {
-            "name": "icon"
-        },
-        {
-            "name": "base"
-        },
-        {
-            "name": "bolt-open"
-        },
-        {
-            "name": "mag-0"
-        },
         {
             "name": "inhand-left",
             "directions": 4
