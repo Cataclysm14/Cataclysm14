@@ -1,34 +1,11 @@
-# SPDX-FileCopyrightText: 2023 Cheackraze
-# SPDX-FileCopyrightText: 2023 Dawid Bla
-# SPDX-FileCopyrightText: 2023 deltanedas
-# SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2023 lzk
-# SPDX-FileCopyrightText: 2023 metalgearsloth
-# SPDX-FileCopyrightText: 2024 Checkraze
-# SPDX-FileCopyrightText: 2024 Dvir
-# SPDX-FileCopyrightText: 2024 ErhardSteinhauer
-# SPDX-FileCopyrightText: 2024 Salvantrix
-# SPDX-FileCopyrightText: 2024 TsjipTsjip
-# SPDX-FileCopyrightText: 2024 Wiebe Geertsma
-# SPDX-FileCopyrightText: 2025 Arcticular1
-# SPDX-FileCopyrightText: 2025 Ark
-# SPDX-FileCopyrightText: 2025 Honestly101
-# SPDX-FileCopyrightText: 2025 Redrover1760
-# SPDX-FileCopyrightText: 2025 RikuTheKiller
-# SPDX-FileCopyrightText: 2025 Whatstone
-# SPDX-FileCopyrightText: 2025 core-mene
-# SPDX-FileCopyrightText: 2025 starch
-#
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
 meta:
   format: 7
   category: Grid
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/07/2025 10:03:24
-  entityCount: 4841
+  time: 08/08/2025 00:54:46
+  entityCount: 4842
 maps: []
 grids:
 - 1
@@ -1964,7 +1941,8 @@ entities:
           -2,0:
             0: 47359
           -2,1:
-            0: 43195
+            0: 43163
+            6: 32
           -2,2:
             0: 65450
           -2,-1:
@@ -1998,7 +1976,7 @@ entities:
             0: 1024
           8,3:
             0: 7
-            6: 8
+            7: 8
           5,5:
             0: 57308
           5,6:
@@ -2084,8 +2062,8 @@ entities:
             0: 61440
           -3,-2:
             0: 59407
-            7: 512
-            8: 1024
+            8: 512
+            9: 1024
           -2,-3:
             0: 61440
           -2,-2:
@@ -2218,6 +2196,21 @@ entities:
           moles:
           - 27.225372
           - 102.419266
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 21.6852
+          - 81.57766
           - 0
           - 0
           - 0
@@ -2806,7 +2799,7 @@ entities:
       pos: -8.5,2.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -474.38763
+      secondsUntilStateChange: -517.1948
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2859,7 +2852,7 @@ entities:
       pos: 3.5,17.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -165.35461
+      secondsUntilStateChange: -208.1618
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2951,7 +2944,7 @@ entities:
       pos: -9.5,-0.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -471.421
+      secondsUntilStateChange: -514.22815
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2997,7 +2990,7 @@ entities:
       pos: -4.5,14.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -21.321432
+      secondsUntilStateChange: -64.128624
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -19874,14 +19867,25 @@ entities:
     - type: Transform
       pos: -6.5,5.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 3152
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
     - type: EntityStorage
       air:
         volume: 200
         immutable: False
         temperature: 293.14923
         moles:
-        - 1.7459903
-        - 6.568249
+        - 1.8856695
+        - 7.0937095
         - 0
         - 0
         - 0
@@ -30384,6 +30388,15 @@ entities:
     - type: Transform
       pos: -5.519909,-2.366984
       parent: 1
+- proto: WeaponPistolHawk4
+  entities:
+  - uid: 3152
+    components:
+    - type: Transform
+      parent: 2833
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: WeaponTurretDravon
   entities:
   - uid: 4813

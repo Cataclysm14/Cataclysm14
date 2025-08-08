@@ -1,50 +1,11 @@
-# SPDX-FileCopyrightText: 2022 0x6273
-# SPDX-FileCopyrightText: 2022 20kdc
-# SPDX-FileCopyrightText: 2022 Francesco
-# SPDX-FileCopyrightText: 2022 Kara
-# SPDX-FileCopyrightText: 2022 LittleBuilderJane
-# SPDX-FileCopyrightText: 2022 Nairod
-# SPDX-FileCopyrightText: 2022 metalgearsloth
-# SPDX-FileCopyrightText: 2023 Debug
-# SPDX-FileCopyrightText: 2023 Leon Friedrich
-# SPDX-FileCopyrightText: 2023 Nemanja
-# SPDX-FileCopyrightText: 2023 TsjipTsjip
-# SPDX-FileCopyrightText: 2023 avery
-# SPDX-FileCopyrightText: 2023 lzk
-# SPDX-FileCopyrightText: 2024 Alice "Arimah" Heurlin
-# SPDX-FileCopyrightText: 2024 AndresE55
-# SPDX-FileCopyrightText: 2024 Dvir
-# SPDX-FileCopyrightText: 2024 Emisse
-# SPDX-FileCopyrightText: 2024 ErhardSteinhauer
-# SPDX-FileCopyrightText: 2024 GreaseMonk
-# SPDX-FileCopyrightText: 2024 Maxtone
-# SPDX-FileCopyrightText: 2024 PECK
-# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers
-# SPDX-FileCopyrightText: 2024 ThatOneGoblin25
-# SPDX-FileCopyrightText: 2024 Whatstone
-# SPDX-FileCopyrightText: 2025 Ark
-# SPDX-FileCopyrightText: 2025 Blu
-# SPDX-FileCopyrightText: 2025 BoskiYourk
-# SPDX-FileCopyrightText: 2025 Checkraze
-# SPDX-FileCopyrightText: 2025 Redrover1760
-# SPDX-FileCopyrightText: 2025 RikuTheKiller
-# SPDX-FileCopyrightText: 2025 WreakHavocOnTheMiddleClass
-# SPDX-FileCopyrightText: 2025 core-mene
-# SPDX-FileCopyrightText: 2025 dustylens
-# SPDX-FileCopyrightText: 2025 significant harassment
-# SPDX-FileCopyrightText: 2025 sleepyyapril
-# SPDX-FileCopyrightText: 2025 starch
-#
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
 meta:
   format: 7
   category: Grid
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/07/2025 05:08:34
-  entityCount: 11422
+  time: 08/08/2025 00:53:50
+  entityCount: 11424
 maps: []
 grids:
 - 1
@@ -4422,7 +4383,8 @@ entities:
           21,15:
             0: 4089
           21,16:
-            0: 57309
+            0: 40925
+            6: 16384
           22,12:
             0: 65408
           22,13:
@@ -4635,6 +4597,21 @@ entities:
           moles:
           - 27.225372
           - 102.419266
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.14996
+          moles:
+          - 20.078888
+          - 75.53487
           - 0
           - 0
           - 0
@@ -5641,7 +5618,7 @@ entities:
       pos: 87.5,60.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -19008.07
+      secondsUntilStateChange: -19080.012
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -6241,7 +6218,7 @@ entities:
       pos: 73.5,43.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -7468.4097
+      secondsUntilStateChange: -7540.3516
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8914,6 +8891,15 @@ entities:
     - type: Transform
       pos: 76.52126,72.80378
       parent: 1
+- proto: BoxMagazineL6
+  entities:
+  - uid: 11423
+    components:
+    - type: Transform
+      parent: 1411
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: BoxMRE
   entities:
   - uid: 2841
@@ -46292,6 +46278,39 @@ entities:
     - type: Transform
       pos: 86.5,67.5
       parent: 1
+    - type: AccessReader
+      access:
+      - - USSPCommand
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14923
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 11423
+          - 11424
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
   - uid: 3806
     components:
     - type: Transform
@@ -69316,6 +69335,15 @@ entities:
     - type: Transform
       pos: 96.503685,73.73631
       parent: 1
+- proto: WeaponLMGHammer
+  entities:
+  - uid: 11424
+    components:
+    - type: Transform
+      parent: 1411
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: WeaponRifleAk
   entities:
   - uid: 10932

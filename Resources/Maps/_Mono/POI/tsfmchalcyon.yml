@@ -1,51 +1,11 @@
-# SPDX-FileCopyrightText: 2022 0x6273
-# SPDX-FileCopyrightText: 2022 20kdc
-# SPDX-FileCopyrightText: 2022 Francesco
-# SPDX-FileCopyrightText: 2022 Kara
-# SPDX-FileCopyrightText: 2022 LittleBuilderJane
-# SPDX-FileCopyrightText: 2022 Nairod
-# SPDX-FileCopyrightText: 2022 metalgearsloth
-# SPDX-FileCopyrightText: 2023 Debug
-# SPDX-FileCopyrightText: 2023 Leon Friedrich
-# SPDX-FileCopyrightText: 2023 Nemanja
-# SPDX-FileCopyrightText: 2023 TsjipTsjip
-# SPDX-FileCopyrightText: 2023 avery
-# SPDX-FileCopyrightText: 2023 lzk
-# SPDX-FileCopyrightText: 2024 Alice "Arimah" Heurlin
-# SPDX-FileCopyrightText: 2024 AndresE55
-# SPDX-FileCopyrightText: 2024 Dvir
-# SPDX-FileCopyrightText: 2024 Emisse
-# SPDX-FileCopyrightText: 2024 ErhardSteinhauer
-# SPDX-FileCopyrightText: 2024 GreaseMonk
-# SPDX-FileCopyrightText: 2024 Maxtone
-# SPDX-FileCopyrightText: 2024 PECK
-# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers
-# SPDX-FileCopyrightText: 2024 ThatOneGoblin25
-# SPDX-FileCopyrightText: 2024 Whatstone
-# SPDX-FileCopyrightText: 2025 Ark
-# SPDX-FileCopyrightText: 2025 AwareFoxy
-# SPDX-FileCopyrightText: 2025 Blu
-# SPDX-FileCopyrightText: 2025 Checkraze
-# SPDX-FileCopyrightText: 2025 Onezero0
-# SPDX-FileCopyrightText: 2025 Redrover1760
-# SPDX-FileCopyrightText: 2025 RikuTheKiller
-# SPDX-FileCopyrightText: 2025 WreakHavocOnTheMiddleClass
-# SPDX-FileCopyrightText: 2025 core-mene
-# SPDX-FileCopyrightText: 2025 dustylens
-# SPDX-FileCopyrightText: 2025 significant harassment
-# SPDX-FileCopyrightText: 2025 sleepyyapril
-# SPDX-FileCopyrightText: 2025 starch
-#
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
 meta:
   format: 7
   category: Grid
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/06/2025 00:05:29
-  entityCount: 9777
+  time: 08/08/2025 00:56:40
+  entityCount: 9778
 maps: []
 grids:
 - 1
@@ -2818,7 +2778,8 @@ entities:
           0,7:
             0: 4095
           -1,7:
-            0: 30704
+            3: 16
+            0: 30688
           0,8:
             0: 65535
           1,5:
@@ -2870,7 +2831,7 @@ entities:
           -1,-7:
             0: 30591
           0,-6:
-            3: 26487
+            4: 26487
             0: 2048
           -1,-5:
             0: 3840
@@ -3109,8 +3070,8 @@ entities:
             2: 34816
           -3,-7:
             2: 272
-            4: 12
-            5: 3072
+            5: 12
+            6: 3072
           -3,-6:
             2: 16385
             1: 1150
@@ -3120,8 +3081,8 @@ entities:
           -3,-9:
             0: 35775
           -2,-7:
-            4: 1
-            5: 256
+            5: 1
+            6: 256
             0: 52428
           -2,-6:
             2: 1
@@ -3515,6 +3476,21 @@ entities:
           moles:
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.14996
+          moles:
+          - 20.078888
+          - 75.53487
           - 0
           - 0
           - 0
@@ -4470,7 +4446,7 @@ entities:
       pos: -32.5,-11.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -59913.484
+      secondsUntilStateChange: -59995.863
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -4650,7 +4626,7 @@ entities:
       pos: 31.5,29.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -13560.903
+      secondsUntilStateChange: -13643.281
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -4857,7 +4833,7 @@ entities:
       pos: -14.5,-3.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -101749.56
+      secondsUntilStateChange: -101831.94
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -4906,7 +4882,7 @@ entities:
       pos: 22.5,-2.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -103563.664
+      secondsUntilStateChange: -103646.04
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -4929,7 +4905,7 @@ entities:
       pos: 20.5,-11.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -412.20102
+      secondsUntilStateChange: -494.57883
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -5008,7 +4984,7 @@ entities:
       pos: 13.5,-1.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -101306.3
+      secondsUntilStateChange: -101388.67
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -5044,7 +5020,7 @@ entities:
       pos: 11.5,-2.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -58323.457
+      secondsUntilStateChange: -58405.836
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -5055,7 +5031,7 @@ entities:
       pos: 9.5,-2.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -72133.99
+      secondsUntilStateChange: -72216.37
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -5081,7 +5057,7 @@ entities:
       pos: 8.5,-12.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -99834.63
+      secondsUntilStateChange: -99917.01
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -5118,7 +5094,7 @@ entities:
       pos: -0.5,-12.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -71113.29
+      secondsUntilStateChange: -71195.664
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -5364,7 +5340,7 @@ entities:
       pos: -3.5,15.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -63871.066
+      secondsUntilStateChange: -63953.445
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -44115,6 +44091,35 @@ entities:
     - type: Transform
       pos: -3.5,29.5
       parent: 1
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14923
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 9778
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
 - proto: LockerSteel
   entities:
   - uid: 4218
@@ -62773,6 +62778,21 @@ entities:
     components:
     - type: Transform
       parent: 6272
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: WeaponEnergyGunFrost
+  entities:
+  - uid: 9778
+    components:
+    - type: Transform
+      parent: 6223
+    - type: EnergyGun
+      currentFireMode:
+        state: ""
+        name: disable
+        fireCost: 75
+        proto: BulletDisabler
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
