@@ -133,6 +133,10 @@
   - type: ItemTax # Mono
     taxAccounts:
       nfsd: 0.2
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _RMC14/Interface/MousePointer/shotgun_mouse.rsi
+      state: all
 
 - type: entity
   name: PA M-12 Bulldog (12 gauge)

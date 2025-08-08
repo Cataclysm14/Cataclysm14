@@ -20,6 +20,10 @@
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
   - type: StaticPrice
     price: 500
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _RMC14/Interface/MousePointer/lmg_mouse.rsi
+      state: all
   # No chamber because HMG may want its own
 
 - type: entity
