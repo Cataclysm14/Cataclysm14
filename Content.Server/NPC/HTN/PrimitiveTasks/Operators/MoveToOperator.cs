@@ -75,6 +75,7 @@ public sealed partial class MoveToOperator : HTNOperator, IHtnConditionalShutdow
     [DataField("stopOnLineOfSight")]
     public bool StopOnLineOfSight;
 
+    // <Monolith> - early port of wizden#38846
     /// <summary>
     /// Velocity below which we count as successfully braked.
     /// Don't care about velocity if null.
@@ -87,6 +88,7 @@ public sealed partial class MoveToOperator : HTNOperator, IHtnConditionalShutdow
     /// </summary>
     [DataField]
     public string DirectMoveTargetKey = "DirectMoveTarget";
+    // </Monolith>
 
     private const string MovementCancelToken = "MovementCancelToken";
 
@@ -120,6 +122,7 @@ public sealed partial class MoveToOperator : HTNOperator, IHtnConditionalShutdow
             !_entManager.TryGetComponent<PhysicsComponent>(owner, out var body))
             return (false, null);
 
+        // Monolith - early port of wizden#38846
         // check if we or target are offgrid or on different grids
         var doDirectMove = !_entManager.TryGetComponent<MapGridComponent>(xform.GridUid, out var ownerGrid) ||
                       !_entManager.TryGetComponent<MapGridComponent>(_transform.GetGrid(targetCoordinates), out var targetGrid) ||
@@ -154,6 +157,7 @@ public sealed partial class MoveToOperator : HTNOperator, IHtnConditionalShutdow
             });
         }
 
+        // Monolith - early port of wizden#38846
         if (!doDirectMove)
         {
             var path = await _pathfind.GetPath(
@@ -206,6 +210,7 @@ public sealed partial class MoveToOperator : HTNOperator, IHtnConditionalShutdow
             comp.Range = range;
         }
 
+        // Monolith - early port of wizden#38846
         // see if we want to just move directly first
         if (blackboard.TryGetValue<bool>(DirectMoveTargetKey, out var doDirectMove, _entManager) && doDirectMove)
         {
@@ -224,7 +229,7 @@ public sealed partial class MoveToOperator : HTNOperator, IHtnConditionalShutdow
 
             comp.CurrentPath = new Queue<PathPoly>(result.Path);
         }
-        comp.InRangeMaxSpeed = BrakeMaxVelocity;
+        comp.InRangeMaxSpeed = BrakeMaxVelocity; // Monolith
     }
 
     public override HTNOperatorStatus Update(NPCBlackboard blackboard, float frameTime)
@@ -260,6 +265,7 @@ public sealed partial class MoveToOperator : HTNOperator, IHtnConditionalShutdow
 
         // OwnerCoordinates is only used in planning so dump it.
         blackboard.Remove<PathResultEvent>(PathfindKey);
+        // Monolith - early port of wizden#38846
         // also clear DirectMove
         blackboard.Remove<bool>(DirectMoveTargetKey);
 

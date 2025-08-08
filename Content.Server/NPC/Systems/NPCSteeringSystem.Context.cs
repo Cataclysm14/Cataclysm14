@@ -92,19 +92,19 @@ public sealed partial class NPCSteeringSystem
         PhysicsComponent body,
         TransformComponent xform,
         Angle offsetRot,
-        float moveSpeed,
-        float acceleration,
+        float moveSpeed, // Monolith - early port of wizden#38846
+        float acceleration, // Monolith
         float friction,
         Span<float> interest,
         float frameTime,
         ref bool forceSteer,
-        ref float moveMultiplier)
+        ref float moveMultiplier) // Monolith
     {
         var ourCoordinates = xform.Coordinates;
         var destinationCoordinates = steering.Coordinates;
         var inLos = true;
 
-        // check if we should ignore all pathing logic and go straight to the target coordinates
+        // Monolith - check if we should ignore all pathing logic and go straight to the target coordinates
         var directMove = steering.DirectMove;
 
         // Check if we're in LOS if that's required.
@@ -136,6 +136,7 @@ public sealed partial class NPCSteeringSystem
             steering.ForceMove = false;
         }
 
+        // <Monolith> - early port of wizden#38846
         var velLen = body.LinearVelocity.Length();
 
         var careAboutSpeed = steering.InRangeMaxSpeed != null;
@@ -147,6 +148,7 @@ public sealed partial class NPCSteeringSystem
 
         // We've arrived and velocity is acceptable, nothing else matters.
         if (finalInRange && !velocityHigh)
+        // </Monolith>
         {
             steering.Status = SteeringStatus.InRange;
             ResetStuck(steering, ourCoordinates);
@@ -334,6 +336,7 @@ public sealed partial class NPCSteeringSystem
         if (!directMove)
             CheckPath(uid, steering, xform, needsPath, targetDistance);
 
+        // <Monolith> - early port of wizden#38846
         // whether we should want to brake right now
         var haveToBrake = finalInRange && velocityHigh;
 
@@ -410,11 +413,12 @@ public sealed partial class NPCSteeringSystem
                 moveMultiplier = 0f;
                 break;
         }
+        // </Monolith>
 
         return true;
     }
 
-    // used in TrySeek()
+    // Monolith - used in TrySeek()
     private enum MovementType
     {
         MovingToTarget,

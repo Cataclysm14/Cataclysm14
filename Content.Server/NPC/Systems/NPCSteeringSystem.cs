@@ -375,6 +375,7 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
         _modifierQuery.TryGetComponent(uid, out var modifier);
         var body = _physicsQuery.GetComponent(uid);
 
+        // Monolith - early port of wizden#38846
         var weightless = _gravity.IsWeightless(uid, body, xform);
         var moveSpeed = GetSprintSpeed(uid, modifier);
         var acceleration = GetAcceleration((uid, modifier), weightless);
@@ -392,7 +393,7 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
         RaiseLocalEvent(uid, ref ev);
         // If seek has arrived at the target node for example then immediately re-steer.
         var forceSteer = true;
-        var moveMultiplier = 1f; // multiplier to acceleration we should actually move with
+        var moveMultiplier = 1f; // Monolith - multiplier to acceleration we should actually move with
 
         if (steering.CanSeek && !TrySeek(uid, mover, steering, body, xform, offsetRot, moveSpeed, acceleration, friction, interest, frameTime, ref forceSteer, ref moveMultiplier))
         {
@@ -441,7 +442,7 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
 
         if (desiredDirection != -1)
         {
-            resultDirection = new Angle(desiredDirection * InterestRadians).ToVec() * moveMultiplier;
+            resultDirection = new Angle(desiredDirection * InterestRadians).ToVec() * moveMultiplier; // Monolith
         }
 
         steering.LastSteerDirection = resultDirection;
@@ -528,6 +529,7 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
         return modifier.CurrentSprintSpeed;
     }
 
+    // <Monolith> - early port of wizden#38846
     private float GetAcceleration(Entity<MovementSpeedModifierComponent?> ent, bool weightless)
     {
         if (!Resolve(ent, ref ent.Comp, false))
@@ -543,4 +545,5 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
 
         return weightless ? ent.Comp.WeightlessFriction : ent.Comp.Friction;
     }
+    // </Monolith>
 }
