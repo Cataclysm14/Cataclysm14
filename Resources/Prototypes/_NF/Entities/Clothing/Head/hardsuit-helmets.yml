@@ -162,7 +162,7 @@
     sprite: _NF/Clothing/Head/Hardsuits/nfsd_sheriff.rsi
 
 - type: entity
-  parent: NFClothingHeadHardsuitWithLightBaseNfsd
+  parent: [NFClothingHeadHardsuitWithLightBaseNfsd, ShowMedicalIcons, ShowSecurityIcons]
   id: ClothingHeadHelmetHardsuitNfsdExperimental
   categories: [ HideSpawnMenu ]
   name: TSFMC M92-X tacsuit helmet
@@ -175,6 +175,9 @@
   - type: PressureProtection
     highPressureMultiplier: 0.3
     lowPressureMultiplier: 1000
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
   - type: Armor
     modifiers:
       coefficients:
