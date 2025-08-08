@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2025 starch
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Client.CombatMode;
 using Content.Client.Hands.Systems;
 using Content.Shared._RMC14.CombatMode;
