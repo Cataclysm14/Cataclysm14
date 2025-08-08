@@ -17,6 +17,7 @@
 # SPDX-FileCopyrightText: 2024 Whatstone
 # SPDX-FileCopyrightText: 2025 core-mene
 # SPDX-FileCopyrightText: 2025 sleepyyapril
+# SPDX-FileCopyrightText: 2025 starch
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -30,6 +31,7 @@
     damage:
       types:
         Piercing: 16
+    armorPenetration: 0.1
 
 - type: entity
   id: Bullet4.6x30mmPractice
@@ -41,6 +43,7 @@
     damage:
       types:
         Blunt: 2
+    armorPenetration: 0.025
 
 - type: entity
   id: Bullet4.6x30mmRubber
@@ -52,6 +55,7 @@
     damage:
       types:
         Blunt: 3
+    armorPenetration: 0.025
 
 - type: entity
   id: Bullet4.6x30mmIncendiary
@@ -64,6 +68,7 @@
       types:
         Blunt: 3
         Heat: 15
+    armorPenetration: 0.025
 
 - type: entity
   id: Bullet4.6x30mmUranium
@@ -76,6 +81,7 @@
       types:
         Radiation: 6
         Piercing: 10
+    armorPenetration: 0.025
 
 # Upstream
 - type: entity
@@ -88,3 +94,4 @@
     damage:
       types:
         Shock: 0
+    armorPenetration: 0.025

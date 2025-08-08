@@ -108,6 +108,10 @@
   - type: ItemTax # Mono
     taxAccounts:
       nfsd: 0.3
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _RMC14/Interface/MousePointer/rifle_mouse.rsi
+      state: all
 
 - type: entity
   id: BaseWeaponPowerCell

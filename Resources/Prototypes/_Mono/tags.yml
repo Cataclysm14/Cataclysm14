@@ -42,6 +42,14 @@
 - type: Tag
   id: Magazine7.62x54mmRBox
 
+#6.8x52mm tags
+
+- type: Tag
+  id: Cartridge68x52mmCaseless
+
+- type: Tag
+  id: Magazine68x52mmCaseless
+
 #5.56x45mm tags
 
 - type: Tag

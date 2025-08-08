@@ -30,6 +30,7 @@
 # SPDX-FileCopyrightText: 2025 John
 # SPDX-FileCopyrightText: 2025 Whatstone
 # SPDX-FileCopyrightText: 2025 core-mene
+# SPDX-FileCopyrightText: 2025 starch
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -37,6 +38,7 @@
   id: BaseShellShotgun12_gauge
   name: shotgun shell (12 gauge)
   parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: added BaseC1Contraband
+  description: Standard shotgun round practically everywhere.
   abstract: true
   components:
   - type: Tag

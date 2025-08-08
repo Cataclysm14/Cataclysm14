@@ -9878,3 +9878,19 @@ Entries:
   id: 1101
   time: '2025-08-07T20:07:42.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1798
+- author: Arcticular1
+  changes:
+    - type: Tweak
+      message: >-
+        Took the syndicate commander suit out of the armory and into the
+        Commander's room.
+  id: 1102
+  time: '2025-08-07T23:13:58.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1796
+- author: Rubeebeebee
+  changes:
+    - type: Tweak
+      message: added 2x defibs to the padval
+  id: 1103
+  time: '2025-08-08T00:41:16.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1801
