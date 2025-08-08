@@ -10,7 +10,9 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 28
+        Piercing: 34
+        Structural: 200
+    armorPenetration: -0.1
 
 - type: entity
   id: PelletShotgunBeanbag
@@ -25,6 +27,7 @@
     damage:
       types:
         Blunt: 10
+    armorPenetration: -0.2
   - type: StaminaDamageOnCollide
     damage: 30 # 4 hits to stun
 
@@ -40,7 +43,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 10
+        Piercing: 11
+    armorPenetration: -0.2
 
 - type: entity
   id: PelletShotgunSpread
@@ -64,8 +68,9 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 3
-        Heat: 7
+        Blunt: 6
+        Heat: 11
+    armorPenetration: -0.2
   - type: IgnitionSource
     ignited: true
 
@@ -115,8 +120,9 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 3
-        Slash: 3
+        Piercing: 7
+        Slash: 5
+    armorPenetration: -0.2
 
 - type: entity
   id: PelletShotgunImprovisedSpread
@@ -215,7 +221,8 @@
     damage:
       types:
         Radiation: 5
-        Piercing: 5
+        Piercing: 7
+    armorPenetration: -0.1
 
 - type: entity
   id: PelletShotgunUraniumSpread
@@ -274,6 +281,7 @@
     damage:
       types:
         Slash: 25
+    armorPenetration: -0.2
 
 - type: entity
   id: PelletGlassSpread
