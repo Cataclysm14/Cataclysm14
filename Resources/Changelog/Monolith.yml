@@ -9828,3 +9828,64 @@ Entries:
   id: 1096
   time: '2025-08-06T22:42:30.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1789
+- author: BoskiYourk
+  changes:
+    - type: Remove
+      message: Removed the Ability for the Commissar to buy a Ledokol Round-Start
+    - type: Tweak
+      message: Updated Engineering in Dorms in the Ledokol
+  id: 1097
+  time: '2025-08-07T06:44:46.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1793
+- author: BoskiYourk
+  changes:
+    - type: Tweak
+      message: Updated Baikal to be more in line with other stations
+  id: 1098
+  time: '2025-08-07T06:46:03.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1792
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Added AK-220 as a shitty cheap SMG to Mercenary loadouts, USSP T1 guns,
+        liberation stations (both PMC and normal), and low-tier expedition loot.
+    - type: Tweak
+      message: USSP can make 9x19mm FMJ/incen/practice SMG mags/ammo boxes now.
+  id: 1099
+  time: '2025-08-07T07:03:32.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1784
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        Rule 1 tweak, justified diplomacy, truces, temporary deals, etc allowed.
+        Permanent, cooperative alliances banned.
+  id: 1100
+  time: '2025-08-07T14:04:41.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1711
+- author: tonotom1
+  changes:
+    - type: Add
+      message: Maints jack wield sprite
+    - type: Tweak
+      message: Maints jack combat stats tweaked to be inline with pickaxe.
+  id: 1101
+  time: '2025-08-07T20:07:42.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1798
+- author: Arcticular1
+  changes:
+    - type: Tweak
+      message: >-
+        Took the syndicate commander suit out of the armory and into the
+        Commander's room.
+  id: 1102
+  time: '2025-08-07T23:13:58.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1796
+- author: Rubeebeebee
+  changes:
+    - type: Tweak
+      message: added 2x defibs to the padval
+  id: 1103
+  time: '2025-08-08T00:41:16.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1801

@@ -3,6 +3,7 @@
 # SPDX-FileCopyrightText: 2024 GreaseMonk
 # SPDX-FileCopyrightText: 2024 Whatstone
 # SPDX-FileCopyrightText: 2025 tonotom
+# SPDX-FileCopyrightText: 2025 tonotom1
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -50,10 +51,10 @@
   - type: MeleeWeapon
     wideAnimationRotation: -45
     swingLeft: true
-    attackRate: 0.66 #Mono 0.75 >> 0.66
+    attackRate: 0.75
     damage:
       types:
-        Blunt: 16 #Mono 10 >> 16
+        Blunt: 10
         Structural: 5
     soundHit:
       collection: MetalThud
@@ -61,7 +62,7 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 12
+        Blunt: 18
         Structural: 5 #Mono end
   - type: Item
     size: Large #Mono: Huge > Large

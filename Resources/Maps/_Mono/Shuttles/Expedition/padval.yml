@@ -31,8 +31,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/03/2025 00:36:59
-  entityCount: 1241
+  time: 08/07/2025 22:18:16
+  entityCount: 1243
 maps: []
 grids:
 - 1
@@ -4358,6 +4358,20 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -4.5,10.5
+      parent: 1
+- proto: DefibrillatorCabinetFilled
+  entities:
+  - uid: 1242
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 5.5,7.5
+      parent: 1
+  - uid: 1243
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -2.5,-1.5
       parent: 1
 - proto: DeskBell
   entities:
