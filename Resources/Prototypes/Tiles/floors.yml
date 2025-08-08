@@ -1524,6 +1524,12 @@
   id: FloorGrassDark
   name: tiles-dark-grass-floor
   sprite: /Textures/_RMC14/Tiles/planet/grass1/grass.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   edgeSpritePriority: 1
   edgeSprites:
     SouthEast: /Textures/_RMC14/Tiles/planet/grass1/single_edge.png
