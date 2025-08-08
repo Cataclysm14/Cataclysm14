@@ -144,7 +144,7 @@
 - type: tile
   id: FloorPlanetGrass
   name: tiles-grass-planet-floor
-  sprite: /Textures/_RMC14/Tiles/planet/auto_strata_grass/grass.png
+  sprite: /Textures/_RMC14/Tiles/planet/auto_strata_grass/grass_1.png
   variants: 8
   placementVariants:
   - 1.0
