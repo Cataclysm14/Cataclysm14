@@ -33,6 +33,7 @@
     - Grasslands
     - Snow
     - Shadow
+    - Desert
 
 - type: salvageDungeonMod
   id: NFFactoryDorms
@@ -43,6 +44,7 @@
     - Grasslands
     - Lava
     - Shadow
+    - Desert
 
 - type: salvageDungeonMod
   id: NFLavaMercenary
@@ -62,6 +64,7 @@
     - Lava
     - Snow
     - Shadow
+    - Desert
 
 - type: salvageDungeonMod
   id: NFSalvageOutpost
@@ -73,6 +76,7 @@
     - Lava
     - Snow
     - Shadow
+    - Desert
 
 - type: salvageDungeonMod
   id: NFExperiment
@@ -81,6 +85,7 @@
   biomes:
     #- LowDesert
     - Grasslands
+    - Desert
 
 - type: salvageDungeonMod
   id: NFLavaBrig
@@ -186,6 +191,7 @@
   - Lava
   - Shadow
   - Caves
+  - Desert
 
 - type: salvageWeatherMod
   id: Fallout
@@ -203,6 +209,7 @@
   cost: 1
   biomes:
   - Caves
+  - Desert
 
 - type: salvageWeatherMod
   id: Sandstorm
@@ -211,6 +218,7 @@
   biomes:
   - Caves
   - Lava
+  - Desert
 
 - type: salvageWeatherMod
   id: LightRain
