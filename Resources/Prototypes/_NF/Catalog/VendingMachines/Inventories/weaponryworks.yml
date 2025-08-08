@@ -83,9 +83,8 @@
   startingInventory:
 # SMGs
     # WeaponSubMachineGunC20rPMC: 4294967295
-    # WeaponSubMachineGunWt550PMC: 4294967295
+    WeaponSubMachineGunWt550PMC: 4294967295
     # WeaponRifleLecterPMC: 4294967295
-    # WeaponRifleVulcanFCMC: 4294967295
     # WeaponSubMachineGunDrozdPMC: 4294967295
     WeaponSubMachineGunKnallstock: 4294967295
 # Rifles
@@ -94,9 +93,9 @@
     # WeaponSubMachineGunC20rPMC: 4294967295
     WeaponSubMachineGunWt550PMC: 4294967295
     # WeaponRifleLecterPMC: 4294967295
-    # WeaponRifleVulcanFCMC: 4294967295
+    WeaponRifleVulcanFCMC: 4294967295
     # WeaponSubMachineGunDrozdPMC: 4294967295
-    # WeaponSubMachineGunAK220: 4294967295
+    WeaponSubMachineGunAK220: 4294967295
 # Shotguns
     # WeaponShotgunBigJohnny: 4294967295
     # WeaponShotgunEnforcerPMC: 4294967295
