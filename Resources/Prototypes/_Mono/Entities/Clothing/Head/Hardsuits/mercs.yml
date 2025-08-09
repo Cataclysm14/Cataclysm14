@@ -26,6 +26,8 @@
   - type: FlashImmunity
   - type: ToggleableLightVisuals
   - type: PointLight
+    radius: 8
+    energy: 3
     color: "#e24242"
   - type: RadarConsole
     maxRange: 350
