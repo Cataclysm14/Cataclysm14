@@ -433,7 +433,7 @@
 - type: entity
   parent: PassengerPDA
   id: ContractorPDA
-  name: contractor PDA
+  name: spacer PDA
   components:
   - type: Pda
     id: ContractorIDCard
