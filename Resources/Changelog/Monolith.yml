@@ -9977,3 +9977,61 @@ Entries:
   id: 1113
   time: '2025-08-09T02:18:38.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1817
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Desert planet returns w/ changes to rock generation that should make it
+        less laggy for the server (rocks are rarer and its mostly flat now,
+        rocks you do find are very rich with ore though compared to before.)
+  id: 1114
+  time: '2025-08-09T11:39:55.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1819
+- author: Ilya246
+  changes:
+    - type: Add
+      message: >-
+        Added the carp caller, a machine that can attract wild space carp, as a
+        T1 experimental research.
+  id: 1115
+  time: '2025-08-09T14:48:48.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1818
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        Charon and Charonette projectile damage buffed, more damage to shields
+        basically.
+  id: 1116
+  time: '2025-08-09T14:50:15.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1820
+- author: Rubeebeebee
+  changes:
+    - type: Tweak
+      message: >-
+        added a exped console to the claymore, since it didnt have one
+        originally
+  id: 1117
+  time: '2025-08-09T18:19:43.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1824
+- author: BoskiYourk
+  changes:
+    - type: Tweak
+      message: Moved faction leader firearms out of loadouts onto maps
+  id: 1118
+  time: '2025-08-09T18:39:44.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1803
+- author: starch70
+  changes:
+    - type: Fix
+      message: Fixed grid garbage-clean deleting non-expedition planets.
+  id: 1119
+  time: '2025-08-09T18:56:26.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1825
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Ship FTL times are now modified by ship mass.
+  id: 1120
+  time: '2025-08-09T18:58:51.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1823
