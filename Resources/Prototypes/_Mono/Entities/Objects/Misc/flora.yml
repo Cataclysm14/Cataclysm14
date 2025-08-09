@@ -104,7 +104,7 @@
     - state: stalkybush_1
       map: ["random"]
     drawdepth: Overdoors
-    scale: 1.25 1.25
+    scale: 1.2 1.2
   - type: RandomSprite
     available:
     - random:
