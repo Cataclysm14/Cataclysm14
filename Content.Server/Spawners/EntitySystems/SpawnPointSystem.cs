@@ -102,7 +102,7 @@ public sealed class SpawnPointSystem : EntitySystem
             }
             else
             {
-                Log.Error($"No spawn points were available for station {args.Station}!");
+                //Log.Error($"No spawn points were available for station {args.Station}!"); // Mono
                 return;
             }
         }
