@@ -15,7 +15,7 @@
   name: COG Scabard
   description: The Scabard is COG ship for smaller crews, made to house a mech for any expeditions into planetary forays. Comes with an R&D server, mech manufacturing capabilities, but no science bays. 
   price: 69000 # Funny number hahahahaha
-  category: Large
+  category: Medium
   group: Expedition
   shuttlePath: /Maps/_Mono/Shuttles/Expedition/scabard.yml
   guidebookPage: Null
