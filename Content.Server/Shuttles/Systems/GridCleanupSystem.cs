@@ -62,7 +62,7 @@ public sealed class GridCleanupSystem : EntitySystem
         // Make sure any grid that gets the expedition component is removed from cleanup
         if (_pendingCleanup.ContainsKey(uid))
         {
-            Logger.DebugS("salvage", $"Expedition startup: Removing grid {uid} from cleanup queue");
+            Logger.DebugS("gridcleanup", $"Expedition startup: Removing grid {uid} from cleanup queue");
             _pendingCleanup.Remove(uid);
         }
 
@@ -71,7 +71,7 @@ public sealed class GridCleanupSystem : EntitySystem
         {
             // Make sure we don't clean up very small expedition grids
             var tileCount = CountTiles((uid, grid));
-            Logger.DebugS("salvage", $"Expedition grid {uid} has {tileCount} tiles");
+            Logger.DebugS("gridcleanup", $"Expedition grid {uid} has {tileCount} tiles");
         }
     }
 
@@ -87,14 +87,14 @@ public sealed class GridCleanupSystem : EntitySystem
         // Skip if this is a planet expedition grid
         if (HasComp<SalvageExpeditionComponent>(gridUid))
         {
-            Logger.DebugS("salvage", $"CheckGrid: Skipping grid {gridUid} with SalvageExpeditionComponent");
+            Logger.DebugS("gridcleanup", $"CheckGrid: Skipping grid {gridUid} with SalvageExpeditionComponent");
             return;
         }
 
-        // Skip if this is a planet expedition grid
+        // Skip if this is a planet grid in general
         if (HasComp<PlanetMapComponent>(gridUid))
         {
-            Logger.DebugS("salvage", $"CheckGrid: Skipping grid {gridUid} with PlanetMapComponent");
+            Logger.DebugS("gridcleanup", $"CheckGrid: Skipping grid {gridUid} with PlanetMapComponent");
             return;
         }
 
@@ -163,7 +163,7 @@ public sealed class GridCleanupSystem : EntitySystem
             // Skip if this is a planet expedition grid
             if (HasComp<SalvageExpeditionComponent>(gridUid))
             {
-                Logger.DebugS("salvage", $"Update: Removing expedition grid {gridUid} from cleanup queue");
+                Logger.DebugS("gridcleanup", $"Update: Removing expedition grid {gridUid} from cleanup queue");
                 toRemove.Add(gridUid);
                 continue;
             }
@@ -171,7 +171,7 @@ public sealed class GridCleanupSystem : EntitySystem
             // Skip if this is a planet grid
             if (HasComp<PlanetMapComponent>(gridUid))
             {
-                Logger.DebugS("salvage", $"Update: Removing planet grid {gridUid} from cleanup queue");
+                Logger.DebugS("gridcleanup", $"Update: Removing planet grid {gridUid} from cleanup queue");
                 toRemove.Add(gridUid);
                 continue;
             }
@@ -183,14 +183,14 @@ public sealed class GridCleanupSystem : EntitySystem
 
             if (HasComp<SalvageExpeditionComponent>(mapUid))
             {
-                Logger.DebugS("salvage", $"Update: Removing grid {gridUid} on expedition map {mapUid} from cleanup queue");
+                Logger.DebugS("gridcleanup", $"Update: Removing grid {gridUid} on expedition map {mapUid} from cleanup queue");
                 toRemove.Add(gridUid);
                 continue;
             }
 
             if (HasComp<PlanetMapComponent>(mapUid))
             {
-                Logger.DebugS("salvage", $"Update: Removing grid {gridUid} on planet map {mapUid} from cleanup queue");
+                Logger.DebugS("gridcleanup", $"Update: Removing grid {gridUid} on planet map {mapUid} from cleanup queue");
                 toRemove.Add(gridUid);
                 continue;
             }
@@ -218,7 +218,7 @@ public sealed class GridCleanupSystem : EntitySystem
                 if (mobxform.GridUid == null || mobxform.MapUid == null || mobxform.GridUid != xform.GridUid)
                     continue;
 
-                Logger.DebugS("salvage", $"Update: Mob {mobUid} detected on {gridUid}, removing grid from cleanup queue");
+                Logger.DebugS("gridcleanup", $"Update: Mob {mobUid} detected on {gridUid}, removing grid from cleanup queue");
                 toRemove.Add(gridUid);
                 entityCheck = true;
                 break;
@@ -229,7 +229,7 @@ public sealed class GridCleanupSystem : EntitySystem
 
             // Delete the grid immediately to prevent the possibility of a mob entering after deletion is queued
             Del(gridUid);
-            Logger.DebugS("salvage", $"Update: Deleting {gridUid} with {CountTiles((gridUid, grid))} tiles");
+            Logger.DebugS("gridcleanup", $"Update: Deleting {gridUid} with {CountTiles((gridUid, grid))} tiles");
             toRemove.Add(gridUid);
         }
 
