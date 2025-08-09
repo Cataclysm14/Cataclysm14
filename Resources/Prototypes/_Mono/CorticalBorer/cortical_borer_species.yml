@@ -74,7 +74,7 @@
     enabled: false
   - type: HealthAnalyzer
     silent: true
-    MaxScanRange: .5
+    maxScanRange: .5
   - type: CanEscapeInventory
 
 - type: entity
@@ -92,9 +92,8 @@
     name: cortical-borer-ghostrole-name
     description: cortical-borer-ghostrole-desc
     rules: ghost-role-information-freeagent-rules
-    prototype: MobCorticalBorer
     mindRoles:
-    - MindRoleGhostRoleFamiliar
+    - MindRoleGhostRoleFreeAgent
   - type: GhostRoleMobSpawner
     prototype: MobCorticalBorer
   - type: Damageable
