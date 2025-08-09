@@ -60,14 +60,14 @@ public sealed partial class MobCallerSystem : EntitySystem
 
         while (query.MoveNext(out var uid, out var caller))
         {
+            if (!_random.Prob(caller.SpawnChance * frameTime))
+                continue;
+
             var xform = Transform(uid);
 
             if (caller.NeedPower && !_power.IsPowered(uid)
                 || caller.NeedAnchored && !xform.Anchored
             )
-                continue;
-
-            if (!_random.Prob(caller.SpawnChance * frameTime))
                 continue;
 
             // prune spawned entities list
