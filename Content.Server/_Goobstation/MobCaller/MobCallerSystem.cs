@@ -81,11 +81,6 @@ public sealed partial class MobCallerSystem : EntitySystem
                     i--;
                     continue;
                 }
-                // if it's fine also lazily reset its follow target in case HTN decides to wipe it
-                else
-                {
-                    _npc.SetBlackboard(mob, NPCBlackboard.FollowTarget, new EntityCoordinates(uid, Vector2.Zero));
-                }
             }
 
             if (caller.SpawnedEntities.Count >= caller.MaxAlive)
