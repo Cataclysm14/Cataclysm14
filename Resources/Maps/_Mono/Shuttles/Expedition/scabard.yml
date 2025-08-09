@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/09/2025 15:32:44
-  entityCount: 832
+  time: 08/09/2025 16:23:56
+  entityCount: 837
 maps: []
 grids:
 - 1
@@ -3162,6 +3162,25 @@ entities:
     - type: Transform
       pos: 6.5,0.5
       parent: 1
+- proto: ClosetWallO2N2Filled
+  entities:
+  - uid: 835
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 3.5,2.5
+      parent: 1
+  - uid: 836
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 1.5,3.5
+      parent: 1
+  - uid: 837
+    components:
+    - type: Transform
+      pos: -3.5,0.5
+      parent: 1
 - proto: ClothingHeadHatWelding
   entities:
   - uid: 210
@@ -3248,13 +3267,12 @@ entities:
       - device-button-6
       - device-button-7
       - device-button-8
-- proto: ComputerTabletopStationRecords
+- proto: ComputerWallmountStationRecords
   entities:
   - uid: 25
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -1.5,2.5
+      pos: 0.5,-1.5
       parent: 1
     - type: ApcPowerReceiver
       powerLoad: 5
@@ -3293,6 +3311,13 @@ entities:
     components:
     - type: Transform
       pos: 4.5,0.5
+      parent: 1
+- proto: FaxMachineShip
+  entities:
+  - uid: 833
+    components:
+    - type: Transform
+      pos: -1.5,2.5
       parent: 1
 - proto: Firelock
   entities:
@@ -4252,6 +4277,13 @@ entities:
     components:
     - type: Transform
       pos: 9.641495,-2.5477135
+      parent: 1
+- proto: NFHolopadShip
+  entities:
+  - uid: 834
+    components:
+    - type: Transform
+      pos: -0.5,0.5
       parent: 1
 - proto: NitrogenCanister
   entities:
