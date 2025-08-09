@@ -27,6 +27,9 @@
   - type: Tool
     qualities:
       - Prying
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  - type: Prying
   - type: ToolTileCompatible
   - type: Clothing
     sprite: Nyanotrasen/Objects/Weapons/Melee/breaching_hammer.rsi
