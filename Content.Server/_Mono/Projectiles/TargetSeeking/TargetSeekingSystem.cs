@@ -97,7 +97,7 @@ public sealed class TargetSeekingSystem : EntitySystem
                 _physics.SetLinearDamping(uid, body, seekingComp.Acceleration * frameTime * 1.5f);
             else
             {
-                _physics.SetLinearDamping(uid, body, 0.2f);
+                _physics.SetLinearDamping(uid, body, 0.001f);
             }
 
             // Skip seeking behavior if disabled (e.g., after entering an enemy grid)
