@@ -4,7 +4,7 @@ using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototy
 namespace Content.Shared.Salvage.Expeditions.Modifiers;
 
 [Prototype("salvageTemperatureMod")]
-public sealed class SalvageTemperatureMod : IPrototype, IBiomeSpecificMod
+public sealed partial class SalvageTemperatureMod : IPrototype, IBiomeSpecificMod
 {
     [IdDataField] public string ID { get; private set; } = default!;
 
@@ -15,7 +15,7 @@ public sealed class SalvageTemperatureMod : IPrototype, IBiomeSpecificMod
     public float Cost { get; private set; } = 0f;
 
     /// <inheritdoc/>
-    [DataField("biomes", customTypeSerializer: typeof(PrototypeIdListSerializer<SalvageBiomeMod>))]
+    [DataField("biomes", customTypeSerializer: typeof(PrototypeIdListSerializer<SalvageBiomeModPrototype>))]
     public List<string>? Biomes { get; private set; } = null;
 
     /// <summary>
