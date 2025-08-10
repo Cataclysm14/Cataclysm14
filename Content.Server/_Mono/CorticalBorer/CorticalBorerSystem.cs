@@ -4,6 +4,7 @@
 
 using Content.Server.Body.Components;
 using Content.Server.Body.Systems;
+using Content.Server.Chat.Managers;
 using Content.Server.Chat.Systems;
 using Content.Server.DoAfter;
 using Content.Server.Medical;
@@ -36,6 +37,7 @@ public sealed partial class CorticalBorerSystem : SharedCorticalBorerSystem
     [Dependency] private readonly UserInterfaceSystem _userInterfaceSystem = default!;
     [Dependency] private readonly ISharedAdminLogManager _admin = default!;
     [Dependency] private readonly SharedMindSystem _mind = default!;
+    [Dependency] private readonly IChatManager _chat = default!;
 
     public override void Initialize()
     {
@@ -298,8 +300,11 @@ public sealed partial class CorticalBorerSystem : SharedCorticalBorerSystem
             _actions.AddAction(host, "ActionLayEggHost") is {} actionLay)
             infestedComp.RemoveAbilities.Add(actionLay);
 
-        Log.Info($"{ToPrettyString(worm)} has taken control over {ToPrettyString(host)}");
+        var str = $"{ToPrettyString(worm)} has taken control over {ToPrettyString(host)}";
+
+        Log.Info(str);
         _admin.Add(LogType.Mind, LogImpact.High, $"{ToPrettyString(worm)} has taken control over {ToPrettyString(host)}");
+        _chat.SendAdminAlert(str);
     }
 
     public void EndControl(Entity<CorticalBorerComponent> worm)

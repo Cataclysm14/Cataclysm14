@@ -157,14 +157,14 @@ public sealed partial class CorticalBorerSystem
         if (args.Handled)
             return;
 
-        if (!TryComp<CorticalBorerInfestedComponent>(ent.Comp.Host, out var infestedComp))
-            return;
-
         if (ent.Comp.Host is null)
         {
             _popup.PopupEntity(Loc.GetString("cortical-borer-no-host"), ent, ent, PopupType.Medium);
             return;
         }
+
+        if (!TryComp<CorticalBorerInfestedComponent>(ent.Comp.Host, out var infestedComp))
+            return;
 
         if (!CanUseAbility(ent, ent.Comp.Host.Value))
             return;
