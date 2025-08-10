@@ -57,7 +57,7 @@ public sealed class ShipShieldOverlay : Overlay
 
             var fixture = _fixture.GetFixtureOrNull(uid, "shield", fixtures);
 
-            if (fixture == null || fixture.Shape is not ChainShape chain)
+            if (fixture is not { Shape: ChainShape chain })
                 continue;
 
             var texture = _resourceCache.GetTexture("/Textures/_Crescent/ShipShields/shieldtex.png");
