@@ -48,4 +48,6 @@ These increase the ship's FTL range by a certain amount if powered. For the [col
 
 FTL speed is influenced based off the ship's mass. Heavier ships will have longer startup times, travel times, and longer cooldowns. More advanced drives can offset this effect.
 
+Lighter ships have shorter startup times, travel times, and shorter cooldowns.
+
 </Document>
