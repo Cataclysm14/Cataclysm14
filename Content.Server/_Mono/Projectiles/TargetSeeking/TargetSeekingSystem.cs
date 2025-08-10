@@ -93,7 +93,7 @@ public sealed class TargetSeekingSystem : EntitySystem
             _physics.SetLinearVelocity(uid, body.LinearVelocity + _transform.GetWorldRotation(xform).ToWorldVec() * acceleration, body: body);
 
             if (body.LinearVelocity.Length() >= seekingComp.MaxSpeed)
-                _physics.SetLinearDamping(uid, body, seekingComp.Acceleration * 1.5f);
+                _physics.SetLinearDamping(uid, body, seekingComp.Acceleration * frameTime * 1.5f);
 
             // Skip seeking behavior if disabled (e.g., after entering an enemy grid)
             if (seekingComp.SeekingDisabled)
