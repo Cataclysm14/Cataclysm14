@@ -44,6 +44,11 @@ public sealed partial class CorticalBorerComponent : Component
     public int InjectAmount = 10;
 
     /// <summary>
+    /// At what interval does the chem ui update
+    /// </summary>
+    public int UiUpdateInterval = 5; // every 6 to prevent constant update on cap
+
+    /// <summary>
     /// The max duration you can take control of your host
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]

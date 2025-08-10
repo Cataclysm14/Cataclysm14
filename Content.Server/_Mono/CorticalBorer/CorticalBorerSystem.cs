@@ -99,11 +99,13 @@ public sealed partial class CorticalBorerSystem : SharedCorticalBorerSystem
 
         if (comp.ChemicalPoints + change >= comp.ChemicalPointCap)
             comp.ChemicalPoints = comp.ChemicalPointCap;
-
-        if (comp.ChemicalPoints + change <= 0)
+        else if (comp.ChemicalPoints + change <= 0)
             comp.ChemicalPoints = 0;
+        else
+            comp.ChemicalPoints += change;
 
-        comp.ChemicalPoints += change;
+        if (comp.ChemicalPoints % comp.UiUpdateInterval == 0)
+            UpdateUiState(ent);
 
         Dirty(ent);
     }
