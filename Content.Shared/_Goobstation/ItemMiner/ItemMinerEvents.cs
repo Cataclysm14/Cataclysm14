@@ -3,32 +3,19 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using Robust.Shared.Prototypes;
+
 namespace Content.Shared._Goobstation.ItemMiner;
 
 /// <summary>
-/// Raised on an item miner to check whether it should work right now.
+/// Raised on an item miner to check whether it should work right now and to potentially override the prototype it should spawn.
 /// </summary>
 [ByRefEvent]
-public record struct ItemMinerCheckEvent(bool Cancelled = false);
+public record struct ItemMinerCheckEvent(EntProtoId Proto, bool Cancelled = false);
 
 /// <summary>
 /// Raised on an item miner when it mines an item.
+/// Note that the item miner will attempt to merge the mined entity into nearby stacks AFTER firing this event unless NoStack is set.
 /// </summary>
-public sealed class ItemMinedEvent : EntityEventArgs
-{
-    /// <summary>
-    /// The entity we have modified or created
-    /// </summary>
-    public readonly EntityUid Mined;
-
-    /// <summary>
-    /// How much has been actually spawned or added to the stack, can be 0
-    /// </summary>
-    public readonly int Count;
-
-    public ItemMinedEvent(EntityUid mined, int count)
-    {
-        Mined = mined;
-        Count = count;
-    }
-}
+[ByRefEvent]
+public record struct ItemMinedEvent(EntityUid Mined, bool NoStack = false);
