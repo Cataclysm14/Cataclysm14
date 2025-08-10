@@ -42,7 +42,6 @@
   icon: { sprite: Structures/Storage/Crates/plastic.rsi, state: icon }
   objectType: Structure
 
-
 - type: construction
   name: wooden crate
   id: CrateWood
@@ -84,7 +83,7 @@
   targetNode: foodboxpizza
   category: construction-category-storage
   description: A box for pizza.
-  icon: 
+  icon:
     sprite: Objects/Consumable/Food/Baked/pizza.rsi
     state: box
   objectType: Item

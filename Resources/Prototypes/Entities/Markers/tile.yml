@@ -6,6 +6,8 @@
   components:
   - type: Transform
     anchored: true
+  - type: Clickable
+  - type: InteractionOutline
   - type: Sprite
     drawdepth: Overdoors
     sprite: Markers/cross.rsi
@@ -18,6 +20,9 @@
   components:
   - type: SetRoof
     value: true
+  - type: Construction
+    graph: CreateRoof
+    node: roof
   - type: Sprite
     layers:
     - state: green
@@ -31,6 +36,9 @@
   components:
   - type: SetRoof
     value: false
+  - type: Construction
+    graph: RemoveRoof
+    node: roof
   - type: Sprite
     layers:
     - state: red
