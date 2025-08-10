@@ -21,10 +21,10 @@ namespace Content.Client._Crescent.ShipShields;
 
 public sealed class ShipShieldOverlay : Overlay
 {
+    [Dependency] private readonly FixtureSystem _fixture = default!;
+    [Dependency] private readonly SharedPhysicsSystem _physics = default!;
     private readonly IResourceCache _resourceCache;
     private readonly IEntityManager _entManager;
-    private readonly FixtureSystem _fixture;
-    private readonly SharedPhysicsSystem _physics;
     private readonly ShaderInstance _unshadedShader;
     private readonly List<DrawVertexUV2D> _verts = new(128); // Mono
 
@@ -34,8 +34,6 @@ public sealed class ShipShieldOverlay : Overlay
     {
         _resourceCache = resourceCache;
         _entManager = entityManager;
-        _fixture = _entManager.EntitySysManager.GetEntitySystem<FixtureSystem>();
-        _physics = _entManager.EntitySysManager.GetEntitySystem<PhysicsSystem>();
 
         _unshadedShader = prototypeManager.Index<ShaderPrototype>("unshaded").Instance();
 
