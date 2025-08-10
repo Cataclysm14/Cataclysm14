@@ -197,7 +197,7 @@ public sealed class SpawnSalvageMissionJob : Job<bool>
             .GetMission(_missionParams.MissionType, _missionParams.Difficulty, _missionParams.Seed);
 
         var missionWeather = _prototypeManager.Index<SalvageWeatherMod>(mission.Weather);
-        var missionBiome = _prototypeManager.Index<SalvageBiomeMod>(mission.Biome);
+        var missionBiome = _prototypeManager.Index<SalvageBiomeModPrototype>(mission.Biome);
         BiomeComponent? biome = null;
 
         if (missionBiome.BiomePrototype != null)
@@ -387,7 +387,7 @@ public sealed class SpawnSalvageMissionJob : Job<bool>
         massStartupTime = StartupTime * massMultiplier;
     }
 
-    private async Task SpawnDungeonLoot(Dungeon? dungeon, SalvageBiomeMod biomeMod, SalvageLootPrototype loot, EntityUid gridUid, MapGridComponent grid, Random random, List<Vector2i> reservedTiles)
+    private async Task SpawnDungeonLoot(Dungeon? dungeon, SalvageBiomeModPrototype biomeMod, SalvageLootPrototype loot, EntityUid gridUid, MapGridComponent grid, Random random, List<Vector2i> reservedTiles)
     {
         for (var i = 0; i < loot.LootRules.Count; i++)
         {
