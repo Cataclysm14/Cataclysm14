@@ -86,8 +86,8 @@
     acceleration: 5
     detectionRange: 750
     scanArc: 75
-    launchSpeed: 25
-    maxSpeed: 70
+    launchSpeed: 70
+    maxSpeed: 100
     trackDelay: 3
   # destructible components below
   - type: Damageable
@@ -172,7 +172,7 @@
     acceleration: 45
     detectionRange: 750
     scanArc: 15
-    launchSpeed: 45
+    launchSpeed: 70
     maxSpeed: 250
     trackDelay: 1
   - type: Explosive
@@ -283,8 +283,8 @@
     acceleration: 5
     detectionRange: 750
     scanArc: 45
-    launchSpeed: 25
-    maxSpeed: 70
+    launchSpeed: 70
+    maxSpeed: 100
     trackDelay: 3
   - type: EmpOnTrigger
     range: 7
