@@ -13,6 +13,7 @@
   - CargoHauling # TODO: separate this out along with salvage and mining into some NF_Cargo section
   - Shipyard
   - WeaponsSystems # mono
+  - Creatures # mono
 
 - type: guideEntry
   id: Bank

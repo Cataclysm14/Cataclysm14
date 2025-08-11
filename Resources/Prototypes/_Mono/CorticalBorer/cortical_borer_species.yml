@@ -76,6 +76,9 @@
     silent: true
     maxScanRange: .5
   - type: CanEscapeInventory
+  - type: GuideHelp
+    guides:
+    - CorticalBorerGuide
 
 - type: entity
   parent: BaseItem
@@ -109,3 +112,6 @@
           collection: desecration
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  - type: GuideHelp
+    guides:
+    - CorticalBorerGuide

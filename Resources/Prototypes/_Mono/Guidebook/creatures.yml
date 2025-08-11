@@ -1,0 +1,15 @@
+- type: guideEntry
+  id: Creatures
+  name: guide-entry-creatures
+  text: "/ServerInfo/_Mono/Guidebook/Creatures/Creatures.xml"
+  priority: 8
+  children:
+  - CorticalBorerGuide
+
+- type: guideEntry
+  id: CorticalBorerGuide
+  name: guide-entry-cortical-borer
+  text: "/ServerInfo/_Mono/Guidebook/Creatures/CorticalBorer.xml"
+  priority: 1
+
+# TODO: add LetoFerol creatures here, other unique mobs with info need to knows
