@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseStructure
+  parent: [BaseMachinePowered, ConstructibleMachine] # Monolith
   id: ContainmentFieldGenerator
   name: containment field generator
   description: A machine that generates a containment field when powered by an emitter. Keeps the Singularity docile.
@@ -15,6 +15,27 @@
         - FullTileMask
         layer:
         - WallLayer
+  # Monolith - durable
+  - type: Damageable
+    damageModifierSet: StructuralMetallicHeatReinforced
+  # Monolith - as durable as a normal wall
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1600
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 800
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
   - type: InteractionOutline
   - type: Anchorable
   - type: Sprite

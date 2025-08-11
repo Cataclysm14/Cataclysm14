@@ -120,6 +120,7 @@
   - SolarControlComputerCircuitboard
   - SolarTrackerElectronics
   - EmitterCircuitboard
+  - ContainmentFieldGeneratorCircuitboard # Mono
 
 - type: technology
   id: AtmosphericTech
