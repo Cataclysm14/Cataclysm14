@@ -141,8 +141,8 @@
           False: {visible: false}
           True: {visible: true}
   - type: MovementSpeedModifier # Mono adjustments
-    weightlessAcceleration: 1.5 # Monno
-    weightlessFriction: 0.1
+    weightlessAcceleration: 2 # Monno
+    weightlessFriction: 1
     baseWeightlessModifier: 1.2
   - type: CanMoveInAir # Mono
   - type: Inventory
