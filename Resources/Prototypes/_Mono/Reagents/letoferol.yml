@@ -42,12 +42,6 @@
         conditions:
         - !type:ReagentThreshold
           min: 10
-      - !type:AdjustReagent
-        reagent: Letoferol
-        amount: -0.5
-        conditions:
-        - !type:ReagentThreshold
-          min: 10
       - !type:PopupMessage
         conditions:
         - !type:ReagentThreshold
@@ -103,12 +97,6 @@
             Cellular: 2
       - !type:Polymorph
         prototype: LetoferolMutationNatural
-        conditions:
-        - !type:ReagentThreshold
-          min: 15
-      - !type:AdjustReagent
-        reagent: NaturalLetoferol
-        amount: -2.5
         conditions:
         - !type:ReagentThreshold
           min: 15
