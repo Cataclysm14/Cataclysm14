@@ -521,6 +521,7 @@
   - type: NameIdentifier
     group: GenericNumber
   - type: Puller
+  - type: Hands
   - type: NpcFactionMember
     factions:
     - SimpleHostile
