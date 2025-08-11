@@ -47,6 +47,19 @@
         conditions:
         - !type:ReagentThreshold
           min: 10
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentThreshold
+          min: 2
+        type: Local
+        visualType: Medium
+        messages: [ "generic-reagent-effect-nauseous" ]
+        probability: 1
+      - !type:Drunk
+        boozePower: 15
+        conditions:
+        - !type:ReagentThreshold
+          min: 8
 
 - type: reagent
   id: NaturalLetoferol
@@ -98,6 +111,19 @@
         conditions:
         - !type:ReagentThreshold
           min: 15
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentThreshold
+          min: 4
+        type: Local
+        visualType: Medium
+        messages: [ "generic-reagent-effect-nauseous" ]
+        probability: 1
+      - !type:Drunk
+        boozePower: 15
+        conditions:
+        - !type:ReagentThreshold
+          min: 10
 
 - type: reagent
   id: ProtoLetoferol
