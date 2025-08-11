@@ -12,6 +12,7 @@ using Content.Server.Medical.Components;
 using Content.Server.Nutrition.Components;
 using Content.Shared._Mono.CorticalBorer;
 using Content.Shared.Administration.Logs;
+using Content.Shared.Alert;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Database;
@@ -38,6 +39,7 @@ public sealed partial class CorticalBorerSystem : SharedCorticalBorerSystem
     [Dependency] private readonly ISharedAdminLogManager _admin = default!;
     [Dependency] private readonly SharedMindSystem _mind = default!;
     [Dependency] private readonly IChatManager _chat = default!;
+    [Dependency] private readonly AlertsSystem _alerts = default!;
 
     public override void Initialize()
     {
@@ -59,6 +61,7 @@ public sealed partial class CorticalBorerSystem : SharedCorticalBorerSystem
         foreach (var actionId in ent.Comp.InitialCorticalBorerActions)
             _actions.AddAction(ent, actionId);
 
+        _alerts.ShowAlert(ent, ent.Comp.ChemicalAlert);
         UpdateUiState(ent);
     }
 
@@ -106,6 +109,8 @@ public sealed partial class CorticalBorerSystem : SharedCorticalBorerSystem
 
         if (comp.ChemicalPoints % comp.UiUpdateInterval == 0)
             UpdateUiState(ent);
+
+        _alerts.ShowAlert(ent, ent.Comp.ChemicalAlert);
 
         Dirty(ent);
     }

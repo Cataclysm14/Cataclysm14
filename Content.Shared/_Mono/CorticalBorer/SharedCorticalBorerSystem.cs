@@ -21,7 +21,6 @@ namespace Content.Shared._Mono.CorticalBorer;
 
 public partial class SharedCorticalBorerSystem : EntitySystem
 {
-    [Dependency] private readonly ItemSlotsSystem _itemSlotsSystem = default!;
     [Dependency] private readonly SharedBodySystem _bodySystem = default!;
     [Dependency] private readonly StatusEffectsSystem _statusEffects = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
@@ -29,20 +28,6 @@ public partial class SharedCorticalBorerSystem : EntitySystem
     [Dependency] protected readonly SharedUserInterfaceSystem _ui = default!;
     [Dependency] protected readonly SharedActionsSystem _actions = default!;
     [Dependency] protected readonly SharedContainerSystem _container = default!;
-
-    public override void Initialize()
-    {
-        SubscribeLocalEvent<CorticalBorerComponent, ExaminedEvent>(OnExaminedBorer);
-    }
-
-    private void OnExaminedBorer(Entity<CorticalBorerComponent> worm, ref ExaminedEvent args)
-    {
-        if (!args.IsInDetailsRange
-            || args.Examined != args.Examiner)
-            return;
-
-        args.PushMarkup(Loc.GetString("cortical-borer-self-examine", ("chempoints", worm.Comp.ChemicalPoints)));
-    }
 
     public bool CanUseAbility(Entity<CorticalBorerComponent> ent, EntityUid target)
     {

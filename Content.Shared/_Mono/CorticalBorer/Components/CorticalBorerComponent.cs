@@ -2,6 +2,7 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using Content.Shared.Alert;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 
@@ -81,6 +82,9 @@ public sealed partial class CorticalBorerComponent : Component
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField]
     public int EggCost = 200;
+
+    [DataField]
+    public ProtoId<AlertPrototype> ChemicalAlert = "Chemicals";
 
     public readonly List<EntProtoId> InitialCorticalBorerActions = new()
     {
