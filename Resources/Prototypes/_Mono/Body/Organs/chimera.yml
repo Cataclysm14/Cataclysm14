@@ -1,0 +1,84 @@
+- type: entity
+  id: BaseChimeraOrgan
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      organ:
+        reagents:
+        - ReagentId: NaturalLetoferol
+          Quantity: 10
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: NaturalLetoferol
+          Quantity: 5
+
+- type: entity
+  id: OrganChimeraStomach
+  parent: [ BaseChimeraOrgan , OrganHumanStomach ]
+  name: chimera stomach
+  components:
+  - type: Sprite
+    state: stomach
+  - type: Organ
+  - type: SolutionContainerManager
+    solutions:
+      stomach:
+        maxVol: 75
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: NaturalLetoferol
+          Quantity: 5
+  - type: Stomach
+  - type: Metabolizer
+    # mm very yummy
+    maxReagents: 5
+    metabolizerTypes: [Chimera]
+
+- type: entity
+  id: OrganChimeraLiver
+  parent: [ BaseChimeraOrgan , OrganHumanLiver ] 
+  name: chimera liver
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [Chimera]
+
+- type: entity
+  id: OrganChimeraHeart
+  parent: [ BaseChimeraOrgan , OrganHumanHeart ] 
+  name: chimera heart
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [Chimera]
+
+- type: entity
+  id: OrganChimeraLungs
+  parent: [ BaseChimeraOrgan , OrganHumanLungs ] 
+  name: lungs
+  description: "Filters oxygen from an atmosphere, which is then sent into the bloodstream to be used as an electron carrier."
+  components:
+  - type: Metabolizer
+    removeEmpty: true
+    solutionOnBody: false
+    solution: "Lung"
+    metabolizerTypes: [ Chimera ]
+    groups:
+    - id: Gas
+      rateModifier: 100.0
+  - type: SolutionContainerManager
+    solutions:
+      organ:
+        reagents:
+        - ReagentId: NaturalLetoferol
+          Quantity: 20
+      Lung:
+        maxVol: 200.0
+        canReact: false
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: NaturalLetoferol
+          Quantity: 5
