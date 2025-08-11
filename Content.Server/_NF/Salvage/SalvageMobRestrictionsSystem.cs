@@ -63,6 +63,10 @@ public sealed class SalvageMobRestrictionsSystem : EntitySystem
             if (uid == target || MetaData(target).EntityLifeStage >= EntityLifeStage.Terminating)
                 continue;
 
+            // Mono - fix
+            if (TryComp<NFSalvageMobRestrictionsComponent>(target, out var mobRestrictions) && !mobRestrictions.DespawnIfOffLinkedGrid)
+                continue;
+
             if (TryComp(target, out BodyComponent? body))
             {
                 // Creates a pool of blood on death, but remove the organs.

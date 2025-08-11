@@ -81,7 +81,7 @@ public sealed class LocalityLoaderSystem : BaseWorldSystem
 
             while (query.MoveNext(out var salvUid, out var salvMob))
             {
-                if (entity == salvMob.LinkedGridEntity)
+                if (entity == salvMob.LinkedGridEntity && salvMob.DespawnIfOffLinkedGrid) // Mono - fix
                 {
                     QueueDel(salvUid);
                 }
