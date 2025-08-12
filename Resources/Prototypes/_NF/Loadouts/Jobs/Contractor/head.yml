@@ -589,7 +589,7 @@
   equipment:
     head: ClothingHeadHatWideBrimmedYellow
 
-  - type: loadout
+- type: loadout
   id: ContractorClothingHeadHatUNSABeer
   effects:
   - !type:GroupLoadoutEffect
