@@ -735,7 +735,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             }
     }
 
-    private void SendEntityDirect(
+    private void SendEntityDirect( // I brought back the old languageless TransformSpeech method for this please integrate languages into this and get rid of the old TransformSpeech one this gets working.
         EntityUid source,
         string originalMessage,
         ChatTransmitRange range,
@@ -1030,6 +1030,13 @@ public sealed partial class ChatSystem : SharedChatSystem
         return newMessage;
     }
 
+    public string TransformSpeech(EntityUid sender, string message)
+    {
+        var ev = new TransformSpeechEvent(sender, message);
+        RaiseLocalEvent(ev);
+
+        return ev.Message;
+    }
     public string TransformSpeech(EntityUid sender, string message, LanguagePrototype language) // Einstein Engines - Language
     {
         if (!language.SpeechOverride.RequireSpeech) // Einstein Engines - Language
