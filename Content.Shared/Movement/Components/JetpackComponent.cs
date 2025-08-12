@@ -26,7 +26,7 @@ public sealed partial class JetpackComponent : Component
     [DataField, AutoNetworkedField] public EntityUid? ToggleActionEntity;
 
     [ViewVariables(VVAccess.ReadWrite), DataField("acceleration")]
-    public float Acceleration = 1f;
+    public float Acceleration = 1.25f;
 
     [ViewVariables(VVAccess.ReadWrite), DataField("friction")]
     public float Friction = 0.25f; // same as off-grid friction
