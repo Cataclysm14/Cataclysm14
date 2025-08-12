@@ -56,7 +56,7 @@
   - type: InstantAction
     icon: _Mono/Interface/Action/borer_control.png
     event: !type:CorticalTakeControlEvent
-    useDelay: 120
+    useDelay: 340 #5 minutes and 40 seconds
 
 - type: entity
   id: ActionEndControlHost
