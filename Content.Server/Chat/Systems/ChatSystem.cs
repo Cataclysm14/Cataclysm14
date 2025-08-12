@@ -33,7 +33,6 @@
 // SPDX-FileCopyrightText: 2023 Skye
 // SPDX-FileCopyrightText: 2023 TemporalOroboros
 // SPDX-FileCopyrightText: 2023 Visne
-// SPDX-FileCopyrightText: 2024 Cojoke
 // SPDX-FileCopyrightText: 2024 ErhardSteinhauer
 // SPDX-FileCopyrightText: 2024 Leon Friedrich
 // SPDX-FileCopyrightText: 2024 LordCarve
@@ -51,6 +50,7 @@
 // SPDX-FileCopyrightText: 2024 whatston3
 // SPDX-FileCopyrightText: 2025 Ark
 // SPDX-FileCopyrightText: 2025 Coenx-flex
+// SPDX-FileCopyrightText: 2025 Cojoke
 // SPDX-FileCopyrightText: 2025 Winkarst
 // SPDX-FileCopyrightText: 2025 ark1368
 // SPDX-FileCopyrightText: 2025 pathetic meowmeow
@@ -301,7 +301,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         var targetEv = new CheckTargetedSpeechEvent();
         RaiseLocalEvent(source, targetEv);
 
-        if (targetEv.Targets.Count > 0)
+        if (targetEv.Targets.Count > 0 && !targetEv.ChatTypeIgnore.Contains(desiredType))
         {
             SendEntityDirect(source, message, range, nameOverride, targetEv.Targets);
             return;
@@ -1138,7 +1138,8 @@ public sealed class CheckIgnoreSpeechBlockerEvent : EntityEventArgs
 
 public sealed class CheckTargetedSpeechEvent : EntityEventArgs
 {
-    public List<EntityUid> Targets = new List<EntityUid>();
+    public List<InGameICChatType> ChatTypeIgnore = new();
+    public List<EntityUid> Targets = new();
 }
 
 /// <summary>

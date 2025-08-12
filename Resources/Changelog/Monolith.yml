@@ -10285,3 +10285,23 @@ Entries:
   id: 1149
   time: '2025-08-11T19:29:21.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1855
+- author: Cojoke-dot
+  changes:
+    - type: Tweak
+      message: Cortical Borers now have thermals instead of night vision
+    - type: Tweak
+      message: Cortical Borers are no longer space immune outside of a host
+  id: 1150
+  time: '2025-08-12T00:48:45.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1868
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        Chimera and other mobs no longer can do the Jesus Waterwalk in space.
+        Bring a jetpack.
+    - type: Tweak
+      message: Chimera no longer reflect lasers.
+  id: 1151
+  time: '2025-08-12T00:49:40.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1867
