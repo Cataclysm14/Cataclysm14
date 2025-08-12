@@ -404,6 +404,8 @@
     - VisionGoggles
     # WD EDIT END
     - SmartGun # Goobstation
+    # Einstein Engines Packs
+    - Translators
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - AdvancedAmmoRecipePack
@@ -730,6 +732,9 @@
     # Shitmed Change
     - SMSurgery
     - SMCybernetics
+    # Einstein Engines Packs
+    - Translators # Language
+    - TranslatorImplanters # Language
   - type: Machine
     board: MedicalTechFabCircuitboard
   - type: StealTarget

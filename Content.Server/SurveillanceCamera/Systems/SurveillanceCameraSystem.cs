@@ -17,6 +17,7 @@ using Content.Server.DeviceNetwork.Systems;
 //using Content.Server.Emp; // Frontier: Upstream - #28984
 using Content.Server.Power.Components;
 using Content.Shared.ActionBlocker;
+using Content.Shared.Chat; // Einstein Engines - Languages
 using Content.Shared.DeviceNetwork;
 using Content.Shared.Power;
 using Content.Shared.Silicons.StationAi;
