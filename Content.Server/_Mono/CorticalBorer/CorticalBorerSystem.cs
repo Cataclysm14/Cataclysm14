@@ -289,6 +289,7 @@ public sealed partial class CorticalBorerSystem : SharedCorticalBorerSystem
         if (comp.Host is not { } host)
             return;
 
+        // make sure they aren't dead, would throw the worm into a ghost mode and just kill em
         if (TryComp<MobStateComponent>(ent.Comp.Host, out var mobState) &&
             mobState.CurrentState == MobState.Dead)
             return;
