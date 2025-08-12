@@ -102,10 +102,10 @@ public sealed class SpawnPointSystem : EntitySystem
             }
             else
             {
-                if (TryComp<MetaDataComponent>(args.Station, out var data) && data.EntityName != null)
-                    Log.Error($"No spawn points were available for station {data.EntityName}! (uid: {args.Station})");
+                if (TryComp<MetaDataComponent>(args.Station, out var data) && data.EntityPrototype != null)
+                    Log.Error($"No spawn points were available for station {data.EntityPrototype}! (uid: {args.Station})");
                 else
-                    Log.Error($"No spawn points were available for station {args.Station}!, station name is null.");
+                    Log.Error($"No spawn points were available for station {args.Station}!, station prototype is null.");
                 return;
             }
         }
