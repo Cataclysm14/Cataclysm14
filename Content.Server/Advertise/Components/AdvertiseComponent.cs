@@ -42,6 +42,7 @@ public sealed partial class AdvertiseComponent : Component
     /// The next time an advertisement will be said.
     /// </summary>
     [DataField]
+    [Access(typeof(AdvertiseSystem))] // Mono - you really don't want to change this outside of AdvertiseSystem
     public TimeSpan NextAdvertisementTime { get; set; } = TimeSpan.Zero;
 
 }
