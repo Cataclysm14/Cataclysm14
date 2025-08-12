@@ -75,10 +75,10 @@
       Female: UnisexMoth
       Unsexed: UnisexMoth
   - type: CanMoveInAir # Mono
-  - type: MovementSpeedModifier # Mono Changes
-    baseWeightlessAcceleration: 2.5 # Fly through space, my dear moth. Well, until you can't touch ground anymore.
-    baseWeightlessFriction: 1.5
-    baseWeightlessModifier: 1.3
+  - type: MovementSpeedModifier
+    baseWeightlessAcceleration: 1.5 # Move around more easily in space.
+    baseWeightlessFriction: 1
+    baseWeightlessModifier: 1
   - type: Flammable
     damage:
       types:

@@ -142,9 +142,9 @@
           True: {visible: true}
   - type: CanMoveInAir # Mono
   - type: MovementSpeedModifier # Mono adjustments
-    baseWeightlessAcceleration: 1.75 # Monno
+    baseWeightlessAcceleration: 1.45 # Mono
     baseWeightlessFriction: 1
-    baseWeightlessModifier: 1.2
+    baseWeightlessModifier: 1
   - type: Inventory
     speciesId: harpy
     displacements:
