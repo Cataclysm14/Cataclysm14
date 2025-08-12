@@ -5,18 +5,18 @@ trait-category-languages = Languages
 
 trait-language-foreigner-light-name = Foreigner Light
 trait-language-foreigner-light-desc =
-    You understand the common language, Tau-Ceti Basic, but you can't quite speak it yet.
+    You understand the common language, Andromeda Standard Basic, but you can't quite speak it yet.
     You have a translator to help you with your basic understanding of the language, better keep it charged.
 
 trait-language-foreigner-name = Foreigner
 trait-language-foreigner-desc =
-    You can't understand the common language, Tau-Ceti Basic, and you require a translator at all times to talk.
+    You can't understand the common language, Andromeda Standard, and you require a translator at all times to talk.
     You have a translator to help you with your understanding and speaking, make sure to keep it charged.
 
 trait-language-signlanguage-name = Sign Language
 trait-language-signlanguage-desc =
     The use of body language, hand signs, and other forms of dexterous movements to get your point across.
-    You can understand and use Tau-Ceti Basic Sign Language (TCB-SL).
+    You can understand and use Andromeda Standard Basic Sign Language (TCB-SL).
     If you are mute for any reason, you can still communicate with sign language.
 
 trait-language-solcommon-name = Sol Common
@@ -29,11 +29,10 @@ trait-language-tradeband-desc =
     Descended from latin and romance languages of old Earth - Tradeband remains the main tongue of the upper class of humanity.
     The language sounds elegant and well structured to most ears. It remains in popular use with traders - diplomats - and those seeking to hold onto a piece of a romantic past.
 
-trait-language-freespeak-name = Freespeak
+trait-language-freespeak-name = Asher
 trait-language-freespeak-desc =
-    A language of renegades and frontiersmen descending from various languages from Earth like Hindi combined into a multi-rooted jumble that sounds incoherent or even barbarian to non-native speakers.
-    This language is the only common cultural identity for humans in the frontier. Speaking this language in itself boldly declares the speaker a free spirit.
-    Often called 'Gutter' by Alliance citizens.
+    A rarely heard language outside of the colossus sector, developed over time through isolation from the main systems and lost colonies abandoned to die on this edge of civilized space.
+    Usually equated to slurred speach, relying more on tone to have the words mean something.
 
 trait-language-elyran-name = Elyran
 trait-language-elyran-desc =

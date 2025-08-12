@@ -33,23 +33,20 @@ language-NovuNederic-description =
     Spoken in the New-Netherlands, this direct and pragmatic trade language carries the sharp consonants and clipped vowels of its old-world roots.
     Built on centuries of seafaring, land reclamation, and commerce, it thrives among those who shape entire worlds — just as their ancestors shaped the land from the sea.
 
-language-TauCetiBasic-name = Tau-Ceti Basic
+language-TauCetiBasic-name = Andromeda Standard
 language-TauCetiBasic-description =
-    A spiritual successor of Esperanto, established in 2404 in Tau Ceti by Ceti intellectuals.
-    Its unique, fully customized alphabet and structure allow it to be spoken even by most alien species.
-    It's the official language of Tau Ceti and has growing traction in diplomatic circles and Universalists across human space.
+    Established shortly after humans had colonized their local cluster, the andromeda standard has evolved rapidly with each discovery of an alien species. Changing to allow more diverse,
+    and a wider range of words and sounds that can be spoken by every known species. Unfortunately, this makes it almost impossible to learn if you didn't grow up surrounded by it, and learning it from a young age.
 
 language-Tradeband-name = Tradeband
 language-Tradeband-description =
     Descended from latin and romance languages of old Earth - Tradeband remains the main tongue of the upper class of humanity.
     The language sounds elegant and well structured to most ears. It remains in popular use with traders - diplomats - and those seeking to hold onto a piece of a romantic past.
 
-language-Freespeak-name = Freespeak
+language-Freespeak-name = Asher
 language-Freespeak-description =
-    A language of renegades and frontiersmen descending from various languages from Earth-- like Hindi,
-    combined into a multi-rooted jumble that sounds incoherent or even barbarian to non-native speakers.
-    This language is the only common cultural identity for humans in the frontier. Speaking this language in itself boldly declares the speaker a free spirit.
-    It is often called 'Gutter' by Alliance citizens.
+    A rarely heard language outside of the colossus sector, developed over time through isolation from the main systems and lost colonies abandoned to die on this edge of civilized space.
+    Usually equated to slurred speach, relying more on tone to have the words mean something.
 
 language-Elyran-name = Elyran Standard
 language-Elyran-description =
