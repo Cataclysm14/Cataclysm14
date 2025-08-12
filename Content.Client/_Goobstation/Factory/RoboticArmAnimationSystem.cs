@@ -43,6 +43,9 @@ public sealed class RoboticArmAnimationSystem : EntitySystem
         var progress = (_timing.CurTime - started) / ent.Comp.MoveDelay;
         if (!ent.Comp.HasItem) // returning to the resting position when emptied
             progress = 1f - progress;
+        else if (progress > 1f) // Mono
+            progress = 2f - progress;
+        progress = Math.Clamp(progress, 0f, 1f); // Mono
         var angle = Angle.FromDegrees(progress * 180f);
         sprite.LayerSetRotation(RoboticArmLayers.Arm, angle);
     }
