@@ -1,28 +1,10 @@
-# SPDX-FileCopyrightText: 2023 Cheackraze
-# SPDX-FileCopyrightText: 2023 Leon Friedrich
-# SPDX-FileCopyrightText: 2023 Nemanja
-# SPDX-FileCopyrightText: 2023 RealIHaveANameOfficial
-# SPDX-FileCopyrightText: 2023 Scribbles0
-# SPDX-FileCopyrightText: 2023 metalgearsloth
-# SPDX-FileCopyrightText: 2023 unknown
-# SPDX-FileCopyrightText: 2024 Cuir
-# SPDX-FileCopyrightText: 2024 Dvir
-# SPDX-FileCopyrightText: 2024 ErhardSteinhauer
-# SPDX-FileCopyrightText: 2024 TsjipTsjip
-# SPDX-FileCopyrightText: 2025 Checkraze
-# SPDX-FileCopyrightText: 2025 Rubeebeebee
-# SPDX-FileCopyrightText: 2025 Whatstone
-# SPDX-FileCopyrightText: 2025 blackknight954
-#
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
 meta:
   format: 7
   category: Grid
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/03/2025 06:32:19
+  time: 08/13/2025 19:12:20
   entityCount: 2431
 maps: []
 grids:
@@ -132,6 +114,7 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
     - type: Shuttle
+      dampingModifier: 0.25
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -1217,6 +1200,8 @@ entities:
       locked: False
     - type: BecomesStation
       id: Bratan
+    - type: Roof
+      data: {}
 - proto: AirAlarm
   entities:
   - uid: 2
@@ -15101,6 +15086,8 @@ entities:
     - type: Transform
       pos: -2.5,-13.5
       parent: 1
+    - type: Advertise
+      nextAdvertisementTime: 268.0657062
 - proto: VendingMachineBooze
   entities:
   - uid: 2136
@@ -15108,6 +15095,8 @@ entities:
     - type: Transform
       pos: -3.5,2.5
       parent: 1
+    - type: Advertise
+      nextAdvertisementTime: 242.0657062
 - proto: VendingMachineChefvend
   entities:
   - uid: 2137
@@ -15115,6 +15104,8 @@ entities:
     - type: Transform
       pos: 5.5,15.5
       parent: 1
+    - type: Advertise
+      nextAdvertisementTime: 317.0657062
 - proto: VendingMachineChemicals
   entities:
   - uid: 2138
@@ -15129,6 +15120,8 @@ entities:
     - type: Transform
       pos: 3.5,-13.5
       parent: 1
+    - type: Advertise
+      nextAdvertisementTime: 103.0657062
 - proto: VendingMachineGames
   entities:
   - uid: 2140
@@ -15136,6 +15129,8 @@ entities:
     - type: Transform
       pos: -1.5,-8.5
       parent: 1
+    - type: Advertise
+      nextAdvertisementTime: 383.0657062
 - proto: VendingMachineNutri
   entities:
   - uid: 2141
@@ -15143,6 +15138,8 @@ entities:
     - type: Transform
       pos: 4.5,2.5
       parent: 1
+    - type: Advertise
+      nextAdvertisementTime: 334.0657062
 - proto: VendingMachineRestockChefvend
   entities:
   - uid: 2142
@@ -15157,6 +15154,8 @@ entities:
     - type: Transform
       pos: 6.5,2.5
       parent: 1
+    - type: Advertise
+      nextAdvertisementTime: 184.0657062
 - proto: VendingMachineSovietSoda
   entities:
   - uid: 2144
@@ -15164,6 +15163,8 @@ entities:
     - type: Transform
       pos: 9.5,2.5
       parent: 1
+    - type: Advertise
+      nextAdvertisementTime: 348.0657062
 - proto: VendingMachineTheater
   entities:
   - uid: 2145
@@ -15171,6 +15172,8 @@ entities:
     - type: Transform
       pos: 9.5,3.5
       parent: 1
+    - type: Advertise
+      nextAdvertisementTime: 584.0657062
 - proto: WallReinforced
   entities:
   - uid: 69
@@ -16417,7 +16420,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -6052.0156
+      secondsUntilStateChange: -6096.55
       state: Opening
     - type: Airlock
       autoClose: False
