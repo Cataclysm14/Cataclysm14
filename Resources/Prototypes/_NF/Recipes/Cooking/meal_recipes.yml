@@ -23,7 +23,8 @@
     FoodBreadBun: 1
     MobRosyMothroach: 1
   recipeType:
-  - Oven
+  #- Oven
+  - Microwave # Mono: Deviating to match the item description and restore the humor
 
 - type: microwaveMealRecipe
   id: RecipeBurgerRed
@@ -741,6 +742,7 @@
   reagents:
     Saline: 10
   recipeType:
+  - Oven #Mono
   - Microwave
 
 - type: microwaveMealRecipe

@@ -8,6 +8,7 @@
     FoodBreadPlain: 1
     FoodFlyAmanita: 3
   recipeType: # Frontier
+  - Oven # Mono
   - Microwave # Frontier
 
 - type: microwaveMealRecipe

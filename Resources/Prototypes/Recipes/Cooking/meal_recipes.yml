@@ -419,7 +419,7 @@
   solids:
     FoodBreadBun: 1
     MobMothroach: 1
-  recipeType: Oven # Frontier
+  recipeType: Microwave # Mono: Deviating to match the item description and restore the humor
 
 #Breads & Sandwiches
 
@@ -1550,6 +1550,9 @@
   solids:
     FoodDoughTortillaFlat: 1
     FoodPlateSmall: 1
+  recipeType: # Mono
+  - Oven # Mono
+  - Microwave # Mono
 
 - type: microwaveMealRecipe
   id: RecipeNachosCheesy
@@ -1563,6 +1566,9 @@
     FoodCheeseSlice: 1
     FoodDoughTortillaFlat: 1
     FoodPlateSmall: 1
+  recipeType: # Mono
+  - Oven # Mono
+  - Microwave # Mono
 
 - type: microwaveMealRecipe
   id: RecipeNachosCuban
@@ -1576,6 +1582,9 @@
     FoodChiliPepper: 1
     FoodDoughTortillaFlat: 1
     FoodPlateSmall: 1
+  recipeType: # Mono
+  - Oven # Mono
+  - Microwave # Mono
 
 - type: microwaveMealRecipe
   id: RecipePopcorn
