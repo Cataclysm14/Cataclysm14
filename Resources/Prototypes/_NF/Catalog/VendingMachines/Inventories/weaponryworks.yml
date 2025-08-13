@@ -87,6 +87,7 @@
     # WeaponRifleLecterPMC: 4294967295
     # WeaponSubMachineGunDrozdPMC: 4294967295
     WeaponSubMachineGunKnallstock: 4294967295
+    WeaponSubMachineGunTypewriterPMC: 4294967295
 # Rifles
     WeaponRifleGestio: 4294967295
     WeaponRifleNovaliteC1: 4294967295
@@ -95,6 +96,7 @@
     WeaponRifleVulcanFCMC: 4294967295
     # WeaponSubMachineGunDrozdPMC: 4294967295
     WeaponSubMachineGunAK220: 4294967295
+    WeaponRiflePrometheus: 4294967295
 # Shotguns
     # WeaponShotgunBigJohnny: 4294967295
     # WeaponShotgunEnforcerPMC: 4294967295

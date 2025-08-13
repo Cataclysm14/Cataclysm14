@@ -290,3 +290,20 @@
     targetedColor: "#62ab3a"
     defaultColor: "#62ab3a"
   - type: Appearance
+
+#weaker typewriter for libvend
+- type: entity
+  name: PA Keyboard (.45 ACP)
+  parent: WeaponSubMachineGunTypewriter
+  id: WeaponSubMachineGunTypewriterPMC
+  description: A modern take on the classic design used by mobsters throughout space and time. This one is an offbrand mercenary version of the typewritter nicknamed the "keyboard", its barrel heat rapidly which reduce accuracy. Uses .45 ACP ammo.
+  components:
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -30
+  - type: Gun
+    minAngle: 30
+    maxAngle: 55
+    angleIncrease: 4
+    angleDecay: 10
+    fireRate: 5
