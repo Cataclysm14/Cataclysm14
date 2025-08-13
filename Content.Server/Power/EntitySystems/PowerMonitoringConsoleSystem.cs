@@ -243,7 +243,8 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
         var query = AllEntityQuery<PowerMonitoringConsoleComponent, TransformComponent>();
         while (query.MoveNext(out var uid, out var console, out var xform))
         {
-            if (CompOrNull<StationMemberComponent>(xform.GridUid)?.Station == rule.AffectedStation)
+            var station = CompOrNull<StationMemberComponent>(xform.GridUid)?.Station;
+            if (station.HasValue && rule.AffectedStations.Contains(station.Value)) // Mono change, can affect multiple stations
             {
                 console.Flags |= PowerMonitoringFlags.PowerNetAbnormalities;
                 Dirty(uid, console);
@@ -259,7 +260,8 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
         var query = AllEntityQuery<PowerMonitoringConsoleComponent, TransformComponent>();
         while (query.MoveNext(out var uid, out var console, out var xform))
         {
-            if (CompOrNull<StationMemberComponent>(xform.GridUid)?.Station == rule.AffectedStation)
+            var station = CompOrNull<StationMemberComponent>(xform.GridUid)?.Station;
+            if (station.HasValue && rule.AffectedStations.Contains(station.Value)) // Mono change, can affect multiple stations
             {
                 console.Flags &= ~PowerMonitoringFlags.PowerNetAbnormalities;
                 Dirty(uid, console);

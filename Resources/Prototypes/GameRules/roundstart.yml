@@ -35,6 +35,9 @@
   abstract: true
   components:
   - type: GameRule
+    numberOfGrids: # Mono
+      min: 5       # Mono
+      max: 10      # Mono
 
 - type: entity
   parent: BaseGameRule

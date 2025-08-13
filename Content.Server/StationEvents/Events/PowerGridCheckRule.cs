@@ -8,6 +8,7 @@ using JetBrains.Annotations;
 using Robust.Shared.Audio;
 using Robust.Shared.Player;
 using Robust.Shared.Utility;
+using YamlDotNet.Core.Tokens;
 using Timer = Robust.Shared.Timing.Timer;
 
 namespace Content.Server.StationEvents.Events
@@ -21,15 +22,15 @@ namespace Content.Server.StationEvents.Events
         {
             base.Started(uid, component, gameRule, args);
 
-            if (!TryGetRandomStation(out var chosenStation))
+            if (!TryGetRandomStations(gameRule.NumberOfGrids.Min, gameRule.NumberOfGrids.Max, out var stations))
                 return;
 
-            component.AffectedStation = chosenStation.Value;
-
+            component.AffectedStations = stations;
             var query = AllEntityQuery<ApcComponent, TransformComponent>();
             while (query.MoveNext(out var apcUid ,out var apc, out var transform))
             {
-                if (apc.MainBreakerEnabled && CompOrNull<StationMemberComponent>(transform.GridUid)?.Station == chosenStation)
+                var station = CompOrNull<StationMemberComponent>(transform.GridUid)?.Station;
+                if (apc.MainBreakerEnabled && station.HasValue && stations.Contains(station.Value))
                     component.Powered.Add(apcUid);
             }
 
