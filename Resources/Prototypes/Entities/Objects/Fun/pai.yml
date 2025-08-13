@@ -92,7 +92,6 @@
     - RobotTalk
     - DroneTalk
     - Marish
-    - Elyran
     - Freespeak
     - Tradeband
     understands:
@@ -110,7 +109,6 @@
     - RobotTalk
     - DroneTalk
     - Marish
-    - Elyran
     - Freespeak
     - Tradeband
     - Sign # Should know it but not speak it, for obvious reasons.
