@@ -1220,6 +1220,7 @@
   solids:
     FoodMeatSnail: 1
   recipeType: # Frontier
+  - Oven # Mono
   - Microwave # Frontier
 
 - type: microwaveMealRecipe
@@ -1472,7 +1473,9 @@
     Cola: 5
   solids:
     FoodSoupMiso: 1
-  recipeType: Oven # Frontier
+  recipeType: # Frontier
+  - Oven # Frontier
+  - Microwave # Mono
 
 - type: microwaveMealRecipe
   id: RecipeLoadedBakedPotato
@@ -2425,6 +2428,7 @@
     FoodButter: 1
     LeavesCannabis: 6
   recipeType: # Frontier
+  - Oven # Mono
   - Microwave # Frontier
 
 - type: microwaveMealRecipe
