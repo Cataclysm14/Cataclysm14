@@ -1,0 +1,53 @@
+# SPDX-FileCopyrightText: 2023 IHAN <IHAN>
+# SPDX-FileCopyrightText: 2023 Kennedy
+# SPDX-FileCopyrightText: 2023 RealIHaveANameOfficial
+# SPDX-FileCopyrightText: 2024 Dvir
+# SPDX-FileCopyrightText: 2024 ErhardSteinhauer
+# SPDX-FileCopyrightText: 2024 Maxtone
+# SPDX-FileCopyrightText: 2024 Whatstone
+# SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 Rubeebeebee
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Author Info
+# GitHub: Rubeebeebee
+# Discord: rubeebee
+
+# Shuttle Notes:
+# im reusing the sabine template for this  
+- type: vessel
+  id: Bullfrog
+  parent: BaseVessel
+  name: CRU Bullfrog
+  description: An outdated salvage ship design, commonly fielded by the Colossus Roider Union. Feautures a Clarke mining mech and a spacious cargo bay for holding valuables stripped from derelicts. Comes with an Industrial Ore Processing Machine
+  price: 79000
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_Mono/Shuttles/bullfrog.yml
+  class:
+  - Salvage
+  - Cargo
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Bullfrog
+  mapName: 'CRU Bullfrog'
+  mapPath: /Maps/_Mono/Shuttles/bullfrog.yml
+  minPlayers: 0
+  stations:
+    Bullfrog:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Bullfrog CIV{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
