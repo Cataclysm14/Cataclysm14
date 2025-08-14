@@ -1,43 +1,3 @@
-// SPDX-FileCopyrightText: 2019 Ephememory
-// SPDX-FileCopyrightText: 2019 Injazz
-// SPDX-FileCopyrightText: 2019 Pieter-Jan Briers
-// SPDX-FileCopyrightText: 2019 PrPleGoo
-// SPDX-FileCopyrightText: 2019 Silver
-// SPDX-FileCopyrightText: 2020 Rohesie
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto
-// SPDX-FileCopyrightText: 2021 Acruid
-// SPDX-FileCopyrightText: 2021 Galactic Chimp
-// SPDX-FileCopyrightText: 2021 Kara D
-// SPDX-FileCopyrightText: 2021 Paul
-// SPDX-FileCopyrightText: 2021 Swept
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto
-// SPDX-FileCopyrightText: 2021 moonheart08
-// SPDX-FileCopyrightText: 2022 Jacob Tong
-// SPDX-FileCopyrightText: 2022 Moony
-// SPDX-FileCopyrightText: 2022 Morb
-// SPDX-FileCopyrightText: 2022 Paul Ritter
-// SPDX-FileCopyrightText: 2022 wrexbe
-// SPDX-FileCopyrightText: 2023 20kdc
-// SPDX-FileCopyrightText: 2023 DrSmugleaf
-// SPDX-FileCopyrightText: 2023 Ilya246
-// SPDX-FileCopyrightText: 2023 Kara
-// SPDX-FileCopyrightText: 2023 Visne
-// SPDX-FileCopyrightText: 2023 Vordenburg
-// SPDX-FileCopyrightText: 2023 Ygg01
-// SPDX-FileCopyrightText: 2023 deltanedas
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2023 metalgearsloth
-// SPDX-FileCopyrightText: 2024 Dvir
-// SPDX-FileCopyrightText: 2024 Leon Friedrich
-// SPDX-FileCopyrightText: 2024 Nemanja
-// SPDX-FileCopyrightText: 2024 PECK
-// SPDX-FileCopyrightText: 2025 Ark
-// SPDX-FileCopyrightText: 2025 Princess Cheeseballs
-// SPDX-FileCopyrightText: 2025 Tayrtahn
-// SPDX-FileCopyrightText: 2025 mikusssssss
-//
-// SPDX-License-Identifier: AGPL-3.0-or-later
-
 using Content.Shared.Atmos;
 using Content.Shared.Light.Components;
 using Content.Shared.Movement.Systems;
@@ -55,9 +15,7 @@ namespace Content.Shared.Maps
     [Prototype("tile")]
     public sealed partial class ContentTileDefinition : IPrototype, IInheritingPrototype, ITileDefinition
     {
-        [ValidatePrototypeId<ToolQualityPrototype>]
-        public const string PryingToolQuality = "Prying";
-        public const string DiggingToolQuality = "Digging"; // Frontier
+        public static readonly ProtoId<ToolQualityPrototype> PryingToolQuality = "Prying";
 
         public const string SpaceID = "Space";
 
@@ -88,20 +46,16 @@ namespace Content.Shared.Maps
         [DataField]
         public PrototypeFlags<ToolQualityPrototype> DeconstructTools { get; set; } = new();
 
-        /// Monolith - Goobstation
-        /// Tile deconstruct do-after time multiplier
+        /// <summary>
+        /// Effective mass of this tile for grid impacts.
+        /// </summary>
         [DataField]
-        public float DeconstructTimeMultiplier { get; private set; }
-
-        // Delta V
-        // [DataField("canShovel")] public bool CanShovel { get; private set; }
-        //Delta V
+        public float Mass = 800f;
 
         /// <remarks>
         /// Legacy AF but nice to have.
         /// </remarks>
         public bool CanCrowbar => DeconstructTools.Contains(PryingToolQuality);
-        public bool CanShovel => DeconstructTools.Contains(DiggingToolQuality); // Frontier
 
         /// <summary>
         /// These play when the mob has shoes on.
@@ -121,6 +75,11 @@ namespace Content.Shared.Maps
         [DataField("variants")] public byte Variants { get; set; } = 1;
 
         /// <summary>
+        ///     Allows the tile to be rotated/mirrored when placed on a grid.
+        /// </summary>
+        [DataField] public bool AllowRotationMirror { get; set; } = false;
+
+        /// <summary>
         /// This controls what variants the `variantize` command is allowed to use.
         /// </summary>
         [DataField("placementVariants")] public float[] PlacementVariants { get; set; } = { 1f };
@@ -137,25 +96,13 @@ namespace Content.Shared.Maps
         /// <summary>
         /// Whether or not the tile is exposed to the map's atmosphere.
         /// </summary>
-        [DataField("isSpace")] public bool MapAtmosphere { get; private set; }
+        [DataField("IsSpace")] public bool MapAtmosphere { get; private set; }
 
         /// <summary>
         ///     Friction override for mob mover in <see cref="SharedMoverController"/>
         /// </summary>
         [DataField("mobFriction")]
         public float? MobFriction { get; private set; }
-
-        /// <summary>
-        ///     No-input friction override for mob mover in <see cref="SharedMoverController"/>
-        /// </summary>
-        [DataField("mobFrictionNoInput")]
-        public float? MobFrictionNoInput { get; private set; }
-
-        /// <summary>
-        /// Effective mass of this tile for grid impacts.
-        /// </summary>
-        [DataField]
-        public float Mass = 1000f;
 
         /// <summary>
         ///     Accel override for mob mover in <see cref="SharedMoverController"/>

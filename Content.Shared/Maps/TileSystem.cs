@@ -6,7 +6,6 @@ using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
-using Content.Shared.Tiles; // Frontier
 
 namespace Content.Shared.Maps;
 
@@ -105,22 +104,7 @@ public sealed class TileSystem : EntitySystem
 
         return DeconstructTile(tileRef);
     }
-    // Delta V
-    public bool DigTile(TileRef tileRef)
-    {
-        var tile = tileRef.Tile;
 
-        if (tile.IsEmpty)
-            return false;
-
-        var tileDef = (ContentTileDefinition) _tileDefinitionManager[tile.TypeId];
-
-        if (!tileDef.CanShovel)
-            return false;
-
-        return DeconstructTile(tileRef);
-    }
-    // Delta V
     public bool ReplaceTile(TileRef tileref, ContentTileDefinition replacementTile)
     {
         if (!TryComp<MapGridComponent>(tileref.GridUid, out var grid))
@@ -159,14 +143,6 @@ public sealed class TileSystem : EntitySystem
 
         var gridUid = tileRef.GridUid;
         var mapGrid = Comp<MapGridComponent>(gridUid);
-
-        // Frontier
-        var ev = new FloorTileAttemptEvent();
-        RaiseLocalEvent(mapGrid);
-
-        if (((TryComp<ProtectedGridComponent>(gridUid, out var prot) && prot.PreventFloorRemoval) || ev.Cancelled) && tileDef.ID == "Plating")
-            return false;
-        // Frontier
 
         const float margin = 0.1f;
         var bounds = mapGrid.TileSize - margin * 2;
