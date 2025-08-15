@@ -10,7 +10,7 @@
     children:
     - id: MobLizard
       weight: 0.5
-    - id: MobKangaroo
+    - id: MobKangarooPlanet
       weight: 0.1
     - id: MobCrab
       weight: 0.1

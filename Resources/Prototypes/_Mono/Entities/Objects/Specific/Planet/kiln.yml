@@ -22,7 +22,7 @@
     color: "#FFB700"
   - type: Damageable
     damageContainer: StructuralInorganic
-    damageModifierSet: Wood
+    damageModifierSet: StructuralStone
   - type: Fixtures
     fixtures:
       fix1:
