@@ -44,9 +44,9 @@
         Ammonia: stationAmmonia
         NitrousOxide: stationNO
         Frezon: danger
-        BZ: danger #Mono
-        Healium: stationNO #Mono 
-        Nitrium: danger  #Mono
+        BZ: danger #Funky
+        Healium: stationNO #Funky
+        Nitrium: danger  #Funky
     - type: Tag
       tags:
         - AirSensor
