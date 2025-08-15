@@ -905,7 +905,7 @@
   components:
   - type: Sprite
     layers:
-    - state: storage
+    - state: nitrium
   - type: GasCanister
     gasMixture:
       volume: 1000
@@ -1117,4 +1117,4 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: storage-1
+    state: nitrium-1
