@@ -1,4 +1,9 @@
-﻿using Content.Shared.Atmos;
+// SPDX-FileCopyrightText: 2025 Nemanja
+// SPDX-FileCopyrightText: 2025 Onezero0
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Shared.Atmos;
 
 namespace Content.Server.Atmos.EntitySystems;
 

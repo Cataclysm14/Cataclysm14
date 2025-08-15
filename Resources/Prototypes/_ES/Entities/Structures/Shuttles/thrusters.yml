@@ -1,4 +1,9 @@
-﻿- type: entity
+# SPDX-FileCopyrightText: 2025 Nemanja
+# SPDX-FileCopyrightText: 2025 Onezero0
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
   id: ESGasThruster
   name: gas thruster
   parent: Thruster
