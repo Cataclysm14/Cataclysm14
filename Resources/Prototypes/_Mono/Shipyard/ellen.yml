@@ -1,0 +1,58 @@
+# SPDX-FileCopyrightText: 2023 IHAN <IHAN>
+# SPDX-FileCopyrightText: 2023 Kennedy
+# SPDX-FileCopyrightText: 2023 PECK
+# SPDX-FileCopyrightText: 2023 RealIHaveANameOfficial
+# SPDX-FileCopyrightText: 2024 Debug
+# SPDX-FileCopyrightText: 2024 Dvir
+# SPDX-FileCopyrightText: 2024 Maxtone
+# SPDX-FileCopyrightText: 2024 Salvantrix
+# SPDX-FileCopyrightText: 2024 Whatstone
+# SPDX-FileCopyrightText: 2025 Carolyn3114
+# SPDX-FileCopyrightText: 2025 KM-Catman
+# SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 Rubeebeebee
+# SPDX-FileCopyrightText: 2025 significant harassment
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Author Info
+# GitHub: Rubeebeebee
+# Discord: rubeebee
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Ellen
+  parent: BaseVessel
+  name: DFNT-Ellen
+  description: An ancient cargo vessel design, dating back to the pre-fracture era. It forgoes the conveyor belt system in favor of it's Ripleys.
+  price: 89000 # its a cargo freighter with a limited mechbay, pretty focused on what it can do. 
+  category: Large
+  group: Shipyard
+  shuttlePath: /Maps/_Mono/Shuttles/ellen.yml
+  guidebookPage: Null
+  class:
+  - Cargo
+  engine:
+  - AME
+
+- type: gameMap
+  id: Ellen
+  mapName: 'DFNT-Ellen'
+  mapPath: /Maps/_Mono/Shuttles/ellen.yml
+  minPlayers: 0
+  stations:
+    Ellen:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Ellen CIV{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
