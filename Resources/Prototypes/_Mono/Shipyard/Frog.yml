@@ -1,0 +1,42 @@
+# Author Info
+# GitHub: Rubeebeebee
+# Discord: rubeebee
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Frog
+  parent: BaseVessel
+  name: COG Frog
+  description: A compact ripperdoc ship usually fielded by the adherents of the machine god. Features an R&D bay to facilitate the research of cybernetic improvements to the weakness of the flesh.
+  price: 49000
+  category: Small
+  group: Medical
+  shuttlePath: /Maps/_Mono/Shuttles/frog.yml
+  guidebookPage: null
+  class:
+  - Medical
+  - Science
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Frog
+  mapName: 'COG Frog'
+  mapPath: /Maps/_Mono/Shuttles/frog.yml
+  minPlayers: 0
+  stations:
+    Frog:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Frog MED{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            MdMedic: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
