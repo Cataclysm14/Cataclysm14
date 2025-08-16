@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/16/2025 14:38:49
-  entityCount: 406
+  time: 08/16/2025 14:40:34
+  entityCount: 407
 maps: []
 grids:
 - 1
@@ -1458,6 +1458,14 @@ entities:
       powerLoad: 5
     - type: Battery
       startingCharge: 0
+- proto: DefibrillatorCabinetFilled
+  entities:
+  - uid: 407
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 0.5,0.5
+      parent: 1
 - proto: DrinkVodkaBottleFull
   entities:
   - uid: 183
