@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/16/2025 02:39:49
-  entityCount: 1527
+  time: 08/16/2025 03:52:34
+  entityCount: 1535
 maps: []
 grids:
 - 1
@@ -519,13 +519,13 @@ entities:
       data:
         tiles:
           0,0:
-            0: 32765
-            1: 2
+            0: 30719
           -1,0:
             0: 32767
           0,1:
-            0: 35760
+            1: 816
             2: 12288
+            0: 34944
           0,2:
             2: 33792
             0: 128
@@ -538,11 +538,13 @@ entities:
             2: 32768
           1,-1:
             0: 32767
+          1,3:
+            2: 5
           2,0:
             0: 65535
           2,1:
             2: 57600
-            0: 1632
+            1: 1632
           2,2:
             2: 264
           2,-1:
@@ -550,43 +552,52 @@ entities:
           3,0:
             0: 30719
           3,1:
-            0: 16
-            2: 800
+            1: 16
+            2: 928
           3,-1:
-            0: 33464
+            0: 33328
+            1: 136
           4,0:
-            0: 4155
+            0: 51
+            1: 4104
             2: 9344
+          4,1:
+            1: 16
+            2: 2
           -3,0:
-            0: 8
+            1: 8
             2: 128
           -3,-1:
             2: 32768
           -2,0:
-            0: 16622
+            0: 238
             2: 8448
+            1: 16384
           -2,-1:
-            0: 57548
+            0: 57344
             2: 290
+            1: 204
           -2,1:
-            2: 2
+            2: 130
+            1: 64
           -1,1:
             2: 544
-            0: 64
+            1: 64
           -1,-1:
             0: 33504
           -1,2:
             2: 8
-          -2,-3:
-            2: 29044
           -2,-4:
-            2: 17440
-            0: 12
-          -2,-2:
-            2: 9284
+            2: 33
+            1: 17420
           -2,-5:
-            0: 49152
-            2: 3104
+            1: 53248
+            2: 3360
+          -2,-3:
+            1: 29044
+          -2,-2:
+            2: 8192
+            1: 1092
           -1,-4:
             0: 65504
           -1,-3:
@@ -594,10 +605,11 @@ entities:
           -1,-2:
             0: 61439
           -1,-5:
-            0: 40960
+            1: 40960
             2: 16
           0,-4:
-            0: 63238
+            0: 63232
+            1: 6
           0,-3:
             0: 61695
           0,-2:
@@ -605,7 +617,7 @@ entities:
           0,-1:
             0: 3838
           0,-5:
-            0: 24576
+            1: 24576
             2: 1920
           1,-4:
             0: 63351
@@ -617,38 +629,40 @@ entities:
             0: 30576
             2: 128
           2,-4:
-            0: 65411
+            1: 3
+            0: 65408
           2,-3:
             0: 61695
           2,-2:
             0: 47359
           2,-5:
-            0: 45056
+            1: 45056
             2: 1792
           3,-4:
-            0: 30520
+            0: 30512
+            1: 8
           3,-3:
             0: 28791
           3,-2:
             0: 14199
           3,-5:
-            0: 40960
+            1: 40960
             2: 2112
           4,-4:
-            0: 1
-            2: 4384
+            1: 4353
+            2: 36
           4,-3:
-            2: 29809
+            1: 29809
           4,-2:
-            2: 8465
+            1: 273
+            2: 8192
           4,-1:
-            0: 12305
+            1: 17
+            0: 12288
             2: 33826
-          4,1:
-            2: 2
           4,-5:
-            0: 4096
-            2: 288
+            1: 20480
+            2: 1312
         uniqueMixes:
         - volume: 2500
           temperature: 293.15
@@ -666,10 +680,10 @@ entities:
           - 0
           - 0
         - volume: 2500
-          temperature: 293.14996
+          temperature: 293.15
           moles:
-          - 21.824879
-          - 82.10312
+          - 0
+          - 0
           - 0
           - 0
           - 0
@@ -3460,6 +3474,41 @@ entities:
     components:
     - type: Transform
       pos: 18.5,-16.5
+      parent: 1
+  - uid: 1529
+    components:
+    - type: Transform
+      pos: -1.5,5.5
+      parent: 1
+  - uid: 1530
+    components:
+    - type: Transform
+      pos: 11.5,-14.5
+      parent: 1
+  - uid: 1531
+    components:
+    - type: Transform
+      pos: 8.5,-16.5
+      parent: 1
+  - uid: 1532
+    components:
+    - type: Transform
+      pos: 9.5,-16.5
+      parent: 1
+  - uid: 1533
+    components:
+    - type: Transform
+      pos: 2.5,-16.5
+      parent: 1
+  - uid: 1534
+    components:
+    - type: Transform
+      pos: 1.5,-16.5
+      parent: 1
+  - uid: 1535
+    components:
+    - type: Transform
+      pos: -0.5,-14.5
       parent: 1
 - proto: CableHV
   entities:
@@ -8527,7 +8576,7 @@ entities:
       pos: 3.5,-1.5
       parent: 1
     - type: Advertise
-      nextAdvertisementTime: 722.9486061
+      nextAdvertisementTime: 334.5652198
 - proto: VendingMachineCigs
   entities:
   - uid: 270
@@ -8536,7 +8585,7 @@ entities:
       pos: 4.5,3.5
       parent: 1
     - type: Advertise
-      nextAdvertisementTime: 729.9486061
+      nextAdvertisementTime: 450.5652198
 - proto: VendingMachineTankDispenserEVA
   entities:
   - uid: 515
@@ -9919,6 +9968,13 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-0.5
+      parent: 1
+- proto: WarpPoint
+  entities:
+  - uid: 1528
+    components:
+    - type: Transform
+      pos: 5.5,-2.5
       parent: 1
 - proto: WeaponTaser
   entities:
