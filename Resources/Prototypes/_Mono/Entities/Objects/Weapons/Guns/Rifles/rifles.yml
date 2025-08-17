@@ -210,10 +210,10 @@
 
 #Mercenary vulcan
 - type: entity
-  name: FCM-C Vulcan (7.62x51mm)
+  name: HWM FCM-C "Vulcan" (7.62x51mm)
   parent: WeaponRifleVulcan
   id: WeaponRifleVulcanFCMC
-  description: The "Vulcan" Civilian Medium combat rifle (Fusil de Combat Moyen Civil) in 7.62x51mm, this civilian version only has semi-automatic mode and reduced firerate.
+  description: The Herstal Weapon Manufacture "Vulcan" Civilian Medium combat rifle (Fusil de Combat Moyen Civil) in 7.62x51mm, this civilian version only has semi-automatic mode and reduced firerate.
   components:
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Rifles/WeaponRifleVulcanFCMC.rsi
@@ -260,10 +260,10 @@
 
 #Mercenary lecter
 - type: entity
-  name: FCL Prometheus (5.56x45mm)
+  name: HWM FCL "Prometheus" (5.56x45mm)
   parent: [BaseWeaponRifle, BaseC1Contraband]
   id: WeaponRiflePrometheus
-  description: The "Prometheus" Light combat rifle (Fusil de Combat Léger) in 5.56x45mm. Made to be mass producable for fight against xenos. Its firerate is decent with burst being superior and accuracy poor.
+  description: The Herstal Weapon Manufacture "Prometheus" Light combat rifle (Fusil de Combat Léger) in 5.56x45mm. Made to be mass producable for fight against xenos. Its firerate is decent with burst being superior and accuracy poor.
   components:
   - type: Item # Mono
     size: Huge

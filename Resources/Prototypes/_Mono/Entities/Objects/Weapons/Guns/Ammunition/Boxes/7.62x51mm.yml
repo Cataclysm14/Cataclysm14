@@ -26,6 +26,9 @@
     steps: 4
     zeroVisible: false
   - type: Appearance
+  - type: Tag
+    tags:
+     - Magazine7.62x51mmBoxSmall
 
 # Boxes
 - type: entity
@@ -50,6 +53,9 @@
   - type: MagazineVisuals
     magState: magb
   # End Frontier
+  - type: Tag
+    tags:
+     - Magazine7.62x51mmBoxBig
 
 - type: entity
   parent: BaseAmmoBox7.62x51mm

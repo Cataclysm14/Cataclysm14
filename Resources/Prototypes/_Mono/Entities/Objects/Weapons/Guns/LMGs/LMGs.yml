@@ -218,3 +218,154 @@
   - type: GunRequiresWield
   - type: PirateBountyItem # Mono
     id: ExperimentalFactionWeapon
+
+
+- type: entity
+  name: VFD MMG-308 "Grizzly"(7.62x51mm)
+  parent: [BaseWeaponLightMachineGun, BaseGunWieldable, BaseC2ContrabandUnredeemable]
+  id: WeaponLMGGrizzly
+  description: A medium machine gun Chambered in 7.62x51mm, accepts both box and standard magazines. A label on the side reads "FOR MILITARY USE ONLY".
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/LMGs/grizzly/grizzly-icon.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -20
+  - type: Gun
+    minAngle: 24
+    maxAngle: 36
+    angleIncrease: 3
+    angleDecay: 34
+    fireRate: 6 # 360 rpm
+    selectedMode: FullAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/heavy_rifle_1.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/batrifle_cock.ogg
+  - type: Item
+    sprite: _Mono/Objects/Weapons/Guns/LMGs/grizzly/grizzly-inhands.rsi
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: AmmoBox7.62x51mmBigFMJ
+        insertSound: /Audio/Weapons/Guns/MagIn/sfrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/hpistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - Magazine7.62x51mmBoxSmall
+          - Magazine7.62x51mmBoxBig
+          - Magazine7.62x51mmFMJ
+          - Magazine7.62x51mmLowCapacityFMJ
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge7.62x51mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+          - Cartridge7.62x51mmFMJ
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: Clothing
+    sprite: _Mono/Objects/Weapons/Guns/LMGs/grizzly/grizzly-inhands.rsi
+  - type: StaticPrice
+    price: 2500
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.85
+    sprintModifier: 0.75
+  - type: GunRequiresWield
+  - type: PirateBountyItem # Mono
+    id: ExperimentalFactionWeapon
+
+- type: entity
+  name: VFD PSW "Ratel" (7.62x51mm)
+  parent: BaseWeaponRifle
+  id: WeaponLMGRatel
+  description: The precision support weapon chambered in 7.62x51mm and fits simple ammo box and all kind of magazines. Based on the vulcan and made with higher quality materials as well as a mounted precision scope. A label on the side that seems to have been tampered with reads "FOR MILI-CENARY USE ONLY".
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/LMGs/ratel/ratel-icon.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _Mono/Objects/Weapons/Guns/LMGs/ratel/ratel-inhands.rsi
+  - type: Clothing
+    sprite: _Mono/Objects/Weapons/Guns/LMGs/ratel/ratel-inhands.rsi
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -30
+  - type: Gun
+    minAngle: 25
+    maxAngle: 40
+    angleIncrease: 5
+    angleDecay: 34
+    fireRate: 5 # 360 rpm
+    selectedMode: FullAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/heavy_rifle_1.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/batrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: AmmoBox7.62x51mmFMJ
+        insertSound: /Audio/Weapons/Guns/MagIn/sfrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/hpistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - Magazine7.62x51mmBoxSmall
+          - Magazine7.62x51mmFMJ
+          - Magazine7.62x51mmLowCapacityFMJ
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge7.62x51mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+          - Cartridge7.62x51mmFMJ
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice
+    price: 2500
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.85
+    sprintModifier: 0.75
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 7
+    pvsIncrease: 1

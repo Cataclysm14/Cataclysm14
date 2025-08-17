@@ -6,10 +6,104 @@
   id: WeaponSubMachineGunKnallstock
   parent: BaseWeaponRecipeLong
   result: WeaponSubMachineGunKnallstock
-  categories: # Mono
+  categories:
+  - SMGs
   - Ballistic
   - Weapons
   materials:
     Steel: 2500
     Plasteel: 1200
     Plastic: 1500
+
+- type: latheRecipe
+  id: WeaponRiflePrometheus
+  parent: BaseWeaponRecipeLong
+  result: WeaponRiflePrometheus
+  categories:
+  - Rifles
+  - Ballistic
+  - Weapons
+  materials:
+    Steel: 5500
+    Plasteel: 2000
+    Plastic: 2000
+
+- type: latheRecipe
+  id: WeaponRifleVulcanFCMC
+  parent: BaseWeaponRecipeLong
+  result: WeaponRifleVulcanFCMC
+  categories:
+  - Rifles
+  - Ballistic
+  - Weapons
+  materials:
+    Steel: 5500
+    Plasteel: 1500
+    Plastic: 500
+    Wood: 1500
+
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
+  id: WeaponRifleVulcanMerc
+  result: WeaponRifleVulcanRegistered
+  categories:
+  - Rifles
+  - Ballistic
+  - Weapons
+  materials:
+    Steel: 1800
+    Plasteel: 1000
+    Plastic: 200
+
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
+  id: WeaponShotgunEnforcerMerc
+  result: WeaponShotgunEnforcerRegistered
+  categories:
+  - Shotguns
+  - Ballistic
+  - Weapons
+  materials:
+    Steel: 2000
+    Plasteel: 1000
+    Plastic: 300
+
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
+  id: WeaponShotgunBigJohnny
+  result: WeaponShotgunBigJohnny
+  categories:
+  - Shotguns
+  - Ballistic
+  - Weapons
+  materials:
+    Steel: 1800
+    Plasteel: 1000
+    Plastic: 400
+
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
+  id: WeaponShotgunBigBuddy
+  result: WeaponShotgunBigBuddy
+  categories:
+  - Shotguns
+  - Ballistic
+  - Weapons
+  materials:
+    Steel: 2500
+    Plasteel: 1500
+    Plastic: 500
+
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
+  id: WeaponLMGRatel
+  result: WeaponLMGRatel
+  categories:
+  - Rifles
+  - MGs
+  - Ballistic
+  - Weapons
+  materials:
+    Steel: 3000
+    Plasteel: 2500
+    Plastic: 700
