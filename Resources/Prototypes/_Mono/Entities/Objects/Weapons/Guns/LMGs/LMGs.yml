@@ -222,10 +222,10 @@
 
 
 - type: entity
-  name: VFD MMG-308 "Grizzly"(7.62x51mm)
+  name: TCA MMG-308 "Grizzly" (7.62x51mm)
   parent: [BaseWeaponLightMachineGun, BaseGunWieldable, BaseC2ContrabandUnredeemable]
   id: WeaponLMGGrizzly
-  description: A medium machine gun Chambered in 7.62x51mm, accepts both box and standard magazines. A label on the side reads "FOR MILITARY USE ONLY".
+  description: A medium machine gun chambered in 7.62x51mm, accepts both box and standard magazines. A label on the side reads "FOR MILITARY USE ONLY".
   components:
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/LMGs/grizzly/grizzly-icon.rsi
@@ -300,7 +300,7 @@
   name: VFD PSW "Ratel" (7.62x51mm)
   parent: BaseWeaponRifle
   id: WeaponLMGRatel
-  description: The precision support weapon chambered in 7.62x51mm and fits simple ammo box and all kind of magazines. Based on the vulcan and made with higher quality materials as well as a mounted precision scope. A label on the side that seems to have been tampered with reads "FOR MILI-CENARY USE ONLY".
+  description: The precision support weapon chambered in 7.62x51mm and fits simple ammo box and all kind of magazines. Based on the Vulcan and made with higher quality materials as well as a mounted precision scope. A label on the side that seems to have been tampered with reads "FOR MILI-CENARY USE ONLY".
   components:
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/LMGs/ratel/ratel-icon.rsi
