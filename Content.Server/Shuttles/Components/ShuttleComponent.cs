@@ -107,7 +107,7 @@ namespace Content.Server.Shuttles.Components
         /// How much should TWR affect max velocity.
         /// </summary>
         [DataField]
-        public float MaxVelocityScalingExponent = 0.5f; // 4x thrust = 2x max speed
+        public float MaxVelocityScalingExponent = 0.33f; // 8x thrust = 2x max speed
 
         /// <summary>
         /// Don't allow max velocity to go beyond this value.
