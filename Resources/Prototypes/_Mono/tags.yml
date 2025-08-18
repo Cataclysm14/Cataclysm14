@@ -61,6 +61,12 @@
 - type: Tag
   id: Magazine68x52mmCaseless
 
+- type: Tag
+  id: Magazine68x52mmCaselessBoxSmall
+
+- type: Tag
+  id: Magazine68x52mmCaselessBoxBig
+
 #5.56x45mm tags
 
 - type: Tag

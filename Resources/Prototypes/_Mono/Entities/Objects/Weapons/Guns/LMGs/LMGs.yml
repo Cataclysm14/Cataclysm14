@@ -225,7 +225,7 @@
   name: TCA MMG-308 "Grizzly" (7.62x51mm)
   parent: [BaseWeaponLightMachineGun, BaseGunWieldable, BaseC2ContrabandUnredeemable]
   id: WeaponLMGGrizzly
-  description: A medium machine gun chambered in 7.62x51mm, accepts both box and standard magazines. A label on the side reads "FOR MILITARY USE ONLY".
+  description: A medium machine gun chambered in 6.8x52mm Caseless, accepts both box and standard magazines. A label on the side reads "FOR MILITARY USE ONLY". The weight of the machine gun make it hard to wield easily.
   components:
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/LMGs/grizzly/Grizzly-icon.rsi
@@ -260,24 +260,23 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: AmmoBox7.62x51mmBigFMJ
+        startingItem: AmmoBox68x52mmCaselessBig
         insertSound: /Audio/Weapons/Guns/MagIn/sfrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/hpistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - Magazine7.62x51mmBoxSmall
-          - Magazine7.62x51mmBoxBig
-          - Magazine7.62x51mmFMJ
-          - Magazine7.62x51mmLowCapacityFMJ
+          - Magazine68x52mmCaselessBoxSmall
+          - Magazine68x52mmCaselessBoxBig
+          - Magazine68x52mmCaseless
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7.62x51mmFMJ
+        startingItem: Cartridge68x52mmCaseless
         priority: 1
         whitelist:
           tags:
-          - Cartridge7.62x51mmFMJ
+          - Cartridge68x52mmCaseless
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -293,7 +292,7 @@
   - type: StaticPrice
     price: 2500
   - type: GunRequiresWield
-  - type: PirateBountyItem # Mono
+  - type: PirateBountyItem
     id: ExperimentalFactionWeapon
   - type: HeldSpeedModifier
   - type: ClothingSpeedModifier
@@ -302,6 +301,10 @@
   - type: SpeedModifiedOnWield
     walkModifier: 0.4
     sprintModifier: 0.35
+  - type: WieldDelay
+    baseDelay: 2
+    modifiedDelay: 2
+    preventFiring: true
 
 - type: entity
   name: VFD PSW "Ratel" (7.62x51mm)
@@ -330,7 +333,7 @@
     maxAngle: 40
     angleIncrease: 5
     angleDecay: 34
-    fireRate: 5 # 360 rpm
+    fireRate: 5 # 300 rpm
     selectedMode: FullAuto
     availableModes:
     - SemiAuto

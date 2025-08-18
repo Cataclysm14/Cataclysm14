@@ -40,6 +40,9 @@
     steps: 4
     zeroVisible: false
   - type: Appearance
+  - type: Tag
+    tags:
+     - Magazine68x52mmCaselessBoxSmall
 
 # Boxes
 - type: entity
@@ -108,3 +111,6 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: magb
+  - type: Tag
+    tags:
+     - Magazine68x52mmCaselessBoxBig
