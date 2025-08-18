@@ -16,6 +16,7 @@
     transferDamage: false
     revertOnCrit: false
     revertOnDeath: true
+    cooldown: 60
     polymorphSound: /Audio/Effects/Fluids/splat.ogg
     exitPolymorphSound: /Audio/Effects/Fluids/glug.ogg
     allowRepeatedMorphs: true
@@ -31,6 +32,7 @@
     transferDamage: false
     revertOnCrit: false
     revertOnDeath: false
+    cooldown: 60
     polymorphSound: /Audio/Effects/Fluids/splat.ogg
     exitPolymorphSound: /Audio/Effects/Fluids/glug.ogg
     allowRepeatedMorphs: true
