@@ -170,6 +170,6 @@
       stripTime: 3
       uiWindowPos: 0,5
       strippingWindowPos: 3,4
-      dependsOn: helmetcover
+      dependsOn: head
       displayName: Helmet_attachment
     #End Mono
