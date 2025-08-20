@@ -69,7 +69,7 @@ namespace Content.Server.Atmos.Piping.Trinary.EntitySystems
             SubscribeLocalEvent<GasFilterComponent, GasAnalyzerScanEvent>(OnFilterAnalyzed);
             // Bound UI subscriptions
             SubscribeLocalEvent<GasFilterComponent, GasFilterChangeRateMessage>(OnTransferRateChangeMessage);
-            SubscribeLocalEvent<GasFilterComponent, GasFilterChangeGasesMessage>(OnChangeGasesMessage);
+            SubscribeLocalEvent<GasFilterComponent, GasFilterChangeGasesMessage>(OnChangeGasesMessage); // Funky Station - Parameter name change
             SubscribeLocalEvent<GasFilterComponent, GasFilterToggleStatusMessage>(OnToggleStatusMessage);
 
             SubscribeLocalEvent<GasFilterComponent, MapInitEvent>(OnMapInit); // Frontier
@@ -102,6 +102,7 @@ namespace Content.Server.Atmos.Piping.Trinary.EntitySystems
 
             var removed = inletNode.Air.RemoveVolume(transferVol);
 
+            // Funky Station Start - Multigas Filter
             if (filter.FilterGases != null && filter.FilterGases.Count > 0)
             {
                 var filteredOut = new GasMixture() { Temperature = removed.Temperature };
@@ -122,6 +123,7 @@ namespace Content.Server.Atmos.Piping.Trinary.EntitySystems
                 _atmosphereSystem.Merge(target.Air, filteredOut);
                 _ambientSoundSystem.SetAmbience(uid, hasFilteredMoles);
             }
+            // Funky Station End - Multigas Filter
 
             _atmosphereSystem.Merge(outletNode.Air, removed);
         }
@@ -165,6 +167,7 @@ namespace Content.Server.Atmos.Piping.Trinary.EntitySystems
 
             _userInterfaceSystem.SetUiState(uid, GasFilterUiKey.Key,
                 new GasFilterBoundUserInterfaceState(MetaData(uid).EntityName, filter.TransferRate, filter.Enabled, filter.FilterGases));
+            // Funky Station - Parameter name changed
         }
 
         private void UpdateAppearance(EntityUid uid, GasFilterComponent? filter = null)
@@ -192,7 +195,7 @@ namespace Content.Server.Atmos.Piping.Trinary.EntitySystems
             DirtyUI(uid, filter);
 
         }
-
+        // Funky Station Start - Sets multigas filter server-side from message args
         private void OnChangeGasesMessage(EntityUid uid, GasFilterComponent filter, GasFilterChangeGasesMessage args)
         {
             filter.FilterGases = new HashSet<Gas>(args.Gases);
@@ -200,6 +203,7 @@ namespace Content.Server.Atmos.Piping.Trinary.EntitySystems
                 $"{ToPrettyString(args.Actor):player} set the filter gases on {ToPrettyString(uid):device} to {string.Join(", ", args.Gases)}");
             DirtyUI(uid, filter);
         }
+        // Funky Station End - Sets multigas filter server-side from message args
 
         /// <summary>
         /// Returns the gas mixture for the gas analyzer

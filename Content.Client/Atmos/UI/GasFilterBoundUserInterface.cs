@@ -32,6 +32,7 @@ namespace Content.Client.Atmos.UI
             _window.ToggleStatusButtonPressed += OnToggleStatusButtonPressed;
             _window.FilterTransferRateChanged += OnFilterTransferRatePressed;
             _window.FilterGasesChanged += OnFilterGasesChanged;
+            // Funky Station - Function and variable names changed to reflect multigas filtering
         }
 
         private void OnToggleStatusButtonPressed()
@@ -50,7 +51,7 @@ namespace Content.Client.Atmos.UI
         {
             SendMessage(new GasFilterChangeGasesMessage(gases));
         }
-
+        // Funky Station - Change of state in UI broadcasts hashset of gases
         protected override void UpdateState(BoundUserInterfaceState state)
         {
             base.UpdateState(state);
@@ -61,6 +62,7 @@ namespace Content.Client.Atmos.UI
             _window.SetFilterStatus(cast.Enabled);
             _window.SetTransferRate(cast.TransferRate);
             _window.SetFilteredGases(cast.FilterGases ?? new HashSet<Gas>());
+            // Funky Station - UI updated using hashset of gases
         }
 
         protected override void Dispose(bool disposing)
