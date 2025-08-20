@@ -181,3 +181,76 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-15
       map: ["enum.GunVisualLayers.Mag"]
+
+# Mono AP syst
+#anti-flesh:
+- type: entity
+  id: Magazine5.56x45mmHP
+  name: "magazine (5.56x45mm hollow-point)"
+  parent: BaseMagazine5.56x45mm
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5.56x45mmHP
+  - type: Sprite
+    layers:
+    - state: HP
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: Magazine5.56x45mmRIP
+  name: "magazine (5.56x45mm Radically Invasive Projectile)"
+  parent: BaseMagazine5.56x45mm
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5.56x45mmRIP
+  - type: Sprite
+    layers:
+    - state: RIP
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#armor-piercing:
+- type: entity
+  id: Magazine5.56x45mmSteelAP
+  name: "magazine (5.56x45mm armor-piercing steel core)"
+  parent: BaseMagazine5.56x45mm
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5.56x45mmSteelAP
+  - type: Sprite
+    layers:
+    - state: steelAP
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: Magazine5.56x45mmPlastitAP
+  name: "magazine (5.56x45mm armor-piercing plastitanium core)"
+  parent: BaseMagazine5.56x45mm
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5.56x45mmPlastitAP
+  - type: Sprite
+    layers:
+    - state: plastitAP
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: Magazine5.56x45mmSynthAP
+  name: "magazine (5.56x45mm armor-piercing synthalloy core)"
+  parent: BaseMagazine5.56x45mm
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge5.56x45mmSynthAP
+  - type: Sprite
+    layers:
+    - state: synthAP
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

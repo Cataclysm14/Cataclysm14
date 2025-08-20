@@ -54,3 +54,68 @@
       types:
         Radiation: 25
         Piercing: 20
+
+# Mono AP syst
+#anti-flesh:
+- type: entity
+  id: Bullet7.62x54mmRHP
+  parent: BaseBullet
+  name: bullet (7.62x54mmR hollow-point)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types: 
+        Slash: 3
+        Piercing: 26
+    armorPenetration: -0.6
+
+- type: entity
+  id: Bullet7.62x54mmRRIP
+  parent: BaseBullet
+  name: bullet (7.62x54mmR Radically Invasive Projectile)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types: 
+        Slash: 5
+        Piercing: 35
+    armorPenetration: -0.9
+
+#armor-piercing:
+- type: entity
+  id: Bullet7.62x54mmRSteelAP
+  parent: BaseBullet
+  name: bullet (7.62x54mmR armor-piercing steel core)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types: 
+        Piercing: 23
+    armorPenetration: 0.2
+
+- type: entity
+  id: Bullet7.62x54mmRPlastitAP
+  parent: BaseBullet
+  name: bullet (7.62x54mmR armor-piercing plastitanium core)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types: 
+        Piercing: 23
+    armorPenetration: 0.4
+
+- type: entity
+  id: Bullet7.62x54mmRSynthAP
+  parent: BaseBullet
+  name: bullet (7.62x54mmR armor-piercing synthalloy core)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types: 
+        Piercing: 22
+    armorPenetration: 0.6
