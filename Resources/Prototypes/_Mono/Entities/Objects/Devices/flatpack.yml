@@ -242,3 +242,13 @@
     price: 3000
     vendPrice: 20000
 
+- type: entity
+  parent: BaseFlatpack
+  id: ComputerSalvageExpeditionFlatpack
+  name: expeditions computer flatpack
+  description: A flatpack used for constructing a salvage expeditions computer.
+  components:
+  - type: Flatpack
+    entity: ComputerSalvageExpedition
+  - type: StaticPrice
+    price: 400

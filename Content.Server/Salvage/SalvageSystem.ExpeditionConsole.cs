@@ -272,16 +272,14 @@ public sealed partial class SalvageSystem
     private void UpdateConsole(Entity<SalvageExpeditionConsoleComponent> component)
     {
         var station = _station.GetOwningStation(component);
-        SalvageExpeditionConsoleState state;
 
-        if (TryComp<SalvageExpeditionDataComponent>(station, out var dataComponent))
-        {
-            state = GetState(dataComponent);
-        }
-        else
-        {
-            state = new SalvageExpeditionConsoleState(TimeSpan.Zero, false, true, false, 0, new List<SalvageMissionParams>()); // Frontier: add false as 4th param
-        }
+        // Mono
+        if (station == null)
+            return;
+
+        // Mono - TryComp -> EnsureComp
+        var dataComponent = EnsureComp<SalvageExpeditionDataComponent>(station.Value);
+        var state = GetState(dataComponent);
 
         // Frontier: if we have a lingering FTL component, we cannot start a new mission
         if (!TryComp<StationDataComponent>(station, out var stationData) ||
