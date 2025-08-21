@@ -33,7 +33,7 @@
   name: PB Bratan
   description: A mobile nightclub, cafeteria, hydroponics, and secret drug lab and smuggling ship, all in one package! Brought to you by the Paycheck Bratva. 
   price: 142000
-  category: Medium
+  category: Large
   group: Shipyard
   shuttlePath: /Maps/_Mono/Shuttles/bratan.yml
   guidebookPage: Null
