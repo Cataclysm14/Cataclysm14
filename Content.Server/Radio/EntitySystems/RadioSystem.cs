@@ -253,11 +253,11 @@ public sealed class RadioSystem : EntitySystem
             // Check if within range for range-limited channels
             if (channel.MaxRange.HasValue && channel.MaxRange.Value > 0)
             {
-                var sourcePos = Transform(radioSource).WorldPosition;
-                var targetPos = transform.WorldPosition;
+                var sourcePos = Transform(radioSource).Coordinates;
+                var targetPos = transform.Coordinates;
 
                 // Check distance between sender and receiver
-                if ((sourcePos - targetPos).Length() > channel.MaxRange.Value)
+                if (!sourcePos.TryDistance(EntityManager, targetPos, out var distance) || distance > channel.MaxRange.Value)
                     continue;
             }
 
