@@ -14,3 +14,4 @@
   - type: PreventPilot
   - type: IFF
     flags: HideLabel
+  - type: ClaimableGrid # Mono

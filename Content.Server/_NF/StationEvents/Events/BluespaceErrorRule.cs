@@ -33,6 +33,7 @@ using Content.Server._NF.Station.Systems;
 using Content.Server._NF.StationEvents.Components;
 using Robust.Shared.EntitySerialization.Systems;
 using Content.Server._Mono.StationEvents;
+using Content.Server._Mono.GridClaimer;
 
 namespace Content.Server._NF.StationEvents.Events;
 
@@ -238,6 +239,10 @@ public sealed class BluespaceErrorRule : StationEventSystem<BluespaceErrorRuleCo
                 Log.Error("bluespace error has no associated grid?");
                 return;
             }
+
+            // don't delete it if claimed
+            if (TryComp<ClaimableGridComponent>(componentGridUid, out var claimable) && claimable.Claimed)
+                return;
 
             if (component.DeleteGridsOnEnd)
             {
