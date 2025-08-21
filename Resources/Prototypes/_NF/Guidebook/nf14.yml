@@ -24,6 +24,7 @@
   - Shipyard
   - WeaponsSystems # mono
   - Creatures # mono
+  - MonoMisc # mono
 
 - type: guideEntry
   id: Bank
