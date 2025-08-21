@@ -1,30 +1,11 @@
-# SPDX-FileCopyrightText: 2023 cynical24
-# SPDX-FileCopyrightText: 2024 Alice "Arimah" Heurlin
-# SPDX-FileCopyrightText: 2024 Dvir
-# SPDX-FileCopyrightText: 2024 Mr. Samuel
-# SPDX-FileCopyrightText: 2024 Salvantrix
-# SPDX-FileCopyrightText: 2024 TsjipTsjip
-# SPDX-FileCopyrightText: 2024 Tych0
-# SPDX-FileCopyrightText: 2024 checkraze
-# SPDX-FileCopyrightText: 2025 Ark
-# SPDX-FileCopyrightText: 2025 Checkraze
-# SPDX-FileCopyrightText: 2025 Jakumba
-# SPDX-FileCopyrightText: 2025 LukeZurg22
-# SPDX-FileCopyrightText: 2025 Maxtone
-# SPDX-FileCopyrightText: 2025 RikuTheKiller
-# SPDX-FileCopyrightText: 2025 Rubeebeebee
-# SPDX-FileCopyrightText: 2025 starch
-#
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
 meta:
   format: 7
   category: Grid
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/17/2025 02:13:24
-  entityCount: 426
+  time: 08/21/2025 21:32:06
+  entityCount: 429
 maps: []
 grids:
 - 1
@@ -278,8 +259,7 @@ entities:
             1: 32904
             2: 2048
           -1,1:
-            0: 35020
-            3: 16384
+            0: 51404
             1: 4113
             2: 256
           0,2:
@@ -287,8 +267,7 @@ entities:
             1: 512
             2: 1024
           -1,2:
-            3: 4
-            0: 136
+            0: 140
             2: 512
             1: 1024
           -2,0:
@@ -347,21 +326,6 @@ entities:
           moles:
           - 0
           - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 21.6852
-          - 81.57766
           - 0
           - 0
           - 0
@@ -1142,6 +1106,21 @@ entities:
     components:
     - type: Transform
       pos: 2.5,-4.5
+      parent: 1
+  - uid: 427
+    components:
+    - type: Transform
+      pos: -1.5,-6.5
+      parent: 1
+  - uid: 428
+    components:
+    - type: Transform
+      pos: -1.5,-4.5
+      parent: 1
+  - uid: 429
+    components:
+    - type: Transform
+      pos: -2.5,-4.5
       parent: 1
 - proto: CableHV
   entities:
@@ -2918,7 +2897,7 @@ entities:
       pos: -1.5,3.5
       parent: 1
     - type: Advertise
-      nextAdvertisementTime: 636.2998857
+      nextAdvertisementTime: 438.3884717
 - proto: WallReinforced
   entities:
   - uid: 3
