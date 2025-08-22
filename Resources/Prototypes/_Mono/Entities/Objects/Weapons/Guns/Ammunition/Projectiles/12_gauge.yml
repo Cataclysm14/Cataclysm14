@@ -345,7 +345,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 16
+        Piercing: 19
     armorPenetration: -0.1
 
 - type: entity
@@ -403,15 +403,15 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 7
-    armorPenetration: 0.2
+        Piercing: 8
+    armorPenetration: 0.3
 
 - type: entity
-  id: Pellet12_gaugeflechette
-  parent: Pellet12_gaugeOOBuckshot
+  id: Pellet12_gaugeFlechette
+  parent: Pellet12_gaugeFlechette
   categories: [ HideSpawnMenu ]
   components:
   - type: ProjectileSpread
-    proto: Pellet12_gaugeOOBuckshot
-    count: 5
+    proto: Pellet12_gaugeFlechette
+    count: 6
     spread: 12

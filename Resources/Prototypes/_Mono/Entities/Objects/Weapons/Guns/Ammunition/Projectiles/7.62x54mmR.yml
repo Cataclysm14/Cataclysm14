@@ -87,8 +87,8 @@
   - type: Projectile
     damage:
       types: 
-        Slash: 3
-        Piercing: 26
+        Slash: 5
+        Piercing: 45
     armorPenetration: -0.6
 
 - type: entity
@@ -100,9 +100,9 @@
   - type: Projectile
     damage:
       types: 
-        Slash: 5
-        Piercing: 35
-    armorPenetration: -0.9
+        Slash: 10
+        Piercing: 60
+    armorPenetration: -0.95
 
 #armor-piercing:
 - type: entity
@@ -114,7 +114,7 @@
   - type: Projectile
     damage:
       types: 
-        Piercing: 23
+        Piercing: 40
     armorPenetration: 0.2
 
 - type: entity
@@ -126,7 +126,7 @@
   - type: Projectile
     damage:
       types: 
-        Piercing: 23
+        Piercing: 37
     armorPenetration: 0.4
 
 - type: entity
@@ -138,5 +138,5 @@
   - type: Projectile
     damage:
       types: 
-        Piercing: 22
+        Piercing: 33
     armorPenetration: 0.6

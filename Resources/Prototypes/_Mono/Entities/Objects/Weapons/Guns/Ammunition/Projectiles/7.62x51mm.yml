@@ -80,6 +80,7 @@
         Piercing: 18
 
 # Mono AP syst
+# + 0.05 base AP
 #anti-flesh:
 - type: entity
   id: Bullet7.62x51mmHP
@@ -90,9 +91,9 @@
   - type: Projectile
     damage:
       types: 
-        Slash: 3
-        Piercing: 26
-    armorPenetration: -0.6
+        Slash: 8
+        Piercing: 37
+    armorPenetration: -0.55
 
 - type: entity
   id: Bullet7.62x51mmRIP
@@ -103,8 +104,8 @@
   - type: Projectile
     damage:
       types: 
-        Slash: 5
-        Piercing: 35
+        Slash: 10
+        Piercing: 50
     armorPenetration: -0.9
 
 #armor-piercing:
@@ -117,8 +118,8 @@
   - type: Projectile
     damage:
       types: 
-        Piercing: 23
-    armorPenetration: 0.2
+        Piercing: 32
+    armorPenetration: 0.25
 
 - type: entity
   id: Bullet7.62x51mmPlastitAP
@@ -129,8 +130,8 @@
   - type: Projectile
     damage:
       types: 
-        Piercing: 23
-    armorPenetration: 0.4
+        Piercing: 28
+    armorPenetration: 0.45
 
 - type: entity
   id: Bullet7.62x51mmSynthAP
@@ -141,5 +142,5 @@
   - type: Projectile
     damage:
       types: 
-        Piercing: 22
-    armorPenetration: 0.6
+        Piercing: 26
+    armorPenetration: 0.65

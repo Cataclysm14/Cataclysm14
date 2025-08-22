@@ -36,6 +36,7 @@
     damage:
       types:
         Piercing: 35
+    armorPenetration: 0.1
 
 - type: entity
   id: Bullet45_magnumPractice
@@ -98,66 +99,67 @@
         Piercing: 20
 
 # Mono AP syst
+# + 0.05 base AP
 #anti-flesh:
 - type: entity
-  id: Bullet45_magnumHP
+  id: Bullet7.62x51mmHP
   parent: BaseBullet
-  name: bullet (.45 magnum hollow-point)
+  name: bullet (7.62x51mm hollow-point)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types: 
-        Slash: 3
-        Piercing: 26
-    armorPenetration: -0.6
+        Slash: 8
+        Piercing: 37
+    armorPenetration: -0.5
 
 - type: entity
-  id: Bullet45_magnumRIP
+  id: Bullet7.62x51mmRIP
   parent: BaseBullet
-  name: bullet (.45 magnum Radically Invasive Projectile)
+  name: bullet (7.62x51mm Radically Invasive Projectile)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types: 
-        Slash: 5
-        Piercing: 35
+        Slash: 10
+        Piercing: 50
     armorPenetration: -0.9
 
 #armor-piercing:
 - type: entity
-  id: Bullet45_magnumSteelAP
+  id: Bullet7.62x51mmSteelAP
   parent: BaseBullet
-  name: bullet (.45 magnum armor-piercing steel core)
+  name: bullet (7.62x51mm armor-piercing steel core)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types: 
-        Piercing: 23
-    armorPenetration: 0.2
+        Piercing: 32
+    armorPenetration: 0.3
 
 - type: entity
-  id: Bullet45_magnumPlastitAP
+  id: Bullet7.62x51mmPlastitAP
   parent: BaseBullet
-  name: bullet (.45 magnum armor-piercing plastitanium core)
+  name: bullet (7.62x51mm armor-piercing plastitanium core)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types: 
-        Piercing: 23
-    armorPenetration: 0.4
+        Piercing: 28
+    armorPenetration: 0.5
 
 - type: entity
-  id: Bullet45_magnumSynthAP
+  id: Bullet7.62x51mmSynthAP
   parent: BaseBullet
-  name: bullet (.45 magnum armor-piercing synthalloy core)
+  name: bullet (7.62x51mm armor-piercing synthalloy core)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types: 
-        Piercing: 22
-    armorPenetration: 0.6
+        Piercing: 26
+    armorPenetration: 0.67

@@ -270,6 +270,6 @@
       - state: flechette
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
-    proto: Pellet12_gaugeOOBuckshotSpread
+    proto: Pellet12_gaugeFlechetteSpread
   - type: SpentAmmoVisuals
     state: "flechette"
