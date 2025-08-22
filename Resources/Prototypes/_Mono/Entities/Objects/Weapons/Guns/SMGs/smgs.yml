@@ -116,6 +116,8 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: StaticPrice
+    price: 500
 
 - type: entity
   name: LWC Vector (9x19mm)
@@ -290,6 +292,8 @@
     targetedColor: "#62ab3a"
     defaultColor: "#62ab3a"
   - type: Appearance
+  - type: StaticPrice
+    price: 500
 
 #weaker typewriter for libvend
 - type: entity
@@ -307,3 +311,5 @@
     angleIncrease: 4
     angleDecay: 10
     fireRate: 5
+  - type: StaticPrice
+    price: 500

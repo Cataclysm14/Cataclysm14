@@ -288,7 +288,7 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: MarketModifier # Frontier
-    mod: 12 # Frontier
+    mod: 10 # Mono: Reduced from 12x to 10x
 
 - type: entity
   parent: VendingMachine

@@ -37,7 +37,7 @@
   canCustomizeName: true # pseudonym?
 
 - type: roleLoadout
-  id: JobDeputy
+  id: JobDeputy # Marine
   groups:
   - TsfmcHead
   - TsfmcNeck
@@ -64,7 +64,7 @@
   canCustomizeName: true
 
 - type: roleLoadout
-  id: JobBrigmedic
+  id: JobBrigmedic # Brigmedic
   groups:
   - TsfmcHeadMedic
   - TsfmcNeckMedic
@@ -91,7 +91,7 @@
   canCustomizeName: true
 
 - type: roleLoadout
-  id: JobBailiff
+  id: JobBailiff # Unused
   groups:
   - TsfmcHead
   - TsfmcNeck
@@ -118,7 +118,7 @@
   canCustomizeName: true
 
 - type: roleLoadout
-  id: JobSeniorOfficer
+  id: JobSeniorOfficer # Fireteam Leader
   groups:
   - TsfmcHead
   - TsfmcNeck
@@ -145,7 +145,7 @@
   canCustomizeName: true
 
 - type: roleLoadout
-  id: JobSheriff
+  id: JobSheriff # Colonel
   groups:
   - TsfmcHead
   - TsfmcNeckCommander
@@ -166,12 +166,12 @@
   - ContractorFun
   - SeniorOfficerTrinkets
   - NfsdSpeciesSpecific
-  - TsfmcFirearm
+  - TsfmcFirearmColonel
   - TsfmcMag
   canCustomizeName: true
 
 - type: roleLoadout
-  id: JobTsfEngineer
+  id: JobTsfEngineer # Engineer
   groups:
   - TsfmcHeadEngi
   - TsfmcNeckEngi
