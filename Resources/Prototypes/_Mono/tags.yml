@@ -25,6 +25,8 @@
 - type: Tag
   id: SandMaterial
 
+#AMMO START
+
 #7.62x51mm tags
 
 - type: Tag
@@ -92,6 +94,9 @@
 - type: Tag
   id: Magazine7.62x39mmBox
 
+- type: Tag
+  id: Magazine7.62x39mmPan
+
 #4.6x30mm tags
 
 - type: Tag
@@ -132,6 +137,23 @@
 - type: Tag
   id: Magazine45_ACPFMJBox
 
+#45 magnum tags
+
+- type: Tag
+  id: Cartridge45_magnumFMJ
+
+- type: Tag
+  id: Magazine45_magnumPistolHighCapacityFMJ
+
+- type: Tag
+  id: SpeedLoader45_magnumFMJ
+
+- type: Tag
+  id: Magazine45_magnumPistolFMJ
+
+- type: Tag
+  id: Magazine45_magnumSubMachineGunFMJ
+
 #9x19mm tags
 
 - type: Tag
@@ -151,6 +173,9 @@
 
 - type: Tag
   id: Magazine9x19mmFMJBox
+
+- type: Tag
+  id: SpeedLoader9x19mmFMJ
 
 #5.7x28mm tags
 
@@ -221,6 +246,28 @@
 
 - type: Tag
   id: ShellShotgun23x75mmBuckshot
+
+# 14.5x114mm tags
+
+- type: Tag
+  id: Cartridge14.5x114mm
+
+# 6.35x40mm tags
+- type: Tag
+  id: Cartridge6.35x40mmCaseless
+
+- type: Tag
+  id: Magazine6.35x40mmCaseless
+
+- type: Tag
+  id: Magazine6.35x40mmCaselessPistol
+
+#40mm tags
+
+- type: Tag
+  id: Magazine40mm
+
+#AMMO END
 
 #Misc emote tags
 
@@ -356,7 +403,7 @@
 - type: Tag
   id: ChimeraFloor
 
-# hhhh
+# hhhh (Mono tech disk, whoever put it unsorted fuck you)
 
 - type: Tag
   id: TechDiskMono
