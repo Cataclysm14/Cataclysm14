@@ -68,4 +68,11 @@ public sealed partial class NPCRangedCombatComponent : Component
     /// </summary>
     [ViewVariables]
     public CollisionGroup ObstructedMask;
+
+    // Mono
+    /// <summary>
+    /// Ignore entities that don't collide with this mask for LOS check purposes.
+    /// </summary>
+    [ViewVariables]
+    public CollisionGroup BulletMask;
 }

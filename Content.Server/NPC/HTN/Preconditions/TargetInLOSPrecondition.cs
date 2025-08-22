@@ -6,8 +6,9 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server.Interaction;
+using Content.Shared.Damage.Components;
 using Content.Shared.Physics;
-using Robust.Shared.Physics;
+using Robust.Shared.Physics.Components;
 
 namespace Content.Server.NPC.HTN.Preconditions;
 
@@ -15,7 +16,9 @@ public sealed partial class TargetInLOSPrecondition : HTNPrecondition
 {
     [Dependency] private readonly IEntityManager _entManager = default!;
     private InteractionSystem _interaction = default!;
-    private EntityQuery<FixturesComponent> _fixturesQuery;
+    // Mono
+    private EntityQuery<PhysicsComponent> _physicsQuery;
+    private EntityQuery<RequireProjectileTargetComponent> _requireTargetQuery;
 
     [DataField("targetKey")]
     public string TargetKey = "Target";
@@ -27,11 +30,17 @@ public sealed partial class TargetInLOSPrecondition : HTNPrecondition
     [DataField]
     public CollisionGroup ObstructedMask = CollisionGroup.Opaque;
 
+    // Mono
+    [DataField]
+    public CollisionGroup BulletMask = CollisionGroup.Impassable | CollisionGroup.BulletImpassable;
+
     public override void Initialize(IEntitySystemManager sysManager)
     {
         base.Initialize(sysManager);
         _interaction = sysManager.GetEntitySystem<InteractionSystem>();
-        _fixturesQuery = _entManager.GetEntityQuery<FixturesComponent>();
+        // Mono
+        _physicsQuery = _entManager.GetEntityQuery<PhysicsComponent>();
+        _requireTargetQuery = _entManager.GetEntityQuery<RequireProjectileTargetComponent>();
     }
 
     public override bool IsMet(NPCBlackboard blackboard)
@@ -43,6 +52,10 @@ public sealed partial class TargetInLOSPrecondition : HTNPrecondition
 
         var range = blackboard.GetValueOrDefault<float>(RangeKey, _entManager);
                                                                       // Mono
-        return _interaction.InRangeUnobstructed(owner, target, range, ObstructedMask);
+        return _interaction.InRangeUnobstructed(owner, target, range, ObstructedMask, predicate: (EntityUid entity) =>
+        {
+            return _physicsQuery.TryGetComponent(entity, out var physics) && (physics.CollisionLayer & (int)BulletMask) == 0 // ignore if it can't collide with bullets
+                || _requireTargetQuery.HasComponent(entity); // or if it requires targeting
+        });
     }
 }
