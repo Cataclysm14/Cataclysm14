@@ -4,6 +4,7 @@ using Content.Server.NPC.Components;
 using Content.Shared.CombatMode;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
+using Content.Shared.Physics;
 using Robust.Shared.Audio;
 
 namespace Content.Server.NPC.HTN.PrimitiveTasks.Operators.Combat.Ranged;
@@ -33,6 +34,10 @@ public sealed partial class GunOperator : HTNOperator, IHtnConditionalShutdown
     [DataField("requireLOS")]
     public bool RequireLOS = false;
 
+    // Mono
+    [DataField]
+    public CollisionGroup ObstructedMask = CollisionGroup.Opaque;
+
     // Like movement we add a component and pass it off to the dedicated system.
 
     public override async Task<(bool Valid, Dictionary<string, object>? Effects)> Plan(NPCBlackboard blackboard,
@@ -58,6 +63,7 @@ public sealed partial class GunOperator : HTNOperator, IHtnConditionalShutdown
         base.Startup(blackboard);
         var ranged = _entManager.EnsureComponent<NPCRangedCombatComponent>(blackboard.GetValue<EntityUid>(NPCBlackboard.Owner));
         ranged.Target = blackboard.GetValue<EntityUid>(TargetKey);
+        ranged.ObstructedMask = ObstructedMask; // Mono
 
         if (blackboard.TryGetValue<float>(NPCBlackboard.RotateSpeed, out var rotSpeed, _entManager))
         {

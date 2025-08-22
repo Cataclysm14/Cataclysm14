@@ -160,22 +160,8 @@ public sealed partial class NPCCombatSystem
             if (comp.LOSAccumulator < 0f)
             {
                 comp.LOSAccumulator += UnoccludedCooldown;
-                // For consistency with NPC steering.
-                comp.TargetInLOS = _interaction.InRangeUnobstructed(uid, comp.Target, distance + 0.1f, predicate: (EntityUid entity) =>
-                {
-                    if (_fixturesQuery.TryGetComponent(entity, out var fixtures))
-                    {
-                        foreach (var fixture in fixtures.Fixtures.Values)
-                        {
-                            if ((fixture.CollisionLayer & (int)CollisionGroup.GlassLayer) != 0 ||
-                                (fixture.CollisionLayer & (int)CollisionGroup.GlassAirlockLayer) != 0)
-                            {
-                                return true; // Ignore this entity for LOS
-                            }
-                        }
-                    }
-                    return false; // Don't ignore
-                });
+                // For consistency with NPC steering.                                                  // Mono
+                comp.TargetInLOS = _interaction.InRangeUnobstructed(uid, comp.Target, distance + 0.1f, comp.ObstructedMask);
             }
 
             if (!comp.TargetInLOS)

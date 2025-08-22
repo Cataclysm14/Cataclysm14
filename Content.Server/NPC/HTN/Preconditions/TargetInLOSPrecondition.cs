@@ -16,6 +16,10 @@ public sealed partial class TargetInLOSPrecondition : HTNPrecondition
     [DataField("rangeKey")]
     public string RangeKey = "RangeKey";
 
+    // Mono
+    [DataField]
+    public CollisionGroup ObstructedMask = CollisionGroup.Opaque;
+
     public override void Initialize(IEntitySystemManager sysManager)
     {
         base.Initialize(sysManager);
@@ -31,21 +35,7 @@ public sealed partial class TargetInLOSPrecondition : HTNPrecondition
             return false;
 
         var range = blackboard.GetValueOrDefault<float>(RangeKey, _entManager);
-
-        return _interaction.InRangeUnobstructed(owner, target, range, predicate: (EntityUid entity) =>
-        {
-            if (_fixturesQuery.TryGetComponent(entity, out var fixtures))
-            {
-                foreach (var fixture in fixtures.Fixtures.Values)
-                {
-                    if ((fixture.CollisionLayer & (int)CollisionGroup.GlassLayer) != 0 ||
-                        (fixture.CollisionLayer & (int)CollisionGroup.GlassAirlockLayer) != 0)
-                    {
-                        return true; // Ignore this entity for LOS
-                    }
-                }
-            }
-            return false; // Don't ignore
-        });
+                                                                      // Mono
+        return _interaction.InRangeUnobstructed(owner, target, range, ObstructedMask);
     }
 }
