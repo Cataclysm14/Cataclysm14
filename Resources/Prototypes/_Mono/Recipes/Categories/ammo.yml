@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: latheCategory
-  id: FmjAmmo
+  id: FMJAmmo
   name: lathe-category-fmj-ammo
 
 - type: latheCategory
@@ -25,3 +25,15 @@
 - type: latheCategory
   id: ShipAmmo
   name: lathe-category-ship-ammo
+
+- type: latheCategory
+  id: SteelAPAmmo
+  name: lathe-category-steelAP-ammo
+
+- type: latheCategory
+  id: PlasteelAPAmmo
+  name: lathe-category-plasteelAP-ammo
+
+- type: latheCategory
+  id: SynthAPAmmo
+  name: lathe-category-synthAP-ammo

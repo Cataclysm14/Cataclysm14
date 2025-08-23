@@ -23,6 +23,9 @@ lathe-category-uranium-ammo = Uranium Ammo
 lathe-category-practice-ammo = Practice Ammo
 lathe-category-misc-ammo = Misc. Ammo
 lathe-category-ship-ammo = Ship Weapon Ammo
+lathe-category-steelAP-ammo = Steel AP Ammo
+lathe-category-plasteelAP-ammo = Plasteel AP Ammo
+lathe-category-synthAP-ammo = Synthalloy AP Ammo
 
 # Weapons
 lathe-category-guns-rifles = Rifles
