@@ -35,6 +35,7 @@ surgery-popup-step-SurgeryStepRemoveItem = {$user} is removing something from {$
 surgery-popup-step-SurgeryStepRemoveOrgan = {$user} is removing an organ from {$target}'s {$part}!
 surgery-popup-step-SurgeryStepInsertOrgan = {$user} is inserting an organ into {$target}'s {$part}!
 
+surgery-popup-step-SurgeryStepOpenOrganSlot = {$user} is opening a cavity in {$target}'s {$part}!
 surgery-popup-procedure-SurgeryRemoveBrain-step-SurgeryStepRemoveOrgan = {$user} is removing the brain from {$target}'s {$part}!
 surgery-popup-procedure-SurgeryRemoveHeart-step-SurgeryStepRemoveOrgan = {$user} is removing the heart from {$target}'s {$part}!
 surgery-popup-procedure-SurgeryRemoveLiver-step-SurgeryStepRemoveOrgan = {$user} is removing the liver from {$target}'s {$part}!
@@ -51,3 +52,4 @@ surgery-popup-step-SurgeryStepInsertStomach = {$user} is inserting a stomach int
 
 surgery-popup-step-SurgeryStepSealOrganWound = {$user} is sealing the wounds on {$target}'s {$part}.
 
+surgery-popup-step-SurgeryStepRemoveCorticalBorer = {$user} is removing the Cortical Borer from {$target}'s {$part}!

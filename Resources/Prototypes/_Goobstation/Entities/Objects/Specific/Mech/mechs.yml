@@ -1,5 +1,7 @@
 # SPDX-FileCopyrightText: 2025 Ark
+# SPDX-FileCopyrightText: 2025 Avalon
 # SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 starch
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -126,7 +128,7 @@
     baseState: clarke
     openState: clarke-open
     brokenState: clarke-broken
-    mechToPilotDamageMultiplier: 0.5
+    mechToPilotDamageMultiplier: 0.25 # Mono
     airtight: true
     pilotWhitelist:
       components:
@@ -140,6 +142,7 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 2.5
     baseSprintSpeed: 4.5
+    baseWeightlessModifier: 5 # Mono
   - type: CanMoveInAir
   - type: MovementAlwaysTouching
   - type: StaticPrice
@@ -198,7 +201,8 @@
     baseState: gygax
     openState: gygax-open
     brokenState: gygax-broken
-    mechToPilotDamageMultiplier: 0.3
+    mechToPilotDamageMultiplier: 0.1 # Mono
+    maxIntegrity: 550 # Mono
     airtight: true
     pilotWhitelist:
       components:
@@ -212,9 +216,10 @@
         Structural: 180
   - type: CanMoveInAir
   - type: MovementAlwaysTouching
-  - type: MovementSpeedModifier
-    baseWalkSpeed: 2
-    baseSprintSpeed: 2.6
+  - type: MovementSpeedModifier # Mono
+    baseWalkSpeed: 3
+    baseSprintSpeed: 4.5
+    baseWeightlessModifier: 5
   - type: StaticPrice
     price: 3000
   - type: Tag
@@ -260,7 +265,7 @@
     brokenState: durand-broken
     mechToPilotDamageMultiplier: 0.25
     airtight: true
-    maxIntegrity: 400
+    maxIntegrity: 800
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -274,6 +279,7 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 1.5
     baseSprintSpeed: 2
+    baseWeightlessModifier: 3 # Mono
   - type: Damageable
     damageModifierSet: MediumArmorNT
   - type: CanMoveInAir
@@ -328,7 +334,7 @@
     brokenState: marauder-broken
     mechToPilotDamageMultiplier: 0.1
     airtight: true
-    maxIntegrity: 500
+    maxIntegrity: 1000
     maxEquipmentAmount: 4
     pilotWhitelist:
       components:
@@ -343,6 +349,7 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 1
     baseSprintSpeed: 1.5
+    baseWeightlessModifier: 3 # Mono
   - type: Damageable
     damageModifierSet: HeavyArmorNT
   - type: CanMoveInAir
@@ -354,6 +361,8 @@
     price: 15000 # Some respect if you steal one of these.
   - type: Tag
     tags:
+    - DoorBumpOpener
+    - FootstepSound
     - MilitaryMechBounty # Mono
 
 - type: entity
@@ -404,7 +413,7 @@
     brokenState: seraph-broken
     mechToPilotDamageMultiplier: 0.05
     airtight: true
-    maxIntegrity: 550
+    maxIntegrity: 1100
     maxEquipmentAmount: 5
     pilotWhitelist:
       components:
@@ -419,6 +428,7 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 2.2
     baseSprintSpeed: 3.7
+    baseWeightlessModifier: 3 # Mono
   - type: Damageable
     damageModifierSet: HeavyArmorNT
   - type: CanMoveInAir
@@ -430,6 +440,8 @@
     price: 30000 # My respects if you manage to steal one of these.
   - type: Tag
     tags:
+    - DoorBumpOpener
+    - FootstepSound
     - MilitaryMechBounty # Mono
 
 - type: entity
@@ -483,7 +495,7 @@
     brokenState: darkgygax-broken
     mechToPilotDamageMultiplier: 0.15
     airtight: true
-    maxIntegrity: 300
+    maxIntegrity: 750
     maxEquipmentAmount: 4
     pilotWhitelist:
       components:
@@ -496,8 +508,9 @@
         Blunt: 30
         Structural: 200
   - type: MovementSpeedModifier
-    baseWalkSpeed: 2.2
-    baseSprintSpeed: 3.7
+    baseWalkSpeed: 3.5 # Mono
+    baseSprintSpeed: 5.5 # Mono
+    baseWeightlessModifier: 7 # Mono
   - type: Damageable
     damageModifierSet: MediumArmorSyndi
   - type: CanMoveInAir
@@ -509,6 +522,8 @@
     price: 15000 # Some respect if you steal one of these.
   - type: Tag
     tags:
+    - DoorBumpOpener
+    - FootstepSound
     - MilitaryMechBounty # Mono
 
 - type: entity
@@ -585,6 +600,8 @@
     price: 30000 # Some respect if you steal one of these.
   - type: Tag
     tags:
+    - DoorBumpOpener
+    - FootstepSound
     - MilitaryMechBounty # Mono
 
 - type: entity

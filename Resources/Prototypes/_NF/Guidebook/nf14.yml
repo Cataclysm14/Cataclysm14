@@ -1,3 +1,15 @@
+# SPDX-FileCopyrightText: 2024 Actualcatmoment
+# SPDX-FileCopyrightText: 2024 Dvir
+# SPDX-FileCopyrightText: 2024 Whatstone
+# SPDX-FileCopyrightText: 2025 Ark
+# SPDX-FileCopyrightText: 2025 Cojoke
+# SPDX-FileCopyrightText: 2025 Ilya246
+# SPDX-FileCopyrightText: 2025 blackknight954
+# SPDX-FileCopyrightText: 2025 sleepyyapril
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: guideEntry
   id: NF14
   name: guide-entry-nf14
@@ -13,6 +25,8 @@
   - CargoHauling # TODO: separate this out along with salvage and mining into some NF_Cargo section
   - Shipyard
   - WeaponsSystems # mono
+  - Creatures # mono
+  - MonoMisc # mono
 
 - type: guideEntry
   id: Bank

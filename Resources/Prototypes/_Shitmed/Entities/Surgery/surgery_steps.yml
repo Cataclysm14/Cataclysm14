@@ -1,3 +1,10 @@
+# SPDX-FileCopyrightText: 2025 Ark
+# SPDX-FileCopyrightText: 2025 Coenx-flex
+# SPDX-FileCopyrightText: 2025 Cojoke
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   id: SurgeryStepBase
   categories: [ HideSpawnMenu ]
@@ -443,6 +450,22 @@
   - type: SurgeryStepEmoteEffect
 
 - type: entity
+  parent: SurgeryStepBase
+  id: SurgeryStepOpenOrganSlot
+  name: Carve out a cavity
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SurgeryStep
+    tool:
+    - type: Scalpel
+    duration: 6
+  - type: Sprite
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/manipulation.rsi
+    state: insertion
+  - type: SurgeryAddOrganSlotStep
+  - type: SurgeryStepEmoteEffect
+
+- type: entity
   parent: SurgeryStepInsertOrgan
   id: SurgeryStepInsertLungs
   name: Add lungs
@@ -452,6 +475,19 @@
     damage:
       types:
         Asphyxiation: -2147483648 # Literally the max 32 bit value, if your patient has gone higher than this, maybe it's time to restart the round.
+    sleepModifier: 1
+    isConsumable: true
+
+- type: entity
+  parent: SurgeryStepInsertOrgan
+  id: SurgeryStepInsertStomach
+  name: Add stomach
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SurgeryDamageChangeEffect
+    damage:
+      types:
+        Poison: -2147483648 # Literally the max 32 bit value, if your patient has gone higher than this, maybe it's time to restart the round.
     sleepModifier: 1
     isConsumable: true
 
@@ -508,6 +544,26 @@
       types:
         Heat: -5
     sleepModifier: 2
+
+# mono changes
+
+- type: entity
+  parent: SurgeryStepBase
+  id: SurgeryStepRemoveCorticalBorer
+  name: Remove the Cortical Borer
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SurgeryStep
+    tool:
+    - type: Tweezers
+    duration: 8
+  - type: Sprite
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/hemostat.rsi
+    state: hemostat
+  - type: SurgeryStepRemoveCorticalBorer
+  - type: SurgeryStepEmoteEffect
+
+# mono changes end
 
 # The lengths I go to just for a joke... I HATE HARDCODING AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 # Maybe I should modify species prototypes to include tails and ears properly...

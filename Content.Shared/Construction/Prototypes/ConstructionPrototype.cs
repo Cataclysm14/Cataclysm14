@@ -6,7 +6,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Shared.Construction.Prototypes;
 
-[Prototype("construction")]
+[Prototype]
 public sealed partial class ConstructionPrototype : IPrototype
 {
     [DataField("conditions")] private List<IConstructionCondition> _conditions = new();
@@ -94,6 +94,12 @@ public sealed partial class ConstructionPrototype : IPrototype
     /// </summary>
     [DataField("mirror", customTypeSerializer: typeof(PrototypeIdSerializer<ConstructionPrototype>))]
     public string? Mirror;
+
+    /// <summary>
+    ///     Possible constructions to replace this one with as determined by the placement mode
+    /// </summary>
+    [DataField]
+    public ProtoId<ConstructionPrototype>[] AlternativePrototypes = [];
 
     public IReadOnlyList<IConstructionCondition> Conditions => _conditions;
     public IReadOnlyList<SpriteSpecifier> Layers => _layers ?? new List<SpriteSpecifier> { Icon };

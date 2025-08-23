@@ -20,10 +20,12 @@
 # SPDX-FileCopyrightText: 2024 Whatstone
 # SPDX-FileCopyrightText: 2024 deepdarkdepths
 # SPDX-FileCopyrightText: 2025 Ark
+# SPDX-FileCopyrightText: 2025 Avalon
 # SPDX-FileCopyrightText: 2025 BeeRobynn
 # SPDX-FileCopyrightText: 2025 Havaren
 # SPDX-FileCopyrightText: 2025 Redrover1760
 # SPDX-FileCopyrightText: 2025 ScyronX
+# SPDX-FileCopyrightText: 2025 starch
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -90,7 +92,7 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 1
     baseSprintSpeed: 2
-    weightlessModifier: 1.2 # 0.7->1.2
+    baseWeightlessModifier: 5 # Mono
   - type: Tag
     tags:
     - DoorBumpOpener
@@ -131,7 +133,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1000 # Goobstation
+        damage: 2500 # Mono
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -215,6 +217,7 @@
     baseSprintSpeed: 3.6
   - type: Tag
     tags:
+    - DoorBumpOpener
     - CivilianMechBounty # Mono
 
 - type: entity
@@ -257,6 +260,7 @@
       - HumanoidAppearance
   - type: Tag
     tags:
+    - DoorBumpOpener
     - CivilianMechBounty # Mono
 
 - type: entity

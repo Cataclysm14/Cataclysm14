@@ -1,4 +1,7 @@
 // SPDX-FileCopyrightText: 2025 Ark
+// SPDX-FileCopyrightText: 2025 Coenx-flex
+// SPDX-FileCopyrightText: 2025 Cojoke
+// SPDX-FileCopyrightText: 2025 Redrover1760
 // SPDX-FileCopyrightText: 2025 ScyronX
 // SPDX-FileCopyrightText: 2025 mikusssssss
 //
@@ -32,6 +35,7 @@ using Content.Shared.Popups;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Toolshed.TypeParsers;
 using System.Linq;
+using Content.Shared._Mono.CorticalBorer;
 
 namespace Content.Shared._Shitmed.Medical.Surgery;
 
@@ -53,6 +57,7 @@ public abstract partial class SharedSurgerySystem
 
         SubSurgery<SurgeryTendWoundsEffectComponent>(OnTendWoundsStep, OnTendWoundsCheck);
         SubSurgery<SurgeryStepCavityEffectComponent>(OnCavityStep, OnCavityCheck);
+        SubSurgery<SurgeryStepRemoveCorticalBorerComponent>(OnCorticalBorerRemovalStep, OnCorticalBorerRemovalCheck); // mono
         SubSurgery<SurgeryAddPartStepComponent>(OnAddPartStep, OnAddPartCheck);
         SubSurgery<SurgeryAffixPartStepComponent>(OnAffixPartStep, OnAffixPartCheck);
         SubSurgery<SurgeryRemovePartStepComponent>(OnRemovePartStep, OnRemovePartCheck);
@@ -61,6 +66,7 @@ public abstract partial class SharedSurgerySystem
         SubSurgery<SurgeryAffixOrganStepComponent>(OnAffixOrganStep, OnAffixOrganCheck);
         SubSurgery<SurgeryAddMarkingStepComponent>(OnAddMarkingStep, OnAddMarkingCheck);
         SubSurgery<SurgeryRemoveMarkingStepComponent>(OnRemoveMarkingStep, OnRemoveMarkingCheck);
+        SubSurgery<SurgeryAddOrganSlotStepComponent>(OnAddOrganSlotStep, OnAddOrganSlotCheck);
         Subs.BuiEvents<SurgeryTargetComponent>(SurgeryUIKey.Key, subs =>
         {
             subs.Event<SurgeryStepChosenBuiMsg>(OnSurgeryTargetStepChosen);
@@ -426,6 +432,20 @@ public abstract partial class SharedSurgerySystem
             args.Cancelled = true;
     }
 
+    // 2 mono function
+    private void OnCorticalBorerRemovalStep(Entity<SurgeryStepRemoveCorticalBorerComponent> ent, ref SurgeryStepEvent args)
+    {
+        if (TryComp<CorticalBorerInfestedComponent>(args.Body, out var infested) &&
+            infested.InfestationContainer.ContainedEntities.Count != 0)
+            _corticalBorer.TryEjectBorer(infested.Borer);
+    }
+
+    private void OnCorticalBorerRemovalCheck(Entity<SurgeryStepRemoveCorticalBorerComponent> ent, ref SurgeryStepCompleteCheckEvent args)
+    {
+        if (HasComp<CorticalBorerInfestedComponent>(args.Body))
+            args.Cancelled = true;
+    }
+
     private void OnAddPartStep(Entity<SurgeryAddPartStepComponent> ent, ref SurgeryStepEvent args)
     {
         if (!TryComp(args.Surgery, out SurgeryPartRemovedConditionComponent? removedComp))
@@ -467,6 +487,22 @@ public abstract partial class SharedSurgerySystem
                 targetPart: _body.GetTargetBodyPart(targetPart.Component.PartType, targetPart.Component.Symmetry));
             RemComp<BodyPartReattachedComponent>(targetPart.Id);
         }
+    }
+
+    private void OnAddOrganSlotStep(Entity<SurgeryAddOrganSlotStepComponent> ent, ref SurgeryStepEvent args)
+    {
+        if (!TryComp(args.Surgery, out SurgeryOrganSlotConditionComponent? condition))
+            return;
+
+        _body.TryCreateOrganSlot(args.Part, condition.OrganSlot, out _);
+    }
+
+    private void OnAddOrganSlotCheck(Entity<SurgeryAddOrganSlotStepComponent> ent, ref SurgeryStepCompleteCheckEvent args)
+    {
+        if (!TryComp(args.Surgery, out SurgeryOrganSlotConditionComponent? condition))
+            return;
+
+        args.Cancelled = !_body.CanInsertOrgan(args.Part, condition.OrganSlot);
     }
 
     private void OnAffixPartCheck(Entity<SurgeryAffixPartStepComponent> ent, ref SurgeryStepCompleteCheckEvent args)

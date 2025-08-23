@@ -1,3 +1,14 @@
+// SPDX-FileCopyrightText: 2023 Moony
+// SPDX-FileCopyrightText: 2023 Nemanja
+// SPDX-FileCopyrightText: 2023 metalgearsloth
+// SPDX-FileCopyrightText: 2024 Checkraze
+// SPDX-FileCopyrightText: 2024 Dvir
+// SPDX-FileCopyrightText: 2024 Whatstone
+// SPDX-FileCopyrightText: 2025 GreaseMonk
+// SPDX-FileCopyrightText: 2025 Ilya246
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Server.Worldgen.Components;
 using Robust.Server.GameObjects;
 using Content.Server._NF.Worldgen.Components.Debris; // Frontier
@@ -81,7 +92,7 @@ public sealed class LocalityLoaderSystem : BaseWorldSystem
 
             while (query.MoveNext(out var salvUid, out var salvMob))
             {
-                if (entity == salvMob.LinkedGridEntity)
+                if (entity == salvMob.LinkedGridEntity && salvMob.DespawnIfOffLinkedGrid) // Mono - fix
                 {
                     QueueDel(salvUid);
                 }

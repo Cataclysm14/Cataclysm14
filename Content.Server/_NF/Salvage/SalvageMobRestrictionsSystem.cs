@@ -1,3 +1,9 @@
+// SPDX-FileCopyrightText: 2024 Dvir
+// SPDX-FileCopyrightText: 2024 Whatstone
+// SPDX-FileCopyrightText: 2025 Ilya246
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Shared.Body.Components;
 using Content.Server.Body.Systems;
 using Content.Server.Explosion.EntitySystems;
@@ -61,6 +67,10 @@ public sealed class SalvageMobRestrictionsSystem : EntitySystem
         {
             // Don't destroy yourself, don't destroy things being destroyed.
             if (uid == target || MetaData(target).EntityLifeStage >= EntityLifeStage.Terminating)
+                continue;
+
+            // Mono - fix
+            if (TryComp<NFSalvageMobRestrictionsComponent>(target, out var mobRestrictions) && !mobRestrictions.DespawnIfOffLinkedGrid)
                 continue;
 
             if (TryComp(target, out BodyComponent? body))

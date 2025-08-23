@@ -1,8 +1,6 @@
 using Content.Server.Administration;
 using Content.Server.Administration.Managers;
 using Content.Server.Chat.Managers;
-using Content.Server.DeviceNetwork;
-using Content.Server.DeviceNetwork.Components;
 using Content.Server.DeviceNetwork.Systems;
 using Content.Server.Labels;
 using Content.Server.Popups;
@@ -13,7 +11,7 @@ using Content.Shared.Administration.Logs;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Database;
 using Content.Shared.DeviceNetwork;
-using Content.Shared.Emag.Components;
+using Content.Shared.DeviceNetwork.Events;
 using Content.Shared.Emag.Systems;
 using Content.Shared.Fax;
 using Content.Shared.Fax.Systems;
@@ -29,10 +27,10 @@ using Robust.Shared.Containers;
 using Robust.Shared.Player;
 using Robust.Shared.Toolshed.TypeParsers;
 using System.Xml.Linq;
-using Robust.Shared.Prototypes;
 using Content.Shared.NameModifier.Components;
 using Content.Shared.Power;
 using Content.Shared.Tag; // Frontier
+using Content.Shared.DeviceNetwork.Components;
 
 namespace Content.Server.Fax;
 
@@ -155,7 +153,12 @@ public sealed class FaxSystem : EntitySystem
 
     private void OnComponentInit(EntityUid uid, FaxMachineComponent component, ComponentInit args)
     {
-        _itemSlotsSystem.AddItemSlot(uid, PaperSlotId, component.PaperSlot);
+        // <Goobstation> - define the slot in ItemSlots instead of adding it
+        if (_itemSlotsSystem.TryGetSlot(uid, PaperSlotId, out var slot))
+            component.PaperSlot = slot;
+        else
+            _itemSlotsSystem.AddItemSlot(uid, PaperSlotId, component.PaperSlot);
+        // </Goobstation>
         UpdateAppearance(uid, component);
     }
 
@@ -513,6 +516,9 @@ public sealed class FaxSystem : EntitySystem
 
         UpdateUserInterface(uid, component);
 
+        if (!args.Actor.IsValid()) // Goobstation - no log for automation
+            return;
+
         _adminLogger.Add(LogType.Action,
             LogImpact.Low,
             $"{ToPrettyString(args.Actor):actor} " +
@@ -577,6 +583,7 @@ public sealed class FaxSystem : EntitySystem
 
         _deviceNetworkSystem.QueuePacket(uid, component.DestinationFaxAddress, payload);
 
+        if (!args.Actor.IsValid()) // Goobstation - no log for automation
         _adminLogger.Add(LogType.Action,
             LogImpact.Low,
             $"{ToPrettyString(args.Actor):actor} " +

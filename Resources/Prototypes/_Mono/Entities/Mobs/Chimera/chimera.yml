@@ -15,6 +15,7 @@
   - type: MovementSpeedModifier
     baseWalkSpeed : 2.7
     baseSprintSpeed : 4.65
+    weightlessAcceleration: 1.5 # Slightly more manueverable in space.
   - type: Sprite
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
@@ -52,11 +53,14 @@
       types:
         Slash: 14
         Structural: 75
-  - type: ActionGun
-    action: ActionLetoferolSpike
-    gunProto: LetoferolSpikeGun
+  #- type: ActionGun
+  #  action: ActionLetoferolSpike
+  #  gunProto: LetoferolSpikeGun
   - type: ThermalVision
     lightRadius: 15
     color: "#f22e55"
     activateSound: null
     deactivateSound: null
+  - type: GuideHelp
+    guides:
+    - Letoferol

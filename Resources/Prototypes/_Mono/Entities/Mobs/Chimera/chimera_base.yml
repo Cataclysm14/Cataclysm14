@@ -10,9 +10,9 @@
 - type: entity
   parent:
   - StripableInventoryBase
+  - MobHumanoidHostileAIChimera
   - MobNonHumanHostileBase
-  - MobHumanoidHostileAISimpleMelee
-  - MobLaserReflect
+  - MobStepTriggerImmune
   id: MonoBaseMobFleshLetoferol
   name: chimera fleshbeast
   description: A once sentient being covered in putrid flesh and bone. You can see a glimpse of humanity left in its eyes, like whoever it was is still awake.
@@ -27,6 +27,9 @@
   - type: MobState
   - type: DoAfter
   - type: Stripping
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Chimera
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -44,6 +47,7 @@
       amount: 4
   - type: Inventory
     templateId: chimera
+  - type: SurgeryTarget
   - type: Bloodstream
     bloodReagent: NaturalLetoferol
     bloodMaxVolume: 300
@@ -82,6 +86,8 @@
         type: StorageBoundUserInterface
       enum.StrippingUiKey.Key:
         type: StrippableBoundUserInterface
+      enum.SurgeryUIKey.Key:
+        type: SurgeryBui
   - type: MeleeChemicalInjector
     solution: melee
     transferAmount: 2.5
@@ -127,12 +133,12 @@
     - Critical
     damage:
       types:
-        Radiation: -0.1
-        Poison: -0.1
+        Radiation: -0.3
+        Poison: -0.3
       groups:
         Airloss: -0.45
-        Brute: -0.45
-        Burn: -0.45
+        Brute: -1.2
+        Burn: -1.2
         Genetic: -0.1
   - type: Targeting
   - type: Puller
@@ -178,8 +184,8 @@
         Slash: 1.2
         Piercing: 0.65 # spear is clunky
         Heat: 0.5 # fire is scary (esword is op)
-  - type: CollectiveMind
-    channel: Letoferol
+  #- type: CollectiveMind  # Part of the organ instead.
+  #  channel: Letoferol
   - type: Flammable
     fireSpread: true
     canResistFire: true

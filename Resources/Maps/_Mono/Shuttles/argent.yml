@@ -29,8 +29,10 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
+
   time: 08/13/2025 20:55:30
   entityCount: 778
+
 maps: []
 grids:
 - 1
@@ -828,6 +830,7 @@ entities:
       locked: False
     - type: Roof
       data:
+
         0,-5: 1080872706661941248
         0,-1: 217020518715556611
         -1,-1: 13889313185716027584
@@ -840,6 +843,7 @@ entities:
         -1,-4: 17940362863944071416
         -1,-3: 16316664
         -1,-5: 17870283321406128128
+
 - proto: AirAlarm
   entities:
   - uid: 2
@@ -3881,54 +3885,56 @@ entities:
       powerLoad: 5
 - proto: GunSafe
   entities:
-  - uid: 509
+  - uid: 502
     components:
     - type: Transform
       pos: -3.5,-8.5
       parent: 1
 - proto: Gyroscope
   entities:
-  - uid: 502
+  - uid: 503
     components:
     - type: Transform
       pos: 0.5,-31.5
       parent: 1
-  - uid: 503
+  - uid: 504
     components:
     - type: Transform
       pos: -1.5,-31.5
       parent: 1
 - proto: KitchenMicrowave
   entities:
-  - uid: 504
+  - uid: 505
     components:
     - type: Transform
       pos: 1.5,-5.5
       parent: 1
 - proto: LockerCaptainFilledNoLaser
   entities:
-  - uid: 505
+  - uid: 506
     components:
     - type: Transform
       pos: -2.5,-3.5
       parent: 1
 - proto: LockerEngineerFilledHardsuit
   entities:
+
   - uid: 590
+
     components:
     - type: Transform
       pos: -3.5,-31.5
       parent: 1
 - proto: LockerFreezerBase
   entities:
-  - uid: 507
+  - uid: 508
     components:
     - type: Transform
       pos: 2.5,-5.5
       parent: 1
 - proto: LockerWallMaterialsFuelUraniumFilled2
   entities:
-  - uid: 508
+  - uid: 509
     components:
     - type: Transform
       pos: 2.5,-28.5

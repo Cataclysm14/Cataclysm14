@@ -1,8 +1,23 @@
+# SPDX-FileCopyrightText: 2021 mirrorcult
+# SPDX-FileCopyrightText: 2022 Moony
+# SPDX-FileCopyrightText: 2022 Rane
+# SPDX-FileCopyrightText: 2022 Sam Weaver
+# SPDX-FileCopyrightText: 2022 ShadowCommander
+# SPDX-FileCopyrightText: 2023 Waylon Cude
+# SPDX-FileCopyrightText: 2023 metalgearsloth
+# SPDX-FileCopyrightText: 2024 Tayrtahn
+# SPDX-FileCopyrightText: 2024 themias
+# SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: reagent
   id: BaseDrink
   group: Drinks
   abstract: true
-  slippery: true
+  slipData:
+    requiredSlipSpeed: 3.5
   metabolisms:
     Drink:
       effects:
@@ -46,6 +61,10 @@
   id: BaseAlcohol
   group: Drinks
   abstract: true
+  slipData:
+    requiredSlipSpeed: 3.5
+  friction: 0.4
+  flammability: 1
   metabolisms:
     Drink:
       effects:

@@ -27,7 +27,6 @@
 # SPDX-FileCopyrightText: 2024 2013HORSEMEATSCANDAL
 # SPDX-FileCopyrightText: 2024 ArtisticRoomba
 # SPDX-FileCopyrightText: 2024 Flareguy
-# SPDX-FileCopyrightText: 2024 Ilya246
 # SPDX-FileCopyrightText: 2024 MACMAN2003
 # SPDX-FileCopyrightText: 2024 Nemanja
 # SPDX-FileCopyrightText: 2024 TakoDragon
@@ -38,6 +37,7 @@
 # SPDX-FileCopyrightText: 2024 checkraze
 # SPDX-FileCopyrightText: 2024 themias
 # SPDX-FileCopyrightText: 2024 xprospero
+# SPDX-FileCopyrightText: 2025 Ilya246
 # SPDX-FileCopyrightText: 2025 Julian Giebel
 # SPDX-FileCopyrightText: 2025 Redrover1760
 # SPDX-FileCopyrightText: 2025 Southbridge
@@ -556,6 +556,7 @@
       - id: PetCarrier
       - id: DrinkMopwataBottleRandom
       - id: SpectralLocator
+      - id: ClothingShoesBootsMagVoid
       - id: LidSalami
         weight: 0.05
 
@@ -652,9 +653,9 @@
 #      weight: 1
 #      children:
 #      - id: Coal1
-  #Meh prize
+  #Gun prize
     - !type:GroupSelector
-      weight: 90
+      weight: 45
       children:
       #Novalite
       - !type:AllSelector
@@ -687,10 +688,15 @@
         children:
         - id: WeaponRevolverArgenti
         - id: SpeedLoader5.56x45mmFMJ
-    - id: PillCanisterStrange
-    - id: WeaponLaserPistolNF
-    - id: BoxT3ComponentsAssorted
-    - id: PlushieThrongler
+      - id: WeaponLaserPistolNF
+  #Meh prize
+    - !type:GroupSelector
+      weight: 45
+      children:
+      - id: PillCanisterStrange
+      - id: BoxT3ComponentsAssorted
+      - id: PlushieThrongler
+      - id: NFShovel
     
   #Yeh prize
     - !type:GroupSelector

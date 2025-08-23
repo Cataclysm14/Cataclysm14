@@ -39,6 +39,21 @@
   - DemagTSF
 
 - type: technology
+  id: TsfmcMopp
+  name: research-technology-tsfmc-mopp-equipment
+  icon:
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/mopp-tsfmc.rsi
+    state: icon
+  discipline: TsfmcEquipment
+  tier: 2
+  cost: 15000
+  recipeUnlocks:
+  - ClothingUniformTsfmcMoppTsf
+  - ClothingHandsGlovesMoppTsf
+  technologyPrerequisites:
+  - TsfmcBasicEquipment
+
+- type: technology
   id: TsfEshield
   name: research-technology-tsfmc-eshield
   icon:
