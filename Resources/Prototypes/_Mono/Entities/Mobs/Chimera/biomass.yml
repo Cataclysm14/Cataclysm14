@@ -57,7 +57,7 @@
     fireSpread: true
     damage:
       types:
-        Heat: 3
+        Heat: 9
   - type: AtmosExposed
   - type: SpeedModifierContacts
     walkSpeedModifier: 0.15
@@ -76,7 +76,7 @@
         - ReagentId: NaturalLetoferol
           Quantity: 15
         - ReagentId: Protein
-          Quantity: 1
+          Quantity: 7
   - type: Tag
     tags:
     - Chimera

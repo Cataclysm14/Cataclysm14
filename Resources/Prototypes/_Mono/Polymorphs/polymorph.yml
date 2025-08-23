@@ -13,6 +13,7 @@
     inventory: Drop
     transferName: true
     polymorphTheLiving: false
+    polymorphTheDead: true
     transferDamage: false
     revertOnCrit: false
     revertOnDeath: true
@@ -29,6 +30,7 @@
     inventory: Drop
     transferName: true
     polymorphTheLiving: false
+    polymorphTheDead: true
     transferDamage: false
     revertOnCrit: false
     revertOnDeath: false

@@ -1,3 +1,4 @@
+# SPDX-FileCopyrightText: 2025 starch
 # SPDX-FileCopyrightText: 2025 tonotom
 # SPDX-FileCopyrightText: 2025 tonotom1
 #
@@ -20,7 +21,7 @@
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
-    
+
 - type: construction
   name: diagonal reinforced wall
   id: wallReinforcedDiagonal
@@ -38,6 +39,42 @@
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
+
+- type: construction
+  name: diagonal plastitanium wall
+  id: wallPlastitaniumDiagonal
+  graph: Girder
+  startNode: start
+  targetNode: wallPlastitaniumDiagonal
+  category: construction-category-structures
+  description: Keeps the air in and the greytide out.
+  icon:
+    sprite: /Textures/Structures/Walls/plastitanium_diagonal.rsi
+    state: state0
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked
+
+- type: construction
+  name: plastitanium wall
+  id: PlastitaniumWall
+  graph: Girder
+  startNode: start
+  targetNode: plastitaniumWall
+  category: construction-category-structures
+  description: Keeps the air in and the greytide out.
+  icon:
+    sprite: /Textures/Structures/Walls/plastitanium.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked
 
 - type: construction
   name: directional uranium window

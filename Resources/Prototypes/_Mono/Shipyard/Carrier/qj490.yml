@@ -6,8 +6,8 @@
   id: QJ490
   parent: BaseVesselAntag
   name: SKR QJ-490 Air Superiority Fighter
-  description: Equipped with 4 20mms and a light munitions bay.
-  price: 19500
+  description: Equipped with 4 Type-54C autopulsers and a light munitions bay.
+  price: 34500
   category: Small
   group: Custom
   mapchecker_group_override: Shipyard  # Treat this as a Shipyard vessel for mapchecker purposes

@@ -23,6 +23,8 @@
 // SPDX-FileCopyrightText: 2024 Whatstone
 // SPDX-FileCopyrightText: 2024 beck-thompson
 // SPDX-FileCopyrightText: 2025 Ark
+// SPDX-FileCopyrightText: 2025 Ilya246
+// SPDX-FileCopyrightText: 2025 ScyronX
 // SPDX-FileCopyrightText: 2025 ark1368
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
@@ -253,11 +255,11 @@ public sealed class RadioSystem : EntitySystem
             // Check if within range for range-limited channels
             if (channel.MaxRange.HasValue && channel.MaxRange.Value > 0)
             {
-                var sourcePos = Transform(radioSource).WorldPosition;
-                var targetPos = transform.WorldPosition;
+                var sourcePos = Transform(radioSource).Coordinates;
+                var targetPos = transform.Coordinates;
 
                 // Check distance between sender and receiver
-                if ((sourcePos - targetPos).Length() > channel.MaxRange.Value)
+                if (!sourcePos.TryDistance(EntityManager, targetPos, out var distance) || distance > channel.MaxRange.Value)
                     continue;
             }
 
