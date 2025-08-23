@@ -143,7 +143,7 @@
     baseSprintSpeed: 1
     baseWeightlessModifier: 40
   - type: RadarBlip
-    radarColor: "#CF0E0E"
+    radarColor: "#E3E3E3"
     scale: 3
     requireNoGrid: true
     shape: square
@@ -249,7 +249,7 @@
   - type: Damageable
     damageModifierSet: HeavyArmorNT
   - type: RadarBlip
-    radarColor: "#CF0E0E"
+    radarColor: "#E3E3E3"
     scale: 3
     requireNoGrid: true
     shape: square
@@ -343,7 +343,7 @@
   - type: Damageable
     damageModifierSet: HeavyArmorNT
   - type: RadarBlip
-    radarColor: "#CF0E0E"
+    radarColor: "#E3E3E3"
     scale: 3
     requireNoGrid: true
     shape: square
@@ -437,7 +437,7 @@
     baseSprintSpeed: 1
     baseWeightlessModifier: 25
   - type: RadarBlip
-    radarColor: "#CF0E0E"
+    radarColor: "#E3E3E3"
     scale: 3
     requireNoGrid: true
     shape: square
@@ -532,7 +532,7 @@
     baseSprintSpeed: 0.5
     baseWeightlessModifier: 20
   - type: RadarBlip
-    radarColor: "#CF0E0E"
+    radarColor: "#E3E3E3"
     scale: 3
     requireNoGrid: true
     shape: square
@@ -627,7 +627,7 @@
     baseSprintSpeed: 1
     baseWeightlessModifier: 30
   - type: RadarBlip
-    radarColor: "#CF0E0E"
+    radarColor: "#E3E3E3"
     scale: 3
     requireNoGrid: true
     shape: square

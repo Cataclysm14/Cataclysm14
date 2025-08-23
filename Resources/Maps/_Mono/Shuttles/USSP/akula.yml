@@ -19,8 +19,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/10/2025 14:19:08
-  entityCount: 405
+  time: 08/16/2025 14:40:34
+  entityCount: 407
 maps: []
 grids:
 - 1
@@ -85,6 +85,7 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
     - type: Shuttle
+      dampingModifier: 0.25
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -1472,6 +1473,14 @@ entities:
       powerLoad: 5
     - type: Battery
       startingCharge: 0
+- proto: DefibrillatorCabinetFilled
+  entities:
+  - uid: 407
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 0.5,0.5
+      parent: 1
 - proto: DrinkVodkaBottleFull
   entities:
   - uid: 183
@@ -1608,6 +1617,13 @@ entities:
       parent: 1
     - type: Fixtures
       fixtures: {}
+- proto: FuelUranium
+  entities:
+  - uid: 406
+    components:
+    - type: Transform
+      pos: -1.453125,1.46875
+      parent: 1
 - proto: GasMixerOnFlipped
   entities:
   - uid: 198

@@ -1,3 +1,12 @@
+// SPDX-FileCopyrightText: 2024 Leon Friedrich
+// SPDX-FileCopyrightText: 2024 Tayrtahn
+// SPDX-FileCopyrightText: 2025 Coenx-flex
+// SPDX-FileCopyrightText: 2025 Cojoke
+// SPDX-FileCopyrightText: 2025 Dvir
+// SPDX-FileCopyrightText: 2025 core-mene
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 #nullable enable
 using System.Collections.Generic;
 using System.Linq;
@@ -68,7 +77,7 @@ public sealed class JobTest
     /// <summary>
     /// Simple test that checks that starting the round spawns the player into the test map as a passenger.
     /// </summary>
-    [Test]
+    // [Test] // Mono change: Comment out [Test], We don't use this so no point to test it
     public async Task StartRoundTest()
     {
         await using var pair = await PoolManager.GetServerClient(new PoolSettings
@@ -101,7 +110,7 @@ public sealed class JobTest
     /// <summary>
     /// Check that job preferences are respected.
     /// </summary>
-    [Test]
+    // [Test] // Mono change: Comment out [Test], We don't use this so no point to test it
     public async Task JobPreferenceTest()
     {
         await using var pair = await PoolManager.GetServerClient(new PoolSettings
@@ -140,7 +149,7 @@ public sealed class JobTest
     /// Check high priority jobs (e.g., captain) are selected before other roles, even if it means a player does not
     /// get their preferred job.
     /// </summary>
-    [Test]
+    // [Test] // Mono change: Comment out [Test], We don't use this so no point to test it
     public async Task JobWeightTest()
     {
         await using var pair = await PoolManager.GetServerClient(new PoolSettings
@@ -175,7 +184,7 @@ public sealed class JobTest
     /// <summary>
     /// Check that jobs are preferentially given to players that have marked those jobs as higher priority.
     /// </summary>
-    [Test]
+    // [Test] // Mono change: Comment out [Test], We don't use this so no point to test it
     public async Task JobPriorityTest()
     {
         await using var pair = await PoolManager.GetServerClient(new PoolSettings

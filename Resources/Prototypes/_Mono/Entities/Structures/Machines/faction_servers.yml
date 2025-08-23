@@ -1,3 +1,4 @@
+# SPDX-FileCopyrightText: 2025 Honestly101
 # SPDX-FileCopyrightText: 2025 HungryCuban
 # SPDX-FileCopyrightText: 2025 starch
 #
@@ -71,6 +72,13 @@
   name: TSFMC R&D server
   description: Contains the collective knowledge of the TSFMC in this sector.
   components:
+  - type: Sprite
+    sprite: _Mono/Structures/Machines/server.rsi
+    layers:
+    - state: server
+    - state: variant-tsf
+    - state: server_o
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: TechnologyDatabase
     supportedDisciplines:
     - TsfmcWeaponry
@@ -78,6 +86,10 @@
     - TsfmcEquipment # EQUIPMENT IS ARMOR!!
     - TsfmcShipyard
     - FactionUniversal
+    - Industrial
+    - Arsenal
+    - Experimental
+    - CivilianServices
 
 - type: entity
   id: ResearchAndDevelopmentServerRogues
@@ -85,6 +97,13 @@
   name: Rogue R&D server
   description: Contains the collective knowledge of the Rogues in this sector.
   components:
+  - type: Sprite
+    sprite: _Mono/Structures/Machines/server.rsi
+    layers:
+    - state: server
+    - state: variant-rogue
+    - state: server_o
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: TechnologyDatabase
     supportedDisciplines:
     - RogueWeaponry
@@ -92,6 +111,10 @@
     - RogueEquipment # EQUIPMENT IS ARMOR!!
     - RogueShipyard
     - FactionUniversal
+    - Industrial
+    - Arsenal
+    - Experimental
+    - CivilianServices
 
 - type: entity
   id: ResearchAndDevelopmentServerUssp
@@ -99,6 +122,13 @@
   name: USSP R&D server
   description: Contains the collective knowledge of the USSP in this sector.
   components:
+  - type: Sprite
+    sprite: _Mono/Structures/Machines/server.rsi
+    layers:
+    - state: server
+    - state: variant-ussp
+    - state: server_o
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: TechnologyDatabase
     supportedDisciplines:
     - Ussp
@@ -106,6 +136,10 @@
     - UsspEquipment
     - UsspWeapons
     - FactionUniversal
+    - Industrial
+    - Arsenal
+    - Experimental
+    - CivilianServices
 
 - type: entity
   id: ResearchAndDevelopmentServerDebug
@@ -133,5 +167,4 @@
     - UsspWeapons
     - FactionUniversal
     - MechaEngineering
-    - DebugPrefracture
 

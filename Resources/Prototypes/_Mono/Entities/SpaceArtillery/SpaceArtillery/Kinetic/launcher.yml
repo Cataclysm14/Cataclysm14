@@ -58,6 +58,17 @@
   - type: ProjectileBatteryAmmoProvider
     proto: 20mmBulletArmorPiercing
     fireCost: 15
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 7500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
   - type: RadiationBlocker
     resistance: 8
   - type: RadarBlip
@@ -109,6 +120,17 @@
   - type: ProjectileBatteryAmmoProvider
     proto: ShipDravonProjectile
     fireCost: 250
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 9000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
   - type: RadarBlip
     radarColor: "#FF0000"
     scale: 1.5
@@ -163,6 +185,17 @@
   - type: ProjectileBatteryAmmoProvider
     proto: 90mmBulletArmorPiercing
     fireCost: 50
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
   - type: RadarBlip
     radarColor: "#FF0000"
     scale: 1.5
@@ -236,7 +269,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 15000
+        damage: 20000
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -313,7 +346,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 25000
+        damage: 40000
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -381,7 +414,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 12500
+        damage: 25000
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -450,6 +483,17 @@
   - type: ProjectileBatteryAmmoProvider
     proto: ShipBoforsProjectile
     fireCost: 8000
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 25000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
   - type: RadarBlip
     radarColor: "#03FC9D"
     scale: 3.5
@@ -512,6 +556,17 @@
   - type: ProjectileBatteryAmmoProvider
     proto: ShipKargilProjectile
     fireCost: 5000
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
   - type: RadarBlip
     radarColor: "#03FC9D"
     scale: 3

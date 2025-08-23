@@ -6,6 +6,7 @@ research-discipline-tsfmc-shipyard = TSFMC Heavy Industry
 research-technology-tsfmc-basic-equipment = Basic TSFMC Equipment
 research-technology-tsfmc-advanced-equipment = Advanced TSFMC Equipment
 research-technology-tsfmc-experimental-equipment = Experimental TSFMC Equipment
+research-technology-tsfmc-mopp-equipment = Chemical Protection Gear
 
 # T1 TSFMC
 research-technology-tsfmc-guns = Ballistics Production

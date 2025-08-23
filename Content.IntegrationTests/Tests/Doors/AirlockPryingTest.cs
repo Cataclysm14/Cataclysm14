@@ -1,3 +1,10 @@
+// SPDX-FileCopyrightText: 2025 Cojoke
+// SPDX-FileCopyrightText: 2025 Tayrtahn
+// SPDX-FileCopyrightText: 2025 core-mene
+// SPDX-FileCopyrightText: 2025 starch
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.IntegrationTests.Tests.Interaction;
 using Content.Server.Doors.Systems;
 using Content.Shared.Doors.Components;
@@ -31,7 +38,7 @@ public sealed class AirlockPryingTest : InteractionTest
         await SpawnTarget(Airlock);
         await SpawnEntity("APCBasic", SEntMan.GetCoordinates(TargetCoords));
 
-        await RunTicks(1);
+        await RunTicks(10); // Mono change: 10 ticks instead of 1 due to power update change
 
         Assert.That(TryComp<AirlockComponent>(out var airlockComp), "Airlock does not have AirlockComponent?");
         Assert.That(airlockComp.Powered, "Airlock should be powered for this test.");
