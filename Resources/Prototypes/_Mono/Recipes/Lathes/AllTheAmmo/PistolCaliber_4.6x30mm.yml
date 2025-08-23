@@ -6,6 +6,21 @@
   result: Magazine4.6x30mmPistolFMJ
 
 - type: latheRecipe
+  parent: BaseAmmoSteelAPPistolCaliberPistolMagazineRecipe
+  id: Magazine4.6x30mmPistolSteelAP
+  result: Magazine4.6x30mmPistolSteelAP
+
+- type: latheRecipe
+  parent: BaseAmmoPlasteelAPPistolCaliberPistolMagazineRecipe
+  id: Magazine4.6x30mmPistolPlasteelAP
+  result: Magazine4.6x30mmPistolPlasteelAP
+
+- type: latheRecipe
+  parent: BaseAmmoSynthAPPistolCaliberPistolMagazineRecipe
+  id: Magazine4.6x30mmPistolSynthAP
+  result: Magazine4.6x30mmPistolSynthAP
+
+- type: latheRecipe
   parent: BaseAmmoRubberPistolCaliberPistolMagazineRecipe
   id: Magazine4.6x30mmPistolRubber
   result: Magazine4.6x30mmPistolRubber
@@ -36,6 +51,21 @@
   parent: BaseAmmoFMJPistolCaliberSubMachineGunMagazineRecipe
   id: Magazine4.6x30mmSubMachineGunFMJ
   result: Magazine4.6x30mmSubMachineGunFMJ
+
+- type: latheRecipe
+  parent: BaseAmmoSteelAPPistolCaliberSubMachineGunMagazineRecipe
+  id: Magazine4.6x30mmSubMachineGunSteelAP
+  result: Magazine4.6x30mmSubMachineGunSteelAP
+
+- type: latheRecipe
+  parent: BaseAmmoPlasteelAPPistolCaliberSubMachineGunMagazineRecipe
+  id: Magazine4.6x30mmSubMachineGunPlasteelAP
+  result: Magazine4.6x30mmSubMachineGunPlasteelAP
+
+- type: latheRecipe
+  parent: BaseAmmoSynthAPPistolCaliberSubMachineGunMagazineRecipe
+  id: Magazine4.6x30mmSubMachineGunSynthAP
+  result: Magazine4.6x30mmSubMachineGunSynthAP
 
 - type: latheRecipe
   parent: BaseAmmoRubberPistolCaliberSubMachineGunMagazineRecipe
@@ -78,6 +108,21 @@
   parent: BaseAmmoFMJPistolCaliberAmmoBoxRecipe
   id: AmmoBox4.6x30mmFMJ
   result: AmmoBox4.6x30mmFMJ
+
+- type: latheRecipe
+  parent: BaseAmmoSteelAPPistolCaliberAmmoBoxRecipe
+  id: AmmoBox4.6x30mmSteelAP
+  result: AmmoBox4.6x30mmSteelAP
+
+- type: latheRecipe
+  parent: BaseAmmoPlasteelAPPistolCaliberAmmoBoxRecipe
+  id: AmmoBox4.6x30mmPlasteelAP
+  result: AmmoBox4.6x30mmPlasteelAP
+
+- type: latheRecipe
+  parent: BaseAmmoSynthAPPistolCaliberAmmoBoxRecipe
+  id: AmmoBox4.6x30mmSynthAP
+  result: AmmoBox4.6x30mmSynthAP
 
 - type: latheRecipe
   parent: BaseAmmoRubberPistolCaliberAmmoBoxRecipe

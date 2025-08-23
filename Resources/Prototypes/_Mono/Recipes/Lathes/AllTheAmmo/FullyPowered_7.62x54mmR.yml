@@ -6,6 +6,21 @@
   result: Magazine7.62x54mmRFMJ
 
 - type: latheRecipe
+  parent: BaseAmmoSteelAPFullyPoweredMagazineRecipe
+  id: AmmoBox7.62x54mmRSteelAP
+  result: AmmoBox7.62x54mmRSteelAP
+
+- type: latheRecipe
+  parent: BaseAmmoPlasteelAPFullyPoweredMagazineRecipe
+  id: AmmoBox7.62x54mmRPlasteelAP
+  result: AmmoBox7.62x54mmRPlasteelAP
+
+- type: latheRecipe
+  parent: BaseAmmoSynthAPFullyPoweredMagazineRecipe
+  id: AmmoBox7.62x54mmRSynthAP
+  result: AmmoBox7.62x54mmRSynthAP
+
+- type: latheRecipe
   parent: BaseAmmoRubberFullyPoweredMagazineRecipe
   id: Magazine7.62x54mmRRubber
   result: Magazine7.62x54mmRRubber
@@ -43,6 +58,21 @@
   parent: BaseAmmoFMJFullyPoweredAmmoBoxRecipe
   id: AmmoBox7.62x54mmRFMJ
   result: AmmoBox7.62x54mmRFMJ
+
+- type: latheRecipe
+  parent: BaseAmmoSteelAPFullyPoweredAmmoBoxRecipe
+  id: AmmoBox7.62x54mmRSteelAP
+  result: AmmoBox7.62x54mmRSteelAP
+
+- type: latheRecipe
+  parent: BaseAmmoPlasteelAPFullyPoweredAmmoBoxRecipe
+  id: AmmoBox7.62x54mmRPlasteelAP
+  result: AmmoBox7.62x54mmRPlasteelAP
+
+- type: latheRecipe
+  parent: BaseAmmoSynthAPFullyPoweredAmmoBoxRecipe
+  id: AmmoBox7.62x54mmRSynthAP
+  result: AmmoBox7.62x54mmRSynthAP
 
 - type: latheRecipe
   parent: BaseAmmoRubberFullyPoweredAmmoBoxRecipe
