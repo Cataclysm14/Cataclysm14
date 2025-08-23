@@ -30,7 +30,7 @@
     - id: DeepGasDepositNitrogenVerySmall
     - id: DeepGasDepositCarbonDioxideVerySmall
     - id: DeepGasDepositPlasmaVerySmall
-    - id: DeepGasDepositAmmoniaVery Small
+    - id: DeepGasDepositAmmoniaVerySmall
     - id: DeepGasDepositWaterVaporVerySmall
     - id: DeepGasDepositNitrousOxideVerySmall
     - id: DeepGasDepositAirVerySmall
@@ -47,7 +47,7 @@
     - id: DeepGasDepositNitrogenSmall
     - id: DeepGasDepositCarbonDioxideSmall
     - id: DeepGasDepositPlasmaSmall
-    - id: DeepGasDepositAmmoniaVery Small
+    - id: DeepGasDepositAmmoniaSmall
     - id: DeepGasDepositWaterVaporSmall
     - id: DeepGasDepositNitrousOxideSmall
     - id: DeepGasDepositAirSmall
@@ -64,7 +64,7 @@
     - id: DeepGasDepositNitrogen
     - id: DeepGasDepositCarbonDioxide
     - id: DeepGasDepositPlasma
-    - id: DeepGasDepositAmmoniaVery
+    - id: DeepGasDepositAmmonia
     - id: DeepGasDepositWaterVapor
     - id: DeepGasDepositNitrousOxide
     - id: DeepGasDepositAir
@@ -81,7 +81,7 @@
     - id: DeepGasDepositNitrogenLarge
     - id: DeepGasDepositCarbonDioxideLarge
     - id: DeepGasDepositPlasmaLarge
-    - id: DeepGasDepositAmmoniaVery Large
+    - id: DeepGasDepositAmmoniaLarge
     - id: DeepGasDepositWaterVaporLarge
     - id: DeepGasDepositNitrousOxideLarge
     - id: DeepGasDepositAirLarge
@@ -98,7 +98,7 @@
     - id: DeepGasDepositNitrogenVeryLarge
     - id: DeepGasDepositCarbonDioxideVeryLarge
     - id: DeepGasDepositPlasmaVeryLarge
-    - id: DeepGasDepositAmmoniaVery VeryLarge
+    - id: DeepGasDepositAmmoniaVeryLarge
     - id: DeepGasDepositWaterVaporVeryLarge
     - id: DeepGasDepositNitrousOxideVeryLarge
     - id: DeepGasDepositAirVeryLarge
