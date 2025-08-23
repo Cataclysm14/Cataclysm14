@@ -177,7 +177,7 @@
   parent: BaseMagazine4.6x30mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge4.6x30mmplasteelAP
+    proto: Cartridge4.6x30mmPlasteelAP
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/4.6x30mm/4.6x30mm_pistol_mag.rsi
     layers:
@@ -490,7 +490,7 @@
   parent: BaseMagazine4.6x30mmSubMachineGunFMJ
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge4.6x30mmplasteelAP
+    proto: Cartridge4.6x30mmPlasteelAP
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/4.6x30mm/4.6x30mm_smg_mag.rsi
     layers:

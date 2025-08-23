@@ -205,7 +205,7 @@
   parent: BaseMagazine9x19mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmplasteelAP
+    proto: Cartridge9x19mmPlasteelAP
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/9x19mm/9x19mm_pistol_mag.rsi
     layers:
@@ -518,7 +518,7 @@
   parent: BaseMagazine9x19mmSubMachineGunFMJ
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmplasteelAP
+    proto: Cartridge9x19mmPlasteelAP
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/9x19mm/9x19mm_smg_mag.rsi
     layers:

@@ -187,11 +187,11 @@
 
 - type: entity
   parent: BaseAmmoBox9x19mm
-  id: AmmoBox9x19mmplasteelAP
+  id: AmmoBox9x19mmPlasteelAP
   name: ammunition box (9x19mm armor-piercing plastitanium core)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge9x19mmplasteelAP
+    proto: Cartridge9x19mmPlasteelAP
   - type: Sprite
     layers:
     - state: base

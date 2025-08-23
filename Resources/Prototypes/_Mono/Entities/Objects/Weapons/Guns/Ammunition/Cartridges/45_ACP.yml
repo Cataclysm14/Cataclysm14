@@ -181,12 +181,12 @@
         map: [ "enum.AmmoVisualLayers.Tip" ]
 
 - type: entity
-  id: Cartridge45_ACPplasteelAP
+  id: Cartridge45_ACPPlasteelAP
   name: cartridge (.45 ACP armor-piercing plastitanium core)
   parent: BaseCartridge45_ACP
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_ACPplasteelAP
+    proto: Bullet45_ACPPlasteelAP
   - type: Sprite
     layers:
       - state: base

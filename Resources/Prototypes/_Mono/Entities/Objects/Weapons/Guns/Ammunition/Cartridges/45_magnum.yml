@@ -182,12 +182,12 @@
         map: [ "enum.AmmoVisualLayers.Tip" ]
 
 - type: entity
-  id: Cartridge45_magnumplasteelAP
+  id: Cartridge45_magnumPlasteelAP
   name: cartridge (.45 magnum armor-piercing plastitanium core)
   parent: BaseCartridge45_magnum
   components:
   - type: CartridgeAmmo
-    proto: Bullet45_magnumplasteelAP
+    proto: Bullet45_magnumPlasteelAP
   - type: Sprite
     layers:
       - state: base

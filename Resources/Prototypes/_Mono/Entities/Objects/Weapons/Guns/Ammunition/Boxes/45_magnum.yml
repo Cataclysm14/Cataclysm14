@@ -186,11 +186,11 @@
 
 - type: entity
   parent: BaseAmmoBox45_magnum
-  id: AmmoBox45_magnumplasteelAP
+  id: AmmoBox45_magnumPlasteelAP
   name: ammunition box (.45 magnum armor-piercing plastitanium core)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge45_magnumplasteelAP
+    proto: Cartridge45_magnumPlasteelAP
   - type: Sprite
     layers:
     - state: base

@@ -136,7 +136,7 @@
     armorPenetration: 0.1
 
 - type: entity
-  id: Bullet45_ACPplasteelAP
+  id: Bullet45_ACPPlasteelAP
   parent: BaseBullet
   name: bullet (.45 armor-piercing plastitanium core)
   categories: [ HideSpawnMenu ]

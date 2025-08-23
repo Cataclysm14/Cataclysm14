@@ -142,7 +142,7 @@
     armorPenetration: 0.15
 
 - type: entity
-  id: Bullet7.62x39mmplasteelAP
+  id: Bullet7.62x39mmPlasteelAP
   parent: BaseBullet
   name: bullet (7.62x39mm armor-piercing plastitanium core)
   categories: [ HideSpawnMenu ]

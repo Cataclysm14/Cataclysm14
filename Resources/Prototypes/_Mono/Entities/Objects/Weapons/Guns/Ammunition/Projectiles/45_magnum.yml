@@ -141,7 +141,7 @@
     armorPenetration: 0.3
 
 - type: entity
-  id: Bullet45_magnumplasteelAP
+  id: Bullet45_magnumPlasteelAP
   parent: BaseBullet
   name: bullet (.45 magnum armor-piercing plastitanium core)
   categories: [ HideSpawnMenu ]

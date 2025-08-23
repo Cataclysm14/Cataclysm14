@@ -187,11 +187,11 @@
 
 - type: entity
   parent: BaseAmmoBox4.6x30mm
-  id: AmmoBox4.6x30mmplasteelAP
+  id: AmmoBox4.6x30mmPlasteelAP
   name: ammunition box (4.6x30mm armor-piercing plastitanium core)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge4.6x30mmplasteelAP
+    proto: Cartridge4.6x30mmPlasteelAP
   - type: Sprite
     layers:
     - state: base

@@ -177,7 +177,7 @@
   parent: BaseMagazine5.7x28mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.7x28mmplasteelAP
+    proto: Cartridge5.7x28mmPlasteelAP
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/5.7x28mm/5.7x28mm_pistol_mag.rsi
     layers:
@@ -490,7 +490,7 @@
   parent: BaseMagazine5.7x28mmSubMachineGunFMJ
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.7x28mmplasteelAP
+    proto: Cartridge5.7x28mmPlasteelAP
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/5.7x28mm/5.7x28mm_smg_mag.rsi
     layers:

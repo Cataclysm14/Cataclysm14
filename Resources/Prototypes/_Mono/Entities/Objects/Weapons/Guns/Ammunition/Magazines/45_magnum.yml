@@ -215,7 +215,7 @@
   parent: BaseMagazine45_magnum
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge45_magnumplasteelAP
+    proto: Cartridge45_magnumPlasteelAP
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/45_magnum/45_magnum_pistol_mag.rsi
     layers:
@@ -512,7 +512,7 @@
   parent: BaseMagazine45_magnumSubMachineGunFMJ
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge45_magnumplasteelAP
+    proto: Cartridge45_magnumPlasteelAP
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/45_magnum/45_magnum_smg_mag.rsi
     layers:

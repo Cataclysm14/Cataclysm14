@@ -187,12 +187,12 @@
         map: [ "enum.AmmoVisualLayers.Tip" ]
 
 - type: entity
-  id: Cartridge7.62x39mmplasteelAP
+  id: Cartridge7.62x39mmPlasteelAP
   name: cartridge (7.62x39mm armor-piercing plastitanium core)
   parent: BaseCartridge7.62x39mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x39mmplasteelAP
+    proto: Bullet7.62x39mmPlasteelAP
   - type: Sprite
     layers:
       - state: base

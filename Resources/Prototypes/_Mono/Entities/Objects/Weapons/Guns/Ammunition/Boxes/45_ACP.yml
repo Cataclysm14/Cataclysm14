@@ -187,11 +187,11 @@
 
 - type: entity
   parent: BaseAmmoBox45_ACP
-  id: AmmoBox45_ACPplasteelAP
+  id: AmmoBox45_ACPPlasteelAP
   name: ammunition box (.45 ACP armor-piercing plastitanium core)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge45_ACPplasteelAP
+    proto: Cartridge45_ACPPlasteelAP
   - type: Sprite
     layers:
     - state: base
