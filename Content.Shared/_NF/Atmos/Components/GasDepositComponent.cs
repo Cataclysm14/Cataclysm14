@@ -50,6 +50,12 @@ public sealed partial class GasDepositComponent : Component
     public bool YieldBased = false;
 
     /// <summary>
+    /// Temperature of the output gas mixture, in K.
+    /// </summary>
+    [DataField]
+    public float OutputTemperature = Atmospherics.T20C;
+
+    /// <summary>
     /// The maximum number of moles for this deposit to be considered "mostly depleted".
     /// </summary>
     [ViewVariables]

@@ -149,6 +149,18 @@
     depositPrototype: MuddlePlasma
   - type: Sprite
     color: "#F0DDF0"
+
+- type: entity
+  parent: BaseDeepGasDeposit
+  id: DeepGasDepositFrezon
+  suffix: Frezon
+  components:
+  - type: RandomGasDeposit
+    depositPrototype: Frezon
+  - type: GasDeposit
+    outputTemperature: 23.15 # naturally occuring frezon
+  - type: Sprite
+    color: "#AADDFF"
 # endregion Standard Deposits
 
 # region Very Small Deposits
@@ -221,6 +233,13 @@
   - DeepGasDepositMuddlePlasma
   id: DeepGasDepositMuddlePlasmaVerySmall
   suffix: Muddled P+, Very Small
+
+- type: entity
+  parent:
+  - BaseGasDepositVerySmall
+  - DeepGasDepositFrezon
+  id: DeepGasDepositFrezonVerySmall
+  suffix: Frezon, Very Small
 # endregion Very Small Deposits
 
 # region Small Deposits
@@ -293,6 +312,13 @@
   - DeepGasDepositMuddlePlasma
   id: DeepGasDepositMuddlePlasmaSmall
   suffix: Muddled P+, Small
+
+- type: entity
+  parent:
+  - BaseGasDepositSmall
+  - DeepGasDepositFrezon
+  id: DeepGasDepositFrezonSmall
+  suffix: Frezon, Small
 # endregion Small Deposits
 
 # region Large Deposits
@@ -365,6 +391,13 @@
   - DeepGasDepositMuddlePlasma
   id: DeepGasDepositMuddlePlasmaLarge
   suffix: Muddled P+, Large
+
+- type: entity
+  parent:
+  - BaseGasDepositLarge
+  - DeepGasDepositFrezon
+  id: DeepGasDepositFrezonLarge
+  suffix: Frezon, Large
 # endregion Large Deposits
 
 # region Very Large Deposits
@@ -437,5 +470,12 @@
   - DeepGasDepositMuddlePlasma
   id: DeepGasDepositMuddlePlasmaVeryLarge
   suffix: Muddled P+, Very Large
+
+- type: entity
+  parent:
+  - BaseGasDepositVeryLarge
+  - DeepGasDepositFrezon
+  id: DeepGasDepositFrezonVeryLarge
+  suffix: Frezon, Very Large
 # endregion Very Large Deposits
 

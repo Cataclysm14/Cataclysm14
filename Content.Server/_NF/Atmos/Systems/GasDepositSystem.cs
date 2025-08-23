@@ -170,7 +170,7 @@ public sealed class GasDepositSystem : SharedGasDepositSystem
 
         // How many moles could we theoretically spawn. Cap by pressure, amount, and extractor limit.
         var allowableMoles = (targetPressure - net.Air.Pressure) * net.Air.Volume /
-                             (ent.Comp.OutputTemperature * Atmospherics.R);
+                             (depositComp.OutputTemperature * Atmospherics.R);
         allowableMoles = float.Min(allowableMoles, extractionRate * args.dt);
 
         if (allowableMoles < Atmospherics.GasMinMoles)
@@ -182,7 +182,7 @@ public sealed class GasDepositSystem : SharedGasDepositSystem
 
         var extracted = depositComp.Composition.Clone();
         extracted.Multiply(allowableMoles);
-        extracted.Temperature = ent.Comp.OutputTemperature;
+        extracted.Temperature = depositComp.OutputTemperature;
 
         if (!depositComp.YieldBased)
             depositComp.GasLeft -= allowableMoles;
