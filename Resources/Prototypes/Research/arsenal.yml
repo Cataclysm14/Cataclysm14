@@ -50,7 +50,9 @@
   # This is not roundstart since its a direct upgrade
   - WeaponCrusherGlaive
   - MechEquipmentKineticAccelerator # Goobstation
-  position: 1, 1
+  technologyPrerequisites:
+  - SalvageEquipment
+  position: -5, 3
 
 #Frontier: restricted arsenal research ;Monolith: readded :)
 
@@ -105,7 +107,8 @@
   - WeaponMechCombatFiredartLaser # Goobstation
   technologyPrerequisites:
   - AdvancedParts
-  position: 3, 2
+  - NonlethalAmmunition
+  position: 3, -1
 
 - type: technology
   id: NonlethalAmmunition
@@ -117,7 +120,9 @@
   recipeUnlocks:
   - WeaponDisabler
   - WeaponMechCombatDisabler # Goobstation
-  position: 2, 1
+  technologyPrerequisites:
+  - AdvancedRiotControl
+  position: 2, -1
 
 #Frontier: restricted arsenal research ;Monolith: readded :)
 
@@ -174,8 +179,8 @@
   - HoloprojectorSecurity
   - WeaponDisablerSMG
   technologyPrerequisites:
-  - AdvancedParts
-  position: 3, -1
+  - BasicParts
+  position: 2, 0
 
 - type: technology
   id: ExplosiveTechnology
@@ -194,8 +199,8 @@
   - ChemicalPayload
   - NFBlueprintSignallerAdvanced # Frontier
   technologyPrerequisites:
-  - AdvancedParts
-  position: 11, 4
+  - MercArmementAdvanced
+  position: 5, -3
 
 - type: technology
   id: SpecialMeans
@@ -208,7 +213,7 @@
   - ClothingBackpackElectropack
   technologyPrerequisites:
   - AdvancedRiotControl
-  position: 4, -1
+  position: 2, 1
 
 # Tier 2
 
@@ -224,7 +229,7 @@
   - WeaponMechCombatSolarisLaser # Goobstation
   technologyPrerequisites:
   - WeaponizedLaserManipulation
-  position: 4, 2
+  position: 4, -1
 
 - type: technology
   id: WaveParticleHarnessing
@@ -238,7 +243,7 @@
   technologyPrerequisites:
   - ConcentratedLaserWeaponry
   - SuperParts
-  position: 5, 2
+  position: 4, 0
 
 - type: technology
   id: BasicShuttleArmament
@@ -260,9 +265,9 @@
   #  - ShuttleGunPerforatorCircuitboard # Frontier
   #  - ShuttleGunFriendshipCircuitboard # Frontier
   technologyPrerequisites:
-  - SalvageWeapons
-  - AdvancedParts
-  position: 1, 4
+  - Shuttlecraft
+  - AdvancedPowercells
+  position: 1, 5
 
 # Tier 3
 
@@ -279,9 +284,9 @@
   - NFBlueprintPortableRecharger # Frontier
   - WeaponMechCombatImmolationGun # Goobstation
   technologyPrerequisites:
-  - WaveParticleHarnessing
+  - ConcentratedLaserWeaponry
   - SuperParts
-  position: 6, 2
+  position: 5, -1
 
 - type: technology
   id: ExperimentalBatteryAmmo
@@ -294,21 +299,23 @@
   - WeaponLaserSvalinn
   - NFBlueprintWeaponLaserSvalinn # Frontier
   technologyPrerequisites:
-  - WaveParticleHarnessing
-  position: 6, 3
+  - WeaponizedLaserManipulation
+  - AdvancedParts
+  position: 3, 0
 
-# - type: technology #Frontier
-#  id: AdvancedShuttleWeapon
-#  name: research-technology-advanced-shuttle-weapon
-#  icon:
-#    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/Grenade/40mm_grenade_cartridge.rsi
-#    state: icon
-#  discipline: Arsenal
-#  tier: 3
-#  cost: 15000
-#  recipeUnlocks:
-#  - 40mmGrenadeEMP
-#  - PowerCageHigh
-#  - ShuttleGunDusterCircuitboard # Frontier
-#  technologyPrerequisites:
-#  - BasicShuttleArmament
+- type: technology
+  id: AdvancedShuttleWeapon
+  name: research-technology-advanced-shuttle-weapon
+  icon:
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/Grenade/40mm_grenade_cartridge.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 3
+  cost: 15000
+  recipeUnlocks:
+  - 40mmGrenadeEMP
+  - PowerCageHigh
+  - ShuttleGunDusterCircuitboard
+  technologyPrerequisites:
+  - BasicShuttleArmament
+  position: 1, 6

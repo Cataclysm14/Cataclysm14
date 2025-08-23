@@ -65,7 +65,7 @@
   - ChemDispenserMachineCircuitboard
   technologyPrerequisites:
   - AdvancedParts
-  position: -2, 3
+  position: -5, 7
 
 - type: technology
   id: IndustrialMedicine
@@ -77,7 +77,7 @@
   recipeUnlocks:
   - MedicalAssemblerMachineCircuitboard
   - HotplateMachineCircuitboard
-  position: -2, 4
+  position: 6, 7
 
 - type: technology
   id: AdvancedPersonalPropulsion

@@ -15,11 +15,11 @@
   - ClothingOuterCoatBHTrench
   - PinpointerUniversalNF
   - ClothingEyesHudBountyHunter
-  - WeaponShotgunKammererNF
+  # - WeaponShotgunKammererNF # _Mono: Moved to merc weapon research
   - ForensicPad
   - FlashlightSecliteNF
   technologyPrerequisites:
-  - BasicParts
+  - NonlethalAmmunition
   position: 2, -2
 
 # Tier 2
@@ -37,7 +37,7 @@
   technologyPrerequisites:
   - MagnetsTech
   - AdvancedParts
-  position: -4, -0
+  position: -4, 1
 
 - type: technology
   id: HardsuitsArmored
@@ -50,9 +50,9 @@
   - ClothingOuterHardsuitMercenary
   - ClothingOuterHardsuitPrivateSecurity
   technologyPrerequisites:
-  - AdvancedRiotControl
+  - HardsuitsSpecialized
   - HardsuitsAdvanced
-  position: 3, 5
+  position: 9, 5
 
 - type: technology
   id: ArsenalStyle
@@ -101,4 +101,4 @@
   technologyPrerequisites:
   - HardsuitsArmored
   - SuperParts
-  position: 4, 5
+  position: 10, 5

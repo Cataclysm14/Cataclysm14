@@ -26,7 +26,7 @@
   - ClothingShoesBootsMagVoid
   technologyPrerequisites:
   - MagnetsTechAdvanced
-  position: -5, -1
+  position: -5, -0
 
 - type: technology
   id: BasicParts

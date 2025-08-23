@@ -97,7 +97,7 @@
   - NFClothingShoesBootsMoon # Frontier ClothingShoesBootsMoon<NFClothingShoesBootsMoon
   technologyPrerequisites:
   - BasicParts
-  position: -3, -1
+  position: -3, 0
 
 - type: technology
   id: AnomalyCoreHarnessing
@@ -172,7 +172,7 @@
   - HoloprojectorField
   technologyPrerequisites:
   - AdvancedParts
-  position: 3, 3
+  position: 4, 4
 
 - type: technology
   id: AiTechnology

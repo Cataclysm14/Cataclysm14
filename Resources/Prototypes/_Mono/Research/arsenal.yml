@@ -16,7 +16,7 @@
   technologyPrerequisites:
   - MercArmementSimple
   - SuperParts
-  position: 6, 1
+  position: 5, -2
 
 - type: technology
   id: MercArmementSimple
@@ -31,8 +31,7 @@
   - WeaponRifleVulcanMerc
   technologyPrerequisites:
   - MercArmementBasic
-  - ConcentratedLaserWeaponry
-  position: 5, 1
+  position: 4, -2
 
 - type: technology
   id: MercArmementBasic
@@ -47,4 +46,4 @@
   - WeaponShotgunKammererNF
   technologyPrerequisites:
   - AdvancedParts
-  position: 4, 1
+  position: 3, -2

@@ -16,6 +16,5 @@
   - MagazineSmart
   - MagazineSmartLMG
   technologyPrerequisites:
-  - AdvancedParts
-  - ConcentratedLaserWeaponry
-  position: 6, 4
+  - MercArmementSimple
+  position: 4, -3

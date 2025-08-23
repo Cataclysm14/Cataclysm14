@@ -21,7 +21,9 @@
   cost: 25000
   recipeUnlocks:
   - ClothingOuterHardsuitBasic
-  position: 2, 6
+  technologyPrerequisites:
+    - AdvancedParts
+  position: 7, 5
 
 - type: technology
   id: HardsuitsSpecialized
@@ -29,7 +31,7 @@
   entityIcon: ClothingOuterHardsuitEngineering
   discipline: Industrial
   tier: 1
-  cost: 50000
+  cost: 25000
   recipeUnlocks:
   - ClothingOuterHardsuitAtmos
   - ClothingOuterHardsuitEngineering
@@ -40,7 +42,7 @@
   - ClothingOuterHardsuitPilot
   technologyPrerequisites:
   - HardsuitsBasic
-  position: 3, 6
+  position: 8, 5
 
 # Tier 2
 
@@ -58,7 +60,7 @@
   - ClothingOuterHardsuitLuxury
   technologyPrerequisites:
   - HardsuitsSpecialized
-  position: 4, 6
+  position: 8, 4
 
 # Tier 3
 
@@ -75,5 +77,5 @@
 #    - ClothingOuterHardsuitAncientEVA
     - NFBlueprintClothingOuterHardsuitMaximPrototype
   technologyPrerequisites:
-  - HardsuitsAdvanced
-  position: 5, 6
+  - HardsuitsArmored
+  position: 9, 6
