@@ -186,13 +186,16 @@
   - type: IconSmooth
     key: walls
     mode: NoSprite
+  # Mono
+  - type: Construction
+    graph: AirlockShuttle
+    node: gaslock
 
 - type: entity
   parent: [BaseStructureDynamic, BasePressurePumpGaslock]
   id: GaslockFrame
   name: portable gaslock
-  # Mono
-  #description: Pumps gas through. Accepts docking, but cannot dock. Both sides must be docked and pumping in the same direction for gas to flow.
+  description: Pumps gas through. Accepts docking, but cannot dock. Both sides must be docked and pumping in the same direction for gas to flow.
   placement:
     mode: SnapgridCenter
   components:
@@ -233,9 +236,8 @@
           False: { state: pumpPressureOnOut }
   - type: StaticPrice
     price: 100
-  # Mono
-  #- type: Docking
-  #  receiveOnly: true
+  - type: Docking
+    receiveOnly: true
   - type: DeviceNetwork
     prefix: device-address-prefix-portable-gaslock
   - type: Fixtures
