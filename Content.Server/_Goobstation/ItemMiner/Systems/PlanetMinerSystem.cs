@@ -55,6 +55,6 @@ public sealed class PlanetMinerSystem : EntitySystem
         }
 
         if (ent.Comp.RequireExpedition)
-            args.Cancelled |= _expedQuery.HasComp(mapUid);
+            args.Cancelled |= !_expedQuery.HasComp(mapUid);
     }
 }

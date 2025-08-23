@@ -11,7 +11,7 @@
   icon:
     sprite: _Mono/Structures/ShuttleComponents/shield.rsi
     state: control
-  discipline: CivilianServices
+  discipline: DebugPrefracture
   tier: 1
   cost: 1000
   recipeUnlocks:
