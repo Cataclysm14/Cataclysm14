@@ -196,7 +196,7 @@
   parent:
   - BaseGasDepositVerySmall
   - DeepGasDepositAmmonia
-  id: DeepGasDepositAmmoniaVery Small
+  id: DeepGasDepositAmmoniaVerySmall
   suffix: Ammonia, Very Small
 
 - type: entity
