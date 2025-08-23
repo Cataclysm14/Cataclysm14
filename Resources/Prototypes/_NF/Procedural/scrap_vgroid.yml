@@ -165,6 +165,12 @@
       maxCount: 7
       table: !type:NestedSelector
         tableId: VgroidGasDepositTable
+    # but has guaranteed frezon deposit
+    - !type:EntityTableDunGen
+      minCount: 1
+      maxCount: 1
+      table: !type:NestedSelector
+        tableId: DeepGasDepositFrezon
 
 # Configs
 - type: dungeonConfig

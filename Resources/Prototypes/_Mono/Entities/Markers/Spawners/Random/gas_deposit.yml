@@ -106,3 +106,18 @@
     - id: DeepGasDepositMuddlePlasmaVeryLarge
     - id: DeepGasDepositFrezonVeryLarge
       weight: 0.5 # rare
+
+- type: entityTable
+  id: DeepGasDepositFrezon
+  table: !type:GroupSelector
+    children:
+    - id: DeepGasDepositFrezonVerySmall
+      weight: 0.1
+    - id: DeepGasDepositFrezonSmall
+      weight: 0.2
+    - id: DeepGasDepositFrezon
+      weight: 0.4
+    - id: DeepGasDepositFrezonLarge
+      weight: 0.2
+    - id: DeepGasDepositFrezonVeryLarge
+      weight: 0.1
