@@ -8,7 +8,7 @@
 - type: technology
   id: ShuttleArmamentComponentsResearch
   name: research-technology-shuttle-armaments-components
-  entityIcon: ShieldGeneratorSmall
+  entityIcon: GunneryServerLow
   discipline: Arsenal
   tier: 3
   cost: 50000
@@ -20,8 +20,8 @@
   - MachineGCSMediumCircuitboard
   - MachineGCSHighCircuitboard
   technologyPrerequisites:
-  - ShuttleCtla25DriveResearch
-  position: 0, 8
+  - ShuttleRadarResearch
+  position: -6, 8
 
 - type: technology
   id: ShuttleRadarResearch
@@ -34,8 +34,9 @@
   - AdvancedRadarConsoleCircuitboard
   - ComputerIFFCircuitboard
   technologyPrerequisites:
-  - ShuttleCtla25DriveResearch
-  position: -1, 7
+  - Shuttlecraft
+  - SuperParts
+  position: -6, 7
 
 - type: technology
   id: ShuttleCtla25DriveResearch
@@ -47,8 +48,8 @@
   recipeUnlocks:
   - MachineDriveCTLA25Circuitboard
   technologyPrerequisites:
-  - AdvancedParts
-  position: -1, 8
+  - ShuttleRadarResearch
+  position: -7, 7
 
 - type: technology
   id: ShuttleCtlaAdvancedDriveResearch
@@ -62,5 +63,5 @@
   - MachineDriveCTLA50Circuitboard
   technologyPrerequisites:
   - ShuttleCtla25DriveResearch
-  - SuperParts
-  position: -1, 9
+  - PortableFission
+  position: -7, 6

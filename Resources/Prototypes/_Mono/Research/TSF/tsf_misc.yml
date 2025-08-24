@@ -11,7 +11,9 @@
   cost: 5000
   recipeUnlocks:
   - ForensicsScannerTSF
-  position: 21, 10
+  technologyPrerequisites:
+  - UniversalMaterialResearchT1
+  position: 12, -2
 
 - type: technology
   id: TsfPocketCrowbar
@@ -19,10 +21,12 @@
   entityIcon: CrowbarPocket
   discipline: TsfmcGear
   tier: 1
-  cost: 6500
+  cost: 5000
   recipeUnlocks:
   - CrowbarPocketTSF
-  position: 22, 9
+  technologyPrerequisites:
+  - UniversalMaterialResearchT1
+  position: 12, -1
 
 - type: technology
   id: TsfDemag
@@ -33,7 +37,9 @@
   cost: 5000
   recipeUnlocks:
   - DemagTSF
-  position: 23, 10
+  technologyPrerequisites:
+  - UniversalMaterialResearchT1
+  position: 12, -3
 
 - type: technology
   id: TsfmcMopp
@@ -46,10 +52,8 @@
   - ClothingUniformTsfmcMoppTsf
   - ClothingHandsGlovesMoppTsf
   technologyPrerequisites:
-  - TsfmcBasicEquipment
-  - TsfMeds
-  - TsfMaterialResearchT1
-  position: 26, 13
+  - TsfmcAdvancedEquipment
+  position: 13, 6
 
 - type: technology
   id: TsfEshield
@@ -61,9 +65,8 @@
   recipeUnlocks:
   - EnergyShieldTSF
   technologyPrerequisites:
-  - TsfBasicGuns
-  - TsfMaterialResearchT1
-  position: 21, 13
+  - UniversalMaterialResearchT2
+  position: 13, 7
 
 - type: technology
   id: TsfFlyssa
@@ -75,10 +78,8 @@
   recipeUnlocks:
   - FlyssaVoucherTSF
   technologyPrerequisites:
-  - TsfIndustrialStorage
-  - TsfSynthalloy
-  - TsfIndustrialProcessing
-  position: 23, 19
+  - TsfSynthalloyProduction
+  position: 13, 12
 
 - type: technology
   id: TsfMeds
@@ -91,9 +92,8 @@
   - SutureTSF
   - MeshTSF
   technologyPrerequisites:
-  - TsfMaterialResearchT1
-  - TsfIndustrialProcessing
-  position: 25, 11
+  - UniversalMaterialResearchT1
+  position: 12, -4
 
 - type: technology
   id: TsfNanofoam
@@ -105,22 +105,8 @@
   recipeUnlocks:
   - NanolaminateFoamGrenadeTSF
   technologyPrerequisites:
-    - TsfSynthalloy
-  position: 21, 18
-
-- type: technology
-  id: TsfSynthalloy
-  name: research-technology-tsfmc-synthalloy
-  entityIcon: MaterialSynthalloy
-  discipline: TsfmcGear
-  tier: 3
-  cost: 50000
-  recipeUnlocks:
-    - SynthalloyProductionTsf
-  technologyPrerequisites:
-  - TsfIndustrialProcessing
-  - TsfMaterialResearchT2
-  position: 23, 17
+  - UniversalMaterialResearchT2
+  position: 12, 4
 
 - type: technology
   id: TsfIndustrialStorage
@@ -132,7 +118,9 @@
   recipeUnlocks:
     - OreBoxFlatpackTSF
     - MaterialBoxFlatpackTSF
-  position: 26, 10
+  technologyPrerequisites:
+  - UniversalMaterialResearchT1
+  position: 13, 1
 
 - type: technology
   id: TsfIndustrialProcessing
@@ -143,7 +131,9 @@
   cost: 15000
   recipeUnlocks:
     - OreProcessorIndustrialMachineCircuitboard
-  position: 25, 10
+  technologyPrerequisites:
+  - TsfIndustrialStorage
+  position: 13, 2
 
 - type: technology
   id: TsfPortableRecharger
@@ -155,9 +145,8 @@
   recipeUnlocks:
     - PortableRecharger
   technologyPrerequisites:
-  - TsfBasicGuns
-  - TsfMaterialResearchT1
-  position: 24, 12
+  - UniversalMaterialResearchT1
+  position: 12, -5
 
 - type: technology
   id: TsfNvd
@@ -169,9 +158,8 @@
   recipeUnlocks:
     - ClothingEyesNightVisionGoggles
   technologyPrerequisites:
-  - TsfMaterialResearchT1
   - TsfForensics
-  position: 21, 11
+  position: 13, -2
 
 - type: technology
   id: TsfMotionDetector
@@ -183,5 +171,19 @@
   recipeUnlocks:
   - MotionDetectorTSF
   technologyPrerequisites:
-  - TsfNvd
-  position: 21, 12
+  - TsfForensics
+  position: 11, -2
+
+- type: technology
+  id: TsfSynthalloyProduction
+  name: research-technology-tsfmc-synthalloy
+  entityIcon: MaterialSynthalloy
+  discipline: TsfmcGear
+  tier: 3
+  cost: 15000
+  recipeUnlocks:
+  - SynthalloyProductionTsf
+  technologyPrerequisites:
+  - TsfIndustrialProcessing
+  - UniversalMaterialResearchT3
+  position: 13, 11

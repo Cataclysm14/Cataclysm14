@@ -12,7 +12,7 @@
   - NFBlueprintRped
   technologyPrerequisites:
   - AdvancedParts
-  position: 5, 3
+  position: -1, 8
 
 # Tier 3
 
@@ -32,7 +32,7 @@
   - NFBlueprintSuperMatterBinStockPart
   technologyPrerequisites:
   - AdvancedParts
-  position: 10, 10
+  position: 0, 16
 
 - type: technology
   id: MagnetsTechAdvanced
@@ -47,7 +47,7 @@
   technologyPrerequisites:
   - MagnetsTech
   - SuperParts
-  position: -4, 0
+  position: -4, -1
 
 - type: technology
   id: HardsuitsExperimentalRD
@@ -60,4 +60,4 @@
     - ClothingOuterHardsuitRd
   technologyPrerequisites:
   - HardsuitsAdvanced
-  position: 9, 4
+  position: 3, 6

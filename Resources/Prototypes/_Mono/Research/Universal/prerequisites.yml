@@ -1,19 +1,52 @@
-- type: technology
-  id: UniversalBallisticSci1
-  name: research-technology-universal-ballistic-1
-  entityIcon: AmmoBox68x52mmCaselessBig
-  discipline: FactionUniversal
-  tier: 1
-  cost: 40000
-  position: 5, 9
+#- type: technology
+#  id: UniversalBallisticSci1
+#  name: research-technology-universal-ballistic-1
+#  entityIcon: AmmoBox68x52mmCaselessBig
+#  discipline: FactionUniversal
+#  tier: 1
+#  cost: 40000
+#  position: 5, 9
+#
+#- type: technology
+#  id: UniversalBallisticSci2
+#  name: research-technology-universal-ballistic-2
+#  entityIcon: AmmoBox45_magnumUranium
+#  discipline: FactionUniversal
+#  tier: 2
+#  cost: 90000
+#  technologyPrerequisites:
+#  - UniversalBallisticSci1
+#  position: 7, 9
+
+# Materials science
 
 - type: technology
-  id: UniversalBallisticSci2
-  name: research-technology-universal-ballistic-2
-  entityIcon: AmmoBox45_magnumUranium
+  id: UniversalMaterialResearchT1
+  name: research-technology-universal-engsci-1
+  entityIcon: SheetSteel
+  discipline: FactionUniversal
+  tier: 1
+  cost: 5000
+  position: 10, 0
+
+- type: technology
+  id: UniversalMaterialResearchT2
+  name: research-technology-universal-engsci-2
+  entityIcon: SheetPlastitanium
   discipline: FactionUniversal
   tier: 2
-  cost: 90000
+  cost: 50000
   technologyPrerequisites:
-  - UniversalBallisticSci1
-  position: 7, 9
+  - UniversalMaterialResearchT1
+  position: 10, 5
+
+- type: technology
+  id: UniversalMaterialResearchT3
+  name: research-technology-universal-engsci-3
+  entityIcon: MaterialSynthalloy
+  discipline: FactionUniversal
+  tier: 2
+  cost: 100000
+  technologyPrerequisites:
+  - UniversalMaterialResearchT2
+  position: 10, 10

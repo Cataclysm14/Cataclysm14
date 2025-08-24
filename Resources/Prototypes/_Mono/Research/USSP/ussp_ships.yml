@@ -13,7 +13,9 @@
   cost: 45000
   recipeUnlocks:
   - BasicVoucherUssp
-  position: 12, 8
+  technologyPrerequisites:
+  - UniversalMaterialResearchT1
+  position: 17, 1
 
 - type: technology
   id: UsspMediumShips
@@ -26,7 +28,7 @@
   - IntermediateVoucherUssp
   technologyPrerequisites:
   - UsspBasicShips
-  position: 13, 8
+  position: 17, 2
 
 - type: technology
   id: UsspAdvancedShips
@@ -39,7 +41,8 @@
   - AdvancedVoucherUssp
   technologyPrerequisites:
   - UsspMediumShips
-  position: 14, 8
+  - UniversalMaterialResearchT2
+  position: 17, 6
 
 - type: technology
   id: UsspLedokol
@@ -53,4 +56,4 @@
   - LedokolRamVoucherUssp
   technologyPrerequisites:
   - UsspAdvancedShips
-  position: 15, 8
+  position: 17, 11

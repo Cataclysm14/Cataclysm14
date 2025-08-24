@@ -19,7 +19,9 @@
   - RipleyCentralElectronics
   - RipleyPeripheralsElectronics
   - MechEquipmentGrabber
-  position: 13, 4
+  technologyPrerequisites:
+  - AdvancedParts
+  position: 2, 10
 
 - type: technology
   id: Ripley2
@@ -33,8 +35,7 @@
   - RipleyUpgradeKit
   technologyPrerequisites:
   - RipleyAPLU
-  - AdvancedParts
-  position: 13, 3
+  position: 2, 11
 
 - type: technology
   id: Clarke
@@ -53,19 +54,19 @@
   - ClarkePeripheralsElectronics
   technologyPrerequisites:
   - Ripley2
-  position: 12, 3
+  position: 2, 12
 
-- type: technology
-  id: HONKWeapons
-  name: research-technology-honk-weapons
-  entityIcon: WeaponMechSpecialBananaMortar
-  discipline: MechaEngineering
-  tier: 1
-  cost: 6000
-  recipeUnlocks:
-  - MechEquipmentHonkerBananaMortar
-  - MechEquipmentHonkerMousetrapMortar
-  position: -7, 6
+# - type: technology
+#  id: HONKWeapons
+#  name: research-technology-honk-weapons
+#  entityIcon: WeaponMechSpecialBananaMortar
+#  discipline: MechaEngineering
+#  tier: 1
+#  cost: 6000
+#  recipeUnlocks:
+#  - MechEquipmentHonkerBananaMortar
+#  - MechEquipmentHonkerMousetrapMortar
+#  position: -7, 6
 
 - type: technology
   id: Gygax
@@ -89,8 +90,7 @@
   technologyPrerequisites:
   - Ripley2
   - SuperParts
-  - ExplosiveTechnology
-  position: 13, 2
+  position: 3, 12
 
 - type: technology
   id: ExplosiveMechAmmunition
@@ -103,7 +103,8 @@
   - WeaponMechCombatMissileRack8
   technologyPrerequisites:
   - ExplosiveTechnology
-  position: 14, 2
+  - Gygax
+  position: 3, 13
 
 - type: technology
   id: Durand
@@ -127,7 +128,7 @@
   - WeaponMechCombatShotgunIncendiary
   technologyPrerequisites:
   - Gygax
-  position: 12, 1
+  position: 4, 12
 
 - type: technology
   id: Broadsword
@@ -163,8 +164,8 @@
   - IFFMechaGreenCircle
   - IFFMechaGreenTriangle
   technologyPrerequisites:
-  - Gygax
-  position: 12, 0
+  - Durand
+  position: 5, 12
 
 - type: technology
   id: Halberd
@@ -180,7 +181,7 @@
   - MediumMechTOW
   technologyPrerequisites:
   - Broadsword
-  position: 12, -1
+  position: 5, 13
 
 - type: technology
   id: Sabre
@@ -192,9 +193,8 @@
   recipeUnlocks:
   - SabreHarness
   technologyPrerequisites:
-  - Halberd
-  - Durand
-  position: 13, 0
+  - Broadsword
+  position: 5, 14
 
 - type: technology
   id: Flail
@@ -218,14 +218,14 @@
   - HeavyMechProjector
   technologyPrerequisites:
   - Broadsword
-  position: 11, 0
+  position: 6, 12
 
 - type: technology
   id: Spyglass
   name: research-technology-spyglass
   entityIcon: AFFlailE
   discipline: MechaEngineering
-  tier: 2
+  tier: 3
   cost: 22500
   recipeUnlocks:
   - SpyglassHarness
@@ -233,7 +233,7 @@
   - EWACMechaJammer
   technologyPrerequisites:
   - Flail
-  position: 10, 0
+  position: 6, 13
 
 - type: technology
   id: Mace
@@ -246,4 +246,4 @@
   - MaceHarness
   technologyPrerequisites:
   - Flail
-  position: 11, -1
+  position: 6, 14

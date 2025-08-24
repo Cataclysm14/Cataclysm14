@@ -53,8 +53,8 @@
   - NFBlueprintPlantAnalyzerEmpty # Frontier
   #- NFBlueprintPlantBagOfHolding # Frontier
   technologyPrerequisites:
-  - AdvancedParts
-  position: -6, 3
+  - BasicParts
+  position: 3, -1
 
 - type: technology
   id: CritterMechs
@@ -73,7 +73,9 @@
   - HamtrPeripheralsElectronics
   - MechEquipmentGrabberSmall
   - VimHarness
-  position: -6, 4
+  technologyPrerequisites:
+  - RipleyAPLU
+  position: 3, 10
 
 - type: technology
   id: AudioVisualCommunication
@@ -92,8 +94,8 @@
   - TelecomServerCircuitboard
   #  - HolopadMachineCircuitboard # Frontier: needs work before use
   technologyPrerequisites:
-  - AdvancedParts
-  position: -5, 2
+  - BasicParts
+  position: 6, -1
 
 - type: technology
   id: AdvancedEntertainment
@@ -110,7 +112,7 @@
   - JukeboxCircuitBoard
   technologyPrerequisites:
   - AudioVisualCommunication
-  position: -6, 2
+  position: 6, -2
 
 - type: technology
   id: RoboticCleanliness
@@ -121,7 +123,9 @@
   cost: 15000
   recipeUnlocks:
   - BorgModuleAdvancedCleaning
-  position: -5, 4
+  technologyPrerequisites:
+  - BasicParts
+  position: 5, -1
 
 - type: technology
   id: MeatManipulation
@@ -136,8 +140,8 @@
   - BiofabricatorMachineCircuitboard # mono
   - BiomassReclaimerMachineCircuitboard
   technologyPrerequisites:
-    - AdvancedTreatment
-  position: 7, 7
+    - AdvancedParts
+  position: -3, 10
 
 # Tier 2
 
@@ -155,7 +159,9 @@
   - FauxTileAstroIce
   - FauxTileAstroSnow
   - FauxTileAstroAsteroidSand
-  position: -4, 2
+  technologyPrerequisites:
+  - Hydroponics
+  position: 3, -2
 
 - type: technology
   id: BiochemicalStasis
@@ -170,8 +176,9 @@
   - CryostasisBeaker
   - SyringeCryostasis
   technologyPrerequisites:
-  - AdvancedTreatment
-  position: 6, 8
+  - MeatManipulation
+  - ChemicalDispensary
+  position: -4, 11
 
 # Shitmed Change Start
 - type: technology
@@ -191,8 +198,10 @@
   - BorgModuleAdvancedSurgery
   - DefibrillatorCompact # Mono
   technologyPrerequisites:
-  - AdvancedParts
-  position: 5, 7
+  - SuperParts
+  - IndustrialMedicine
+  - MeatManipulation
+  position: -2, 11
 
 - type: technology
   id: CyberneticEnhancements
@@ -212,8 +221,8 @@
   - SecurityCyberneticEyes
   - MedicalCyberneticEyes
   technologyPrerequisites:
-  - SuperParts
-  position: 10, 8
+  - AdvancedTreatment
+  position: -2, 12
 # Shitmed Change End
 
 - type: technology
@@ -230,7 +239,7 @@
   - ReinforcedJug # Frontier
   technologyPrerequisites:
   - RoboticCleanliness
-  position: -5, 5
+  position: 5, -2
 
 - type: technology
   id: HONKMech
@@ -249,9 +258,11 @@
   - HonkerPeripheralsElectronics
   - HonkerTargetingElectronics
   - MechEquipmentHorn
+  - MechEquipmentHonkerBananaMortar
+  - MechEquipmentHonkerMousetrapMortar
   technologyPrerequisites:
-  - AdvancedParts
-  position: -6, 5
+  - CritterMechs
+  position: 4, 10
 
 - type: technology
   id: AdvancedSpray
@@ -266,7 +277,7 @@
   technologyPrerequisites:
   - AdvancedParts
   - AdvancedCleaning
-  position: -5, 6
+  position: 5, -4
 
     # Tier 3
 
@@ -312,4 +323,5 @@
   - NFBlueprintVialBluespace # Frontier
   technologyPrerequisites:
   - SuperParts
-  position: 6, 9
+  - BiochemicalStasis
+  position: -4, 12

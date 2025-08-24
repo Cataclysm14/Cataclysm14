@@ -19,8 +19,8 @@
   - ForensicPad
   - FlashlightSecliteNF
   technologyPrerequisites:
-  - NonlethalAmmunition
-  position: 2, -2
+  - AdvancedRiotControl
+  position: 3, 2
 
 # Tier 2
 
@@ -37,7 +37,7 @@
   technologyPrerequisites:
   - MagnetsTech
   - AdvancedParts
-  position: -4, 1
+  position: -3, -1
 
 - type: technology
   id: HardsuitsArmored
@@ -52,7 +52,7 @@
   technologyPrerequisites:
   - HardsuitsSpecialized
   - HardsuitsAdvanced
-  position: 9, 5
+  position: 4, 8
 
 - type: technology
   id: ArsenalStyle
@@ -84,7 +84,7 @@
   - ClothingOuterCoatBomberRandomized
   technologyPrerequisites:
   - BountyHunting
-  position: 2, -3
+  position: 3, 1
 
 # Tier 3
 
@@ -101,4 +101,4 @@
   technologyPrerequisites:
   - HardsuitsArmored
   - SuperParts
-  position: 10, 5
+  position: 5, 8

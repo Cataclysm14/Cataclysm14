@@ -28,6 +28,7 @@
     - Arsenal
     - Experimental
     - CivilianServices
+    - MechaEngineering
   - type: ApcPowerReceiver
     powerLoad: 500
   - type: ExtensionCableReceiver
@@ -90,6 +91,7 @@
     - Arsenal
     - Experimental
     - CivilianServices
+    - MechaEngineering
 
 - type: entity
   id: ResearchAndDevelopmentServerRogues
@@ -115,6 +117,7 @@
     - Arsenal
     - Experimental
     - CivilianServices
+    - MechaEngineering
 
 - type: entity
   id: ResearchAndDevelopmentServerUssp
@@ -140,6 +143,7 @@
     - Arsenal
     - Experimental
     - CivilianServices
+    - MechaEngineering
 
 - type: entity
   id: ResearchAndDevelopmentServerDebug

@@ -12,7 +12,9 @@
   recipeUnlocks:
   - ClothingOuterHardsuitM82cTsf
   - ClothingOuterHardsuitM82bTsf
-  position: 24, 10
+  technologyPrerequisites:
+  - UniversalMaterialResearchT1
+  position: 12, 1
 
 - type: technology
   id: TsfmcAdvancedEquipment
@@ -25,7 +27,8 @@
   - ClothingOuterHardsuitM86Tsf
   technologyPrerequisites:
   - TsfmcBasicEquipment
-  position: 25, 15
+  - UniversalMaterialResearchT2
+  position: 12, 6
 
 - type: technology
   id: TsfmcExperimentalEquipment
@@ -37,7 +40,6 @@
   recipeUnlocks:
   - ClothingOuterHardsuitM92XTsf # MAYBE THIS WILL GET YOU TO DO RESEARCH BRO
   technologyPrerequisites:
-  - TsfmcBasicEquipment
   - TsfmcAdvancedEquipment
-  - TsfSynthalloy
-  position: 25, 17
+  - UniversalMaterialResearchT3
+  position: 12, 11

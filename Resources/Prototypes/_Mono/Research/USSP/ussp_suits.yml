@@ -13,7 +13,9 @@
   recipeUnlocks:
   - ClothingOuterHardsuitUsspL10USSP
   - ClothingOuterHardsuitUsspL10AUSSP
-  position: 15, 9
+  technologyPrerequisites:
+  - UniversalMaterialResearchT1
+  position: 16, 1
 
 - type: technology
   id: UsspMediumSuits
@@ -27,7 +29,8 @@
   - ClothingOuterHardsuitUsspM10USSP
   technologyPrerequisites:
   - UsspBasicSuits
-  position: 15, 10
+  - UniversalMaterialResearchT2
+  position: 16, 6
 
 - type: technology
   id: UsspAdvancedSuits
@@ -41,4 +44,5 @@
   - ClothingModsuitUSSPZastavnikUSSP
   technologyPrerequisites:
   - UsspMediumSuits
-  position: 15, 11
+  - UniversalMaterialResearchT3
+  position: 16, 11

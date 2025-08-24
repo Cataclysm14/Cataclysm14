@@ -14,4 +14,6 @@
   recipeUnlocks:
     - LauncherSyringe
     - MiniSyringe
-  position: -3, 2
+  technologyPrerequisites:
+  - ChemicalDispensary
+  position: -5, 11

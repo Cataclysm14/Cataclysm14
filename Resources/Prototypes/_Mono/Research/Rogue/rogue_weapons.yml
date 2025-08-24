@@ -14,59 +14,59 @@
   recipeUnlocks:
   - EnergyDaggerRogue
   technologyPrerequisites:
-  - RogueEngineeringResearchT1
-  position: 17, 16
+  - UniversalMaterialResearchT1
+  position: 19, 2
 
-- type: technology
-  id: RoguePracticeAmmo
-  name: research-technology-faction-practice-ammo
-  entityIcon: AmmoBox7.62x51mmPractice
-  discipline: RogueWeaponry
-  tier: 1
-  cost: 2000
-  recipeUnlocks:
-  - Magazine7.62x39mmPractice
-  - AmmoBox7.62x39mmPractice
-  - Magazine7.62x51mmPractice
-  - AmmoBox7.62x51mmPractice
-  - SpeedLoader45_magnumPractice
-  - AmmoBox45_magnumPractice
-  - Magazine9x19mmSubMachineGunPractice
-  - AmmoBox9x19mmPractice
-  - Magazine5.7x28mmSubMachineGunPractice
-  - AmmoBox5.7x28mmPractice
-  - Magazine4.6x30mmSubMachineGunPractice
-  - AmmoBox4.6x30mmPractice
-  - Magazine12_gaugePractice
-  - AmmoBox12_gaugePractice
-  position: 16, 15
+#- type: technology
+#  id: RoguePracticeAmmo
+#  name: research-technology-faction-practice-ammo
+#  entityIcon: AmmoBox7.62x51mmPractice
+#  discipline: RogueWeaponry
+#  tier: 1
+#  cost: 2000
+#  recipeUnlocks:
+#  - Magazine7.62x39mmPractice
+#  - AmmoBox7.62x39mmPractice
+#  - Magazine7.62x51mmPractice
+#  - AmmoBox7.62x51mmPractice
+#  - SpeedLoader45_magnumPractice
+#  - AmmoBox45_magnumPractice
+#  - Magazine9x19mmSubMachineGunPractice
+#  - AmmoBox9x19mmPractice
+#  - Magazine5.7x28mmSubMachineGunPractice
+#  - AmmoBox5.7x28mmPractice
+#  - Magazine4.6x30mmSubMachineGunPractice
+#  - AmmoBox4.6x30mmPractice
+#  - Magazine12_gaugePractice
+#  - AmmoBox12_gaugePractice
+#  position: 16, 15
 
-- type: technology
-  id: RogueIncendiaryAmmo
-  name: research-technology-faction-incendiary-ammo
-  entityIcon: AmmoBox7.62x51mmIncendiary
-  discipline: RogueWeaponry
-  tier: 3
-  cost: 20000
-  recipeUnlocks:
-  - Magazine7.62x39mmIncendiary
-  - AmmoBox7.62x39mmIncendiary
-  - Magazine7.62x51mmIncendiary
-  - AmmoBox7.62x51mmIncendiary
-  - SpeedLoader45_magnumIncendiary
-  - AmmoBox45_magnumIncendiary
-  - Magazine9x19mmSubMachineGunIncendiary
-  - AmmoBox9x19mmIncendiary
-  - Magazine5.7x28mmSubMachineGunIncendiary
-  - AmmoBox5.7x28mmIncendiary
-  - Magazine4.6x30mmSubMachineGunIncendiary
-  - AmmoBox4.6x30mmIncendiary
-  - Magazine12_gaugeIncendiary
-  - AmmoBox12_gaugeIncendiary
-  technologyPrerequisites:
-  - RoguePracticeAmmo
-  - RogueEngineeringResearchT2
-  position: 16, 17
+#- type: technology
+#  id: RogueIncendiaryAmmo
+#  name: research-technology-faction-incendiary-ammo
+#  entityIcon: AmmoBox7.62x51mmIncendiary
+#  discipline: RogueWeaponry
+# tier: 3
+#  cost: 20000
+#  recipeUnlocks:
+#  - Magazine7.62x39mmIncendiary
+#  - AmmoBox7.62x39mmIncendiary
+#  - Magazine7.62x51mmIncendiary
+#  - AmmoBox7.62x51mmIncendiary
+#  - SpeedLoader45_magnumIncendiary
+#  - AmmoBox45_magnumIncendiary
+#  - Magazine9x19mmSubMachineGunIncendiary
+#  - AmmoBox9x19mmIncendiary
+#  - Magazine5.7x28mmSubMachineGunIncendiary
+#  - AmmoBox5.7x28mmIncendiary
+#  - Magazine4.6x30mmSubMachineGunIncendiary
+#  - AmmoBox4.6x30mmIncendiary
+#  - Magazine12_gaugeIncendiary
+#  - AmmoBox12_gaugeIncendiary
+#  technologyPrerequisites:
+#  - RoguePracticeAmmo
+#  - RogueEngineeringResearchT2
+#  position: 16, 17
 
 - type: technology
   id: RogueEsword
@@ -80,8 +80,8 @@
   - EnergySwordRogue
   technologyPrerequisites:
   - RogueEdagger
-  - RogueEngineeringResearchT2
-  position: 17, 18
+  - UniversalMaterialResearchT2
+  position: 19, 6
 
 - type: technology
   id: HFSwordTech
@@ -94,7 +94,7 @@
   - HFSwordVT7
   technologyPrerequisites:
   - RogueEsword
-  position: 17, 20
+  position: 19, 12
 
 - type: technology
   id: RogueBasicGuns
@@ -112,7 +112,9 @@
   - Magazine9x19mmSubMachineGunFMJ
   - Magazine9x19mmSubMachineGunEmpty
   - AmmoBox9x19mmFMJ
-  position: 18, 17
+  technologyPrerequisites:
+  - UniversalMaterialResearchT1
+  position: 20, 2
 
 - type: technology
   id: RogueAdvancedGuns
@@ -132,8 +134,8 @@
   - AmmoBox4.6x30mmFMJ
   technologyPrerequisites:
   - RogueBasicGuns
-  - RogueEngineeringResearchT1
-  position: 18, 19
+  - UniversalMaterialResearchT2
+  position: 20, 7
 
 - type: technology
   id: RogueCQCGuns
@@ -155,7 +157,7 @@
   - AmmoBox12_gaugeSlug
   technologyPrerequisites:
   - RogueAdvancedGuns
-  position: 19, 18
+  position: 20, 8
 
 - type: technology
   id: RogueHristov
@@ -169,8 +171,8 @@
   - AmmoBox145x114mmBig
   technologyPrerequisites:
   - RogueAdvancedGuns
-  - RogueEngineeringResearchT2
-  position: 18, 20
+  - UniversalMaterialResearchT3
+  position: 20, 12
 
 - type: technology
   id: RogueSubsonic
@@ -188,4 +190,4 @@
   - AmmoBox635x40mmCaseless
   technologyPrerequisites:
   - RogueCQCGuns
-  position: 19, 19
+  position: 21, 8

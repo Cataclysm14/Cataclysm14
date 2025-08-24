@@ -11,8 +11,8 @@
   - ClothingEyesNightVisionGoggles
   - ClothingHelmetAttachmentNVGsBasic
   technologyPrerequisites:
-  - AdvancedParts
-  position: 1, 6
+  - SuperParts
+  position: 1, 15
 
 - type: technology
   id: ThermalVisionTech
@@ -26,4 +26,4 @@
   - ClothingHelmetAttachmentInfraredBasic
   technologyPrerequisites:
   - NightVisionTech
-  position: 1, 7
+  position: 2, 15

@@ -48,7 +48,7 @@
   - MechEquipmentDrill # Goobstation
   technologyPrerequisites:
   - BasicParts
-  position: -4, 2
+  position: -2, 2
 
 - type: technology
   id: SpaceScanning
@@ -63,7 +63,7 @@
   - BorgModuleGPS
   technologyPrerequisites:
   - BasicParts
-  position: 0, 2
+  position: -5, 2
 
 - type: technology
   id: AdvancedPowercells
@@ -78,7 +78,7 @@
   - SMESAdvancedMachineCircuitboard
   technologyPrerequisites:
   - PowerGeneration
-  position: 3, 6
+  position: -2, 7
 
 - type: technology
   id: MechanicalCompression
@@ -90,8 +90,8 @@
   recipeUnlocks:
   - FlatpackerMachineCircuitboard
   technologyPrerequisites:
-  - AdvancedParts
-  position: 6, 3
+  - RapidPartExchange
+  position: -1, 7
 
 - type: technology
   id: IndustrialEngineering
@@ -119,8 +119,8 @@
   # End Goobstation Additions
   - SheetifierMachineCircuitboard
   technologyPrerequisites:
-  - AdvancedParts
-  position: 5, 2
+  - MechanicalCompression
+  position: -1, 6
 
 - type: technology
   id: PowerGeneration
@@ -139,7 +139,7 @@
   - ContainmentFieldGeneratorCircuitboard # Mono
   technologyPrerequisites:
   - AdvancedParts
-  position: 3, 5
+  position: -2, 8
 
 - type: technology
   id: AtmosphericTech
@@ -153,7 +153,7 @@
   - GasRecyclerMachineCircuitboard
   technologyPrerequisites:
   - BasicParts
-  position: -2, 2
+  position: -4, 2
 
 # Tier 2
 
@@ -175,12 +175,14 @@
   technologyPrerequisites:
   - AdvancedParts
   - PowerGeneration
-  position: 0, 4
+  - SpaceScanning
+  - AtmosphericTech
+  position: -5, 7
 
 - type: technology
   id: AdvancedAtmospherics
   name: research-technology-advanced-atmospherics
-  entityIcon: Crystallizer
+  entityIcon: GasThermoMachineHellfireFreezer
   discipline: Industrial
   tier: 2
   cost: 25000
@@ -192,7 +194,7 @@
   #  - FireExtinguisherBluespace # DeltaV
   technologyPrerequisites:
   - AtmosphericTech
-  position: -2, 3
+  position: -4, 3
 
 - type: technology
   id: AdvancedToolsTechnology
@@ -215,7 +217,7 @@
   #- NFBlueprintWelderExperimental # Frontier
   technologyPrerequisites:
   - SuperParts
-  position: 10, 12
+  position: -1, 18
 
 - type: technology
   id: MassExcavation
@@ -234,9 +236,9 @@
   - BorgModuleAdvancedMining # Frontier
   - MechEquipmentDrillDiamond
   technologyPrerequisites:
-  - SalvageEquipment
+  - SalvageWeapons
   - AdvancedParts
-  position: -4, 3
+  position: -2, 4
 
 # Tier 3
 
@@ -274,14 +276,14 @@
   technologyPrerequisites:
   - AdvancedPowercells
   - SuperParts
-  position: 3, 7
+  position: -2, 6
 
 - type: technology
   id: RapidConstruction
   name: research-technology-rapid-construction
   entityIcon: RCD
   discipline: Industrial
-  tier: 2
+  tier: 3
   cost: 60000
   recipeUnlocks:
 #  - ShipyardRCD # Frontier
@@ -290,5 +292,5 @@
   - RCDAmmo
   - NFBlueprintRCDAmmo
   technologyPrerequisites:
-  - AdvancedParts
-  position: 10, 13
+  - AdvancedToolsTechnology
+  position: -1, 19
