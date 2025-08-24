@@ -29,15 +29,15 @@
 
 - type: latheCategory
   id: SteelAPAmmo
-  name: lathe-category-steelAP-ammo
+  name: lathe-category-steelap-ammo
 
 - type: latheCategory
   id: PlasteelAPAmmo
-  name: lathe-category-plasteelAP-ammo
+  name: lathe-category-plasteelap-ammo
 
 - type: latheCategory
   id: SynthAPAmmo
-  name: lathe-category-synthAP-ammo
+  name: lathe-category-synthap-ammo
 
 - type: latheCategory
   id: HPammo
@@ -45,4 +45,4 @@
 
 - type: latheCategory
   id: RIPammo
-  name: lathe-category-RIP-ammo
+  name: lathe-category-rip-ammo
