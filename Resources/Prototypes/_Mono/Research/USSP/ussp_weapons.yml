@@ -24,45 +24,6 @@
   position: 14, 9
 
 - type: technology
-  id: UsspPracticeAmmo
-  name: research-technology-faction-practice-ammo
-  entityIcon: AmmoBox7.62x39mmPractice
-  discipline: UsspWeapons
-  tier: 1
-  cost: 2000
-  recipeUnlocks:
-  - Magazine7.62x39mmPractice
-  - AmmoBox7.62x39mmPractice
-  - Magazine7.62x54mmRPractice
-  - AmmoBox7.62x54mmRPractice
-  - SpeedLoader45_magnumPractice
-  - AmmoBox45_magnumPractice
-  - Magazine9x19mmSubMachineGunPractice
-  - AmmoBox9x19mmPractice
-  position: 13, 9
-
-- type: technology
-  id: UsspIncendiaryAmmo
-  name: research-technology-faction-incendiary-ammo
-  entityIcon: AmmoBox7.62x39mmIncendiary
-  discipline: UsspWeapons
-  tier: 3
-  cost: 20000
-  recipeUnlocks:
-  - Magazine7.62x39mmIncendiary
-  - AmmoBox7.62x39mmIncendiary
-  - Magazine7.62x54mmRIncendiary
-  - AmmoBox7.62x54mmRIncendiary
-  - SpeedLoader45_magnumIncendiary
-  - AmmoBox45_magnumIncendiary
-  - Magazine9x19mmSubMachineGunIncendiary
-  - AmmoBox9x19mmIncendiary
-  technologyPrerequisites:
-  - UsspAdvancedAmmo
-  - UsspPracticeAmmo
-  position: 12, 9
-
-- type: technology
   id: UsspMediumGuns
   name: research-technology-ussp-guns-medium
   entityIcon: WeaponRifleAK502

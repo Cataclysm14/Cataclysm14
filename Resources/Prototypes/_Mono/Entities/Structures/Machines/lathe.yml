@@ -61,6 +61,7 @@
     - UniversalMissileAmmo
     - UniversalShellAmmo
     - UniversalOrdinance
+    - AdvancedAmmoRecipePack
   - type: MaterialStorage
     whitelist:
       tags:

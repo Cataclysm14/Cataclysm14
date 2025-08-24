@@ -9,7 +9,7 @@
   entityIcon: AbstractResearchIconBallistic1
   discipline: FactionUniversal
   tier: 1
-  cost: 40000
+  cost: 30000
   position: 7, 14
 
 - type: technology
@@ -18,7 +18,7 @@
   entityIcon: AbstractResearchIconBallistic2
   discipline: FactionUniversal
   tier: 2
-  cost: 90000
+  cost: 80000
   technologyPrerequisites:
   - UniversalBallisticSci1
   position: 9, 14
