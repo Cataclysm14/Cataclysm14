@@ -12,7 +12,7 @@ public sealed class AirlockPryingTest : InteractionTest
         await SpawnTarget(Airlock);
         await SpawnEntity("APCBasic", SEntMan.GetCoordinates(TargetCoords));
 
-        await RunTicks(1);
+        await RunTicks(10);
 
         Assert.That(TryComp<AirlockComponent>(out var airlockComp), "Airlock does not have AirlockComponent?");
         Assert.That(airlockComp.Powered, "Airlock should be powered for this test.");
