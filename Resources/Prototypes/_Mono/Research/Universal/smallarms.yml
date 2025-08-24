@@ -7,7 +7,7 @@
   cost: 30000
   technologyPrerequisites:
   - UniversalBallisticSci1
-  position: 6, 8
+  position: 7, 13
   recipeUnlocks:
   - Magazine7.62x51mmSteelAP
   - AmmoBox7.62x51mmSteelAP
@@ -41,7 +41,7 @@
   cost: 50000
   technologyPrerequisites:
   - UniversalSteelCore
-  position: 6, 7
+  position: 8, 13
   recipeUnlocks:
   - Magazine7.62x51mmPlasteelAP
   - AmmoBox7.62x51mmPlasteelAP
@@ -82,7 +82,7 @@
   technologyPrerequisites:
   - UniversalPlastitaniumCore
   - UniversalBallisticSci2
-  position: 6, 6
+  position: 9, 13
   recipeUnlocks:
   - Magazine7.62x51mmSynthAP
   - AmmoBox7.62x51mmSynthAP
@@ -116,7 +116,7 @@
   cost: 30000
   technologyPrerequisites:
   - UniversalBallisticSci1
-  position: 8, 7
+  position: 7, 12
   recipeUnlocks:
   - Magazine7.62x51mmHP
   - AmmoBox7.62x51mmHP
@@ -152,7 +152,7 @@
   technologyPrerequisites:
   - UniversalHollowPoint
   - UniversalBallisticSci2
-  position: 8, 6
+  position: 9, 12
   recipeUnlocks:
   - AmmoBox23x75mmSlugRIP
   - Magazine12_gaugeSlugRIP

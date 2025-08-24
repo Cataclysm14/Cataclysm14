@@ -15,7 +15,7 @@
   - CharonSlugUniversal
   technologyPrerequisites:
   - UniversalBallisticSci1
-  position: 5, 10
+  position: 7, 15
 
 - type: technology
   id: UniversalTorpedoAmmo
@@ -27,7 +27,7 @@
   recipeUnlocks:
   - ASM220TorpedoHEUniversal
   - ASM220TorpedoECMUniversal
-  position: 9, 10
+  position: 8, 17
 
 - type: technology
   id: UniversalTorpedoAmmoAdvanced
@@ -41,7 +41,7 @@
   technologyPrerequisites:
   - UniversalTorpedoAmmo
   - UniversalBallisticSci2
-  position: 9, 12
+  position: 9, 17
 
 - type: technology
   id: Universal150mmAmmo
@@ -53,7 +53,7 @@
   recipeUnlocks:
   - 150mmApShellUniversal
   - 150mmEmpShellUniversal
-  position: 6, 10
+  position: 7, 17
 
 - type: technology
   id: UniversalLightFighterOrdinance
@@ -67,7 +67,7 @@
   - ZenithRocketUniversal
   technologyPrerequisites:
   - UniversalBallisticSci1
-  position: 8, 9
+  position: 7, 16
 
 - type: technology
   id: UniversalAdvancedLightFighterOrdinance
@@ -81,4 +81,4 @@
   technologyPrerequisites:
   - UniversalLightFighterOrdinance
   - UniversalBallisticSci2
-  position: 8, 11
+  position: 9, 16
