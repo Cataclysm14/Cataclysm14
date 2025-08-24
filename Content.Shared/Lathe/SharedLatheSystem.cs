@@ -196,7 +196,7 @@ public abstract class SharedLatheSystem : EntitySystem
     /// </summary>
     public void SetLatheMultipliers(Entity<LatheComponent?> ent, float? materialUse = null, float? time = null)
     {
-        if (!Resolve(ent, ref ent.Comp))
+        if (!Resolve(ent, ref ent.Comp, false))
             return;
 
         if (materialUse != null)
