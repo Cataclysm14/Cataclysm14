@@ -23,8 +23,8 @@
   name: loadout-group-weapon
   minLimit: 1
   loadouts:
-  # - FactionLecterLoadout
-  # - FactionDrozdLoadout
+  - FactionLecterLoadout
+  - FactionDrozdLoadout
   - FactionVulcanLoadout
   - FactionEnergyGunLoadout
   # - FactionBanditLoadout
@@ -36,9 +36,9 @@
   name: loadout-group-magazine
   minLimit: 1
   loadouts:
-  # - TSFCaselessAmmoBoxLoadout # Lecter
-  # - FactionAcpSmgAmmoLoadout #Drozd
-  # - FactionAcpSmgEmpAmmoLoadout #Drozd EMP
+  - TSFCaselessAmmoBoxLoadout # Lecter
+  - FactionAcpSmgAmmoLoadout #Drozd
+  - FactionAcpSmgEmpAmmoLoadout #Drozd EMP
   - Faction7.62x51mmAmmoLoadout #Vulcan
   - FactionRechargerLoadout #Energy
   # - Faction8x65mmAmmoLoadout #Bandit
