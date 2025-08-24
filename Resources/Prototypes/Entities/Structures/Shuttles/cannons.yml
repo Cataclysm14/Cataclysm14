@@ -385,6 +385,7 @@
   - type: ShipGunClass
     shipClass: Superlight
   - type: RadarBlip
+    visibleFromOtherGrids: false
     radarColor: "#FF0040"
     scale: 1.25
   - type: ShipGunType

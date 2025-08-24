@@ -103,6 +103,7 @@
   - type: PirateBountyItem # Frontier
     id: Thruster # Frontier
   - type: RadarBlip # Mono
+    visibleFromOtherGrids: false
     radarColor: "#99FF99"
     scale: 1
     shape: diamond

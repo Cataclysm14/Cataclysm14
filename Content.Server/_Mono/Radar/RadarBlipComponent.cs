@@ -42,7 +42,7 @@ public sealed partial class RadarBlipComponent : Component
     /// Whether this blip should be visible on radar across different grids.
     /// </summary>
     [DataField]
-    public bool VisibleFromOtherGrids = false;
+    public bool VisibleFromOtherGrids = true;
 
     [DataField]
     public bool Enabled = true;
