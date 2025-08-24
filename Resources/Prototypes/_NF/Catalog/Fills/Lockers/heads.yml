@@ -86,5 +86,5 @@
     - id: WeaponCaseHeavyCdet
     - id: WeaponPistolMk58
       amount: 1
-    - id: Magazine9x19mmPistolFMJ
+    - id: Magazine45_ACPPistolFMJ
       amount: 2

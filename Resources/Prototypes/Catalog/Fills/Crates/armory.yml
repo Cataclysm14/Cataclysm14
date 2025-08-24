@@ -67,7 +67,7 @@
     contents:
     - id: WeaponPistolMk58
       amount: 2
-    - id: Magazine9x19mmPistolFMJ
+    - id: Magazine45_ACPPistolFMJ
       amount: 4
 
 - type: entity

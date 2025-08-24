@@ -280,7 +280,7 @@
     - RegenerativeMesh
     - BoxZiptie
     - CrowbarRed
-    - Magazine9x19mmPistolFMJ
+    - Magazine45_ACPPistolFMJ
 
 - type: startingGear
   id: ERTSecurityGearEVA
@@ -304,7 +304,7 @@
     - RegenerativeMesh
     - BoxZiptie
     - CrowbarRed
-    - Magazine9x19mmPistolFMJ
+    - Magazine45_ACPPistolFMJ
 
 - type: startingGear
   id: ERTSecurityGearEVALecter
@@ -330,7 +330,6 @@
     - RegenerativeMesh
     - BoxZiptie
     - CrowbarRed
-    - Magazine9x19mmPistolFMJ
 
 # Medical
 - type: job
