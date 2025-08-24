@@ -495,7 +495,7 @@
         - id: PinpointerUniversal
           weight: 0.5
       - id: JerryCanWeldingFuel
-      - id: ResearchDisk5000
+      - id: ResearchDisk35000
         weight: 0.5
       #Medkits
       - !type:GroupSelector
@@ -552,7 +552,7 @@
       - id: PowerCellHigh
       - id: WelderIndustrial
       - id: ClothingMaskGasExplorer
-      - id: ResearchDisk10000
+      - id: ResearchDisk65000
       - id: PetCarrier
       - id: DrinkMopwataBottleRandom
       - id: SpectralLocator

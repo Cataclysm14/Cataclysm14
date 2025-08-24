@@ -124,8 +124,8 @@
     - TechDiskTSFDrozd
     - TechDiskC20r
     - TechDiskUniversalShipAmmo
-    - ResearchDisk5000
-    - ResearchDisk10000
+    - ResearchDisk35000
+    - ResearchDisk65000
     chance: 0.95
     offset: 0.0
     rarePrototypes:

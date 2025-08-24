@@ -72,7 +72,7 @@
       children:
       - id: ClothingBeltUtilityFilled
       - id: ResearchDisk
-      - id: ResearchDisk5000
+      - id: ResearchDisk35000
       - id: RandomInstruments
 
 # Major science loot spawner

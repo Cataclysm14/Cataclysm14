@@ -56,6 +56,7 @@
     - Experimental
     - CivilianServices
     - MechaEngineering
+    - FactionUniversal
   - type: ApcPowerReceiver
     powerLoad: 200
   - type: ExtensionCableReceiver

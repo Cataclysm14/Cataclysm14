@@ -81,9 +81,9 @@
         # - proto: ResearchAndDevelopmentServerMachineCircuitboard
           # cost: 5
           # prob: 0.5
-        # - proto: ResearchDisk10000
+        # - proto: ResearchDisk65000
           # prob: 0.5
-        # - proto: ResearchDisk5000
+        # - proto: ResearchDisk35000
           # prob: 0.5
         # - proto: RipleyHarness
           # cost: 3

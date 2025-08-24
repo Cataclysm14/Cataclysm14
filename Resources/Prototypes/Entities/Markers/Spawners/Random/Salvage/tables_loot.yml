@@ -147,7 +147,7 @@
     - id: TreasureCPUSupercharged
     # - id: TechnologyDiskRare # Frontier
     #   weight: 0.5 # Frontier
-    - id: ResearchDisk10000
+    - id: ResearchDisk65000
       weight: 0.5
     - id: ArabianLamp
     - !type:NestedSelector
