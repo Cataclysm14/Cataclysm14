@@ -8,7 +8,6 @@
     - type: Sprite
       sprite: _Mono/Objects/Weapons/Guns/Ammunition/Research.rsi
       state: T1
-    - type: Appearance
 
 - type: entity
   id: AbstractResearchIconBallistic2
@@ -16,4 +15,3 @@
     - type: Sprite
       sprite: _Mono/Objects/Weapons/Guns/Ammunition/Research.rsi
       state: T2
-    - type: Appearance
