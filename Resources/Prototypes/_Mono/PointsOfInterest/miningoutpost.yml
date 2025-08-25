@@ -1,0 +1,59 @@
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Author Info: avtomata
+# GitHub: core-mene
+# Discord: core_mene
+
+# Maintainer Info
+# GitHub: ??
+# Discord: ??
+
+# Notes:
+- type: pointOfInterest
+  id: MiningPOIDelta
+  parent: BasePOI
+  name: 'Mining Outpost Delta'
+  minimumDistance: 3500
+  maximumDistance: 8500
+  spawnGroup: Required
+  gridPath: /Maps/_Mono/POI/miningpost.yml
+  addComponents:
+  - type: IFF
+    color: "#FF4D00"
+
+- type: gameMap
+  id: Sevastopol
+  mapName: 'Mining Outpost Delta'
+  gridPath: /Maps/_Mono/POI/miningpost.yml
+  minPlayers: 0
+  stations:
+    Sevastopol:
+      stationProto: RecordsFrontierOutpostCargo
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Mining Outpost Delta'
+
+- type: pointOfInterest
+  id: MiningPOIGamma
+  parent: BasePOI
+  name: 'Mining Outpost Gamma'
+  minimumDistance: 3500
+  maximumDistance: 8500
+  spawnGroup: Required
+  gridPath: /Maps/_Mono/POI/miningpost.yml
+  addComponents:
+  - type: IFF
+    color: "#FF4D00"
+
+- type: gameMap
+  id: Sevastopol
+  mapName: 'Mining Outpost Gamma'
+  gridPath: /Maps/_Mono/POI/miningpost.yml
+  minPlayers: 0
+  stations:
+    Sevastopol:
+      stationProto: RecordsFrontierOutpostCargo
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Mining Outpost Gamma'

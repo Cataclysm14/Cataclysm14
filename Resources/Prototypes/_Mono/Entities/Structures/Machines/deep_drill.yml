@@ -242,12 +242,3 @@
   components:
   - type: Stack
     count: 50
-    
-#bananium ore
-- type: entity
-  parent: BananiumOre
-  id: BananiumOre5
-  suffix: 5
-  components:
-  - type: Stack
-    count: 5
