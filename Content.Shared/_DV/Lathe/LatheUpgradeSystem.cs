@@ -20,6 +20,6 @@ public sealed class LatheUpgradeSystem : EntitySystem
     {
         RemCompDeferred<LatheUpgradeComponent>(ent);
 
-        _lathe.SetLatheMultipliers(ent.Owner, ent.Comp.MaterialUseMultiplier, ent.Comp.TimeMultiplier);
+        _lathe.MultiplyLatheMultipliers(ent.Owner, ent.Comp.MaterialUseMultiplier, ent.Comp.TimeMultiplier);
     }
 }
