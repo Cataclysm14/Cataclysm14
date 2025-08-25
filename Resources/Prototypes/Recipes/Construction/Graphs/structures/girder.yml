@@ -614,7 +614,7 @@
       - to: reinforcedGirder
         completed:
         - !type:SpawnPrototype
-          prototype: ScrapSteel
+          prototype: PlastitaniumScrapSteel
           amount: 1
         steps:
         - tool: Cutting
@@ -648,7 +648,7 @@
       - to: reinforcedGirder
         completed:
         - !type:SpawnPrototype
-          prototype: ScrapSteel
+          prototype: PlastitaniumScrapSteel
           amount: 2
         steps:
         - tool: Cutting

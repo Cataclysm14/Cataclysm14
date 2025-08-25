@@ -47,7 +47,7 @@
     containers:
     - entity_storage
   - type: StaticPrice
-    price: 40 # Monolith
+    price: 60 # Monolith
 
 - type: entity
   parent: CratePlastic
