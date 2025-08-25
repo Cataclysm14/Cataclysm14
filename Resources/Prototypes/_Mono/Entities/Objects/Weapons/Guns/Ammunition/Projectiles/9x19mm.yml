@@ -17,6 +17,7 @@
 # SPDX-FileCopyrightText: 2024 Whatstone
 # SPDX-FileCopyrightText: 2025 core-mene
 # SPDX-FileCopyrightText: 2025 sleepyyapril
+# SPDX-FileCopyrightText: 2025 starch
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -91,3 +92,68 @@
     damage:
       types:
         Shock: 0
+
+# Mono AP syst
+#anti-flesh:
+- type: entity
+  id: Bullet9x19mmHP
+  parent: BaseBullet
+  name: bullet (9x19mm hollow-point)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types: 
+        Slash: 3
+        Piercing: 26
+    armorPenetration: -0.3
+
+- type: entity
+  id: Bullet9x19mmRIP
+  parent: BaseBullet
+  name: bullet (9x19mm RIP)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types: 
+        Slash: 5
+        Piercing: 35
+    armorPenetration: -0.65
+
+#armor-piercing:
+- type: entity
+  id: Bullet9x19mmSteelAP
+  parent: BaseBullet
+  name: bullet (9x19mm armor-piercing steel core)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types: 
+        Piercing: 19
+    armorPenetration: 0.1
+
+- type: entity
+  id: Bullet9x19mmPlasteelAP
+  parent: BaseBullet
+  name: bullet (9x19mm armor-piercing plastitanium core)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types: 
+        Piercing: 17
+    armorPenetration: 0.3
+
+- type: entity
+  id: Bullet9x19mmSynthAP
+  parent: BaseBullet
+  name: bullet (9x19mm armor-piercing synthalloy core)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types: 
+        Piercing: 15
+    armorPenetration: 0.5

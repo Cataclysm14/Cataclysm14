@@ -1,24 +1,27 @@
-#- type: technology
+# SPDX-FileCopyrightText: 2025 core-mene
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# - type: technology
 #  id: UniversalBallisticSci1
 #  name: research-technology-universal-ballistic-1
-#  entityIcon: AmmoBox68x52mmCaselessBig
+#  entityIcon: AbstractResearchIconBallistic1
 #  discipline: FactionUniversal
 #  tier: 1
-#  cost: 40000
-#  position: 5, 9
-#
-#- type: technology
+#  cost: 30000
+#  position: 7, 14
+
+# - type: technology
 #  id: UniversalBallisticSci2
 #  name: research-technology-universal-ballistic-2
-#  entityIcon: AmmoBox45_magnumUranium
+#  entityIcon: AbstractResearchIconBallistic2
 #  discipline: FactionUniversal
 #  tier: 2
-#  cost: 90000
+#  cost: 80000
 #  technologyPrerequisites:
 #  - UniversalBallisticSci1
-#  position: 7, 9
-
-# Materials science
+#  position: 9, 14
 
 - type: technology
   id: UniversalMaterialResearchT1
@@ -32,7 +35,7 @@
 - type: technology
   id: UniversalMaterialResearchT2
   name: research-technology-universal-engsci-2
-  entityIcon: SheetPlastitanium
+  entityIcon: SheetPlasteel
   discipline: FactionUniversal
   tier: 2
   cost: 50000

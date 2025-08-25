@@ -41,7 +41,7 @@
   entityIcon: hydroponicsTray
   discipline: CivilianServices
   tier: 1
-  cost: 15000 # Delta Price. 5000 is pre-adjustment.
+  cost: 10000
   recipeUnlocks:
   - BorgModuleGardening
   - BorgModuleHarvesting
@@ -62,7 +62,7 @@
   entityIcon: MechHamtrBattery
   discipline: CivilianServices
   tier: 1
-  cost: 15000
+  cost: 10000
   recipeUnlocks:
   - HamtrHarness
   - HamtrLArm
@@ -120,7 +120,7 @@
   entityIcon: BorgChassisJanitor
   discipline: CivilianServices
   tier: 1
-  cost: 15000
+  cost: 10000
   recipeUnlocks:
   - BorgModuleAdvancedCleaning
   technologyPrerequisites:
@@ -151,7 +151,7 @@
   entityIcon: FloorTileItemAstroGrass
   discipline: CivilianServices
   tier: 2
-  cost: 15000
+  cost: 10000
   recipeUnlocks:
   - FauxTileAstroGrass
   - FauxTileMowedAstroGrass
@@ -209,7 +209,7 @@
   entityIcon: SecurityCyberneticEyes
   discipline: CivilianServices
   tier: 2
-  cost: 65000
+  cost: 25000
   recipeUnlocks:
   - JawsOfLifeLeftArm
   - JawsOfLifeRightArm
@@ -247,7 +247,7 @@
   entityIcon: MechHonkerFilled
   discipline: CivilianServices
   tier: 2
-  cost: 25000
+  cost: 15000
   recipeUnlocks:
   - HonkerHarness
   - HonkerLArm
@@ -270,7 +270,7 @@
   entityIcon: WeaponSprayNozzle
   discipline: CivilianServices
   tier: 2
-  cost: 30000
+  cost: 15000
   recipeUnlocks:
   - WeaponSprayNozzle
   - ClothingBackpackWaterTank
@@ -311,7 +311,7 @@
   entityIcon: BluespaceBeaker
   discipline: CivilianServices
   tier: 3
-  cost: 80000
+  cost: 45000
   recipeUnlocks:
   - BluespaceBeaker
   - SyringeBluespace

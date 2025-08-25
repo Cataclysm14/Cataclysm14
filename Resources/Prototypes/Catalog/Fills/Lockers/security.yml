@@ -42,6 +42,7 @@
 # SPDX-FileCopyrightText: 2024 marbow
 # SPDX-FileCopyrightText: 2024 to4no_fix
 # SPDX-FileCopyrightText: 2025 BramvanZijp
+# SPDX-FileCopyrightText: 2025 Daniel Lenrd
 # SPDX-FileCopyrightText: 2025 Floxington
 # SPDX-FileCopyrightText: 2025 GreaseMonk
 # SPDX-FileCopyrightText: 2025 core-mene
@@ -230,7 +231,7 @@
     contents:
     - id: WeaponPistolMk58
       amount: 4
-    - id: Magazine9x19mmPistolFMJ
+    - id: Magazine45_ACPPistolFMJ
       amount: 8
 
 - type: entity

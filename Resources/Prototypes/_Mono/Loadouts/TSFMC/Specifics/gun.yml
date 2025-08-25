@@ -1,4 +1,5 @@
 # SPDX-FileCopyrightText: 2025 Daniel Lenrd
+# SPDX-FileCopyrightText: 2025 Onezero0
 # SPDX-FileCopyrightText: 2025 core-mene
 # SPDX-FileCopyrightText: 2025 starch
 #
@@ -26,9 +27,9 @@
   - FactionDrozdLoadout
   - FactionVulcanLoadout
   - FactionEnergyGunLoadout
-  - FactionBanditLoadout
+  # - FactionBanditLoadout
   fallbacks:
-  - FactionLecterLoadout
+  - FactionVulcanLoadout
 
 - type: loadoutGroup
   id: TsfmcMag
@@ -40,7 +41,7 @@
   - FactionAcpSmgEmpAmmoLoadout #Drozd EMP
   - Faction7.62x51mmAmmoLoadout #Vulcan
   - FactionRechargerLoadout #Energy
-  - Faction8x65mmAmmoLoadout #Bandit
+  # - Faction8x65mmAmmoLoadout #Bandit
   - FactionAcpPistolAmmoLoadout #MK58
   fallbacks:
   - TSFCaselessAmmoBoxLoadout #Lecter

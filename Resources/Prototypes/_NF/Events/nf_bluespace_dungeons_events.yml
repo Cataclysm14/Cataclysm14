@@ -55,6 +55,7 @@
         #- type: Physics
         #  bodyType: Static
         #  bodyStatus: OnGround
+        - type: ClaimableGrid # Mono
         protos:
         - NFVGRoidBasalt
 

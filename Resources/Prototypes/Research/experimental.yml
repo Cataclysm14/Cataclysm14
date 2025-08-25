@@ -29,7 +29,7 @@
   entityIcon: ExosuitFabricator
   discipline: Experimental
   tier: 1
-  cost: 15000
+  cost: 10000
   recipeUnlocks:
   - ProximitySensor
   technologyPrerequisites:
@@ -42,7 +42,7 @@
   entityIcon: AnomalyScanner
   discipline: Experimental
   tier: 1
-  cost: 25000
+  cost: 10000
   recipeUnlocks:
   - AnomalyScanner
   - AnomalyLocator
@@ -60,7 +60,7 @@
   entityIcon: MachineArtifactAnalyzer
   discipline: Experimental
   tier: 1
-  cost: 15000
+  cost: 5000
   recipeUnlocks:
   - NodeScanner
   - BorgModuleArtifact
@@ -73,9 +73,7 @@
 - type: technology
   id: AlternativeResearch
   name: research-technology-alternative-research
-  icon:
-    sprite: Structures/Machines/tech_disk_printer.rsi
-    state: display
+  entityIcon: ComputerTechnologyDiskTerminal
   discipline: Experimental
   tier: 1
   cost: 5000
@@ -91,7 +89,7 @@
   entityIcon: ClothingShoesBootsMagSci
   discipline: Experimental
   tier: 1
-  cost: 22500
+  cost: 10000
   recipeUnlocks:
   - ClothingShoesBootsMagSci
   - NFClothingShoesBootsMoon # Frontier ClothingShoesBootsMoon<NFClothingShoesBootsMoon
@@ -166,7 +164,7 @@
   entityIcon: HoloprojectorField
   discipline: Experimental
   tier: 2
-  cost: 75000
+  cost: 20000
   recipeUnlocks:
   # - WeaponParticleDecelerator # Frontier - Cancer gun that skip walls
   - HoloprojectorField
@@ -180,7 +178,7 @@
   entityIcon: PlayerStationAiEmpty
   discipline: Experimental
   tier: 2
-  cost: 100000
+  cost: 30000
   recipeUnlocks:
   - AiCoreElectronics
   technologyPrerequisites:

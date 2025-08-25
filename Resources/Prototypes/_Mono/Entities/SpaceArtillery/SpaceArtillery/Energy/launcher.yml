@@ -81,7 +81,7 @@
   id: WeaponTurretType54
   name: Type-54C plasma autopulser
   parent: BallisticArtillery
-  suffix: TSF ONLY
+  suffix: TSF ONLY, ADS ONLY
   description: A rapidly firing energy weapon, dealing a large amount of damage to its targets. Takes a long time to recharge.
   components:
   - type: StaticPrice
@@ -274,6 +274,7 @@
   id: WeaponTurretDymere
   name: ADEX-9 DYMERE Turbolaser
   parent: BallisticArtilleryUnanchorable
+  suffix: TSF ONLY, ADS ONLY
   description: Aetherion Dynamics' most iconic supercapital battery. Fires enormous ionized gas projectiles that melt through the toughest ship armor. Can be remotely activated or linked to a GCS.
   components:
   - type: StaticPrice

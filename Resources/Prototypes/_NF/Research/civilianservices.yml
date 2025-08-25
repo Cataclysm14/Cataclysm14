@@ -31,7 +31,7 @@
   entityIcon: NFPouchContractor
   discipline: CivilianServices
   tier: 1
-  cost: 15000
+  cost: 25000
   recipeUnlocks:
   - NFPouchUtility
   - NFPouchEngineering
@@ -63,7 +63,7 @@
   entityIcon: ChemDispenser
   discipline: CivilianServices
   tier: 2
-  cost: 30000
+  cost: 25000
   recipeUnlocks:
   - ChemMasterMachineCircuitboard
   - ChemDispenserMachineCircuitboard
@@ -91,7 +91,7 @@
   entityIcon: JetpackVoid
   discipline: CivilianServices
   tier: 2 # 3->2 - Mono
-  cost: 65000
+  cost: 25000
   recipeUnlocks:
   - JetpackVoid
   technologyPrerequisites:
@@ -104,7 +104,7 @@
   entityIcon: KitchenDeepFryer
   discipline: CivilianServices
   tier: 2
-  cost: 15000
+  cost: 25000
   recipeUnlocks:
   - DeepFryerMachineCircuitboard #Nyano - Summary: adds deep fryer circuit board to service research.
   - ServiceSelectiveDropper
@@ -120,7 +120,7 @@
   entityIcon: NFVehicleJanicart
   discipline: CivilianServices
   tier: 2
-  cost: 5000
+  cost: 25000
   recipeUnlocks:
     - JanicartFlatpack
   technologyPrerequisites:

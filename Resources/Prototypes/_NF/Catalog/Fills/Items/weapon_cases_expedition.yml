@@ -3,6 +3,7 @@
 # SPDX-FileCopyrightText: 2024 Qulibly
 # SPDX-FileCopyrightText: 2024 VividPups
 # SPDX-FileCopyrightText: 2024 Whatstone
+# SPDX-FileCopyrightText: 2025 Daniel Lenrd
 # SPDX-FileCopyrightText: 2025 Dvir
 # SPDX-FileCopyrightText: 2025 FireFoxPhoenix
 # SPDX-FileCopyrightText: 2025 core-mene
@@ -21,7 +22,7 @@
     contents:
     - id: WeaponPistolMk58Expedition
       amount: 1
-    - id: Magazine9x19mmPistolFMJ
+    - id: Magazine45_ACPPistolFMJ
       amount: 2
 
 - type: entity

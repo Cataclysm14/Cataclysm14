@@ -150,6 +150,7 @@
 # SPDX-FileCopyrightText: 2025 Aviu00
 # SPDX-FileCopyrightText: 2025 BeeRobynn
 # SPDX-FileCopyrightText: 2025 ErhardSteinhauer
+# SPDX-FileCopyrightText: 2025 Hyenh
 # SPDX-FileCopyrightText: 2025 Ilya246
 # SPDX-FileCopyrightText: 2025 K-Dynamic
 # SPDX-FileCopyrightText: 2025 Myzumi
@@ -785,6 +786,7 @@
     - ClothingSecurity
     - ClothingService
     - WinterCoats
+    - Ponchos # Monolith
     - Ties
     - Scarves
     - Carpets

@@ -101,7 +101,7 @@
   entityIcon: NanolaminateFoamGrenade
   discipline: TsfmcGear
   tier: 2
-  cost: 10000
+  cost: 15000
   recipeUnlocks:
   - NanolaminateFoamGrenadeTSF
   technologyPrerequisites:
@@ -180,7 +180,7 @@
   entityIcon: MaterialSynthalloy
   discipline: TsfmcGear
   tier: 3
-  cost: 15000
+  cost: 50000
   recipeUnlocks:
   - SynthalloyProductionTsf
   technologyPrerequisites:

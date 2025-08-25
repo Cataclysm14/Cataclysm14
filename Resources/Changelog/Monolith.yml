@@ -10905,3 +10905,294 @@ Entries:
   id: 1218
   time: '2025-08-21T22:08:58.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1989
+- author: Ilya246
+  changes:
+    - type: Fix
+      message: Fixed turrets trying to shoot you through walls.
+  id: 1219
+  time: '2025-08-22T21:15:10.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1993
+- author: Ilya246
+  changes:
+    - type: Tweak
+      message: Halved ballistic and laser turret rotation speed.
+    - type: Tweak
+      message: >-
+        Ballistic and laser turrets now start off very inaccurate and get more
+        accurate as they fire.
+  id: 1220
+  time: '2025-08-22T21:17:43.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1994
+- author: Ilya246
+  changes:
+    - type: Add
+      message: >-
+        Banners (the ones you can craft) can now be used to claim
+        debris/vgroid/UIV/etc grids via altclick if anchored, preventing them
+        from despawning.
+  id: 1221
+  time: '2025-08-22T21:23:21.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1987
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Added Jupiter as a mobile secondary Rogue base focused on carrying
+        mechs, with a shipyard console only capable of spawning smaller rogue
+        ships.
+    - type: Tweak
+      message: Buffed 1x1 mechs (such as Gygax) in both space speed and durability.
+  id: 1222
+  time: '2025-08-22T22:07:55.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1995
+- author: starch70
+  changes:
+    - type: Add
+      message: Added Roleplay Rule 8 for Role Abandonment, reordered intro rules popup.
+  id: 1223
+  time: '2025-08-22T22:19:03.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1978
+- author: grandalff
+  changes:
+    - type: Fix
+      message: >-
+        Fixed Gruznyk, but had to make it shittier, so to compensate, I gave its
+        fridge two potatoes. It can now, again, haul cargo...
+    - type: Tweak
+      message: Gave Akula extra fuel and a defib.
+    - type: Tweak
+      message: >-
+        Removed the second APC from Sekunda's med room, changed wiring a bit,
+        removed the roller bed (even when collapsed it has a hitbox), replaced
+        the fore gyros with sec variants.
+    - type: Tweak
+      message: >-
+        Gave Remontnik a defib, turned on that one thruster, removed the
+        extinguisher on top of the air alarm.
+  id: 1224
+  time: '2025-08-22T22:20:02.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1923
+- author: Rubeebeebee
+  changes:
+    - type: Add
+      message: Added the HES Canister, an entry level gas mining ship
+  id: 1225
+  time: '2025-08-22T22:21:02.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1957
+- author: johnnny34y
+  changes:
+    - type: Add
+      message: Drunk driving
+  id: 1226
+  time: '2025-08-22T22:46:31.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1873
+- author: Rubeebeebee
+  changes:
+    - type: Add
+      message: >-
+        the Leaf; a MED Botany/Chemistry ship to replace the Eden (rest in peace
+        king)
+  id: 1227
+  time: '2025-08-22T22:48:28.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1758
+- author: starch70
+  changes:
+    - type: Add
+      message: Added an alternate variant of ADS Zenith w/ different weapons.
+    - type: Tweak
+      message: Increased the max amount of time ADS Zenith & ADS Nebula can spawn to 6.
+    - type: Tweak
+      message: >-
+        Legionnaire has 4 autopulsers now instead of ASM-302, QJ-490 now has
+        autopulsers instead of 20mms. Sadly, this means price increases for
+        both.
+    - type: Tweak
+      message: >-
+        Updated ADS zenith to modern visual and mechanical standards. Better
+        shield gen, better FTL drive, and better interior.
+  id: 1228
+  time: '2025-08-23T00:46:42.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1996
+- author: starch70
+  changes:
+    - type: Remove
+      message: Removed ambient noise from pipes.
+  id: 1229
+  time: '2025-08-23T06:57:09.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1997
+- author: starch70
+  changes:
+    - type: Fix
+      message: >-
+        Fixed Jupiter IFF being read-only, and fixed Jupiter armory being wrong
+        access.
+    - type: Tweak
+      message: Jupiter no longer has infinite role slots for Rogue Agent.
+  id: 1230
+  time: '2025-08-23T07:00:58.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2000
+- author: starch70
+  changes:
+    - type: Tweak
+      message: All combat mechs have radar blip now.
+  id: 1231
+  time: '2025-08-23T07:40:14.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2001
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: Syringe cases can scoop items up and dump its contents
+  id: 1232
+  time: '2025-08-23T09:46:59.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2002
+- author: starch70
+  changes:
+    - type: Tweak
+      message: Redid Jupiter air alarms and lighting, added more station maps.
+    - type: Fix
+      message: Fixed Jupiter having a missing disposals tube.
+  id: 1233
+  time: '2025-08-23T22:08:25.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2007
+- author: Ilya246
+  changes:
+    - type: Add
+      message: You can now build gaslocks.
+  id: 1234
+  time: '2025-08-23T22:09:09.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2004
+- author: Ilya246
+  changes:
+    - type: Add
+      message: VGroids now have deep gas deposits, which can be gas mined indefinitely.
+  id: 1235
+  time: '2025-08-23T22:11:03.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2005
+- author: Avalon-Proto
+  changes:
+    - type: Tweak
+      message: >-
+        ADS Manipulator borgs have been restored and repaired, with some
+        improved modules
+  id: 1236
+  time: '2025-08-23T22:11:43.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1999
+- author: tonotom1
+  changes:
+    - type: Add
+      message: >-
+        WHEWW What's that SMELL?? Ported BZ, Healium, and Nitrium! Credit to
+        marc-pelletier for all the actual work
+    - type: Add
+      message: Frontierized canister sprites for the new gases
+  id: 1237
+  time: '2025-08-23T22:13:46.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1900
+- author: Cojoke-dot
+  changes:
+    - type: Fix
+      message: 'Magic crayon crafting recipe now actually makes a magic crayon '
+  id: 1238
+  time: '2025-08-23T22:51:10.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2009
+- author: starch70
+  changes:
+    - type: Tweak
+      message: Reduced asteroid spawnrate significantly to help with physics lag.
+  id: 1239
+  time: '2025-08-23T23:26:50.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2010
+- author: Ilya246
+  changes:
+    - type: Tweak
+      message: Radar blips should now move more smoothly.
+  id: 1240
+  time: '2025-08-24T16:13:54.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2021
+- author: Danchi299
+  changes:
+    - type: Fix
+      message: MK58 loot now comes with .45 ACP magazines instead of 9x19mm.
+  id: 1241
+  time: '2025-08-24T16:14:57.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2020
+- author: Danchi299
+  changes:
+    - type: Add
+      message: Engineering TechFab can now make Automation items without research.
+    - type: Add
+      message: RPED is now printable with Engineering TechFab.
+  id: 1242
+  time: '2025-08-24T16:16:01.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2019
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: >-
+        Some Frontier ship advert posters that didn't make sense to show were
+        removed.
+  id: 1243
+  time: '2025-08-24T16:16:46.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2016
+- author: Danchi299
+  changes:
+    - type: Add
+      message: You can now handcraft shooting target for 5 steel each.
+  id: 1244
+  time: '2025-08-24T19:58:57.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2026
+- author: SlamBamActionman
+  changes:
+    - type: Fix
+      message: Crates on conveyor belts can now go around tight corners again!
+  id: 1245
+  time: '2025-08-24T20:03:28.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2025
+- author: Danchi299
+  changes:
+    - type: Tweak
+      message: Ship telecommunications servers now start with shortband encryption key.
+  id: 1246
+  time: '2025-08-24T20:47:10.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2023
+- author: Ilya246
+  changes:
+    - type: Fix
+      message: Fixed radar blips not showing up away from CO.
+  id: 1247
+  time: '2025-08-24T20:51:41.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2027
+- author: Hyenh
+  changes:
+    - type: Add
+      message: Added new ponchos
+  id: 1248
+  time: '2025-08-24T20:53:11.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2017
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: >-
+        Scrap processor recipes are no longer discount-exempt: This means matter
+        bin upgrades work on it now
+  id: 1249
+  time: '2025-08-25T01:49:50.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2030
+- author: Cojoke-dot
+  changes:
+    - type: Tweak
+      message: The price of some ships has been increased to match appraisal
+  id: 1250
+  time: '2025-08-25T02:17:44.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2032
+- author: Ilya246
+  changes:
+    - type: Add
+      message: Borgs can now build things by drag and dropping - goob port.
+    - type: Tweak
+      message: Borgs can now (un)lock borgs.
+    - type: Tweak
+      message: Borgs can now pilot mechs.
+  id: 1251
+  time: '2025-08-25T09:30:27.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2036

@@ -10,63 +10,12 @@
   entityIcon: EnergyDaggerLoud
   discipline: RogueWeaponry
   tier: 1
-  cost: 25000
+  cost: 15000
   recipeUnlocks:
   - EnergyDaggerRogue
   technologyPrerequisites:
   - UniversalMaterialResearchT1
   position: 19, 2
-
-#- type: technology
-#  id: RoguePracticeAmmo
-#  name: research-technology-faction-practice-ammo
-#  entityIcon: AmmoBox7.62x51mmPractice
-#  discipline: RogueWeaponry
-#  tier: 1
-#  cost: 2000
-#  recipeUnlocks:
-#  - Magazine7.62x39mmPractice
-#  - AmmoBox7.62x39mmPractice
-#  - Magazine7.62x51mmPractice
-#  - AmmoBox7.62x51mmPractice
-#  - SpeedLoader45_magnumPractice
-#  - AmmoBox45_magnumPractice
-#  - Magazine9x19mmSubMachineGunPractice
-#  - AmmoBox9x19mmPractice
-#  - Magazine5.7x28mmSubMachineGunPractice
-#  - AmmoBox5.7x28mmPractice
-#  - Magazine4.6x30mmSubMachineGunPractice
-#  - AmmoBox4.6x30mmPractice
-#  - Magazine12_gaugePractice
-#  - AmmoBox12_gaugePractice
-#  position: 16, 15
-
-#- type: technology
-#  id: RogueIncendiaryAmmo
-#  name: research-technology-faction-incendiary-ammo
-#  entityIcon: AmmoBox7.62x51mmIncendiary
-#  discipline: RogueWeaponry
-# tier: 3
-#  cost: 20000
-#  recipeUnlocks:
-#  - Magazine7.62x39mmIncendiary
-#  - AmmoBox7.62x39mmIncendiary
-#  - Magazine7.62x51mmIncendiary
-#  - AmmoBox7.62x51mmIncendiary
-#  - SpeedLoader45_magnumIncendiary
-#  - AmmoBox45_magnumIncendiary
-#  - Magazine9x19mmSubMachineGunIncendiary
-#  - AmmoBox9x19mmIncendiary
-#  - Magazine5.7x28mmSubMachineGunIncendiary
-#  - AmmoBox5.7x28mmIncendiary
-#  - Magazine4.6x30mmSubMachineGunIncendiary
-#  - AmmoBox4.6x30mmIncendiary
-#  - Magazine12_gaugeIncendiary
-#  - AmmoBox12_gaugeIncendiary
-#  technologyPrerequisites:
-#  - RoguePracticeAmmo
-#  - RogueEngineeringResearchT2
-#  position: 16, 17
 
 - type: technology
   id: RogueEsword
@@ -74,7 +23,7 @@
   entityIcon: EnergySword
   discipline: RogueWeaponry
   tier: 3
-  cost: 75000
+  cost: 25000
   recipeUnlocks:
   - EnergyShieldRogue
   - EnergySwordRogue
@@ -89,7 +38,7 @@
   entityIcon: WeaponVT7
   discipline: RogueWeaponry
   tier: 3
-  cost: 85000
+  cost: 45000
   recipeUnlocks:
   - HFSwordVT7
   technologyPrerequisites:
@@ -102,7 +51,7 @@
   entityIcon: WeaponSubMachineGunC20r
   discipline: RogueWeaponry
   tier: 1
-  cost: 30000
+  cost: 15000
   recipeUnlocks:
   - WeaponSubMachineGunC20rRogue
   - WeaponRevolverPythonRogue
@@ -143,7 +92,7 @@
   entityIcon: WeaponShotgunBulldog
   discipline: RogueWeaponry
   tier: 2
-  cost: 65000
+  cost: 35000
   recipeUnlocks:
   - WeaponSubMachineGunAtreidesRogue
   - WeaponShotgunBulldogRogue
@@ -165,7 +114,7 @@
   entityIcon: WeaponSniperHristov
   discipline: RogueWeaponry
   tier: 3
-  cost: 35000
+  cost: 55000
   recipeUnlocks:
   - WeaponSniperHristovRogue
   - AmmoBox145x114mmBig

@@ -3,6 +3,7 @@
 // SPDX-FileCopyrightText: 2024 Whatstone
 // SPDX-FileCopyrightText: 2024 neuPanda
 // SPDX-FileCopyrightText: 2025 Ark
+// SPDX-FileCopyrightText: 2025 Coenx-flex
 // SPDX-FileCopyrightText: 2025 Dvir
 // SPDX-FileCopyrightText: 2025 Redrover1760
 // SPDX-FileCopyrightText: 2025 ark1368
@@ -114,7 +115,7 @@ public sealed class VesselPrototype : IPrototype, IInheritingPrototype
     ///     The price markup of the vessel testing
     /// </summary>
     [DataField]
-    public float MinPriceMarkup = 1.05f;
+    public float MinPriceMarkup = 1f; // Mono change: 1.05 > 1
 
     [DataField]
     public HashSet<ProtoId<TagPrototype>> Tags = new();

@@ -55,7 +55,7 @@
   entityIcon: ClothingOuterHardsuitRd
   discipline: Experimental
   tier: 3
-  cost: 65000
+  cost: 35000
   recipeUnlocks:
     - ClothingOuterHardsuitRd
   technologyPrerequisites:

@@ -4,6 +4,7 @@
 # SPDX-FileCopyrightText: 2025 Onezero0
 # SPDX-FileCopyrightText: 2025 Redrover1760
 # SPDX-FileCopyrightText: 2025 core-mene
+# SPDX-FileCopyrightText: 2025 significant harassment
 # SPDX-FileCopyrightText: 2025 starch
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
@@ -71,7 +72,7 @@
   - type: Item
     sprite: _Mono/Objects/Weapons/Guns/Rifles/mr8c_inhands_32x.rsi
   - type: StaticPrice
-    price: 1750
+    price: 2400
   - type: SpeedModifiedOnWield
     walkModifier: 0.65
     sprintModifier: 0.5
@@ -138,8 +139,7 @@
     zeroVisible: true
   - type: Appearance
   - type: StaticPrice
-    price: 100
-    vendPrice: 9000
+    price: 1200
   - type: PirateBountyItem
     id: StandardFactionLongarm
 
@@ -258,8 +258,7 @@
           tags:
             - Cartridge7.62x51mmFMJ
   - type: StaticPrice
-    price: 4000
-    vendPrice: 33200
+    price: 1200
 
 #Mercenary lecter
 - type: entity
@@ -331,7 +330,7 @@
     zeroVisible: true
   - type: Appearance
   - type: StaticPrice # Mono
-    price: 750
+    price: 1200
 
 - type: entity
   name: SKR-WS MLA-34 smartgun (.160 smart) # TODO - make like 5.56 level smartgun ammo for these

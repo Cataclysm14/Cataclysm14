@@ -20,7 +20,7 @@
   entityIcon: ClothingOuterHardsuitBasic
   discipline: Industrial
   tier: 1
-  cost: 25000
+  cost: 15000
   recipeUnlocks:
   - ClothingOuterHardsuitBasic
   technologyPrerequisites:
@@ -33,7 +33,7 @@
   entityIcon: ClothingOuterHardsuitEngineering
   discipline: Industrial
   tier: 1
-  cost: 25000
+  cost: 20000
   recipeUnlocks:
   - ClothingOuterHardsuitAtmos
   - ClothingOuterHardsuitEngineering
@@ -54,7 +54,7 @@
   entityIcon: ClothingOuterHardsuitEngineeringWhite
   discipline: Industrial
   tier: 2
-  cost: 50000
+  cost: 25000
   recipeUnlocks:
   - ClothingOuterHardsuitCap
   - ClothingOuterHardsuitEngineeringWhite
@@ -72,7 +72,7 @@
   entityIcon: ClothingOuterHardsuitMaximPrototype
   discipline: Industrial
   tier: 3
-  cost: 65000
+  cost: 30000
   recipeUnlocks:
     - ClothingOuterHardsuitMaximPrototype
 #    - ClothingHeadHelmetAncient

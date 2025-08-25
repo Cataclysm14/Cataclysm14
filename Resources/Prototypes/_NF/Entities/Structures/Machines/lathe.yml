@@ -4,6 +4,7 @@
 # SPDX-FileCopyrightText: 2024 FoxxoTrystan
 # SPDX-FileCopyrightText: 2024 Salvantrix
 # SPDX-FileCopyrightText: 2024 chrome-cirrus
+# SPDX-FileCopyrightText: 2025 Daniel Lenrd
 # SPDX-FileCopyrightText: 2025 FireFoxPhoenix
 # SPDX-FileCopyrightText: 2025 GreaseMonk
 # SPDX-FileCopyrightText: 2025 LukeZurg22
@@ -97,8 +98,13 @@
     runningState: icon
     staticPacks:
     - NFEngineeringTechfabDeprecatedStatic
+    # Mono
+    - GasMiningStatic
+    - AutomationStatic
+    # Mono End
     dynamicPacks:
     - NFEngineeringTechfabDeprecated
+    - RCD # Mono
   - type: PirateBountyItem # Mono
     id: Techfab
 

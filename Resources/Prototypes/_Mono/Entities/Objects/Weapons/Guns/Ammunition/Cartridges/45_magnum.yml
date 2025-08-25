@@ -133,3 +133,80 @@
       - state: tip
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#43c4f7"
+
+# Mono AP syst
+#anti-flesh:
+- type: entity
+  id: Cartridge45_magnumHP
+  name: cartridge (.45 magnum hollow-point)
+  parent: BaseCartridge45_magnum
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet45_magnumHP
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#90EE90"
+
+- type: entity
+  id: Cartridge45_magnumRIP
+  name: cartridge (.45 magnum RIP)
+  parent: BaseCartridge45_magnum
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet45_magnumRIP
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#C04000"
+
+#armor-piercing:
+- type: entity
+  id: Cartridge45_magnumSteelAP
+  name: cartridge (.45 magnum armor-piercing steel core)
+  parent: BaseCartridge45_magnum
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet45_magnumSteelAP
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+
+- type: entity
+  id: Cartridge45_magnumPlasteelAP
+  name: cartridge (.45 magnum armor-piercing plastitanium core)
+  parent: BaseCartridge45_magnum
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet45_magnumPlasteelAP
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#888888"
+
+- type: entity
+  id: Cartridge45_magnumSynthAP
+  name: cartridge (.45 magnum armor-piercing synthalloy core)
+  parent: BaseCartridge45_magnum
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet45_magnumSynthAP
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#111111"

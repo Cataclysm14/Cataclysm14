@@ -1,4 +1,5 @@
 # SPDX-FileCopyrightText: 2025 Daniel Lenrd
+# SPDX-FileCopyrightText: 2025 Onezero0
 # SPDX-FileCopyrightText: 2025 starch
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
@@ -16,7 +17,7 @@
 
 - type: loadout #MK32 Universal Ammo
   id: Contractor9x19mmPistolAmmoLoadout
-  price: 5000
+  price: 500
   storage:
     back:
     - BoxMagazine9x19mmFMJ
@@ -32,7 +33,7 @@
 
 - type: loadout #Double Barrel Beanbag
   id: ContractorDoubleBarreledLoadout
-  price: 10000
+  price: 2500
   storage:
     back:
     - WeaponShotgunDoubleBarreledRubber
@@ -67,16 +68,16 @@
 
 - type: loadout #Kammerer
   id: MercenaryKammererLoadout
-  price: 15000
+  price: 5000
   storage:
     back:
     - WeaponShotgunKammererPMC
 
 - type: loadout #Enforcer
   id: MercenaryEnforcerLoadout
-  price: 27000
+  price: 12000
   storage:
-    back:
+   back:
     - WeaponShotgunEnforcerPMC
 
 - type: loadout #Buckshot Shells
@@ -104,79 +105,93 @@
 
 - type: loadout #Drozd Ammo
   id: MercenaryAcpSubAmmoLoadout
-  price: 2000
+  price: 1000
   storage:
     back:
     - BoxMagazine45_ACPSubMachineGunFMJ
 
 - type: loadout #AK220
   id: MercenaryAk220Loadout
-  price: 14000
+  price: 5000
   storage:
     back:
     - WeaponSubMachineGunAK220
 
 - type: loadout #WT550
   id: MercenaryWt550Loadout
-  price: 32000
+  price: 12000
   storage:
     back:
     - WeaponSubMachineGunWt550PMC
 
 - type: loadout #WT550 Ammo
   id: Mercenary4.6x30mmTopAmmoLoadout
-  price: 2000
+  price: 1000
   storage:
     back:
     - BoxMagazine4.6x30mmSubMachineGunTopMountedFMJ
 
 - type: loadout #C20r
   id: MercenaryC20rLoadout
-  price: 44000
+  price: 12000
   storage:
     back:
     - WeaponSubMachineGunC20rPMC
 
 - type: loadout #C20r Ammo
   id: Mercenary9x19SmgAmmoLoadout
-  price: 2000
+  price: 1000
   storage:
     back:
     - BoxMagazine9x19mmSubMachineGunFMJ
+
+- type: loadout # Knallstock
+  id: MercenaryKnallstockLoadout
+  price: 5000
+  storage:
+    back:
+    - WeaponSubMachineGunKnallstock
+
+- type: loadout # Knallstock
+  id: MercenaryNovaliteLoadout
+  price: 5000
+  storage:
+    back:
+    - WeaponRifleNovaliteC1
 
 # Energy
 
 - type: loadout #Energy Gun
   id: MercenaryEnergyGunLoadout
-  price: 18000
+  price: 5000
   storage:
     back:
     - WeaponEnergyGunPMC
 
 - type: loadout #Laser Carbine
   id: MercenaryLaserCarbineLoadout
-  price: 13000
+  price: 12000
   storage:
     back:
     - WeaponLaserCarbinePMC
 
 - type: loadout #Laser Cannon
   id: MercenaryLaserCannonLoadout
-  price: 21000
+  price: 12000
   storage:
     back:
     - WeaponLaserCannonPMC
 
 - type: loadout #Disabler SMG
   id: MercenaryDisablerSMGLoadout
-  price: 10000
+  price: 2500
   storage:
     back:
     - WeaponDisablerSMGPMC
 
 - type: loadout #Energy Recharger Flatpack
   id: MercenaryRechargerLoadout
-  price: 2000
+  price: 500
   storage:
     back:
     - WeaponCapacitorRechargerFlatpack
@@ -199,21 +214,21 @@
 
 - type: loadout #MK58 Ammo
   id: MercenaryAcpPistolAmmoLoadout
-  price: 2000
+  price: 500
   storage:
     back:
     - BoxMagazine45_ACPFMJ
 
 - type: loadout #Viper
   id: MercenaryViperLoadout
-  price: 5000
+  price: 2500
   storage:
     back:
     - WeaponPistolViperPMC
 
 - type: loadout #Sawn-off
   id: MercenarySawedOffLoadout
-  price: 12000
+  price: 2500
   storage:
     back:
     - WeaponShotgunSawn
@@ -270,7 +285,7 @@
 
 - type: loadout #Drozd Rubber Ammo
   id: SecurityGuardAcpSmgAmmoRubberLoadout
-  price: 2000
+  price: 0
   storage:
     back:
     - BoxMagazine45_ACPSubMachineGunFMJ
@@ -327,7 +342,7 @@
 
 - type: loadout #Vulcan
   id: FactionVulcanLoadout
-  price: 3000
+  price: 0
   storage:
     back:
     - WeaponRifleVulcan
@@ -341,7 +356,7 @@
 
 - type: loadout #Bandit
   id: FactionBanditLoadout
-  price: 3000
+  price: 0
   storage:
     back:
     - WeaponRifleMR3C
@@ -355,7 +370,7 @@
 
 - type: loadout #AKM
   id: FactionAkmLoadout
-  price: 5000
+  price: 0
   storage:
     back:
     - WeaponRifleAk
@@ -376,14 +391,14 @@
 
 - type: loadout #Mosin
   id: FactionMosinLoadout
-  price: 5000
+  price: 0
   storage:
     back:
     - WeaponSniperMosin
 
 - type: loadout #SVS42
   id: FactionSvsLoadout
-  price: 5000
+  price: 0
   storage:
     back:
     - WeaponRifleSVS
@@ -413,7 +428,7 @@
 
 - type: loadout #Drozd EMP Ammo
   id: FactionAcpSmgEmpAmmoLoadout
-  price: 100
+  price: 0
   storage:
     back:
     - BoxMagazine45_ACPSubMachineGunEmp
@@ -445,6 +460,13 @@
   storage:
     back:
     - BoxMagazine9x19mmSubMachineGunFMJ
+
+- type: loadout #AK220
+  id: FactionAk220Loadout
+  price: 0
+  storage:
+    back:
+    - WeaponSubMachineGunAK220
 
 # LMGs
 

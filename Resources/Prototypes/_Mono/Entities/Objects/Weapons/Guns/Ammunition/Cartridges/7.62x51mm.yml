@@ -118,3 +118,80 @@
       - state: tip
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#43c4f7"
+
+# Mono AP syst
+#anti-flesh:
+- type: entity
+  id: Cartridge7.62x51mmHP
+  name: cartridge (7.62x51mm hollow-point)
+  parent: BaseCartridge7.62x51mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7.62x51mmHP
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#90EE90"
+
+- type: entity
+  id: Cartridge7.62x51mmRIP
+  name: cartridge (7.62x51mm RIP)
+  parent: BaseCartridge7.62x51mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7.62x51mmRIP
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#C04000"
+
+#armor-piercing:
+- type: entity
+  id: Cartridge7.62x51mmSteelAP
+  name: cartridge (7.62x51mm armor-piercing steel core)
+  parent: BaseCartridge7.62x51mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7.62x51mmSteelAP
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+
+- type: entity
+  id: Cartridge7.62x51mmPlasteelAP
+  name: cartridge (7.62x51mm armor-piercing plastitanium core)
+  parent: BaseCartridge7.62x51mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7.62x51mmPlasteelAP
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#888888"
+
+- type: entity
+  id: Cartridge7.62x51mmSynthAP
+  name: cartridge (7.62x51mm armor-piercing synthalloy core)
+  parent: BaseCartridge7.62x51mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7.62x51mmSynthAP
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#111111"

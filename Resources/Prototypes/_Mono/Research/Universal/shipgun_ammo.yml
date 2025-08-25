@@ -1,4 +1,5 @@
 # SPDX-FileCopyrightText: 2025 Onezero0
+# SPDX-FileCopyrightText: 2025 core-mene
 # SPDX-FileCopyrightText: 2025 significant harassment
 # SPDX-FileCopyrightText: 2025 starch
 #
@@ -14,8 +15,8 @@
   recipeUnlocks:
   - CharonSlugUniversal
   technologyPrerequisites:
-  - UniversalBallisticSci1
-  position: 50, 50
+  - UniversalPlastitaniumCore
+  position: 7, 7
 
 - type: technology
   id: UniversalTorpedoAmmo
@@ -23,11 +24,13 @@
   entityIcon: Asm220TorpedoHE
   discipline: FactionUniversal
   tier: 2
-  cost: 30000
+  cost: 20000
   recipeUnlocks:
   - ASM220TorpedoHEUniversal
   - ASM220TorpedoECMUniversal
-  position: 51, 51
+  technologyPrerequisites:
+  - UniversalPlastitaniumCore
+  position: 8, 7
 
 - type: technology
   id: UniversalTorpedoAmmoAdvanced
@@ -40,8 +43,8 @@
   - ASM220TorpedoLOSATUniversal
   technologyPrerequisites:
   - UniversalTorpedoAmmo
-  - UniversalBallisticSci2
-  position: 52, 52
+  - UniversalSynthalloyCore
+  position: 8, 12
 
 - type: technology
   id: Universal150mmAmmo
@@ -53,7 +56,9 @@
   recipeUnlocks:
   - 150mmApShellUniversal
   - 150mmEmpShellUniversal
-  position: 53, 53
+  technologyPrerequisites:
+  - UniversalSteelCore
+  position: 8, 2
 
 - type: technology
   id: UniversalLightFighterOrdinance
@@ -66,8 +71,8 @@
   - GPOL50BombUniversal
   - ZenithRocketUniversal
   technologyPrerequisites:
-  - UniversalBallisticSci1
-  position: 54, 54
+  - UniversalSteelCore
+  position: 9, 2
 
 - type: technology
   id: UniversalAdvancedLightFighterOrdinance
@@ -80,5 +85,5 @@
   - QuasarAcceleratorUniversal
   technologyPrerequisites:
   - UniversalLightFighterOrdinance
-  - UniversalBallisticSci2
-  position: 55, 55
+  - UniversalPlastitaniumCore
+  position: 9, 4

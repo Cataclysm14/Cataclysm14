@@ -9,7 +9,7 @@
   entityIcon: MechRipleyBattery
   discipline: MechaEngineering
   tier: 1
-  cost: 7500
+  cost: 10000
   recipeUnlocks:
   - RipleyHarness
   - RipleyLArm
@@ -29,7 +29,7 @@
   entityIcon: MechRipley2Battery
   discipline: MechaEngineering
   tier: 1
-  cost: 8000
+  cost: 12000
   recipeUnlocks:
   - RipleyMKIIHarness
   - RipleyUpgradeKit
@@ -43,7 +43,7 @@
   entityIcon: MechClarkeBattery
   discipline: MechaEngineering
   tier: 2
-  cost: 10000
+  cost: 12000
   recipeUnlocks:
   - ClarkeHarness
   - ClarkeHead
@@ -74,7 +74,7 @@
   entityIcon: MechGygaxBattery
   discipline: MechaEngineering
   tier: 1
-  cost: 12000
+  cost: 25000
   recipeUnlocks:
   - GygaxHarness
   - GygaxArmor
@@ -112,7 +112,7 @@
   entityIcon: MechDurandBattery
   discipline: MechaEngineering
   tier: 1
-  cost: 13000
+  cost: 25000
   recipeUnlocks:
   - DurandHarness
   - DurandArmor
@@ -202,7 +202,7 @@
   entityIcon: AFFlail
   discipline: MechaEngineering
   tier: 3
-  cost: 70000
+  cost: 50000
   recipeUnlocks:
   - FlailHarness
   - FlailHead

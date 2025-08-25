@@ -1,3 +1,8 @@
+# SPDX-FileCopyrightText: 2025 Ark
+# SPDX-FileCopyrightText: 2025 Coenx-flex
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 # Basic Autodoc and AutodocSyndie entity prototypes
 # These are placeholder definitions to resolve the reference errors
 
@@ -32,3 +37,5 @@
       map: [machineLayer]
     - state: idle_unlit
       map: [terminalLayer]
+  - type: Machine
+    board: AutodocSyndieCircuitboard

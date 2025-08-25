@@ -367,12 +367,10 @@
   id: AnalysisComputerCircuitboard
   result: AnalysisComputerCircuitboard
 
-# Frontier: no tech disk recipes
-# - type: latheRecipe
-#   parent: BaseGoldCircuitboardRecipe
-#   id: TechDiskComputerCircuitboard
-#   result: TechDiskComputerCircuitboard
-# End Frontier
+- type: latheRecipe
+  parent: BaseGoldCircuitboardRecipe
+  id: TechDiskComputerCircuitboard
+  result: TechDiskComputerCircuitboard
 
 - type: latheRecipe
   parent: BaseGoldCircuitboardRecipe

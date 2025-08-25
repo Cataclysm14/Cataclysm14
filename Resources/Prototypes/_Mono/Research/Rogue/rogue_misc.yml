@@ -9,7 +9,7 @@
   entityIcon: ShipVoucherProwler
   discipline: RogueShipyard
   tier: 1
-  cost: 50000
+  cost: 100000
   recipeUnlocks:
   - ProwlerVoucherRogue
   technologyPrerequisites:
@@ -23,7 +23,7 @@
   entityIcon: JawsOfLife
   discipline: RogueGear
   tier: 1
-  cost: 15000
+  cost: 10000
   recipeUnlocks:
   - JawsOfLifeRogue
   technologyPrerequisites:
@@ -36,7 +36,7 @@
   entityIcon: Hypospray
   discipline: RogueGear
   tier: 2
-  cost: 25000
+  cost: 10000
   recipeUnlocks:
   - HyposprayRogue
   technologyPrerequisites:
@@ -62,7 +62,7 @@
   entityIcon: AccessBreaker
   discipline: RogueGear
   tier: 3
-  cost: 27500
+  cost: 25000
   recipeUnlocks:
   - AccessBreakerRogue
   technologyPrerequisites:

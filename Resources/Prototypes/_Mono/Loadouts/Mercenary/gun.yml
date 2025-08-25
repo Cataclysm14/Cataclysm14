@@ -1,4 +1,5 @@
 # SPDX-FileCopyrightText: 2025 Daniel Lenrd
+# SPDX-FileCopyrightText: 2025 Onezero0
 # SPDX-FileCopyrightText: 2025 core-mene
 # SPDX-FileCopyrightText: 2025 starch
 #
@@ -10,13 +11,15 @@
   minLimit: 0
   loadouts:
   - MercenaryKammererLoadout
-  - MercenaryEnforcerLoadout
-  - MercenaryWt550Loadout
-  - MercenaryC20rLoadout
+  # - MercenaryEnforcerLoadout
+  # - MercenaryWt550Loadout
+  # - MercenaryC20rLoadout
   - MercenaryDisablerSMGLoadout
-  - MercenaryLaserCarbineLoadout
+  # - MercenaryLaserCarbineLoadout
   - MercenaryEnergyGunLoadout
   - MercenaryAk220Loadout
+  - MercenaryNovaliteLoadout
+  - MercenaryKnallstockLoadout
 
 - type: loadoutGroup
   id: MercenaryPistol
@@ -41,7 +44,7 @@
   - MercenarySlugAmmoLoadout #Slugs
   - Mercenary5.56x45mmAmmoLoadout #Lecter
   - MercenaryAcpSubAmmoLoadout #Drozd
-  - Mercenary4.6x30mmTopAmmoLoadout #WT550
+  # - Mercenary4.6x30mmTopAmmoLoadout #WT550
   - Mercenary9x19SmgAmmoLoadout #C20r
   - MercenaryRechargerLoadout #Energy
   fallbacks:

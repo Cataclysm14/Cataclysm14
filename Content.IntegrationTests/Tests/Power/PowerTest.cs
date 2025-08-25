@@ -1,3 +1,22 @@
+// SPDX-FileCopyrightText: 2021 20kdc
+// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández
+// SPDX-FileCopyrightText: 2021 Julian Giebel
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto
+// SPDX-FileCopyrightText: 2022 mirrorcult
+// SPDX-FileCopyrightText: 2022 wrexbe
+// SPDX-FileCopyrightText: 2023 Alex Nordlund
+// SPDX-FileCopyrightText: 2023 Leon Friedrich
+// SPDX-FileCopyrightText: 2023 Visne
+// SPDX-FileCopyrightText: 2023 faint
+// SPDX-FileCopyrightText: 2024 Jake Huxell
+// SPDX-FileCopyrightText: 2024 Tayrtahn
+// SPDX-FileCopyrightText: 2024 TemporalOroboros
+// SPDX-FileCopyrightText: 2024 metalgearsloth
+// SPDX-FileCopyrightText: 2025 Redrover1760
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 #nullable enable
 using Content.Server.NodeContainer;
 using Content.Server.NodeContainer.EntitySystems;
@@ -1256,7 +1275,7 @@ namespace Content.IntegrationTests.Tests.Power
                 batterySys.SetCharge(apcEnt, 0, apcBattery);
             });
 
-            server.RunTicks(5); //let run a few ticks for PowerNets to reevaluate and start charging apc
+            server.RunTicks(10); //let run a few ticks for PowerNets to reevaluate and start charging apc - mono increase
 
             await server.WaitAssertion(() =>
             {
@@ -1320,7 +1339,7 @@ namespace Content.IntegrationTests.Tests.Power
                 receiver.Load = 1; //arbitrary small amount of power
             });
 
-            server.RunTicks(1); //let run a tick for ApcNet to process power
+            server.RunTicks(10); //let run a tick for ApcNet to process power - mono increase
 
             await server.WaitAssertion(() =>
             {

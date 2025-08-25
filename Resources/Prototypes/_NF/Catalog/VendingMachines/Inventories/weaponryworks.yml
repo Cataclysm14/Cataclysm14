@@ -83,7 +83,7 @@
   startingInventory:
 # SMGs
     # WeaponSubMachineGunC20rPMC: 4294967295
-    WeaponSubMachineGunWt550PMC: 4294967295
+    # WeaponSubMachineGunWt550PMC: 4294967295
     # WeaponRifleLecterPMC: 4294967295
     # WeaponSubMachineGunDrozdPMC: 4294967295
     WeaponSubMachineGunKnallstock: 4294967295
@@ -93,7 +93,7 @@
     WeaponRifleNovaliteC1: 4294967295
     # WeaponSubMachineGunC20rPMC: 4294967295
     # WeaponRifleLecterPMC: 4294967295
-    WeaponRifleVulcanFCMC: 4294967295
+    # WeaponRifleVulcanFCMC: 4294967295
     # WeaponSubMachineGunDrozdPMC: 4294967295
     WeaponSubMachineGunAK220: 4294967295
     WeaponRiflePrometheus: 4294967295
@@ -104,7 +104,7 @@
 # Energy
     # WeaponLaserCannonPMC: 4294967295
     WeaponEnergyGunPMC: 4294967295
-    # WeaponLaserCarbinePMC: 4294967295
+    WeaponLaserCarbinePMC: 4294967295
     WeaponDisablerSMGPMC: 4294967295
 # Sidearms
     WeaponShotgunSawn: 4294967295
@@ -113,7 +113,7 @@
     Machete: 4294967295
     KukriKnife: 4294967295
     CombatKnife: 4294967295
-    # SurvivalKnife: 4294967295
+    SurvivalKnife: 4294967295
 # Magazines
     Magazine9x19mmPistolFMJ: 4294967295 # 9x19mm Pistol
     Magazine45_ACPPistolFMJ: 4294967295 # .45 ACP Pistol
