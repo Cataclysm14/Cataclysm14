@@ -19,7 +19,7 @@
 - type: latheRecipe
   id: SmeltScrap
   result: SpawnRandomRefinedScrap
-  parent: BaseMaterialsNoDiscountRecipe
+#  parent: BaseMaterialsNoDiscountRecipe #Mono
   completetime: 0.1
   icon:
     sprite: _NF/Objects/Materials/ore.rsi
