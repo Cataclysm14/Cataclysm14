@@ -103,6 +103,8 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 1000 # 10 sheets
+  - type: StaticPrice
+    price: 10
 
 # Mono End
 
