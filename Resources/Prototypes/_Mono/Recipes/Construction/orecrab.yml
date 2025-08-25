@@ -36,7 +36,7 @@
   targetNode: uranium
   category: construction-category-misc
   objectType: Item
-  description: An uranium ore crab, if you're feeling lonely.
+  description: A uranium ore crab, if you're feeling lonely.
   icon:
     sprite: Mobs/Elemental/orecrab.rsi
     state: uranium_crab
