@@ -11302,3 +11302,10 @@ Entries:
   id: 1256
   time: '2025-08-26T00:02:02.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2051
+- author: HungryCuban
+  changes:
+    - type: Add
+      message: Added ushankas for USSP in loadouts
+  id: 1257
+  time: '2025-08-26T01:10:01.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2042
