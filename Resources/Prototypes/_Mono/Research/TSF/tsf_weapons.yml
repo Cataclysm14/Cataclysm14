@@ -17,8 +17,6 @@
   - WeaponRifleVulcanTSF
   - WeaponSubMachineGunDrozdTSF
   - WeaponRifleMR3CTSF
-  - Magazine8x65mmEmpty
-  - AmmoBox8x65mmSKR
   technologyPrerequisites:
   - UniversalMaterialResearchT1
   position: 12, 2
