@@ -29,7 +29,7 @@
   gridPath: /Maps/_Mono/POI/miningpost.yml
   minPlayers: 0
   stations:
-    MiningOutpost:
+    MiningPOIDelta:
       stationProto: RecordsFrontierOutpostCargo
       components:
         - type: StationNameSetup
@@ -55,7 +55,7 @@
   gridPath: /Maps/_Mono/POI/miningpost.yml
   minPlayers: 0
   stations:
-    MiningOutpost:
+    MiningPOIGamma:
       stationProto: RecordsFrontierOutpostCargo
       components:
         - type: StationNameSetup
