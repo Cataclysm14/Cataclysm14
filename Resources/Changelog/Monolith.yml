@@ -11382,3 +11382,28 @@ Entries:
   id: 1264
   time: '2025-08-26T19:22:32.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2069
+- author: core-mene
+  changes:
+    - type: Add
+      message: >-
+        mercenary R&D server available at exped lodge flatpackvend, as well as
+        console
+    - type: Tweak
+      message: reduced mats price of merc weapons
+    - type: Add
+      message: added the vector, firestarter and WT550 to the merc tech
+    - type: Tweak
+      message: steel AP and hollow-point are now roundstart ammo
+    - type: Add
+      message: bluespace drive at exped flatpackvend
+    - type: Add
+      message: adds the HWM Firestarter, 45 ACP heavy SMG using old drozd sprite
+    - type: Tweak
+      message: kammerer made semi-automatic again
+    - type: Tweak
+      message: >-
+        diminished the researcch cost and requirements of a lot of techs, no
+        more pain
+  id: 1265
+  time: '2025-08-26T19:49:15.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2063
