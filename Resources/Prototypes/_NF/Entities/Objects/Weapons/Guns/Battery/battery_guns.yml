@@ -145,6 +145,8 @@
       - state: inhand-right
       - state: inhand-right-unshaded
         shader: unshaded
+  - type: StaticPrice # Mono
+    price: 150
 
 - type: entity
   id: NFWeaponHoloflareGun
