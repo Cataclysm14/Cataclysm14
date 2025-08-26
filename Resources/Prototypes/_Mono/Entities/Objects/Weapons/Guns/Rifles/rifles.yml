@@ -332,7 +332,7 @@
     zeroVisible: true
   - type: Appearance
   - type: StaticPrice # Mono
-    price: 1200
+    price: 1500
 
 - type: entity
   name: SKR-WS MLA-34 smartgun (.160 smart) # TODO - make like 5.56 level smartgun ammo for these
