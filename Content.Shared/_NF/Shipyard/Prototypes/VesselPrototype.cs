@@ -115,13 +115,13 @@ public sealed class VesselPrototype : IPrototype, IInheritingPrototype
     /// <summary>
     ///     The price markup of the vessel testing
     /// </summary>
-    [DataField]
+    [DataField("minPriceMarkup")]
     public float MinPriceMarkup = 1f; // Mono change: 1.05 > 1
 
     /// <summary>
     ///     The price markup of the vessel testing for non capitals- Mono
     /// </summary>
-    [DataField]
+    [DataField("maxPriceMarkup")]
     public float MaxPriceMarkup = 2.5f; // Mono
 
     [DataField]
