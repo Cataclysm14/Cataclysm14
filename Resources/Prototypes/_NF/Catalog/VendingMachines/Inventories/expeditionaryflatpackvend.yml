@@ -22,3 +22,6 @@
     ComputerSalvageExpeditionFlatpack: 4294967295 # Infinite - Mono
     # LaserDrillFlatpack: 4294967295 # Infinite - Mono
     ComputerIFFFlatpack: 1
+    ResearchAndDevelopmentServerMercFlatpack: 4294967295 # Mono: infinite
+    ComputerResearchAndDevelopmentFlatpack: 4294967295 # Mono: infinite
+    FTLDriveFlatpack: 4294967295 # Infinite

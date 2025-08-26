@@ -26,7 +26,7 @@
     layers:
     - state: mini-rocket
   - type: Ammo
-    muzzleFlash: null
+    muzzleFlash: MuzzleFlashEffectSmall
   - type: ShipWeaponProjectile
   - type: RadarBlip
     radarColor: "#FCBA03"
@@ -75,7 +75,7 @@
     layers:
     - state: frag
   - type: Ammo
-    muzzleFlash: null
+    muzzleFlash: MuzzleFlashEffectSmall
   - type: ShipWeaponProjectile
   - type: RadarBlip
     radarColor: "#FCBA03"
@@ -173,7 +173,7 @@
     layers:
     - state: hybrid-missile
   - type: Ammo
-    muzzleFlash: null
+    muzzleFlash: MuzzleFlashEffectSmall
   - type: ShipWeaponProjectile
   - type: RadarBlip
     radarColor: "#FB00FF"

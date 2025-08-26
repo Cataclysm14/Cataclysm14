@@ -150,9 +150,11 @@
 # SPDX-FileCopyrightText: 2025 Aviu00
 # SPDX-FileCopyrightText: 2025 BeeRobynn
 # SPDX-FileCopyrightText: 2025 ErhardSteinhauer
+# SPDX-FileCopyrightText: 2025 Hyenh
 # SPDX-FileCopyrightText: 2025 Ilya246
 # SPDX-FileCopyrightText: 2025 K-Dynamic
 # SPDX-FileCopyrightText: 2025 Myzumi
+# SPDX-FileCopyrightText: 2025 Onezero0
 # SPDX-FileCopyrightText: 2025 Redrover1760
 # SPDX-FileCopyrightText: 2025 ScyronX
 # SPDX-FileCopyrightText: 2025 Southbridge
@@ -384,6 +386,7 @@
     staticPacks:
     - ChemistryStatic
     - SurgeryStatic
+    - PartsStatic
     dynamicPacks:
     - AdvancedTools
     - ScienceEquipment
@@ -636,7 +639,6 @@
     - SecurityWeaponsStatic
     dynamicPacks:
     - SecurityEquipment
-    - SecurityBoards
     - SecurityExplosives
     - AdvancedAmmoRecipePack
     - SecurityWeapons
@@ -650,14 +652,11 @@
     - MonoTSFWeaponsDynamicMelee
     - MonoTSFWeaponsDynamicRanged
     - MonoTSFMiscDynamic
-    - MonoTSFAmmo
     - MonoRogueWeaponsDynamicMelee
     - MonoRogueWeaponsDynamicRanged
     - MonoRogueMiscDynamic
-    - MonoRogueAmmo
     - MonoUSSPMiscDynamic
     - MonoUSSPWeaponsDynamicRanged
-    - MonoUSSPAmmo
     - UniversalShellAmmo
     # Mono end
   - type: MaterialStorage
@@ -697,6 +696,7 @@
     - CivilianAmmoRecipePack
     dynamicPacks:
     - AdvancedAmmoRecipePack
+    - AllTheAmmo # Mono
   - type: MaterialStorage
     whitelist:
       tags:
@@ -784,6 +784,7 @@
     - ClothingSecurity
     - ClothingService
     - WinterCoats
+    - Ponchos # Monolith
     - Ties
     - Scarves
     - Carpets
