@@ -88,7 +88,7 @@
         sound:
           collection: MetalBreak
   - type: StaticPrice
-    price: 15 # Frontier: 30<15
+    price: 7 # Mono: 15>5
   - type: Climbable # Frontier - Stop AI Abuse
   - type: RCDDeconstructable # Frontier
     cost: 4 # Frontier
@@ -136,7 +136,7 @@
               sound:
                 collection: MetalBreak
     - type: StaticPrice
-      price: 70 # Frontier: 130<70
+      price: 35 # Mono: 130<35
 
 - type: entity
   id: ReinforcedGirder
@@ -156,7 +156,7 @@
       graph: ClockworkGirder
       node: clockGirder
     - type: StaticPrice
-      price: 75
+      price: 20 # Mono: 75>20
     - type: Destructible
       thresholds:
         - trigger:
