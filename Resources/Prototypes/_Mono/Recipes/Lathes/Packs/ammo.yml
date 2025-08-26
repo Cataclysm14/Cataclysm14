@@ -937,31 +937,6 @@
   - AmmoBox45_ACPIncendiary
   - AmmoBox23x75mmFlashbang
 
-#Steel AP recipes
-
-  - Magazine7.62x51mmSteelAP
-  - AmmoBox7.62x51mmSteelAP
-  - Magazine7.62x54mmRSteelAP
-  - AmmoBox7.62x54mmRSteelAP
-  - Magazine5.56x45mmSteelAP
-  - AmmoBox5.56x45mmSteelAP
-  - Magazine7.62x39mmSteelAP
-  - AmmoBox7.62x39mmSteelAP
-  - Magazine45_magnumPistolSteelAP
-  - AmmoBox45_magnumSteelAP
-  - Magazine4.6x30mmPistolSteelAP
-  - Magazine4.6x30mmSubMachineGunSteelAP
-  - AmmoBox4.6x30mmSteelAP
-  - Magazine5.7x28mmPistolSteelAP
-  - Magazine5.7x28mmSubMachineGunSteelAP
-  - AmmoBox5.7x28mmSteelAP
-  - Magazine9x19mmPistolSteelAP
-  - Magazine9x19mmSubMachineGunSteelAP
-  - AmmoBox9x19mmSteelAP
-  - Magazine45_ACPPistolSteelAP
-  - Magazine45_ACPSubMachineGunSteelAP
-  - AmmoBox45_ACPSteelAP
-
 #Plasteel AP recipes
 
   - Magazine7.62x51mmPlasteelAP

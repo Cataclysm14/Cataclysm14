@@ -84,9 +84,6 @@
   - type: TechnologyDisk
     recipes:
     - WeaponRifleLecterTSF
-    - Magazine68x52mmFMJ
-    - Magazine68x52mmEmpty
-    - AmmoBox68x52mmFMJ
 
 - type: entity
   parent: TechDiskBase

@@ -96,7 +96,6 @@
   - WeaponRifleNovaliteC1
   - WeaponRifleGestio
   - WeaponSubMachineGunKnallstock # Mono
-  - WeaponSubMachineGunFirestarter # Mono
   - BaseBallBatNF
   - CrossbowModern
   - WeaponPistolPollock
@@ -176,6 +175,8 @@
   - WeaponDisablerSMG
   - WeaponLaserCannon
   - WeaponXrayCannon
+  - WeaponSubMachineGunFirestarter # Mono
+  - WeaponSubMachineGunWt550 # Mono
 ## Ammo boxes
   #Mono start
   - WeaponLMGRatel
