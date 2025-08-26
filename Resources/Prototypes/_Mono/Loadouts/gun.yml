@@ -170,7 +170,7 @@
 
 - type: loadout #Laser Carbine
   id: MercenaryLaserCarbineLoadout
-  price: 12000
+  price: 5000
   storage:
     back:
     - WeaponLaserCarbine

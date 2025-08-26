@@ -334,7 +334,7 @@
   description: A simple civilian grade laser carbine, the workhorse of many private security organizations. # Frontier: description
   components:
   - type: StaticPrice
-    price: 420
+    price: 500
   - type: HitscanBatteryAmmoProvider
     proto: RedLaser
     fireCost: 62.5
