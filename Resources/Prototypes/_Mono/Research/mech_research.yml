@@ -101,6 +101,7 @@
   cost: 12000
   recipeUnlocks:
   - WeaponMechCombatMissileRack8
+  - WeaponMechCombatFlashbangLauncher
   technologyPrerequisites:
   - ExplosiveTechnology
   - Gygax

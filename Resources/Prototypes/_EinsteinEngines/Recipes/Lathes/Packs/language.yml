@@ -29,10 +29,10 @@
   - BubblishTranslatorImplanter
   - NekomimeticTranslatorImplanter
   - DraconicTranslatorImplanter
-  - SolCommonTranslatorImplanter
+#  - SolCommonTranslatorImplanter
   - RootSpeakTranslatorImplanter
   - MofficTranslatorImplanter
   - ValyrianStandardTranslatorImplanter
   - ChittinTranslatorImplanter
-  - SiikMaasTranslatorImplanter
-  - MarishTranslatorImplanter
+#  - SiikMaasTranslatorImplanter
+#  - MarishTranslatorImplanter
