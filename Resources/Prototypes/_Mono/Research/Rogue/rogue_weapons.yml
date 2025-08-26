@@ -99,6 +99,7 @@
   cost: 55000
   recipeUnlocks:
   - WeaponSniperHristovRogue
+  - AmmoBox145x114mm
   - AmmoBox145x114mmBig
   technologyPrerequisites:
   - RogueAdvancedGuns
