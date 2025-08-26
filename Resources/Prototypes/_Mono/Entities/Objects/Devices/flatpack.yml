@@ -197,6 +197,10 @@
     entity: OreBox
   - type: StaticPrice
     price: 500
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 100
+      Glass: 30
 
 - type: entity
   parent: BaseNFFlatpack
@@ -208,6 +212,11 @@
     entity: ConstructionBox
   - type: StaticPrice
     price: 500
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 100
+      Glass: 30
+
 
 - type: entity
   parent: BaseNFFlatpack
