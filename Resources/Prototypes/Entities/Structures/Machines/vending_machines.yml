@@ -207,7 +207,7 @@
     - RobotTalk
   # Frontier: vending machine modifications
   - type: MarketModifier
-    mod: 8 # 10->8 Mono
+    mod: 10
   - type: PotentialDeadDrop
     hintText: dead-drop-hint-vendor
   - type: VendingMachine

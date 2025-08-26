@@ -95,7 +95,7 @@
     ejectDelay: 1.9
     initialStockQuality: 1
   - type: MarketModifier
-    mod: 8
+    mod: 10
   - type: Advertise
     pack: BaristaAds
   - type: SpeakOnUIClosed
