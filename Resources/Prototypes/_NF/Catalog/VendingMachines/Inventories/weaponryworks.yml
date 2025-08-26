@@ -104,7 +104,7 @@
 # Energy
     # WeaponLaserCannonPMC: 4294967295
     WeaponEnergyGunPMC: 4294967295
-    WeaponLaserCarbinePMC: 4294967295
+    WeaponLaserCarbine: 4294967295
     WeaponDisablerSMGPMC: 4294967295
 # Sidearms
     WeaponShotgunSawn: 4294967295

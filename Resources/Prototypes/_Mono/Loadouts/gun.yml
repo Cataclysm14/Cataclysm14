@@ -173,7 +173,7 @@
   price: 12000
   storage:
     back:
-    - WeaponLaserCarbinePMC
+    - WeaponLaserCarbine
 
 - type: loadout #Laser Cannon
   id: MercenaryLaserCannonLoadout
