@@ -5,15 +5,15 @@
   - BubblishTranslator
   - NekomimeticTranslator
   - DraconicTranslator
-  - SolCommonTranslator
+  # - SolCommonTranslator
   - RootSpeakTranslator
   - MofficTranslator
   - XenoTranslator
   - AnimalTranslator
   - ValyrianStandardTranslator
   - ChittinTranslator
-  - SiikMaasTranslator
-  - MarishTranslator
+  # - SiikMaasTranslator
+  # - MarishTranslator
 
 - type: latheRecipePack
   id: TranslatorImplanters

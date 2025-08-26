@@ -17,12 +17,6 @@
   - WeaponRifleSVSUSSP
   - WeaponSniperMosinUSSP
   - WeaponSubMachineGunAK220USSP
-  - Magazine7.62x54mmRFMJ
-  - SpeedLoader7.62x54mmRFMJ
-  - AmmoBox7.62x54mmRFMJ
-  - Magazine9x19mmSubMachineGunFMJ
-  - Magazine9x19mmSubMachineGunEmpty
-  - AmmoBox9x19mmFMJ
   position: 16, 2
 
 - type: technology
@@ -35,11 +29,6 @@
   recipeUnlocks:
   - WeaponRifleAK502USSP
   - WeaponRevolverMatebaUSSP
-  - Magazine7.62x39mmFMJ
-  - SpeedLoader45_magnumFMJ
-  - AmmoBox7.62x39mmFMJ
-  - AmmoBox45_magnumFMJ
-  - Magazine7.62x39mmEmpty
   technologyPrerequisites:
   - UsspBasicGuns
   - UniversalMaterialResearchT2

@@ -57,12 +57,7 @@
   recipeUnlocks:
   - WeaponSubMachineGunC20rRogue
   - WeaponRevolverPythonRogue
-  - SpeedLoader45_magnumFMJ
-  - SpeedLoader45_magnumEmpty
   - AmmoBox45_magnumFMJ
-  - Magazine9x19mmSubMachineGunFMJ
-  - Magazine9x19mmSubMachineGunEmpty
-  - AmmoBox9x19mmFMJ
   technologyPrerequisites:
   - UniversalMaterialResearchT1
   position: 20, 2
