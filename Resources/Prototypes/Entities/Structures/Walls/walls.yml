@@ -590,7 +590,7 @@
   - type: RadiationBlocker
     resistance: 5
   - type: StaticPrice
-    price: 100 # Frontier 250<115
+    price: 110 # Mono
 
 - type: entity
   parent: WallPlastitaniumIndestructible
@@ -665,7 +665,7 @@
   - type: RCDDeconstructable # Frontier
     deconstructable: false # Frontier
   - type: StaticPrice
-    price: 50 # Mono
+    price: 95 # Mono
 
 - type: entity
   id: WallPlastitaniumDiagonalIndestructible
@@ -1121,7 +1121,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: StaticPrice
-    price: 75 # Frontier: 250<150 - makes some shuttles way more expensive otherwise
+    price: 125 # Frontier: 250<150 - makes some shuttles way more expensive otherwise
   - type: RadiationBlocker
     resistance: 5
   - type: Sprite
@@ -1302,7 +1302,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: StaticPrice
-    price: 15 # This shit is decorative anyways
+    price: 95
 
 - type: entity
   parent: WallSolid
