@@ -10,6 +10,7 @@
 - type: entity
   parent: [VendingMachineAmmo, BaseStructureDisableAnchoring]
   id: VendingMachineAmmoPOIMercenary
+  name: PMC liberation station
   suffix: POI, PMC
   components:
   - type: VendingMachine
