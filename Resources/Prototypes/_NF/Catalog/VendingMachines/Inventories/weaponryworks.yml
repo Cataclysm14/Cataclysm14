@@ -107,8 +107,11 @@
     WeaponLaserCarbine: 4294967295
     WeaponDisablerSMGPMC: 4294967295
 # Sidearms
+    WeaponLaserPistolNF: 4294967295
     WeaponShotgunSawn: 4294967295
     WeaponPistolViperPMC: 4294967295
+    WeaponPistolMk58: 4294967295
+    WeaponPistolPollock: 4294967295
     WeaponPistolMk32: 4294967295
     Machete: 4294967295
     KukriKnife: 4294967295
