@@ -135,11 +135,11 @@
     - WeaponRifleVulcanFCMC
 
 - type: loadout # Vulcan-C Ammo
-  id: Mercenary7.52x51mmAmmoLoadout
+  id: Mercenary7.62x51mmAmmoLoadout
   price: 1000
   storage:
     back:
-    - BoxMagazine7.52x51mmFMJ
+    - BoxMagazine7.62x51mmFMJ
 
 # Shotguns
 
