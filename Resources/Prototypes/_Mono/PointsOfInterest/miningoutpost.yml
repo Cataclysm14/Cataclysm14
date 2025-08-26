@@ -26,7 +26,7 @@
 - type: gameMap
   id: MiningPOIDelta
   mapName: 'Mining Outpost Delta'
-  gridPath: /Maps/_Mono/POI/miningpost.yml
+  mapPath: /Maps/_Mono/POI/miningpost.yml
   minPlayers: 0
   stations:
     MiningPOIDelta:
@@ -52,7 +52,7 @@
 - type: gameMap
   id: MiningPOIGamma
   mapName: 'Mining Outpost Gamma'
-  gridPath: /Maps/_Mono/POI/miningpost.yml
+  mapPath: /Maps/_Mono/POI/miningpost.yml
   minPlayers: 0
   stations:
     MiningPOIGamma:
