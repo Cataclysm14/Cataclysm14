@@ -29,6 +29,34 @@
     back:
     - WeaponDisabler
 
+- type: loadout #Svalinn
+  id: ContractorSvalinnLoadout
+  price: 0
+  storage:
+    back:
+    - WeaponLaserSvalinn
+
+- type: loadout #Makeshift Laser
+  id: ContractorLaserLoadout
+  price: 2000
+  storage:
+    back:
+    - WeaponMakeshiftLaser
+
+- type: loadout #Argenti
+  id: ContractorArgentiLoadout
+  price: 2000
+  storage:
+    back:
+    - WeaponRevolverArgenti
+
+- type: loadout #Argenti Ammo
+  id: Contractor5.56x45mmAmmoLoadout
+  price: 200
+  storage:
+    back:
+    - AmmoBox5.56x45mmFMJ
+
 # Shotguns
 
 - type: loadout #Double Barrel Beanbag
