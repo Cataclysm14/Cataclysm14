@@ -209,6 +209,8 @@
     magState: mag
     steps: 5
     zeroVisible: true
+  - type: StaticPrice # Mono
+    price: 200
 
 - type: entity
   name: retro laser blaster
