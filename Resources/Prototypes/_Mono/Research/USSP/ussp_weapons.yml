@@ -57,6 +57,7 @@
   cost: 80000
   recipeUnlocks:
   - WeaponDP29USSP
+  - MagazineDP29
   - WeaponShotgunBigLeadyUSSP
   technologyPrerequisites:
   - UsspMediumGuns
