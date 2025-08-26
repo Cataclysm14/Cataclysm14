@@ -94,7 +94,7 @@
 
 - type: loadout #Lecter / Prometheus Ammo
   id: Mercenary5.56x45mmAmmoLoadout
-  price: 2000
+  price: 1000
   storage:
     back:
     - BoxMagazine5.56x45mmFMJ
@@ -108,7 +108,7 @@
 
 - type: loadout #Gestio Ammo
   id: Mercenary7.62x39mmAmmoLoadout
-  price: 2000
+  price: 1000
   storage:
     back:
     - BoxMagazine7.62x39mmFMJ
@@ -122,7 +122,7 @@
 
 - type: loadout #Novalite Ammo
   id: MercenaryNovaliteAmmoLoadout
-  price: 2000
+  price: 1000
   storage:
     back:
     - BoxMagazineNovaliteC1
