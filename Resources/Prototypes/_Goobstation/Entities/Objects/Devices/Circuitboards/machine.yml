@@ -17,8 +17,9 @@
     state: engineering
   - type: MachineBoard
     prototype: RoboticArm
-    stackRequirements:
+    requirements:
       Manipulator: 4
+    stackRequirements:
       Steel: 6
       Cable: 5
     tagRequirements:
@@ -36,9 +37,10 @@
     state: engineering
   - type: MachineBoard
     prototype: Constructor
-    stackRequirements:
+    requirements:
       Manipulator: 3
       MatterBin: 2
+    stackRequirements:
       Steel: 10
       Cable: 5
     tagRequirements:
@@ -54,9 +56,10 @@
   components:
   - type: MachineBoard
     prototype: StorageBin
-    stackRequirements:
+    requirements:
       MatterBin: 2
       Manipulator: 2
+    stackRequirements:
       Steel: 1
 
 - type: entity
@@ -69,8 +72,9 @@
     state: engineering
   - type: MachineBoard
     prototype: Interactor
-    stackRequirements:
+    requirements:
       Manipulator: 4
+    stackRequirements:
       Plastic: 4
       Cable: 5
     tagRequirements:
