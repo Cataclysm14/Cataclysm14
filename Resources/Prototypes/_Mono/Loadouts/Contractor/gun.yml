@@ -4,8 +4,8 @@
 
 - type: loadoutGroup
   id: ContractorFirearm
-  name: loadout-group-pistol
   minLimit: 1
+  name: loadout-group-weapon-civilian
   loadouts:
   - ContractorMk32Loadout
   - ContractorDisablerLoadout
