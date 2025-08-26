@@ -143,6 +143,8 @@ entities:
     - type: Fixtures
       fixtures: {}
     - type: OccluderTree
+    - type: GridGodMode
+      protectedEntities: []
     - type: SpreaderGrid
     - type: Shuttle
     - type: GridPathfinding
