@@ -186,7 +186,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1200 # Mono - wall buff - 4x
+        damage: 1800 # Mono - wall buff - 6x
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -202,8 +202,8 @@
     cost: 6 # Frontier
     delay: 8 # Frontier
     fx: EffectRCDDeconstruct8 # Frontier
-  - type: StaticPrice # Frontier 75
-    price: 40 # Frontier 75
+  - type: StaticPrice # Frontier 60
+    price: 60 # Frontier 60
 
 - type: entity
   parent: BaseWall
