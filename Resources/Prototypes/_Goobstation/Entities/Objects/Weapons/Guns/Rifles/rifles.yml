@@ -42,21 +42,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine762x39mmFMJ
+        startingItem: Magazine7.62x39mmFMJ
         insertSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/amr_magin.ogg # Mono
         ejectSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagOut/cm82_magout.ogg # Mono
         priority: 2
         whitelist:
           tags:
-            - Magazine762x39mmFMJ
+            - Magazine7.62x39mmFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge762x39mmFMJ
+        startingItem: Cartridge7.62x39mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge762x39mmFMJ
+            - Cartridge7.62x39mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -98,21 +98,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine762x39mmSubsonic
+        startingItem: Magazine7.62x39mmSubsonic
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine762x39mmSubsonic
+            - Magazine7.62x39mmSubsonic
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge762x39mmSubsonic
+        startingItem: Cartridge7.62x39mmSubsonic
         priority: 1
         whitelist:
           tags:
-            - Cartridge762x39mmSubsonic
+            - Cartridge7.62x39mmSubsonic
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -120,7 +120,7 @@
   - type: Appearance
 
 - type: entity
-  name: PA M-90 (7.62x51mm) # mono - 762x51mm
+  name: PA M-90 (7.62x51mm) # mono - 7.62x51mm
   parent: [BaseWeaponRifle, BaseC3PirateContraband] # Mono - pirate contra
   id: WeaponRifleM90
   description: A compact bullpup design. Uses 7.62x51mm rifle ammo. # mono
@@ -147,21 +147,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine762x51mmFMJ
+        startingItem: Magazine7.62x51mmFMJ
         insertSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/cm82_magin.ogg # Mono
         ejectSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagOut/cm82_magout.ogg # Mono
         priority: 2
         whitelist:
           tags:
-          - Magazine762x51mmFMJ
+          - Magazine7.62x51mmFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge762x51mmFMJ # mono - 762x51mm
+        startingItem: Cartridge7.62x51mmFMJ # mono - 7.62x51mm
         priority: 1
         whitelist:
           tags:
-          - Cartridge762x51mmFMJ # mono - 762x51mm
+          - Cartridge7.62x51mmFMJ # mono - 7.62x51mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -176,7 +176,7 @@
   name: CS Burner (12.7x99mm)
   parent: [BaseWeaponRifle, BaseC3PirateContrabandHighValue] # Mono - Changed to HighValue
   id: WeaponRifleBurner
-  description: A high caliber syndicate gun chambered in 127x99mm, capable of firing anti-material and high explosive rounds.
+  description: A high caliber syndicate gun chambered in 12.7x99mm, capable of firing anti-material and high explosive rounds.
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Guns/Rifles/burner.rsi
@@ -196,21 +196,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine127x99mm
+        startingItem: Magazine12.7x99mm
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - Magazine127x99mm
+          - Magazine12.7x99mm
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge127x99mm
+        startingItem: Cartridge12.7x99mm
         priority: 1
         whitelist:
           tags:
-          - Cartridge127x99mm
+          - Cartridge12.7x99mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

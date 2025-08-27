@@ -668,7 +668,7 @@
       - !type:AllSelector
         children:
         - id: WeaponRifleGestio
-        - id: Magazine762x39mmLowCapacityFMJ
+        - id: Magazine7.62x39mmLowCapacityFMJ
       #DoubleBarrel
       - !type:AllSelector
         children:
@@ -689,7 +689,7 @@
       - !type:AllSelector
         children:
         - id: WeaponRevolverArgenti
-        - id: SpeedLoader556x45mmFMJ
+        - id: SpeedLoader5.56x45mmFMJ
       - id: WeaponLaserPistolNF
   #Meh prize
     - !type:GroupSelector
