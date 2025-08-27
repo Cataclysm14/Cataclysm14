@@ -40,8 +40,8 @@
     - 0.0, 0.4
     clippedValue: 0
     remapTo0Through1: true
-    inputMultiplier: 24 # Makes wreck concentration very low noise at scale.
-    outputMultiplier: 0.14 # Mono: fewer wrecks
+    inputMultiplier: 16 # Makes wreck concentration very low noise at scale.
+    outputMultiplier: 0.35 # Frontier: fewer wrecks
 
   - type: noiseChannel
     id: Temperature
