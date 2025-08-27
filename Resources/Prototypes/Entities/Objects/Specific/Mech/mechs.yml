@@ -23,6 +23,7 @@
 # SPDX-FileCopyrightText: 2025 Avalon
 # SPDX-FileCopyrightText: 2025 BeeRobynn
 # SPDX-FileCopyrightText: 2025 Havaren
+# SPDX-FileCopyrightText: 2025 Ilya246
 # SPDX-FileCopyrightText: 2025 Redrover1760
 # SPDX-FileCopyrightText: 2025 ScyronX
 # SPDX-FileCopyrightText: 2025 starch
@@ -184,6 +185,7 @@
         - Book
   - type: StaticPrice
     price: 450
+  - type: DragDropTargetable
   # Goobstation Change End
   - type: RadarConsole
     maxRange: 256
@@ -214,6 +216,7 @@
     pilotWhitelist:
       components:
         - HumanoidAppearance
+        - BorgChassis # Goobstation - Let borgs pilot mechs
   - type: MeleeWeapon
     hidden: true
     attackRate: 1
@@ -266,6 +269,7 @@
     pilotWhitelist:
       components:
       - HumanoidAppearance
+      - BorgChassis # Goobstation - Let borgs pilot mechs
   - type: Tag
     tags:
     - DoorBumpOpener

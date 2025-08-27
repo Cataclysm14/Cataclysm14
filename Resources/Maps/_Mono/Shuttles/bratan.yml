@@ -10,9 +10,12 @@
 # SPDX-FileCopyrightText: 2024 ErhardSteinhauer
 # SPDX-FileCopyrightText: 2024 TsjipTsjip
 # SPDX-FileCopyrightText: 2025 Checkraze
+# SPDX-FileCopyrightText: 2025 Coenx-flex
 # SPDX-FileCopyrightText: 2025 Rubeebeebee
 # SPDX-FileCopyrightText: 2025 Whatstone
 # SPDX-FileCopyrightText: 2025 blackknight954
+# SPDX-FileCopyrightText: 2025 crazy1112345
+# SPDX-FileCopyrightText: 2025 starch
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -10990,8 +10993,6 @@ entities:
       pos: 18.5,5.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 11
     - type: AtmosPipeColor
@@ -11050,8 +11051,6 @@ entities:
       pos: 18.5,4.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 11
     - type: AtmosPipeColor
@@ -12277,7 +12276,7 @@ entities:
         Emergency Generator Terminal
 
 
-        Anchor a generator on this terminal in order to supplement the power grid in case of catastrophic damage to the AME/Solar Panels. 
+        Anchor a generator on this terminal in order to supplement the power grid in case of catastrophic damage to the AME/Solar Panels.
 
 
         (GENERATOR NOT INCLUDED)

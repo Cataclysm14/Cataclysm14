@@ -105,7 +105,7 @@ public sealed partial class RadarBlipsSystem : EntitySystem
             var predictedPos = new EntityCoordinates(coord.EntityId, coord.Position + blip.Vel * (float)(_timing.CurTime - _lastUpdatedTime).TotalSeconds);
 
             // Distance culling for world position blips
-            if (Vector2.DistanceSquared(predictedPos.Position, _radarWorldPosition) > MaxBlipRenderDistance * MaxBlipRenderDistance)
+            if (Vector2.DistanceSquared(_xform.ToMapCoordinates(predictedPos).Position, _radarWorldPosition) > MaxBlipRenderDistance * MaxBlipRenderDistance)
                 continue;
 
             result.Add((predictedPos, blip.Scale, blip.Color, blip.Shape));
