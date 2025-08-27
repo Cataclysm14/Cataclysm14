@@ -2086,7 +2086,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -3.5,11.5
       parent: 1
-- proto: BoxMagazine5.56x45mmFMJ
+- proto: BoxMagazine556x45mmFMJ
   entities:
   - uid: 199
     components:
@@ -2098,7 +2098,7 @@ entities:
     - type: Transform
       pos: -7.5,-2.5
       parent: 1
-- proto: BoxMagazine7.62x39mmFMJ
+- proto: BoxMagazine762x39mmFMJ
   entities:
   - uid: 201
     components:

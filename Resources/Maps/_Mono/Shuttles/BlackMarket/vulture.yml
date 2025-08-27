@@ -13579,7 +13579,7 @@ entities:
     - type: Transform
       pos: 5.5,-13.5
       parent: 1
-- proto: Magazine7.62x39mmFMJ
+- proto: Magazine762x39mmFMJ
   entities:
   - uid: 2098
     components:

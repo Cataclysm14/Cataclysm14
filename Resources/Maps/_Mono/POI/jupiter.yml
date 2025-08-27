@@ -4232,7 +4232,7 @@ entities:
     - type: Transform
       pos: -0.5,30.5
       parent: 1
-- proto: AmmoBox7.62x51mmBigFMJ
+- proto: AmmoBox762x51mmBigFMJ
   entities:
   - uid: 169
     components:
@@ -28093,7 +28093,7 @@ entities:
     - type: Transform
       pos: -12.5,12.5
       parent: 1
-- proto: Magazine7.62x51mmFMJ
+- proto: Magazine762x51mmFMJ
   entities:
   - uid: 4049
     components:

@@ -81110,7 +81110,7 @@ entities:
     - type: Transform
       pos: 26.5,-8.5
       parent: 2
-- proto: Magazine4.6x30mmSubMachineGunTopMountedFMJ
+- proto: Magazine46x30mmSubMachineGunTopMountedFMJ
   entities:
   - uid: 5644
     components:

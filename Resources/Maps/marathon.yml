@@ -105198,7 +105198,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: Magazine4.6x30mmSubMachineGunTopMountedFMJ
+- proto: Magazine46x30mmSubMachineGunTopMountedFMJ
   entities:
   - uid: 1999
     components:
@@ -105210,7 +105210,7 @@ entities:
     - type: Transform
       pos: -22.54349,53.796127
       parent: 30
-- proto: Magazine5.56x45mmFMJ
+- proto: Magazine556x45mmFMJ
   entities:
   - uid: 21283
     components:
