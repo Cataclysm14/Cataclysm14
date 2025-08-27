@@ -340,7 +340,7 @@ namespace Content.Server.Explosion.EntitySystems
 
         private void OnTriggerCollide(EntityUid uid, TriggerOnCollideComponent component, ref StartCollideEvent args)
         {
-            if (args.OurFixtureId == component.FixtureID && (!component.IgnoreOtherNonHard || args.OtherFixture.Hard) && args.OurBody.LinearVelocity.Length() < MinRaycastVelocity)
+            if (args.OurFixtureId == component.FixtureID && (!component.IgnoreOtherNonHard || args.OtherFixture.Hard) && args.OurBody.LinearVelocity.Length() < MinRaycastVelocity) // Mono: Don't proccess triggers normally for raycasted projectiles.
                 Trigger(uid, args.OtherEntity);
         }
 
