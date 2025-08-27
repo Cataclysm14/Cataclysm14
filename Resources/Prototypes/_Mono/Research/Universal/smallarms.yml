@@ -24,6 +24,7 @@
   - AmmoBox7.62x39mmPlasteelAP
   - Magazine45_magnumPistolPlasteelAP
   - AmmoBox45_magnumPlasteelAP
+  - SpeedLoader45_magnumPlasteelAP
   - Magazine4.6x30mmPistolPlasteelAP
   - Magazine4.6x30mmSubMachineGunPlasteelAP
   - AmmoBox4.6x30mmPlasteelAP
@@ -65,6 +66,7 @@
   - AmmoBox7.62x39mmSynthAP
   - Magazine45_magnumPistolSynthAP
   - AmmoBox45_magnumSynthAP
+  - SpeedLoader45_magnumSynthAP
   - Magazine4.6x30mmPistolSynthAP
   - Magazine4.6x30mmSubMachineGunSynthAP
   - AmmoBox4.6x30mmSynthAP
