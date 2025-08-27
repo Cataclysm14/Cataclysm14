@@ -62,7 +62,7 @@ entities:
       name: grid
     - type: Transform
       pos: -1.53125,0.203125
-      parent: invalid
+      
     - type: MapGrid
       chunks:
         0,0:
@@ -11030,8 +11030,7 @@ entities:
       pos: 18.5,5.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
+     
       deviceLists:
       - 11
     - type: AtmosPipeColor
@@ -11090,8 +11089,7 @@ entities:
       pos: 18.5,4.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
+      
       deviceLists:
       - 11
     - type: AtmosPipeColor
