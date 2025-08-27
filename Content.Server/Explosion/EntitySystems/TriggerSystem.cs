@@ -83,6 +83,12 @@ namespace Content.Server.Explosion.EntitySystems
         [Dependency] private readonly ElectrocutionSystem _electrocution = default!;
         [Dependency] private readonly StationSystem _station = default!; // Frontier: medical insurance
 
+        /// <summary>
+        /// Minimum velocity for a projectile to be considered for raycast hit detection.
+        /// Projectiles slower than this will rely on standard StartCollideEvent.
+        /// </summary>
+        private const float MinRaycastVelocity = 75f; // 100->75 Mono
+
         public override void Initialize()
         {
             base.Initialize();
@@ -334,7 +340,7 @@ namespace Content.Server.Explosion.EntitySystems
 
         private void OnTriggerCollide(EntityUid uid, TriggerOnCollideComponent component, ref StartCollideEvent args)
         {
-            if (args.OurFixtureId == component.FixtureID && (!component.IgnoreOtherNonHard || args.OtherFixture.Hard))
+            if (args.OurFixtureId == component.FixtureID && (!component.IgnoreOtherNonHard || args.OtherFixture.Hard) && args.OurBody.LinearVelocity.Length() < MinRaycastVelocity)
                 Trigger(uid, args.OtherEntity);
         }
 
