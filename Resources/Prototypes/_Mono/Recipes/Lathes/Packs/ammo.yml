@@ -718,9 +718,6 @@
 
   - Magazine8x65mmSKR
 
-#DP
-  - MagazineDP29
-
 #Practice recipes
 
   - AmmoBox23x75mmPractice
@@ -1034,4 +1031,6 @@
   - MagazineSmartLMG
   - AmmoBox145x114mm
   - AmmoBox145x114mmBig
+
+#DP
   - MagazineDP29
