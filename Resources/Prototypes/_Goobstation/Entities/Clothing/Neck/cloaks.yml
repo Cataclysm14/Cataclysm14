@@ -7,3 +7,5 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Neck/Cloaks/sanabi.rsi
+  - type: StaticPrice # Monolith
+    vendPrice: 300

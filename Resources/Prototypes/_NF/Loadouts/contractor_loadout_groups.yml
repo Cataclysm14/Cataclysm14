@@ -591,6 +591,7 @@
   - ContractorClothingHeadBandGold
   - ContractorClothingHeadHatTophat
   - ContractorClothingHeadHatUNSABeer
+  - ContractorClothingHeadSanabi # Mono
 
 - type: loadoutGroup
   id: ContractorEars
@@ -708,6 +709,7 @@
   - ContractorClothingNeckBling
   - ContractorClothingNeckArmbandUNSA
   - ContractorClothingNeckMantleBH # Mono
+  - ContractorClothingNeckCloakSanabi # Mono
 
 - type: loadoutGroup
   id: ContractorPDA
