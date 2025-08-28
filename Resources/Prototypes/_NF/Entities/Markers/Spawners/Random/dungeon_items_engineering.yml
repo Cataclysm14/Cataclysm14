@@ -79,6 +79,7 @@
     - ClothingHandsGlovesColorYellow
     - GeigerCounter
     - Lantern
+    - MaintenanceJack #Mono
     #- SpawnDungeonLootVendingRestocks
     chance: 0.95
     offset: 0.0

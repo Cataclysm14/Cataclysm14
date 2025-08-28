@@ -1,0 +1,6 @@
+- type: latheRecipe
+  parent: BaseToolRecipe
+  id: MaintenanceJack
+  result: MaintenanceJack
+  materials:
+    Steel: 500

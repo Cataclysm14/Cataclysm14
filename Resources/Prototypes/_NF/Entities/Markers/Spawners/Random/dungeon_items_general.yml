@@ -849,6 +849,7 @@
     offset: 0.0
     rarePrototypes:
     - MaterialDiamond1
+    - MaterialBluespace1 #Mono in
     rareChance: 0.01
 
 - type: entity
@@ -887,7 +888,7 @@
     offset: 0.0
     rarePrototypes:
     - MaterialBananium1
-    - MaterialBones1
+    #- MaterialBones1 #Mono out
     rareChance: 0.01
 
 - type: entity
@@ -918,7 +919,8 @@
     rarePrototypes:
     - MaterialDiamond1
     - MaterialBananium1
-    - MaterialBones1
+    - MaterialBluespace1 #Mono in
+#    - MaterialBones1 #Mono out
     rareChance: 0.01
 
 - type: entity
@@ -979,6 +981,8 @@
     offset: 0.0
     rarePrototypes:
     - BananiumOre1
+    - BluespaceOre1 #Mono in
+    - DiamondOre1 #Mono in
     rareChance: 0.05
 
 - type: entity

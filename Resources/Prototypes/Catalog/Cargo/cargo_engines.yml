@@ -66,12 +66,11 @@
 
 - type: cargoProduct
   id: EngineSingularityCollector
-  abstract: true # Frontier
   icon:
     sprite: Structures/Power/Generation/Singularity/collector.rsi
     state: ca_on
   product: CrateEngineeringSingularityCollector
-  cost: 1000
+  cost: 5000 #Mono 1000 >> 5000
   category: cargoproduct-category-name-engineering
   group: market
 

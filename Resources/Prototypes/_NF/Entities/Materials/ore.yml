@@ -82,18 +82,19 @@
         color: red
   - type: RandomSpawner
     prototypes:
-    - SpawnDungeonLootMaterialsBasicSingle
-    - SpawnDungeonLootMaterialsBasicSingle
-    - SpawnDungeonLootMaterialsBasicSingle
-    - SpawnDungeonLootMaterialsBasicSingle
-    - SpawnDungeonLootOresSingle
-    - SpawnDungeonLootToolsBasicEngineering
+#    - SpawnDungeonLootMaterialsBasicSingle #Mono out 
+#    - SpawnDungeonLootMaterialsBasicSingle
+#    - SpawnDungeonLootMaterialsBasicSingle
+#    - SpawnDungeonLootMaterialsBasicSingle
+#    - SpawnDungeonLootOresSingle
+#    - SpawnDungeonLootToolsBasicEngineering
+     - ScrapProcessorRollTrunk
     chance: 1.0
     offset: 0.0
-    rarePrototypes:
-    - MaterialBananium1
-    - MaterialBones1
-    - SpawnDungeonLootMaterialsValuableSingle
-    - SpawnDungeonLootPartsEngi
-    - SpawnDungeonLootCircuitBoard
-    rareChance: 0.005
+#    rarePrototypes:
+#    - MaterialBananium1 #Mono out
+#    - MaterialBones1 #wtf why
+#    - SpawnDungeonLootMaterialsValuableSingle
+#    - SpawnDungeonLootPartsEngi
+#    - SpawnDungeonLootCircuitBoard
+#    rareChance: 0.005
