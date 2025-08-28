@@ -83,12 +83,12 @@
   - type: RandomSpawner
     prototypes:
 #    - SpawnDungeonLootMaterialsBasicSingle #Mono out 
-#    - SpawnDungeonLootMaterialsBasicSingle
+#    - SpawnDungeonLootMaterialsBasicSingle #wtf use entitytables
 #    - SpawnDungeonLootMaterialsBasicSingle
 #    - SpawnDungeonLootMaterialsBasicSingle
 #    - SpawnDungeonLootOresSingle
 #    - SpawnDungeonLootToolsBasicEngineering
-     - ScrapProcessorRollTrunk
+     - ScrapProcessorRollTrunk #Mono in: Full entitytable nest can be found in _Mono\Entities\Markers\Spawners\Random\scrap_processor.yml
     chance: 1.0
     offset: 0.0
 #    rarePrototypes:

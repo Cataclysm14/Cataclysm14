@@ -171,35 +171,35 @@
   result: SheetPlasma1
   parent: BaseMaterialsYesDiscountRecipe
   materials:
-    RawScrap: 500 #Mono 3000 > 500
+    RawScrap: 600 #Mono 3000 > 60
 
 - type: latheRecipe
   id: ScrapSheetUranium1
   result: SheetUranium1
   parent: BaseMaterialsYesDiscountRecipe
   materials:
-    RawScrap: 500 #Mono 3000 > 500
+    RawScrap: 600 #Mono 3000 > 600
 
 - type: latheRecipe
   id: ScrapIngotSilver1
   result: IngotSilver1
   parent: BaseMaterialsYesDiscountRecipe
   materials:
-    RawScrap: 400 #Mono 2300 > 400
+    RawScrap: 500 #Mono 2300 > 500
 
 - type: latheRecipe
   id: ScrapIngotGold1
   result: IngotGold1
   parent: BaseMaterialsYesDiscountRecipe
   materials:
-    RawScrap: 400 #Mono 3000 > 400
+    RawScrap: 500 #Mono 3000 > 500
 
 - type: latheRecipe
   id: ScrapMaterialBananium1
   result: MaterialBananium1
   parent: BaseMaterialsYesDiscountRecipe
   materials:
-    RawScrap: 1000 #Mono 6500 > 1000
+    RawScrap: 1500 #Mono 6500 > 1500
 
 - type: latheRecipe
   id: ScrapMaterialCloth1
@@ -220,28 +220,28 @@
   result: SheetUGlass1
   parent: BaseMaterialsYesDiscountRecipe
   materials:
-    RawScrap: 750 #Mono 3300 > 750
+    RawScrap: 850 #Mono 3300 > 850
 
 - type: latheRecipe
   id: ScrapSheetPGlass1
   result: SheetPGlass1
   parent: BaseMaterialsYesDiscountRecipe
   materials:
-    RawScrap: 750 #Mono 3300 > 750
+    RawScrap: 850 #Mono 3300 > 850
 
 - type: latheRecipe
   id: ScrapSheetRUGlass1
   result: SheetRUGlass1
   parent: BaseMaterialsYesDiscountRecipe
   materials:
-    RawScrap: 800 #Mono 3700 > 800
+    RawScrap: 900 #Mono 3700 > 900
 
 - type: latheRecipe
   id: ScrapSheetRPGlass1
   result: SheetRPGlass1
   parent: BaseMaterialsYesDiscountRecipe
   materials:
-    RawScrap: 800 #Mono 3700 > 800
+    RawScrap: 900 #Mono 3700 > 900
 
 - type: latheRecipe
   id: ScrapSheetClockworkGlass1
@@ -255,11 +255,11 @@
   result: MaterialBluespace1
   parent: BaseMaterialsYesDiscountRecipe
   materials:
-    RawScrap: 65000 #Mono 225k >> 65k
+    RawScrap: 80000 #Mono 225k >> 80k
 
 - type: latheRecipe
   id: ScrapMaterialDiamond1
   result: MaterialDiamond1
   parent: BaseMaterialsYesDiscountRecipe
   materials:
-    RawScrap: 65000 #Mono 300k >> 65k
+    RawScrap: 80000 #Mono 300k >> 80k
