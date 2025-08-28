@@ -85,6 +85,7 @@
     - BorgModuleCargo
 
   defaultModules:
+  - BorgModuleTool # Mono
   - BorgModuleGrapplingGun
   - BorgModuleMining
   - BorgModuleAppraisal
@@ -121,6 +122,7 @@
     - BorgModuleJanitor
 
   defaultModules:
+  - BorgModuleTool # Mono
   - BorgModuleLightReplacer
   - BorgModuleCleaning
 
@@ -156,7 +158,9 @@
     - BorgModuleMedical
 
   defaultModules:
+  - BorgModuleTool # Mono
   - BorgModuleTreatment
+  - BorgModuleSurgery # Mono
 
   radioChannels:
   - Science
@@ -203,6 +207,7 @@
     - BorgModuleService
 
   defaultModules:
+  - BorgModuleTool # Mono
   - BorgModuleMusique
   - BorgModuleService
   - BorgModuleClowning
