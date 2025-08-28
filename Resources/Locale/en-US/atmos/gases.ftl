@@ -1,6 +1,9 @@
 gas-ammonia-abbreviation = NH₃
+gas-bz-abbreviation = PN₂O <#-- Funky Station -->
 gas-carbon-dioxide-abbreviation = CO₂
 gas-frezon-abbreviation = F
+gas-healium-abbreviation = PN₂OF <#-- Funky Station -->
+gas-nitrium-abbreviation = TPN₃O <#-- Funky Station -->
 gas-nitrogen-abbreviation = N₂
 gas-nitrous-oxide-abbreviation = N₂O
 gas-oxygen-abbreviation = O₂

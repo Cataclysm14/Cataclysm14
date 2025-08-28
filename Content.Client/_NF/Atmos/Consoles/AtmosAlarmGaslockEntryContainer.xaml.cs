@@ -35,8 +35,11 @@ public sealed partial class AtmosAlarmGaslockEntryContainer : BoxContainer
     private readonly Dictionary<Gas, string> _gasShorthands = new()
     {
         [Gas.Ammonia] = "NH₃",
+        [Gas.BZ] = "PN₂O", // Funky Station
         [Gas.CarbonDioxide] = "CO₂",
         [Gas.Frezon] = "F",
+        [Gas.Healium] = "PN₂OF", // Funky Station
+        [Gas.Nitrium] = "TPN₃O", // Funky Station
         [Gas.Nitrogen] = "N₂",
         [Gas.NitrousOxide] = "N₂O",
         [Gas.Oxygen] = "O₂",
