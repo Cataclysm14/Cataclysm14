@@ -6355,7 +6355,7 @@ Entries:
     - type: Add
       message: Ported original Goob stealthsuit.
     - type: Tweak
-      message: Changed M-90 and M-90GL to 7.62x51mm from 5.56x45mm
+      message: Changed M-90 and M-90GL to 762x51mm from 556x45mm
     - type: Tweak
       message: Replaced AK-502 recipe for Rogues with M-90.
     - type: Tweak
@@ -8516,8 +8516,8 @@ Entries:
       message: Drozd, Lecter, and Annie now use Shiptest SFX/sprites.
     - type: Add
       message: >-
-        45 ACP SMG mags, 5.56x45mm rifle mags, and 7.62x51mm mags now use
-        Shiptest sprites.
+        45 ACP SMG mags, 556x45mm rifle mags, and 762x51mm mags now use Shiptest
+        sprites.
     - type: Fix
       message: Fixed TSF T1 weapon research using Wizden Lecter sprite instead of Mono.
     - type: Tweak
@@ -11228,7 +11228,7 @@ Entries:
     - type: Add
       message: >-
         (Starch) Added MK-290 turret to TSF uplink, feeds from
-        5.56x45mm/6.8x52mm/7.62x39mm magazines.
+        556x45mm/6.8x52mm/7.62x39mm/ magazines.
     - type: Add
       message: 'Research Tech Tree!:'
     - type: Add
@@ -11460,3 +11460,69 @@ Entries:
   id: 1272
   time: '2025-08-27T13:08:09.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2067
+- author: Redrover1760
+  changes:
+    - type: Fix
+      message: >-
+        Diagonal walls, tables, etc, all items will always properly trigger ship
+        projectile explosions on collision. Projectiles probably will explode on
+        shields too.
+  id: 1273
+  time: '2025-08-27T17:34:34.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2090
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Ported Hullrot's systems for cargo trading (with different trade goods
+        of course). Various goods can be bought at TM, cargo depots, and Baikal,
+        and can be sold at TM, cargo depots, Baikal, Halcyon, and ASR Jupiter.
+    - type: Tweak
+      message: Buffed cargo depots to have 1.25x sell rate.
+  id: 1274
+  time: '2025-08-27T23:16:01.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2094
+- author: starch70
+  changes:
+    - type: Tweak
+      message: Cargo crate instruction papers now despawn after 20 minutes.
+    - type: Fix
+      message: Fixed insurgency hideout not having a crate chute.
+    - type: Fix
+      message: >-
+        Fixed Jupiter spawnroom being commander locked, having no
+        defibs/extinguishers/ATMs, and fixed Jupiter crate chute spawning in a
+        vending machine.
+  id: 1275
+  time: '2025-08-28T00:35:29.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2095
+- author: Redrover1760
+  changes:
+    - type: Fix
+      message: GLASK
+  id: 1276
+  time: '2025-08-28T00:40:38.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2096
+- author: Redrover1760
+  changes:
+    - type: Fix
+      message: I am a parrot. CL fix also
+  id: 1277
+  time: '2025-08-28T01:09:02.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2097
+- author: Redrover1760
+  changes:
+    - type: Fix
+      message: goobers
+  id: 1278
+  time: '2025-08-28T01:41:36.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2098
+- author: Ilya246
+  changes:
+    - type: Tweak
+      message: >-
+        Large thrusters now provide more acceleration and provide bonus max
+        speed.
+  id: 1279
+  time: '2025-08-28T11:36:13.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2091
