@@ -24,10 +24,10 @@
   - WeaponSniperHristovRogue
   - WeaponSubMachineGunMla73Rogue
 
-- type: latheRecipePack
-  id: MonoRogueVouchersDynamic
-  recipes:
-  - ProwlerVoucherRogue
+#- type: latheRecipePack
+#  id: MonoRogueVouchersDynamic
+#  recipes:
+#  - ProwlerVoucherRogue
 
 - type: latheRecipePack
   id: MonoRogueMiscDynamic

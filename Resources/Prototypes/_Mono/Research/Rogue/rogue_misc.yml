@@ -4,19 +4,19 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-- type: technology
-  id: RogueProwler
-  name: research-technology-rogue-prowler-voucher
-  entityIcon: ShipVoucherProwler
-  discipline: RogueShipyard
-  tier: 1
-  cost: 100000
-  recipeUnlocks:
-  - ProwlerVoucherRogue
-  technologyPrerequisites:
-  - RogueStealthsuit
-  - UniversalMaterialResearchT3
-  position: 22, 11
+#- type: technology
+#  id: RogueProwler
+#  name: research-technology-rogue-prowler-voucher
+#  entityIcon: ShipVoucherProwler
+#  discipline: RogueShipyard
+#  tier: 1
+#  cost: 100000
+#  recipeUnlocks:
+#  - ProwlerVoucherRogue
+#  technologyPrerequisites:
+#  - RogueStealthsuit
+#  - UniversalMaterialResearchT3
+#  position: 22, 11
 
 - type: technology
   id: RogueJaws
