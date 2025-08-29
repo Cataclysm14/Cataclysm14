@@ -17,6 +17,13 @@
   - type: CartridgeAmmo
     soundEject:
       collection: ShellEject
+      params:
+        variation: 0.06
+  - type: EmitSoundOnLand
+    sound:
+      collection: ShellEject
+      params:
+        variation: 0.06
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/4_gauge_shell.rsi
     layers:
