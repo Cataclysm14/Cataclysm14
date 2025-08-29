@@ -79,34 +79,6 @@
     lifetime: 4.2
   - type: PointLight
     radarColor: "#C92BCC"
-  - type: LightningOnTrigger
-    chance: 0.08
-    range: 20 # long
-    lightningProto: LightningEMPAutopulser
-    lightningEffects: false # only EMP no explosion
-
-- type: entity
-  id: InstantEffectEMPAutopulser
-  name: autopulser EMP effect
-  components:
-  - type: TriggerOnSpawn
-  - type: DeleteOnTrigger
-  - type: EmpOnTrigger
-    range: 1 # low range
-    energyConsumption: 20000 # 20 kJ
-    disableDuration: 20 # as opposed to 60
-
-- type: entity
-  name: ionised lightning
-  id: LightningEMPAutopulser
-  parent: BaseLightning
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Lightning
-    canArc: true
-    spawnOnHit: InstantEffectEMPAutopulser
-  - type: PointLight
-    color: "#80C0FF"
 
 # M25
 
