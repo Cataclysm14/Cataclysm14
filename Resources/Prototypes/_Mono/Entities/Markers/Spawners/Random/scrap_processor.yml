@@ -134,7 +134,7 @@
       - !type:GroupSelector
         children:
         - id: AdvancedCapacitorStockPart
-        - id: NanoMicroManipulatorStockPart
+        - id: NanoManipulatorStockPart
         - id: AdvancedMatterBinStockPart
       - !type:GroupSelector
         weight: 0.5
