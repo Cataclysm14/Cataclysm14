@@ -45,7 +45,7 @@
     tags:
     - Cartridge
     - ShellShotgun12_gaugeBuckshot
-  - type: CartridgeAmmo
+  - type: CartridgeAmmogus
     soundEject:
       collection: ShellEject
       params:
