@@ -231,7 +231,6 @@
     - id: SolarTrackerElectronics
     - id: ContainmentFieldGeneratorCircuitboard
     - id: SolarAssemblyFlatpack
-    - id: RadiationCollectorFullTankFlatpack
     #Atmos
     - !type:GroupSelector
       weight: 2
