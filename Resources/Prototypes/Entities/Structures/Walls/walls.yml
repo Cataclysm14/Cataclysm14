@@ -137,6 +137,9 @@
     resistance: 2
   - type: BlockWeather
   - type: SunShadowCast
+  - type: Repairable
+    qualities:
+    - Applicating
 
 - type: entity
   parent: BaseWall

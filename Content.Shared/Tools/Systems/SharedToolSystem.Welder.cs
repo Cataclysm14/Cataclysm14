@@ -71,24 +71,37 @@ public abstract partial class SharedToolSystem
     {
         using (args.PushGroup(nameof(WelderComponent)))
         {
-            if (ItemToggle.IsActivated(entity.Owner))
+            if (!entity.Comp.OnlyDisplayFuel)
             {
-                args.PushMarkup(Loc.GetString("welder-component-on-examine-welder-lit-message"));
-            }
-            else
-            {
-                args.PushMarkup(Loc.GetString("welder-component-on-examine-welder-not-lit-message"));
+                if (ItemToggle.IsActivated(entity.Owner))
+                {
+                    args.PushMarkup(Loc.GetString("welder-component-on-examine-welder-lit-message"));
+                }
+                else
+                {
+                    args.PushMarkup(Loc.GetString("welder-component-on-examine-welder-not-lit-message"));
+                }
             }
 
             if (args.IsInDetailsRange)
             {
                 var (fuel, capacity) = GetWelderFuelAndCapacity(entity.Owner, entity.Comp);
 
-                args.PushMarkup(Loc.GetString("welder-component-on-examine-detailed-message",
-                    ("colorName", fuel < capacity / FixedPoint2.New(4f) ? "darkorange" : "orange"),
-                    ("fuelLeft", fuel),
-                    ("fuelCapacity", capacity),
-                    ("status", string.Empty))); // Lit status is handled above
+                if (!entity.Comp.OnlyDisplayFuel)
+                {
+                    args.PushMarkup(Loc.GetString("welder-component-on-examine-detailed-message",
+                        ("colorName", fuel < capacity / FixedPoint2.New(4f) ? "darkorange" : "orange"),
+                        ("fuelLeft", fuel),
+                        ("fuelCapacity", capacity),
+                        ("status", string.Empty))); // Lit status is handled above
+                }
+                else
+                {
+                    args.PushMarkup(Loc.GetString("welder-component-on-examine-less-detailed-message",
+                        ("colorName", fuel < capacity / FixedPoint2.New(4f) ? "darkorange" : "orange"),
+                        ("fuelLeft", fuel),
+                        ("fuelCapacity", capacity)));
+                }
             }
         }
     }

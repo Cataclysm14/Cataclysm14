@@ -71,8 +71,9 @@ namespace Content.Server.Repairable
                 delay *= component.SelfRepairPenalty;
             }
 
-            // Run the repairing doafter
-            args.Handled = _toolSystem.UseTool(args.Used, args.User, uid, delay, component.QualityNeeded, new RepairFinishedEvent(), component.FuelCost);
+            // Run the repairing doafter - Monolith edit - Attempts to run the repairing doafter with all the qualities.
+            foreach(var quality in component.Qualities)
+                args.Handled = _toolSystem.UseTool(args.Used, args.User, uid, delay, quality, new RepairFinishedEvent(), component.FuelCost);
         }
     }
 
