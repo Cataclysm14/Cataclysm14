@@ -1599,6 +1599,7 @@ public sealed partial class ShuttleSystem
             var dockedComp = EnsureComp<FTLComponent>(dockedUid);
             dockedComp.LinkedShuttle = uid;
             dockedComp.State = FTLState.Travelling;
+            dockedComp.TargetAngle = fromRotation;
 
             if (TryComp<PhysicsComponent>(dockedUid, out var dockedBody))
             {
