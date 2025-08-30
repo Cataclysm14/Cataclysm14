@@ -11713,3 +11713,21 @@ Entries:
   id: 1299
   time: '2025-08-30T17:37:05.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2133
+- author: Onezero0
+  changes:
+    - type: Tweak
+      message: Resprited the AME and related fuel jar.
+  id: 1300
+  time: '2025-08-30T22:38:36.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2142
+- author: Redrover1760
+  changes:
+    - type: Fix
+      message: Docked shuttles don't slow down in FTL.
+    - type: Fix
+      message: >-
+        Improved docked shuttles FTL, much better at not colliding into the main
+        shuttle at FTL end.
+  id: 1301
+  time: '2025-08-30T22:48:34.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2144
