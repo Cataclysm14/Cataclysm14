@@ -139,4 +139,4 @@
 - type: deviceFrequency
   id: SurveillanceCameraUSSP
   name: device-frequency-prototype-name-surveillance-camera-USSP
-  frequency: 2947
+  frequency: 3528
