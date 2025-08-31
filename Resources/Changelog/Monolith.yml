@@ -11740,3 +11740,10 @@ Entries:
   id: 1302
   time: '2025-08-30T23:46:46.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2145
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Energy weapons are 2x4 sized instead of 4x4 sized.
+  id: 1303
+  time: '2025-08-30T23:59:54.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2151
