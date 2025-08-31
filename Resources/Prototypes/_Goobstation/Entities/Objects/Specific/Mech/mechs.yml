@@ -97,7 +97,6 @@
     - CivilianMechBounty # Mono
   - type: Prying # Mono
     pryPowered: true
-    force: true
     speedModifier: 3
     useSound:
       path: /Audio/Items/jaws_pry.ogg
@@ -169,7 +168,6 @@
     shape: square
   - type: Prying # Mono
     pryPowered: true
-    force: true
     speedModifier: 3
     useSound:
       path: /Audio/Items/jaws_pry.ogg
@@ -335,7 +333,6 @@
     shape: square
   - type: Prying # Mono
     pryPowered: true
-    force: true
     speedModifier: 5
     useSound:
       path: /Audio/Items/jaws_pry.ogg
@@ -416,7 +413,6 @@
     shape: square
   - type: Prying # Mono
     pryPowered: true
-    force: true
     speedModifier: 5
     useSound:
       path: /Audio/Items/jaws_pry.ogg
@@ -507,7 +503,6 @@
     shape: square
   - type: Prying # Mono
     pryPowered: true
-    force: true
     speedModifier: 5
     useSound:
       path: /Audio/Items/jaws_pry.ogg
@@ -601,7 +596,6 @@
     shape: square
   - type: Prying # Mono
     pryPowered: true
-    force: true
     speedModifier: 5
     useSound:
       path: /Audio/Items/jaws_pry.ogg
@@ -691,7 +685,6 @@
     shape: square
   - type: Prying # Mono
     pryPowered: true
-    force: true
     speedModifier: 5
     useSound:
       path: /Audio/Items/jaws_pry.ogg
