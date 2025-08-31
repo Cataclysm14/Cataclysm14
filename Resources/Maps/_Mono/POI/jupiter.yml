@@ -22,8 +22,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/30/2025 18:52:05
-  entityCount: 6176
+  time: 08/31/2025 09:19:41
+  entityCount: 6181
 maps: []
 grids:
 - 1
@@ -1970,6 +1970,16 @@ entities:
           - Off
         - - AirNormal
           - On
+        4238:
+        - - AirDanger
+          - On
+        - - AirNormal
+          - Off
+        4180:
+        - - AirNormal
+          - On
+        - - AirDanger
+          - Off
   - uid: 3
     components:
     - type: Transform
@@ -1995,6 +2005,36 @@ entities:
         - - AirNormal
           - Off
         4321:
+        - - AirDanger
+          - Off
+        - - AirNormal
+          - On
+        4246:
+        - - AirDanger
+          - On
+        - - AirNormal
+          - Off
+        4181:
+        - - AirNormal
+          - On
+        - - AirDanger
+          - Off
+        4320:
+        - - AirNormal
+          - On
+        - - AirDanger
+          - Off
+        4233:
+        - - AirDanger
+          - On
+        - - AirNormal
+          - Off
+        6147:
+        - - AirDanger
+          - Off
+        - - AirNormal
+          - On
+        4182:
         - - AirDanger
           - Off
         - - AirNormal
@@ -2066,12 +2106,44 @@ entities:
           - On
         - - AirNormal
           - Off
+        6145:
+        - - AirNormal
+          - On
+        - - AirDanger
+          - Off
   - uid: 6
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -9.5,54.5
       parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        4229:
+        - - AirDanger
+          - On
+        - - AirNormal
+          - Off
+        4176:
+        - - AirNormal
+          - On
+        - - AirDanger
+          - Off
+        4178:
+        - - AirDanger
+          - Off
+        - - AirNormal
+          - On
+        4243:
+        - - AirDanger
+          - On
+        - - AirNormal
+          - Off
+        6178:
+        - - AirDanger
+          - On
+        - - AirNormal
+          - Off
     - type: DeviceList
       devices:
       - 3994
@@ -2138,6 +2210,21 @@ entities:
         - - AirNormal
           - On
         4311:
+        - - AirDanger
+          - Off
+        - - AirNormal
+          - On
+        4298:
+        - - AirDanger
+          - On
+        - - AirNormal
+          - Off
+        4094:
+        - - AirNormal
+          - On
+        - - AirDanger
+          - Off
+        6146:
         - - AirDanger
           - Off
         - - AirNormal
@@ -2244,6 +2331,38 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 6.5,54.5
       parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        4241:
+        - - AirNormal
+          - Off
+        - - AirDanger
+          - On
+        4239:
+        - - AirNormal
+          - Off
+        - - AirDanger
+          - On
+        4177:
+        - - AirNormal
+          - On
+        - - AirDanger
+          - Off
+        4184:
+        - - AirNormal
+          - On
+        - - AirDanger
+          - Off
+        4180:
+        - - AirNormal
+          - On
+        - - AirDanger
+          - Off
+        6177:
+        - - AirDanger
+          - On
+        - - AirNormal
+          - Off
     - type: DeviceList
       devices:
       - 3103
@@ -2403,6 +2522,16 @@ entities:
           - Off
         - - AirNormal
           - On
+        4304:
+        - - AirNormal
+          - On
+        - - AirDanger
+          - Off
+        6180:
+        - - AirDanger
+          - On
+        - - AirNormal
+          - Off
   - uid: 16
     components:
     - type: Transform
@@ -2470,6 +2599,11 @@ entities:
         - - AirNormal
           - On
         4318:
+        - - AirDanger
+          - Off
+        - - AirNormal
+          - On
+        6142:
         - - AirDanger
           - Off
         - - AirNormal
@@ -2583,6 +2717,8 @@ entities:
         4309:
         - - AirDanger
           - Off
+        - - AirNormal
+          - On
         4231:
         - - AirDanger
           - On
@@ -2697,6 +2833,21 @@ entities:
           - Off
         - - AirNormal
           - On
+        6143:
+        - - AirNormal
+          - On
+        - - AirDanger
+          - Off
+        6144:
+        - - AirNormal
+          - On
+        - - AirDanger
+          - Off
+        6098:
+        - - AirDanger
+          - Off
+        - - AirNormal
+          - On
   - uid: 23
     components:
     - type: Transform
@@ -2760,6 +2911,21 @@ entities:
         - - AirDanger
           - On
         - - AirNormal
+          - Off
+        6132:
+        - - AirNormal
+          - On
+        - - AirDanger
+          - Off
+        6129:
+        - - AirNormal
+          - On
+        - - AirDanger
+          - Off
+        6133:
+        - - AirNormal
+          - On
+        - - AirDanger
           - Off
   - uid: 25
     components:
@@ -2970,6 +3136,21 @@ entities:
           - Off
         - - AirNormal
           - On
+        6179:
+        - - AirDanger
+          - On
+        - - AirNormal
+          - Off
+        4201:
+        - - AirDanger
+          - Off
+        - - AirNormal
+          - On
+        6181:
+        - - AirDanger
+          - On
+        - - AirNormal
+          - Off
   - uid: 29
     components:
     - type: Transform
@@ -3162,6 +3343,7 @@ entities:
   - uid: 49
     components:
     - type: Transform
+      rot: 1.5707963267948966 rad
       pos: -4.5,21.5
       parent: 1
   - uid: 52
@@ -19840,6 +20022,8 @@ entities:
       pos: -14.5,27.5
       parent: 1
     - type: DeviceNetwork
+      configurators:
+      - invalid
       deviceLists:
       - 29
   - uid: 61
@@ -19849,6 +20033,8 @@ entities:
       pos: -15.5,34.5
       parent: 1
     - type: DeviceNetwork
+      configurators:
+      - invalid
       deviceLists:
       - 29
   - uid: 62
@@ -19858,6 +20044,8 @@ entities:
       pos: -12.5,33.5
       parent: 1
     - type: DeviceNetwork
+      configurators:
+      - invalid
       deviceLists:
       - 29
   - uid: 63
@@ -19867,6 +20055,8 @@ entities:
       pos: -12.5,27.5
       parent: 1
     - type: DeviceNetwork
+      configurators:
+      - invalid
       deviceLists:
       - 29
   - uid: 77
@@ -19876,6 +20066,8 @@ entities:
       pos: -13.5,36.5
       parent: 1
     - type: DeviceNetwork
+      configurators:
+      - invalid
       deviceLists:
       - 29
   - uid: 3089
@@ -27048,6 +27240,8 @@ entities:
       pos: -14.5,33.5
       parent: 1
     - type: DeviceNetwork
+      configurators:
+      - invalid
       deviceLists:
       - 29
     - type: AtmosPipeLayers
@@ -27569,6 +27763,8 @@ entities:
       pos: -14.5,31.5
       parent: 1
     - type: DeviceNetwork
+      configurators:
+      - invalid
       deviceLists:
       - 29
     - type: AtmosPipeLayers
@@ -28790,17 +28986,23 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -10.5,53.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 4177
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 7.5,53.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 4178
     components:
     - type: Transform
       pos: -9.5,57.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 4179
     components:
     - type: Transform
@@ -28812,6 +29014,8 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 10.5,57.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 4181
     components:
     - type: Transform
@@ -28824,6 +29028,8 @@ entities:
     - type: Transform
       pos: -4.5,41.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 4183
     components:
     - type: Transform
@@ -28837,6 +29043,8 @@ entities:
     - type: Transform
       pos: 6.5,57.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 4185
     components:
     - type: Transform
@@ -28953,6 +29161,8 @@ entities:
     - type: Transform
       pos: -24.5,21.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 4202
     components:
     - type: Transform
@@ -29017,46 +29227,62 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 12.5,16.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 6133
     components:
     - type: Transform
       pos: 19.5,22.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 6142
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 10.5,23.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 6143
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 2.5,19.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 6144
     components:
     - type: Transform
       pos: -0.5,19.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 6145
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -2.5,26.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 6146
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -2.5,33.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 6147
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -13.5,37.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
 - proto: PoweredLEDSmallLight
   entities:
   - uid: 4209
@@ -29221,6 +29447,8 @@ entities:
       rot: 3.141592653589793 rad
       pos: -10.5,53.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 4230
     components:
     - type: Transform
@@ -29251,7 +29479,7 @@ entities:
       pos: -13.5,39.5
       parent: 1
     - type: DeviceLinkSink
-      invokeCounter: 2
+      invokeCounter: 1
   - uid: 4234
     components:
     - type: Transform
@@ -29288,13 +29516,15 @@ entities:
       pos: 9.5,46.5
       parent: 1
     - type: DeviceLinkSink
-      invokeCounter: 2
+      invokeCounter: 1
   - uid: 4239
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 7.5,53.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 4240
     components:
     - type: Transform
@@ -29309,6 +29539,8 @@ entities:
       rot: 3.141592653589793 rad
       pos: 6.5,56.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 4242
     components:
     - type: Transform
@@ -29322,6 +29554,8 @@ entities:
       rot: 3.141592653589793 rad
       pos: -9.5,56.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 4244
     components:
     - type: Transform
@@ -29345,7 +29579,7 @@ entities:
       pos: 0.5,37.5
       parent: 1
     - type: DeviceLinkSink
-      invokeCounter: 2
+      invokeCounter: 1
   - uid: 4247
     components:
     - type: Transform
@@ -29537,6 +29771,48 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 9.5,42.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
+  - uid: 6177
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 10.5,58.5
+      parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
+  - uid: 6178
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -13.5,58.5
+      parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
+  - uid: 6179
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -18.5,15.5
+      parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
+  - uid: 6180
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 12.5,44.5
+      parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
+  - uid: 6181
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -25.5,19.5
+      parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
 - proto: PoweredlightLED
   entities:
   - uid: 4299
@@ -29583,6 +29859,8 @@ entities:
       rot: 3.141592653589793 rad
       pos: 12.5,39.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 4305
     components:
     - type: Transform
@@ -29679,12 +29957,16 @@ entities:
     - type: Transform
       pos: 13.5,21.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 6132
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 16.5,18.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
 - proto: PoweredlightRed
   entities:
   - uid: 4094
@@ -29693,6 +29975,8 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 9.5,39.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 4318
     components:
     - type: Transform
@@ -31572,6 +31856,9 @@ entities:
       rot: 3.141592653589793 rad
       pos: -1.5,45.5
       parent: 1
+    - type: DeviceNetwork
+      configurators:
+      - invalid
     - type: SurveillanceCamera
       setupAvailableNetworks:
       - SurveillanceCameraRogue
