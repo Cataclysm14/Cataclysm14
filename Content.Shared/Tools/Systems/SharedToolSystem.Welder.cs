@@ -87,7 +87,7 @@ public abstract partial class SharedToolSystem
             {
                 var (fuel, capacity) = GetWelderFuelAndCapacity(entity.Owner, entity.Comp);
 
-                if (!entity.Comp.OnlyDisplayFuel)
+                if (!entity.Comp.OnlyDisplayFuel) // Monolith edit - Nanite applicator
                 {
                     args.PushMarkup(Loc.GetString("welder-component-on-examine-detailed-message",
                         ("colorName", fuel < capacity / FixedPoint2.New(4f) ? "darkorange" : "orange"),

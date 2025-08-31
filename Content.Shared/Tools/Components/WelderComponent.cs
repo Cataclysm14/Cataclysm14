@@ -54,7 +54,7 @@ public sealed partial class WelderComponent : Component
     public bool TankSafe;
 
     /// <summary>
-    ///     Monolith - This variable gets rid of the status display.
+    ///     Monolith Edit - This variable gets rid of the status display.
     /// </summary>
     [DataField]
     public bool OnlyDisplayFuel = false;

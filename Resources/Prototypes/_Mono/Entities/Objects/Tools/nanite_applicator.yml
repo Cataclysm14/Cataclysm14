@@ -72,3 +72,16 @@
     sprite: _Mono/Objects/Tools/nanite_applicator_syndicate.rsi
     layers:
     - state: icon
+  - type: SolutionContainerManager
+    solutions:
+      Welder:
+        reagents:
+        - ReagentId: NaniteFuel
+          Quantity: 200
+        maxVol: 200
+  - type: SolutionRegeneration
+    solution: Welder
+    generated:
+      reagents:
+      - ReagentId: NaniteFuel
+        Quantity: 2
