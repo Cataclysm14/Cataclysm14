@@ -21,6 +21,7 @@ public sealed partial class IFFConsoleWindow : FancyWindow,
     private readonly ButtonGroup _showIFFButtonGroup = new();
     private readonly ButtonGroup _showVesselButtonGroup = new();
     private readonly ButtonGroup _obscureIFFButtonGroup = new(); // _Mono
+
     public event Action<bool>? ShowIFF;
     public event Action<bool>? ShowVessel;
     public event Action<bool>? ObscureIFF; // _Mono
