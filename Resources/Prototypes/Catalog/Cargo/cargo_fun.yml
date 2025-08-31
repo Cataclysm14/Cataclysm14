@@ -230,12 +230,11 @@
 
 - type: cargoProduct
   id: FunCrateGambling
-  abstract: true # Frontier
   icon:
     sprite: Objects/Economy/cash.rsi
     state: cash_1000000
   product: CrateCargoGambling
-  cost: 1000000 # Frontier 10000<1000000 in the case this is added again by mistake.
+  cost: 10000 # Frontier 10000<1000000 in the case this is added again by mistake. # Mono - let's go gambling!
   category: cargoproduct-category-name-fun
   group: market
 

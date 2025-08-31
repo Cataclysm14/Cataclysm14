@@ -391,9 +391,10 @@
     - id: FoodPlateTin
       prob: 0.01
       orGroup: NotUseful
-    - id: WeakKudzu
-      prob: 0.01
-      orGroup: NotUseful
+    # Mono - 100% free lag
+    #- id: WeakKudzu
+    #  prob: 0.01
+    #  orGroup: NotUseful
     - id: MagazineFoamBox
       prob: 0.001
       orGroup: NotUseful
