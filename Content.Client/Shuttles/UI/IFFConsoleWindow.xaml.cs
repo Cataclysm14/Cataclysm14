@@ -24,6 +24,7 @@ public sealed partial class IFFConsoleWindow : FancyWindow,
     public event Action<bool>? ShowIFF;
     public event Action<bool>? ShowVessel;
     public event Action<bool>? ObscureIFF; // _Mono
+
     public IFFConsoleWindow()
     {
         RobustXamlLoader.Load(this);
