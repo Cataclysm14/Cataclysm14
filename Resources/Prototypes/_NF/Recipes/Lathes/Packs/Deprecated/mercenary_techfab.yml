@@ -94,6 +94,7 @@
   - WeaponRevolverArgenti
   - WeaponPistolMk58NF
   - WeaponShotgunDoubleBarreled
+  - WeaponShotgunHelopolis
   - WeaponRifleNovaliteC1
   - WeaponRifleGestio
   - WeaponSubMachineGunKnallstock # Mono
@@ -190,7 +191,6 @@
   - WeaponSubMachineGunVector9x19mm
   - WeaponSubMachineGunFirestarter # Mono
   - WeaponSubMachineGunWt550 # Mono
-  - WeaponShotgunHelopolis # Mono
 #Mono end
 
 - type: latheRecipePack

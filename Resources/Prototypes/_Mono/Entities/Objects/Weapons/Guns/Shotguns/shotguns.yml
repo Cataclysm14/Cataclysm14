@@ -113,7 +113,7 @@
   name: UW12-B Helopolis (12 gauge)
   parent: [BaseWeaponShotgun, BaseC1Contraband]
   id: WeaponShotgunHelopolis
-  description: A compact shotgun that sacrifices all combat ergonomics to better serve as a breaching tool. Breaks doors with slugs. Combat use unadvised.
+  description: The Union Wrightworks 12-gauge breaching model "Helopolis", a compact shotgun that sacrifices all combat ergonomics to better serve as a breaching tool. Breaks doors with slugs. Combat use unadvised.
   components:
   - type: Item
     size: Normal
