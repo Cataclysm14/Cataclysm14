@@ -7,7 +7,7 @@
   parent: ClothingHeadBase
   id: ClothingHeadHatCOG
   name: Old robe
-  description: Fancy old robe.
+  description: An ancient crimson draping from a now-defunct cult.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/Head/Cloaks/cogcloak.rsi
