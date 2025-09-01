@@ -116,7 +116,7 @@
     sprite: _NF/Structures/Storage/canister.rsi # Frontier: _NF
     state: plasma # Frontier orange<plasma
   product: PlasmaCanister
-  cost: 5000 # Frontier: 4000<5000
+  cost: 7000 # Mono - Gas sell prices
   category: cargoproduct-category-name-atmospherics
   group: market
 
