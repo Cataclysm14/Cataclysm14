@@ -123,10 +123,7 @@
     size: Normal
     shape:
     - 0,0,1,0
-#    - 0,1,0,1 #In case size balance is needed
-#    storedRotation: 90
     sprite: _Mono\Objects\Weapons\Guns\Shotguns\Helopolis.rsi
-#  - type: GunRequiresWield #In case it does too good of a job. Needs sprites to nerf this way.
   - type: Gun
     minAngle: 6
     maxAngle: 12
