@@ -18,23 +18,6 @@ public sealed partial class GasSaleMenu : FancyWindow
 {
     public Action? RefreshRequested;
     public Action? SellRequested;
-
-    public static readonly string[] GasStrings = // This is shit, a dictionary of these already exists in Atmospherics.cs
-    [
-        "gases-oxygen", // 0
-        "gases-nitrogen", // 1
-        "gases-co2", // 2
-        "gases-plasma", // 3
-        "gases-tritium", // 4
-        "gases-water-vapor", // 5
-        "gases-ammonia", // 6
-        "gases-n2o", // 7
-        "gases-frezon", // 8
-        "gases-bz", // 9, Funky Station
-        "gases-healium", // 10, Funky Station
-        "gases-nitrium", // 11, Funky Station
-    ];
-
     public string FallbackGasString = "gas-fallback";
 
     public GasSaleMenu()
@@ -55,11 +38,14 @@ public sealed partial class GasSaleMenu : FancyWindow
             if (gasAmount <= 0)
                 continue;
 
+            // Mono - Removed hardcoded array of strings, uses gas enum IDs to look up GasNames
+            var gas = (Gas)i;
             Label gasLabel = new();
-            if (i < GasStrings.Length)
-                gasLabel.Text = Loc.GetString(GasStrings[i]);
+            if (Atmospherics.GasNames.TryGetValue(gas, out var gasName))
+                gasLabel.Text = gasName;
             else
                 gasLabel.Text = Loc.GetString(FallbackGasString, ("number", i));
+
             Gases.Children.Add(gasLabel);
 
             Label amountLabel = new();

@@ -452,6 +452,6 @@ namespace Content.Shared.Atmos
         Frezon = 8,
         BZ = 9, //Funky
         Healium = 10, //Funky
-		Nitrium = 11, //Funky
+        Nitrium = 11, //Funky
     }
 }
