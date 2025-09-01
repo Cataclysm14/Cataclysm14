@@ -163,7 +163,7 @@
     - Broadsword
   - type: Prying
     pryPowered: true
-    speedModifier: 7
+    speedModifier: 3
     useSound:
       path: /Audio/Items/jaws_pry.ogg
 
@@ -273,7 +273,7 @@
     - MilitaryMechBounty
   - type: Prying
     pryPowered: true
-    speedModifier: 7
+    speedModifier: 3
     useSound:
       path: /Audio/Items/jaws_pry.ogg
 
@@ -373,7 +373,7 @@
     - MilitaryMechBounty
   - type: Prying
     pryPowered: true
-    speedModifier: 7
+    speedModifier: 3
     useSound:
       path: /Audio/Items/jaws_pry.ogg
 
@@ -474,7 +474,7 @@
     - MilitaryMechBounty
   - type: Prying
     pryPowered: true
-    speedModifier: 10
+    speedModifier: 5
     useSound:
       path: /Audio/Items/jaws_pry.ogg
 
@@ -575,7 +575,7 @@
     - MilitaryMechBounty
   - type: Prying
     pryPowered: true
-    speedModifier: 10
+    speedModifier: 5
     useSound:
       path: /Audio/Items/jaws_pry.ogg
 
@@ -676,6 +676,6 @@
     - MilitaryMechBounty
   - type: Prying
     pryPowered: true
-    speedModifier: 10
+    speedModifier: 5
     useSound:
       path: /Audio/Items/jaws_pry.ogg
