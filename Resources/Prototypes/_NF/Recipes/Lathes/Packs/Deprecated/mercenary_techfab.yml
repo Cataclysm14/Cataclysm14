@@ -190,6 +190,7 @@
   - WeaponSubMachineGunVector9x19mm
   - WeaponSubMachineGunFirestarter # Mono
   - WeaponSubMachineGunWt550 # Mono
+  - WeaponShotgunHelopolis # Mono
 #Mono end
 
 - type: latheRecipePack
