@@ -107,7 +107,6 @@
     - type: Organ
       slotId: posbrain
     - type: Brain
-    - type: BlockMovement
     - type: Examiner
     - type: BorgBrain
     - type: IntrinsicRadioReceiver
