@@ -116,16 +116,16 @@
   description: A compact shotgun that sacrifices all combat ergonomics to better serve as a breaching tool. Breaks doors with slugs. Combat use unadvised.
   components:
   - type: Sprite
-    sprite: _Mono\Objects\Weapons\Guns\Shotguns\Helopolis
+    sprite: _Mono\Objects\Weapons\Guns\Shotguns\Helopolis.rsi
   - type: Clothing
-    sprite: _Mono\Objects\Weapons\Guns\Shotguns\Helopolis
+    sprite: _Mono\Objects\Weapons\Guns\Shotguns\Helopolis.rsi
   - type: Item
     size: Normal
     shape:
     - 0,0,1,0
 #    - 0,1,0,1 #In case size balance is needed
 #    storedRotation: 90
-    sprite: _Mono\Objects\Weapons\Guns\Shotguns\Helopolis
+    sprite: _Mono\Objects\Weapons\Guns\Shotguns\Helopolis.rsi
 #  - type: GunRequiresWield #In case it does too good of a job. Needs sprites to nerf this way.
   - type: Gun
     minAngle: 6
@@ -137,6 +137,6 @@
     autoCycle: false
     capacity: 4
     proto: ShellShotgun12_gaugeSlug
-  - type: StaticPrice # Mono
+  - type: StaticPrice
     price: 800
     vendPrice: 2400
