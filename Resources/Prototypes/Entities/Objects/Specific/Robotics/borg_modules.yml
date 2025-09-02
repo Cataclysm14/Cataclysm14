@@ -298,8 +298,8 @@
     moduleId: Appraisal # Frontier
     items:
     - AppraisalTool
-    - WeaponTetherGun # Mono - we ball
-    - WeaponForceGun # Mono
+    - WeaponTetherGunBorg # Mono - we ball
+    - WeaponForceGunBorg # Mono
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: appraisal-module }
 
