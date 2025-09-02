@@ -1581,7 +1581,7 @@ entities:
       powerLoad: 5
     - type: Battery
       startingCharge: 0
-- proto: ComputerStationRadar
+- proto: ComputerEliteRadar
   entities:
   - uid: 232
     components:

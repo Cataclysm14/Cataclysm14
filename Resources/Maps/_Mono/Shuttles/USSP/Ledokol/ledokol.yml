@@ -7816,7 +7816,7 @@ entities:
       - device-button-6
       - device-button-7
       - device-button-8
-- proto: ComputerStationRadar
+- proto: ComputerEliteRadar
   entities:
   - uid: 1230
     components:
