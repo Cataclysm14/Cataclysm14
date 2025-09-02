@@ -43,7 +43,7 @@
   name: maintenance jack
   parent: BaseItem
   id: MaintenanceJack
-  description: A maintenance jack for ruling the maints. #removing up floor plating.
+  description: A mighty tool for ruling maints. Pries tile and plating and can anchor. #Mono
   components:
   - type: Sprite
     sprite: _NF/Objects/Tools/maintenance-jack.rsi
