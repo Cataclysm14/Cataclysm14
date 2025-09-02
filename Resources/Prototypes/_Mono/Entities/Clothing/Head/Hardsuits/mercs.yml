@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  parent: [ClothingHeadHardsuitBase, BaseC3SyndicateContraband, ClothingHeadSuitWithLightBase]
+  parent: [ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase]
   id: ClothingHelmetHardsuitMercenaryWarlord
   name: WL-01 helmet
   description: A heavy headgear piece accompanying the Warlord suit, it offers flash inmunity aswell mass scanner support.
@@ -49,7 +49,7 @@
 
 #advanced scaf for mercs
 - type: entity
-  parent: [ClothingHeadEVAHelmetBase, BaseC3SyndicateContraband, ClothingHeadSuitWithLightBase]
+  parent: [ClothingHeadEVAHelmetBase, ClothingHeadSuitWithLightBase]
   id: ClothingHeadHelmetHardsuitScafAdvanced
   name: SCAF reinforced exosuit helmet
   description: A robust, strong helmet. On the inside smells of pent up anger.

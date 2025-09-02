@@ -24,7 +24,7 @@
   - CombatEva
   - EVASuits
   - ArmorNF
-  result: ClothingOuterHardsuitScafAdvanced
+  result: ClothingHeadHelmetHardsuitScafAdvanced
   materials:
     Glass: 2000
     Steel: 1500
@@ -36,10 +36,10 @@
 
 - type: latheRecipe
   id: ClothingHeadHelmetHardsuitScafAdvancedClear
-  parent: NFBaseEVASuitRecipe
+  parent: ClothingHeadHelmetHardsuitScafAdvanced
   result: ClothingHeadHelmetHardsuitScafAdvancedClear
   
 - type: latheRecipe
   id: ClothingHeadHelmetHardsuitScafAdvancedSkull
-  parent: NFBaseEVASuitRecipe
+  parent: ClothingHeadHelmetHardsuitScafAdvanced
   result: ClothingHeadHelmetHardsuitScafAdvancedSkull

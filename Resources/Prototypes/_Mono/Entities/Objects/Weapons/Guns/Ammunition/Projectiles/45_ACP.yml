@@ -132,7 +132,7 @@
   - type: Projectile
     damage:
       types: 
-        Piercing: 22
+        Piercing: 19
     armorPenetration: 0.1
 
 - type: entity
@@ -144,7 +144,7 @@
   - type: Projectile
     damage:
       types: 
-        Piercing: 19
+        Piercing: 16
     armorPenetration: 0.25
 
 - type: entity
@@ -156,5 +156,5 @@
   - type: Projectile
     damage:
       types: 
-        Piercing: 16
+        Piercing: 13
     armorPenetration: 0.4
