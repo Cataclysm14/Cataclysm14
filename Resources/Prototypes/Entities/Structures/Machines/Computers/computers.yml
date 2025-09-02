@@ -233,7 +233,7 @@
         enum.WiresUiKey.Key:
           type: WiresBoundUserInterface
   - type: RadarConsole
-    maxRange: 512 #256->512 Mono
+    maxRange: 768 #256->512 Mono
   - type: WorldLoader
     radius: 384 # Mono
   - type: PointLight
@@ -333,7 +333,7 @@
     tags:
       - Syndicate
   - type: RadarConsole
-    maxRange: 512 #384->512 Mono
+    maxRange: 768 #384->512 Mono
   - type: WorldLoader
     radius: 1536
   - type: PointLight
