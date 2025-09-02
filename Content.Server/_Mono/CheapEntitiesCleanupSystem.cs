@@ -4,9 +4,9 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using Content.Server.Body.Components;
 using Content.Shared._Mono.CCVar;
 using Content.Shared.Cargo.Components;
-using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Mobs.Components;
 using Robust.Shared.Configuration;
 using Robust.Shared.Containers;
@@ -87,6 +87,10 @@ public sealed class CheapEntitiesCleanupSystem : EntitySystem
             if (HasComp<ActorComponent>(uid))
                 continue;
 
+            // Final safety check.
+            if (HasComp<BrainComponent>(uid))
+                continue;
+
             // Adds entity to logging
             entCount += 1;
             // Delete the entity
@@ -117,6 +121,10 @@ public sealed class CheapEntitiesCleanupSystem : EntitySystem
 
             // Safety check for players. This shouldn't apply as mobs do not have stack prices.
             if (HasComp<ActorComponent>(uid))
+                continue;
+
+            // Final safety check.
+            if (HasComp<BrainComponent>(uid))
                 continue;
 
             // Adds entity to logging
