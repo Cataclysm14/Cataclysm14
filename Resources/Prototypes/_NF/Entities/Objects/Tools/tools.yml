@@ -43,7 +43,7 @@
   name: maintenance jack
   parent: BaseItem
   id: MaintenanceJack
-  description: A maintenance jack for removing up floor plating.
+  description: A maintenance jack for ruling the maints. #removing up floor plating.
   components:
   - type: Sprite
     sprite: _NF/Objects/Tools/maintenance-jack.rsi
@@ -58,7 +58,13 @@
         Structural: 5
     soundHit:
       collection: MetalThud
-  - type: Wieldable #Mono
+  - type: EmitSoundOnLand #Mono start
+    sound:
+      path: /Audio/Items/crowbar_drop.ogg
+      params:
+        volume: 2
+  - type: Wieldable 
+    unwieldOnUse: false
   - type: IncreaseDamageOnWield
     damage:
       types:
@@ -75,17 +81,35 @@
     - back
     - suitStorage
   - type: Tool
-    qualities:
-      - Axing
-      - Prying #Mono    
-    useSound: #Mono
-      path: /Audio/Items/crowbar.ogg #Mono
+#    qualities: #Mono
+#      - Axing
   - type: ToolTileCompatible
   - type: PhysicalComposition #Mono
     materialComposition: #Mono
       Steel: 200 #Mono
   - type: UseDelay
     delay: 1
+  - type: MultipleTool #Mono start
+    statusShowBehavior: true
+    entries:
+      - behavior:
+        - Prying
+        - Axing
+        sprite:
+          sprite: _NF/Objects/Tools/maintenance-jack.rsi
+          state: icon
+        useSound:
+          path: /Audio/Items/crowbar.ogg
+        changeSound:
+          path: /Audio/Effects/thudswoosh.ogg
+      - behavior: Anchoring
+        sprite:
+          sprite: _NF/Objects/Tools/maintenance-jack.rsi
+          state: icon_2
+        useSound:
+          path: /Audio/Items/ratchet.ogg
+        changeSound:
+          path: /Audio/Effects/thudswoosh.ogg #Mono end
 
 - type: entity
   name: the people's shovel
