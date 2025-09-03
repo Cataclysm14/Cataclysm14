@@ -125,11 +125,11 @@
   - type: Clothing
     sprite: _Mono/Objects/Weapons/Guns/Shotguns/Helopolis.rsi
   - type: Gun
-    minAngle: 6
-    maxAngle: 12
+    minAngle: 3
+    maxAngle: 10
     fireRate: 1.2
-    angleIncrease: 3
-    angleDecay: 2
+    angleIncrease: 4
+    angleDecay: 4
   - type: Tag
     tags:
     - WeaponShotgunHelopolis
