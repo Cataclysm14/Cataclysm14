@@ -86,6 +86,7 @@
   - type: ToolTileCompatible #Mono
   - type: Tool
     qualities:
+      - Prying
       - Axing
     useSound: /Audio/Items/crowbar.ogg #Mono
   - type: Prying
