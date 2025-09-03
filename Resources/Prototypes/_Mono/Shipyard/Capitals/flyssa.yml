@@ -13,7 +13,7 @@
   price: 1225950
   category: Large
   group: Security
-  access: VoucherFlyssa
+  access: Security
   shuttlePath: /Maps/_Mono/Shuttles/Capitals/flyssa.yml
   guidebookPage: Null
   class:

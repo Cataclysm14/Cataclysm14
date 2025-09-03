@@ -849,11 +849,13 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
         if (listing is null)
             TryComp(uid, out listing);
 
-        // Construct access set from input type (voucher or ID card)
         IDShipAccesses accesses;
         bool initialHasAccess = true;
+        var voucherAllowed = new HashSet<ProtoId<VesselPrototype>>(); // Mono - this line and everything related
+        // Construct access set from input type (voucher or ID card)
         if (TryComp<ShipyardVoucherComponent>(targetId, out var voucher))
         {
+            voucherAllowed = voucher.Vessels;
             if (voucher.ConsoleType == key)
             {
                 accesses.Tags = voucher.Access;
@@ -866,6 +868,7 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
                 initialHasAccess = false;
             }
         }
+
         else if (TryComp<AccessComponent>(targetId, out var accessComponent))
         {
             accesses.Tags = accessComponent.Tags;
@@ -908,7 +911,7 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
                 key != null && key != ShipyardConsoleUiKey.Custom &&
                 vessel.Group == key)
             {
-                if (hasAccess)
+                if (hasAccess || voucherAllowed.Contains(vessel.ID))
                     available.Add(vessel.ID);
                 else
                     unavailable.Add(vessel.ID);

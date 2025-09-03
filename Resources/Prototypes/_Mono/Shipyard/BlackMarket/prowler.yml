@@ -18,7 +18,7 @@
   maxPriceMarkup: 20 # Multiplier
   category: Small
   group: BlackMarket
-  access: VoucherProwler
+  access: CentralCommand # not purchasable
   shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/prowler.yml
   guidebookPage: Null
   class:

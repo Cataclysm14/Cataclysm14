@@ -15,7 +15,7 @@
   price: 215700
   category: Large
   group: Ussp
-  access: USSPAdvanced
+  access: USSP
   shuttlePath: /Maps/_Mono/Shuttles/USSP/tunguska.yml
   guidebookPage: Null
   class:

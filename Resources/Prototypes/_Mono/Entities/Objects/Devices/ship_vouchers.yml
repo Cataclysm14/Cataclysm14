@@ -24,8 +24,10 @@
     destroyOnEmpty: true
     consoleType: USSP
     companyName: USSP
-    access:
-    - USSPBasic # SHITCODE!!!
+    vessels:
+    - Gadyuka
+    - Gruznyk
+    - Natisk
 
 - type: entity
   parent: BaseShipVoucher
@@ -41,8 +43,10 @@
     destroyOnEmpty: true
     consoleType: USSP
     companyName: USSP
-    access:
-    - USSPIntermediate # SHITCODE!!!
+    vessels:
+    - Akula
+    - Drakon
+    - Sekunda
 
 - type: entity
   parent: BaseShipVoucher
@@ -58,8 +62,9 @@
     destroyOnEmpty: true
     consoleType: USSP
     companyName: USSP
-    access:
-    - USSPAdvanced # SHITCODE!!!
+    vessels:
+    - Sulak
+    - Tunguska
 
 - type: entity
   parent: BaseShipVoucher
@@ -75,8 +80,8 @@
     destroyOnEmpty: true
     consoleType: USSP
     companyName: USSP
-    access:
-    - USSPLedokol # SHITCODE!!!
+    vessels:
+    - Ledokol
 
 - type: entity
   parent: BaseShipVoucher
@@ -92,8 +97,9 @@
     destroyOnEmpty: true
     consoleType: Custom
     companyName: USSP
-    access:
-    - USSPLedokolRam # SHITCODE!!!
+    vessels:
+    - Kopye
+    - Molotok
 
 - type: entity
   parent: BaseShipVoucher
@@ -109,8 +115,8 @@
     destroyOnEmpty: true
     consoleType: Custom
     companyName: USSP
-    access:
-    - USSPLedokolAttatchment # SHITCODE!!!
+    vessels:
+    - Kupol
 
 # Tsfmc
 - type: entity
@@ -132,7 +138,6 @@
     accessGroups:
     - GeneralNfsdAccess
 
-
 - type: entity
   parent: BaseShipVoucher
   id: ShipVoucherProwler
@@ -147,8 +152,8 @@
     destroyOnEmpty: true
     consoleType: BlackMarket
     companyName: Rogue
-    access:
-    - VoucherProwler # SHITCODE!!!
+    vessels:
+    - Prowler
   - type: StaticPrice
     vendPrice: 250000
 
@@ -166,7 +171,7 @@
     destroyOnEmpty: true
     consoleType: Security
     companyName: TSF
-    access:
-    - VoucherFlyssa # SHITCODE!!!
+    vessels:
+    - Flyssa
   - type: StaticPrice
     vendPrice: 500000

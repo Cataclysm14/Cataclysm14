@@ -11,7 +11,7 @@
   price: 225000
   category: Small
   group: Custom
-  access: USSPLedokolAttatchment
+  access: USSP
   shuttlePath: /Maps/_Mono/Shuttles/USSP/Ledokol/Attatchments/kupol.yml
   guidebookPage: Null
 

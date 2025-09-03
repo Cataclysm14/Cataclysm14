@@ -13,7 +13,7 @@
   price: 53500
   category: Medium
   group: Ussp
-  access: USSPBasic
+  access: USSP
   shuttlePath: /Maps/_Mono/Shuttles/USSP/natisk.yml
   guidebookPage: Null
   class:

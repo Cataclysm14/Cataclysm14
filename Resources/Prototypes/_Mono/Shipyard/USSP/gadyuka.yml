@@ -13,7 +13,7 @@
   price: 30520 # WALMARTMOBILE 2
   category: Small
   group: Ussp
-  access: USSPBasic
+  access: USSP
   shuttlePath: /Maps/_Mono/Shuttles/USSP/gadyuka.yml
   guidebookPage: Null
   class:

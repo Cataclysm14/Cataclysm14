@@ -11,7 +11,7 @@
   price: 425000
   category: Large
   group: Ussp
-  access: USSPLedokol
+  access: USSP
   shuttlePath: /Maps/_Mono/Shuttles/USSP/Ledokol/ledokol.yml
   guidebookPage: Null
   class:
