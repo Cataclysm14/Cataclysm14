@@ -311,9 +311,43 @@
     speaks:
     - TauCetiBasic
     - RobotTalk
+    - Bubblish
+    - RootSpeak
+    - Nekomimetic
+    - Draconic
+    - SolCommon
+    - NovuNederic
+    - NovaCygniBasic
+    - Tradeband
+    - Freespeak
+    - Elyran
+    - Canilunzt
+    - Moffic
+    - Calcic
+    - Marish
+    - ValyrianStandard
+    - Chittin
+    - Xeeplian
     understands:
     - TauCetiBasic
     - RobotTalk
+    - Bubblish
+    - RootSpeak
+    - Nekomimetic
+    - Draconic
+    - SolCommon
+    - NovuNederic
+    - NovaCygniBasic
+    - Tradeband
+    - Freespeak
+    - Elyran
+    - Canilunzt
+    - Moffic
+    - Calcic
+    - Marish
+    - ValyrianStandard
+    - Chittin
+    - Xeeplian
   - type: ProtectedFromStepTriggers
   - type: DamageOnInteractProtection
     damageProtection:
