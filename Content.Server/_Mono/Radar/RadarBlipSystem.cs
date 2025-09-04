@@ -37,6 +37,9 @@ public sealed partial class RadarBlipSystem : EntitySystem
         if (!TryComp<RadarConsoleComponent>(radarUid, out var radar))
             return;
 
+        if (!TryComp<PhysicsComponent>(radarUid, out _))
+            return;
+
         var blips = AssembleBlipsReport((EntityUid)radarUid, radar);
         var hitscans = AssembleHitscanReport((EntityUid)radarUid, radar);
 
