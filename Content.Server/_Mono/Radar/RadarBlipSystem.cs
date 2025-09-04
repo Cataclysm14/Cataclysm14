@@ -20,14 +20,10 @@ public sealed partial class RadarBlipSystem : EntitySystem
     [Dependency] private readonly SharedTransformSystem _xform = default!;
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
 
-    private EntityQuery<PhysicsComponent> _physQuery;
-
     public override void Initialize()
     {
         base.Initialize();
         SubscribeNetworkEvent<RequestBlipsEvent>(OnBlipsRequested);
-
-        _physQuery = GetEntityQuery<PhysicsComponent>();
     }
 
     private void OnBlipsRequested(RequestBlipsEvent ev, EntitySessionEventArgs args)
