@@ -2,7 +2,7 @@
   id: Exigence
   parent: BaseVesselAntag
   name: NIKI Exigence
-  description: An NIKI light skirmisher that trades survivability for pure speed. Lacks a shielding system, and the hull is obscenely thin. Take extreme caution.
+  description: An NIKI light skirmisher that trades survivability for pure speed. Lacks a shield generator, and the hull is obscenely thin. Take extreme caution.
   price: 70000
   category: Medium
   group: BlackMarket
