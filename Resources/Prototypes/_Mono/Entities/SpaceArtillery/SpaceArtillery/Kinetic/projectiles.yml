@@ -20,7 +20,7 @@
   - type: Projectile
     damage:
       types:
-        Structural: 25000
+        Structural: 55000
         Blunt: 3000
         Ion: 600
   - type: Sprite
