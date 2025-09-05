@@ -15,7 +15,7 @@
   parent: BaseVessel
   name: NIKI Duran
   description: A cheap piece of shit exped shuttle with little to no armour, but by god, does it have soul.
-  price: 31050
+  price: 36080
   category: Medium
   group: Expedition
   shuttlePath: /Maps/_Mono/Shuttles/Expedition/duran.yml
