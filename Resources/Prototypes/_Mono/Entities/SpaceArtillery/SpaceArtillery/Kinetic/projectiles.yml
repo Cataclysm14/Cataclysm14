@@ -106,7 +106,6 @@
         Structural: 350
         Blunt: 100
         Piercing: 125
-    ignoreWeaponGrid: true
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 3
