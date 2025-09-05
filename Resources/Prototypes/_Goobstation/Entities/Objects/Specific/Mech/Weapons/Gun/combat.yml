@@ -212,7 +212,7 @@
       path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
   - type: ProjectileBatteryAmmoProvider
     proto: ShellShotgun12_gaugeIncendiary
-    fireCost: 50 # 99->50 Mono
+    fireCost: 35 # 99->35 Mono
   - type: Appearance
   - type: AmmoCounter
 
@@ -227,7 +227,7 @@
     sprite: Objects/Specific/Mech/mecha_equipment.rsi
     state: mecha_uac2
   - type: Gun
-    fireRate: 5 # 3->5 Mono
+    fireRate: 4.5 # 3->4.5 Mono
     projectileSpeed: 55 # Mono
     selectedMode: FullAuto
     availableModes:
