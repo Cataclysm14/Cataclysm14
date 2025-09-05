@@ -770,6 +770,7 @@ public sealed partial class ShuttleSystem
             var dockedPos = _transform.GetWorldPosition(dockedUid);
             var mainRot = _transform.GetWorldRotation(uid);
             var dockedRot = _transform.GetWorldRotation(dockedUid);
+            var dockedBody = _physicsQuery.GetComponent(dockedUid);
 
             // Store position and rotation relative to main shuttle
             var dockConnections = new List<(EntityUid DockA, EntityUid DockB)>();
@@ -781,8 +782,8 @@ public sealed partial class ShuttleSystem
                 dockConnections.Add((dock, dockComp.DockedWith.Value));
             }
             relativeTransforms[dockedUid] = (dockedPos - mainPos, dockedRot - mainRot, dockConnections);
-            _physics.SetLinearVelocity(dockedUid, Vector2.Zero, body: body);
-            _physics.SetAngularVelocity(dockedUid, 0f, body: body);
+            _physics.SetLinearVelocity(dockedUid, Vector2.Zero, body: dockedBody);
+            _physics.SetAngularVelocity(dockedUid, 0f, body: dockedBody);
         }
 
         // Handle physics for main shuttle
