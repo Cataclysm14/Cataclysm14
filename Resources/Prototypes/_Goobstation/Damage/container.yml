@@ -1,0 +1,9 @@
+- type: damageContainer
+  id: SiliconRadiation
+  supportedGroups:
+  - Brute
+  - Electronic
+  supportedTypes:
+  - Heat
+  - Shock
+  - Radiation
