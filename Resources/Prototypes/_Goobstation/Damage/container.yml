@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 cheetah1984
+#
+# SPDX-License-Identifier: MPL-2.0
+
 - type: damageContainer
   id: SiliconRadiation
   supportedGroups:
