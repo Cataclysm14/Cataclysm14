@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2023 Cheackraze
+﻿// SPDX-FileCopyrightText: 2023 Cheackraze
 // SPDX-FileCopyrightText: 2023 Moony
 // SPDX-FileCopyrightText: 2023 metalgearsloth
 // SPDX-FileCopyrightText: 2024 Checkraze
