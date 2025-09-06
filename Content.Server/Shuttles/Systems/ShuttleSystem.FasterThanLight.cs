@@ -850,9 +850,6 @@ public sealed partial class ShuttleSystem
                 _transform.SetParent(dockedUid, dockedXform, xform.MapUid.Value);
                 _transform.SetWorldPosition(dockedUid, newPos);
                 _transform.SetWorldRotationNoLerp(dockedUid, newRot);
-                // Ensure we are in the correct rotation for the next shuttle
-
-                // yeah I'm crazy
             }
 
             // Re-establish all docking connections
