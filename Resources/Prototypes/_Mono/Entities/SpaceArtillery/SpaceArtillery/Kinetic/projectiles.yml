@@ -20,7 +20,7 @@
   - type: Projectile
     damage:
       types:
-        Structural: 25000
+        Structural: 55000
         Blunt: 3000
         Ion: 600
   - type: Sprite
@@ -219,9 +219,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBombShipGun
-    totalIntensity: 550
-    intensitySlope: 5
-    maxIntensity: 1150
+    totalIntensity: 1300
+    intensitySlope: 18
+    maxIntensity: 1900
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard

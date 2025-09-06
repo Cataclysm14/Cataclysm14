@@ -1,3 +1,20 @@
+// SPDX-FileCopyrightText: 2022 Chris V
+// SPDX-FileCopyrightText: 2022 Flipp Syder
+// SPDX-FileCopyrightText: 2022 Moony
+// SPDX-FileCopyrightText: 2022 Morb
+// SPDX-FileCopyrightText: 2022 Veritius
+// SPDX-FileCopyrightText: 2022 metalgearsloth
+// SPDX-FileCopyrightText: 2022 moonheart08
+// SPDX-FileCopyrightText: 2023 DrSmugleaf
+// SPDX-FileCopyrightText: 2023 Visne
+// SPDX-FileCopyrightText: 2024 Kara
+// SPDX-FileCopyrightText: 2024 Nemanja
+// SPDX-FileCopyrightText: 2024 Psychpsyo
+// SPDX-FileCopyrightText: 2024 deltanedas
+// SPDX-FileCopyrightText: 2025 Coenx-flex
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Linq;
 using Content.Shared.Dataset;
 using Content.Server.Ghost.Roles.Components;
@@ -15,14 +32,15 @@ public sealed class RandomSentienceRule : StationEventSystem<RandomSentienceRule
     [Dependency] private readonly IRobustRandom _random = default!;
     protected override void Started(EntityUid uid, RandomSentienceRuleComponent component, GameRuleComponent gameRule, GameRuleStartedEvent args)
     {
-        if (!TryGetRandomStation(out var station))
+        if (!TryGetRandomStations(gameRule.NumberOfGrids.Min, gameRule.NumberOfGrids.Max, out var stations))
             return;
 
         var targetList = new List<Entity<SentienceTargetComponent>>();
         var query = EntityQueryEnumerator<SentienceTargetComponent, TransformComponent>();
         while (query.MoveNext(out var targetUid, out var target, out var xform))
         {
-            if (StationSystem.GetOwningStation(targetUid, xform) != station)
+            var owningStation = StationSystem.GetOwningStation(targetUid, xform);
+            if (!owningStation.HasValue || !stations.Contains(owningStation.Value)) // Mono change: multiple stations
                 continue;
 
             targetList.Add((targetUid, target));
@@ -68,15 +86,18 @@ public sealed class RandomSentienceRule : StationEventSystem<RandomSentienceRule
         var kind2 = groupList.Count > 1 ? groupList[1] : "???";
         var kind3 = groupList.Count > 2 ? groupList[2] : "???";
 
-        ChatSystem.DispatchStationAnnouncement(
-            station.Value,
-            Loc.GetString("station-event-random-sentience-announcement",
-                ("kind1", kind1), ("kind2", kind2), ("kind3", kind3), ("amount", groupList.Count),
-                ("data", _random.Pick(_prototype.Index<LocalizedDatasetPrototype>("RandomSentienceEventData"))),
-                ("strength", _random.Pick(_prototype.Index<LocalizedDatasetPrototype>("RandomSentienceEventStrength")))
-            ),
-            playDefaultSound: false,
-            colorOverride: Color.Gold
-        );
+        foreach (var station in stations)
+        {
+            ChatSystem.DispatchStationAnnouncement(
+                station,
+                Loc.GetString("station-event-random-sentience-announcement",
+                    ("kind1", kind1), ("kind2", kind2), ("kind3", kind3), ("amount", groupList.Count),
+                    ("data", _random.Pick(_prototype.Index<LocalizedDatasetPrototype>("RandomSentienceEventData"))),
+                    ("strength", _random.Pick(_prototype.Index<LocalizedDatasetPrototype>("RandomSentienceEventStrength")))
+                ),
+                playDefaultSound: false,
+                colorOverride: Color.Gold
+            );
+        }
     }
 }

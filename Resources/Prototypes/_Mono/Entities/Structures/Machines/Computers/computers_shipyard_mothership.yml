@@ -7,7 +7,7 @@
 
 - type: entity
   id: BaseCarrierComputer
-  parent: [BaseStructureDisableToolUse, BaseStructureIndestructible, ComputerShipyard]
+  parent: [BaseStructureDisableToolUse, BaseStructureDestructible, ComputerShipyard]
   suffix: Carrier
   description: Used on carriers to purchase and sell ships without returning to a station.
   abstract: true

@@ -11551,3 +11551,593 @@ Entries:
   id: 1282
   time: '2025-08-28T19:14:57.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2106
+- author: starch70
+  changes:
+    - type: Tweak
+      message: >-
+        Adjusted values of some hardsuits (RX-01 thermal pulse time halved,
+        RX-01 and M92-X both get NVGs/thermals, M92-X loses flash prot, buffed
+        M92-X speed, buffed M82 hardsuits slightly in pierce and heat resist,
+        buffed rogue SCAF resists but slightly nerfed speed, reduced WL-01
+        pierce by 10%, added fire resist on M92-X equal to RX-01, buffed SCAF
+        hardsuit, buffed base M92 hardsuit, gave M92 hardsuits and RX-01 modsuit
+        20% poison resist) Slop balance wall of text
+  id: 1283
+  time: '2025-08-28T22:41:25.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2105
+- author: starch70
+  changes:
+    - type: Tweak
+      message: 2x'd sell rates for cargo trade goods (not crates).
+  id: 1284
+  time: '2025-08-28T22:51:03.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2113
+- author: Ilya246
+  changes:
+    - type: Add
+      message: >-
+        Borgs can now select their sprite out of a per-type selection - goob
+        port.
+    - type: Add
+      message: Borgs can now scream and do some other emote sounds - goob port.
+  id: 1285
+  time: '2025-08-28T22:53:36.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2104
+- author: starch70
+  changes:
+    - type: Tweak
+      message: >-
+        Portstriking rules updated, portstrikes are now allowed after the 4 hour
+        mark.
+    - type: Tweak
+      message: >-
+        Exploiting rules have been updated to include subframing. I'm just the
+        messenger, sorry.
+  id: 1286
+  time: '2025-08-29T00:20:25.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2115
+- author: tonotom1
+  changes:
+    - type: Fix
+      message: >-
+        Sounds for manually cycling shotgun shells don't break after the first
+        mag anymore
+  id: 1287
+  time: '2025-08-29T13:25:01.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2119
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: >-
+        Shotgun shells now go donk donk when thrown instead of sounding like
+        brass
+  id: 1288
+  time: '2025-08-29T23:17:07.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2120
+- author: Ghagliiarghii
+  changes:
+    - type: Fix
+      message: >-
+        Advanced laser pistol now correctly fits in your pocket and sidearm
+        slot.
+  id: 1289
+  time: '2025-08-30T00:22:49.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2127
+- author: core-mene
+  changes:
+    - type: Fix
+      message: Fixed only OO buckshot being printable and not regular one
+  id: 1290
+  time: '2025-08-30T00:23:35.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2126
+- author: core-mene
+  changes:
+    - type: Fix
+      message: fixed RIP shotgun shell box dropping OO buckshot
+    - type: Fix
+      message: fixed 45 magnum AP speedloader not being in recipes
+  id: 1291
+  time: '2025-08-30T00:26:13.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2089
+- author: Ilya246
+  changes:
+    - type: Fix
+      message: >-
+        Fixed borg power cells draining rapidly after turning on after a long
+        time of being off.
+  id: 1292
+  time: '2025-08-30T07:39:29.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2130
+- author: Honestly101
+  changes:
+    - type: Add
+      message: Added station records console to Jupiter
+    - type: Fix
+      message: Fixed missing pipes and atmos on Jupiter
+  id: 1293
+  time: '2025-08-30T07:40:15.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2125
+- author: LaCumbiaDelCoronavirus
+  changes:
+    - type: Add
+      message: Sanabi.
+  id: 1294
+  time: '2025-08-30T07:42:57.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2107
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        A new fragging ghostrole has been added for after the 3 hour mark (with
+        atleast 40 players on). This time, its playtime locked instead of WL'd.
+    - type: Tweak
+      message: ADS now can speak reptillian, no reason.
+    - type: Fix
+      message: Fixed Reptillian language names using EE lore.
+  id: 1295
+  time: '2025-08-30T07:56:27.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2129
+- author: Ilya246
+  changes:
+    - type: Tweak
+      message: Lathes are no longer painfully slow (sped up 3x).
+  id: 1296
+  time: '2025-08-30T14:31:28.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2132
+- author: OneZerooo0
+  changes:
+    - type: Fix
+      message: Ghostrole ship bugs
+  id: 1297
+  time: '2025-08-30T16:48:24.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2136
+- author: Ilya246
+  changes:
+    - type: Add
+      message: Added item-form signal timer.
+    - type: Tweak
+      message: Signal timers now allow you to enter non-integer delay values.
+    - type: Fix
+      message: >-
+        Fixed interactor refusing to interact with entities it had a failed
+        interaction with.
+    - type: Fix
+      message: Conveyor belt construction ghost sprite now properly has arrows.
+  id: 1298
+  time: '2025-08-30T17:00:30.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2131
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: Massively buffed shotgun cycling ASMR again
+  id: 1299
+  time: '2025-08-30T17:37:05.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2133
+- author: Onezero0
+  changes:
+    - type: Tweak
+      message: Resprited the AME and related fuel jar.
+  id: 1300
+  time: '2025-08-30T22:38:36.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2142
+- author: Redrover1760
+  changes:
+    - type: Fix
+      message: Docked shuttles don't slow down in FTL.
+    - type: Fix
+      message: >-
+        Improved docked shuttles FTL, much better at not colliding into the main
+        shuttle at FTL end.
+  id: 1301
+  time: '2025-08-30T22:48:34.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2144
+- author: starch70
+  changes:
+    - type: Tweak
+      message: >-
+        Buffed autopulser with a very small explosion on impact (like half the
+        strength of 57mm explosion, its pretty weak)
+  id: 1302
+  time: '2025-08-30T23:46:46.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2145
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Energy weapons are 2x4 sized instead of 4x4 sized.
+  id: 1303
+  time: '2025-08-30T23:59:54.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2151
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Ocelot to TSF shipyard as a expensive small ship, high burst damage with
+        autopulsers and torps but bad for prolonged combat. Capable of
+        cloakhunting.
+  id: 1304
+  time: '2025-08-31T06:06:10.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2153
+- author: Ilya246
+  changes:
+    - type: Tweak
+      message: Lathes now consume resources as objects are produced.
+    - type: Add
+      message: Queued lathe recipes are now cancellable.
+    - type: Add
+      message: >-
+        Lathes may now be made to loop their queue and/or skip over recipes with
+        insufficient materials.
+    - type: Add
+      message: >-
+        Lathes now have signal ports to pause/resume the queue and a signal
+        source port for when something is produced.
+  id: 1305
+  time: '2025-08-31T06:09:03.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2134
+- author: core-mene
+  changes:
+    - type: Add
+      message: New rogue silicons tech disk in silicon lootbox.
+    - type: Tweak
+      message: >-
+        Buffed silicon loot box in exchange for twice as much HP + more armor
+        for most silicons (minus boss).
+  id: 1306
+  time: '2025-08-31T06:10:47.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2114
+- author: starch70
+  changes:
+    - type: Tweak
+      message: >-
+        Gave Kasature combat harness weakness to slash and shock. I wonder what
+        weapon could possibly use slash and shock, and be hand-craftable.
+  id: 1307
+  time: '2025-08-31T08:50:50.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2157
+- author: starch70
+  changes:
+    - type: Tweak
+      message: >-
+        Reduced Kasature combat harness pierce protection to 70% from 80%,
+        removed damage slowdown removal, reduced explosion prot to 65% from 90%
+  id: 1308
+  time: '2025-08-31T09:02:31.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2158
+- author: Ilya246
+  changes:
+    - type: Add
+      message: Added gambling (reenabled grand lottery).
+  id: 1309
+  time: '2025-08-31T16:04:18.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2156
+- author: starch70
+  changes:
+    - type: Tweak
+      message: Shipyard consoles are now Titlecard. (Invincible.)
+    - type: Fix
+      message: Fixed carrier computers being Titlecard. (Invincible.)
+  id: 1310
+  time: '2025-08-31T22:33:58.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2164
+- author: starch70
+  changes:
+    - type: Tweak
+      message: Buffed explosive damage of Cyrexa 220mm projectiles.
+  id: 1311
+  time: '2025-09-01T04:39:11.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2162
+- author: Rubeebeebee
+  changes:
+    - type: Tweak
+      message: Tweaked the Twilight MKII to be a better designed shitbox
+  id: 1312
+  time: '2025-09-01T04:39:59.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2140
+- author: Honestly101
+  changes:
+    - type: Add
+      message: Added enabled strobe lights variant.
+    - type: Add
+      message: Added Rogue cameras to Jupiter.
+    - type: Tweak
+      message: QoL changes to Jupiter.
+  id: 1313
+  time: '2025-09-01T04:40:54.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2139
+- author: mikusssssss
+  changes:
+    - type: Add
+      message: >-
+        Liquid oxygen/nitrogen canisters along with plasma canisters are buyable
+        again.
+  id: 1314
+  time: '2025-09-01T16:47:39.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2170
+- author: Honestly101
+  changes:
+    - type: Tweak
+      message: Large mechs can now damage structures with melee
+    - type: Tweak
+      message: Mechs can now pry open doors (Alt Left Click)
+  id: 1315
+  time: '2025-09-01T17:10:45.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2161
+- author: tonotom1
+  changes:
+    - type: Add
+      message: >-
+        UW-12B Helopolis: A compact breaching shotgun intended for use with
+        slugs to break down internal airlocks
+  id: 1316
+  time: '2025-09-01T19:10:12.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2171
+- author: Honestly101
+  changes:
+    - type: Fix
+      message: Fixed missing plating under halycon walls
+  id: 1317
+  time: '2025-09-01T19:11:17.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2168
+- author: starch70
+  changes:
+    - type: Tweak
+      message: >-
+        Properly implemented recoil gain/recovery on guns. SMGs/rifles/DMRs/LMGs
+        should all be controllable now if you just fire in bursts. Also buffed
+        firerate of Grizzly and AK-220. No more near perfect accuracy M-90, so
+        sad for the 0 people using it.
+  id: 1318
+  time: '2025-09-01T19:37:32.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2155
+- author: Redrover1760
+  changes:
+    - type: Add
+      message: >-
+        TSF experimental suit 10% more blunt, slash, pierce, and 25% more stam
+        resist
+  id: 1319
+  time: '2025-09-01T19:41:26.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2173
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        Elite suit armor stats reverted to standard wizden (40%
+        blunt/slash/pierce). 0% slowdown still.
+    - type: Tweak
+      message: Jugsuit slowdown increased from 35% to 40%.
+  id: 1320
+  time: '2025-09-01T19:46:11.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2174
+- author: Ilya246
+  changes:
+    - type: Add
+      message: Borgs now have inbuilt mass scanner and can freely float in space.
+    - type: Tweak
+      message: >-
+        Borg appraisal module renamed to cargo module and given tether gun and
+        gravity gun.
+    - type: Tweak
+      message: Medical borgs now get the surgery module right away.
+    - type: Tweak
+      message: All borgs now get the tools module right away.
+    - type: Tweak
+      message: Borgs can now open their own UI.
+    - type: Tweak
+      message: You can now eject default modules from borgs.
+  id: 1321
+  time: '2025-09-01T20:07:59.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2103
+- author: bitcrushing
+  changes:
+    - type: Fix
+      message: >-
+        Fixed ported Funky Station gases not displaying correctly on the gas
+        sale console
+  id: 1322
+  time: '2025-09-01T20:09:05.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2101
+- author: starch70
+  changes:
+    - type: Add
+      message: Added a ADS capital. Only spawns after 5 hour mark.
+    - type: Add
+      message: >-
+        Added Type-241 plasma lance as a superheavy energy weapon that fires a
+        large ~0.5km long beam of plasma in 1 giant burst. Don't get hit by it.
+        Currently only mapped on ADS capital.
+    - type: Tweak
+      message: >-
+        Changed ADS events to be more aggressive after 5 hour mark, and locked
+        zenith alt-variant to post 5 hour mark.
+    - type: Tweak
+      message: >-
+        Gave ADS ships a unique IFF color, and gave ADS systems/Asakim a unique
+        radio channel (its :j to access it).
+    - type: Tweak
+      message: Added a new law to ADS lawset.
+    - type: Tweak
+      message: >-
+        Buffed omega gunnery server to 500 capacity from 150, replaced Flyssa
+        station server with Omega server.
+    - type: Fix
+      message: Fixed Asakim medium ship missing a gyro.
+  id: 1323
+  time: '2025-09-01T20:14:41.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2167
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Drozd max spread while wielded reduced.
+    - type: Tweak
+      message: Vulcan a bit easier to use.
+  id: 1324
+  time: '2025-09-01T21:15:15.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2178
+- author: starch70
+  changes:
+    - type: Tweak
+      message: Increased density of ADS capital walls, no more rammeta.
+  id: 1325
+  time: '2025-09-01T23:24:47.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2180
+- author: Honestly101
+  changes:
+    - type: Fix
+      message: AI can move around again at the cost of a rotating cube.
+  id: 1326
+  time: '2025-09-02T00:17:23.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2179
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Halcyon/Balkai radar change decreased to 1280m
+    - type: Tweak
+      message: >-
+        Other places using the station radar replaced with elite radar, with a
+        1024m range
+  id: 1327
+  time: '2025-09-02T04:45:22.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2183
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: Made the Helopolis' backpack/suit strap color less jarring
+  id: 1328
+  time: '2025-09-02T11:49:11.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2188
+- author: Redrover1760
+  changes:
+    - type: Fix
+      message: Missiles fixed from accelerating like crazy.
+  id: 1329
+  time: '2025-09-02T17:50:16.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2195
+- author: Redrover1760
+  changes:
+    - type: Fix
+      message: Fixes AI movement properly.
+  id: 1330
+  time: '2025-09-02T20:05:18.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2198
+- author: starch70
+  changes:
+    - type: Tweak
+      message: Buffed Charon projectile speed to 900 m/s from 600 m/s
+    - type: Add
+      message: Subnuclear shells available after T3 material research for Charon.
+  id: 1331
+  time: '2025-09-02T20:10:48.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2189
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        various shuttle console/gunnery console range increased to 768, advanced
+        radar to 1024m, etc
+  id: 1332
+  time: '2025-09-02T22:28:13.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2194
+- author: starch70
+  changes:
+    - type: Add
+      message: Resprited AKM and WSPR.
+  id: 1333
+  time: '2025-09-03T21:30:10.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2211
+- author: Hyenh
+  changes:
+    - type: Add
+      message: Nova Sharks leather jacket
+  id: 1334
+  time: '2025-09-03T21:31:49.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2206
+- author: Ilya246
+  changes:
+    - type: Fix
+      message: Fixed borg tether gun and force gun needing battery power.
+  id: 1335
+  time: '2025-09-03T21:32:29.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2187
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: >-
+        Replaces Deck the Halls by Kevin MacLeod with Koganusan by Simon Swerwer
+        to reduce tonal whiplash
+  id: 1336
+  time: '2025-09-03T23:32:55.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2212
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: Helopolis can breach doors a bit more reliably at sharper angles now
+  id: 1337
+  time: '2025-09-03T23:48:26.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2209
+- author: GNUtopia
+  changes:
+    - type: Tweak
+      message: Medipen cases no longer violate the Geneva Convention
+  id: 1338
+  time: '2025-09-03T23:49:17.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2121
+- author: Redrover1760
+  changes:
+    - type: Fix
+      message: Some blip error spams.
+    - type: Fix
+      message: Normal projectile blips tunneling through walls.
+  id: 1339
+  time: '2025-09-04T04:45:30.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2215
+- author: starch70
+  changes:
+    - type: Fix
+      message: Fixed QJ490 not having enough GCS power.
+  id: 1340
+  time: '2025-09-04T14:39:53.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2217
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Tarnyx counts as energy for the gunnery console
+  id: 1341
+  time: '2025-09-04T22:25:19.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2219
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Higher tier shields can draw a bit more power at max draw.
+  id: 1342
+  time: '2025-09-04T22:26:00.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2218
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        portable generators max generated power increased, efficiencies
+        unchanged
+    - type: Tweak
+      message: Plasma gen optimal power increased
+    - type: Tweak
+      message: welding fuel generator max welding fuel increased
+  id: 1343
+  time: '2025-09-05T01:47:33.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2227
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Mercfabs can now print ship ammo (with the techs unlocked)
+    - type: Tweak
+      message: Basic ship ammo tech costs reduced massively.
+  id: 1344
+  time: '2025-09-05T21:42:23.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2233
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Charon/charonette damage against shields increased.
+  id: 1345
+  time: '2025-09-06T18:11:24.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2234

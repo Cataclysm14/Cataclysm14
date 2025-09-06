@@ -100,13 +100,13 @@
     channels:
     - Binary
     - Common
-    - Syndicate
+    - Remnants
     - Traffic
   - type: ActiveRadio
     channels:
     - Binary
     - Common
-    - Syndicate
+    - Remnants
     - Traffic
   - type: ShowSyndicateIcons
   - type: MovementAlwaysTouching
@@ -127,7 +127,7 @@
 - type: entity
   id: BorgChassisRedacted
   parent: BaseBorgChassisRedacted
-  name: syndicate automated defense system tender
+  name: remnant automated defense system tender
   description: A tender to a automated drone ship, to keep internal mechanisms intact.
   components:
   - type: Sprite
@@ -141,6 +141,15 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+    - RobotTalk
+    - Azaziba
+    understands:
+    - TauCetiBasic
+    - RobotTalk
+    - Azaziba
   - type: BorgChassis
     maxModules: 8
     moduleWhitelist:
@@ -199,6 +208,21 @@
     prototype: RedactedBorg
   - type: GhostTakeoverAvailable
 
+- type: entity
+  id: PlayerBorgRedactedGhostRolePlaytime
+  parent: PlayerBorgRedacted
+  suffix: Ghost, Playtime
+  components:
+  - type: GhostRole
+    name: ghost-role-information-redacted-borg
+    description: ghost-role-information-redacted-borg-description
+    rules: ghost-role-information-silicon-rules
+    raffle:
+      settings: default
+    requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 180000 # 50 hrs
+  - type: GhostTakeoverAvailable
 
 # Remnant AI core
 
@@ -237,6 +261,17 @@
     raffle:
       settings: default
     prototype: RemnantAICore
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+    - RobotTalk
+    - Draconic
+    - Azaziba
+    understands:
+    - TauCetiBasic
+    - RobotTalk
+    - Draconic
+    - Azaziba
   - type: GhostTakeoverAvailable
   - type: RandomMetadata
     nameSegments: [MonoRemnantCoreNameset]
@@ -251,13 +286,13 @@
     channels:
     - Binary
     - Common
-    - Syndicate
+    - Remnants
     - Traffic
   - type: ActiveRadio
     channels:
     - Binary
     - Common
-    - Syndicate
+    - Remnants
     - Traffic
   - type: IgnoreUIRange
   - type: StationAiHeld
@@ -285,6 +320,17 @@
   - type: RadarConsole
     maxRange: 768 # Mono
     followEntity: false
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+    - RobotTalk
+    - Draconic
+    - Azaziba
+    understands:
+    - TauCetiBasic
+    - RobotTalk
+    - Draconic
+    - Azaziba
   - type: HolographicAvatar
     layerData:
     - sprite: Mobs/Silicon/station_ai.rsi

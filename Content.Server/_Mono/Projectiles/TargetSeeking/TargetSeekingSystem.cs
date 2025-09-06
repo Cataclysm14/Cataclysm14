@@ -75,7 +75,7 @@ public sealed class TargetSeekingSystem : EntitySystem
     {
         base.Update(frameTime);
 
-        var curTime = _gameTiming.CurTime;
+        var ticktime = _gameTiming.TickPeriod;
 
         var query = EntityQueryEnumerator<TargetSeekingComponent, PhysicsComponent, TransformComponent>();
         while (query.MoveNext(out var uid, out var seekingComp, out var body, out var xform))
@@ -93,8 +93,8 @@ public sealed class TargetSeekingSystem : EntitySystem
             _physics.SetLinearVelocity(uid, body.LinearVelocity + _transform.GetWorldRotation(xform).ToWorldVec() * acceleration, body: body);
 
             // Damping applied for missiles above max speed.
-            if (body.LinearVelocity.Length() >= seekingComp.MaxSpeed)
-                _physics.SetLinearDamping(uid, body, seekingComp.Acceleration * frameTime * 1.5f);
+            if (body.LinearVelocity.Length() > seekingComp.MaxSpeed)
+                _physics.SetLinearDamping(uid, body, seekingComp.Acceleration * (float)ticktime.TotalSeconds * 1.5f);
             else
             {
                 _physics.SetLinearDamping(uid, body, 0f);

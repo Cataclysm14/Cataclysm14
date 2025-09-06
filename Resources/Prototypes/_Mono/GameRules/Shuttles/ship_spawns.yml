@@ -21,3 +21,18 @@
   id: AIRazor
   path: /Maps/_Mono/ShuttleEvent/razor.yml
   copies: 8
+
+- type: preloadedGrid
+  id: AIWyvern
+  path: /Maps/_Mono/ShuttleEvent/wyvern.yml
+  copies: 1
+
+- type: preloadedGrid
+  id: AsakimSmall
+  path: /Maps/_Mono/ShuttleEvent/asakim_small.yml
+  copies: 4
+
+- type: preloadedGrid
+  id: AsakimMedium
+  path: /Maps/_Mono/ShuttleEvent/asakim_medium.yml
+  copies: 4

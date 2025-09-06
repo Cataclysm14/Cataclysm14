@@ -1,6 +1,7 @@
 # SPDX-FileCopyrightText: 2025 Blu
 # SPDX-FileCopyrightText: 2025 BlueHNT
 # SPDX-FileCopyrightText: 2025 Daniel Lenrd
+# SPDX-FileCopyrightText: 2025 Ghagliiarghii
 # SPDX-FileCopyrightText: 2025 HungryCuban
 # SPDX-FileCopyrightText: 2025 Onezero0
 # SPDX-FileCopyrightText: 2025 Redrover1760
@@ -25,12 +26,12 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: GunWieldBonus
     minAngle: -21
-    maxAngle: -47
+    maxAngle: -26
   - type: Gun
     minAngle: 21
     maxAngle: 48
-    angleIncrease: 27
-    angleDecay: 2
+    angleIncrease: 5
+    angleDecay: 14
     fireRate: 3 # 180 rpm
     selectedMode: SemiAuto
     availableModes:
@@ -97,11 +98,11 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: GunWieldBonus
     minAngle: -21
-    maxAngle: -47
+    maxAngle: -43
   - type: Gun
     minAngle: 21
     maxAngle: 52
-    angleIncrease: 6
+    angleIncrease: 11
     angleDecay: 24
     fireRate: 5 # 300 rpm
     soundGunshot:
@@ -145,7 +146,7 @@
     id: StandardFactionLongarm
 
 - type: entity
-  name: VFD XLR-556 ICWS 5.56x45mm)
+  name: VFD XLR-556 ICWS (5.56x45mm)
   parent: [BaseWeaponRifle, BaseGunWieldable, BaseC2ContrabandUnredeemable]
   id: WeaponRifleXlr556
   description: A proposed next-gen "rifle" for TSF standard infantry. Chambered in 556x45mm rifle rounds, its RPM is incredible - but with great firerate comes great fire control...
@@ -162,8 +163,8 @@
     maxAngle: -17
   - type: Gun
     minAngle: 18
-    maxAngle: 35
-    angleIncrease: 4
+    maxAngle: 48
+    angleIncrease: 5
     angleDecay: 40
     fireRate: 11 # 660 rpm
     shotsPerBurst: 3
@@ -230,12 +231,12 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: GunWieldBonus
     minAngle: -20
-    maxAngle: -50
+    maxAngle: -27
   - type: Gun
     minAngle: 21
     maxAngle: 52
-    angleIncrease: 1.4
-    angleDecay: 24
+    angleIncrease: 7
+    angleDecay: 12
     fireRate: 4 #240 RPM, its semi-auto anyway
     selectedMode: SemiAuto
     availableModes:
@@ -266,7 +267,7 @@
 
 #Mercenary lecter
 - type: entity
-  name: HWM FCL "Prometheus" 5.56x45mm)
+  name: HWM FCL "Prometheus" (5.56x45mm)
   parent: [BaseWeaponRifle, BaseC1Contraband]
   id: WeaponRiflePrometheus
   description: The Herstal Weapon Manufacture "Prometheus" Light combat rifle (Fusil de Combat Léger) in 556x45mm. Made to be mass producable for fight against xenos. Its firerate is decent with burst being superior and accuracy poor.
@@ -287,13 +288,12 @@
       path: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg
   - type: GunWieldBonus
     minAngle: -27
-    maxAngle: -40
+    maxAngle: -26
   - type: Gun
     minAngle: 30
     maxAngle: 46
-    angleIncrease: 76
-    angleDecay: 7
-    cameraRecoilScalar: 0
+    angleIncrease: 2
+    angleDecay: 25
     fireRate: 3
     selectedMode: Burst
     soundGunshot:

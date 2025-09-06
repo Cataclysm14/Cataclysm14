@@ -88,6 +88,7 @@
 # SPDX-FileCopyrightText: 2025 Ark
 # SPDX-FileCopyrightText: 2025 ArtisticRoomba
 # SPDX-FileCopyrightText: 2025 Coenx-flex
+# SPDX-FileCopyrightText: 2025 Cojoke
 # SPDX-FileCopyrightText: 2025 DieselMohawk
 # SPDX-FileCopyrightText: 2025 KiraZen_
 # SPDX-FileCopyrightText: 2025 Redrover1760
@@ -233,7 +234,7 @@
         enum.WiresUiKey.Key:
           type: WiresBoundUserInterface
   - type: RadarConsole
-    maxRange: 512 #256->512 Mono
+    maxRange: 768 #256->512 Mono
   - type: WorldLoader
     radius: 384 # Mono
   - type: PointLight
@@ -333,7 +334,7 @@
     tags:
       - Syndicate
   - type: RadarConsole
-    maxRange: 512 #384->512 Mono
+    maxRange: 768 #384->512 Mono
   - type: WorldLoader
     radius: 1536
   - type: PointLight
