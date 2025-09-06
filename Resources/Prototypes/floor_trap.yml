@@ -1,3 +1,9 @@
+# SPDX-FileCopyrightText: 2024 Dvir
+# SPDX-FileCopyrightText: 2024 Nim
+# SPDX-FileCopyrightText: 2025 Honestly101
+#
+# SPDX-License-Identifier: MPL-2.0
+
 - type: entity
   id: CollideFloorTrap
   abstract: true
