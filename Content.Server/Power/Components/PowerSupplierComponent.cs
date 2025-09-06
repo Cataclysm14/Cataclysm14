@@ -58,5 +58,12 @@ namespace Content.Server.Power.Components
         {
             powerNet.RemoveSupplier(this);
         }
+
+        // Mono
+        /// <summary>
+        ///     Heat signature generated per watt currently supplied.
+        /// </summary>
+        [DataField]
+        public float HeatSignatureRatio = 1f;
     }
 }

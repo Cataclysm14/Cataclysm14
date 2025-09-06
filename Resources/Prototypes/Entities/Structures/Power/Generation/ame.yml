@@ -134,6 +134,7 @@
     state: static
   - type: PowerSupplier
     supplyRate: 0
+  - type: ThermalSignature # Mono
   - type: ItemSlots
   - type: ContainerContainer
     containers:

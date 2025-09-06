@@ -38,6 +38,7 @@ using Robust.Shared.Physics.Components;
 using Robust.Shared.Timing;
 using Content.Client._Mono.Radar;
 using Content.Shared._Mono.Company;
+using Content.Shared._Mono.Detection;
 using Content.Shared._Mono.Radar;
 using Robust.Shared.Prototypes;
 using System.Linq;
@@ -51,6 +52,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
 {
     [Dependency] private readonly IMapManager _mapManager = default!;
     [Dependency] private readonly IUserInterfaceManager _uiManager = default!;
+    private readonly DetectionSystem _detection; // Mono
     private readonly StationSystem _station; // Frontier
     private readonly SharedShuttleSystem _shuttles;
     private readonly SharedTransformSystem _transform;
@@ -107,6 +109,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
     public ShuttleNavControl() : base(64f, 256f, 256f)
     {
         RobustXamlLoader.Load(this);
+        _detection = EntManager.System<DetectionSystem>(); // Mono
         _shuttles = EntManager.System<SharedShuttleSystem>();
         _transform = EntManager.System<SharedTransformSystem>();
         _station = EntManager.System<StationSystem>(); // Frontier
@@ -350,19 +353,31 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
             if (!_shuttles.CanDraw(gUid, gridBody, iff))
                 continue;
 
+            var hideLabel = iff != null && (iff.Flags & IFFFlags.HideLabel) != 0x0;
+            var detectionLevel = _consoleEntity == null ? DetectionLevel.Detected : _detection.IsGridDetected(grid.Owner, _consoleEntity.Value);
+            var detected = detectionLevel != DetectionLevel.Undetected || !hideLabel;
+            var blipOnly = detectionLevel == DetectionLevel.PartialDetected;
+            if (!detected)
+                continue;
+
             var curGridToWorld = _transform.GetWorldMatrix(gUid);
             var curGridToView = curGridToWorld * worldToShuttle * shuttleToView;
 
-            var labelColor = _shuttles.GetIFFColor(grid, self: false, iff);
+            var labelColor = blipOnly ? Color.Orange : _shuttles.GetIFFColor(grid, self: false, iff);
             var coordColor = new Color(labelColor.R * 0.8f, labelColor.G * 0.8f, labelColor.B * 0.8f, 0.5f);
 
             // Others default:
             // Color.FromHex("#FFC000FF")
             // Hostile default: Color.Firebrick
-            var labelName = _shuttles.GetIFFLabel(grid, self: false, iff);
+            // Mono
+            var labelName = hideLabel ?
+                detectionLevel == DetectionLevel.PartialDetected ?
+                    Loc.GetString($"shuttle-console-signature-infrared")
+                    : Loc.GetString($"shuttle-console-signature-unknown")
+                : _shuttles.GetIFFLabel(grid, self: true, component: iff);
 
             var isPlayerShuttle = iff != null && (iff.Flags & IFFFlags.IsPlayerShuttle) != 0x0;
-            var shouldDrawIFF = ShowIFF && labelName != null && (iff != null && (iff.Flags & IFFFlags.HideLabel) == 0x0);
+            var shouldDrawIFF = ShowIFF && labelName != null;
             if (IFFFilter != null)
             {
                 shouldDrawIFF &= IFFFilter(gUid, grid.Comp, iff);
@@ -379,6 +394,9 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
             shouldDrawIFF = NfCheckShouldDrawIffRangeCondition(shouldDrawIFF, gridMapPos - mapPos.Position);
             // End Frontier
 
+            // Mono
+            var gridUiPosition = Vector2.Transform(gridBody.LocalCenter, curGridToView) / UIScale;
+
             if (shouldDrawIFF)
             {
                 //var gridCentre = Vector2.Transform(gridBody.LocalCenter, curGridToView);
@@ -388,7 +406,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
                 // The actual position in the UI. We offset the matrix position to render it off by half its width
                 // plus by the offset.
                 //var uiPosition = ScalePosition(gridCentre) / UIScale;
-                var uiPosition = Vector2.Transform(gridBody.LocalCenter, curGridToView) / UIScale;
+                var uiPosition = gridUiPosition; // Mono
 
                 // Confines the UI position within the viewport.
                 var uiXCentre = (int)Width / 2;
@@ -471,7 +489,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
 
                     // Get company color if entity has CompanyComponent
                     var displayColor = labelColor;
-                    if (EntManager.TryGetComponent(gUid, out Shared._Mono.Company.CompanyComponent? companyComp) &&
+                    if (!hideLabel && EntManager.TryGetComponent(gUid, out Shared._Mono.Company.CompanyComponent? companyComp) &&
                         !string.IsNullOrEmpty(companyComp.CompanyName))
                     {
                         var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
@@ -490,7 +508,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
                     handle.DrawString(Font, (uiPosition + labelOffset) * UIScale, mainLabel, UIScale * 0.9f, displayColor);
 
                     // Draw company label if present
-                    if (lines.Length > 1)
+                    if (!hideLabel && lines.Length > 1)
                     {
                         var companyLabel = lines[1];
                         var companyLabelOffset = new Vector2(
@@ -529,8 +547,12 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
             if (!gridAABB.Intersects(viewAABB))
                 continue;
 
-            DrawGrid(handle, curGridToView, grid, labelColor);
-            DrawDocks(handle, gUid, curGridToView);
+            // Mono
+            if (!blipOnly)
+            {
+                DrawGrid(handle, curGridToView, grid, labelColor);
+                DrawDocks(handle, gUid, curGridToView);
+            }
         }
 
         // If we've set the controlling console, and it's on a different grid
@@ -792,6 +814,10 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
 
             // Don't draw shields when in FTL
             if (EntManager.HasComponent<FTLComponent>(parentXform.Owner))
+                continue;
+
+            var detectionLevel = _consoleEntity == null ? DetectionLevel.Detected : _detection.IsGridDetected(parentXform.Owner, _consoleEntity.Value);
+            if (detectionLevel != DetectionLevel.Detected)
                 continue;
 
             var shieldFixture = fixtures.Fixtures.TryGetValue("shield", out var fixture) ? fixture : null;

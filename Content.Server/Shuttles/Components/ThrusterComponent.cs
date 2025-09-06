@@ -90,6 +90,13 @@ namespace Content.Server.Shuttles.Components
         [DataField("togglePort", customTypeSerializer: typeof(PrototypeIdSerializer<SinkPortPrototype>))] // Frontier
         public string TogglePort = "Toggle"; // Frontier
         // End Frontier: upgradeable parts, togglable thrust
+
+        // Mono
+        /// <summary>
+        ///     Heat signature output per thrust while working.
+        /// </summary>
+        [DataField]
+        public float HeatSignatureRatio = 40f;
     }
 
     public enum ThrusterType
