@@ -841,7 +841,7 @@ public sealed partial class ShuttleSystem
             if (dockedUid == uid) continue;
             var dockedXform = _xformQuery.GetComponent(dockedUid);
             var (relativePos, relativeRot, dockConnections) = relativeTransforms[dockedUid];
-
+            var ftlCooldown = 10f;
 
             var newPos = mainNewPos + relativePos;
             var newRot = mainNewRot + relativeRot;
@@ -852,21 +852,8 @@ public sealed partial class ShuttleSystem
                 _transform.SetWorldPosition(dockedUid, newPos);
 
             }
-        }
-        foreach (var dockedUid in dockedShuttles)
-        {
-            var dockedXform = _xformQuery.GetComponent(dockedUid);
-            var (relativePos, relativeRot, dockConnections) = relativeTransforms[dockedUid];
-            var ftlCooldown = 10f;
-            // Re-establish all docking connections
-            foreach (var (dockA, dockB) in dockConnections)
-            {
-                if (!TryComp<DockingComponent>(dockA, out var dockCompA) ||
-                    !TryComp<DockingComponent>(dockB, out var dockCompB))
-                    continue;
-                _dockSystem.Dock((dockA, dockCompA), (dockB, dockCompB));
-                _dockSystem.Dock((dockB, dockCompB), (dockA, dockCompA));
-            }
+            _physics.SetLinearVelocity(uid, Vector2.Zero, body: body);
+            _physics.SetAngularVelocity(uid, 0f, body: body);
 
             if (TryComp<PhysicsComponent>(dockedUid, out var dockedBody))
             {
@@ -886,6 +873,16 @@ public sealed partial class ShuttleSystem
                 {
                     Enable(dockedUid, component: dockedBody, shuttle: dockedShuttle);
                 }
+            }
+
+            // Re-establish all docking connections
+            foreach (var (dockA, dockB) in dockConnections)
+            {
+                if (!TryComp<DockingComponent>(dockA, out var dockCompA) ||
+                    !TryComp<DockingComponent>(dockB, out var dockCompB))
+                    continue;
+                _dockSystem.Dock((dockA, dockCompA), (dockB, dockCompB));
+                _dockSystem.Dock((dockB, dockCompB), (dockA, dockCompA));
             }
 
             // Put linked shuttles in cooldown state instead of immediately removing the component
