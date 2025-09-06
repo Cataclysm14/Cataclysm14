@@ -12098,3 +12098,85 @@ Entries:
   id: 1340
   time: '2025-09-04T14:39:53.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2217
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Tarnyx counts as energy for the gunnery console
+  id: 1341
+  time: '2025-09-04T22:25:19.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2219
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Higher tier shields can draw a bit more power at max draw.
+  id: 1342
+  time: '2025-09-04T22:26:00.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2218
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        portable generators max generated power increased, efficiencies
+        unchanged
+    - type: Tweak
+      message: Plasma gen optimal power increased
+    - type: Tweak
+      message: welding fuel generator max welding fuel increased
+  id: 1343
+  time: '2025-09-05T01:47:33.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2227
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Mercfabs can now print ship ammo (with the techs unlocked)
+    - type: Tweak
+      message: Basic ship ammo tech costs reduced massively.
+  id: 1344
+  time: '2025-09-05T21:42:23.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2233
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Charon/charonette damage against shields increased.
+  id: 1345
+  time: '2025-09-06T18:11:24.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2234
+- author: Ilya246
+  changes:
+    - type: Tweak
+      message: All missiles now have a further improved tracking algorithm.
+  id: 1346
+  time: '2025-09-06T21:56:30.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2239
+- author: Redrover1760
+  changes:
+    - type: Fix
+      message: >-
+        FTL Docking collision substantially rarer. Avoid ftling with 4 or more
+        docked shuttles still.
+  id: 1347
+  time: '2025-09-06T21:57:11.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2240
+- author: Avalon-Proto
+  changes:
+    - type: Add
+      message: >-
+        The Pantheon Collective has produced a new weapon for the sector, the
+        RAC-30 Draupnir, a rapid-fire cannon firing forth a hail of 30mm rounds
+  id: 1348
+  time: '2025-09-06T23:08:53.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2236
+- author: Honestly101
+  changes:
+    - type: Fix
+      message: Fixed the network device errors on the Jupiter.
+  id: 1349
+  time: '2025-09-06T23:10:27.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2223
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: Maints jack can now be flipped to use its wrench end
+  id: 1350
+  time: '2025-09-06T23:11:45.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2192
