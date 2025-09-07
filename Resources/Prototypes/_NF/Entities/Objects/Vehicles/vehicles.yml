@@ -120,7 +120,7 @@
     baseSprintSpeed: 7
     baseWeightlessAcceleration: 1
     baseWeightlessFriction: 0.05
-    baseWeightlessFrictionNoInput: 0.05
+    weightlessFrictionNoInput: 0.05
     baseWeightlessModifier: 3
   - type: Sprite
     sprite: _NF/Objects/Vehicles/hoverbike.rsi
@@ -370,7 +370,7 @@
     baseSprintSpeed: 7
     baseWeightlessAcceleration: 1
     baseWeightlessFriction: 0.05
-    baseWeightlessFrictionNoInput: 0.05
+    weightlessFrictionNoInput: 0.05
     baseWeightlessModifier: 3
   - type: Sprite
     sprite: _NF/Objects/Vehicles/hoverbike.rsi
