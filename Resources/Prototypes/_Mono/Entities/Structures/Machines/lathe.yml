@@ -33,6 +33,7 @@
     runningState: icon
     staticPacks:
     - StaticAmmoRecipePack
+    - NFMercenaryTechfabDeprecatedStatic
     dynamicPacks:
     # rogue start
     - MonoRogueWeaponsDynamicMelee
@@ -59,6 +60,7 @@
     - UniversalShellAmmo
     - UniversalOrdinance
     - DynamicAmmoRecipePack
+    - NFMercenaryTechfabDeprecated
   - type: MaterialStorage
     whitelist:
       tags:
