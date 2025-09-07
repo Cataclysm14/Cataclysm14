@@ -7,9 +7,9 @@
 # SPDX-FileCopyrightText: 2024 Long YM
 # SPDX-FileCopyrightText: 2024 Shroomerian
 # SPDX-FileCopyrightText: 2024 Whatstone
+# SPDX-FileCopyrightText: 2025 Coenx-flex
 # SPDX-FileCopyrightText: 2025 GreaseMonk
 # SPDX-FileCopyrightText: 2025 Redrover1760
-# SPDX-FileCopyrightText: 2025 monolith8319
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -44,6 +44,7 @@
     - id: BluespaceSyndicateCrate # Frontier
     - id: BluespaceBrokenMcDelivery # Frontier
     - id: SmugglingFax # Frontier
+    - id: SnailMigration # Mono
 
 # Frontier: not used!
 - type: entityTable
@@ -70,6 +71,9 @@
     delay:
       min:  10
       max:  20
+    numberOfGrids:  # Mono
+      min:  5       # Mono
+      max:  10      # Mono
 
 - type: entity
   id: BaseStationEventShortDelay
@@ -80,6 +84,9 @@
     delay:
       min:  10
       max:  20
+    numberOfGrids:  # Mono
+      min:  5       # Mono
+      max:  10      # Mono
 
 - type: entity
   id: BaseStationEventLongDelay
@@ -90,6 +97,9 @@
     delay:
       min:  40
       max:  60
+    numberOfGrids:  # Mono
+      min:  5       # Mono
+      max:  10      # Mono
 
 # Frontier: right now you never find them since they spawn on random grids.
 # - type: entity
@@ -408,26 +418,23 @@
     duration: 60
   - type: VentClogRule
 
-# - type: entity
-#   id: SlimesSpawn
-#   parent: BaseStationEventShortDelay
-#   components:
-#   - type: StationEvent
-#     startAnnouncement: station-event-vent-creatures-start-announcement
-#     startAudio:
-#       path: /Audio/Announcements/attention.ogg
-#     earliestStart: 20
-#     minimumPlayers: 15
-#     weight: 5
-#     duration: 60
-#   - type: VentCrittersRule
-#     entries:
-#     - id: MobAdultSlimesBlueAngry
-#       prob: 0.02
-#     - id: MobAdultSlimesGreenAngry
-#       prob: 0.02
-#     - id: MobAdultSlimesYellowAngry
-#       prob: 0.02
+# Mono Event
+- type: entity
+  id: BorerSpawn
+  parent: BaseStationEventShortDelay
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-nf-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    earliestStart: 20
+    minimumPlayers: 15
+    weight: 5
+    duration: 60
+  - type: VentCrittersRule
+    entries:
+    - id: MobCorticalBorer
+      prob: 0.5
 
 # - type: entity
 #   id: SnakeSpawn
