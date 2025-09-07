@@ -16,7 +16,7 @@
   parent: BaseVessel
   name: Z-22 Dinner Bell
   description: A rapid response fighter designed for bounty hunters who need to get to their payday before everyone else. The gunnery server and console were tossed to save space!
-  price: 65000
+  price: 32000
   category: Small
   group: Shipyard
   shuttlePath: /Maps/_Mono/Shuttles/dinnerbell.yml
