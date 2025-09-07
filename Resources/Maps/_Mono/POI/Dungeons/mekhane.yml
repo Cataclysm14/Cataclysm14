@@ -29,8 +29,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 09/05/2025 03:27:07
-  entityCount: 5324
+  time: 09/07/2025 01:12:03
+  entityCount: 5323
 maps: []
 grids:
 - 1
@@ -18850,6 +18850,18 @@ entities:
     - type: Transform
       pos: 28.5,-9.5
       parent: 1
+- proto: RogueSiliconResearchDisk50000
+  entities:
+  - uid: 3917
+    components:
+    - type: Transform
+      pos: 1.4952492,4.546958
+      parent: 1
+  - uid: 3957
+    components:
+    - type: Transform
+      pos: -0.47350085,0.4844582
+      parent: 1
 - proto: SabreHarness
   entities:
   - uid: 1940
@@ -19539,95 +19551,65 @@ entities:
       parent: 1
 - proto: SpawnDungeonLootRnDDisk
   entities:
+  - uid: 3918
+    components:
+    - type: Transform
+      pos: 1.7035825,4.6302915
+      parent: 1
   - uid: 3946
     components:
     - type: Transform
-      pos: 1.591121,0.5207777
+      pos: 0.6931658,4.6615415
       parent: 1
   - uid: 3947
     components:
     - type: Transform
-      pos: 1.3827877,0.5207777
+      pos: 0.3910824,4.4740415
       parent: 1
   - uid: 3948
     components:
     - type: Transform
-      pos: 0.7682043,0.5207777
+      pos: -0.30683434,4.734458
       parent: 1
   - uid: 3949
     components:
     - type: Transform
-      pos: 0.37237096,0.5207777
+      pos: -0.65058434,4.526125
       parent: 1
   - uid: 3950
     components:
     - type: Transform
-      pos: -0.22137904,0.4999442
+      pos: 0.82858247,0.69279146
       parent: 1
   - uid: 3951
     components:
     - type: Transform
-      pos: -0.6067958,0.4999442
+      pos: 0.28691578,0.4219582
       parent: 1
   - uid: 3952
     components:
     - type: Transform
-      pos: 1.7057043,4.5832777
+      pos: 1.7452492,0.7448747
       parent: 1
   - uid: 3953
     components:
     - type: Transform
-      pos: 1.341121,4.572861
+      pos: 1.4327492,0.43237472
       parent: 1
   - uid: 3954
     components:
     - type: Transform
-      pos: 0.7682043,4.5520277
+      pos: 1.4014992,4.463625
       parent: 1
   - uid: 3955
     components:
     - type: Transform
-      pos: 0.29945427,4.531194
+      pos: -0.77558434,0.38029146
       parent: 1
   - uid: 3956
     components:
     - type: Transform
-      pos: -0.3047124,4.5520277
-      parent: 1
-  - uid: 3957
-    components:
-    - type: Transform
-      pos: -0.72137904,4.5520277
-      parent: 1
-  - uid: 4545
-    components:
-    - type: Transform
-      pos: 0.5372608,0.574625
-      parent: 1
-  - uid: 4546
-    components:
-    - type: Transform
-      pos: 0.5997608,4.512125
-      parent: 1
-  - uid: 4547
-    components:
-    - type: Transform
-      pos: 1.6310108,4.684
-      parent: 1
-  - uid: 4548
-    components:
-    - type: Transform
-      pos: -0.5408642,4.605875
-      parent: 1
-  - uid: 4549
-    components:
-    - type: Transform
-      pos: -0.40023923,0.37150002
-      parent: 1
-  - uid: 4550
-    components:
-    - type: Transform
-      pos: 1.5685108,0.543375
+      pos: -0.2964176,0.59904146
       parent: 1
 - proto: SpawnDungeonLootSpesos
   entities:
@@ -19712,27 +19694,40 @@ entities:
     - type: Transform
       pos: 4.3110676,5.4594994
       parent: 1
-- proto: SpawnLootTechDisksT3Fracture
-  entities:
-  - uid: 3917
-    components:
-    - type: Transform
-      pos: 5.4360676,5.671504
-      parent: 1
-  - uid: 3918
-    components:
-    - type: Transform
-      pos: 5.5298176,-0.45933676
-      parent: 1
   - uid: 4543
     components:
     - type: Transform
-      pos: 4.634054,5.809
+      pos: 5.3505287,5.4752665
       parent: 1
   - uid: 4544
     components:
     - type: Transform
-      pos: 4.430929,-0.40974998
+      pos: 5.433862,-0.3580668
+      parent: 1
+  - uid: 4545
+    components:
+    - type: Transform
+      pos: 5.590112,5.71485
+      parent: 1
+  - uid: 4546
+    components:
+    - type: Transform
+      pos: 4.642195,5.7356834
+      parent: 1
+  - uid: 4547
+    components:
+    - type: Transform
+      pos: 5.6317787,-0.6080668
+      parent: 1
+  - uid: 4548
+    components:
+    - type: Transform
+      pos: 4.2880287,-0.36848354
+      parent: 1
+  - uid: 4549
+    components:
+    - type: Transform
+      pos: 4.5067787,-0.62890005
       parent: 1
 - proto: SpawnLootTechDisksT3Mech
   entities:
