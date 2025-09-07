@@ -260,7 +260,7 @@
       path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
   - type: ProjectileBatteryAmmoProvider
     proto: BulletWeakRocket
-    fireCost: 100 # 25->100 Mono
+    fireCost: 75 # 25->100 Mono
   - type: Appearance
   - type: AmmoCounter
 
