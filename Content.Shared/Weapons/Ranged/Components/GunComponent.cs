@@ -15,6 +15,7 @@
 // SPDX-FileCopyrightText: 2025 Avalon
 // SPDX-FileCopyrightText: 2025 Aviu00
 // SPDX-FileCopyrightText: 2025 GreaseMonk
+// SPDX-FileCopyrightText: 2025 Ilya246
 // SPDX-FileCopyrightText: 2025 starch
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
