@@ -21,6 +21,7 @@ public sealed partial class ThermalSignatureComponent : Component
     /// <summary>
     ///     For grids, the combined stored heat of all entities on the grid.
     ///     For other entities, their stored heat.
+    ///     Don't attempt to modify.
     /// </summary>
     [ViewVariables, AutoNetworkedField]
     public float TotalHeat = 0f;

@@ -36,6 +36,7 @@
     range: 500
   - type: Gun
     fireRate: 3
+    shootThermalSignature: 500000 # ~2450m if firing continuously
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
     soundEmpty:
@@ -85,6 +86,7 @@
     range: 500
   - type: Gun
     fireRate: 0.1
+    shootThermalSignature: 4000000 # ~4000m
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
     soundEmpty:
@@ -132,6 +134,7 @@
     range: 500
   - type: Gun
     fireRate: 0.8
+    shootThermalSignature: 2000000 # ~2530m if firing continuously
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
     soundEmpty:
@@ -191,6 +194,7 @@
     range: 500
   - type: Gun
     fireRate: 0.2
+    shootThermalSignature: 2000000 # ~2828m
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
     soundEmpty:

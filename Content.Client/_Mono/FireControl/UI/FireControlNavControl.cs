@@ -293,7 +293,7 @@ public sealed class FireControlNavControl : BaseShuttleControl
                 var labelName = hideLabel ?
                     detectionLevel == DetectionLevel.PartialDetected ?
                         Loc.GetString($"shuttle-console-signature-infrared")
-                        : Loc.GetString($"shuttle-console-signature-unknown")
+                        : null
                     : _shuttles.GetIFFLabel(grid, self: false, component: iff);
                 if (labelName != null)
                 {

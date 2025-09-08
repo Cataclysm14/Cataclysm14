@@ -22,8 +22,15 @@ public sealed class DetectionSystem : EntitySystem
 
         var thermalSig = TryComp<ThermalSignatureComponent>(grid, out var sigComp) ? MathF.Max(sigComp.TotalHeat, 0f) : 0f;
         var thermalRadius = MathF.Sqrt(thermalSig) * comp.InfraredMultiplier;
-        var outlineRadius = thermalRadius * comp.InfraredOutlinePortion;
 
+        if (TryComp<DetectedAtRangeMultiplierComponent>(grid, out var compAt))
+        {
+            visualRadius *= compAt.VisualMultiplier;
+            thermalRadius *= compAt.InfraredMultiplier;
+            visualRadius += compAt.VisualBias;
+        }
+
+        var outlineRadius = thermalRadius * comp.InfraredOutlinePortion;
         outlineRadius = MathF.Max(outlineRadius, visualRadius);
 
         var level = DetectionLevel.Undetected;
@@ -32,12 +39,13 @@ public sealed class DetectionSystem : EntitySystem
         var byXform = Transform(byUid);
         if (xform.Coordinates.TryDistance(EntityManager, byXform.Coordinates, out var distance))
         {
-            if (distance <= outlineRadius)
+            if (distance <= outlineRadius) // accounts for visual radius
                 level = DetectionLevel.Detected;
             else if (distance < thermalRadius)
                 level = DetectionLevel.PartialDetected;
         }
 
+        // maybe make this also take IFF being on into account?
         return level;
     }
 }

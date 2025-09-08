@@ -22,6 +22,9 @@
       state: generic_keys
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
+  - type: DetectionRangeMultiplier
+    infraredMultiplier: 1.5 # up from 1
+    visualMultiplier: 8 # up from 4
   - type: RadarConsole
     maxRange: 1280
     maxIffRange: 1280
@@ -58,6 +61,9 @@
       state: generic_keys
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
+  - type: DetectionRangeMultiplier
+    infraredMultiplier: 2 # up from 1
+    visualMultiplier: 16 # up from 4
   - type: RadarConsole
     maxRange: 1536
     maxIffRange: 1536

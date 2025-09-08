@@ -1,6 +1,8 @@
 using Content.Server.Power.Components;
 using Content.Server.Shuttles.Components;
 using Content.Shared._Mono.Detection;
+using Content.Shared.Weapons.Ranged.Components;
+using Content.Shared.Weapons.Ranged.Systems;
 using Robust.Shared.Map.Components;
 using System;
 
@@ -15,16 +17,33 @@ public sealed class ThermalSignatureSystem : EntitySystem
     private TimeSpan _updateAccumulator = TimeSpan.FromSeconds(0);
     private EntityQuery<MapGridComponent> _gridQuery;
     private EntityQuery<ThermalSignatureComponent> _sigQuery;
+    private EntityQuery<GunComponent> _gunQuery;
 
     public override void Initialize()
     {
         base.Initialize();
 
+        // some of this could also be handled in shared but there's no point since PVS is a thing
+        SubscribeLocalEvent<PassiveThermalSignatureComponent, GetThermalSignatureEvent>(OnPassiveGetSignature);
+
+        SubscribeLocalEvent<ThermalSignatureComponent, GunShotEvent>(OnGunShot);
         SubscribeLocalEvent<PowerSupplierComponent, GetThermalSignatureEvent>(OnPowerGetSignature);
         SubscribeLocalEvent<ThrusterComponent, GetThermalSignatureEvent>(OnThrusterGetSignature);
 
         _gridQuery = GetEntityQuery<MapGridComponent>();
         _sigQuery = GetEntityQuery<ThermalSignatureComponent>();
+        _gunQuery = GetEntityQuery<GunComponent>();
+    }
+
+    private void OnGunShot(Entity<ThermalSignatureComponent> ent, ref GunShotEvent args)
+    {
+        if (_gunQuery.TryComp(ent, out var gun))
+            ent.Comp.StoredHeat += gun.ShootThermalSignature;
+    }
+
+    private void OnPassiveGetSignature(Entity<PassiveThermalSignatureComponent> ent, ref GetThermalSignatureEvent args)
+    {
+        args.Signature += ent.Comp.Signature;
     }
 
     private void OnPowerGetSignature(Entity<PowerSupplierComponent> ent, ref GetThermalSignatureEvent args)

@@ -93,7 +93,7 @@ namespace Content.Server.Shuttles.Components
 
         // Mono
         /// <summary>
-        ///     Heat signature output per thrust while working.
+        ///     If we have a <see cref="ThermalSignatureComponent">, heat signature output per thrust while working.
         /// </summary>
         [DataField]
         public float HeatSignatureRatio = 40f;

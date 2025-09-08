@@ -23,6 +23,9 @@
   components:
   - type: Computer
     board: AdvancedRadarConsoleCircuitboard
+  - type: DetectionRangeMultiplier
+    infraredMultiplier: 1.2 # up from 1
+    visualMultiplier: 6 # up from 4
   - type: RadarConsole
     maxRange: 1024
     maxIffRange: null # Frontier
