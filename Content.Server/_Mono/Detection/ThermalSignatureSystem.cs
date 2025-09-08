@@ -5,6 +5,9 @@
 using Content.Server.Power.Components;
 using Content.Server.Shuttles.Components;
 using Content.Shared._Mono.Detection;
+using Content.Shared._Mono.Ships;
+using Content.Shared.Shuttles.Components;
+using Content.Shared.Shuttles.Systems;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Systems;
 using Robust.Shared.Map.Components;
@@ -33,6 +36,7 @@ public sealed class ThermalSignatureSystem : EntitySystem
         SubscribeLocalEvent<ThermalSignatureComponent, GunShotEvent>(OnGunShot);
         SubscribeLocalEvent<PowerSupplierComponent, GetThermalSignatureEvent>(OnPowerGetSignature);
         SubscribeLocalEvent<ThrusterComponent, GetThermalSignatureEvent>(OnThrusterGetSignature);
+        SubscribeLocalEvent<FTLDriveComponent, GetThermalSignatureEvent>(OnFTLGetSignature);
 
         _gridQuery = GetEntityQuery<MapGridComponent>();
         _sigQuery = GetEntityQuery<ThermalSignatureComponent>();
@@ -59,6 +63,16 @@ public sealed class ThermalSignatureSystem : EntitySystem
     {
         if (ent.Comp.Firing)
             args.Signature += ent.Comp.Thrust * ent.Comp.HeatSignatureRatio;
+    }
+
+    private void OnFTLGetSignature(Entity<FTLDriveComponent> ent, ref GetThermalSignatureEvent args)
+    {
+        var xform = Transform(ent);
+        if (!TryComp<FTLComponent>(xform.GridUid, out var ftl))
+            return;
+
+        if (ftl.State == FTLState.Starting || ftl.State == FTLState.Cooldown)
+            args.Signature += ent.Comp.ThermalSignature;
     }
 
     public override void Update(float frameTime)
