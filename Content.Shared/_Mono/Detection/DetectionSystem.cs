@@ -15,6 +15,9 @@ public sealed class DetectionSystem : EntitySystem
 
         var comp = EnsureComp<DetectionRangeMultiplierComponent>(byUid);
 
+        if (comp.AlwaysDetect)
+            return DetectionLevel.Detected;
+
         var gridAABB = grid.Comp.LocalAABB;
         var gridDiagonal = MathF.Sqrt(gridAABB.Width * gridAABB.Width + gridAABB.Height * gridAABB.Height);
         var visualSig = gridDiagonal;

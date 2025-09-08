@@ -588,7 +588,8 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
             angle,
             docks,
             _shuttle.NfGetInertiaDampeningMode(entity), // Frontier: inertia dampening
-            portNames);
+            portNames,
+            entity.Comp1.Pannable); // Mono
     }
 
     /// <summary>

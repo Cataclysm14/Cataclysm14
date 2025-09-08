@@ -25,4 +25,11 @@ public sealed partial class DetectionRangeMultiplierComponent : Component
     /// </summary>
     [DataField]
     public float VisualMultiplier = 4f;
+
+    /// <summary>
+    ///     Whether to have effectively infinite detection range.
+    ///     Use for aghosts.
+    /// </summary>
+    [DataField]
+    public bool AlwaysDetect = false;
 }

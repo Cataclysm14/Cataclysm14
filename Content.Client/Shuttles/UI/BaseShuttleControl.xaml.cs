@@ -88,7 +88,7 @@ public partial class BaseShuttleControl : MapGridControl
         var maxDistance = MathF.Pow(2f, EquatorialMultiplier * 6f);
         var cornerDistance = MathF.Sqrt(WorldRange * WorldRange + WorldRange * WorldRange);
 
-        var origin = ScalePosition(-new Vector2(Offset.X, -Offset.Y));
+        var origin = MidPointVector; // Mono
 
         for (var radius = minDistance; radius <= maxDistance; radius *= EquatorialMultiplier)
         {
@@ -119,7 +119,7 @@ public partial class BaseShuttleControl : MapGridControl
     // Frontier Corvax: north line drawing
     protected void DrawNorthLine(DrawingHandleScreen handle, Angle angle)
     {
-        var origin = ScalePosition(-new Vector2(Offset.X, -Offset.Y));
+        var origin = MidPointVector;
         var aExtent = (angle - Math.Tau / 4).ToVec() * ScaledMinimapRadius * 1.42f;
         var lineColor = Color.Red.WithAlpha(0.1f);
         handle.DrawLine(origin, origin + aExtent, lineColor);

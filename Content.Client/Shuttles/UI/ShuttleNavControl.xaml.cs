@@ -98,6 +98,9 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
     // These 2 handle timing updates
     private const float RadarUpdateInterval = 0f;
     private float _updateAccumulator = 0f;
+
+    private bool _wasPanned = false;
+    private EntityCoordinates? _oldCoordinates;
     #endregion
 
     private bool _isMouseDown;
@@ -131,6 +134,9 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
 
     public void SetMatrix(EntityCoordinates? coordinates, Angle? angle)
     {
+        if (_wasPanned) // Mono hack
+            return;
+
         _coordinates = coordinates;
         _rotation = angle;
     }
@@ -138,6 +144,26 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
     public void SetConsole(EntityUid? consoleEntity)
     {
         _consoleEntity = consoleEntity;
+    }
+
+    // Mono - evil hack
+    protected override void MouseMove(GUIMouseMoveEventArgs args)
+    {
+        base.MouseMove(args);
+        if (!_draggin || _coordinates == null)
+            return;
+
+        if (!_wasPanned)
+        {
+            _wasPanned = true;
+            _oldCoordinates = _transform.ToCoordinates(_transform.ToMapCoordinates(_coordinates.Value));
+            _rotation = new Angle(0);
+        }
+        if (_oldCoordinates == null)
+            return;
+
+        var offs = InverseMapPosition(MidPointVector);
+        _coordinates = _oldCoordinates.Value.Offset(offs);
     }
 
     protected override void KeyBindDown(GUIBoundKeyEventArgs args)
@@ -252,6 +278,11 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
 
         ActualRadarRange = Math.Clamp(ActualRadarRange, WorldMinRange, WorldMaxRange);
 
+        // Mono
+        Draggable = state.Pannable;
+        if (!Draggable)
+            _wasPanned = false; // also reset
+
         RotateWithEntity = state.RotateWithEntity;
 
         // Frontier
@@ -292,7 +323,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
 
         var mapPos = _transform.ToMapCoordinates(_coordinates.Value);
         var posMatrix = Matrix3Helpers.CreateTransform(_coordinates.Value.Position, _rotation.Value);
-        var ourEntRot = RotateWithEntity ? _transform.GetWorldRotation(xform) : _rotation.Value;
+        var ourEntRot = _wasPanned ? new Angle(0) : RotateWithEntity ? _transform.GetWorldRotation(xform) : _rotation.Value;
         var ourEntMatrix = Matrix3Helpers.CreateTransform(_transform.GetWorldPosition(xform), ourEntRot);
         var shuttleToWorld = Matrix3x2.Multiply(posMatrix, ourEntMatrix);
         Matrix3x2.Invert(shuttleToWorld, out var worldToShuttle);
@@ -354,6 +385,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
                 continue;
 
             var hideLabel = iff != null && (iff.Flags & IFFFlags.HideLabel) != 0x0;
+            var noLabel = iff != null && (iff.Flags & IFFFlags.HideLabelAlways) != 0x0;
             var detectionLevel = _consoleEntity == null ? DetectionLevel.Detected : _detection.IsGridDetected(grid.Owner, _consoleEntity.Value);
             var detected = detectionLevel != DetectionLevel.Undetected || !hideLabel;
             var blipOnly = detectionLevel == DetectionLevel.PartialDetected;
@@ -366,17 +398,17 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
             var labelColor = blipOnly ? Color.Orange : _shuttles.GetIFFColor(grid, self: false, iff);
             var coordColor = new Color(labelColor.R * 0.8f, labelColor.G * 0.8f, labelColor.B * 0.8f, 0.5f);
 
+            var isPlayerShuttle = iff != null && (iff.Flags & IFFFlags.IsPlayerShuttle) != 0x0;
             // Others default:
             // Color.FromHex("#FFC000FF")
             // Hostile default: Color.Firebrick
             // Mono
-            var labelName = hideLabel ?
+            var labelName = noLabel ? null : hideLabel ?
                 detectionLevel == DetectionLevel.PartialDetected ?
                     Loc.GetString($"shuttle-console-signature-infrared")
-                    : null
+                    : Loc.GetString($"shuttle-console-signature-unknown")
                 : _shuttles.GetIFFLabel(grid, self: false, component: iff);
 
-            var isPlayerShuttle = iff != null && (iff.Flags & IFFFlags.IsPlayerShuttle) != 0x0;
             var shouldDrawIFF = ShowIFF && labelName != null;
             if (IFFFilter != null)
             {
@@ -391,8 +423,8 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
             //shouldDrawIFF = NfCheckShouldDrawIffRangeCondition(shouldDrawIFF, mapCenter, curGridToWorld); // Frontier code
             // Frontier: range checks
             var gridMapPos = _transform.ToMapCoordinates(new EntityCoordinates(gUid, gridBody.LocalCenter)).Position;
-            if (!hideLabel) // show thermal signatures even at long range
-                shouldDrawIFF &= NfCheckShouldDrawIffRangeCondition(shouldDrawIFF, gridMapPos - mapPos.Position);
+            if (!hideLabel) // Mono - show thermal signatures even at long range
+                shouldDrawIFF = NfCheckShouldDrawIffRangeCondition(shouldDrawIFF, gridMapPos - mapPos.Position);
             // End Frontier
 
             // Mono

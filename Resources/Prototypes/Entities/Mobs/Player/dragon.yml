@@ -53,7 +53,7 @@
       enum.RadarConsoleUiKey.Key:
         toggleAction: ActionObserverShowRadar
   - type: RadarConsole # Mono
-    maxRange: 384
+    maxRange: 768 # Mono
     followEntity: true
     maxIffRange: 0
     hideCoords: false

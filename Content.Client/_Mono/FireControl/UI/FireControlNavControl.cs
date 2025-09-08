@@ -269,6 +269,7 @@ public sealed class FireControlNavControl : BaseShuttleControl
                 continue;
 
             var hideLabel = iff != null && (iff.Flags & IFFFlags.HideLabel) != 0x0;
+            var noLabel = iff != null && (iff.Flags & IFFFlags.HideLabelAlways) != 0x0;
             var detectionLevel = _consoleEntity == null ? DetectionLevel.Detected : _detection.IsGridDetected(grid.Owner, _consoleEntity.Value);
             var detected = detectionLevel != DetectionLevel.Undetected || !hideLabel;
             var blipOnly = detectionLevel == DetectionLevel.PartialDetected;
@@ -290,10 +291,10 @@ public sealed class FireControlNavControl : BaseShuttleControl
 
             if (ShowIFF)
             {
-                var labelName = hideLabel ?
+                var labelName = noLabel ? null : hideLabel ?
                     detectionLevel == DetectionLevel.PartialDetected ?
                         Loc.GetString($"shuttle-console-signature-infrared")
-                        : null
+                        : Loc.GetString($"shuttle-console-signature-unknown")
                     : _shuttles.GetIFFLabel(grid, self: false, component: iff);
                 if (labelName != null)
                 {
