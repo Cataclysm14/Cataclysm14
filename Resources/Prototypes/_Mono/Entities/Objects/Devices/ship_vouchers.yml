@@ -42,6 +42,27 @@
     - Gruznyk
     - Natisk
     - Strayk
+    - Krot
+    - Sobaka
+
+- type: entity
+  parent: BaseShipLPC
+  id: ShipVoucherUSSPPrimitive
+  name: USSP primitive shuttle LPC
+  description: A small card that authorizes the acquisition of a primitive USSP shuttle.
+  components:
+  - type: Sprite
+    layers:
+    - state: ltech
+    - state: stripeussp
+    - state: icon1
+  - type: ShipyardVoucher
+    destroyOnEmpty: true
+    consoleType: USSP
+    companyName: USSP
+    vessels:
+    - Krot
+    - Sobaka
 
 - type: entity
   parent: BaseShipLPC
