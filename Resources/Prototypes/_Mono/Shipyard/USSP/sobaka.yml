@@ -1,0 +1,40 @@
+# SPDX-FileCopyrightText: 2025 grandalff
+#
+# SPDX-License-Identifier: MPL-2.0
+
+- type: vessel
+  id: Sobaka
+  parent: BaseVesselAntag
+  name: PPU Sobaka
+  description: A small, cramped, cheap and unarmored USSP mining shuttle, mass produced to serve the union well. Recommended crew is 1 person. You shit in bucket.
+  price: 24000
+  category: Small
+  group: Ussp
+  access: USSP
+  shuttlePath: /Maps/_Mono/Shuttles/USSP/sobaka.yml
+  guidebookPage: Null
+  class:
+  - Salvage
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Sobaka
+  mapName: 'Sobaka'
+  mapPath: /Maps/_Mono/Shuttles/USSP/sobaka.yml
+  minPlayers: 0
+  stations:
+    Sobaka:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Sobaka USSP{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            USSPSergeant: [0, 0]
+            USSPCorporal: [0, 0]
+            USSPMedic: [0, 0]
+            USSPRifleman: [0, 0]
