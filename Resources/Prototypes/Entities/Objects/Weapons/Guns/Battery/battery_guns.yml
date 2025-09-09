@@ -114,6 +114,17 @@
     rsi:
       sprite: _RMC14/Interface/MousePointer/rifle_mouse.rsi
       state: all
+  # Goobstation edit start
+  - type: EmitSoundOnPickup
+    sound:
+      collection: LasersPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: LasersDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: LasersDrop
+  # Goobstation edit end
 
 - type: entity
   id: BaseWeaponPowerCell
