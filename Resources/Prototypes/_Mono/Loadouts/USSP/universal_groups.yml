@@ -117,6 +117,16 @@
   - USSPHeadset
 
 - type: loadoutGroup
+  id: USSPVoucher
+  name: loadout-group-contractor-utility
+  hidden: true # No point in showing this, it gets auto-selected.
+  minLimit: 1
+  loadouts:
+  - USSPVoucher
+  fallbacks:
+  - USSPVoucher
+
+- type: loadoutGroup
   id: USSPEarsCommand
   name: loadout-group-contractor-ears
   hidden: true # No point in showing this, it gets auto-selected.

@@ -27,6 +27,7 @@
   - NfsdSpeciesSpecific
   - UsspFirearm
   - UsspMag
+  - USSPVoucher
 
 - type: roleLoadout
   id: JobUSSPCorporal
@@ -47,6 +48,7 @@
   - NfsdSpeciesSpecific
   - UsspFirearm
   - UsspMag
+  - USSPVoucher
 
 
 - type: roleLoadout
@@ -69,6 +71,7 @@
   - USSPBeltMedic
   - UsspFirearm
   - UsspMag
+  - USSPVoucher
 
 - type: roleLoadout
   id: JobUSSPSergeant
@@ -89,6 +92,7 @@
   - USSPHeadOfficer
   - UsspFirearm
   - UsspMag
+  - USSPVoucher
 
 - type: roleLoadout
   id: JobUSSPCommissar
@@ -109,3 +113,4 @@
   - USSPHeadCommissar
   - UsspFirearm
   - UsspMag
+  - USSPVoucher

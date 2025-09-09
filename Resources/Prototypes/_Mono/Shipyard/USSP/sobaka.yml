@@ -6,7 +6,7 @@
   id: Sobaka
   parent: BaseVesselAntag
   name: PPU Sobaka
-  description: A small, cramped, cheap and unarmored USSP mining shuttle, mass produced to serve the union well. Recommended crew is 1 person. You shit in bucket.
+  description: A small, cramped, USSP fighter; standard issue for all USSP fighters.
   price: 24000
   category: Small
   group: Ussp
@@ -16,7 +16,7 @@
   class:
   - Salvage
   engine:
-  - Uranium
+  - APU
 
 - type: gameMap
   id: Sobaka

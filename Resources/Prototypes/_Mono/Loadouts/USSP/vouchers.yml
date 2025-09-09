@@ -1,0 +1,4 @@
+- type: loadout
+  id: USSPVoucher
+  equipment:
+    back: ShipVoucherUSSPPrimitive
