@@ -145,7 +145,7 @@
   - type: ShipGunClass
     shipClass: Heavy
 
-# Plasma lance
+# T241 plasma lance
 
 - type: entity
   id: WeaponTurretType241
@@ -209,7 +209,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 35000
+        damage: 70000
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
