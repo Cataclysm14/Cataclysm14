@@ -149,6 +149,7 @@
     requirePower: true
     highVoltageNode: input
     mediumVoltageNode: ame
+  - type: DragDropTargetable # Mono
 
 - type: entity
   categories: [ HideSpawnMenu ]
