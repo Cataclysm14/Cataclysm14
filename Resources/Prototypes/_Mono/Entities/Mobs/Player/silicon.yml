@@ -322,6 +322,7 @@
 - type: entity
   id: AiHeldRedacted
   parent: AiHeldMono
+  categories: [ HideSpawnMenu ]
   components:
   - type: IntrinsicRadioTransmitter
     channels:
@@ -394,6 +395,7 @@
 - type: entity
   id: AiHeldVessel
   parent: AiHeldMono
+  categories: [ HideSpawnMenu ]
   components:
   - type: IntrinsicRadioTransmitter
     channels:
@@ -458,6 +460,7 @@
 - type: entity
   id: AiHeldTSFMC
   parent: AiHeldMono
+  categories: [ HideSpawnMenu ]
   components:
   - type: IntrinsicRadioTransmitter
     channels:
@@ -526,6 +529,7 @@
 - type: entity
   id: AiHeldRogue
   parent: AiHeldMono
+  categories: [ HideSpawnMenu ]
   components:
   - type: IntrinsicRadioTransmitter
     channels:
