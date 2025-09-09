@@ -6,7 +6,7 @@
   id: Sobaka
   parent: BaseVesselAntag
   name: PPU Sobaka
-  description: A small, cramped, USSP fighter; standard issue for all USSP fighters.
+  description: A small, cramped, USSP fighter; standard issue for all USSP patriots.
   price: 24000
   category: Small
   group: Ussp
