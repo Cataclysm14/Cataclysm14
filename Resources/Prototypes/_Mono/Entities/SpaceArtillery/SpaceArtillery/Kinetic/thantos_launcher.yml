@@ -12,7 +12,7 @@
   description: The charon's mean older brother, the Thanatos is a force to be reckoned with. It can be remotely activated or linked up to a GCS. This one feeds from an autoloader somewhere, and doesn't need manual reloads.
   components:
   - type: StaticPrice
-    price: 1200000
+    price: 120000
   - type: Sprite
     sprite: _Mono/Objects/ShuttleWeapons/thanatos.rsi
     layers:
