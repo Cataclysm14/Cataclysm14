@@ -235,6 +235,8 @@
           type: WiresBoundUserInterface
   - type: RadarConsole
     maxRange: 1024 #256->1024 Mono
+    pannable: true # Mono
+    relativePanning: true # Mono
   - type: WorldLoader
     radius: 384 # Mono
   - type: PointLight

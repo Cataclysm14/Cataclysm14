@@ -57,6 +57,7 @@ public sealed class NavInterfaceState
     // End Frontier fields
 
     public bool Pannable = false; // Mono
+    public bool RelativePanning = false; // Mono
 
     public NavInterfaceState(
         float maxRange,
@@ -65,7 +66,8 @@ public sealed class NavInterfaceState
         Dictionary<NetEntity, List<DockingPortState>> docks,
         InertiaDampeningMode dampeningMode, // Frontier: add dampeningMode
         Dictionary<string, string>? networkPortNames = null,
-        bool pannable = false) // Mono
+        bool pannable = false, // Mono
+        bool relativePan = false) // Mono
     {
         MaxRange = maxRange;
         Coordinates = coordinates;
@@ -74,6 +76,7 @@ public sealed class NavInterfaceState
         DampeningMode = dampeningMode; // Frontier
         NetworkPortNames = networkPortNames ?? new Dictionary<string, string>();
         Pannable = pannable; // Mono
+        RelativePanning = relativePan; // Mono
     }
 }
 

@@ -364,7 +364,7 @@ public sealed partial class MapScreen : BoxContainer
                 var hideLabel = iffComp != null && (iffComp.Flags & IFFFlags.HideLabel) != 0x0 && grid.Owner != _shuttleEntity; // never hide our own label
                 var detectionLevel = _console == null ? DetectionLevel.Detected : _detection.IsGridDetected(grid.Owner, _console.Value);
                 var detected = detectionLevel != DetectionLevel.Undetected || !hideLabel;
-                if (!detected)
+                if (!detected || iffComp != null && (iffComp.Flags & IFFFlags.Hide) != 0x0)
                     continue;
                 var name = hideLabel ?
                     detectionLevel == DetectionLevel.PartialDetected ?
@@ -376,7 +376,7 @@ public sealed partial class MapScreen : BoxContainer
                 {
                     Name = name, // Mono
                     Entity = grid.Owner,
-                    HideButton = iffComp != null && (iffComp.Flags & IFFFlags.HideLabel) != 0x0,
+                    HideButton = iffComp != null && (iffComp.Flags & IFFFlags.HideLabelAlways) != 0x0,
                 };
 
                 // Always show our shuttle immediately

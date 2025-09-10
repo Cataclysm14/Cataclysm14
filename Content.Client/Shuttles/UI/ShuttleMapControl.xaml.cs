@@ -394,11 +394,11 @@ public sealed partial class ShuttleMapControl : BaseShuttleControl
             var hideLabel = iffComp != null && (iffComp.Flags & IFFFlags.HideLabel) != 0x0;
             var detectionLevel = _console == null ? DetectionLevel.Detected : _detection.IsGridDetected(grid.Owner, _console.Value);
             var detected = detectionLevel != DetectionLevel.Undetected || !hideLabel;
-            var blipOnly = detectionLevel == DetectionLevel.PartialDetected;
+            var blipOnly = detectionLevel != DetectionLevel.Detected;
             if (!detected)
                 continue;
 
-            var gridColor = blipOnly ? Color.Orange : _shuttles.GetIFFColor(grid, self: _shuttleEntity == grid.Owner, component: iffComp);
+            var gridColor = hideLabel ? blipOnly ? Color.Orange : Color.White : _shuttles.GetIFFColor(grid, self: _shuttleEntity == grid.Owner, component: iffComp);
 
             var existingVerts = _verts.GetOrNew(gridColor);
             var existingEdges = _edges.GetOrNew(gridColor);

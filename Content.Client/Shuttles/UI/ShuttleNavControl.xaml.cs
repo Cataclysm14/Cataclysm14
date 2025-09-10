@@ -20,8 +20,14 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using System.Linq;
 using System.Numerics;
+using Content.Client._Mono.Radar;
 using Content.Client.Station; // Frontier
+using Content.Shared._Crescent.ShipShields;
+using Content.Shared._Mono.Company;
+using Content.Shared._Mono.Detection;
+using Content.Shared._Mono.Radar;
 using Content.Shared.Shuttles.BUIStates;
 using Content.Shared.Shuttles.Components;
 using Content.Shared.Shuttles.Systems;
@@ -34,21 +40,16 @@ using Robust.Shared.Input;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Physics;
-using Robust.Shared.Physics.Components;
-using Robust.Shared.Timing;
-using Content.Client._Mono.Radar;
-using Content.Shared._Mono.Company;
-using Content.Shared._Mono.Detection;
-using Content.Shared._Mono.Radar;
-using Robust.Shared.Prototypes;
-using System.Linq;
-using Content.Shared._Crescent.ShipShields;
 using Robust.Shared.Physics.Collision.Shapes;
+using Robust.Shared.Physics.Components;
+using Robust.Shared.Prototypes;
+using Robust.Shared.Timing;
 
 namespace Content.Client.Shuttles.UI;
 
 [GenerateTypedNameReferences]
-public sealed partial class ShuttleNavControl : BaseShuttleControl
+[Virtual]
+public partial class ShuttleNavControl : BaseShuttleControl // Mono
 {
     [Dependency] private readonly IMapManager _mapManager = default!;
     [Dependency] private readonly IUserInterfaceManager _uiManager = default!;
@@ -61,14 +62,14 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
     /// <summary>
     /// Used to transform all of the radar objects. Typically is a shuttle console parented to a grid.
     /// </summary>
-    private EntityCoordinates? _coordinates;
+    protected EntityCoordinates? _coordinates; // Mono
 
     /// <summary>
     /// Entity of controlling console
     /// </summary>
     private EntityUid? _consoleEntity;
 
-    private Angle? _rotation;
+    protected Angle? _rotation; // Mono
 
     private Dictionary<NetEntity, List<DockingPortState>> _docks = new();
 
@@ -77,7 +78,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
     public bool ShowDocks { get; set; } = true;
     public bool RotateWithEntity { get; set; } = true;
 
-    public float MaximumIFFDistance { get; set; } = -1f; // Frontier
+    public float MaximumIFFDistance { get; set; } = 3000f; // Frontier // Mono - 3000 by default to not gigaclutter
     public bool HideCoords { get; set; } = false; // Frontier
 
     private static Color _dockLabelColor = Color.White; // Frontier
@@ -95,21 +96,25 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
     private List<Entity<MapGridComponent>> _grids = new();
 
     #region Mono
+    public bool RelativePanning = false;
+
     // These 2 handle timing updates
-    private const float RadarUpdateInterval = 0f;
-    private float _updateAccumulator = 0f;
+    protected const float RadarUpdateInterval = 0f;
+    protected float _updateAccumulator = 0f;
 
     private bool _wasPanned = false;
     private EntityCoordinates? _oldCoordinates;
     #endregion
 
-    private bool _isMouseDown;
-    private bool _isMouseInside;
-    private Vector2 _lastMousePos;
-    private float _lastFireTime;
-    private const float FireRateLimit = 0.1f; // 100ms between shots
+    protected bool _isMouseDown;
+    protected bool _isMouseInside;
+    protected Vector2 _lastMousePos;
+    protected float _lastFireTime;
+    protected const float FireRateLimit = 0.1f; // 100ms between shots
 
-    public ShuttleNavControl() : base(64f, 256f, 256f)
+    public ShuttleNavControl() : this(64f, 256f, 256f) { } // Mono
+
+    public ShuttleNavControl(float minRange, float maxRange, float range) : base(minRange, maxRange, range) // Mono
     {
         RobustXamlLoader.Load(this);
         _detection = EntManager.System<DetectionSystem>(); // Mono
@@ -150,19 +155,23 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
     protected override void MouseMove(GUIMouseMoveEventArgs args)
     {
         base.MouseMove(args);
+        if (_isMouseInside)
+            _lastMousePos = args.RelativePosition;
+
         if (!_draggin || _coordinates == null)
             return;
 
         if (!_wasPanned)
         {
             _wasPanned = true;
-            _oldCoordinates = _transform.ToCoordinates(_transform.ToMapCoordinates(_coordinates.Value));
-            _rotation = new Angle(0);
+            _oldCoordinates = RelativePanning ? _coordinates.Value : _transform.ToCoordinates(_transform.ToMapCoordinates(_coordinates.Value));
+            if (!RelativePanning)
+                _rotation = new Angle(0);
         }
         if (_oldCoordinates == null)
             return;
 
-        var offs = InverseMapPosition(MidPointVector);
+        var offs = (_rotation ?? new Angle(0)).RotateVec(InverseMapPosition(MidPointVector));
         _coordinates = _oldCoordinates.Value.Offset(offs);
     }
 
@@ -279,6 +288,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
         ActualRadarRange = Math.Clamp(ActualRadarRange, WorldMinRange, WorldMaxRange);
 
         // Mono
+        RelativePanning = state.RelativePanning;
         Draggable = state.Pannable;
         if (!Draggable)
             _wasPanned = false; // also reset
@@ -323,7 +333,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
 
         var mapPos = _transform.ToMapCoordinates(_coordinates.Value);
         var posMatrix = Matrix3Helpers.CreateTransform(_coordinates.Value.Position, _rotation.Value);
-        var ourEntRot = _wasPanned ? new Angle(0) : RotateWithEntity ? _transform.GetWorldRotation(xform) : _rotation.Value;
+        var ourEntRot = _wasPanned && !RelativePanning ? new Angle(0) : RotateWithEntity ? _transform.GetWorldRotation(xform) : _rotation.Value;
         var ourEntMatrix = Matrix3Helpers.CreateTransform(_transform.GetWorldPosition(xform), ourEntRot);
         var shuttleToWorld = Matrix3x2.Multiply(posMatrix, ourEntMatrix);
         Matrix3x2.Invert(shuttleToWorld, out var worldToShuttle);
@@ -388,14 +398,14 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
             var noLabel = iff != null && (iff.Flags & IFFFlags.HideLabelAlways) != 0x0;
             var detectionLevel = _consoleEntity == null ? DetectionLevel.Detected : _detection.IsGridDetected(grid.Owner, _consoleEntity.Value);
             var detected = detectionLevel != DetectionLevel.Undetected || !hideLabel;
-            var blipOnly = detectionLevel == DetectionLevel.PartialDetected;
+            var blipOnly = detectionLevel != DetectionLevel.Detected; // don't show outline outside of detection radius even if IFF on
             if (!detected)
                 continue;
 
             var curGridToWorld = _transform.GetWorldMatrix(gUid);
             var curGridToView = curGridToWorld * worldToShuttle * shuttleToView;
 
-            var labelColor = blipOnly ? Color.Orange : _shuttles.GetIFFColor(grid, self: false, iff);
+            var labelColor = hideLabel ? blipOnly ? Color.Orange : Color.White : _shuttles.GetIFFColor(grid, self: false, iff);
             var coordColor = new Color(labelColor.R * 0.8f, labelColor.G * 0.8f, labelColor.B * 0.8f, 0.5f);
 
             var isPlayerShuttle = iff != null && (iff.Flags & IFFFlags.IsPlayerShuttle) != 0x0;
@@ -421,10 +431,11 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
 
             //var mapCenter = curGridToWorld. * gridBody.LocalCenter;
             //shouldDrawIFF = NfCheckShouldDrawIffRangeCondition(shouldDrawIFF, mapCenter, curGridToWorld); // Frontier code
-            // Frontier: range checks
+            // Frontier: range checks // Mono
             var gridMapPos = _transform.ToMapCoordinates(new EntityCoordinates(gUid, gridBody.LocalCenter)).Position;
+            var ourPos = _transform.ToMapCoordinates(_coordinates.Value);
             if (!hideLabel) // Mono - show thermal signatures even at long range
-                shouldDrawIFF = NfCheckShouldDrawIffRangeCondition(shouldDrawIFF, gridMapPos - mapPos.Position);
+                shouldDrawIFF = NfCheckShouldDrawIffRangeCondition(shouldDrawIFF, ourPos.Position - gridMapPos);
             // End Frontier
 
             // Mono
@@ -566,7 +577,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
                     }
                 }
 
-                NfAddBlipToList(blipDataList, isOutsideRadarCircle, uiPosition, uiXCentre, uiYCentre, labelColor, gUid); // Frontier code
+                NfAddBlipToList(blipDataList, isOutsideRadarCircle, uiPosition, uiXCentre, uiYCentre, labelColor, hideLabel ? default : gUid); // Frontier code
                 // End Frontier: IFF drawing functions
             }
 
@@ -818,9 +829,11 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
         }
     }
 
-    private Vector2 InverseScalePosition(Vector2 value)
+    protected Vector2 InverseScalePosition(Vector2 value)
     {
-        return (value - MidPointVector) / MinimapScale;
+        // Account for UI scaling: value is unscaled, so adjust by UIScale
+        var scaledValue = value * UIScale;
+        return (scaledValue - MidPointVector) / MinimapScale;
     }
 
     public class BlipData

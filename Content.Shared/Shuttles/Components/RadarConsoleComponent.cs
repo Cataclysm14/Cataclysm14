@@ -49,7 +49,11 @@ public sealed partial class RadarConsoleComponent : Component
     public bool HideCoords = false;
     // End Frontier
 
-    // Mono
+    // <Mono>
     [DataField]
     public bool Pannable = false;
+
+    [DataField]
+    public bool RelativePanning = false;
+    // </Mono>
 }
