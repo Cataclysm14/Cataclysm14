@@ -283,6 +283,8 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
+  - type: Machine
+    board: WeaponTurretM25Circuitboard #not currently deconstructible, if making deconstructible in future make doAfter somewhat substantial
   - type: RadarBlip
     radarColor: "#C92BCC"
     scale: 1

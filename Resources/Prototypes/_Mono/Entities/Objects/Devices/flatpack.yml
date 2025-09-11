@@ -57,6 +57,17 @@
 
 - type: entity
   parent: BaseFlatpack
+  id: M25Flatpack
+  name: M25 mining pulsar flatpack
+  description: A flatpack used for constructing an M25 mining pulsar. Useful for breaking up rock.
+  components:
+  - type: Flatpack
+    entity: WeaponTurretM25
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: BaseFlatpack
   id: FTLDriveFlatpack
   name: CTLA-25 bluespace drive flatpack
   description: A flatpack used for constructing a CTLA-25 bluespace drive.
