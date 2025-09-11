@@ -147,7 +147,12 @@ public sealed partial class ShuttleDockControl : BaseShuttleControl
 
             var curGridToWorld = _xformSystem.GetWorldMatrix(grid.Owner);
             var curGridToView = curGridToWorld * worldToSelectedDock * selectedDockToView;
-            var color = _shuttles.GetIFFColor(grid.Owner, grid.Owner == GridEntity, component: iffComp);
+
+            // Mono - hide color if needed
+            var hideLabel = iffComp != null && (iffComp.Flags & IFFFlags.HideLabel) != 0x0;
+            var hideColor = hideLabel && iffComp != null && (iffComp.Flags & IFFFlags.AlwaysShowColor) == 0x0;
+            // this has no detection logic but this is probably fine
+            var color = hideColor ? Color.White : _shuttles.GetIFFColor(grid.Owner, grid.Owner == GridEntity, component: iffComp);
 
             DrawGrid(handle, curGridToView, grid, color);
 
