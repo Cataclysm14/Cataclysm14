@@ -66,6 +66,7 @@
     - FootstepSound
     - DoorBumpOpener
     - AnomalyHost
+    - Humanoid # Mono
   - type: Butcherable # Mono - MEAT
     butcheringType: Spike
     spawned:

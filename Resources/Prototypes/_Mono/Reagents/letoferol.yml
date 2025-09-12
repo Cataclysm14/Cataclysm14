@@ -100,6 +100,16 @@
         conditions:
         - !type:ReagentThreshold
           min: 15
+        - !type:HasTag
+          tag: Humanoid
+      - !type:Polymorph
+        prototype: LetoferolMutationBeastNatural
+        conditions:
+        - !type:ReagentThreshold
+          min: 10 # less for non-humanoids
+        - !type:HasTag
+          tag: Humanoid
+          invert: true
       - !type:PopupMessage
         conditions:
         - !type:ReagentThreshold

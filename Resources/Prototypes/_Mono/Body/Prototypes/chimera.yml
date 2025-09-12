@@ -8,6 +8,19 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: body
+  id: ChimeraBeast
+  name: "chimera endoskeleton"
+  root: torso
+  slots:
+    torso:
+      part: TorsoSkeleton
+      organs:
+        heart: OrganChimeraHeart
+        lungs: OrganChimeraLungs
+        stomach: OrganChimeraStomach
+        liver: OrganChimeraLiver
+
+- type: body
   id: Chimera
   name: "chimera endoskeleton"
   root: torso
