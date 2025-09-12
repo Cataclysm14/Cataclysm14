@@ -1,0 +1,41 @@
+# SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 core-mene
+# SPDX-FileCopyrightText: 2025 sleepyyapril
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: vessel
+  id: Famine
+  parent: BaseVesselAntag
+  name: HMA Famine 
+  description: An old superfrieghter with it's cargo hulls carved out and replaced with armor. It now serves the Ashen Republic as a utility/support ship, capable of safely holding hostages or prisoners for ransom, or labor.
+  price: 492000
+  category: Large
+  group: BlackMarket
+  shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/famine.yml
+  guidebookPage: Null
+  class:
+  - Pirate
+  - Capital
+  - Frigate
+  engine:
+  - AME
+
+- type: gameMap
+  id: Famine
+  mapName: 'HMA Famine'
+  mapPath: /Maps/_Mono/Shuttles/BlackMarket/famine.yml
+  minPlayers: 0
+  stations:
+    Famine:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Famine ASR{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Pirate: [ 0, 0 ]
