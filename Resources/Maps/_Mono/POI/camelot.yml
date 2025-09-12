@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 09/12/2025 11:57:59
-  entityCount: 10732
+  time: 09/12/2025 12:14:18
+  entityCount: 10735
 maps: []
 grids:
 - 1
@@ -29698,6 +29698,21 @@ entities:
       rot: 3.141592653589793 rad
       pos: -12.5,45.5
       parent: 1
+  - uid: 10733
+    components:
+    - type: Transform
+      pos: 31.5,19.5
+      parent: 1
+  - uid: 10734
+    components:
+    - type: Transform
+      pos: 31.5,20.5
+      parent: 1
+  - uid: 10735
+    components:
+    - type: Transform
+      pos: 32.5,19.5
+      parent: 1
 - proto: CatwalkMono
   entities:
   - uid: 4919
@@ -48368,11 +48383,6 @@ entities:
     - type: Transform
       pos: -5.5,-41.5
       parent: 1
-  - uid: 741
-    components:
-    - type: Transform
-      pos: 31.5,19.5
-      parent: 1
   - uid: 2496
     components:
     - type: Transform
@@ -50363,6 +50373,12 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -23.5,45.5
+      parent: 1
+  - uid: 741
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 31.5,19.5
       parent: 1
   - uid: 2498
     components:
