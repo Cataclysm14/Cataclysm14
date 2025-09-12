@@ -162,7 +162,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 18
+        Piercing: 19
     armorPenetration: 0.6
   - type: Tracer
     color: "#6f7c82ff"
