@@ -31,7 +31,7 @@
     damage:
       types:
         Piercing: 24
-    armorPenetration: -0.1
+    armorPenetration: 0.05
 
 - type: entity
   id: Bullet9x19mmPractice
@@ -131,7 +131,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 19
+        Piercing: 22
     armorPenetration: 0.1
 
 - type: entity
@@ -143,7 +143,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 17
+        Piercing: 19
     armorPenetration: 0.3
 
 - type: entity
@@ -155,7 +155,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 15
+        Piercing: 17
     armorPenetration: 0.5
   - type: Tracer
     color: "#6f7c82ff"

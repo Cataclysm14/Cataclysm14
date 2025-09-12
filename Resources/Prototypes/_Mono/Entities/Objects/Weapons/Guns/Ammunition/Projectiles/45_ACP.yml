@@ -31,7 +31,7 @@
     damage:
       types:
         Piercing: 26
-    armorPenetration: -0.1
+    armorPenetration: 0.05
 
 - type: entity
   id: Bullet45_ACPPractice
@@ -132,7 +132,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 24
+        Piercing: 23
     armorPenetration: 0.1
 
 - type: entity
@@ -145,7 +145,7 @@
     damage:
       types:
         Piercing: 21
-    armorPenetration: 0.25
+    armorPenetration: 0.3
 
 - type: entity
   id: Bullet45_ACPSynthAP
@@ -157,7 +157,7 @@
     damage:
       types:
         Piercing: 18
-    armorPenetration: 0.4
+    armorPenetration: 0.5
   - type: Tracer
     color: "#6f7c82ff"
     length: 3

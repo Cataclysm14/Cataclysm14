@@ -119,7 +119,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 23
+        Piercing: 21
     armorPenetration: 0.25
 
 - type: entity
@@ -131,7 +131,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 20
+        Piercing: 18
     armorPenetration: 0.45
 
 - type: entity
@@ -143,7 +143,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 17
+        Piercing: 16
     armorPenetration: 0.65
   - type: Tracer
     color: "#6f7c82ff"

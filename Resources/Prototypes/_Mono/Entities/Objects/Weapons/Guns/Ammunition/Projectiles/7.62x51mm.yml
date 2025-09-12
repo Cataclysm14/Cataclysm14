@@ -31,7 +31,7 @@
     damage:
       types:
         Piercing: 36
-    armorPenetration: 0.075
+    armorPenetration: 0.1
 
 - type: entity
   id: Bullet762x51mmPractice
@@ -130,7 +130,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 26
+        Piercing: 29
     armorPenetration: 0.45
 
 - type: entity
@@ -142,7 +142,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 23
+        Piercing: 25
     armorPenetration: 0.65
   - type: Tracer
     color: "#6f7c82ff"
