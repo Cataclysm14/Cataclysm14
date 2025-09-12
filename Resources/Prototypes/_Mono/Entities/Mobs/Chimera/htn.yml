@@ -52,7 +52,7 @@
     - !type:HTNCompoundTask
       task: ChimeraMeleeAttackTargetCompound
 
-# MeleeAttackTargetCompound but also attacks dead and crit
+# MeleeAttackTargetCompound but also attacks crit
 - type: htnCompound
   id: ChimeraMeleeAttackTargetCompound
   branches:
@@ -72,7 +72,7 @@
         - !type:HTNPrimitiveTask
           operator: !type:MeleeOperator
             targetKey: Target
-            targetState: Dead
+            targetState: Critical
           preconditions:
             - !type:KeyExistsPrecondition
               key: Target
@@ -91,6 +91,8 @@
   query:
     - !type:NearbyHostilesQuery
   considerations:
+    - !type:TargetIsDeadCon
+      curve: !type:InverseBoolCurve
     - !type:TargetDistanceCon
       curve: !type:PresetCurve
         preset: TargetDistance
