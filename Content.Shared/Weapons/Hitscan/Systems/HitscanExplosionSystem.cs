@@ -30,9 +30,9 @@ public sealed class HitscanExplosionSystem : EntitySystem
         if (_net.IsClient)
             return;
 
-        var explosion = Spawn(ent.Comp.Explosive, Transform(args.HitEntity.Value).Coordinates);
+        var explosion = Spawn(explosive, Transform(args.HitEntity.Value).Coordinates);
 
-        _explosion.TriggerExplosive(explosion);
+        //_explosion.TriggerExplosive(explosion);
 
         // TODO: maybe split up the effects component or something - this wont play sounds and stuff (maybe that's ok?)
     }

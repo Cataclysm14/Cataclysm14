@@ -17,5 +17,5 @@ public sealed partial class HitscanExplosionComponent : Component
     /// Explosive that will be spawned and then triggered when the hitscan hits its target.
     /// </summary>
     [DataField(required: true)]
-    public EntProtoId Explosive;
+    public EntProtoId Explosive = "ApolloExplosion";
 };
