@@ -24,9 +24,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.4
-        Slash: 0.45
-        Piercing: 0.475
+        Blunt: 0.55
+        Slash: 0.55
+        Piercing: 0.55
         Shock: 0.8
         Heat: 0.6
         Radiation: 0.5
@@ -35,7 +35,7 @@
     coefficient: 0.4
   - type: ClothingSpeedModifier
     walkModifier: 0.85
-    sprintModifier: 0.825
+    sprintModifier: 0.8
   - type: HeldSpeedModifier
   - type: ToggleableClothing # Goobstation - Modsuits change - Mono - this is a solution for helmet attachment/cover to not fit on hardsuits
     requiredSlot: outerclothing

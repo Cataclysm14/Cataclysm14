@@ -374,16 +374,16 @@
   - type: Armor # Mono - Armor Value Changes
     modifiers:
       coefficients:
-        Blunt: 0.35
-        Slash: 0.35
-        Piercing: 0.4
+        Blunt: 0.45
+        Slash: 0.45
+        Piercing: 0.6
         Heat: 0.45
         Radiation: 0.6
         Caustic: 0.55
         Poison: 0.8 # Mono
   - type: ClothingSpeedModifier # Mono - Armor Value Changes
-    walkModifier: 0.9
-    sprintModifier: 0.9
+    walkModifier: 0.75
+    sprintModifier: 0.7
   - type: FactionClothing
     faction: NanoTrasen
   - type: StaminaDamageResistance # Mono - Stamres
