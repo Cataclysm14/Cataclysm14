@@ -5965,7 +5965,7 @@ entities:
     - type: Transform
       pos: 5.5,12.5
       parent: 1
-- proto: ResearchAndDevelopmentServer
+- proto: ResearchAndDevelopmentServerMerc
   entities:
   - uid: 837
     components:

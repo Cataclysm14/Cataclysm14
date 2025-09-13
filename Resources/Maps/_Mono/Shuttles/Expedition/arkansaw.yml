@@ -17465,7 +17465,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -8.5,-18.5
       parent: 1
-- proto: ResearchAndDevelopmentServer
+- proto: ResearchAndDevelopmentServerMerc
   entities:
   - uid: 1995
     components:

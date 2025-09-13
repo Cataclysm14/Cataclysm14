@@ -3441,7 +3441,7 @@ entities:
     - type: Transform
       pos: 3.5,12.5
       parent: 1
-- proto: ResearchAndDevelopmentServer
+- proto: ResearchAndDevelopmentServerMerc
   entities:
   - uid: 466
     components:
