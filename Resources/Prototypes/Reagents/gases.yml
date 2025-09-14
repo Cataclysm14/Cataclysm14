@@ -420,8 +420,7 @@
           reagent: Frezon
           min: 1
 
-#Gases from Funky: Credit to marc-pelletier
-- type: reagent
+- type: reagent # /tg/ gases from Funky/Goob: Credit to marc-pelletier
   id: BZ
   name: reagent-name-bz
   desc: reagent-desc-bz
