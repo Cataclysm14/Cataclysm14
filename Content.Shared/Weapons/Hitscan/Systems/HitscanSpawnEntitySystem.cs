@@ -10,7 +10,7 @@ using Robust.Shared.Network;
 
 namespace Content.Shared.Weapons.Hitscan.Systems;
 
-public sealed class HitscanExplosionSystem : EntitySystem
+public sealed class HitscanSpawnEntitySystem : EntitySystem
 {
     [Dependency] private readonly SharedExplosionSystem _explosion = default!;
     [Dependency] private readonly INetManager _net = default!;
@@ -19,10 +19,10 @@ public sealed class HitscanExplosionSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<HitscanExplosionComponent, HitscanRaycastFiredEvent>(OnHitscanHit, after: [ typeof(HitscanReflectSystem) ]);
+        SubscribeLocalEvent<HitscanSpawnEntityComponent, HitscanRaycastFiredEvent>(OnHitscanHit, after: [ typeof(HitscanReflectSystem) ]);
     }
 
-    private void OnHitscanHit(Entity<HitscanExplosionComponent> ent, ref HitscanRaycastFiredEvent args)
+    private void OnHitscanHit(Entity<HitscanSpawnEntityComponent> ent, ref HitscanRaycastFiredEvent args)
     {
         if (args.Canceled || args.HitEntity == null)
             return;
@@ -30,9 +30,7 @@ public sealed class HitscanExplosionSystem : EntitySystem
         if (_net.IsClient)
             return;
 
-        var explosion = Spawn(explosive, Transform(args.HitEntity.Value).Coordinates);
-
-        //_explosion.TriggerExplosive(explosion);
+        var entity = Spawn(SpawnedEntity, Transform(args.HitEntity.Value).Coordinates);
 
         // TODO: maybe split up the effects component or something - this wont play sounds and stuff (maybe that's ok?)
     }

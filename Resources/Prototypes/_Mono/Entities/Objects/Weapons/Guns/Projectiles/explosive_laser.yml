@@ -18,8 +18,8 @@
   id: ExplosiveLaser
   categories: [ HideSpawnMenu ]
   components:
-  - type: HitscanExplosion
-    explosive: SimpleLaserExplosion
+  - type: HitscanSpawnEntity
+    spawnedEntity: SimpleLaserExplosion
 
 - type: entity
   name: explosive laser gun
