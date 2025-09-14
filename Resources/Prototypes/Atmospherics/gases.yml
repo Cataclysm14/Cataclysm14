@@ -128,7 +128,7 @@
   reagent: Frezon
   pricePerMole: 10 # Mono 1<10
   
-#Gases from Funky: Credit to marc-pelletier
+#Gases from Funky/Goob: Credit to marc-pelletier
 - type: gas
   id: 9
   name: gases-bz

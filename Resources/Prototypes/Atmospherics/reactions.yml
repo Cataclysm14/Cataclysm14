@@ -119,7 +119,7 @@
 #      gas: 5
 #      reagent: Water
 
-#Gases from Funky: Credit to marc-pelletier
+#Gases from Funky/Goob: Credit to marc-pelletier
 - type: gasReaction
   id: bzFormation
   priority: 2
