@@ -292,7 +292,7 @@
       Heat: 10000
       Structural: 50000
   - type: HitscanExplosion
-    explosive: ApolloExplosion
+    explosive: PlushieLizard
   - type: HitscanBasicRaycast
     maxDistance: 600
 
@@ -303,6 +303,7 @@
   categories: #[ HideSpawnMenu ]
   components:
   - type: TriggerOnSpawn
+  - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBombShipGun
     totalIntensity: 120
