@@ -1,0 +1,64 @@
+
+# TSF base hardsuit
+
+- type: entity
+  abstract: true
+  parent: [ClothingOuterHardsuitBase]
+  id: ClothingOuterHardsuitBaseMonoFactionTSF # Used by all TSF hardsuits, mostly just for atmostemp resistance
+  name: base tsf hardsuit
+  components:
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.5
+    coolingCoefficient: 0.5 # slowdown after 3 minutes, death at 8 minutes while in vacuum
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8
+  - type: HeldSpeedModifier
+  - type: Item
+    size: Ginormous
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.6
+        Heat: 0.6
+        Radiation: 0.6
+  - type: StaticPrice
+    price: 3000
+    vendPrice: 3000
+
+# ASR base hardsuit
+
+- type: entity
+  abstract: true
+  parent: [ClothingOuterHardsuitBaseMonoFactionASR]
+  id: ClothingOuterHardsuitBaseMonoFactionASR # Used by all ASR hardsuits, mostly just for atmostemp resistance
+  name: base asr hardsuit
+  components:
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.4
+    coolingCoefficient: 0.4 # more protection compared to TSF
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: Item
+    size: Ginormous
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.6
+        Heat: 0.6
+        Radiation: 0.6
+  - type: StaticPrice
+    price: 3000
+    vendPrice: 3000

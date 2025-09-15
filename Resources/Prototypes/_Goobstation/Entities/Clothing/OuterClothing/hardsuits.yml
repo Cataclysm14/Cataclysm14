@@ -60,7 +60,7 @@
 # cybersun stealth
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3PirateContrabandHighValue]
+  parent: [ClothingOuterHardsuitBaseFaction, BaseC3PirateContrabandHighValue]
   id: ClothingOuterHardsuitCybersunStealth
   suffix: stealth
   name: cybersun stealth hardsuit

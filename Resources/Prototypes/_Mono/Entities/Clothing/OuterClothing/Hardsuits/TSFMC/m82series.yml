@@ -8,10 +8,10 @@
 # Example: ASR CV-50 combat hardsuit (G2) (ashen republic hardsuit with ~50% protection, general purpose from tech level 2)
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC2ContrabandUnredeemable]
+  parent: [ClothingOuterHardsuitBaseMonoFactionTSF, BaseC2ContrabandUnredeemable]
   id: ClothingOuterHardsuitM82c
   name: TSF M-35 combat hardsuit (G1)
-  description: A cheap hardsuit issued en-masse to marines operating in low-pressure and high-risk environments.
+  description: A cheap hardsuit issued en-masse to marines operating in low-pressure and high-risk environments. It sacrifices proper armor for better extended EVA capability and environmental protection.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Hardsuits/m82c.rsi
@@ -22,6 +22,9 @@
   - type: PressureProtection
     highPressureMultiplier: 0.05
     lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.4
+    coolingCoefficient: 0.4 # more protection compared to later hardsuits
   - type: ExplosionResistance
     damageCoefficient: 0.65
   - type: Armor
@@ -32,13 +35,13 @@
         Piercing: 0.55 # 45%
         Shock: 0.8 # 20%
         Heat: 0.65 # 35%
-        Radiation: 0.65 # 35%
+        Radiation: 0.6 # 40%
         Caustic: 0.6 # 40%
   - type: StaminaDamageResistance
     coefficient: 0.25 # 25%
   - type: ClothingSpeedModifier
-    walkModifier: 0.85 # 15%
-    sprintModifier: 0.85 # 15%
+    walkModifier: 0.9 # 10%
+    sprintModifier: 0.9 # 10%
   - type: HeldSpeedModifier
   - type: ToggleableClothing # Goobstation - Modsuits change - Mono - this is a solution for helmet attachment/cover to not fit on hardsuits
     requiredSlot: outerclothing

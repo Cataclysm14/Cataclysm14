@@ -5,10 +5,10 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  parent: ClothingOuterHardsuitBase
+  parent: ClothingOuterHardsuitBaseMonoFactionASR
   id: ClothingOuterHardsuitMercenaryWarlord
-  name: PMC WL-01
-  description: Nicknamed "Warlord",a former state-of-the-art technology in military equipment, now widespread among the mercenaries and black markets due to its schematics being revealed to the public, the warlord combat suit has been modified to withstand space depressurized atmosphere, rating it space capable.
+  name: PMC WL-01 Hardsuit
+  description: Nicknamed "Warlord", a former state-of-the-art technology in military equipment, now widespread among the mercenaries and black markets due to its schematics being revealed to the public, the warlord combat suit has been modified to withstand space depressurized atmosphere, rating it space capable. However, armor is not as insulating as proper EVA material for its weight class, rendering it vulnerable to extended exposure to extreme temperatures.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Hardsuits/merc_warlordsuit.rsi

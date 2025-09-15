@@ -187,6 +187,9 @@
     sprite: Clothing/OuterClothing/Hardsuits/syndieelite.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Hardsuits/syndieelite.rsi
+  - type: TemperatureProtection # Mono: added because of suit temperature changes
+    heatingCoefficient: 0.01
+    coolingCoefficient: 0.01
 
 - type: entity
   parent:
@@ -201,6 +204,9 @@
     sprite: Clothing/OuterClothing/Hardsuits/syndicate.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Hardsuits/syndicate.rsi
+  - type: TemperatureProtection # Mono: added because of suit temperature changes
+    heatingCoefficient: 0.01
+    coolingCoefficient: 0.01
 
 # Security
 - type: entity
@@ -280,7 +286,7 @@
       helmetattachment: ClothingHeadHelmetAttachmentBlock
 
 - type: entity
-  parent: ClothingOuterHardsuitBaseNFNfsd
+  parent: ClothingOuterHardsuitBaseMonoFactionTSF # Mono: Changed to TSF base hardsuit from NFSD base
   id: ClothingOuterHardsuitNfsdSheriff
   name: TSF MC-70C tacsuit (GX)
   description: A heavy tacsuit used by commanding officers of flagships, capable of taking a lot of physical damage. Uses a lightened, glorified chassis of an M80-X juggernaut suit.
@@ -350,10 +356,10 @@
     sprintModifier: 0.93
 
 - type: entity
-  parent: [BaseC2ContrabandUnredeemable, ClothingOuterHardsuitJuggernaut] # Jugger Suit
+  parent: [BaseC2ContrabandUnredeemable, ClothingOuterHardsuitBaseMonoFactionTSF] # Mono: Changed to use TSF base hardsuit from juggernaut suit
   id: ClothingOuterHardsuitNfsdExperimental
   name: TSF M80-X combat hardsuit (S3)
-  description: A experimental modification of the M-86 hardsuit for spec-ops units of the TSFMC. Outfitted with top-of-the-line plating, the wearer becomes relatable to an old-war tank.
+  description: A experimental modification of the M-50 hardsuit for spec-ops units of the TSFMC. Outfitted with top-of-the-line plating, the wearer becomes relatable to an old-war tank. Unfortunately, armor is not as insulating as proper EVA material, limiting maximum time outside of atmos.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Hardsuits/tsfmc_experimental.rsi # Mono
@@ -370,6 +376,9 @@
   - type: PressureProtection
     highPressureMultiplier: 0.2
     lowPressureMultiplier: 1000
+  - type: TemperatureProtection # Mono
+    heatingCoefficient: 0.6
+    coolingCoefficient: 0.6
   - type: FireProtection # Mono
     reduction: 0.6
   - type: ExplosionResistance
@@ -472,7 +481,7 @@
 
 # SCAF hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitBase
+  parent: ClothingOuterHardsuitBaseMonoFactionASR # Mono: Changed to parent from ASR base hardsuit (from BaseHardsuit)
   id: ClothingOuterHardsuitScaf
   name: SCAF hardsuit
   description: A kevlar reinforced combat hardsuit. Old yet sturdy nonetheless. # mono - not green anymore cuh

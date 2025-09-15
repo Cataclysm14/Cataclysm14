@@ -8,7 +8,7 @@
 # Example: ASR CV-50 combat hardsuit (G2) (ashen republic hardsuit with ~50% protection, general purpose from tech level 2)
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
+  parent: [ClothingOuterHardsuitBaseFaction, BaseC3SyndicateContraband]
   id: ClothingOuterHardsuitPirateScaf
   name: ASR SCAF hardsuit
   description: An old SCAF suit painted in an ASR tan color scheme. The armor feels degraded, but lighter.

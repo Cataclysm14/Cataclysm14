@@ -47,7 +47,7 @@
   parent: ClothingOuterHardsuitSyndieElite
   id: ClothingOuterHardsuitAshenElite
   name: ASR CV-35 combat tacsuit (F2)
-  description: An advanced tacsuit based off of the CV-50, with reduced weight at the cost of conventional armor. However, it has more environment protection.
+  description: An advanced tacsuit based off of the CV-50, with reduced weight at the cost of conventional armor. However, it has more environmental and EVA protection, allowing for increased effective time in vacuum.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Hardsuits/syndieelite.rsi
@@ -71,11 +71,11 @@
         Slash: 0.65 # 35%
         Piercing: 0.65 # 35%
         Shock: 0.5 # 50%
-        Heat: 0.5 # 50%
+        Heat: 0.4 # 60%
         Radiation: 0.1 # 90%
         Caustic: 0.3 # 70%
   - type: Item
     size: Huge
   - type: ClothingSpeedModifier
-    walkModifier: 1
-    sprintModifier: 1
+    walkModifier: 1.3
+    sprintModifier: 1.1
