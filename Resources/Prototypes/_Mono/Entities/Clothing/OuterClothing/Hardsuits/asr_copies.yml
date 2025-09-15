@@ -11,7 +11,7 @@
 - type: entity
   parent: ClothingOuterHardsuitSyndie
   id: ClothingOuterHardsuitAshen
-  name: ASR CV-50 combat hardsuit (G2)
+  name: ASR CV-50 combat hardsuit (S2)
   description: A combat hardsuit designed and produced by the Ashen Republic, designed as a replacement for outdated and aging SCAF equipment.
   components:
   - type: Sprite
@@ -48,7 +48,7 @@
   parent: ClothingOuterHardsuitSyndieElite
   id: ClothingOuterHardsuitAshenElite
   name: ASR CV-35 combat tacsuit (F2)
-  description: An advanced tacsuit based off of the CV-50, with reduced weight at the cost of conventional armor. However, it has more environmental and EVA protection, allowing for increased effective time in vacuum.
+  description: An advanced tacsuit based off of the CV-50, with reduced weight and amplified servos at the cost of conventional armor. However, it has more environmental and EVA protection, allowing for increased effective time in vacuum.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Hardsuits/syndieelite.rsi
