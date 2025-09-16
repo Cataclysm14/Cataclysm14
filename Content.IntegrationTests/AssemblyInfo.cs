@@ -1,8 +1,3 @@
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers
-// SPDX-FileCopyrightText: 2025 Redrover1760
-//
-// SPDX-License-Identifier: MPL-2.0
-
 [assembly: Parallelizable(ParallelScope.Children)]
 
 // I don't know why this parallelism limit was originally put here.
