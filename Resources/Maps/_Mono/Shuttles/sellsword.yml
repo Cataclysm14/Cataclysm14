@@ -1,11 +1,24 @@
+# SPDX-FileCopyrightText: 2023 Mnemosyne
+# SPDX-FileCopyrightText: 2023 SurfinNinja1
+# SPDX-FileCopyrightText: 2024 Dvir
+# SPDX-FileCopyrightText: 2024 ErhardSteinhauer
+# SPDX-FileCopyrightText: 2024 Mr. Samuel
+# SPDX-FileCopyrightText: 2025 Alice "Arimah" Heurlin
+# SPDX-FileCopyrightText: 2025 Checkraze
+# SPDX-FileCopyrightText: 2025 starch
+# SPDX-FileCopyrightText: 2025 tonotom
+# SPDX-FileCopyrightText: 2025 tonotom1
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 meta:
   format: 7
   category: Grid
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/10/2025 15:06:20
-  entityCount: 290
+  time: 09/01/2025 14:55:45
+  entityCount: 292
 maps: []
 grids:
 - 1
@@ -61,6 +74,7 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
     - type: Shuttle
+      dampingModifier: 0.25
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -190,7 +204,8 @@ entities:
             0: 2130
             2: 12288
           1,-1:
-            2: 223
+            2: 159
+            3: 64
           2,-2:
             1: 8976
             0: 1024
@@ -249,6 +264,21 @@ entities:
           - 0
           - 0
           - 0
+        - volume: 2500
+          temperature: 293.14996
+          moles:
+          - 20.078888
+          - 75.53487
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
@@ -289,6 +319,15 @@ entities:
     - type: Transform
       pos: -0.5,-7.5
       parent: 1
+- proto: AmmoBox12_gaugeSlug
+  entities:
+  - uid: 291
+    components:
+    - type: Transform
+      parent: 161
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: APCBasic
   entities:
   - uid: 5
@@ -801,16 +840,6 @@ entities:
         284:
         - - device-button-1
           - SpaceArtilleryFire
-      lastSignals: {}
-      ports:
-      - device-button-1
-      - device-button-2
-      - device-button-3
-      - device-button-4
-      - device-button-5
-      - device-button-6
-      - device-button-7
-      - device-button-8
 - proto: ComputerWallmountStationRecords
   entities:
   - uid: 98
@@ -1364,6 +1393,35 @@ entities:
     - type: Transform
       pos: 6.5,-2.5
       parent: 1
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14923
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 291
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
 - proto: LockerWallColorMedicalFilled
   entities:
   - uid: 162
@@ -1539,6 +1597,28 @@ entities:
     - type: Transform
       pos: 5.5,-2.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        weapon1: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 292
+        weapon2: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        weapon3: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        weapon4: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        weapon5: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
 - proto: SubstationWallBasic
   entities:
   - uid: 185
@@ -2110,6 +2190,14 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 3.5,-3.5
       parent: 1
+- proto: WeaponShotgunHelopolis
+  entities:
+  - uid: 292
+    components:
+    - type: Transform
+      parent: 184
+    - type: Physics
+      canCollide: False
 - proto: WeaponTurretDravon
   entities:
   - uid: 282
