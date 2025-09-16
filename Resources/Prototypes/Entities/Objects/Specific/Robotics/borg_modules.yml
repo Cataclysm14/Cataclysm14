@@ -246,6 +246,7 @@
     - Multitool
     - WelderIndustrial # Frontier
     - MaintenanceJack # Frontier
+    - NaniteApplicator # Monolith
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: tool-module }
 
@@ -371,6 +372,7 @@
     - GeigerCounter
     - MaintenanceJack # Frontier
     - RPED
+    - NaniteApplicatorExperimental # Monolith
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: adv-tools-module }
 
