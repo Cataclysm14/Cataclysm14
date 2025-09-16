@@ -1,3 +1,4 @@
+# SPDX-FileCopyrightText: 2025 Ilya246
 # SPDX-FileCopyrightText: 2025 LukeZurg22
 # SPDX-FileCopyrightText: 2025 Onezero0
 # SPDX-FileCopyrightText: 2025 Redrover1760
@@ -7,6 +8,8 @@
 # SPDX-FileCopyrightText: 2025 significant harassment
 # SPDX-FileCopyrightText: 2025 sleepyyapril
 # SPDX-FileCopyrightText: 2025 starch
+# SPDX-FileCopyrightText: 2025 tonotom
+# SPDX-FileCopyrightText: 2025 tonotom1
 # SPDX-FileCopyrightText: 2025 wewman222
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
@@ -197,8 +200,13 @@
 - type: Tag
   id: Magazine57x28mmFMJBox
 
+# Misc ammo shit
+
 - type: Tag
   id: MilitaryPowerCellMG
+
+- type: Tag
+  id: PPLCell
 
 - type: Tag
   id: MagazineDP29
@@ -226,6 +234,9 @@
   id: Magazine55_SAMPistolHighCapacity
 
 #12 gauge tags
+
+- type: Tag
+  id: WeaponShotgunHelopolis
 
 - type: Tag
   id: Magazine12_gaugeBuckshot
@@ -395,6 +406,11 @@
 - type: Tag
   id: LightFighterOrdinance
 
+# Man portable rockets :trollface:
+
+- type: Tag
+  id: MPSSMMissile
+
 # Kudzu ignore tag
 
 - type: Tag
@@ -412,3 +428,7 @@
 
 - type: Tag
   id: SurvivalBox
+
+# for letoferol chimeras
+- type: Tag
+  id: Humanoid

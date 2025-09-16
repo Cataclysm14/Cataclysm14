@@ -83,6 +83,49 @@
   - ADS-Apprehension
 
 - type: entity
+  id: AiHeldMono
+  description: Components added / removed from an entity that gets inserted into an AI core.
+  categories: [ HideSpawnMenu ]
+  abstract: true
+  components:
+  - type: IntrinsicRadioReceiver
+  - type: IgnoreUIRange
+  - type: StationAiHeld
+  - type: StationAiOverlay
+  - type: ShowElectrocutionHUD
+  - type: ActionGrant
+    actions:
+    - ActionJumpToCore
+    - ActionSurvCameraLights
+    - ActionAIViewLaws
+  - type: UserInterface
+    interfaces:
+      enum.RadarConsoleUiKey.Key:
+        type: RadarConsoleBoundUserInterface
+      enum.SiliconLawsUiKey.Key:
+        type: SiliconLawBoundUserInterface
+  - type: IntrinsicUI
+    uis:
+      enum.RadarConsoleUiKey.Key:
+        toggleAction: ActionAGhostShowRadar
+  - type: RadarConsole
+    maxRange: 768
+    followEntity: false
+    pannable: true
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: CrewMonitor
+    transmitFrequencyId: ShuttleTimer
+  - type: HolographicAvatar
+    layerData:
+    - sprite: Mobs/Silicon/station_ai.rsi
+      state: default
+  - type: ShowJobIcons
+  - type: Tag
+    tags:
+    - CanPilot
+
+- type: entity
   id: BaseBorgChassisRedacted
   parent: BaseBorgChassis
   abstract: true
@@ -100,13 +143,13 @@
     channels:
     - Binary
     - Common
-    - Syndicate
+    - Remnants
     - Traffic
   - type: ActiveRadio
     channels:
     - Binary
     - Common
-    - Syndicate
+    - Remnants
     - Traffic
   - type: ShowSyndicateIcons
   - type: MovementAlwaysTouching
@@ -127,7 +170,7 @@
 - type: entity
   id: BorgChassisRedacted
   parent: BaseBorgChassisRedacted
-  name: syndicate automated defense system tender
+  name: remnant automated defense system tender
   description: A tender to a automated drone ship, to keep internal mechanisms intact.
   components:
   - type: Sprite
@@ -145,12 +188,10 @@
     speaks:
     - TauCetiBasic
     - RobotTalk
-    - Draconic
     - Azaziba
     understands:
     - TauCetiBasic
     - RobotTalk
-    - Draconic
     - Azaziba
   - type: BorgChassis
     maxModules: 8
@@ -210,6 +251,21 @@
     prototype: RedactedBorg
   - type: GhostTakeoverAvailable
 
+- type: entity
+  id: PlayerBorgRedactedGhostRolePlaytime
+  parent: PlayerBorgRedacted
+  suffix: Ghost, Playtime
+  components:
+  - type: GhostRole
+    name: ghost-role-information-redacted-borg
+    description: ghost-role-information-redacted-borg-description
+    rules: ghost-role-information-silicon-rules
+    raffle:
+      settings: default
+    requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 180000 # 50 hrs
+  - type: GhostTakeoverAvailable
 
 # Remnant AI core
 
@@ -265,48 +321,21 @@
 
 - type: entity
   id: AiHeldRedacted
-  description: Components added / removed from an entity that gets inserted into an AI core.
+  parent: AiHeldMono
   categories: [ HideSpawnMenu ]
   components:
-  - type: IntrinsicRadioReceiver
   - type: IntrinsicRadioTransmitter
     channels:
     - Binary
     - Common
-    - Syndicate
+    - Remnants
     - Traffic
   - type: ActiveRadio
     channels:
     - Binary
     - Common
-    - Syndicate
+    - Remnants
     - Traffic
-  - type: IgnoreUIRange
-  - type: StationAiHeld
-  - type: StationAiOverlay
-  - type: ShowElectrocutionHUD
-  - type: ActionGrant
-    actions:
-    - ActionJumpToCore
-    - ActionSurvCameraLights
-    - ActionAIViewLaws
-  - type: UserInterface
-    interfaces:
-      enum.RadarConsoleUiKey.Key:
-        type: RadarConsoleBoundUserInterface
-      enum.SiliconLawsUiKey.Key:
-        type: SiliconLawBoundUserInterface
-  - type: IntrinsicUI
-    uis:
-      enum.RadarConsoleUiKey.Key:
-        toggleAction: ActionAGhostShowRadar
-  - type: DeviceNetwork
-    deviceNetId: Wireless
-    receiveFrequencyId: CrewMonitor
-    transmitFrequencyId: ShuttleTimer
-  - type: RadarConsole
-    maxRange: 768 # Mono
-    followEntity: false
   - type: LanguageKnowledge
     speaks:
     - TauCetiBasic
@@ -318,14 +347,6 @@
     - RobotTalk
     - Draconic
     - Azaziba
-  - type: HolographicAvatar
-    layerData:
-    - sprite: Mobs/Silicon/station_ai.rsi
-      state: default
-  - type: ShowJobIcons
-  - type: Tag
-    tags:
-    - CanPilot
 
 # Vessel (Default) AI core
 
@@ -373,10 +394,9 @@
 
 - type: entity
   id: AiHeldVessel
-  description: Components added / removed from an entity that gets inserted into an AI core.
+  parent: AiHeldMono
   categories: [ HideSpawnMenu ]
   components:
-  - type: IntrinsicRadioReceiver
   - type: IntrinsicRadioTransmitter
     channels:
     - Binary
@@ -395,40 +415,6 @@
     - Supply
     - Engineering
     - Medical
-  - type: IgnoreUIRange
-  - type: StationAiHeld
-  - type: StationAiOverlay
-  - type: ShowElectrocutionHUD
-  - type: ActionGrant
-    actions:
-    - ActionJumpToCore
-    - ActionSurvCameraLights
-    - ActionAIViewLaws
-  - type: UserInterface
-    interfaces:
-      enum.RadarConsoleUiKey.Key:
-        type: RadarConsoleBoundUserInterface
-      enum.SiliconLawsUiKey.Key:
-        type: SiliconLawBoundUserInterface
-  - type: IntrinsicUI
-    uis:
-      enum.RadarConsoleUiKey.Key:
-        toggleAction: ActionAGhostShowRadar
-  - type: DeviceNetwork
-    deviceNetId: Wireless
-    receiveFrequencyId: CrewMonitor
-    transmitFrequencyId: ShuttleTimer
-  - type: RadarConsole
-    maxRange: 768 # Mono
-    followEntity: false
-  - type: HolographicAvatar
-    layerData:
-    - sprite: Mobs/Silicon/station_ai.rsi
-      state: default
-  - type: ShowJobIcons
-  - type: Tag
-    tags:
-    - CanPilot
 
 # TSFMC AI core
 
@@ -473,10 +459,9 @@
 
 - type: entity
   id: AiHeldTSFMC
-  description: Components added / removed from an entity that gets inserted into an AI core.
+  parent: AiHeldMono
   categories: [ HideSpawnMenu ]
   components:
-  - type: IntrinsicRadioReceiver
   - type: IntrinsicRadioTransmitter
     channels:
     - Binary
@@ -499,40 +484,6 @@
     - Medical
     - Nfsd
     - Command
-  - type: IgnoreUIRange
-  - type: StationAiHeld
-  - type: StationAiOverlay
-  - type: ShowElectrocutionHUD
-  - type: ActionGrant
-    actions:
-    - ActionJumpToCore
-    - ActionSurvCameraLights
-    - ActionAIViewLaws
-  - type: UserInterface
-    interfaces:
-      enum.RadarConsoleUiKey.Key:
-        type: RadarConsoleBoundUserInterface
-      enum.SiliconLawsUiKey.Key:
-        type: SiliconLawBoundUserInterface
-  - type: IntrinsicUI
-    uis:
-      enum.RadarConsoleUiKey.Key:
-        toggleAction: ActionAGhostShowRadar
-  - type: DeviceNetwork
-    deviceNetId: Wireless
-    receiveFrequencyId: CrewMonitor
-    transmitFrequencyId: ShuttleTimer
-  - type: RadarConsole
-    maxRange: 768 # Mono
-    followEntity: false
-  - type: HolographicAvatar
-    layerData:
-    - sprite: Mobs/Silicon/station_ai.rsi
-      state: default
-  - type: ShowJobIcons
-  - type: Tag
-    tags:
-    - CanPilot
 
 # Rogue AI Core
 
@@ -577,10 +528,9 @@
 
 - type: entity
   id: AiHeldRogue
-  description: Components added / removed from an entity that gets inserted into an AI core.
+  parent: AiHeldMono
   categories: [ HideSpawnMenu ]
   components:
-  - type: IntrinsicRadioReceiver
   - type: IntrinsicRadioTransmitter
     channels:
     - Binary
@@ -601,37 +551,3 @@
     - Engineering
     - Medical
     - Freelance
-  - type: IgnoreUIRange
-  - type: StationAiHeld
-  - type: StationAiOverlay
-  - type: ShowElectrocutionHUD
-  - type: ActionGrant
-    actions:
-    - ActionJumpToCore
-    - ActionSurvCameraLights
-    - ActionAIViewLaws
-  - type: UserInterface
-    interfaces:
-      enum.RadarConsoleUiKey.Key:
-        type: RadarConsoleBoundUserInterface
-      enum.SiliconLawsUiKey.Key:
-        type: SiliconLawBoundUserInterface
-  - type: IntrinsicUI
-    uis:
-      enum.RadarConsoleUiKey.Key:
-        toggleAction: ActionAGhostShowRadar
-  - type: DeviceNetwork
-    deviceNetId: Wireless
-    receiveFrequencyId: CrewMonitor
-    transmitFrequencyId: ShuttleTimer
-  - type: RadarConsole
-    maxRange: 768 # Mono
-    followEntity: false
-  - type: HolographicAvatar
-    layerData:
-    - sprite: Mobs/Silicon/station_ai.rsi
-      state: default
-  - type: ShowJobIcons
-  - type: Tag
-    tags:
-    - CanPilot

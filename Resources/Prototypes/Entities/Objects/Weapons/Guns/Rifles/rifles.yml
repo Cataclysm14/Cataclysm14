@@ -33,6 +33,7 @@
 # SPDX-FileCopyrightText: 2025 BramvanZijp
 # SPDX-FileCopyrightText: 2025 Eden077
 # SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 ScyronX
 # SPDX-FileCopyrightText: 2025 UltimateJester
 # SPDX-FileCopyrightText: 2025 Whatstone
 # SPDX-FileCopyrightText: 2025 core-mene
@@ -100,6 +101,17 @@
     rsi:
       sprite: _RMC14/Interface/MousePointer/rifle_mouse.rsi
       state: all
+  # Goobstation edit start
+  - type: EmitSoundOnPickup
+    sound:
+      collection: RiflesPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: RiflesDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: RiflesDrop
+  # Goobstation edit end
 
 - type: entity
   name: LWC AKM (7.62x39mm)
@@ -108,12 +120,16 @@
   description: An old Pre-Fracture Era rifle. Uses 7.62x39mm ammo. When the Fracture began to spread across the Old Earth territories, few weapons were as reliable as the AKM
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Rifles/ak.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/akm.rsi # Mono
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
+  - type: Item # Mono
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/akm_inhands_32x.rsi
+  - type: Clothing
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/akm_inhands_32x.rsi # Mono
   - type: Gun
     fireRate: 5
     soundGunshot:

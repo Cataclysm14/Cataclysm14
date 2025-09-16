@@ -33,7 +33,9 @@
 # SPDX-FileCopyrightText: 2024 Sergey Dikiy
 # SPDX-FileCopyrightText: 2025 ArtisticRoomba
 # SPDX-FileCopyrightText: 2025 MrTswe
+# SPDX-FileCopyrightText: 2025 Onezero0
 # SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 significant harassment
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -133,6 +135,7 @@
     state: static
   - type: PowerSupplier
     supplyRate: 0
+  - type: ThermalSignature # Mono
   - type: ItemSlots
   - type: ContainerContainer
     containers:
@@ -148,6 +151,7 @@
     requirePower: true
     highVoltageNode: input
     mediumVoltageNode: ame
+  - type: DragDropTargetable # Mono
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -182,6 +186,7 @@
       map: ["core_glow"]
       shader: unshaded
       visible: false
+      color: "#a8b8ff"
   - type: Physics
   - type: Fixtures
     fixtures:
