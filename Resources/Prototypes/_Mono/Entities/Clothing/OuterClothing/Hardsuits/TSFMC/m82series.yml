@@ -53,7 +53,7 @@
       helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaticPrice
-    price: 5000
+    price: 2000
     vendPrice: 1000
 
 - type: entity
