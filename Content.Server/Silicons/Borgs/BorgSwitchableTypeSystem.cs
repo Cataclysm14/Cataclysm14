@@ -1,9 +1,4 @@
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers
-// SPDX-FileCopyrightText: 2025 BeBright
-//
-// SPDX-License-Identifier: AGPL-3.0-or-later
-
-using Content.Server.Inventory;
+﻿using Content.Server.Inventory;
 using Content.Server.Radio.Components;
 using Content.Shared.Inventory;
 using Content.Shared.Silicons.Borgs;
@@ -21,7 +16,7 @@ public sealed class BorgSwitchableTypeSystem : SharedBorgSwitchableTypeSystem
     [Dependency] private readonly BorgSystem _borgSystem = default!;
     [Dependency] private readonly ServerInventorySystem _inventorySystem = default!;
 
-    protected override void SelectBorgModule(Entity<BorgSwitchableTypeComponent> ent, ProtoId<BorgTypePrototype> borgType, ProtoId<BorgSubtypePrototype> borgSubtype)
+    protected override void SelectBorgModule(Entity<BorgSwitchableTypeComponent> ent, ProtoId<BorgTypePrototype> borgType)
     {
         var prototype = Prototypes.Index(borgType);
 
@@ -82,6 +77,6 @@ public sealed class BorgSwitchableTypeSystem : SharedBorgSwitchableTypeSystem
             _inventorySystem.SetTemplateId((ent.Owner, inventory), prototype.InventoryTemplateId);
         }
 
-        base.SelectBorgModule(ent, borgType, borgSubtype);
+        base.SelectBorgModule(ent, borgType);
     }
 }
