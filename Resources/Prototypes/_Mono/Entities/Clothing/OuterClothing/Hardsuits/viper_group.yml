@@ -7,7 +7,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  parent: [ClothingOuterHardsuitBaseFaction, BaseC3SyndicateContraband]
+  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
   id: ClothingOuterHardsuitViperGroupStandard
   name: JACKAL mk.II viper hardsuit
   description: A heavy hardsuit adorned with signature markings of the Viper Group. The armor is remarkably flexible for the protection it offers.

@@ -159,8 +159,8 @@
     highPressureMultiplier: 0.3
     lowPressureMultiplier: 1000
   - type: TemperatureProtection
-    heatingCoefficient: 0.1
-    coolingCoefficient: 0.1
+    heatingCoefficient: 0.105 # Mono: Increased from 0.1 to 0.105
+    coolingCoefficient: 0.105 # Mono: Increased from 0.1 to 0.105
   - type: Armor
     modifiers:
       coefficients:

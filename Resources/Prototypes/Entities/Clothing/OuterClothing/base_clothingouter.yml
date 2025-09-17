@@ -172,8 +172,8 @@
     highPressureMultiplier: 0.3
     lowPressureMultiplier: 1000
   - type: TemperatureProtection # Mono: more vulnerable to temperature compared to vanilla
-    heatingCoefficient: 0.2 # Mono: 0.01 -> 0.2
-    coolingCoefficient: 0.2 # Mono: 0.01 -> 0.2
+    heatingCoefficient: 0.45 # Mono: 0.01 -> 0.45
+    coolingCoefficient: 0.45 # Mono: 0.01 -> 0.45
   - type: ClothingSpeedModifier
     walkModifier: 0.4
     sprintModifier: 0.6

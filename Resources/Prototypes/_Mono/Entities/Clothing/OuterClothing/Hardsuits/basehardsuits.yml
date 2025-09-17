@@ -39,7 +39,7 @@
 
 - type: entity
   abstract: true
-  parent: [ClothingOuterHardsuitBaseMonoFactionASR]
+  parent: [ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitBaseMonoFactionASR # Used by all ASR hardsuits, mostly just for atmostemp resistance
   name: base asr hardsuit
   components:
