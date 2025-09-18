@@ -151,8 +151,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 30
-    armorPenetration: 0.2
+        Piercing: 20
+    armorPenetration: 0.6
 
 - type: entity
   id: Bullet45_magnumSynthAP

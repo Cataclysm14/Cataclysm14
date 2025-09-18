@@ -389,7 +389,7 @@
       types:
         Piercing: 28
         Structural: 250
-    armorPenetration: 0.2
+    armorPenetration: 0.4
   - type: Tracer
     color: "#6f7c82ff"
     length: 3
