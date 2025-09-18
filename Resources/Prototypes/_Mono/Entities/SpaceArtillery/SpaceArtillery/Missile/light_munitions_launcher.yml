@@ -1,7 +1,9 @@
+# SPDX-FileCopyrightText: 2025 Greenwall
+# SPDX-FileCopyrightText: 2025 Ilya246
 # SPDX-FileCopyrightText: 2025 Onezero0
+# SPDX-FileCopyrightText: 2025 Your Name
 # SPDX-FileCopyrightText: 2025 significant harassment
 # SPDX-FileCopyrightText: 2025 starch
-# SPDX-FileCopyrightText: 2025 Greenwall
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -20,6 +22,7 @@
   - type: Appearance
   - type: AmmoCounter
   - type: WirelessNetworkConnection
+    range: 700
   - type: GunSignalControl
     range: 500
   - type: Gun
