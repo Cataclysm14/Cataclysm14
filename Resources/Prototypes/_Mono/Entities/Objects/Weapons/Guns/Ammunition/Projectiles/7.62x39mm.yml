@@ -151,7 +151,7 @@
     damage:
       types:
         Piercing: 20
-    armorPenetration: 0.4
+    armorPenetration: 0.2
 
 - type: entity
   id: Bullet762x39mmSynthAP

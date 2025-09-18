@@ -129,8 +129,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 36
-    armorPenetration: 0.45
+        Piercing: 35
+    armorPenetration: 0.3
 
 - type: entity
   id: Bullet762x54mmRSynthAP

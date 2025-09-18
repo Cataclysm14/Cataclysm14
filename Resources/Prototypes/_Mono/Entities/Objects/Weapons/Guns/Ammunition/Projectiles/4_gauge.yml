@@ -318,9 +318,9 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 40
+        Piercing: 50
         Structural: 250
-    armorPenetration: 0.5
+    armorPenetration: 0.2
   - type: Tracer
     color: "#6f7c82ff"
     length: 3

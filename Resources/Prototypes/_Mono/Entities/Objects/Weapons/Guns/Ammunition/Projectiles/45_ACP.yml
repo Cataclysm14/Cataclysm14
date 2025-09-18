@@ -145,8 +145,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 21
-    armorPenetration: 0.3
+        Piercing: 15
+    armorPenetration: 0.2
 
 - type: entity
   id: Bullet45_ACPSynthAP
