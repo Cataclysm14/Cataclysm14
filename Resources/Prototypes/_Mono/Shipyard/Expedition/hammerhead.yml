@@ -1,0 +1,41 @@
+# Author Info
+# GitHub: OneZerooo0
+# Discord: onezero00
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Hammerhead
+  parent: BaseVessel
+  name: SHM Hammerhead
+  description: Large and in charge, the Hammerhead is an effective frontal destroyer, capable of bringing space control to any PMC group. While not in combat, the crew may choose to head planetside and complete expeditions.
+  price: 150000 # ~50,000 markup
+  category: Medium
+  group: Expedition
+  shuttlePath: /Maps/_Mono/Shuttles/Expedition/hammerhead.yml
+  guidebookPage: null
+  class:
+  - Expedition
+  - Destroyer
+  engine:
+  - AME
+
+- type: gameMap
+  id: Hammerhead
+  mapName: 'Hammerhead'
+  mapPath: /Maps/_Mono/Shuttles/Expedition/hammerhead.yml
+  minPlayers: 0
+  stations:
+    Hammerhead:
+      stationProto: StandardFrontierExpeditionVessel
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: 'Hammerhead MIL-{1}'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: '14'
+      - type: StationJobs
+        availableJobs:
+          Contractor: [ 0, 0 ]
+          Pilot: [ 0, 0 ]
+          Mercenary: [ 0, 0 ]
