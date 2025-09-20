@@ -23,7 +23,7 @@ lathe-category-uranium-ammo = Uranium core Ammunition
 lathe-category-practice-ammo = Practice Ammunition
 lathe-category-misc-ammo = Misc. Ammunition
 lathe-category-ship-ammo = Ship Weapon Ammunition
-lathe-category-plasteelap-ammo = Plasteel core armor-piercing Ammunition
+lathe-category-plasteelap-ammo = Plasteel armor-piercing Ammunition
 lathe-category-hp-ammo = Hollow-point Ammunition
 lathe-category-rip-ammo = Radically Invasive Projectile Ammunition
 

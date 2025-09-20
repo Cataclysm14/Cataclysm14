@@ -134,19 +134,9 @@
   result: AmmoBox46x30mmFMJ
 
 - type: latheRecipe
-  parent: BaseAmmoSteelAPPistolCaliberAmmoBoxRecipe
-  id: AmmoBox46x30mmSteelAP
-  result: AmmoBox46x30mmSteelAP
-
-- type: latheRecipe
   parent: BaseAmmoPlasteelAPPistolCaliberAmmoBoxRecipe
   id: AmmoBox46x30mmPlasteelAP
   result: AmmoBox46x30mmPlasteelAP
-
-- type: latheRecipe
-  parent: BaseAmmoSynthAPPistolCaliberAmmoBoxRecipe
-  id: AmmoBox46x30mmSynthAP
-  result: AmmoBox46x30mmSynthAP
 
 - type: latheRecipe
   parent: BaseAmmoRubberPistolCaliberAmmoBoxRecipe

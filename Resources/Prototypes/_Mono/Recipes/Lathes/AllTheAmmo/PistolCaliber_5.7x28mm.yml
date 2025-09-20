@@ -134,19 +134,9 @@
   result: AmmoBox57x28mmFMJ
 
 - type: latheRecipe
-  parent: BaseAmmoSteelAPPistolCaliberAmmoBoxRecipe
-  id: AmmoBox57x28mmSteelAP
-  result: AmmoBox57x28mmSteelAP
-
-- type: latheRecipe
   parent: BaseAmmoPlasteelAPPistolCaliberAmmoBoxRecipe
   id: AmmoBox57x28mmPlasteelAP
   result: AmmoBox57x28mmPlasteelAP
-
-- type: latheRecipe
-  parent: BaseAmmoSynthAPPistolCaliberAmmoBoxRecipe
-  id: AmmoBox57x28mmSynthAP
-  result: AmmoBox57x28mmSynthAP
 
 - type: latheRecipe
   parent: BaseAmmoRubberPistolCaliberAmmoBoxRecipe

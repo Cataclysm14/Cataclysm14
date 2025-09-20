@@ -166,19 +166,9 @@
   result: AmmoBox9x19mmFMJ
 
 - type: latheRecipe
-  parent: BaseAmmoSteelAPPistolCaliberAmmoBoxRecipe
-  id: AmmoBox9x19mmSteelAP
-  result: AmmoBox9x19mmSteelAP
-
-- type: latheRecipe
   parent: BaseAmmoPlasteelAPPistolCaliberAmmoBoxRecipe
   id: AmmoBox9x19mmPlasteelAP
   result: AmmoBox9x19mmPlasteelAP
-
-- type: latheRecipe
-  parent: BaseAmmoSynthAPPistolCaliberAmmoBoxRecipe
-  id: AmmoBox9x19mmSynthAP
-  result: AmmoBox9x19mmSynthAP
 
 - type: latheRecipe
   parent: BaseAmmoRubberPistolCaliberAmmoBoxRecipe
