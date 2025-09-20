@@ -10,19 +10,9 @@
   result: Magazine46x30mmPistolFMJ
 
 - type: latheRecipe
-  parent: BaseAmmoSteelAPPistolCaliberPistolMagazineRecipe
-  id: Magazine46x30mmPistolSteelAP
-  result: Magazine46x30mmPistolSteelAP
-
-- type: latheRecipe
   parent: BaseAmmoPlasteelAPPistolCaliberPistolMagazineRecipe
   id: Magazine46x30mmPistolPlasteelAP
   result: Magazine46x30mmPistolPlasteelAP
-
-- type: latheRecipe
-  parent: BaseAmmoSynthAPPistolCaliberPistolMagazineRecipe
-  id: Magazine46x30mmPistolSynthAP
-  result: Magazine46x30mmPistolSynthAP
 
 - type: latheRecipe
   parent: BaseAmmoRubberPistolCaliberPistolMagazineRecipe
