@@ -264,3 +264,4 @@
     radius: 1.5
     energy: 1.6
     color: "#ff8400"
+  - type: TargetSeekerAlert

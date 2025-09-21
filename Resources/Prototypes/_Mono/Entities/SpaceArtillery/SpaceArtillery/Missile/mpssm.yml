@@ -92,6 +92,7 @@
     launchSpeed: 10
     maxSpeed: 180
     trackDelay: 0
+    exposesTracking: false
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: DefaultShipGun

@@ -5,8 +5,6 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-using System.Numerics;
-
 namespace Content.Server._Mono.Projectiles.TargetSeeking;
 
 /// <summary>
@@ -38,6 +36,12 @@ public sealed partial class TargetSeekingComponent : Component
     /// </summary>
     [DataField]
     public EntityUid? CurrentTarget;
+
+    /// <summary>
+    /// Should tracked entities know that they are being tracked?
+    /// </summary>
+    [DataField]
+    public bool ExposesTracking = true;
 
     /// <summary>
     /// Tracking algorithm used for intercepting the target.
