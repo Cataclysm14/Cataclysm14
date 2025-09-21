@@ -125,6 +125,9 @@
   id: Gygax
 
 - type: Tag
+  id: Hammer
+
+- type: Tag
   id: LaserLMG
 
 - type: Tag
