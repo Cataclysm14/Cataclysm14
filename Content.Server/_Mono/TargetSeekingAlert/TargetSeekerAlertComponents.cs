@@ -53,6 +53,7 @@ public sealed partial class TargetSeekerAlertGridComponent : Component
     /// <summary>
     ///     Target-seekers currently attempting to troll this grid.
     /// </summary>
+    [ViewVariables(VVAccess.ReadOnly)]
     public HashSet<Entity<TargetSeekingComponent, TransformComponent>> CurrentSeekers = new();
 
     /// <summary>

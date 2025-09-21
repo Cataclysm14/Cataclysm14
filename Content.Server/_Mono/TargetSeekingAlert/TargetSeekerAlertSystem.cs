@@ -56,10 +56,7 @@ public sealed class TargetSeekerAlertSystem : EntitySystem
             }
 
             foreach (var alertEntity in alertGridComponent.ActiveAlerters)
-            {
-                Log.Debug("BEEPBEEPBEEP!");
                 UpdateActiveAlerter(alertEntity, closestSeekerDistance);
-            }
         }
     }
 
@@ -116,6 +113,8 @@ public sealed class TargetSeekerAlertSystem : EntitySystem
             return;
 
         alertEntity.Comp.ActiveAlertSoundKey = newSoundKey;
+        if (alertEntity.Comp.Audio is { } currentAlertAudio)
+            _audioSystem.Stop(currentAlertAudio);
 
         // Entity<T> isn't real
         // the reason ambient audio system isn't used is because that can get muted by player
@@ -126,7 +125,6 @@ public sealed class TargetSeekerAlertSystem : EntitySystem
 
     private void AddAlerterToGrid(EntityUid gridUid, EntityUid alertUid)
     {
-        Log.Debug($"Adding {ToPrettyString(alertUid)} as an alerter");
         var alertGridComponent = EnsureComp<TargetSeekerAlertGridComponent>(gridUid);
         alertGridComponent.Alerters.Add(alertUid);
     }
@@ -197,10 +195,12 @@ public sealed class TargetSeekerAlertSystem : EntitySystem
         Log.Debug($"Finished! {ToPrettyString(args.Seeker)} to {ToPrettyString(gridEntity.Owner)}");
         gridEntity.Comp.CurrentSeekers.Remove(args.Seeker);
 
-        foreach (var activeAlertEntity in gridEntity.Comp.ActiveAlerters)
-            OnAlerterDeactivated(activeAlertEntity);
-
         if (gridEntity.Comp.CurrentSeekers.Count == 0)
+        {
+            foreach (var activeAlertEntity in gridEntity.Comp.ActiveAlerters)
+                OnAlerterDeactivated(activeAlertEntity);
+
             gridEntity.Comp.ActiveAlerters.Clear();
+        }
     }
 }

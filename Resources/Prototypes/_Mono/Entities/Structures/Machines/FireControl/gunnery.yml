@@ -265,3 +265,18 @@
     energy: 1.6
     color: "#ff8400"
   - type: TargetSeekerAlert
+    distanceAlertSettings:
+    - maximumDistance: 220 # curse of...
+      sound:
+        path: /Audio/_Mono/Effects/Computer/high_beep.ogg
+        params:
+          loop: true
+          volume: 1.2
+          pitch: 1.1
+    - maximumDistance: 600
+      sound:
+        path: /Audio/_Mono/Effects/Computer/beep_series2.ogg
+        params:
+          loop: true
+          volume: 1.1
+          pitch: 0.95
