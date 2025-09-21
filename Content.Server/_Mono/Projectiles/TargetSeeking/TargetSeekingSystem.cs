@@ -189,7 +189,7 @@ public sealed class TargetSeekingSystem : EntitySystem
                 switch (seekingComp.TrackingAlgorithm)
                 {
                     case TrackingMethod.Direct:
-                        wantAngle = ApplyDirectTracking((uid, seekingComp, xform), (target, targetXform), frameTime); break;
+                        wantAngle = ApplyDirectTracking((uid, xform), (target, targetXform), frameTime); break;
                     case TrackingMethod.Predictive:
                         wantAngle = ApplyPredictiveTracking((uid, seekingComp, body, xform), (target, targetBody, targetXform), frameTime); break;
                     case TrackingMethod.AdvancedPredictive:
@@ -360,10 +360,10 @@ public sealed class TargetSeekingSystem : EntitySystem
     /// <summary>
     /// Basic tracking that points directly at the current target position.
     /// </summary>
-    public Angle ApplyDirectTracking(Entity<TargetSeekingComponent, TransformComponent> ent, Entity<TransformComponent> target, float frameTime)
+    public Angle ApplyDirectTracking(Entity<TransformComponent> ent, Entity<TransformComponent> target, float frameTime)
     {
         // Get the angle directly toward the target
-        var angleToTarget = (_transform.GetWorldPosition(target.Comp) - _transform.GetWorldPosition(ent.Comp2)).ToWorldAngle();
+        var angleToTarget = (_transform.GetWorldPosition(target.Comp) - _transform.GetWorldPosition(ent.Comp)).ToWorldAngle();
 
         return angleToTarget;
     }
