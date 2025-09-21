@@ -1023,7 +1023,7 @@
   discountDownTo:
     Telecrystal: 10 # Mono
   cost:
-    Telecrystal: 5 # goob
+    Telecrystal: 15 # Mono
   categories:
   - UplinkDisruption
 
