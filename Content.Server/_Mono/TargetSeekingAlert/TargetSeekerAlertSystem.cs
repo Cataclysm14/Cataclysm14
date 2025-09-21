@@ -67,6 +67,7 @@ public sealed class TargetSeekerAlertSystem : EntitySystem
 
         if (args.Powered)
         {
+            // This event doesn't get raised on spawn so we're fine.
             AddAlerterToGrid(alertGridUid, alertEntity);
         }
         else
@@ -179,7 +180,6 @@ public sealed class TargetSeekerAlertSystem : EntitySystem
 
     private void OnGridStartingBeingTargeted(Entity<TargetSeekerAlertGridComponent> gridEntity, ref EntityStartedBeingSeekedTargetEvent args)
     {
-        Log.Debug($"Inbound! {ToPrettyString(args.Seeker)} to {ToPrettyString(gridEntity.Owner)}");
         gridEntity.Comp.CurrentSeekers.Add(args.Seeker);
         foreach (var alertUid in gridEntity.Comp.Alerters)
         {
@@ -192,9 +192,7 @@ public sealed class TargetSeekerAlertSystem : EntitySystem
 
     private void OnGridStoppedBeingTargeted(Entity<TargetSeekerAlertGridComponent> gridEntity, ref EntityStoppedBeingSeekedTargetEvent args)
     {
-        Log.Debug($"Finished! {ToPrettyString(args.Seeker)} to {ToPrettyString(gridEntity.Owner)}");
         gridEntity.Comp.CurrentSeekers.Remove(args.Seeker);
-
         if (gridEntity.Comp.CurrentSeekers.Count == 0)
         {
             foreach (var activeAlertEntity in gridEntity.Comp.ActiveAlerters)
