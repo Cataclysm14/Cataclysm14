@@ -280,4 +280,4 @@
         params:
           loop: true
           volume: 1.1
-          pitch: 0.95
+          pitch: 0.98

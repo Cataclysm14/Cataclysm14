@@ -325,9 +325,9 @@ public sealed class TargetSeekingSystem : EntitySystem
 
         var accel = ent.Comp1.Acceleration;
 
-        var ownVel = _physics.GetMapLinearVelocity(ent);
+        var ownVel = _physics.GetMapLinearVelocity(ent, ent.Comp2, ent.Comp3);
         var ownPos = _transform.GetWorldPosition(ent.Comp3);
-        var targetVel = _physics.GetMapLinearVelocity(target);
+        var targetVel = _physics.GetMapLinearVelocity(target, target.Comp1, target.Comp2);
         var targetPos = _transform.GetWorldPosition(target.Comp2);
         var relVel = targetVel - ownVel;
         var relPos = targetPos - ownPos;
