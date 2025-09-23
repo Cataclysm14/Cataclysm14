@@ -1,0 +1,45 @@
+# SPDX-FileCopyrightText: 2025 starch
+# SPDX-FileCopyrightText: 2025 burrrkeye
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Author Info
+# GitHub: burrrkeye
+# Discord: burkia
+
+# Shuttle Notes:
+# Interior doors all mercenary access locked (TSF And USSP seems to have this access but ASR does not), does not have slots for Pilots and Spacers on purpose
+
+- type: vessel
+  id: Harpoon
+  parent: BaseVessel
+  name: BT-Y Harpoon
+  description: Armed with 2 Dauphnir rotary cannons, 4 ASM-302 Missile pods and 4 L-1 Phalanx energy cannons the Harpoon is a fast broadside-focused combat ship.
+  price: 140000 # appraised for ~110k
+  category: Medium
+  group: Shipyard
+  access: Mercenary
+  shuttlePath: /Maps/_Mono/Shuttles/harpoon.yml
+  guidebookPage: Null
+  class:
+  - Pursuit
+  engine:
+  - AME
+
+- type: gameMap
+  id: Harpoon
+  mapName: 'BT-Y Harpoon'
+  mapPath: /Maps/_Mono/Shuttles/harpoon.yml
+  minPlayers: 0
+  stations:
+    Sellsword:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Harpoon MIL{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Mercenary: [ 0, 0 ]
