@@ -30,7 +30,7 @@
   parent: BaseVessel
   name: BT-Y Chameleon
   description: Chameleon is a dedicated ambush craft with an extremely low thermal profile armed with 2 ASM-220 torpedos, TOVEK missile launcher and 2 L-1 Phalanx. It is powered entirely by solars, solar controls must be maintained for from the solar controls console else the ship will depower in less than 5 minutes, a backup power generator was provided in case this happens, however, it is not recommended keeping it running for long periods as it will increase the thermal profile substantially.
-  price: 250000 # appraises at 53441, price markup of ~200k for its stealth properties.
+  price: 250000 # appraises at ~60000, price markup of ~200k for its stealth properties.
   category: Small
   group: Expedition
   shuttlePath: /Maps/_Mono/Shuttles/Expedition/chameleon.yml
