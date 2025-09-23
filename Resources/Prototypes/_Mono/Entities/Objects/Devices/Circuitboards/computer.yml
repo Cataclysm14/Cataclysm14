@@ -28,6 +28,8 @@
       state: cpu_command
     - type: ComputerBoard
       prototype: ComputerGunneryConsole
+    - type: ComputerTabletopBoard
+      prototype: ComputerTabletopGunneryConsole
 
 - type: entity
   parent: StationAiUploadCircuitboard
