@@ -2,6 +2,8 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
+# EMP EFFECTS
+
 - type: entity
   id: InstantEffectEMP
   name: instant EMP effect
@@ -14,6 +16,17 @@
     disableDuration: 20 # as opposed to 60
 
 - type: entity
+  id: InstantEffectEMPZeus
+  parent: InstantEffectEMP
+  components:
+  - type: EmpOnTrigger
+    range: 3
+    energyConsumption: 60000 # 60kj
+    disableDuration: 10
+
+# LIGHTNING
+
+- type: entity
   name: ionised lightning
   id: LightningEMP
   parent: BaseLightning
@@ -24,6 +37,16 @@
     spawnOnHit: InstantEffectEMP
   - type: PointLight
     color: "#80C0FF"
+
+- type: entity
+  name: high power lightning
+  id: LightningZeus
+  parent: BaseLightning
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Lightning
+    canArc: true
+    spawnonHit: InstantEffectEMPZeus
 
 #example usage: add this to projectile parenting from BaseBulletTrigger
 # - type: LightningOnTrigger
