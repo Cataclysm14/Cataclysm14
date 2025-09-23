@@ -12665,3 +12665,10 @@ Entries:
   id: 1400
   time: '2025-09-20T16:57:54.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2326
+- author: Ilya246
+  changes:
+    - type: Tweak
+      message: Returned borg sprite changing because it wasn't the cause of borg lag.
+  id: 1401
+  time: '2025-09-22T17:36:02.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2336
