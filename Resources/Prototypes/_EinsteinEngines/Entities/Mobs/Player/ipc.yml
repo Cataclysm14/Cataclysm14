@@ -39,7 +39,7 @@
       cell_slot:
         locked: true
         name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellMedium
+        startingItem: PowerCellHyper #Mono
   - type: BatterySlotRequiresLock
     itemSlot: cell_slot
   - type: EncryptionHolderRequiresLock
