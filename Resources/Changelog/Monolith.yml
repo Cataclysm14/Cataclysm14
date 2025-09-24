@@ -12665,3 +12665,46 @@ Entries:
   id: 1400
   time: '2025-09-20T16:57:54.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2326
+- author: Ilya246
+  changes:
+    - type: Tweak
+      message: Returned borg sprite changing because it wasn't the cause of borg lag.
+  id: 1401
+  time: '2025-09-22T17:36:02.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2336
+- author: Ghagliiarghii
+  changes:
+    - type: Tweak
+      message: >-
+        Gunnery Console now features a tabletop version. It is available for
+        mappers and constructable in game.
+  id: 1402
+  time: '2025-09-24T09:59:47.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2341
+- author: Scyron
+  changes:
+    - type: Add
+      message: Added the Nanite Applicator, a wall repair tool.
+  id: 1403
+  time: '2025-09-24T10:02:12.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2314
+- author: Ilya246
+  changes:
+    - type: Tweak
+      message: You can now see who speaks in collective minds.
+    - type: Tweak
+      message: >-
+        Binary is now using the collective mind system - use '+ ' in chat to
+        speak in it.
+  id: 1404
+  time: '2025-09-24T10:04:45.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2297
+- author: tonotom1
+  changes:
+    - type: Add
+      message: >-
+        Replaced a duplicate Shibamata track in the jukebox with Dawson's
+        Christian by Vic Tyler
+  id: 1405
+  time: '2025-09-24T10:06:55.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2333
