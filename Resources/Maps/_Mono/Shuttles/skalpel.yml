@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 09/25/2025 09:56:36
-  entityCount: 746
+  time: 09/25/2025 10:38:24
+  entityCount: 747
 maps: []
 grids:
 - 1
@@ -2439,6 +2439,14 @@ entities:
     - type: Transform
       pos: 2.6789227,-5.331499
       parent: 1
+- proto: DefibrillatorCabinetFilled
+  entities:
+  - uid: 747
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 5.5,-5.5
+      parent: 1
 - proto: ExplosivesSignMed
   entities:
   - uid: 332
@@ -2611,7 +2619,6 @@ entities:
       - CarbonDioxide
       - Plasma
       - Ammonia
-      enabled: True
     - type: AtmosPipeColor
       color: '#DD0075FF'
 - proto: GasMixerOnFlipped
