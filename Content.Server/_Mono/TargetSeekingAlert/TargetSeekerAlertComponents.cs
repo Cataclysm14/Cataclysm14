@@ -16,6 +16,7 @@ public sealed partial class TargetSeekerAlertComponent : Component
     /// <summary>
     ///     Sound played when a target initially starts tracking this entity. 
     /// </summary>
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
     public SoundSpecifier? TargetGainSound = null;
 
     /// <summary>
