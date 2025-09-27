@@ -12672,3 +12672,88 @@ Entries:
   id: 1401
   time: '2025-09-22T17:36:02.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2336
+- author: Ghagliiarghii
+  changes:
+    - type: Tweak
+      message: >-
+        Gunnery Console now features a tabletop version. It is available for
+        mappers and constructable in game.
+  id: 1402
+  time: '2025-09-24T09:59:47.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2341
+- author: Scyron
+  changes:
+    - type: Add
+      message: Added the Nanite Applicator, a wall repair tool.
+  id: 1403
+  time: '2025-09-24T10:02:12.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2314
+- author: Ilya246
+  changes:
+    - type: Tweak
+      message: You can now see who speaks in collective minds.
+    - type: Tweak
+      message: >-
+        Binary is now using the collective mind system - use '+ ' in chat to
+        speak in it.
+  id: 1404
+  time: '2025-09-24T10:04:45.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2297
+- author: tonotom1
+  changes:
+    - type: Add
+      message: >-
+        Replaced a duplicate Shibamata track in the jukebox with Dawson's
+        Christian by Vic Tyler
+  id: 1405
+  time: '2025-09-24T10:06:55.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2333
+- author: Ghagliiarghii
+  changes:
+    - type: Tweak
+      message: >-
+        Slight Magus QoL improvements to make it a more capable medical vessel.
+        Price raised by 9,000 credits to reflect this.
+  id: 1406
+  time: '2025-09-25T19:47:03.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2350
+- author: LaCumbiaDelCoronavirus
+  changes:
+    - type: Add
+      message: >-
+        Radar computers and gunnery consoles now beep when nearby missiles (and
+        other target-seeking projectiles) are actively tracking the shuttle that
+        they are on.
+  id: 1407
+  time: '2025-09-25T22:23:17.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2338
+- author: Honestly101
+  changes:
+    - type: Add
+      message: Added Cyrogenics and FTL drive to Skalpel
+    - type: Tweak
+      message: Skalpel price change 65200 -> 75200
+  id: 1408
+  time: '2025-09-26T21:03:18.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2349
+- author: Honestly101
+  changes:
+    - type: Tweak
+      message: IPC cell drain changed to 0.65 (from 1.5)
+  id: 1409
+  time: '2025-09-26T21:03:55.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2346
+- author: starch70
+  changes:
+    - type: Add
+      message: Ported wizden xeno assets from Exo.
+  id: 1410
+  time: '2025-09-26T21:04:26.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2343
+- author: starch70
+  changes:
+    - type: Add
+      message: Added Gary language trait.
+  id: 1411
+  time: '2025-09-27T00:31:22.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2344

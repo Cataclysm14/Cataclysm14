@@ -97,8 +97,10 @@ uplink-pirate-cash10000-desc = That's my boy, you made my day.
 
 uplink-pirate-cash100000-name = 100,000 credits
 uplink-pirate-cash100000-desc = That's my boy, you really made my day.
-
 # desc is quote
+
+uplink-syndicate-applicator-name = Advanced Nanite Applicator
+uplink-syndicate-applicator-desc = Advanced nanite applicator with a heavily upgraded nanite capacity capable of self-nanite generation.
 
 # MARK: Weapons
 
