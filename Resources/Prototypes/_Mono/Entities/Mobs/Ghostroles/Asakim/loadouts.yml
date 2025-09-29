@@ -19,7 +19,7 @@
     suitStorage: OxygenTankFilled
   inhand:
   - WeaponRifleAsakimAutopulser
-  - WeaponHFKatana
+  - WeaponPhaseBlade
   storage:
     back:
     - RadioHandheldNF
