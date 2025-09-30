@@ -699,7 +699,7 @@
 
 - type: entity
   id: WeaponTurretSunder
-  name: Proton Cannon "Sunder"
+  name: [type designation] proton cannon "Sunder"
   parent: BallisticArtillery
   suffix: PRE-FRACTURE ONLY
   description: A potent proton cannon from before the fracture, known for melting holes through inorganic and organic matter with ease.
