@@ -432,3 +432,8 @@
 # for letoferol chimeras
 - type: Tag
   id: Humanoid
+
+# stamps
+
+- type: Tag
+  id: PaycheckBratvaStamp

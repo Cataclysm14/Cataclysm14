@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 - type: entity
-  parent: [BaseItem]
+  parent: [GrenadeBase, BaseC3SyndicateContraband]
   id: BottleBomb
   name: bottle bomb
   description: Cheap alternative to nukes.
@@ -45,7 +45,7 @@
     node: bottlebomb
 
 - type: entity
-  parent: [DrinkBottleBaseEmpty]
+  parent: DrinkBottleBaseEmpty
   id: BottleBombEmpty
   name: bottle bomb
   suffix: empty

@@ -79,7 +79,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      Pyrogel: 100
+      Pyrogel: 100 # what?
 
 - type: entity
   parent: MaterialPyrogel

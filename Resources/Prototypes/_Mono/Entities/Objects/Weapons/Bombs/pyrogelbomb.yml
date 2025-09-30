@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 - type: entity
-  parent: [BaseItem]
+  parent: [GrenadeBase, BaseC3SyndicateContraband]
   id: PyrogelBomb
   name: pyrogel bomb
   description: Experimental bottle bomb technology.
@@ -45,7 +45,7 @@
     node: pyrogelbomb
 
 - type: entity
-  parent: [DrinkBottleBaseEmpty]
+  parent: DrinkBottleBaseEmpty
   id: PyrogelBombEmpty
   name: pyrogel bomb
   suffix: empty

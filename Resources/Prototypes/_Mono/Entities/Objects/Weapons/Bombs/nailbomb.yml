@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 - type: entity
-  parent: [GrenadeBase]
+  parent: [GrenadeBase, BaseC3SyndicateContraband]
   id: NailBomb
   name: nail bomb
   description: An improvised explosive made from nails and gunpowder.
@@ -39,7 +39,7 @@
     node: nailbomb
 
 - type: entity
-  parent: [BaseItem]
+  parent: BaseItem
   id: NailBombGunpowder
   name: nail bomb
   description: An improvised explosive made from nails and gunpowder. This one has no gunpowder.
@@ -54,7 +54,7 @@
     defaultTarget: pipebomb
 
 - type: entity
-  parent: [BaseItem]
+  parent: BaseItem
   id: NailBombCable
   name: nail bomb
   description: An improvised explosive made from nails and gunpowder.
