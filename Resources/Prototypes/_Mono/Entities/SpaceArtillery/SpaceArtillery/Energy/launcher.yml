@@ -554,7 +554,7 @@
 
 - type: entity
   id: WeaponTurretReaper
-  name: /type designation/ tachyon lance "Reaper"
+  name: Curio-1089 tachyon lance "Reaper"
   parent: BallisticArtilleryUnanchorable
   suffix: ADS ONLY
   description: A terrifying weapon to have aimed at you, the Reaper is an ancient piece of pre-fracture tech capable of shattering the strongest of hulls within one or two blasts.
@@ -626,7 +626,7 @@
 
 - type: entity
   id: WeaponTurretHarbringer
-  name: /type designation/ ion cannon "Harbringer"
+  name: Curio-129 ion cannon "Harbringer"
   parent: BallisticArtilleryUnanchorable
   suffix: ADS ONLY
   description: One of the most powerful EMP weapons in sector, its a sign of doom for its targets.
@@ -699,7 +699,7 @@
 
 - type: entity
   id: WeaponTurretSunder
-  name: /type designation/ proton cannon "Sunder"
+  name: Curio-1007 proton cannon "Sunder"
   parent: BallisticArtillery
   suffix: ADS ONLY
   description: A potent proton cannon from before the Fracture, known for melting holes through both inorganic and organic matter with ease.
@@ -766,7 +766,7 @@
 
 - type: entity
   id: WeaponTurretScythe
-  name: /type designation/ neutron repeater "Scythe"
+  name: Curio-1008 neutron repeater "Scythe"
   parent: BallisticArtillery
   suffix: ADS ONLY
   description: A steadily firing neutron repeater, dealing solid damage to most targets. A pre-fracture marvel of weapons technology
@@ -834,7 +834,7 @@
 
 - type: entity
   id: WeaponLaserTurretFlayer
-  name: /type designation/ auto-coil "Flayer"
+  name: Curio-183 auto-coil "Flayer"
   parent: BallisticArtillery
   suffix: ADS ONLY
   description: A unique pre-fracture weapon, the Flayer fires a storm of tugnsten alloy darts at near the speed of light, barraging targets to pieces.
