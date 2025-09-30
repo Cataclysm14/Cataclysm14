@@ -766,7 +766,7 @@
 
 - type: entity
   id: WeaponTurretScythe
-  name: Neutron Repeater "Scythe"
+  name: [type designation] neutron repeater "Scythe"
   parent: BallisticArtillery
   suffix: ADS ONLY
   description: A steadily firing neutron repeater, dealing solid damage to most targets. A pre-fracture marvel of weapons technology
