@@ -54,7 +54,7 @@
     defaultTarget: pipebomb
 
 - type: entity
-  parent: BaseItem
+  parent: [BaseItem]
   id: NailBombCable
   name: nail bomb
   description: An improvised explosive made from nails and gunpowder.
