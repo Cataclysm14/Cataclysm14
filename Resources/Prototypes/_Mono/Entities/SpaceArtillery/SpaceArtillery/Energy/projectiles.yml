@@ -281,7 +281,7 @@
 
 - type: entity
   id: ShipIonProjectile
-  name: Ion shot
+  name: ion shot
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
