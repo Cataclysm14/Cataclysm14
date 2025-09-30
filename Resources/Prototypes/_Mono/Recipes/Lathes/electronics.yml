@@ -86,3 +86,8 @@
   parent: BaseGoldCircuitboardRecipe
   id: ContainmentFieldGeneratorCircuitboard
   result: ContainmentFieldGeneratorCircuitboard
+
+- type: latheRecipe
+  parent: BaseCircuitboardRecipe
+  id: SmartfridgeCircuitboard
+  result: SmartfridgeCircuitboard

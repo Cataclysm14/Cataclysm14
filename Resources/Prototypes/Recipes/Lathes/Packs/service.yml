@@ -34,6 +34,7 @@
   recipes:
   # - BiogeneratorMachineCircuitboard # Frontier: dynamic
   - UniformPrinterMachineCircuitboard
+  - SmartfridgeCircuitboard # Mono
   # - MicrowaveMachineCircuitboard # Frontier: dynamic
   # - ReagentGrinderMachineCircuitboard # Frontier: dynamic
   # - ElectricGrillMachineCircuitboard # Frontier: dynamic
