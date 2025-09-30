@@ -251,7 +251,7 @@
     damage:
       types:
         Radiation: 1000
-        Structural: 2500
+        Structural: 1500
         Heat: 400
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Projectiles/ship_projectiles.rsi
@@ -273,7 +273,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: DefaultShipGun
-    totalIntensity: 60
+    totalIntensity: 50
     intensitySlope: 4
     maxIntensity: 40
 
