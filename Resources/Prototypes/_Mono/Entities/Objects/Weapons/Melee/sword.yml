@@ -118,7 +118,7 @@
   parent: BaseMeleeWeaponEnergy
   id: WeaponPhaseBlade
   name: Nano-Laminate Phaseblade
-  description: A heavy bladed weapon with a wicked edge, commonly seen in the hands of pre-fracture warriors. Can be activated to adjust to combat needs
+  description: A heavy bladed weapon with a wicked edge, commonly seen in the hands of pre-fracture warriors. Can be activated to adjust to combat needs.
   components:
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Melee/phaseblade.rsi
@@ -130,7 +130,7 @@
     slots:
     - Back
     - Belt
-    - suitStorage
+    - SuitStorage
   - type: ComponentToggler
     components:
     - type: Execution
