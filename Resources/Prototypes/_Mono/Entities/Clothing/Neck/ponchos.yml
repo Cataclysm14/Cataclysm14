@@ -88,6 +88,17 @@
 
 - type: entity
   parent: ClothingNeckPonchoBlack
+  id: ClothingNeckPonchoSmallOrange
+  name: small orange cold weather poncho
+  description: The Cold Weather Poncho, advertised as a masterpiece of elemental protection. This stylish rendition comes in a smaller size. This one is shockingly orange.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Neck/Ponchos/orangesmall.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Neck/Ponchos/orangesmall.rsi
+
+- type: entity
+  parent: ClothingNeckPonchoBlack
   id: ClothingNeckPonchoSmallBlack
   name: small black cold weather poncho
   description: The Cold Weather Poncho, advertised as a masterpiece of elemental protection. This rendition comes in a smaller size. This one is black.

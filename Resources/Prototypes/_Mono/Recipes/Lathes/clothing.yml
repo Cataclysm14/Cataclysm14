@@ -34,5 +34,10 @@
 
 - type: latheRecipe
   parent: BaseNeckClothingRecipe
+  id: ClothingNeckPonchoSmallOrange
+  result: ClothingNeckPonchoSmallOrange
+
+- type: latheRecipe
+  parent: BaseNeckClothingRecipe
   id: ClothingNeckPonchoSmallRed
   result: ClothingNeckPonchoSmallRed

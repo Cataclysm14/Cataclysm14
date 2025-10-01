@@ -224,6 +224,15 @@
     neck: ClothingNeckPonchoSmallPink
 
 - type: loadout
+  id: ContractorClothingNeckPonchoSmallOrange # Monolith
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1000
+  equipment:
+    neck: ClothingNeckPonchoSmallOrange
+
+- type: loadout
   id: ContractorClothingNeckPonchoSmallBlack # Monolith
   effects:
   - !type:GroupLoadoutEffect
