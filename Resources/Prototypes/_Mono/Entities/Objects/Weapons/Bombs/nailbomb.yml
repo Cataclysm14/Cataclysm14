@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 - type: entity
-  parent: [GrenadeBase, BaseC3SyndicateContraband]
+  parent: [ProjectileGrenadeBase, BaseC3SyndicateContraband]
   id: NailBomb
   name: nail bomb
   description: An improvised explosive made from nails and gunpowder.
@@ -22,16 +22,16 @@
   - type: RandomTimerTrigger
     min: 1
     max: 10
-  - type: ExplodeOnTrigger
-  - type: Explosive
-    explosionType: Default
-    totalIntensity: 50
-    intensitySlope: 5
-    maxIntensity: 6
-    canCreateVacuum: false
+  # - type: ExplodeOnTrigger
+  # - type: Explosive
+  #   explosionType: Default
+  #   totalIntensity: 50
+  #   intensitySlope: 5
+  #   maxIntensity: 6
+  #   canCreateVacuum: false
   - type: ProjectileGrenade
     fillPrototype: PelletClusterLethal
-    capacity: 30
+    capacity: 50
   - type: Appearance
   - type: TimerTriggerVisuals
   - type: Construction
