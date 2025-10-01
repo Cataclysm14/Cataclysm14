@@ -2,7 +2,7 @@
   id: Hermes
   parent: BaseVessel
   name: Hermes
-  description: The mailing segment of the combined service ship, designed for speed above all.
+  description: The mailing segment of the combined service ship, designed for speed above all. This one is designed and produced by The Pantheon Collective.
   price: 37500
   category: Small
   group: Sr
@@ -16,7 +16,7 @@
 
 - type: gameMap
   id: Hermes
-  mapName: 'Hermes'
+  mapName: 'TPC Hermes'
   mapPath: /Maps/_Mono/Shuttles/hermes.yml
   minPlayers: 0
   stations:
