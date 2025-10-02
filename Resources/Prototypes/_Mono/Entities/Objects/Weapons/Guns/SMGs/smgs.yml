@@ -34,7 +34,7 @@
     angleDecay: 20
     fireRate: 9.5
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/mla_fire.ogg
   - type: ChamberMagazineAmmoProvider
   - type: ItemSlots
     slots:

@@ -27,7 +27,7 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/hawk_fire.ogg
   - type: BasicEntityAmmoProvider
     proto: BulletHawk
     capacity: 12

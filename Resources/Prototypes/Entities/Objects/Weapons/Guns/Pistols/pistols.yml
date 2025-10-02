@@ -172,6 +172,9 @@
       gun_chamber: !type:ContainerSlot
   - type: StaticPrice # Mono - 200 from frontier 1k
     price: 200
+  - type: Gun # Mono change - Sound for viper
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/viper_fire.ogg
 
 - type: entity
   name: LWC PT-45C echis (9x19mm)
