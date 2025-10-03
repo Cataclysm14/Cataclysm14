@@ -18,16 +18,20 @@ public sealed class ClientRadioNoiseSystem : EntitySystem
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
 
+    private bool _radioNoiseEnabled = true;
+
     public override void Initialize()
     {
         base.Initialize();
         SubscribeNetworkEvent<RadioNoiseEvent>(OnRadioNoiseEvent);
+
+        _cfg.OnValueChanged(MonoCVars.RadioNoiseEnabled, @new => _radioNoiseEnabled = @new);
     }
 
     private void OnRadioNoiseEvent(RadioNoiseEvent ev)
     {
         // Only play radio noise if the player has the option enabled
-        if (!_cfg.GetCVar(MonoCVars.RadioNoiseEnabled))
+        if (!_radioNoiseEnabled)
             return;
 
         // Get the entity from the network event
