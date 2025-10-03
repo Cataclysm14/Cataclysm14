@@ -37,9 +37,6 @@ public sealed class AudioEffectSystem : EntitySystem
     {
         base.Initialize();
 
-        var blankAuxiliaryEntity = _audioSystem.CreateAuxiliary();
-        _cachedBlankAuxiliaryUid = blankAuxiliaryEntity.Entity;
-
         // You can't keep references to this past round-end so it must be cleaned up.
         SubscribeNetworkEvent<RoundRestartCleanupEvent>(_ => Cleanup()); // its not raised on client
         SubscribeLocalEvent<PrototypesReloadedEventArgs>(OnPrototypeReload);
@@ -109,9 +106,9 @@ public sealed class AudioEffectSystem : EntitySystem
     /// </summary>
     public bool TryRemoveEffect(in Entity<AudioComponent> entity)
     {
-        DebugTools.Assert(_cachedBlankAuxiliaryUid.IsValid(), "Cached blank audio-auxiliary entity wasn't initialised!");
+        // resolve the cached auxiliary
         if (!_cachedBlankAuxiliaryUid.IsValid())
-            return false;
+            _cachedBlankAuxiliaryUid = _audioSystem.CreateAuxiliary().Entity;
 
         _audioSystem.SetAuxiliary(entity, entity.Comp, _cachedBlankAuxiliaryUid);
         return true;
