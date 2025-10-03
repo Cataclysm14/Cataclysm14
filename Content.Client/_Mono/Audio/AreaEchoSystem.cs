@@ -4,11 +4,13 @@ using System.Runtime.CompilerServices;
 using Content.Client.Light.EntitySystems;
 using Content.Shared._Mono.CCVar;
 using Content.Shared.Light.Components;
+using Content.Shared.Maps;
 using Content.Shared.Physics;
 using Robust.Client.GameObjects;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Components;
 using Robust.Shared.Configuration;
+using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Systems;
@@ -27,6 +29,7 @@ public sealed class AreaEchoSystem : EntitySystem
 {
     [Dependency] private readonly IGameTiming _gameTiming = default!;
     [Dependency] private readonly IConfigurationManager _configurationManager = default!;
+    [Dependency] private readonly ITileDefinitionManager _tileDefinitionManager = default!;
     [Dependency] private readonly MapSystem _mapSystem = default!;
     [Dependency] private readonly SharedPhysicsSystem _physicsSystem = default!;
     [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
@@ -207,7 +210,6 @@ public sealed class AreaEchoSystem : EntitySystem
         // `lastEntityBeforeGrid` is obviously directly before `entityGrid`
         // the earlier guard clause makes sure this will always be valid
 
-        Log.Debug($"Our grid: {ToPrettyString(entityGrid.Owner)}, our lower highest parent: {ToPrettyString(lastEntityBeforeGrid.Owner)}");
         if (!_gridQuery.TryGetComponent(entityGrid, out var gridComponent))
             return false;
 
@@ -231,6 +233,7 @@ public sealed class AreaEchoSystem : EntitySystem
         {
             var directionVector = (direction + entityGrid.Comp.LocalRotation).ToVec();
             var directionFidelityStep = directionVector * _calculationalFidelity;
+            var dSqStep = MathF.Pow(directionFidelityStep.LengthSquared(), 2); // ???
 
             var ray = new CollisionRay(worldPosition, directionVector, _echoLayer);
             var rayResults = _physicsSystem.IntersectRay(transformComponent.MapID, ray, maximumMagnitude, ignoredEnt: lastEntityBeforeGrid, returnOnFirstHit: true);
@@ -247,31 +250,32 @@ public sealed class AreaEchoSystem : EntitySystem
             var rayMagnitudeSquared = rayMagnitude * rayMagnitude;
             var incrementedRayMagnitudeSquared = 0f;
 
-            if (checkRoof)
+            // find the furthest distance this ray reaches until its on an unrooved/dataless (space) tile
+            var nextCheckedPosition = new Vector2(originTileIndices.X, originTileIndices.Y) + directionFidelityStep;
+
+            for (; incrementedRayMagnitudeSquared < rayMagnitudeSquared;)
             {
-                // find the furthest distance this ray reaches until its on an unrooved/dataless (space) tile
-                var nextCheckedPosition = new Vector2(originTileIndices.X, originTileIndices.Y) + directionFidelityStep;
+                var nextCheckedTilePosition = new Vector2i(
+                    (int)MathF.Floor(nextCheckedPosition.X / gridTileSize),
+                    (int)MathF.Floor(nextCheckedPosition.Y / gridTileSize)
+                );
 
-                for (; incrementedRayMagnitudeSquared < rayMagnitudeSquared;)
-                {
-                    var nextCheckedTilePosition = new Vector2i(
-                        (int)MathF.Floor(nextCheckedPosition.X / gridTileSize),
-                        (int)MathF.Floor(nextCheckedPosition.Y / gridTileSize)
-                    );
-
+                if (checkRoof)
+                { // if we're checking roofs, end this ray if this tile is unrooved or dataless (latter is inherent of this method)
                     if (!_roofSystem.IsRooved(gridRoofEntity!, nextCheckedTilePosition))
                         break;
+                } // if we're not checking roofs, end this ray if this tile is empty/space
+                else if (!_mapSystem.TryGetTileRef(entityGrid, gridComponent, nextCheckedTilePosition, out var tile) ||
+                    tile.Tile.IsSpace(_tileDefinitionManager))
+                    break;
 
-                    nextCheckedPosition += directionFidelityStep;
-                    incrementedRayMagnitudeSquared += directionFidelityStep.LengthSquared();
-                }
+                nextCheckedPosition += directionFidelityStep;
+                incrementedRayMagnitudeSquared += dSqStep;
             }
-            else
-                incrementedRayMagnitudeSquared = rayMagnitudeSquared;
 
             // dont need to sqrt if we didnt even process roofs
-            var adjustedDistanceToFurthestRoovedTile = checkRoof ? MathF.Sqrt(incrementedRayMagnitudeSquared) : rayMagnitude;
-            magnitude += adjustedDistanceToFurthestRoovedTile / _calculatedDirections.Length;
+            var adjustedDistanceToFurthestValidTile = MathF.Sqrt(incrementedRayMagnitudeSquared);
+            magnitude += adjustedDistanceToFurthestValidTile / _calculatedDirections.Length;
         }
 
         return true;
