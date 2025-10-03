@@ -54,7 +54,7 @@ public sealed class AreaEchoSystem : EntitySystem
     /// <remarks>
     ///     Keep in ascending order.
     /// </remarks>
-    private static readonly List<(float, ProtoId<AudioPresetPrototype>)> DistancePresets = new() { (9f, "Hallway"), (13.5f, "Auditorium"), (30f, "ConcertHall") };
+    private static readonly List<(float, ProtoId<AudioPresetPrototype>)> DistancePresets = new() { (15f, "Hallway"), (25f, "Auditorium"), (25f, "ConcertHall") };
 
     /// <summary>
     ///     When is the next time we should check all audio entities and see if they are eligible to be updated.
@@ -64,7 +64,7 @@ public sealed class AreaEchoSystem : EntitySystem
     /// <summary>
     ///     Collision mask for echoes.
     /// </summary>
-    private int _echoLayer = (int)(CollisionGroup.Impassable | CollisionGroup.HighImpassable); // this could be better but whatever
+    private int _echoLayer = (int)(CollisionGroup.Opaque | CollisionGroup.Impassable); // this could be better but whatever
 
     private bool _echoEnabled = true;
     private float _calculationalFidelity = 5f;
@@ -77,21 +77,42 @@ public sealed class AreaEchoSystem : EntitySystem
     {
         base.Initialize();
 
-        _configurationManager.OnValueChanged(MonoCVars.AreaEchoEnabled, x => _echoEnabled = x);
-        _configurationManager.OnValueChanged(MonoCVars.AreaEchoHighResolution, x => _calculatedDirections = GetEffectiveDirections(x));
+        _configurationManager.OnValueChanged(MonoCVars.AreaEchoEnabled, x => _echoEnabled = x, invokeImmediately: true);
+        _configurationManager.OnValueChanged(MonoCVars.AreaEchoHighResolution, x => _calculatedDirections = GetEffectiveDirections(x), invokeImmediately: true);
 
         _configurationManager.OnValueChanged(MonoCVars.AreaEchoStepFidelity, x => _calculationalFidelity = x);
-        _configurationManager.OnValueChanged(MonoCVars.AreaEchoRecalculationInterval, x => _calculationInterval = x);
+        _configurationManager.OnValueChanged(MonoCVars.AreaEchoRecalculationInterval, x => _calculationInterval = x, invokeImmediately: true);
 
         _gridQuery = GetEntityQuery<MapGridComponent>();
         _roofQuery = GetEntityQuery<RoofComponent>();
 
-        _echoEnabled = _configurationManager.GetCVar(MonoCVars.AreaEchoEnabled);
-        _calculatedDirections = GetEffectiveDirections(_configurationManager.GetCVar(MonoCVars.AreaEchoHighResolution));
-        _calculationalFidelity = _configurationManager.GetCVar(MonoCVars.AreaEchoStepFidelity);
-        _calculationInterval = _configurationManager.GetCVar(MonoCVars.AreaEchoRecalculationInterval);
-
         SubscribeLocalEvent<AudioComponent, EntParentChangedMessage>(OnAudioParentChanged);
+    }
+    public override void Update(float frameTime)
+    {
+        base.Update(frameTime);
+        if (!_echoEnabled ||
+            _gameTiming.CurTime < _nextExistingUpdate)
+            return;
+
+        _nextExistingUpdate = _gameTiming.CurTime + _calculationInterval;
+
+        var minimumMagnitude = DistancePresets.TryFirstOrNull(out var first) ? first.Value.Item1 : 0f;
+        DebugTools.Assert(minimumMagnitude > 0f, "First distance preset was less than or equal to 0!");
+        if (minimumMagnitude <= 0f)
+            return;
+
+        var maximumMagnitude = DistancePresets.Last().Item1;
+        var audioEnumerator = EntityQueryEnumerator<AudioComponent>();
+
+        while (audioEnumerator.MoveNext(out var uid, out var audioComponent))
+        {
+            if (!CanAudioEcho(audioComponent) ||
+                !audioComponent.Playing)
+                continue;
+
+            ProcessAudioEntity((uid, audioComponent), Transform(uid), minimumMagnitude, maximumMagnitude);
+        }
     }
 
     /// <summary>
@@ -145,32 +166,6 @@ public sealed class AreaEchoSystem : EntitySystem
         return hierarchy;
     }
 
-    public override void Update(float frameTime)
-    {
-        base.Update(frameTime);
-        if (!_echoEnabled ||
-            _gameTiming.CurTime < _nextExistingUpdate)
-            return;
-
-        _nextExistingUpdate = _gameTiming.CurTime + _calculationInterval;
-
-        var minimumMagnitude = DistancePresets.TryFirstOrNull(out var first) ? first.Value.Item1 : 0f;
-        DebugTools.Assert(minimumMagnitude > 0f, "First distance preset was less than or equal to 0!");
-        if (minimumMagnitude <= 0f)
-            return;
-
-        var maximumMagnitude = DistancePresets.Last().Item1;
-        var audioEnumerator = EntityQueryEnumerator<AudioComponent>();
-
-        while (audioEnumerator.MoveNext(out var uid, out var audioComponent))
-        {
-            if (!CanAudioEcho(audioComponent))
-                continue;
-
-            ProcessAudioEntity((uid, audioComponent), Transform(uid), minimumMagnitude, maximumMagnitude);
-        }
-    }
-
     /// <summary>
     ///     Basic check for whether an audio can echo. Doesn't account for distance.
     /// </summary>
@@ -194,7 +189,7 @@ public sealed class AreaEchoSystem : EntitySystem
         - If the grid has RoofComponent:
         - - Only now, will rays end on invalid tiles (space) or unrooved tiles
     */
-    public bool TryProcessAreaSpaceMagnitude(Entity<TransformComponent> entity, float minimumMagnitude, float maximumMagnitude, out float magnitude)
+    public bool TryProcessAreaSpaceMagnitude(Entity<TransformComponent> entity, float maximumMagnitude, out float magnitude)
     {
         magnitude = 0f;
         var transformComponent = entity.Comp;
@@ -237,19 +232,15 @@ public sealed class AreaEchoSystem : EntitySystem
         {
             var directionVector = (direction + entityGrid.Comp.LocalRotation).ToVec();
             var directionFidelityStep = directionVector * _calculationalFidelity;
-            var dSqStep = MathF.Pow(directionFidelityStep.LengthSquared(), 2); // ???
+            var dSqStep = (directionFidelityStep * directionFidelityStep).LengthSquared(); // ???
 
             var ray = new CollisionRay(worldPosition, directionVector, _echoLayer);
-            var rayResults = _physicsSystem.IntersectRay(transformComponent.MapID, ray, maximumMagnitude, ignoredEnt: lastEntityBeforeGrid, returnOnFirstHit: true);
+            var rayResults = _physicsSystem.IntersectRay(transformComponent.MapID, ray, maxLength: maximumMagnitude, ignoredEnt: lastEntityBeforeGrid, returnOnFirstHit: true);
 
             // if we hit something, distance to that is magnitude but it must be lower than maximum. if we didnt hit anything, it's maximum magnitude
             var rayMagnitude = rayResults.TryFirstOrNull(out var firstResult) ?
                 MathF.Min(firstResult.Value.Distance, maximumMagnitude) :
                 maximumMagnitude;
-
-            // if this ray is too short for any echo, ignore this angle
-            if (rayMagnitude < minimumMagnitude)
-                continue;
 
             var rayMagnitudeSquared = rayMagnitude * rayMagnitude;
             var incrementedRayMagnitudeSquared = 0f;
@@ -277,17 +268,20 @@ public sealed class AreaEchoSystem : EntitySystem
                 incrementedRayMagnitudeSquared += dSqStep;
             }
 
-            // dont need to sqrt if we didnt even process roofs
-            var adjustedDistanceToFurthestValidTile = MathF.Sqrt(incrementedRayMagnitudeSquared);
-            magnitude += adjustedDistanceToFurthestValidTile / _calculatedDirections.Length;
+            // todo: more realistic estimation?
+            magnitude += incrementedRayMagnitudeSquared > float.Epsilon ?
+                MathF.Sqrt(incrementedRayMagnitudeSquared) :
+                0f;
         }
 
+        magnitude /= _calculatedDirections.Length;
+        Log.Info($"Magnitude of {magnitude} for entity {ToPrettyString(entity.Owner)}");
         return true;
     }
 
     private void ProcessAudioEntity(Entity<AudioComponent> entity, TransformComponent transformComponent, float minimumMagnitude, float maximumMagnitude)
     {
-        TryProcessAreaSpaceMagnitude((entity, transformComponent), minimumMagnitude, maximumMagnitude, out var echoMagnitude);
+        TryProcessAreaSpaceMagnitude((entity, transformComponent), maximumMagnitude, out var echoMagnitude);
 
         if (echoMagnitude > minimumMagnitude)
         {
@@ -304,10 +298,15 @@ public sealed class AreaEchoSystem : EntitySystem
             if (bestPreset != null)
                 _audioEffectSystem.TryAddEffect(entity, DistancePresets[0].Item2);
         }
+        else
+            _audioEffectSystem.RemoveEffect(entity);
     }
 
     private void OnAudioParentChanged(Entity<AudioComponent> entity, ref EntParentChangedMessage args)
     {
+        if (args.Transform.MapID == MapId.Nullspace)
+            return;
+
         if (!CanAudioEcho(entity))
             return;
 

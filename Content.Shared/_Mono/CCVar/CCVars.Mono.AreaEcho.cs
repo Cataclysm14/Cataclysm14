@@ -16,6 +16,14 @@ public sealed partial class MonoCVars
         CVarDef.Create("mono.area_echo_enabled", true, CVar.ARCHIVE | CVar.CLIENTONLY);
 
     /// <summary>
+    ///     If false, area echos calculate with 4 directions (NSEW).
+    ///         Otherwise, area echos calculate with all 8 directions.
+    /// </summary>
+    /// <seealso cref="AreaEchoSystem"/>
+    public static readonly CVarDef<bool> AreaEchoHighResolution =
+        CVarDef.Create("mono.area_echo_8dir", false, CVar.ARCHIVE | CVar.CLIENTONLY);
+
+    /// <summary>
     ///     Distantial interval, in tiles, in the rays used to calculate the roofs of an open area for echos,
     ///         at which the tile at that point of the ray is processed.
     /// 
@@ -23,15 +31,7 @@ public sealed partial class MonoCVars
     /// </summary>
     /// <seealso cref="AreaEchoSystem"/>
     public static readonly CVarDef<float> AreaEchoStepFidelity =
-        CVarDef.Create("mono.area_echo_step_fidelity", 5f, CVar.ARCHIVE | CVar.CLIENTONLY);
-
-    /// <summary>
-    ///     If false, area echos calculate with 4 directions (NSEW).
-    ///         Otherwise, area echos calculate with all 8 directions.
-    /// </summary>
-    /// <seealso cref="AreaEchoSystem"/>
-    public static readonly CVarDef<bool> AreaEchoHighResolution =
-        CVarDef.Create("mono.area_echo_8dir", false, CVar.ARCHIVE | CVar.CLIENTONLY);
+        CVarDef.Create("mono.area_echo_step_fidelity", 5f, CVar.CLIENTONLY);
 
     /// <summary>
     ///     Interval between updates for every audio entity.

@@ -26,12 +26,21 @@ public sealed class AudioEffectSystem : EntitySystem
 
     private static readonly Dictionary<ProtoId<AudioPresetPrototype>, (EntityUid AuxiliaryUid, EntityUid EffectUid)> CachedEffects = new();
 
+    /// <summary>
+    ///     An auxiliary with no effect; for removing effects.
+    /// </summary>
+    // TODO: remove this when an rt method to actually remove effects gets added
+    private EntityUid _cachedBlankAuxiliaryUid;
+
     public override void Initialize()
     {
         base.Initialize();
 
+        var blankAuxiliaryEntity = _audioSystem.CreateAuxiliary();
+        _cachedBlankAuxiliaryUid = blankAuxiliaryEntity.Entity;
+
         // You can't keep references to this past round-end so it must be cleaned up.
-        SubscribeLocalEvent<RoundRestartCleanupEvent>(_ => Cleanup());
+        SubscribeNetworkEvent<RoundRestartCleanupEvent>(_ => Cleanup()); // its not raised on client
         SubscribeLocalEvent<PrototypesReloadedEventArgs>(OnPrototypeReload);
     }
 
@@ -81,7 +90,7 @@ public sealed class AudioEffectSystem : EntitySystem
     ///     Tries to resolve a cached audio auxiliary entity corresponding to the prototype to apply
     ///         to the given entity.
     /// </summary>
-    public bool TryAddEffect(Entity<AudioComponent> entity, in ProtoId<AudioPresetPrototype> preset)
+    public bool TryAddEffect(in Entity<AudioComponent> entity, in ProtoId<AudioPresetPrototype> preset)
     {
         if (!ResolveCachedEffect(preset, out var auxiliaryUid, out _))
             return false;
@@ -89,6 +98,12 @@ public sealed class AudioEffectSystem : EntitySystem
         _audioSystem.SetAuxiliary(entity, entity.Comp, auxiliaryUid);
         return true;
     }
+
+    /// <summary>
+    ///     Removes effects from the given audio.
+    /// </summary>
+    public void RemoveEffect(in Entity<AudioComponent> entity)
+        => _audioSystem.SetAuxiliary(entity, entity.Comp, _cachedBlankAuxiliaryUid);
 
     /// <summary>
     ///     Tries to resolve an audio auxiliary and effect entity, creating and caching one if one doesn't already exist,
