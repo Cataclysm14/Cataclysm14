@@ -11,10 +11,13 @@
       "name": "zeus_projectile"
     },
     {
-      "name": "neutron_bolt"
+      "name": "muzzle_superheavy"
     },
     {
-      "name": "ion_blast"
+      "name": "Beam_SuperHeavy"
+    },
+    {
+      "name": "impact_superheavy"
     }
   ]
 }
