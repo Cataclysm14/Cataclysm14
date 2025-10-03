@@ -54,7 +54,7 @@ public sealed class AreaEchoSystem : EntitySystem
     /// <remarks>
     ///     Keep in ascending order.
     /// </remarks>
-    private static readonly List<(float, ProtoId<AudioPresetPrototype>)> DistancePresets = new() { (15f, "Hallway"), (25f, "Auditorium"), (25f, "ConcertHall") };
+    private static readonly List<(float, ProtoId<AudioPresetPrototype>)> DistancePresets = new() { (15f, "Hallway"), (25f, "Auditorium"), (40f, "ConcertHall") };
 
     /// <summary>
     ///     When is the next time we should check all audio entities and see if they are eligible to be updated.
@@ -275,7 +275,6 @@ public sealed class AreaEchoSystem : EntitySystem
         }
 
         magnitude /= _calculatedDirections.Length;
-        Log.Info($"Magnitude of {magnitude} for entity {ToPrettyString(entity.Owner)}");
         return true;
     }
 
@@ -299,7 +298,7 @@ public sealed class AreaEchoSystem : EntitySystem
                 _audioEffectSystem.TryAddEffect(entity, DistancePresets[0].Item2);
         }
         else
-            _audioEffectSystem.RemoveEffect(entity);
+            _audioEffectSystem.TryRemoveEffect(entity);
     }
 
     private void OnAudioParentChanged(Entity<AudioComponent> entity, ref EntParentChangedMessage args)

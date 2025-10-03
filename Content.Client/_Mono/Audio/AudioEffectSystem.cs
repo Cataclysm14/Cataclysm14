@@ -12,6 +12,7 @@ using Robust.Shared.Audio;
 using Robust.Shared.Audio.Components;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Utility;
 using DependencyAttribute = Robust.Shared.IoC.DependencyAttribute;
 
 namespace Content.Client._Mono.Audio;
@@ -82,8 +83,12 @@ public sealed class AudioEffectSystem : EntitySystem
             TryQueueDel(cache.Value.AuxiliaryUid);
             TryQueueDel(cache.Value.EffectUid);
         }
-
         CachedEffects.Clear();
+
+        if (_cachedBlankAuxiliaryUid.IsValid())
+            TryQueueDel(_cachedBlankAuxiliaryUid);
+
+        _cachedBlankAuxiliaryUid = EntityUid.Invalid;
     }
 
     /// <summary>
@@ -100,10 +105,17 @@ public sealed class AudioEffectSystem : EntitySystem
     }
 
     /// <summary>
-    ///     Removes effects from the given audio.
+    ///     Tries to remove effects from the given audio.
     /// </summary>
-    public void RemoveEffect(in Entity<AudioComponent> entity)
-        => _audioSystem.SetAuxiliary(entity, entity.Comp, _cachedBlankAuxiliaryUid);
+    public bool TryRemoveEffect(in Entity<AudioComponent> entity)
+    {
+        DebugTools.Assert(_cachedBlankAuxiliaryUid.IsValid(), "Cached blank audio-auxiliary entity wasn't initialised!");
+        if (!_cachedBlankAuxiliaryUid.IsValid())
+            return false;
+
+        _audioSystem.SetAuxiliary(entity, entity.Comp, _cachedBlankAuxiliaryUid);
+        return true;
+    }
 
     /// <summary>
     ///     Tries to resolve an audio auxiliary and effect entity, creating and caching one if one doesn't already exist,
