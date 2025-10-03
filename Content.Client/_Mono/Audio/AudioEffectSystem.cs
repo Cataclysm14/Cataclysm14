@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2025 LaCumbiaDelCoronavirus
+//
+// SPDX-License-Identifier: MPL-2.0
+
 // some parts taken and modified from https://github.com/TornadoTechnology/finster/blob/1af5daf6270477a512ee9d515371311443e97878/Content.Shared/_Finster/Audio/SharedAudioEffectsSystem.cs#L13 , credit to docnite
 // they're under WTFPL so its quite allowed
 
