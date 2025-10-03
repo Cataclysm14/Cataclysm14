@@ -6,12 +6,9 @@ using Content.Shared._Mono.CCVar;
 using Content.Shared.Light.Components;
 using Content.Shared.Physics;
 using Robust.Client.GameObjects;
-using Robust.Client.Player;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Components;
-using Robust.Shared.Audio.Systems;
 using Robust.Shared.Configuration;
-using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Systems;
@@ -60,11 +57,11 @@ public sealed class AreaEchoSystem : EntitySystem
     /// <summary>
     ///     Collision mask for echoes.
     /// </summary>
-    private int _echoLayer = (int)(CollisionGroup.Impassable | CollisionGroup.HighImpassable);
+    private int _echoLayer = (int)(CollisionGroup.Impassable | CollisionGroup.HighImpassable); // this could be better but whatever
 
     private bool _echoEnabled = true;
     private float _calculationalFidelity = 5f;
-    private TimeSpan _calculationInterval = TimeSpan.FromSeconds(15);
+    private TimeSpan _calculationInterval = TimeSpan.FromSeconds(15); // how often we should check existing audio re-apply or remove echo from them when necessary
 
     private EntityQuery<MapGridComponent> _gridQuery;
     private EntityQuery<RoofComponent> _roofQuery;
@@ -316,11 +313,3 @@ public sealed class AreaEchoSystem : EntitySystem
         ProcessAudioEntity(entity, args.Transform, minimumMagnitude, maximumMagnitude);
     }
 }
-
-/// <summary>
-///     Raised on a grid (or map if there's no grid) at an audio's position, to override an echo's effect.
-///     Not raised if 
-/// </summary>
-/// <param name="Preset">The preset the audio should use. If null, uses no preset only if <paramref name="Change"/> is true.</param>
-[ByRefEvent]
-public record struct GetGridAreaEchoEvent(EntityCoordinates Position, ProtoId<AudioPresetPrototype>? Preset = null, bool Change = false);
