@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "made by zeranov",
+  "copyright": "made by zeranov, -reptilian sprite by Zethine / @synthetic_086 (discord).",
   "size": {
     "x": 64,
     "y": 64
@@ -19,6 +19,14 @@
     },
     {
       "name": "on-equipped-HELMET",
+      "directions": 4
+    },
+    {
+      "name": "off-equipped-HELMET-reptilian",
+      "directions": 4
+    },
+    {
+      "name": "on-equipped-HELMET-reptilian",
       "directions": 4
     }
   ]
