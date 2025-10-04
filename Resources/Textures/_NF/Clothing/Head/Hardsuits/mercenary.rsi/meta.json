@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "copyright": "Made by DadNotTheBelt (https://github.com/No-Dad-Not-The-Belt) for SS14/Frontier Station 14.  | Resprited for mercenary by erhardsteinhauer (discord), -reptilian sprite by Zethine / @synthetic_086 (discord).",
   "license": "CC-BY-SA-3.0",
   "size": {
@@ -52,6 +53,5 @@
       "name": "on-equipped-HELMET-reptilian",
       "directions": 4
     }
-  ],
-  "version": 1
+  ]
 }
