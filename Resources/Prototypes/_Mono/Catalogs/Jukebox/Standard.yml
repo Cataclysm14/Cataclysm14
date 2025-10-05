@@ -1,8 +1,20 @@
+# SPDX-FileCopyrightText: 2025 LukeZurg22
+# SPDX-FileCopyrightText: 2025 tonotom
+# SPDX-FileCopyrightText: 2025 tonotom1
+#
+# SPDX-License-Identifier: MPL-2.0
+
 - type: jukebox
   id: across_the_void
   name: Guillaume David - Across The Void
   path:
     path: /Audio/_Mono/Jukebox/across_the_void.ogg
+
+- type: jukebox
+  id: dawsons_christian
+  name: Vic Tyler - Dawson's Christian
+  path:
+    path: /Audio/_Mono/Jukebox/dawsonschristian.ogg
 
 - type: jukebox
   id: infinite_waters
@@ -15,6 +27,12 @@
   name: High Barbary on 90.4FM "The Brig"
   path:
     path: /Audio/_Mono/Jukebox/high_barbary.ogg
+
+- type: jukebox
+  id: koganusan
+  name: Simon Swerwer - Koganusan
+  path:
+    path: /Audio/_Mono/Jukebox/koganusan.ogg
 
 - type: jukebox
   id: out_of_my_mind

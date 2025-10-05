@@ -1,11 +1,21 @@
+// SPDX-FileCopyrightText: 2023 DrSmugleaf
+// SPDX-FileCopyrightText: 2023 Nemanja
+// SPDX-FileCopyrightText: 2023 chromiumboy
+// SPDX-FileCopyrightText: 2023 metalgearsloth
+// SPDX-FileCopyrightText: 2025 Coenx-flex
+// SPDX-FileCopyrightText: 2025 Winkarst
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Threading;
+using Content.Server.Power.EntitySystems;
 using Content.Server.StationEvents.Events;
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server.StationEvents.Components;
 
-[RegisterComponent, Access(typeof(PowerGridCheckRule))]
+[RegisterComponent, Access(typeof(PowerGridCheckRule), typeof(PowerMonitoringConsoleSystem))]
 public sealed partial class PowerGridCheckRuleComponent : Component
 {
     /// <summary>
@@ -21,7 +31,7 @@ public sealed partial class PowerGridCheckRuleComponent : Component
 
     public CancellationTokenSource? AnnounceCancelToken;
 
-    public EntityUid AffectedStation;
+    public List<EntityUid> AffectedStations;
     public readonly List<EntityUid> Powered = new();
     public readonly List<EntityUid> Unpowered = new();
 

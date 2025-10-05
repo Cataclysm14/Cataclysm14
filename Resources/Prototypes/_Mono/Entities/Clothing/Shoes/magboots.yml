@@ -1,5 +1,6 @@
 # SPDX-FileCopyrightText: 2025 Ilya246
 # SPDX-FileCopyrightText: 2025 UnicornOnLSD
+# SPDX-FileCopyrightText: 2025 starch
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -26,3 +27,27 @@
     sprite: _Mono/Clothing/Shoes/Boots/voidboots.rsi
   - type: Clothing
     sprite: _Mono/Clothing/Shoes/Boots/voidboots.rsi
+
+- type: entity
+  parent: ClothingShoesBootsMagAdv
+  id: ClothingShoesBootsMagAsakim
+  name: pre-fracture magboots
+  description: State-of-the-art magnetic boots made for combat with advanced harnesses.
+  components:
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepHeavySuit
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.35
+
+- type: entity
+  parent: [ClothingShoesBootsMagSyndie]
+  id: ClothingShoesBootsMagAshen
+  name: tactical magboots
+  description: Tactical magnetic boots that have a heavy magnetic pull and integrated thrusters for boarding. It can hold 0.75 L of gas.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Shoes/Boots/magboots-ashen.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Mono/Clothing/Shoes/Boots/magboots-ashen.rsi

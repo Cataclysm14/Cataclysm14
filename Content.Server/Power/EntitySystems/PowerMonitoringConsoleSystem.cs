@@ -1,3 +1,21 @@
+// SPDX-FileCopyrightText: 2022 20kdc
+// SPDX-FileCopyrightText: 2022 Flipp Syder
+// SPDX-FileCopyrightText: 2022 wrexbe
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers
+// SPDX-FileCopyrightText: 2023 TemporalOroboros
+// SPDX-FileCopyrightText: 2023 Visne
+// SPDX-FileCopyrightText: 2023 chromiumboy
+// SPDX-FileCopyrightText: 2023 faint
+// SPDX-FileCopyrightText: 2024 ArtisticRoomba
+// SPDX-FileCopyrightText: 2024 Errant
+// SPDX-FileCopyrightText: 2024 Leon Friedrich
+// SPDX-FileCopyrightText: 2024 Nemanja
+// SPDX-FileCopyrightText: 2024 deltanedas
+// SPDX-FileCopyrightText: 2024 metalgearsloth
+// SPDX-FileCopyrightText: 2025 Coenx-flex
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Server.NodeContainer;
 using Content.Server.NodeContainer.EntitySystems;
 using Content.Server.NodeContainer.Nodes;
@@ -243,7 +261,8 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
         var query = AllEntityQuery<PowerMonitoringConsoleComponent, TransformComponent>();
         while (query.MoveNext(out var uid, out var console, out var xform))
         {
-            if (CompOrNull<StationMemberComponent>(xform.GridUid)?.Station == rule.AffectedStation)
+            var station = CompOrNull<StationMemberComponent>(xform.GridUid)?.Station;
+            if (station.HasValue && rule.AffectedStations.Contains(station.Value)) // Mono change, can affect multiple stations
             {
                 console.Flags |= PowerMonitoringFlags.PowerNetAbnormalities;
                 Dirty(uid, console);
@@ -259,7 +278,8 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
         var query = AllEntityQuery<PowerMonitoringConsoleComponent, TransformComponent>();
         while (query.MoveNext(out var uid, out var console, out var xform))
         {
-            if (CompOrNull<StationMemberComponent>(xform.GridUid)?.Station == rule.AffectedStation)
+            var station = CompOrNull<StationMemberComponent>(xform.GridUid)?.Station;
+            if (station.HasValue && rule.AffectedStations.Contains(station.Value)) // Mono change, can affect multiple stations
             {
                 console.Flags &= ~PowerMonitoringFlags.PowerNetAbnormalities;
                 Dirty(uid, console);
