@@ -17,8 +17,8 @@
 
 - type: gameMap
   id: Frontier
-  mapName: 'Colonial Outpost'
-  mapPath: /Maps/_Mono/Outpost/colonial.yml # Mono
+  mapName: 'Colossus Central'
+  mapPath: /Maps/_Mono/Outpost/central_colossus.yml # Mono
   minPlayers: 0
   maxPlayers: 100
   randomRotation: false
@@ -28,7 +28,7 @@
       stationProto: StandardFrontierStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Colonial Outpost'
+          mapNameTemplate: 'Colossus Central'
 #          nameGenerator:
 #            !type:NanotrasenNameGenerator
 #            prefixCreator: '14'
@@ -48,7 +48,7 @@
             Borg: [ -1, -1 ]
             StationRepresentative: [ 1, 1 ]
             StationTrafficController: [ 2, 2 ]
-            SecurityGuard: [ 2, 2 ]
+            SecurityGuard: [ 3, 3 ]
             Valet: [ 2, 2 ]
             NFJanitor: [ 2, 2 ]
             MailCarrier: [ 2, 2 ]
