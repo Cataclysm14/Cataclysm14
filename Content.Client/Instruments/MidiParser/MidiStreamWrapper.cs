@@ -1,4 +1,8 @@
-﻿using System.IO;
+// SPDX-FileCopyrightText: 2025 bitcrushing
+//
+// SPDX-License-Identifier: MPL-2.0
+
+using System.IO;
 using System.Text;
 
 namespace Content.Client.Instruments.MidiParser;

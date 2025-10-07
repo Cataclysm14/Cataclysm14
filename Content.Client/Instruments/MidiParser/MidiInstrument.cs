@@ -1,4 +1,8 @@
-﻿using Robust.Shared.Utility;
+// SPDX-FileCopyrightText: 2025 bitcrushing
+//
+// SPDX-License-Identifier: MPL-2.0
+
+using Robust.Shared.Utility;
 
 namespace Content.Client.Instruments.MidiParser;
 
