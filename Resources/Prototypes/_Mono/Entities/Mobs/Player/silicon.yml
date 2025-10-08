@@ -1,5 +1,6 @@
 # SPDX-FileCopyrightText: 2025 Avalon
 # SPDX-FileCopyrightText: 2025 BeeRobynn
+# SPDX-FileCopyrightText: 2025 Ilya246
 # SPDX-FileCopyrightText: 2025 KiraZen_
 # SPDX-FileCopyrightText: 2025 Onezero0
 # SPDX-FileCopyrightText: 2025 Redrover1760
@@ -141,16 +142,18 @@
     access: [["SyndicateAgent"], ["NuclearOperative"]]
   - type: IntrinsicRadioTransmitter
     channels:
-    - Binary
     - Common
     - Remnants
     - Traffic
   - type: ActiveRadio
     channels:
-    - Binary
     - Common
     - Remnants
     - Traffic
+  - type: CollectiveMind
+    channels:
+    - Binary
+    defaultChannel: Binary
   - type: ShowSyndicateIcons
   - type: MovementAlwaysTouching
   - type: Speech
@@ -326,16 +329,18 @@
   components:
   - type: IntrinsicRadioTransmitter
     channels:
-    - Binary
     - Common
     - Remnants
     - Traffic
   - type: ActiveRadio
     channels:
-    - Binary
     - Common
     - Remnants
     - Traffic
+  - type: CollectiveMind
+    channels:
+    - Binary
+    defaultChannel: Binary
   - type: LanguageKnowledge
     speaks:
     - TauCetiBasic
@@ -399,7 +404,6 @@
   components:
   - type: IntrinsicRadioTransmitter
     channels:
-    - Binary
     - Common
     - Traffic
     - Science
@@ -408,13 +412,16 @@
     - Medical
   - type: ActiveRadio
     channels:
-    - Binary
     - Common
     - Traffic
     - Science
     - Supply
     - Engineering
     - Medical
+  - type: CollectiveMind
+    channels:
+    - Binary
+    defaultChannel: Binary
 
 # TSFMC AI core
 
@@ -464,7 +471,6 @@
   components:
   - type: IntrinsicRadioTransmitter
     channels:
-    - Binary
     - Common
     - Traffic
     - Science
@@ -475,7 +481,6 @@
     - Command
   - type: ActiveRadio
     channels:
-    - Binary
     - Common
     - Traffic
     - Science
@@ -484,6 +489,10 @@
     - Medical
     - Nfsd
     - Command
+  - type: CollectiveMind
+    channels:
+    - Binary
+    defaultChannel: Binary
 
 # Rogue AI Core
 
@@ -533,7 +542,6 @@
   components:
   - type: IntrinsicRadioTransmitter
     channels:
-    - Binary
     - Common
     - Traffic
     - Science
@@ -543,7 +551,6 @@
     - Freelance
   - type: ActiveRadio
     channels:
-    - Binary
     - Common
     - Traffic
     - Science
@@ -551,3 +558,7 @@
     - Engineering
     - Medical
     - Freelance
+  - type: CollectiveMind
+    channels:
+    - Binary
+    defaultChannel: Binary
