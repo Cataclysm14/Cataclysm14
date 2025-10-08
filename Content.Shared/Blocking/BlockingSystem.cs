@@ -16,7 +16,9 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
+using Content.Shared._Goobstation.Clothing.Components;
 using Content.Shared.Actions;
+using Content.Shared.Clothing;
 using Content.Shared.Damage;
 using Content.Shared.Examine;
 using Content.Shared.Hands;
@@ -24,6 +26,7 @@ using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction.Events;
+using Content.Shared.Inventory.Events;
 using Content.Shared.Item.ItemToggle;
 using Content.Shared.Maps;
 using Content.Shared.Mobs.Components;
@@ -62,8 +65,8 @@ public sealed partial class BlockingSystem : EntitySystem
         base.Initialize();
         InitializeUser();
 
-        SubscribeLocalEvent<BlockingComponent, GotEquippedHandEvent>(OnEquip);
-        SubscribeLocalEvent<BlockingComponent, GotUnequippedHandEvent>(OnUnequip);
+        SubscribeLocalEvent<BlockingComponent, GotEquippedEvent>(OnEquipped); // Mono
+        SubscribeLocalEvent<BlockingComponent, GotUnequippedEvent>(OnUnequipped); // Mono
         SubscribeLocalEvent<BlockingComponent, DroppedEvent>(OnDrop);
 
         SubscribeLocalEvent<BlockingComponent, GetItemActionsEvent>(OnGetActions);
@@ -81,23 +84,25 @@ public sealed partial class BlockingSystem : EntitySystem
         Dirty(uid, component);
     }
 
-    private void OnEquip(EntityUid uid, BlockingComponent component, GotEquippedHandEvent args)
+    private void OnEquipped(EntityUid uid, BlockingComponent component, ref GotEquippedEvent args)
     {
-        component.User = args.User;
+        component.User = args.Equipee; // Mono
         Dirty(uid, component);
 
         //To make sure that this bodytype doesn't get set as anything but the original
-        if (TryComp<PhysicsComponent>(args.User, out var physicsComponent) && physicsComponent.BodyType != BodyType.Static && !HasComp<BlockingUserComponent>(args.User))
+        // Mono - change args.User to args.Equippee and shit
+        if (TryComp<PhysicsComponent>(args.Equipee, out var physicsComponent) && physicsComponent.BodyType != BodyType.Static && !HasComp<BlockingUserComponent>(args.Equipee))
         {
-            var userComp = EnsureComp<BlockingUserComponent>(args.User);
+            var userComp = EnsureComp<BlockingUserComponent>(args.Equipee);
             userComp.BlockingItem = uid;
             userComp.OriginalBodyType = physicsComponent.BodyType;
         }
     }
 
-    private void OnUnequip(EntityUid uid, BlockingComponent component, GotUnequippedHandEvent args)
+    private void OnUnequipped(EntityUid uid, BlockingComponent component, ref GotUnequippedEvent args)
     {
-        StopBlockingHelper(uid, component, args.User);
+        // Mono - change args.User to args.Equippee and shit
+        StopBlockingHelper(uid, component, args.Equipee);
     }
 
     private void OnDrop(EntityUid uid, BlockingComponent component, DroppedEvent args)

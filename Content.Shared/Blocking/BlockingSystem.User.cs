@@ -16,6 +16,7 @@
 
 using Content.Shared.Damage;
 using Content.Shared.Damage.Prototypes;
+using Content.Shared.Item.ItemToggle.Components;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
@@ -58,7 +59,7 @@ public sealed partial class BlockingSystem
 
     private void OnUserDamageModified(EntityUid uid, BlockingUserComponent component, DamageModifyEvent args)
     {
-        if (TryComp<BlockingComponent>(component.BlockingItem, out var blocking))
+        if (TryComp<ItemToggleComponent>(component.BlockingItem, out var toggleComponent) && TryComp<BlockingComponent>(component.BlockingItem, out var blocking)) // Mono
         {
             if (args.Damage.GetTotal() <= 0)
                 return;
@@ -67,7 +68,7 @@ public sealed partial class BlockingSystem
             if (!TryComp<DamageableComponent>(component.BlockingItem, out var dmgComp))
                 return;
 
-            if (!_toggle.IsActivated(component.BlockingItem.Value)) // Goobstation
+            if (!(toggleComponent.Activated)) // Mono
                 return;
 
             var blockFraction = blocking.IsBlocking ? blocking.ActiveBlockFraction : blocking.PassiveBlockFraction;
