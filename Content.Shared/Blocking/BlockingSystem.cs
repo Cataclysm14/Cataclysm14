@@ -90,7 +90,7 @@ public sealed partial class BlockingSystem : EntitySystem
         Dirty(uid, component);
 
         //To make sure that this bodytype doesn't get set as anything but the original
-        // Mono - change args.User to args.Equippee and shit
+        // Mono - change args.User to args.Equippee
         if (TryComp<PhysicsComponent>(args.Equipee, out var physicsComponent) && physicsComponent.BodyType != BodyType.Static && !HasComp<BlockingUserComponent>(args.Equipee))
         {
             var userComp = EnsureComp<BlockingUserComponent>(args.Equipee);
@@ -101,7 +101,7 @@ public sealed partial class BlockingSystem : EntitySystem
 
     private void OnUnequipped(EntityUid uid, BlockingComponent component, ref GotUnequippedEvent args)
     {
-        // Mono - change args.User to args.Equippee and shit
+        // Mono - change args.User to args.Equippee
         StopBlockingHelper(uid, component, args.Equipee);
     }
 

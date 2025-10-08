@@ -14,24 +14,20 @@
         variation: 0.250
     onUse: false
     onAltUse: true
+    onActivate: false
+  - type: ItemToggleActiveSound
+    predictable: false
+    activeSound:
+      path: /Audio/Weapons/ebladehum.ogg
   - type: ComponentToggler
     components:
     - type: DisarmMalus
       malus: 0.6
   - type: UseDelay
     delay: 0.5
-  - type: PointLight
-    netsync: false
-    enabled: false
-    radius: 1.5
-    energy: 0.7
-    color: "#678AD9"
-  - type: ItemTogglePointLight
   - type: Reflect
-    reflectProb: 1
-    damageOnReflectModifier: 1
-    reflects:
-    - Energy
+    reflectProb: 0.05
+    damageOnReflectModifier: 0.2
   - type: Blocking
     passiveBlockModifier:
       coefficients:
@@ -53,8 +49,8 @@
   - type: Damageable
     damageContainer: Shield
   - type: Battery
-    maxCharge: 100
-    startingCharge: 100
+    maxCharge: 40
+    startingCharge: 40
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 5
