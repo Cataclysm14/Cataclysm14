@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 10/09/2025 15:12:24
-  entityCount: 295
+  time: 10/09/2025 15:16:19
+  entityCount: 293
 maps: []
 grids:
 - 1
@@ -607,14 +607,6 @@ entities:
     components:
     - type: Transform
       pos: 3.059012,-3.1883416
-      parent: 1
-- proto: ButtonFrameExit
-  entities:
-  - uid: 59
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 1.5,-5.5
       parent: 1
 - proto: CableApcExtension
   entities:
@@ -1546,14 +1538,6 @@ entities:
     components:
     - type: Transform
       pos: -1.5,-2.5
-      parent: 1
-- proto: SignalButtonDirectional
-  entities:
-  - uid: 177
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 1.5,-5.5
       parent: 1
 - proto: SignSomethingOld
   entities:
