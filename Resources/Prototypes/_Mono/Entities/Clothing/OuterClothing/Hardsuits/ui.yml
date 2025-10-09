@@ -83,8 +83,8 @@
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
   id: ClothingOuterHardsuitUllmanEngineer
-  name: Engineer tacsuit
-  description: # Very cool Ullman Tacsuit :3
+  name: U.I engineering hardsuit
+  description: A protective hardsuit worn by black market engineering specialists. Developed by Ullman Industries.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Hardsuits/ullman_industries_engineer.rsi # Ullman sprites
@@ -94,55 +94,57 @@
     highPressureMultiplier: 0.5
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
-    damageCoefficient: 0.5
+    damageCoefficient: 0.2
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.5
-        Slash: 0.5
-        Piercing: 0.5
-        Heat: 0.5
-        Radiation: 0.5
-        Caustic: 0.5
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.7
+        Heat: 0.4
+        Radiation: 0.1
+        Caustic: 0.7
+        Fire: 0.1
   - type: ClothingSpeedModifier
-    walkModifier: 0.95
-    sprintModifier: 0.95
+    walkModifier: 0.80
+    sprintModifier: 1
   - type: HeldSpeedModifier
   - type: ToggleableClothing # Goobstation - Modsuits change - Mono - this is a solution for helmet attachment/cover to not fit on hardsuits
     requiredSlot: outerclothing
     blockUnequipWhenAttached: false
     replaceCurrentClothing: true
     clothingPrototypes:
-      head: ClothingHelmetHardsuitUIEngineer # Ullman Engi helmet
+      head: ClothingHelmetHardsuitUIEngineer
       helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaminaDamageResistance
-    coefficient: 0.5
+    coefficient: 0.8
 
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
   id: ClothingOuterHardsuitUIPilot
-  name: Pilot tacsuit
-  description: # Very cool Ullman Tacsuit :3
+  name: U.I pilot voidsuit
+  description: A voidsuit made for black market pilots. Developed by Ullman Industries
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/OuterClothing/Hardsuits/ullman_industries_pilot.rsi # Ullman sprites
+    sprite: _Mono/Clothing/OuterClothing/Hardsuits/ullman_industries_pilot.rsi
   - type: Clothing
-    sprite: _Mono/Clothing/OuterClothing/Hardsuits/ullman_industries_pilot.rsi #Ullman sprites
+    sprite: _Mono/Clothing/OuterClothing/Hardsuits/ullman_industries_pilot.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.5
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
-    damageCoefficient: 0.5
+    damageCoefficient: 0.3
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.5
-        Slash: 0.5
-        Piercing: 0.5
-        Heat: 0.5
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.85
+        Heat: 0.4
+        Shock: 0.8
         Radiation: 0.5
-        Caustic: 0.5
+        Caustic: 0.3
   - type: ClothingSpeedModifier
     walkModifier: 0.95
     sprintModifier: 0.95
@@ -152,7 +154,7 @@
     blockUnequipWhenAttached: false
     replaceCurrentClothing: true
     clothingPrototypes:
-      head: ClothingHelmetHardsuitUIPilot # Ullman Pilot helmet
+      head: ClothingHelmetHardsuitUIPilot
       helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaminaDamageResistance
@@ -161,8 +163,8 @@
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
   id: ClothingOuterHardsuitUIDirector
-  name: director tacsuit
-  description: # Very cool Ullman Tacsuit :3
+  name: U.I VK-1 experimental hardsuit
+  description: Felix Ullman's top of the line personal hardsuit. A warning label engraved on the chestplate reads "Theft of this suit has a high chance of death! Seriously, i will find you. You will die."
   components:
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Hardsuits/ullman_industries_director.rsi # Ullman sprites
@@ -172,30 +174,30 @@
     highPressureMultiplier: 0.5
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
-    damageCoefficient: 0.5
+    damageCoefficient: 0.1
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.5
-        Slash: 0.5
-        Piercing: 0.5
-        Heat: 0.5
-        Radiation: 0.5
-        Caustic: 0.5
+        Blunt: 0.35
+        Slash: 0.35
+        Piercing: 0.27
+        Heat: 0.4
+        Radiation: 0
+        Caustic: 0.2
   - type: ClothingSpeedModifier
-    walkModifier: 0.95
-    sprintModifier: 0.95
+    walkModifier: 0.80
+    sprintModifier: 0.80
   - type: HeldSpeedModifier
   - type: ToggleableClothing # Goobstation - Modsuits change - Mono - this is a solution for helmet attachment/cover to not fit on hardsuits
     requiredSlot: outerclothing
     blockUnequipWhenAttached: false
     replaceCurrentClothing: true
     clothingPrototypes:
-      head: ClothingHelmetHardsuitUIDirector # Ullman director helmet
+      head: ClothingHelmetHardsuitUIDirector
       helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaminaDamageResistance
-    coefficient: 0.5
+    coefficient: 0.35
 
 
 

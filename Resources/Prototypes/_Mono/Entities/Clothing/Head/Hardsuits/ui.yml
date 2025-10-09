@@ -85,8 +85,8 @@
 - type: entity
   parent: [ClothingHeadHardsuitBase, BaseC3SyndicateContraband]
   id: ClothingHelmetHardsuitUIEngineer
-  name: Enforcer Combat helmet
-  description:
+  name: U.I engineering helmet
+  description: A cheap and effective hardsuit helmet, just with an extra black market touch.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/Head/Hardsuits/ullman_industries_engineer.rsi
@@ -95,13 +95,17 @@
   - type: PressureProtection
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 1000
+  - type: NightVision
+    flashDurationMultiplier: 0.85
+    isEquipment: true
+    color: "#AE65BFFF"
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.8
-        Slash: 0.8
-        Piercing: 0.85
-        Heat: 0.8
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
   - type: HideLayerClothing
     slots:
     - Hair
@@ -115,8 +119,8 @@
 - type: entity
   parent: [ClothingHeadHardsuitBase, BaseC3SyndicateContraband]
   id: ClothingHelmetHardsuitUIPilot
-  name: Enforcer Combat helmet
-  description:
+  name: U.I pilot helmet
+  description: A helmet for Ullman Industry pilots.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/Head/Hardsuits/ullman_industries_pilot.rsi
@@ -125,13 +129,18 @@
   - type: PressureProtection
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 1000
+  - type: NightVision
+    flashDurationMultiplier: 0.85
+    isEquipment: true
+    color: "#AE65BFFF"
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.8
-        Slash: 0.8
-        Piercing: 0.85
-        Heat: 0.8
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+        Radation: 0.9
   - type: HideLayerClothing
     slots:
     - Hair
@@ -143,10 +152,10 @@
     - HeadSide
 
 - type: entity
-  parent: [ClothingHeadHardsuitBase, BaseC3SyndicateContraband]
+  parent: [ClothingHeadHardsuitBase, BaseC3SyndicateContraband, ShowSecurityIcons]
   id: ClothingHelmetHardsuitUIDirector
-  name: Enforcer Combat helmet
-  description:
+  name: U.I VK-1 experimental helmet
+  description: A purpose built helmet designed by Felix Ullman, for Felix Ullman.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/Head/Hardsuits/ullman_industries_director.rsi
@@ -155,13 +164,29 @@
   - type: PressureProtection
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 1000
+  - type: RadarConsole
+    maxRange: 512
+    followEntity: true
+  - type: ActivatableUI
+    key: enum.RadarConsoleUiKey.Key
+    singleUser: true
+  - type: UserInterface
+    interfaces:
+      enum.RadarConsoleUiKey.Key:
+        type: RadarConsoleBoundUserInterface
+  - type: FlashImmunity
+  - type: NightVision
+    flashDurationMultiplier: 0.85
+    isEquipment: true
+    color: "#AE65BFFF"
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.8
-        Slash: 0.8
-        Piercing: 0.85
-        Heat: 0.8
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+        Radation: 0.9
   - type: HideLayerClothing
     slots:
     - Hair
