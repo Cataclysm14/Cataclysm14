@@ -42,7 +42,6 @@
       isLooped: true
   - type: ItemTogglePointLight
   - type: ItemToggleActiveSound
-    predictable: false
     activeSound:
       path: /Audio/Weapons/ebladehum.ogg
   - type: ComponentToggler
