@@ -22,8 +22,7 @@ meta:
   forkVersion: ""
   time: 10/10/2025 03:59:52
   entityCount: 730
-maps:
-- 42
+maps: []
 grids:
 - 1
 orphans:
