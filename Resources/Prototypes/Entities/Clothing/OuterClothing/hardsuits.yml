@@ -894,7 +894,7 @@
   parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband, ContrabandClothing] # Frontier: added BaseSyndicateContraband<BaseC3SyndicateContraband, ContrabandClothing as parent
   id: ClothingOuterHardsuitJuggernaut
   name: cybersun juggernaut suit
-  description: A suit made by the cutting edge R&D department at cybersun to be hyper resilient.
+  description: A suit originally made by the cutting edge R&D department at cybersun to be hyper resilient, now recycled and used by the Ashen Republic. Hefty and durable, but not fully insulated.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Hardsuits/cybersun.rsi
@@ -905,6 +905,9 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.2 # 0.3->0.2
+  - type: TemperatureProtection # Mono: Not fully insulated
+    heatingCoefficient: 0.01
+    coolingCoefficient: 0.01
   - type: Armor
     modifiers:
       coefficients:
