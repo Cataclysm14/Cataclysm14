@@ -41,6 +41,8 @@ maps:
 - 126
 grids:
 - 1
+orphans:
+-1
 nullspace: []
 tilemap:
   0: Space
