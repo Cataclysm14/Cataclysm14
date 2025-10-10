@@ -94,8 +94,8 @@
     autoRecharge: true
     autoRechargeRate: 1
   - type: RechargeableBlocking
-    ChargedRechargeRate: 0
-    DischargedRechargeRate: 0.3
+    chargedRechargeRate: 0
+    dischargedRechargeRate: 0.3
   - type: UseDelay
     delay: 10
   - type: PointLight
