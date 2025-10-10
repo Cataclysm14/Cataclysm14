@@ -10,20 +10,23 @@
 
   Most armor found in the Colossus sector protects the wearer by reducing incoming damage through multiplying the damage by a [color=orange]coefficient[/color].
 
-  <Box>
-    Example: a [color=red]30[/color] pierce damage bullet hits a player wearing armor with a [color=blue]0.6[/color] pierce coefficient (which the armor displays in game as "Reduces damage by 40%")
-    [color=orange]30 * 0.6 = 18[/color]
+
+    Example: a [color=red]30[/color] pierce damage bullet hits a player wearing armor with a [color=cyan]0.6[/color] pierce coefficient (which the armor displays in game as "Reduces damage by 40%")
+
+    Calculation: [color=orange]30 * 0.6 = 18[/color]
+
     Thus the armor wearer ultimately recieves [color=red]18[/color] pierce damage (or the base damage reduced by 40%, as is stated in the armor description.)
-  </Box>
+
 
   This can become more complicated, though, when a player is wearing multiple items that grant it armor protection.
   In such an example, armor resistance is *not* additive - instead, it is multiplicative as so:
 
-  <Box>
-    Example: [color=red]30[/color] pierce damage bullet hits a player wearing three pieces of armor, each with a [color=blue]0.6[/color] pierce damage coefficient.
-    [color=orange](((30 * 0.6) * 0.6) * 0.6) = 6.48, or 30 * 0.6 = 18... 18 * 0.6 = 10.8... 10.8 * 0.6 = 6.48[/color]
+
+    Example: [color=red]30[/color] pierce damage bullet hits a player wearing three pieces of armor, each with a [color=cyan]0.6[/color] pierce damage coefficient.
+
+    Calculation: [color=orange](((30 * 0.6) * 0.6) * 0.6) = 6.48, [/color]or[color=orange] 30 * 0.6 = 18... 18 * 0.6 = 10.8... 10.8 * 0.6 = 6.48[/color]
+
     Thus the armor wearer ultimately recieves [color=red]6.48[/color] pierce damage.
-  </Box>
 
   ## Conventional Shields
 
@@ -34,11 +37,15 @@
   Handheld shields function similarly to "normal" armor, in that they use a coefficient to provide resistance. However, their main distinction comes from the fact that they have a seperate health pool and resistances from the player, that a percent of damage taken by the holder can be routed to.
   If this health pool runs out, conventional shields will usually enter a "broken" state, where they lose functionality.
 
-  <Box>
-    Example: a [color=red]30[/color] pierce damage bullet hits a player holding a shield that absorbs [color=blue]50%[/color] of incoming damage. 50% of damage is applied to the shield's health pool, and the rest is applied to the player (and then subjected to their armor calculations.)
+
+    Example: a [color=red]30[/color] pierce damage bullet hits a player holding a shield that absorbs [color=cyan]50%[/color] of incoming damage.
+
+    50% of damage is applied to the shield's health pool, and the rest is applied to the player (and then subjected to their armor calculations.)
+
     Thus the shield wielded ultimately recieves [color=red]15[/color] pierce damage, and the shield recieves 15 damage.
-    This can become more complex as shields usually have conventional armor of their own. This functions like normal Coefficient resistance but it only defends the shield's health. This effectively increases the shield's effective health pool, by making it take less damage from certain sources.
-  </Box>
+
+    Shields also usually have normal Coefficient resistance but it only defends the shield's health. This effectively increases the shield's effective health pool, by making it take less damage from certain sources.
+
 
   ## Energy Shields
 
@@ -47,6 +54,7 @@
   </Box>
 
   Energy shields function very similarly to conventional shields. Their main difference comes from the fact that they usually operate using an internal battery that can recharge over time. This really only means that they have health regeneration.
+
   When their energy runs out (either due to EMP or damage taken), they will shut down and stop protecting the wielder until their battery is fully charged.
 
   ## Reflection

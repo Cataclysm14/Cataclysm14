@@ -407,8 +407,8 @@
       flatReductions:
         Heat: 5
         Pierce: 5
-    passiveBlockFraction: 0.5
-    activeBlockFraction: 0.5
+    passiveBlockFraction: 0.8
+    activeBlockFraction: 0.8
     isClothing: true
   - type: Damageable
     damageContainer: Shield
