@@ -399,7 +399,7 @@
     - Syndicate # Mono
     - Freelance # Mono
     - Ussp # Mono
-    - UsspCommand # Mono
+    # - UsspCommand # Mono
     extraCount: 6
     lightBreakChancePerSecond: 0.0003
     doorToggleChancePerSecond: 0 # Mono
