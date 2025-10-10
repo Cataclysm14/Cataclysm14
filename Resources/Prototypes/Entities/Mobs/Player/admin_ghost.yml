@@ -73,8 +73,8 @@
   - type: ComplexInteraction
   - type: Puller
   - type: CombatMode
-  - type: Stealth
-    maxVisibility: -1.5
+ # - type: Stealth # Mono - Stealth B Gone
+ #   maxVisibility: -1.5
   - type: Physics
     ignorePaused: true
     bodyType: Kinematic
@@ -166,6 +166,7 @@
     - Biological
     - Inorganic
   - type: ShowSyndicateIcons # Monolith
+  - type: CommandStaff # Monolith
 
 - type: entity
   id: ActionAGhostShowSolar
