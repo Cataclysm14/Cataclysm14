@@ -12867,3 +12867,49 @@ Entries:
   id: 1425
   time: '2025-10-08T20:20:20.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2388
+- author: bitcrushing
+  changes:
+    - type: Fix
+      message: Not all instruments are bike horns now
+  id: 1426
+  time: '2025-10-09T01:32:35.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2386
+- author: Nope1356
+  changes:
+    - type: Tweak
+      message: ADS now engage all military ships (MIL, ASR, TSF, USSP) on sight
+  id: 1427
+  time: '2025-10-09T12:56:42.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2391
+- author: Arcticular1
+  changes:
+    - type: Add
+      message: >-
+        A new shipment of black market suits developed by Ullman Industries has
+        just hit the sector!
+  id: 1428
+  time: '2025-10-10T12:49:58.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2390
+- author: starch70
+  changes:
+    - type: Remove
+      message: Removed Asakim death acidifers. Kept armor slowdown.
+  id: 1429
+  time: '2025-10-10T13:34:50.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2387
+- author: starch70
+  changes:
+    - type: Add
+      message: MARSOC has new hardsuits.
+    - type: Tweak
+      message: Support for clothing-based energy shields.
+  id: 1430
+  time: '2025-10-10T16:23:27.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2389
+- author: Ilya246
+  changes:
+    - type: Fix
+      message: You can now make combined filters properly.
+  id: 1431
+  time: '2025-10-10T19:58:46.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2397
