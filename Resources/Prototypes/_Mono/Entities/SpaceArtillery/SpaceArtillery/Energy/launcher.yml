@@ -389,7 +389,7 @@
           bounds: "-0.75,-0.75,0.75,0.75"
         density: 1500
   - type: Gun
-    projectileSpeed: 150
+    projectileSpeed: 200
     fireRate: 0.75
     shootThermalSignature: 12000000 # ~6km after firing
     soundGunshot:
@@ -786,8 +786,8 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
-    fireRate: 5
-    projectileSpeed: 400
+    fireRate: 1
+    projectileSpeed: 200
     shootThermalSignature: 500000 # ~5.6km with continuous fire
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/autopulse_laser_fire_01.ogg
