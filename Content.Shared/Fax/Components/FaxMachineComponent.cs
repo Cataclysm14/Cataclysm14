@@ -25,7 +25,7 @@ public sealed partial class FaxMachineComponent : Component
     public string InsertingState = "inserting";
 
     /// <summary>
-    /// Device address of fax in network to which data will be send
+    /// Device address of fax in network to which data will be sent
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("destinationAddress")]
@@ -38,7 +38,7 @@ public sealed partial class FaxMachineComponent : Component
     public ItemSlot PaperSlot = new();
 
     /// <summary>
-    /// Is fax machine should respond to pings in network
+    /// If fax machine should respond to pings in network
     /// This will make it visible to others on the network
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
@@ -53,7 +53,7 @@ public sealed partial class FaxMachineComponent : Component
     public bool NotifyAdmins { get; set; } = false;
 
     /// <summary>
-    /// Should that fax receive nuke codes send by admins. Probably should be captain fax only
+    /// Should that fax receive nuke codes sent by admins. Probably should be captain fax only
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField]
