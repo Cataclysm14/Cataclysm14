@@ -1,0 +1,21 @@
+
+This is a document outlining the suggested plans for the project.
+
+Suggestion 1:
+
+    - Create a Circuit Board for each of the turret varients available.
+    - Create a Research Type for Turrets, that allows a player to unlock the Circuit Boards from the Imprinter.
+
+ TODO:
+    - Find out how Circuit Boards are made.
+    - Find out how Circuit Boards work with Computer Frames.
+    - Find out how Research Workds.
+
+Suggestion 2:
+
+    - Create a new Fabrication Bench that produces pre-made Flat-Paks of available Turrets.
+
+TODO:
+    - Find out how Fabrication Benches work.
+    - Find out how to make a FlatPak entity.
+    - Put this into research?
