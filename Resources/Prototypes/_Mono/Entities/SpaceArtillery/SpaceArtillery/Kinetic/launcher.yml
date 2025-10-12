@@ -43,6 +43,8 @@
   - type: Gun
     fireRate: 12
     projectileSpeed: 90
+    minAngle: 0
+    maxAngle: 5
     shootThermalSignature: 10000 # relatively low for a shipgun, ~693m signature if firing continuously
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
@@ -110,8 +112,10 @@
     ports:
     - Toggle
   - type: Gun
-    fireRate: 50
+    fireRate: 80
     projectileSpeed: 120
+    minAngle: 0
+    maxAngle: 8
     shootThermalSignature: 100000 # ~4.5km if firing continuously
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
@@ -177,6 +181,8 @@
   - type: Gun
     fireRate: 1.5
     projectileSpeed: 180
+    minAngle: 0
+    maxAngle: 2
     shootThermalSignature: 2000000 # ~3.5km signature if firing continuously
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/mortar.ogg
@@ -238,6 +244,8 @@
   - type: Gun
     fireRate: 2.5
     projectileSpeed: 120
+    minAngle: 0
+    maxAngle: 3
     burstCooldown: 0.5
     burstFireRate: 10
     shotsPerBurst: 2
@@ -315,6 +323,8 @@
         - MachineLayer
   - type: Gun
     projectileSpeed: 155
+    minAngle: 0
+    maxAngle: 1
     fireRate: 0.2
     burstCooldown: 10
     burstFireRate: 2
@@ -393,6 +403,8 @@
         - MachineLayer
   - type: Gun
     projectileSpeed: 225
+    minAngle: 0
+    maxAngle: 0
     fireRate: 0.2
     burstCooldown: 10
     burstFireRate: 2
@@ -459,6 +471,8 @@
     range: 500
   - type: Gun
     fireRate: 0.05
+    minAngle: 0
+    maxAngle: 0
     projectileSpeed: 400
     shootThermalSignature: 20000000 # ~4.5km after firing
     soundGunshot:
@@ -543,6 +557,8 @@
         - MachineLayer
   - type: Gun
     projectileSpeed: 155
+    minAngle: 0
+    maxAngle: 1
     fireRate: 0.1
     shootThermalSignature: 80000000 # ~9km after firing
     soundGunshot:
@@ -617,6 +633,8 @@
         - MachineLayer
   - type: Gun
     projectileSpeed: 155
+    minAngle: 0
+    maxAngle: 3
     fireRate: 0.2
     shootThermalSignature: 40000000 # ~6.3km after firing
     soundGunshot:

@@ -29,6 +29,8 @@
     range: 500
   - type: Gun
     fireRate: 0.1
+    minAngle: 0
+    maxAngle: 0
     burstCooldown: 20
     burstFireRate: 2
     shotsPerBurst: 2

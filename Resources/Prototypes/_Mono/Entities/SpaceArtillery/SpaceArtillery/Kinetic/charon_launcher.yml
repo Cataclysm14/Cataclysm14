@@ -29,6 +29,8 @@
     range: 500
   - type: Gun
     fireRate: 0.05
+    minAngle: 0
+    maxAngle: 0
     projectileSpeed: 900
     shootThermalSignature: 18000000 # ~8.5km after firing
     soundGunshot:
@@ -97,6 +99,8 @@
     range: 500
   - type: Gun
     fireRate: 0.05
+    minAngle: 0
+    maxAngle: 0
     projectileSpeed: 1250
     shootThermalSignature: 18000000 # ~8.5m after firing
     soundGunshot:
