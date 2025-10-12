@@ -204,6 +204,24 @@
     damageModifierSet: StructuralMetallicStrong
   - type: Destructible
     thresholds:
+    # Mono start
+    - trigger:
+        !type:DamageTrigger
+        damage: 2500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+      - !type:SpawnGasBehavior
+        gasMixture:
+          volume: 1000
+          moles:
+          - 194 # oxygen
+          - 0 # nitrogen
+          - 0 # carbon dioxide
+          - 6 # plasma
+          temperature: 752.48
+    # Mono end
     - trigger:
         !type:DamageTrigger
         damage: 1800 # Mono
@@ -215,6 +233,11 @@
             max: 2
       - !type:DoActsBehavior
         acts: ["Destruction"]
+  - type: Explosive # Mono
+    explosionType: Default
+    maxIntensity: 4000
+    intensitySlope: 4
+    totalIntensity: 3000
   - type: Transform
     anchored: true
   - type: IconSmooth
