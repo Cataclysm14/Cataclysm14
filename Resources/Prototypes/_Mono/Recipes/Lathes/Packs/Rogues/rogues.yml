@@ -29,6 +29,7 @@
   id: MonoRogueVouchersDynamic
   recipes:
   - ProwlerVoucherRogue
+  - GoliathVoucherRogue
 
 - type: latheRecipePack
   id: MonoRogueMiscDynamic
