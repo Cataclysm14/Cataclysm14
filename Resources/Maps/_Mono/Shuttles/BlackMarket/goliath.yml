@@ -524,11 +524,14 @@ entities:
     - type: MetaData
       name: Map Entity
     - type: Transform
-    - type: Map
-      mapPaused: True
-    - type: GridTree
-    - type: Broadphase
-    - type: OccluderTree
+      pos: -0.5004851,3.547763
+      parent: 1
+    - type: RadarBlip
+      enabled: False
+      visibleFromOtherGrids: True
+      shape: Ring
+      scale: 0
+      radarColor: '#00DEFEFF'
 - proto: AirAlarm
   entities:
   - uid: 1031
