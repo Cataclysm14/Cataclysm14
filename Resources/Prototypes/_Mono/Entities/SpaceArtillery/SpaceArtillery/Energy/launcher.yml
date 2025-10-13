@@ -508,6 +508,17 @@
     sprite:  _Mono/Objects/ShuttleWeapons/apollo.rsi
     layers:
     - state: space_artillery
+  - type: Appearance
+  - type: AmmoCounter
+  - type: Battery
+    maxCharge: 50000
+    startingCharge: 50000
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 500
+  - type: ExaminableBattery
+  - type: WirelessNetworkConnection
+    range: 500
   - type: Gun
     fireRate: .3
     shootThermalSignature: 5000000
