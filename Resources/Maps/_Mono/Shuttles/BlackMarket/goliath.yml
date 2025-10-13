@@ -5302,8 +5302,6 @@ entities:
       pos: -0.5,-6.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 1032
       - 1028
@@ -5316,8 +5314,6 @@ entities:
       pos: 1.5,-6.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 1032
       - 1028
@@ -6089,8 +6085,6 @@ entities:
       pos: 1.5,-5.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 1031
       - 1030
