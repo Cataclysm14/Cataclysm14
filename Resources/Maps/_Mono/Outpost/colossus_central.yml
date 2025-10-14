@@ -52,7 +52,7 @@ meta:
 maps:
 - 1
 grids:
-- 1
+- 2
 orphans: []
 nullspace: []
 tilemap:
@@ -116,7 +116,7 @@ entities:
     - type: GridTree
     - type: Broadphase
     - type: Parallax
-      parallax: ColossusStation
+      parallax: FrontierStation
     - type: OccluderTree
   - uid: 2
     components:
