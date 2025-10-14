@@ -2,6 +2,7 @@
 //
 // SPDX-License-Identifier: MPL-2.0
 
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Numerics;
 using System.Runtime.CompilerServices;
@@ -28,6 +29,7 @@ namespace Content.Client._Mono.Audio;
 /// <summary>
 ///     Handles making sounds 'echo' in large, open spaces. Uses simplified raytracing.
 /// </summary>
+// could use RaycastSystem but the api it has isn't very amazing
 public sealed class AreaEchoSystem : EntitySystem
 {
     [Dependency] private readonly IGameTiming _gameTiming = default!;
@@ -122,6 +124,7 @@ public sealed class AreaEchoSystem : EntitySystem
     ///         Otherwise, returns all eight intercardinal and cardinal directions as listed in
     ///         <see cref="DirectionExtensions.AllDirections"/>. 
     /// </summary>
+    [Pure]
     public static Angle[] GetEffectiveDirections(bool highResolution)
     {
         if (highResolution)
@@ -135,7 +138,7 @@ public sealed class AreaEchoSystem : EntitySystem
             return directions;
         }
 
-        return [Direction.North.ToAngle()/*, Direction.West.ToAngle(), Direction.South.ToAngle(), Direction.East.ToAngle()*/];
+        return [Direction.North.ToAngle(), Direction.West.ToAngle(), Direction.South.ToAngle(), Direction.East.ToAngle()];
     }
 
     /// <summary>
@@ -232,7 +235,8 @@ public sealed class AreaEchoSystem : EntitySystem
         // At this point, we are ready for war against the client's pc.
         foreach (var direction in _calculatedDirections)
         {
-            var currentDirectionVector = direction/* + entityGrid.Comp.LocalRotation << This makes it relative to grid. Omitted because raytracing is better with random-ish angles.*/.ToVec();
+            var currentDirectionVector = direction.ToVec();
+            var currentTargetEntityUid = lastEntityBeforeGrid.Owner;
 
             var totalDistance = 0f;
             var remainingDistance = maximumMagnitude;
@@ -247,7 +251,7 @@ public sealed class AreaEchoSystem : EntitySystem
                     currentOriginTileIndices,
                     currentDirectionVector,
                     transformComponent.MapID,
-                    lastEntityBeforeGrid,
+                    currentTargetEntityUid,
                     gridRoofEntity,
                     checkRoof,
                     remainingDistance
@@ -265,25 +269,31 @@ public sealed class AreaEchoSystem : EntitySystem
 
                 // i think cross-grid would actually be pretty easy here? but the tile-marching doesnt often account for that at fidelities above 1 so whatever.
 
-                var previousRayOriginPosition = currentOriginWorldPosition;
+                var previousRayWorldOriginPosition = currentOriginWorldPosition;
                 currentOriginWorldPosition = raycastResults.Value.HitPos; // it's now where we hit
+                currentTargetEntityUid = raycastResults.Value.HitEntity;
+
                 if (!_mapSystem.TryGetTileRef(entityGrid, gridComponent, currentOriginWorldPosition, out var hitTileRef)) // means tile that ray hit is invalid, just assume the ray ends here
                     break;
 
                 currentOriginTileIndices = hitTileRef.GridIndices;
 
-                var delta = currentOriginWorldPosition - previousRayOriginPosition;
-                Vector2 normal;
-                if (MathF.Abs(delta.X) > MathF.Abs(delta.Y))
-                    normal = new Vector2(MathF.Sign(delta.X), 0);
-                else
-                    normal = new Vector2(0, MathF.Sign(delta.Y));
+                var worldMatrix = _transformSystem.GetInvWorldMatrix(gridRoofEntity);
+                var previousRayOriginLocalPosition = Vector2.Transform(previousRayWorldOriginPosition, worldMatrix);
+                var currentOriginLocalPosition = Vector2.Transform(currentOriginWorldPosition, worldMatrix);
 
-                Log.Info($"Origin: {previousRayOriginPosition}, Hit: {currentOriginWorldPosition}, Normal: {normal}");
+                var delta = currentOriginLocalPosition - previousRayOriginLocalPosition;
+                if (delta.LengthSquared() <= float.Epsilon + float.Epsilon)
+                {
+                    Log.Warning($"Echo-ray has the same origin position as its hit position! At: {_mapSystem.WorldToLocal(gridRoofEntity, gridRoofEntity, currentOriginLocalPosition)}, on entity: {ToPrettyString(gridRoofEntity.Owner)}");
+                    break;
+                }
 
-                currentDirectionVector = Reflect(currentDirectionVector, normal);
+                var normalVector = GetNormalVector(delta);
+                normalVector = GetTileHitNormal(currentOriginLocalPosition, _mapSystem.TileToVector(gridRoofEntity, currentOriginTileIndices), gridRoofEntity.Comp1.TileSize);
+                currentDirectionVector = Reflect(currentDirectionVector, normalVector);
 
-                Log.Info("Reflected once!");
+                Log.Info($"Origin: {previousRayOriginLocalPosition}, Hit: {currentOriginWorldPosition}, Normal vector: {normalVector}, Direction: {currentDirectionVector}");
             }
 
             magnitude += totalDistance;
@@ -294,9 +304,45 @@ public sealed class AreaEchoSystem : EntitySystem
         return true;
     }
 
+    /// <summary>
+    ///     Gets the normal angle of a Vector2, relative to
+    ///         0, 0.
+    /// </summary>
+    [Pure]
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    private static Vector2 GetNormalVector(in Vector2 deltaVector)
+    {
+        return Vector2.Normalize(
+            MathF.Abs(deltaVector.X) > MathF.Abs(deltaVector.Y) ?
+            new Vector2(MathF.Sign(deltaVector.X), 0f) :
+            new Vector2(0f, MathF.Sign(deltaVector.Y))
+        );
+    }
+
+    Vector2 GetTileHitNormal(Vector2 rayHitPos, Vector2 tileOrigin, float tileSize)
+    {
+        // Position inside the tile (0..tileSize)
+        Vector2 local = rayHitPos - tileOrigin;
+
+        // Distances to each side
+        float left = local.X;
+        float right = tileSize - local.X;
+        float bottom = local.Y;
+        float top = tileSize - local.Y;
+
+        // Find smallest distance
+        float minDist = MathF.Min(MathF.Min(left, right), MathF.Min(bottom, top));
+
+        if (minDist == left) return new Vector2(-1, 0);
+        if (minDist == right) return new Vector2(1, 0);
+        if (minDist == bottom) return new Vector2(0, -1);
+        return new Vector2(0, 1); // must be top
+    }
+
     /// <remarks>
     ///     <paramref name="normal"/> should be normalised upon calling.
     /// </remarks>
+    [Pure]
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     private static Vector2 Reflect(in Vector2 direction, in Vector2 normal)
         => direction - 2 * Vector2.Dot(direction, normal) * normal;
@@ -326,11 +372,9 @@ public sealed class AreaEchoSystem : EntitySystem
             MathF.Min(firstResult.Value.Distance, maximumDistance) :
             maximumDistance;
 
-        var nextCheckedPosition = new Vector2(originTileIndices.X, originTileIndices.Y) + directionFidelityStep;
-
-        var rayMagnitudeSquared = rayMagnitude * rayMagnitude;
-        var incrementedRayMagnitudeSquared = MarchRayByTiles(
-            rayMagnitudeSquared,
+        var nextCheckedPosition = new Vector2(originTileIndices.X, originTileIndices.Y) * gridRoofEntity.Comp1.TileSize + directionFidelityStep;
+        var incrementedRayMagnitude = MarchRayByTiles(
+            rayMagnitude,
             gridRoofEntity,
             directionFidelityStep,
             ref nextCheckedPosition,
@@ -338,7 +382,7 @@ public sealed class AreaEchoSystem : EntitySystem
             checkRoof
         );
 
-        return (MathF.Sqrt(incrementedRayMagnitudeSquared), firstResult);
+        return (incrementedRayMagnitude, firstResult);
     }
 
     /// <summary>
@@ -347,7 +391,7 @@ public sealed class AreaEchoSystem : EntitySystem
     /// </summary>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     private float MarchRayByTiles(
-        in float rayMagnitudeSquared,
+        in float rayMagnitude,
         in Entity<MapGridComponent, RoofComponent?> gridRoofEntity,
         in Vector2 directionFidelityStep,
         ref Vector2 nextCheckedPosition,
@@ -357,10 +401,10 @@ public sealed class AreaEchoSystem : EntitySystem
     {
         // find the furthest distance this ray reaches until its on an unrooved/dataless (space) tile
 
-        var fidelityStepLengthSquared = directionFidelityStep.LengthSquared();
-        var incrementedRayMagnitudeSquared = 0f;
+        var fidelityStepLength = directionFidelityStep.Length();
+        var incrementedRayMagnitude = 0f;
 
-        for (; incrementedRayMagnitudeSquared < rayMagnitudeSquared;)
+        for (; incrementedRayMagnitude < rayMagnitude;)
         {
             var nextCheckedTilePosition = new Vector2i(
                 (int)MathF.Floor(nextCheckedPosition.X / gridTileSize),
@@ -377,10 +421,10 @@ public sealed class AreaEchoSystem : EntitySystem
                 break;
 
             nextCheckedPosition += directionFidelityStep;
-            incrementedRayMagnitudeSquared += fidelityStepLengthSquared;
+            incrementedRayMagnitude += fidelityStepLength;
         }
 
-        return incrementedRayMagnitudeSquared;
+        return MathF.Min(incrementedRayMagnitude, rayMagnitude);
     }
 
     private void ProcessAudioEntity(Entity<AudioComponent> entity, TransformComponent transformComponent, float minimumMagnitude, float maximumMagnitude)
