@@ -50,9 +50,9 @@ meta:
   time: 10/14/2025 00:30:34
   entityCount: 10450
 maps:
-- 1
+- 938
 grids:
-- 2
+- 1
 orphans: []
 nullspace: []
 tilemap:
@@ -121,7 +121,7 @@ entities:
   - uid: 2
     components:
     - type: BecomesStation
-      id: Colossus
+      id: Frontier
     - type: ForceAnchor
     - type: StationTransit
     - type: IFF
@@ -130,11 +130,7 @@ entities:
       hostileMobKillSound: !type:SoundPathSpecifier
         path: /Audio/Effects/holy.ogg
       killHostileMobs: True
-      preventArtifactTriggers: False
       preventEmpEvents: True
-      preventRCDUse: False
-      preventFloorPlacement: False
-      preventFloorRemoval: False
     - type: GridGodMode
       protectedEntities: []
     - type: GridPacifier
