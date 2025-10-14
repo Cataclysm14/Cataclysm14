@@ -100,7 +100,16 @@
       - id: Wrench
       - id: Welder
       - id: Wirecutter
-      - id: ClothingHeadHatWelding #Mono
+      - id: ClothingHeadHatWelding #Mono start: add welding protection
+        orGroup: WeldMaskRandom
+      - id: ClothingHeadHatWeldingMaskFlameBlue
+        orGroup: WeldMaskRandom
+      - id: ClothingHeadHatWeldingMaskFlame
+        orGroup: WeldMaskRandom
+      - id: ClothingHeadHatWeldingMaskPainted
+        orGroup: WeldMaskRandom
+      - id: ClothingEyesGlassesMeson
+        orGroup: WeldMaskRandom #Mono end
       - id: Screwdriver
 #        prob: 0.5 #Mono: always spawn
       - id: FlashlightLantern
