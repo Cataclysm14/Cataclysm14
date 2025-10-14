@@ -65,6 +65,27 @@ entities:
   entities:
   - uid: 1
     components:
+    - type: BecomesStation
+      id: Frontier
+    - type: ForceAnchor
+    - type: StationTransit
+    - type: IFF
+      readOnly: True
+    - type: ProtectedGrid
+      hostileMobKillSound: !type:SoundPathSpecifier
+        path: /Audio/Effects/holy.ogg
+      killHostileMobs: True
+      preventArtifactTriggers: False
+      preventEmpEvents: True
+      preventRCDUse: False
+      preventFloorPlacement: False
+      preventFloorRemoval: False
+    - type: GridGodMode
+      protectedEntities: []
+    - type: GridPacifier
+    - type: GridRaider
+      protectedEntities: []
+      locked: False
     - type: MetaData
       name: grid
     - type: Transform
@@ -8667,6 +8688,8 @@ entities:
       locked: False
   - uid: 938
     components:
+    - type: Parallax
+      parallax: FrontierStation
     - type: MetaData
       name: Map Entity
     - type: Transform
