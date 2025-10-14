@@ -12881,3 +12881,89 @@ Entries:
   id: 1427
   time: '2025-10-09T12:56:42.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2391
+- author: Arcticular1
+  changes:
+    - type: Add
+      message: >-
+        A new shipment of black market suits developed by Ullman Industries has
+        just hit the sector!
+  id: 1428
+  time: '2025-10-10T12:49:58.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2390
+- author: starch70
+  changes:
+    - type: Remove
+      message: Removed Asakim death acidifers. Kept armor slowdown.
+  id: 1429
+  time: '2025-10-10T13:34:50.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2387
+- author: starch70
+  changes:
+    - type: Add
+      message: MARSOC has new hardsuits.
+    - type: Tweak
+      message: Support for clothing-based energy shields.
+  id: 1430
+  time: '2025-10-10T16:23:27.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2389
+- author: Ilya246
+  changes:
+    - type: Fix
+      message: You can now make combined filters properly.
+  id: 1431
+  time: '2025-10-10T19:58:46.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2397
+- author: Avalon-Proto
+  changes:
+    - type: Tweak
+      message: Aghosts no longer inherently stealthy
+  id: 1432
+  time: '2025-10-11T14:20:44.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2399
+- author: Arcticular1
+  changes:
+    - type: Tweak
+      message: The Dagger has gotten layout, thrusters and armament improvements
+  id: 1433
+  time: '2025-10-11T14:23:21.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2394
+- author: Avalon-Proto
+  changes:
+    - type: Tweak
+      message: Scythes now fire slower but hit harder
+    - type: Tweak
+      message: Turbolasers have been tuned to have a much longer range
+  id: 1434
+  time: '2025-10-12T22:22:43.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2403
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        AMEs, AME jars, FTL drives, and shield generators will now explode when
+        taking excessive damage in one hit.
+    - type: Tweak
+      message: >-
+        Tweaked ship gun values and stuff to make stuff look really cool and
+        whatnot. Ship guns are also faster now.
+  id: 1435
+  time: '2025-10-13T14:09:40.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2406
+- author: OneZerooo0
+  changes:
+    - type: Add
+      message: >-
+        You can now print explosives (C4, EMP, explosive) after a new universal
+        faction research.
+  id: 1436
+  time: '2025-10-13T21:39:30.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2408
+- author: Arcticular1
+  changes:
+    - type: Tweak
+      message: >-
+        Buffed the Europa with better thrusters, better armor and two additional
+        90mms!
+  id: 1437
+  time: '2025-10-13T21:43:24.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2393
