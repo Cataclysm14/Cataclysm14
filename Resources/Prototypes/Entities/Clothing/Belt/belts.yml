@@ -674,6 +674,8 @@
         - Cartridge
   - type: Dumpable
   - type: Appearance
+  - type: StaticPrice #Mono, PMC clothing price consistency
+    vendPrice: 500
 
 # Mono End
 
