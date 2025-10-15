@@ -6,8 +6,6 @@
 
 #region Civilian
 
-# Sidearms
-
 - type: loadout #MK32 Universal
   id: ContractorMk32Loadout
   price: 0
@@ -56,6 +54,13 @@
   storage:
     back:
     - BoxMagazineSpeedLoader556x45mmFMJ
+
+- type: loadout # Survival Knife
+  id: ContractorSurvivalKnifeLoadout
+  price: 0
+  storage:
+    back:
+    - SurvivalKnife
 
 # Shotguns
 
@@ -323,6 +328,36 @@
   storage:
     back:
     - WeaponLaserPistolNF
+
+# Melee
+
+- type: loadout # Machete
+  id: MercenaryMacheteLoadout
+  price: 0
+  storage:
+    back:
+    - Machete
+
+- type: loadout # Throwing Knifes Box
+  id: MercenaryThrowingKnifeLoadout
+  price: 0
+  storage:
+    back:
+    - ThrowingKnivesKit
+
+- type: loadout # Kukri Knife
+  id: MercenaryKukriKnifeLoadout
+  price: 0
+  storage:
+    back:
+    - KukriKnife
+
+- type: loadout # Combat Knife
+  id: MercenaryCombatKnifeLoadout
+  price: 0
+  storage:
+    back:
+    - CombatKnife
 
 #region Security Guard
 

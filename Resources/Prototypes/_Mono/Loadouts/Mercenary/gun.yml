@@ -37,6 +37,10 @@
   - MercenarySawedOffLoadout
   - ContractorDisablerLoadout
   - MercenaryLaserPistolLoadout
+  - MercenaryCombatKnifeLoadout
+  - MercenaryKukriKnifeLoadout
+  - MercenaryThrowingKnifeLoadout
+  - MercenaryMacheteLoadout
   fallbacks:
   - MercenaryPollockLoadout
 
