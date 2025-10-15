@@ -24,8 +24,6 @@
 # Maintainer Info
 # GitHub: Redrover1760
 # Discord: Gnarlysheep
-# I'm not a maintainer lmao, but rover is
-# so true fluffan
 
 # Notes: Wow.
 #
@@ -65,12 +63,11 @@
         - type: StationJobs
           availableJobs:
             Sheriff: [ 1, 1 ]
-            SeniorOfficer: [ 3, 3 ] # Mono
+            SeniorOfficer: [ 2, 2 ] # Mono
             Brigmedic: [ 2, 2 ] # Mono
             Deputy: [ -1, -1 ] # Mono
             TsfEngineer: [ 2, 2 ]
           tags:
-          - HeadOfPersonnel
           - HeadOfSecurity
         - type: StationDeadDropReporting
           messageSet: Nfsd

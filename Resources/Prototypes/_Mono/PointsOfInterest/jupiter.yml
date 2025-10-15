@@ -57,7 +57,7 @@
           availableJobs:
             PirateCaptain: [ 1, 1 ]
             PirateFirstMate: [ 2, 2 ] # Mono
-            Pirate: [ 8, 8 ] # Mono
+            Pirate: [ 5, 5 ] # Mono
           tags:
           - RogueCommander
         - type: StationDeadDropReporting

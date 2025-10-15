@@ -47,11 +47,11 @@
         - type: StationJobs
           availableJobs:
             USSPCommissar: [1, 1]
-            USSPSergeant: [4, 4]
-            USSPCorporal: [6, 6]
-            USSPMedic: [4, 4]
+            USSPSergeant: [1, 1]
+            USSPCorporal: [4, 4]
+            USSPMedic: [3, 3]
             USSPRifleman: [-1, -1]
-            Contractor: [-1, -1]
+            Contractor: [0, -1]
             Pilot: [0, -1]
             Mercenary: [0, -1]
           tags:

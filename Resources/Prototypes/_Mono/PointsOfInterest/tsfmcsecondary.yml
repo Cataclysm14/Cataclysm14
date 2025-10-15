@@ -48,10 +48,9 @@
           lobbySortOrder: 2
         - type: StationJobs
           availableJobs:
-            SeniorOfficer: [ 0, 3 ]
+            SeniorOfficer: [ 0, 1 ]
             Brigmedic: [ 0, 1 ]
             Deputy: [ -1, -1 ]
           tags:
-          - HeadOfPersonnel
           - HeadOfSecurity
         - type: StationDeadDropHintExempt
