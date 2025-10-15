@@ -20,8 +20,8 @@
   id: TSFMCOutpost
   parent: BasePOI
   name: 'TSFMC Secondary Outpost'
-  minimumDistance: 11000
-  maximumDistance: 14000
+  minimumDistance: 15000
+  maximumDistance: 20000
   spawnGamePreset: [ NFAdventure, NFPirate, MonoStandard, MonoRogueTSF, MonoTSFUSSP, MonoADS, MonoChimera, MonoAllAtOnce ]
   spawnGroup: Required
   gridPath: /Maps/_Mono/POI/tsfmcoutpost.yml
@@ -49,7 +49,7 @@
           lobbySortOrder: 2
         - type: StationJobs
           availableJobs:
-            Sheriff: [ 1, 1 ]
+            Bailiff: [ 1, 1 ]
             SeniorOfficer: [ 2, 2 ] # Mono
             Brigmedic: [ 2, 2 ] # Mono
             Deputy: [ -1, -1 ] # Mono
