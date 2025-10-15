@@ -52,10 +52,10 @@
 
 - type: loadout #Argenti Ammo
   id: Contractor556x45mmAmmoLoadout
-  price: 200
+  price: 1000
   storage:
     back:
-    - AmmoBox556x45mmFMJ
+    - BoxMagazineSpeedLoader556x45mmFMJ
 
 # Shotguns
 
