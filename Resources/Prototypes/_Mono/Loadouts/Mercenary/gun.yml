@@ -35,6 +35,7 @@
   - MercenaryViperLoadout
   - ContractorArgentiLoadout
   - MercenarySawedOffLoadout
+  - ContractorDisablerLoadout
   - MercenaryLaserPistolLoadout
   fallbacks:
   - MercenaryPollockLoadout
