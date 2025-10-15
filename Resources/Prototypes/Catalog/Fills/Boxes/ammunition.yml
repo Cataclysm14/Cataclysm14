@@ -496,7 +496,7 @@
   name: box of .45 magnum speedloaders
   parent: BoxMagazine
   id: BoxMagazine45_magnumFMJ
-  description: A box full of .45 magnum magazines.
+  description: A box full of .45 magnum speedloaders.
   components:
   - type: StorageFill
     contents:
