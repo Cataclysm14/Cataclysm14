@@ -12913,3 +12913,79 @@ Entries:
   id: 1431
   time: '2025-10-10T19:58:46.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2397
+- author: Avalon-Proto
+  changes:
+    - type: Tweak
+      message: Aghosts no longer inherently stealthy
+  id: 1432
+  time: '2025-10-11T14:20:44.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2399
+- author: Arcticular1
+  changes:
+    - type: Tweak
+      message: The Dagger has gotten layout, thrusters and armament improvements
+  id: 1433
+  time: '2025-10-11T14:23:21.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2394
+- author: Avalon-Proto
+  changes:
+    - type: Tweak
+      message: Scythes now fire slower but hit harder
+    - type: Tweak
+      message: Turbolasers have been tuned to have a much longer range
+  id: 1434
+  time: '2025-10-12T22:22:43.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2403
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        AMEs, AME jars, FTL drives, and shield generators will now explode when
+        taking excessive damage in one hit.
+    - type: Tweak
+      message: >-
+        Tweaked ship gun values and stuff to make stuff look really cool and
+        whatnot. Ship guns are also faster now.
+  id: 1435
+  time: '2025-10-13T14:09:40.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2406
+- author: OneZerooo0
+  changes:
+    - type: Add
+      message: >-
+        You can now print explosives (C4, EMP, explosive) after a new universal
+        faction research.
+  id: 1436
+  time: '2025-10-13T21:39:30.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2408
+- author: Arcticular1
+  changes:
+    - type: Tweak
+      message: >-
+        Buffed the Europa with better thrusters, better armor and two additional
+        90mms!
+  id: 1437
+  time: '2025-10-13T21:43:24.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2393
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: >-
+        Filled mechanical toolbox has welding protection and guaranteed
+        screwdriver
+    - type: Tweak
+      message: >-
+        Filled electrical toolbox has guaranteed HV cables, insuls and t-ray
+        scanner. Added multitool
+    - type: Tweak
+      message: Random chocolate was restored in filled emergency toolboxes
+  id: 1438
+  time: '2025-10-14T20:38:35.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2414
+- author: Avalon-Proto
+  changes:
+    - type: Tweak
+      message: Fixed the broken Scythes
+  id: 1439
+  time: '2025-10-15T14:45:36.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2418
