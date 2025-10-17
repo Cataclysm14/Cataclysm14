@@ -802,8 +802,8 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
-    fireRate: 5
-    projectileSpeed: 600
+    fireRate: 1
+    projectileSpeed: 200
     minAngle: 0
     maxAngle: 6
     shootThermalSignature: 500000 # ~5.6km with continuous fire

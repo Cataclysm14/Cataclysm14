@@ -12982,3 +12982,10 @@ Entries:
   id: 1438
   time: '2025-10-14T20:38:35.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2414
+- author: Avalon-Proto
+  changes:
+    - type: Tweak
+      message: Fixed the broken Scythes
+  id: 1439
+  time: '2025-10-15T14:45:36.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2418
