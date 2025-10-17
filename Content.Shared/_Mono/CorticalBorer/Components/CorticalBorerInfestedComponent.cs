@@ -44,6 +44,11 @@ public sealed partial class CorticalBorerInfestedComponent : Robust.Shared.GameO
     /// Abilities to be removed once host gets control back
     /// </summary>
     public List<EntityUid> RemoveAbilities = new();
+
+    /// <summary>
+    /// Reform action that was removed from the host when borer took control.
+    /// </summary>
+    public EntityUid? RemovedReformAction;
 }
 
 [RegisterComponent, NetworkedComponent]

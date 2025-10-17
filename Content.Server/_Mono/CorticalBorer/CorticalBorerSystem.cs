@@ -14,6 +14,7 @@ using Content.Server.Ghost.Roles.Components;
 using Content.Server.Medical;
 using Content.Server.Medical.Components;
 using Content.Server.Nutrition.Components;
+using Content.Server.Salvage.Expeditions;
 using Content.Shared._Mono.CorticalBorer;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Alert;
@@ -28,7 +29,7 @@ using Content.Shared.Mind.Components;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Popups;
-using Content.Shared.SSDIndicator;
+using Content.Shared.Species.Components;
 using Robust.Server.GameObjects;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
@@ -50,12 +51,14 @@ public sealed partial class CorticalBorerSystem : SharedCorticalBorerSystem
     [Dependency] private readonly IChatManager _chat = default!;
     [Dependency] private readonly AlertsSystem _alerts = default!;
     [Dependency] private readonly GhostRoleSystem _ghost  = default!;
+    [Dependency] private readonly MetaDataSystem _metaData = default!;
 
     public override void Initialize()
     {
         SubscribeAbilities();
 
         SubscribeLocalEvent<CorticalBorerComponent, ComponentStartup>(OnStartup);
+        SubscribeLocalEvent<CorticalBorerComponent, MapUidChangedEvent>(OnMapChanged);
 
         SubscribeLocalEvent<CorticalBorerComponent, CorticalBorerDispenserInjectMessage>(OnInjectReagentMessage);
         SubscribeLocalEvent<CorticalBorerComponent, CorticalBorerDispenserSetInjectAmountMessage>(OnSetInjectAmountMessage);
@@ -68,6 +71,8 @@ public sealed partial class CorticalBorerSystem : SharedCorticalBorerSystem
 
     private void OnStartup(Entity<CorticalBorerComponent> ent, ref ComponentStartup args)
     {
+        _metaData.AddFlag(ent, MetaDataFlags.ExtraTransformEvents);
+
         //add actions
         foreach (var actionId in ent.Comp.InitialCorticalBorerActions)
             _actions.AddAction(ent, actionId);
@@ -338,6 +343,13 @@ public sealed partial class CorticalBorerSystem : SharedCorticalBorerSystem
                 infestedComp.RemoveAbilities.Add(actionLay);
         }
 
+        if (TryComp<ReformComponent>(host, out var reformComp) && reformComp.ActionEntity.HasValue)
+        {
+            infestedComp.RemovedReformAction = reformComp.ActionEntity.Value;
+
+            _actions.RemoveAction(host, reformComp.ActionEntity.Value);
+        }
+
         var str = $"{ToPrettyString(worm)} has taken control over {ToPrettyString(host)}";
 
         Log.Info(str);
@@ -368,6 +380,18 @@ public sealed partial class CorticalBorerSystem : SharedCorticalBorerSystem
         }
         infestedComp.RemoveAbilities = new(); // clear out the list
 
+        if (infestedComp.RemovedReformAction.HasValue && TryComp<ReformComponent>(host, out var reformComp))
+        {
+            var restoredAction = _actions.AddAction(host, reformComp.ActionPrototype);
+
+            if (restoredAction != null)
+            {
+                reformComp.ActionEntity = restoredAction.Value;
+            }
+
+            infestedComp.RemovedReformAction = null;
+        }
+
         if (TryComp<GhostRoleComponent>(worm, out var ghostRole))
             _ghost.RegisterGhostRole((worm, ghostRole)); // re-enable the ghost role after you return to the body
 
@@ -379,6 +403,15 @@ public sealed partial class CorticalBorerSystem : SharedCorticalBorerSystem
 
         infestedComp.ControlTimeEnd = null;
         _container.CleanContainer(infestedComp.ControlContainer);
+    }
+
+    private void OnMapChanged(Entity<CorticalBorerComponent> ent, ref MapUidChangedEvent args)
+    {
+        // Delete the borer if it enters an expedition map.
+        if (args.NewMap != null && HasComp<SalvageExpeditionComponent>(args.NewMap.Value))
+        {
+            QueueDel(ent);
+        }
     }
 
     private void OnMindRemoved(Entity<CorticalBorerComponent> ent, ref MindRemovedMessage args)
