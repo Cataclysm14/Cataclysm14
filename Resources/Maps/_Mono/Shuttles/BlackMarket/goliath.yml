@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 10/17/2025 11:09:37
-  entityCount: 1523
+  time: 10/17/2025 09:46:09
+  entityCount: 1518
 maps: []
 grids:
 - 1
@@ -894,11 +894,6 @@ entities:
       pos: 0.5,-0.5
       parent: 1
   - uid: 1372
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 0.5,-19.5
-      parent: 1
 - proto: AtmosDeviceFanDirectional
   entities:
   - uid: 1463
@@ -3999,26 +3994,6 @@ entities:
     components:
     - type: Transform
       pos: -0.5,-1.5
-      parent: 1
-  - uid: 1332
-    components:
-    - type: Transform
-      pos: 0.5,-19.5
-      parent: 1
-  - uid: 1342
-    components:
-    - type: Transform
-      pos: 0.5,-0.5
-      parent: 1
-  - uid: 1343
-    components:
-    - type: Transform
-      pos: 0.5,-18.5
-      parent: 1
-  - uid: 1346
-    components:
-    - type: Transform
-      pos: 0.5,-17.5
       parent: 1
   - uid: 1489
     components:
