@@ -135,11 +135,11 @@
   id: GoliathVoucherRogue
   result: ShipVoucherGoliath
   materials:
-    Steel: 40000
+    Steel: 30000
     Plasteel: 20000
     Plastic: 30000
-    Glass: 10000
+    Glass: 5000
     Plasma: 5000
     Uranium: 10000
-    Silver: 10000
+    Silver: 5000
     Gold: 5000
