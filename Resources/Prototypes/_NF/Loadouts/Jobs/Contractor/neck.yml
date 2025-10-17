@@ -279,6 +279,15 @@
     neck: ClothingNeckPonchoArctic
 
 - type: loadout
+  id: ContractorClothingNeckUIOvercoat # Monolith
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1000
+  equipment:
+    neck: ClothingNeckUllimanOvercoat
+
+- type: loadout
   id: ContractorClothingNeckCloakMiner
   effects:
   - !type:GroupLoadoutEffect

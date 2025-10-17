@@ -29,6 +29,24 @@
     outerClothing: ClothingOuterHardsuitVoidParamed
 
 - type: loadout
+  id: ContractorClothingOuterHardsuitUIEngineer
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 7500
+  equipment:
+    outerClothing: ClothingOuterHardsuitUllmanEngineer
+
+- type: loadout
+  id: ContractorClothingOuterHardsuitUIPilot
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 7500
+  equipment:
+    outerClothing: ClothingOuterHardsuitUIPilot
+
+- type: loadout
   id: ContractorClothingOuterHoodieGrey
   price: 200
   equipment:
