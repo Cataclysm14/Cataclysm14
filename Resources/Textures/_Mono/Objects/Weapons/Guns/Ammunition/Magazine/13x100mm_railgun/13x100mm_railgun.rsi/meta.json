@@ -1,0 +1,28 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-SA-3.0",
+    "copyright": "modified by zeranov(disc:core_mene) from the 40mm grenade magazine sprite created by TheShuEd (github) for Space Station 14",
+    "states": [
+        {
+            "name": "base"
+        },
+        {
+            "name": "icon"
+        },
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "mag-1"
+        }
+    ]
+}

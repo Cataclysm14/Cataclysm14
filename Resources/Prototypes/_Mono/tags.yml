@@ -14,23 +14,9 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-- type: Tag
-  id: CassetteTape
+# MARK: Firearms tags
 
-- type: Tag
-  id: MREFood
-
-# Crafting for desert planet
-
-- type: Tag
-  id: RockMaterial
-
-- type: Tag
-  id: SandMaterial
-
-#AMMO START
-
-#762x51mm tags
+#7.62x51mm tags
 
 - type: Tag
   id: Cartridge762x51mmFMJ
@@ -47,7 +33,7 @@
 - type: Tag
   id: Magazine762x51mmBoxBig
 
-#762x54mmR tags
+#7.62x54mmR tags
 
 - type: Tag
   id: Cartridge762x54mmRFMJ
@@ -72,7 +58,7 @@
 - type: Tag
   id: Magazine68x52mmCaselessBoxBig
 
-#556x45mm tags
+#5.56x45mm tags
 
 - type: Tag
   id: Cartridge556x45mmFMJ
@@ -83,7 +69,7 @@
 - type: Tag
   id: Magazine556x45mmBox
 
-#762x39mm tags
+#7.62x39mm tags
 
 - type: Tag
   id: Cartridge762x39mmFMJ
@@ -99,8 +85,11 @@
 
 - type: Tag
   id: Magazine762x39mmPan
+  
+- type: Tag
+  id: MagazineDP29
 
-#46x30mm tags
+#4.6x30mm tags
 
 - type: Tag
   id: Cartridge46x30mmFMJ
@@ -180,7 +169,7 @@
 - type: Tag
   id: SpeedLoader9x19mmFMJ
 
-#57x28mm tags
+#5.7x28mm tags
 
 - type: Tag
   id: Cartridge57x28mmFMJ
@@ -207,9 +196,6 @@
 
 - type: Tag
   id: PPLCell
-
-- type: Tag
-  id: MagazineDP29
 
 #8x65mm SKR tags
 
@@ -258,12 +244,12 @@
 - type: Tag
   id: ShellShotgun23x75mmBuckshot
 
-# 145x114mm tags
+# 14.5x114mm tags
 
 - type: Tag
   id: Cartridge145x114mm
 
-# 635x40mm tags
+# 6.35x40mm tags
 - type: Tag
   id: Cartridge635x40mmCaseless
 
@@ -278,19 +264,36 @@
 - type: Tag
   id: Magazine40mm
 
-#AMMO END
+# MARK: Railgun tags
 
-#Misc emote tags
-
-- type: Tag
-  id: ReptilianEmotes
-
-# Ship tags
+#13x100mm tags
 
 - type: Tag
-  id: CrewedShuttle
+  id : Magazine13x100mmRailgunSabot
 
-# Mech Tags
+# MARK: Explosive tags
+#(for shits like 40mm grenades and rocket launchers)
+
+# Man portable rockets :trollface:
+
+- type: Tag
+  id: MPSSMMissile
+
+# MARK: Ship Ammo tags
+
+- type: Tag
+  id: Asm220Torpedo
+
+- type: Tag
+  id: CharonSlug
+
+- type: Tag
+  id: 150mmShell
+
+- type: Tag
+  id: LightFighterOrdinance
+
+# MARK: Mechs tags
 
 #Mech Weaponry Tags
 - type: Tag
@@ -375,6 +378,18 @@
 - type: Tag
   id: FlailTargetingControlModule
 
+# MARK: Random tags
+
+#Misc emote tags
+
+- type: Tag
+  id: ReptilianEmotes
+
+# Ship tags
+
+- type: Tag
+  id: CrewedShuttle
+
 # USSP Bounty
 
 - type: Tag
@@ -391,25 +406,6 @@
 
 - type: Tag
   id: BiomassBounty
-
-# Ship Ammo
-
-- type: Tag
-  id: Asm220Torpedo
-
-- type: Tag
-  id: CharonSlug
-
-- type: Tag
-  id: 150mmShell
-
-- type: Tag
-  id: LightFighterOrdinance
-
-# Man portable rockets :trollface:
-
-- type: Tag
-  id: MPSSMMissile
 
 # Kudzu ignore tag
 
@@ -432,3 +428,19 @@
 # for letoferol chimeras
 - type: Tag
   id: Humanoid
+
+# random stuff
+
+- type: Tag
+  id: CassetteTape
+
+- type: Tag
+  id: MREFood
+
+# Crafting for desert planet
+
+- type: Tag
+  id: RockMaterial
+
+- type: Tag
+  id: SandMaterial

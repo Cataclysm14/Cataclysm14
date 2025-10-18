@@ -1,0 +1,49 @@
+- type: entity
+  name: HWM Railgun sniper 1
+  parent: [ BaseItem, BaseC1Contraband ] # Frontier: BaseMajorContraband<BaseC1Contraband
+  id: WeaponRailgunSniper
+  description: A civilian grade weapon using light amplified by the stimulated emission of radiation.
+  components:
+  - type: Item
+    size: Huge
+  - type: AmmoCounter
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/laser_retro.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: HitscanBatteryAmmoProvider
+    proto: SniperRailgun
+    fireCost: 1
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice
+    price: 190
+  - type: Gun
+    fireRate: 2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/dmr.ogg
+  - type: PowerCellSlot
+    cellSlotId: gun_magazine
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine13x100mmRailgunSabot
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        whitelist:
+          tags:
+          - Magazine13x100mmRailgunSabot
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot

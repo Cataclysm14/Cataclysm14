@@ -29,3 +29,28 @@
       sprite: _Goobstation/Objects/Weapons/Guns/Projectiles/small_laser.rsi
       state: impact_beam_light_pulse
 
+- type: entity
+  id: SniperRailgun
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 95
+        Blunt: 5
+        Shock: 10
+        Radiation: 65
+        Structural: 700
+  - type: HitscanBasicRaycast
+    maxDistance: 120.0
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: _Mono/Objects/Weapons/Guns/Projectiles/railgun_lasers.rsi
+      state: gauss_muzzle
+    travelFlash:
+      sprite: _Mono/Objects/Weapons/Guns/Projectiles/railgun_lasers.rsi
+      state: gauss_trail
+    impactFlash:
+      sprite: _Mono/Objects/Weapons/Guns/Projectiles/railgun_lasers.rsi
+      state: gauss_impact
+  - type: HitscanBasicEffects

@@ -1,0 +1,21 @@
+- type: entity
+  name: railgun sniper magazine (13x100mm sabot)
+  description: A 5 rounder single use magazine for 13x100mm railgun sabot.
+  id: Magazine13x100mmRailgunSabot
+  suffix: Full
+  parent: BasePowerCell
+  components:
+  - type: Sprite
+    sprite: _Mono\Objects\Weapons\Guns\Ammunition\Magazine\13x100mm_railgun\13x100mm_railgun.rsi
+    layers:
+    - map: [ "enum.PowerCellVisualLayers.Base" ]
+      state: small
+    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+      state: o2
+      shader: unshaded
+  - type: Battery
+    maxCharge: 5
+    startingCharge: 5
+  - type: Tag
+    tags:
+      - Magazine13x100mmRailgunSabot
