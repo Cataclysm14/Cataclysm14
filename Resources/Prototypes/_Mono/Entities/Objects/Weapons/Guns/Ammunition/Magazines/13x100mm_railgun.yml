@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 core-mene
+#
+# SPDX-License-Identifier: MPL-2.0
+
 - type: entity
   name: railgun sniper magazine (13x100mm sabot)
   description: A 5 rounder single use magazine for 13x100mm railgun sabot.

@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 core-mene
+#
+# SPDX-License-Identifier: MPL-2.0
+
 - type: entity
   name: HWM Railgun sniper 1
   parent: [ BaseItem, BaseC1Contraband ] # Frontier: BaseMajorContraband<BaseC1Contraband
