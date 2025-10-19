@@ -285,6 +285,10 @@
   - 40mmGrenadeFlash
   - 40mmGrenadeThermobaric
   - 40mmGrenadeEMP
+  - MagazineAsmgtUniversal9x19mm
+  - MagazineAsmgtUniversal762x39mm
+  - MagazineAsmgtUniversal556x45mm
+  - MagazineAsmgtUniversal635x40mm
 
 #Uranium recipes
 
@@ -490,6 +494,9 @@
   - AmmoBox23x75mmSlug
   - Magazine12_gaugeSlug
   - AmmoBox12_gaugeSlug
+  - MagazineAsmgtUniversal9x19mm
+  - MagazineAsmgtUniversal762x39mm
+  - MagazineAsmgtUniversal556x45mm
 
 #Plasteel AP recipes
 
@@ -627,6 +634,9 @@
   - AmmoBox23x75mmSlug
   - Magazine12_gaugeSlug
   - AmmoBox12_gaugeSlug
+  - MagazineAsmgtUniversal9x19mm
+  - MagazineAsmgtUniversal762x39mm
+  - MagazineAsmgtUniversal556x45mm
 
 #SKR
 
@@ -889,6 +899,7 @@
   - AmmoBox762x39mmSubsonic
   - AmmoBox635x40mmCaseless
   - Magazine635x40mmCaseless
+  - MagazineAsmgtUniversal635x40mm
   - Magazine40mmEmpty
   - 40mmGrenadeFlash
   - 40mmGrenadeThermobaric
