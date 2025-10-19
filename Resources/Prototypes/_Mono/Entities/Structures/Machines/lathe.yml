@@ -106,6 +106,8 @@
       - Sheet
       - RawMaterial
       - Ingot
+  - type: Construction
+    graph: Machine2x2
   - type: RequireProjectileTarget
   - type: Destructible
     thresholds:
@@ -117,7 +119,7 @@
         sound:
           collection: MetalBreak
       - !type:ChangeConstructionNodeBehavior
-        node: machineFrame2x2
+        node: machineFrame
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: Fixtures
