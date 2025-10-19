@@ -1,0 +1,119 @@
+- type: constructionGraph
+  id: Machine2x2
+  start: start
+  graph:
+    - node: start
+      actions:
+        - !type:SpawnPrototype
+          prototype: SheetSteel1
+        - !type:DeleteEntity
+      edges:
+        - to: missingWires2x2
+          completed:
+            - !type:SetAnchor
+              value: false
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 2.5
+        - to: destroyedMachineFrame2x2
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 2.5
+
+    - node: missingWires2x2
+      entity: UnfinishedMachineFrame2x2
+      actions:
+        - !type:EmptyAllContainers
+      edges:
+        - to: machineFrame2x2
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - material: Cable
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 5
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 2
+
+    - node: machineFrame2x2
+      entity: MachineFrame2x22x2
+      actions:
+        - !type:AddContainer
+          container: machine_parts
+        - !type:AddContainer
+          container: machine_board
+        - !type:MachineFrame2x2RegenerateProgress
+      edges:
+        - to: machine
+          conditions:
+            - !type:EntityAnchored
+            - !type:MachineFrame2x2Complete
+              guideIconBoard:
+                sprite: Objects/Misc/module.rsi
+                state: id_mod
+              guideIconParts:
+                sprite: _NF/Objects/Misc/stock_parts.rsi # Frontier
+                state: scan_module
+          steps:
+            - tool: Screwing
+              doAfter: 0.5
+
+        - to: machineFrame2x2
+          conditions:
+            - !type:EntityAnchored
+            - !type:ContainerNotEmpty
+              container: machine_board
+          steps:
+            - tool: Prying
+              doAfter: 2
+              completed:
+                - !type:EmptyAllContainers
+                - !type:MachineFrame2x2RegenerateProgress
+
+        - to: missingWires
+          conditions:
+            - !type:EntityAnchored
+            - !type:ContainerEmpty
+              container: machine_board
+              examineText: construction-condition-machine-container-empty
+          completed:
+            - !type:SpawnPrototype
+              prototype: CableApcStack1
+          steps:
+            - tool: Cutting
+              doAfter: 0.25
+
+    - node: machine2x2
+      entity: !type:BoardNodeEntity { container: machine_board }
+      edges:
+        - to: machineFrame2x2
+          completed:
+            - !type:RaiseEvent
+              event: !type:MachineDeconstructedEvent
+              broadcast: false
+          conditions:
+            - !type:EntityAnchored
+            - !type:WirePanel
+          steps:
+            - tool: Prying
+              doAfter: 2
+
+    - node: destroyedMachineFrame2x2
+      entity: MachineFrame2x2Destroyed
+      edges:
+        - to: start
+          steps:
+            - tool: Welding
+              doAfter: 5
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 3
+            - !type:DeleteEntity {}
