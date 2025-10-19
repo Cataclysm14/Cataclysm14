@@ -1,8 +1,8 @@
 - type: constructionGraph
   id: Machine2x2
-  start: start
+  start: start2x2
   graph:
-    - node: start
+    - node: start2x2
       actions:
         - !type:SpawnPrototype
           prototype: SheetSteel1
@@ -32,7 +32,7 @@
             - !type:EntityAnchored
           steps:
             - material: Cable
-        - to: start
+        - to: start2x2
           completed:
             - !type:SpawnPrototype
               prototype: SheetSteel1
@@ -43,7 +43,7 @@
               doAfter: 2
 
     - node: machineFrame2x2
-      entity: MachineFrame2x22x2
+      entity: MachineFrame2x2
       actions:
         - !type:AddContainer
           container: machine_parts
@@ -51,7 +51,7 @@
           container: machine_board
         - !type:MachineFrame2x2RegenerateProgress
       edges:
-        - to: machine
+        - to: machine2x2
           conditions:
             - !type:EntityAnchored
             - !type:MachineFrame2x2Complete
@@ -77,7 +77,7 @@
                 - !type:EmptyAllContainers
                 - !type:MachineFrame2x2RegenerateProgress
 
-        - to: missingWires
+        - to: missingWires2x2
           conditions:
             - !type:EntityAnchored
             - !type:ContainerEmpty
@@ -108,7 +108,7 @@
     - node: destroyedMachineFrame2x2
       entity: MachineFrame2x2Destroyed
       edges:
-        - to: start
+        - to: start2x2
           steps:
             - tool: Welding
               doAfter: 5

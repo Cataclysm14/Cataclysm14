@@ -49,7 +49,7 @@
           sound:
             collection: MetalBreak
         - !type:ChangeConstructionNodeBehavior
-          node: start
+          node: start2x2
         - !type:DoActsBehavior
           acts: ["Destruction"]
     - type: Sprite
@@ -88,7 +88,7 @@
     - type: Construction
       graph: Machine2x2
       node: machineFrame2x2
-      defaultTarget: machine
+      defaultTarget: machine2x2
       containers:
         - machine_board
         - machine_parts

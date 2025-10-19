@@ -1,0 +1,13 @@
+- type: construction
+  name: machine frame (2x2)
+  description: A machine under construction. Needs more parts.
+  id: MachineFrame2x2
+  graph: Machine2x2
+  startNode: start2x2
+  targetNode: machine2x2
+  category: construction-category-machines
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  icon:
+    sprite: Structures/Machines/parts.rsi
+    state: "box_0"
