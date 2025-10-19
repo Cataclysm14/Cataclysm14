@@ -1,0 +1,26 @@
+- type: marking
+  id: HydrakinEyesDefault
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Hydrakin]
+  sprites:
+  - sprite: _Obelisk/Mobs/Customization/hydrakin_parts.rsi
+    state: eyes_default
+
+- type: marking
+  id: HydrakinTailDefault
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Hydrakin]
+  sprites:
+  - sprite: _Obelisk/Mobs/Customization/hydrakin_parts.rsi
+    state: tail_default
+
+- type: marking
+  id: HydrakinEarsDefault
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Hydrakin]
+  sprites:
+  - sprite: _Obelisk/Mobs/Customization/hydrakin_parts.rsi
+    state: ears_default
