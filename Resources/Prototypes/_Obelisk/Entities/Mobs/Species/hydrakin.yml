@@ -27,6 +27,8 @@
     spawned:
     - id: FoodMeatHuman
       amount: 5
+  - type: Bloodstream
+    bloodReagent: AmmoniaBlood
   - type: MeleeWeapon
     soundHit:
       collection: AlienClaw
