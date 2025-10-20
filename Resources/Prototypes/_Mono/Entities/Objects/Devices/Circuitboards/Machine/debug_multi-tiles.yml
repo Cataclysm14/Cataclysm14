@@ -2,6 +2,8 @@
 #
 # SPDX-License-Identifier: MPL-2.0
 
+#Exists to check if multi-tiles lathes can be built correctly, DEBUG
+
 - type: entity
   parent: BaseMachineCircuitboard
   id: BaseLathe2x1Circuitboard
