@@ -19,3 +19,4 @@ ame-window-power-targetsupply-label = Targeted power supply:
 ame-window-eject-button = Eject
 ame-window-increase-fuel-button = Increase
 ame-window-decrease-fuel-button = Decrease
+
