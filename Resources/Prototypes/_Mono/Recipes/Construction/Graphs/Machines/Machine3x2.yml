@@ -14,13 +14,13 @@
               value: false
           steps:
             - material: Steel
-              amount: 5
-              doAfter: 2.5
+              amount: 30
+              doAfter: 5
         - to: destroyedMachineFrame3x2
           steps:
             - material: Steel
-              amount: 5
-              doAfter: 2.5
+              amount: 30
+              doAfter: 5
 
     - node: missingWires3x2
       entity: UnfinishedMachineFrame3x2
@@ -36,11 +36,11 @@
           completed:
             - !type:SpawnPrototype
               prototype: SheetSteel1
-              amount: 5
+              amount: 30
             - !type:DeleteEntity
           steps:
             - tool: Screwing
-              doAfter: 2
+              doAfter: 4
 
     - node: machineFrame3x2
       entity: MachineFrame3x2
@@ -63,7 +63,7 @@
                 state: scan_module
           steps:
             - tool: Screwing
-              doAfter: 0.5
+              doAfter: 1
 
         - to: machineFrame3x2
           conditions:
@@ -72,7 +72,7 @@
               container: machine_board
           steps:
             - tool: Prying
-              doAfter: 2
+              doAfter: 4
               completed:
                 - !type:EmptyAllContainers
                 - !type:MachineFrameRegenerateProgress
@@ -88,7 +88,7 @@
               prototype: CableApcStack1
           steps:
             - tool: Cutting
-              doAfter: 0.25
+              doAfter: 0.5
 
     - node: machine3x2
       entity: !type:BoardNodeEntity { container: machine_board }
@@ -103,7 +103,7 @@
             - !type:WirePanel
           steps:
             - tool: Prying
-              doAfter: 2
+              doAfter: 4
 
     - node: destroyedMachineFrame3x2
       entity: MachineFrameDestroyed3x2
@@ -111,9 +111,9 @@
         - to: start3x2
           steps:
             - tool: Welding
-              doAfter: 5
+              doAfter: 7.5
           completed:
             - !type:SpawnPrototype
               prototype: SheetSteel1
-              amount: 3
+              amount: 18
             - !type:DeleteEntity {}

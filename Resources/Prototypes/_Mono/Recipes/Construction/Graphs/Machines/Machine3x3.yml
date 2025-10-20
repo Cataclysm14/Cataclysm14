@@ -1,49 +1,49 @@
 - type: constructionGraph
-  id: Machine2x2
-  start: start2x2
+  id: Machine3x3
+  start: start3x3
   graph:
-    - node: start2x2
+    - node: start3x3
       actions:
         - !type:SpawnPrototype
           prototype: SheetSteel1
         - !type:DeleteEntity
       edges:
-        - to: missingWires2x2
+        - to: missingWires3x3
           completed:
             - !type:SetAnchor
               value: false
           steps:
             - material: Steel
-              amount: 20
-              doAfter: 3.5
-        - to: destroyedMachineFrame2x2
+              amount: 45
+              doAfter: 7.5
+        - to: destroyedMachineFrame3x3
           steps:
             - material: Steel
-              amount: 20
-              doAfter: 3.5
+              amount: 45
+              doAfter: 7.5
 
-    - node: missingWires2x2
-      entity: UnfinishedMachineFrame2x2
+    - node: missingWires3x3
+      entity: UnfinishedMachineFrame3x3
       actions:
         - !type:EmptyAllContainers
       edges:
-        - to: machineFrame2x2
+        - to: machineFrame3x3
           conditions:
             - !type:EntityAnchored
           steps:
             - material: Cable
-        - to: start2x2
+        - to: start3x3
           completed:
             - !type:SpawnPrototype
               prototype: SheetSteel1
-              amount: 20
+              amount: 45
             - !type:DeleteEntity
           steps:
             - tool: Screwing
-              doAfter: 3
+              doAfter: 6
 
-    - node: machineFrame2x2
-      entity: MachineFrame2x2
+    - node: machineFrame3x3
+      entity: MachineFrame3x3
       actions:
         - !type:AddContainer
           container: machine_parts
@@ -51,7 +51,7 @@
           container: machine_board
         - !type:MachineFrameRegenerateProgress
       edges:
-        - to: machine2x2
+        - to: machine3x3
           conditions:
             - !type:EntityAnchored
             - !type:MachineFrameComplete
@@ -63,21 +63,21 @@
                 state: scan_module
           steps:
             - tool: Screwing
-              doAfter: 0.75
+              doAfter: 1.3
 
-        - to: machineFrame2x2
+        - to: machineFrame3x3
           conditions:
             - !type:EntityAnchored
             - !type:ContainerNotEmpty
               container: machine_board
           steps:
             - tool: Prying
-              doAfter: 3
+              doAfter: 6
               completed:
                 - !type:EmptyAllContainers
                 - !type:MachineFrameRegenerateProgress
 
-        - to: missingWires2x2
+        - to: missingWires3x3
           conditions:
             - !type:EntityAnchored
             - !type:ContainerEmpty
@@ -88,12 +88,12 @@
               prototype: CableApcStack1
           steps:
             - tool: Cutting
-              doAfter: 0.4
+              doAfter: 0.75
 
-    - node: machine2x2
+    - node: machine3x3
       entity: !type:BoardNodeEntity { container: machine_board }
       edges:
-        - to: machineFrame2x2
+        - to: machineFrame3x3
           completed:
             - !type:RaiseEvent
               event: !type:MachineDeconstructedEvent
@@ -103,17 +103,17 @@
             - !type:WirePanel
           steps:
             - tool: Prying
-              doAfter: 3
+              doAfter: 6
 
-    - node: destroyedMachineFrame2x2
-      entity: MachineFrameDestroyed2x2
+    - node: destroyedMachineFrame3x3
+      entity: MachineFrameDestroyed3x3
       edges:
-        - to: start2x2
+        - to: start3x3
           steps:
             - tool: Welding
-              doAfter: 6
+              doAfter: 10
           completed:
             - !type:SpawnPrototype
               prototype: SheetSteel1
-              amount: 12
+              amount: 27
             - !type:DeleteEntity {}

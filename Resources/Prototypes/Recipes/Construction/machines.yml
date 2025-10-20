@@ -13,7 +13,7 @@
     state: 4
 
 - type: construction
-  name: machine frame
+  name: machine frame (1x1)
   description: A machine under construction. Needs more parts.
   id: MachineFrame
   graph: Machine
@@ -23,7 +23,7 @@
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   icon:
-    sprite: Structures/Machines/parts.rsi
+    sprite: _Mono/Structures/Machines/frames/frame_1x1.rsi
     state: "box_0"
 
 # Switching

@@ -5,7 +5,7 @@
     "y": 32
   },
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/0d9c9a8233dfc3fc55edc538955a761a6328bee0, Machine frames sprites remade by Ubaser, multi-tiles frames by zeranoc(disc:core_mene)",
+  "copyright": "modified by zeranov (disc:core_mene) from sprites made by kyres1 (disc:noodle_buster)",
   "states": [
     {
       "name": "box_0"
