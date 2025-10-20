@@ -31,8 +31,7 @@
   - Resomi # Floof
   - Protogen # Mono
   - IPC # EE
-  - Yowie # Goobstation
-  #- Rodentia # DeltaV
+  - Rodentia # DeltaV
   - Tajaran # Goobstation
 
 - type: guideEntry
@@ -89,11 +88,6 @@
   id: IPC
   name: species-name-ipc
   text: "/ServerInfo/Guidebook/Mobs/IPCs.xml"
-
-- type: guideEntry
-  id: Yowie
-  name: species-name-yowie
-  text: "/ServerInfo/Guidebook/Mobs/Yowie.xml"
 
 - type: guideEntry
   id: Tajaran
