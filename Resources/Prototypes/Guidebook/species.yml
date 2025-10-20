@@ -5,6 +5,7 @@
 # SPDX-FileCopyrightText: 2025 Ark
 # SPDX-FileCopyrightText: 2025 Redrover1760
 # SPDX-FileCopyrightText: 2025 SuperJoelDood
+# SPDX-FileCopyrightText: 2025 inquisitor-star
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -32,6 +33,7 @@
   - IPC # EE
   - Yowie # Goobstation
   #- Rodentia # DeltaV
+  - Tajaran # Goobstation
 
 - type: guideEntry
   id: Arachnid
@@ -92,3 +94,8 @@
   id: Yowie
   name: species-name-yowie
   text: "/ServerInfo/Guidebook/Mobs/Yowie.xml"
+
+- type: guideEntry
+  id: Tajaran
+  name: species-name-tajaran
+  text: "/ServerInfo/Guidebook/Mobs/Tajaran.xml"
