@@ -20,7 +20,7 @@ public sealed class HitscanDiffractionTest : InteractionTest
     public async Task TestBasicDiffraction()
     {
         // Spawn test entities
-        await SpawnTarget("BaseStructure");
+        await SpawnTarget("WallSolid");
         await Server.WaitPost(() => SEntMan.AddComponent<HitscanDiffractTargetComponent>(STarget!.Value));
 
         EntityUid hitscan = default;
@@ -66,7 +66,7 @@ public sealed class HitscanDiffractionTest : InteractionTest
     public async Task TestInactiveDiffractionTarget()
     {
         // Spawn target entity with Active = false datafield
-        await SpawnTarget("BaseStructure");
+        await SpawnTarget("WallSolid");
         await Server.WaitPost(() =>
         {
             var comp = SEntMan.AddComponent<HitscanDiffractTargetComponent>(STarget!.Value);
@@ -108,7 +108,7 @@ public sealed class HitscanDiffractionTest : InteractionTest
     public async Task TestNonDiffractingHitscan()
     {
         // Spawn diffracting target, hitscan with no diffract component
-        await SpawnTarget("BaseStructure");
+        await SpawnTarget("WallSolid");
         await Server.WaitPost(() => SEntMan.AddComponent<HitscanDiffractTargetComponent>(STarget!.Value));
 
         EntityUid hitscan = default;
@@ -145,7 +145,7 @@ public sealed class HitscanDiffractionTest : InteractionTest
     public async Task TestBeamCountConfiguration()
     {
         // Spawn hitscan entity + diffract comp with custom beam count
-        await SpawnTarget("BaseStructure");
+        await SpawnTarget("WallSolid");
         await Server.WaitPost(() => SEntMan.AddComponent<HitscanDiffractTargetComponent>(STarget!.Value));
 
         EntityUid hitscan = default;
@@ -184,7 +184,7 @@ public sealed class HitscanDiffractionTest : InteractionTest
     public async Task TestCustomDiffractedPrototype()
     {
         // Spawn hitscan entity with non-default diffracted beam proto
-        await SpawnTarget("BaseStructure");
+        await SpawnTarget("WallSolid");
         await Server.WaitPost(() => SEntMan.AddComponent<HitscanDiffractTargetComponent>(STarget!.Value));
 
         EntityUid hitscan = default;
@@ -226,7 +226,7 @@ public sealed class HitscanDiffractionTest : InteractionTest
     [TestOf(typeof(HitscanDiffractComponent))]
     public async Task TestDiffractionSafeguard()
     {
-        await SpawnTarget("BaseStructure");
+        await SpawnTarget("WallSolid");
         await Server.WaitPost(() => SEntMan.AddComponent<HitscanDiffractTargetComponent>(STarget!.Value));
 
         EntityUid hitscan = default;
