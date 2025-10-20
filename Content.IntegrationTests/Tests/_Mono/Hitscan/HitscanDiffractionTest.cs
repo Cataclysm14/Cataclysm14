@@ -1,3 +1,4 @@
+// SPDX-FileCopyrightText: 2025 ark1368
 // SPDX-FileCopyrightText: 2025 bitcrushing
 //
 // SPDX-License-Identifier: MPL-2.0
