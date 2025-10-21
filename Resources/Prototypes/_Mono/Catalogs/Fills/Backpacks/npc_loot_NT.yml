@@ -11,7 +11,7 @@
     state: NTsec-base
   - type: SpawnItemsOnUse
     items:
-    #Weapons/ammo
+    #Weapons/ammo/gears
     - id: WeaponPistolMk58
       prob: 0.6
     - id: Magazine45_ACPPistolHighCapacityFMJ
@@ -19,6 +19,11 @@
       amount: 2
     - id: Magazine45_ACPPistolFMJ
       prob: 0.6
+      amount: 2
+    - id: WeaponSubMachineGunVectorNtsfHclm
+      prob: 0.2
+    - id: Magazine45_magnumPistolHighCapacityFMJ
+      prob: 0.2
       amount: 2
     - id: WeaponRifleNtsfLtr
       prob: 0.05
@@ -32,6 +37,10 @@
       amount: 2
     - id: AmmoBox556x45mmFMJ
       prob: 0.1
+    - id: MedkitCombatFilled
+      prob: 0.05
+    - id: MedkitFilled
+      prob: 0.5
     #Clothings
     - id: ClothingOuterVestWeb
       prob: 0.05
@@ -50,6 +59,11 @@
       prob: 0.33
     - id: NTHandyFlag
       prob: 0.33
+    #Blueprint
+    - id: BlueprintWeaponSubMachineGunVectorNtsfHclm
+      prob: 0.025
+    - id: WeaponRifleNtsfLtr
+      prob: 0.025
     sound:
       path: /Audio/Machines/windoor_open.ogg
 
@@ -66,7 +80,7 @@
     state: NTnavy-base
   - type: SpawnItemsOnUse
     items:
-    #Weapons/ammo
+    #Weapons/ammo/gears
     - id: WeaponPistolN1984
       prob: 0.4
     - id: Magazine45_magnumPistolPlasteelAP
@@ -97,6 +111,15 @@
       prob: 0.33
     - id: NTHandyFlag
       prob: 0.33
+    #Cash
+    - id: SpaceCash5000
+    - id: SpaceCash10000
+      prob: 0.5
+    #Blueprint
+    - id: BlueprintWeaponSubMachineGunVectorNtsfHclm
+      prob: 0.1
+    - id: WeaponRifleNtsfLtr
+      prob: 0.1
     sound:
       path: /Audio/Machines/windoor_open.ogg
 
@@ -113,19 +136,26 @@
     state: NTSpecOps-base
   - type: SpawnItemsOnUse
     items:
-    #Weapons/ammo
+    #Weapons/ammo/gears
     - id: WeaponRifleNtsfLtr
-      prob: 0.4
+      prob: 0.5
     - id: Magazine556x45mmPlasteelAP
-      prob: 0.4
+      prob: 0.5
       amount: 2
     - id: AmmoBox556x45mmPlasteelAP
-      prob: 0.4
+      prob: 0.5
+    - id: WeaponSubMachineGunVectorNtsfHclm
+      prob: 0.5
+    - id: Magazine45_magnumPistolHighCapacityFMJ
+      prob: 0.5
+      amount: 2
+    - id: MedkitCombatFilled
+      prob: 0.5
     #Clothings
     - id: ClothingOuterVestWeb
-      prob: 0.3
+      prob: 0.4
     - id: ClothingHeadHelmetSwat
-      prob: 0.3
+      prob: 0.4
     - id: ClothingUniformJumpsuitDeathSquad
       prob: 0.4
     - id: ClothingUniformJumpsuitHoSAlt
@@ -137,5 +167,10 @@
       prob: 0.33
     - id: NTHandyFlag
       prob: 0.33
+    #Blueprint
+    - id: BlueprintWeaponSubMachineGunVectorNtsfHclm
+      prob: 0.05
+    - id: WeaponRifleNtsfLtr
+      prob: 0.05
     sound:
       path: /Audio/Machines/windoor_open.ogg
