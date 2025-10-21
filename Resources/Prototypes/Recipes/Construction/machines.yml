@@ -42,7 +42,7 @@
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   icon:
-    sprite: _Mono/Structures/Machines/frames/frame_1x1.rsi
+    sprite: Structures/Machines/parts.rsi
     state: "box_0"
 
 # Switching
