@@ -28,12 +28,12 @@
               value: false
           steps:
             - material: Steel
-              amount: 5
+              amount: 10
               doAfter: 2.5
         - to: destroyedMachineFrame
           steps:
             - material: Steel
-              amount: 5
+              amount: 10
               doAfter: 2.5
 
     - node: missingWires
