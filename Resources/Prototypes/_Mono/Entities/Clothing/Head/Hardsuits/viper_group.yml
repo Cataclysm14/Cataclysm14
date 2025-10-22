@@ -18,7 +18,6 @@
   - type: NightVision
     flashDurationMultiplier: 2
     isEquipment: true
-    color: "#FAA70F"
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000

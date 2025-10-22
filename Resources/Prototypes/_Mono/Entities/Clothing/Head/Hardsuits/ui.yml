@@ -21,7 +21,6 @@
   - type: NightVision
     flashDurationMultiplier: 0.85
     isEquipment: true
-    color: "#AE65BFFF"
   - type: Armor
     modifiers:
       coefficients:
@@ -66,7 +65,6 @@
   - type: NightVision
     flashDurationMultiplier: 0.85
     isEquipment: true
-    color: "#AE65BFFF"
   - type: Armor
     modifiers:
       coefficients:
@@ -100,7 +98,6 @@
   - type: NightVision
     flashDurationMultiplier: 0.85
     isEquipment: true
-    color: "#AE65BFFF"
   - type: Armor
     modifiers:
       coefficients:
@@ -134,7 +131,6 @@
   - type: NightVision
     flashDurationMultiplier: 0.85
     isEquipment: true
-    color: "#AE65BFFF"
   - type: Armor
     modifiers:
       coefficients:
@@ -180,7 +176,6 @@
   - type: NightVision
     flashDurationMultiplier: 0.85
     isEquipment: true
-    color: "#AE65BFFF"
   - type: Armor
     modifiers:
       coefficients:

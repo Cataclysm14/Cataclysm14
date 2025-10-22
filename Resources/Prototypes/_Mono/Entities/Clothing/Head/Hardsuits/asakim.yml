@@ -36,7 +36,6 @@
   - type: NightVision
     flashDurationMultiplier: 0.85
     isEquipment: true
-    color: "#1584e6"
   - type: RadarConsole
     maxRange: 1024
     followEntity: true

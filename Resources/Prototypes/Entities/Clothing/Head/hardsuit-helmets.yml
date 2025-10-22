@@ -411,7 +411,6 @@
   - type: NightVision # Mono - remove light, replace with NVG
     flashDurationMultiplier: 2
     isEquipment: true
-    color: "#34AEEB"
 
 #Head of Security's hardsuit
 - type: entity

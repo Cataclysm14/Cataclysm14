@@ -153,7 +153,6 @@
         Quantity: 20
   - type: NightVision
     isEquipment: false
-    color: "#ae65bf"
     activateSound: null
     deactivateSound: null
   - type: MeleeChemicalInjector

@@ -178,7 +178,6 @@
     action: ActionDragonsBreath
     gunProto: BabyDragonsBreathGun
   - type: NightVision # Goobstation - Nigthvision - Mono
-    color: "#808080"
     activateSound: null
     deactivateSound: null
 

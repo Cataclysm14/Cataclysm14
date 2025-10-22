@@ -217,7 +217,6 @@
   - type: Puller
     needsHands: false
   - type: NightVision # Goobstation - Nigthvision
-    color: "#808080"
     activateSound: null
     deactivateSound: null
 

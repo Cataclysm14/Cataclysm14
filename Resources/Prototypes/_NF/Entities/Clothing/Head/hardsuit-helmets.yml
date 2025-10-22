@@ -187,7 +187,6 @@
   - type: NightVision
     flashDurationMultiplier: 2.75
     isEquipment: true
-    color: "#5e8bac"
 
 - type: entity
   parent: [NFClothingHeadHardsuitWithLightBaseNfsd, ShowMedicalIcons, ShowSecurityIcons]
@@ -212,7 +211,6 @@
   - type: NightVision
     flashDurationMultiplier: 2.75
     isEquipment: true
-    color: "#5e8bac"
   - type: Armor
     modifiers:
       coefficients:
