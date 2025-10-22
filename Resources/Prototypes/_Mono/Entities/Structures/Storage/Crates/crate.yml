@@ -42,3 +42,14 @@
         - SmallMobMask
         layer:
         - MachineLayer
+
+- type: entity
+  parent: [ BaseC3SyndicateContraband, CrateGenericSteel ] # Frontier: Added BaseC3SyndicateContraband
+  id: CrateNanotrasen
+  name: Nanotrasen crate
+  description: A white and blue crate with the Nanotrasen Symbol.
+  components:
+  - type: Icon
+    sprite: _Mono/Structures/Storage/Crates/nanotrasen.rsi
+  - type: Sprite
+    sprite: _Mono/Structures/Storage/Crates/nanotrasen.rsi
