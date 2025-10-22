@@ -238,7 +238,7 @@
 #Pre-corpowar 45 magnum rare vector 
 - type: entity
   name: NTSF-HCLM-45 (.45 magnum)
-  parent: [BaseWeaponSubMachineGun, BaseGunWieldable, BaseC2Contraband] # Frontier: added BaseC2Contraband
+  parent: [BaseWeaponSubMachineGun, BaseGunWieldable, BaseC2ContrabandUnredeemable]
   id: WeaponSubMachineGunVectorNtsfHclm
   description: The NTSF Heavy Caliber Light Machinegun. A very high-quality heavy SMG chambered in .45 magnum for use for the Nano Trasen Security Force and NT spec-ops.
   components:
