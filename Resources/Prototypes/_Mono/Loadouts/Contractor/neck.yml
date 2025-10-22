@@ -5,12 +5,12 @@
 
 - type: loadout
   id: ContractorClothingNeckMantleBH
-  price: 1000
+  price: 0
   equipment:
     neck: ClothingNeckMantleBH
 
 - type: loadout
   id: ContractorClothingNeckCloakSanabi
-  price: 2200
+  price: 0
   equipment:
     neck: ClothingNeckCloakSanabi

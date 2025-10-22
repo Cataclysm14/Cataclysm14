@@ -22,7 +22,7 @@
 #T3
 - type: loadout
   id: MercenaryClothingMaskDrakeIndustriesWatchdog
-  price: 1000
+  price: 0 # Mono
   storage:
     back:
     - ClothingMaskDrakeIndustriesWatchdog

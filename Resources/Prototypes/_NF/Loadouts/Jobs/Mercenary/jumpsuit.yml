@@ -37,7 +37,7 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT3
-  price: 650
+  price: 0 # Mono
   equipment:
     jumpsuit: ClothingUniformJumpsuitMilitaryTurtleneckMercenary
 
@@ -46,7 +46,7 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT3
-  price: 650
+  price: 0 # Mono
   equipment:
     jumpsuit: ClothingUniformJumpsuitMilitaryTurtleneckMercenaryMedic
 
@@ -55,7 +55,7 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT3
-  price: 650
+  price: 0 # Mono
   equipment:
     jumpsuit: ClothingUniformJumpsuitMilitaryTurtleneckMercenaryCaptain
 
@@ -64,7 +64,7 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT3
-  price: 650
+  price: 0 # Mono
   equipment:
     jumpsuit: ClothingUniformJumpsuitMilitaryTurtleneckBlueMercenary
 
@@ -73,7 +73,7 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT3
-  price: 650
+  price: 0 # Mono
   equipment:
     jumpsuit: ClothingUniformJumpsuitMilitaryTurtleneckBlueMercenaryMedic
 
@@ -82,7 +82,7 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT3
-  price: 650
+  price: 0 # Mono
   equipment:
     jumpsuit: ClothingUniformJumpsuitMilitaryTurtleneckBlueMercenaryCaptain
 
@@ -91,7 +91,7 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT3
-  price: 650
+  price: 0 # Mono
   equipment:
     jumpsuit: ClothingUniformDrakeIndustriesWatchdog
 
@@ -100,6 +100,6 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT3
-  price: 1250
+  price: 0 # Mono
   equipment:
     jumpsuit: ClothingUniformJumpsuitMilitaryPilot

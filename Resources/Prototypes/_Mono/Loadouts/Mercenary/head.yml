@@ -4,6 +4,6 @@
 
 - type: loadout
   id: MercenaryClothingHeadHatBH
-  price: 500
+  price: 0
   equipment:
     head: ClothingHeadHatBH
