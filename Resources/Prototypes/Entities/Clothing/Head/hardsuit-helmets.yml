@@ -831,7 +831,6 @@
   # WD EDIT START
   - type: ThermalVision
     isEquipment: true
-    color: "#98EEFB"
     lightRadius: 15
   # WD EDIT END
 

@@ -80,7 +80,6 @@
     tags:
     - Meat
   - type: ThermalVision
-    color: "#ae65bf"
     lightRadius: 15
     activateSound: null
     deactivateSound: null

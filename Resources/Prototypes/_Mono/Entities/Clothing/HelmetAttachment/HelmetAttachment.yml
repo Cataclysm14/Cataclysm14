@@ -114,6 +114,5 @@
     pulseTime: 4
     isEquipment: true
     toggleAction: PulseThermalVision
-    color: "#888888"
   - type: IdentityBlocker
     coverage: EYES

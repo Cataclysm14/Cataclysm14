@@ -51,7 +51,6 @@
     flashDurationMultiplier: 2
     pulseTime: 4
     isEquipment: true
-    color: "#ED7B2D"
     toggleAction: PulseThermalVision
   - type: ShowHealthBars
   - type: PressureProtection
