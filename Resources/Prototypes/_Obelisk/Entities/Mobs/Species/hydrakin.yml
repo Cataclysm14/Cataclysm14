@@ -56,6 +56,8 @@
       Unsexed: MaleReptilian
   - type: TypingIndicator
     proto: robot
+  - type: HydrakinHeatBuildup
+    buildup: 2
 
 - type: entity
   parent: BaseSpeciesDummy
