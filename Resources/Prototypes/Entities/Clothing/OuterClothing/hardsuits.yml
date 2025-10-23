@@ -1261,7 +1261,7 @@
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   # ArmorPlate Example
   - type: ArmorPlate
-    StaminaDamageMultiplier: 0.0 # Plasteel/Admeme - DO NOT INCLUDE
+    staminaDamageMultiplier: 0.0 # Plasteel/Admeme - DO NOT INCLUDE
   - type: Storage
     maxItemSize: Normal
     grid:
