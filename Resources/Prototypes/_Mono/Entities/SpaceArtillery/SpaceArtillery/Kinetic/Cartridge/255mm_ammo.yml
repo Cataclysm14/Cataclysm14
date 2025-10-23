@@ -1,0 +1,28 @@
+# SPDX-FileCopyrightText: 2025 Onezero0
+# SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 significant harassment
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  id: 255mmCartridge
+  name: 255mm shell
+  description: A chemically-propelled shell for Bofors 255mm cannons.
+  parent: BaseGrenade
+  components:
+  - type: Tag
+    tags:
+    - 255mmCartridge
+  - type: Item
+    size: Huge
+  - type: CartridgeAmmo
+    proto: ShipBoforsProjectile
+    deleteOnSpawn: true
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/150mmtarnyx.rsi
+    layers:
+    - state: 150mm_standard
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals

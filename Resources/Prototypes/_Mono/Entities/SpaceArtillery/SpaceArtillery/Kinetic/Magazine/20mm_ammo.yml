@@ -1,0 +1,54 @@
+- type: entity
+  id: Magazine20mmPiercing
+  name: "20x124mm AP ammo drum"
+  parent: [BaseItem, RecyclableItemSteelTiny]
+  components:
+  - type: Tag
+    tags:
+    - Magazine20mm
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    proto: 20mmCartridge
+    capacity: 1500
+    mayTransfer: true
+    whitelist:
+      tags:
+      - Cartridge20mm
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/SmartGuns/magazine_smart_gun.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: 20mmCartridge
+  name: cartridge (20x124mm AP)
+  parent: [ BaseCartridge, BaseC1Contraband ]
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge20mm
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: 20mmBulletArmorPiercing
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
