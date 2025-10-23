@@ -15,7 +15,6 @@
     state: icon
   - type: Item
     sprite: _Mono/Clothing/ArmorPlate/armor_light.rsi
-    state: icon
     size: Normal
 
 # Ceramic
@@ -31,7 +30,6 @@
     state: icon
   - type: Item
     sprite: _Mono/Clothing/ArmorPlate/armor_medium.rsi
-    state: icon
     size: Normal
 
 # Steel
@@ -47,7 +45,6 @@
     state: icon
   - type: Item
     sprite: _Mono/Clothing/ArmorPlate/armor_tactical.rsi
-    state: icon
     size: Normal
 
 # Admeme
@@ -63,5 +60,4 @@
     state: icon
   - type: Item
     sprite: _Mono/Clothing/ArmorPlate/armor_plasteel.rsi
-    state: icon
     size: Normal
