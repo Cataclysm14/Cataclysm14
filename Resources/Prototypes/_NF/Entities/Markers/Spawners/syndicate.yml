@@ -58,6 +58,7 @@
         - CrateTradeContrabandSecure5
         - CrateTradeContrabandSecure4
         - CrateTradeContrabandSecure3
+        - CrateNanotrasenLootFilledT1 # Mono
       rarePrototypes:
         - CrateNanotrasenLootFilledT1 # Mono
         - CrateNanotrasenLootFilledT1 # Mono
