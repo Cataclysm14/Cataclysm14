@@ -1,0 +1,89 @@
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBoxCyrexa
+  name: 220mm shell box
+  components:
+  - type: StorageFill
+    contents:
+    - id: 220mmCartridge
+      amount: 24
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBoxBofors
+  name: 255mm shell box
+  components:
+  - type: StorageFill
+    contents:
+    - id: 255mmCartridge
+      amount: 8
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBoxKargil
+  name: 203mm shell box
+  components:
+  - type: StorageFill
+    contents:
+    - id: 203mmCartridge
+      amount: 12
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBox150mm
+  name: 150mm shell box
+  components:
+  - type: StorageFill
+    contents:
+    - id: MagazineNovaliteC1
+      amount: 6
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBox20mm
+  name: 20mm drum box
+  components:
+  - type: StorageFill
+    contents:
+    - id: Magazine20mmPiercing
+      amount: 3
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBox30mm
+  name: 30mm drum box
+  components:
+  - type: StorageFill
+    contents:
+    - id: Magazine30mm
+      amount: 2
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBox57mm
+  name: 57mm drum box
+  components:
+  - type: StorageFill
+    contents:
+    - id: Magazine57mm
+      amount: 2
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBox90mm
+  name: 90mm drum box
+  components:
+  - type: StorageFill
+    contents:
+    - id: Magazine90mm
+      amount: 2
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBox140mm
+  name: 140mm drum box
+  components:
+  - type: StorageFill
+    contents:
+    - id: Magazine140mm
+      amount: 1
