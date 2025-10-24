@@ -298,7 +298,7 @@
     sprite: _Goobstation/Objects/Devices/makeshift_id.rsi
     state: icon
   - type: PresetIdCard
-    job: GreyTider
+    job: Contractor
   - type: Construction
     graph: MakeshiftIDCardGraph
     node: final
