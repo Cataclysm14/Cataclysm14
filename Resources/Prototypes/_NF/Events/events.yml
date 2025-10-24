@@ -141,16 +141,16 @@
 #     duration: 1
 #   - type: BluespaceLockerRule
 
-- type: entity
-  id: BreakerFlip
-  parent: BaseGameRule
-  components:
-  - type: StationEvent
-    weight: 7
-    earliestStart: 15 # Frontier
-    duration: 1
-    minimumPlayers: 15
-  - type: BreakerFlipRule
+#- type: entity
+#  id: BreakerFlip
+#  parent: BaseGameRule
+#  components:
+#  - type: StationEvent
+#    weight: 7
+#    earliestStart: 15 # Frontier
+#    duration: 1
+#    minimumPlayers: 15
+#  - type: BreakerFlipRule
 
 # - type: entity
 #   id: BureaucraticError
@@ -351,22 +351,22 @@
 #     duration: 240
 #   - type: KudzuGrowthRule
 
-- type: entity
-  id: PowerGridCheck
-  parent: BaseStationEventShortDelay
-  components:
-  - type: StationEvent
-    weight: 5
-    earliestStart: 15 # Frontier
-    startAnnouncement: station-event-power-grid-check-nf-start-announcement # Frontier: add nf-
-    endAnnouncement: station-event-power-grid-check-nf-end-announcement # Frontier: add nf-
-    startAudio:
-      path: /Audio/Announcements/power_off.ogg
-      params:
-        volume: -4
-    duration: 60
-    maxDuration: 120
-  - type: PowerGridCheckRule
+#- type: entity
+#  id: PowerGridCheck
+#  parent: BaseStationEventShortDelay
+#  components:
+#  - type: StationEvent
+#    weight: 5
+#    earliestStart: 15 # Frontier
+#    startAnnouncement: station-event-power-grid-check-nf-start-announcement # Frontier: add nf-
+#    endAnnouncement: station-event-power-grid-check-nf-end-announcement # Frontier: add nf-
+#    startAudio:
+#      path: /Audio/Announcements/power_off.ogg
+#      params:
+#        volume: -4
+#    duration: 60
+#    maxDuration: 120
+#  - type: PowerGridCheckRule
 
 - type: entity
   parent: BaseGameRule
