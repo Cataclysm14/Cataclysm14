@@ -1260,9 +1260,8 @@
       head: ClothingHeadHelmetHardsuitDeathsquad
       helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
-  # ArmorPlate Example
-  - type: ArmorPlate
-    staminaDamageMultiplier: 0.0 # Plasteel/Admeme - DO NOT INCLUDE
+  # ArmorPlateHolder Example
+  - type: ArmorPlateHolder
   - type: Storage
     maxItemSize: Normal
     grid:
@@ -1284,7 +1283,7 @@
   - type: StorageFill
     contents:
     - id: ArmorPlatePlasteel
-  # ArmorPlate Example
+  # ArmorPlateHolder Example
 
 #CBURN Hardsuit
 - type: entity

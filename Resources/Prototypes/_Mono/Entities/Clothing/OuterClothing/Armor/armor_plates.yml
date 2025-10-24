@@ -1,8 +1,3 @@
-# SPDX-FileCopyrightText: 2025 Ark
-# SPDX-FileCopyrightText: 2025 ark1368
-#
-# SPDX-License-Identifier: MPL-2.0
-
 # Kevlar
 - type: entity
   parent: BaseItem
@@ -17,6 +12,24 @@
   - type: Item
     sprite: _Mono/Clothing/ArmorPlate/armor_light.rsi
     size: Normal
+  - type: ArmorPlateItem
+    maxDurability: 25
+    walkSpeedModifier: 0.94
+    sprintSpeedModifier: 0.94
+    staminaDamageMultiplier: 1.0
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: ArmorThickness
+    thickness: 5
+    canBePierced: true
 
 # Ceramic
 - type: entity
@@ -32,6 +45,24 @@
   - type: Item
     sprite: _Mono/Clothing/ArmorPlate/armor_medium.rsi
     size: Normal
+  - type: ArmorPlateItem
+    maxDurability: 50
+    walkSpeedModifier: 0.92
+    sprintSpeedModifier: 0.92
+    staminaDamageMultiplier: 1.0
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: ArmorThickness
+    thickness: 8
+    canBePierced: true
 
 # Steel
 - type: entity
@@ -47,6 +78,24 @@
   - type: Item
     sprite: _Mono/Clothing/ArmorPlate/armor_tactical.rsi
     size: Normal
+  - type: ArmorPlateItem
+    maxDurability: 75
+    walkSpeedModifier: 0.90
+    sprintSpeedModifier: 0.90
+    staminaDamageMultiplier: 1.0
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 75
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: ArmorThickness
+    thickness: 12
+    canBePierced: true
 
 # Admeme
 - type: entity
@@ -62,3 +111,21 @@
   - type: Item
     sprite: _Mono/Clothing/ArmorPlate/armor_plasteel.rsi
     size: Normal
+  - type: ArmorPlateItem
+    maxDurability: 100
+    walkSpeedModifier: 1.0
+    sprintSpeedModifier: 1.0
+    staminaDamageMultiplier: 0.0
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: ArmorThickness
+    thickness: 20
+    canBePierced: true
