@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 10/24/2025 02:12:17
-  entityCount: 1781
+  time: 10/24/2025 02:34:02
+  entityCount: 1764
 maps: []
 grids:
 - 1
@@ -1187,7 +1187,7 @@ entities:
       pos: 5.5,2.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -20437.443
+      secondsUntilStateChange: -20668.44
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1200,7 +1200,7 @@ entities:
       pos: 10.5,7.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -16031.227
+      secondsUntilStateChange: -16262.222
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1211,7 +1211,7 @@ entities:
       pos: 11.5,7.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -16030.927
+      secondsUntilStateChange: -16261.922
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1266,7 +1266,7 @@ entities:
       pos: 8.5,1.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -26089.371
+      secondsUntilStateChange: -26320.367
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1290,7 +1290,7 @@ entities:
       pos: -1.5,2.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -12078.985
+      secondsUntilStateChange: -12309.98
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1310,7 +1310,7 @@ entities:
       pos: -8.5,0.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -17672.502
+      secondsUntilStateChange: -17903.498
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -10140,153 +10140,6 @@ entities:
     - type: Transform
       pos: 1.5,3.5
       parent: 1
-- proto: SurveillanceCameraAssembly
-  entities:
-  - uid: 1501
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -5.5,16.5
-      parent: 1
-  - uid: 1507
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 5.5,17.5
-      parent: 1
-- proto: SurveillanceCameraRouterScience
-  entities:
-  - uid: 1509
-    components:
-    - type: Transform
-      pos: 6.5,6.5
-      parent: 1
-- proto: SurveillanceCameraScience
-  entities:
-  - uid: 1016
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 6.5,16.5
-      parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-  - uid: 1330
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 6.5,6.5
-      parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-  - uid: 1485
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 0.5,26.5
-      parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-  - uid: 1497
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 9.5,12.5
-      parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-  - uid: 1498
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -11.5,12.5
-      parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-  - uid: 1499
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -5.5,21.5
-      parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-  - uid: 1500
-    components:
-    - type: Transform
-      pos: 6.5,20.5
-      parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-  - uid: 1502
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 7.5,0.5
-      parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-  - uid: 1503
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 4.5,-2.5
-      parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-  - uid: 1504
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -2.5,-2.5
-      parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-  - uid: 1505
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -11.5,6.5
-      parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-  - uid: 1506
-    components:
-    - type: Transform
-      pos: -4.5,5.5
-      parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-  - uid: 1508
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 9.5,6.5
-      parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-  - uid: 1775
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -4.5,17.5
-      parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
 - proto: SurveillanceCameraWirelessRouterConstructed
   entities:
   - uid: 1510
