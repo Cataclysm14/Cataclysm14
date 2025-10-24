@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 10/24/2025 02:54:35
-  entityCount: 1763
+  time: 10/24/2025 03:13:09
+  entityCount: 1762
 maps: []
 grids:
 - 1
@@ -1177,7 +1177,7 @@ entities:
       pos: 9.5,17.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -267.09286
+      secondsUntilStateChange: -340.17426
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1193,7 +1193,7 @@ entities:
       pos: 5.5,2.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -20997.002
+      secondsUntilStateChange: -21070.084
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1206,7 +1206,7 @@ entities:
       pos: 10.5,7.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -16590.783
+      secondsUntilStateChange: -16663.865
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1217,7 +1217,7 @@ entities:
       pos: 11.5,7.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -16590.484
+      secondsUntilStateChange: -16663.566
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1272,7 +1272,7 @@ entities:
       pos: 8.5,1.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -26648.93
+      secondsUntilStateChange: -26722.012
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1296,7 +1296,7 @@ entities:
       pos: -1.5,2.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -12638.543
+      secondsUntilStateChange: -12711.624
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1316,7 +1316,7 @@ entities:
       pos: -8.5,0.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -18232.06
+      secondsUntilStateChange: -18305.143
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -10430,20 +10430,6 @@ entities:
     - type: Transform
       pos: 11.5,2.5
       parent: 1
-- proto: WallmountTelescreen
-  entities:
-  - uid: 1554
-    components:
-    - type: Transform
-      pos: -10.5,10.5
-      parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: Battery
-      startingCharge: 0
 - proto: WallShuttle
   entities:
   - uid: 1555
