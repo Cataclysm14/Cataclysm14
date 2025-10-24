@@ -20,7 +20,7 @@
     # - id: AnomalySpawn
     # - id: BluespaceArtifact
     # - id: BluespaceLocker
-    - id: BreakerFlip
+    # - id: BreakerFlip
     # - id: BureaucraticError
     # - id: ClericalError
     - id: CockroachMigration
@@ -31,7 +31,7 @@
     # - id: MassHallucinations # Frontier
     # - id: MimicVendorRule
     - id: MouseMigration
-    - id: PowerGridCheck
+    # - id: PowerGridCheck
     - id: RandomSentience
     # - id: SlimesSpawn
     - id: SolarFlare
