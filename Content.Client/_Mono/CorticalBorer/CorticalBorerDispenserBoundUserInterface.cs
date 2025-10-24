@@ -27,7 +27,7 @@ namespace Content.Client._Mono.CorticalBorer
             _window.SetInfoFromEntity(EntMan, Owner);
 
             // Setup static button actions.
-            _window.AmountGrid.OnButtonPressed += s => SendMessage(new CorticalBorerDispenserSetInjectAmountMessage(s));
+            _window.AmountGrid.OnButtonPressed += s => SendMessage(new CorticalBorerDispenserSetInjectAmountMessage(int.Parse(s)));
 
             _window.OnDispenseReagentButtonPressed += id => SendMessage(new CorticalBorerDispenserInjectMessage(id));
         }

@@ -3,6 +3,7 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using Content.Shared._Starlight.CollectiveMind;
 using Content.Shared.Alert;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
@@ -95,6 +96,9 @@ public sealed partial class CorticalBorerComponent : Component
 
     [DataField]
     public ProtoId<AlertPrototype> ChemicalAlert = "Chemicals";
+
+    [DataField]
+    public ProtoId<CollectiveMindPrototype> HivemindChannel = "CorticalBorer";
 
     public readonly List<EntProtoId> InitialCorticalBorerActions = new()
     {
