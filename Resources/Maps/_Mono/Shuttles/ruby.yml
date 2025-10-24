@@ -1,45 +1,11 @@
-# SPDX-FileCopyrightText: 2021 AJCM-git
-# SPDX-FileCopyrightText: 2021 Paul Ritter
-# SPDX-FileCopyrightText: 2021 wrexbe
-# SPDX-FileCopyrightText: 2022 20kdc
-# SPDX-FileCopyrightText: 2022 Kara
-# SPDX-FileCopyrightText: 2022 LittleBuilderJane
-# SPDX-FileCopyrightText: 2022 Peptide90
-# SPDX-FileCopyrightText: 2022 metalgearsloth
-# SPDX-FileCopyrightText: 2022 mirrorcult
-# SPDX-FileCopyrightText: 2023 Alexander Evgrashin
-# SPDX-FileCopyrightText: 2023 AndresE55
-# SPDX-FileCopyrightText: 2023 Banshee
-# SPDX-FileCopyrightText: 2023 Cheackraze
-# SPDX-FileCopyrightText: 2023 Emisse
-# SPDX-FileCopyrightText: 2023 Kesiath
-# SPDX-FileCopyrightText: 2023 Mnemosyne
-# SPDX-FileCopyrightText: 2023 RealIHaveANameOfficial
-# SPDX-FileCopyrightText: 2024 Dvir
-# SPDX-FileCopyrightText: 2024 ErhardSteinhauer
-# SPDX-FileCopyrightText: 2024 Gotimanga
-# SPDX-FileCopyrightText: 2024 Mr. Samuel
-# SPDX-FileCopyrightText: 2024 Salvantrix
-# SPDX-FileCopyrightText: 2024 TsjipTsjip
-# SPDX-FileCopyrightText: 2024 Whatstone
-# SPDX-FileCopyrightText: 2025 Alice "Arimah" Heurlin
-# SPDX-FileCopyrightText: 2025 Ark
-# SPDX-FileCopyrightText: 2025 Checkraze
-# SPDX-FileCopyrightText: 2025 Jakumba
-# SPDX-FileCopyrightText: 2025 Redrover1760
-# SPDX-FileCopyrightText: 2025 bluebrouny
-# SPDX-FileCopyrightText: 2025 starch
-#
-# SPDX-License-Identifier: MPL-2.0
-
 meta:
   format: 7
   category: Grid
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 10/24/2025 02:34:02
-  entityCount: 1764
+  time: 10/24/2025 02:54:35
+  entityCount: 1763
 maps: []
 grids:
 - 1
@@ -1210,6 +1176,12 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 9.5,17.5
       parent: 1
+    - type: Door
+      secondsUntilStateChange: -267.09286
+      state: Opening
+    - type: DeviceLinkSource
+      lastSignals:
+        DoorStatus: True
   - uid: 22
     components:
     - type: Transform
@@ -1221,7 +1193,7 @@ entities:
       pos: 5.5,2.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -20668.44
+      secondsUntilStateChange: -20997.002
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1234,7 +1206,7 @@ entities:
       pos: 10.5,7.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -16262.222
+      secondsUntilStateChange: -16590.783
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1245,7 +1217,7 @@ entities:
       pos: 11.5,7.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -16261.922
+      secondsUntilStateChange: -16590.484
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1300,7 +1272,7 @@ entities:
       pos: 8.5,1.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -26320.367
+      secondsUntilStateChange: -26648.93
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1324,7 +1296,7 @@ entities:
       pos: -1.5,2.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -12309.98
+      secondsUntilStateChange: -12638.543
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1344,7 +1316,7 @@ entities:
       pos: -8.5,0.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -17903.498
+      secondsUntilStateChange: -18232.06
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8854,7 +8826,7 @@ entities:
       parent: 1
 - proto: OxygenCanister
   entities:
-  - uid: 1309
+  - uid: 163
     components:
     - type: Transform
       anchored: True
@@ -9555,8 +9527,7 @@ entities:
   - uid: 1421
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -3.6479847,-5.4693146
+      pos: -3.496372,-5.39251
       parent: 1
 - proto: ServiceTechFab
   entities:
@@ -10174,16 +10145,6 @@ entities:
     - type: Transform
       pos: 1.5,3.5
       parent: 1
-- proto: SurveillanceCameraWirelessRouterConstructed
-  entities:
-  - uid: 1510
-    components:
-    - type: Transform
-      pos: -4.5,5.5
-      parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
 - proto: TablePlasmaGlass
   entities:
   - uid: 1511
