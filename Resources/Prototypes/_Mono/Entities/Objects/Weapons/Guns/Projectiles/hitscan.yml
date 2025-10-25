@@ -28,4 +28,3 @@
     impactFlash:
       sprite: _Goobstation/Objects/Weapons/Guns/Projectiles/small_laser.rsi
       state: impact_beam_light_pulse
-
