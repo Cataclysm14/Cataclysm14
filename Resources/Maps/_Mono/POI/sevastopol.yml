@@ -10800,19 +10800,6 @@ entities:
     - type: Transform
       pos: 25.5,-8.5
       parent: 1
-  - uid: 2847
-    components:
-    - type: Transform
-      pos: 13.5,-20.5
-      parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 9
-      - 8
-      - 13
-      - 14
 - proto: FirelockEdge
   entities:
   - uid: 1618
