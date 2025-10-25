@@ -568,6 +568,66 @@ entities:
       radarColor: '#00DEFEFF'
 - proto: 150mmApShell
   entities:
+  - uid: 1547
+    components:
+    - type: Transform
+      pos: 11.547282,-14.400612
+      parent: 1
+  - uid: 1548
+    components:
+    - type: Transform
+      pos: 11.547282,-14.400612
+      parent: 1
+  - uid: 1549
+    components:
+    - type: Transform
+      pos: 11.547282,-14.400612
+      parent: 1
+  - uid: 1550
+    components:
+    - type: Transform
+      pos: 11.547282,-14.400612
+      parent: 1
+  - uid: 1551
+    components:
+    - type: Transform
+      pos: 11.547282,-14.400612
+      parent: 1
+  - uid: 1552
+    components:
+    - type: Transform
+      pos: 11.547282,-14.400612
+      parent: 1
+  - uid: 1553
+    components:
+    - type: Transform
+      pos: -10.446652,-14.427736
+      parent: 1
+  - uid: 1554
+    components:
+    - type: Transform
+      pos: -10.446652,-14.427736
+      parent: 1
+  - uid: 1555
+    components:
+    - type: Transform
+      pos: -10.446652,-14.427736
+      parent: 1
+  - uid: 1556
+    components:
+    - type: Transform
+      pos: -10.446652,-14.427736
+      parent: 1
+  - uid: 1557
+    components:
+    - type: Transform
+      pos: -10.446652,-14.427736
+      parent: 1
+  - uid: 1558
+    components:
+    - type: Transform
+      pos: -10.446652,-14.427736
+      parent: 1
 - proto: AirAlarm
   entities:
   - uid: 1031
@@ -885,6 +945,8 @@ entities:
 - proto: APCBasic
   entities:
   - uid: 103
+    components:
+    - type: Transform
       rot: -1.5707963267948966 rad
       pos: 1.5,-1.5
       parent: 1
