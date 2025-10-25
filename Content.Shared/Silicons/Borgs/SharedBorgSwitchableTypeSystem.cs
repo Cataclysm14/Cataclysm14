@@ -52,6 +52,7 @@ public abstract class SharedBorgSwitchableTypeSystem : EntitySystem
     private void OnMapInit(Entity<BorgSwitchableTypeComponent> ent, ref MapInitEvent args)
     {
         _actionsSystem.AddAction(ent, ref ent.Comp.SelectTypeAction, ActionId);
+        EnsureComp<BorgSwitchableSubtypeComponent>(ent.Owner); // Mono - Temp fix for borg sprites
         Dirty(ent);
 
         if (ent.Comp.SelectedBorgType != null &&

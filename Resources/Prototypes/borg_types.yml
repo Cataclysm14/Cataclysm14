@@ -163,6 +163,7 @@
   - BorgModuleTool # Mono
   - BorgModuleTreatment
   - BorgModuleSurgery # Mono
+  - BorgModuleDefibrillator # Mono
 
   radioChannels:
   - Science
