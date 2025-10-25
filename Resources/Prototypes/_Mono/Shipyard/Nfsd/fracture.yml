@@ -7,7 +7,7 @@
   id: Fracture
   parent: BaseVesselAntag
   name: TSF-SKR Fracture
-  description: A beefed up hull similar in signature to the Legionnaire. Carries weapons suitable for hunting and disabling ships quite larger than it. Does not come with ammo for 150mm TARNYXs.
+  description: A beefed up hull similar in signature to the Legionnaire. It sports two CYREXAS and manually reloaded 150mm TOVEK EMP cannons.
   price: 108200
   category: Medium
   group: Security
