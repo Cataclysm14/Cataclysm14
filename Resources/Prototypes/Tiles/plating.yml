@@ -154,4 +154,4 @@
   id: LatticeCornerSW
   parent: Lattice
   name: tiles-latticecornerSW
-  sprite: /Textures/_Mono/Tiles/lattice/sW.png
+  sprite: /Textures/_Mono/Tiles/lattice/sw.png
