@@ -236,7 +236,7 @@
 - type: entity
   parent: PirateIDCard
   id: PirateNFIDCard
-  name: ASR insurgent ID card
+  name: PDV guardsman ID card
   components:
   - type: PresetIdCard
     job: Pirate
@@ -251,7 +251,7 @@
 - type: entity
   parent: PirateNFIDCard
   id: PirateCaptainNFIDCard
-  name: ASR cell commander ID card
+  name: PDV battalion commander ID card
   components:
   - type: PresetIdCard
     job: PirateCaptain
@@ -264,7 +264,7 @@
 - type: entity
   parent: PirateNFIDCard
   id: PirateFirstMateNFIDCard
-  name: ASR agent ID card
+  name: PDV knight ID card
   components:
   - type: PresetIdCard
     job: PirateFirstMate

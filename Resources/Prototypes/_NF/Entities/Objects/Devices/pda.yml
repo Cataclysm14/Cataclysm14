@@ -392,7 +392,7 @@
 - type: entity
   parent: PiratePDA
   id: PirateNFPDA
-  name: ASR insurgent PDA
+  name: PDV guardsman PDA
   components:
   - type: Pda
     id: PirateNFIDCard
@@ -410,7 +410,7 @@
 - type: entity
   parent: PiratePDA
   id: PirateCaptainNFPDA
-  name: ASR cell commander PDA
+  name: PDV battalion commander PDA
   components:
   - type: Pda
     id: PirateCaptainNFIDCard
@@ -428,7 +428,7 @@
 - type: entity
   parent: PiratePDA
   id: PirateFirstMateNFPDA
-  name: ASR agent PDA
+  name: PDV knight PDA
   components:
   - type: Pda
     id: PirateFirstMateNFIDCard

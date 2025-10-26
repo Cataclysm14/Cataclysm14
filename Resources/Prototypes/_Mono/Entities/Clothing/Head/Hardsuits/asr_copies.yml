@@ -6,7 +6,7 @@
   parent: ClothingHeadHelmetHardsuitSyndie
   id: ClothingHeadHelmetHardsuitAshen
   name: ASR CV-32 combat tacsuit helmet
-  description: A combat tacsuit designed in the Ashen Republic.
+  description: A combat tacsuit designed in the Phaethon Dynasty.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/Head/Hardsuits/syndicate.rsi
