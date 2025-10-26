@@ -9,7 +9,7 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-unshaded-5
+    - state: mag-unshaded-4
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
   - type: Item
@@ -23,28 +23,29 @@
     - suitStorage
   - type: Gun
     fireRate: .5
+    projectileSpeed: 200
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/ship_perforator.ogg
   - type: MagazineVisuals
     magState: mag
-    steps: 6
+    steps: 5
     zeroVisible: true
   - type: Battery
     maxCharge: 1000
     startingCharge: 1000
   - type: BatterySelfRecharger
     autoRechargePause: true
-    autoRechargePauseTime: 45
+    autoRechargePauseTime: 30
     autoRecharge: true
     autoRechargeRate: 250
-  - type: HitscanBatteryAmmoProvider
+  - type: ProjectileBatteryAmmoProvider
     proto: HeavyPulse
     fireCost: 250
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: HeavyPulse
       fireCost: 250
-    - proto: ExpHeavyPulse
+    - proto: HeavyPulseExp
       fireCost: 1000
   - type: SpeedModifiedOnWield
     walkModifier: 0.65
