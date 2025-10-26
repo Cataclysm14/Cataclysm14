@@ -10,7 +10,7 @@
 - type: vessel
   id: Anaconda
   parent: BaseVesselAntag
-  name: ASR Anaconda
+  name: PDV Anaconda
   description: A ship built around a mass driver, with 2 swarm missile pods and basic PD armament for support.
   price: 122500
   category: Medium
@@ -25,7 +25,7 @@
 
 - type: gameMap
   id: Anaconda
-  mapName: 'ASR Anaconda'
+  mapName: 'PDV Anaconda'
   mapPath: /Maps/_Mono/Shuttles/BlackMarket/anaconda.yml
   minPlayers: 0
   stations:
@@ -33,7 +33,7 @@
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Anaconda ASR{1}'
+          mapNameTemplate: 'Anaconda PDV{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

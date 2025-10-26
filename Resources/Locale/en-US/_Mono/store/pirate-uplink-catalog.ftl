@@ -68,8 +68,8 @@ uplink-pirate-radio-jammer-desc = This device will disrupt any nearby outgoing r
 uplink-pirate-hypopen-name = Hypopen
 uplink-pirate-hypopen-desc = A chemical hypospray disguised as a pen, capable of instantly injecting up to 10u of reagents. Starts empty.
 
-uplink-pirate-implanter-freelance-name = Insurgency Implanter
-uplink-pirate-implanter-freelance-desc = Implants an Insurgency radio, allowing covert communication without a headset.
+uplink-pirate-implanter-freelance-name = Imperial Implanter
+uplink-pirate-implanter-freelance-desc = Implants an Imperial radio, allowing covert communication without a headset.
 
 uplink-pirate-emag-name = Cryptographic Sequencer
 uplink-pirate-emag-desc = A multipurpose hacking device that can configure the ways some machines work.
@@ -257,7 +257,7 @@ uplink-pirate-prowler-voucher-desc = A single use voucher for a Prowler-class st
 # MARK: $Gambling$
 
 uplink-pirate-syndisurplus-name = Surplus Crate
-uplink-pirate-syndisurplus-desc = Contains a large amount of imported good from a company backing the Ashen Republic. This item is non-refundable, don't argue with our lawyers.
+uplink-pirate-syndisurplus-desc = Contains a large amount of imported good from a company backing the Phaethon Dynasty. This item is non-refundable, don't argue with our lawyers.
 
 uplink-pirate-syndisupersurplus-name = Super Surplus Crate
-uplink-pirate-syndisupersurplus-desc = Contains a huge amount of imported good from a company backing the Ashen Republic. This item is non-refundable, don't argue with our lawyers.
+uplink-pirate-syndisupersurplus-desc = Contains a huge amount of imported good from a company backing the Phaethon Dynasty. This item is non-refundable, don't argue with our lawyers.
