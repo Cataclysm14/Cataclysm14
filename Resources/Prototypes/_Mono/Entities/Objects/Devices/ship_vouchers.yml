@@ -158,7 +158,7 @@
 - type: entity
   parent: BaseShipLPC
   id: ShipVoucherProwler
-  name: ASR prowler LPC
+  name: PDV prowler LPC
   description: A small card that authorizes the procurement of a Prowler.
   components:
   - type: Sprite

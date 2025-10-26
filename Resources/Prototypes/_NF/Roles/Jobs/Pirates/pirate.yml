@@ -27,7 +27,7 @@
   weight: 20
   displayWeight: 20
   setPreference: true
-  guides: [ BasicLore, AshenRepublic ] # Mono
+  guides: [ BasicLore, PhaethonDynasty ] # Mono
   access:
   - Pirate
   accessGroups:
