@@ -40,6 +40,10 @@ using Robust.Server.Player;
 using Content.Shared.Silicons.StationAi;
 using Robust.Shared.Physics.Components;
 using static Content.Shared.Configurable.ConfigurationComponent;
+using Robust.Shared.Containers;
+using Content.Shared.Storage.EntitySystems;
+using Content.Shared.Hands.Components;
+using Content.Shared.PDA;
 
 namespace Content.Server.Administration.Systems
 {
@@ -72,6 +76,7 @@ namespace Content.Server.Administration.Systems
         [Dependency] private readonly AdminFrozenSystem _freeze = default!;
         [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly SiliconLawSystem _siliconLawSystem = default!;
+        [Dependency] private readonly SharedContainerSystem _containerSystem = default!;
 
         private readonly Dictionary<ICommonSession, List<EditSolutionsEui>> _openSolutionUis = new();
 
@@ -180,6 +185,30 @@ namespace Content.Server.Administration.Systems
 
                             var profile = _ticker.GetPlayerProfile(targetActor.PlayerSession);
                             _spawning.SpawnPlayerMob(coords.Value, null, profile, stationUid, session: targetActor.PlayerSession); // Frontier: added session
+                        },
+                        ConfirmationPopup = true,
+                        Impact = LogImpact.High,
+                    });
+
+                    // Mono: Clone with Items
+                    args.Verbs.Add(new Verb()
+                    {
+                        Text = Loc.GetString("admin-player-actions-clone-with-items"),
+                        Category = VerbCategory.Admin,
+                        Act = () =>
+                        {
+                            if (!_transformSystem.TryGetMapOrGridCoordinates(args.User, out var coords))
+                            {
+                                _popup.PopupEntity(Loc.GetString("admin-player-spawn-failed"), args.User, args.User);
+                                return;
+                            }
+
+                            var stationUid = _stations.GetOwningStation(args.Target);
+
+                            var profile = _ticker.GetPlayerProfile(targetActor.PlayerSession);
+                            var clonedMob = _spawning.SpawnPlayerMob(coords.Value, null, profile, stationUid, session: targetActor.PlayerSession);
+
+                            CopyAllItems(args.Target, clonedMob);
                         },
                         ConfirmationPopup = true,
                         Impact = LogImpact.High,
@@ -626,5 +655,83 @@ namespace Content.Server.Administration.Systems
             _openSolutionUis.Clear();
         }
         #endregion
+
+        /// <summary>
+        /// Mono: Copies all items from source entity to target entity.
+        /// </summary>
+        private void CopyAllItems(EntityUid source, EntityUid target)
+        {
+            if (TryComp<InventoryComponent>(source, out var sourceInv) &&
+                TryComp<InventoryComponent>(target, out var targetInv))
+            {
+                var enumerator = new InventorySystem.InventorySlotEnumerator(sourceInv);
+                while (enumerator.NextItem(out var item, out var slot))
+                {
+                    var prototypeId = MetaData(item).EntityPrototype?.ID;
+                    if (string.IsNullOrEmpty(prototypeId))
+                        continue;
+                    var cloneItem = Spawn(prototypeId, Transform(target).Coordinates);
+                    if (_inventorySystem.TryEquip(target, cloneItem, slot.Name, silent: true, force: true, inventory: targetInv))
+                    {
+                        // Recursively copy items from containers (backpacks, etc.)
+                        CopyContainedItems(item, cloneItem);
+                    }
+                }
+            }
+
+            if (TryComp<HandsComponent>(source, out var sourceHands) &&
+                TryComp<HandsComponent>(target, out var targetHands))
+            {
+                foreach (var hand in sourceHands.Hands.Values)
+                {
+                    if (hand.HeldEntity == null)
+                        continue;
+
+                    var prototypeId = MetaData(hand.HeldEntity.Value).EntityPrototype?.ID;
+                    if (string.IsNullOrEmpty(prototypeId))
+                        continue;
+                    var cloneItem = Spawn(prototypeId, Transform(target).Coordinates);
+
+                    if (_handsSystem.TryPickupAnyHand(target, cloneItem, checkActionBlocker: false, handsComp: targetHands))
+                    {
+                        CopyContainedItems(hand.HeldEntity.Value, cloneItem);
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Mono: Recursively copies all items from source container to target container.
+        /// </summary>
+        private void CopyContainedItems(EntityUid source, EntityUid target)
+        {
+            if (HasComp<PdaComponent>(target))
+                return;
+
+            if (!TryComp<ContainerManagerComponent>(source, out var sourceContainers))
+                return;
+
+            if (!TryComp<ContainerManagerComponent>(target, out var targetContainers))
+                return;
+
+            foreach (var sourceContainer in sourceContainers.Containers.Values)
+            {
+                foreach (var contained in sourceContainer.ContainedEntities)
+                {
+                    if (!targetContainers.Containers.TryGetValue(sourceContainer.ID, out var targetContainer))
+                        continue;
+
+                    var prototypeId = MetaData(contained).EntityPrototype?.ID;
+                    if (string.IsNullOrEmpty(prototypeId))
+                        continue;
+                    var cloneItem = Spawn(prototypeId, Transform(target).Coordinates);
+
+                    if (_containerSystem.Insert(cloneItem, targetContainer))
+                    {
+                        CopyContainedItems(contained, cloneItem);
+                    }
+                }
+            }
+        }
     }
 }
