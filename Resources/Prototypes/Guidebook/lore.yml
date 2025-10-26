@@ -9,7 +9,7 @@
   name: Lore
   text: "/ServerInfo/Guidebook/Lore/BasicLore.xml"
   children:
-  - AshenRepublic
+  - PhaethonDynasty
   - TransSolarFederation
   - UnitedSovietSocialistPlanets
 

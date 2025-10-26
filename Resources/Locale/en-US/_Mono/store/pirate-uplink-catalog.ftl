@@ -83,8 +83,8 @@ uplink-pirate-jaws-desc = A normal jaws-of-life illegally modified past restrict
 uplink-pirate-thruster-kit-name = Thruster Upgrade Kit
 uplink-pirate-thruster-kit-desc = Contains 32 super capaciters. Perfect for upgrading eight thrusters.
 
-uplink-pirate-comms-computer-circuitboard-name = ASR communications computer board
-uplink-pirate-comms-computer-circuitboard-desc = A computer printed circuit board for an ASR communications console.
+uplink-pirate-comms-computer-circuitboard-name = PDV communications computer board
+uplink-pirate-comms-computer-circuitboard-desc = A computer printed circuit board for an PDV communications console.
 
 uplink-pirate-security-cyborg-module-name = Security Cyborg Module
 uplink-pirate-security-cyborg-module-desc = A machete, an energy gun, and a stun baton, made specifically for borgs. Wait, doesn't TFSMC have the same thing?
@@ -208,7 +208,7 @@ uplink-pirate-blast-grenade-desc = A highly lethal 40mm thermobaric grenade for 
 # MARK: Equipment
 
 uplink-pirate-combat-hardsuit-name = SCAF Tacsuit
-uplink-pirate-combat-hardsuit-desc = Basic protective gear of ASR military groups.
+uplink-pirate-combat-hardsuit-desc = Basic protective gear of PDV military groups.
 
 uplink-pirate-viper-group-standard-hardsuit-name = Viper Group JACKAL Hardsuit
 uplink-pirate-viper-group-standard-hardsuit-desc = A heavy hardsuit adorned with signature markings of the Viper Group. The armor is remarkably flexible for its protection and has a built-in nightvision system.
@@ -222,7 +222,7 @@ uplink-pirate-webvest-desc = A webvest smuggled into the sector that hasn't been
 uplink-pirate-syndie-mask-name = Syndicate Gas Mask
 uplink-pirate-syndie-mask-desc = A tactical flash resistant gas mask that can be connected to an air supply.
 
-uplink-pirate-modsuit-name = RX-01 ASR Modsuit
+uplink-pirate-modsuit-name = RX-01 PDV Modsuit
 uplink-pirate-modsuit-desc = An experimental modsuit prototype developed by Ullman Industries. When powered it provides enhanced agility and boosted sensors. "The original client died so uh, go nuts" - Felix Ullman
 
 # MARK: Explosives

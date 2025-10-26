@@ -11,7 +11,7 @@
 - type: vessel
   id: Tethys
   parent: BaseVesselAntag
-  name: ASR Tethys
+  name: PDV Tethys
   description: A basic entry-level rogue ship. 4 heavy autocannons and a bit of plastitanium is what you get.
   price: 43700 # WALMARTMOBILE
   category: Medium
@@ -25,7 +25,7 @@
 
 - type: gameMap
   id: Tethys
-  mapName: 'ASR Tethys'
+  mapName: 'PDV Tethys'
   mapPath: /Maps/_Mono/Shuttles/BlackMarket/tethys.yml
   minPlayers: 0
   stations:
@@ -33,7 +33,7 @@
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Tethys ASR{1}'
+          mapNameTemplate: 'Tethys PDV{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
