@@ -119,7 +119,7 @@ public sealed class CompanySystem : EntitySystem
         else if (args.JobId != null && _asrJobs.Contains(args.JobId))
         {
             // Assign Rogue company
-            companyComp.CompanyName = "Rogue";
+            companyComp.CompanyName = "PDV";
         }
         // Check if player's job is one of the USSP jobs
         else if (args.JobId != null && _usspJobs.Contains(args.JobId))
