@@ -1,24 +1,24 @@
 - type: loadout
-  id: RogueClothingJumpsuit
+  id: PDVClothingJumpsuit
   equipment:
     jumpsuit: ClothingUniformRogue
 
 - type: loadout
-  id: RogueClothingJumpsuitPants
+  id: PDVClothingJumpsuitPants
   equipment:
     jumpsuit: ClothingUniformRoguePants
 
 - type: loadout
-  id: RogueClothingJumpsuitJeans
+  id: PDVClothingJumpsuitJeans
   equipment:
     jumpsuit: ClothingUniformRogueJeans
 
 - type: loadout
-  id: RogueClothingJumpsuitCargos
+  id: PDVClothingJumpsuitCargos
   equipment:
     jumpsuit: ClothingUniformRogueCargos
 
 - type: loadout
-  id: RogueClothingJumpsuitWarm
+  id: PDVClothingJumpsuitWarm
   equipment:
     jumpsuit: ClothingUniformRogueWarm
