@@ -1222,7 +1222,7 @@
 
 #Deathsquad
 - type: entity
-  parent: [ BaseCentcommContraband, ClothingOuterHardsuitBase ]
+  parent: [ BaseCentcommContraband, ClothingOuterHardsuitBase, ClothingArmorPlatePlastitanium ]
   id: ClothingOuterHardsuitDeathsquad
   name: death squad hardsuit
   description: An advanced hardsuit favored by commandos for use in special operations.
@@ -1264,30 +1264,6 @@
       head: ClothingHeadHelmetHardsuitDeathsquad
       helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
-  # ArmorPlateHolder Example
-  - type: ArmorPlateHolder
-  - type: Storage
-    maxItemSize: Normal
-    grid:
-    - 0,0,1,1
-  - type: ContainerContainer
-    containers:
-      storagebase: !type:Container
-        showEnts: False
-        occludes: True
-        ents: []
-      toggleable-clothing: !type:Container
-        showEnts: False
-        occludes: True
-        ents: []
-  - type: UserInterface
-    interfaces:
-      enum.StorageUiKey.Key:
-        type: StorageBoundUserInterface
-  - type: StorageFill
-    contents:
-    - id: ArmorPlatePlastitanium
-  # ArmorPlateHolder Example
 
 #CBURN Hardsuit
 - type: entity
