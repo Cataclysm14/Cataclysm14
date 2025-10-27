@@ -23,7 +23,7 @@ public sealed class CombatMusicSystem : EntitySystem
         base.Update(frameTime);
 
         var curTime = _timing.CurTime;
-        var query = EntityQueryEnumerator<CombatMusicComponent>();
+        var query = AllEntityQuery<CombatMusicComponent>();
 
         while (query.MoveNext(out var gridUid, out var comp))
         {
@@ -31,6 +31,15 @@ public sealed class CombatMusicSystem : EntitySystem
                 continue;
 
             var timeSinceLastShot = curTime - comp.LastFiringTime;
+            var remainingTime = comp.MusicTimeout - timeSinceLastShot.TotalSeconds;
+
+            if (!comp.FadeInitiated && remainingTime <= comp.FadeOutDuration && remainingTime > 0)
+            {
+                comp.FadeInitiated = true;
+                var filter = Filter.Empty().AddInGrid(gridUid, EntityManager);
+                RaiseNetworkEvent(new CombatMusicStopEvent(comp.FadeOutDuration), filter);
+            }
+
             if (timeSinceLastShot.TotalSeconds >= comp.MusicTimeout)
             {
                 StopCombatMusic(gridUid, comp);
@@ -72,6 +81,7 @@ public sealed class CombatMusicSystem : EntitySystem
         RaiseNetworkEvent(new CombatMusicStartEvent(path, comp.Volume, true), filter);
 
         comp.MusicPlaying = true;
+        comp.FadeInitiated = false;
     }
 
     /// <summary>
@@ -87,9 +97,12 @@ public sealed class CombatMusicSystem : EntitySystem
         comp.MusicStream = null;
         comp.MusicPlaying = false;
 
-        RemComp<CombatMusicComponent>(gridUid);
+        if (!comp.FadeInitiated)
+        {
+            RaiseNetworkEvent(new CombatMusicStopEvent());
+        }
 
-        RaiseNetworkEvent(new CombatMusicStopEvent());
+        RemComp<CombatMusicComponent>(gridUid);
     }
 }
 

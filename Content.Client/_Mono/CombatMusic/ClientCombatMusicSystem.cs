@@ -2,9 +2,11 @@
 //
 // SPDX-License-Identifier: MPL-2.0
 
+using Content.Client.Audio;
 using Content.Shared._Mono.CCVar;
 using Content.Shared._Mono.CombatMusic;
 using Robust.Shared.Audio;
+using Robust.Shared.Audio.Components;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Configuration;
 using Robust.Shared.Player;
@@ -15,6 +17,7 @@ public sealed class ClientCombatMusicSystem : EntitySystem
 {
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly ContentAudioSystem _contentAudio = default!;
 
     private bool _enabled = true;
     private EntityUid? _stream;
@@ -64,7 +67,15 @@ public sealed class ClientCombatMusicSystem : EntitySystem
 
     private void OnStop(CombatMusicStopEvent ev)
     {
-        StopPlayback();
+        if (_stream != null && ev.FadeOutDuration > 0f && TryComp(_stream, out AudioComponent? component))
+        {
+            _contentAudio.FadeOut(_stream, component, ev.FadeOutDuration);
+            _stream = null;
+        }
+        else
+        {
+            StopPlayback();
+        }
     }
 }
 

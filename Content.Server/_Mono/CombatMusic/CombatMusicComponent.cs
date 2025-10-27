@@ -64,5 +64,16 @@ public sealed partial class CombatMusicComponent : Component
     /// </summary>
     [DataField]
     public float Volume = -5f;
+
+    /// <summary>
+    /// How long to fade out the music before stopping (in seconds).
+    /// </summary>
+    [DataField]
+    public float FadeOutDuration = 5f;
+
+    /// <summary>
+    /// Whether the fade-out has already been initiated.
+    /// </summary>
+    public bool FadeInitiated;
 }
 
