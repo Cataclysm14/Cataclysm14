@@ -1,0 +1,39 @@
+# SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 core-mene
+# SPDX-FileCopyrightText: 2025 sleepyyapril
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: vessel
+  id: Wagon
+  parent: BaseVesselAntag
+  name: ASR Wagon
+  description: The Wagon is a dual-purpose salvaging and mining vessel, fielding 4 mining pulsers and 5 20mm autocannons. Originally meant for incursions into opposing forces asteroid claims and ship graveyards to deny important strategic resources, but just as useful for benign resource gathering. 
+  price: 55500
+  category: Medium
+  group: BlackMarket
+  shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/wagon.yml
+  guidebookPage: Null
+  class:
+  - Pirate
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Wagon
+  mapName: 'ASR Wagon'
+  mapPath: /Maps/_Mono/Shuttles/BlackMarket/wagon.yml
+  minPlayers: 0
+  stations:
+    Wagon:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Wagon ASR{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Pirate: [ 0, 0 ]
