@@ -5,6 +5,8 @@
 # SPDX-FileCopyrightText: 2025 LukeZurg22
 # SPDX-FileCopyrightText: 2025 Redrover1760
 # SPDX-FileCopyrightText: 2025 SupernoobTheN1
+# SPDX-FileCopyrightText: 2025 core-mene
+
 #
 # SPDX-License-Identifier: MPL-2.0
 
@@ -30,15 +32,16 @@
         - LandMineExplosive
         - BannerSyndicate
         - Telecrystal5 # Mono
-        - Telecrystal5 # Mono # Mono
-        - Telecrystal5 # Mono # Mono
+        - Telecrystal5 # Mono
+        - Telecrystal5 # Mono
       rarePrototypes:
         - Telecrystal25 # Mono
-        - Telecrystal25 # Mono # Mono
-        - Telecrystal25 # Mono # Mono
+        - Telecrystal25 # Mono
+        - Telecrystal25 # Mono
         - SpawnMobWeaponTurretLaserSyndicateNF # Mono
         - SpawnMobWeaponTurretSyndicate # Mono
         - CrateSyndicateSurplusBundle # Mono
+        - CrateNanotrasenLootFilledT1 # Mono
       rareChance: 0.1 # Mono
 
 - type: entity
@@ -57,8 +60,10 @@
         - CrateTradeContrabandSecure5
         - CrateTradeContrabandSecure4
         - CrateTradeContrabandSecure3
+        - CrateNanotrasenLootFilledT1 # Mono
       rarePrototypes:
-        - CrateSyndicateSurplusBundle
+        - CrateNanotrasenLootFilledT1 # Mono
+        - CrateNanotrasenLootFilledT1 # Mono
         - CrateSyndicateSurplusBundle
         - CrateSyndicateSurplusBundle
         - CrateSyndicateSuperSurplusBundle
