@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2025 ark1368
+//
+// SPDX-License-Identifier: MPL-2.0
+
 using Content.Shared.Input;
 using Content.Shared.Shuttles.Components;
 using Robust.Shared.Input.Binding;
