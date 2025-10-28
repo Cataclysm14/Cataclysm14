@@ -15,6 +15,7 @@
   price: 122500
   category: Medium
   group: BlackMarket
+  access: Pirate
   shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/anaconda.yml
   guidebookPage: Null
   class:

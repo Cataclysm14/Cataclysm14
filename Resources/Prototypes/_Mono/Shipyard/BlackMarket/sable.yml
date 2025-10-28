@@ -13,6 +13,7 @@
   price: 8000
   category: Micro
   group: BlackMarket
+  access: Pirate
   shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/sable.yml
   guidebookPage: Null
   class:

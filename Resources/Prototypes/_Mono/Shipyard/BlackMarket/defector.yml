@@ -17,6 +17,7 @@
   price: 91500
   category: Medium
   group: BlackMarket
+  access: Pirate
   shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/defector.yml
   guidebookPage: Null
   class:

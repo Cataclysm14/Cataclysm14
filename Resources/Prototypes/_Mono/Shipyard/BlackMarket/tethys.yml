@@ -16,6 +16,7 @@
   price: 43700 # WALMARTMOBILE
   category: Medium
   group: BlackMarket
+  access: Pirate
   shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/tethys.yml
   guidebookPage: Null
   class:

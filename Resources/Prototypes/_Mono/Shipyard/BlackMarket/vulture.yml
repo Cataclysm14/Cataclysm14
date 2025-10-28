@@ -14,6 +14,7 @@
   price: 285580
   category: Large
   group: BlackMarket
+  access: Pirate
   shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/vulture.yml
   guidebookPage: Null
   class:
