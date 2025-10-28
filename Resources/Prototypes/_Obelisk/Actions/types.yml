@@ -5,7 +5,6 @@
   categories: [ HideSpawnMenu ] # Frontier
   components:
   - type: InstantAction
-    charges: 1
     icon: { sprite: Structures/Piping/Atmospherics/heatexchanger.rsi, state: heStraight }
     useDelay: 5
     event: !type:HydrakinCoolOffActionEvent
