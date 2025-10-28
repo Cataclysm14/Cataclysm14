@@ -7,5 +7,5 @@
   - type: InstantAction
     charges: 1
     icon: { sprite: Structures/Piping/Atmospherics/heatexchanger.rsi, state: heStraight }
-    useDelay: 30
+    useDelay: 5
     event: !type:HydrakinCoolOffActionEvent
