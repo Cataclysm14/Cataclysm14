@@ -1,11 +1,10 @@
 
-
 using Content.Shared.Atmos;
 
 namespace Content.Server.Species.Systems.Components;
 
 [RegisterComponent]
-public sealed partial class HydrakinHeatBuildupComponent : Component
+public sealed partial class HydrakinComponent : Component
 {
     [DataField]
     public float MinTemperature = Atmospherics.T20C;
@@ -15,4 +14,7 @@ public sealed partial class HydrakinHeatBuildupComponent : Component
 
     [DataField]
     public float Buildup = 0f;
+
+    [DataField]
+    public bool HeatBuildupEnabled = true;
 }

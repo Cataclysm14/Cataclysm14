@@ -7,13 +7,21 @@ namespace Content.Server.Species.Systems;
 
 public sealed class HydrakinSystem : EntitySystem
 {
+    public override void Initialize()
+    {
+        base.Initialize();
+    }
+
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
 
-        var query = EntityQueryEnumerator<HydrakinHeatBuildupComponent, TemperatureComponent>();
+        var query = EntityQueryEnumerator<HydrakinComponent, TemperatureComponent>();
         while (query.MoveNext(out var uid, out var comp, out var temperature))
         {
+            if (!comp.HeatBuildupEnabled)
+                continue;
+
             if (TryComp<MobStateComponent>(uid, out var mobState) &&
                 mobState.CurrentState != MobState.Alive)
                 return;
