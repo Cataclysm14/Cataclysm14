@@ -1,5 +1,6 @@
-
 using Content.Shared.Atmos;
+using Robust.Shared.Prototypes;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Server.Species.Systems.Components;
 
@@ -17,4 +18,10 @@ public sealed partial class HydrakinComponent : Component
 
     [DataField]
     public bool HeatBuildupEnabled = true;
+
+    [DataField(customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+    public string? CoolOffActionId = "ActionHydrakinCoolOff";
+
+    [DataField]
+    public EntityUid? CoolOffAction;
 }
