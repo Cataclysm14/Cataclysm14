@@ -76,6 +76,7 @@ namespace Content.Client.Input
             common.AddFunction(ContentKeyFunctions.SaveItemLocation);
             common.AddFunction(ContentKeyFunctions.Point);
             common.AddFunction(ContentKeyFunctions.ToggleStanding); // WD EDIT
+            common.AddFunction(ContentKeyFunctions.ToggleFocus); // Mono
             common.AddFunction(ContentKeyFunctions.ZoomOut);
             common.AddFunction(ContentKeyFunctions.ZoomIn);
             common.AddFunction(ContentKeyFunctions.ResetZoom);
