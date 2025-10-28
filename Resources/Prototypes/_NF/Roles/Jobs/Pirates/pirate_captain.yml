@@ -66,7 +66,6 @@
   id: PirateCaptainNFGear
   equipment:
     ears: ClothingHeadsetAltFreelancer
-    neck: ClothingNeckCloakRogueCommander
     #belt: ClothingBeltUtility # mono
     pocket1: BasePirateUplinkRadioPirateCaptain
     pocket2: EnergySword

@@ -18,6 +18,13 @@
   loadouts:
   - PDVClothingNeckIFFOrange
 - type: loadoutGroup
+  id: PDVCommanderNeck
+  name: loadout-group-contractor-neck
+  minLimit: 1
+  loadouts:
+  - PDVClothingNeckIFFOrange
+  - PDVClothingNeckCloakCommander
+- type: loadoutGroup
   id: PDVOuterClothing
   name: loadout-group-contractor-outerclothing
   minLimit: 1
@@ -26,7 +33,6 @@
   - PDVClothingOuterArmorBPVestMedium
   fallbacks:
   - PDVClothingOuterArmorBPVestLight
-
 - type: loadoutGroup
   id: PDVGloves
   name: loadout-group-contractor-gloves
@@ -34,8 +40,6 @@
   minLimit: 1
   loadouts:
   - PDVCombatGloves
-
-
 - type: loadoutGroup
   id: PDVHud
   name: loadout-group-contractor-glasses
@@ -45,7 +49,6 @@
   - PDVClothingEyesHudSecurity
   fallbacks:
   - PDVClothingEyesHudSecurity
-
 - type: loadoutGroup
   id: PDVShoes
   name: loadout-group-contractor-shoes
@@ -55,7 +58,6 @@
   - PDVJackboots
   fallbacks:
   - PDVCombatBoots
-
 - type: loadoutGroup
   id: PDVFace
   name: loadout-group-contractor-face
@@ -66,7 +68,6 @@
   - PDVGasmask
   fallbacks:
   - PDVGaiter
-
 - type: loadoutGroup
   id: PDVBackpack
   name: loadout-group-contractor-backpack
@@ -78,15 +79,18 @@
   - PDVClothingDuffel
   fallbacks:
   - PDVClothingBackpack
-
 - type: loadoutGroup
   id: PDVHead
   name: loadout-group-contractor-head
   minLimit: 0
   loadouts:
-  - PDVHelmet
   - PDVBeret
-
+- type: loadoutGroup
+  id: PDVCommanderHead
+  name: loadout-group-contractor-head
+  minLimit: 1
+  loadouts:
+  - PDVCommanderBeret
 - type: loadoutGroup
   id: PDVBelt
   name: loadout-group-contractor-belt
@@ -95,7 +99,6 @@
   loadouts:
   - PDVClothingBeltWebbingsNormalBlack
   - PDVClothingBeltWebbingsBigBlack
-
   fallbacks:
   - PDVClothingBeltWebbingsNormalBlack
 

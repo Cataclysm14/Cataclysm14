@@ -55,7 +55,7 @@
 - type: roleLoadout
   id: JobPirateCaptain
   groups:
-  - PDVHead
+  - PDVCommanderHead
   - PDVJumpsuit
   - PDVGloves
   - PDVOuterClothing
@@ -63,6 +63,7 @@
   - PDVBackpack
   - PDVShoes
   - PDVFace
+  - PDVCommanderNeck
   - ContractorBoxSurvival
   - PirateCaptainPDA
   - NFSpeciesSpecific

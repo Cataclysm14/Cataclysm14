@@ -6,3 +6,8 @@
   id: PDVClothingNeckIFFOrange
   equipment:
     neck: ClothingNeckIFFOrange
+
+- type: loadout
+  id: PDVClothingNeckCloakCommander
+  equipment:
+    neck: ClothingNeckCloakRogueCommander
