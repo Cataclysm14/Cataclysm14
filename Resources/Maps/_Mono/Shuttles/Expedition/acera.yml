@@ -3420,8 +3420,6 @@ entities:
       pos: 12.5,6.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 7
   - uid: 519
@@ -3486,8 +3484,6 @@ entities:
       pos: 13.5,6.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 7
   - uid: 526
