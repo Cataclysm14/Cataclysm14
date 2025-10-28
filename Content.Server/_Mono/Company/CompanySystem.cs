@@ -3,6 +3,7 @@
 // SPDX-FileCopyrightText: 2025 Blu
 // SPDX-FileCopyrightText: 2025 HacksLua
 // SPDX-FileCopyrightText: 2025 LukeZurg22
+// SPDX-FileCopyrightText: 2025 Onezero0
 // SPDX-FileCopyrightText: 2025 starch
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
@@ -53,14 +54,14 @@ public sealed class CompanySystem : EntitySystem
         "Pirate"
     };
 
-    private readonly HashSet<string> _usspJobs = new()
-    {
-        "USSPCommissar",
-        "USSPSergeant",
-        "USSPCorporal",
-        "USSPMedic",
-        "USSPRifleman"
-    };
+    // private readonly HashSet<string> _usspJobs = new()
+    // {
+    //    "USSPCommissar",
+    //    "USSPSergeant",
+    //    "USSPCorporal",
+    //    "USSPMedic",
+    //    "USSPRifleman"
+    //};
 
     private readonly HashSet<string> _colonialJobs = new()
     {
@@ -123,11 +124,11 @@ public sealed class CompanySystem : EntitySystem
             companyComp.CompanyName = "PDV";
         }
         // Check if player's job is one of the USSP jobs
-        else if (args.JobId != null && _usspJobs.Contains(args.JobId))
-        {
-            // Assign USSP company
-            companyComp.CompanyName = "USSP";
-        }
+        //else if (args.JobId != null && _usspJobs.Contains(args.JobId))
+        //{
+        //    // Assign USSP company
+        //    companyComp.CompanyName = "USSP";
+        //}
         else if (args.JobId != null && _colonialJobs.Contains(args.JobId))
         {
             // Assign MD company
