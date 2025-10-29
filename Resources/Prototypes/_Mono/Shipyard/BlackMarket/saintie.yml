@@ -27,7 +27,7 @@
   mapPath: /Maps/_Mono/Shuttles/BlackMarket/saintie.yml
   minPlayers: 0
   stations:
-    Goliath:
+    Saintie:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
