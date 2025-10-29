@@ -22,13 +22,13 @@
 
 - type: technology
   id: RogueGoliath
-  name: research-technology-rogue-goliath-voucher
-  entityIcon: ShipVoucherGoliath
+  name: research-technology-rogue-saintie-voucher
+  entityIcon: ShipVoucherSaintie
   discipline: RogueShipyard
   tier: 1
   cost: 50000
   recipeUnlocks:
-  - GoliathVoucherRogue
+  - SaintieVoucherRogue
   technologyPrerequisites:
   - UniversalMaterialResearchT2
   position: 22, 5
