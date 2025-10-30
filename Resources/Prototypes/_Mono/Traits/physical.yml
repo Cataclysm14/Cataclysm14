@@ -17,6 +17,23 @@
   - type: Vigor
 
 - type: trait
+  id: Lethargy
+  name: trait-lethargy-name
+  description: trait-lethargy-desc
+  category: Physical
+  cost: -4
+  mutuallyExclusiveTraits:
+  - Vigor
+  speciesBlacklist:
+  - Felinid
+  - Tajaran
+  blacklist:
+    components:
+    - BorgChassis
+  components:
+  - type: Lethargy
+
+- type: trait
   id: GlassJaw
   name: trait-glass-jaw-name
   description: trait-glass-jaw-desc

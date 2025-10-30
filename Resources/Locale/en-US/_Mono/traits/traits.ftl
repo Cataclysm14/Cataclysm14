@@ -8,6 +8,12 @@ trait-prybar-prosthetics-desc = Your arms have been reinforced with steel and hy
 trait-vigor-name = Vigor
 trait-vigor-desc = Whether by pure determination, fitness, or bionic augmentations, your endurance is enhanced.
 
+trait-lethargy-name = Lethargy
+trait-lethargy-desc = You become tired faster than others, making you more vulnerable to exhaustion and fatigue.
+    Your stamina is decreased by 15 points.
+    Your stamina regen per second is decreased by 0.6 points.
+    Stamina regen now starts 3.75 seconds after taking stamina damage, instead of 3 seconds.
+
 trait-glass-jaw-name = Glass Jaw
 trait-glass-jaw-desc = Your body is more fragile than others, resulting in a greater susceptibility to critical injuries. Your damage threshold for becoming Critical is decreased by 10 points.
 
