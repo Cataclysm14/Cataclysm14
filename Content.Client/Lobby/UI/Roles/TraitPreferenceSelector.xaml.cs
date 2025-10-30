@@ -38,12 +38,12 @@ public sealed partial class TraitPreferenceSelector : Control
         string costText = "";
         if (trait.Cost > 0)
         {
-            costText = $"+{trait.Cost}";
+            costText = $"-{trait.Cost}";
             CostLabel.FontColorOverride = Color.Red;
         }
         else if (trait.Cost < 0)
         {
-            costText = $"{trait.Cost}";
+            costText = $"+{-trait.Cost}";
             CostLabel.FontColorOverride = Color.Green;
         }
         else
