@@ -31,3 +31,6 @@ trait-bionic-legs-desc = One or more of your limbs have been replaced with an ex
 
 trait-osteogenesis-imperfecta-name = Osteogenesis Imperfecta
 trait-osteogenesis-imperfecta-desc = Also known as "brittle bone disease", people with this genetic disorder have bones that are easily broken, often simply by moving. This trait reduces your threshold for critical injury by 50 points.
+
+trait-hemophilia-name = Hemophilia
+trait-hemophilia-desc = Your body's ability to form blood clots is impaired. You bleed for roughly twice as long, and you bruise more easily, taking 10% more Blunt damage.

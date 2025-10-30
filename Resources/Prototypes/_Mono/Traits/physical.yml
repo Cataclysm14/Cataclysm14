@@ -102,3 +102,17 @@
   components:
   - type: GlassJaw
     critDecrease: 50
+
+- type: trait
+  id: Hemophilia
+  name: trait-hemophilia-name
+  description: trait-hemophilia-desc
+  category: Physical
+  cost: -4
+  speciesBlacklist:
+  - IPC
+  blacklist:
+    components:
+    - BorgChassis
+  components:
+  - type: Hemophilia
