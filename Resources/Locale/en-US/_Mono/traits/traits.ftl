@@ -37,3 +37,12 @@ trait-hemophilia-desc = Your body's ability to form blood clots is impaired. You
 
 trait-voracious-name = Voracious
 trait-voracious-desc = Nothing gets between you and your food. Your endless consumption of food and drinks is twice as fast.
+
+trait-bionic-spinarette-name = Bionic Spinarette
+trait-bionic-spinarette-desc = This vatgrown organ--trademarked and patented by the Quark Corporation--is marketed as a highly utilitarian enhancement, and sold in clinics all across known space. It consists of a module that is traditionally implanted right below the wrist, which absorbs bodily lipids to convert into all-natural silk. A small opening in the palm allows the user to 'spin' this thread.
+
+trait-feeble-name = Feeble
+trait-feeble-desc = Your body responds poorly to injuries, making damage affect your movement more severely. For most species, this trait causes you to move 30% slower at 45 damage, and 54% slower at 65 damage.
+
+trait-trap-avoider-name = Trap Avoider
+trait-trap-avoider-desc = You possess a preternatural sense of traps, and will unconsciously avoid them. You will never trigger floor traps, such as land mines, tripwires, mouse traps (if you're small enough), etc.
