@@ -52,3 +52,6 @@ trait-feeble-desc = Your body responds poorly to injuries, making damage affect 
 
 trait-trap-avoider-name = Trap Avoider
 trait-trap-avoider-desc = You possess a preternatural sense of traps, and will unconsciously avoid them. You will never trigger floor traps, such as land mines, tripwires, mouse traps (if you're small enough), etc.
+
+trait-self-aware-name = Self-Aware
+trait-self-aware-desc = You possess a keen intuition of your body and senses. You can accurately examine the severity of your wounds and burns like a health analyzer, and can gauge if you have toxin or airloss damage.
