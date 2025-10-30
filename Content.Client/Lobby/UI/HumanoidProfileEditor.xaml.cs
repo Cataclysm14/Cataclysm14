@@ -749,6 +749,20 @@ namespace Content.Client.Lobby.UI
                     categoryName = Loc.GetString("humanoid-profile-editor-traits-default-category");
                 }
 
+                categoryTraits.Sort((a, b) =>
+                {
+                    var traitA = _prototypeManager.Index<TraitPrototype>(a);
+                    var traitB = _prototypeManager.Index<TraitPrototype>(b);
+
+                    var costCompare = traitA.Cost.CompareTo(traitB.Cost);
+                    if (costCompare != 0)
+                        return costCompare;
+
+                    var traitNameA = Loc.GetString(traitA.Name);
+                    var traitNameB = Loc.GetString(traitB.Name);
+                    return string.Compare(traitNameA, traitNameB, StringComparison.CurrentCulture);
+                });
+
                 // Create category button
                 var categoryButton = new TraitCategoryButton(categoryName);
                 categoryButtons[categoryId] = categoryButton;
