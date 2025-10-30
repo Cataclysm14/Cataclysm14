@@ -1,6 +1,6 @@
 using Robust.Shared.GameStates;
 
-namespace Content.Shared.Traits.Assorted;
+namespace Content.Shared._Mono.Traits.Physical;
 
 /// <summary>
 /// Adds a self-examine verb for the Self-Aware trait.

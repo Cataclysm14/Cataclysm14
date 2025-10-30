@@ -201,3 +201,18 @@
   cost: 2
   components:
   - type: SelfAware
+
+- type: trait
+  id: LiquorLifeline
+  name: trait-liquor-lifeline-name
+  description: trait-liquor-lifeline-desc
+  category: Physical
+  cost: 6
+  speciesBlacklist:
+  - IPC
+  - Dwarf
+  blacklist:
+    components:
+    - BorgChassis
+  components:
+  - type: LiquorLifeline

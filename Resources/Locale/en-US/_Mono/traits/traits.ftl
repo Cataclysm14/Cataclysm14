@@ -55,3 +55,6 @@ trait-trap-avoider-desc = You possess a preternatural sense of traps, and will u
 
 trait-self-aware-name = Self-Aware
 trait-self-aware-desc = You possess a keen intuition of your body and senses. You can accurately examine the severity of your wounds and burns like a health analyzer, and can gauge if you have toxin or airloss damage.
+
+trait-liquor-lifeline-name = Liquor Lifeline
+trait-liquor-lifeline-desc = Forget the doctor — just hit the bar for your "ethanol prescription"! While drunk, you slowly heal Brute, Heat, Shock, and Cold damage, scaling with how drunk you are. Your liver is replaced with a sturdy dwarven one, granting the benefits of alcohol tolerance.
