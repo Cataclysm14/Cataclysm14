@@ -254,3 +254,15 @@
   components:
   - type: WillToDie
     deadDecrease: 100
+
+- type: trait
+  id: StrikingCalluses
+  name: trait-striking-calluses-name
+  description: trait-striking-calluses-desc
+  category: Physical
+  cost: 2
+  blacklist:
+    components:
+    - BorgChassis
+  components:
+  - type: StrikingCalluses
