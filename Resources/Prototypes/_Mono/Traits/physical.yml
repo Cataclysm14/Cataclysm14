@@ -192,9 +192,11 @@
   description: trait-feeble-desc
   category: Physical
   cost: -4
+  mutuallyExclusiveTraits:
+   - Steadfast
   speciesBlacklist:
-    - Felinid
-    - Tajaran
+   - Felinid
+   - Tajaran
   components:
     - type: SlowOnDamage
       speedModifierThresholds:
@@ -229,6 +231,8 @@
   description: trait-liquor-lifeline-desc
   category: Physical
   cost: 6
+  mutuallyExclusiveTraits:
+  - AlcoholTolerance
   speciesBlacklist:
   - IPC
   - Dwarf
@@ -324,3 +328,22 @@
   components:
   - type: TemperatureProtection
     coolingCoefficient: 0.6
+
+- type: trait
+  id: AlcoholTolerance
+  name: trait-alcohol-tolerance-name
+  description: trait-alcohol-tolerance-desc
+  category: Physical
+  cost: 1
+  mutuallyExclusiveTraits:
+  - LightweightDrunk
+  - LiquorLifeline
+  speciesBlacklist:
+  - Dwarf
+  - IPC
+  blacklist:
+    components:
+    - BorgChassis
+  components:
+  - type: AlcoholTolerance
+    visualScaleMultiplier: 0.35

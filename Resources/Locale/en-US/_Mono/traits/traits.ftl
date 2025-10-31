@@ -76,3 +76,6 @@ trait-ironman-desc = You live strictly on hard cash. You can't withdraw from you
 
 trait-temperature-tolerance-name = Temperature Tolerance
 trait-temperature-tolerance-desc = You have a notable tolerance for lower temperatures. You can stand for extended periods in conditions just below freezing, like a walk-in fridge or the sunlit slopes of Glacier.
+
+trait-alcohol-tolerance-name = Alcohol Tolerance
+trait-alcohol-tolerance-desc = Your body shrugs off the visual effects of booze. Drinks blur your vision far less, but this does not affect alcohol poisoning or how drunk you become.
