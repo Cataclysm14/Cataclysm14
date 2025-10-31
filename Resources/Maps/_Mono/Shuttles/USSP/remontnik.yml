@@ -29,8 +29,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/16/2025 14:43:06
-  entityCount: 1137
+  time: 10/31/2025 17:20:36
+  entityCount: 1122
 maps: []
 grids:
 - 1
@@ -515,10 +515,11 @@ entities:
             0: 256
             1: 62976
           1,1:
-            2: 4402
+            2: 4370
+            3: 32
             0: 136
           1,2:
-            2: 16
+            3: 16
             0: 8192
           1,4:
             0: 1
@@ -625,7 +626,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: IFF
-      flags: HideLabel
+      flags: IsPlayerShuttle
     - type: ShipGridLock
       locked: False
     - type: BecomesStation
@@ -978,7 +979,7 @@ entities:
       parent: 45
     - type: Physics
       canCollide: False
-- proto: AmmoBox762x39mmFMJ
+- proto: AmmoBox7.62x39mmFMJ
   entities:
   - uid: 47
     components:
@@ -986,7 +987,7 @@ entities:
       parent: 45
     - type: Physics
       canCollide: False
-- proto: AmmoBox762x54mmRFMJ
+- proto: AmmoBox7.62x54mmRFMJ
   entities:
   - uid: 48
     components:
@@ -3995,6 +3996,24 @@ entities:
       rot: 3.141592653589793 rad
       pos: -0.5,5.5
       parent: 1
+- proto: CircuitImprinter
+  entities:
+  - uid: 881
+    components:
+    - type: Transform
+      pos: 0.5,11.5
+      parent: 1
+- proto: ComputerCrewMonitoring
+  entities:
+  - uid: 610
+    components:
+    - type: Transform
+      pos: -1.5,6.5
+      parent: 1
+    - type: ApcPowerReceiver
+      powerLoad: 5
+    - type: Battery
+      startingCharge: 0
 - proto: ComputerGunneryConsole
   entities:
   - uid: 609
@@ -4006,12 +4025,13 @@ entities:
       powerLoad: 5
     - type: Battery
       startingCharge: 0
-- proto: ComputerIFF
+- proto: ComputerResearchAndDevelopment
   entities:
-  - uid: 610
+  - uid: 776
     components:
     - type: Transform
-      pos: -1.5,6.5
+      rot: -1.5707963267948966 rad
+      pos: 4.5,9.5
       parent: 1
     - type: ApcPowerReceiver
       powerLoad: 5
@@ -4131,14 +4151,6 @@ entities:
       powerLoad: 5
     - type: Battery
       startingCharge: 0
-- proto: ConstructionBox
-  entities:
-  - uid: 621
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -1.5,11.5
-      parent: 1
 - proto: ConveyorBelt
   entities:
   - uid: 622
@@ -4193,14 +4205,6 @@ entities:
     - type: Transform
       pos: -1.5,19.5
       parent: 1
-- proto: DefibrillatorCabinetFilled
-  entities:
-  - uid: 651
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -0.5,-5.5
-      parent: 1
 - proto: DrinkCoffeeLiqueurBottleFull
   entities:
   - uid: 633
@@ -4245,13 +4249,6 @@ entities:
       parent: 632
     - type: Physics
       canCollide: False
-- proto: EngineeringTechFab
-  entities:
-  - uid: 645
-    components:
-    - type: Transform
-      pos: 0.5,8.5
-      parent: 1
 - proto: ExtinguisherCabinetFilled
   entities:
   - uid: 646
@@ -4282,6 +4279,12 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-2.5
+      parent: 1
+  - uid: 651
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -0.5,12.5
       parent: 1
   - uid: 652
     components:
@@ -4380,7 +4383,7 @@ entities:
   - uid: 659
     components:
     - type: Transform
-      pos: 0.3148923,11.424078
+      pos: 0.22987878,15.635074
       parent: 1
 - proto: GasMixerOnFlipped
   entities:
@@ -5264,13 +5267,6 @@ entities:
     - type: CollisionWake
       enabled: False
     - type: Conveyed
-- proto: Joint
-  entities:
-  - uid: 770
-    components:
-    - type: Transform
-      pos: 6.327828,0.90693974
-      parent: 1
 - proto: KitchenKnife
   entities:
   - uid: 771
@@ -5298,6 +5294,8 @@ entities:
         162:
         - - Pressed
           - Toggle
+    missingComponents:
+    - AccessReader
   - uid: 774
     components:
     - type: Transform
@@ -5321,6 +5319,8 @@ entities:
         862:
         - - Pressed
           - Toggle
+    missingComponents:
+    - AccessReader
   - uid: 775
     components:
     - type: Transform
@@ -5337,26 +5337,14 @@ entities:
         157:
         - - Pressed
           - Toggle
-- proto: LockerAtmosphericsFilledHardsuit
-  entities:
-  - uid: 776
-    components:
-    - type: Transform
-      pos: 3.5,11.5
-      parent: 1
+    missingComponents:
+    - AccessReader
 - proto: LockerElectricalSuppliesFilled
   entities:
   - uid: 777
     components:
     - type: Transform
       pos: -3.5,4.5
-      parent: 1
-- proto: LockerEngineerFilledHardsuit
-  entities:
-  - uid: 778
-    components:
-    - type: Transform
-      pos: 4.5,9.5
       parent: 1
 - proto: LockerSalvageSpecialistFilled
   entities:
@@ -5398,7 +5386,14 @@ entities:
     - type: Transform
       pos: 2.5,7.5
       parent: 1
-- proto: Magazine762x39mmFMJ
+- proto: MachineMaterialSilo
+  entities:
+  - uid: 621
+    components:
+    - type: Transform
+      pos: -1.5,11.5
+      parent: 1
+- proto: Magazine7.62x39mmFMJ
   entities:
   - uid: 785
     components:
@@ -5513,16 +5508,9 @@ entities:
       parent: 1
     - type: Paper
       content: >-
-        Privet Komrads! Is PPU engineer here. Is want to say, is nyet reccomend use ballistic gun (besides maybe 20mm for golem thing), as it may very likely knock ore away, so just select ENERGY to mine (is know, very advance)! For fight, use "Select All"! Red caution button is lock down bridge from outside, yellow caution button is close blast door to AME window, and shutter to space between AME and the rat tunnel. Button in very front, nyet in cockpit, with EXIT outline, is for dock zone. Do NYET go out without suit blyat, Sergei wasn't very smart... Also, glory to USSP! Do nyet forget to give Kommisar part of profit to help other komrade with pay (or suggest to Kommisar if he nyet do). Or just give working at Baikal money yourself!
+        Privet Komrads! Is PPU engineer here. Is want to say, is nyet reccomend use ballistic gun (besides maybe 20mm for golem thing), as it may very likely knock ore away, so just select ENERGY to mine (is know, very advance)! For fight, use "Select All"! Red caution button is lock down bridge from outside, yellow caution button is close blast door to AME window, and shutter to space between AME and the rat tunnel. Button in very front, nyet in cockpit, with EXIT outline, is for dock zone. Do NYET go out without suit blyat, Sergei wasn't very smart... Also, glory to USSP! 
 
         -D.W., People's Production Union designer.
-  - uid: 801
-    components:
-    - type: Transform
-      pos: 6.3486614,0.39999533
-      parent: 1
-    - type: Paper
-      content: A ship is great when your head ain't straight!
 - proto: PlasmaReinforcedWindowDirectional
   entities:
   - uid: 802
@@ -5568,7 +5556,7 @@ entities:
   - uid: 808
     components:
     - type: Transform
-      pos: 0.22114229,11.860987
+      pos: 0.5423788,15.619449
       parent: 1
 - proto: PowerCellRecharger
   entities:
@@ -5716,6 +5704,13 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 2.5,18.5
+      parent: 1
+- proto: Protolathe
+  entities:
+  - uid: 645
+    components:
+    - type: Transform
+      pos: 0.5,8.5
       parent: 1
 - proto: Railing
   entities:
@@ -5874,6 +5869,20 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -3.5,0.5
+      parent: 1
+- proto: ResearchAndDevelopmentServerUssp
+  entities:
+  - uid: 770
+    components:
+    - type: Transform
+      pos: 3.5,11.5
+      parent: 1
+- proto: ScrapProcessor
+  entities:
+  - uid: 801
+    components:
+    - type: Transform
+      pos: -1.5,8.5
       parent: 1
 - proto: ShelfWallFreezerDark
   entities:
@@ -6177,13 +6186,6 @@ entities:
     - type: Transform
       pos: 1.5,3.5
       parent: 1
-- proto: SpaceHeater
-  entities:
-  - uid: 877
-    components:
-    - type: Transform
-      pos: -1.5,8.5
-      parent: 1
 - proto: SpawnPointLatejoin
   entities:
   - uid: 878
@@ -6203,81 +6205,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 3.5,10.5
-      parent: 1
-- proto: SpawnPointUSSPCommissar
-  entities:
-  - uid: 881
-    components:
-    - type: Transform
-      pos: 0.5,2.5
-      parent: 1
-- proto: SpawnPointUSSPCorporal
-  entities:
-  - uid: 882
-    components:
-    - type: Transform
-      pos: 0.5,2.5
-      parent: 1
-  - uid: 883
-    components:
-    - type: Transform
-      pos: 3.5,10.5
-      parent: 1
-  - uid: 884
-    components:
-    - type: Transform
-      pos: 0.5,14.5
-      parent: 1
-- proto: SpawnPointUSSPMedic
-  entities:
-  - uid: 885
-    components:
-    - type: Transform
-      pos: 0.5,2.5
-      parent: 1
-  - uid: 886
-    components:
-    - type: Transform
-      pos: 3.5,10.5
-      parent: 1
-  - uid: 887
-    components:
-    - type: Transform
-      pos: 0.5,14.5
-      parent: 1
-- proto: SpawnPointUSSPRifleman
-  entities:
-  - uid: 888
-    components:
-    - type: Transform
-      pos: 3.5,10.5
-      parent: 1
-  - uid: 889
-    components:
-    - type: Transform
-      pos: 0.5,14.5
-      parent: 1
-  - uid: 890
-    components:
-    - type: Transform
-      pos: 0.5,2.5
-      parent: 1
-- proto: SpawnPointUSSPSergeant
-  entities:
-  - uid: 891
-    components:
-    - type: Transform
-      pos: 0.5,14.5
-      parent: 1
-  - uid: 892
-    components:
-    - type: Transform
-      pos: 3.5,10.5
-      parent: 1
-  - uid: 893
-    components:
-    - type: Transform
-      pos: 0.5,2.5
       parent: 1
 - proto: StructureGunRackWallmounted
   entities:
@@ -6344,6 +6271,8 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 1.5,6.5
       parent: 1
+    missingComponents:
+    - AccessReader
 - proto: Table
   entities:
   - uid: 903
@@ -6371,12 +6300,6 @@ entities:
     components:
     - type: Transform
       pos: 0.5,-2.5
-      parent: 1
-  - uid: 908
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 0.5,11.5
       parent: 1
   - uid: 909
     components:
@@ -6446,6 +6369,8 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -6.5,-3.5
       parent: 1
+    - type: Thruster
+      enabled: False
     - type: ApcPowerReceiver
       powerLoad: 1
   - uid: 920
@@ -6537,7 +6462,7 @@ entities:
   - uid: 935
     components:
     - type: Transform
-      pos: 0.6586423,11.783453
+      pos: 0.40175378,15.603824
       parent: 1
 - proto: VendingMachineTankDispenserEVA
   entities:
@@ -7630,6 +7555,18 @@ entities:
       parent: 1
 - proto: WeaponTurretL85Autocannon
   entities:
+  - uid: 778
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -6.5,2.5
+      parent: 1
+  - uid: 877
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 7.5,2.5
+      parent: 1
   - uid: 1129
     components:
     - type: Transform
@@ -7668,20 +7605,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 8.5,21.5
       parent: 1
-- proto: WeaponTurretVespera
-  entities:
-  - uid: 1135
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 7.5,2.5
-      parent: 1
-  - uid: 1136
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -6.5,2.5
-      parent: 1
 - proto: WindoorSecurePlasma
   entities:
   - uid: 1137
@@ -7691,3 +7614,4 @@ entities:
       pos: 0.5,21.5
       parent: 1
 ...
+
