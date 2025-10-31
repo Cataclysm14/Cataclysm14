@@ -73,6 +73,7 @@
   cost: 1
   mutuallyExclusiveTraits:
   - WillToDie
+  - Redshirt
   speciesBlacklist:
   - IPC
   blacklist:
@@ -236,3 +237,20 @@
     - BorgChassis
   components:
   - type: LiquorLifeline
+
+- type: trait
+  id: Redshirt
+  name: trait-redshirt-name
+  description: trait-redshirt-desc
+  category: Physical
+  cost: -8
+  mutuallyExclusiveTraits:
+  - WillToLive
+  speciesBlacklist:
+  - IPC
+  blacklist:
+    components:
+    - BorgChassis
+  components:
+  - type: WillToDie
+    deadDecrease: 100

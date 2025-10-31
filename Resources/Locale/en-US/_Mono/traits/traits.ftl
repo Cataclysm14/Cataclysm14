@@ -58,3 +58,7 @@ trait-self-aware-desc = You possess a keen intuition of your body and senses. Yo
 
 trait-liquor-lifeline-name = Liquor Lifeline
 trait-liquor-lifeline-desc = Forget the doctor — just hit the bar for your "ethanol prescription"! While drunk, you slowly heal Brute, Heat, Shock, and Cold damage, scaling with how drunk you are. Your liver is replaced with a sturdy dwarven one, granting the benefits of alcohol tolerance.
+
+# Redshirt
+trait-redshirt-name = Redshirt
+trait-redshirt-desc = "They said this air would be breathable. Get in, get out again, and no one gets hurt. Something is pulling me up the hill. I look down in my red shirt. I look down in my red shirt." Reduces your damage threshold for becoming Dead by 100 points.
