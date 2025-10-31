@@ -76,6 +76,7 @@
 # SPDX-FileCopyrightText: 2025 the-hivequeen
 # SPDX-FileCopyrightText: 2025 tonotom
 #
+# SPDX-FileCopyrightText: 2025 MaybeitsMir
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: microwaveMealRecipe
@@ -2758,3 +2759,37 @@
     FoodButterSlice: 1
   recipeType: Oven # Frontier
 
+- type: microwaveMealRecipe
+  id: RecipePlainGrits
+  name: butter grits recipe
+  result: FoodPlainGrits
+  time: 10
+  group: Savory
+  reagents:
+    Cornmeal: 5
+    Water: 10
+    TableSalt: 1
+  solids:
+    FoodButterSlice: 1
+    FoodBowlBig: 1
+  recipeType: # Frontier
+  - Oven # Mono
+  - Microwave # Frontier
+
+- type: microwaveMealRecipe
+  id: RecipeCheeseGrits
+  name: cheese grits recipe
+  result: FoodCheeseGrits
+  time: 10
+  group: Savory
+  reagents:
+    Cornmeal: 5
+    Water: 10
+    TableSalt: 1
+  solids:
+    FoodCheeseSlice: 1
+    FoodButterSlice: 1
+    FoodBowlBig: 1
+  recipeType: # Frontier
+  - Oven # Mono
+  - Microwave # Frontier
