@@ -47,7 +47,7 @@
   cost: 5000
   recipeUnlocks:
   - WeaponProtoKineticAccelerator
-  #- ShuttleGunKineticCircuitboard
+  - ShuttleGunKineticCircuitboard
   - WeaponTurretM25Circuitboard # Mono
   # These are roundstart but not replenishable for salvage
   - WeaponCrusher

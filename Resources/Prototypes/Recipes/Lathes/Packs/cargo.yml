@@ -35,5 +35,5 @@
   recipes:
   - OreProcessorIndustrialMachineCircuitboard
   # - CargoTelepadMachineCircuitboard # Frontier
-  # - ShuttleGunKineticCircuitboard
+  - ShuttleGunKineticCircuitboard
   - WeaponTurretM25Circuitboard # Mono
