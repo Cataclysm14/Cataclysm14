@@ -10,20 +10,19 @@
 
 - type: vessel
   id: Remontnik
-  parent: BaseVesselAntag
+  parent: BaseVessel
   name: PPU Remontnik
   description: A USSP engineering and mining vessel designed by PPU. Comes with an FTL, potatoes with butter and alcohol in the fridge.
-  price: 100000
+  price: 90000
   category: Medium
   group: Ussp
-  access: Mercenary
   shuttlePath: /Maps/_Mono/Shuttles/USSP/remontnik.yml
   guidebookPage: Null
   class:
   - Engineering
   - Salvage
   engine:
-  - Uranium
+  - AME
 
 - type: gameMap
   id: Remontnik
@@ -35,7 +34,7 @@
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Remontnik MIL{1}'
+          mapNameTemplate: 'Remontnik CIV{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
