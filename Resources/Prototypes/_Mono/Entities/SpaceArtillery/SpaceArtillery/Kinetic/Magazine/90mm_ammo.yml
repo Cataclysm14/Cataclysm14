@@ -6,7 +6,7 @@
 
 - type: entity
   id: Magazine90mm
-  name: "90x427mm HEAT ammo drum"
+  name: "90x427mm APHE ammo drum"
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
   - type: Tag
@@ -40,7 +40,7 @@
 
 - type: entity
   id: 90mmCartridge
-  name: cartridge (90x427mm HEAT)
+  name: cartridge (90x427mm APHE)
   parent: [ BaseCartridge, BaseC1Contraband ]
   components:
   - type: Tag
