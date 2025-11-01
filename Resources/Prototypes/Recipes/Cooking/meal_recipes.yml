@@ -2772,7 +2772,7 @@
     Blackpepper: 1
   solids:
     FoodPotato: 2
-    FoodButterSlice:
+    FoodButterSlice: 2
   recipeType: # Frontier
   - Oven # Mono
   - Microwave # Frontier
