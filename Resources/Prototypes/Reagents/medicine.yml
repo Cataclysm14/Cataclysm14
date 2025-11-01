@@ -1439,29 +1439,23 @@
               Brute: -3
               Burn: -3
               Toxin: -3
-        - !type:MovespeedModifier
-          conditions:
-          - !type:ReagentThreshold
-            min: 6 #Prevent heavy combat use case
-          walkSpeedModifier: 0.6
-          sprintSpeedModifier: 0.6
-        - !type:AdjustTemperature #A bit radical but
+        - !type:AdjustTemperature
           conditions:
           - !type:Temperature
-            min: 210.15 # fresium but weak
-          amount: -5000 #Mono end
+            min: 214.65 # auto-bootstrap cryo: you will slowdown long before you see combat effect
+          amount: -5000 # Mono end
         - !type:HealthChange
           conditions:
           - !type:Temperature
-            max: 213.0
+            max: 217.15 # Mono 213 >> 217.15: Necrosol can bootstrap only itself
           damage:
             groups:
-              Airloss: -12 #Mono start: 0 >> -12
+              Airloss: -4 # Mono start: 0 >> -4
               Brute: -6 # -4 >> -6
               Burn: -8 # -5 >> -8
               Toxin: -4 # 0 >> -4
             #types:
-            #  Poison: -2 #Mono end
+            #  Poison: -2 # Mono end
 
 - type: reagent
   id : Aloxadone
