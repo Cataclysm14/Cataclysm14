@@ -96,6 +96,24 @@
   - MonoChimeraSTCShuttleSpawnerScheduler
 
 - type: gamePreset
+  id: MonoMixed
+  name: mono-mixed-title
+  description: mono-mixed-description
+  showInVote: true
+  rules:
+  - NFAdventure
+  - BasicStationEventScheduler
+  - BluespaceEventScheduler
+  - BluespaceDungeonEventScheduler
+  - BluespaceSalvageEventScheduler
+  - SmugglingEventScheduler
+  - FrontierRoundstartVariation
+  - MonoChimeraSTCShuttleSpawnerSchedulerSlow
+  - MonoAISTCShuttleSpawnerSchedulerSlow
+  - MonoAISTCShuttleSpawnerSchedulerTier2Slow
+  - MonoAsakimSTCShuttleSpawnerSchedulerSlow
+
+- type: gamePreset
   id: MonoAllAtOnce
   name: mono-allatonce-title
   description: mono-allatonce-description
