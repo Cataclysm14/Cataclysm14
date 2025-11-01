@@ -13542,3 +13542,82 @@ Entries:
   id: 1498
   time: '2025-10-31T03:09:37.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2525
+- author: SeaborneProto
+  changes:
+    - type: Tweak
+      message: Additional Tajaran FurTones!
+  id: 1499
+  time: '2025-10-31T19:11:05.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2531
+- author: maybeitsmir
+  changes:
+    - type: Add
+      message: 'Added two new food recipes: buttered grits and cheese grits.'
+  id: 1500
+  time: '2025-10-31T19:11:59.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2528
+- author: Ilya246
+  changes:
+    - type: Tweak
+      message: PTK projectile velocity, and range, quadrupled.
+    - type: Tweak
+      message: M25 mining pulsar range halved but firerate 4->5.
+  id: 1501
+  time: '2025-10-31T19:13:32.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2530
+- author: Ark
+  changes:
+    - type: Add
+      message: Second batch of Physical traits!
+    - type: Fix
+      message: You should be able to open up armor plates storage now in hardsuits.
+    - type: Fix
+      message: >-
+        Trap Avoider trait should no longer be stunned by banana peels and soap.
+        Issue was the component was not networked to the client-side.
+  id: 1502
+  time: '2025-10-31T19:22:38.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2532
+- author: kasature90
+  changes:
+    - type: Remove
+      message: >-
+        Removed playtime requirements for ASR insurgent and TSF marine &
+        corpsman.
+  id: 1503
+  time: '2025-10-31T20:08:38.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2501
+- author: Avalon-Proto
+  changes:
+    - type: Add
+      message: >-
+        New Heavy Ballistic turrets are now available in sector, for your secure
+        locations
+  id: 1504
+  time: '2025-11-01T15:44:30.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2510
+- author: Ilya246
+  changes:
+    - type: Tweak
+      message: Public Transport Shuttle now waits 3 times less.
+    - type: Tweak
+      message: Trade Mall's scrapyard console is now much easier to find.
+    - type: Tweak
+      message: Grifty's is now a PTS destination.
+  id: 1505
+  time: '2025-11-01T15:45:21.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2535
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: >-
+        Advanced cryochems except dox now heal 25/t of their respective damage
+        types when metabolized while having over 1000 damage.
+    - type: Tweak
+      message: >-
+        Necrosol now has omnizine-level healing at all temperatures and was
+        reworked to be able to bootstrap itself cryogenically. It cannot
+        bootstrap other cryochems.
+  id: 1506
+  time: '2025-11-01T15:46:32.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2534

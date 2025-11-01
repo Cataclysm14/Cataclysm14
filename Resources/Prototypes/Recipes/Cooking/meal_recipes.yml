@@ -69,6 +69,7 @@
 # SPDX-FileCopyrightText: 2024 mkanke-real
 # SPDX-FileCopyrightText: 2024 potato1234_x
 # SPDX-FileCopyrightText: 2024 themias
+# SPDX-FileCopyrightText: 2025 MaybeitsMir
 # SPDX-FileCopyrightText: 2025 Miranda
 # SPDX-FileCopyrightText: 2025 SG6732
 # SPDX-FileCopyrightText: 2025 Smith
@@ -2771,7 +2772,24 @@
     Blackpepper: 1
   solids:
     FoodPotato: 2
-    FoodButterSlice: 2
+    FoodButterSlice:
+  recipeType: # Frontier
+  - Oven # Mono
+  - Microwave # Frontier
+  
+  
+- type: microwaveMealRecipe
+  id: RecipePlainGrits
+  name: butter grits recipe
+  result: FoodPlainGrits
+  time: 10
+  group: Savory
+  reagents:
+    Cornmeal: 5
+    Water: 10
+  solids:
+    FoodButterSlice: 1
+    FoodBowlBig: 1
   recipeType: # Frontier
   - Oven # Mono
   - Microwave # Frontier
@@ -2788,6 +2806,23 @@
     FoodCarrot: 1
     FoodMeatCutlet: 3
     FoodCheeseSlice: 1
+  recipeType: # Frontier
+  - Oven # Mono
+  - Microwave # Frontier
+  
+- type: microwaveMealRecipe
+  id: RecipeCheeseGrits
+  name: cheese grits recipe
+  result: FoodCheeseGrits
+  time: 10
+  group: Savory
+  reagents:
+    Cornmeal: 5
+    Water: 10
+  solids:
+    FoodCheeseSlice: 1
+    FoodButterSlice: 1
+    FoodBowlBig: 1
   recipeType: # Frontier
   - Oven # Mono
   - Microwave # Frontier
