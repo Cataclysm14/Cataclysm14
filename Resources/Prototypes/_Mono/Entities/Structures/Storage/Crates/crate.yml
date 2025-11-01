@@ -46,7 +46,7 @@
         - MachineLayer
 
 - type: entity
-  parent: [ BaseC3SyndicateContraband, CrateGenericSteel ] # Frontier: Added BaseC3SyndicateContraband
+  parent: [ BaseC3SyndicateContraband, CrateGenericSteel ] 
   id: CrateNanotrasen
   name: Nanotrasen crate
   description: A white and blue crate with the Nanotrasen Symbol.
@@ -55,3 +55,14 @@
     sprite: _Mono/Structures/Storage/Crates/nanotrasen.rsi
   - type: Sprite
     sprite: _Mono/Structures/Storage/Crates/nanotrasen.rsi
+
+- type: entity
+  parent: [ BaseC3SyndicateContraband, CrateGenericSteel ] 
+  id: CrateNanotrasenDS
+  name: menacing nanotrasen crate
+  description: A red and black crate with a menacing aura, it sends chills down your spine looking at it
+  components:
+  - type: Icon
+    sprite: _Mono/Structures/Storage/Crates/nt_ds.rsi
+  - type: Sprite
+    sprite: _Mono/Structures/Storage/Crates/nt_ds.rsi
