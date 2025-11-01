@@ -363,7 +363,7 @@
   description: BBQ ribs, slathered in a healthy coating of BBQ sauce. The least vegan thing to ever exist.
   components:
   - type: Food
-    trash: 
+    trash:
     - FoodKebabSkewer
   - type: FlavorProfile
     flavors:
@@ -635,7 +635,7 @@
   description: Buttery.
   components:
   - type: Food
-    trash: 
+    trash:
     - FoodPlate
   - type: FlavorProfile
     flavors:
@@ -652,3 +652,63 @@
           Quantity: 4
         - ReagentId: Vitamin
           Quantity: 4
+
+- type: entity
+  name: mashed potatoes
+  parent: FoodMealBase
+  id: FoodMealMashedPotatoes
+  description: A hearty bowl of mashed potatoes with an ungodly amount of butter.
+  components:
+  - type: Food
+    trash:
+    - FoodPlate
+  - type: FlavorProfile
+    flavors:
+    - potatoes
+    - butter
+  - type: Sprite
+    state: mashedpotatoes
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 35
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 15
+        - ReagentId: Flavorol
+          Quantity: 15
+        - ReagentId: Butter
+          Quantity: 5
+
+- type: entity
+  name: shepherd's pie
+  parent: FoodMealBase
+  id: FoodMealShepherdsPie
+  description: Meat, potatoes, vegetables, and cheese, all baked in one monstrous casserole.
+  components:
+  - type: Food
+    trash:
+    - FoodPlate
+  - type: FlavorProfile
+    flavors:
+    - potatoes
+    - butter
+    - cheesy
+    - meaty
+    - peas
+    - carrots
+  - type: Sprite
+    state: shepherdspie
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 60
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 20
+        - ReagentId: Flavorol
+          Quantity: 25
+        - ReagentId: Vitamin
+          Quantity: 10
+        - ReagentId: Butter
+          Quantity: 5

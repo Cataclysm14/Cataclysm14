@@ -2758,3 +2758,34 @@
     FoodButterSlice: 1
   recipeType: Oven # Frontier
 
+- type: microwaveMealRecipe
+  id: RecipeMashedPotatoes
+  name: mashed potatoes recipe
+  result: FoodMealMashedPotatoes
+  time: 15
+  group: Savory
+  reagents:
+    Milk: 1
+    Blackpepper: 1
+  solids:
+    FoodPotato: 2
+    FoodButterSlice: 2
+  recipeType: # Frontier
+  - Oven # Mono
+  - Microwave # Frontier
+
+- type: microwaveMealRecipe
+  id: RecipeShepherdsPie
+  name: shepherds pie recipe
+  result: FoodMealShepherdsPie
+  time: 30
+  group: Savory
+  solids:
+    FoodMealMashedPotatoes: 1
+    FoodPeaPod: 1
+    FoodCarrot: 1
+    FoodMeatCutlet: 3
+    FoodCheeseSlice: 1
+  recipeType: # Frontier
+  - Oven # Mono
+  - Microwave # Frontier
