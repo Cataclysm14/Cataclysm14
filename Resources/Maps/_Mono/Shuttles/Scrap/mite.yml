@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 11/01/2025 15:09:12
-  entityCount: 325
+  time: 11/01/2025 15:32:28
+  entityCount: 341
 maps: []
 grids:
 - 1
@@ -311,6 +311,12 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 1.5,3.5
+      parent: 1
+  - uid: 326
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -4.5,3.5
       parent: 1
 - proto: AtmosFixBlockerMarker
   entities:
@@ -1075,6 +1081,36 @@ entities:
     - type: Transform
       pos: 1.5,3.5
       parent: 1
+  - uid: 327
+    components:
+    - type: Transform
+      pos: 0.5,3.5
+      parent: 1
+  - uid: 328
+    components:
+    - type: Transform
+      pos: -0.5,3.5
+      parent: 1
+  - uid: 329
+    components:
+    - type: Transform
+      pos: -1.5,3.5
+      parent: 1
+  - uid: 330
+    components:
+    - type: Transform
+      pos: -2.5,3.5
+      parent: 1
+  - uid: 331
+    components:
+    - type: Transform
+      pos: -3.5,3.5
+      parent: 1
+  - uid: 332
+    components:
+    - type: Transform
+      pos: -4.5,3.5
+      parent: 1
 - proto: ChairPilotSeat
   entities:
   - uid: 262
@@ -1257,6 +1293,64 @@ entities:
     components:
     - type: Transform
       pos: -1.5,3.5
+      parent: 1
+- proto: PoweredlightEmpty
+  entities:
+  - uid: 341
+    components:
+    - type: Transform
+      pos: -2.5,4.5
+      parent: 1
+- proto: PoweredlightOrange
+  entities:
+  - uid: 335
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 2.5,5.5
+      parent: 1
+- proto: PoweredlightSodium
+  entities:
+  - uid: 333
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 0.5,3.5
+      parent: 1
+  - uid: 334
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -3.5,3.5
+      parent: 1
+  - uid: 336
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -6.5,3.5
+      parent: 1
+  - uid: 337
+    components:
+    - type: Transform
+      pos: -6.5,6.5
+      parent: 1
+  - uid: 338
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -1.5,0.5
+      parent: 1
+  - uid: 339
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -3.5,7.5
+      parent: 1
+  - uid: 340
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 0.5,7.5
       parent: 1
 - proto: ReinforcedWindow
   entities:
