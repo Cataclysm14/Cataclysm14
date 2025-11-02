@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 11/02/2025 03:45:09
-  entityCount: 1747
+  time: 11/02/2025 03:58:04
+  entityCount: 1751
 maps: []
 grids:
 - 1
@@ -1486,8 +1486,8 @@ entities:
       pos: 0.5,-16.5
       parent: 1
     - type: AmeController
-      injecting: true
       injectionAmount: 6
+      injecting: True
     - type: ContainerContainer
       containers:
         fuelSlot: !type:ContainerSlot
@@ -1564,11 +1564,17 @@ entities:
     - type: Transform
       pos: 0.5,-18.5
       parent: 1
+    - type: PointLight
+      radius: 2
+      enabled: True
   - uid: 1538
     components:
     - type: Transform
       pos: 0.5,-20.5
       parent: 1
+    - type: PointLight
+      radius: 2
+      enabled: True
   - uid: 1723
     components:
     - type: Transform
@@ -1579,6 +1585,9 @@ entities:
     - type: Transform
       pos: 0.5,-19.5
       parent: 1
+    - type: PointLight
+      radius: 2
+      enabled: True
 - proto: AmmoLoader
   entities:
   - uid: 1678
@@ -1634,6 +1643,11 @@ entities:
       parent: 1
 - proto: APCBasic
   entities:
+  - uid: 35
+    components:
+    - type: Transform
+      pos: -0.5,-13.5
+      parent: 1
   - uid: 103
     components:
     - type: Transform
@@ -4261,6 +4275,16 @@ entities:
     - type: Transform
       pos: -11.5,-18.5
       parent: 1
+  - uid: 1750
+    components:
+    - type: Transform
+      pos: -0.5,-14.5
+      parent: 1
+  - uid: 1751
+    components:
+    - type: Transform
+      pos: -0.5,-13.5
+      parent: 1
 - proto: CableHV
   entities:
   - uid: 62
@@ -5079,6 +5103,16 @@ entities:
     components:
     - type: Transform
       pos: 1.5,-1.5
+      parent: 1
+  - uid: 1748
+    components:
+    - type: Transform
+      pos: -0.5,-14.5
+      parent: 1
+  - uid: 1749
+    components:
+    - type: Transform
+      pos: -0.5,-13.5
       parent: 1
 - proto: CableTerminal
   entities:
