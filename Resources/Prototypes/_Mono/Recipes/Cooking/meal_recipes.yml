@@ -62,6 +62,8 @@
   result: FoodMacaroni
   time: 10
   group: Pasta
+  reagents:
+    Milk: 1
   solids:
     FoodNoodlesBoiled: 1
     FoodCheeseSlice: 2
