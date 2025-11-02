@@ -370,5 +370,5 @@
   components:
   - type: PlateletFactories
     intervalSeconds: 1
-    healPerSecond: 1
+    healPerSecond: .5
     critMultiplier: .25
