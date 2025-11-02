@@ -19,7 +19,7 @@
   - Capital
   - Frigate
   engine:
-  - Plasma
+  - AME
 
 - type: gameMap
   id: Saintie
