@@ -25,6 +25,7 @@
 # SPDX-FileCopyrightText: 2025 Avalon
 # SPDX-FileCopyrightText: 2025 BramvanZijp
 # SPDX-FileCopyrightText: 2025 Checkraze
+# SPDX-FileCopyrightText: 2025 Ilya246
 # SPDX-FileCopyrightText: 2025 Jakumba
 # SPDX-FileCopyrightText: 2025 Maxtone
 # SPDX-FileCopyrightText: 2025 Redrover1760
@@ -10805,6 +10806,12 @@ entities:
     - type: Transform
       pos: 13.5,-20.5
       parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 9
+      - 8
+      - 13
+      - 14
 - proto: FirelockEdge
   entities:
   - uid: 1618
