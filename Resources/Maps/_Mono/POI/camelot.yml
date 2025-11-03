@@ -35704,8 +35704,6 @@ entities:
     - type: Transform
       pos: -41.5,41.5
       parent: 1
-    missingComponents:
-    - Anchorable
 - proto: FaxMachineUSSP
   entities:
   - uid: 5672
