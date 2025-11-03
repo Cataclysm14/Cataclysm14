@@ -411,7 +411,7 @@ public sealed partial class MechSystem : SharedMechSystem
             return false;
 
         // Mono
-        if (batteryComp.CurrentCharge + delta.Float() < 0 || )
+        if (batteryComp.CurrentCharge + delta.Float() < 0)
             return false;
 
         _battery.SetCharge(battery!.Value, batteryComp.CurrentCharge + delta.Float(), batteryComp);
