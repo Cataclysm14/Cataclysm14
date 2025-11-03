@@ -18,7 +18,7 @@
   name: 'Hammer Of The Union'
   minimumDistance: 10000
   maximumDistance: 15000
-  spawnGroup: Optional
+  spawnGroup: Required
   gridPath: /Maps/_Mono/POI/Dungeons/hammeroftheunion.yml
   addComponents:
   - type: IFF
