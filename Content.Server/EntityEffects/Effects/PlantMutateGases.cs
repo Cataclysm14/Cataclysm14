@@ -46,6 +46,7 @@ public sealed partial class PlantMutateExudeGasses : EntityEffect
           //Gas.BZ,
           //Gas.Healium,
           //Gas.Nitrium,
+		  //Gas.Pluoxium,
         };
         // End Frontier, Funky: List of gasses
 
@@ -104,6 +105,7 @@ public sealed partial class PlantMutateConsumeGasses : EntityEffect
           //Gas.BZ,
           //Gas.Healium,
           //Gas.Nitrium,
+		  //Gas.Pluoxium,
         };
         // End Frontier: List of gasses
 
