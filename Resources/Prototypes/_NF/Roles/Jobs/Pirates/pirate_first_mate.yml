@@ -37,6 +37,7 @@
   guides: [ BasicLore, PhaethonDynasty] # Mono
   access:
   - Pirate
+  - Mercenary
   accessGroups:
   - GeneralAccess
   special:

@@ -40,6 +40,7 @@
   access:
   - Pirate
   - RogueCommander
+  - Mercenary
   accessGroups:
   - GeneralAccess
   special:
