@@ -59,9 +59,6 @@ uplink-pirate-syndicate-jetpack-desc = A black jetpack. It allows you to fly aro
 uplink-pirate-energy-shield-name = Energy Shield
 uplink-pirate-energy-shield-desc = Exotic energy shield that reflects almost all laser beams, as well as a little protection from bullets and other physical attacks.
 
-uplink-pirate-agent-id-card-name = Agent ID Card
-uplink-pirate-agent-id-card-desc = A modified ID card that can copy accesses from other cards and change its name and job title at-will.
-
 uplink-pirate-radio-jammer-name = Radio Jammer
 uplink-pirate-radio-jammer-desc = This device will disrupt any nearby outgoing radio communication as well as suit sensors when activated.
 
@@ -88,9 +85,6 @@ uplink-pirate-comms-computer-circuitboard-desc = A computer printed circuit boar
 
 uplink-pirate-security-cyborg-module-name = Security Cyborg Module
 uplink-pirate-security-cyborg-module-desc = A machete, an energy gun, and a stun baton, made specifically for borgs. Wait, doesn't TFSMC have the same thing?
-
-uplink-pirate-voicemask-name = Chameleon Voicemask
-uplink-pirate-voicemask-desc = A voicemask to engage in some subterfuge and tomfoolery... or just keep your identity hidden.
 
 uplink-pirate-cash10000-name = 10,000 credits
 uplink-pirate-cash10000-desc = That's my boy, you made my day.
