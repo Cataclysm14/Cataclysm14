@@ -178,7 +178,7 @@
   minimumRequirements:
   - 0     # oxygen
   - 0     # nitrogen
-  - 25     # carbon dioxide
+  - 500    # carbon dioxide
   - 0     # plasma
   - 0     # tritium
   - 0     # vapor
