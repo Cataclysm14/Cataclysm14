@@ -10,7 +10,7 @@
   parent: BaseVesselAntag
   name: ASR Wagon
   description: The Wagon is a dual-purpose salvaging and mining vessel, fielding 4 mining pulsers and 5 20mm autocannons. Originally meant for incursions into opposing forces asteroid claims and ship graveyards to deny important strategic resources, but just as useful for benign resource gathering. 
-  price: 55500
+  price: 60000
   category: Medium
   group: BlackMarket
   shuttlePath: /Maps/_Mono/Shuttles/BlackMarket/wagon.yml

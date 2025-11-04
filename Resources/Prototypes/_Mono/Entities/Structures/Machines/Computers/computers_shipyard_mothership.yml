@@ -101,6 +101,7 @@
     - Sable
     - Tethys
     - Spyglass
+    - Wagon
   - type: Sprite
     sprite: _NF/Structures/Machines/computers.rsi
     layers:
