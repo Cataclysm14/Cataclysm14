@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 11/06/2025 02:09:37
-  entityCount: 7861
+  time: 11/06/2025 02:22:02
+  entityCount: 7874
 maps: []
 grids:
 - 1
@@ -57,7 +57,7 @@ entities:
   - uid: 1
     components:
     - type: MetaData
-      name: PDV
+      name: PDV Helios Fortress
     - type: Transform
       parent: invalid
     - type: MapGrid
@@ -4846,16 +4846,6 @@ entities:
     - type: RadiationGridResistance
     - type: NavMap
     - type: ForceAnchor
-  - uid: 2829
-    components:
-    - type: MetaData
-      name: Map Entity
-    - type: Transform
-    - type: Map
-      mapPaused: True
-    - type: GridTree
-    - type: Broadphase
-    - type: OccluderTree
 - proto: AirAlarm
   entities:
   - uid: 7358
@@ -7242,11 +7232,52 @@ entities:
     - type: Transform
       pos: -37.5,27.5
       parent: 1
+  - uid: 2829
+    components:
+    - type: Transform
+      pos: -14.5,-0.5
+      parent: 1
   - uid: 7401
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -13.5,43.5
+      parent: 1
+  - uid: 7862
+    components:
+    - type: Transform
+      pos: -13.5,-0.5
+      parent: 1
+  - uid: 7863
+    components:
+    - type: Transform
+      pos: -12.5,-0.5
+      parent: 1
+  - uid: 7864
+    components:
+    - type: Transform
+      pos: 13.5,-0.5
+      parent: 1
+  - uid: 7865
+    components:
+    - type: Transform
+      pos: 14.5,-0.5
+      parent: 1
+  - uid: 7866
+    components:
+    - type: Transform
+      pos: 15.5,-0.5
+      parent: 1
+  - uid: 7867
+    components:
+    - type: Transform
+      pos: -17.5,8.5
+      parent: 1
+  - uid: 7868
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 4.5,77.5
       parent: 1
 - proto: AtmosFixBlockerMarker
   entities:
@@ -23273,6 +23304,42 @@ entities:
     - type: Transform
       pos: -21.5,27.5
       parent: 1
+  - uid: 7869
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 6.5,76.5
+      parent: 1
+  - uid: 7870
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 6.5,75.5
+      parent: 1
+  - uid: 7871
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 7.5,76.5
+      parent: 1
+  - uid: 7872
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 7.5,75.5
+      parent: 1
+  - uid: 7873
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 8.5,76.5
+      parent: 1
+  - uid: 7874
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 8.5,75.5
+      parent: 1
 - proto: ChairFolding
   entities:
   - uid: 4571
@@ -38865,45 +38932,115 @@ entities:
     - type: Transform
       pos: -11.5,2.5
       parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        345:
+        - - Pressed
+          - Toggle
+        346:
+        - - Pressed
+          - Toggle
   - uid: 2338
     components:
     - type: Transform
       pos: -15.5,-0.5
       parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        348:
+        - - Pressed
+          - Toggle
   - uid: 2339
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -15.5,2.5
       parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        347:
+        - - Pressed
+          - Toggle
   - uid: 2340
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -11.5,-0.5
       parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        350:
+        - - Pressed
+          - Toggle
+        349:
+        - - Pressed
+          - Toggle
   - uid: 2341
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 12.5,-0.5
       parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        339:
+        - - Pressed
+          - Toggle
+        340:
+        - - Pressed
+          - Toggle
+        341:
+        - - Pressed
+          - Toggle
   - uid: 2342
     components:
     - type: Transform
       pos: 12.5,2.5
       parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        344:
+        - - Pressed
+          - Toggle
+        343:
+        - - Pressed
+          - Toggle
+        342:
+        - - Pressed
+          - Toggle
   - uid: 2343
     components:
     - type: Transform
       pos: 16.5,-0.5
       parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        341:
+        - - Pressed
+          - Toggle
+        340:
+        - - Pressed
+          - Toggle
+        339:
+        - - Pressed
+          - Toggle
   - uid: 2344
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 16.5,2.5
       parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        342:
+        - - Pressed
+          - Toggle
+        343:
+        - - Pressed
+          - Toggle
+        344:
+        - - Pressed
+          - Toggle
   - uid: 2345
     components:
     - type: Transform
