@@ -2,7 +2,7 @@
   parent: ClothingBackpackDuffelTsfmc
   id: ClothingBackpackDuffelAshstormBundle
   name: EM72 Ashstorm bundle
-  description: A powerful energy LMG, coming pre-packaged with 3 spare cells. Perfect for layign down surpressive fire down long halls
+  description: A powerful energy LMG, coming pre-packaged with 3 spare cells. Perfect for laying down surpressive fire down long halls of glass.
   components:
   - type: StorageFill
     contents:
