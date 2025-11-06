@@ -1,0 +1,9 @@
+- type: entity
+  id: PaperDSShippingError
+  parent: PaperWritten
+  name: NT shipping manifest
+  components:
+  - type: Paper
+    content: paper-text-NT-manifest
+    stampedState: paper_stamp-centcom
+

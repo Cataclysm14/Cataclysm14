@@ -68,6 +68,7 @@
   components:
   - type: StorageFill
     contents:
+      - id: PaperDSShippingError
       - id: ClothingBackpackRogueNanotrasenT2
         prob: 0.3
       - id: ClothingBackpackRogueNanotrasenT3
