@@ -23,7 +23,7 @@
     allowMovement: true
     requirements:
     - !type:OverallPlaytimeRequirement
-      time: 36000 # 10 hrs
+      time: 345600 # 96 hrs - THIS IS WHY WE CANT HAVE NICE THINGS
     name: cortical-borer-ghostrole-name
     description: cortical-borer-ghostrole-desc
     rules: cortical-borer-ghostrole-rules
