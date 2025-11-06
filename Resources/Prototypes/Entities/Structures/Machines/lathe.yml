@@ -929,7 +929,6 @@
     - RGlassSmelting
   - type: PlaceableSurface # DeltaV: Allow ore bags to dump into it directly
     isPlaceable: false # but not place on it if you just click it with a random item
-  - type: OreSiloClient # Proto's fix for silo linkage
 
 - type: entity
   parent: OreProcessor
@@ -948,7 +947,6 @@
     - OreSmelting
     - RGlassSmelting
     - AdvancedSmelting
-  -type: OreSiloClient # Proto's fix for silo linkage
 
 - type: entity
   parent: BaseLathe
