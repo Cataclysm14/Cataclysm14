@@ -51,7 +51,7 @@
     Uranium: 500
 
 - type: latheRecipe
-  Parent: BaseAmmoRecipe
+  parent: BaseAmmoRecipe
   id: CartridgeMPSSMMissile
   categories:
   - MiscAmmo
