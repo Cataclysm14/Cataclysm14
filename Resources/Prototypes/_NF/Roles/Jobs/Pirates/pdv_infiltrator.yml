@@ -12,7 +12,7 @@
     - !type:DepartmentTimeRequirement
       department: Security
       time: 36000 # 10 hours # mono end
-      whitelisted: true
+  whitelisted: true
   startingGear: PDVInfiltratorGear
   alwaysUseSpawner: true
   hideConsoleVisibility: true
