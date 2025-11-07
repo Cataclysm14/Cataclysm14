@@ -10,29 +10,10 @@
   name: NT equipement crate
   description: A white and blue crate with the Nanotrasen Symbol, a relic from the corporation wars, could contain some interesting things.
   components:
-  - type: StorageFill
-    contents:
-      - id: ClothingBackpackRogueNanotrasenT1
-      - id: ClothingBackpackRogueNanotrasenT1
-        prob: 0.5
-      - id: ClothingBackpackRogueNanotrasenT1
-        prob: 0.05
-      - id: ClothingBackpackRogueNanotrasenT2
-        prob: 0.25
-      - id: ClothingBackpackRogueNanotrasenT3
-        prob: 0.01
-      - id: ClothingOuterArmorBasic
-      - id: ClothingHeadHelmetBasic
-        orGroup: ClothingHeadHelmetBasic
-      - id: ClothingHeadHelmetJustice
-        orGroup: ClothingHeadHelmetBasic
-      - id: Stunbaton
-      - id: Handcuffs
-        prob: 0.5
-      - id: Handcuffs
-        prob: 0.5
-      - id: Handcuffs
-        prob: 0.5
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: CrateNanotrasenLootFilledT1Trunk
 
 - type: entity
   id: CrateNanotrasenLootFilledT2
@@ -41,23 +22,10 @@
   name: NT equipement crate
   description: A white and blue crate with the Nanotrasen Symbol, a relic from the corporation wars, could contain some interesting things.
   components:
-  - type: StorageFill
-    contents:
-      - id: ClothingBackpackRogueNanotrasenT1
-        prob: 0.5
-      - id: ClothingBackpackRogueNanotrasenT2
-      - id: ClothingBackpackRogueNanotrasenT2
-        prob: 0.1
-      - id: ClothingBackpackRogueNanotrasenT2
-        prob: 0.05
-      - id: ClothingBackpackRogueNanotrasenT3
-        prob: 0.1
-      - id: NTLootBackpack
-        prob: 0.3
-      - id: NTLootHardsuit
-        prob: 0.5
-      - id: PenCentcom
-        prob: 0.75
+   - type: EntityTableContainerFill
+     containers:
+      entity_storage: !type:NestedSelector
+        tableId: CrateNanotrasenLootFilledT2Trunk
 
 - type: entity
   id: CrateNanotrasenLootFilledT3
@@ -66,17 +34,7 @@
   name: menacing NT equipement crate
   description: A white and blue crate with the Nanotrasen Symbol, a relic from the corporation wars, could contain some interesting things.
   components:
-  - type: StorageFill
-    contents:
-      - id: PaperDSShippingError
-      - id: ClothingBackpackRogueNanotrasenT2
-        prob: 0.3
-      - id: ClothingBackpackRogueNanotrasenT3
-      - id: ClothingBackpackRogueNanotrasenT3
-        prob: 0.3
-      - id: ClothingBackpackRogueNanotrasenT3
-        prob: 0.2
-      - id: NTLootBackpack
-        prob: 0.5
-      - id: NTLootHardsuit
-        prob: 0.75
+   - type: EntityTableContainerFill
+     containers:
+      entity_storage: !type:NestedSelector
+        tableId: CrateNanotrasenLootFilledT3Trunk

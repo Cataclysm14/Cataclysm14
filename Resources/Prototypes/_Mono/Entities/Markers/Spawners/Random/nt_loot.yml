@@ -62,6 +62,63 @@
       tableId: NTLootHardsuitTrunk
       prob: 1.0
 
+- type: entitytable
+  id: CrateNanotrasenLootFilledT1Trunk
+  table: !type:AllSelector
+    children:
+    - id: ClothingBackpackRogueNanotrasenT1
+    - id: ClothingBackpackRogueNanotrasenT1
+      prob: 0.5
+    - id: ClothingBackpackRogueNanotrasenT1
+      prob: 0.25
+    - id: ClothingBackpackRogueNanotrasenT2
+      prob: 0.25
+    - id: ClothingBackpackRogueNanotrasenT3
+      prob: 0.05
+
+- type: entitytable
+  id: CrateNanotrasenLootFilledT2Trunk
+  table: !type:AllSelector
+    children:
+    - id: ClothingBackpackRogueNanotrasenT1
+      prob: 0.5
+    - id: ClothingBackpackRogueNanotrasenT2
+    - id: ClothingBackpackRogueNanotrasenT2
+      prob: 0.25
+    - id: ClothingBackpackRogueNanotrasenT2
+      prob: 0.05
+    - id: ClothingBackpackRogueNanotrasenT3
+      prob: 0.1
+    - id: PenCentcom
+      prob: 0.75
+    - !type:NestedSelector
+      tableId: NTLootBackpackTrunk
+      prob: 0.3
+    - !type:NestedSelector
+      tableId: NTLootHardsuitTrunk
+      prob: 0.5
+
+- type: entitytable
+  id: CrateNanotrasenLootFilledT3Trunk
+  table: !type:AllSelector
+    children:
+    - id: ClothingBackpackRogueNanotrasenT2
+    - id: ClothingBackpackRogueNanotrasenT2
+      prob: 0.05
+    - id: ClothingBackpackRogueNanotrasenT3
+    - id: ClothingBackpackRogueNanotrasenT3
+      prob: 0.5
+    - id: ClothingBackpackRogueNanotrasenT3
+      prob: 0.1
+    - id: PenCentcom
+      prob: 0.75
+    - !type:NestedSelector
+      tableId: NTLootBackpackTrunk
+      prob: 0.5
+    - !type:NestedSelector
+      tableId: NTLootHardsuitTrunk
+      prob: 0.75
+
 - type: entityTable
   id: NTLootClothingT1Trunk
   table: !type:GroupSelector
