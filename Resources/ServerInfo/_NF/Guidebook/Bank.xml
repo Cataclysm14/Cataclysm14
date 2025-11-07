@@ -9,7 +9,7 @@ Money that you [bold]deposit[/bold] at an [color=#44cc00]ATM[/color] on the Colo
     <GuideEntityEmbed Entity="ComputerBankATM"/>
     <GuideEntityEmbed Entity="SpaceCash1000"/>
   </Box>
-  You can access your personal bank account at any time to withdraw your hard-earned [color=#44cc00]Credits[/color] at any [color=#44cc00]Galactic Bank ATM[/color].
+  You can access your personal bank account at any time to withdraw your hard-earned [color=#44cc00]Spesos[/color] at any [color=#44cc00]Galactic Bank ATM[/color].
 
 Any ATM that you find that isn't directly labelled [bold]withdraw only[/bold] lets you withdraw and deposit cash.
 Make sure you deposit your cash and sell off your ship before ending your shift!
@@ -22,6 +22,6 @@ Make sure you deposit your cash and sell off your ship before ending your shift!
   </Box>
   Your bank account can be used through [color=#44cc00]Galactic Bank ATMs[/color], [color=#44cc00]cargo computers[/color], and [color=#44cc00]vending machines[/color].
 
-When trading with other people, you'll usually deal in stacks of [color=#44cc00]Credits[/color].
+When trading with other people, you'll usually deal in stacks of [color=#44cc00]Spesos[/color].
 Be sure to deposit these at an [color=#44cc00]ATM[/color] before ending your shift.
 </Document>

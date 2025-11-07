@@ -300,11 +300,11 @@ public sealed class BankCommand : IConsoleCommand
             // For the amount parameter, provide some common values as suggestions
             var amountOptions = new List<CompletionOption>
             {
-                new CompletionOption("100", "Add 100 credits"),
-                new CompletionOption("1000", "Add 1000 credits"),
-                new CompletionOption("10000", "Add 10000 credits"),
-                new CompletionOption("-100", "Remove 100 credits"),
-                new CompletionOption("-1000", "Remove 1000 credits")
+                new CompletionOption("100", "Add 100 spesos"),
+                new CompletionOption("1000", "Add 1000 spesos"),
+                new CompletionOption("10000", "Add 10000 spesos"),
+                new CompletionOption("-100", "Remove 100 spesos"),
+                new CompletionOption("-1000", "Remove 1000 spesos")
             };
 
             return CompletionResult.FromOptions(amountOptions);

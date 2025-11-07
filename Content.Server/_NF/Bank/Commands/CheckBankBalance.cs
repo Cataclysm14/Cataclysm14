@@ -44,7 +44,7 @@ namespace Content.Server._NF.Bank.Commands
                 var bankSystem = _entitySystemManager.GetEntitySystem<BankSystem>();
                 if (bankSystem.TryGetBalance(onlinePlayer, out var balance))
                 {
-                    shell.WriteLine($"Player {username} has a bank balance of {balance} credits.");
+                    shell.WriteLine($"Player {username} has a bank balance of {balance} spesos.");
                     return;
                 }
             }
@@ -52,7 +52,7 @@ namespace Content.Server._NF.Bank.Commands
             // If not online, check cached preferences
             if (TryGetOfflinePlayerBalance(username, out var offlineBalance))
             {
-                shell.WriteLine($"Player {username} has a bank balance of {offlineBalance} credits.");
+                shell.WriteLine($"Player {username} has a bank balance of {offlineBalance} spesos.");
                 return;
             }
 
@@ -68,7 +68,7 @@ namespace Content.Server._NF.Bank.Commands
                 {
                     if (profile is HumanoidCharacterProfile humanoid)
                     {
-                        shell.WriteLine($"Player {username} has a bank balance of {humanoid.BankBalance} credits.");
+                        shell.WriteLine($"Player {username} has a bank balance of {humanoid.BankBalance} spesos.");
                         return;
                     }
                 }

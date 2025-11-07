@@ -25,6 +25,7 @@
 # SPDX-FileCopyrightText: 2025 robinthedragon
 # SPDX-FileCopyrightText: 2025 spderman3333
 # SPDX-FileCopyrightText: 2025 starch
+# SPDX-FileCopyrightText: 2025 RangerXVII
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -304,7 +305,7 @@
   parent: BaseBarSign
   id: BarSignSpacebucks
   name: Spacebucks
-  description: You can't get away from them, even in space, and even after we started calling them 'credits' instead.
+  description: You can't get away from them, even in space.
   components:
   - type: BarSign
     current: Spacebucks

@@ -13,6 +13,7 @@
 # SPDX-FileCopyrightText: 2023 potato1234_x
 # SPDX-FileCopyrightText: 2025 Jakumba
 # SPDX-FileCopyrightText: 2025 starch
+# SPDX-FileCopyrightText: 2025 RangerXVII
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -186,7 +187,7 @@
    id: WardrobeCargoFilled
    suffix: Filled
    parent: WardrobeCargo
-   description: "This locker? Maybe 500 credits. Brotherhood? Priceless."
+   description: "This locker? Maybe 500 spesos. Brotherhood? Priceless."
    components:
    - type: StorageFill
      contents:

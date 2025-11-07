@@ -10,6 +10,7 @@
 # SPDX-FileCopyrightText: 2025 starch
 # SPDX-FileCopyrightText: 2025 tonotom
 # SPDX-FileCopyrightText: 2025 tonotom1
+# SPDX-FileCopyrightText: 2025 RangerXVII
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -760,7 +761,7 @@
     rareChance: 0.01
 
 - type: entity
-  name: random credits
+  name: random spesos
   id: SpawnDungeonLootSpesos
   parent: MarkerBasePlaceFree
   suffix: Dungeon
