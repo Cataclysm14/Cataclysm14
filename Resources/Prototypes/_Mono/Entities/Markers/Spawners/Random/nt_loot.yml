@@ -5,7 +5,6 @@
 - type: entity
   parent: MarkerBase
   id: NTLootT1Clothing
-  categories: [ HideSpawnMenu ]
   name: NT clothing T1 spawner
   components:
   - type: EntityTableSpawner
@@ -17,7 +16,6 @@
 - type: entity
   parent: MarkerBase
   id: NTLootT2Clothing
-  categories: [ HideSpawnMenu ]
   name: NT clothing T2 spawner
   components:
   - type: EntityTableSpawner
@@ -29,7 +27,6 @@
 - type: entity
   parent: MarkerBase
   id: NTLootT3Clothing
-  categories: [ HideSpawnMenu ]
   name: NT clothing T3 Spawner
   components:
   - type: EntityTableSpawner
@@ -41,7 +38,6 @@
 - type: entity
   parent: MarkerBase
   id: NTLootBackpack
-  categories: [ HideSpawnMenu ]
   name: NT backpack spawner
   components:
   - type: EntityTableSpawner
@@ -53,7 +49,6 @@
 - type: entity
   parent: MarkerBase
   id: NTLootHardsuit
-  categories: [ HideSpawnMenu ]
   name: NT hardsuit spawner
   components:
   - type: EntityTableSpawner
@@ -62,7 +57,7 @@
       tableId: NTLootHardsuitTrunk
       prob: 1.0
 
-- type: entitytable
+- type: entityTable
   id: CrateNanotrasenLootFilledT1Trunk
   table: !type:AllSelector
     children:
@@ -76,7 +71,7 @@
     - id: ClothingBackpackRogueNanotrasenT3
       prob: 0.05
 
-- type: entitytable
+- type: entityTable
   id: CrateNanotrasenLootFilledT2Trunk
   table: !type:AllSelector
     children:
@@ -98,7 +93,7 @@
       tableId: NTLootHardsuitTrunk
       prob: 0.5
 
-- type: entitytable
+- type: entityTable
   id: CrateNanotrasenLootFilledT3Trunk
   table: !type:AllSelector
     children:
