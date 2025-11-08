@@ -9765,8 +9765,6 @@ entities:
       pos: 34.5,23.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -84522.15
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -9833,8 +9831,6 @@ entities:
       pos: -38.5,48.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -208910.7
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -10462,8 +10458,6 @@ entities:
       pos: 50.5,55.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -35410.953
-      state: Opening
     - type: Docking
       name: C1
     - type: DeviceLinkSource
@@ -10580,8 +10574,6 @@ entities:
       pos: -20.5,88.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -35364.754
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
