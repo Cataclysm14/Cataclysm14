@@ -91,6 +91,8 @@
   minLimit: 1
   loadouts:
   - PDVCommanderBeret
+  fallbacks:
+  - PDVCommanderBeret
 - type: loadoutGroup
   id: PDVBelt
   name: loadout-group-contractor-belt
