@@ -8,7 +8,7 @@ mono-tsfussp-title = Cold War (TSF)
 mono-tsfussp-description = TSF colonization efforts are threatened by USSP expansion. A cold war is in place between the local TSFMC detachment and USSP colonization forces.
 
 mono-standard-title = Standard (TSF|PDV)
-mono-standard-description = Native ASR insurgents threatens TSF colonial expansion into the sector.
+mono-standard-description = Native PDV imperials threaten TSF colonial expansion into the sector.
 
 mono-ads-title = Remnants (TSF|PDV)
 mono-ads-description = Native PD imperials threaten TSF colonial expansion into the sector. A tense cold war between the TSF Marine Corps detachment. Pre-fracture warriors and defense systems threaten their plans.
