@@ -13827,3 +13827,57 @@ Entries:
   id: 1530
   time: '2025-11-09T14:52:20.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2577
+- author: Arcticular1
+  changes:
+    - type: Fix
+      message: Spaska no longer requires its own playtime
+    - type: Fix
+      message: >-
+        Fortress is now fixed with added atms, proper civ access for the docks
+        and a admin console.
+  id: 1531
+  time: '2025-11-09T19:18:11.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2578
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: >-
+        Colossus Central sec docks access restricted, beacons fixed, TSF
+        shipyard access for sec revoked. QOL map and mass scanner touchups and
+        asphyxiation risk reduced at cryosleep, added safeguards against power
+        sabotage, added sinks to the kitchen and bar
+  id: 1532
+  time: '2025-11-09T19:31:23.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2573
+- author: Avalon-Proto
+  changes:
+    - type: Tweak
+      message: All pulse weapons have been rebalanced and changed
+    - type: Add
+      message: TSF FTLs and Col. can now purchase a pulse rifle for 250 FMC
+  id: 1533
+  time: '2025-11-09T19:47:46.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2539
+- author: Ilya246
+  changes:
+    - type: Add
+      message: Enabled scrap VGroid spawning.
+  id: 1534
+  time: '2025-11-09T19:50:51.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2550
+- author: Avalon-Proto
+  changes:
+    - type: Add
+      message: >-
+        A new corporate war era shuttle has been added to the Syndicate
+        Shipyard!
+  id: 1535
+  time: '2025-11-09T19:55:52.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2449
+- author: Arcticular1
+  changes:
+    - type: Tweak
+      message: Gave the Defector a new chassis.
+  id: 1536
+  time: '2025-11-09T19:57:59.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2518
