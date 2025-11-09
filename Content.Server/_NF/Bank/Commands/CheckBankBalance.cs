@@ -1,3 +1,8 @@
+// SPDX-FileCopyrightText: 2025 Ark
+// SPDX-FileCopyrightText: 2025 RangerXVII
+//
+// SPDX-License-Identifier: MPL-2.0
+
 using System.Linq;
 using Content.Server.Administration;
 using Content.Server.Database;
