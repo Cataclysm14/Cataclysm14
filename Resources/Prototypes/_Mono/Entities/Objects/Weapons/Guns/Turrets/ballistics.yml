@@ -116,7 +116,7 @@
 - type: entity
   parent: BallisticTurretHeavyBase
   id: WeaponTurretHeavyVDN
-  suffix: PDV/ASR
+  suffix: PDV
   components:
   - type: NpcFactionMember
     factions:
