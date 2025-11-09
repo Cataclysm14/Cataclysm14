@@ -609,8 +609,8 @@
 - type: entity
   parent: [ BaseComputerCircuitboard, BaseC3PirateContrabandHighValue ] # Mono: From C3Syndicate
   id: RogueCommsComputerCircuitboard
-  name: rogue communications computer board
-  description: A computer printed circuit board for a rogue communications console.
+  name: imperial vanguard communications computer board
+  description: A computer printed circuit board for a pdv console.
   components:
     - type: Sprite
       sprite: _Mono/Objects/Misc/module.rsi
