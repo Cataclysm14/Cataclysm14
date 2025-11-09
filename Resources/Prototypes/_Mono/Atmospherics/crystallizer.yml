@@ -1,4 +1,6 @@
+# SPDX-FileCopyrightText: 2025 Ilya246
 # SPDX-FileCopyrightText: 2025 NazrinNya
+# SPDX-FileCopyrightText: 2025 Onezero0
 # SPDX-FileCopyrightText: 2025 marc-pelletier
 # SPDX-FileCopyrightText: 2025 starch
 #
@@ -131,10 +133,10 @@
     SheetPlasma1: 1
   dangerous: false
   minimumRequirements:
-  - 0     # oxygen
+  - 1     # oxygen
   - 0     # nitrogen
   - 0     # carbon dioxide
-  - 2     # plasma
+  - 10     # plasma
   - 0     # tritium
   - 0     # vapor
   - 0     # ammonia

@@ -13691,3 +13691,106 @@ Entries:
   id: 1516
   time: '2025-11-07T00:11:19.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2562
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: >-
+        Holofans are now purchaseable from the Engivend, assorted food was
+        restored to hidden vendor inventories, and cursed instruments can be
+        acquired from the Autotune, with some hacking.
+  id: 1517
+  time: '2025-11-07T14:08:01.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2559
+- author: Ilya246
+  changes:
+    - type: Fix
+      message: Cortical borer eggs now properly apply playtime requirements.
+  id: 1518
+  time: '2025-11-07T14:24:22.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2571
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: Sellsword updated for manual loading!
+    - type: Tweak
+      message: Takeaway received spare 20mm drums for manual loading. No autoloader.
+  id: 1519
+  time: '2025-11-07T14:28:13.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2513
+- author: Onezero0
+  changes:
+    - type: Tweak
+      message: Reduced sell value of 20mm ammo.
+    - type: Tweak
+      message: Increased gas requirements for plasma crystallization.
+  id: 1520
+  time: '2025-11-07T14:44:28.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2554
+- author: tonotom1
+  changes:
+    - type: Add
+      message: >-
+        Ported /tg/ gas Pluoxium: An inert oxygen replacement that supplies 8x
+        the oxygen! Credit to marc-pelletier.
+    - type: Tweak
+      message: >-
+        KO doses of Healium now heal much more (12 >> 20 burn/brute & 25 >> 50
+        toxin)
+    - type: Tweak
+      message: >-
+        Nitrium speedup duration no longer accumulates and lasts a flat 6
+        seconds. Nitrosyl Plasmide (Anti stun and sleep at higher dose) now
+        causes 0.1 poison/tick
+    - type: Tweak
+      message: Touched up sprites for BZ, Healium, and Nitrium canisters.
+    - type: Fix
+      message: Fixed BZ not drugging hard enough to cause trips!
+  id: 1521
+  time: '2025-11-07T17:28:58.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2548
+- author: Onezero0
+  changes:
+    - type: Tweak
+      message: Reverted reduced faction role playtime requirements.
+  id: 1522
+  time: '2025-11-07T19:16:41.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2555
+- author: Ilya246
+  changes:
+    - type: Fix
+      message: >-
+        Fixed magdumping a mech weapon bricking the mech weapon if the mech has
+        a reactor.
+  id: 1523
+  time: '2025-11-07T19:17:51.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2549
+- author: maybeitsmir
+  changes:
+    - type: Add
+      message: Added a new recipe, macaroni & cheese.
+    - type: Tweak
+      message: Renamed "boiled spaghetti" to "boiled pasta"
+  id: 1524
+  time: '2025-11-07T19:18:38.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2544
+- author: thoughtlessuser
+  changes: []
+  id: 1525
+  time: '2025-11-07T19:21:55.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2505
+- author: Arcticular1
+  changes:
+    - type: Tweak
+      message: Fixed TSFMC Captain loadout
+  id: 1526
+  time: '2025-11-08T13:52:55.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2574
+- author: Primusirius
+  changes:
+    - type: Add
+      message: >-
+        A new mining outpost has appeared in the sector, including functioning
+        laser drills.
+  id: 1527
+  time: '2025-11-08T14:51:14.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2566
