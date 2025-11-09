@@ -28,6 +28,18 @@
     - TSFMCTurret
 
 - type: entity
+  id: WeaponTurretLaserSilicon
+  name: laser turret
+  suffix: Frontier, Silicon
+  parent:
+  - BaseC3Contraband
+  - WeaponTurretLaserSyndicateNF
+  components:
+  - type: NpcFactionMember
+    factions:
+    - SiliconsExpeditionNF
+
+- type: entity
   parent: BaseWeaponBallisticTurret
   id: WeaponTurretTSFMC
   suffix: TSFMC

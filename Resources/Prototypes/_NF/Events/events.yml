@@ -44,7 +44,7 @@
     - id: BluespaceCargoCrate # Frontier
     - id: BluespaceMcCargoCrate # Frontier
     - id: BluespaceSyndicateCrate # Frontier
-    - id: BluespaceBrokenMcDelivery # Frontier
+#   - id: BluespaceBrokenMcDelivery # Frontier. Mono edit - Disabled 
     - id: SmugglingFax # Frontier
     - id: SnailMigration # Mono
 

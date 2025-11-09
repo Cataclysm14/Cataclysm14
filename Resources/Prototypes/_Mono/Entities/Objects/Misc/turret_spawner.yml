@@ -19,6 +19,21 @@
     - WeaponTurretLaserTSFMC
 
 - type: entity
+  id: SpawnMobWeaponTurretLaserSilicon
+  parent: MarkerBase
+  name: silicon laser turret spawner
+  suffix: Silicon, Frontier
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _NF/Objects/Weapons/Guns/Turrets/laser.rsi
+      state: base
+  - type: ConditionalSpawner
+    prototypes:
+    - WeaponTurretLaserSilicon
+
+- type: entity
   id: SpawnMobWeaponTurretTFSMC
   parent: MarkerBase
   name: TSFMC ballistic turret spawner
@@ -47,3 +62,5 @@
   - type: ConditionalSpawner
     prototypes:
     - WeaponTurretUSSP
+
+
