@@ -36,22 +36,22 @@
     steps: 5
     zeroVisible: true
   - type: Battery
-    maxCharge: 1000
-    startingCharge: 1000
+    maxCharge: 1500000
+    startingCharge: 1500000
   - type: BatterySelfRecharger
     autoRechargePause: true
-    autoRechargePauseTime: 30
+    autoRechargePauseTime: 60
     autoRecharge: true
-    autoRechargeRate: 100
+    autoRechargeRate: 25000
   - type: ProjectileBatteryAmmoProvider
     proto: HeavyPulse
-    fireCost: 250
+    fireCost: 187500
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: HeavyPulse
-      fireCost: 250
+      fireCost: 187500
     - proto: HeavyPulseExp
-      fireCost: 1000
+      fireCost: 750000
   - type: SpeedModifiedOnWield
     walkModifier: 0.65
     sprintModifier: 0.4
