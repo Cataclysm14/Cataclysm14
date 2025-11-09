@@ -1,6 +1,7 @@
 # SPDX-FileCopyrightText: 2025 Ilya246
 # SPDX-FileCopyrightText: 2025 Onezero0
 # SPDX-FileCopyrightText: 2025 kasature90
+# SPDX-FileCopyrightText: 2025 significant harassment
 # SPDX-FileCopyrightText: 2025 starch
 #
 # SPDX-License-Identifier: MPL-2.0
@@ -38,7 +39,7 @@
     zeroVisible: false
   - type: Appearance
   - type: StaticPrice
-    price: 0.1
+    price: 1
 
 - type: entity
   id: 20mmCartridge
@@ -60,7 +61,7 @@
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice
-    price: 0.1
+    price: 1
   - type: Destructible
     thresholds:
     - trigger:
