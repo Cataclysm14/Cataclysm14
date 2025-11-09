@@ -10887,9 +10887,7 @@ Entries:
 - author: Rubeebeebee
   changes:
     - type: Add
-      message: >-
-        adding the HME Artemis, the replacement to the Orit (rest in peace
-        king)
+      message: adding the HME Artemis, the replacement to the Orit (rest in peace king)
   id: 1216
   time: '2025-08-21T17:35:45.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1745
@@ -13802,3 +13800,29 @@ Entries:
   id: 1527
   time: '2025-11-08T14:51:14.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2566
+- author: Arcticular1
+  changes:
+    - type: Tweak
+      message: >-
+        The Ashen Republic is no longer. The Phaethon Dynasty is taking their
+        place. Glory to the monarchy!
+    - type: Add
+      message: >-
+        A new whitelisted role has been added! The PDV Spasaka - an infiltrator
+        role that uses deception and sabotage to serve the Dynasty!
+    - type: Tweak
+      message: The access configurator has been buffed to 6 uses!
+    - type: Remove
+      message: The voice mask and agent ID has been removed from PDV uplinks
+  id: 1528
+  time: '2025-11-09T07:41:28.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2483
+- author: Ilya246
+  changes:
+    - type: Fix
+      message: >-
+        Derelict Drillsite drills can no longer be unanchored, and it now has a
+        ghost warp point.
+  id: 1529
+  time: '2025-11-09T08:24:54.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2575
