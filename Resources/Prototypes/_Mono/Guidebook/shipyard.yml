@@ -16,8 +16,11 @@
   - ShipyardJudiciary
   - ShipyardSabine
   - ShipyardTakeaway
+<<<<<<< HEAD
   - ShipyardUrsamajor
+=======
   - ShipyardRuby
+>>>>>>> 0bd2cb993e343e5b9c41384c85af8017a0d4eeb0
 
 - type: guideEntry
   id: ShipyardArgent
@@ -40,9 +43,12 @@
   text: "/ServerInfo/_Mono/Guidebook/Shipyard/Takeaway.xml"
 
 - type: guideEntry
+<<<<<<< HEAD
   id: ShipyardUrsamajor
   name: guide-entry-shipyard-ursamajor
   text: "/ServerInfo/_Mono/Guidebook/Shipyard/Ursamajor.xml"
+=======
   id: ShipyardRuby
   name: guide-entry-shipyard-ruby
   text: "/ServerInfo/_Mono/Guidebook/Shipyard/Ruby.xml"
+>>>>>>> 0bd2cb993e343e5b9c41384c85af8017a0d4eeb0
