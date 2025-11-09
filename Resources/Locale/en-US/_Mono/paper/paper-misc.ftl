@@ -23,4 +23,3 @@ book-text-tea-guide = "How 2 Make Tea 4 Dorks
     Step 3. Enjoy!
 
         Your tea should be ready! If you put too much powder, and if the container is straight off the Heat Plate alongside has space, you can add water and tea will keep mixing."
-
