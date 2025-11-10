@@ -10,7 +10,7 @@ public sealed partial class NFActivateArtifact : EntityEffect
     /// Disintegrate chance
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float ProbabilityBase = 0.01f; // MONO: 0.05 >> 0.01 (1%)
+    public float ProbabilityBase = 0.015f; // MONO: 0.05 >> 0.015 (1.5%)
 
     /// <summary>
     /// Disintegrate chance bonus on grids that are not a station
