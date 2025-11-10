@@ -30,7 +30,7 @@
     - type: UpgradedMachine
       upgrade: lathe-upgrade-kit-hyper-convection
     - type: LatheUpgrade
-      materialUseMultiplier: 0.75
+      materialUseMultiplier: 0.8
       timeMultiplier: 1.5
     - type: LatheHeatProducing
     - type: ReagentSpeed
