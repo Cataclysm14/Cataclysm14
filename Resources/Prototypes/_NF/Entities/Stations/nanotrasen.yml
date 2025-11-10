@@ -25,7 +25,6 @@
   - BaseStationSectorNews
   - BaseStationMail # Mail
   - BaseStationSectorServices # Hosts all sector-wide services
-  - BaseStationDampening
   - BaseStationDeadDropHintExempt # No hints
   - BaseStationRenameWarpPoints
   categories: [ HideSpawnMenu ]
@@ -39,7 +38,6 @@
   - BaseStation
   - BaseStationJobsSpawning
   - BaseStationSiliconLawFrontierShips
-  - BaseStationDampening
   categories: [ HideSpawnMenu ]
   components:
   - type: Transform
@@ -91,7 +89,6 @@
   - BaseStationJobsSpawning # Records and jobsspawning
   - BaseStationRecords
   - BaseStationSiliconLawFrontierStation # No funny borg laws
-#  - BaseStationDampening # Mono
   - BaseStationCargoMarket # Mono
   - NFBaseStationCargo # Mono
   categories: [ HideSpawnMenu ]
