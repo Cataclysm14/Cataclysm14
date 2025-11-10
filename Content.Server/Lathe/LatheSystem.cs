@@ -18,13 +18,13 @@
 // SPDX-FileCopyrightText: 2023 chromiumboy
 // SPDX-FileCopyrightText: 2023 ubis1
 // SPDX-FileCopyrightText: 2024 Ed
-// SPDX-FileCopyrightText: 2024 Ilya246
 // SPDX-FileCopyrightText: 2024 Jezithyr
 // SPDX-FileCopyrightText: 2024 Leon Friedrich
 // SPDX-FileCopyrightText: 2024 Nemanja
 // SPDX-FileCopyrightText: 2024 Whatstone
 // SPDX-FileCopyrightText: 2024 checkraze
 // SPDX-FileCopyrightText: 2024 metalgearsloth
+// SPDX-FileCopyrightText: 2025 Ilya246
 // SPDX-FileCopyrightText: 2025 ScarKy0
 // SPDX-FileCopyrightText: 2025 deltanedas
 //
