@@ -30528,9 +30528,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 25.5,46.5
       parent: 1
-    - type: Door
-      secondsUntilStateChange: -71708.805
-      state: Closing
   - uid: 8154
     components:
     - type: Transform
@@ -39410,9 +39407,6 @@ entities:
     - type: Transform
       pos: 14.5,27.5
       parent: 1
-    - type: Door
-      secondsUntilStateChange: -97270.43
-      state: Closing
     - type: DeviceNetwork
       deviceLists:
       - 7070
