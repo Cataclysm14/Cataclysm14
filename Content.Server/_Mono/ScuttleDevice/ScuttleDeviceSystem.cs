@@ -60,7 +60,7 @@ public sealed class ScuttleDeviceSystem : EntitySystem
         SubscribeLocalEvent<ScuttleDeviceComponent, GetVerbsEvent<AlternativeVerb>>(OnAlternateVerb);
         SubscribeLocalEvent<ScuttleDeviceComponent, ScuttleDisarmDoAfterEvent>(OnDisarmDoAfter);
         SubscribeLocalEvent<ScuttleDeviceComponent, ScuttleArmDoAfterEvent>(OnArmDoAfter);
-        SubscribeLocalEvent<ScuttleDeviceComponent, AnchorAttemptEvent>(OnAnchorAttempt);
+        SubscribeLocalEvent<ScuttleDeviceComponent, UnanchorAttemptEvent>(OnUnanchorAttempt);
         SubscribeLocalEvent<ScuttleDeviceComponent, PriceCalculationEvent>(OnGetPrice);
     }
 
@@ -120,7 +120,7 @@ public sealed class ScuttleDeviceSystem : EntitySystem
         args.Handled = true;
     }
 
-    private void OnAnchorAttempt(Entity<ScuttleDeviceComponent> ent, ref AnchorAttemptEvent args)
+    private void OnUnanchorAttempt(Entity<ScuttleDeviceComponent> ent, ref UnanchorAttemptEvent args)
     {
         if (args.Cancelled)
             return;
@@ -205,6 +205,7 @@ public sealed class ScuttleDeviceSystem : EntitySystem
 
         var nukeXform = Transform(ent);
         var grid = nukeXform.GridUid;
+        var name = grid == null ? "Space" : _shuttles.GetIFFLabel(grid.Value) ?? "Space";
 
         // We are collapsing the randomness here, otherwise we would get separate random song picks for checking duration and when actually playing the song afterwards
         _selectedNukeSong = _audio.ResolveSound(ent.Comp.ArmMusic);
@@ -212,9 +213,10 @@ public sealed class ScuttleDeviceSystem : EntitySystem
         // warn a crew
         var announcement = Loc.GetString("scuttle-device-announcement-armed",
             ("time", (int) ent.Comp.RemainingTime.TotalSeconds),
-            ("location", grid == null ? "Space" : _shuttles.GetIFFLabel(grid));
+            ("location", name));
         var sender = Loc.GetString("scuttle-device-announcement-sender");
-        _chatSystem.DispatchStationAnnouncement(ent, announcement, sender, false, null, Color.Red);
+        _chatSystem.DispatchFilteredAnnouncement(Filter.Local().AddInRange(_transform.GetMapCoordinates(ent, nukeXform), ent.Comp.AnnounceRadius),
+                                                announcement, sender: sender, playSound: false, colorOverride: Color.Red);
 
         _sound.PlayGlobalOnStation(ent, _audio.ResolveSound(ent.Comp.ActivateSound));
         _sound.PlayGlobalOnStation(ent, _audio.ResolveSound(ent.Comp.ArmSound));
@@ -248,11 +250,13 @@ public sealed class ScuttleDeviceSystem : EntitySystem
 
         var nukeXform = Transform(ent);
         var grid = nukeXform.GridUid;
+        var name = grid == null ? "Space" : _shuttles.GetIFFLabel(grid.Value) ?? "Space";
 
         var announcement = Loc.GetString("scuttle-device-announcement-unarmed",
-            ("location", grid == null ? "Space" : _shuttles.GetIFFLabel(grid));
+            ("location", name));
         var sender = Loc.GetString("scuttle-device-announcement-sender");
-        _chatSystem.DispatchStationAnnouncement(ent, announcement, sender, false);
+        _chatSystem.DispatchFilteredAnnouncement(Filter.Local().AddInRange(_transform.GetMapCoordinates(ent, nukeXform), ent.Comp.AnnounceRadius),
+                                                announcement, sender: sender, playSound: false);
 
         ent.Comp.PlayedNukeSong = false;
         _sound.PlayGlobalOnStation(ent, _audio.ResolveSound(ent.Comp.DisarmSound));

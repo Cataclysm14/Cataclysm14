@@ -50,7 +50,7 @@ public sealed partial class ScuttleDeviceComponent : Component
     public TimeSpan DisarmDoafterLength = TimeSpan.FromSeconds(30);
 
     [DataField]
-    public SoundSpecifier ActivateSound = new SoundPathSpecifier("/Audio/Misc/delta_alt.ogg");
+    public SoundSpecifier ActivateSound = new SoundPathSpecifier("/Audio/Misc/delta.ogg");
 
     [DataField]
     public SoundSpecifier AlertSound = new SoundPathSpecifier("/Audio/Machines/Nuke/nuke_alarm.ogg");
@@ -69,6 +69,9 @@ public sealed partial class ScuttleDeviceComponent : Component
     /// </summary>
     [DataField]
     public float UnlockedPrice = 0f;
+
+    [DataField]
+    public float AnnounceRadius = 1500f;
 
     /// <summary>
     ///     Time until explosion in seconds.
