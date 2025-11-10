@@ -26,6 +26,12 @@ public sealed partial class MonoCVars
     public static readonly CVarDef<bool> RadioNoiseEnabled =
         CVarDef.Create("mono.radio_noise_enabled", true, CVar.ARCHIVE | CVar.CLIENTONLY);
 
+    /// <summary>
+    ///     How far away from any players can a mob be until it gets cleaned up.
+    /// </summary>
+    public static readonly CVarDef<float> MobCleanupDistance =
+        CVarDef.Create("mono.mob_cleanup_distance", 1280.0f, CVar.SERVERONLY);
+
     #region Audio
 
     /// <summary>
