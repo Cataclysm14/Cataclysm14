@@ -319,6 +319,12 @@
     - RobotTalk
     - Draconic
     - Azaziba
+  - type: Access
+    groups:
+    - AllAccess
+    tags:
+    - NuclearOperative
+    - SyndicateAgent
   - type: GhostTakeoverAvailable
   - type: RandomMetadata
     nameSegments: [MonoRemnantCoreNameset]
