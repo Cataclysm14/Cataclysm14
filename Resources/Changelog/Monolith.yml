@@ -14051,3 +14051,12 @@ Entries:
   id: 1554
   time: '2025-11-11T07:27:18.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2586
+- author: NazrinNya
+  changes:
+    - type: Tweak
+      message: >-
+        Crystallizer now saves up to 25% of gas on reaching midpoint
+        temperatures instead of 85%.
+  id: 1555
+  time: '2025-11-11T19:40:52.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2603
