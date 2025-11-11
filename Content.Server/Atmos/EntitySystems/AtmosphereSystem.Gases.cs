@@ -468,8 +468,8 @@ namespace Content.Server.Atmos.EntitySystems
             foreach (var prototype in GasReactions)
             {
                 if (energy < prototype.MinimumEnergyRequirement ||
-                    temperature < prototype.MinimumTemperatureRequirement ||
-                    temperature > prototype.MaximumTemperatureRequirement)
+                    temperature < prototype.CurrentMinimumTemperatureRequirement ||  // Mono edit - Randomized temperatures every round
+                    temperature > prototype.CurrentMaximumTemperatureRequirement)    // Mono edit - Randomized temperatures every round
                     continue;
 
                 var doReaction = true;
