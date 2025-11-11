@@ -1,4 +1,5 @@
 // SPDX-FileCopyrightText: 2024 SlamBamActionman
+// SPDX-FileCopyrightText: 2025 NazrinNya
 // SPDX-FileCopyrightText: 2025 marc-pelletier
 // SPDX-FileCopyrightText: 2025 tonotom
 // SPDX-FileCopyrightText: 2025 tonotom1

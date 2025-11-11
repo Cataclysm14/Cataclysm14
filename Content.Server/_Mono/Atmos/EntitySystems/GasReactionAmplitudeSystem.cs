@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2025 NazrinNya
+//
+// SPDX-License-Identifier: MPL-2.0
+
 using System.Globalization;
 using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos.Reactions;

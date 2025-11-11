@@ -8,6 +8,7 @@
 // SPDX-FileCopyrightText: 2024 Jezithyr
 // SPDX-FileCopyrightText: 2024 drakewill-CRL
 // SPDX-FileCopyrightText: 2025 ArtisticRoomba
+// SPDX-FileCopyrightText: 2025 NazrinNya
 // SPDX-FileCopyrightText: 2025 ScyronX
 // SPDX-FileCopyrightText: 2025 starch
 //

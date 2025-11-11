@@ -1,5 +1,6 @@
 // SPDX-FileCopyrightText: 2024 coderabbitai[bot]
 // SPDX-FileCopyrightText: 2025 Aiden
+// SPDX-FileCopyrightText: 2025 NazrinNya
 // SPDX-FileCopyrightText: 2025 Steve
 // SPDX-FileCopyrightText: 2025 marc-pelletier
 // SPDX-FileCopyrightText: 2025 tonotom
