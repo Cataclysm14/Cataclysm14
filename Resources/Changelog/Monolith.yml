@@ -14011,3 +14011,16 @@ Entries:
   id: 1550
   time: '2025-11-11T00:39:10.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2594
+- author: Ilya246
+  changes:
+    - type: Tweak
+      message: Hyperconvection upgrade material usage 0.5x -> 0.75x.
+    - type: Tweak
+      message: >-
+        Hyperconvection lathes will now refuse to work if it too hot (>100C) or
+        can't deposit enough heat (if it's in space).
+    - type: Tweak
+      message: Matter bin effect on lathes nerfed.
+  id: 1551
+  time: '2025-11-11T00:39:59.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2588
