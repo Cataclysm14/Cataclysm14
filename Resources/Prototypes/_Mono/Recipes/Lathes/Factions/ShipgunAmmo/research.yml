@@ -14,10 +14,10 @@
   parent: BaseRailgunSlugRecipe
   result: CharonSubnuclearSlugAmmo
   materials:
-    Steel: 1500
-    Plasteel: 500
-    Plasma: 100 # ionized plasma gas
-    Uranium: 3000 # payload
+    Steel: 3000
+    Plasteel: 4000 # penetrator head
+    Plasma: 3000 # ionized plasma gas for heavier weight
+    Uranium: 9000 # payload is nuclear 
 
 - type: latheRecipe
   id: ASM220TorpedoHEUniversal
