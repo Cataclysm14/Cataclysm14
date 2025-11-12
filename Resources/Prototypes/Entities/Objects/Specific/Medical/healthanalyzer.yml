@@ -38,7 +38,7 @@
           False: { visible: false }
   - type: GuideHelp
     guides:
-    - Medical Doctor
+    - MedicalDoctor # Mono - No spaces in yaml allowed
   - type: StaticPrice # Frontier
     price: 30 # Frontier
 
