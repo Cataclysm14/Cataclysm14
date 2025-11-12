@@ -872,7 +872,7 @@
     state: pda-medical
   - type: GuideHelp
     guides:
-    - Medical Doctor
+    - MedicalDoctor # Mono - space in yaml not allowed
 
 - type: entity
   parent: MedicalPDA
