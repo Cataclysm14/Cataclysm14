@@ -14099,3 +14099,12 @@ Entries:
   id: 1561
   time: '2025-11-13T00:34:57.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2614
+- author: Nope1356
+  changes:
+    - type: Tweak
+      message: >-
+        Removed fun! in the form of gutting the costs of subnukes, I hope you
+        went mining!
+  id: 1562
+  time: '2025-11-13T00:37:53.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2609
