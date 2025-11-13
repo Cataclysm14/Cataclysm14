@@ -31,7 +31,9 @@ public sealed class SpawnCountSystem : EntitySystem
 
     public void SpawnCount(EntProtoId prototype, EntityCoordinates coordinates, int count)
     {
-        var entProto = _proto.Index<EntityPrototype>(prototype);
+        if (!_proto.TryIndex<EntityPrototype>(prototype, out var entProto))
+            return;
+
         var bound = 1;
         var stackCount = count;
 
