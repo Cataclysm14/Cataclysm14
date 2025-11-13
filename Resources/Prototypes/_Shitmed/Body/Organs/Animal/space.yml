@@ -44,6 +44,7 @@
     - type: ActionGun
       action: ActionDragonsBreath
       gunProto: DragonsBreathGun
+    - type: BreathingImmunity
 
 - type: entity
   parent: OrganHumanEyes
