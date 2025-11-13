@@ -13,7 +13,7 @@
     sprite: _Mono/Objects/Misc/module.rsi
     state: datafarm_research
   - type: MachineBoard
-    prototype: DataFarmResearch
+    prototype: DatafarmResearch
     requirements:
       Capacitor: 4
     stackRequirements:
@@ -38,7 +38,7 @@
     sprite: _Mono/Objects/Misc/module.rsi
     state: datafarm_crypto
   - type: MachineBoard
-    prototype: DataFarmCrypto
+    prototype: DatafarmCrypto
     requirements:
       Capacitor: 4
     stackRequirements:
