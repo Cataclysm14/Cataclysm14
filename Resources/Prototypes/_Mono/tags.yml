@@ -280,11 +280,10 @@
 - type: Tag
   id: Magazine40mm
 
-
-# Ullman Pulse cells
+#UllmanCells
 
 - type: Tag
-  id: UllmanMilitaryCell
+  id: UllmanCell
 
 #AMMO END
 

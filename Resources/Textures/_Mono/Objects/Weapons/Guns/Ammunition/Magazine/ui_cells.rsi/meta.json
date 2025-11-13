@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprites by Kyres1 (discord)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "heavy_cell"
+    },
+    {
+      "name": "light_cell"
+    },
+    {
+      "name": "standard_cell"
+    },
+    {
+      "name": "experimental_cell"
+    }
+  ]
+}
