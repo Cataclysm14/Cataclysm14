@@ -10,7 +10,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: _Mono\Structures\Machines\neapolitan_server.rsi
+    sprite: _Mono/Structures/Machines/neapolitan_server.rsi
     layers:
     - state: icon
     - state: unlit
@@ -65,7 +65,7 @@
   description: A power-hungry server dedicated towards scraping data from... somewhere. This one generates research points at a rate of 35 per second. It seems to be bolted to the floor.
   components:
   - type: Sprite
-    sprite: _Mono\Structures\Machines\neapolitan_server.rsi
+    sprite: _Mono/Structures/Machines/neapolitan_server.rsi
     layers:
     - state: icon
     - state: unlit
@@ -103,7 +103,7 @@
   description: A power-hungry server dedicated towards scraping data from... somewhere. This one generates research points at a rate of 10 per second.
   components:
   - type: Sprite
-    sprite: _Mono\Structures\Machines\neapolitan_server.rsi
+    sprite: _Mono/Structures/Machines/neapolitan_server.rsi
     layers:
     - state: icon
     - state: unlit
@@ -141,7 +141,7 @@
   description: A power-hungry server dedicated towards scraping data from... somewhere. This one generates valuable but random cryptocurrency at a rate of one every 10 minutes.
   components:
   - type: Sprite
-    sprite: _Mono\Structures\Machines\neapolitan_server.rsi
+    sprite: _Mono/Structures/Machines/neapolitan_server.rsi
     layers:
     - state: icon
     - state: unlit
