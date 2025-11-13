@@ -50,7 +50,7 @@ public sealed class SpawnCountSystem : EntitySystem
 
         for (var i = 0; i < stackCount; i += bound)
         {
-            // "i" in "stackCount - i" is used as indicator of how much entities has been added already, allowing to spawn multiple stacked entities.
+            // spawn the remainder, potentially over the stack limit, this will be clamped in SetCount()
             SpawnEntity(prototype, coordinates, stackCount - i);
         }
     }
