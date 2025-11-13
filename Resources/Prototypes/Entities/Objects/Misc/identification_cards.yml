@@ -735,7 +735,7 @@
     - DoorBumpOpener
   - type: ChameleonClothing
     slot: [idcard]
-    default: PirateIDCard # Frontier: PassengerIDCard<ContractorIDCard
+    default: PirateFirstMateNFIDCard # Frontier: PassengerIDCard<ContractorIDCard
     requireTag: WhitelistChameleonIdCard
   - type: UserInterface
     interfaces:
