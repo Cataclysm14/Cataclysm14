@@ -118,6 +118,17 @@
     radius: 1.5
     energy: 1.5
     color: "#93005b"
+  - type: Sprite # Mono: Changed sprite
+    sprite: _Mono\Structures\Machines\neapolitan_server.rsi
+    layers:
+    - state: icon
+    - state: unlit
+      shader: unshaded
+      map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+    - state: stripe
+      color: "#b3aa79"
+    - state: stripe2
+      color: "#5b0093"
   #- type: ActivatableUI
   #  key: enum.ResearchClientUiKey.Key
   #- type: ActivatableUIRequiresPower
