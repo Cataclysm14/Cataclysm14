@@ -10,7 +10,7 @@ namespace Content.Server._Mono.Spawning;
 public sealed partial class CountSpawnerComponent : Component
 {
     [DataField(required: true)]
-    public EntProtoId Prototype;
+    public EntProtoId Prototype = string.Empty;
 
     [DataField]
     public int MinimumCount = 1;

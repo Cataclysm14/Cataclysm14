@@ -28,7 +28,7 @@ public sealed class SpawnCountSystem : EntitySystem
         if (ent.Comp.DespawnAfterSpawn)
             QueueDel(ent);
     }
-
+    
     public void SpawnCount(EntProtoId prototype, EntityCoordinates coordinates, int count)
     {
         if (!_proto.TryIndex<EntityPrototype>(prototype, out var entProto))
