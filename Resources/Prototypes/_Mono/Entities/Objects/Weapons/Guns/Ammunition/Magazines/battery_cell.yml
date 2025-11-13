@@ -74,24 +74,3 @@
       Uranium: 150
     chemicalComposition:
       Zinc: 20
-
-# Ullman Cells
-
-- type: entity
-  id: UIPulseCellLight
-  name: U.I. light pulse cell
-  parent: BaseMilitaryPowerCell
-  description: A light pulse based powercell for Ullman Industries reverse engineered pulse weapons
-  components:
-  - type: Battery
-    maxCharge: 1500
-    startingCharge: 1500
-  - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/ui_cells.rsi
-    state: light_cell
-  - type: HitscanBatteryAmmoProvider
-    proto: UllmanPulse
-    fireCost: 15
-  - type: Tag
-    tags:
-    - UllmanCell

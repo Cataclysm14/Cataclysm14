@@ -13,18 +13,13 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: UIPulseCellLight
-        whitelist:
-          tags:
-          - UllmanCell
+  - type: Battery
+    startingCharge: 1500
+    maximumCharge: 1500
   - type: MagazineVisuals
     magState: mag
     steps: 1
     zeroVisible: true
   - type: HitscanBatteryAmmoProvider
     proto: UllmanPulse
-    fireCost: 15
+    fireCost: 150
