@@ -28,7 +28,7 @@ public sealed class SpawnCountSystem : EntitySystem
         if (ent.Comp.DespawnAfterSpawn)
             QueueDel(ent);
     }
-    
+
     public void SpawnCount(EntProtoId prototype, EntityCoordinates coordinates, int count)
     {
         if (!_proto.TryIndex<EntityPrototype>(prototype, out var entProto))
@@ -46,6 +46,7 @@ public sealed class SpawnCountSystem : EntitySystem
 
         for (var i = 0; i < stackCount; i += bound)
         {
+            // "i" in "stackCount - i" is used as indicator of how much entities has been added already, allowing to spawn multiple stacked entities.
             SpawnEntity(prototype, coordinates, stackCount - i);
         }
     }
