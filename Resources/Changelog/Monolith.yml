@@ -14138,3 +14138,10 @@ Entries:
   id: 1566
   time: '2025-11-14T15:35:34.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2636
+- author: Ilya246
+  changes:
+    - type: Tweak
+      message: Shipguns now work if installed on Sevastopol.
+  id: 1567
+  time: '2025-11-14T21:04:08.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2635
