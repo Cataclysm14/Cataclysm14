@@ -316,7 +316,7 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
         component.Lawset.Laws = newLaws;
         NotifyLawsChanged(target, cue);
     }
-    
+
     protected override void OnUpdaterInsert(Entity<SiliconLawUpdaterComponent> ent, ref EntInsertedIntoContainerMessage args)
     {
         // TODO: Prediction dump this
