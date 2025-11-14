@@ -14129,3 +14129,12 @@ Entries:
   id: 1565
   time: '2025-11-13T18:12:18.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2628
+- author: NazrinNya
+  changes:
+    - type: Fix
+      message: >-
+        Upload AI console now affect AI cores that are on the same grid instead
+        of being global.
+  id: 1566
+  time: '2025-11-14T15:35:34.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2636
