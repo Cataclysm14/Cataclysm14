@@ -17,7 +17,7 @@
   price: 107590
   category: Large
   group: Expedition
-  shuttlePath: /Maps/_Mono/Shuttles/Expedition/meteor.yml
+  shuttlePath: /Maps/_Mono/Shuttles/Expedition/aulin.yml
   guidebookPage: null
   class:
   - Expedition
