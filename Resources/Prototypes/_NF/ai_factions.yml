@@ -74,7 +74,7 @@
 
 - type: npcFaction
   id: ExplorersExpeditionNF
-  hdefaultHostile: true
+  defaultHostile: true
 
 - type: npcFaction
   id: MercenariesExpeditionNF
