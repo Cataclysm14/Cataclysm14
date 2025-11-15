@@ -280,11 +280,6 @@
 - type: Tag
   id: Magazine40mm
 
-#UllmanCells
-
-- type: Tag
-  id: UllmanCell
-
 #AMMO END
 
 #Misc emote tags
