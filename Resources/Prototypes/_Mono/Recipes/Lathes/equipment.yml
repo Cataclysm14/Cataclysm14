@@ -37,7 +37,7 @@
 - type: latheRecipe
   id: UllmanHardsuitPilot
   parent: NFBaseEVASuitRecipe
-  completion: 30
+  completetime: 30
   categories:
   - CombatEva
   - EVASuits
@@ -54,7 +54,7 @@
 - type: latheRecipe
   id: UllmanHardsuitEngineer
   parent: NFBaseEVASuitRecipe
-  completion: 30
+  completetime: 30
   categories:
   - CombatEva
   - EVASuits
@@ -72,7 +72,7 @@
 - type: latheRecipe
   id: UllmanHardsuitEnforcer
   parent: NFBaseEVASuitRecipe
-  completion: 30
+  completetime: 30
   categories:
   - CombatEva
   - EVASuits
@@ -89,7 +89,7 @@
 - type: latheRecipe
   id: UllmanHardsuitEnforcerMKII
   parent: NFBaseEVASuitRecipe
-  completion: 30
+  completetime: 30
   categories:
   - CombatEva
   - EVASuits
@@ -107,7 +107,7 @@
 - type: latheRecipe
   id: UllmanWeaponPulsePistol
   parent: BaseWeaponRecipe
-  completion: 5
+  completetime: 5
   categories:
   - Weapons
   - EnergyWeapons
@@ -124,7 +124,7 @@
 - type: latheRecipe
   id: UllmanWeaponSmartMagnum
   parent: BaseWeaponRecipe
-  completion: 5
+  completetime: 5
   categories:
   - Weapons
   - BallisticWeapons
@@ -141,7 +141,7 @@
 - type: latheRecipe
   id: UllmanWeaponPulseRifle
   parent: BaseWeaponRecipeLong
-  completion: 10
+  completetime: 10
   categories:
   - Weapons
   - EnergyWeapons
@@ -159,12 +159,12 @@
 - type: latheRecipe
   id: UllmanWeaponPulseSniper
   parent: BaseWeaponRecipeLong
-  completion: 15
+  completetime: 15
   categories:
   - Weapons
   - EnergyWeapons
   - DesignatedMarksmanRifles
-  results: UllmanWeaponPulseSniper
+  result: UllmanWeaponPulseSniper
   materials:
     Steel: 3000
     Plasteel: 2000
@@ -178,10 +178,10 @@
 - type: latheRecipe
   id: UllmanMeleePlasmaBlade
   parent: BaseWeaponRecipe
-  completion: 10
+  completetime: 10
   categories:
   - Weapons
-  results: UllmanPlasmaBlade
+  result: UllmanPlasmaBlade
   materials:
     Steel: 2000
     Plasteel: 3000
