@@ -46,7 +46,6 @@
   - TsfmcClothingJumpsuit
   - TsfmcClothingJumpsuitType47D
   - TsfmcClothingOfficer
-  - TsfmcClothingEnlisted
   fallbacks:
   - TsfmcClothingJumpsuit
 
@@ -59,7 +58,6 @@
   - TsfmcClothingJumpsuit
   - TsfmcClothingJumpsuitType47D
   - TsfmcClothingOfficer
-  - TsfmcClothingEnlisted
   fallbacks:
   - TsfmcEngineeringClothingJumpsuit
 
