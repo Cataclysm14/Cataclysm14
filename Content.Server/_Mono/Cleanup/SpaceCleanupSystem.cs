@@ -25,6 +25,7 @@ public sealed class SpaceCleanupSystem : BaseCleanupSystem<PhysicsComponent>
     [Dependency] private readonly PricingSystem _pricing = default!;
 
     private float _maxDistance;
+    private float _maxGridDistance;
     private float _maxPrice;
 
     private EntityQuery<MapGridComponent> _gridQuery;
@@ -44,6 +45,7 @@ public sealed class SpaceCleanupSystem : BaseCleanupSystem<PhysicsComponent>
         _immuneQuery = GetEntityQuery<CleanupImmuneComponent>();
         _mindQuery = GetEntityQuery<MindContainerComponent>();
 
+        Subs.CVar(_cfg, MonoCVars.CleanupMaxGridDistance, val => _maxGridDistance = val, true);
         Subs.CVar(_cfg, MonoCVars.SpaceCleanupDistance, val => _maxDistance = val, true);
         Subs.CVar(_cfg, MonoCVars.SpaceCleanupMaxValue, val => _maxPrice = val, true);
     }
@@ -58,6 +60,7 @@ public sealed class SpaceCleanupSystem : BaseCleanupSystem<PhysicsComponent>
             && !_gridQuery.HasComp(uid) // handled by GridCleanupSystem
             && !_mindQuery.HasComp(uid) // no deleting anything that can have a mind - should be handled by MobCleanupSystem anyway
             && _pricing.GetPrice(uid) <= _maxPrice
-            && !_cleanup.HasNearbyPlayers(xform.Coordinates, _maxDistance);
+            && !_cleanup.HasNearbyPlayers(xform.Coordinates, _maxDistance)
+            && !_cleanup.HasNearbyGrids(xform.Coordinates, _maxGridDistance);
     }
 }

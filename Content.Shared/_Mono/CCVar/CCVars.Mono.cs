@@ -30,10 +30,10 @@ public sealed partial class MonoCVars
         CVarDef.Create("mono.cleanup.log", true, CVar.SERVERONLY);
 
     /// <summary>
-    ///     How often to clean up space garbage entities, in seconds.
+    ///     Don't delete non-grids at most this close to a grid.
     /// </summary>
-    public static readonly CVarDef<float> SpaceGarbageCleanupInterval =
-        CVarDef.Create("mono.cleanup.space_garbage.interval", 1800.0f, CVar.SERVERONLY);
+    public static readonly CVarDef<float> CleanupMaxGridDistance =
+        CVarDef.Create("mono.cleanup.max_grid_distance", 20.0f, CVar.SERVERONLY);
 
     /// <summary>
     ///     How far away from any players can a mob be until it gets cleaned up.

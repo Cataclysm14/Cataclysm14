@@ -22,6 +22,7 @@ public sealed class MobCleanupSystem : BaseCleanupSystem<HTNComponent>
     [Dependency] private readonly IConfigurationManager _cfg = default!;
 
     private float _maxDistance;
+    private float _maxGridDistance;
 
     private EntityQuery<GhostRoleComponent> _ghostQuery;
     private EntityQuery<CleanupImmuneComponent> _immuneQuery;
@@ -34,6 +35,7 @@ public sealed class MobCleanupSystem : BaseCleanupSystem<HTNComponent>
         _immuneQuery = GetEntityQuery<CleanupImmuneComponent>();
 
         Subs.CVar(_cfg, MonoCVars.MobCleanupDistance, val => _maxDistance = val, true);
+        Subs.CVar(_cfg, MonoCVars.CleanupMaxGridDistance, val => _maxGridDistance = val, true);
     }
 
     protected override bool ShouldEntityCleanup(EntityUid uid)
@@ -43,6 +45,7 @@ public sealed class MobCleanupSystem : BaseCleanupSystem<HTNComponent>
         return xform.GridUid == null
             && !_immuneQuery.HasComp(uid)
             && !_ghostQuery.HasComp(uid)
-            && !_cleanup.HasNearbyPlayers(xform.Coordinates, _maxDistance);
+            && !_cleanup.HasNearbyPlayers(xform.Coordinates, _maxDistance)
+            && !_cleanup.HasNearbyGrids(xform.Coordinates, _maxGridDistance);
     }
 }
