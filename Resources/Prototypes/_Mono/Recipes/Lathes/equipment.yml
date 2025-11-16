@@ -50,9 +50,9 @@
   result: ArmorPlateMedium
   completetime: 5
   materials:
-    Steel: 600
-    Durathread: 600
-    Plastic: 600
+    Steel: 300
+    Durathread: 400
+    Plastic: 1000
     
 - type: latheRecipe
   id: ArmorPlateTactical
@@ -61,8 +61,8 @@
   result: ArmorPlateTactical
   completetime: 5
   materials:
-    Steel: 600
-    Durathread: 600
-    Plastic: 600
-    Plasteel: 600
+    Steel: 300
+    Durathread: 400
+    Plastic: 400
+    Plasteel: 1000
  
