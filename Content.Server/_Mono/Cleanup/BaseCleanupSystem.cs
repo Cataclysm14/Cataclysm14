@@ -14,6 +14,7 @@ public abstract class BaseCleanupSystem<TComp> : EntitySystem
     protected TimeSpan _cleanupInterval = TimeSpan.FromSeconds(300);
     protected TimeSpan _debugCleanupInterval = TimeSpan.FromSeconds(15);
     protected bool _doDebug;
+    protected bool _doLog;
 
     private Queue<EntityUid> _checkQueue = new();
 
@@ -28,6 +29,7 @@ public abstract class BaseCleanupSystem<TComp> : EntitySystem
         base.Initialize();
 
         Subs.CVar(_cfg, MonoCVars.CleanupDebug, val => _doDebug = val, true);
+        Subs.CVar(_cfg, MonoCVars.CleanupLog, val => _doLog = val, true);
     }
 
     public override void Update(float frameTime)
@@ -42,6 +44,8 @@ public abstract class BaseCleanupSystem<TComp> : EntitySystem
             {
                 _cleanupAccumulator -= _cleanupDeferDuration;
 
+                if (_checkQueue.Count == 0)
+                    return;
                 var uid = _checkQueue.Dequeue();
                 if (TerminatingOrDeleted(uid))
                     continue;
@@ -49,7 +53,7 @@ public abstract class BaseCleanupSystem<TComp> : EntitySystem
                 if (!ShouldEntityCleanup(uid))
                     continue;
 
-                if (_doDebug)
+                if (_doLog)
                     Log.Info($"Cleanup deleting entity {ToPrettyString(uid)}");
 
                 _delCount += 1;
@@ -79,6 +83,8 @@ public abstract class BaseCleanupSystem<TComp> : EntitySystem
             _checkQueue.Enqueue(uid);
         }
         _cleanupDeferDuration = interval * 0.9 / _checkQueue.Count;
+
+        Log.Debug($"Ran cleanup queue, found: {_checkQueue.Count}, deleting over {_cleanupDeferDuration}");
     }
 
     protected abstract bool ShouldEntityCleanup(EntityUid uid);

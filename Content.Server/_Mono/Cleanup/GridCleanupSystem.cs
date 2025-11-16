@@ -15,8 +15,6 @@ using Robust.Shared.Map.Components;
 
 namespace Content.Server._Mono.Cleanup;
 
-/// TODO: Move to Mono Namespace
-
 /// <summary>
 /// This system cleans up small grid fragments that have less than a specified number of tiles after a delay.
 /// </summary>
@@ -70,9 +68,6 @@ public sealed class GridCleanupSystem : BaseCleanupSystem<MapGridComponent>
             state.CleanupAccumulator += _cleanupInterval;
             return false;
         }
-
-        if (!_doDebug) // we'll log it anyway if we're _doDebug
-            Log.Info($"Cleanup deleting grid: {ToPrettyString(uid)}");
 
         return true;
     }

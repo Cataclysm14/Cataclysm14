@@ -9,7 +9,6 @@ using Content.Server.NPC.HTN;
 using Content.Shared._Mono.CCVar;
 using Content.Shared.Mind.Components;
 using Robust.Shared.Configuration;
-using Robust.Shared.Containers;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Physics.Components;
 
@@ -23,7 +22,6 @@ public sealed class SpaceCleanupSystem : BaseCleanupSystem<PhysicsComponent>
     [Dependency] private readonly CleanupHelperSystem _cleanup = default!;
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly PricingSystem _pricing = default!;
-    [Dependency] private readonly SharedContainerSystem _container = default!;
 
     private float _maxDistance;
     private float _maxPrice;
@@ -53,13 +51,12 @@ public sealed class SpaceCleanupSystem : BaseCleanupSystem<PhysicsComponent>
     {
         var xform = Transform(uid);
 
-        return xform.GridUid == null
+        return xform.ParentUid == xform.MapUid // no deletey if we're on a grid or inside something
             && !_immuneQuery.HasComp(uid)
             && !_htnQuery.HasComp(uid) // handled by MobCleanupSystem
             && !_gridQuery.HasComp(uid) // handled by GridCleanupSystem
             && !_mindQuery.HasComp(uid) // no deleting anything that can have a mind - should be handled by MobCleanupSystem anyway
             && _pricing.GetPrice(uid) <= _maxPrice
-            && !_container.IsEntityInContainer(uid) // no deleting stuff from containers
             && !_cleanup.HasNearbyPlayers(xform.Coordinates, _maxDistance);
     }
 }

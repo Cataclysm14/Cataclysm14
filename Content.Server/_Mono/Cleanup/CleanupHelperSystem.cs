@@ -3,8 +3,8 @@
 // SPDX-License-Identifier: MPL-2.0
 
 using Content.Shared.Ghost;
-using Content.Shared.Mobs.Systems;
-using Robust.Server.Player;
+using Content.Shared.Mind;
+using Content.Shared.Mind.Components;
 using Robust.Shared.Map;
 
 namespace Content.Server._Mono.Cleanup;
@@ -14,32 +14,37 @@ namespace Content.Server._Mono.Cleanup;
 /// </summary>
 public sealed class CleanupHelperSystem : EntitySystem
 {
-    [Dependency] private readonly IPlayerManager _player = default!;
-    [Dependency] private readonly MobStateSystem _mobState = default!;
+    [Dependency] private readonly EntityLookupSystem _lookup = default!;
+    [Dependency] private readonly SharedMindSystem _mind = default!;
 
     private EntityQuery<GhostComponent> _ghostQuery;
+    private EntityQuery<MindComponent> _mindQuery;
 
     public override void Initialize()
     {
         base.Initialize();
 
         _ghostQuery = GetEntityQuery<GhostComponent>();
+        _mindQuery = GetEntityQuery<MindComponent>();
     }
 
+    /// <summary>
+    ///     Whether there is an entity with a player bound to it in radius. Counts dead people and brains but not ghosts.
+    /// </summary>
     public bool HasNearbyPlayers(EntityCoordinates coord, float radius) {
-        var allPlayerData = _player.GetAllPlayerData();
-        foreach (var playerData in allPlayerData)
+        var minds = _lookup.GetEntitiesInRange<MindContainerComponent>(coord, radius);
+
+        foreach (var (uid, comp) in minds)
         {
-            if (!_player.TryGetSessionById(playerData.UserId, out var session)
-                || session.AttachedEntity is not { Valid: true } playerEnt
-                || _ghostQuery.HasComp(playerEnt)
-                || _mobState.IsDead(playerEnt)
+            if (!comp.HasMind
+                || _ghostQuery.HasComp(uid)
+                || _mindQuery.CompOrNull(comp.Mind.Value)?.OwnedEntity == null
             )
                 continue;
 
-            var playerCoords = Transform(playerEnt).Coordinates;
+            var entCoord = Transform(uid).Coordinates;
 
-            if (coord.TryDistance(EntityManager, playerCoords, out var distance)
+            if (coord.TryDistance(EntityManager, entCoord, out var distance)
                 && distance <= radius
             )
                 return true;

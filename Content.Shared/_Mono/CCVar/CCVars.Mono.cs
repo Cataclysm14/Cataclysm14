@@ -24,6 +24,12 @@ public sealed partial class MonoCVars
         CVarDef.Create("mono.cleanup.debug", false, CVar.SERVERONLY);
 
     /// <summary>
+    ///     Whether to log every single entity cleanup deletes.
+    /// </summary>
+    public static readonly CVarDef<bool> CleanupLog =
+        CVarDef.Create("mono.cleanup.log", true, CVar.SERVERONLY);
+
+    /// <summary>
     ///     How often to clean up space garbage entities, in seconds.
     /// </summary>
     public static readonly CVarDef<float> SpaceGarbageCleanupInterval =
