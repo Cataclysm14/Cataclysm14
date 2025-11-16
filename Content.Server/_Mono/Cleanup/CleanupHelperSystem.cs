@@ -17,17 +17,24 @@ public sealed class CleanupHelperSystem : EntitySystem
     [Dependency] private readonly IPlayerManager _player = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
 
+    private EntityQuery<GhostComponent> _ghostQuery;
+
+    public override void Initialize()
+    {
+        base.Initialize();
+
+        _ghostQuery = GetEntityQuery<GhostComponent>();
+    }
+
     public bool HasNearbyPlayers(EntityCoordinates coord, float radius) {
         var allPlayerData = _player.GetAllPlayerData();
         foreach (var playerData in allPlayerData)
         {
-            var exists = _player.TryGetSessionById(playerData.UserId, out var session);
-
-            if (!exists
-                || session == null
+            if (!_player.TryGetSessionById(playerData.UserId, out var session)
                 || session.AttachedEntity is not { Valid: true } playerEnt
-                || HasComp<GhostComponent>(playerEnt)
-                || _mobState.IsDead(playerEnt))
+                || _ghostQuery.HasComp(playerEnt)
+                || _mobState.IsDead(playerEnt)
+            )
                 continue;
 
             var playerCoords = Transform(playerEnt).Coordinates;
