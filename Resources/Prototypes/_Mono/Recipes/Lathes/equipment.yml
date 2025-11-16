@@ -31,3 +31,38 @@
     Plastic: 500
     Plasma: 500
     Silver: 200
+
+#Armor Plates
+- type: latheRecipe
+  id: ArmorPlateLight
+  categories:
+  - ArmorNF
+  result: ArmorPlateLight
+  completetime: 5
+  materials:
+    Steel: 300
+    Durathread: 400
+    
+- type: latheRecipe
+  id: ArmorPlateMedium
+  categories:
+  - ArmorNF
+  result: ArmorPlateMedium
+  completetime: 5
+  materials:
+    Steel: 600
+    Durathread: 600
+    Plastic: 600
+    
+- type: latheRecipe
+  id: ArmorPlateTactical
+  categories:
+  - ArmorNF
+  result: ArmorPlateTactical
+  completetime: 5
+  materials:
+    Steel: 600
+    Durathread: 600
+    Plastic: 600
+    Plasteel: 600
+ 
