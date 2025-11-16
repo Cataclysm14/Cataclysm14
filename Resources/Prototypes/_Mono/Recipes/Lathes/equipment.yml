@@ -104,6 +104,8 @@
     Silver: 1000
     Gold: 1000
     Glass: 1000
+    Uranium: 2500
+    Diamond: 200
 
 - type: latheRecipe
   id: UllmanWeaponPulsePistol
