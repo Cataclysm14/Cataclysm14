@@ -14,48 +14,22 @@
   position: -5, -5
 
 - type: technology
-  id: UllmanPulseHiEnd
+  id: UllmanWeaponHiEnd
   name: research-technology-ullmanpulse-high-end
   entityIcon: UllmanWeaponPulseSniper
   discipline: Arsenal
   tier: 3
-  cost: 30000
+  cost: 125000
   recipeUnlocks:
   - UllmanWeaponPulseSniper
-  technologyPrerequisites:
-  - SuperParts
-  - UllmanPulseAdv
-  position: -6, -5
-
-- type: technology
-  id: UllmanMK5Smart
-  name: research-technology-ullmansmart-magnum
-  entityIcon: WeaponPistolUllmanSmartMagnumMK5
-  discipline: Arsenal
-  tier: 3
-  cost: 25000
-  recipeUnlocks:
+  - UllmanMeleePlasmaBlade
   - UllmanWeaponSmartMagnum
   - MagazineSmartMagnum
   - MagazineSmartMagnumExt
   technologyPrerequisites:
   - SuperParts
-  - SmartWeaponry
-  position: -5, -6
-
-- type: technology
-  id: UllmanMeleeExotic
-  name: research-technology-ullmanplasma-blade
-  entityIcon: UllmanPlasmaBlade
-  discipline: Arsenal
-  tier: 3
-  cost: 45000
-  recipeUnlocks:
-  - UllmanMeleePlasmaBlade
-  technologyPrerequisites:
-  - SuperParts
-  - ArsenalStyle
-  position: -6, -6
+  - UllmanPulseAdv
+  position: -6, -5
 
 - type: technology
   id: UllmanHardsuitBasic
