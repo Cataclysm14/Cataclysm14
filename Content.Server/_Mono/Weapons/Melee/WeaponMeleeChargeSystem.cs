@@ -7,17 +7,15 @@ using Content.Shared.Item.ItemToggle;
 using Content.Shared.Item.ItemToggle.Components;
 using Content.Shared.Popups;
 using Content.Shared.Weapons.Melee.Events;
-using Robust.Shared.Timing;
 
 namespace Content.Server._Mono.Weapons.Melee;
 
 public sealed class MeleeChargeSystem : EntitySystem
 {
     [Dependency] private readonly ItemToggleSystem _toggle = default!;
-    [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
 
-    private HashSet<Entity<WeaponMeleeChargeComponent>> _activeWeapons = new();
+    private TimeSpan _acculumator = TimeSpan.Zero;
     public override void Initialize()
     {
         SubscribeLocalEvent<WeaponMeleeChargeComponent, ExaminedEvent>(OnExamined);
@@ -30,7 +28,7 @@ public sealed class MeleeChargeSystem : EntitySystem
     private void OnExamined(Entity<WeaponMeleeChargeComponent> ent, ref ExaminedEvent args)
     {
         if (InCooldown(ent))
-            args.PushMarkup(Loc.GetString("melee-charge-weakened"));
+            args.PushMarkup(Loc.GetString("melee-charge-weakened", ("cooldown", CooldownToSeconds(ent))));
     }
 
     private void OnMeleeHit(Entity<WeaponMeleeChargeComponent> ent, ref MeleeHitEvent args)
@@ -41,13 +39,13 @@ public sealed class MeleeChargeSystem : EntitySystem
             return;
         }
 
-        if (!ent.Comp.IsActive)
+        if (!IsActive(ent))
             return;
 
-        TryDeactivate(ent);
+        TryDeactivate(ent, ent.Comp);
     }
 
-    public void OnToggleAttempt(Entity<WeaponMeleeChargeComponent> ent, ref ItemToggleActivateAttemptEvent args)
+    private void OnToggleAttempt(Entity<WeaponMeleeChargeComponent> ent, ref ItemToggleActivateAttemptEvent args)
     {
         if (!InCooldown(ent))
             return;
@@ -61,50 +59,64 @@ public sealed class MeleeChargeSystem : EntitySystem
     private void OnToggle(Entity<WeaponMeleeChargeComponent> ent, ref ItemToggledEvent args)
     {
         if (args.Activated)
-        {
-            ent.Comp.CurrentActiveTime = TimeSpan.FromSeconds(ent.Comp.ActiveTime) + _timing.CurTime;
-            ent.Comp.IsActive = true;
-            _activeWeapons.Add(ent);
-        }
+            Activate(ent, ent.Comp);
         else
-        {
-            TryDeactivate(ent);
-        }
+            TryDeactivate(ent, ent.Comp);
     }
 
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
 
-        if (_activeWeapons.Count == 0)
-            return;
+        var query = EntityQueryEnumerator<ActiveWeaponMeleeChargeComponent, WeaponMeleeChargeComponent>();
 
-        foreach (var ent in _activeWeapons)
+        while (query.MoveNext(out var uid, out _, out var charge))
         {
-            if (ent.Comp.CurrentActiveTime > _timing.CurTime)
+            if (!ActiveTimePassed(charge))
                 continue;
 
-            TryDeactivate(ent);
+            TryDeactivate(uid, charge);
         }
+
+        _acculumator += TimeSpan.FromSeconds(frameTime);
     }
 
-    private void TryDeactivate(Entity<WeaponMeleeChargeComponent> ent)
+    private void TryDeactivate(EntityUid uid, WeaponMeleeChargeComponent charge)
     {
-        if(!_toggle.TryDeactivate(ent.Owner))
+        if(!_toggle.TryDeactivate(uid))
             return;
 
-        ent.Comp.IsActive = false;
-        ent.Comp.CurrentCooldown = TimeSpan.FromSeconds(ent.Comp.Cooldown) + _timing.CurTime;
-        _activeWeapons.Remove(ent);
+        if (HasComp<ActiveWeaponMeleeChargeComponent>(uid))
+            RemComp<ActiveWeaponMeleeChargeComponent>(uid);
+
+        charge.CurrentCooldown = TimeSpan.FromSeconds(charge.Cooldown) + _acculumator;
     }
 
-    private bool InCooldown(Entity<WeaponMeleeChargeComponent> ent)
+    private void Activate(EntityUid uid, WeaponMeleeChargeComponent charge)
     {
-        return ent.Comp.CurrentCooldown > _timing.CurTime;
+        AddComp<ActiveWeaponMeleeChargeComponent>(uid);
+        charge.CurrentActiveTime = TimeSpan.FromSeconds(charge.ActiveTime) + _acculumator;
+    }
+
+    private bool InCooldown(WeaponMeleeChargeComponent charge)
+    {
+        return charge.CurrentCooldown > _acculumator;
+    }
+
+    private bool IsActive(EntityUid uid)
+    {
+        return HasComp<ActiveWeaponMeleeChargeComponent>(uid);
+    }
+
+    private bool ActiveTimePassed(WeaponMeleeChargeComponent charge)
+    {
+        return charge.CurrentActiveTime < _acculumator;
     }
 
     private int CooldownToSeconds(Entity<WeaponMeleeChargeComponent> ent)
     {
-        return (ent.Comp.CurrentCooldown - _timing.CurTime).Seconds + 1; // Adding 1 for it to be more accurate
+        // The thing about adding 1 here is that results of TimeSpan substraction is floored (i think?)
+        // This means that even 0.99 turns into 0, and showing that 0 seconds remain until cooldown ends is not good.
+        return (ent.Comp.CurrentCooldown - _acculumator).Seconds + 1;
     }
 }
