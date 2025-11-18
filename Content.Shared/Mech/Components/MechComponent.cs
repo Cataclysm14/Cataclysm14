@@ -11,6 +11,7 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using System.Numerics;
 using Content.Shared.FixedPoint;
 using Content.Shared.Whitelist;
 using Robust.Shared.Containers;
@@ -170,6 +171,13 @@ public sealed partial class MechComponent : Component
     /// </summary>
     [DataField]
     public List<EntProtoId> StartingEquipment = new();
+
+    /// <summary>
+    /// Mono edit - How much should pilot's eye be zoomed when entering mech.
+    /// </summary>
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public Vector2 Zoom = new(1.0f, 1.0f);
+
 
     #region Action Prototypes
     [DataField]
