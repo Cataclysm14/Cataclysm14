@@ -1,0 +1,23 @@
+- type: humanoidBaseSprite
+  id: MobCyberneticDigiLLeg
+  baseSprite:
+    sprite: _Mono/Mobs/Species/Cybernetics/digi.rsi
+    state: "l_leg-combined"
+
+- type: humanoidBaseSprite
+  id: MobCyberneticDigiRLeg
+  baseSprite:
+    sprite: _Mono/Mobs/Species/Cybernetics/digi.rsi
+    state: "r_leg-combined"
+
+- type: humanoidBaseSprite
+  id: MobCyberneticDigiLFoot
+  baseSprite:
+    sprite: _Mono/Mobs/Species/Cybernetics/digi.rsi
+    state: "l_foot"
+
+- type: humanoidBaseSprite
+  id: MobCyberneticDigiRFoot
+  baseSprite:
+    sprite: _Mono/Mobs/Species/Cybernetics/digi.rsi
+    state: "r_foot"

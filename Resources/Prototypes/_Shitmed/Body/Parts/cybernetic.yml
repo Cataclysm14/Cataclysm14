@@ -140,29 +140,51 @@
       delay: 1
 
 - type: entity
-  parent: LeftLegCyberneticBase
+  parent: [ CyberneticPartBase, BaseLeftLeg ] # Mono - S.P.E.E.D resprite, can't redefine baseLayerId
   id: SpeedLeftLeg
   name: S.P.E.E.D left leg
   description: A cybernetic left leg that allows its wearer to run faster.
   components:
+  # Begin Mono - S.P.E.E.D resprite
+  - type: Sprite
+    sprite: _Mono/Mobs/Species/Cybernetics/digi.rsi
+    state: "l_leg-combined"
+  - type: Icon
+    sprite: _Mono/Mobs/Species/Cybernetics/digi.rsi
+    state: "l_leg-combined"
+  - type: GenerateChildPart
+    id: LeftFootCyberneticDigi
+  # End Mono - S.P.E.E.D resprite
   - type: MovementBodyPart
     walkSpeed: 2.875 # Mono
     sprintSpeed: 5.175 # Mono
   - type: BodyPart
+    baseLayerId: MobCyberneticDigiLLeg # Mono - S.P.E.E.D resprite
     onAdd:
     - type: NoSlip
     - type: ProtectedFromStepTriggers
 
 - type: entity
-  parent: RightLegCyberneticBase
+  parent: [ CyberneticPartBase, BaseRightLeg ] # Mono - S.P.E.E.D resprite, can't redefine baseLayerId
   id: SpeedRightLeg
   name: S.P.E.E.D right leg
   description: A cybernetic left leg that allows its wearer to run faster.
   components:
+  # Begin Mono - S.P.E.E.D resprite
+  - type: Sprite
+    sprite: _Mono/Mobs/Species/Cybernetics/digi.rsi
+    state: "r_leg-combined"
+  - type: Icon
+    sprite: _Mono/Mobs/Species/Cybernetics/digi.rsi
+    state: "r_leg-combined"
+  - type: GenerateChildPart
+    id: RightFootCyberneticDigi
+  # End Mono - S.P.E.E.D resprite
   - type: MovementBodyPart
     walkSpeed: 2.875 # Mono
     sprintSpeed: 5.175 # Mono
   - type: BodyPart
+    baseLayerId: MobCyberneticDigiRLeg # Mono - S.P.E.E.D resprite
     onAdd:
     - type: NoSlip
     - type: ProtectedFromStepTriggers
