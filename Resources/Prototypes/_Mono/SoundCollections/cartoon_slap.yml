@@ -1,0 +1,6 @@
+- type: soundCollection
+  id: CartoonSlap
+  files:
+    - /Audio/_Mono/Items/cartoon_slap.ogg
+    - /Audio/_Mono/Items/cartoon_slap2.ogg
+    - /Audio/_Mono/Items/cartoon_slap3.ogg
