@@ -71,7 +71,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: Magazine20mmPiercing
+    - id: Magazine20mm
       amount: 3
 
 - type: entity

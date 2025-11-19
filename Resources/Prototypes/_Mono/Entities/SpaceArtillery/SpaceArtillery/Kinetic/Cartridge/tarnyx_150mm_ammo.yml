@@ -14,7 +14,7 @@
   - type: Projectile
     damage:
       types:
-        Structural: 5000
+        Structural: 100
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/150_shell.rsi
     layers:
@@ -90,8 +90,8 @@
   - type: Projectile
     damage:
       types:
-        Structural: 12000
-        Blunt: 3000
+        Structural: 200
+        Blunt: 50
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/150_shell.rsi
     layers:

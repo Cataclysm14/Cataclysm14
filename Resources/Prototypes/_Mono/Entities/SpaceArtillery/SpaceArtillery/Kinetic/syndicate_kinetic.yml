@@ -194,7 +194,7 @@
     powerUseActive: 0
   - type: Actions
   - type: ProjectileBatteryAmmoProvider
-    proto: ShipCyrexaProjectileWeak
+    proto: ShipCyrexaProjectile
     fireCost: 6000
   - type: RadarBlip
     radarColor: "#FF0000"

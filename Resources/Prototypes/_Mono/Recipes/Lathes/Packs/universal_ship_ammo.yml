@@ -10,15 +10,15 @@
   id: RoundstartShipgunAmmo
   recipes:
   # Magfed
-  - Magazine20mmPiercingAmmoRecipe
-  - Magazine30mmAmmoRecipe
-  - Magazine57mmAmmoRecipe
-  - Magazine90mmAmmoRecipe
-  - Magazine140mmAmmoRecipe
+  #- Magazine20mmAmmoRecipe
+  #- Magazine30mmAmmoRecipe
+  #- Magazine57mmAmmoRecipe
+  #- Magazine90mmAmmoRecipe
+  #- Magazine140mmAmmoRecipe
   # Individual load
-  - 220mmCartridgeAmmoRecipe
-  - 255mmCartridgeAmmoRecipe
-  - CharonetteSlugCartridgeAmmoRecipe
+  #- 220mmCartridgeAmmoRecipe
+  #- 255mmCartridgeAmmoRecipe
+  #- CharonetteSlugCartridgeAmmoRecipe
   # Missiles
   - VanykCartridgeAmmoRecipe
   - TovekCartridgeAmmoRecipe

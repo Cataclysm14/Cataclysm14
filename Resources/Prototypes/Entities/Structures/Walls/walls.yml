@@ -141,6 +141,8 @@
   - type: Repairable
     qualities:
     - Applicating
+  - type: ArmorThickness
+    thickness: 3
 
 - type: entity
   parent: BaseWall
@@ -159,7 +161,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1200 # Mono - wall buff - 4x
+        damage: 600 # Mono - wall buff - 2x
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -192,7 +194,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1800 # Mono - wall buff - 6x
+        damage: 800 # Mono - wall buff - ~3x
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -210,6 +212,7 @@
     fx: EffectRCDDeconstruct8 # Frontier
   - type: StaticPrice # Frontier 60
     price: 60 # Frontier 60
+
 
 - type: entity
   parent: BaseWall
@@ -234,7 +237,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1200 # Mono - wall buff - 4x
+        damage: 600 # Mono - wall buff - 2x
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -279,7 +282,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 2500 # Mono - wall buff to match rwalls
+        damage: 1000 # Mono - wall buff to match rwalls
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -291,6 +294,8 @@
   - type: IconSmooth
     key: walls
     base: meat
+  - type: ArmorThickness
+    thickness: 1
 
 - type: entity
   parent: BaseWall
@@ -308,7 +313,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1200 # Mono - wall buff - 4x
+        damage: 600 # Mono - wall buff - 2x
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -320,6 +325,8 @@
   - type: IconSmooth
     key: walls
     base: cult
+  - type: ArmorThickness
+    thickness: 4
 
 - type: entity
   parent: BaseWall
@@ -372,7 +379,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 2400 # Mono - wall buff - 8x its diamonds bro
+        damage: 1200 # Mono - wall buff - 4x its diamonds bro
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -408,7 +415,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 900 # Mono - wall buff - 3x gold is brittle
+        damage: 300
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -417,7 +424,7 @@
         acts: ["Destruction"]
     - trigger:
         !type:DamageTrigger
-        damage: 1500 # Mono
+        damage: 300 # Mono
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -440,6 +447,8 @@
   - type: IconSmooth
     key: walls
     base: gold
+  - type: ArmorThickness
+    thickness: 1
 
 - type: entity
   parent: BaseWall
@@ -469,6 +478,8 @@
   - type: IconSmooth
     key: walls
     base: ice
+  - type: ArmorThickness
+    thickness: 2
 
 - type: entity
   parent: BaseWall
@@ -493,7 +504,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1200 # Mono - wall buff - 4x
+        damage: 600 # Mono - wall buff - 2x
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -502,7 +513,7 @@
         acts: ["Destruction"]
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 300 # Mono - wall buff - 2x
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -516,6 +527,8 @@
     base: plasma
   - type: RadiationBlocker
     resistance: 5
+  - type: ArmorThickness
+    thickness: 4
 
 - type: entity
   parent: BaseWall
@@ -540,7 +553,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1200 # Mono - wall buff - 4x
+        damage: 450 # Mono - wall buff - 1.5x
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -549,7 +562,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 600 # Mono - wall buff - 4x
+        damage: 300 # Mono - wall buff - 2x
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -561,6 +574,8 @@
   - type: IconSmooth
     key: walls
     base: plastic
+  - type: ArmorThickness
+    thickness: 2
 
 - type: entity
   parent: BaseWall
@@ -597,6 +612,8 @@
     resistance: 5
   - type: StaticPrice
     price: 110 # Mono
+  - type: ArmorThickness
+    canBePierced: false
 
 - type: entity
   parent: WallPlastitaniumIndestructible
@@ -612,7 +629,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 7500 # Mono - wall buff - 7.5x
+        damage: 2400 # Mono - wall buff - 2.4x
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -624,6 +641,8 @@
   - type: Construction # Mono
     graph: Girder
     node: plastitaniumWall
+  - type: ArmorThickness
+    thickness: 5
 
 - type: entity
   parent: WallShuttleDiagonal
@@ -650,7 +669,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 3500 # Mono - wall buff - 2x
+        damage: 1400 # Mono - wall buff
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -659,7 +678,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 2000 # Mono - wall buff - 2x
+        damage: 1200 # Mono - wall buff - 2x
       behaviors:
       - !type:ChangeConstructionNodeBehavior
         node: girder
@@ -723,6 +742,8 @@
         - WallLayer
   - type: StaticPrice
     price: 50 # Mono
+  - type: ArmorThickness
+    canBePierced: false
 
 - type: entity
   parent: BaseWall
@@ -744,7 +765,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 4000 # Mono - wall buff - 5x
+        damage: 2000 # Mono - wall buff
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -753,7 +774,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 3000 # Mono - wall buff - 5x
+        damage: 1600 # Mono - wall buff
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -797,6 +818,8 @@
     cost: 6 #Frontier
     delay: 8 #Frontier
     fx: EffectRCDDeconstruct8 #Frontier
+  - type: ArmorThickness
+    thickness: 4
 
 - type: entity
   parent: WallReinforced
@@ -822,7 +845,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 2500 # Mono - wall buff - 5x
+        damage: 2000 # Mono - wall buff
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -831,7 +854,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 1750 # Mono - wall buff - 5x
+        damage: 1600 # Mono - wall buff
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -870,7 +893,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 4000
+        damage: 1000 # Mono
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -879,7 +902,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 3000
+        damage: 800 # Mono
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -928,6 +951,8 @@
     cost: 6 #Frontier
     delay: 8 #Frontier
     fx: EffectRCDDeconstruct8 #Frontier
+  - type: ArmorThickness
+    canBePierced: false
 
 - type: entity
   parent: BaseWall
@@ -949,7 +974,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1000 # Mono - wall buff - 3.33x
+        damage: 800 # Mono - wall buff
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -1067,7 +1092,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 3600 # Mono - wall buff - 6x
+        damage: 1000 # Mono - wall buff
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -1076,7 +1101,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 1800 # Mono - wall buff - 6x
+        damage: 800 # Mono - wall buff
       behaviors:
       - !type:ChangeConstructionNodeBehavior
         node: girder
@@ -1108,7 +1133,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 3600 # Mono - wall buff - 6x
+        damage: 2000 # Mono - wall buff
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -1117,7 +1142,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 2400 # Mono - wall buff - 6x
+        damage: 1600 # Mono - wall buff
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -1187,7 +1212,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 2400 # Mono - wall buff - 6x
+        damage: 800 # Mono - wall buff
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -1196,7 +1221,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 1200 # Mono - wall buff - 6x
+        damage: 600 # Mono - wall buff
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -1242,7 +1267,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1600 # Mono - wall buff - 4x
+        damage: 1200 # Mono - wall buff - 3x
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -1251,7 +1276,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 800 # Mono - wall buff - 4x
+        damage: 1000 # Mono - wall buff
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -1289,7 +1314,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1600
+        damage: 600 # Mono
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -1298,7 +1323,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 800
+        damage: 500 # Mono
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -1311,7 +1336,7 @@
     price: 95
 
 - type: entity
-  parent: WallSolid
+  parent: WallSolid # Mono: Parents damage thresholds from WallSolid
   id: WallSolidRust
   suffix: rusted
   components:
@@ -1326,59 +1351,15 @@
   - type: IconSmooth
     key: walls
     base: solid
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 1200 # Mono - wall buff - 4x
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalSlam
-    - trigger:
-        !type:DamageTrigger
-        damage: 600 # Mono - wall buff - 4x
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalSlam
-      - !type:ChangeConstructionNodeBehavior
-        node: girder
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
 
 - type: entity
-  parent: BaseWall
+  parent: WallSolid # Mono: Parents damage thresholds from WallSolid
   id: WallSolidChitin
   name: solid chitin
   components:
   - type: Tag
     tags:
       - Wall
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 1600 # Mono - identical to solid wall
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalSlam
-    - trigger:
-        !type:DamageTrigger
-        damage: 800 # Mono - identical to solid wall
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalSlam
-      - !type:ChangeConstructionNodeBehavior
-        node: girder
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
   - type: Sprite
     sprite: Structures/Walls/xeno.rsi
   - type: Icon
@@ -1395,7 +1376,7 @@
     fx: EffectRCDDeconstruct8
 
 - type: entity
-  parent: BaseWall
+  parent: WallReinforced # Mono: Parents damage thresholds from WallReinforced
   id: WallReinforcedChitin
   name: reinforced chitin
   components:
@@ -1407,28 +1388,6 @@
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallicStrong
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 4000 # Mono - identical to rwall
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalSlam
-    - trigger:
-        !type:DamageTrigger
-        damage: 3000 # Mono - identical to rwall
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalSlam
-      - !type:ChangeConstructionNodeBehavior
-        node: girder
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -1453,7 +1412,7 @@
     node: reinforcedWallChitin
 
 - type: entity
-  parent: BaseWall
+  parent: WallReinforced # Mono: Parents damage thresholds from WallReinforced
   id: WallUranium
   name: uranium wall
   components:
@@ -1464,28 +1423,6 @@
   - type: Construction
     graph: Girder
     node: uraniumWall
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 3000 # Mono - wall buff - 10x
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalSlam
-    - trigger:
-        !type:DamageTrigger
-        damage: 2000 # Mono - wall buff - alot - uranium is dense
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalSlam
-      - !type:ChangeConstructionNodeBehavior
-        node: girder
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
   - type: Fixtures
     fixtures:
       fix1:
@@ -1551,6 +1488,8 @@
     fx: EffectRCDDeconstruct8 #Frontier
   - type: StaticPrice # Frontier
     price: 30 # Mono
+  - type: ArmorThickness
+    thickness: 1
 
 - type: entity
   parent: BaseWall
@@ -1599,6 +1538,8 @@
     cost: 6 #Frontier
     delay: 8 #Frontier
     fx: EffectRCDDeconstruct8 #Frontier
+  - type: ArmorThickness
+    thickness: 1
 
 
 # Lavalend Walls
@@ -1619,7 +1560,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 3500 # Mono - wall buff - 3.5x
+        damage: 1000
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -1643,7 +1584,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1750 # Mono - wall buff
+        damage: 600 # Mono
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -1803,13 +1744,15 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1000 # Mono - wall buff - 10x
+        damage: 600 # Mono - wall buff - 6x
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
     key: cobblebricks
     base: cobblebrick
+  - type: ArmorThickness
+    thickness: 2
 
 - type: entity
   parent: WallCobblebrick

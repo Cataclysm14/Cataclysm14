@@ -6,7 +6,7 @@
 
 - type: entity
   id: Magazine57mm
-  name: "57x210mm APHE ammo drum"
+  name: "57mm ammo drum"
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
   - type: Tag
@@ -39,7 +39,7 @@
 
 - type: entity
   id: 57mmCartridge
-  name: cartridge (57x210mm APHE)
+  name: cartridge (57mm)
   parent: [ BaseCartridge, BaseC1Contraband ]
   components:
   - type: Tag
@@ -76,20 +76,3 @@
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
-
-- type: entity
-  id: Magazine57mmWeak
-  name: "57x210mm ammo drum"
-  parent: Magazine57mm
-  components:
-  - type: BallisticAmmoProvider
-    infiniteUnspawned: true
-    proto: 57mmCartridgeWeak
-
-- type: entity
-  id: 57mmCartridgeWeak
-  name: "cartridge (57x210mm)"
-  parent: 57mmCartridge
-  components:
-  - type: CartridgeAmmo
-    proto: ShipDravonProjectileWeak

@@ -2,8 +2,8 @@
 
 - type: latheRecipe
   parent: BaseLightShipgunAmmoRecipe
-  id: Magazine20mmPiercingAmmoRecipe
-  result: Magazine20mmPiercing
+  id: Magazine20mmAmmoRecipe
+  result: Magazine20mm
 
 - type: latheRecipe
   parent: BaseShipgunAmmoRecipe

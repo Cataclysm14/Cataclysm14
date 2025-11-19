@@ -22,9 +22,9 @@
   - type: Projectile
     damage:
       types:
-        Structural: 300
-        Blunt: 75
-        Piercing: 100
+        Structural: 10
+        Blunt: 25
+        Piercing: 25
     ignoreWeaponGrid: true
   - type: ShipWeaponProjectile
   - type: TimedDespawn
@@ -57,26 +57,14 @@
   - type: Projectile
     damage:
       types:
-        Structural: 330
-        Piercing: 35
+        Structural: 50
+        Piercing: 30
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
     layers:
     - state: base-projectile
   - type: PointLight
     color: orange
-
-- type: entity
-  id: 20mmBulletWeak
-  name: 20mm bullet
-  parent: 20mmBulletArmorPiercing
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Structural: 300
-        Piercing: 25
 
 # 30mm - Draupnir
 
@@ -88,8 +76,8 @@
   - type: Projectile
     damage:
       types:
-        Structural: 350
-        Blunt: 30
+        Structural: 30
+        Blunt: 20
         Piercing: 30
   - type: ShipWeaponProjectile
   - type: TimedDespawn
@@ -103,18 +91,6 @@
     shape: arrow
     radarColor: "#1df1f5"
 
-- type: entity
-  id: 30mmBulletWeak
-  parent: 30mmBullet
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Structural: 130
-        Blunt: 20
-        Piercing: 20
-
 # 57mm Dravon
 
 - type: entity
@@ -126,9 +102,9 @@
   - type: Projectile
     damage:
       types:
-        Structural: 900
-        Blunt: 40
-        Piercing: 120
+        Structural: 15
+        Blunt: 20
+        Piercing: 20
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
     layers:
@@ -150,25 +126,6 @@
     totalIntensity: 40
     intensitySlope: 5
     maxIntensity: 25
-    maxTileBreak: 1
-
-- type: entity
-  id: ShipDravonProjectileWeak
-  name: stock DRAVON 57mm projectile
-  parent: ShipDravonProjectile
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Structural: 600
-        Blunt: 30
-        Piercing: 60
-  - type: Explosive
-    explosionType: DefaultShipGun
-    totalIntensity: 30
-    intensitySlope: 5
-    maxIntensity: 20
     maxTileBreak: 1
 
 # 90mm
@@ -200,8 +157,8 @@
   - type: Projectile
     damage:
       types:
-        Structural: 900
-        Piercing: 65
+        Structural: 20
+        Piercing: 60
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
     layers:
@@ -209,29 +166,12 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBombShipGun
-    totalIntensity: 40 # totalIntensity goes first, please.
+    totalIntensity: 20 # totalIntensity goes first, please.
     intensitySlope: 3
     maxIntensity: 10
     maxTileBreak: 1
   - type: PointLight
     color: orange
-
-- type: entity
-  id: 90mmBulletWeak
-  parent: 90mmBullet
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Structural: 500
-        Blunt: 20
-        Piercing: 60
-  - type: Explosive
-    totalIntensity: 20 # totalIntensity goes first, please.
-    intensitySlope: 3
-    maxIntensity: 10
-    maxTileBreak: 1
 
 # 220mm Cyrexa
 
@@ -244,8 +184,8 @@
   - type: Projectile
     damage:
       types:
-        Structural: 2000
-        Blunt: 200
+        Structural: 50
+        Blunt: 250
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
     layers:
@@ -265,30 +205,13 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBombShipGun
-    totalIntensity: 400
+    totalIntensity: 100
     intensitySlope: 5
     maxIntensity: 50
-    maxTileBreak: 2
+    maxTileBreak: 3
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
-
-- type: entity
-  id: ShipCyrexaProjectileWeak
-  name: stock CYREXA 220mm projectile
-  parent: ShipCyrexaProjectile
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Structural: 1500
-        Blunt: 200
-  - type: Explosive
-    totalIntensity: 200
-    intensitySlope: 5
-    maxIntensity: 50
-    maxTileBreak: 2
 
 # 255mm Bofors
 
@@ -301,7 +224,7 @@
   - type: Projectile
     damage:
       types:
-        Structural: 8000
+        Structural: 100
         Blunt: 250
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
@@ -322,68 +245,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBombShipGun
-    totalIntensity: 500
+    totalIntensity: 120
     intensitySlope: 10
-    maxIntensity: 160
-    maxTileBreak: 3
-  - type: GatheringProjectile
-  - type: MiningGatheringSoft
-  - type: MiningGatheringHard
-
-- type: entity
-  id: ShipBoforsProjectileWeak
-  name: stock Bofors 255mm projectile
-  parent: ShipBoforsProjectile
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Structural: 3500
-        Blunt: 200
-  - type: Explosive
-    explosionType: HardBombShipGun
-    totalIntensity: 300
-    intensitySlope: 10
-    maxIntensity: 160
-    maxTileBreak: 2
-
-# 305mm Hades
-
-- type: entity
-  id: ShipHadesProjectile
-  name: HADES 305mm projectile
-  description: I feel a primal fear. The omen comes for me.
-  parent: BaseBulletTrigger
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Structural: 5000
-        Blunt: 250
-  - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
-    layers:
-    - state: base-projectile
-    scale: 3, 3
-  - type: Ammo
-    muzzleFlash: null
-  - type: ShipWeaponProjectile
-  - type: RadarBlip
-    scale: 4.25
-    requireNoGrid: true
-    shape: triangle
-  - type: TimedDespawn
-    lifetime: 10
-  - type: PointLight
-    color: "#ff9100"
-  - type: ExplodeOnTrigger
-  - type: Explosive
-    explosionType: HardBombShipGun
-    totalIntensity: 1000
-    intensitySlope: 10
-    maxIntensity: 400
+    maxIntensity: 100
     maxTileBreak: 4
   - type: GatheringProjectile
   - type: MiningGatheringSoft
@@ -402,8 +266,7 @@
   - type: Projectile
     damage:
       types:
-        Structural: 100
-        Piercing: 125
+        Piercing: 50
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
     layers:

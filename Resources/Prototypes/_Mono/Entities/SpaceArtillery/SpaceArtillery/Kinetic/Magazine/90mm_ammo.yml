@@ -8,7 +8,7 @@
 
 - type: entity
   id: Magazine90mm
-  name: "90x427mm APHE ammo drum"
+  name: "90mm ammo drum"
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
   - type: Tag
@@ -41,7 +41,7 @@
 
 - type: entity
   id: 90mmCartridge
-  name: cartridge (90x427mm APHE)
+  name: cartridge (90mm)
   parent: [ BaseCartridge, BaseC1Contraband ]
   components:
   - type: Tag
@@ -69,20 +69,3 @@
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
-
-- type: entity
-  id: Magazine90mmWeak
-  name: "90x427mm ammo drum"
-  parent: Magazine90mm
-  components:
-  - type: BallisticAmmoProvider
-    infiniteUnspawned: true
-    proto: 90mmCartridgeWeak
-
-- type: entity
-  id: 90mmCartridgeWeak
-  name: "cartridge (90x427mm)"
-  parent: 90mmCartridge
-  components:
-  - type: CartridgeAmmo
-    proto: 90mmBulletWeak

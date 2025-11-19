@@ -45,7 +45,7 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 12500 # Mono
+          damage: 1800 # Mono
         behaviors:
           - !type:SpawnEntitiesBehavior
             spawn:
@@ -83,6 +83,8 @@
     node: diagonalshuttleWall
   #- type: RustRequiresPathStage
   #  pathStage: 10 # Ascension
+  - type: ArmorThickness
+    thickness: 4
 
 - type: entity
   parent: BaseWall
@@ -98,7 +100,7 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 25000 # Mono
+          damage: 3600 # Mono
         behaviors:
           - !type:SpawnEntitiesBehavior
             spawn:
@@ -138,3 +140,5 @@
   #  reflectProb: 1
   #- type: RustRequiresPathStage
   #  pathStage: 10 # Ascension
+  - type: ArmorThickness
+    thickness: 8
