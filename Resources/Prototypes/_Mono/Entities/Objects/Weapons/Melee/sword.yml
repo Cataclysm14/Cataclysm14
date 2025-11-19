@@ -238,8 +238,9 @@
         types:
             Slash: 30
             Heat: 50
-            Structural: 200
+            Structural: 300
   - type: ItemToggle
+    predictable: false
     soundActivate:
       path: /Audio/_Goobstation/Weapons/EswordWelder/on.ogg
     soundDeactivate:
@@ -254,6 +255,12 @@
       path: /Audio/_Goobstation/Weapons/EswordWelder/eblade1.ogg
       params:
         variation: 0.250
+  - type: WeaponMeleeCharge
+    activeTime: 2
+    cooldown: 5
+    cooldownDamagePenalty:
+      types:
+        Slash: -10
   - type: ItemToggleHot
   - type: ComponentToggler
     components:
@@ -261,21 +268,6 @@
       reflectProb: 0.5
       reflects:
         - Energy
-  - type: Welder
-    fuelConsumption: 50
-  - type: SolutionContainerManager
-    solutions:
-      Welder:
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 100
-        maxVol: 100
-  - type: SolutionRegeneration
-    solution: Welder
-    generated:
-      reagents:
-      - ReagentId: WeldingFuel
-        Quantity: 5
   - type: EnergySword
     activatedColor: LightBlue
     colorOptions: []
