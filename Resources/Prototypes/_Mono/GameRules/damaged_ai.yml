@@ -103,9 +103,9 @@
   id: UnknownShuttleArchangel
   components:
   - type: StationEvent
-    startAnnouncement: station-event-ai-capital-detected
+    startAnnouncement: station-event-ai-shuttle-detected
     startAudio:
-      path: /Audio/Misc/delta_alt.ogg
+      path: /Audio/Misc/notice1.ogg
     weight: 6
     maxOccurrences: 2
   - type: GameRule
