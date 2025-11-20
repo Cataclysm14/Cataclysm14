@@ -101,6 +101,7 @@ entities:
     - type: Transform
       pos: -6.918847,6.5152864
       parent: invalid
+    - type: GridRaider
     - type: MapGrid
       chunks:
         0,0:
