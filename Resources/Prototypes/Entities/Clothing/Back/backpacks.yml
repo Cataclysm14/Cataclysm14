@@ -274,6 +274,8 @@
   - type: Storage
     grid:
     - 0,0,10,3
+  - type: ExplosionResistance # Goobstation
+    damageCoefficient: 0.1
 
 - type: entity
   parent: ClothingBackpackERTLeader
