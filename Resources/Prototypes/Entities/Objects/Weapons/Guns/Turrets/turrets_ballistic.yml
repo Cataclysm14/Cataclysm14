@@ -6,6 +6,28 @@
 #
 # SPDX-License-Identifier: MPL-2.0
 
+# Basic Ballistic Turret Mono
+
+- type: entity
+  parent: BaseWeaponBallisticTurret
+  id: WeaponTurretPDV
+  suffix: PDV
+  components:
+  - type: NpcFactionMember
+    factions:
+    - PirateNF
+
+- type: entity
+  parent: BaseWeaponBallisticTurret
+  id: WeaponTurretMD
+  suffix: Medical
+  components:
+  - type: NpcFactionMember
+    factions:
+    - MD
+
+# Mono End
+
 - type: entity
   parent: [BaseWeaponBallisticTurret, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
   id: WeaponTurretSyndicate
