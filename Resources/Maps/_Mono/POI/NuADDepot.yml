@@ -1,30 +1,11 @@
-# SPDX-FileCopyrightText: 2023 Banshee
-# SPDX-FileCopyrightText: 2023 Cheackraze
-# SPDX-FileCopyrightText: 2023 Leon Friedrich
-# SPDX-FileCopyrightText: 2023 Nemanja
-# SPDX-FileCopyrightText: 2023 Scribbles0
-# SPDX-FileCopyrightText: 2023 Shodhans
-# SPDX-FileCopyrightText: 2023 metalgearsloth
-# SPDX-FileCopyrightText: 2023 unknown
-# SPDX-FileCopyrightText: 2024 Dvir
-# SPDX-FileCopyrightText: 2024 ErhardSteinhauer
-# SPDX-FileCopyrightText: 2024 Maxtone
-# SPDX-FileCopyrightText: 2024 Tabitha
-# SPDX-FileCopyrightText: 2024 checkraze
-# SPDX-FileCopyrightText: 2024 dustylens
-# SPDX-FileCopyrightText: 2025 Alkheemist
-# SPDX-FileCopyrightText: 2025 thoughtlessuser
-#
-# SPDX-License-Identifier: MPL-2.0
-
 meta:
   format: 7
   category: Grid
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 11/12/2025 05:48:58
-  entityCount: 3977
+  time: 11/20/2025 19:25:01
+  entityCount: 3983
 maps: []
 grids:
 - 1
@@ -66,7 +47,6 @@ entities:
       pos: -34.366,43.38321
       parent: invalid
     - type: BecomesStation
-    - type: ForceAnchor
       id: NuADDepot
     - type: MapGrid
       chunks:
@@ -1016,6 +996,12 @@ entities:
           decals:
             631: -16,20
             633: -32,21
+            818: -15,19
+            819: -13,20
+            820: -32,20
+            821: -30,19
+            822: -34,20
+            823: -14,21
         - node:
             color: '#FFFFFFFF'
             id: WarnCornerNE
@@ -1082,12 +1068,16 @@ entities:
       rot: 3.141592653589793 rad
       pos: -2.5,20.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 3317
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -42.5,20.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
   - uid: 3318
     components:
     - type: Transform
@@ -1176,6 +1166,8 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -13.5,17.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
     - type: DeviceLinkSource
       linkedPorts:
         3312:
@@ -1246,7 +1238,7 @@ entities:
       pos: -26.5,14.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -6268.575
+      secondsUntilStateChange: -7974.2427
       state: Opening
     - type: DeviceLinkSink
       invokeCounter: 1
@@ -2035,6 +2027,11 @@ entities:
       rot: 3.141592653589793 rad
       pos: -39.5,17.5
       parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        3317:
+        - - DoorStatus
+          - DoorBolt
     - type: DeviceLinkSink
       invokeCounter: 1
   - uid: 3309
@@ -2063,6 +2060,14 @@ entities:
       rot: 3.141592653589793 rad
       pos: -5.5,17.5
       parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        3316:
+        - - DoorStatus
+          - DoorBolt
+        3330:
+        - - DoorStatus
+          - DoorBolt
     - type: DeviceLinkSink
       invokeCounter: 1
   - uid: 3313
@@ -11351,6 +11356,68 @@ entities:
         3292:
         - - Pressed
           - Open
+  - uid: 3978
+    components:
+    - type: Transform
+      pos: -14.5,19.5
+      parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        3291:
+        - - Pressed
+          - Toggle
+        3292:
+        - - Pressed
+          - Toggle
+  - uid: 3979
+    components:
+    - type: Transform
+      pos: -12.5,20.5
+      parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        3290:
+        - - Pressed
+          - Toggle
+        3289:
+        - - Pressed
+          - Toggle
+  - uid: 3980
+    components:
+    - type: Transform
+      pos: -31.5,20.5
+      parent: 1
+  - uid: 3981
+    components:
+    - type: Transform
+      pos: -33.5,20.5
+      parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        3283:
+        - - Pressed
+          - Toggle
+        3284:
+        - - Pressed
+          - Toggle
+  - uid: 3982
+    components:
+    - type: Transform
+      pos: -29.5,19.5
+      parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        3286:
+        - - Pressed
+          - Toggle
+        3285:
+        - - Pressed
+          - Toggle
+  - uid: 3983
+    components:
+    - type: Transform
+      pos: -13.5,21.5
+      parent: 1
 - proto: Rack
   entities:
   - uid: 3220
