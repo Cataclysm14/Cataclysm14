@@ -348,7 +348,7 @@
     roleLoadout: [ RoleSurvivalEVA ]
   - type: RandomMetadata
     nameSegments:
-    - NamesFirstInspector
+    - NamesMilitaryFirstPolitical
     - NamesLastMilitary
   - type: LanguageKnowledge
     speaks:
