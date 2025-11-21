@@ -193,6 +193,7 @@
     Silver: 1000
     Gold: 1000
     Plasma: 500
+
 #Armor Plates
 - type: latheRecipe
   id: ArmorPlateLight
