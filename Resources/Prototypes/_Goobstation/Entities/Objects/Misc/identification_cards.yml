@@ -46,7 +46,7 @@
   - type: Item
     heldPrefix: executive
   - type: IdCard
-    jobTitle: TSF Executive
+    jobTitle: job-name-exec
     jobIcon: JobIconNanotrasen
   - type: Access
     groups:

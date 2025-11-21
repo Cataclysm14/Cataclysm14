@@ -20,6 +20,9 @@
   - AllAccess
   access:
   - CentralCommand
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, BluespaceLifelineImplant ]
 
 - type: startingGear
   id: NavyOfficerGear
@@ -36,6 +39,8 @@
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltHolsterFilledCentComm # Todo - Give the officer a sabre
     pocket1: BoxFolderCentCom
+  inhand:
+  - BriefcaseCentcomm
 
 # Navy Captain
 
@@ -53,6 +58,9 @@
     - AllAccess
   access:
     - CentralCommand
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, BluespaceLifelineImplant ]
 
 - type: startingGear
   id: NavyCaptainGear
@@ -69,6 +77,8 @@
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltSheathFilledNavyOfficer
     pocket1: NukeOverride
+  inhand:
+  - BriefcaseCentcomm
 
 # Undercover Officer
 
@@ -86,6 +96,9 @@
     - AllAccess
   access:
     - CentralCommand
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, BluespaceLifelineImplant ]
 
 - type: startingGear
   id: NavyOfficerUndercoverGear
@@ -120,6 +133,9 @@
     - AllAccess
   access:
     - CentralCommand
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, BluespaceLifelineImplant ]
 
 - type: startingGear
   id: SpecialOperationsOfficerGear
@@ -137,6 +153,8 @@
     belt: ClothingBeltHolsterFilledCentComm
     suitstorage: WeaponRifleAnnie
     pocket1: WeaponRevolverMateba
+  inhand:
+  - BriefcaseCentcomm
 
 
 # Diplomat
@@ -155,6 +173,9 @@
   - AllAccess
   access:
   - CentralCommand
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, BluespaceLifelineImplant ]
 
 - type: startingGear
   id: DiplomatGear
@@ -169,6 +190,8 @@
     id: DiplomatPDA
     ears: ClothingHeadsetAltCentCom
     # belt: ClothingBeltHolsterFilledCentComm - SOMEONE wouldn't stop bitching until i removed this
+  inhand:
+  - BriefcaseCentcomm
 
 ## Half-life stolen roles
 
@@ -179,7 +202,7 @@
   playTimeTracker: JobGovernmentMan
   setPreference: false
   startingGear: GovernmentManGear
-  icon: "JobIconLambda"
+  icon: "JobIconNanotrasen"
   supervisors: job-supervisors-null
   canBeAntag: false
   accessGroups:
@@ -191,7 +214,7 @@
   - SyndicateAgent
   special:
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, VaporizeImplant ]
+    implants: [ MindShieldImplant, BluespaceLifelineImplant ]
 
 - type: startingGear
   id: GovernmentManGear
@@ -204,6 +227,5 @@
     id: GmanPDA
     ears: ClothingHeadsetChronolegioneer
     pocket1: SonicScrewdriver
-    pocket2: AmnestizineHypospray # Todo - Make this an ability. It'd be funny.
   inhand:
   - BriefcaseCentcomm
