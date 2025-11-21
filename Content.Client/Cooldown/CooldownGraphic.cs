@@ -1,4 +1,19 @@
-﻿using Robust.Client.Graphics;
+// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers
+// SPDX-FileCopyrightText: 2020 Rich
+// SPDX-FileCopyrightText: 2020 Tomeno
+// SPDX-FileCopyrightText: 2020 Tyler Young
+// SPDX-FileCopyrightText: 2020 Visne
+// SPDX-FileCopyrightText: 2021 Acruid
+// SPDX-FileCopyrightText: 2022 DrSmugleaf
+// SPDX-FileCopyrightText: 2022 Jezithyr
+// SPDX-FileCopyrightText: 2022 metalgearsloth
+// SPDX-FileCopyrightText: 2022 mirrorcult
+// SPDX-FileCopyrightText: 2025 Ilya246
+// SPDX-FileCopyrightText: 2025 bitcrushing
+//
+// SPDX-License-Identifier: MPL-2.0
+
+using Robust.Client.Graphics;
 using Robust.Client.UserInterface;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
