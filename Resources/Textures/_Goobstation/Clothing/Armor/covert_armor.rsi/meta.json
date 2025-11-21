@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Sprited by Rosef",
+  "copyright": "Quote unquote sprited by SolsticeOfTheWinter",
   "size": {
     "x": 32,
     "y": 32
@@ -11,11 +11,10 @@
       "name": "icon"
     },
     {
-      "name": "inhand-left",
-      "directions": 4
+      "name": "icon-evil"
     },
     {
-      "name": "inhand-right",
+      "name": "equipped-OUTERCLOTHING",
       "directions": 4
     }
   ]
