@@ -1,11 +1,4 @@
-// SPDX-FileCopyrightText: 2022 Julian Giebel
-// SPDX-FileCopyrightText: 2025 Ilya246
-// SPDX-FileCopyrightText: 2025 bitcrushing
-//
-// SPDX-License-Identifier: MPL-2.0
-
-using System.Numerics;
-using Content.Shared.Disposal;
+﻿using Content.Shared.Disposal;
 using Content.Shared.Disposal.Unit;
 using Robust.Client.Graphics;
 using Robust.Client.UserInterface.Controls;

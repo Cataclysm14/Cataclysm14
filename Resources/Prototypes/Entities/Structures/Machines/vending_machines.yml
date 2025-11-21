@@ -1008,7 +1008,7 @@
     color: "#9dc5c9"
   - type: GuideHelp
     guides:
-    - MedicalDoctor # Mono - space in yaml not allowed
+    - Medical Doctor
 
 - type: entity
   parent: VendingMachine

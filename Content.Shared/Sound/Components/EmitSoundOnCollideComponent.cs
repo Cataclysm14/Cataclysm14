@@ -1,17 +1,9 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf
-// SPDX-FileCopyrightText: 2023 Leon Friedrich
-// SPDX-FileCopyrightText: 2023 metalgearsloth
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers
-// SPDX-FileCopyrightText: 2025 bitcrushing
-//
-// SPDX-License-Identifier: MPL-2.0
-
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
 namespace Content.Shared.Sound.Components;
 
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentPause, AutoGenerateComponentState]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentPause]
 public sealed partial class EmitSoundOnCollideComponent : BaseEmitSoundComponent
 {
     public static readonly TimeSpan CollideCooldown = TimeSpan.FromSeconds(0.2);

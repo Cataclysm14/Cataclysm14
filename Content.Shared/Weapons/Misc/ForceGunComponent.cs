@@ -1,8 +1,3 @@
-// SPDX-FileCopyrightText: 2023 metalgearsloth
-// SPDX-FileCopyrightText: 2025 bitcrushing
-//
-// SPDX-License-Identifier: MPL-2.0
-
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
 
@@ -23,7 +18,7 @@ public sealed partial class ForceGunComponent : BaseForceGunComponent
     /// <summary>
     /// The entity currently tethered.
     /// </summary>
-    [ViewVariables(VVAccess.ReadWrite), DataField("tethered")]
+    [ViewVariables(VVAccess.ReadWrite), DataField("tethered"), AutoNetworkedField]
     public override EntityUid? Tethered { get; set; }
 
     [ViewVariables(VVAccess.ReadWrite), DataField("soundLaunch")]

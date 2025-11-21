@@ -1,9 +1,3 @@
-# SPDX-FileCopyrightText: 2025 Milon
-# SPDX-FileCopyrightText: 2025 Whatstone
-# SPDX-FileCopyrightText: 2025 bitcrushing
-#
-# SPDX-License-Identifier: MPL-2.0
-
 # region Base Deposits
 - type: entity
   id: BaseGasDeposit
@@ -64,7 +58,7 @@
   - type: Sprite
     scale: 1.2, 1.2
 # endregion Base Deposits
-
+  
 # region Standard Deposits
 - type: entity
   parent: BaseGasDeposit
@@ -198,7 +192,7 @@
   parent:
   - BaseGasDepositVerySmall
   - GasDepositAmmonia
-  id: GasDepositAmmoniaVerySmall # Mono - No spaces in yaml allowed
+  id: GasDepositAmmoniaVery Small
   suffix: Ammonia, Very Small
 
 - type: entity

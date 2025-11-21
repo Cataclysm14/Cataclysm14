@@ -88,7 +88,6 @@
 # SPDX-FileCopyrightText: 2025 KieueCaprie
 # SPDX-FileCopyrightText: 2025 ScyronX
 # SPDX-FileCopyrightText: 2025 SlamBamActionman
-# SPDX-FileCopyrightText: 2025 bitcrushing
 # SPDX-FileCopyrightText: 2025 starch
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
@@ -328,7 +327,7 @@
     state: pda-internmed
   - type: GuideHelp
     guides:
-    - MedicalDoctor # Mono - No spaces in yaml allowed
+    - Medical Doctor
 
 - type: entity
   parent: BaseSecurityPDA
@@ -873,7 +872,7 @@
     state: pda-medical
   - type: GuideHelp
     guides:
-    - MedicalDoctor # Mono - space in yaml not allowed
+    - Medical Doctor
 
 - type: entity
   parent: MedicalPDA
@@ -1456,13 +1455,6 @@
   components:
   - type: Pda
     id: CluwneIDCard
-    penSlot:
-      startingItem: CrayonGreen
-      ejectSound: /Audio/Items/bikehorn.ogg
-      priority: -1
-      whitelist:
-        tags:
-        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -1472,6 +1464,13 @@
     borderColor: "#1c8f4d"
   - type: Icon
     state: pda-cluwne
+    penSlot:
+      startingItem: CrayonGreen
+      ejectSound: /Audio/Items/bikehorn.ogg
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Unremoveable
 
 - type: entity
