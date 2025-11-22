@@ -20,7 +20,7 @@ public sealed class SmoothMouseRotationSystem : EntitySystem
         if (!_combatQuery.HasComp(ent.Owner))
             return;
 
-        ent.Comp.AngleTolerance = Angle.FromDegrees(1); // arbitrary
+        ent.Comp.AngleTolerance = Angle.FromDegrees(5); // arbitrary
         ent.Comp.Simple4DirMode = false;
     }
 }
