@@ -161,6 +161,6 @@ public sealed partial class MindComponent : Component
     ///     The last mob entity this mind was in.
     ///     Can be null.
     /// </summary>
-    [DataField, AutoNetworkedField]
-    public EntityUid? LastMob { get; set; }
+    [DataField]
+    public EntityUid? LastMob = null;
 }
