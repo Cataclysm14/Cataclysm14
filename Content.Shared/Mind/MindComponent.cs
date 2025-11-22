@@ -155,9 +155,6 @@ public sealed partial class MindComponent : Component
     // TODO remove this after moving IPlayerManager functions to shared
     public ICommonSession? Session { get; set; }
 
-    [DataField]
-    public LocId? Subtype;
-
     // Goob Station
     /// <summary>
     ///     The last mob entity this mind was in.
