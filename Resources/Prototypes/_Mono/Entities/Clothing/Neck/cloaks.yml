@@ -44,7 +44,7 @@
   parent: ClothingNeckBase
   id: ClothingNeckCloakVizier
   name: grand vizier's ceremonial cloak
-  description: A Phaethon Dynasty Grand Vizier's cloak, only given to those who have proven their loyalty and worth to the Shah.
+  description: A Phaethon Dynasty Grand Vizier's cloak, only given to those who have proven their loyalty and worth to the Sultan.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/Neck/Cloaks/pdvcloak.rsi
