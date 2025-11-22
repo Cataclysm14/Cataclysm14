@@ -20,7 +20,9 @@
 // SPDX-FileCopyrightText: 2023 vanx <#vanxxxx>
 // SPDX-FileCopyrightText: 2024 Leon Friedrich
 // SPDX-FileCopyrightText: 2024 Winkarst
+// SPDX-FileCopyrightText: 2025 Aiden
 // SPDX-FileCopyrightText: 2025 J
+// SPDX-FileCopyrightText: 2025 Redrover1760
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
