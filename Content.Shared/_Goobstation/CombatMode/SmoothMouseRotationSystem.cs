@@ -17,8 +17,7 @@ public sealed class SmoothMouseRotationSystem : EntitySystem
 
     private void OnRotatorInit(Entity<MouseRotatorComponent> ent, ref MapInitEvent args)
     {
-        if (!_combatQuery.TryComp(ent.Owner, out var combat)
-            || !combat.SmoothRotation)
+        if (!_combatQuery.HasComp(ent.Owner))
             return;
 
         ent.Comp.AngleTolerance = Angle.FromDegrees(1); // arbitrary
