@@ -1,4 +1,11 @@
-﻿using Robust.Shared.GameStates;
+// SPDX-FileCopyrightText: 2023 Kara
+// SPDX-FileCopyrightText: 2023 metalgearsloth
+// SPDX-FileCopyrightText: 2024 slarticodefast
+// SPDX-FileCopyrightText: 2025 Androidonator
+//
+// SPDX-License-Identifier: MPL-2.0
+
+using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared.MouseRotator;
