@@ -6,7 +6,7 @@ namespace Content.Shared._Goobstation.CombatMode;
 public sealed class SmoothMouseRotationSystem : EntitySystem
 {
     private EntityQuery<CombatModeComponent>
-        _combatQuery; // i love optimizing the code that doesn't even lag for no reason
+        _combatQuery; // I love optimizing the code that doesn't even lag for no reason
 
     public override void Initialize()
     {
