@@ -5,8 +5,8 @@
 - type: entity
   parent: BaseMachinePowered
   id: MachineSalvageRadar
-  name: salvage radar # Mono edit
-  description: This radar increases asteroid and wreck detection range. Essential tool for salvagers.
+  name: salvage radar
+  description: This radar increases asteroid and wreck detection range, allowing rocks to be hit from farther away. Essential tool for salvagers.
   components:
   - type: Sprite
     sprite: _NF/Structures/Specific/Explorers/salvageradar.rsi
@@ -45,7 +45,7 @@
             min: 1
             max: 2
   - type: ChunkLoader
-    loadingDistance: 100
+    loadingDistance: 80
     requirePower: True
   - type: Physics
     bodyType: Static
@@ -70,5 +70,5 @@
   - type: Flatpack
     entity: MachineSalvageRadar
   - type: StaticPrice
-    price: 350
-    vendPrice: 2500
+    price: 850
+    vendPrice: 6500
