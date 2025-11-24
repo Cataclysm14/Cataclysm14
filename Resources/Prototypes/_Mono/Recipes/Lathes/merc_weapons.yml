@@ -159,3 +159,16 @@
     Steel: 1500
     Plasteel: 600
     Plastic: 600
+
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
+  id: WeaponRifleAk
+  result: WeaponRifleAk
+  categories:
+  - Rifles
+  - Ballistic
+  - Weapons
+  materials:
+    Steel: 2500
+    Plasteel: 1000
+    Plastic: 1000

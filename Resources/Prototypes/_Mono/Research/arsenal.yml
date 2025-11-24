@@ -32,6 +32,7 @@
   - WeaponRifleVulcanMerc
   - WeaponSubMachineGunVector9x19mm
   - WeaponSubMachineGunFirestarter
+  - WeaponRifleAk
   technologyPrerequisites:
   - MercArmementBasic
   position: 3, 1
