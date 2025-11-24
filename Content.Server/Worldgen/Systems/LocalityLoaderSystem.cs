@@ -6,6 +6,7 @@
 // SPDX-FileCopyrightText: 2024 Whatstone
 // SPDX-FileCopyrightText: 2025 GreaseMonk
 // SPDX-FileCopyrightText: 2025 Ilya246
+// SPDX-FileCopyrightText: 2025 NazrinNya
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
