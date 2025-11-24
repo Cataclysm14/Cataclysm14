@@ -67,6 +67,7 @@ public sealed class LocalityLoaderSystem : BaseWorldSystem
 
                     foreach (var loader in loaded.Loaders)
                     {
+                        // Mono edit start
                         var distance = loadable.LoadingDistance;
 
                         if (TryComp<ChunkLoaderComponent>(loader, out var cLoad))
@@ -77,7 +78,7 @@ public sealed class LocalityLoaderSystem : BaseWorldSystem
 
                         if ((_xformSys.GetWorldPosition(loaderXform) - _xformSys.GetWorldPosition(xform)).Length() > distance)
                             continue;
-
+                        // Mono edit end
                         RaiseLocalEvent(uid, new LocalStructureLoadedEvent());
                         RemCompDeferred<LocalityLoaderComponent>(uid);
                         done = true;
