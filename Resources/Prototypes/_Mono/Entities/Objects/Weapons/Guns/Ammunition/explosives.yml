@@ -101,6 +101,9 @@
   - type: SpentAmmoVisuals
     state: baton
     suffix: false
+  - type: Tag
+    tags:
+    - LessLethalGrenade
 
 - type: entity
   id: 40mmGrenadeThermobaric
@@ -135,6 +138,9 @@
   - type: SpentAmmoVisuals
     state: flash
     suffix: false
+  - type: Tag
+    tags:
+    - LessLethalGrenade
 
 - type: entity
   id: 40mmGrenadeFragmentation
@@ -173,6 +179,9 @@
     range: 5 # Frontier
     energyConsumption: 2700000 # Frontier
     disableDuration: 10 # Frontier
+  - type: Tag
+    tags:
+    - LessLethalGrenade
 
 # Cannon Balls
 

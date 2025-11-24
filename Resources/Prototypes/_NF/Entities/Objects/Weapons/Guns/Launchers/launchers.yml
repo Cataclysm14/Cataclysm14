@@ -69,6 +69,6 @@
     whitelist:
       tags:
         - NFTrackingDart
-        - Grenade
+        - LessLethalGrenade # Mono
   - type: StaticPrice
     price: 50
