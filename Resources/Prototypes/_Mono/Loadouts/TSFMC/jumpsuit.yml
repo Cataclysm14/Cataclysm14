@@ -18,11 +18,6 @@
     jumpsuit: ClothingUniformTSFMCEngi
 
 - type: loadout
-  id: TsfmcClothingOfficer
+  id: TsfmcClothingDressUniform
   equipment:
-    jumpsuit: ClothingUniformTSFMCOfficer
-
-- type: loadout
-  id: TsfmcClothingEnlisted
-  equipment:
-    jumpsuit: ClothingUniformTSFMCEnlisted    
+    jumpsuit: ClothingUniformTSFMCDress

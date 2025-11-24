@@ -43,8 +43,7 @@
   loadouts:
   - TsfmcClothingJumpsuit
   - TsfmcClothingJumpsuitType47D
-  - TsfmcClothingOfficer
-  - TsfmcClothingEnlisted
+  - TsfmcClothingDressUniform
   fallbacks:
   - TsfmcClothingJumpsuit
 
@@ -56,8 +55,7 @@
   - TsfmcEngineeringClothingJumpsuit
   - TsfmcClothingJumpsuit
   - TsfmcClothingJumpsuitType47D
-  - TsfmcClothingOfficer
-  - TsfmcClothingEnlisted
+  - TsfmcClothingDressUniform
   fallbacks:
   - TsfmcEngineeringClothingJumpsuit
 
