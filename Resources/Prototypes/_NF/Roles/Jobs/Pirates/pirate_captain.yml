@@ -32,8 +32,8 @@
   canBeAntag: true
   icon: "JobIconPirateCaptain"
   supervisors: job-supervisors-nobody
-  weight: 40
-  displayWeight: 40
+  weight: 50
+  displayWeight: 50
   setPreference: true
   guides: [ BasicLore, PhaethonDynasty ] # Mono
   access:
