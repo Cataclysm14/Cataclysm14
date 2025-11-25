@@ -15,7 +15,7 @@
   parent: BaseVessel
   name: SHM Xeloeian
   description: A Semi-large Salvage and Mining Vessel, priortizing both capability and deep space mining
-  price: 71845
+  price: 76001
   category: Large
   group: Expedition
   shuttlePath: /Maps/_Mono/Shuttles/Expedition/xeloeion.yml
