@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 11/25/2025 21:57:56
-  entityCount: 1288
+  time: 11/25/2025 22:28:37
+  entityCount: 1287
 maps: []
 grids:
 - 2
@@ -281,6 +281,7 @@ entities:
             247: 29,13
             331: 11,5
             332: 11,6
+            346: 29,10
         - node:
             color: '#C27D3BFF'
             id: TrimlineEast
@@ -974,6 +975,11 @@ entities:
     components:
     - type: Transform
       pos: 23.5,6.5
+      parent: 2
+  - uid: 91
+    components:
+    - type: Transform
+      pos: 29.5,10.5
       parent: 2
   - uid: 105
     components:
@@ -4550,11 +4556,6 @@ entities:
     - type: Transform
       pos: 15.5,10.5
       parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 509
   - uid: 511
     components:
     - type: Transform
@@ -6380,25 +6381,6 @@ entities:
     - type: Transform
       pos: 4.5,8.5
       parent: 2
-- proto: ShuttersNormal
-  entities:
-  - uid: 91
-    components:
-    - type: Transform
-      pos: 29.5,10.5
-      parent: 2
-- proto: SignalButton
-  entities:
-  - uid: 1298
-    components:
-    - type: Transform
-      pos: 28.5,11.5
-      parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        91:
-        - - Pressed
-          - Toggle
 - proto: SignArmory
   entities:
   - uid: 440
