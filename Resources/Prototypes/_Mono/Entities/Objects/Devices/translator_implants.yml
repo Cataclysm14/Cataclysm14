@@ -22,7 +22,7 @@
   parent: BaseSubdermalImplant
   id: NovaCygniTranslatorImplant
   name: NovaCygni translator implant
-  description: An implant that helps you speak and understand the language the USSP.
+  description: An implant that helps you speak and understand the language of the USSP.
   categories: [ HideSpawnMenu ]
   components:
   - type: TranslatorImplant

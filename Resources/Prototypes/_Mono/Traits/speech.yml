@@ -57,7 +57,7 @@
   - Gary
 
 - type: trait
-  id: NovaCygniBasic
+  id: MonoNovaCygniBasic
   name: trait-language-NovaCygni-name
   description: trait-language-NovaCygni-desc
   category: LanguageTraits
