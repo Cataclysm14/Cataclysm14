@@ -185,7 +185,8 @@ public abstract partial class SharedProjectileSystem : EntitySystem
                 ev.Damage,
                 component.IgnoreResistances,
                 origin: component.Shooter,
-                tool: uid) ?? new DamageSpecifier();
+                tool: uid,
+                armorPenetration: component.ArmorPenetration) ?? new DamageSpecifier();
         }
         else
         {
