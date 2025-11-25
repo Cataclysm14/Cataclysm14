@@ -33,3 +33,9 @@
         mapNameTemplate: 'Ravager SEC{1}'
         nameGenerator: !type:NanotrasenNameGenerator
           prefixCreator: '14'
+      - type: StationJobs
+        availableJobs:
+          Contractor: [ 0, 0 ]
+          Mercenary: [ 0, 0 ]
+          Borg: [ 0, 0 ]
+          SecurityGuard: [ 0, 0 ]
