@@ -38,8 +38,6 @@
     - id: MaterialCloth
     - id: MaterialDurathread
       weight: 0.1 #0.01 >> 0.1
-    - id: SpawnLootTechDisksT1 # Mono
-      weight: 0.05
     - id: MaterialCardboard
       weight: 0.1
     - id: SheetPaper
@@ -57,6 +55,9 @@
       weight: 0.1 #0.001 >> 0.1
     - id: ResearchDisk65000
       weight: 0.05 #0.0005 >> 0.5
+    - !type:NestedSelector #Mono
+      weight: 0.05
+      tableId: SpawnLootTechDisksT1Trunk
     #END MONO CHANGES
 
 - type: entity
