@@ -68,6 +68,7 @@
       - EWARMechMount
       - LightMechMount
       - IFFMechMount
+      
 
 
 # S2 Mechas
@@ -269,6 +270,7 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 3
     baseSprintSpeed: 6
+    baseWeightlessModifier: 0 # Ground mech.
   - type: Tag
     tags:
     - DoorBumpOpener
