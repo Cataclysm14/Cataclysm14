@@ -1,0 +1,40 @@
+# Author Info
+# GitHub: Primusirius
+# Discord: Primusirius
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Triage
+  parent: BaseVessel
+  name: Triage
+  description: A militia funded ship, used mainly for combat zone medical attention, get in, get out and carry a big gun.
+  price: 42000
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_Mono/Shuttles/triage.yml
+  guidebookPage: null
+  class:
+  - Medical
+  engine:
+  - APU
+
+- type: gameMap
+  id: Triage
+  mapName: 'Triage'
+  mapPath: /Maps/_Mono/Shuttles/triage.yml
+  minPlayers: 0
+  stations:
+    Victoria:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Triage MIL{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
