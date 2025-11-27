@@ -146,6 +146,7 @@ public sealed class StandingStateSystem : EntitySystem
         }
 
         _movement.RefreshMovementSpeedModifiers(uid); // WD EDIT
+        _movement.RefreshWeightlessModifiers(uid); // Mono edit
         return true;
     }
 
@@ -189,7 +190,7 @@ public sealed class StandingStateSystem : EntitySystem
         }
         standingState.ChangedFixtures.Clear();
         _movement.RefreshMovementSpeedModifiers(uid); // WD EDIT
-
+        _movement.RefreshWeightlessModifiers(uid); // Mono edit
         return true;
     }
 }
