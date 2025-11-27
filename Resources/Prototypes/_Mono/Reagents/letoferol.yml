@@ -43,6 +43,9 @@
         conditions:
         - !type:ReagentThreshold
           min: 10
+        - !type:HasTag
+          tag: Chimera
+          invert: true
       - !type:PopupMessage
         conditions:
         - !type:ReagentThreshold
@@ -103,6 +106,9 @@
           min: 15
         - !type:HasTag
           tag: Humanoid
+        - !type:HasTag
+          tag: Chimera
+          invert: true
       - !type:Polymorph
         prototype: LetoferolMutationBeastNatural
         conditions:
@@ -110,6 +116,9 @@
           min: 10 # less for non-humanoids
         - !type:HasTag
           tag: Humanoid
+          invert: true
+        - !type:HasTag
+          tag: Chimera
           invert: true
       - !type:PopupMessage
         conditions:
