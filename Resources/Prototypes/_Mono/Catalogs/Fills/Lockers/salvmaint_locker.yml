@@ -473,6 +473,7 @@
         weight: 0.5
       #Survival box
       - !type:GroupSelector
+        weight: 0.5
         children:
         - id: BoxSurvivalMonoOxygenExtended
         - id: BoxSurvivalMonoNitrogenExtended
