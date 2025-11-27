@@ -573,8 +573,8 @@
       - id: DrinkMopwataBottleRandom
       - id: SpectralLocator
       - id: ClothingShoesBootsMagVoid
-      - id: LidSalami
       - id: PillCanisterStrange
+      - id: LidSalami
         weight: 0.05
 
 #Unused but probably useful to have
