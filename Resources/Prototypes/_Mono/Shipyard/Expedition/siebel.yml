@@ -1,0 +1,40 @@
+# Author Info
+# GitHub: Primusirius
+# Discord: Primusirius
+
+- type: vessel
+  id: siebel
+  parent: BaseVessel
+  name: Siebel 
+  description: A CIV-Twilight hull modified with ill-advised retrofits to be a combat capable ship. Mostly used by the desperate and the cheap. EVA protection is required. 
+  price: 145000 # 
+  category: Medium
+  group: Expedition
+  access: Mercenary
+  shuttlePath: /Maps/_Mono/Shuttles/Expedition/siebel.yml
+  guidebookPage: null
+  class:
+  - Expedition
+  - Pursuit 
+  engine:
+  - AME
+
+- type: gameMap
+  id: siebel
+  mapName: 'Siebel'
+  mapPath: /Maps/_Mono/Shuttles/Expedition/siebel.yml
+  minPlayers: 0
+  stations:
+    twilightmk2:
+      stationProto: StandardFrontierExpeditionVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Siebel MIL{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
