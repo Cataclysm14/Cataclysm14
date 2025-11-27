@@ -142,7 +142,7 @@
         weight: 3
         children:
         - !type:NestedSelector
-          tableId: SpawnLootTechDisksT3MechBranch
+          tableId: SpawnLootTechDisksT3MechTrunk
         - !type:NestedSelector
           tableId: SpawnLootTechDisksT3FractureTrunk
 
