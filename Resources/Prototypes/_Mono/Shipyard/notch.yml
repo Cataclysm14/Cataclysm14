@@ -6,7 +6,7 @@
 # GitHub: UnicornOnLSD
 # Discord: unicornonlsd
 
-# Shuttle Notes: If this ship is ever to be revised by someone else than me in the future, avoid putting pulse miners on it. It was done on purpose, as it's sister small mining shuttle will have them. 
+# Shuttle Notes: If this ship is ever to be revised by someone else than me in the future, avoid putting pulse miners on it. It was done on purpose, as it's sister small mining shuttle will have them.
 #                This shuttle is intended to be one of the cheapest yet pretty first timer's shuttle.
 - type: vessel
   id: Notch
@@ -16,7 +16,7 @@
   price: 27900
   category: Small
   group: Shipyard
-  shuttlePath: /Maps/_Mono/Shuttles/Notch.yml
+  shuttlePath: /Maps/_Mono/Shuttles/notch.yml
   guidebookPage: Null
   class:
   - Salvage
