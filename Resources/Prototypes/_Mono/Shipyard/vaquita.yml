@@ -1,0 +1,40 @@
+# Author Info
+# GitHub: UnicornOnLSD
+# Discord: unicornonlsd
+
+# Shuttle Notes: The sabine replacement. Tight, has all the gear needed for the lowest scale mining.
+#
+- type: vessel
+  id: Vaquita
+  parent: BaseVessel
+  name: DIS Vaquita
+  description: The shining tool of lone salvagers. Equipped with mining mounts for minimal extravehicular operations and a powerful main thruster for getaways. It is ran by both independants and Drake Industries affiliates alike thanks to it's extreme efficiency.
+  price: 37900
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_Mono/Shuttles/vaquita.yml
+  guidebookPage: Null
+  class:
+  - Salvage
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Vaquita
+  mapName: 'DIS Vaquita'
+  mapPath: /Maps/_Mono/Shuttles/vaquita.yml
+  minPlayers: 0
+  stations:
+    Vaquita:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Vaquita CIV{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
