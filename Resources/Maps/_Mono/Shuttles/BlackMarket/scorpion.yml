@@ -776,12 +776,6 @@ entities:
         850:
         - - AmmoLoaderLoad
           - SpaceArtilleryLoad
-        845:
-        - - AmmoLoaderLoad
-          - SpaceArtilleryLoad
-        846:
-        - - AmmoLoaderLoad
-          - SpaceArtilleryLoad
   - uid: 853
     components:
     - type: Transform
