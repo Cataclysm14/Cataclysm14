@@ -12,7 +12,7 @@
   parent: BaseVessel
   name: Siebel 
   description: A CIV-Twilight hull modified with ill-advised retrofits to be a combat capable ship. Mostly used by the desperate and the cheap. EVA protection is required. 
-  price: 145000 # 
+  price: 175000 # 
   category: Medium
   group: Expedition
   access: Mercenary
