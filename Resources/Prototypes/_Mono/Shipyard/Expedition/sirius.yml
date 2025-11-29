@@ -1,20 +1,21 @@
 # SPDX-FileCopyrightText: 2025 Redrover1760
 # SPDX-FileCopyrightText: 2025 starch
+# SPDX-FileCopyrightText: 2025 Primusirius
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 # Author Info
-# GitHub: starch70
-# Discord: _starch_
+# GitHub: Primusirius
+# Discord: Primusirius
 
 # Shuttle Notes:
 #
 - type: vessel
   id: Sirius
   parent: BaseVessel
-  name: SKR Sirius
-  description: An expedition ship outfitted with 4 57mms, 2 90mms, and a full chemistry setup.
-  price: 80750
+  name: HT Sirius
+  description: An expedition ship outfitted with 4 57mms, 4 90mms, and a full chemistry setup.
+  price: 90000
   category: Medium
   group: Expedition
   shuttlePath: /Maps/_Mono/Shuttles/Expedition/sirius.yml
@@ -35,7 +36,7 @@
       stationProto: StandardFrontierExpeditionVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Sirius EXP{1}'
+          mapNameTemplate: 'HT Sirius EXP{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
