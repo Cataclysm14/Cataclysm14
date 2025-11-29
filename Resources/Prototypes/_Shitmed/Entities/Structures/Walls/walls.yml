@@ -45,7 +45,7 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 1800 # Mono
+          damage: 2000 # Mono
         behaviors:
           - !type:SpawnEntitiesBehavior
             spawn:
@@ -84,31 +84,15 @@
   #- type: RustRequiresPathStage
   #  pathStage: 10 # Ascension
   - type: ArmorThickness
-    thickness: 4
+    thickness: 10
 
 - type: entity
-  parent: BaseWall
+  parent: BaseWallTierFour
   id: WallNanolaminate # Mono
   name: nanolaminate wall # Mono
   suffix: ADS ONLY # Mono
   description: A dense wall made of a strange material, the texture is smooth yet rough. # Mono
   components:
-  - type: Damageable
-    damageContainer: StructuralInorganic
-    damageModifierSet: StructuralMetallicStrong
-  - type: Destructible
-    thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 3600 # Mono
-        behaviors:
-          - !type:SpawnEntitiesBehavior
-            spawn:
-              Girder:
-                min: 1
-                max: 1
-          - !type:DoActsBehavior
-            acts: [ "Destruction" ]
   - type: StaticPrice
     price: 250
   - type: RadiationBlocker
@@ -140,5 +124,3 @@
   #  reflectProb: 1
   #- type: RustRequiresPathStage
   #  pathStage: 10 # Ascension
-  - type: ArmorThickness
-    thickness: 8

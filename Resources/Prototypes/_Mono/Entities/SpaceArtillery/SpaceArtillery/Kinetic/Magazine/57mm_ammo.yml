@@ -6,7 +6,8 @@
 
 - type: entity
   id: Magazine57mm
-  name: "57mm ammo drum"
+  name: "57mm HE ammo drum"
+  description: "An ammunition drum containing infinite 57mm high-explosive rounds. Usable by vessel-mounted artillery pieces."
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
   - type: Tag
@@ -16,7 +17,7 @@
     size: Small
   - type: BallisticAmmoProvider
     proto: 57mmCartridge
-    capacity: 600
+    capacity: 1 # normally should hold 600
     mayTransfer: true
     whitelist:
       tags:

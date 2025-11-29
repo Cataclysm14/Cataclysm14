@@ -8,7 +8,8 @@
 
 - type: entity
   id: Magazine20mm
-  name: "20x124mm AP ammo drum"
+  name: "20mm solid ammo drum"
+  description: "An ammunition drum containing infinite 20mm solid rounds. Usable by vessel-mounted artillery pieces."
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
   - type: Tag
@@ -17,8 +18,9 @@
   - type: Item
     size: Small
   - type: BallisticAmmoProvider
+    infiniteUnspawned: true
     proto: 20mmCartridge
-    capacity: 1250
+    capacity: 1 # normally should hold 1250
     mayTransfer: true
     whitelist:
       tags:

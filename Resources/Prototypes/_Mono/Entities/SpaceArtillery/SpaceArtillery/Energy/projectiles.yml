@@ -40,7 +40,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 6.6
+    lifetime: 8
   - type: PointLight
     color: "#FF0040"
   - type: ExplodeOnTrigger

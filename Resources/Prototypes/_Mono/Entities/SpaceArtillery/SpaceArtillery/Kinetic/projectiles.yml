@@ -166,7 +166,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBombShipGun
-    totalIntensity: 20 # totalIntensity goes first, please.
+    totalIntensity: 10 # totalIntensity goes first, please.
     intensitySlope: 3
     maxIntensity: 10
     maxTileBreak: 1
@@ -184,7 +184,7 @@
   - type: Projectile
     damage:
       types:
-        Structural: 100
+        Structural: 200
         Blunt: 250
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
@@ -205,7 +205,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBombShipGun
-    totalIntensity: 100
+    totalIntensity: 70
     intensitySlope: 5
     maxIntensity: 50
     maxTileBreak: 3

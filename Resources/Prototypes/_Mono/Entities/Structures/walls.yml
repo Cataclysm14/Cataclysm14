@@ -5,6 +5,212 @@
 # sir. These are strong walls. For outposts. Indestructible is too much
 
 - type: entity
+  abstract: true
+  parent: BaseWall
+  id: BaseWallTierOne
+  name: default wall
+  description: Keeps the air in and the chimera out.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 2000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: StaticPrice
+    price: 25
+  - type: ArmorThickness
+    thickness: 3
+
+- type: entity
+  abstract: true
+  parent: BaseWall
+  id: BaseWallTierTwo
+  name: reinforced wall
+  description: Keeps the air in and the chimera out.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 2100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+    - trigger:
+        !type:DamageTrigger
+        damage: 2000
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: StaticPrice
+    price: 25
+  - type: ArmorThickness
+    thickness: 5
+
+- type: entity
+  abstract: true
+  parent: BaseWall
+  id: BaseWallTierThree
+  name: super reinforced wall
+  description: Keeps the air in and the chimera out.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 3600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+    - trigger:
+        !type:DamageTrigger
+        damage: 3500
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: StaticPrice
+    price: 50
+  - type: ArmorThickness
+    thickness: 10
+
+- type: entity
+  abstract: true
+  parent: BaseWall
+  id: BaseWallTierFour
+  name: super ultra giga reinforced wall
+  description: Keeps the air in and the chimera out.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+    - trigger:
+        !type:DamageTrigger
+        damage: 5000
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: StaticPrice
+    price: 75
+  - type: ArmorThickness
+    thickness: 15
+
+- type: entity
+  abstract: true
+  parent: BaseWall
+  id: BaseWallOutpost
+  name: super ultra giga mega deluxe reinforced wall
+  description: Keeps the air in and the chimera out.
+  suffix: OUTPOST ONLY
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 15100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+    - trigger:
+        !type:DamageTrigger
+        damage: 15000
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: StaticPrice
+    price: 75
+  - type: ArmorThickness
+    thickness: 20
+
+- type: entity
   parent: WallReinforced
   id: WallReinforcedOutpost
   suffix: OUTPOST ONLY
@@ -16,7 +222,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 20000 # Mono - wall buff
+        damage: 15100 # Mono - wall buff
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -25,7 +231,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 20000 # Mono - wall buff
+        damage: 15000 # Mono - wall buff
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -83,7 +289,7 @@
     sprite: Structures/Walls/reinforced_diagonal.rsi
     state: state0
 
-# plastitainum
+# plastitanum
 
 - type: entity
   parent: WallPlastitanium
@@ -94,7 +300,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 50000
+        damage: 15000
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -118,7 +324,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 25000
+        damage: 10000
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -131,7 +337,7 @@
 # capital-only plastitainum
 
 - type: entity
-  parent: WallPlastitanium
+  parent: [ WallPlastitanium, BaseWallTierFour ]
   id: WallPlastitaniumCapital
   name: reinforced plastitanium wall
   suffix: CAPITAL ONLY
@@ -151,21 +357,6 @@
     sprite: _Mono/Structures/Walls/rplas.rsi
   - type: Icon
     sprite: _Mono/Structures/Walls/rplas.rsi
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 3000
-      behaviors:
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          Girder:
-            min: 1
-            max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: ArmorThickness
-    thickness: 6
 
 - type: entity
   parent: WallPlastitaniumDiagonal
@@ -196,7 +387,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1500
+        damage: 2000
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -205,5 +396,3 @@
             max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-  - type: ArmorThickness
-    thickness: 3

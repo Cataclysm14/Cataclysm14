@@ -9,6 +9,7 @@
 - type: entity
   id: Magazine90mm
   name: "90mm ammo drum"
+  description: "An ammunition drum containing infinite 90mm high-explosive rounds. Usable by vessel-mounted artillery pieces."
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
   - type: Tag
@@ -17,8 +18,9 @@
   - type: Item
     size: Small
   - type: BallisticAmmoProvider
+    infiniteUnspawned: true
     proto: 90mmCartridge
-    capacity: 400
+    capacity: 1 # normally should hold 400
     mayTransfer: true
     whitelist:
       tags:

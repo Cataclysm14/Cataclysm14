@@ -8,7 +8,8 @@
 
 - type: entity
   id: Magazine30mm
-  name: "30x173mm AP ammo drum"
+  name: "30mm solid ammo drum"
+  description: "An ammunition drum containing infinite 30mm solid rounds. Usable by vessel-mounted artillery pieces."
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
   - type: Tag
@@ -17,8 +18,9 @@
   - type: Item
     size: Small
   - type: BallisticAmmoProvider
+    infiniteUnspawned: true
     proto: 30mmCartridge
-    capacity: 2000
+    capacity: 1 # normally should hold 2000
     mayTransfer: true
     whitelist:
       tags:
