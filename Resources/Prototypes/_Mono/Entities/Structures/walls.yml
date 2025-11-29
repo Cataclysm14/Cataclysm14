@@ -241,7 +241,6 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
 
-
 - type: entity
   parent: WallShuttleDiagonal
   id: WallReinforcedDiagonalOutpost
