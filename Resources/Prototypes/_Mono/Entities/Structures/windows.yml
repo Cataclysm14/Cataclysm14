@@ -151,3 +151,37 @@
   components:
   - type: TimedDespawn
     lifetime: 1800
+
+#plastitanium but blocks rads 100%
+
+- type: entity
+  id: PlastiraniumWindowDiagonalRadProof
+  parent: PlastitaniumWindowDiagonalIndestructible
+  name: plastiranium window
+  description: Don't smudge up the rads down there.
+  suffix: Rad-Proof, Indestructible
+  components:
+  - type: RadiationBlocker
+    resistance: 100
+  - type: Sprite
+    drawdepth: WallTops
+    sprite: _Mono/Structures/Windows/plastiranium_window_diagonal.rsi
+  - type: Icon
+    sprite: _Mono/Structures/Windows/plastiranium_window_diagonal.rsi
+    state: state0
+
+- type: entity
+  id: PlastiraniumWindowRadProof
+  parent: PlastitaniumWindowIndestructible
+  name: plastiranium window
+  description: Don't smudge up the rads down there.
+  suffix: Rad-Proof, Indestructible
+  components:
+  - type: RadiationBlocker
+    resistance: 100
+  - type: Sprite
+    drawdepth: WallTops
+    sprite: _Mono/Structures/Windows/plastiranium_window.rsi
+  - type: Icon
+    sprite: _Mono/Structures/Windows/plastiranium_window.rsi
+    state: full
