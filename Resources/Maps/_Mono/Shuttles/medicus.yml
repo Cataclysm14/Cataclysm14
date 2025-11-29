@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 11/29/2025 18:01:39
-  entityCount: 812
+  time: 11/29/2025 18:15:43
+  entityCount: 814
 maps: []
 grids:
 - 1
@@ -2296,6 +2296,22 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 5.5,-2.5
+      parent: 1
+- proto: CMSemioticBridge
+  entities:
+  - uid: 814
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 8.5,-15.5
+      parent: 1
+- proto: CMSemioticHigh_voltage
+  entities:
+  - uid: 813
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 6.5,-20.5
       parent: 1
 - proto: CombatKnife
   entities:
