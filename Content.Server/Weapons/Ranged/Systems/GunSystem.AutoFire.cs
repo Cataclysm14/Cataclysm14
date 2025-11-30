@@ -31,8 +31,16 @@ public sealed partial class GunSystem
 
             if (TryComp(uid, out AutoShootGunComponent? autoShoot))
             {
-                if (!autoShoot.Enabled)
-                    continue;
+                // Mono
+                if (autoShoot.RemainingTime <= TimeSpan.FromSeconds(0))
+                {
+                    if (!autoShoot.Enabled)
+                        continue;
+                }
+                else
+                {
+                    autoShoot.RemainingTime -= TimeSpan.FromSeconds(frameTime);
+                }
 
                 AttemptShoot(uid, gun);
             }
