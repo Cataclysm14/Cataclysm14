@@ -37,7 +37,15 @@ public sealed partial class GunSystem
             if (gun.NextFire > Timing.CurTime)
                 continue;
 
-            if (TryComp(uid, out AutoShootGunComponent? autoShoot))
+            if (gun.BurstActivated)
+            {
+                var parent = _transform.GetParentUid(uid);
+                if (HasComp<DamageableComponent>(parent))
+                    AttemptShoot(parent, uid, gun, gun.ShootCoordinates ?? new EntityCoordinates(uid, gun.DefaultDirection));
+                else
+                    AttemptShoot(uid, gun);
+            }
+            else if (TryComp(uid, out AutoShootGunComponent? autoShoot))
             {
                 // Mono
                 if (autoShoot.RemainingTime <= TimeSpan.FromSeconds(0))
@@ -51,14 +59,6 @@ public sealed partial class GunSystem
                 }
 
                 AttemptShoot(uid, gun);
-            }
-            else if (gun.BurstActivated)
-            {
-                var parent = _transform.GetParentUid(uid);
-                if (HasComp<DamageableComponent>(parent))
-                    AttemptShoot(parent, uid, gun, gun.ShootCoordinates ?? new EntityCoordinates(uid, gun.DefaultDirection));
-                else
-                    AttemptShoot(uid, gun);
             }
         }
     }
