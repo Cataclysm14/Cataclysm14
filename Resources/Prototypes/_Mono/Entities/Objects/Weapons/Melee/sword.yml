@@ -280,4 +280,4 @@
   - type: Execution
     doAfterDuration: 4.0
   - type: UseDelay
-    delay: 5
+    delay: 1
