@@ -7,7 +7,7 @@
 - type: vessel
   id: Sagittarius
   parent: BaseVessel
-  name: SKR Sagittarius
+  name: HT Sagittarius
   description: The Sagittarius is the sirius' big brother, heavier firepower and more space while maintaing its chemistry bay.
   price: 165000
   category: Large
@@ -31,7 +31,7 @@
       stationProto: StandardFrontierExpeditionVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Sagittarius EXP{1}'
+          mapNameTemplate: 'HT Sagittarius EXP{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
