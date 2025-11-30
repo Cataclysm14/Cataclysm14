@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 11/30/2025 21:14:41
-  entityCount: 564
+  time: 11/30/2025 21:39:31
+  entityCount: 565
 maps: []
 grids:
 - 1
@@ -759,8 +759,6 @@ entities:
       pos: -0.5,-3.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 549
       - 560
@@ -773,6 +771,33 @@ entities:
       deviceLists:
       - 556
       - 545
+- proto: AmmoLoader
+  entities:
+  - uid: 565
+    components:
+    - type: Transform
+      pos: 3.5,1.5
+      parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        453:
+        - - AmmoLoaderLoad
+          - SpaceArtilleryLoad
+        449:
+        - - AmmoLoaderLoad
+          - SpaceArtilleryLoad
+        446:
+        - - AmmoLoaderLoad
+          - SpaceArtilleryLoad
+        159:
+        - - AmmoLoaderLoad
+          - SpaceArtilleryLoad
+        450:
+        - - AmmoLoaderLoad
+          - SpaceArtilleryLoad
+        289:
+        - - AmmoLoaderLoad
+          - SpaceArtilleryLoad
 - proto: APCBasic
   entities:
   - uid: 8
@@ -2137,8 +2162,6 @@ entities:
       pos: 0.5,-2.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 558
       - 547
@@ -2150,8 +2173,6 @@ entities:
       pos: 1.5,-2.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 558
       - 547
@@ -2684,8 +2705,6 @@ entities:
       pos: 0.5,-3.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 549
       - 560
@@ -2819,8 +2838,6 @@ entities:
       pos: 1.5,-3.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 549
       - 560
@@ -3129,6 +3146,12 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 0.5,5.5
       parent: 1
+  - uid: 551
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 3.5,1.5
+      parent: 1
 - proto: ShelfWallFreezerDark
   entities:
   - uid: 247
@@ -3174,12 +3197,6 @@ entities:
       parent: 1
 - proto: SteelBench
   entities:
-  - uid: 551
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 3.5,0.5
-      parent: 1
   - uid: 553
     components:
     - type: Transform
