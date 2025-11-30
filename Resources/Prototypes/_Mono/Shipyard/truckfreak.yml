@@ -1,0 +1,44 @@
+# SPDX-FileCopyrightText: 2025 LFMoth
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Author Info
+# GitHub: LFMoth
+# Discord: lfmoth
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Truckfreak
+  parent: BaseVessel
+  name: UNSA Truckfreak
+  description: A compact Cargo shuttle that has more than enough free space in its dock. Comes with shutters for easy dock access!
+  price: 50000
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_Mono/Shuttles/truckfreak.yml
+  guidebookPage: null
+  class:
+  - Cargo
+  engine:
+  - Plasma
+
+- type: gameMap
+  id: Truckfreak
+  mapName: 'UNSA Truckfreak'
+  mapPath: /Maps/_Mono/Shuttles/truckfreak.yml
+  minPlayers: 0
+  stations:
+    Truckfreak:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Truckfreak CIV{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
