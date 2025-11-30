@@ -21,7 +21,7 @@
   class:
   - Cargo
   engine:
-  - Plasma
+  - AME
 
 - type: gameMap
   id: Truckfreak
