@@ -14419,3 +14419,25 @@ Entries:
   id: 1600
   time: '2025-11-30T18:01:56.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2707
+- author: UnicornOnLSD
+  changes:
+    - type: Add
+      message: >-
+        The DIS Vaquita is available on the civilian market, a compact and
+        efficient salvage shuttle for solo salvagers !
+  id: 1601
+  time: '2025-11-30T19:29:12.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2708
+- author: Avalon-Proto
+  changes:
+    - type: Add
+      message: Three new pulse weapons have been produced by Ullman Industries
+    - type: Tweak
+      message: The U.I. Smart magnum is now available through tech
+    - type: Add
+      message: Ullman Industies unstable plasma blades have arrived in sector
+    - type: Tweak
+      message: U.I. Hardsuits are now available through research
+  id: 1602
+  time: '2025-11-30T19:42:49.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2640
