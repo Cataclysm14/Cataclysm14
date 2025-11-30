@@ -4,7 +4,7 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 11/30/2025 03:24:05
+  time: 11/30/2025 04:04:37
   entityCount: 847
 maps: []
 grids:
@@ -2793,16 +2793,18 @@ entities:
     - type: Transform
       pos: 4.34184,-13.288596
       parent: 1
-- proto: GasFilterFlipped
+- proto: GasFilterInline
   entities:
-  - uid: 121
+  - uid: 181
     components:
     - type: Transform
-      pos: 12.5,-23.5
+      pos: 3.5,-12.5
       parent: 1
     - type: AtmosPipeColor
-      color: '#990000FF'
-  - uid: 255
+      color: '#947507FF'
+- proto: GasFilterNitrogenOnFlipped
+  entities:
+  - uid: 205
     components:
     - type: Transform
       pos: 12.5,-21.5
@@ -2812,27 +2814,33 @@ entities:
       - Nitrogen
     - type: AtmosPipeColor
       color: '#990000FF'
-- proto: GasFilterInline
+- proto: GasFilterOxygenOnFlipped
   entities:
-  - uid: 181
+  - uid: 121
     components:
     - type: Transform
-      pos: 3.5,-12.5
+      pos: 12.5,-23.5
       parent: 1
+    - type: GasFilter
+      filterGases:
+      - Oxygen
     - type: AtmosPipeColor
       color: '#990000FF'
-- proto: GasMixer
+- proto: GasMixerOn
   entities:
-  - uid: 205
+  - uid: 255
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 11.5,-19.5
       parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
+    - type: GasMixer
+      inletTwoConcentration: 0.78
+      inletOneConcentration: 0.22
     - type: AtmosPipeLayers
       pipeLayer: Secondary
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
 - proto: GasOutletInjector
   entities:
   - uid: 201
@@ -5324,6 +5332,13 @@ entities:
       rot: 3.141592653589793 rad
       pos: 6.5,-16.5
       parent: 1
+    - type: DeviceNetwork
+      address: 407F-980A
+      receiveFrequency: 1937
+    - type: SurveillanceCamera
+      networkSet: True
+      nameSet: True
+      id: Lobby Hall
 - proto: SurveillanceCameraRouterConstructed
   entities:
   - uid: 355
