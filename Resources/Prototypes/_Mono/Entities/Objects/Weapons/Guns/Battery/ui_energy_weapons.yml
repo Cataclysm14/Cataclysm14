@@ -70,7 +70,7 @@
     fireRate: 1.5
     burstFireRate: 12
     shotsPerBurst: 2
-    selectedMode: FullAuto
+    selectedMode: SemiAuto
     availableModes:
     - SemiAuto
     - Burst
