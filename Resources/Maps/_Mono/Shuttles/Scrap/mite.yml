@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 12/01/2025 20:20:47
-  entityCount: 398
+  time: 12/01/2025 20:28:48
+  entityCount: 400
 maps: []
 grids:
 - 1
@@ -293,8 +293,7 @@ entities:
             2: 40960
             1: 16396
           -4,1:
-            0: 2
-            1: 12
+            1: 14
           -4,-1:
             1: 49152
           -3,0:
@@ -907,6 +906,16 @@ entities:
     components:
     - type: Transform
       pos: 8.5,-0.5
+      parent: 1
+  - uid: 399
+    components:
+    - type: Transform
+      pos: -14.5,3.5
+      parent: 1
+  - uid: 400
+    components:
+    - type: Transform
+      pos: -14.5,4.5
       parent: 1
 - proto: CableApcExtension
   entities:
