@@ -59,7 +59,7 @@
     damage:
       types:
         Heat: 80
-        Structural: 8000 # So it can break cover
+        Structural: 1000 # So it can break cover
 
 - type: entity
   id: HeavyPulseExp
@@ -77,7 +77,7 @@
     damage:
       types:
         Heat: 300
-        Structural: 30000 # So it can break cover
+        Structural: 4500 # So it can break shuttles
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBombShipGun
