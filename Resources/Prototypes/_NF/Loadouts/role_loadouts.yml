@@ -108,7 +108,7 @@
 
 # Frontier
 - type: roleLoadout
-  id: JobValet
+  id: JobCCServiceWorker # Mono
   groups:
   - ContractorNeck
   - ValetJumpsuit
