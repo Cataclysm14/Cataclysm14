@@ -1,23 +1,23 @@
 - type: loadout
-  id: PiratePirateNFPDA
+  id: PDVRakhshanPDVRakhshanPDA
   price: 0
   equipment:
-    id: PirateNFPDA
+    id: PDVRakhshanPDA
 
 - type: loadout
-  id: PirateCaptainPirateCaptainNFPDA
+  id: PDVGrandVizierPDVGrandVizierPDA
   price: 0
   equipment:
-    id: PirateCaptainNFPDA
+    id: PDVGrandVizierPDA
 
 - type: loadout
-  id: PirateFirstMatePirateFirstMateNFPDA
+  id: PDVAsvaranPDVAsvaranPDA
   price: 0
   equipment:
-    id: PirateFirstMateNFPDA
+    id: PDVAsvaranPDA
 # Mono
 - type: loadout
-  id: PDVSpasakaPDVSpaskaPDA
+  id: PDVSpasakaPDVSpasakaPDA
   price: 0
   equipment:
     id: PDVSpasakaPDA

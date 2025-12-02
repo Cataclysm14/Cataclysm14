@@ -26,24 +26,24 @@
   parent: JobIcon
   id: JobIconPirate
   icon:
-    sprite: /Textures/_NF/Interface/Misc/job_icons.rsi
-    state: pirate
+    sprite: /Textures/_Mono/Interface/Misc/job_icons.rsi
+    state: PDVRakhshan
   jobName: job-name-pirate
 
 - type: jobIcon
   parent: JobIcon
   id: JobIconPirateCaptain
   icon:
-    sprite: /Textures/_NF/Interface/Misc/job_icons.rsi
-    state: piratecaptain
+    sprite: /Textures/_Mono/Interface/Misc/job_icons.rsi
+    state: PDVVizier
   jobName: job-name-pirate-captain
 
 - type: jobIcon
   parent: JobIcon
   id: JobIconPirateFirstMate
   icon:
-    sprite: /Textures/_NF/Interface/Misc/job_icons.rsi
-    state: piratefirstmate
+    sprite: /Textures/_Mono/Interface/Misc/job_icons.rsi
+    state: PDVAsvaran
   jobName: job-name-pirate-first-mate
 
 - type: jobIcon

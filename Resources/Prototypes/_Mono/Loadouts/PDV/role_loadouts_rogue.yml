@@ -19,7 +19,7 @@
   - PDVShoes
   - PirateFace
   - ContractorBoxSurvival
-  - PiratePDA
+  - RakhshanPDA
   - ContractorWallet
   - NFSpeciesSpecific
   - PirateTrinkets
@@ -42,7 +42,7 @@
   - PDVShoes
   - PDVFace
   - ContractorBoxSurvival
-  - PirateFirstMatePDA
+  - AsvaranPDA
   - NFSpeciesSpecific
   - ContractorWallet
   - PirateTrinkets
@@ -65,7 +65,7 @@
   - PDVFace
   - PDVCommanderNeck
   - ContractorBoxSurvival
-  - PirateCaptainPDA
+  - GrandVizierPDA
   - NFSpeciesSpecific
   - ContractorWallet
   - PirateCaptainTrinkets
