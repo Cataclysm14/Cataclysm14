@@ -17,6 +17,11 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1
   - type: Appearance
   - type: Battery
     startingCharge: 1500
@@ -64,12 +69,11 @@
     maxAngle: 26
     fireRate: 1.5
     burstFireRate: 12
-    shotsPerBurst: 3
-    selectedMode: FullAuto
+    shotsPerBurst: 2
+    selectedMode: SemiAuto
     availableModes:
     - SemiAuto
     - Burst
-    - FullAuto
   - type: HitscanBatteryAmmoProvider
     proto: UllmanPulse
     fireCost: 150
