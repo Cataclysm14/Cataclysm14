@@ -218,12 +218,12 @@
   - type: Meteor
     damageTypes:
       types:
-        Blunt: 5
+        Blunt: 50
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1200
+        damage: 2400
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
