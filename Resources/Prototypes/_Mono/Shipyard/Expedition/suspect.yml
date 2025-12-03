@@ -9,7 +9,7 @@
   parent: BaseVessel
   name: WLV Suspect
   description: A combination of xenoarch research and salvage expeditions, the Suspect is equipped with all the salvage and science equipment a Mercenary will need.
-  price: 51500 # 41192 x1.25 rounded. can go higher.
+  price: 70050 # Appraises 56043, x1.25 rounded. can go higher.
   category: Medium
   group: Expedition
   shuttlePath: /Maps/_Mono/Shuttles/Expedition/suspect.yml
