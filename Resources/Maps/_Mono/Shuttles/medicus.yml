@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 11/30/2025 17:24:34
-  entityCount: 864
+  time: 12/03/2025 02:11:51
+  entityCount: 865
 maps: []
 grids:
 - 1
@@ -2687,12 +2687,13 @@ entities:
     - type: Transform
       pos: 11.5,-3.5
       parent: 1
-- proto: DefibrillatorCabinet
+- proto: DefibrillatorCabinetFilled
   entities:
-  - uid: 299
+  - uid: 865
     components:
     - type: Transform
-      pos: 1.5,-10.5
+      rot: 1.5707963267948966 rad
+      pos: 0.5,-12.5
       parent: 1
 - proto: DrinkMugDog
   entities:
@@ -6552,6 +6553,13 @@ entities:
     components:
     - type: Transform
       pos: 10.5,-2.5
+      parent: 1
+- proto: WallWeaponCapacitorRechargerOmnidirectional
+  entities:
+  - uid: 299
+    components:
+    - type: Transform
+      pos: 1.5,-10.5
       parent: 1
 - proto: WarningAir
   entities:
