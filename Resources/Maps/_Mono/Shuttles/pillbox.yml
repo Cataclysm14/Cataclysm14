@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 12/03/2025 00:17:23
-  entityCount: 833
+  time: 12/03/2025 00:31:14
+  entityCount: 843
 maps: []
 grids:
 - 1
@@ -1085,7 +1085,8 @@ entities:
           1,-1:
             0: 61414
           2,0:
-            0: 17
+            3: 1
+            0: 16
             1: 512
           2,-1:
             0: 4096
@@ -1194,6 +1195,25 @@ entities:
           moles:
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.14996
+          moles:
+          - 20.078888
+          - 75.53487
           - 0
           - 0
           - 0
@@ -1970,6 +1990,13 @@ entities:
     - type: Transform
       pos: 6.5,-5.5
       parent: 1
+- proto: BiogeneratorFill
+  entities:
+  - uid: 407
+    components:
+    - type: Transform
+      pos: 3.5,-0.5
+      parent: 1
 - proto: BiomassReclaimer
   entities:
   - uid: 542
@@ -2122,6 +2149,29 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 0.5,1.5
+      parent: 1
+  - uid: 706
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -1.5,-9.5
+      parent: 1
+  - uid: 707
+    components:
+    - type: Transform
+      pos: -2.5,-10.5
+      parent: 1
+  - uid: 708
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -2.5,-8.5
+      parent: 1
+  - uid: 709
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -1.5,-6.5
       parent: 1
 - proto: BoozeDispenser
   entities:
@@ -2911,6 +2961,15 @@ entities:
     - type: Transform
       pos: 2.5,-6.5
       parent: 1
+- proto: ClothingOuterSuitRad
+  entities:
+  - uid: 428
+    components:
+    - type: Transform
+      parent: 251
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: ComputerTabletopGunneryConsole
   entities:
   - uid: 636
@@ -3062,6 +3121,29 @@ entities:
     - type: Transform
       pos: 5.5,-5.5
       parent: 1
+- proto: EthylredoxrazineAutoInjector
+  entities:
+  - uid: 702
+    components:
+    - type: Transform
+      parent: 701
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 703
+    components:
+    - type: Transform
+      parent: 701
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 704
+    components:
+    - type: Transform
+      parent: 701
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: ExtinguisherCabinetFilled
   entities:
   - uid: 433
@@ -5028,16 +5110,16 @@ entities:
       parent: 1
 - proto: hydroponicsTray
   entities:
+  - uid: 409
+    components:
+    - type: Transform
+      pos: -0.5,-2.5
+      parent: 1
   - uid: 611
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -0.5,-1.5
-      parent: 1
-  - uid: 612
-    components:
-    - type: Transform
-      pos: 3.5,-0.5
       parent: 1
   - uid: 613
     components:
@@ -5088,11 +5170,53 @@ entities:
       parent: 1
 - proto: KitchenReagentGrinder
   entities:
-  - uid: 409
+  - uid: 705
     components:
     - type: Transform
-      pos: -0.5,-2.5
+      pos: 0.5,-3.5
       parent: 1
+- proto: LockerBoozeFilled
+  entities:
+  - uid: 701
+    components:
+    - type: Transform
+      pos: -3.5,-7.5
+      parent: 1
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14923
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 702
+          - 703
+          - 704
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
 - proto: LockerEngineerFilledHardsuit
   entities:
   - uid: 623
@@ -5115,6 +5239,22 @@ entities:
       rot: 3.141592653589793 rad
       pos: 0.5,-4.5
       parent: 1
+- proto: LockerWallEVAColorHydroponicsFilled
+  entities:
+  - uid: 711
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -1.5,-1.5
+      parent: 1
+- proto: LockerWallEVAColorServiceWorkerFilled
+  entities:
+  - uid: 710
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -3.5,-9.5
+      parent: 1
 - proto: LockerWallMaterialsBasicFilled
   entities:
   - uid: 464
@@ -5130,6 +5270,39 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 9.5,0.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 428
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14923
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
 - proto: MachineCentrifuge
   entities:
   - uid: 74
@@ -5177,15 +5350,21 @@ entities:
   - uid: 316
     components:
     - type: Transform
+      anchored: True
       pos: 6.5,-3.5
       parent: 1
+    - type: Physics
+      bodyType: Static
 - proto: OxygenCanister
   entities:
   - uid: 138
     components:
     - type: Transform
+      anchored: True
       pos: 5.5,-3.5
       parent: 1
+    - type: Physics
+      bodyType: Static
 - proto: Paper
   entities:
   - uid: 620
@@ -5683,6 +5862,16 @@ entities:
           - Open
         - - Off
           - Close
+        706:
+        - - On
+          - Open
+        - - Off
+          - Close
+        709:
+        - - On
+          - Open
+        - - Off
+          - Close
   - uid: 724
     components:
     - type: Transform
@@ -5704,19 +5893,29 @@ entities:
           - Open
         - - Off
           - Close
+        708:
+        - - On
+          - Open
+        - - Off
+          - Close
+        707:
+        - - On
+          - Open
+        - - Off
+          - Close
 - proto: SinkWide
   entities:
+  - uid: 612
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 2.5,0.5
+      parent: 1
   - uid: 726
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -0.5,-8.5
-      parent: 1
-  - uid: 727
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 0.5,-3.5
       parent: 1
 - proto: SmartFridge
   entities:
@@ -5739,18 +5938,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -1.5,-11.5
-      parent: 1
-- proto: SpawnDungeonLootSeed
-  entities:
-  - uid: 428
-    components:
-    - type: Transform
-      pos: -0.7298765,-2.6775541
-      parent: 1
-  - uid: 501
-    components:
-    - type: Transform
-      pos: -0.5111265,-2.6775541
       parent: 1
 - proto: SpawnPointLatejoin
   entities:
@@ -5923,10 +6110,11 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 1.5,-10.5
       parent: 1
-  - uid: 407
+  - uid: 501
     components:
     - type: Transform
-      pos: -0.5,-2.5
+      rot: -1.5707963267948966 rad
+      pos: 0.5,-3.5
       parent: 1
   - uid: 535
     components:
