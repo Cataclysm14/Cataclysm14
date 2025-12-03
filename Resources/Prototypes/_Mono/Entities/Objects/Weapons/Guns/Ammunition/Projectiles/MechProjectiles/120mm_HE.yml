@@ -18,11 +18,11 @@
         Structural: 200
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: HardBombShipGun
-    maxIntensity: 20
+    explosionType: Default
+    maxIntensity: 15
     intensitySlope: 20
-    totalIntensity: 30
-    maxTileBreak: 2
+    totalIntensity: 15
+    maxTileBreak: 1
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
     layers:

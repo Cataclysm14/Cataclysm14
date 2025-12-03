@@ -46,9 +46,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 50
+    totalIntensity: 30
     intensitySlope: 12
-    maxIntensity: 25
+    maxIntensity: 15
     maxTileBreak: 1
 
 # Autopulser

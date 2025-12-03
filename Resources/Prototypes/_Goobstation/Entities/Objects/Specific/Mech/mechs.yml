@@ -222,7 +222,7 @@
     openState: gygax-open
     brokenState: gygax-broken
     mechToPilotDamageMultiplier: 0.1 # Mono
-    maxIntegrity: 550 # Mono
+    maxIntegrity: 1000 # Mono
     airtight: true
     pilotWhitelist:
       components:
@@ -235,6 +235,8 @@
       types:
         Blunt: 25
         Structural: 180
+  - type: Damageable
+    damageModifierSet: MechArmorMedium # Mono
   - type: CanMoveInAir
   - type: MovementAlwaysTouching
   - type: MovementSpeedModifier # Mono
@@ -297,7 +299,7 @@
     brokenState: durand-broken
     mechToPilotDamageMultiplier: 0.25
     airtight: true
-    maxIntegrity: 800
+    maxIntegrity: 1200
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -377,7 +379,7 @@
     brokenState: marauder-broken
     mechToPilotDamageMultiplier: 0.1
     airtight: true
-    maxIntegrity: 1000
+    maxIntegrity: 1200
     maxEquipmentAmount: 4
     pilotWhitelist:
       components:
@@ -467,7 +469,7 @@
     brokenState: seraph-broken
     mechToPilotDamageMultiplier: 0.05
     airtight: true
-    maxIntegrity: 1100
+    maxIntegrity: 1200
     maxEquipmentAmount: 5
     pilotWhitelist:
       components:
@@ -560,7 +562,7 @@
     brokenState: darkgygax-broken
     mechToPilotDamageMultiplier: 0.15
     airtight: true
-    maxIntegrity: 750
+    maxIntegrity: 1250
     maxEquipmentAmount: 4
     pilotWhitelist:
       components:
@@ -650,7 +652,7 @@
     brokenState: mauler-broken
     mechToPilotDamageMultiplier: 0.1
     airtight: true
-    maxIntegrity: 500
+    maxIntegrity: 1300
     maxEquipmentAmount: 5
     pilotWhitelist:
       components:

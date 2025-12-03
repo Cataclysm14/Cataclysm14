@@ -113,7 +113,7 @@
     mechToPilotDamageMultiplier: 0
     maxEquipmentAmount: 3
     airtight: true
-    maxIntegrity: 2400
+    maxIntegrity: 1500
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -202,7 +202,7 @@
     mechToPilotDamageMultiplier: 0
     maxEquipmentAmount: 3
     airtight: true
-    maxIntegrity: 1800
+    maxIntegrity: 1100
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -249,7 +249,7 @@
     mechToPilotDamageMultiplier: 0
     maxEquipmentAmount: 3
     airtight: false
-    maxIntegrity: 1000
+    maxIntegrity: 1400
     pilotWhitelist:
       components:
         - HumanoidAppearance

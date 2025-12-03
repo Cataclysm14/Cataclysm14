@@ -217,7 +217,7 @@
 
 - type: entity
   id: HeavyMechCannon
-  name: 120mm "Metronome" heavy burst autocannon
+  name: 220mm "Metronome" heavy burst autocannon
   description: A burst fire 120mm cannon, relatively inaccurate, but much longer ranged than the "Bazooka". Mounts on Heavy Hardpoints.
   suffix: Mech Weapon, Gun, Combat, Cannon
   parent: [ BaseMechWeaponRange, HeavyMechMountEquipment ]
