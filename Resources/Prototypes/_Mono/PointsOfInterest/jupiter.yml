@@ -29,7 +29,7 @@
   name: 'PDV Jupiter Class Carrier'
   minimumDistance: 17000
   maximumDistance: 19000
-  spawnGamePreset: [ NFAdventure, NFPirate, MonoStandard, MonoRogueTSF, MonoRogueUSSP, MonoADS, MonoChimera, MonoMixed, MonoAllAtOnce ]
+  spawnGamePreset: [ NFAdventure, NFPirate, MonoStandard, MonoRogueTSF, MonoRogueUSSP, MonoADS, MonoAllAtOnce ]
   spawnGroup: Required
   gridPath: /Maps/_Mono/POI/jupiter.yml
   addComponents:
