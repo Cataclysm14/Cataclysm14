@@ -162,7 +162,7 @@
     sprite: _Mono/Objects/Misc/id_cards.rsi
     layers:
     - state: base
-    - state: idrakhshan
+    - state: id_rakhshan
 
 - type: entity
   parent: PirateIDCard
@@ -176,7 +176,7 @@
     sprite: _Mono/Objects/Misc/id_cards.rsi
     layers:
     - state: brass
-    - state: iddenasvar
+    - state: id_denasvar
 
 - type: entity
   parent: PirateIDCard
@@ -189,7 +189,7 @@
     sprite: _Mono/Objects/Misc/id_cards.rsi
     layers:
     - state: base
-    - state: idasvaran
+    - state: id_asvaran
 
 - type: entity
   parent: PirateIDCard
@@ -202,7 +202,7 @@
     sprite: _Mono/Objects/Misc/id_cards.rsi
     layers:
     - state: vizierbase
-    - state: idvizier
+    - state: id_vizier
 
 - type: entity
   name: spasaka ID card # Frontier: passenger<contractor
@@ -221,7 +221,7 @@
     sprite: _Mono/Objects/Misc/id_cards.rsi
     layers:
     - state: base
-    - state: idrakhshan
+    - state: id_rakhshan
   - type: AgentIDCard
   - type: ActivatableUI
     key: enum.AgentIDCardUiKey.Key
