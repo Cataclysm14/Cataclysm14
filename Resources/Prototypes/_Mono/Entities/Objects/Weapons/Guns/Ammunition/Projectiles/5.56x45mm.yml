@@ -122,5 +122,5 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 12
-    armorPenetration: 0.7
+        Piercing: 10
+    armorPenetration: 1
