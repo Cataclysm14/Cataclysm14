@@ -4,6 +4,7 @@
 # SPDX-FileCopyrightText: 2025 Honestly101
 # SPDX-FileCopyrightText: 2025 Ilya246
 # SPDX-FileCopyrightText: 2025 NazrinNya
+# SPDX-FileCopyrightText: 2025 Onezero0
 # SPDX-FileCopyrightText: 2025 Redrover1760
 # SPDX-FileCopyrightText: 2025 ScyronX
 # SPDX-FileCopyrightText: 2025 starch
@@ -72,8 +73,10 @@
 
 # S2 Mechas
 - type: entity
-  id: AFInterceptor
+  id: BaseAFInterceptor
   parent: [ BaseMech, LightMechMount, BaseRestrictedContraband ]
+  abstract: true
+  categories: [ HideSpawnMenu ]
   name: AF-28 "Broadsword"
   description: One of the first purpose built Armored Frames, made to engage light targets and other Armored Frames.
   components:
@@ -110,7 +113,7 @@
     mechToPilotDamageMultiplier: 0
     maxEquipmentAmount: 3
     airtight: true
-    maxIntegrity: 2400
+    maxIntegrity: 1500
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -127,7 +130,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 4800
+        damage: 2000
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -141,8 +144,6 @@
     followEntity: true
   - type: Appearance
   - type: GenericVisualizer
-  - type: CanMoveInAir
-  - type: MovementAlwaysTouching
   # EXTREMELY slow in gravity. Only really good to taxi, and that's about it.
   - type: MovementSpeedModifier
     baseWalkSpeed: 0.2
@@ -154,7 +155,7 @@
     requireNoGrid: true
     shape: square
   - type: Damageable
-    damageModifierSet: HeavyArmorNT
+    damageModifierSet: MechArmorMedium
   - type: Repairable
     fuelCost: 40
     doAfterDelay: 30
@@ -170,6 +171,13 @@
     speedModifier: 3
     useSound:
       path: /Audio/Items/jaws_pry.ogg
+
+- type: entity
+  id: AFInterceptor
+  parent: BaseAFInterceptor
+  components:
+  - type: CanMoveInAir
+  - type: MovementAlwaysTouching
 
 - type: entity
   id: AFInterceptorBattery
@@ -194,7 +202,7 @@
     mechToPilotDamageMultiplier: 0
     maxEquipmentAmount: 3
     airtight: true
-    maxIntegrity: 1800
+    maxIntegrity: 1100
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -204,7 +212,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 3600
+        damage: 1600
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -218,6 +226,8 @@
     baseWalkSpeed: 0.2
     baseSprintSpeed: 1
     baseWeightlessModifier: 35
+  - type: Damageable
+    damageModifierSet: MechArmorLight
   - type: Tag
     tags:
     - DoorBumpOpener
@@ -239,7 +249,7 @@
     mechToPilotDamageMultiplier: 0
     maxEquipmentAmount: 3
     airtight: false
-    maxIntegrity: 1000
+    maxIntegrity: 1400
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -269,6 +279,7 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 3
     baseSprintSpeed: 6
+    baseWeightlessModifier: 0.3 # Barely usable in space.
   - type: Tag
     tags:
     - DoorBumpOpener
@@ -333,7 +344,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 8000
+        damage: 4000
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -360,7 +371,7 @@
     requireNoGrid: true
     shape: square
   - type: Damageable
-    damageModifierSet: HeavyArmorNT
+    damageModifierSet: MechArmorHeavy
   - type: Repairable
     fuelCost: 60
     doAfterDelay: 40
@@ -401,7 +412,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 4500
+        damage: 3000
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -450,7 +461,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 4000
+        damage: 3000
       behaviors:
       - !type:PlaySoundBehavior
         sound:
