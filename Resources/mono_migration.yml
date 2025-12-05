@@ -44,3 +44,6 @@ SuitStorageNfsdCommand: SuitStorageM86
 # T2 hardsuits
 ClothingOuterHardsuitNfsdCombat: ClothingOuterHardsuitM86
 ClothingOuterHardsuitNfsdCommand: ClothingOuterHardsuitM86
+
+# rogue->PDV AI core
+PlayerStationAiRogue: PlayerStationAiPDV

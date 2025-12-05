@@ -326,7 +326,7 @@
     prototypes:
     - VesselCircuitBoard
     - TSFMCCircuitBoard
-    - RogueCircuitBoard
+    - PDVCircuitBoard
     - NutimovCircuitBoard
     - AntimovCircuitBoard
     - RobocopCircuitBoard
