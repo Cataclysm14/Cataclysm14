@@ -177,7 +177,7 @@
   loadouts:
   - PDVSpasakaPDVSpasakaPDA
   fallbacks:
-  - PDVSpasakaPDVSpaskaPDA
+  - PDVSpasakaPDVSpasakaPDA
 
 - type: loadoutGroup
   id: PDVDenasvarPDA
