@@ -1,25 +1,11 @@
-# SPDX-FileCopyrightText: 2022 metalgearsloth
-# SPDX-FileCopyrightText: 2023 Emisse
-# SPDX-FileCopyrightText: 2023 Leon Friedrich
-# SPDX-FileCopyrightText: 2023 Pieter-Jan Briers
-# SPDX-FileCopyrightText: 2024 Kara
-# SPDX-FileCopyrightText: 2024 Nemanja
-# SPDX-FileCopyrightText: 2024 checkraze
-# SPDX-FileCopyrightText: 2025 Bendego35
-# SPDX-FileCopyrightText: 2025 LukeZurg22
-# SPDX-FileCopyrightText: 2025 RikuTheKiller
-# SPDX-FileCopyrightText: 2025 starch
-#
-# SPDX-License-Identifier: MPL-2.0
-
 meta:
   format: 7
   category: Grid
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 12/05/2025 03:02:33
-  entityCount: 451
+  time: 12/05/2025 13:27:56
+  entityCount: 447
 maps: []
 grids:
 - 1
@@ -362,7 +348,7 @@ entities:
       id: Humpback
 - proto: AirAlarm
   entities:
-  - uid: 415
+  - uid: 282
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
@@ -370,14 +356,14 @@ entities:
       parent: 1
     - type: DeviceList
       devices:
-      - 280
-      - 279
-      - 282
+      - 181
       - 278
-      - 285
+      - 300
+      - 361
       - 281
       - 284
       - 283
+      - 285
 - proto: AirCanister
   entities:
   - uid: 333
@@ -386,6 +372,8 @@ entities:
       anchored: True
       pos: -2.5,-7.5
       parent: 1
+    - type: Lock
+      locked: False
     - type: Physics
       bodyType: Static
 - proto: Airlock
@@ -397,7 +385,7 @@ entities:
       pos: -3.5,-6.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -465.3716
+      secondsUntilStateChange: -894.52
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -411,7 +399,7 @@ entities:
       pos: 0.5,-1.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -462.60495
+      secondsUntilStateChange: -891.75336
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -423,7 +411,7 @@ entities:
       pos: -0.5,-1.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -462.20496
+      secondsUntilStateChange: -891.35333
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -699,11 +687,6 @@ entities:
     components:
     - type: Transform
       pos: -7.5,4.5
-      parent: 1
-  - uid: 181
-    components:
-    - type: Transform
-      pos: -3.5,-10.5
       parent: 1
   - uid: 182
     components:
@@ -1328,11 +1311,6 @@ entities:
       parent: 1
 - proto: CigarSpent
   entities:
-  - uid: 365
-    components:
-    - type: Transform
-      pos: -2.657887,-2.5600402
-      parent: 1
   - uid: 366
     components:
     - type: Transform
@@ -1441,7 +1419,7 @@ entities:
     - type: InsideEntityStorage
 - proto: GasPassiveVent
   entities:
-  - uid: 300
+  - uid: 280
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
@@ -1740,92 +1718,76 @@ entities:
       parent: 1
 - proto: GasVentPump
   entities:
-  - uid: 278
+  - uid: 181
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -2.5,-9.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
-      - 415
-  - uid: 279
-    components:
-    - type: Transform
-      pos: -3.5,-2.5
-      parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 415
-  - uid: 280
+      - 282
+  - uid: 281
     components:
     - type: Transform
       pos: -0.5,0.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
-      - 415
-  - uid: 281
+      - 282
+  - uid: 283
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,1.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
-      - 415
+      - 282
+  - uid: 300
+    components:
+    - type: Transform
+      pos: -3.5,-2.5
+      parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 282
 - proto: GasVentScrubber
   entities:
-  - uid: 282
-    components:
-    - type: Transform
-      pos: -2.5,-2.5
-      parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 415
-  - uid: 283
-    components:
-    - type: Transform
-      pos: 0.5,0.5
-      parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 415
-  - uid: 284
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -7.5,2.5
-      parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 415
-  - uid: 285
+  - uid: 278
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -3.5,-9.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
-      - 415
+      - 282
+  - uid: 284
+    components:
+    - type: Transform
+      pos: 0.5,0.5
+      parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 282
+  - uid: 285
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -7.5,2.5
+      parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 282
+  - uid: 361
+    components:
+    - type: Transform
+      pos: -2.5,-2.5
+      parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 282
 - proto: GravityGeneratorMini
   entities:
   - uid: 433
@@ -2078,11 +2040,6 @@ entities:
     - type: Transform
       pos: -5.5,2.5
       parent: 1
-  - uid: 449
-    components:
-    - type: Transform
-      pos: -7.5,1.5
-      parent: 1
 - proto: NFAshtray
   entities:
   - uid: 363
@@ -2289,11 +2246,6 @@ entities:
     - type: Transform
       pos: -1.5,-3.5
       parent: 1
-  - uid: 437
-    components:
-    - type: Transform
-      pos: 0.5,0.5
-      parent: 1
   - uid: 438
     components:
     - type: Transform
@@ -2447,15 +2399,17 @@ entities:
       parent: 1
 - proto: TableWood
   entities:
-  - uid: 361
+  - uid: 279
     components:
     - type: Transform
-      pos: -3.5,-2.5
+      rot: 1.5707963267948966 rad
+      pos: -2.5,-2.5
       parent: 1
   - uid: 362
     components:
     - type: Transform
-      pos: -2.5,-2.5
+      rot: 1.5707963267948966 rad
+      pos: -3.5,-2.5
       parent: 1
 - proto: Thruster
   entities:
@@ -2986,7 +2940,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -5817.1313
+      secondsUntilStateChange: -6246.28
       state: Opening
     - type: Airlock
       autoClose: False
