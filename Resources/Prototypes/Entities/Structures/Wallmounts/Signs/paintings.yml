@@ -10,7 +10,8 @@
 - type: entity
   parent: BaseSign
   id: PaintingBase
-  abstract: true
+#  abstract: true #Mono out
+  categories: [ HideSpawnMenu ] #Mono in
   components:
   - type: WallMount
     arc: 360
