@@ -1,0 +1,43 @@
+# SPDX-FileCopyrightText: 2025 thoughtlessuser
+#
+# SPDX-License-Identifier: MPL-2.0
+
+# Contrib Info
+# GitHub: thoughtlessuser
+# Discord: thoughtlessuser
+# Community contribution- alter as one pleases.
+
+# Notes:
+# ADS themed dungeon looter, similarly to LPB. Will be possible of mobility ONLY if FTL is impossible for it. Max speed ~30m/s. Can be controlled by a WL AI ghost role for jigsaw-esque shenanigans.
+- type: pointOfInterest
+  id: NuADDepot
+  parent: BasePOI
+  name: 'Nu Class Automated Defense Depot'
+  minimumDistance: 6500
+  maximumDistance: 9500
+  spawnGroup: Required
+  gridPath: /Maps/_Mono/POI/NuADDepot.yml
+  hideWarp: true
+  addComponents:
+  - type: IFF
+    color: "#FA05C5"
+    flags: [HideLabel, Hide]
+    readOnly: false
+  - type: SolarPoweredGrid
+    trackOnInit: true
+    doNotCull: true
+
+- type: gameMap
+  id: NuADDepot
+  mapName: 'Nu Class Automated Defense Depot'
+  mapPath: /Maps/_Mono/POI/NuADDepot.yml
+  minPlayers: 0
+  stations:
+    NuADDepot:
+      stationProto: StandardFrontierOutpost
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Nu Class Automated Defense Depot'
+        - type: StationJobs
+          availableJobs: {}
+        - type: StationDeadDropHintExempt
