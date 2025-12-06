@@ -2,6 +2,7 @@
 # SPDX-FileCopyrightText: 2024 ErhardSteinhauer
 # SPDX-FileCopyrightText: 2024 Whatstone
 # SPDX-FileCopyrightText: 2024 dustylens
+# SPDX-FileCopyrightText: 2025 Avalon
 # SPDX-FileCopyrightText: 2025 KiraZen_
 # SPDX-FileCopyrightText: 2025 Onezero0
 # SPDX-FileCopyrightText: 2025 Redrover1760
@@ -312,10 +313,13 @@
     offset: 0.0
     rarePrototypes:
     - SpawnDungeonLootCrateArmoryWeapon
-    #Mono
+    # Mono
     - SpawnDungeonLootCrateArmoryWeapon
     - SpawnDungeonLootCrateArmoryWeapon
     - CrateNanotrasenLootFilledT1
+    - CrateNanotrasenLootFilledT2
+    - CrateNanotrasenLootFilledT3
+    # Mono end
     rareChance: 0.05
 
 - type: entity
