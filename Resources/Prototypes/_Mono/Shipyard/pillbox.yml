@@ -11,7 +11,7 @@
   class:
   - Civilian
   engine:
-  - Plasma
+  - Uranium
 
 - type: gameMap
   id: Pillbox

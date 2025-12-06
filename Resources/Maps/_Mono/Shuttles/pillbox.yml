@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 12/06/2025 14:02:09
-  entityCount: 839
+  time: 12/06/2025 15:05:22
+  entityCount: 840
 maps: []
 grids:
 - 1
@@ -5226,6 +5226,13 @@ entities:
     components:
     - type: Transform
       pos: 7.5,-5.5
+      parent: 1
+- proto: LockerWallMaterialsFuelUraniumFilled2
+  entities:
+  - uid: 428
+    components:
+    - type: Transform
+      pos: 7.5,1.5
       parent: 1
 - proto: MachineCentrifuge
   entities:
