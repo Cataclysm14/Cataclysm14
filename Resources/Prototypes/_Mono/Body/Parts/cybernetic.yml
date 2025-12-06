@@ -1,0 +1,25 @@
+# SPDX-FileCopyrightText: 2025 kotobdev
+#
+# SPDX-License-Identifier: MPL-2.0
+
+- type: entity
+  parent: [ CyberneticPartBase, BaseLeftFoot ]
+  id: LeftFootCyberneticDigi
+  name: cybernetic left foot
+  suffix: Digi
+  components:
+  - type: Sprite
+    sprite: _Mono/Mobs/Species/Cybernetics/digi.rsi
+  - type: BodyPart
+    baseLayerId: MobCyberneticDigiLFoot
+
+- type: entity
+  parent: [ CyberneticPartBase, BaseRightFoot ]
+  id: RightFootCyberneticDigi
+  name: cybernetic right foot
+  suffix: Digi
+  components:
+  - type: Sprite
+    sprite: _Mono/Mobs/Species/Cybernetics/digi.rsi
+  - type: BodyPart
+    baseLayerId: MobCyberneticDigiRFoot

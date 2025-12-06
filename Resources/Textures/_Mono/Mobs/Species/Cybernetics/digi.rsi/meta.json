@@ -1,0 +1,27 @@
+{
+    "version": 1,
+    "copyright": "Sprites by Zethine (@synthetic_086, discord)",
+    "license": "CC-BY-SA-3.0",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "l_foot",
+            "directions": 4
+        },
+        {
+            "name": "r_foot",
+            "directions": 4
+        },
+        {
+            "name": "l_leg-combined",
+            "directions": 4
+        },
+        {
+            "name": "r_leg-combined",
+            "directions": 4
+        }
+    ]
+}
