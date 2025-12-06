@@ -3,6 +3,7 @@ guide-entry-shipyard-argent = Argent
 guide-entry-shipyard-judiciary = Judiciary
 guide-entry-shipyard-sabine = Sabine
 guide-entry-shipyard-takeaway = Takeaway
+guide-entry-shipyard-ursamajor = Ursa Major
 guide-entry-shipyard-ruby = Ruby
 
 # Gunnery Guides

@@ -1,6 +1,7 @@
 # SPDX-FileCopyrightText: 2025 bluebrouny
 # SPDX-FileCopyrightText: 2025 significant harassment
 # SPDX-FileCopyrightText: 2025 starch
+# SPDX-FileCopyrightText: 2025 thoughtlessuser
 # SPDX-FileCopyrightText: 2025 tonotom
 # SPDX-FileCopyrightText: 2025 tonotom1
 #
@@ -16,6 +17,7 @@
   - ShipyardJudiciary
   - ShipyardSabine
   - ShipyardTakeaway
+  - ShipyardUrsamajor
   - ShipyardRuby
 
 - type: guideEntry
@@ -37,6 +39,11 @@
   id: ShipyardTakeaway
   name: guide-entry-shipyard-takeaway
   text: "/ServerInfo/_Mono/Guidebook/Shipyard/Takeaway.xml"
+
+- type: guideEntry
+  id: ShipyardUrsamajor
+  name: guide-entry-shipyard-ursamajor
+  text: "/ServerInfo/_Mono/Guidebook/Shipyard/Ursamajor.xml"
 
 - type: guideEntry
   id: ShipyardRuby

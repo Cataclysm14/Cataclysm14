@@ -1,0 +1,208 @@
+<Document>
+  # CAPITAL-CLASS MILITARY FRIGATE
+
+
+  <Box>
+  <GuideEntityEmbed Entity="ClothingHeadHelmetMercenary"/>
+  <GuideEntityEmbed Entity="CDDogtags"/>
+  </Box>
+
+    [color=#a4885c]Ship Size:[/color] Large
+
+	[color=#a4885c]Recommended Crew:[/color] 3-4
+
+	[color=#a4885c]Power Gen Type:[/color] Nuclear Fusion Reactor (Plasma(60~160kw per))
+
+	[color=#a4885c]Expeditions:[/color] Defunct
+
+	[color=#a4885c]IFF Console:[/color] Not included
+
+  "A massive, unkempt, and hazardous military ship that once saw combat on Kamino's seas. In nuance to it's name, this frigate was once at home in waters vast, it is now moored among the stars to continue its duties in more modern fashion. The Civil Defense Militia is reliant on the funds of others by outsourcing it's benefactors spare supplies. This vessel eagerly awaits its destinies fulfillment."
+
+  # PREFLIGHT CHECKLIST
+__________________________________________________________________________________________
+
+  ## 1. Power supply
+
+  <Box>
+  <GuideEntityEmbed Entity="GeneratorCRPinchShuttle"/>
+  </Box>
+
+
+  ## 1.1. Battery units
+  <Box>
+  <GuideEntityEmbed Entity="SMESBasic"/>
+  <GuideEntityEmbed Entity="SMESAdvanced"/>
+  <GuideEntityEmbed Entity="SubstationBasic"/>
+  <GuideEntityEmbed Entity="APCBasic"/>
+  </Box>
+
+  * - The Ursa Major is supplied by two [color=#990000] RADIOACTIVE [/color] and plasma-fed fusion reactors. Ensure it has enough fuel to last the inevitable onslaught.
+
+  ** - Check that the SMES unit is anchored to the floor within the Engineering Bay and the Sensitive Compartment located at the stern.
+
+  *** - Check that the substation unit is anchored to the floor in the Sensitive Compartment, Engineering Bay, and Galley Hall.
+
+  **** - Check that all APC unit's Main Breakers are toggled on around various part of the vessel.
+  
+  ## 1.2. Shield control
+  
+  <Box>
+  <GuideEntityEmbed Entity="ShieldGeneratorSmall"/>
+  </Box>
+
+  The Ursa Major's Sensitive Compartment houses a stock MS-100 Shield Generator.
+
+  * - Ensure the Sensitive Compartment's Substation is only being supplied by the room's SMES (using HV) and powering the room's APC (using MV).
+
+  ** - The more damage a generated shield takes, the more power it consumes. Redundancy can remedy this.
+
+  Examples of redundancy:
+   
+     - Adding multiple APCs/Substations/SMES.
+     - Ensuring the shield has an isolated power grid.
+     - Adding RTGs to the isolated power grid.
+
+  ## 1.3. Faster Than Light Travel
+
+  <Box>
+  <GuideEntityEmbed Entity="MachineHeavyFTLDriveConsole"/>
+  <GuideEntityEmbed Entity="MachineHeavyFTLDriveCore"/>
+  </Box>
+
+  * - The Sensitive Component's room is home to a device known as the CTLA-160 FTL Drive.
+
+  ** - The 160 is immovable and requires two individual parts to function, the core and the computer. It is also capable of acting as a power monitoring console. It is powered by basic LV cable.
+
+  *** - In order to activate the 160, interact with the shuttle console's map section and use the "FTL" button and click any position. You can hold right mouse bumper to traverse the radar. Entering FTL requires having no other ship-faring vessel to be nearer to your ship in a set radius.
+
+  **** - Exiting FTL makes your ship [color=#990000]VULNERABLE AND DISABLED[/color]. You will not be able to utilize shipguns or rely on shields in a given amount of time when you exit bluespace.
+
+__________________________________________________________________________________________
+
+  # 2. Atmospherics
+
+
+  ## 2.1. Distribution Loop
+  <Box>
+  <GuideEntityEmbed Entity="OxygenCanister"/>
+  <GuideEntityEmbed Entity="NitrogenCanister"/>
+  <GuideEntityEmbed Entity="GasMixer"/>
+  <GuideEntityEmbed Entity="GasPressurePump"/>
+  </Box>
+
+  * - Ensure O2 and N2 canisters are anchored to mixer connector ports.
+
+  ** - Check that the mixer settings are suitable (~22% oxygen, ~78% nitrogen, 101.325 kpa).
+
+  *** - Enable the gas mixer.
+
+  ## 2.2. Waste Loop
+  <Box>
+  <GuideEntityEmbed Entity="AirAlarm"/>
+  <GuideEntityEmbed Entity="GasVentScrubber"/>
+  </Box>
+
+  * - The waste loop is connected to the ship's Scrubber system disconnected from the Distribution Loop. It is entirely automated by referencing the Scrubber's linked Air Alarms settings.
+
+__________________________________________________________________________________________
+
+  # 3. Other checks
+
+  <Box>
+  <GuideEntityEmbed Entity="Gyroscope"/>
+  <GuideEntityEmbed Entity="GravityGeneratorMini"/>
+  <GuideEntityEmbed Entity="ThrusterLarge"/>
+  </Box>
+
+  * - Check that all gyroscopes are anchored, powered, and enabled.
+
+  ** - Check that the mini gravity generator inside of the Galley Hall is anchored, powered, and enabled.
+
+  *** - Check that the thrusters are powered and enabled on all four exhausts.
+
+__________________________________________________________________________________________
+
+  # 4. Piloting the Ursa Major
+
+
+  <Box>
+  <GuideEntityEmbed Entity="ComputerShuttle"/>
+  <GuideEntityEmbed Entity="ComputerGunneryConsole"/>
+  </Box>
+
+
+  "Utmost diligence is a must when piloting a military vessel of any kind. The Ursa Major is no different."
+
+  * - The Ursa Major is a capital-class vessel and cannot be piloted alone. The shuttle console and gunnery control console both require an individual person to be operated effectively and simultaneously. This applies to most capital-class vessels.
+
+  <Box>
+  <GuideEntityEmbed Entity="SignalButton"/>
+  </Box>
+
+  ** - The Captain and/or Commanding Officer can order for General Quarter's to alert occupants. The big red button with a "general quarters" label inside the Bridge's central desk is highly recommended in this scenario.
+
+  *** - Bridge where you are usually located (unless you're on loader duty). The bridge has a button labeled "Exit" on its' wall that locks down access from inside in the event that boarders are announced.
+  <Box>
+  <GuideEntityEmbed Entity="ComputerSurveillanceCameraMonitor"/>
+  <GuideEntityEmbed Entity="SurveillanceCameraAssembly"/>
+  <GuideEntityEmbed Entity="SurveillanceCameraRouterCommand"/>
+  </Box>  
+
+  **** - The Ursa is equipped with various Cameras littering nearly every entry-way, if you have nothing better to do in combat, try checking them. The Router is located in the Sensitive Component's room on the Stern and its' console in bridge.
+
+  ## 4.1. Gunnery Duty
+
+  "Gunnery duty is very important aboard the Ursa Major much like any other ship constructed for war. understanding the vessel's capabilities takes experience but this guidebook supplies useful pointers."
+
+  <Box>
+  <GuideEntityEmbed Entity="WeaponTurretBofors"/>
+  <GuideEntityEmbed Entity="WeaponTurretKargil"/>
+  </Box>
+
+  * - The vessel's firepower excels at broadside maneuvers. It is important to keep your sides turned to your enemy 24/7 to prevent your Bow and Stern from being targeted. The Galley houses the bulk of your arms, featuring a BOFOR 255m CANNON and two KARGIL 203mm CANNON's on each side as well as it's ammunition stores. This is also where your enemy is ideally targeting you as it is your strongest "hard point."
+
+  <Box>
+  <GuideEntityEmbed Entity="WeaponTurretCyrexa"/>
+  </Box>
+
+  ** - In the event that your bow and/or stern is at the enemies mercy, you are equipped with a singular CYREXA 220m CANNON on each side. This is a fierce weapon, but not valuable firepower beyond deterrence when on its' own. 
+
+  <Box>
+  <GuideEntityEmbed Entity="WeaponTurretRAC30"/>
+  </Box>
+
+  *** - You are NOT immune to boarding maneuvers. You are equipped with a singular RAC-30 DRAUPNIR AUTOCANNON on each side of the Galley. This weapon is excellent for deterring boarders but only has an angle on your Galley's entry ways. Do your best to repel boarders by keeping your RAC-30's facing the enemy.
+
+  ## 4.2. Loading Duty
+
+
+  <Box>
+  <GuideEntityEmbed Entity="FactionLathe"/>
+  <GuideEntityEmbed Entity="ComputerCargoOrders"/>
+  </Box>
+
+  * - The Ursa comes with plentiful ammo for a skirmish but will inevitably run out before long. It is best to stock up on artillery by printing it from a MILITARY TECHFAB or buying it from a cargo computer somewhere in the sector.
+
+  <Box>
+  <GuideEntityEmbed Entity="30mmCartridge"/>
+  <GuideEntityEmbed Entity="Magazine30mm"/>
+  <GuideEntityEmbed Entity="AmmoLoaderSmall"/>
+  </Box>
+
+  ** - The RAC-30 DRAUPNIR's are linked to an ammo loader placed in the Galley Hall. The stock vessel's small ammo loader is only able to link up to two guns MAXIMUM, so no, do not try linking more.
+
+  <Box>
+  <GuideEntityEmbed Entity="255mmCartridge"/>
+  <GuideEntityEmbed Entity="203mmCartridge"/>
+  </Box>
+
+  *** - The Galley's main artillery is the 255m BOFOR CANNON and the 203mm KARGIL CANNON. Simply pick up their respective shells and slide them into the artillery's chamber. 
+
+  <Box>
+  <GuideEntityEmbed Entity="220mmCartridge"/>
+  </Box>
+
+  **** - The CYREXA 220mm is as simple as the BOFOR and KARGIL.
+
+</Document>
