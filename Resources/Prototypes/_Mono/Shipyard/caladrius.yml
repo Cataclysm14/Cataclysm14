@@ -11,32 +11,32 @@
 # Shuttle Notes:
 #
 - type: vessel
-  id: Tzipora
+  id: Caladrius
   parent: BaseVessel
-  name: SKR Tzipora
-  description: An advanced medical ship, outfitted with cryo, chem, and surgical capabilities.
-  price: 145530
+  name: CDM Caladrius
+  description: A mobile walk-in clinic outfitted for large response teams and effective recoveries. Capable of nearly every medical practice.
+  price: 167730
   category: Large
   group: Medical
-  shuttlePath: /Maps/_Mono/Shuttles/tzipora.yml
-  guidebookPage: null
+  shuttlePath: /Maps/_Mono/Shuttles/caladrius.yml
+  guidebookPage: ShipyardCaladrius
   class:
   - Medical
   - Chemistry
   engine:
-  - AME
+  - Plasma
 
 - type: gameMap
-  id: Tzipora
-  mapName: 'SKR Tzipora'
-  mapPath: /Maps/_Mono/Shuttles/tzipora.yml
+  id: Caladrius
+  mapName: 'CDM Caladrius'
+  mapPath: /Maps/_Mono/Shuttles/caladrius.yml
   minPlayers: 0
   stations:
-    Tzipora:
+    Caladrius:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Tzipora MED{1}'
+          mapNameTemplate: 'Caladrius MED{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
