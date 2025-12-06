@@ -27,7 +27,7 @@
 - type: gameMap
   id: Motley Anne
   mapName: 'PDV Motley Anne'
-  mapPath: /Maps/_Mono/Shuttles/Nfsd/motleyanne.yml
+  mapPath: /Maps/_Mono/Shuttles/BlackMarket/motleyanne.yml
   minPlayers: 0
   stations:
     Motley Anne:
