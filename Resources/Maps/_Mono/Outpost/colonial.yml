@@ -13,6 +13,7 @@
 # SPDX-FileCopyrightText: 2025 gus
 # SPDX-FileCopyrightText: 2025 starch
 # SPDX-FileCopyrightText: 2025 the-hivequeen
+# SPDX-FileCopyrightText: 2025 thoughtlessuser
 # SPDX-FileCopyrightText: 2025 tonotom1
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
@@ -29532,7 +29533,7 @@ entities:
     - type: Transform
       pos: -14.5,38.5
       parent: 2
-- proto: SpawnPointValet
+- proto: SpawnPointCCServiceWorker
   entities:
   - uid: 4028
     components:
