@@ -12,6 +12,7 @@
 // SPDX-FileCopyrightText: 2023 Leon Friedrich
 // SPDX-FileCopyrightText: 2023 Visne
 // SPDX-FileCopyrightText: 2024 Jezithyr
+// SPDX-FileCopyrightText: 2025 NazrinNya
 // SPDX-FileCopyrightText: 2025 Redrover1760
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
@@ -47,7 +48,24 @@ namespace Content.Server.Atmos.Reactions
         /// </summary>
         [DataField("minimumTemperature")]
         public float MinimumTemperatureRequirement { get; private set; } = Atmospherics.TCMB;
+        // Mono edit start
 
+        /// <summary>
+        ///     Minimum and maximum temperature reaction amplitudes. Changes temperature requirement every RoundStart event.
+        /// </summary>
+        [DataField("minimumTemperatureAmplitude")]
+        public float MinimumTemperatureAmplitude { get; private set; } = 0f;
+
+        [DataField("maximumTemperatureAmplitude")]
+        public float MaximumTemperatureAmplitude { get; private set; } = 0f;
+
+        /// <summary>
+        ///     Temperature value assigned after RoundStart event.
+        /// </summary>
+        public float CurrentMinimumTemperatureRequirement { get; set; } = default!;
+        public float CurrentMaximumTemperatureRequirement { get; set; } = default!;
+
+        // Mono edit end
         /// <summary>
         ///     Minimum energy requirement.
         /// </summary>
@@ -65,6 +83,8 @@ namespace Content.Server.Atmos.Reactions
         ///     A list of effects this will produce.
         /// </summary>
         [DataField("effects")] private List<IGasReactionEffect> _effects = new();
+
+
 
         /// <summary>
         /// Process all reaction effects.

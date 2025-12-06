@@ -1,4 +1,5 @@
 // SPDX-FileCopyrightText: 2024 SlamBamActionman
+// SPDX-FileCopyrightText: 2025 NazrinNya
 // SPDX-FileCopyrightText: 2025 marc-pelletier
 // SPDX-FileCopyrightText: 2025 tonotom
 // SPDX-FileCopyrightText: 2025 tonotom1
@@ -11,7 +12,7 @@ using Content.Shared.Movement.Systems;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
-namespace Content.Server.EntityEffects.Effects;
+namespace Content.Server._FunkyStation.Atmos.EntityEffects.Effects;
 
 /// <summary>
 /// Default metabolism for stimulants and tranqs. Attempts to find a MovementSpeedModifier on the target,

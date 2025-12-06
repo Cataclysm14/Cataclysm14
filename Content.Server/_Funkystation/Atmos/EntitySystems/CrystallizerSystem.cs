@@ -24,7 +24,7 @@ using Robust.Shared.Map;
 using Content.Server.Maps;
 using Robust.Shared.Map.Components;
 
-namespace Content.Server._Funkystation.Atmos.Systems
+namespace Content.Server._Funkystation.Atmos.EntitySystems
 {
     public sealed class CrystallizerSystem : EntitySystem
     {

@@ -1,15 +1,16 @@
+// SPDX-FileCopyrightText: 2025 NazrinNya
 // SPDX-FileCopyrightText: 2025 marc-pelletier
 // SPDX-FileCopyrightText: 2025 tonotom1
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using Content.Server.Atmos;
 using Content.Server.Atmos.EntitySystems;
-using Content.Server.EntityEffects.Effects;
 using Content.Shared.Atmos;
 using Content.Shared.Atmos.Reactions;
 using JetBrains.Annotations;
 
-namespace Content.Server.Atmos.Reactions;
+namespace Content.Server._Funkystation.Atmos.Reactions;
 
 /// <summary>
 ///     Assmos - /tg/ gases

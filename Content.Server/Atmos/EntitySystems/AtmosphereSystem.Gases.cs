@@ -8,6 +8,7 @@
 // SPDX-FileCopyrightText: 2024 Jezithyr
 // SPDX-FileCopyrightText: 2024 drakewill-CRL
 // SPDX-FileCopyrightText: 2025 ArtisticRoomba
+// SPDX-FileCopyrightText: 2025 NazrinNya
 // SPDX-FileCopyrightText: 2025 ScyronX
 // SPDX-FileCopyrightText: 2025 starch
 //
@@ -468,8 +469,8 @@ namespace Content.Server.Atmos.EntitySystems
             foreach (var prototype in GasReactions)
             {
                 if (energy < prototype.MinimumEnergyRequirement ||
-                    temperature < prototype.MinimumTemperatureRequirement ||
-                    temperature > prototype.MaximumTemperatureRequirement)
+                    temperature < prototype.CurrentMinimumTemperatureRequirement ||  // Mono edit - Randomized temperatures every round
+                    temperature > prototype.CurrentMaximumTemperatureRequirement)    // Mono edit - Randomized temperatures every round
                     continue;
 
                 var doReaction = true;
