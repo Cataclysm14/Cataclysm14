@@ -23,7 +23,8 @@
   - type: Sprite
     state: icon
   - type: Clothing
-    slots: [innerclothing] #Cataclysm, innerclothing -> shirt
+    slots:
+    - INNERCLOTHING
     equipSound:
       path: /Audio/Items/jumpsuit_equip.ogg
   - type: Butcherable
@@ -59,7 +60,6 @@
   parent: UnsensoredClothingUniformBase
   id: ClothingUniformBase
   #Cataclysm, commented since useless for us
-
   # components:
   # - type: SuitSensor
   # - type: ToggleableSignature
@@ -134,7 +134,8 @@
   - type: Sprite
     state: icon
   - type: Clothing
-    slots: [pants]
+    slots:
+    - PANTS
     equipSound:
       path: /Audio/Items/jumpsuit_equip.ogg
   - type: Butcherable

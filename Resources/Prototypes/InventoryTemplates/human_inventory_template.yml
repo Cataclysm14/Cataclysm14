@@ -193,5 +193,4 @@
       stripTime: 6
       uiWindowPos: 0,1
       strippingWindowPos: 3,5
-      dependsOn: pants
       displayName: Wallet

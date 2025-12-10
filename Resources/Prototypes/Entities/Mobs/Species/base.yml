@@ -19,7 +19,6 @@
     - map: [ "enum.HumanoidVisualLayers.LArm" ]
     - map: [ "enum.HumanoidVisualLayers.RLeg" ]
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
-    - map: ["pants"] #cataclysm
     - map: ["jumpsuit"]
     - map: [ "balaclava" ]
     - map: ["enum.HumanoidVisualLayers.LFoot"]
@@ -27,6 +26,7 @@
     - map: ["enum.HumanoidVisualLayers.LHand"]
     - map: ["enum.HumanoidVisualLayers.RHand"]
     - map: [ "gloves" ]
+    - map: ["pants"] #cataclysm
     - map: [ "shoes" ]
     - map: [ "ears" ]
     - map: [ "id" ] # Mono - move from between belt and back
@@ -332,7 +332,6 @@
     - map: [ "enum.HumanoidVisualLayers.RLeg" ]
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
     - map: ["jumpsuit"]
-    - map: ["pants"] #cataclysm
     - map: [ "balaclava" ]
     - map: ["enum.HumanoidVisualLayers.LFoot"]
     - map: ["enum.HumanoidVisualLayers.RFoot"]
@@ -344,6 +343,7 @@
       state: body-overlay-2
       visible: false
     - map: [ "gloves" ]
+    - map: ["pants"] #cataclysm
     - map: [ "shoes" ]
     - map: [ "ears" ]
     - map: [ "outerClothing" ] # mono - i hate you upstream
