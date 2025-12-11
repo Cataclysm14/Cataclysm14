@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingShirtBase
+  parent: ClothingShirtCargoBase
   id: ClothingShirtCombatCEECargo
   name: CCE cargo combat shirt
   description: Ripstop combat shirt with large pockets. It has a CCE central europe camo of the french army.

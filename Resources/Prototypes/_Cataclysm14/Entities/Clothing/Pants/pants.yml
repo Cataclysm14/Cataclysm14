@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingPantsBase
+  parent: ClothingPantsCargoBase
   id: ClothingPantsCombatCEECargo
   name: CCE cargo combat pants
   description: Ripstop combat pants with large pockets. It has a CCE central europe camo of the french army.
