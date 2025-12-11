@@ -60,37 +60,6 @@
       uiWindowPos: 1,6
       strippingWindowPos: 1,0
       displayName: Head
-    - name: pocket1
-      slotTexture: pocket
-      fullTextureName: template_small
-      slotFlags: POCKET
-      slotGroup: SecondHotbar
-      stripTime: 3
-      uiWindowPos: 1,0
-      strippingWindowPos: 0,4
-      dependsOn: pants
-      displayName: Pocket 1
-      stripHidden: true
-    - name: pocket2
-      slotTexture: pocket
-      fullTextureName: template_small
-      slotFlags: POCKET
-      slotGroup: SecondHotbar
-      stripTime: 3
-      uiWindowPos: 2,0
-      strippingWindowPos: 1,4
-      dependsOn: pants
-      displayName: Pocket 2
-      stripHidden: true
-    - name: id
-      slotTexture: cata_id
-      fullTextureName: template_small
-      slotFlags: IDCARD
-      slotGroup: SecondHotbar
-      stripTime: 6
-      uiWindowPos: 2,4
-      strippingWindowPos: 2,4
-      displayName: ID
     - name: belt
       slotTexture: cata_chest_rig
       fullTextureName: template_small
@@ -139,37 +108,6 @@
       displayName: Helmet_attachment
     #End Mono
     #Cataclysm14 start
-    - name: pocket3
-      slotTexture: pocket
-      fullTextureName: template_small
-      slotFlags: POCKET
-      slotGroup: MainHotbar
-      stripTime: 3
-      uiWindowPos: 3,0
-      strippingWindowPos: 1,4
-      dependsOn: pants
-      displayName: Pocket 3
-      stripHidden: true
-    - name: pocket4
-      slotTexture: pocket
-      fullTextureName: template_small
-      slotFlags: POCKET
-      slotGroup: MainHotbar
-      stripTime: 3
-      uiWindowPos: 4,0
-      strippingWindowPos: 1,4
-      dependsOn: pants
-      displayName: Pocket 4
-      stripHidden: true
-    #Moved to after pockets so they are before it in hotbar
-    - name: suitstorage
-      slotTexture: suit_storage
-      slotFlags:   SUITSTORAGE
-      slotGroup: MainHotbar
-      stripTime: 3
-      uiWindowPos: 5,0
-      strippingWindowPos: 2,5
-      displayName: Suit Storage
     - name: faceshield
       slotTexture: cata_face_shield
       slotFlags: FACESHIELD
@@ -193,3 +131,78 @@
       uiWindowPos: 0,1
       strippingWindowPos: 3,5
       displayName: Wallet
+
+#hotbar order part, top to bottom = left to right
+
+  #Second hotbar (left hotbar)
+    - name: id
+      slotTexture: cata_id
+      fullTextureName: template_small
+      slotFlags: IDCARD
+      slotGroup: SecondHotbar
+      stripTime: 6
+      uiWindowPos: 2,4
+      strippingWindowPos: 2,4
+      displayName: ID
+    - name: pocket1
+      slotTexture: pocket
+      fullTextureName: template_small
+      slotFlags: POCKET
+      slotGroup: SecondHotbar
+      stripTime: 3
+      uiWindowPos: 1,0
+      strippingWindowPos: 0,4
+      dependsOn: pants
+      displayName: Pocket 1
+      stripHidden: true
+    - name: pocket2
+      slotTexture: pocket
+      fullTextureName: template_small
+      slotFlags: POCKET
+      slotGroup: SecondHotbar
+      stripTime: 3
+      uiWindowPos: 2,0
+      strippingWindowPos: 1,4
+      dependsOn: pants
+      displayName: Pocket 2
+      stripHidden: true
+    - name: frontsling
+      slotTexture: cata_sling_front
+      slotFlags:   SUITSTORAGE
+      slotGroup: SecondHotbar
+      stripTime: 3
+      uiWindowPos: 5,0
+      strippingWindowPos: 2,5
+      displayName: Front sling
+
+  #Main hotbar (right hotbar)
+    - name: suitstorage
+      slotTexture: cata_sling_back
+      slotFlags:   SUITSTORAGE
+      slotGroup: MainHotbar
+      stripTime: 3
+      uiWindowPos: 5,0
+      strippingWindowPos: 2,5
+      displayName: Back sling
+    - name: pocket3
+      slotTexture: pocket
+      fullTextureName: template_small
+      slotFlags: POCKET
+      slotGroup: MainHotbar
+      stripTime: 3
+      uiWindowPos: 3,0
+      strippingWindowPos: 1,4
+      dependsOn: pants
+      displayName: Pocket 3
+      stripHidden: true
+    - name: pocket4
+      slotTexture: pocket
+      fullTextureName: template_small
+      slotFlags: POCKET
+      slotGroup: MainHotbar
+      stripTime: 3
+      uiWindowPos: 4,0
+      strippingWindowPos: 1,4
+      dependsOn: pants
+      displayName: Pocket 4
+      stripHidden: true
