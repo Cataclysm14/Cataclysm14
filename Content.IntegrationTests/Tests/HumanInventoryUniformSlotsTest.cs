@@ -85,7 +85,7 @@ namespace Content.IntegrationTests.Tests
                     Assert.That(invSystem.CanEquip(human, uniform, "jumpsuit", out _));
 
                     // Can't equip any of these since no uniform!
-                    Assert.That(invSystem.CanEquip(human, idCard, "id", out _), Is.True);  // Cataclysm, Is.False -> Is.True, nuked pocket/ID requirement
+                    Assert.That(invSystem.CanEquip(human, idCard, "id", out _), Is.True);  // Cataclysm, Is.False -> Is.True, nuked pocket/ID jumpsuit requirement
                     Assert.That(invSystem.CanEquip(human, pocketItem, "pocket1", out _), Is.False);
                     Assert.That(invSystem.CanEquip(human, tooBigItem, "pocket2", out _), Is.False); // This one fails either way.
                 });
@@ -98,7 +98,8 @@ namespace Content.IntegrationTests.Tests
 
 #pragma warning disable NUnit2045
                 Assert.That(invSystem.CanEquip(human, tooBigItem, "pocket1", out _), Is.False); // Still failing!
-                Assert.That(invSystem.TryEquip(human, pocketItem, "pocket1"));
+                // Cataclysm, pockets/ID not dependant on jumpsuit
+                //Assert.That(invSystem.TryEquip(human, pocketItem, "pocket1"));
 #pragma warning restore NUnit2045
 
                 Assert.Multiple(() =>
@@ -119,13 +120,15 @@ namespace Content.IntegrationTests.Tests
                 {
                     // Items have been dropped!
                     Assert.That(IsDescendant(uniform, human, entityMan), Is.False);
-                    Assert.That(IsDescendant(idCard, human, entityMan), Is.False);
-                    Assert.That(IsDescendant(pocketItem, human, entityMan), Is.False);
+                    // Cataclysm, pockets/ID not dependant on jumpsuit
+                    // Assert.That(IsDescendant(idCard, human, entityMan), Is.False);
+                    // Assert.That(IsDescendant(pocketItem, human, entityMan), Is.False);
 
                     // Ensure everything null here.
                     Assert.That(!invSystem.TryGetSlotEntity(human, "jumpsuit", out _));
-                    Assert.That(!invSystem.TryGetSlotEntity(human, "id", out _));
-                    Assert.That(!invSystem.TryGetSlotEntity(human, "pocket1", out _));
+                    // Cataclysm, pockets/ID not dependant on jumpsuit
+                    // Assert.That(!invSystem.TryGetSlotEntity(human, "id", out _));
+                    // Assert.That(!invSystem.TryGetSlotEntity(human, "pocket1", out _));
                 });
 
                 mapSystem.DeleteMap(testMap.MapId);
