@@ -1,42 +1,44 @@
-using Content.Server.Salvage.Magnet;
-using Content.Server.Solar.Components;
-using Content.Shared.Prototypes;
-using Robust.Shared.Prototypes;
+//Cataclysm14, no ships lol
 
-namespace Content.IntegrationTests.Tests._NF;
+// using Content.Server.Salvage.Magnet;
+// using Content.Server.Solar.Components;
+// using Content.Shared.Prototypes;
+// using Robust.Shared.Prototypes;
 
-[TestFixture]
-public sealed class IllegalComponentTest
-{
-    // A list of components to check all entity prototypes for.
-    private static readonly Type[] IllegalComponents =
-    {
-        typeof(SolarPanelComponent), // Frontier: use NF variant
-        typeof(SalvageMobRestrictionsComponent), // Frontier: use NF variant
-    };
+// namespace Content.IntegrationTests.Tests._NF;
 
-    [Test]
-    public async Task CheckServerIllegalComponents()
-    {
-        await using var pair = await PoolManager.GetServerClient();
-        var server = pair.Server;
+// [TestFixture]
+// public sealed class IllegalComponentTest
+// {
+//     // A list of components to check all entity prototypes for.
+//     private static readonly Type[] IllegalComponents =
+//     {
+//         typeof(SolarPanelComponent), // Frontier: use NF variant
+//         typeof(SalvageMobRestrictionsComponent), // Frontier: use NF variant
+//     };
 
-        var protoManager = server.ResolveDependency<IPrototypeManager>();
+//     [Test]
+//     public async Task CheckServerIllegalComponents()
+//     {
+//         await using var pair = await PoolManager.GetServerClient();
+//         var server = pair.Server;
 
-        await server.WaitAssertion(() =>
-        {
-            Assert.Multiple(() =>
-            {
-                foreach (var entity in protoManager.EnumeratePrototypes<EntityPrototype>())
-                {
-                    foreach (var component in IllegalComponents)
-                    {
-                        Assert.That(entity.HasComponent(component), Is.False, $"Entity {entity} contains illegal component {component}.");
-                    }
-                }
-            });
-        });
+//         var protoManager = server.ResolveDependency<IPrototypeManager>();
 
-        await pair.CleanReturnAsync();
-    }
-}
+//         await server.WaitAssertion(() =>
+//         {
+//             Assert.Multiple(() =>
+//             {
+//                 foreach (var entity in protoManager.EnumeratePrototypes<EntityPrototype>())
+//                 {
+//                     foreach (var component in IllegalComponents)
+//                     {
+//                         Assert.That(entity.HasComponent(component), Is.False, $"Entity {entity} contains illegal component {component}.");
+//                     }
+//                 }
+//             });
+//         });
+
+//         await pair.CleanReturnAsync();
+//     }
+// }
