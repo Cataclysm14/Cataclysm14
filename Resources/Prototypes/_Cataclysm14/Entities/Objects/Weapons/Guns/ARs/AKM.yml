@@ -12,9 +12,9 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Item # Mono
-    sprite: _Cataclysm14\Objects\Weapons\Guns\ARs\AKM_item_64x32.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/akm_inhands_32x.rsi
   - type: Clothing
-    sprite: _Cataclysm14\Objects\Weapons\Guns\ARs\AKM_sling_32x32.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/akm_inhands_32x.rsi # Mono
     clothingVisuals:
       frontsling:
       - state: equipped-SLINGFRONT
