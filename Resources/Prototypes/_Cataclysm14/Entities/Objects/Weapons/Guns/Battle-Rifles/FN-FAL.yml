@@ -14,6 +14,9 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     sprite: _Cataclysm14/Objects/Weapons/Guns/BattleRifles/FN-FAL_32x32.rsi
+    size: Huge
+    shape:
+    - 0,0,5,1
   - type: Clothing
     sprite: _Cataclysm14/Objects/Weapons/Guns/BattleRifles/FN-FAL_32x32.rsi
     clothingVisuals:

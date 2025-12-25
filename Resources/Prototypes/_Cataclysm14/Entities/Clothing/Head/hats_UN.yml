@@ -1,0 +1,22 @@
+#MARK: UN cap
+    - type: entity
+      parent: ClothingHeadBase
+      id: ClothingHeadHatCapUN
+      name: cap (UN)
+      description: Donning the colours of the UN and in the form of a cap.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Head/hat_cap_UN.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/hat_cap_UN.rsi
+#MARK: UN beret
+    - type: entity
+      parent: ClothingHeadBase
+      id: ClothingHeadHatBeretUN
+      name: beret (UN)
+      description: Donning the colours of the UN and in the form of a beret.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Head/hat_beret_UN.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/hat_beret_UN.rsi

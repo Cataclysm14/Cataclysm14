@@ -1,4 +1,15 @@
 #MARK: -TShirts-
+  #MARK: TShirt - white
+    - type: entity
+      parent: ClothingShoesBase
+      id: ClothingShoesSneakersWhite
+      name: white sneakers
+      description: A pair of colored sneakers, this one is colored in white.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Shoes/shoes_sneakers_greyscale.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Shoes/shoes_sneakers_greyscale.rsi
   #MARK: TShirt - red
     - type: entity
       parent: ClothingShoesBase

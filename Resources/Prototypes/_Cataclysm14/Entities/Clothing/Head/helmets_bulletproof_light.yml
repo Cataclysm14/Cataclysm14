@@ -1,0 +1,56 @@
+#MARK: LShZ olive
+    - type: entity
+      parent: ClothingHeadBase
+      id: ClothingHeadBulletproofHelmetLShZ
+      name: LShZ light ballistic helmet (olive)
+      description: A light ballistic helmet made by russia as counterpart to the Ops-core fast, made to protect against small pistol calibers.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Head/helmet_bulletproof_LShZ.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/helmet_bulletproof_LShZ.rsi
+      - type: ExplosionResistance
+        damageCoefficient: 0.8
+      - type: Armor
+        modifiers:
+          coefficients:
+            Blunt: 0.85
+            Slash: 0.85
+            Piercing: 0.85
+      - type: HideLayerClothing
+        slots:
+        - Hair
+        - Snout
+        - HeadTop
+        - HeadSide
+      - type: StaticPrice
+        price: 12000
+        vendPrice: 20000
+#MARK: M88 UN
+    - type: entity
+      parent: ClothingHeadBase
+      id: ClothingHeadBulletproofHelmetM88UN
+      name: M88 ballistic helmet (UN)
+      description: A light ballistic helmet made for the US army and the United nations blue helmet peacekeepers.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Head/helmet_bulletproof_M88_UN.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/helmet_bulletproof_M88_UN.rsi
+      - type: ExplosionResistance
+        damageCoefficient: 0.8
+      - type: Armor
+        modifiers:
+          coefficients:
+            Blunt: 0.85
+            Slash: 0.85
+            Piercing: 0.85
+      - type: HideLayerClothing
+        slots:
+        - Hair
+        - Snout
+        - HeadTop
+        - HeadSide
+      - type: StaticPrice
+        price: 12000
+        vendPrice: 20000

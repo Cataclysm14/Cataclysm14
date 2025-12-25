@@ -1,0 +1,12 @@
+#MARK: -police pants-
+  #MARK: russian police
+    - type: entity
+      parent: ClothingPantsPocketBase
+      id: ClothingPantsPoliceCopRussian
+      name: russian police pants
+      description: An above average pair of pants made for use by russian police officers.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Pants/pants_police_cop_RU.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Pants/pants_police_cop_RU.rsi

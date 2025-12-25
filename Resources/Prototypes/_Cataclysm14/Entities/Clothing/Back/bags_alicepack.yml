@@ -1,0 +1,22 @@
+  #MARK: Alicepack - green
+    - type: entity
+      parent: ClothingBackpackAlicePackBase
+      id: ClothingBackpackAlicePackGreen
+      name: green alicepack
+      description: A large military backpack with a main pocket and multiple medium ones.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Back/backpack_alicepack_green.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Back/backpack_alicepack_green.rsi
+  #MARK: Alicepack - black
+    - type: entity
+      parent: ClothingBackpackAlicePackBase
+      id: ClothingBackpackAlicePackBlack
+      name: black alicepack
+      description: A large military backpack with a main pocket and multiple medium ones.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Back/backpack_alicepack_black.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Back/backpack_alicepack_black.rsi

@@ -1,0 +1,11 @@
+#MARK: Russian cap
+    - type: entity
+      parent: ClothingHeadBase
+      id: ClothingHeadHatCapPoliceRussian
+      name: russian police cap
+      description: Donning the colours of the russian police and made for russian police officers.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Head/hat_cap_police_RU.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/hat_cap_police_RU.rsi

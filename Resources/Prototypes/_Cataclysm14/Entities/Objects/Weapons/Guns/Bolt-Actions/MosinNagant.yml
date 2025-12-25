@@ -13,6 +13,9 @@
         map: ["enum.GunVisualLayers.Base"]
   - type: Item
     sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/MosinNagant_32x32.rsi
+    size: Huge
+    shape:
+    - 0,0,6,0
   - type: Clothing
     sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/MosinNagant_32x32.rsi
     clothingVisuals:

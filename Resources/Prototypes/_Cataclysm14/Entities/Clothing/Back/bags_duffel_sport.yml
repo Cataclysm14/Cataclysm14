@@ -1,0 +1,121 @@
+#MARK: -Sport duffels-
+  #MARK: Sport duffel - red
+    - type: entity
+      parent: ClothingBackpackDuffelSportBase
+      id: ClothingBackpackDuffelSportRed
+      name: red sports duffelbag
+      description: A plain colored sports duffelbag, this one is colored in red.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Back/backpack_duffel_sport_greyscale.rsi
+        color: "#9E1A1A"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Back/backpack_duffel_sport_greyscale.rsi
+        clothingVisuals:
+          back:
+          - state: equipped-BACKPACK
+            color: "#9E1A1A"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#9E1A1A"
+          right:
+          - state: inhand-right
+            color: "#9E1A1A"
+  #MARK: Sport duffel - blue
+    - type: entity
+      parent: ClothingBackpackDuffelSportBase
+      id: ClothingBackpackDuffelSportBlue
+      name: blue sports duffelbag
+      description: A plain colored sports duffelbag, this one is colored in blue.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Back/backpack_duffel_sport_greyscale.rsi
+        color: "#2832C2"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Back/backpack_duffel_sport_greyscale.rsi
+        clothingVisuals:
+          back:
+          - state: equipped-BACKPACK
+            color: "#2832C2"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#2832C2"
+          right:
+          - state: inhand-right
+            color: "#2832C2"
+  #MARK: Sport duffel - green
+    - type: entity
+      parent: ClothingBackpackDuffelSportBase
+      id: ClothingBackpackDuffelSportGreen
+      name: green sports duffelbag
+      description: A plain colored sports duffelbag, this one is colored in green.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Back/backpack_duffel_sport_greyscale.rsi
+        color: "#3d8c40"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Back/backpack_duffel_sport_greyscale.rsi
+        clothingVisuals:
+          back:
+          - state: equipped-BACKPACK
+            color: "#3d8c40"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#3d8c40"
+          right:
+          - state: inhand-right
+            color: "#3d8c40"
+  #MARK: Sport duffel - yellow
+    - type: entity
+      parent: ClothingBackpackDuffelSportBase
+      id: ClothingBackpackDuffelSportYellow
+      name: yellow sports duffelbag
+      description: A plain colored sports duffelbag, this one is colored in yellow.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Back/backpack_duffel_sport_greyscale.rsi
+        color: "#E4CD05"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Back/backpack_duffel_sport_greyscale.rsi
+        clothingVisuals:
+          back:
+          - state: equipped-BACKPACK
+            color: "#E4CD05"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#E4CD05"
+          right:
+          - state: inhand-right
+            color: "#E4CD05"
+  #MARK: Sport duffel - purple
+    - type: entity
+      parent: ClothingBackpackDuffelSportBase
+      id: ClothingBackpackDuffelSportPurple
+      name: purple sports duffelbag
+      description: A plain colored sports duffelbag, this one is colored in purple.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Back/backpack_duffel_sport_greyscale.rsi
+        color: "#702963"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Back/backpack_duffel_sport_greyscale.rsi
+        clothingVisuals:
+          back:
+          - state: equipped-BACKPACK
+            color: "#702963"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#702963"
+          right:
+          - state: inhand-right
+            color: "#702963"

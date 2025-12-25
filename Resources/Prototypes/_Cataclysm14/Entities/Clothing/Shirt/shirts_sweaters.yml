@@ -1,4 +1,15 @@
 #MARK: -Sweaters-
+  #MARK: Sweater - white
+    - type: entity
+      parent: ClothingShirtBase
+      id: ClothingShirtSweaterWhite
+      name: white sweater
+      description: A warm sweater, this one is colored in white.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
   #MARK: Sweater - red
     - type: entity
       parent: ClothingShirtBase
@@ -143,3 +154,27 @@
           right:
           - state: inhand-right
             color: "#444444"
+  #MARK: TShirt - beige
+    - type: entity
+      parent: ClothingShirtBase
+      id: ClothingShirtSweaterBeige
+      name: beige t-shirt
+      description: A warm sweater, this one is colored in beige.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        color: "#CDBEA1"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_sweater_greyscale.rsi
+        clothingVisuals:
+          jumpsuit:
+          - state: equipped-INNERCLOTHING
+            color: "#CDBEA1"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#CDBEA1"
+          right:
+          - state: inhand-right
+            color: "#CDBEA1"

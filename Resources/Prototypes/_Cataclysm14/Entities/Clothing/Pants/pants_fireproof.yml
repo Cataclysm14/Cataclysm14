@@ -1,0 +1,20 @@
+#MARK: -fire suits-
+  #MARK: firefighter brown
+    - type: entity
+      parent: ClothingPantsBase
+      id: ClothingPantsFireSuitFireFighterBottomBrown
+      name: fire fighter suit bottom (brown)
+      description: A strong and thick pair of pants made of fire resistant materials, offers slight protection against physical damages and good ones against caustic and heat.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Pants/pants_firesuit_firefighter_brown.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Pants/pants_firesuit_firefighter_brown.rsi
+      - type: Armor
+        modifiers:
+          coefficients:
+            Blunt: 0.95
+            Slash: 0.95
+            Piercing: 0.95
+            Heat: 0.4
+            Caustic: 0.8

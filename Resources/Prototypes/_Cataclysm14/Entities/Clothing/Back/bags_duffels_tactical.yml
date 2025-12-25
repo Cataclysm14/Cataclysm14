@@ -1,135 +1,134 @@
-#custom colored tactical duffels
-#their hex code is that of helmet covers but darkenned by 5% because it looked like shit otherwise)
-- type: entity
-  parent: ClothingBackpackDuffelTacticalBase
-  id: ClothingBackpackDuffelTacticalTan
-  name: tan tactical duffel
-  description: One heavy sack. Some effort was put in to make it lighter to no avail.
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
-    color: "#cdac7f"
-  - type: Clothing
-    sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
-    clothingVisuals:
-      back:
-      - state: equipped-BACKPACK
-        color: "#cdac7f"
-  - type: Item
-    inhandVisuals:
-      left:
-      - state: inhand-left
-        color: "#cdac7f"
-      right:
-      - state: inhand-right
-        color: "#cdac7f"
-
-- type: entity
-  parent: ClothingBackpackDuffelTacticalBase
-  id: ClothingBackpackDuffelTacticalOlive
-  name: olive tactical duffel
-  description: One heavy sack. Some effort was put in to make it lighter to no avail.
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
-    color: "#5e662d"
-  - type: Clothing
-    sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
-    clothingVisuals:
-      back:
-      - state: equipped-BACKPACK
-        color: "#5e662d"
-  - type: Item
-    inhandVisuals:
-      left:
-      - state: inhand-left
-        color: "#5e662d"
-      right:
-      - state: inhand-right
-        color: "#5e662d"
-
-- type: entity
-  parent: ClothingBackpackDuffelTacticalBase
-  id: ClothingBackpackDuffelTacticalBlack
-  name: black tactical duffel
-  description: One heavy sack. Some effort was put in to make it lighter to no avail.
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
-    color: "#2F2F2F"
-  - type: Clothing
-    sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
-    clothingVisuals:
-      back:
-      - state: equipped-BACKPACK
-        color: "#2F2F2F"
-  - type: Item
-    inhandVisuals:
-      left:
-      - state: inhand-left
-        color: "#2F2F2F"
-      right:
-      - state: inhand-right
-        color: "#2F2F2F"
-
-- type: entity
-  parent: ClothingBackpackDuffelTacticalBase
-  id: ClothingBackpackDuffelTacticalRangerGreen
-  name: ranger green tactical duffel
-  description: One heavy sack. Some effort was put in to make it lighter to no avail.
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
-    color: "#465545"
-  - type: Clothing
-    sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
-    clothingVisuals:
-      back:
-      - state: equipped-BACKPACK
-        color: "#465545"
-  - type: Item
-    inhandVisuals:
-      left:
-      - state: inhand-left
-        color: "#465545"
-      right:
-      - state: inhand-right
-        color: "#465545"
-
-- type: entity
-  parent: ClothingBackpackDuffelTacticalBase
-  id: ClothingBackpackDuffelTacticalCoyoteBrown
-  name: coyote brown tactical duffel
-  description: One heavy sack. Some effort was put in to make it lighter to no avail.
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
-    color: "#7b5c39"
-  - type: Clothing
-    sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
-    clothingVisuals:
-      back:
-      - state: equipped-BACKPACK
-        color: "#7b5c39"
-  - type: Item
-    inhandVisuals:
-      left:
-      - state: inhand-left
-        color: "#7b5c39"
-      right:
-      - state: inhand-right
-        color: "#7b5c39"
-
-- type: entity
-  parent: ClothingBackpackDuffelTacticalBase
-  id: ClothingBackpackDuffelTacticalWhite
-  name: white tactical duffel
-  description: One heavy sack. Some effort was put in to make it lighter to no avail.
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
-  - type: Clothing
-    sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
-    clothingVisuals:
-      back:
-      - state: equipped-BACKPACK
+#MARK: Tac duffel Tan
+  - type: entity
+    parent: ClothingBackpackDuffelTacticalBase
+    id: ClothingBackpackDuffelTacticalTan
+    name: tan tactical duffel
+    description: One heavy sack. Some effort was put in to make it lighter to no avail.
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
+      color: "#cdac7f"
+    - type: Clothing
+      sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
+      clothingVisuals:
+        back:
+        - state: equipped-BACKPACK
+          color: "#cdac7f"
+    - type: Item
+      inhandVisuals:
+        left:
+        - state: inhand-left
+          color: "#cdac7f"
+        right:
+        - state: inhand-right
+          color: "#cdac7f"
+#MARK: Tac duffel Olive
+  - type: entity
+    parent: ClothingBackpackDuffelTacticalBase
+    id: ClothingBackpackDuffelTacticalOlive
+    name: olive tactical duffel
+    description: One heavy sack. Some effort was put in to make it lighter to no avail.
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
+      color: "#5e662d"
+    - type: Clothing
+      sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
+      clothingVisuals:
+        back:
+        - state: equipped-BACKPACK
+          color: "#5e662d"
+    - type: Item
+      inhandVisuals:
+        left:
+        - state: inhand-left
+          color: "#5e662d"
+        right:
+        - state: inhand-right
+          color: "#5e662d"
+#MARK: Tac duffel Black
+  - type: entity
+    parent: ClothingBackpackDuffelTacticalBase
+    id: ClothingBackpackDuffelTacticalBlack
+    name: black tactical duffel
+    description: One heavy sack. Some effort was put in to make it lighter to no avail.
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
+      color: "#2F2F2F"
+    - type: Clothing
+      sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
+      clothingVisuals:
+        back:
+        - state: equipped-BACKPACK
+          color: "#2F2F2F"
+    - type: Item
+      inhandVisuals:
+        left:
+        - state: inhand-left
+          color: "#2F2F2F"
+        right:
+        - state: inhand-right
+          color: "#2F2F2F"
+#MARK: Tac duffel Ranger
+  - type: entity
+    parent: ClothingBackpackDuffelTacticalBase
+    id: ClothingBackpackDuffelTacticalRangerGreen
+    name: ranger green tactical duffel
+    description: One heavy sack. Some effort was put in to make it lighter to no avail.
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
+      color: "#465545"
+    - type: Clothing
+      sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
+      clothingVisuals:
+        back:
+        - state: equipped-BACKPACK
+          color: "#465545"
+    - type: Item
+      inhandVisuals:
+        left:
+        - state: inhand-left
+          color: "#465545"
+        right:
+        - state: inhand-right
+          color: "#465545"
+#MARK: Tac duffel Brown
+  - type: entity
+    parent: ClothingBackpackDuffelTacticalBase
+    id: ClothingBackpackDuffelTacticalCoyoteBrown
+    name: coyote brown tactical duffel
+    description: One heavy sack. Some effort was put in to make it lighter to no avail.
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
+      color: "#7b5c39"
+    - type: Clothing
+      sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
+      clothingVisuals:
+        back:
+        - state: equipped-BACKPACK
+          color: "#7b5c39"
+    - type: Item
+      inhandVisuals:
+        left:
+        - state: inhand-left
+          color: "#7b5c39"
+        right:
+        - state: inhand-right
+          color: "#7b5c39"
+#MARK: Tac duffel White
+  - type: entity
+    parent: ClothingBackpackDuffelTacticalBase
+    id: ClothingBackpackDuffelTacticalWhite
+    name: white tactical duffel
+    description: One heavy sack. Some effort was put in to make it lighter to no avail.
+    components:
+    - type: Sprite
+      sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
+    - type: Clothing
+      sprite: _Cataclysm14/Clothing/Back/backpack_duffel_tactical_greyscale.rsi
+      clothingVisuals:
+        back:
+        - state: equipped-BACKPACK

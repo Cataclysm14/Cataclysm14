@@ -1,0 +1,12 @@
+#MARK: -police tops-
+  #MARK: russian police
+    - type: entity
+      parent: ClothingShirtPocketBase
+      id: ClothingShirtPoliceCopRussian
+      name: russian police jacket
+      description: An above average jacket made for use by russian police officers.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_police_cop_RU.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_police_cop_RU.rsi

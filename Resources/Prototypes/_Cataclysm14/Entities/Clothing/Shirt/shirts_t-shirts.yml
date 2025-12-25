@@ -1,4 +1,15 @@
 #MARK: -TShirts-
+  #MARK: TShirt - white
+    - type: entity
+      parent: ClothingShirtBase
+      id: ClothingShirtTShirtWhite
+      name: white t-shirt
+      description: A plain colored t-white, this one is colored in white.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
   #MARK: TShirt - red
     - type: entity
       parent: ClothingShirtBase
@@ -143,3 +154,27 @@
           right:
           - state: inhand-right
             color: "#444444"
+  #MARK: TShirt - beige
+    - type: entity
+      parent: ClothingShirtBase
+      id: ClothingShirtTShirtBeige
+      name: beige t-shirt
+      description: A plain colored t-beige, this one is colored in beige.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+        color: "#CDBEA1"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+        clothingVisuals:
+          jumpsuit:
+          - state: equipped-INNERCLOTHING
+            color: "#CDBEA1"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#CDBEA1"
+          right:
+          - state: inhand-right
+            color: "#CDBEA1"

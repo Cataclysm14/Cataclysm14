@@ -1,0 +1,29 @@
+#MARK: -firesuit helmets-
+  #MARK: Brown firefighter
+    - type: entity
+      parent: ClothingHeadLightBase
+      id: ClothingHeadHelmetFireSuitFireFighterBrown
+      name: fire helmet and hood (brown)
+      description: A firesuit hood and helmet for firefighters. Provides some heat resistance and looks cool.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Head/helmet_firesuit_firefighter_brown.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/helmet_firesuit_firefighter_brown.rsi
+        quickEquip: true
+      - type: IngestionBlocker
+      - type: TemperatureProtection
+        heatingCoefficient: 0.01
+        coolingCoefficient: 0.2
+      - type: FireProtection
+        reduction: 0.15
+      - type: IdentityBlocker
+      - type: Tag
+        tags:
+        - FireHelmet
+      - type: HideLayerClothing
+        slots:
+        - Hair
+        - Snout
+        - HeadTop
+        - HeadSide

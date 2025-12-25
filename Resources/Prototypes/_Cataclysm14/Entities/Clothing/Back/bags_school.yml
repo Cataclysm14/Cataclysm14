@@ -1,0 +1,180 @@
+#MARK: -PupilBags-
+  #MARK: PupilBag - white
+    - type: entity
+      parent: ClothingBackpackSchoolBagBase
+      id: ClothingBackpackSchoolBagWhite
+      name: white school backpack
+      description: A plain colored t-white, this one is colored in white.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Back/backpack_bag_school_any.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Back/backpack_bag_school_any.rsi
+  #MARK: PupilBag - red
+    - type: entity
+      parent: ClothingBackpackSchoolBagBase
+      id: ClothingBackpackSchoolBagRed
+      name: red school backpack
+      description: A plain colored school backpack, this one is colored in red.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Back/backpack_bag_school_any.rsi
+        color: "#9E1A1A"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Back/backpack_bag_school_any.rsi
+        clothingVisuals:
+          back:
+          - state: equipped-BACKPACK
+            color: "#9E1A1A"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#9E1A1A"
+          right:
+          - state: inhand-right
+            color: "#9E1A1A"
+  #MARK: PupilBag - blue
+    - type: entity
+      parent: ClothingBackpackSchoolBagBase
+      id: ClothingBackpackSchoolBagBlue
+      name: blue school backpack
+      description: A plain colored school backpack, this one is colored in blue.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Back/backpack_bag_school_any.rsi
+        color: "#2832C2"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Back/backpack_bag_school_any.rsi
+        clothingVisuals:
+          back:
+          - state: equipped-BACKPACK
+            color: "#2832C2"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#2832C2"
+          right:
+          - state: inhand-right
+            color: "#2832C2"
+  #MARK: PupilBag - green
+    - type: entity
+      parent: ClothingBackpackSchoolBagBase
+      id: ClothingBackpackSchoolBagGreen
+      name: green school backpack
+      description: A plain colored school backpack, this one is colored in green.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Back/backpack_bag_school_any.rsi
+        color: "#3d8c40"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Back/backpack_bag_school_any.rsi
+        clothingVisuals:
+          back:
+          - state: equipped-BACKPACK
+            color: "#3d8c40"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#3d8c40"
+          right:
+          - state: inhand-right
+            color: "#3d8c40"
+  #MARK: PupilBag - yellow
+    - type: entity
+      parent: ClothingBackpackSchoolBagBase
+      id: ClothingBackpackSchoolBagYellow
+      name: yellow school backpack
+      description: A plain colored school backpack, this one is colored in yellow.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Back/backpack_bag_school_any.rsi
+        color: "#E4CD05"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Back/backpack_bag_school_any.rsi
+        clothingVisuals:
+          back:
+          - state: equipped-BACKPACK
+            color: "#E4CD05"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#E4CD05"
+          right:
+          - state: inhand-right
+            color: "#E4CD05"
+  #MARK: PupilBag - purple
+    - type: entity
+      parent: ClothingBackpackSchoolBagBase
+      id: ClothingBackpackSchoolBagPurple
+      name: purple school backpack
+      description: A plain colored school backpack, this one is colored in purple.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Back/backpack_bag_school_any.rsi
+        color: "#702963"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Back/backpack_bag_school_any.rsi
+        clothingVisuals:
+          back:
+          - state: equipped-BACKPACK
+            color: "#702963"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#702963"
+          right:
+          - state: inhand-right
+            color: "#702963"
+  #MARK: PupilBag - black
+    - type: entity
+      parent: ClothingBackpackSchoolBagBase
+      id: ClothingBackpackSchoolBagBlack
+      name: black school backpack
+      description: A plain colored school backpack, this one is colored in black.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Back/backpack_bag_school_any.rsi
+        color: "#444444"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Back/backpack_bag_school_any.rsi
+        clothingVisuals:
+          back:
+          - state: equipped-BACKPACK
+            color: "#444444"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#444444"
+          right:
+          - state: inhand-right
+            color: "#444444"
+  #MARK: PupilBag - beige
+    - type: entity
+      parent: ClothingBackpackSchoolBagBase
+      id: ClothingBackpackSchoolBagBeige
+      name: beige school backpack
+      description: A plain colored t-beige, this one is colored in beige.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Back/backpack_bag_school_any.rsi
+        color: "#CDBEA1"
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Back/backpack_bag_school_any.rsi
+        clothingVisuals:
+          back:
+          - state: equipped-BACKPACK
+            color: "#CDBEA1"
+      - type: Item
+        inhandVisuals:
+          left:
+          - state: inhand-left
+            color: "#CDBEA1"
+          right:
+          - state: inhand-right
+            color: "#CDBEA1"
