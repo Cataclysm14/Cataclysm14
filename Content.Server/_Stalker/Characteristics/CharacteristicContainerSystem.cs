@@ -7,15 +7,15 @@ public sealed partial class CharacteristicContainerSystem : SharedCharacteristic
 {
     [Dependency] private readonly CharacteristicSystem _characteristic = default!;
 
-    public override void Initialize()
-    {
-        base.Initialize();
-        InitializeDatabase();
+    // public override void Initialize()
+    // {
+    //     base.Initialize();
+    //     InitializeDatabase();
 
-        InitializeCommands();
+    //     InitializeCommands();
 
-        SubscribeLocalEvent<CharacteristicContainerComponent, ComponentStartup>(OnStartup);
-    }
+    //     SubscribeLocalEvent<CharacteristicContainerComponent, ComponentStartup>(OnStartup);
+    // }
 
     private void OnStartup(Entity<CharacteristicContainerComponent> container, ref ComponentStartup args)
     {
@@ -90,20 +90,20 @@ public sealed partial class CharacteristicContainerSystem : SharedCharacteristic
         RaiseUpdatedEvent(container, container.Comp.Characteristics[type], oldLevel);
         return true;
     }
-    public bool TrySetCharacteristic(Entity<CharacteristicContainerComponent> container, CharacteristicType type, int level, DateTime? trainTime = null)
-    {
-        if (!container.Comp.Characteristics.TryGetValue(type, out var value))
-            return false;
+    // public bool TrySetCharacteristic(Entity<CharacteristicContainerComponent> container, CharacteristicType type, int level, DateTime? trainTime = null)
+    // {
+    //     if (!container.Comp.Characteristics.TryGetValue(type, out var value))
+    //         return false;
 
-        var oldLevel = value.Level;
+    //     var oldLevel = value.Level;
 
-        container.Comp.Characteristics[type] = value.WithLevel(level);
-        SaveCharacteristicAsync(container, type, level, trainTime).ContinueWith((_) =>
-        {
-            RaiseUpdatedEvent(container, container.Comp.Characteristics[type], oldLevel);
-        });
-        return true;
-    }
+    //     container.Comp.Characteristics[type] = value.WithLevel(level);
+    //     SaveCharacteristicAsync(container, type, level, trainTime).ContinueWith((_) =>
+    //     {
+    //         RaiseUpdatedEvent(container, container.Comp.Characteristics[type], oldLevel);
+    //     });
+    //     return true;
+    // }
 
     public bool TryGetCharacteristic(Entity<CharacteristicContainerComponent> container, CharacteristicType type,
         [NotNullWhen(true)] out Characteristic? characteristic)

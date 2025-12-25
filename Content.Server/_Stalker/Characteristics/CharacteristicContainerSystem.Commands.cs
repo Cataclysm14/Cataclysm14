@@ -58,11 +58,11 @@ public sealed partial class CharacteristicContainerSystem
             return;
         }
 
-        if (!TrySetCharacteristic((uid, characteristicContainer), type, level))
-        {
-            shell.WriteError($"Cannot set {type}");
-            return;
-        }
+        // if (!TrySetCharacteristic((uid, characteristicContainer), type, level))
+        // {
+        //     shell.WriteError($"Cannot set {type}");
+        //     return;
+        // }
 
         shell.WriteLine($"Value of {type}({uid}) set to {level}");
     }

@@ -1,3 +1,12 @@
+#Cataclysm14 / STALKER14
+- type: entity
+  id: MobWeight
+  save: false
+  abstract: true
+  components:
+    - type: STWeight
+    - type: STWeightMaximumModifier
+
 - type: entity
   save: false
   parent:
@@ -6,6 +15,7 @@
   - MobPolymorphable
   - MobCombat
   - StripableInventoryBase
+  - MobWeight #Cataclysm14/stalker14 port
   id: BaseMobSpecies
   abstract: true
   components:
@@ -247,6 +257,8 @@
   id: BaseMobSpeciesOrganic
   abstract: true
   components:
+  - type: STWeight #Base human weight = 75kg
+    self: 75
   - type: Barotrauma
     damage:
       types:

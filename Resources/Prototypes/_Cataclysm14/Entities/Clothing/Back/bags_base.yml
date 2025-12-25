@@ -16,6 +16,8 @@
   - type: StaticPrice
     price: 35000
     vendPrice: 65000
+  - type: STWeight
+    self: -50
 
 #MARK: Sports duffel
 - type: entity
@@ -35,6 +37,8 @@
   - type: StaticPrice
     price: 17500
     vendPrice: 22500
+  - type: STWeight
+    self: -20
 
 #MARK: School bag
 - type: entity
@@ -54,6 +58,8 @@
   - type: StaticPrice
     price: 9000
     vendPrice: 14000
+  - type: STWeight
+    self: -15
 
 #MARK: Rucksac
 - type: entity
@@ -74,6 +80,8 @@
   - type: StaticPrice
     price: 14000
     vendPrice: 22000
+  - type: STWeight
+    self: -40
 
 #MARK: Alice Pack
 - type: entity
@@ -96,3 +104,5 @@
   - type: StaticPrice
     price: 25750
     vendPrice: 45000
+  - type: STWeight
+    self: -35
