@@ -53,13 +53,20 @@ public abstract partial class SharedGunSystem
         if (GetBallisticShots(component) >= component.Capacity)
             return;
 
+        // stalker-changes-start
+        var meta = MetaData(args.Used);
+        if (meta.EntityPrototype == null)
+            return;
+        // stalker-changes-end
+
         component.Entities.Add(args.Used);
+        component.EntProtos.Add(meta.EntityPrototype.ID); // stalker-changes
         Containers.Insert(args.Used, component.Container);
         // Not predicted so
         Audio.PlayPredicted(component.SoundInsert, uid, args.User);
         args.Handled = true;
         UpdateBallisticAppearance(uid, component);
-        DirtyField(uid, component, nameof(BallisticAmmoProviderComponent.Entities));
+        Dirty(uid, component); //Cataclysm14-changes
     }
 
     private void OnBallisticAfterInteract(EntityUid uid, BallisticAmmoProviderComponent component, AfterInteractEvent args)
@@ -272,7 +279,7 @@ public abstract partial class SharedGunSystem
         {
             component.UnspawnedCount = Math.Max(0, component.Capacity - component.Container.ContainedEntities.Count);
             UpdateBallisticAppearance(uid, component);
-            DirtyField(uid, component, nameof(BallisticAmmoProviderComponent.UnspawnedCount));
+            Dirty(uid, component); //Cataclysm14-changes
         }
     }
 
@@ -297,29 +304,29 @@ public abstract partial class SharedGunSystem
                     break;
 
                 component.Entities.RemoveAt(component.Entities.Count - 1);
-                DirtyField(uid, component, nameof(BallisticAmmoProviderComponent.Entities));
+                component.EntProtos.RemoveAt(component.EntProtos.Count - 1); // stalker-changes
+                // DirtyField(uid, component, nameof(BallisticAmmoProviderComponent.Entities));
                 Containers.Remove(entity, component.Container);
             }
-            else if (component.UnspawnedCount > 0
-                || component.InfiniteUnspawned) // Mono
-            {
-                if (!component.InfiniteUnspawned) // Mono
+            else if (component.UnspawnedCount > 0)
+            { // stalker-changes-start
+                var copy = component.EntProtos;
+                copy.Reverse();
+                var proto = copy.FirstOrNull();
+                if (proto != null)
+                {
+                    entity = Spawn(proto.Value, args.Coordinates);
+                    args.Ammo.Add((entity, EnsureShootable(entity)));
+                    component.EntProtos.RemoveAt(component.EntProtos.Count - 1); // Stalker-Changes
+                    component.UnspawnedCount--;
+                }
+                else
                 {
                     component.UnspawnedCount--;
-                    DirtyField(uid, component, nameof(BallisticAmmoProviderComponent.UnspawnedCount));
+                    entity = Spawn(component.Proto, args.Coordinates);
+                    args.Ammo.Add((entity, EnsureShootable(entity)));
                 }
-                entity = Spawn(component.Proto, args.Coordinates);
-                args.Ammo.Add((entity, EnsureShootable(entity)));
-
-                // Goobstation - put spent ammo back in the gun if it doesn't autocycle
-                if (!component.AutoCycle)
-                {
-                    component.Entities.Add(entity);
-                    Containers.Insert(entity, component.Container);
-                    DirtyField(uid, component, nameof(BallisticAmmoProviderComponent.Entities));
-                }
-                // Goobstation - end
-            }
+            } // stalker-changes-end
         }
 
         UpdateBallisticAppearance(uid, component);

@@ -1,3 +1,4 @@
+using Content.Shared._Stalker.Storage;
 using Content.Shared.Weapons.Ranged.Systems;
 using Content.Shared.Whitelist;
 using Robust.Shared.Audio;
@@ -7,7 +8,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Weapons.Ranged.Components;
 
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState(fieldDeltas: true), Access(typeof(SharedGunSystem))]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState, Access([typeof(SharedGunSystem), typeof(SharedStalkerStorageSystem)])] // stalker-changes
 public sealed partial class BallisticAmmoProviderComponent : Component
 {
     [DataField]
@@ -31,6 +32,11 @@ public sealed partial class BallisticAmmoProviderComponent : Component
     public EntityWhitelist? Whitelist;
 
     public Container Container = default!;
+
+    // stalker-changes-start
+    [DataField, AutoNetworkedField]
+    public List<EntProtoId> EntProtos = new();
+    // stalker-changes-end
 
     // TODO: Make this use stacks when the typeserializer is done.
     // Realistically just point to the container.
