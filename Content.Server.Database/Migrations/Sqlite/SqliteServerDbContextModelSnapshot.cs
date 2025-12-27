@@ -785,6 +785,10 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("INTEGER")
                         .HasColumnName("bank_balance");
 
+                    b.Property<bool>("Changeable")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("changeable");
+
                     b.Property<string>("CharacterName")
                         .IsRequired()
                         .HasColumnType("TEXT")
@@ -1290,6 +1294,29 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .IsUnique();
 
                     b.ToTable("server_unban", (string)null);
+                });
+
+            modelBuilder.Entity("Content.Server.Database.Stalker", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("stalkers_id");
+
+                    b.Property<string>("Login")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("login");
+
+                    b.Property<string>("Storage")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("storage");
+
+                    b.HasKey("Id")
+                        .HasName("PK_stalkers");
+
+                    b.ToTable("stalkers", (string)null);
                 });
 
             modelBuilder.Entity("Content.Server.Database.Trait", b =>
