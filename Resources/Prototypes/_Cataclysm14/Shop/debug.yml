@@ -38,12 +38,80 @@
       priority: 2
       items:
         Crowbar: 500
-  # sponsorCategories:
-  #   1:
-  #     - name: SponsorCategory
-  #       items:
-  #         Crowbar: 1000
-  # contributorCategories:
-  #   - name: Contrib
-  #     items:
-  #       Crowbar: 1
+
+- type: entity
+  parent: BaseStructure
+  id: DebugRepository
+  name: Debug Repository
+  suffix: Stalker
+  components:
+    - type: InteractionOutline
+    - type: StalkerRepository
+    - type: Sprite
+      sprite: _Mono/Structures/Machines/VendingMachines/drivevend.rsi
+      layers:
+      - state: "off"
+        map: [ "enum.VendingMachineVisualLayers.Base" ]
+      - state: "off"
+        map: [ "enum.VendingMachineVisualLayers.BaseUnshaded" ]
+        shader: unshaded
+    - type: ActivatableUI
+      key: enum.StalkerRepositoryUiKey.Key
+      singleUser: true
+    - type: UserInterface
+      interfaces:
+        enum.StalkerRepositoryUiKey.Key:
+          type: StalkerRepositoryBoundUserInterface
+
+- type: entity
+  id: STBaseTeleport
+  abstract: true
+  suffix: Teleport, Portal
+  components:
+    - type: Marker
+    - type: Transform
+      anchored: True
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        portalFixture:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.5,-0.5,0.5,0.5"
+          mask:
+            - FullTileMask
+          layer:
+            - TableLayer
+          hard: false
+    - type: InteractionOutline
+    - type: Clickable
+
+- type: entity
+  parent: STBaseTeleport
+  id: MapTeleportBase
+  abstract: true
+  components:
+    - type: Sprite # I think you'll need to add an invisibility here
+      layers:
+        - state: portal-red
+      sprite: /Textures/Effects/portal.rsi
+    - type: NewMapTeleport
+    - type: PointLight
+      color: Yellow
+      radius: 3
+      energy: 1
+      netsync: false
+
+- type: entity
+  parent: MapTeleportBase
+  id: PortalBandDebug
+  suffix: Stalker
+  name: Repository portal debug
+  components:
+    - type: NewMapTeleport
+      allowAll: false
+      portalName: _PortalBandFreedomRepositoryPortal
+      cooldownEnabled: false
+      cooldownTime: 0
+      godmodeCooldown: 0
