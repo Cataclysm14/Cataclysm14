@@ -46,6 +46,7 @@ namespace Content.Server.Database
         public DbSet<RoleWhitelist> RoleWhitelists { get; set; } = null!;
         public DbSet<BanTemplate> BanTemplate { get; set; } = null!;
         public DbSet<IPIntelCache> IPIntelCache { get; set; } = null!;
+        public DbSet<Stalker> Stalkers { get; set; } = null!; // stalker-changes
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -424,11 +425,12 @@ namespace Content.Server.Database
         public List<ProfileRoleLoadout> Loadouts { get; } = new();
 
         [Column("pref_unavailable")] public DbPreferenceUnavailableMode PreferenceUnavailable { get; set; }
-        
+
         public string Company { get; set; } = "None";
 
         public int PreferenceId { get; set; }
         public Preference Preference { get; set; } = null!;
+        public bool Changeable { get; set; } = true; // stalker-changes
     }
 
     public class Job
@@ -1336,4 +1338,24 @@ namespace Content.Server.Database
         /// </summary>
         public float Score { get; set; }
     }
+    #region stalker-changes
+
+    public sealed class Stalker
+    {
+        [Required, Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
+
+        [Required]
+        public string? Login { get; set; }
+
+        [Required]
+        public string? Storage { get; set; }
+
+        public Stalker(string storage, string login)
+        {
+            Storage = storage;
+            Login = login;
+        }
+    }
+    #endregion
 }

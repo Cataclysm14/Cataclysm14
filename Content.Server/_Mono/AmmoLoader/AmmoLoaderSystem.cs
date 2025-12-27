@@ -388,7 +388,7 @@ public sealed class AmmoLoaderSystem : EntitySystem
         if (HasComp<CartridgeAmmoComponent>(ammoEntity))
         {
             _containers.Remove(ammoEntity, loader.Comp.Container);
-            _gun.AddBallisticAmmo(gunUid, artilleryAmmo, 1);
+            // _gun.AddBallisticAmmo(gunUid, artilleryAmmo, 1); //Cataclysm14, mono shit, doesn't need to work
             Del(ammoEntity);
             return true;
         }

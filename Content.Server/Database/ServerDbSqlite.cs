@@ -89,6 +89,20 @@ namespace Content.Server.Database
             return (await GetServerBanQueryAsync(db, address, userId, hwId, modernHWIds, includeUnbanned: false)).FirstOrDefault();
         }
 
+        // stalker-changes-start
+        public override async Task<ServerBanDef?> GetLastServerBanAsync()
+        {
+            await using var db = await GetDbImpl();
+
+            var lastBan = await db.SqliteDbContext.Ban
+                .Include(p => p.Unban)
+                .OrderByDescending(p => p.BanTime)
+                .FirstOrDefaultAsync();
+
+            return ConvertBan(lastBan);
+        }
+        // stalker-changes-end
+
         public override async Task<List<ServerBanDef>> GetServerBansAsync(
             IPAddress? address,
             NetUserId? userId,

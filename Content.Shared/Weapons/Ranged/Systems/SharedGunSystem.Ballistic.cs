@@ -9,6 +9,7 @@ using Content.Shared.Whitelist;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Serialization;
+using Robust.Shared.Utility;
 
 namespace Content.Shared.Weapons.Ranged.Systems;
 
@@ -60,7 +61,9 @@ public abstract partial class SharedGunSystem
         // stalker-changes-end
 
         component.Entities.Add(args.Used);
+
         component.EntProtos.Add(meta.EntityPrototype.ID); // stalker-changes
+
         Containers.Insert(args.Used, component.Container);
         // Not predicted so
         Audio.PlayPredicted(component.SoundInsert, uid, args.User);
@@ -142,7 +145,7 @@ public abstract partial class SharedGunSystem
         }
         // End Frontier
 
-        if (GetBallisticShots(component) == 0) // Mono
+        if (component.Entities.Count + component.UnspawnedCount == 0)  //Cataclysm14: copy pasted stalker file, idfk this russian goidacode
         {
             Popup(
                 Loc.GetString("gun-ballistic-transfer-empty",
@@ -154,8 +157,8 @@ public abstract partial class SharedGunSystem
 
         void SimulateInsertAmmo(EntityUid ammo, EntityUid ammoProvider, EntityCoordinates coordinates)
         {
-            // We call SharedInteractionSystem to raise contact events. Checks are already done by this point.
-            _interaction.InteractUsing(args.User, ammo, ammoProvider, coordinates, checkCanInteract: false, checkCanUse: false);
+            var evInsert = new InteractUsingEvent(args.User, ammo, ammoProvider, coordinates); //Cataclysm14: copy pasted stalker file, idfk this russian goidacode
+            RaiseLocalEvent(ammoProvider, evInsert);//Cataclysm14 end
         }
 
         List<(EntityUid? Entity, IShootable Shootable)> ammo = new();
@@ -246,9 +249,10 @@ public abstract partial class SharedGunSystem
             !Paused(uid))
         {
             gunComp.NextFire = Timing.CurTime + TimeSpan.FromSeconds(1 / gunComp.FireRateModified);
-            DirtyField(uid, gunComp, nameof(GunComponent.NextFire));
+            Dirty(uid, gunComp); //Cataclysm14: copy pasted stalker file, idfk this russian goidacode
         }
 
+        Dirty(uid, component); //Cataclysm14: copy pasted stalker file, idfk this russian goidacode
         Audio.PlayPredicted(component.SoundRack, uid, user);
 
         var shots = GetBallisticShots(component);
@@ -330,6 +334,7 @@ public abstract partial class SharedGunSystem
         }
 
         UpdateBallisticAppearance(uid, component);
+        Dirty(uid, component);  //Cataclysm14: copy pasted stalker file, idfk this russian goidacode
     }
 
     private void OnBallisticAmmoCount(EntityUid uid, BallisticAmmoProviderComponent component, ref GetAmmoCountEvent args)

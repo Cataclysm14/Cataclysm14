@@ -8,6 +8,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
+using Content.Shared._Stalker.Characteristics;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
 using Content.Shared.Ghost.Roles;
@@ -479,6 +480,8 @@ namespace Content.Server.Database
             NetUserId? userId,
             ImmutableArray<byte>? hwId,
             ImmutableArray<ImmutableArray<byte>>? modernHWIds);
+
+        public abstract Task<ServerBanDef?> GetLastServerBanAsync(); // stalker-changes
 
         /// <summary>
         ///     Looks up an user's ban history.
@@ -1757,7 +1760,106 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
         }
 
         #endregion
+        #region Stalker-Changes
 
+        /// <summary>
+        /// Gets all Player records for users who have at least one of the specified role IDs whitelisted.
+        /// </summary>
+        /// <remarks>
+        /// This is a virtual base implementation. Specific database providers might override it.
+        /// </remarks>
+        public virtual async Task<List<Player>> GetPlayersWithRoleWhitelistAsync(IEnumerable<string> roleIds, CancellationToken cancel = default)
+        {
+            await using var db = await GetDb(cancel);
+
+            var roleIdSet = roleIds.ToHashSet(); // Use HashSet for potentially better performance if roleIds is large
+
+            // Get PlayerUserIds that have any of the specified roles
+            var playerIds = await db.DbContext.RoleWhitelists
+                .Where(rw => roleIdSet.Contains(rw.RoleId))
+                .Select(rw => rw.PlayerUserId)
+                .Distinct()
+                .ToListAsync(cancel);
+
+            // Fetch the full Player records for those UserIds
+            var players = await db.DbContext.Player
+                .Where(p => playerIds.Contains(p.UserId))
+                .ToListAsync(cancel);
+
+            return players;
+        }
+
+        public async Task<bool> EnsureStalkerRecordCreated(string login, string defaultValue)
+        {
+            await using var db = await GetDb();
+            var record = await db.DbContext.Stalkers.SingleOrDefaultAsync(s => s.Login == login);
+
+            if (record is not null)
+                return false;
+
+            db.DbContext.Stalkers.Add(new Stalker(defaultValue, login));
+            await db.DbContext.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task SetLoginItems(string login, string jsonItems)
+        {
+            await using var db = await GetDb();
+
+            var record = await db.DbContext.Stalkers.SingleOrDefaultAsync(s => s.Login == login);
+            if (record is null)
+            {
+                db.DbContext.Stalkers.Add(record = new Stalker(jsonItems, login));
+            }
+
+            record.Storage = jsonItems;
+            await db.DbContext.SaveChangesAsync();
+        }
+
+        public async Task SetAllLoginItems(string login, string jsonItems)
+        {
+            await using var db = await GetDb();
+
+            // getting ALL repositories of a player
+            var records = db.DbContext.Stalkers.Where(s => s.Login!.EndsWith(login));
+
+            foreach (var record in records)
+            {
+                record.Storage = jsonItems;
+            }
+
+            await db.DbContext.SaveChangesAsync();
+        }
+
+        public async Task SetAllStalkerItems(string jsonItems)
+        {
+            await using var db = await GetDb();
+
+            // Set storage to jsonItems for every stalker record in the database
+            var records = db.DbContext.Stalkers;
+
+            foreach (var record in records)
+            {
+                record.Storage = jsonItems;
+            }
+
+            await db.DbContext.SaveChangesAsync();
+        }
+
+        public async Task<string?> GetLoginItems(string login)
+        {
+            await using var db = await GetDb();
+
+            var record = await db.DbContext.Stalkers.SingleOrDefaultAsync(s => s.Login == login);
+
+            return record?.Storage;
+        }
+
+        /// <summary>
+        /// Clears ownership of the specified warzone (sets both band and faction to null).
+        /// </summary>
+        /// <param name="warZone">The warzone prototype ID.</param>
+        #endregion
         #region Job Whitelists
 
         public async Task<bool> AddJobWhitelist(Guid player, ProtoId<JobPrototype> job)

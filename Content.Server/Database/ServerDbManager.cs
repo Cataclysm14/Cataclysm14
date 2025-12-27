@@ -6,6 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Content.Server.Administration.Logs;
 using Content.Shared.Administration.Logs;
+using Content.Shared._Stalker.Characteristics;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
 using Content.Shared.Preferences;
@@ -70,6 +71,7 @@ namespace Content.Server.Database
         /// <returns>The ban with the given id or null if none exist.</returns>
         Task<ServerBanDef?> GetServerBanAsync(int id);
 
+        Task<ServerBanDef?> GetLastServerBanAsync(); // stalker-changes
         /// <summary>
         ///     Looks up an user's most recent received un-pardoned ban.
         ///     This will NOT return a pardoned ban.
@@ -371,6 +373,16 @@ namespace Content.Server.Database
         Task SendNotification(DatabaseNotification notification);
 
         #endregion
+
+        #region Stalker-Changes
+        Task<bool> EnsureRecordCreated(string login, string defaultValue);
+        Task SetAllLoginItems(string login, string jsonItems);
+        Task SetLoginItems(string login, string jsonItems);
+        Task<string?> GetLoginItems(string login);
+
+        Task<List<Player>> GetPlayersWithRoleWhitelistAsync(IEnumerable<string> roleIds, CancellationToken cancel = default); // Added for BandsSystem
+        Task SetAllStalkerItems(string jsonItems);
+        #endregion
     }
 
     /// <summary>
@@ -545,6 +557,14 @@ namespace Content.Server.Database
             DbReadOpsMetric.Inc();
             return RunDbCommand(() => _db.GetServerBanAsync(id));
         }
+
+        // stalker-changes-start
+        public Task<ServerBanDef?> GetLastServerBanAsync()
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetLastServerBanAsync());
+        }
+        // stalker-changes-end
 
         public Task<ServerBanDef?> GetServerBanAsync(
             IPAddress? address,
@@ -1058,7 +1078,7 @@ namespace Content.Server.Database
             DbWriteOpsMetric.Inc();
             return RunDbCommand(() => _db.RemoveJobWhitelist(player, job));
         }
-        
+
         // Frontier: ghost role DB ops
         public Task AddGhostRoleWhitelist(Guid player, ProtoId<GhostRolePrototype> ghostRole)
         {
@@ -1094,6 +1114,45 @@ namespace Content.Server.Database
             DbWriteOpsMetric.Inc();
             return RunDbCommand(() => _db.CleanIPIntelCache(range));
         }
+
+        #region Stalker-Changes
+
+        public Task<bool> EnsureRecordCreated(string login, string defaultValue)
+        {
+            return RunDbCommand(() => _db.EnsureStalkerRecordCreated(login, defaultValue));
+        }
+
+        public Task SetAllLoginItems(string login, string jsonItems)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.SetAllLoginItems(login, jsonItems));
+        }
+
+        public Task SetLoginItems(string login, string jsonItems)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.SetLoginItems(login, jsonItems));
+        }
+
+        public Task SetAllStalkerItems(string jsonItems)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.SetAllStalkerItems(jsonItems));
+        }
+
+        public Task<string?> GetLoginItems(string login)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetLoginItems(login));
+        }
+
+        public Task<List<Player>> GetPlayersWithRoleWhitelistAsync(IEnumerable<string> roleIds, CancellationToken cancel = default) // Added for BandsSystem
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetPlayersWithRoleWhitelistAsync(roleIds, cancel));
+        }
+
+        #endregion
 
         public void SubscribeToNotifications(Action<DatabaseNotification> handler)
         {

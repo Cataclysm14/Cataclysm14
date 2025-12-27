@@ -44,25 +44,25 @@ public sealed class StalkerDbSystem : EntitySystem
     public ConcurrentDictionary<string, string> Stalkers = new();
     private List<string> _symbols = new();
 
-    public override void Initialize()
-    {
-        base.Initialize();
+    // public override void Initialize()
+    // {
+    //     base.Initialize();
 
-        InitializeGroupRecords();
-        LoadPrototypes();
-        SubscribeLocalEvent<PlayerBeforeSpawnEvent>(BeforeSpawn);
-    }
+    //     InitializeGroupRecords();
+    //     LoadPrototypes();
+    //     SubscribeLocalEvent<PlayerBeforeSpawnEvent>(BeforeSpawn);
+    // }
 
     #region InventoryOperations
 
-    private void LoadPrototypes()
-    {
-        var prototypes = _prototype.EnumeratePrototypes<DuplicateSymbolsPrototype>();
-        foreach (var proto in prototypes)
-        {
-            _symbols.AddRange(proto.Symbols);
-        }
-    }
+    // private void LoadPrototypes()
+    // {
+    //     var prototypes = _prototype.EnumeratePrototypes<DuplicateSymbolsPrototype>();
+    //     foreach (var proto in prototypes)
+    //     {
+    //         _symbols.AddRange(proto.Symbols);
+    //     }
+    // }
     public string GetInventoryJson(string login)
     {
         return !Stalkers.TryGetValue(login, out var value) ? "" : value;
@@ -124,27 +124,27 @@ public sealed class StalkerDbSystem : EntitySystem
         await _dbManager.SetAllStalkerItems(DefaultStalkerItems);
 
             // Also clear all stalker stats in the DB so stats are reset to defaults as well.
-            try
-            {
-                await _dbManager.ClearAllStalkerStats();
-            }
-            catch (Exception e)
-            {
-                Logger.ErrorS("stalker.db", $"Failed to clear stalker stats during ResetAllStashes: {e}");
-                throw;
-            }
+            // try
+            // {
+            //     await _dbManager.ClearAllStalkerStats();
+            // }
+            // catch (Exception e)
+            // {
+            //     Logger.ErrorS("stalker.db", $"Failed to clear stalker stats during ResetAllStashes: {e}");
+            //     throw;
+            // }
 
             // If there's an in-memory cache of stalker stats, clear it as well by calling the characteristic system.
-            try
-            {
-                var charSys = EntityManager.System<CharacteristicContainerSystem>();
-                charSys.ClearAllStatsCache();
-            }
-            catch (Exception e)
-            {
-                // Non-fatal: log but continue. We don't want to abort the reset for this.
-                Logger.WarningS("stalker.db", $"Failed to clear in-memory stalker stat caches: {e}");
-            }
+            // try
+            // {
+            //     var charSys = EntityManager.System<CharacteristicContainerSystem>();
+            //     charSys.ClearAllStatsCache();
+            // }
+            // catch (Exception e)
+            // {
+            //     // Non-fatal: log but continue. We don't want to abort the reset for this.
+            //     Logger.WarningS("stalker.db", $"Failed to clear in-memory stalker stat caches: {e}");
+            // }
 
         // 2) Update in-memory cache so newly loaded players don't observe stale empty values
         foreach (var key in Stalkers.Keys.ToList())

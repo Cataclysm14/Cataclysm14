@@ -71,6 +71,20 @@ namespace Content.Server.Database
             return ConvertBan(ban);
         }
 
+        // stalker-changes-start
+        public override async Task<ServerBanDef?> GetLastServerBanAsync()
+        {
+            await using var db = await GetDbImpl();
+
+            var lastBan = await db.PgDbContext.Ban
+                .Include(p => p.Unban)
+                .OrderByDescending(b => b.BanTime)
+                .FirstOrDefaultAsync();
+
+            return ConvertBan(lastBan);
+        }
+        // stalker-changes-end
+
         public override async Task<ServerBanDef?> GetServerBanAsync(
             IPAddress? address,
             NetUserId? userId,

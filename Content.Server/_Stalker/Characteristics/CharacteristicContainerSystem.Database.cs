@@ -18,45 +18,10 @@
 //         SubscribeLocalEvent<PlayerAttachedEvent>(OnPlayerBeforeSpawn);
 //     }
 
-//     private async void OnPlayerBeforeSpawn(PlayerAttachedEvent args)
-//     {
-//         await LoadCharacteristicsAsync(args.Player);
-//     }
-
-//     private async Task LoadCharacteristicsAsync(ICommonSession player)
-//     {
-//         if (!TryComp(player.AttachedEntity, out CharacteristicContainerComponent? container))
-//             return;
-
-//         foreach (var (_, characteristic) in container.Characteristics)
-//         {
-//             var stats = await _dbManager.GetStalkerStatAsync(player.Name, characteristic.Type);
-//             if (stats is not null)
-//             {
-//                 _lastTrainedByCharacteristic[(player.Name, characteristic.Type)] = stats.LastTrained;
-//                 TryInitCharacteristic((player.AttachedEntity.Value, container), characteristic.Type, (int) stats.Value);
-//             }
-//         }
-//     }
-
-//     private async Task SaveCharacteristicAsync(Entity<CharacteristicContainerComponent> entity,
-//         CharacteristicType type,
-//         int level,
-//         DateTime? trainTime = null)
-//     {
-//         var login = GetLogin(entity);
-
-//         if (login is null)
-//             return;
-
-//         var characteristic = entity.Comp.Characteristics[type];
-
-//         await _dbManager.SetStalkerStatsAsync(login, characteristic.Type, level, trainTime);
-//         if (trainTime == null)
-//             return;
-
-//         _lastTrainedByCharacteristic[(login, type)] = trainTime;
-//     }
+//     // private async void OnPlayerBeforeSpawn(PlayerAttachedEvent args)
+//     // {
+//     //     await LoadCharacteristicsAsync(args.Player);
+//     // }
 
 //     public async Task<bool> IsTrainTimeConditionMet(Entity<CharacteristicContainerComponent> entity, CharacteristicType type)
 //     {
@@ -90,8 +55,8 @@
 //     /// Clears any in-memory caches related to stalker characteristics/stats.
 //     /// Called when a global reset of stalker data is performed.
 //     /// </summary>
-//     public void ClearAllStatsCache()
-//     {
-//         _lastTrainedByCharacteristic.Clear();
-//     }
-// }
+// //     public void ClearAllStatsCache()
+// //     {
+// //         _lastTrainedByCharacteristic.Clear();
+// //     }
+// // }
