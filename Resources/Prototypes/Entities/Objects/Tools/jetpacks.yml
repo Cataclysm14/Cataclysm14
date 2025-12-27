@@ -53,7 +53,6 @@
     - type: Appearance
     - type: StaticPrice
       price: 100
-    - type: StalkerMoveSpeed
 
 - type: entity
   id: ActionToggleJetpack
