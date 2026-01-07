@@ -45,16 +45,16 @@ public sealed partial class ESViewconeComponent : Component
 
     //Cataclysm14 start
     [DataField, AutoNetworkedField]
-    public float GrainMultiplier = 1f;
+    public float GrainMultiplier = 2.5f;
 
     [DataField, AutoNetworkedField]
-    public float GrainBase = 0.5f;
+    public float GrainBase = 1f;
 
     [DataField, AutoNetworkedField]
-    public float ConeColorFactor = 0.7f;
+    public float ConeColorFactor = 0.8f;
 
     [DataField, AutoNetworkedField]
-    public float ConeColor = 0.01f;
+    public float ConeColor = 0.008f;
     //Cataclysm14 end
 
     // Clientside, used for lerping view angle

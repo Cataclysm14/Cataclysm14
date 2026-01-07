@@ -13,6 +13,10 @@
   - type: NightVision
     flashDurationMultiplier: 2
     isEquipment: true
+    #Cataclysm14, back to green NVG, mostly for testing
+    color: "#008000"
+    strength: 0.4
+    noise: 2
   - type: IdentityBlocker
     coverage: EYES
 
