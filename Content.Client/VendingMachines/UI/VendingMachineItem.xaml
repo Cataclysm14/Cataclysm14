@@ -5,7 +5,7 @@
             SeparationOverride="4">
     <PanelContainer VerticalExpand="True" HorizontalExpand="True" Margin="0 0 0 0">
         <PanelContainer.PanelOverride>
-            <graphics:StyleBoxFlat BorderThickness="3" BorderColor="#2e2e2e" BackgroundColor="#262626"/>
+            <graphics:StyleBoxFlat BorderThickness="3" BorderColor="#262626" BackgroundColor="#2e2e2e"/>
         </PanelContainer.PanelOverride>
         <BoxContainer Orientation="Horizontal"
                       HorizontalExpand="True"
@@ -19,8 +19,7 @@
             Margin="4 0 0 0"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            MinSize="64 64"
-            Scale="3 3"
+            MinSize="32 32"
             />
         </BoxContainer>
     </PanelContainer>

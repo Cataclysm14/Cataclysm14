@@ -31,23 +31,23 @@ public sealed partial class ArmorPlateItemComponent : Component
     public float SprintSpeedModifier = 1.0f;
 
     /// <summary>
-    /// Multiplier applied when converting absorbed piercing damage to stamina damage.
+    /// Multiplier applied when converting absorbed damage to stamina damage.
     /// </summary>
     [DataField]
     public float StaminaDamageMultiplier = 1.0f;
 
-//Cataclysm14 START
     /// <summary>
-    /// Multiplier applied when converting absorbed piercing damage to blunt damage.
+    /// How much damage dealt to the plate is multiplied, by damagetype
     /// </summary>
-    [DataField]
-    public float BluntDamageMultiplier = 1.0f;
+    [DataField("damageMultipliers")]
+    public Dictionary<string, float> DamageMultipliers = new();
 
     /// <summary>
-    /// Multiplier applied when converting absorbed piercing damage to slash damage.
+    /// Absorption effect of the plate, by damagetype.
+	/// Can go negative which INCREASES damage taken. Negative values will still decrement armor durability.
     /// </summary>
-    [DataField]
-    public float SlashDamageMultiplier = 1.0f;
-//Cataclysm14 END
+	[DataField("absorptionRatios")]
+    public Dictionary<string, float> AbsorptionRatios = new();
+
 }
 

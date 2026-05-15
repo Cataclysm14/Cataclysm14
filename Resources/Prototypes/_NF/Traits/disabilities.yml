@@ -1,10 +1,3 @@
-- type: trait
-  id: Stinky
-  name: trait-stinky-name
-  description: trait-stinky-desc
-  category: Disabilities
-  components:
-    - type: StinkyTrait
 
 - type: trait
   id: Clumsy

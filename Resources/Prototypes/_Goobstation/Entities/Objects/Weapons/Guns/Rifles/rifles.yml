@@ -24,6 +24,7 @@
     shotsPerBurst: 4
     fireRate: 6.5
     projectileSpeed: 42.5 # Mono
+    damageModifier: 0.9
     soundGunshot:
       path: /Audio/_Goobstation/Weapons/Guns/Gunshots/thock.ogg
   - type: ChamberMagazineAmmoProvider
@@ -33,21 +34,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine7.62x39mmFMJ
+        startingItem: Magazine762x39mmFMJ
         insertSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/amr_magin.ogg # Mono
         ejectSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagOut/cm82_magout.ogg # Mono
         priority: 2
         whitelist:
           tags:
-            - Magazine7.62x39mmFMJ
+            - Magazine762x39mmFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7.62x39mmFMJ
+        startingItem: Cartridge762x39mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x39mm
+            - Cartridge762x39mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -59,12 +60,13 @@
   - type: Appearance
   - type: PirateBountyItem # Mono
     id: ExperimentalFactionWeapon
+  - type: GunRequiresWield
 
 - type: entity
   name: CS KMP-WSPR (7.62x39mm)
   parent: BaseWeaponRifle # Mono - C3
   id: WeaponRifleWSPR
-  description: A cutting-edge rifle from Cybersun, versatile, reliable, and Syndicate-approved. Uses 7.62x39mm subsonic ammo.
+  description: A cutting-edge Dynasty burst rifle, versatile and reliable. Uses 7.62x39mm ammo.
   components:
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Rifles/wspr.rsi # Mono
@@ -85,39 +87,41 @@
     - Burst
     selectedMode: Burst
     burstFireRate: 20 # Mono
-    burstCooldown: 0.4 # Mono
+    burstCooldown: 0.6 # Mono
     projectileSpeed: 45 # Mono
     fireRate: 7.5 # Mono, does nothing because its burst only but it makes it clear it can fire at this rate.
+    damageModifier: 0.9
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/wspr_fire.ogg # Mono change - Changed audio path
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine7.62x39mmSubsonic
+        startingItem: Magazine762x39mmSubsonic
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine7.62x39mmSubsonic
+            - Magazine762x39mmFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7.62x39mmSubsonic
+        startingItem: Cartridge762x39mmSubsonic
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x39mmSubsonic
+            - Cartridge762x39mmFMJ
   - type: MagazineVisuals
     magState: mag
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: GunRequiresWield
 
 - type: entity
-  name: PA M-90 (7.62x51mm) # mono - 7.62x51mm
-  parent: BaseWeaponRifle # Mono - pirate contra
+  name: PA M-90 (7.62x51mm) # mono - 762x51mm
+  parent: BaseWeaponRifle
   id: WeaponRifleM90
   description: A compact bullpup design. Uses 7.62x51mm rifle ammo. # mono
   components:
@@ -137,27 +141,40 @@
     soundRack:
       path: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg
   - type: Gun
+    minAngle: 13
+    maxAngle: 20
+    angleIncrease: 5
+    angleDecay: 25
+    fireRate: 3
+    burstFireRate: 6
+    burstCooldown: 0.5
+    shotsPerBurst: 2
+    selectedMode: Burst
+    availableModes:
+    - FullAuto
+    - Burst
+    - SemiAuto
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/light_rifle_2.ogg # Mono
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine7.62x51mmFMJ
+        startingItem: Magazine762x51mmFMJ
         insertSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/cm82_magin.ogg # Mono
         ejectSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagOut/cm82_magout.ogg # Mono
         priority: 2
         whitelist:
           tags:
-          - Magazine7.62x51mmFMJ
+          - Magazine762x51mmFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7.62x51mmFMJ # mono - 7.62x51mm
+        startingItem: Cartridge762x51mmFMJ # mono - 762x51mm
         priority: 1
         whitelist:
           tags:
-          - Cartridge7.62x51mm # mono - 7.62x51mm
+          - Cartridge762x51mmFMJ # mono - 762x51mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -167,6 +184,10 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: GunRequiresWield
+  - type: GunWieldBonus
+    minAngle: 10
+    maxAngle: 8
 
 - type: entity
   name: CS Burner (12.7x99mm)
@@ -192,21 +213,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine12.7x99mm
+        startingItem: Magazine127x99mm
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - Magazine12.7x99mm
+          - Magazine127x99mm
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge12.7x99mm
+        startingItem: Cartridge127x99mm
         priority: 1
         whitelist:
           tags:
-          - Cartridge12.7x99mm
+          - Cartridge127x99mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -216,3 +237,4 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: GunRequiresWield

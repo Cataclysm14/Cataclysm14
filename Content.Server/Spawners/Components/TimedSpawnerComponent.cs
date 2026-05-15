@@ -30,7 +30,7 @@ public sealed partial class TimedSpawnerComponent : Component, ISerializationHoo
     /// Length of the interval between spawn attempts.
     /// </summary>
     [DataField]
-    public float IntervalSeconds = 60.0f; //Cataclysm14, why was it float, unless there is a stupid reason
+    public float IntervalSeconds = 60.0f; //Cataclysm14, why was it int, unless there is a stupid reason regarding floats
 
     /// <summary>
     /// The minimum number of entities that can be spawned when an interval elapses.

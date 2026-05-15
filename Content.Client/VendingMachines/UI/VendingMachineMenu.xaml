@@ -4,12 +4,12 @@
     xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
     xmlns:co="clr-namespace:Content.Client.UserInterface.Controls"
     xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
-    SetSize="600 700"
-    MinSize="800 600"> <!-- Frontier: added SetSize, MinSize, remove MinHeight="210" -->
+    SetSize="360 400"
+    MinSize="360 320"> <!-- Frontier: added SetSize, MinSize, remove MinHeight="210" -->
     <BoxContainer Orientation="Vertical">
         <PanelContainer VerticalExpand="True" HorizontalExpand="True" Margin="6 6 6 6">
             <PanelContainer.PanelOverride>
-                <graphics:StyleBoxFlat BorderThickness="3" BorderColor="#262626" BackgroundColor="#191919"/>
+                <graphics:StyleBoxFlat BorderThickness="3" BorderColor="#35434d" BackgroundColor="#191919"/>
             </PanelContainer.PanelOverride>
         <BoxContainer Name="MainContainer" Orientation="Vertical">
         <!-- Frontier: balance -->
@@ -40,13 +40,13 @@
          <!-- Footer -->
         <BoxContainer Orientation="Vertical">
             <PanelContainer StyleClasses="LowDivider" />
-            <!-- <BoxContainer Orientation="Horizontal" Margin="10 2 5 0" VerticalAlignment="Bottom"> -->
-                <!-- <Label Text="{Loc 'vending-machine-flavor-left'}" StyleClasses="WindowFooterText" /> -->
-                <!-- <Label Text="{Loc 'vending-machine-flavor-right'}" StyleClasses="WindowFooterText"
-                        HorizontalAlignment="Right" HorizontalExpand="True"  Margin="0 0 5 0" /> -->
-                <!-- <TextureRect StyleClasses="NTLogoDark" Stretch="KeepAspectCentered"
-                        VerticalAlignment="Center" HorizontalAlignment="Right" SetSize="19 19"/> -->
-            <!-- </BoxContainer> -->
+            <BoxContainer Orientation="Horizontal" Margin="10 2 5 0" VerticalAlignment="Bottom">
+                <Label Text="{Loc 'vending-machine-flavor-left'}" StyleClasses="WindowFooterText" />
+                <Label Text="{Loc 'vending-machine-flavor-right'}" StyleClasses="WindowFooterText"
+                        HorizontalAlignment="Right" HorizontalExpand="True"  Margin="0 0 5 0" />
+                <TextureRect StyleClasses="NTLogoDark" Stretch="KeepAspectCentered"
+                        VerticalAlignment="Center" HorizontalAlignment="Right" SetSize="19 19"/>
+            </BoxContainer>
         </BoxContainer>
         </BoxContainer>
         </PanelContainer>

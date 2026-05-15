@@ -50,30 +50,30 @@
       steps:
       - tool: Cutting
 
-# - type: construction
-#   name: create roof
-#   id: CreateRoof
-#   graph: CreateRoof
-#   startNode: start
-#   targetNode: roof
-#   category: construction-category-storage
-#   description: Creates a roof on the tile its constructed on.
-#   icon: { sprite: Markers/cross.rsi, state: green }
-#   placementMode: SnapgridCenter
-#   canRotate: false
-#   canBuildInImpassable: false
-#   objectType: Structure
+- type: construction
+  name: create roof
+  id: CreateRoof
+  graph: CreateRoof
+  startNode: start
+  targetNode: roof
+  category: construction-category-storage
+  description: Creates a roof on the tile its constructed on.
+  icon: { sprite: Markers/cross.rsi, state: green }
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  objectType: Structure
 
-# - type: construction
-#   name: remove roof
-#   id: RemoveRoof
-#   graph: RemoveRoof
-#   startNode: start
-#   targetNode: roof
-#   category: construction-category-storage
-#   description: Removes a roof from the tile its constructed on.
-#   icon: { sprite: Markers/cross.rsi, state: red }
-#   placementMode: SnapgridCenter
-#   canRotate: false
-#   canBuildInImpassable: false
-#   objectType: Structure
+- type: construction
+  name: remove roof
+  id: RemoveRoof
+  graph: RemoveRoof
+  startNode: start
+  targetNode: roof
+  category: construction-category-storage
+  description: Removes a roof from the tile its constructed on.
+  icon: { sprite: Markers/cross.rsi, state: red }
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  objectType: Structure

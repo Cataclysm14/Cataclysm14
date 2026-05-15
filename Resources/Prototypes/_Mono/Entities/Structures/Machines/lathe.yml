@@ -28,28 +28,6 @@
     # - RoundstartShipgunAmmo
     dynamicPacks:
     # rogue start
-    - MonoRogueWeaponsDynamicMelee
-    - MonoRogueWeaponsDynamicRanged
-    - MonoRogueVouchersDynamic
-    - MonoRogueMiscDynamic
-    - MonoRogueGearDynamic
-    - MonoRogueGearProDynamic
-    # TSF start
-    - MonoTSFWeaponsDynamicMelee
-    - MonoTSFWeaponsDynamicRanged
-    - MonoTSFVouchersDynamic
-    - MonoTSFMiscDynamic
-    - MonoTSFGearDynamic
-    # USSP start
-    - MonoUSSPVouchersDynamic
-    - MonoUSSPArmorDynamic
-    - MonoUSSPMiscDynamic
-    - MonoUSSPWeaponsDynamicRanged
-    # Universal shit (stuff like shipgun ammo)
-    - UniversalRailgunAmmo
-    - UniversalMissileAmmo
-    - UniversalShellAmmo
-    - UniversalOrdinance
     - DynamicAmmoRecipePack
     - NFMercenaryTechfabDeprecated
     # Civ military tech

@@ -131,8 +131,8 @@
 
 - type: latheRecipe
   parent: BaseAmmoUraniumPistolCaliberSpeedloaderRecipe
-  id: SpeedLoader9x19mmDepletedUranium
-  result: SpeedLoader9x19mmDepletedUranium
+  id: SpeedLoader9x19mmUranium
+  result: SpeedLoader9x19mmUranium
 
 #Boxes
 
@@ -163,8 +163,8 @@
 
 - type: latheRecipe
   parent: BaseAmmoUraniumPistolCaliberAmmoBoxRecipe
-  id: AmmoBox9x19mmDepletedUranium
-  result: AmmoBox9x19mmDepletedUranium
+  id: AmmoBox9x19mmUranium
+  result: AmmoBox9x19mmUranium
 
 - type: latheRecipe
   parent: BaseAmmoHPPistolCaliberAmmoBoxRecipe
@@ -180,3 +180,9 @@
   parent: BaseAmmoFMJPistolCaliberAmmoBoxRecipe
   id: MagazineAsmgtUniversal9x19mm
   result: MagazineAsmgtUniversal9x19mm
+
+  #big box
+- type: latheRecipe
+  parent: BaseAmmoFMJPistolCaliberBigAmmoBoxRecipe
+  id: AmmoBox9x19mmBigFMJ
+  result: AmmoBox9x19mmBigFMJ

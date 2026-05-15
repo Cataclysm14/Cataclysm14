@@ -1,4 +1,4 @@
-﻿construction-category-all = All
+construction-category-all = All
 construction-category-furniture = Furniture
 construction-category-storage = Storage
 construction-category-tools = Tools
@@ -16,3 +16,6 @@ construction-category-structures-walls-cata = Structures/Walls
 construction-category-structures-doors-cata = Structures/Doors
 construction-category-materials-cata = Materials
 construction-category-deprecated = deprecated
+
+construction-add-favorite-button = Add to favorites
+construction-remove-from-favorite-button = Remove from favorites

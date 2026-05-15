@@ -163,24 +163,6 @@
     - snarling
 
 - type: emote
-  id: Whine
-  name: delta-chat-emote-name-whine
-  category: Vocal
-  available: false
-  whitelist:
-    components:
-    - Vocal
-  blacklist:
-    components:
-    - BorgChassis
-  chatMessages: [whines.]
-  chatTriggers:
-    - whine
-    - whines
-    - whined
-    - whining
-
-- type: emote
   id: Howl
   name: delta-chat-emote-name-howl
   category: Vocal

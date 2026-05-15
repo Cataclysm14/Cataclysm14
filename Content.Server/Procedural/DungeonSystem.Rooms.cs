@@ -9,7 +9,6 @@ using Robust.Shared.Map.Components;
 using Robust.Shared.Utility;
 
 namespace Content.Server.Procedural;
-//Cataclysm14, carpmosia roomfill tweak port
 
 public sealed partial class DungeonSystem
 {
@@ -81,11 +80,10 @@ public sealed partial class DungeonSystem
         Random random,
         HashSet<Vector2i>? reservedTiles,
         bool clearExisting = false,
-        bool rotation = false,
-        Angle roomRotation = new()) // Carpmosia-edit - Roomfill improvements
+        bool rotation = false)
     {
         var originTransform = Matrix3Helpers.CreateTranslation(origin.X, origin.Y);
-        // var roomRotation = Angle.Zero; // Carpmosia-edit - Roomfill improvements
+        var roomRotation = Angle.Zero;
 
         if (rotation)
         {
@@ -203,11 +201,11 @@ public sealed partial class DungeonSystem
             var protoId = _metaQuery.GetComponent(templateEnt).EntityPrototype?.ID;
 
             // TODO: Copy the templated entity as is with serv
-            var ent = SpawnAttachedTo(protoId, new EntityCoordinates(gridUid, childPos), null, childRot); // Carpmosia-edit - Fix nested marker rotations
+            var ent = Spawn(protoId, new EntityCoordinates(gridUid, childPos));
 
             var childXform = _xformQuery.GetComponent(ent);
             var anchored = templateXform.Anchored;
-            //_transform.SetLocalRotation(ent, childRot, childXform); // Carpmosia-edit - Fix nested marker rotations
+            _transform.SetLocalRotation(ent, childRot, childXform);
 
             // If the templated entity was anchored then anchor us too.
             if (anchored && !childXform.Anchored)

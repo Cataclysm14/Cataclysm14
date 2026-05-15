@@ -23,10 +23,5 @@ public sealed partial class ShortWhitelistComponent : Component
     public Vector2i? StoredOffset;
 
     [DataField]
-
     public float StoredRotation = 0;
-    [DataField]
-
-    public float StoredScale = 1f;  //Cataclysm14, + StoredScale
-
 }

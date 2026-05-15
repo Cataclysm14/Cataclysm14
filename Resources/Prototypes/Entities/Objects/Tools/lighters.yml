@@ -47,7 +47,7 @@
         basic_icon_base-11: ""
   - type: GenericVisualizer
     visuals:
-      enum.ToggleVisuals.Toggled:
+      enum.ToggleableVisuals.Enabled:
         flame:
           True: { visible: true }
           False: { visible: false }
@@ -173,7 +173,7 @@
   - type: Appearance
   - type: GenericVisualizer
     visuals:
-      enum.ToggleVisuals.Toggled:
+      enum.ToggleableVisuals.Enabled:
         flame:
           True: { visible: true }
           False: { visible: false }

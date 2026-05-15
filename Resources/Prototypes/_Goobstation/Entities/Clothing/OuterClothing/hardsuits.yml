@@ -40,7 +40,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head:  ClothingHeadHelmetHardsuitChronolegioneer
-      faceshield: ClothingHeadfaceshieldBlock
+      helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
 
 - type: entity
@@ -89,7 +89,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head:  ClothingHeadHelmetHardsuitCybersunStealth
-      faceshield: ClothingHeadfaceshieldBlock
+      helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: Tag
     tags:
