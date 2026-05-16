@@ -66,7 +66,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: AmmoBox5.56x45mmUranium
+    - id: AmmoBox5.56x45mmDepletedUranium
       amount: 4
 
 # 7.62x39mm ammo
@@ -127,7 +127,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: AmmoBox7.62x39mmUranium
+    - id: AmmoBox7.62x39mmDepletedUranium
       amount: 4
 
 # .35 pistol ammo
@@ -188,7 +188,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: AmmoBox9x19mmUranium
+    - id: AmmoBox9x19mmDepletedUranium
       amount: 4
 
 - type: entity # EMP

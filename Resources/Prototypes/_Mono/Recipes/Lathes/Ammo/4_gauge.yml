@@ -30,8 +30,8 @@
 
 - type: latheRecipe
   parent: BaseAmmoUraniumFullyPoweredAmmoBoxRecipe
-  id: AmmoBox23x75mmUranium
-  result: AmmoBox23x75mmUranium
+  id: AmmoBox23x75mmDepletedUranium
+  result: AmmoBox23x75mmDepletedUranium
 
 - type: latheRecipe
   parent: BaseAmmoFMJFullyPoweredAmmoBoxRecipe

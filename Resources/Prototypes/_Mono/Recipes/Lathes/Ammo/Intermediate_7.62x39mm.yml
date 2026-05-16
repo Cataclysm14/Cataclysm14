@@ -32,8 +32,8 @@
 
 - type: latheRecipe
   parent: BaseAmmoUraniumIntermediateMagazineRecipe
-  id: Magazine7.62x39mmUranium
-  result: Magazine7.62x39mmUranium
+  id: Magazine7.62x39mmDepletedUranium
+  result: Magazine7.62x39mmDepletedUranium
 
 - type: latheRecipe
   parent: BaseAmmoFMJIntermediateMagazineRecipe
@@ -96,8 +96,8 @@
 
 - type: latheRecipe
   parent: BaseAmmoUraniumIntermediateAmmoBoxRecipe
-  id: AmmoBox7.62x39mmUranium
-  result: AmmoBox7.62x39mmUranium
+  id: AmmoBox7.62x39mmDepletedUranium
+  result: AmmoBox7.62x39mmDepletedUranium
 
 - type: latheRecipe
   parent: BaseAmmoFMJIntermediateAmmoBoxRecipe

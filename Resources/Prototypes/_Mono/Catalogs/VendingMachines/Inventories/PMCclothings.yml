@@ -121,15 +121,15 @@
     ClothingHelmetAttachmentGogglesCoverBlack: 4294967295 # Infinite
     ClothingHelmetAttachmentGogglesCoverRedDigital: 4294967295 # Infinite
     # region Covers
-    ClothingHelmetCoverCCEBase: 4294967295 # Infinite
-    ClothingHelmetCoverCCEDesert: 4294967295 # Infinite
-    ClothingHelmetCoverRedDigital: 4294967295 # Infinite
-    ClothingHelmetCoverHelmetMount: 4294967295 # Infinite
-    ClothingHelmetCoverBlack: 4294967295 # Infinite
-    ClothingHelmetCoverTan: 4294967295 # Infinite
-    ClothingHelmetCoverRangerGreen: 4294967295 # Infinite
-    ClothingHelmetCoverOlive: 4294967295 # Infinite
-    ClothingHelmetCoverWhite: 4294967295 # Infinite
+    ClothingfaceshieldCCEBase: 4294967295 # Infinite
+    ClothingfaceshieldCCEDesert: 4294967295 # Infinite
+    ClothingfaceshieldRedDigital: 4294967295 # Infinite
+    ClothingfaceshieldHelmetMount: 4294967295 # Infinite
+    ClothingfaceshieldBlack: 4294967295 # Infinite
+    ClothingfaceshieldTan: 4294967295 # Infinite
+    ClothingfaceshieldRangerGreen: 4294967295 # Infinite
+    ClothingfaceshieldOlive: 4294967295 # Infinite
+    ClothingfaceshieldWhite: 4294967295 # Infinite
     # region Jumpsuits
     ClothingUniformJumpsuitCombatSuitCCEBasic: 4294967295 # Infinite
     ClothingUniformJumpsuitCombatSuitCCEWorn: 4294967295 # Infinite

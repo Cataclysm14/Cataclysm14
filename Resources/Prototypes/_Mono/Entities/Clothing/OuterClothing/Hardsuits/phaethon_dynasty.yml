@@ -36,7 +36,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHeadHelmetHardsuitPirateScaf
-      helmetcover: ClothingHeadHelmetCoverBlock
+      faceshield: ClothingHeadfaceshieldBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaticPrice
     price: 750
@@ -61,7 +61,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHeadHelmetHardsuitAshen
-      helmetcover: ClothingHeadHelmetCoverBlock
+      faceshield: ClothingHeadfaceshieldBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: Tag
     tags:
@@ -105,7 +105,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHeadHelmetHardsuitPDVMedic
-      helmetcover: ClothingHeadHelmetCoverBlock
+      faceshield: ClothingHeadfaceshieldBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaticPrice
     price: 1500
@@ -130,7 +130,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHeadHelmetHardsuitVizier
-      helmetcover: ClothingHeadHelmetCoverBlock
+      faceshield: ClothingHeadfaceshieldBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: Tag
     tags:
@@ -152,7 +152,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHeadHelmetHardsuitAshenElite
-      helmetcover: ClothingHeadHelmetCoverBlock
+      faceshield: ClothingHeadfaceshieldBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: ExplosionResistance
     damageCoefficient: 0.3

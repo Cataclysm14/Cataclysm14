@@ -10,16 +10,16 @@
     # - id: NFBlueprintAmmoBox12_gaugeUranium # While funny I think we should move this to events
       # prob: 0.2
       # orGroup: Blueprints
-    # - id: NFBlueprintAmmoBox5.56x45mmUranium
+    # - id: NFBlueprintAmmoBox5.56x45mmDepletedUranium
       # prob: 0.2
       # orGroup: Blueprints
-    # - id: NFBlueprintAmmoBox7.62x39mmUranium
+    # - id: NFBlueprintAmmoBox7.62x39mmDepletedUranium
       # prob: 0.2
       # orGroup: Blueprints
     # - id: NFBlueprintAmmoBox45_magnumUranium
       # prob: 0.2
       # orGroup: Blueprints
-    # - id: NFBlueprintAmmoBox9x19mmUranium
+    # - id: NFBlueprintAmmoBox9x19mmDepletedUranium
       # prob: 0.2
       # orGroup: Blueprints
     # - id: NFBlueprintAmmoBox12_gaugeIncendiary

@@ -159,36 +159,36 @@
 - type: technology
   id: UraniumMunitions
   name: research-technology-uranium-munitions
-  entityIcon: AmmoBox9x19mmUranium
+  entityIcon: AmmoBox9x19mmDepletedUranium
   discipline: FactionUniversal
   tier: 2
   cost: 30000
   recipeUnlocks:
-  - AmmoBox23x75mmUranium
+  - AmmoBox23x75mmDepletedUranium
   - Magazine12_gaugeUranium
   - AmmoBox12_gaugeUranium
-  - Magazine7.62x51mmUranium
-  - AmmoBox7.62x51mmUranium
+  - Magazine7.62x51mmDepletedUranium
+  - AmmoBox7.62x51mmDepletedUranium
   - Magazine7.62x54mmRUranium
   - AmmoBox7.62x54mmRUranium
-  - Magazine5.56x45mmUranium
-  - SpeedLoader5.56x45mmUranium
-  - AmmoBox5.56x45mmUranium
-  - Magazine7.62x39mmUranium
-  - AmmoBox7.62x39mmUranium
+  - Magazine5.56x45mmDepletedUranium
+  - SpeedLoader5.56x45mmDepletedUranium
+  - AmmoBox5.56x45mmDepletedUranium
+  - Magazine7.62x39mmDepletedUranium
+  - AmmoBox7.62x39mmDepletedUranium
   - Magazine45_magnumPistolUranium
   - SpeedLoader45_magnumUranium
   - AmmoBox45_magnumUranium
   - Magazine4.6x30mmPistolUranium
   - Magazine4.6x30mmSubMachineGunUranium
-  - AmmoBox4.6x30mmUranium
+  - AmmoBox4.6x30mmDepletedUranium
   - Magazine5.7x28mmPistolUranium
   - Magazine5.7x28mmSubMachineGunUranium
-  - AmmoBox5.7x28mmUranium
+  - AmmoBox5.7x28mmDepletedUranium
   - Magazine9x19mmPistolUranium
   - Magazine9x19mmSubMachineGunUranium
-  - SpeedLoader9x19mmUranium
-  - AmmoBox9x19mmUranium
+  - SpeedLoader9x19mmDepletedUranium
+  - AmmoBox9x19mmDepletedUranium
   - Magazine45_ACPPistolUranium
   - Magazine45_ACPSubMachineGunUranium
   - AmmoBox45_ACPUranium

@@ -127,9 +127,9 @@
       uiWindowPos: 0,2
       strippingWindowPos: 3,2
       displayName: Right_armband
-    - name: helmetcover
+    - name: faceshield
       slotTexture: helmet_cover
-      slotFlags: HELMETCOVER
+      slotFlags: faceshield
       stripTime: 3
       uiWindowPos: 1,5
       strippingWindowPos: 3,3

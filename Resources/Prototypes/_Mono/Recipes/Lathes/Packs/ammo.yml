@@ -8,7 +8,7 @@
   - AmmoBox23x75mmIncendiary
   - AmmoBox23x75mmFlashbang
   - AmmoBox23x75mmPractice
-  - AmmoBox23x75mmUranium
+  - AmmoBox23x75mmDepletedUranium
   - AmmoBox23x75mmSlug
   - AmmoBox23x75mmDozd
   - AmmoBox23x75mmSlugRIP
@@ -42,7 +42,7 @@
   - Magazine7.62x51mmIncendiary
   - Magazine7.62x51mmPractice
   - Magazine7.62x51mmEmpty
-  - Magazine7.62x51mmUranium
+  - Magazine7.62x51mmDepletedUranium
   - Magazine7.62x51mmHP
   - Magazine7.62x51mmRIP
   - AmmoBox7.62x51mmFMJ
@@ -50,7 +50,7 @@
   - AmmoBox7.62x51mmRubber
   - AmmoBox7.62x51mmIncendiary
   - AmmoBox7.62x51mmPractice
-  - AmmoBox7.62x51mmUranium
+  - AmmoBox7.62x51mmDepletedUranium
   - AmmoBox7.62x51mmHP
   - AmmoBox7.62x51mmRIP
   - Magazine7.62x54mmRFMJ
@@ -85,7 +85,7 @@
   - Magazine5.56x45mmIncendiary
   - Magazine5.56x45mmPractice
   - Magazine5.56x45mmEmpty
-  - Magazine5.56x45mmUranium
+  - Magazine5.56x45mmDepletedUranium
   - Magazine5.56x45mmHP
   - Magazine5.56x45mmRIP
   - SpeedLoader5.56x45mmFMJ
@@ -93,13 +93,13 @@
   - SpeedLoader5.56x45mmIncendiary
   - SpeedLoader5.56x45mmPractice
   - SpeedLoader5.56x45mmEmpty
-  - SpeedLoader5.56x45mmUranium
+  - SpeedLoader5.56x45mmDepletedUranium
   - AmmoBox5.56x45mmFMJ
   - AmmoBox5.56x45mmPlasteelAP
   - AmmoBox5.56x45mmRubber
   - AmmoBox5.56x45mmIncendiary
   - AmmoBox5.56x45mmPractice
-  - AmmoBox5.56x45mmUranium
+  - AmmoBox5.56x45mmDepletedUranium
   - AmmoBox5.56x45mmHP
   - AmmoBox5.56x45mmRIP
   - Magazine7.62x39mmFMJ
@@ -108,7 +108,7 @@
   - Magazine7.62x39mmIncendiary
   - Magazine7.62x39mmPractice
   - Magazine7.62x39mmEmpty
-  - Magazine7.62x39mmUranium
+  - Magazine7.62x39mmDepletedUranium
   - MagazineDP29
   - Magazine7.62x39mmSubsonic
   - Magazine7.62x39mmHP
@@ -119,7 +119,7 @@
   - AmmoBox7.62x39mmRubber
   - AmmoBox7.62x39mmIncendiary
   - AmmoBox7.62x39mmPractice
-  - AmmoBox7.62x39mmUranium
+  - AmmoBox7.62x39mmDepletedUranium
   - AmmoBox7.62x39mmSubsonic
   - AmmoBox7.62x39mmHP
   - AmmoBox7.62x39mmRIP
@@ -178,7 +178,7 @@
   - AmmoBox4.6x30mmRubber
   - AmmoBox4.6x30mmIncendiary
   - AmmoBox4.6x30mmPractice
-  - AmmoBox4.6x30mmUranium
+  - AmmoBox4.6x30mmDepletedUranium
   - AmmoBox4.6x30mmHP
   - AmmoBox4.6x30mmRIP
   - Magazine5.7x28mmPistolFMJ
@@ -206,7 +206,7 @@
   - AmmoBox5.7x28mmRubber
   - AmmoBox5.7x28mmIncendiary
   - AmmoBox5.7x28mmPractice
-  - AmmoBox5.7x28mmUranium
+  - AmmoBox5.7x28mmDepletedUranium
   - AmmoBox5.7x28mmHP
   - AmmoBox5.7x28mmRIP
   - Magazine6.35x40mmCaseless
@@ -236,13 +236,13 @@
   - SpeedLoader9x19mmIncendiary
   - SpeedLoader9x19mmPractice
   - SpeedLoader9x19mmEmpty
-  - SpeedLoader9x19mmUranium
+  - SpeedLoader9x19mmDepletedUranium
   - AmmoBox9x19mmFMJ
   - AmmoBox9x19mmPlasteelAP
   - AmmoBox9x19mmRubber
   - AmmoBox9x19mmIncendiary
   - AmmoBox9x19mmPractice
-  - AmmoBox9x19mmUranium
+  - AmmoBox9x19mmDepletedUranium
   - AmmoBox9x19mmHP
   - AmmoBox9x19mmRIP
   - Magazine45_ACPPistolFMJ
@@ -286,31 +286,31 @@
 
 #Uranium recipes
 
-  - AmmoBox23x75mmUranium
+  - AmmoBox23x75mmDepletedUranium
   - Magazine12_gaugeUranium
   - AmmoBox12_gaugeUranium
-  - Magazine7.62x51mmUranium
-  - AmmoBox7.62x51mmUranium
+  - Magazine7.62x51mmDepletedUranium
+  - AmmoBox7.62x51mmDepletedUranium
   - Magazine7.62x54mmRUranium
   - AmmoBox7.62x54mmRUranium
-  - Magazine5.56x45mmUranium
-  - SpeedLoader5.56x45mmUranium
-  - AmmoBox5.56x45mmUranium
-  - Magazine7.62x39mmUranium
-  - AmmoBox7.62x39mmUranium
+  - Magazine5.56x45mmDepletedUranium
+  - SpeedLoader5.56x45mmDepletedUranium
+  - AmmoBox5.56x45mmDepletedUranium
+  - Magazine7.62x39mmDepletedUranium
+  - AmmoBox7.62x39mmDepletedUranium
   - Magazine45_magnumPistolUranium
   - SpeedLoader45_magnumUranium
   - AmmoBox45_magnumUranium
   - Magazine4.6x30mmPistolUranium
   - Magazine4.6x30mmSubMachineGunUranium
-  - AmmoBox4.6x30mmUranium
+  - AmmoBox4.6x30mmDepletedUranium
   - Magazine5.7x28mmPistolUranium
   - Magazine5.7x28mmSubMachineGunUranium
-  - AmmoBox5.7x28mmUranium
+  - AmmoBox5.7x28mmDepletedUranium
   - Magazine9x19mmPistolUranium
   - Magazine9x19mmSubMachineGunUranium
-  - SpeedLoader9x19mmUranium
-  - AmmoBox9x19mmUranium
+  - SpeedLoader9x19mmDepletedUranium
+  - AmmoBox9x19mmDepletedUranium
   - Magazine45_ACPPistolUranium
   - Magazine45_ACPSubMachineGunUranium
   - AmmoBox45_ACPUranium
@@ -770,31 +770,31 @@
   recipes:
 #Uranium recipes
 
-  - AmmoBox23x75mmUranium
+  - AmmoBox23x75mmDepletedUranium
   - Magazine12_gaugeUranium
   - AmmoBox12_gaugeUranium
-  - Magazine7.62x51mmUranium
-  - AmmoBox7.62x51mmUranium
+  - Magazine7.62x51mmDepletedUranium
+  - AmmoBox7.62x51mmDepletedUranium
   - Magazine7.62x54mmRUranium
   - AmmoBox7.62x54mmRUranium
-  - Magazine5.56x45mmUranium
-  - SpeedLoader5.56x45mmUranium
-  - AmmoBox5.56x45mmUranium
-  - Magazine7.62x39mmUranium
-  - AmmoBox7.62x39mmUranium
+  - Magazine5.56x45mmDepletedUranium
+  - SpeedLoader5.56x45mmDepletedUranium
+  - AmmoBox5.56x45mmDepletedUranium
+  - Magazine7.62x39mmDepletedUranium
+  - AmmoBox7.62x39mmDepletedUranium
   - Magazine45_magnumPistolUranium
   - SpeedLoader45_magnumUranium
   - AmmoBox45_magnumUranium
   - Magazine4.6x30mmPistolUranium
   - Magazine4.6x30mmSubMachineGunUranium
-  - AmmoBox4.6x30mmUranium
+  - AmmoBox4.6x30mmDepletedUranium
   - Magazine5.7x28mmPistolUranium
   - Magazine5.7x28mmSubMachineGunUranium
-  - AmmoBox5.7x28mmUranium
+  - AmmoBox5.7x28mmDepletedUranium
   - Magazine9x19mmPistolUranium
   - Magazine9x19mmSubMachineGunUranium
-  - SpeedLoader9x19mmUranium
-  - AmmoBox9x19mmUranium
+  - SpeedLoader9x19mmDepletedUranium
+  - AmmoBox9x19mmDepletedUranium
   - Magazine45_ACPPistolUranium
   - Magazine45_ACPSubMachineGunUranium
   - AmmoBox45_ACPUranium

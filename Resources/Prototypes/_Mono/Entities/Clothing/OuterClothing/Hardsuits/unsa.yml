@@ -35,7 +35,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHeadHelmetHardsuitUNSAArmoredEva
-      helmetcover: ClothingHeadHelmetCoverBlock
+      faceshield: ClothingHeadfaceshieldBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaticPrice
     price: 500

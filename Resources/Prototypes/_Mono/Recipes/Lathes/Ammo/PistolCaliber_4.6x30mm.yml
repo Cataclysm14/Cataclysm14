@@ -131,8 +131,8 @@
 
 - type: latheRecipe
   parent: BaseAmmoUraniumPistolCaliberAmmoBoxRecipe
-  id: AmmoBox4.6x30mmUranium
-  result: AmmoBox4.6x30mmUranium
+  id: AmmoBox4.6x30mmDepletedUranium
+  result: AmmoBox4.6x30mmDepletedUranium
 
 - type: latheRecipe
   parent: BaseAmmoHPPistolCaliberAmmoBoxRecipe
