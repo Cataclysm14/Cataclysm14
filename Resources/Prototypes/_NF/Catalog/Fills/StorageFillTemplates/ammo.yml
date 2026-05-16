@@ -371,5 +371,5 @@
   components:
   - type: StorageFill
     contents:
-    - id: AmmoBox45_magnumUranium
+    - id: AmmoBox45_magnumDepletedUranium
       amount: 4

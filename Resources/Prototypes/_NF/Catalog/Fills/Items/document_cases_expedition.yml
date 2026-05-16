@@ -16,7 +16,7 @@
     # - id: NFBlueprintAmmoBox7.62x39mmDepletedUranium
       # prob: 0.2
       # orGroup: Blueprints
-    # - id: NFBlueprintAmmoBox45_magnumUranium
+    # - id: NFBlueprintAmmoBox45_magnumDepletedUranium
       # prob: 0.2
       # orGroup: Blueprints
     # - id: NFBlueprintAmmoBox9x19mmDepletedUranium

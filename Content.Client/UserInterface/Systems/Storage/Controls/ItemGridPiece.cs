@@ -169,7 +169,7 @@ public sealed class ItemGridPiece : Control, IEntityControl
 
         if (itemComponent.StoredSprite is { } storageSprite)
         {
-            var scale = 2 * UIScale;
+            var scale = 2 * UIScale * itemComponent.StoredScale;
             var offset = (((Box2) boundingGrid).Size - Vector2.One) * size;
             var sprite = _entityManager.System<SpriteSystem>().Frame0(storageSprite);
 
@@ -189,7 +189,7 @@ public sealed class ItemGridPiece : Control, IEntityControl
             _entityManager.System<SpriteSystem>().ForceUpdate(Entity);
             handle.DrawEntity(Entity,
                 PixelPosition + iconPosition,
-                Vector2.One * 2 * UIScale,
+                Vector2.One * 2 * UIScale * itemComponent.StoredScale,
                 Angle.Zero,
                 eyeRotation: iconRotation,
                 overrideDirection: Direction.South);

@@ -138,14 +138,14 @@
   - SpeedLoader45_magnumIncendiary
   - SpeedLoader45_magnumPractice
   - SpeedLoader45_magnumEmpty
-  - SpeedLoader45_magnumUranium
+  - SpeedLoader45_magnumDepletedUranium
   - SpeedLoader45_magnumHP
   - SpeedLoader45_magnumRIP
   - AmmoBox45_magnumPlasteelAP
   - AmmoBox45_magnumRubber
   - AmmoBox45_magnumIncendiary
   - AmmoBox45_magnumPractice
-  - AmmoBox45_magnumUranium
+  - AmmoBox45_magnumDepletedUranium
   - AmmoBox45_magnumAP
   - AmmoBox45_magnumHP
   - AmmoBox45_magnumRIP
@@ -270,7 +270,7 @@
   - AmmoBox45_ACPRubber
   - AmmoBox45_ACPIncendiary
   - AmmoBox45_ACPPractice
-  - AmmoBox45_ACPUranium
+  - AmmoBox45_ACPDepletedUranium
   - AmmoBox45_ACPHP
   - AmmoBox45_ACPRIP
   - CartridgeRocket
@@ -299,8 +299,8 @@
   - Magazine7.62x39mmDepletedUranium
   - AmmoBox7.62x39mmDepletedUranium
   - Magazine45_magnumPistolUranium
-  - SpeedLoader45_magnumUranium
-  - AmmoBox45_magnumUranium
+  - SpeedLoader45_magnumDepletedUranium
+  - AmmoBox45_magnumDepletedUranium
   - Magazine4.6x30mmPistolUranium
   - Magazine4.6x30mmSubMachineGunUranium
   - AmmoBox4.6x30mmDepletedUranium
@@ -313,7 +313,7 @@
   - AmmoBox9x19mmDepletedUranium
   - Magazine45_ACPPistolUranium
   - Magazine45_ACPSubMachineGunUranium
-  - AmmoBox45_ACPUranium
+  - AmmoBox45_ACPDepletedUranium
 
 #Empty recipes
 
@@ -783,8 +783,8 @@
   - Magazine7.62x39mmDepletedUranium
   - AmmoBox7.62x39mmDepletedUranium
   - Magazine45_magnumPistolUranium
-  - SpeedLoader45_magnumUranium
-  - AmmoBox45_magnumUranium
+  - SpeedLoader45_magnumDepletedUranium
+  - AmmoBox45_magnumDepletedUranium
   - Magazine4.6x30mmPistolUranium
   - Magazine4.6x30mmSubMachineGunUranium
   - AmmoBox4.6x30mmDepletedUranium
@@ -797,7 +797,7 @@
   - AmmoBox9x19mmDepletedUranium
   - Magazine45_ACPPistolUranium
   - Magazine45_ACPSubMachineGunUranium
-  - AmmoBox45_ACPUranium
+  - AmmoBox45_ACPDepletedUranium
 
 #Incendiary recipes
 

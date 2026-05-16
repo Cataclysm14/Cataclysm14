@@ -25,22 +25,23 @@ namespace Content.Server.SizeAttribute
             if (component.Tall && TryComp<TallWhitelistComponent>(uid, out var tallComp))
             {
                 Scale(uid, component, tallComp.Scale, tallComp.Density, tallComp.CosmeticOnly);
-                PseudoItem(uid, component, tallComp.PseudoItem, tallComp.Shape, tallComp.StoredOffset, tallComp.StoredRotation);
+                PseudoItem(uid, component, tallComp.PseudoItem, tallComp.Shape, tallComp.StoredOffset, tallComp.StoredRotation, tallComp.StoredScale); //Cataclysm14, + StoredScale
             }
             else if (component.Short && TryComp<ShortWhitelistComponent>(uid, out var shortComp))
             {
                 Scale(uid, component, shortComp.Scale, shortComp.Density, shortComp.CosmeticOnly);
-                PseudoItem(uid, component, shortComp.PseudoItem, shortComp.Shape, shortComp.StoredOffset, shortComp.StoredRotation);
+                PseudoItem(uid, component, shortComp.PseudoItem, shortComp.Shape, shortComp.StoredOffset, shortComp.StoredRotation, shortComp.StoredScale);  //Cataclysm14, + StoredScale
             }
         }
 
-        private void PseudoItem(EntityUid uid, SizeAttributeComponent _, bool active, List<Box2i>? shape, Vector2i? storedOffset, float storedRotation)
+        private void PseudoItem(EntityUid uid, SizeAttributeComponent _, bool active, List<Box2i>? shape, Vector2i? storedOffset, float storedRotation, float storedScale) //Cataclysm14, + StoredScale
         {
             if (active)
             {
                 var pseudoI = _entityManager.EnsureComponent<PseudoItemComponent>(uid);
 
                 pseudoI.StoredRotation = storedRotation;
+                pseudoI.StoredScale = storedScale; //Cataclysm14, + StoredScale
                 pseudoI.StoredOffset = storedOffset ?? new(0, 17);
                 pseudoI.Shape = shape ?? new List<Box2i>
                 {

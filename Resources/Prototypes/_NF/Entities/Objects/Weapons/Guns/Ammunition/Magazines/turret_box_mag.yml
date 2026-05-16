@@ -16,7 +16,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge9x19mmFMJ
+        - Cartridge9x19mm
         - Cartridge5.56x45mm
         - Cartridge7.62x39mm
         - Cartridge6.35x40mmCaseless

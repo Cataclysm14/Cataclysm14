@@ -79,8 +79,8 @@
 
 - type: latheRecipe
   parent: BaseAmmoUraniumIntermediateSpeedloaderRecipe
-  id: SpeedLoader45_magnumUranium
-  result: SpeedLoader45_magnumUranium
+  id: SpeedLoader45_magnumDepletedUranium
+  result: SpeedLoader45_magnumDepletedUranium
 
 - type: latheRecipe
   parent: BaseAmmoHPIntermediateSpeedloaderRecipe
@@ -121,8 +121,8 @@
 
 - type: latheRecipe
   parent: BaseAmmoUraniumIntermediateMagazineRecipe
-  id: AmmoBox45_magnumUranium
-  result: AmmoBox45_magnumUranium
+  id: AmmoBox45_magnumDepletedUranium
+  result: AmmoBox45_magnumDepletedUranium
 
 - type: latheRecipe
   parent: BaseAmmoFMJIntermediateMagazineRecipe

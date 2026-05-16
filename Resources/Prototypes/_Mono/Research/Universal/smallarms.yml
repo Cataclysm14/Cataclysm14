@@ -177,8 +177,8 @@
   - Magazine7.62x39mmDepletedUranium
   - AmmoBox7.62x39mmDepletedUranium
   - Magazine45_magnumPistolUranium
-  - SpeedLoader45_magnumUranium
-  - AmmoBox45_magnumUranium
+  - SpeedLoader45_magnumDepletedUranium
+  - AmmoBox45_magnumDepletedUranium
   - Magazine4.6x30mmPistolUranium
   - Magazine4.6x30mmSubMachineGunUranium
   - AmmoBox4.6x30mmDepletedUranium
@@ -191,7 +191,7 @@
   - AmmoBox9x19mmDepletedUranium
   - Magazine45_ACPPistolUranium
   - Magazine45_ACPSubMachineGunUranium
-  - AmmoBox45_ACPUranium
+  - AmmoBox45_ACPDepletedUranium
   technologyPrerequisites:
   - UniversalPlastitaniumCore
   position: 7, 4

@@ -51,6 +51,12 @@ public sealed partial class ItemComponent : Component
     public SpriteSpecifier? StoredSprite;
 
     /// <summary>
+    /// The scale of the shown sprite in storage UI.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public float StoredScale { get; set; } = 1.0f;
+
+    /// <summary>
     /// An additional angle offset, in degrees, applied to the visual depiction of the item when displayed in the storage UI.
     /// </summary>
     [DataField, AutoNetworkedField]

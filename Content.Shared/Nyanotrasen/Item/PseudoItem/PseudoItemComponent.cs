@@ -26,6 +26,8 @@ public sealed partial class PseudoItemComponent : Component
     [DataField, AutoNetworkedField] // Frontier
     public float StoredRotation; // Frontier
 
+    [DataField, AutoNetworkedField] //Cataclysm14
+    public float StoredScale; //Cataclysm14
     public bool Active = false;
 
     /// <summary>

@@ -51,7 +51,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge9x19mmFMJ
+            - Cartridge9x19mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

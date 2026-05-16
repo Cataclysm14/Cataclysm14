@@ -24,4 +24,7 @@ public sealed partial class TallWhitelistComponent : Component
 
     [DataField]
     public float StoredRotation = 0;
+
+    [DataField]
+    public float StoredScale = 1f;  //Cataclysm14, + StoredScale
 }
