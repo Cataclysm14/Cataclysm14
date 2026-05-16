@@ -31,7 +31,7 @@
     proto: Cartridge7.62x39mmFMJ
     whitelist:
       tags:
-      - Cartridge7.62x39mmFMJ
+      - Cartridge7.62x39mm
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -74,7 +74,7 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - Cartridge7.62x54mmRFMJ
+      - Cartridge7.62x54mmR
     capacity: 5
     proto: Cartridge7.62x54mmRFMJ
   - type: PirateBountyItem # Mono

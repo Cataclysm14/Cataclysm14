@@ -44,7 +44,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x39mmFMJ
+            - Cartridge7.62x39mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -189,7 +189,7 @@
         priority: 1
         whitelist:
           tags:
-          - Cartridge7.62x39mmFMJ
+          - Cartridge7.62x39mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -275,8 +275,8 @@
         whitelist:
           tags:
           - Cartridge6.8x52mmCaseless
-          - Cartridge5.56x45mmFMJ
-          - Cartridge7.62x39mmFMJ
+          - Cartridge5.56x45mm
+          - Cartridge7.62x39mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -363,7 +363,7 @@
         priority: 1
         whitelist:
           tags:
-          - Cartridge7.62x51mmFMJ
+          - Cartridge7.62x51mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

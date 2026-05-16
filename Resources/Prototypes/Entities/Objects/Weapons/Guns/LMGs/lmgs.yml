@@ -56,7 +56,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x39mmFMJ
+            - Cartridge7.62x39mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

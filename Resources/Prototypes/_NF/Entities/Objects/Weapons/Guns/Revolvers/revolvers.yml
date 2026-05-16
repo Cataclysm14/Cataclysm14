@@ -15,7 +15,7 @@
   - type: RevolverAmmoProvider
     whitelist:
       tags:
-        - Cartridge5.56x45mmFMJ
+        - Cartridge5.56x45mm
         - SpeedLoader5.56x45mmFMJ
     capacity: 8
     proto: Cartridge5.56x45mmFMJ

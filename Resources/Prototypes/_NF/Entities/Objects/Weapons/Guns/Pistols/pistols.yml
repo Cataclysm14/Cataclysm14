@@ -21,7 +21,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge45_ACPFMJ
+            - Cartridge45_ACP
 
 - type: entity
   name: N1984 (.45 magnum)
@@ -46,4 +46,4 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge45_magnumFMJ
+            - Cartridge45_magnum

@@ -5,6 +5,9 @@
   - type: Tag
     id: Cartridge7.62x51mm
 
+  - type: Tag
+    id: MagazineBox7.62x51mmLMGCompatible
+
   #MARK: 7.62x54mmR
 
   - type: Tag
@@ -28,9 +31,6 @@
 
   - type: Tag
     id: MagazineBox5.56x45mmLMGCompatible
-
-  - type: Tag
-    id: MagazineBox7.62x51mmLMGCompatible
 
   #MARK: 7.62x39mm
 

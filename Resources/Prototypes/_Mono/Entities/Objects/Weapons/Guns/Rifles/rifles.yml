@@ -117,7 +117,7 @@
         priority: 1
         whitelist:
           tags:
-          - Cartridge7.62x39mmFMJ
+          - Cartridge7.62x39mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -186,7 +186,7 @@
         priority: 1
         whitelist:
           tags:
-          - Cartridge5.56x45mmFMJ
+          - Cartridge5.56x45mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -247,7 +247,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x51mmFMJ
+            - Cartridge7.62x51mm
   - type: StaticPrice
     price: 1200
     vendPrice: 30000
@@ -311,7 +311,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.56x45mmFMJ # Mono
+            - Cartridge5.56x45mm # Mono
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -460,7 +460,7 @@
         whitelist:
           tags:
             - Cartridge6.8x52mmCaseless
-            - Cartridge5.56x45mmFMJ
+            - Cartridge5.56x45mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

@@ -77,7 +77,7 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - ShellShotgun12_gaugeBuckshot
+      - ShellShotgun12_gauge
     capacity: 6
     proto: ShellShotgun12_gaugeBuckshot
   - type: ContainerContainer
@@ -153,7 +153,7 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - ShellShotgun23x75mmBuckshot
+      - ShellShotgun23x75mm
     capacity: 6
     proto: ShellShotgun23x75mmBuckshot
   - type: ContainerContainer

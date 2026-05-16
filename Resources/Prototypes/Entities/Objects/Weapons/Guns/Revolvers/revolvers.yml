@@ -38,7 +38,7 @@
   - type: RevolverAmmoProvider
     whitelist:
       tags:
-        - Cartridge45_magnumFMJ
+        - Cartridge45_magnum
         - SpeedLoader45_magnumFMJ
     mayTransfer: true # Frontier
     proto: Cartridge45_magnumFMJ
@@ -190,7 +190,7 @@
   - type: RevolverAmmoProvider
     whitelist:
       tags:
-        - Cartridge45_magnumFMJ
+        - Cartridge45_magnum
         - SpeedLoader45_magnumFMJ
     proto: Cartridge45_magnumAP
 

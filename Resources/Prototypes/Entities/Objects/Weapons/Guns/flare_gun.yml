@@ -20,7 +20,7 @@
         priority: 1
         whitelist:
           tags: ## TODO: Add a risk of the gun blowing up if using non-light shotgun shells, and then re-enable them.
-            ## - ShellShotgun12_gaugeBuckshot
+            ## - ShellShotgun12_gauge
             - ShellShotgun12_gaugeLight
   - type: ContainerContainer
     containers:
@@ -88,7 +88,7 @@
         priority: 1
         whitelist:
           tags:
-            - ShellShotgun12_gaugeBuckshot
+            - ShellShotgun12_gauge
   - type: Tag
     tags:
     - Sidearm

@@ -49,7 +49,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x51mmFMJ
+            - Cartridge7.62x51mm
 
 # Frontier
 - type: entity
@@ -99,7 +99,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x39mmFMJ
+            - Cartridge7.62x39mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -133,7 +133,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x39mmFMJ
+            - Cartridge7.62x39mm
 
 - type: entity
   parent: BaseWeaponRifle
@@ -177,7 +177,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.56x45mmFMJ
+            - Cartridge5.56x45mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -211,7 +211,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.56x45mmFMJ
+            - Cartridge5.56x45mm
 
 - type: entity
   id: WeaponRifleSVS
@@ -260,7 +260,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x54mmRFMJ
+            - Cartridge7.62x54mmR
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -330,7 +330,7 @@
         priority: 1
         whitelist:
           tags:
-          - Cartridge7.62x39mmFMJ
+          - Cartridge7.62x39mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

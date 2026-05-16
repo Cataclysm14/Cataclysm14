@@ -45,7 +45,7 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - ShellShotgun23x75mmBuckshot
+        - ShellShotgun23x75mm
     capacity: 1
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg

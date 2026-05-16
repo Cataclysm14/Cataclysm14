@@ -32,7 +32,7 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - ShellShotgun12_gaugeBuckshot
+      - ShellShotgun12_gauge
     capacity: 7
     proto: ShellShotgun12_gaugeBuckshot
     soundInsert:

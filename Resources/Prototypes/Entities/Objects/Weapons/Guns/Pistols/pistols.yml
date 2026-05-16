@@ -287,7 +287,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge45_ACPFMJ
+            - Cartridge45_ACP
   - type: StaticPrice # Mono
     price: 150
 
@@ -334,4 +334,4 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge45_magnumFMJ
+            - Cartridge45_magnum

@@ -43,7 +43,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge45_ACPFMJ
+            - Cartridge45_ACP
   - type: MagazineVisuals
     magState: mag
     steps: 1

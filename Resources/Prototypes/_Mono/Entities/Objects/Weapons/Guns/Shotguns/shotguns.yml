@@ -25,7 +25,7 @@
     autoCycle: false
     whitelist:
       tags:
-      - ShellShotgun23x75mmBuckshot
+      - ShellShotgun23x75mm
     capacity: 6
     proto: ShellShotgun23x75mmBuckshot
     soundInsert:
@@ -63,7 +63,7 @@
     autoCycle: true
     whitelist:
       tags:
-      - ShellShotgun23x75mmBuckshot
+      - ShellShotgun23x75mm
     capacity: 3
     proto: ShellShotgun23x75mmBuckshot
     soundInsert:
@@ -106,7 +106,7 @@
     autoCycle: false
     whitelist:
       tags:
-      - ShellShotgun23x75mmBuckshot
+      - ShellShotgun23x75mm
     capacity: 6
     proto: ShellShotgun23x75mmBuckshot
     soundInsert:
@@ -177,7 +177,7 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - ShellShotgun23x75mmBuckshot
+      - ShellShotgun23x75mm
     capacity: 8
     proto: ShellShotgun23x75mmBuckshot
     soundInsert:
