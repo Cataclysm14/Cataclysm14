@@ -609,7 +609,7 @@
       - !type:AllSelector
         children:
         - id: WeaponRifleGestio
-        - id: Magazine762x39mmLowCapacityFMJ
+        - id: Magazine7.62x39mmLowCapacityFMJ
       #DoubleBarrel
       - !type:AllSelector
         children:
@@ -629,20 +629,20 @@
       - !type:AllSelector
         children:
         - id: WeaponRevolverArgenti
-        - id: SpeedLoader556x45mmFMJ
+        - id: SpeedLoader5.56x45mmFMJ
       #Mosin
       - !type:AllSelector
         children:
         - id: WeaponSniperMosin
-        - id: AmmoBox762x54mmRFMJ
+        - id: AmmoBox7.62x54mmRFMJ
       #SVS
       - !type:AllSelector
         children:
         - id: WeaponRifleSVS
-        - id: Magazine762x54mmRFMJ
+        - id: Magazine7.62x54mmRFMJ
       - id: WeaponLaserPistolNF
       - id: WeaponLaserCarbine
-      
+
 #LootSpawner
 - type: entity
   name: Mono Maint Loot Spawner

@@ -30,21 +30,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine762x39mmFMJ
+        startingItem: Magazine7.62x39mmFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine762x39mmFMJ
+            - Magazine7.62x39mmFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge762x39mmFMJ
+        startingItem: Cartridge7.62x39mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge762x39mmFMJ
+            - Cartridge7.62x39mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -98,22 +98,22 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine762x39mmFMJ
+        startingItem: Magazine7.62x39mmFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine762x39mmFMJ
-            - Magazine762x39mmLowCapacityFMJ
+            - Magazine7.62x39mmFMJ
+            - Magazine7.62x39mmLowCapacityFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge762x39mmFMJ
+        startingItem: Cartridge7.62x39mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge762x39mmFMJ
+            - Cartridge7.62x39mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -154,23 +154,23 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine68x52mmCaseless # Mono
+        startingItem: Magazine6.8x52mmCaseless # Mono
         insertSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/m16_magin.ogg # Mono
         ejectSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagOut/skm_magout.ogg # Mono
         priority: 2
         whitelist:
           tags:
-            - Magazine68x52mmCaseless # Mono
-            - Magazine556x45mmFMJ # Mono
+            - Magazine6.8x52mmCaseless # Mono
+            - Magazine5.56x45mmFMJ # Mono
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge68x52mmCaseless # Mono
+        startingItem: Cartridge6.8x52mmCaseless # Mono
         priority: 1
         whitelist:
           tags:
-            - Cartridge68x52mmCaseless # Mono
-            - Cartridge556x45mmFMJ # Mono
+            - Cartridge6.8x52mmCaseless # Mono
+            - Cartridge5.56x45mmFMJ # Mono
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

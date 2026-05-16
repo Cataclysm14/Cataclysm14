@@ -103,21 +103,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine762x39mmFMJ
+        startingItem: Magazine7.62x39mmFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/sfrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/hpistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - Magazine762x39mmFMJ
+          - Magazine7.62x39mmFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge762x39mmFMJ
+        startingItem: Cartridge7.62x39mmFMJ
         priority: 1
         whitelist:
           tags:
-          - Cartridge762x39mmFMJ
+          - Cartridge7.62x39mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -172,21 +172,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine556x45mmFMJ
+        startingItem: Magazine5.56x45mmFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/sfrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/hpistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - Magazine556x45mmFMJ
+          - Magazine5.56x45mmFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge556x45mmFMJ
+        startingItem: Cartridge5.56x45mmFMJ
         priority: 1
         whitelist:
           tags:
-          - Cartridge556x45mmFMJ
+          - Cartridge5.56x45mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -207,7 +207,7 @@
   name: HWM FCM-C "Vulcan" (7.62x51mm)
   parent: WeaponRifleVulcan
   id: WeaponRifleVulcanFCMC
-  description: The Herstal Weapon Manufacture "Vulcan" Civilian Medium combat rifle (Fusil de Combat Moyen Civil) in 762x51mm, this civilian version only has semi-automatic mode and reduced firerate.
+  description: The Herstal Weapon Manufacture "Vulcan" Civilian Medium combat rifle (Fusil de Combat Moyen Civil) in 7.62x51mm, this civilian version only has semi-automatic mode and reduced firerate.
   components:
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Rifles/WeaponRifleVulcanFCMC.rsi
@@ -232,22 +232,22 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine762x51mmFMJ
+        startingItem: Magazine7.62x51mmFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine762x51mmFMJ
-            - Magazine762x51mmLowCapacityFMJ
+            - Magazine7.62x51mmFMJ
+            - Magazine7.62x51mmLowCapacityFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge762x51mmFMJ
+        startingItem: Cartridge7.62x51mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge762x51mmFMJ
+            - Cartridge7.62x51mmFMJ
   - type: StaticPrice
     price: 1200
     vendPrice: 30000
@@ -257,7 +257,7 @@
   name: HWM FCL "Prometheus" (5.56x45mm)
   parent: BaseWeaponRifle
   id: WeaponRiflePrometheus
-  description: The Herstal Weapon Manufacture "Prometheus" Light combat rifle (Fusil de Combat Léger) in 556x45mm. Made to be mass producable for fight against xenos. Its firerate is decent with burst being superior and accuracy poor.
+  description: The Herstal Weapon Manufacture "Prometheus" Light combat rifle (Fusil de Combat Léger) in 5.56x45mm. Made to be mass producable for fight against xenos. Its firerate is decent with burst being superior and accuracy poor.
   components:
   - type: Item # Mono
     size: Huge
@@ -297,21 +297,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine556x45mmFMJ # Mono
+        startingItem: Magazine5.56x45mmFMJ # Mono
         insertSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/m16_magin.ogg # Mono
         ejectSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagOut/skm_magout.ogg # Mono
         priority: 2
         whitelist:
           tags:
-            - Magazine556x45mmFMJ # Mono
+            - Magazine5.56x45mmFMJ # Mono
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge556x45mmFMJ # Mono
+        startingItem: Cartridge5.56x45mmFMJ # Mono
         priority: 1
         whitelist:
           tags:
-            - Cartridge556x45mmFMJ # Mono
+            - Cartridge5.56x45mmFMJ # Mono
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -444,23 +444,23 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine556x45mmFMJ
+        startingItem: Magazine5.56x45mmFMJ
         insertSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/m16_magin.ogg
         ejectSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagOut/skm_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine68x52mmCaseless
-            - Magazine556x45mmFMJ
+            - Magazine6.8x52mmCaseless
+            - Magazine5.56x45mmFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge556x45mmFMJ
+        startingItem: Cartridge5.56x45mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge68x52mmCaseless
-            - Cartridge556x45mmFMJ
+            - Cartridge6.8x52mmCaseless
+            - Cartridge5.56x45mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

@@ -253,10 +253,10 @@
     - BluespaceLifelineImplanter
     - PinpointerUniversal
     belt:
-    - AmmoBox68x52mmCaseless
-    - AmmoBox68x52mmCaseless
-    - AmmoBox68x52mmCaseless
-    - AmmoBox68x52mmCaseless
-    - AmmoBox68x52mmCaselessBig
+    - AmmoBox6.8x52mmCaseless
+    - AmmoBox6.8x52mmCaseless
+    - AmmoBox6.8x52mmCaseless
+    - AmmoBox6.8x52mmCaseless
+    - AmmoBox6.8x52mmCaselessBig
     - MotionDetectorBorg
     - HandHeldMassScannerBorg

@@ -40,11 +40,11 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge762x39mmFMJ
+        startingItem: Cartridge7.62x39mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge762x39mmFMJ
+            - Cartridge7.62x39mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -174,22 +174,22 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine762x39mmBox
+        startingItem: Magazine7.62x39mmBox
         insertSound: /Audio/Weapons/Guns/MagIn/sfrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/hpistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - Magazine762x39mmFMJ
-          - Magazine762x39mmBox
+          - Magazine7.62x39mmFMJ
+          - Magazine7.62x39mmBox
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge762x39mmFMJ
+        startingItem: Cartridge7.62x39mmFMJ
         priority: 1
         whitelist:
           tags:
-          - Cartridge762x39mmFMJ
+          - Cartridge7.62x39mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -253,30 +253,30 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: AmmoBox68x52mmCaseless
+        startingItem: AmmoBox6.8x52mmCaseless
         insertSound: /Audio/Weapons/Guns/MagIn/lmg_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/lmg_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - Magazine68x52mmCaselessBoxSmall
-          - Magazine68x52mmCaselessBoxBig
-          - Magazine68x52mmCaseless
-          - Magazine556x45mmFMJ
-          - Magazine556x45mmBox
-          - Magazine762x39mmFMJ
-          - Magazine762x39mmLowCapacityFMJ
-          - Magazine762x39mmBox
+          - Magazine6.8x52mmCaselessBoxSmall
+          - Magazine6.8x52mmCaselessBoxBig
+          - Magazine6.8x52mmCaseless
+          - Magazine5.56x45mmFMJ
+          - Magazine5.56x45mmBox
+          - Magazine7.62x39mmFMJ
+          - Magazine7.62x39mmLowCapacityFMJ
+          - Magazine7.62x39mmBox
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge68x52mmCaseless
+        startingItem: Cartridge6.8x52mmCaseless
         priority: 1
         whitelist:
           tags:
-          - Cartridge68x52mmCaseless
-          - Cartridge556x45mmFMJ
-          - Cartridge762x39mmFMJ
+          - Cartridge6.8x52mmCaseless
+          - Cartridge5.56x45mmFMJ
+          - Cartridge7.62x39mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -347,23 +347,23 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: AmmoBox762x51mmFMJ
+        startingItem: AmmoBox7.62x51mmFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/lmg_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/lmg_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - Magazine762x51mmBoxSmall
-          - Magazine762x51mmFMJ
-          - Magazine762x51mmLowCapacityFMJ
+          - Magazine7.62x51mmBoxSmall
+          - Magazine7.62x51mmFMJ
+          - Magazine7.62x51mmLowCapacityFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge762x51mmFMJ
+        startingItem: Cartridge7.62x51mmFMJ
         priority: 1
         whitelist:
           tags:
-          - Cartridge762x51mmFMJ
+          - Cartridge7.62x51mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

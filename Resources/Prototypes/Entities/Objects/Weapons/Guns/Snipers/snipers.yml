@@ -28,10 +28,10 @@
     projectileSpeed: 65 # Mono
   - type: BallisticAmmoProvider
     capacity: 10
-    proto: Cartridge762x39mmFMJ
+    proto: Cartridge7.62x39mmFMJ
     whitelist:
       tags:
-      - Cartridge762x39mmFMJ
+      - Cartridge7.62x39mmFMJ
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -61,7 +61,7 @@
   name: NCI Kardashev-Mosin (7.62x54mmR)
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseGunMelee] # added BaseGunMelee
   id: WeaponSniperMosin
-  description: A weapon for hunting, or endless trench warfare. Uses 762x54mmR ammo. Equipped with bayonet. # Frontier: bayonet
+  description: A weapon for hunting, or endless trench warfare. Uses 7.62x54mmR ammo. Equipped with bayonet. # Frontier: bayonet
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi
@@ -74,9 +74,9 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - Cartridge762x54mmRFMJ
+      - Cartridge7.62x54mmRFMJ
     capacity: 5
-    proto: Cartridge762x54mmRFMJ
+    proto: Cartridge7.62x54mmRFMJ
   - type: PirateBountyItem # Mono
     id: StandardFactionLongarm
 
@@ -84,7 +84,7 @@
   name: SKR-WS M96 Hristov (14.5x114mm)
   parent: [BaseWeaponSniper, BaseGunWieldable]
   id: WeaponSniperHristov
-  description: A portable anti-material rifle. Fires high velocity 14.5mm shells. Uses 145x114mm ammo.
+  description: A portable anti-material rifle. Fires high velocity 14.5mm shells. Uses 14.5x114mm ammo.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Snipers/hristov.rsi
@@ -102,9 +102,9 @@
     autoCycle: false
     whitelist:
       tags:
-      - Cartridge145x114mm
+      - Cartridge14.5x114mm
     capacity: 5
-    proto: Cartridge145x114mm
+    proto: Cartridge14.5x114mm
   - type: SpeedModifiedOnWield
     walkModifier: 0.25
     sprintModifier: 0.25
@@ -119,7 +119,7 @@
   name: musket
   parent: [ BaseWeaponSniper, BaseGunWieldable, BaseGunMelee ] # add BaseGunMelee
   id: Musket
-  description: This should've been in a museum long before you were born. Uses 145x114mm ammo.
+  description: This should've been in a museum long before you were born. Uses 14.5x114mm ammo.
   components:
   - type: Sharp
   - type: Item
@@ -140,9 +140,9 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - Cartridge145x114mm
+      - Cartridge14.5x114mm
     capacity: 1
-    proto: Cartridge145x114mm
+    proto: Cartridge14.5x114mm
   - type: MeleeWeapon
     wideAnimationRotation: -135
     damage:
@@ -160,7 +160,7 @@
   name: flintlock pistol
   parent: BaseWeaponSniper
   id: WeaponPistolFlintlock
-  description: A pirate's companion. Yarrr! Uses 145x114mm ammo. An illegal weapon often used by pirates.
+  description: A pirate's companion. Yarrr! Uses 14.5x114mm ammo. An illegal weapon often used by pirates.
   components:
   - type: Gun
     minAngle: 0
@@ -179,9 +179,9 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - Cartridge145x114mm
+        - Cartridge14.5x114mm
     capacity: 1
-    proto: Cartridge145x114mm
+    proto: Cartridge14.5x114mm
   - type: StaticPrice
     price: 0
 

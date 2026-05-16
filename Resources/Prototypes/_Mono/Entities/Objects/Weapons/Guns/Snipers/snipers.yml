@@ -2,7 +2,7 @@
   id: WeaponRifleAK410
   name: NCI AK-410 (7.62x54mmR)
   parent: BaseWeaponRifle
-  description: "Bullpup DMR feeding from 762x54mmR magazines, developed to modernize USSP long-range infantry weapons."
+  description: "Bullpup DMR feeding from 7.62x54mmR magazines, developed to modernize USSP long-range infantry weapons."
   components:
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Snipers/ak410.rsi
@@ -39,21 +39,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine762x54mmRFMJ
+        startingItem: Magazine7.62x54mmRFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - Magazine762x54mmRFMJ
+          - Magazine7.62x54mmRFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge762x54mmRFMJ
+        startingItem: Cartridge7.62x54mmRFMJ
         priority: 1
         whitelist:
           tags:
-          - Cartridge762x54mmRFMJ
+          - Cartridge7.62x54mmRFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -77,7 +77,7 @@
   id: WeaponRifleLeeEnfield
   name: MI Lee Enfield Mk 98 (7.62x51mm)
   parent: BaseWeaponRifle
-  description: "Reliable 762x51mm sniper rifle, designed and produced by Militia Ironworks to fit modern standards sniper rifle."
+  description: "Reliable 7.62x51mm sniper rifle, designed and produced by Militia Ironworks to fit modern standards sniper rifle."
   components:
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Snipers/lee_enfield.rsi
@@ -114,21 +114,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine762x51mmFMJ
+        startingItem: Magazine7.62x51mmFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - Magazine762x51mmFMJ
+          - Magazine7.62x51mmFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge762x51mmFMJ
+        startingItem: Cartridge7.62x51mmFMJ
         priority: 1
         whitelist:
           tags:
-          - Cartridge762x51mmFMJ
+          - Cartridge7.62x51mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
