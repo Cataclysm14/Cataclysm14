@@ -692,7 +692,7 @@
   id: UplinkPirateSniperAmmo
   name: uplink-pirate-sniper-ammo-name
   description: uplink-pirate-sniper-ammo-desc
-  productEntity: AmmoBox145x114mm
+  productEntity: AmmoBox14.5x114mm
   cost:
     Doubloon: 12 # Mono
   categories:

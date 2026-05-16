@@ -252,7 +252,7 @@
         - id: AmmoBox6.35x40mmCaseless
         - id: AmmoBox8x65mmSKR
         - id: AmmoBox12.7x99mm
-        - id: AmmoBox145x114mm
+        - id: AmmoBox14.5x114mm
         - id: AmmoBox45_magnumFMJ
         - id: AmmoBox6.8x52mmCaseless
       - !type:GroupSelector
@@ -260,10 +260,10 @@
         children:
         - id: AmmoBox6.8x52mmCaselessBig
         - id: AmmoBox45_ACPBigFMJ
-        - id: AmmoBox145x114mmBig
+        - id: AmmoBox14.5x114mmBig
         - id: AmmoBox9x19mmEmp
         - id: AmmoBox9x19mmBigFMJ
-        - id: AmmoBox145x114mmBig
+        - id: AmmoBox14.5x114mmBig
         - id: AmmoBox7.62x54mmRBigFMJ
         - id: AmmoBox7.62x51mmBigFMJ
         - id: AmmoBox7.62x39mmSubsonic

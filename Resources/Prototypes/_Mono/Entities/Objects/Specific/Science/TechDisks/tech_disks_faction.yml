@@ -302,7 +302,7 @@
   - type: TechnologyDisk
     recipes:
     - WeaponSniperHristovRogue
-    - AmmoBox145x114mmBig
+    - AmmoBox14.5x114mmBig
 
 - type: entity
   parent: TechDiskBase

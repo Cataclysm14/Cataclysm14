@@ -69,8 +69,8 @@
   cost: 55000
   recipeUnlocks:
   - WeaponSniperHristovRogue
-  - AmmoBox145x114mm
-  - AmmoBox145x114mmBig
+  - AmmoBox14.5x114mm
+  - AmmoBox14.5x114mmBig
   - WeaponDEWBasilisk
   - Magazine10Phz # for basilisk
   - AmmoBox10Phz # for basilisk

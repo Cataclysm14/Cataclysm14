@@ -77,8 +77,8 @@
   - AmmoBox8x65mmSKR
   - AmmoBox8x65mmSKRIncendiary
   - AmmoBox8x65mmSKRPractice
-  - AmmoBox145x114mm
-  - AmmoBox145x114mmBig
+  - AmmoBox14.5x114mm
+  - AmmoBox14.5x114mmBig
   - Magazine5.56x45mmFMJ
   - Magazine5.56x45mmPlasteelAP
   - Magazine5.56x45mmRubber
@@ -919,8 +919,8 @@
   - MagazineSmartLMG
   - MagazineSmartMagnum
   - MagazineSmartMagnumExt
-  - AmmoBox145x114mm
-  - AmmoBox145x114mmBig
+  - AmmoBox14.5x114mm
+  - AmmoBox14.5x114mmBig
 
 #DP
   - MagazineDP29
