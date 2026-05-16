@@ -149,10 +149,6 @@
   - AmmoBox45_magnumAP
   - AmmoBox45_magnumHP
   - AmmoBox45_magnumRIP
-  - Magazine6.8x52mmRubber
-  - Magazine6.8x52mmPractice
-  - AmmoBox6.8x52mmRubber
-  - AmmoBox6.8x52mmPractice
   - Magazine4.6x30mmPistolFMJ
   - Magazine4.6x30mmPistolPlasteelAP
   - Magazine4.6x30mmPistolRubber
@@ -326,7 +322,6 @@
   - Magazine7.62x39mmEmpty
   - Magazine45_magnumPistolEmpty
   - SpeedLoader45_magnumEmpty
-  - Magazine6.8x52mmEmpty
   - Magazine4.6x30mmPistolEmpty
   - Magazine4.6x30mmSubMachineGunEmpty
   - Magazine4.6x30mmSubMachineGunTopMountedEmpty
@@ -361,8 +356,6 @@
   - Magazine45_magnumPistolPractice
   - SpeedLoader45_magnumPractice
   - AmmoBox45_magnumPractice
-  - Magazine6.8x52mmPractice
-  - AmmoBox6.8x52mmPractice
   - Magazine4.6x30mmPistolPractice
   - Magazine4.6x30mmSubMachineGunPractice
   - AmmoBox4.6x30mmPractice
@@ -425,8 +418,6 @@
   - Magazine45_magnumPistolRubber
   - SpeedLoader45_magnumRubber
   - AmmoBox45_magnumRubber
-  - Magazine6.8x52mmRubber
-  - AmmoBox6.8x52mmRubber
   - Magazine4.6x30mmPistolRubber
   - Magazine4.6x30mmSubMachineGunRubber
   - AmmoBox4.6x30mmRubber
@@ -463,8 +454,6 @@
   - Magazine45_magnumPistolFMJ
   - SpeedLoader45_magnumFMJ
   - AmmoBox45_magnumFMJ
-  - Magazine6.8x52mmFMJ
-  - AmmoBox6.8x52mmFMJ
   - Magazine4.6x30mmPistolFMJ
   - Magazine4.6x30mmSubMachineGunFMJ
   - Magazine4.6x30mmSubMachineGunTopMountedFMJ
@@ -504,8 +493,6 @@
   - AmmoBox7.62x39mmPlasteelAP
   - Magazine45_magnumPistolPlasteelAP
   - AmmoBox45_magnumPlasteelAP
-  - Magazine6.8x52mmPlasteelAP
-  - AmmoBox6.8x52mmPlasteelAP
   - SpeedLoader45_magnumPlasteelAP
   - Magazine4.6x30mmPistolPlasteelAP
   - Magazine4.6x30mmSubMachineGunPlasteelAP
@@ -539,8 +526,6 @@
   - Magazine45_magnumPistolHP
   - SpeedLoader45_magnumHP
   - AmmoBox45_magnumHP
-  - Magazine6.8x52mmHP
-  - AmmoBox6.8x52mmHP
   - Magazine4.6x30mmPistolHP
   - Magazine4.6x30mmSubMachineGunHP
   - AmmoBox4.6x30mmHP
@@ -570,8 +555,6 @@
   - Magazine45_magnumPistolRIP
   - SpeedLoader45_magnumRIP
   - AmmoBox45_magnumRIP
-  - Magazine6.8x52mmRIP
-  - AmmoBox6.8x52mmRIP
   - Magazine4.6x30mmPistolRIP
   - Magazine4.6x30mmSubMachineGunRIP
   - AmmoBox4.6x30mmRIP
@@ -609,8 +592,6 @@
   - Magazine45_magnumPistolFMJ
   - SpeedLoader45_magnumFMJ
   - AmmoBox45_magnumFMJ
-  - Magazine6.8x52mmFMJ
-  - AmmoBox6.8x52mmFMJ
   - Magazine4.6x30mmPistolFMJ
   - Magazine4.6x30mmSubMachineGunFMJ
   - Magazine4.6x30mmSubMachineGunTopMountedFMJ
@@ -661,8 +642,6 @@
   - Magazine45_magnumPistolPractice
   - SpeedLoader45_magnumPractice
   - AmmoBox45_magnumPractice
-  - Magazine6.8x52mmPractice
-  - AmmoBox6.8x52mmPractice
   - Magazine4.6x30mmPistolPractice
   - Magazine4.6x30mmSubMachineGunPractice
   - AmmoBox4.6x30mmPractice
@@ -688,7 +667,6 @@
   - Magazine7.62x39mmEmpty
   - Magazine45_magnumPistolEmpty
   - SpeedLoader45_magnumEmpty
-  - Magazine6.8x52mmEmpty
   - Magazine4.6x30mmPistolEmpty
   - Magazine4.6x30mmSubMachineGunEmpty
   - Magazine4.6x30mmSubMachineGunTopMountedEmpty
@@ -718,8 +696,6 @@
   - Magazine45_magnumPistolRubber
   - SpeedLoader45_magnumRubber
   - AmmoBox45_magnumRubber
-  - Magazine6.8x52mmRubber
-  - AmmoBox6.8x52mmRubber
   - Magazine4.6x30mmPistolRubber
   - Magazine4.6x30mmSubMachineGunRubber
   - AmmoBox4.6x30mmRubber
@@ -762,8 +738,6 @@
   - Magazine45_ACPPistolHP
   - Magazine45_ACPSubMachineGunHP
   - AmmoBox45_ACPHP
-  - Magazine6.8x52mmHP
-  - AmmoBox6.8x52mmHP
 
 # Energy
   - Magazine700Thz
@@ -854,8 +828,6 @@
   - Magazine45_magnumPistolPlasteelAP
   - AmmoBox45_magnumPlasteelAP
   - SpeedLoader45_magnumPlasteelAP
-  - Magazine6.8x52mmPlasteelAP
-  - AmmoBox6.8x52mmPlasteelAP
   - Magazine4.6x30mmPistolPlasteelAP
   - Magazine4.6x30mmSubMachineGunPlasteelAP
   - AmmoBox4.6x30mmPlasteelAP
@@ -891,8 +863,6 @@
   - Magazine45_magnumPistolRIP
   - SpeedLoader45_magnumRIP
   - AmmoBox45_magnumRIP
-  - Magazine6.8x52mmRIP
-  - AmmoBox6.8x52mmRIP
   - Magazine4.6x30mmPistolRIP
   - Magazine4.6x30mmSubMachineGunRIP
   - AmmoBox4.6x30mmRIP
@@ -944,7 +914,6 @@
   - AmmoBox5.56x45mmBigFMJ
   - AmmoBox5.7x28mmBigFMJ
   - AmmoBox6.35x40mmCaselessBig #PDV
-  - AmmoBox6.8x52mmCaselessBig #TSF
 
 #8x65 SKR Ammo Box
   - AmmoBox8x65mmSKR

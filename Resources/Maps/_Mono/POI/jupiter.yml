@@ -4167,7 +4167,7 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 8
-- proto: AmmoBox762x51mmBigFMJ
+- proto: AmmoBox7.62x51mmBigFMJ
   entities:
   - uid: 190
     components:
@@ -28461,7 +28461,7 @@ entities:
     - type: Transform
       pos: 0.5,32.5
       parent: 1
-- proto: Magazine762x51mmFMJ
+- proto: Magazine7.62x51mmFMJ
   entities:
   - uid: 4112
     components:

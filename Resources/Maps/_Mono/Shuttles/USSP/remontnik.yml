@@ -953,7 +953,7 @@ entities:
       parent: 45
     - type: Physics
       canCollide: False
-- proto: AmmoBox762x39mmFMJ
+- proto: AmmoBox7.62x39mmFMJ
   entities:
   - uid: 47
     components:
@@ -961,7 +961,7 @@ entities:
       parent: 45
     - type: Physics
       canCollide: False
-- proto: AmmoBox762x54mmRFMJ
+- proto: AmmoBox7.62x54mmRFMJ
   entities:
   - uid: 48
     components:
@@ -5373,7 +5373,7 @@ entities:
     - type: Transform
       pos: 2.5,7.5
       parent: 1
-- proto: Magazine762x39mmFMJ
+- proto: Magazine7.62x39mmFMJ
   entities:
   - uid: 785
     components:

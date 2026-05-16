@@ -112003,7 +112003,7 @@ entities:
     - type: Transform
       pos: 4.5,-44.5
       parent: 60
-- proto: Magazine762x39mmFMJ
+- proto: Magazine7.62x39mmFMJ
   entities:
   - uid: 1863
     components:
