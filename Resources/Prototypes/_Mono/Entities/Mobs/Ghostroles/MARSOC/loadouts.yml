@@ -32,12 +32,12 @@
     - BluespaceLifelineImplanter
     - PinpointerUniversal
     belt:
-    - Magazine762x39mmFMJ
-    - Magazine762x39mmFMJ
-    - Magazine762x39mmFMJ
-    - Magazine762x39mmFMJ
-    - AmmoBox762x39mmFMJ
-    - AmmoBox762x39mmIncendiary
+    - Magazine7.62x39mmFMJ
+    - Magazine7.62x39mmFMJ
+    - Magazine7.62x39mmFMJ
+    - Magazine7.62x39mmFMJ
+    - AmmoBox7.62x39mmFMJ
+    - AmmoBox7.62x39mmIncendiary
     - MotionDetectorBorg
     - HandHeldMassScannerBorg
 
@@ -75,12 +75,12 @@
     - BluespaceLifelineImplanter
     - PinpointerUniversal
     belt:
-    - Magazine762x39mmFMJ
-    - Magazine762x39mmFMJ
-    - Magazine762x39mmFMJ
-    - Magazine762x39mmFMJ
-    - AmmoBox762x39mmFMJ
-    - AmmoBox762x39mmIncendiary
+    - Magazine7.62x39mmFMJ
+    - Magazine7.62x39mmFMJ
+    - Magazine7.62x39mmFMJ
+    - Magazine7.62x39mmFMJ
+    - AmmoBox7.62x39mmFMJ
+    - AmmoBox7.62x39mmIncendiary
     - MotionDetectorBorg
     - HandHeldMassScannerBorg
 
@@ -167,12 +167,12 @@
     - AdvancedRetractor
     - BoneGel
     belt:
-    - Magazine46x30mmSubMachineGunTopMountedFMJ
-    - Magazine46x30mmSubMachineGunTopMountedFMJ
-    - Magazine46x30mmSubMachineGunTopMountedFMJ
-    - Magazine46x30mmSubMachineGunTopMountedFMJ
-    - AmmoBox46x30mmFMJ
-    - AmmoBox46x30mmIncendiary
+    - Magazine4.6x30mmSubMachineGunTopMountedFMJ
+    - Magazine4.6x30mmSubMachineGunTopMountedFMJ
+    - Magazine4.6x30mmSubMachineGunTopMountedFMJ
+    - Magazine4.6x30mmSubMachineGunTopMountedFMJ
+    - AmmoBox4.6x30mmFMJ
+    - AmmoBox4.6x30mmIncendiary
     - MotionDetectorBorg
     - HandHeldMassScannerBorg
 
@@ -253,10 +253,10 @@
     - BluespaceLifelineImplanter
     - PinpointerUniversal
     belt:
-    - AmmoBox68x52mmCaseless
-    - AmmoBox68x52mmCaseless
-    - AmmoBox68x52mmCaseless
-    - AmmoBox68x52mmCaseless
-    - AmmoBox68x52mmCaselessBig
+    - AmmoBox6.8x52mmCaseless
+    - AmmoBox6.8x52mmCaseless
+    - AmmoBox6.8x52mmCaseless
+    - AmmoBox6.8x52mmCaseless
+    - AmmoBox6.8x52mmCaselessBig
     - MotionDetectorBorg
     - HandHeldMassScannerBorg

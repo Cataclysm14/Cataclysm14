@@ -37,6 +37,6 @@
   - SecurityGuardAcpPistolRubberAmmoLoadout #MK58
   - SecurityGuardAcpSmgAmmoRubberLoadout #Drozd / vector
   - SecurityGuardBeanbagAmmoLoadout #Beanbag
-  - SecurityGuard556x45mmAmmoLoadout # lecter
-  - SecurityGuard762x39AmmoLoadout # ak
-  - SecurityGuard762x51AmmoLoadout # vulkan
+  - SecurityGuard5.56x45mmAmmoLoadout # lecter
+  - SecurityGuard7.62x39AmmoLoadout # ak
+  - SecurityGuard7.62x51AmmoLoadout # vulkan

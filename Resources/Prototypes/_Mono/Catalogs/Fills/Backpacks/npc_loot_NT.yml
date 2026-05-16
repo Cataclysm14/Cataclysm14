@@ -27,15 +27,15 @@
       amount: 2
     - id: WeaponRifleNtsfLtr
       prob: 0.05
-    - id: Magazine556x45mmPlasteelAP
+    - id: Magazine5.56x45mmPlasteelAP
       prob: 0.05
       amount: 2
-    - id: AmmoBox556x45mmPlasteelAP
+    - id: AmmoBox5.56x45mmPlasteelAP
       prob: 0.05
-    - id: Magazine556x45mmFMJ
+    - id: Magazine5.56x45mmFMJ
       prob: 0.1
       amount: 2
-    - id: AmmoBox556x45mmFMJ
+    - id: AmmoBox5.56x45mmFMJ
       prob: 0.1
     - id: MedkitCombatFilled
       prob: 0.05

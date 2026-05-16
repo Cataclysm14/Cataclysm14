@@ -32,7 +32,7 @@
   - TSFCaselessAmmoBoxLoadout # Lecter
   - FactionAcpSmgAmmoLoadout #Drozd
   - FactionAcpSmgEmpAmmoLoadout #Drozd EMP
-  - Faction762x51mmAmmoLoadout #Vulcan
+  - Faction7.62x51mmAmmoLoadout #Vulcan
   - FactionRechargerLoadout #Energy
   # - Faction8x65mmAmmoLoadout #Bandit
   - FactionAcpPistolAmmoLoadout #MK58
@@ -44,4 +44,4 @@
   price: 0
   storage:
     back:
-    - BoxMagazine68x52mmFMJ
+    - BoxMagazine6.8x52mmFMJ
