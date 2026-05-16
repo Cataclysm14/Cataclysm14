@@ -29,7 +29,7 @@
   - ContractorClothingMaskBreathMedical
   - ContractorClothingMaskGas
   subgroups: # mono
-  # - MercenaryFace
+  - MercenaryFace
   - PilotFace
 
 - type: loadoutGroup
@@ -39,7 +39,7 @@
   - PirateClothingShoesBootsLaceup
   - PirateClothingShoesBootsPirateLuffy
   subgroups: # mono
-  # - MercenaryShoes
+  - MercenaryShoes
   - ContractorShoes
   - PilotShoes
 
@@ -53,7 +53,7 @@
   - PirateClothingHeadBandGrey
   - PirateClothingHeadBandRed
   subgroups: # mono
-  # - MercenaryHead
+  - MercenaryHead
   - ContractorHead
   - PilotHead
 
@@ -77,7 +77,7 @@
   - PirateClothingHeadHatPirate
   - PirateClothingHeadHatPirateLuffy
   subgroups: # mono
-  # - MercenaryHead
+  - MercenaryHead
   - ContractorHead
   - PilotHead
 
@@ -90,7 +90,7 @@
   - PirateCaptainClothingOuterCoatPirate
   subgroups: # mono
   - ContractorOuterClothing
-  # - MercenaryOuterClothing
+  - MercenaryOuterClothing
   - PilotOuterClothing
 
 - type: loadoutGroup
@@ -131,7 +131,7 @@
   - PirateClothingHeadHatPirateTricord
   - PirateClothingHeadHatPirateLuffy
   subgroups: # mono
-  # - MercenaryHead
+  - MercenaryHead
   - ContractorHead
   - PilotHead
 
@@ -142,7 +142,7 @@
   loadouts:
   - PirateFirstMateClothingOuterCoatGentle
   subgroups: # mono
-  # - MercenaryOuterClothing
+  - MercenaryOuterClothing
   - ContractorOuterClothing
   - PilotOuterClothing
 

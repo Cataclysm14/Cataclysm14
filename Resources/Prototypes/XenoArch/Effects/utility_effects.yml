@@ -165,7 +165,7 @@
   - type: RevolverAmmoProvider
     whitelist:
       tags:
-      - Cartridge45_magnum
+      - Cartridge45_magnumFMJ
       - SpeedLoader45_magnumFMJ
     proto: Cartridge45_magnumFMJ
     capacity: 7

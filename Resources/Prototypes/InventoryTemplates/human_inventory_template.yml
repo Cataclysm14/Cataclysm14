@@ -2,207 +2,171 @@
   id: human
   slots:
     - name: shoes
-      slotTexture: cata_shoes
+      slotTexture: shoes
       slotFlags: FEET
       stripTime: 3
       uiWindowPos: 1,1
-      strippingWindowPos: 1,1
+      strippingWindowPos: 1,3
       displayName: Shoes
     - name: jumpsuit
-      slotTexture: cata_shirt
+      slotTexture: uniform
       slotFlags: INNERCLOTHING
       stripTime: 6
-      uiWindowPos: 1,3
-      strippingWindowPos: 1,3
+      uiWindowPos: 0,1
+      strippingWindowPos: 0,2
       displayName: Jumpsuit
     - name: outerClothing
-      slotTexture: cata_armor_vest
+      slotTexture: suit
       slotFlags: OUTERCLOTHING
       stripTime: 6
-      uiWindowPos: 1,4
-      strippingWindowPos: 1,4
+      uiWindowPos: 1,2
+      strippingWindowPos: 1,2
       displayName: Suit
     - name: gloves
       slotTexture: gloves
       slotFlags: GLOVES
       uiWindowPos: 2,1
-      strippingWindowPos: 2,1
+      strippingWindowPos: 2,2
       displayName: Gloves
     - name: neck
       slotTexture: neck
       slotFlags: NECK
       uiWindowPos: 0,3
-      strippingWindowPos: 0,3
+      strippingWindowPos: 0,1
       displayName: Neck
     - name: mask
-      slotTexture: cata_mask
+      slotTexture: mask
       slotFlags: MASK
-      uiWindowPos: 1,5
-      strippingWindowPos: 1,5
+      uiWindowPos: 1,3
+      strippingWindowPos: 1,1
       displayName: Mask
     - name: eyes
-      slotTexture: cata_glasses
+      slotTexture: glasses
       slotFlags: EYES
       stripTime: 3
       uiWindowPos: 0,4
-      strippingWindowPos: 0,4
+      strippingWindowPos: 0,0
       displayName: Eyes
     - name: ears
-      slotTexture: cata_ears
+      slotTexture: ears
       slotFlags: EARS
       stripTime: 3
-      uiWindowPos: 2,5
-      strippingWindowPos: 2,5
+      uiWindowPos: 2,3
+      strippingWindowPos: 2,0
       displayName: Ears
     - name: head
       slotTexture: head
       slotFlags: HEAD
-      uiWindowPos: 1,6
-      strippingWindowPos: 3,3
+      uiWindowPos: 1,4
+      strippingWindowPos: 1,0
       displayName: Head
-    - name: belt
-      slotTexture: cata_chest_rig
-      fullTextureName: template_small
-      slotFlags: BELT
-      stripTime: 6
-      uiWindowPos: 2,4
-      strippingWindowPos: 2,4
-      displayName: Belt
-    - name: back
-      slotTexture: back
-      fullTextureName: template_small
-      slotFlags: BACK
-      stripTime: 6
-      uiWindowPos: 2,3
-      strippingWindowPos: 2,3
-      displayName: Back
-    #Mono slots
-    - name: balaclava
-      slotTexture: cata_balaclava
-      slotFlags: BALACLAVA
-      stripTime: 6
-      uiWindowPos: 2,6
-      strippingWindowPos: 3,4
-      displayName: Balaclava
-    - name: leftarmband
-      slotTexture: armband_left
-      slotFlags: ARMBANDLEFT
-      stripTime: 6
-      uiWindowPos: 2,2
-      strippingWindowPos: 2,2
-      displayName: Left_armband
-    - name: rightarmband
-      slotTexture: armband_right
-      slotFlags: ARMBANDRIGHT
-      stripTime: 6
-      uiWindowPos: 0,2
-      strippingWindowPos: 0,2
-      displayName: Right_armband
-    - name: helmetattachment
-      slotTexture: cata_helmet_attachment
-      slotFlags: HELMETATTACHMENT
-      stripTime: 3
-      uiWindowPos: 0,5
-      strippingWindowPos: 0,5
-      dependsOn: head
-      displayName: Helmet_attachment
-    #End Mono
-    #Cataclysm14 start
-    - name: faceshield
-      slotTexture: cata_face_shield
-      slotFlags: FACESHIELD
-      stripTime: 3
-      uiWindowPos: 0,6
-      strippingWindowPos: 0,5
-      dependsOn: head
-      displayName: Face shield
-    - name: pants
-      slotTexture: cata_pants
-      slotFlags: PANTS
-      stripTime: 6
-      uiWindowPos: 1,2
-      strippingWindowPos: 1,2
-      displayName: Pants
-    # Reusing frontier wallet slot for secure container
-    - name: wallet
-      slotTexture: cata_secure_pocket
-      slotFlags: WALLET
-      stripTime: 6
-      uiWindowPos: 0,1
-      strippingWindowPos: 0,1
-      displayName: Wallet
-
-#hotbar order part, top to bottom = left to right
-
-  #Second hotbar (left hotbar)
-    - name: id
-      slotTexture: cata_id
-      fullTextureName: template_small
-      slotFlags: IDCARD
-      slotGroup: SecondHotbar
-      stripTime: 6
-      uiWindowPos: 2,4
-      strippingWindowPos: 3,5
-      displayName: ID
     - name: pocket1
       slotTexture: pocket
       fullTextureName: template_small
       slotFlags: POCKET
-      slotGroup: SecondHotbar
+      slotGroup: MainHotbar
       stripTime: 3
-      uiWindowPos: 1,0
-      strippingWindowPos: 0,0
-      # dependsOn: pants
+      uiWindowPos: 0,4
+      strippingWindowPos: 0,4
+      dependsOn: jumpsuit
       displayName: Pocket 1
       stripHidden: true
     - name: pocket2
       slotTexture: pocket
       fullTextureName: template_small
       slotFlags: POCKET
-      slotGroup: SecondHotbar
+      slotGroup: MainHotbar
       stripTime: 3
-      uiWindowPos: 2,0
-      strippingWindowPos: 1,0
-      # dependsOn: pants
+      uiWindowPos: 2,4
+      strippingWindowPos: 1,4
+      dependsOn: jumpsuit
       displayName: Pocket 2
       stripHidden: true
-    - name: slingfront
-      slotTexture: cata_sling_front
-      slotFlags:   SLINGFRONT
-      slotGroup: SecondHotbar
-      stripTime: 3
-      uiWindowPos: 5,0
-      strippingWindowPos: 3,2
-      displayName: Front sling
-
-  #Main hotbar (right hotbar)
     - name: suitstorage
-      slotTexture: cata_sling_back
+      slotTexture: suit_storage
       slotFlags:   SUITSTORAGE
       slotGroup: MainHotbar
       stripTime: 3
-      uiWindowPos: 5,0
-      strippingWindowPos: 3,1
-      displayName: Back sling
-    - name: pocket3
-      slotTexture: pocket
+      uiWindowPos: 2,1
+      strippingWindowPos: 2,5
+#      dependsOn: outerClothing #Mono: Disable shoulder slot restrictions
+#      dependsOnComponents:
+#      - type: AllowSuitStorage
+      displayName: Suit Storage
+    - name: id
+      slotTexture: id
       fullTextureName: template_small
-      slotFlags: POCKET
-      slotGroup: MainHotbar
-      stripTime: 3
-      uiWindowPos: 3,0
-      strippingWindowPos: 2,0
-      # dependsOn: pants
-      displayName: Pocket 3
-      stripHidden: true
-    - name: pocket4
-      slotTexture: pocket
+      slotFlags: IDCARD
+      slotGroup: SecondHotbar
+      stripTime: 6
+      uiWindowPos: 2,2
+      strippingWindowPos: 2,4
+      dependsOn: jumpsuit
+      displayName: ID
+    - name: belt
+      slotTexture: belt
       fullTextureName: template_small
-      slotFlags: POCKET
-      slotGroup: MainHotbar
-      stripTime: 3
-      uiWindowPos: 4,0
+      slotFlags: BELT
+      slotGroup: SecondHotbar
+      stripTime: 6
+      uiWindowPos: 3,2
+      strippingWindowPos: 1,5
+      displayName: Belt
+    - name: back
+      slotTexture: back
+      fullTextureName: template_small
+      slotFlags: BACK
+      slotGroup: SecondHotbar
+      stripTime: 6
+      uiWindowPos: 3,1
+      strippingWindowPos: 0,5
+      displayName: Back
+    # Frontier: wallet slot
+    - name: wallet
+      slotTexture: wallet
+      slotFlags: WALLET
+      stripTime: 6
+      uiWindowPos: 1,0
+      strippingWindowPos: 3,5
+      dependsOn: jumpsuit
+      displayName: Wallet
+    # End Frontier: wallet slot
+    #Mono slots
+    - name: balaclava
+      slotTexture: balaclava
+      slotFlags: BALACLAVA
+      stripTime: 6
+      uiWindowPos: 2,4
       strippingWindowPos: 3,0
-      # dependsOn: pants
-      displayName: Pocket 4
-      stripHidden: true
+      displayName: Balaclava
+    - name: leftarmband
+      slotTexture: armband_left
+      slotFlags: ARMBANDLEFT
+      stripTime: 6
+      uiWindowPos: 2,2
+      strippingWindowPos: 3,1
+      displayName: Left_armband
+    - name: rightarmband
+      slotTexture: armband_right
+      slotFlags: ARMBANDRIGHT
+      stripTime: 6
+      uiWindowPos: 0,2
+      strippingWindowPos: 3,2
+      displayName: Right_armband
+    - name: faceshield
+      slotTexture: helmet_cover
+      slotFlags: faceshield
+      stripTime: 3
+      uiWindowPos: 1,5
+      strippingWindowPos: 3,3
+      dependsOn: head
+      displayName: Helmet cover
+    - name: helmetattachment
+      slotTexture: helmet_attachment
+      slotFlags: HELMETATTACHMENT
+      stripTime: 3
+      uiWindowPos: 0,5
+      strippingWindowPos: 3,4
+      dependsOn: head
+      displayName: Helmet_attachment
+    #End Mono

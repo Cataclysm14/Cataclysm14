@@ -55,6 +55,34 @@
 
 - type: entity
   parent: ClothingUniformBase
+  id: ClothingUniformCcCBRN
+  name: CBURN Type B Protective Suit
+  description: A heavily modified protective suit. It'll slow you down a bit, but it'll make sure nothing you don't want gets in your body. Also comes with the bonus of flame resistance! Be the bane of all borers!
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/mopp-tsfmc.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/mopp-tsfmc.rsi
+    equipDelay: 0.3
+    unequipDelay: 0.3
+  - type: Armor
+    modifiers:
+      coefficients:
+        Poison: 0.6
+        Radiation: 0.8
+        Caustic: 0.6
+        Heat: .85
+  - type: StaminaDamageResistance
+    coefficient: 0.85 # its pretty thick, i think it'd do something
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: SuitSensor
+    randomMode: false
+    mode: SensorVitals
+
+- type: entity
+  parent: ClothingUniformBase
   id: ClothingUniformTSFMCEngi
   name: TSFMC engineer uniform
   description: A combat uniform in TSF Type-45U urban camouflage. It has high-vis markings for engineers.
@@ -303,77 +331,109 @@
       - state: equipped-decor-shoulder-patch
         color: "#cd6b6b"
 
-#Cataclysm, commented out since deprecated old versions
+#Viper Group
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitViperGroupUniform
+  name: viper group uniform
+  description: A uniform bearing the colours of the vipers.
+  components:
+  - type: StaticPrice
+    price: 0
+    vendPrice: 1150
+  - type: Sprite
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/viper_group_uniform.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/viper_group_uniform.rsi
+  - type: SuitSensor
+    randomMode: false
+    mode: SensorVitals
 
-# #PMC camo suits
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitViperGroupTurtleneck
+  name: viper group turtleneck
+  description: A turtleneck bearing the colours of the vipers.
+  components:
+  - type: StaticPrice
+    price: 0
+    vendPrice: 1150
+  - type: Sprite
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/viper_group_turtleneck.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/viper_group_turtleneck.rsi
+  - type: SuitSensor
+    randomMode: false
+    mode: SensorVitals
 
-# - type: entity
-#   parent: ClothingUniformBase
-#   id: ClothingUniformJumpsuitCombatSuitCCEBasic
-#   name: CCE combat uniform (basic)
-#   description: Woodland CCE camouflaged combat suit. Camo in space... This one has been lightly used and retain its original camo.
-#   components:
-#   - type: StaticPrice
-#     price: 700
-#     vendPrice: 1150
-#   - type: Sprite
-#     sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_base.rsi
-#   - type: Clothing
-#     sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_base.rsi
-#   - type: SuitSensor
-#     randomMode: false
-#     mode: SensorVitals
+#PMC camo suits
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCombatSuitCCEBasic
+  name: CCE combat uniform (basic)
+  description: Woodland CCE camouflaged combat suit. Camo in space... This one has been lightly used and retain its original camo.
+  components:
+  - type: StaticPrice
+    price: 700
+    vendPrice: 1150
+  - type: Sprite
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_base.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_base.rsi
+  - type: SuitSensor
+    randomMode: false
+    mode: SensorVitals
 
-# - type: entity
-#   parent: ClothingUniformBase
-#   id: ClothingUniformJumpsuitCombatSuitCCEWorn
-#   name: CCE combat uniform (worn)
-#   description: Woodland CCE camouflaged combat suit. Camo in space... This one has been used quite a lot and has darkenned over time.
-#   components:
-#   - type: StaticPrice
-#     price: 700
-#     vendPrice: 1150
-#   - type: Sprite
-#     sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_worn.rsi
-#   - type: Clothing
-#     sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_worn.rsi
-#   - type: SuitSensor
-#     randomMode: false
-#     mode: SensorVitals
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCombatSuitCCEWorn
+  name: CCE combat uniform (worn)
+  description: Woodland CCE camouflaged combat suit. Camo in space... This one has been used quite a lot and has darkenned over time.
+  components:
+  - type: StaticPrice
+    price: 700
+    vendPrice: 1150
+  - type: Sprite
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_worn.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_worn.rsi
+  - type: SuitSensor
+    randomMode: false
+    mode: SensorVitals
 
-# - type: entity
-#   parent: ClothingUniformBase
-#   id: ClothingUniformJumpsuitCombatSuitCCEBleached
-#   name: CCE combat uniform (bleached)
-#   description: Woodland CCE camouflaged combat suit. Camo in space... This one has been bleached for some reasons.
-#   components:
-#   - type: StaticPrice
-#     price: 700
-#     vendPrice: 1150
-#   - type: Sprite
-#     sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_bleached.rsi
-#   - type: Clothing
-#     sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_bleached.rsi
-#   - type: SuitSensor
-#     randomMode: false
-#     mode: SensorVitals
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCombatSuitCCEBleached
+  name: CCE combat uniform (bleached)
+  description: Woodland CCE camouflaged combat suit. Camo in space... This one has been bleached for some reasons.
+  components:
+  - type: StaticPrice
+    price: 700
+    vendPrice: 1150
+  - type: Sprite
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_bleached.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_bleached.rsi
+  - type: SuitSensor
+    randomMode: false
+    mode: SensorVitals
 
-# - type: entity
-#   parent: ClothingUniformBase
-#   id: ClothingUniformJumpsuitCombatSuitCCEDesert
-#   name: CCE combat uniform (desert)
-#   description: Desert CCE camouflaged combat suit. Camo in space... This one has been lightly used and retain its original camo.
-#   components:
-#   - type: StaticPrice
-#     price: 700
-#     vendPrice: 1150
-#   - type: Sprite
-#     sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_desert.rsi
-#   - type: Clothing
-#     sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_desert.rsi
-#   - type: SuitSensor
-#     randomMode: false
-#     mode: SensorVitals
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCombatSuitCCEDesert
+  name: CCE combat uniform (desert)
+  description: Desert CCE camouflaged combat suit. Camo in space... This one has been lightly used and retain its original camo.
+  components:
+  - type: StaticPrice
+    price: 700
+    vendPrice: 1150
+  - type: Sprite
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_desert.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/CCE/CCE_desert.rsi
+  - type: SuitSensor
+    randomMode: false
+    mode: SensorVitals
 
 - type: entity
   parent: ClothingUniformBase
@@ -567,19 +627,19 @@
     randomMode: false
     mode: SensorVitals
 
-# - type: entity
-#   parent: ClothingUniformBase
-#   id: ClothingUniformJumpsuitCombatSuitDigitalGreenTan
-#   name: green and tan digital combat uniform
-#   description: Digital camouflaged combat suit. Camo in space...
-#   components:
-#   - type: StaticPrice
-#     price: 700
-#     vendPrice: 1150
-#   - type: Sprite
-#     sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/Digital/digital_green_and_tan.rsi
-#   - type: Clothing
-#     sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/Digital/digital_green_and_tan.rsi
-#   - type: SuitSensor
-#     randomMode: false
-#     mode: SensorVitals
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCombatSuitDigitalGreenTan
+  name: green and tan digital combat uniform
+  description: Digital camouflaged combat suit. Camo in space...
+  components:
+  - type: StaticPrice
+    price: 700
+    vendPrice: 1150
+  - type: Sprite
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/Digital/digital_green_and_tan.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/Digital/digital_green_and_tan.rsi
+  - type: SuitSensor
+    randomMode: false
+    mode: SensorVitals

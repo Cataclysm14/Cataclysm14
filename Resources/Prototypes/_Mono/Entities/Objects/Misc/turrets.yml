@@ -35,6 +35,15 @@
 
 - type: entity
   parent: BaseWeaponBallisticTurret
+  id: WeaponTurretCC
+  suffix: CC, Colossus
+  components:
+  - type: NpcFactionMember
+    factions:
+    - CC
+
+- type: entity
+  parent: BaseWeaponBallisticTurret
   id: WeaponTurretTSFMC
   suffix: TSFMC
   components:
@@ -123,7 +132,7 @@
           - Magazine7.62x39mmBox
           - Magazine5.56x45mmFMJ
           - Magazine5.56x45mmBox
-          - Magazine6.8x52mmCaseless
+          - Magazine68x52mmCaseless
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -160,7 +169,7 @@
           - Magazine7.62x39mmBox
           - Magazine5.56x45mmFMJ
           - Magazine5.56x45mmBox
-          - Magazine6.8x52mmCaseless
+          - Magazine68x52mmCaseless
 
 - type: constructionGraph # deconstruction graph
   id: WeaponTurretMk290PackingGraph

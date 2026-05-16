@@ -41,6 +41,9 @@
   - type: ExaminableDamage
     messages: WindowMessages
   - type: Repairable
+    qualities:
+    - Welding #Mono
+    - Applicating #Mono
   - type: RCDDeconstructable
     cost: 6
     delay: 4
@@ -72,7 +75,7 @@
         acts: [ "Destruction" ]
   - type: Airtight
   - type: IconSmooth
-    key: walls
+    key: basewindows # Mono
     base: window
   - type: InteractionPopup
     interactSuccessString: comp-window-knock
@@ -167,6 +170,9 @@
         layer:
         - GlassLayer
   - type: Repairable
+    qualities:
+    - Welding #Mono
+    - Applicating #Mono
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Glass
@@ -282,7 +288,7 @@
         mask:
         - FullTileMask
         layer:
-        - GlassLayer
+        - DiagonalGlassLayer # Mono GlassLayer->DiagonalGlassLayer
   - type: Airtight
     noAirWhenFullyAirBlocked: false
     airBlockedDirection:

@@ -23,10 +23,6 @@
   - type: HideLayerClothing
     slots:
     - Snout
-  #Upstream merge
-  - type: ImageOverlay
-    pathToOverlayImage: "/Textures/Clothing/Head/Welding/weldingTexture.png"
-    additionalColorOverlay: "#32374a30"
 
 - type: entity
   parent: WeldingMaskBase

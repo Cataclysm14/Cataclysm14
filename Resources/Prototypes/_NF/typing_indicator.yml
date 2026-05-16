@@ -2,7 +2,7 @@
   id: goblin
   spritePath: /Textures/_NF/Effects/speech.rsi
   typingState: mono_goblin0 # Mono: goblin0 >> mono_goblin0
-  idleState: mono_goblin3 # Mono
+  idleState: mono_goblin3 # Mono 
   offset: 0, 0.2
 
 - type: typingIndicator

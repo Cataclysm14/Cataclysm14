@@ -45,7 +45,7 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - ShellShotgun23x75mm
+        - ShellShotgun23x75mmBuckshot
     capacity: 1
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg
@@ -71,7 +71,7 @@
       steps:
       - tool: Screwing
         doAfter: 5
-
+      
 - type: entity
   id: ShotgunTrapPacked
   name: packed shotgun trap
@@ -91,7 +91,7 @@
   - type: Construction
     graph: ShotgunTrap
     node: shotgunTrap
-
+    
 - type: entity
   name: pressure plate
   id: PressurePlate

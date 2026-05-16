@@ -12,7 +12,7 @@
   - type: Clothing
     equippedPrefix: off
     sprite: Clothing/Neck/Misc/headphones.rsi
-  - type: ToggleableLightVisuals
+  - type: ToggleableVisuals
     spriteLayer: enum.ToggleableVisuals.Layer
     clothingVisuals:
       neck:

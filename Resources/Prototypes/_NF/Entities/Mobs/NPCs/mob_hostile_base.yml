@@ -89,16 +89,16 @@
   components:
   - type: NFSalvageMobRestrictions
     addComponentsOnDeath:
-    # - type: Uncloneable #Cataclysm14, unnerf
-    # - type: Unrevivable #Cataclysm14, unnerf
+    - type: Uncloneable
+    - type: Unrevivable
     - type: Strippable
     - type: UserInterface
       interfaces:
         enum.StrippingUiKey.Key:
          type: StrippableBoundUserInterface
     removeComponentsOnDeath:
-    # - type: Insulated #Cataclysm14, unnerf
-    # - type: Reflect #Cataclysm14, unnerf
+    - type: Insulated
+    - type: Reflect
     - type: MovementIgnoreGravity
     - type: Tool
     - type: Prying
@@ -287,7 +287,7 @@
   abstract: true
   components:
   - type: Inventory
-    templateId: InvTemplateZombieBase # Supports loadouts
+    templateId: hostilehumanoid # Supports loadouts
   - type: InventorySlots
 
 - type: entity # Slots for loot containers: pockets, belt, back
@@ -364,7 +364,7 @@
   - MobStepTriggerImmune
   - BaseMobSpecies
   - MobHumanoidHostileAIComplex
-  # - BaseC3MobHuman #Cataclysm14, begone frontier slop
+  - BaseC3MobHuman
   id: MobHumanoidHostileBase
   components:
   - type: NPCRetaliation
@@ -478,7 +478,7 @@
     - DoorBumpOpener
     - CannotSuicide
   - type: FTLKnockdownImmune
-
+  
 # Mono edit - Faction overwriting fix
 # A simpler base for extending existing mobs (e.g. carp, kangaroos, snakes, xenos)
 - type: entity

@@ -24,7 +24,7 @@
   name: loadout-group-contractor-ears
   loadouts: []
   subgroups:
-  # - MercenaryEars
+  - MercenaryEars
   - PilotEars
   - ContractorEars
   fallbacks:

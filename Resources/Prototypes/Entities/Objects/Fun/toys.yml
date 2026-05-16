@@ -1237,7 +1237,7 @@
       tags:
         - CartridgeCap
         - SpeedLoaderCap
-        - Cartridge45_magnum
+        - Cartridge45_magnumFMJ
         - SpeedLoader45_magnumFMJ
     proto: Cartridge45_magnumAP
 
@@ -1501,7 +1501,7 @@
       color: white
       netsync: false
     - type: Appearance
-    - type: ToggleableLightVisuals
+    - type: ToggleableVisuals
       spriteLayer: blade
       inhandVisuals:
         left:

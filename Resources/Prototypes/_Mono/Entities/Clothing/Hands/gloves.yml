@@ -23,9 +23,9 @@
 #tactical gloves
 
 - type: entity
-  parent: [ ClothingHandsGlovesCombat, BaseC1Contraband ] # BaseSecurityEngineeringContraband<BaseC1Contraband
+  parent: ClothingHandsGlovesCombat
   id: ClothingHandsGlovesTacticalCombatTan
-  name: tan tactical gloves
+  name: tan tactical combat gloves
   description: These tactical gloves are fireproof and shock resistant.
   components:
   - type: Sprite
@@ -50,9 +50,9 @@
     vendPrice: 1950
 
 - type: entity
-  parent: [ ClothingHandsGlovesCombat, BaseC1Contraband ] # BaseSecurityEngineeringContraband<BaseC1Contraband
+  parent: ClothingHandsGlovesCombat
   id: ClothingHandsGlovesTacticalCombatBlack
-  name: black tactical gloves
+  name: black tactical combat gloves
   description: These tactical gloves are fireproof and shock resistant.
   components:
   - type: Sprite
@@ -77,9 +77,9 @@
     vendPrice: 1950
 
 - type: entity
-  parent: [ ClothingHandsGlovesCombat, BaseC1Contraband ] # BaseSecurityEngineeringContraband<BaseC1Contraband
+  parent: ClothingHandsGlovesCombat
   id: ClothingHandsGlovesTacticalCombatRangerGreen
-  name: ranger green tactical gloves
+  name: ranger green tactical combat gloves
   description: These tactical gloves are fireproof and shock resistant.
   components:
   - type: Sprite
@@ -104,9 +104,9 @@
     vendPrice: 1950
 
 - type: entity
-  parent: [ ClothingHandsGlovesCombat, BaseC1Contraband ] # BaseSecurityEngineeringContraband<BaseC1Contraband
+  parent: ClothingHandsGlovesCombat
   id: ClothingHandsGlovesTacticalCombatOlive
-  name: olive tactical gloves
+  name: olive tactical combat gloves
   description: These tactical gloves are fireproof and shock resistant.
   components:
   - type: Sprite
@@ -131,9 +131,9 @@
     vendPrice: 1950
 
 - type: entity
-  parent: [ ClothingHandsGlovesCombat, BaseC1Contraband ] # BaseSecurityEngineeringContraband<BaseC1Contraband
+  parent: ClothingHandsGlovesCombat
   id: ClothingHandsGlovesTacticalCombatCoyoteBrown
-  name: coyote brown tactical gloves
+  name: coyote brown tactical combat gloves
   description: These tactical gloves are fireproof and shock resistant.
   components:
   - type: Sprite
@@ -158,9 +158,9 @@
     vendPrice: 1950
 
 - type: entity
-  parent: [ ClothingHandsGlovesCombat, BaseC1Contraband ] # BaseSecurityEngineeringContraband<BaseC1Contraband
+  parent: ClothingHandsGlovesCombat
   id: ClothingHandsGlovesTacticalCombatWhite
-  name: white tactical gloves
+  name: white tactical combat gloves
   description: These tactical gloves are fireproof and shock resistant.
   components:
   - type: Sprite

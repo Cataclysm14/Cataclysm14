@@ -18,8 +18,8 @@
   supervisors: job-supervisors-nobody
   weight: 50
   displayWeight: 50
+  assignedCompany: PDV
   setPreference: true
-  guides: [ BasicLore, PhaethonDynasty ] # Mono
   access:
   - Pirate
   - GrandVizier
@@ -47,11 +47,12 @@
 - type: startingGear
   id: PirateCaptainNFGear
   equipment:
-    # ears: ClothingHeadsetAltVanguardCommand
+    ears: ClothingHeadsetAltVanguardCommand
     #belt: ClothingBeltUtility # mono
     pocket1: BasePirateUplinkRadioPirateCaptain
     pocket2: EnergySword
   storage:
     back:
     - RadioHandheldNF # mono
-    - ShipVoucherSaintie
+    - PhoneInstrumentHigh
+    - RubberStampPDVVizier # mono

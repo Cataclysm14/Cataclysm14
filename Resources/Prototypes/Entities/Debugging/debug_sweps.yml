@@ -39,7 +39,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridges9x19mm
+            - Cartridge9x19mmFMJ
 
 - type: entity
   id: MagazinePistolDebug
@@ -54,7 +54,7 @@
     proto: CartridgeDebug
     capacity: 1000
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/9x19mm_pistol_mag.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/9x19mm/9x19mm_pistol_mag.rsi
 
 - type: entity
   id: BulletDebug

@@ -191,7 +191,7 @@
     contents:
     - id: WeaponRifleLecter
       amount: 2
-    - id: Magazine6.8x52mmCaseless # Mono
+    - id: Magazine68x52mmCaseless # Mono
       amount: 4
 
 - type: entity

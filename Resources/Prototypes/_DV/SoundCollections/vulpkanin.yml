@@ -23,6 +23,11 @@
   - /Audio/_DV/Voice/Vulpkanin/dog_snarl3.ogg
 
 - type: soundCollection
+  id: VulpkaninWhimpers # Starlight / Monolith: Renamed to whimper
+  files:
+  - /Audio/_DV/Voice/Vulpkanin/dog_whine.ogg
+
+- type: soundCollection
   id: VulpkaninHowls
   files:
   - /Audio/_DV/Voice/Vulpkanin/howl.ogg

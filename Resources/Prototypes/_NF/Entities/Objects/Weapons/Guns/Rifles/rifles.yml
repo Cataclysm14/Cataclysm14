@@ -8,21 +8,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine6.8x52mmCaselessRubber
+        startingItem: Magazine68x52mmCaselessRubber
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine6.8x52mmCaseless
+            - Magazine68x52mmCaseless
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge6.8x52mmCaselessRubber
+        startingItem: Cartridge68x52mmCaselessRubber
         priority: 1
         whitelist:
           tags:
-            - Cartridge6.8x52mmCaseless
+            - Cartridge68x52mmCaseless
 
 #Delta-V
 - type: entity
@@ -49,7 +49,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x51mm
+            - Cartridge7.62x51mmFMJ
 
 # Frontier
 - type: entity
@@ -99,7 +99,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x39mm
+            - Cartridge7.62x39mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -133,12 +133,12 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x39mm
+            - Cartridge7.62x39mmFMJ
 
 - type: entity
   parent: BaseWeaponRifle
   id: WeaponRifleNovaliteC1
-  name: LWC Novalite C1 (5.56x45mm NATO)
+  name: LWC Novalite C1 (5.56x45mm)
   description: A modification to the Lecter from LWC, a civilian grade semi-automatic rifle with an internal magazine. Uses 5.56x45mm ammo.
   components:
   - type: Sprite
@@ -177,7 +177,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.56x45mm
+            - Cartridge5.56x45mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -211,7 +211,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.56x45mm
+            - Cartridge5.56x45mmFMJ
 
 - type: entity
   id: WeaponRifleSVS
@@ -260,7 +260,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x54mmR
+            - Cartridge7.62x54mmRFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -330,7 +330,7 @@
         priority: 1
         whitelist:
           tags:
-          - Cartridge7.62x39mm
+          - Cartridge7.62x39mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

@@ -361,7 +361,7 @@
     contents:
     - id: WeaponRifleLecter
       amount: 1
-    - id: Magazine6.8x52mmCaseless # Mono
+    - id: Magazine68x52mmCaseless # Mono
       amount: 2
 
 - type: entity
@@ -697,6 +697,19 @@
     contents:
     - id: C4
       amount: 2
+
+- type: entity # Mono
+  parent: WeaponCaseShortExplosives
+  id: WeaponCaseShortBombCollar
+  suffix: Dungeon, Bomb Collar
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingNeckBombCollar
+      amount: 4
+    - id: RemoteSignaller
+      amount: 2
+    - id: BombCollarSealer
 
 # Turrets
 - type: entity

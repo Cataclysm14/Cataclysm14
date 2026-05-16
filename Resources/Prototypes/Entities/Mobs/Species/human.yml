@@ -35,21 +35,6 @@
   - type: Carriable # Frontier: Carrying system from nyanotrasen.
   - type: Speech # Frontier
     allowedEmotes: ['Belch'] # Frontier
-  - type: MovementSpeedModifier
-    baseWalkSpeed: 2.5 # Cataclysm14, shitmed overrides anyway
-    baseSprintSpeed: 5 # Cataclysm14, shitmed overrides anyway
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.35
-        density: 220
-        restitution: 0.0
-        mask:
-        - MobMask
-        layer:
-        - MobLayer
 
 - type: entity
   parent: BaseSpeciesDummy

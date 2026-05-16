@@ -25,7 +25,7 @@
   loadouts:
   - StationRepClothingHeadsetAltCentComCommon
   subgroups:
-  # - MercenaryEars
+  - MercenaryEars
   - PilotEars
   - ContractorEars
   fallbacks:

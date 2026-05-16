@@ -3,7 +3,7 @@
   id: MedicalBag
   parent: BaseStorageItem
   description: A medical bag designed to hold topicals and small reagent containers. For the medic on the go.
-  components:
+  components:  
   - type: Sprite
     sprite: _NF/Objects/Specific/Medical/medical_bag.rsi
     layers:

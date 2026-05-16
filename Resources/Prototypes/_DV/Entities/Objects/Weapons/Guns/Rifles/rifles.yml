@@ -19,7 +19,7 @@
     maxAngle: 20
     angleIncrease: 5
     angleDecay: 25
-    fireRate: 4
+    fireRate: 3
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -50,7 +50,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x51mm
+            - Cartridge7.62x51mmFMJ
   - type: SpeedModifiedOnWield # Mono
     walkModifier: 1
     sprintModifier: 1
@@ -69,6 +69,7 @@
     id: StandardFactionLongarm
   # - type: StaticPrice # Frontier: overvalued
   #  price: 1300
+  - type: GunRequiresWield
 
 - type: entity
   name: ceremonial rifle (7.62x51mm)
@@ -92,7 +93,7 @@
     proto: Cartridge7.62x51mmFMJ
     whitelist:
       tags:
-      - Cartridge7.62x51mm
+      - Cartridge7.62x51mmFMJ
   - type: CursorOffsetRequiresWield # Frontier
   - type: EyeCursorOffset # Frontier
     maxOffset: 1.5 # Frontier

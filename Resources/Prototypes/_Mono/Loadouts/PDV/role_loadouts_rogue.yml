@@ -7,7 +7,7 @@
   - PDVGloves
   - PDVOuterClothing
   - PDVHud
-  # - PDVBackpack
+  - PDVBackpack
   - PDVShoes
   - PirateFace
   - ContractorBoxSurvival
@@ -19,6 +19,7 @@
   - ContractorEncryptionKey
   - RogueFirearm
   - RogueMag
+  - FactionArmorPlates
   canCustomizeName: true
 
 - type: roleLoadout
@@ -29,7 +30,7 @@
   - PDVJumpsuit
   - PDVGloves
   - PDVHud
-  # - PDVBackpack
+  - PDVBackpack
   - PDVOuterClothing
   - PDVShoes
   - PDVFace
@@ -42,6 +43,7 @@
   - ContractorEncryptionKey
   - RogueFirearm
   - RogueMag
+  - FactionArmorPlates
   canCustomizeName: true
 
 - type: roleLoadout
@@ -52,7 +54,7 @@
   - PDVGloves
   - PDVOuterClothing
   - PDVHud
-  # - PDVBackpack
+  - PDVBackpack
   - PDVShoes
   - PDVFace
   - PDVCommanderNeck
@@ -65,6 +67,7 @@
   - ContractorEncryptionKey
   - RogueFirearm
   - RogueMag
+  - FactionArmorPlates
   canCustomizeName: true
 
 - type: roleLoadout
@@ -75,7 +78,7 @@
   - PDVGloves
   - PDVOuterClothing
   - PDVHud
-  # - PDVBackpack
+  - PDVBackpack
   - PDVShoes
   - PDVFace
   - PDVNeck
@@ -88,6 +91,7 @@
   - ContractorEncryptionKey
   - RogueFirearm
   - RogueMag
+  - FactionArmorPlates
   canCustomizeName: true
 
 - type: roleLoadout
@@ -99,7 +103,7 @@
   - PDVGloves
   - PDVOuterClothing
   - PDVHud
-  # - PDVBackpack
+  - PDVBackpack
   - PDVShoes
   - PirateFace
   - ContractorBoxSurvival
@@ -111,4 +115,5 @@
   - ContractorEncryptionKey
   - RogueFirearm
   - RogueMag
+  - FactionArmorPlates
   canCustomizeName: true

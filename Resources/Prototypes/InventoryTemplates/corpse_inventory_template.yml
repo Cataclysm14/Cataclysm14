@@ -128,13 +128,13 @@
       strippingWindowPos: 3,2
       displayName: Right_armband
     - name: faceshield
-      slotTexture: cata_face_shield
-      slotFlags: FACESHIELD
+      slotTexture: helmet_cover
+      slotFlags: faceshield
       stripTime: 3
-      uiWindowPos: 0,6
+      uiWindowPos: 1,5
       strippingWindowPos: 3,3
       dependsOn: head
-      displayName: Face shield
+      displayName: Helmet cover
     - name: helmetattachment
       slotTexture: helmet_attachment
       slotFlags: HELMETATTACHMENT

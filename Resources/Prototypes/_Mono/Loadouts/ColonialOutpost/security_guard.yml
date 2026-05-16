@@ -125,7 +125,7 @@
   - MonoSecurityGuardBackpack
   - MonoSecurityGuardSatchel
   - MonoSecurityGuardDuffel
-  # - MercenaryClothingModsuitSecurityPowerCell
+  - MercenaryClothingModsuitSecurityPowerCell
   fallbacks:
   - MonoSecurityGuardBackpack
 

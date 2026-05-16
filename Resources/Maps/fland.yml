@@ -166472,7 +166472,7 @@ entities:
     - type: Transform
       pos: 19.589119,11.494171
       parent: 13329
-- proto: Magazine4.6x30mmSubMachineGunTopMountedFMJ
+- proto: Magazine46x30mmSubMachineGunTopMountedFMJ
   entities:
   - uid: 10496
     components:
@@ -166484,7 +166484,7 @@ entities:
     - type: Transform
       pos: 35.578094,20.991646
       parent: 13329
-- proto: Magazine5.56x45mmFMJ
+- proto: Magazine556x45mmFMJ
   entities:
   - uid: 10597
     components:

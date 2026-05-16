@@ -13,7 +13,7 @@
     coverage: MOUTH
 
 - type: entity
-  parent: [ ClothingMaskDrakeIndustries , BaseC3ContrabandNoValue ]
+  parent: [ ClothingMaskDrakeIndustries  ]
   id: ClothingMaskDrakeIndustriesWatchdog
   name: watchdog respirator
   description: A clunky respirator following the original design from Drake Industries. This one comes wih a polarized visor to protect the eyes during hostile encounters.
@@ -24,7 +24,6 @@
     sprite: _Mono/Clothing/Mask/gasdi-watchdog.rsi
   - type: IdentityBlocker
     coverage: MOUTH
-  - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
 

@@ -20,7 +20,6 @@
   # Goobstation edit end
   - type: Item
     size: Small
-  - type: ESViewconeOccludable #ES, viewcone occludable comp
   - type: Animateable
   - type: Clickable
   - type: InteractionOutline

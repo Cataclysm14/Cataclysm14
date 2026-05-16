@@ -32,8 +32,8 @@
   supervisors: job-supervisors-pdv-denasvar
   weight: 30
   displayWeight: 30
+  assignedCompany: PDV
   setPreference: true
-  guides: [ BasicLore, PhaethonDynasty] # Mono
   access:
   - Pirate
   - PDVCommand
@@ -60,7 +60,7 @@
 - type: startingGear
   id: PDVDenasvarGear
   equipment:
-    # ears: ClothingHeadsetAltVanguardCommand
+    ears: ClothingHeadsetAltVanguardCommand
     #belt: ClothingBeltUtility
     pocket1: BasePirateUplinkPirateCrew
     #pocket2: AppraisalTool

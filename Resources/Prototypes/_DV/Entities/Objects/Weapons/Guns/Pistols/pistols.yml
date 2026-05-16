@@ -38,7 +38,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridges9x19mm
+            - Cartridge9x19mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -79,7 +79,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridges9x19mm
+            - Cartridge9x19mmFMJ
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
