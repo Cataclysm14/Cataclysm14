@@ -1,10 +1,10 @@
 #MARK: Base
 - type: entity
-  name: M240 (7.62x51mm NATO)
+  name: M240 (7,62x51mm NATO)
   parent: BaseWeaponRifle
   id: WeaponMediumMachineGunM240Base
   abstract: true
-  description: A modern LMG made for use by the US army and NATO countries, Chambered in 7.62x51mm NATO .
+  description: A modern LMG made for use by the US army and NATO countries, Chambered in 7,62x51mm NATO .
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Guns/MediumMachineGuns/M240_64x32.rsi
@@ -59,9 +59,9 @@
         priority: 2
         whitelist:
           tags:
-            - Magazine7.62x51mmSTANAGCompatible
-            - AmmoBelt7.62x51mm
-            - MagazineBox7.62x51mmLMGCompatible
+            - Magazine7,62x51mmSTANAGCompatible
+            - AmmoBelt7,62x51mm
+            - MagazineBox7,62x51mmLMGCompatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
@@ -69,7 +69,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x51mm
+            - Cartridge7,62x51mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -94,7 +94,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineBox7.62x51mmLMG200rdEmpty
+        startingItem: MagazineBox7,62x51mmLMG200rdEmpty
 
 #MARK: Box 200rd FMJ
 - type: entity
@@ -106,7 +106,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineBox7.62x51mmLMG200rdFMJ
+        startingItem: MagazineBox7,62x51mmLMG200rdFMJ
 
 #MARK: Box 200rd Tracer Yellow
 - type: entity
@@ -118,4 +118,4 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineBox7.62x51mmLMG200rdTracerYellow
+        startingItem: MagazineBox7,62x51mmLMG200rdTracerYellow

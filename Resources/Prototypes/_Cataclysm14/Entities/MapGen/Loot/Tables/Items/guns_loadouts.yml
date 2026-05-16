@@ -7,10 +7,10 @@
           children:
           - id: WeaponAssaultRifleFAMAS_G2FilledFAMAS25rdEmpty
           - id: WeaponAssaultRifleFAMAS_G2FilledFAMAS25rdFMJ
-      - id: Magazine5.56x45mmFAMAS25rdFMJ
+      - id: Magazine5,56x45mmFAMAS25rdFMJ
         rolls: !type:RangeNumberSelector
           range: 1,4
-      - id: AmmoBox5.56x45mmFMJ
+      - id: AmmoBox5,56x45mmFMJ
         rolls: !type:RangeNumberSelector
           range: 0,2
 
@@ -23,10 +23,10 @@
           children:
           - id: WeaponAssaultRifleM4A1FilledSTANAG30rdEmpty
           - id: WeaponAssaultRifleM4A1FilledSTANAG30rdFMJ
-      - id: Magazine5.56x45mmSTANAG30rdFMJ
+      - id: Magazine5,56x45mmSTANAG30rdFMJ
         rolls: !type:RangeNumberSelector
           range: 1,4
-      - id: AmmoBox5.56x45mmFMJ
+      - id: AmmoBox5,56x45mmFMJ
         rolls: !type:RangeNumberSelector
           range: 0,2
 
@@ -39,10 +39,10 @@
           children:
           - id: WeaponBattleRifleFnFalFilledSTANAG20rdEmpty
           - id: WeaponBattleRifleFnFalFilledSTANAG20rdFMJ
-      - id: Magazine7.62x51mmSTANAG20rdFMJ
+      - id: Magazine7,62x51mmSTANAG20rdFMJ
         rolls: !type:RangeNumberSelector
           range: 1,4
-      - id: AmmoBox7.62x51mmFMJ
+      - id: AmmoBox7,62x51mmFMJ
         rolls: !type:RangeNumberSelector
           range: 0,2
 
@@ -57,13 +57,13 @@
           - id: WeaponLightMachineGunM249Filled200rdFMJ
       - !type:GroupSelector
           children:
-          - id: MagazineBox5.56x45mmLMG100rdFMJ
+          - id: MagazineBox5,56x45mmLMG100rdFMJ
             rolls: !type:RangeNumberSelector
               range: 1,4
-          - id: MagazineBox5.56x45mmLMG200rdFMJ
+          - id: MagazineBox5,56x45mmLMG200rdFMJ
             rolls: !type:RangeNumberSelector
               range: 1,4
-      - id: AmmoBox5.56x45mmFMJ
+      - id: AmmoBox5,56x45mmFMJ
         rolls: !type:RangeNumberSelector
           range: 0,3
 

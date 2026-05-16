@@ -1,18 +1,18 @@
 #MARK: Base
 - type: entity
-  id: BaseMagazine4.6x30mm
-  name: pistol magazine (4.6x30mm FMJ)
+  id: BaseMagazine4,6x30mm
+  name: pistol magazine (4,6x30mm FMJ)
   parent: [ BaseItem, RecyclableItemSteelTiny ]
   abstract: true
   components:
   - type: Tag
     tags:
-      - Magazine4.6x30mmPistolFMJ
+      - Magazine4,6x30mmPistolFMJ
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge4.6x30mm
+        - Cartridge4,6x30mm
     capacity: 21
   - type: Item
     size: Small
@@ -21,7 +21,7 @@
       ballistic-ammo: !type:Container
   - type: Sprite
     scale: 0.30,0.30
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/4.6x30mm/4.6x30mm_pistol_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/4,6x30mm/4,6x30mm_pistol_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -35,19 +35,19 @@
 
 #MARK: MP7 30rd
 - type: entity
-  id: BaseMagazine4.6x30mmMP7_30rd
+  id: BaseMagazine4,6x30mmMP7_30rd
   abstract: true
-  name: "MP7 30rd magazine (4.6x30mm)"
-  parent: BaseMagazine4.6x30mm
+  name: "MP7 30rd magazine (4,6x30mm)"
+  parent: BaseMagazine4,6x30mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge4.6x30mmFMJ
+    proto: Cartridge4,6x30mmFMJ
     capacity: 30
   - type: Tag
     tags:
-      - Magazine4.6x30mmMP7Compatible
+      - Magazine4,6x30mmMP7Compatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/4.6x30mm/magazine_4.6x30mm_MP7_30rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/4,6x30mm/magazine_4,6x30mm_MP7_30rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -56,37 +56,37 @@
 
 #MARK: Empty
 - type: entity
-  id: Magazine4.6x30mmMP7_30rdEmpty
+  id: Magazine4,6x30mmMP7_30rdEmpty
   suffix: Empty
-  parent: BaseMagazine4.6x30mmMP7_30rd
+  parent: BaseMagazine4,6x30mmMP7_30rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: Magazine4.6x30mmMP7_30rdFMJ
+  id: Magazine4,6x30mmMP7_30rdFMJ
   suffix: FMJ
-  parent: BaseMagazine4.6x30mmMP7_30rd
+  parent: BaseMagazine4,6x30mmMP7_30rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge4.6x30mmFMJ
+    proto: Cartridge4,6x30mmFMJ
 
 #MARK: MP7 40rd
 - type: entity
-  id: BaseMagazine4.6x30mmMP7_40rd
+  id: BaseMagazine4,6x30mmMP7_40rd
   abstract: true
-  name: "MP7 40rd magazine (4.6x30mm)"
-  parent: BaseMagazine4.6x30mm
+  name: "MP7 40rd magazine (4,6x30mm)"
+  parent: BaseMagazine4,6x30mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge4.6x30mmFMJ
+    proto: Cartridge4,6x30mmFMJ
     capacity: 40
   - type: Tag
     tags:
-      - Magazine4.6x30mmMP7Compatible
+      - Magazine4,6x30mmMP7Compatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/4.6x30mm/magazine_4.6x30mm_MP7_40rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/4,6x30mm/magazine_4,6x30mm_MP7_40rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -95,18 +95,18 @@
 
 #MARK: Empty
 - type: entity
-  id: Magazine4.6x30mmMP7_40rdEmpty
+  id: Magazine4,6x30mmMP7_40rdEmpty
   suffix: Empty
-  parent: BaseMagazine4.6x30mmMP7_40rd
+  parent: BaseMagazine4,6x30mmMP7_40rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: Magazine4.6x30mmMP7_40rdFMJ
+  id: Magazine4,6x30mmMP7_40rdFMJ
   suffix: FMJ
-  parent: BaseMagazine4.6x30mmMP7_40rd
+  parent: BaseMagazine4,6x30mmMP7_40rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge4.6x30mmFMJ
+    proto: Cartridge4,6x30mmFMJ

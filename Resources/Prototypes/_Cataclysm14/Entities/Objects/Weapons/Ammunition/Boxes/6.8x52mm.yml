@@ -1,14 +1,14 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseAmmoBox6.8x52mmCaseless
+  id: BaseAmmoBox6,8x52mmCaseless
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge6.8x52mmCaseless
-    proto: Cartridge6.8x52mmCaseless
+        - Cartridge6,8x52mmCaseless
+    proto: Cartridge6,8x52mmCaseless
     capacity: 80
   - type: Item
     size: Small
@@ -16,7 +16,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/6.35x40mm_caseless.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/6,35x40mm_caseless.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 4
@@ -24,7 +24,7 @@
   - type: Appearance
   - type: Tag
     tags:
-     - Magazine6.8x52mmCaselessBoxSmall
+     - Magazine6,8x52mmCaselessBoxSmall
   - type: EmitSoundOnPickup
     sound:
       path: /Audio/_Goobstation/Items/handling/ammobox_pickup.ogg
@@ -37,12 +37,12 @@
 
 # Boxes
 - type: entity
-  parent: BaseAmmoBox6.8x52mmCaseless
-  id: AmmoBox6.8x52mmCaseless
-  name: ammunition box (6.8x52mm STANAG Caseless)
+  parent: BaseAmmoBox6,8x52mmCaseless
+  id: AmmoBox6,8x52mmCaseless
+  name: ammunition box (6,8x52mm STANAG Caseless)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.8x52mmCaseless
+    proto: Cartridge6,8x52mmCaseless
   - type: Sprite
     layers:
     - state: base
@@ -51,12 +51,12 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  parent: BaseAmmoBox6.8x52mmCaseless
-  id: AmmoBox6.8x52mmCaselessPractice
-  name: ammunition box (6.8x52mm STANAG Caseless practice)
+  parent: BaseAmmoBox6,8x52mmCaseless
+  id: AmmoBox6,8x52mmCaselessPractice
+  name: ammunition box (6,8x52mm STANAG Caseless practice)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.8x52mmCaselessPractice
+    proto: Cartridge6,8x52mmCaselessPractice
   - type: Sprite
     layers:
     - state: base
@@ -66,14 +66,14 @@
     - state: practice
 
 - type: entity
-  parent: BaseAmmoBox6.8x52mmCaseless
-  id: AmmoBox6.8x52mmCaselessRubber
-  name: ammunition box (6.8x52mm STANAG Caseless rubber)
+  parent: BaseAmmoBox6,8x52mmCaseless
+  id: AmmoBox6,8x52mmCaselessRubber
+  name: ammunition box (6,8x52mm STANAG Caseless rubber)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.8x52mmCaselessRubber
+    proto: Cartridge6,8x52mmCaselessRubber
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/6.35x40mm_caseless.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/6,35x40mm_caseless.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -82,9 +82,9 @@
     - state: rubber
 
 - type: entity
-  parent: BaseAmmoBox6.8x52mmCaseless
-  id: AmmoBox6.8x52mmCaselessBig
-  name: big ammunition box (6.8x52mm STANAG Caseless)
+  parent: BaseAmmoBox6,8x52mmCaseless
+  id: AmmoBox6,8x52mmCaselessBig
+  name: big ammunition box (6,8x52mm STANAG Caseless)
   suffix: Big
   components:
   - type: Item
@@ -92,9 +92,9 @@
     - 0,0,1,1
   - type: BallisticAmmoProvider
     capacity: 200
-    proto: Cartridge6.8x52mmCaseless
+    proto: Cartridge6,8x52mmCaseless
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/6.35x40mm_caseless.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/6,35x40mm_caseless.rsi
     layers:
     - state: base-b
       map: ["enum.GunVisualLayers.Base"]
@@ -104,4 +104,4 @@
     magState: magb
   - type: Tag
     tags:
-     - Magazine6.8x52mmCaselessBoxBig
+     - Magazine6,8x52mmCaselessBoxBig

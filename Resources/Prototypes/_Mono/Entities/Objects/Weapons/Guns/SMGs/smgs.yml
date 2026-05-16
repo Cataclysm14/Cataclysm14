@@ -1,5 +1,5 @@
 - type: entity
-  name: SKR-WS MLA-73 (6.35x40mm caseless)
+  name: SKR-WS MLA-73 (6,35x40mm caseless)
   parent: [BaseWeaponSubMachineGun, BaseGunWieldable]
   id: WeaponSubMachineGunMla73
   description: A reliable PDW design, commonly issued to pilots and AFV crewmen. This one has been modified with an integral suppressor. Legends around this weapons say it's a Corporate-Era schematic that's been built by the Phaethon Dynasty. Can take 9x19mm smg magazines in a pinch.
@@ -30,22 +30,22 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine6.35x40mmCaseless
+        startingItem: Magazine6,35x40mmCaseless
         insertSound: /Audio/Weapons/Guns/MagIn/hpistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - Magazine6.35x40mmCaseless
+          - Magazine6,35x40mmCaseless
           - Magazine9x19mmSubMachineGunFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge6.35x40mmCaseless
+        startingItem: Cartridge6,35x40mmCaseless
         priority: 1
         whitelist:
           tags:
-          - Cartridge6.35x40mmCaseless
+          - Cartridge6,35x40mmCaseless
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -415,10 +415,10 @@
   - type: Appearance
 
 - type: entity
-  name: RS-2 Malandro (4.6x30mm)
+  name: RS-2 Malandro (4,6x30mm)
   parent: BaseWeaponSubMachineGun
   id: WeaponSubMachineGunMalandro
-  description: A rugged, run down SMG chambered in 4.6x30mm designed for short range shootouts, featuring a 10 round burst at the cost of accuracy.
+  description: A rugged, run down SMG chambered in 4,6x30mm designed for short range shootouts, featuring a 10 round burst at the cost of accuracy.
   components:
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/SMGs/rs-2_malandro.rsi
@@ -452,18 +452,18 @@
     slots:
        gun_magazine:
           name: Magazine
-          startingItem: Magazine4.6x30mmSubMachineGunFMJ
+          startingItem: Magazine4,6x30mmSubMachineGunFMJ
           insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
           ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
           priority: 2
           whitelist:
             tags:
-              - Magazine4.6x30mmSubMachineGunFMJ
+              - Magazine4,6x30mmSubMachineGunFMJ
           whitelistFailPopup: gun-magazine-whitelist-fail
        gun_chamber:
           name: Chamber
-          startingItem: Cartridge4.6x30mmFMJ
+          startingItem: Cartridge4,6x30mmFMJ
           priority: 1
           whitelist:
             tags:
-              - Cartridge4.6x30mm
+              - Cartridge4,6x30mm

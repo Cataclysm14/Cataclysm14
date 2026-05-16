@@ -88,13 +88,13 @@
   cost: 35000
   recipeUnlocks:
   - WeaponRifleWSPRRogue
-  - Magazine7.62x39mmSubsonic
-  - AmmoBox7.62x39mmSubsonic
+  - Magazine7,62x39mmSubsonic
+  - AmmoBox7,62x39mmSubsonic
   - WeaponSubMachineGunMla73Rogue
-  - Magazine6.35x40mmCaseless
-  - AmmoBox6.35x40mmCaseless
-  - MagazineAsmgtUniversal6.35x40mm
-  - AmmoBox6.35x40mmCaselessBig
+  - Magazine6,35x40mmCaseless
+  - AmmoBox6,35x40mmCaseless
+  - MagazineAsmgtUniversal6,35x40mm
+  - AmmoBox6,35x40mmCaselessBig
   technologyPrerequisites:
   - RogueAdvancedGuns
   position: 13, 8

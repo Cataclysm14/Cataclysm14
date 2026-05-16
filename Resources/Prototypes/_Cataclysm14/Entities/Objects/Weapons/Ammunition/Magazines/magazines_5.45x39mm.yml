@@ -1,19 +1,19 @@
 #MARK: Base
 - type: entity
-  id: BaseMagazine5.45x39mm
-  name: "magazine (5.45x39mm FMJ)"
+  id: BaseMagazine5,45x39mm
+  name: "magazine (5,45x39mm FMJ)"
   parent: [ BaseItem, RecyclableItemSteelTiny ]
   abstract: true
   components:
   - type: Tag
     tags:
-      - Magazine5.45x39mm
+      - Magazine5,45x39mm
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge5.45x39mm
-    proto: Cartridge5.45x39mmFMJ
+        - Cartridge5,45x39mm
+    proto: Cartridge5,45x39mmFMJ
     capacity: 30
   - type: Item
     size: Small
@@ -35,10 +35,10 @@
 
 #MARK: 6L20 30rd
 - type: entity
-  id: BaseMagazine5.45x39mm6L20_30rd
+  id: BaseMagazine5,45x39mm6L20_30rd
   abstract: true
-  name: "6L20 30rd magazine (5.45x39mm)"
-  parent: BaseMagazine5.45x39mm
+  name: "6L20 30rd magazine (5,45x39mm)"
+  parent: BaseMagazine5,45x39mm
   components:
   - type: BallisticAmmoProvider
     capacity: 30
@@ -46,9 +46,9 @@
     storedScale: 2.5
   - type: Tag
     tags:
-    - Magazine5.45x39mmAKCompatible
+    - Magazine5,45x39mmAKCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/5.45x39mm/magazine_5.45x39mm_6L20_30rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/5,45x39mm/magazine_5,45x39mm_6L20_30rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -57,28 +57,28 @@
 
 #MARK: Empty
 - type: entity
-  id: Magazine5.45x39mm6L20_30rdEmpty
+  id: Magazine5,45x39mm6L20_30rdEmpty
   suffix: Empty
-  parent: BaseMagazine5.45x39mm6L20_30rd
+  parent: BaseMagazine5,45x39mm6L20_30rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: Magazine5.45x39mm6L20_30rdFMJ
+  id: Magazine5,45x39mm6L20_30rdFMJ
   suffix: FMJ
-  parent: BaseMagazine5.45x39mm6L20_30rd
+  parent: BaseMagazine5,45x39mm6L20_30rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.45x39mmFMJ
+    proto: Cartridge5,45x39mmFMJ
 
 #MARK: 6L23 30rd
 - type: entity
-  id: BaseMagazine5.45x39mm6L23_30rd
+  id: BaseMagazine5,45x39mm6L23_30rd
   abstract: true
-  name: "6L23 30rd magazine (5.45x39mm)"
-  parent: BaseMagazine5.45x39mm
+  name: "6L23 30rd magazine (5,45x39mm)"
+  parent: BaseMagazine5,45x39mm
   components:
   - type: BallisticAmmoProvider
     capacity: 30
@@ -86,9 +86,9 @@
     storedScale: 2.5
   - type: Tag
     tags:
-    - Magazine5.45x39mmAKCompatible
+    - Magazine5,45x39mmAKCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/5.45x39mm/magazine_5.45x39mm_6L23_30rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/5,45x39mm/magazine_5,45x39mm_6L23_30rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -97,28 +97,28 @@
 
 #MARK: Empty
 - type: entity
-  id: Magazine5.45x39mm6L23_30rdEmpty
+  id: Magazine5,45x39mm6L23_30rdEmpty
   suffix: Empty
-  parent: BaseMagazine5.45x39mm6L23_30rd
+  parent: BaseMagazine5,45x39mm6L23_30rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: Magazine5.45x39mm6L23_30rdFMJ
+  id: Magazine5,45x39mm6L23_30rdFMJ
   suffix: FMJ
-  parent: BaseMagazine5.45x39mm6L23_30rd
+  parent: BaseMagazine5,45x39mm6L23_30rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.45x39mmFMJ
+    proto: Cartridge5,45x39mmFMJ
 
 #MARK: 6L18 45rd
 - type: entity
-  id: BaseMagazine5.45x39mm6L18_45rd
+  id: BaseMagazine5,45x39mm6L18_45rd
   abstract: true
-  name: "6L18 45rd magazine (5.45x39mm)"
-  parent: BaseMagazine5.45x39mm
+  name: "6L18 45rd magazine (5,45x39mm)"
+  parent: BaseMagazine5,45x39mm
   components:
   - type: BallisticAmmoProvider
     capacity: 45
@@ -126,9 +126,9 @@
     storedScale: 2.5
   - type: Tag
     tags:
-    - Magazine5.45x39mmAKCompatible
+    - Magazine5,45x39mmAKCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/5.45x39mm/magazine_5.45x39mm_6L18_45rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/5,45x39mm/magazine_5,45x39mm_6L18_45rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -137,18 +137,18 @@
 
 #MARK: Empty
 - type: entity
-  id: Magazine5.45x39mm6L18_45rdEmpty
+  id: Magazine5,45x39mm6L18_45rdEmpty
   suffix: Empty
-  parent: BaseMagazine5.45x39mm6L18_45rd
+  parent: BaseMagazine5,45x39mm6L18_45rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: Magazine5.45x39mm6L18_45rdFMJ
+  id: Magazine5,45x39mm6L18_45rdFMJ
   suffix: FMJ
-  parent: BaseMagazine5.45x39mm6L18_45rd
+  parent: BaseMagazine5,45x39mm6L18_45rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.45x39mmFMJ
+    proto: Cartridge5,45x39mmFMJ

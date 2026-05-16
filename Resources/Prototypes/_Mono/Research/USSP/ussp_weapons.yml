@@ -21,7 +21,7 @@
   cost: 25000
   recipeUnlocks:
   - WeaponRifleAK410USSP
-  - AmmoBox7.62x39mmSubsonic
+  - AmmoBox7,62x39mmSubsonic
   technologyPrerequisites:
   - UsspMediumGuns
   - UniversalMaterialResearchT2

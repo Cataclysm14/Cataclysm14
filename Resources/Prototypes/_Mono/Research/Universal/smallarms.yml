@@ -9,23 +9,23 @@
   - UniversalMaterialResearchT2
   position: 8, 6
   recipeUnlocks:
-  - Magazine7.62x51mmPlasteelAP
-  - AmmoBox7.62x51mmPlasteelAP
-  - Magazine7.62x54mmRPlasteelAP
-  - AmmoBox7.62x54mmRPlasteelAP
-  - Magazine5.56x45mmPlasteelAP
-  - AmmoBox5.56x45mmPlasteelAP
-  - Magazine7.62x39mmPlasteelAP
-  - AmmoBox7.62x39mmPlasteelAP
+  - Magazine7,62x51mmPlasteelAP
+  - AmmoBox7,62x51mmPlasteelAP
+  - Magazine7,62x54mmRPlasteelAP
+  - AmmoBox7,62x54mmRPlasteelAP
+  - Magazine5,56x45mmPlasteelAP
+  - AmmoBox5,56x45mmPlasteelAP
+  - Magazine7,62x39mmPlasteelAP
+  - AmmoBox7,62x39mmPlasteelAP
   - Magazine45_magnumPistolPlasteelAP
   - AmmoBox45_magnumPlasteelAP
   - SpeedLoader45_magnumPlasteelAP
-  - Magazine4.6x30mmPistolPlasteelAP
-  - Magazine4.6x30mmSubMachineGunPlasteelAP
-  - AmmoBox4.6x30mmPlasteelAP
-  - Magazine5.7x28mmPistolPlasteelAP
-  - Magazine5.7x28mmSubMachineGunPlasteelAP
-  - AmmoBox5.7x28mmPlasteelAP
+  - Magazine4,6x30mmPistolPlasteelAP
+  - Magazine4,6x30mmSubMachineGunPlasteelAP
+  - AmmoBox4,6x30mmPlasteelAP
+  - Magazine5,7x28mmPistolPlasteelAP
+  - Magazine5,7x28mmSubMachineGunPlasteelAP
+  - AmmoBox5,7x28mmPlasteelAP
   - Magazine9x19mmPistolPlasteelAP
   - Magazine9x19mmSubMachineGunPlasteelAP
   - AmmoBox9x19mmPlasteelAP
@@ -51,23 +51,23 @@
 #  - UniversalMaterialResearchT3
 #  position: 9, 10
 #  recipeUnlocks:
-#  - Magazine7.62x51mmSynthAP
-#  - AmmoBox7.62x51mmSynthAP
-#  - Magazine7.62x54mmRSynthAP
-#  - AmmoBox7.62x54mmRSynthAP
-#  - Magazine5.56x45mmSynthAP
-#  - AmmoBox5.56x45mmSynthAP
-#  - Magazine7.62x39mmSynthAP
-#  - AmmoBox7.62x39mmSynthAP
+#  - Magazine7,62x51mmSynthAP
+#  - AmmoBox7,62x51mmSynthAP
+#  - Magazine7,62x54mmRSynthAP
+#  - AmmoBox7,62x54mmRSynthAP
+#  - Magazine5,56x45mmSynthAP
+#  - AmmoBox5,56x45mmSynthAP
+#  - Magazine7,62x39mmSynthAP
+#  - AmmoBox7,62x39mmSynthAP
 #  - Magazine45_magnumPistolSynthAP
 #  - AmmoBox45_magnumSynthAP
 #  - SpeedLoader45_magnumSynthAP
-#  - Magazine4.6x30mmPistolSynthAP
-#  - Magazine4.6x30mmSubMachineGunSynthAP
-#  - AmmoBox4.6x30mmSynthAP
-#  - Magazine5.7x28mmPistolSynthAP
-#  - Magazine5.7x28mmSubMachineGunSynthAP
-#  - AmmoBox5.7x28mmSynthAP
+#  - Magazine4,6x30mmPistolSynthAP
+#  - Magazine4,6x30mmSubMachineGunSynthAP
+#  - AmmoBox4,6x30mmSynthAP
+#  - Magazine5,7x28mmPistolSynthAP
+#  - Magazine5,7x28mmSubMachineGunSynthAP
+#  - AmmoBox5,7x28mmSynthAP
 #  - Magazine9x19mmPistolSynthAP
 #  - Magazine9x19mmSubMachineGunSynthAP
 #  - AmmoBox9x19mmSynthAP
@@ -89,23 +89,23 @@
   - AmmoBox23x75mmSlugRIP
   - Magazine12_gaugeSlugRIP
   - AmmoBox12_gaugeSlugRIP
-  - Magazine7.62x51mmRIP
-  - AmmoBox7.62x51mmRIP
-  - Magazine7.62x54mmRRIP
-  - AmmoBox7.62x54mmRRIP
-  - Magazine5.56x45mmRIP
-  - AmmoBox5.56x45mmRIP
-  - Magazine7.62x39mmRIP
-  - AmmoBox7.62x39mmRIP
+  - Magazine7,62x51mmRIP
+  - AmmoBox7,62x51mmRIP
+  - Magazine7,62x54mmRRIP
+  - AmmoBox7,62x54mmRRIP
+  - Magazine5,56x45mmRIP
+  - AmmoBox5,56x45mmRIP
+  - Magazine7,62x39mmRIP
+  - AmmoBox7,62x39mmRIP
   - Magazine45_magnumPistolRIP
   - SpeedLoader45_magnumRIP
   - AmmoBox45_magnumRIP
-  - Magazine4.6x30mmPistolRIP
-  - Magazine4.6x30mmSubMachineGunRIP
-  - AmmoBox4.6x30mmRIP
-  - Magazine5.7x28mmPistolRIP
-  - Magazine5.7x28mmSubMachineGunRIP
-  - AmmoBox5.7x28mmRIP
+  - Magazine4,6x30mmPistolRIP
+  - Magazine4,6x30mmSubMachineGunRIP
+  - AmmoBox4,6x30mmRIP
+  - Magazine5,7x28mmPistolRIP
+  - Magazine5,7x28mmSubMachineGunRIP
+  - AmmoBox5,7x28mmRIP
   - Magazine9x19mmPistolRIP
   - Magazine9x19mmSubMachineGunRIP
   - AmmoBox9x19mmRIP
@@ -124,26 +124,26 @@
   - AmmoBox23x75mmIncendiary
   - Magazine12_gaugeIncendiary
   - AmmoBox12_gaugeIncendiary
-  - Magazine7.62x51mmIncendiary
-  - AmmoBox7.62x51mmIncendiary
-  - Magazine7.62x54mmRIncendiary
-  - AmmoBox7.62x54mmRIncendiary
+  - Magazine7,62x51mmIncendiary
+  - AmmoBox7,62x51mmIncendiary
+  - Magazine7,62x54mmRIncendiary
+  - AmmoBox7,62x54mmRIncendiary
   - Magazine8x65mmSKRIncendiary
   - AmmoBox8x65mmSKRIncendiary
-  - Magazine5.56x45mmIncendiary
-  - SpeedLoader5.56x45mmIncendiary
-  - AmmoBox5.56x45mmIncendiary
-  - Magazine7.62x39mmIncendiary
-  - AmmoBox7.62x39mmIncendiary
+  - Magazine5,56x45mmIncendiary
+  - SpeedLoader5,56x45mmIncendiary
+  - AmmoBox5,56x45mmIncendiary
+  - Magazine7,62x39mmIncendiary
+  - AmmoBox7,62x39mmIncendiary
   - Magazine45_magnumPistolIncendiary
   - SpeedLoader45_magnumIncendiary
   - AmmoBox45_magnumIncendiary
-  - Magazine4.6x30mmPistolIncendiary
-  - Magazine4.6x30mmSubMachineGunIncendiary
-  - AmmoBox4.6x30mmIncendiary
-  - Magazine5.7x28mmPistolIncendiary
-  - Magazine5.7x28mmSubMachineGunIncendiary
-  - AmmoBox5.7x28mmIncendiary
+  - Magazine4,6x30mmPistolIncendiary
+  - Magazine4,6x30mmSubMachineGunIncendiary
+  - AmmoBox4,6x30mmIncendiary
+  - Magazine5,7x28mmPistolIncendiary
+  - Magazine5,7x28mmSubMachineGunIncendiary
+  - AmmoBox5,7x28mmIncendiary
   - Magazine9x19mmPistolIncendiary
   - Magazine9x19mmSubMachineGunIncendiary
   - SpeedLoader9x19mmIncendiary
@@ -167,24 +167,24 @@
   - AmmoBox23x75mmDepletedUranium
   - Magazine12_gaugeUranium
   - AmmoBox12_gaugeUranium
-  - Magazine7.62x51mmDepletedUranium
-  - AmmoBox7.62x51mmDepletedUranium
-  - Magazine7.62x54mmRUranium
-  - AmmoBox7.62x54mmRUranium
-  - Magazine5.56x45mmDepletedUranium
-  - SpeedLoader5.56x45mmDepletedUranium
-  - AmmoBox5.56x45mmDepletedUranium
-  - Magazine7.62x39mmDepletedUranium
-  - AmmoBox7.62x39mmDepletedUranium
+  - Magazine7,62x51mmDepletedUranium
+  - AmmoBox7,62x51mmDepletedUranium
+  - Magazine7,62x54mmRUranium
+  - AmmoBox7,62x54mmRUranium
+  - Magazine5,56x45mmDepletedUranium
+  - SpeedLoader5,56x45mmDepletedUranium
+  - AmmoBox5,56x45mmDepletedUranium
+  - Magazine7,62x39mmDepletedUranium
+  - AmmoBox7,62x39mmDepletedUranium
   - Magazine45_magnumPistolUranium
   - SpeedLoader45_magnumDepletedUranium
   - AmmoBox45_magnumDepletedUranium
-  - Magazine4.6x30mmPistolUranium
-  - Magazine4.6x30mmSubMachineGunUranium
-  - AmmoBox4.6x30mmDepletedUranium
-  - Magazine5.7x28mmPistolUranium
-  - Magazine5.7x28mmSubMachineGunUranium
-  - AmmoBox5.7x28mmDepletedUranium
+  - Magazine4,6x30mmPistolUranium
+  - Magazine4,6x30mmSubMachineGunUranium
+  - AmmoBox4,6x30mmDepletedUranium
+  - Magazine5,7x28mmPistolUranium
+  - Magazine5,7x28mmSubMachineGunUranium
+  - AmmoBox5,7x28mmDepletedUranium
   - Magazine9x19mmPistolUranium
   - Magazine9x19mmSubMachineGunUranium
   - SpeedLoader9x19mmDepletedUranium

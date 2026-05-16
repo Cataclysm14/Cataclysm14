@@ -1,18 +1,18 @@
 - type: entity
   parent: BaseCartridge
   description: Large anti-material round, capable of punching through armor and walls easily.
-  id: Cartridge12.7x99mm
-  name: cartridge (12.7x99mm anti-material)
+  id: Cartridge12,7x99mm
+  name: cartridge (12,7x99mm anti-material)
   components:
   - type: Tag
     tags:
     - Cartridge
-    - Cartridge12.7x99mm
+    - Cartridge12,7x99mm
   - type: CartridgeAmmo
-    proto: Bullet12.7x99mm
+    proto: Bullet12,7x99mm
   - type: Sprite
     scale: 0.3,0.3
-    sprite: _Cataclysm14/Objects/Weapons/Casings/12.7x99mm_casing.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Casings/12,7x99mm_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -23,18 +23,18 @@
 
 - type: entity
   parent: BaseCartridge
-  id: Cartridge12.7x99mmExplosive
-  name: cartridge (12.7x99mm high-explosive)
+  id: Cartridge12,7x99mmExplosive
+  name: cartridge (12,7x99mm high-explosive)
   components:
   - type: Tag
     tags:
     - Cartridge
-    - Cartridge12.7x99mm
+    - Cartridge12,7x99mm
   - type: CartridgeAmmo
-    proto: Bullet12.7x99mmExplosive
+    proto: Bullet12,7x99mmExplosive
   - type: Sprite
     scale: 0.3,0.3
-    sprite: _Cataclysm14/Objects/Weapons/Casings/12.7x99mm_casing.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Casings/12,7x99mm_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]

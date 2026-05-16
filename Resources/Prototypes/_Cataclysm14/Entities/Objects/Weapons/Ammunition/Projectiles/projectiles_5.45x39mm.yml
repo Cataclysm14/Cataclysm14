@@ -1,7 +1,7 @@
 #MARK: FMJ
 - type: entity
-  id: Bullet5.45x39mmFMJ
-  name: bullet (5.45x39mm FMJ)
+  id: Bullet5,45x39mmFMJ
+  name: bullet (5,45x39mm FMJ)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -13,8 +13,8 @@
 
 #MARK: Rubber
 - type: entity
-  id: Bullet5.45x39mmRubber
-  name: bullet (5.45x39mm rubber)
+  id: Bullet5,45x39mmRubber
+  name: bullet (5,45x39mm rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
   components:
@@ -25,9 +25,9 @@
 
 #MARK: Incendiary
 - type: entity
-  id: Bullet5.45x39mmIncendiary
+  id: Bullet5,45x39mmIncendiary
   parent: BaseBulletIncendiary
-  name: bullet (5.45x39mm incendiary)
+  name: bullet (5,45x39mm incendiary)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -38,9 +38,9 @@
 
 #MARK: Depleted Uranium
 - type: entity
-  id: Bullet5.45x39mmDepletedUranium
+  id: Bullet5,45x39mmDepletedUranium
   parent: BaseBulletUranium
-  name: bullet (5.45x39mm depleted uranium)
+  name: bullet (5,45x39mm depleted uranium)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -51,9 +51,9 @@
 
 #MARK: HP
 - type: entity
-  id: Bullet5.45x39mmHP
+  id: Bullet5,45x39mmHP
   parent: BaseBullet
-  name: bullet (5.45x39mm hollow-point)
+  name: bullet (5,45x39mm hollow-point)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -65,9 +65,9 @@
 
 #MARK: RIP
 - type: entity
-  id: Bullet5.45x39mmRIP
+  id: Bullet5,45x39mmRIP
   parent: BaseBullet
-  name: bullet (5.45x39mm RIP)
+  name: bullet (5,45x39mm RIP)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile

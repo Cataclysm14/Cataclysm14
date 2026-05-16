@@ -8,21 +8,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine6.8x52mmCaselessRubber
+        startingItem: Magazine6,8x52mmCaselessRubber
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine6.8x52mmCaseless
+            - Magazine6,8x52mmCaseless
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge6.8x52mmCaselessRubber
+        startingItem: Cartridge6,8x52mmCaselessRubber
         priority: 1
         whitelist:
           tags:
-            - Cartridge6.8x52mmCaseless
+            - Cartridge6,8x52mmCaseless
 
 #Delta-V
 - type: entity
@@ -34,29 +34,29 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine7.62x51mmRubber
+        startingItem: Magazine7,62x51mmRubber
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine7.62x51mmFMJ
-            - Magazine7.62x51mmLowCapacityFMJ
+            - Magazine7,62x51mmFMJ
+            - Magazine7,62x51mmLowCapacityFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7.62x51mmRubber
+        startingItem: Cartridge7,62x51mmRubber
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x51mm
+            - Cartridge7,62x51mm
 
 # Frontier
 - type: entity
-  name: PA Gestio (7.62x39mm)
+  name: PA Gestio (7,62x39mm)
   parent: BaseWeaponRifle
   id: WeaponRifleGestio
-  description: An old burst-fire rifle that never left trials. Accepts low capacity 7.62x39mm magazines.
+  description: An old burst-fire rifle that never left trials. Accepts low capacity 7,62x39mm magazines.
   components:
   - type: Sprite
     sprite: _NF/Objects/Weapons/Guns/Rifles/gestio.rsi
@@ -84,22 +84,22 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine7.62x39mmLowCapacityFMJ
+        startingItem: Magazine7,62x39mmLowCapacityFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine7.62x39mmLowCapacityFMJ
-            - Magazine7.62x39mmFMJ
+            - Magazine7,62x39mmLowCapacityFMJ
+            - Magazine7,62x39mmFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7.62x39mmFMJ
+        startingItem: Cartridge7,62x39mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x39mm
+            - Cartridge7,62x39mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -119,27 +119,27 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine7.62x39mmLowCapacityRubber
+        startingItem: Magazine7,62x39mmLowCapacityRubber
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine7.62x39mmLowCapacityFMJ
+            - Magazine7,62x39mmLowCapacityFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7.62x39mmRubber
+        startingItem: Cartridge7,62x39mmRubber
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x39mm
+            - Cartridge7,62x39mm
 
 - type: entity
   parent: BaseWeaponRifle
   id: WeaponRifleNovaliteC1
-  name: LWC Novalite C1 (5.56x45mm)
-  description: A modification to the Lecter from LWC, a civilian grade semi-automatic rifle with an internal magazine. Uses 5.56x45mm ammo.
+  name: LWC Novalite C1 (5,56x45mm)
+  description: A modification to the Lecter from LWC, a civilian grade semi-automatic rifle with an internal magazine. Uses 5,56x45mm ammo.
   components:
   - type: Sprite
     sprite: _NF/Objects/Weapons/Guns/Rifles/novalitec1.rsi
@@ -173,11 +173,11 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge5.56x45mmFMJ
+        startingItem: Cartridge5,56x45mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.56x45mm
+            - Cartridge5,56x45mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -207,17 +207,17 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge5.56x45mmRubber
+        startingItem: Cartridge5,56x45mmRubber
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.56x45mm
+            - Cartridge5,56x45mm
 
 - type: entity
   id: WeaponRifleSVS
-  name: NCI SVS-42 (7.62x54mmR)
+  name: NCI SVS-42 (7,62x54mmR)
   parent: [ BaseWeaponRifle, BaseGunMelee ]
-  description: "Originally designed by Samonov, this old surplus rifle looks like it's seen a few wars. Uses low capacity 10 rounder 7.62x54mmR magazines. Equipped with bayonet."
+  description: "Originally designed by Samonov, this old surplus rifle looks like it's seen a few wars. Uses low capacity 10 rounder 7,62x54mmR magazines. Equipped with bayonet."
   components:
   - type: Sprite
     sprite: _NF/Objects/Weapons/Guns/Rifles/svs42.rsi
@@ -246,21 +246,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine7.62x54mmRFMJ
+        startingItem: Magazine7,62x54mmRFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine7.62x54mmRFMJ
+            - Magazine7,62x54mmRFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7.62x54mmRFMJ
+        startingItem: Cartridge7,62x54mmRFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x54mmR
+            - Cartridge7,62x54mmR
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -284,10 +284,10 @@
 
 # Monolith: PMC variants
 - type: entity
-  name: PA Gestio (7.62x39mm)
+  name: PA Gestio (7,62x39mm)
   parent: BaseWeaponRifle
   id: WeaponRifleGestioPMC
-  description: An old burst-fire rifle that never left trials. Accepts low capacity 7.62x39mm magazines. Acquired legally from a licensed provider.
+  description: An old burst-fire rifle that never left trials. Accepts low capacity 7,62x39mm magazines. Acquired legally from a licensed provider.
   components:
   - type: Sprite
     sprite: _NF/Objects/Weapons/Guns/Rifles/gestio.rsi
@@ -315,22 +315,22 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine7.62x39mmLowCapacityFMJ
+        startingItem: Magazine7,62x39mmLowCapacityFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - Magazine7.62x39mmLowCapacityFMJ
-          - Magazine7.62x39mmFMJ
+          - Magazine7,62x39mmLowCapacityFMJ
+          - Magazine7,62x39mmFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7.62x39mmFMJ
+        startingItem: Cartridge7,62x39mmFMJ
         priority: 1
         whitelist:
           tags:
-          - Cartridge7.62x39mm
+          - Cartridge7,62x39mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

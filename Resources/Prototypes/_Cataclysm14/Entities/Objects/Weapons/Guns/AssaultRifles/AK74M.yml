@@ -1,10 +1,10 @@
 #MARK: Base
 - type: entity
-  name: AK74M (5.45x39mm)
+  name: AK74M (5,45x39mm)
   parent: BaseWeaponRifle
   id: WeaponAssaultRifleAK74MBase
   abstract: true
-  description: A modernized version of the AK74 featuring polymer furnitures. Uses 5.45x39mm ammo. When the chaos began to spread across the Earth, few weapons were as reliable as the AK74M.
+  description: A modernized version of the AK74 featuring polymer furnitures. Uses 5,45x39mm ammo. When the chaos began to spread across the Earth, few weapons were as reliable as the AK74M.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/AK74M_64x32.rsi
@@ -45,15 +45,15 @@
         priority: 2
         whitelist:
           tags:
-            - Magazine5.45x39mmAKCompatible
+            - Magazine5,45x39mmAKCompatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge5.45x39mmFMJ
+        startingItem: Cartridge5,45x39mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.45x39mm
+            - Cartridge5,45x39mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -78,7 +78,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.45x39mm6L23_30rdEmpty
+        startingItem: Magazine5,45x39mm6L23_30rdEmpty
 
 #MARK: 6L23 30rd FMJ
 - type: entity
@@ -90,4 +90,4 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.45x39mm6L23_30rdFMJ
+        startingItem: Magazine5,45x39mm6L23_30rdFMJ

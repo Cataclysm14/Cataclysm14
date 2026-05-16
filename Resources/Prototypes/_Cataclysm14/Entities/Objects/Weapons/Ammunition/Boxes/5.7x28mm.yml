@@ -1,15 +1,15 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseAmmoBox5.7x28mm
-  name: ammunition box (5.7x28mm FMJ)
+  id: BaseAmmoBox5,7x28mm
+  name: ammunition box (5,7x28mm FMJ)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge5.7x28mm
-    proto: Cartridge5.7x28mmFMJ
+        - Cartridge5,7x28mm
+    proto: Cartridge5,7x28mmFMJ
     capacity: 80
   - type: Item
     size: Small
@@ -17,14 +17,14 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/5.7x28mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/5,7x28mm.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 3
     zeroVisible: false
   - type: Tag
     tags:
-    - Magazine5.7x28mmFMJBox
+    - Magazine5,7x28mmFMJBox
   - type: Appearance
   - type: EmitSoundOnPickup
     sound:
@@ -38,12 +38,12 @@
 
 #small ammo boxes
 - type: entity
-  parent: BaseAmmoBox5.7x28mm
-  id: AmmoBox5.7x28mmFMJ
-  name: ammunition box (5.7x28mm FMJ)
+  parent: BaseAmmoBox5,7x28mm
+  id: AmmoBox5,7x28mmFMJ
+  name: ammunition box (5,7x28mm FMJ)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.7x28mmFMJ
+    proto: Cartridge5,7x28mmFMJ
   - type: Sprite
     layers:
     - state: base
@@ -52,12 +52,12 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  parent: BaseAmmoBox5.7x28mm
-  id: AmmoBox5.7x28mmPractice
-  name: ammunition box (5.7x28mm practice)
+  parent: BaseAmmoBox5,7x28mm
+  id: AmmoBox5,7x28mmPractice
+  name: ammunition box (5,7x28mm practice)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.7x28mmPractice
+    proto: Cartridge5,7x28mmPractice
   - type: Sprite
     layers:
     - state: base
@@ -67,12 +67,12 @@
     - state: practice
 
 - type: entity
-  parent: BaseAmmoBox5.7x28mm
-  id: AmmoBox5.7x28mmIncendiary
-  name: ammunition box (5.7x28mm incendiary)
+  parent: BaseAmmoBox5,7x28mm
+  id: AmmoBox5,7x28mmIncendiary
+  name: ammunition box (5,7x28mm incendiary)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.7x28mmIncendiary
+    proto: Cartridge5,7x28mmIncendiary
   - type: Sprite
     layers:
     - state: base
@@ -82,12 +82,12 @@
     - state: incendiary
 
 - type: entity
-  id: AmmoBox5.7x28mmDepletedUranium
-  parent: BaseAmmoBox5.7x28mm
-  name: ammunition box (5.7x28mm depleted uranium)
+  id: AmmoBox5,7x28mmDepletedUranium
+  parent: BaseAmmoBox5,7x28mm
+  name: ammunition box (5,7x28mm depleted uranium)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.7x28mmDepletedUranium
+    proto: Cartridge5,7x28mmDepletedUranium
   - type: Sprite
     layers:
     - state: base
@@ -98,12 +98,12 @@
 
 # Upstream
 - type: entity
-  parent: BaseAmmoBox5.7x28mm
-  id: AmmoBox5.7x28mmRubber
-  name: ammunition box (5.7x28mm rubber)
+  parent: BaseAmmoBox5,7x28mm
+  id: AmmoBox5,7x28mmRubber
+  name: ammunition box (5,7x28mm rubber)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.7x28mmRubber
+    proto: Cartridge5,7x28mmRubber
   - type: Sprite
     layers:
     - state: base
@@ -114,12 +114,12 @@
 
 # Frontier
 - type: entity
-  parent: BaseAmmoBox5.7x28mm
-  id: AmmoBox5.7x28mmEmp
-  name: ammunition box (5.7x28mm emp)
+  parent: BaseAmmoBox5,7x28mm
+  id: AmmoBox5,7x28mmEmp
+  name: ammunition box (5,7x28mm emp)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.7x28mmEmp
+    proto: Cartridge5,7x28mmEmp
   - type: Sprite
     layers:
     - state: base
@@ -131,12 +131,12 @@
 # Mono AP syst
 #anti-flesh:
 - type: entity
-  parent: BaseAmmoBox5.7x28mm
-  id: AmmoBox5.7x28mmHP
-  name: ammunition box (5.7x28mm hollow-point)
+  parent: BaseAmmoBox5,7x28mm
+  id: AmmoBox5,7x28mmHP
+  name: ammunition box (5,7x28mm hollow-point)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.7x28mmHP
+    proto: Cartridge5,7x28mmHP
   - type: Sprite
     layers:
     - state: base
@@ -146,12 +146,12 @@
     - state: HP
 
 - type: entity
-  parent: BaseAmmoBox5.7x28mm
-  id: AmmoBox5.7x28mmRIP
-  name: ammunition box (5.7x28mm RIP)
+  parent: BaseAmmoBox5,7x28mm
+  id: AmmoBox5,7x28mmRIP
+  name: ammunition box (5,7x28mm RIP)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.7x28mmRIP
+    proto: Cartridge5,7x28mmRIP
   - type: Sprite
     layers:
     - state: base
@@ -163,12 +163,12 @@
 #armor-piercing:
 
 - type: entity
-  parent: BaseAmmoBox5.7x28mm
-  id: AmmoBox5.7x28mmPlasteelAP
-  name: ammunition box (5.7x28mm AP)
+  parent: BaseAmmoBox5,7x28mm
+  id: AmmoBox5,7x28mmPlasteelAP
+  name: ammunition box (5,7x28mm AP)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.7x28mmPlasteelAP
+    proto: Cartridge5,7x28mmPlasteelAP
   - type: Sprite
     layers:
     - state: base
@@ -179,9 +179,9 @@
 
 #big ammo boxes
 - type: entity
-  parent: BaseAmmoBox5.7x28mm
-  id: AmmoBox5.7x28mmBigFMJ
-  name: big ammunition box (5.7x28mm FMJ)
+  parent: BaseAmmoBox5,7x28mm
+  id: AmmoBox5,7x28mmBigFMJ
+  name: big ammunition box (5,7x28mm FMJ)
   suffix: Big
   components:
   - type: Item
@@ -189,7 +189,7 @@
     - 0,0,1,1
   - type: BallisticAmmoProvider
     capacity: 280 # 8 mags per box similar to rifle box
-    proto: Cartridge5.7x28mmFMJ
+    proto: Cartridge5,7x28mmFMJ
   - type: Sprite
     layers:
     - state: base-b # Frontier: base-big<base-b

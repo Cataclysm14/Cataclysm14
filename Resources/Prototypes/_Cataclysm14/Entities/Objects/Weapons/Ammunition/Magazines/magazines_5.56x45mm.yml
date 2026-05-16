@@ -1,27 +1,27 @@
 #MARK: Base
 - type: entity
-  id: BaseMagazine5.56x45mm
-  name: "magazine (5.56x45mm NATO FMJ)"
+  id: BaseMagazine5,56x45mm
+  name: "magazine (5,56x45mm NATO FMJ)"
   parent: [ BaseItem, RecyclableItemSteelTiny ]
   abstract: true
   components:
   - type: Tag
     tags:
-      - Magazine5.56x45mmFMJ
+      - Magazine5,56x45mmFMJ
   - type: Item
     size: Small
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge5.56x45mm
+        - Cartridge5,56x45mm
     capacity: 30
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
     scale: 0.30,0.30
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/5.56x45mm/5.56x45mm_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/5,56x45mm/5,56x45mm_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -35,10 +35,10 @@
 
 #MARK: STANAG 30rd
 - type: entity
-  id: BaseMagazine5.56x45mmSTANAG30rd
+  id: BaseMagazine5,56x45mmSTANAG30rd
   abstract: true
-  name: "STANAG 30rd magazine (5.56x45mm NATO)"
-  parent: BaseMagazine5.56x45mm
+  name: "STANAG 30rd magazine (5,56x45mm NATO)"
+  parent: BaseMagazine5,56x45mm
   components:
   - type: BallisticAmmoProvider
     capacity: 30
@@ -46,9 +46,9 @@
     storedScale: 2.5
   - type: Tag
     tags:
-      - Magazine5.56x45mmSTANAGCompatible
+      - Magazine5,56x45mmSTANAGCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/5.56x45mm/magazine_5.56x45mm_STANAG_30rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/5,56x45mm/magazine_5,56x45mm_STANAG_30rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -57,46 +57,46 @@
 
 #MARK: Empty
 - type: entity
-  id: Magazine5.56x45mmSTANAG30rdEmpty
+  id: Magazine5,56x45mmSTANAG30rdEmpty
   suffix: Empty
-  parent: BaseMagazine5.56x45mmSTANAG30rd
+  parent: BaseMagazine5,56x45mmSTANAG30rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: Magazine5.56x45mmSTANAG30rdFMJ
+  id: Magazine5,56x45mmSTANAG30rdFMJ
   suffix: FMJ
-  parent: BaseMagazine5.56x45mmSTANAG30rd
+  parent: BaseMagazine5,56x45mmSTANAG30rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmFMJ
+    proto: Cartridge5,56x45mmFMJ
 
 #MARK: Tracer Red
 - type: entity
-  id: Magazine5.56x45mmSTANAG30rdTracerRed
+  id: Magazine5,56x45mmSTANAG30rdTracerRed
   suffix: Tracer Red
-  parent: BaseMagazine5.56x45mmSTANAG30rd
+  parent: BaseMagazine5,56x45mmSTANAG30rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmTracerRed
+    proto: Cartridge5,56x45mmTracerRed
 
 #MARK: 223 Remington
 - type: entity
-  id: Magazine5.56x45mmSTANAG30rd223Remington
+  id: Magazine5,56x45mmSTANAG30rd223Remington
   suffix: .223 Remington
-  parent: BaseMagazine5.56x45mmSTANAG30rd
+  parent: BaseMagazine5,56x45mmSTANAG30rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mm223Remington
+    proto: Cartridge5,56x45mm223Remington
 
 #MARK: STANAG 20rd
 - type: entity
-  id: BaseMagazine5.56x45mmSTANAG20rd
+  id: BaseMagazine5,56x45mmSTANAG20rd
   abstract: true
-  name: "STANAG 20rd magazine (5.56x45mm NATO)"
-  parent: BaseMagazine5.56x45mm
+  name: "STANAG 20rd magazine (5,56x45mm NATO)"
+  parent: BaseMagazine5,56x45mm
   components:
   - type: BallisticAmmoProvider
     capacity: 20
@@ -104,9 +104,9 @@
     storedScale: 2.5
   - type: Tag
     tags:
-      - Magazine5.56x45mmSTANAGCompatible
+      - Magazine5,56x45mmSTANAGCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/5.56x45mm/magazine_5.56x45mm_STANAG_20rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/5,56x45mm/magazine_5,56x45mm_STANAG_20rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -115,37 +115,37 @@
 
 #MARK: Empty
 - type: entity
-  id: Magazine5.56x45mmSTANAG20rdEmpty
+  id: Magazine5,56x45mmSTANAG20rdEmpty
   suffix: Empty
-  parent: BaseMagazine5.56x45mmSTANAG20rd
+  parent: BaseMagazine5,56x45mmSTANAG20rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: Magazine5.56x45mmSTANAG20rdFMJ
+  id: Magazine5,56x45mmSTANAG20rdFMJ
   suffix: FMJ
-  parent: BaseMagazine5.56x45mmSTANAG20rd
+  parent: BaseMagazine5,56x45mmSTANAG20rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmFMJ
+    proto: Cartridge5,56x45mmFMJ
 
 #MARK: 223 Remington
 - type: entity
-  id: Magazine5.56x45mmSTANAG20rd223Remington
+  id: Magazine5,56x45mmSTANAG20rd223Remington
   suffix: .223 Remington
-  parent: BaseMagazine5.56x45mmSTANAG20rd
+  parent: BaseMagazine5,56x45mmSTANAG20rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mm223Remington
+    proto: Cartridge5,56x45mm223Remington
 
 #MARK: Magpul Black 30rd
 - type: entity
-  id: BaseMagazine5.56x45mmMagpulBlack30rd
+  id: BaseMagazine5,56x45mmMagpulBlack30rd
   abstract: true
-  name: "Magpul black 30rd magazine (5.56x45mm NATO)"
-  parent: BaseMagazine5.56x45mm
+  name: "Magpul black 30rd magazine (5,56x45mm NATO)"
+  parent: BaseMagazine5,56x45mm
   components:
   - type: BallisticAmmoProvider
     capacity: 30
@@ -153,9 +153,9 @@
     storedScale: 2.5
   - type: Tag
     tags:
-      - Magazine5.56x45mmSTANAGCompatible
+      - Magazine5,56x45mmSTANAGCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/5.56x45mm/magazine_5.56x45mm_Magpul_black_30rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/5,56x45mm/magazine_5,56x45mm_Magpul_black_30rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -164,28 +164,28 @@
 
 #MARK: Empty
 - type: entity
-  id: Magazine5.56x45mmMagpulBlack30rdEmpty
+  id: Magazine5,56x45mmMagpulBlack30rdEmpty
   suffix: Empty
-  parent: BaseMagazine5.56x45mmMagpulBlack30rd
+  parent: BaseMagazine5,56x45mmMagpulBlack30rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: Magazine5.56x45mmMagpulBlack30rdFMJ
+  id: Magazine5,56x45mmMagpulBlack30rdFMJ
   suffix: FMJ
-  parent: BaseMagazine5.56x45mmMagpulBlack30rd
+  parent: BaseMagazine5,56x45mmMagpulBlack30rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmFMJ
+    proto: Cartridge5,56x45mmFMJ
 
 #MARK: FAMAS 25rd
 - type: entity
-  id: BaseMagazine5.56x45mmFAMAS25rd
+  id: BaseMagazine5,56x45mmFAMAS25rd
   abstract: true
-  name: "FAMAS 25rd magazine (5.56x45mm NATO)"
-  parent: BaseMagazine5.56x45mm
+  name: "FAMAS 25rd magazine (5,56x45mm NATO)"
+  parent: BaseMagazine5,56x45mm
   components:
   - type: BallisticAmmoProvider
     capacity: 25
@@ -193,9 +193,9 @@
     storedScale: 2.5
   - type: Tag
     tags:
-      - Magazine5.56x45mmSTANAGCompatible
+      - Magazine5,56x45mmSTANAGCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/5.56x45mm/magazine_5.56x45mm_FAMAS_25rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/5,56x45mm/magazine_5,56x45mm_FAMAS_25rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -204,28 +204,28 @@
 
 #MARK: Empty
 - type: entity
-  id: Magazine5.56x45mmFAMAS25rdEmpty
+  id: Magazine5,56x45mmFAMAS25rdEmpty
   suffix: Empty
-  parent: BaseMagazine5.56x45mmFAMAS25rd
+  parent: BaseMagazine5,56x45mmFAMAS25rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: Magazine5.56x45mmFAMAS25rdFMJ
+  id: Magazine5,56x45mmFAMAS25rdFMJ
   suffix: FMJ
-  parent: BaseMagazine5.56x45mmFAMAS25rd
+  parent: BaseMagazine5,56x45mmFAMAS25rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmFMJ
+    proto: Cartridge5,56x45mmFMJ
 
 #MARK: 100rd LMG Box
 - type: entity
-  id: BaseMagazineBox5.56x45mmLMG100rd
+  id: BaseMagazineBox5,56x45mmLMG100rd
   abstract: true
-  name: "100rd magazine box (5.56x45mm NATO)"
-  parent: BaseMagazine5.56x45mm
+  name: "100rd magazine box (5,56x45mm NATO)"
+  parent: BaseMagazine5,56x45mm
   components:
   - type: BallisticAmmoProvider
     capacity: 100
@@ -235,10 +235,10 @@
     - 0,0,1,1
   - type: Tag
     tags:
-      - MagazineBox5.56x45mmLMGCompatible
+      - MagazineBox5,56x45mmLMGCompatible
   - type: Sprite
     scale: 0.5,0.5
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/5.56x45mm/magazine_box_5.56x45mm_100rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/5,56x45mm/magazine_box_5,56x45mm_100rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -247,37 +247,37 @@
 
 #MARK: Empty
 - type: entity
-  id: MagazineBox5.56x45mmLMG100rdEmpty
+  id: MagazineBox5,56x45mmLMG100rdEmpty
   suffix: Empty
-  parent: BaseMagazineBox5.56x45mmLMG100rd
+  parent: BaseMagazineBox5,56x45mmLMG100rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: MagazineBox5.56x45mmLMG100rdFMJ
+  id: MagazineBox5,56x45mmLMG100rdFMJ
   suffix: FMJ
-  parent: BaseMagazineBox5.56x45mmLMG100rd
+  parent: BaseMagazineBox5,56x45mmLMG100rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmFMJ
+    proto: Cartridge5,56x45mmFMJ
 
 #MARK: Tracer Red
 - type: entity
-  id: MagazineBox5.56x45mmLMG100rdTracerRed
+  id: MagazineBox5,56x45mmLMG100rdTracerRed
   suffix: Tracer Red
-  parent: BaseMagazineBox5.56x45mmLMG100rd
+  parent: BaseMagazineBox5,56x45mmLMG100rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmTracerRed
+    proto: Cartridge5,56x45mmTracerRed
 
 #MARK: 200rd LMG Box
 - type: entity
-  id: BaseMagazineBox5.56x45mmLMG200rd
+  id: BaseMagazineBox5,56x45mmLMG200rd
   abstract: true
-  name: "200rd magazine box (5.56x45mm NATO)"
-  parent: BaseMagazine5.56x45mm
+  name: "200rd magazine box (5,56x45mm NATO)"
+  parent: BaseMagazine5,56x45mm
   components:
   - type: BallisticAmmoProvider
     capacity: 200
@@ -287,10 +287,10 @@
     - 0,0,1,1
   - type: Tag
     tags:
-      - MagazineBox5.56x45mmLMGCompatible
+      - MagazineBox5,56x45mmLMGCompatible
   - type: Sprite
     scale: 0.5,0.5
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/5.56x45mm/magazine_box_5.56x45mm_200rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/5,56x45mm/magazine_box_5,56x45mm_200rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -299,27 +299,27 @@
 
 #MARK: Empty
 - type: entity
-  id: MagazineBox5.56x45mmLMG200rdEmpty
+  id: MagazineBox5,56x45mmLMG200rdEmpty
   suffix: Empty
-  parent: BaseMagazineBox5.56x45mmLMG200rd
+  parent: BaseMagazineBox5,56x45mmLMG200rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: MagazineBox5.56x45mmLMG200rdFMJ
+  id: MagazineBox5,56x45mmLMG200rdFMJ
   suffix: FMJ
-  parent: BaseMagazineBox5.56x45mmLMG200rd
+  parent: BaseMagazineBox5,56x45mmLMG200rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmFMJ
+    proto: Cartridge5,56x45mmFMJ
 
 #MARK: Tracer Red
 - type: entity
-  id: MagazineBox5.56x45mmLMG200rdTracerRed
+  id: MagazineBox5,56x45mmLMG200rdTracerRed
   suffix: Tracer Red
-  parent: BaseMagazineBox5.56x45mmLMG200rd
+  parent: BaseMagazineBox5,56x45mmLMG200rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmTracerRed
+    proto: Cartridge5,56x45mmTracerRed

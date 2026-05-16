@@ -1,7 +1,7 @@
 #MARK: Base
 - type: entity
-  id: BaseCartridge4.6x30mm
-  name: cartridge (4.6x30mm FMJ)
+  id: BaseCartridge4,6x30mm
+  name: cartridge (4,6x30mm FMJ)
   parent: BaseCartridge
   description: A light AP round developed for PDWs in the 1990s, by an older world.
   abstract: true
@@ -9,12 +9,12 @@
   - type: Tag
     tags:
       - Cartridge
-      - Cartridge4.6x30mm
+      - Cartridge4,6x30mm
   - type: CartridgeAmmo
-    proto: Bullet4.6x30mm
+    proto: Bullet4,6x30mm
   - type: Sprite
     scale: 0.4, 0.2
-    sprite: _Cataclysm14/Objects/Weapons/Casings/4.6x30mm_casing.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Casings/4,6x30mm_casing.rsi
     layers:
       - state: base
         map: [ "enum.AmmoVisualLayers.Base" ]
@@ -25,21 +25,21 @@
 
 #MARK: FMJ
 - type: entity
-  id: Cartridge4.6x30mmFMJ
-  name: cartridge (4.6x30mm FMJ)
-  parent: BaseCartridge4.6x30mm
+  id: Cartridge4,6x30mmFMJ
+  name: cartridge (4,6x30mm FMJ)
+  parent: BaseCartridge4,6x30mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet4.6x30mm
+    proto: Bullet4,6x30mm
 
 #MARK: Incendiary
 - type: entity
-  id: Cartridge4.6x30mmIncendiary
-  name: cartridge (4.6x30mm incendiary)
-  parent: BaseCartridge4.6x30mm
+  id: Cartridge4,6x30mmIncendiary
+  name: cartridge (4,6x30mm incendiary)
+  parent: BaseCartridge4,6x30mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet4.6x30mmIncendiary
+    proto: Bullet4,6x30mmIncendiary
   - type: Sprite
     layers:
       - state: base
@@ -50,12 +50,12 @@
 
 #MARK: Depleted Uranium
 - type: entity
-  id: Cartridge4.6x30mmDepletedUranium
-  name: cartridge (4.6x30mm depleted uranium)
-  parent: BaseCartridge4.6x30mm
+  id: Cartridge4,6x30mmDepletedUranium
+  name: cartridge (4,6x30mm depleted uranium)
+  parent: BaseCartridge4,6x30mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet4.6x30mmDepletedUranium
+    proto: Bullet4,6x30mmDepletedUranium
   - type: Sprite
     layers:
       - state: base
@@ -66,12 +66,12 @@
 
 #MARK: Rubber
 - type: entity
-  id: Cartridge4.6x30mmRubber
-  name: cartridge (4.6x30mm rubber)
-  parent: BaseCartridge4.6x30mm
+  id: Cartridge4,6x30mmRubber
+  name: cartridge (4,6x30mm rubber)
+  parent: BaseCartridge4,6x30mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet4.6x30mmRubber
+    proto: Bullet4,6x30mmRubber
   - type: Sprite
     layers:
       - state: base
@@ -82,12 +82,12 @@
 
 #MARK: HP
 - type: entity
-  id: Cartridge4.6x30mmHP
-  name: cartridge (4.6x30mm hollow-point)
-  parent: BaseCartridge4.6x30mm
+  id: Cartridge4,6x30mmHP
+  name: cartridge (4,6x30mm hollow-point)
+  parent: BaseCartridge4,6x30mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet4.6x30mmHP
+    proto: Bullet4,6x30mmHP
   - type: Sprite
     layers:
       - state: base
@@ -98,12 +98,12 @@
 
 #MARK: RIP
 - type: entity
-  id: Cartridge4.6x30mmRIP
-  name: cartridge (4.6x30mm RIP)
-  parent: BaseCartridge4.6x30mm
+  id: Cartridge4,6x30mmRIP
+  name: cartridge (4,6x30mm RIP)
+  parent: BaseCartridge4,6x30mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet4.6x30mmRIP
+    proto: Bullet4,6x30mmRIP
   - type: Sprite
     layers:
       - state: base
@@ -117,12 +117,12 @@
 #armor-piercing:
 
 - type: entity
-  id: Cartridge4.6x30mmPlasteelAP
-  name: cartridge (4.6x30mm AP)
-  parent: BaseCartridge4.6x30mm
+  id: Cartridge4,6x30mmPlasteelAP
+  name: cartridge (4,6x30mm AP)
+  parent: BaseCartridge4,6x30mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet4.6x30mmPlasteelAP
+    proto: Bullet4,6x30mmPlasteelAP
   - type: Sprite
     layers:
       - state: base
@@ -133,24 +133,24 @@
 
 # Frontier
 - type: entity
-  id: Cartridge4.6x30mmEmp
-  name: cartridge (4.6x30mm emp)
-  parent: BaseCartridge4.6x30mm
+  id: Cartridge4,6x30mmEmp
+  name: cartridge (4,6x30mm emp)
+  parent: BaseCartridge4,6x30mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet4.6x30mmEmp
+    proto: Bullet4,6x30mmEmp
   - type: EmpDescription
     range: 0.3
     energyConsumption: 2700000
     disableDuration: 10
 
 - type: entity
-  id: Cartridge4.6x30mmPractice
-  name: cartridge (4.6x30mm practice)
-  parent: BaseCartridge4.6x30mm
+  id: Cartridge4,6x30mmPractice
+  name: cartridge (4,6x30mm practice)
+  parent: BaseCartridge4,6x30mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet4.6x30mmPractice
+    proto: Bullet4,6x30mmPractice
   -  type: Sprite
      layers:
        - state: base

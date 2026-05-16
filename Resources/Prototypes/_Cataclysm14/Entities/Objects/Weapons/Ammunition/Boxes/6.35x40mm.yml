@@ -1,14 +1,14 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseAmmoBox6.35x40mmCaseless
+  id: BaseAmmoBox6,35x40mmCaseless
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge6.35x40mmCaseless
-    proto: Cartridge6.35x40mmCaseless
+        - Cartridge6,35x40mmCaseless
+    proto: Cartridge6,35x40mmCaseless
     capacity: 80
   - type: Item
     size: Small
@@ -16,7 +16,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/6.35x40mm_caseless.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/6,35x40mm_caseless.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 4
@@ -34,12 +34,12 @@
 
 # Boxes
 - type: entity
-  parent: BaseAmmoBox6.35x40mmCaseless
-  id: AmmoBox6.35x40mmCaseless
-  name: ammunition box (6.35x40mm Caseless)
+  parent: BaseAmmoBox6,35x40mmCaseless
+  id: AmmoBox6,35x40mmCaseless
+  name: ammunition box (6,35x40mm Caseless)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.35x40mmCaseless
+    proto: Cartridge6,35x40mmCaseless
   - type: Sprite
     layers:
     - state: base
@@ -48,12 +48,12 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  parent: BaseAmmoBox6.35x40mmCaseless
-  id: AmmoBox6.35x40mmCaselessPractice
-  name: ammunition box (6.35x40mm Caseless practice)
+  parent: BaseAmmoBox6,35x40mmCaseless
+  id: AmmoBox6,35x40mmCaselessPractice
+  name: ammunition box (6,35x40mm Caseless practice)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.35x40mmCaselessPractice
+    proto: Cartridge6,35x40mmCaselessPractice
   - type: Sprite
     layers:
     - state: base
@@ -63,9 +63,9 @@
     - state: practice
 
 - type: entity
-  parent: BaseAmmoBox6.35x40mmCaseless
-  id: AmmoBox6.35x40mmCaselessBigRubber
-  name: big ammunition box (6.35x40mm Caseless rubber)
+  parent: BaseAmmoBox6,35x40mmCaseless
+  id: AmmoBox6,35x40mmCaselessBigRubber
+  name: big ammunition box (6,35x40mm Caseless rubber)
   suffix: Big
   components:
   - type: Item
@@ -73,9 +73,9 @@
     - 0,0,1,1
   - type: BallisticAmmoProvider
     capacity: 200
-    proto: Cartridge6.35x40mmCaselessRubber
+    proto: Cartridge6,35x40mmCaselessRubber
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/6.35x40mm_caseless.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/6,35x40mm_caseless.rsi
     layers:
     - state: base-b
       map: ["enum.GunVisualLayers.Base"]
@@ -89,14 +89,14 @@
   - type: Appearance
 
 - type: entity
-  parent: BaseAmmoBox6.35x40mmCaseless
-  id: AmmoBox6.35x40mmCaselessRubber
-  name: ammunition box (6.35x40mm Caseless rubber)
+  parent: BaseAmmoBox6,35x40mmCaseless
+  id: AmmoBox6,35x40mmCaselessRubber
+  name: ammunition box (6,35x40mm Caseless rubber)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.35x40mmCaselessRubber
+    proto: Cartridge6,35x40mmCaselessRubber
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/6.35x40mm_caseless.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/6,35x40mm_caseless.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -105,9 +105,9 @@
     - state: rubber
 
 - type: entity
-  parent: BaseAmmoBox6.35x40mmCaseless
-  id: AmmoBox6.35x40mmCaselessBig
-  name: big ammunition box (6.35x40mm Caseless)
+  parent: BaseAmmoBox6,35x40mmCaseless
+  id: AmmoBox6,35x40mmCaselessBig
+  name: big ammunition box (6,35x40mm Caseless)
   suffix: Big
   components:
   - type: Item
@@ -115,9 +115,9 @@
     - 0,0,1,1
   - type: BallisticAmmoProvider
     capacity: 200
-    proto: Cartridge6.35x40mmCaseless
+    proto: Cartridge6,35x40mmCaseless
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/6.35x40mm_caseless.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/6,35x40mm_caseless.rsi
     layers:
     - state: base-b
       map: ["enum.GunVisualLayers.Base"]

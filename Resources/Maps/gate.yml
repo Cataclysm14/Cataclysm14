@@ -140850,7 +140850,7 @@ entities:
     - type: Transform
       pos: 51.36094,56.594063
       parent: 2
-- proto: Magazine7.62x39mmFMJ
+- proto: Magazine7,62x39mmFMJ
   entities:
   - uid: 8376
     components:

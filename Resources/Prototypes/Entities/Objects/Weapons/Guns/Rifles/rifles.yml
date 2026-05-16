@@ -30,21 +30,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine7.62x39mmFMJ
+        startingItem: Magazine7,62x39mmFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine7.62x39mmFMJ
+            - Magazine7,62x39mmFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7.62x39mmFMJ
+        startingItem: Cartridge7,62x39mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x39mm
+            - Cartridge7,62x39mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -71,10 +71,10 @@
   # Goobstation edit end
 
 - type: entity
-  name: LWC AKM (7.62x39mm)
+  name: LWC AKM (7,62x39mm)
   parent: BaseWeaponRifle
   id: WeaponRifleAk
-  description: An old Pre-Fracture Era rifle. Uses 7.62x39mm ammo. When the Fracture began to spread across the Old Earth territories, few weapons were as reliable as the AKM
+  description: An old Pre-Fracture Era rifle. Uses 7,62x39mm ammo. When the Fracture began to spread across the Old Earth territories, few weapons were as reliable as the AKM
   components:
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Rifles/akm.rsi # Mono
@@ -98,22 +98,22 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine7.62x39mmFMJ
+        startingItem: Magazine7,62x39mmFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine7.62x39mmFMJ
-            - Magazine7.62x39mmLowCapacityFMJ
+            - Magazine7,62x39mmFMJ
+            - Magazine7,62x39mmLowCapacityFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7.62x39mmFMJ
+        startingItem: Cartridge7,62x39mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x39mm
+            - Cartridge7,62x39mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -127,10 +127,10 @@
     id: AKM # Frontier
 
 - type: entity
-  name: TCA M-6 Lecter (6.8x52mm Caseless)
+  name: TCA M-6 Lecter (6,8x52mm Caseless)
   parent: BaseWeaponRifle
   id: WeaponRifleLecter
-  description: The result of a project to make a new standard rifle for the branches of the TSF military. Accurate, easy to use, and firing the 6.8x52mm STANAG round. Also accepts 5.56x45mm magazines to assist with standardization.
+  description: The result of a project to make a new standard rifle for the branches of the TSF military. Accurate, easy to use, and firing the 6,8x52mm STANAG round. Also accepts 5,56x45mm magazines to assist with standardization.
   components:
   - type: Item # Mono
     size: Huge
@@ -154,23 +154,23 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine6.8x52mmCaseless # Mono
+        startingItem: Magazine6,8x52mmCaseless # Mono
         insertSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/m16_magin.ogg # Mono
         ejectSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagOut/skm_magout.ogg # Mono
         priority: 2
         whitelist:
           tags:
-            - Magazine6.8x52mmCaseless # Mono
-            - Magazine5.56x45mmFMJ # Mono
+            - Magazine6,8x52mmCaseless # Mono
+            - Magazine5,56x45mmFMJ # Mono
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge6.8x52mmCaseless # Mono
+        startingItem: Cartridge6,8x52mmCaseless # Mono
         priority: 1
         whitelist:
           tags:
-            - Cartridge6.8x52mmCaseless # Mono
-            - Cartridge5.56x45mm # Mono
+            - Cartridge6,8x52mmCaseless # Mono
+            - Cartridge5,56x45mm # Mono
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

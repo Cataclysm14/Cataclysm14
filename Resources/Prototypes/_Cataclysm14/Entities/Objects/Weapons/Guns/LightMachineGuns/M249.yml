@@ -1,10 +1,10 @@
 #MARK: Base
 - type: entity
-  name: M249 (5.56x45mm NATO)
+  name: M249 (5,56x45mm NATO)
   parent: BaseWeaponRifle
   id: WeaponLightMachineGunM249Base
   abstract: true
-  description: A modern LMG made for use by the US army and NATO countries, Chambered in 5.56x45mm NATO .
+  description: A modern LMG made for use by the US army and NATO countries, Chambered in 5,56x45mm NATO .
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Guns/LightMachineGuns/M249_64x32.rsi
@@ -59,9 +59,9 @@
         priority: 2
         whitelist:
           tags:
-            - Magazine5.56x45mmSTANAGCompatible
-            - AmmoBelt5.56x45mm
-            - MagazineBox5.56x45mmLMGCompatible
+            - Magazine5,56x45mmSTANAGCompatible
+            - AmmoBelt5,56x45mm
+            - MagazineBox5,56x45mmLMGCompatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
@@ -69,7 +69,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.56x45mm
+            - Cartridge5,56x45mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -94,7 +94,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineBox5.56x45mmLMG200rdEmpty
+        startingItem: MagazineBox5,56x45mmLMG200rdEmpty
 
 #MARK: Box 200rd FMJ
 - type: entity
@@ -106,7 +106,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineBox5.56x45mmLMG200rdFMJ
+        startingItem: MagazineBox5,56x45mmLMG200rdFMJ
 
 #MARK: Box 200rd Tracer Red
 - type: entity
@@ -118,4 +118,4 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineBox5.56x45mmLMG200rdTracerRed
+        startingItem: MagazineBox5,56x45mmLMG200rdTracerRed

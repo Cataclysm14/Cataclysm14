@@ -2,22 +2,22 @@
 
 - type: latheRecipe
   parent: BaseAmmoFMJPistolCaliberSubMachineGunMagazineRecipe
-  id: Magazine6.35x40mmCaseless
-  result: Magazine6.35x40mmCaseless
+  id: Magazine6,35x40mmCaseless
+  result: Magazine6,35x40mmCaseless
 
 #Ammo boxes
 
 - type: latheRecipe
   parent: BaseAmmoFMJPistolCaliberAmmoBoxRecipe
-  id: AmmoBox6.35x40mmCaseless
-  result: AmmoBox6.35x40mmCaseless
+  id: AmmoBox6,35x40mmCaseless
+  result: AmmoBox6,35x40mmCaseless
 
 - type: latheRecipe
   parent: BaseAmmoFMJPistolCaliberAmmoBoxRecipe
-  id: MagazineAsmgtUniversal6.35x40mm
-  result: MagazineAsmgtUniversal6.35x40mm
+  id: MagazineAsmgtUniversal6,35x40mm
+  result: MagazineAsmgtUniversal6,35x40mm
 
 - type: latheRecipe
   parent: BaseAmmoFMJPistolCaliberAmmoBoxRecipe
-  id: AmmoBox6.35x40mmCaselessBig
-  result: AmmoBox6.35x40mmCaselessBig
+  id: AmmoBox6,35x40mmCaselessBig
+  result: AmmoBox6,35x40mmCaselessBig

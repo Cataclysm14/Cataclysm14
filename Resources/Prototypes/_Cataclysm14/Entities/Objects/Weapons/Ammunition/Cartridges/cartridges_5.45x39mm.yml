@@ -1,7 +1,7 @@
 #MARK: Base
 - type: entity
-  id: BaseCartridge5.45x39mm
-  name: cartridge (5.45x39mm FMJ)
+  id: BaseCartridge5,45x39mm
+  name: cartridge (5,45x39mm FMJ)
   parent: BaseCartridge
   description: Originating from over 400 years ago, this round has seen use in the rifles of multiple militias and militaries alike.
   abstract: true
@@ -9,12 +9,12 @@
   - type: Tag
     tags:
     - Cartridge
-    - Cartridge5.45x39mm
+    - Cartridge5,45x39mm
   - type: CartridgeAmmo
-    proto: Bullet5.45x39mmFMJ
+    proto: Bullet5,45x39mmFMJ
   - type: Sprite
     scale: 0.3, 0.3
-    sprite: _Cataclysm14/Objects/Weapons/Casings/5.45x39mm_casing.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Casings/5,45x39mm_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -25,21 +25,21 @@
 
 #MARK: FMJ
 - type: entity
-  id: Cartridge5.45x39mmFMJ
-  name: cartridge (5.45x39mm FMJ)
-  parent: BaseCartridge5.45x39mm
+  id: Cartridge5,45x39mmFMJ
+  name: cartridge (5,45x39mm FMJ)
+  parent: BaseCartridge5,45x39mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet5.45x39mmFMJ
+    proto: Bullet5,45x39mmFMJ
 
 #MARK: Incendiary
 - type: entity
-  id: Cartridge5.45x39mmIncendiary
-  name: cartridge (5.45x39mm incendiary)
-  parent: BaseCartridge5.45x39mm
+  id: Cartridge5,45x39mmIncendiary
+  name: cartridge (5,45x39mm incendiary)
+  parent: BaseCartridge5,45x39mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet5.45x39mmIncendiary
+    proto: Bullet5,45x39mmIncendiary
   - type: Sprite
     layers:
       - state: base
@@ -50,12 +50,12 @@
 
 #MARK: Depleted Uranium
 - type: entity
-  id: Cartridge5.45x39mmDepletedUranium
-  name: cartridge (5.45x39mm depleted uranium)
-  parent: BaseCartridge5.45x39mm
+  id: Cartridge5,45x39mmDepletedUranium
+  name: cartridge (5,45x39mm depleted uranium)
+  parent: BaseCartridge5,45x39mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet5.45x39mmDepletedUranium
+    proto: Bullet5,45x39mmDepletedUranium
   - type: Sprite
     layers:
       - state: base
@@ -66,12 +66,12 @@
 
 #MARK: Rubber
 - type: entity
-  id: Cartridge5.45x39mmRubber
-  name: cartridge (5.45x39mm rubber)
-  parent: BaseCartridge5.45x39mm
+  id: Cartridge5,45x39mmRubber
+  name: cartridge (5,45x39mm rubber)
+  parent: BaseCartridge5,45x39mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet5.45x39mmRubber
+    proto: Bullet5,45x39mmRubber
   - type: Sprite
     layers:
       - state: base
@@ -82,12 +82,12 @@
 
 #MARK: HP
 - type: entity
-  id: Cartridge5.45x39mmHP
-  name: cartridge (5.45x39mm hollow-point)
-  parent: BaseCartridge5.45x39mm
+  id: Cartridge5,45x39mmHP
+  name: cartridge (5,45x39mm hollow-point)
+  parent: BaseCartridge5,45x39mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet5.45x39mmHP
+    proto: Bullet5,45x39mmHP
   - type: Sprite
     layers:
       - state: base
@@ -98,12 +98,12 @@
 
 #MARK: RIP
 - type: entity
-  id: Cartridge5.45x39mmRIP
-  name: cartridge (5.45x39mm RIP)
-  parent: BaseCartridge5.45x39mm
+  id: Cartridge5,45x39mmRIP
+  name: cartridge (5,45x39mm RIP)
+  parent: BaseCartridge5,45x39mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet5.45x39mmRIP
+    proto: Bullet5,45x39mmRIP
   - type: Sprite
     layers:
       - state: base

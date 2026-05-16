@@ -1,10 +1,10 @@
 #MARK: Base
 - type: entity
-  name: HK417 (7.62x51mm NATO)
+  name: HK417 (7,62x51mm NATO)
   parent: BaseWeaponRifle
   id: WeaponBattleRifleHK417Base
   abstract: true
-  description: A modern battle rifle made by the german company Heckler & Koch. Chambered in 7.62x51mm NATO .
+  description: A modern battle rifle made by the german company Heckler & Koch. Chambered in 7,62x51mm NATO .
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Guns/BattleRifles/HK417_64x32.rsi
@@ -42,21 +42,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine7.62x51mmSTANAG20rdEmpty
+        startingItem: Magazine7,62x51mmSTANAG20rdEmpty
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine7.62x51mmSTANAGCompatible
+            - Magazine7,62x51mmSTANAGCompatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7.62x51mmFMJ
+        startingItem: Cartridge7,62x51mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x51mm
+            - Cartridge7,62x51mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -81,7 +81,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine7.62x51mmSTANAG20rdEmpty
+        startingItem: Magazine7,62x51mmSTANAG20rdEmpty
 
 #MARK: STANAG 20rd FMJ
 - type: entity
@@ -93,4 +93,4 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine7.62x51mmSTANAG20rdFMJ
+        startingItem: Magazine7,62x51mmSTANAG20rdFMJ

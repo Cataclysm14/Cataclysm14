@@ -2,15 +2,15 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseAmmoBox5.45x39mm
-  name: ammunition box (5.45x39mm FMJ)
+  id: BaseAmmoBox5,45x39mm
+  name: ammunition box (5,45x39mm FMJ)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge5.45x39mm
-    proto: Cartridge5.45x39mmFMJ
+        - Cartridge5,45x39mm
+    proto: Cartridge5,45x39mmFMJ
     capacity: 70 # more than 2 rifle mag
   - type: Item
     size: Small
@@ -18,14 +18,14 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/5.45x39mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/5,45x39mm.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 4
     zeroVisible: false
   # - type: Tag
   #   tags:
-  #   - Magazine5.45x39mmBox
+  #   - Magazine5,45x39mmBox
   - type: Appearance
   - type: EmitSoundOnPickup
     sound:
@@ -39,12 +39,12 @@
 
 #MARK: FMJ
 - type: entity
-  parent: BaseAmmoBox5.45x39mm
-  id: AmmoBox5.45x39mmFMJ
-  name: ammunition box (5.45x39mm FMJ)
+  parent: BaseAmmoBox5,45x39mm
+  id: AmmoBox5,45x39mmFMJ
+  name: ammunition box (5,45x39mm FMJ)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.45x39mmFMJ
+    proto: Cartridge5,45x39mmFMJ
   - type: Sprite
     layers:
     - state: base
@@ -54,12 +54,12 @@
 
 #MARK: Incendiary
 - type: entity
-  parent: BaseAmmoBox5.45x39mm
-  id: AmmoBox5.45x39mmIncendiary
-  name: ammunition box (5.45x39mm incendiary)
+  parent: BaseAmmoBox5,45x39mm
+  id: AmmoBox5,45x39mmIncendiary
+  name: ammunition box (5,45x39mm incendiary)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.45x39mmIncendiary
+    proto: Cartridge5,45x39mmIncendiary
   - type: Sprite
     layers:
     - state: base
@@ -70,12 +70,12 @@
 
 #MARK: Depleted Uranium
 - type: entity
-  id: AmmoBox5.45x39mmDepletedUranium
-  parent: BaseAmmoBox5.45x39mm
-  name: ammunition box (5.45x39mm depleted uranium)
+  id: AmmoBox5,45x39mmDepletedUranium
+  parent: BaseAmmoBox5,45x39mm
+  name: ammunition box (5,45x39mm depleted uranium)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.45x39mmDepletedUranium
+    proto: Cartridge5,45x39mmDepletedUranium
   - type: Sprite
     layers:
     - state: base
@@ -86,12 +86,12 @@
 
 #MARK: Rubber
 - type: entity
-  parent: BaseAmmoBox5.45x39mm
-  id: AmmoBox5.45x39mmRubber
-  name: ammunition box (5.45x39mm rubber)
+  parent: BaseAmmoBox5,45x39mm
+  id: AmmoBox5,45x39mmRubber
+  name: ammunition box (5,45x39mm rubber)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.45x39mmRubber
+    proto: Cartridge5,45x39mmRubber
   - type: Sprite
     layers:
     - state: base
@@ -102,12 +102,12 @@
 
 #MARK: HP
 - type: entity
-  parent: BaseAmmoBox5.45x39mm
-  id: AmmoBox5.45x39mmHP
-  name: ammunition box (5.45x39mm hollow-point)
+  parent: BaseAmmoBox5,45x39mm
+  id: AmmoBox5,45x39mmHP
+  name: ammunition box (5,45x39mm hollow-point)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.45x39mmHP
+    proto: Cartridge5,45x39mmHP
   - type: Sprite
     layers:
     - state: base
@@ -118,12 +118,12 @@
 
 #MARK: RIP
 - type: entity
-  parent: BaseAmmoBox5.45x39mm
-  id: AmmoBox5.45x39mmRIP
-  name: ammunition box (5.45x39mm RIP)
+  parent: BaseAmmoBox5,45x39mm
+  id: AmmoBox5,45x39mmRIP
+  name: ammunition box (5,45x39mm RIP)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.45x39mmRIP
+    proto: Cartridge5,45x39mmRIP
   - type: Sprite
     layers:
     - state: base
@@ -134,9 +134,9 @@
 
 #MARK: Big FMJ
 - type: entity
-  parent: BaseAmmoBox5.45x39mm
-  id: AmmoBox5.45x39mmBigFMJ
-  name: big ammunition box (5.45x39mm FMJ)
+  parent: BaseAmmoBox5,45x39mm
+  id: AmmoBox5,45x39mmBigFMJ
+  name: big ammunition box (5,45x39mm FMJ)
   suffix: Big
   components:
   - type: Item
@@ -144,7 +144,7 @@
     - 0,0,1,1
   - type: BallisticAmmoProvider
     capacity: 210 # 7 rifle mags
-    proto: Cartridge5.45x39mmFMJ
+    proto: Cartridge5,45x39mmFMJ
   - type: Sprite
     layers:
     - state: base-b # Frontier: base-big<base-b

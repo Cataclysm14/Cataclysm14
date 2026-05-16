@@ -4,7 +4,7 @@
   id: MagazineAsmgtUniversalEmpty
   name: "ASMGT-compatible ammo box"
   description: |-
-   Universal ASMGT-compatible ammo box capable of accepting 5.56x45mm, 6.35x40mm, 7.62x39mm and 9x19mm cartridges.
+   Universal ASMGT-compatible ammo box capable of accepting 5,56x45mm, 6,35x40mm, 7,62x39mm and 9x19mm cartridges.
   suffix: empty
   components:
   - type: Tag
@@ -17,9 +17,9 @@
     whitelist:
       tags:
         - Cartridge9x19mm
-        - Cartridge5.56x45mm
-        - Cartridge7.62x39mm
-        - Cartridge6.35x40mmCaseless
+        - Cartridge5,56x45mm
+        - Cartridge7,62x39mm
+        - Cartridge6,35x40mmCaseless
     capacity: 50
   - type: ContainerContainer
     containers:
@@ -45,30 +45,30 @@
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmFMJ
-    
-- type: entity
-  parent: MagazineAsmgtUniversalEmpty
-  id: MagazineAsmgtUniversal7.62x39mm
-  name: "ASMGT-compatible ammo box (7.62x39mm)"
-  suffix: Loaded
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge7.62x39mmFMJ
 
 - type: entity
   parent: MagazineAsmgtUniversalEmpty
-  id: MagazineAsmgtUniversal5.56x45mm
-  name: "ASMGT-compatible ammo box (5.56x45mm)"
+  id: MagazineAsmgtUniversal7,62x39mm
+  name: "ASMGT-compatible ammo box (7,62x39mm)"
   suffix: Loaded
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmFMJ
+    proto: Cartridge7,62x39mmFMJ
 
 - type: entity
   parent: MagazineAsmgtUniversalEmpty
-  id: MagazineAsmgtUniversal6.35x40mm
-  name: "ASMGT-compatible ammo box (6.35x40mm)"
+  id: MagazineAsmgtUniversal5,56x45mm
+  name: "ASMGT-compatible ammo box (5,56x45mm)"
   suffix: Loaded
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.35x40mmCaseless
+    proto: Cartridge5,56x45mmFMJ
+
+- type: entity
+  parent: MagazineAsmgtUniversalEmpty
+  id: MagazineAsmgtUniversal6,35x40mm
+  name: "ASMGT-compatible ammo box (6,35x40mm)"
+  suffix: Loaded
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge6,35x40mmCaseless

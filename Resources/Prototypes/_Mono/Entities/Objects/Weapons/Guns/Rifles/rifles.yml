@@ -71,10 +71,10 @@
     pvsIncrease: 1
 
 - type: entity
-  name: NCI AK-502 (7.62x39mm)
+  name: NCI AK-502 (7,62x39mm)
   parent: BaseWeaponRifle
   id: WeaponRifleAK502
-  description: A standard-issue USSP combat rifle. Uses 7.62x39mm ammo.
+  description: A standard-issue USSP combat rifle. Uses 7,62x39mm ammo.
   components:
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Rifles/ak502.rsi
@@ -103,21 +103,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine7.62x39mmFMJ
+        startingItem: Magazine7,62x39mmFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/sfrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/hpistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - Magazine7.62x39mmFMJ
+          - Magazine7,62x39mmFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7.62x39mmFMJ
+        startingItem: Cartridge7,62x39mmFMJ
         priority: 1
         whitelist:
           tags:
-          - Cartridge7.62x39mm
+          - Cartridge7,62x39mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -133,10 +133,10 @@
     id: StandardFactionLongarm
 
 - type: entity
-  name: VFD XLR-556 ICWS (5.56x45mm)
+  name: VFD XLR-556 ICWS (5,56x45mm)
   parent: [BaseWeaponRifle, BaseGunWieldable, BaseFactionGearTSFT2]
   id: WeaponRifleXlr556
-  description: A proposed next-gen "rifle" for TSF standard infantry. Chambered in 5.56x45mm rifle rounds, its RPM is incredible - but with great firerate comes great fire control...
+  description: A proposed next-gen "rifle" for TSF standard infantry. Chambered in 5,56x45mm rifle rounds, its RPM is incredible - but with great firerate comes great fire control...
   components:
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Rifles/xlr556.rsi
@@ -172,21 +172,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmFMJ
+        startingItem: Magazine5,56x45mmFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/sfrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/hpistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - Magazine5.56x45mmFMJ
+          - Magazine5,56x45mmFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge5.56x45mmFMJ
+        startingItem: Cartridge5,56x45mmFMJ
         priority: 1
         whitelist:
           tags:
-          - Cartridge5.56x45mm
+          - Cartridge5,56x45mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -204,10 +204,10 @@
 
 #Mercenary vulcan
 - type: entity
-  name: HWM FCM-C "Vulcan" (7.62x51mm)
+  name: HWM FCM-C "Vulcan" (7,62x51mm)
   parent: WeaponRifleVulcan
   id: WeaponRifleVulcanFCMC
-  description: The Herstal Weapon Manufacture "Vulcan" Civilian Medium combat rifle (Fusil de Combat Moyen Civil) in 7.62x51mm, this civilian version only has semi-automatic mode and reduced firerate.
+  description: The Herstal Weapon Manufacture "Vulcan" Civilian Medium combat rifle (Fusil de Combat Moyen Civil) in 7,62x51mm, this civilian version only has semi-automatic mode and reduced firerate.
   components:
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Rifles/WeaponRifleVulcanFCMC.rsi
@@ -232,32 +232,32 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine7.62x51mmFMJ
+        startingItem: Magazine7,62x51mmFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine7.62x51mmFMJ
-            - Magazine7.62x51mmLowCapacityFMJ
+            - Magazine7,62x51mmFMJ
+            - Magazine7,62x51mmLowCapacityFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge7.62x51mmFMJ
+        startingItem: Cartridge7,62x51mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge7.62x51mm
+            - Cartridge7,62x51mm
   - type: StaticPrice
     price: 1200
     vendPrice: 30000
 
 #Mercenary lecter
 - type: entity
-  name: HWM FCL "Prometheus" (5.56x45mm)
+  name: HWM FCL "Prometheus" (5,56x45mm)
   parent: BaseWeaponRifle
   id: WeaponRiflePrometheus
-  description: The Herstal Weapon Manufacture "Prometheus" Light combat rifle (Fusil de Combat Léger) in 5.56x45mm. Made to be mass producable for fight against xenos. Its firerate is decent with burst being superior and accuracy poor.
+  description: The Herstal Weapon Manufacture "Prometheus" Light combat rifle (Fusil de Combat Léger) in 5,56x45mm. Made to be mass producable for fight against xenos. Its firerate is decent with burst being superior and accuracy poor.
   components:
   - type: Item # Mono
     size: Huge
@@ -297,21 +297,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmFMJ # Mono
+        startingItem: Magazine5,56x45mmFMJ # Mono
         insertSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/m16_magin.ogg # Mono
         ejectSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagOut/skm_magout.ogg # Mono
         priority: 2
         whitelist:
           tags:
-            - Magazine5.56x45mmFMJ # Mono
+            - Magazine5,56x45mmFMJ # Mono
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge5.56x45mmFMJ # Mono
+        startingItem: Cartridge5,56x45mmFMJ # Mono
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.56x45mm # Mono
+            - Cartridge5,56x45mm # Mono
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -409,10 +409,10 @@
 #Corporate War Lecter
 
 - type: entity
-  name: NTSF-LTR-556 (5.56x45mm,6.8x52mm Caseless)
+  name: NTSF-LTR-556 (5,56x45mm,6,8x52mm Caseless)
   parent: [BaseWeaponRifle, BaseFactionGearOtherFactionT1]
   id: WeaponRifleNtsfLtr
-  description: An old corporate war era rifle. The Nano Trasen Security Forces and Special Forces's Light Tactical Rifle chambered in 5.56x45mm, also accepts 6.8x52mm due to it being a brand new caliber of its time and being a prototype. This rifle is of high-quality with plastitanium internal and plasteel furnitures.
+  description: An old corporate war era rifle. The Nano Trasen Security Forces and Special Forces's Light Tactical Rifle chambered in 5,56x45mm, also accepts 6,8x52mm due to it being a brand new caliber of its time and being a prototype. This rifle is of high-quality with plastitanium internal and plasteel furnitures.
   components:
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Rifles/NTSF-LTR-556
@@ -444,23 +444,23 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmFMJ
+        startingItem: Magazine5,56x45mmFMJ
         insertSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/m16_magin.ogg
         ejectSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagOut/skm_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine6.8x52mmCaseless
-            - Magazine5.56x45mmFMJ
+            - Magazine6,8x52mmCaseless
+            - Magazine5,56x45mmFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge5.56x45mmFMJ
+        startingItem: Cartridge5,56x45mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge6.8x52mmCaseless
-            - Cartridge5.56x45mm
+            - Cartridge6,8x52mmCaseless
+            - Cartridge5,56x45mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

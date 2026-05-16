@@ -1,9 +1,9 @@
 #MARK: Base
 - type: entity
-  name: GIAT FAMAS-G2 (5.56x45mm NATO)
+  name: GIAT FAMAS-G2 (5,56x45mm NATO)
   parent: BaseWeaponRifle
   id: WeaponAssaultRifleFAMAS_G2Base
-  description: A modern polymer bullpup assault rifle made by the GIAT group and used by the french army. Chambered in 5.56x45mm NATO.
+  description: A modern polymer bullpup assault rifle made by the GIAT group and used by the french army. Chambered in 5,56x45mm NATO.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/FAMAS-G2_64x32.rsi
@@ -52,21 +52,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmFAMAS25rdEmpty
+        startingItem: Magazine5,56x45mmFAMAS25rdEmpty
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine5.56x45mmSTANAGCompatible
+            - Magazine5,56x45mmSTANAGCompatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge5.56x45mmFMJ
+        startingItem: Cartridge5,56x45mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.56x45mm
+            - Cartridge5,56x45mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -91,7 +91,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmFAMAS25rdEmpty
+        startingItem: Magazine5,56x45mmFAMAS25rdEmpty
 
 #MARK: FAMAS 25rd FMJ
 - type: entity
@@ -103,4 +103,4 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmFAMAS25rdFMJ
+        startingItem: Magazine5,56x45mmFAMAS25rdFMJ

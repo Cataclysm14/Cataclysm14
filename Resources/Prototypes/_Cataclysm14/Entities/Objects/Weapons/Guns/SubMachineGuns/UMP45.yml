@@ -59,9 +59,9 @@
         priority: 2
         whitelist:
           tags:
-            - Magazine5.56x45mmSTANAGCompatible
-            - AmmoBelt5.56x45mm
-            - MagazineBox5.56x45mmLMGCompatible
+            - Magazine5,56x45mmSTANAGCompatible
+            - AmmoBelt5,56x45mm
+            - MagazineBox5,56x45mmLMGCompatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
@@ -69,7 +69,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.56x45mm
+            - Cartridge5,56x45mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

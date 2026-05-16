@@ -1,6 +1,6 @@
 #MARK: Base
 - type: entity
-  name: HK MP7 (4.6x30mm)
+  name: HK MP7 (4,6x30mm)
   parent: BaseWeaponRifle
   id: WeaponSubMachineGunMP7Base
   abstract: true
@@ -59,7 +59,7 @@
         priority: 2
         whitelist:
           tags:
-            - Magazine4.6x30mmMP7Compatible
+            - Magazine4,6x30mmMP7Compatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
@@ -67,7 +67,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge4.6x30mm
+            - Cartridge4,6x30mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -92,7 +92,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine4.6x30mmMP7_30rdEmpty
+        startingItem: Magazine4,6x30mmMP7_30rdEmpty
 
 #MARK: MP7 30rd FMJ
 - type: entity
@@ -104,4 +104,4 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine4.6x30mmMP7_30rdFMJ
+        startingItem: Magazine4,6x30mmMP7_30rdFMJ

@@ -1,10 +1,10 @@
 #MARK: Base
 - type: entity
-  name: Colt M4A1 (5.56x45mm NATO)
+  name: Colt M4A1 (5,56x45mm NATO)
   parent: BaseWeaponRifle
   id: WeaponAssaultRifleM4A1Base
   abstract: true
-  description: A modern polymer assault rifle based on the M16 and XM serie of rifles. Chambered in 5.56x45mm NATO.
+  description: A modern polymer assault rifle based on the M16 and XM serie of rifles. Chambered in 5,56x45mm NATO.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/M4A1_64x32.rsi
@@ -51,7 +51,7 @@
         priority: 2
         whitelist:
           tags:
-            - Magazine5.56x45mmSTANAGCompatible
+            - Magazine5,56x45mmSTANAGCompatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
@@ -59,7 +59,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.56x45mm
+            - Cartridge5,56x45mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -84,7 +84,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmSTANAG30rdEmpty
+        startingItem: Magazine5,56x45mmSTANAG30rdEmpty
 
 #MARK: STANAG 30rd FMJ
 - type: entity
@@ -96,7 +96,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmSTANAG30rdFMJ
+        startingItem: Magazine5,56x45mmSTANAG30rdFMJ
 
 #MARK: STANAG 30rd Tracer Red
 - type: entity
@@ -108,4 +108,4 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmSTANAG30rdTracerRed
+        startingItem: Magazine5,56x45mmSTANAG30rdTracerRed

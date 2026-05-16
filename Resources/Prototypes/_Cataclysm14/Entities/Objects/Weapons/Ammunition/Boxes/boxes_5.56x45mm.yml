@@ -2,15 +2,15 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseAmmoBox5.56x45mm
-  name: ammunition box (5.56x45mm NATO FMJ)
+  id: BaseAmmoBox5,56x45mm
+  name: ammunition box (5,56x45mm NATO FMJ)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge5.56x45mm
-    proto: Cartridge5.56x45mmFMJ
+        - Cartridge5,56x45mm
+    proto: Cartridge5,56x45mmFMJ
     capacity: 50 # more than 2 rifle mag
   - type: Item
     size: Small
@@ -20,14 +20,14 @@
       ballistic-ammo: !type:Container
   - type: Sprite
     scale: 0.5,0.5
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/5.56x45mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/5,56x45mm.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 4
     zeroVisible: false
   - type: Tag
     tags:
-    - Magazine5.56x45mmBox
+    - Magazine5,56x45mmBox
   - type: Appearance
   - type: EmitSoundOnPickup
     sound:
@@ -41,12 +41,12 @@
 
 #MARK: FMJ
 - type: entity
-  parent: BaseAmmoBox5.56x45mm
-  id: AmmoBox5.56x45mmFMJ
-  name: ammunition box (5.56x45mm NATO FMJ)
+  parent: BaseAmmoBox5,56x45mm
+  id: AmmoBox5,56x45mmFMJ
+  name: ammunition box (5,56x45mm NATO FMJ)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmFMJ
+    proto: Cartridge5,56x45mmFMJ
   - type: Sprite
     layers:
     - state: base
@@ -56,12 +56,12 @@
 
 #MARK: Tracer Red
 - type: entity
-  parent: BaseAmmoBox5.56x45mm
-  id: AmmoBox5.56x45mmTracerRed
-  name: ammunition box (5.56x45mm NATO red tracer)
+  parent: BaseAmmoBox5,56x45mm
+  id: AmmoBox5,56x45mmTracerRed
+  name: ammunition box (5,56x45mm NATO red tracer)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmTracerRed
+    proto: Cartridge5,56x45mmTracerRed
   - type: Sprite
     layers:
     - state: base
@@ -71,12 +71,12 @@
 
 #MARK: 223 Remington
 - type: entity
-  parent: BaseAmmoBox5.56x45mm
-  id: AmmoBox5.56x45mm223Remington
+  parent: BaseAmmoBox5,56x45mm
+  id: AmmoBox5,56x45mm223Remington
   name: ammunition box (.223 Remington)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mm223Remington
+    proto: Cartridge5,56x45mm223Remington
   - type: Sprite
     layers:
     - state: base
@@ -86,12 +86,12 @@
 
 #MARK: Mk262
 - type: entity
-  parent: BaseAmmoBox5.56x45mm
-  id: AmmoBox5.56x45mmMk262
-  name: ammunition box (5.56x45mm NATO Mk262)
+  parent: BaseAmmoBox5,56x45mm
+  id: AmmoBox5,56x45mmMk262
+  name: ammunition box (5,56x45mm NATO Mk262)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmMk262
+    proto: Cartridge5,56x45mmMk262
   - type: Sprite
     layers:
     - state: base
@@ -101,12 +101,12 @@
 
 #MARK: M855
 - type: entity
-  parent: BaseAmmoBox5.56x45mm
-  id: AmmoBox5.56x45mmM855
-  name: ammunition box (5.56x45mm NATO M855)
+  parent: BaseAmmoBox5,56x45mm
+  id: AmmoBox5,56x45mmM855
+  name: ammunition box (5,56x45mm NATO M855)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmM855
+    proto: Cartridge5,56x45mmM855
   - type: Sprite
     layers:
     - state: base
@@ -116,12 +116,12 @@
 
 #MARK: Incendiary
 - type: entity
-  parent: BaseAmmoBox5.56x45mm
-  id: AmmoBox5.56x45mmIncendiary
-  name: ammunition box (5.56x45mm NATO incendiary)
+  parent: BaseAmmoBox5,56x45mm
+  id: AmmoBox5,56x45mmIncendiary
+  name: ammunition box (5,56x45mm NATO incendiary)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmIncendiary
+    proto: Cartridge5,56x45mmIncendiary
   - type: Sprite
     layers:
     - state: base
@@ -132,12 +132,12 @@
 
 #MARK: Depleted Uranium
 - type: entity
-  id: AmmoBox5.56x45mmDepletedUranium
-  parent: BaseAmmoBox5.56x45mm
-  name: ammunition box (5.56x45mm NATO depleted uranium)
+  id: AmmoBox5,56x45mmDepletedUranium
+  parent: BaseAmmoBox5,56x45mm
+  name: ammunition box (5,56x45mm NATO depleted uranium)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmDepletedUranium
+    proto: Cartridge5,56x45mmDepletedUranium
   - type: Sprite
     layers:
     - state: base
@@ -148,12 +148,12 @@
 
 #MARK: Rubber
 - type: entity
-  parent: BaseAmmoBox5.56x45mm
-  id: AmmoBox5.56x45mmRubber
-  name: ammunition box (5.56x45mm NATO rubber)
+  parent: BaseAmmoBox5,56x45mm
+  id: AmmoBox5,56x45mmRubber
+  name: ammunition box (5,56x45mm NATO rubber)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmRubber
+    proto: Cartridge5,56x45mmRubber
   - type: Sprite
     layers:
     - state: base
@@ -164,12 +164,12 @@
 
 #MARK: HP
 - type: entity
-  parent: BaseAmmoBox5.56x45mm
-  id: AmmoBox5.56x45mmHP
-  name: ammunition box (5.56x45mm NATO hollow-point)
+  parent: BaseAmmoBox5,56x45mm
+  id: AmmoBox5,56x45mmHP
+  name: ammunition box (5,56x45mm NATO hollow-point)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmHP
+    proto: Cartridge5,56x45mmHP
   - type: Sprite
     layers:
     - state: base
@@ -180,12 +180,12 @@
 
 #MARK: RIP
 - type: entity
-  parent: BaseAmmoBox5.56x45mm
-  id: AmmoBox5.56x45mmRIP
-  name: ammunition box (5.56x45mm NATO RIP)
+  parent: BaseAmmoBox5,56x45mm
+  id: AmmoBox5,56x45mmRIP
+  name: ammunition box (5,56x45mm NATO RIP)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmRIP
+    proto: Cartridge5,56x45mmRIP
   - type: Sprite
     layers:
     - state: base
@@ -196,9 +196,9 @@
 
 #MARK: Big FMJ
 - type: entity
-  parent: BaseAmmoBox5.56x45mm
-  id: AmmoBox5.56x45mmBigFMJ
-  name: big ammunition box (5.56x45mm NATO FMJ)
+  parent: BaseAmmoBox5,56x45mm
+  id: AmmoBox5,56x45mmBigFMJ
+  name: big ammunition box (5,56x45mm NATO FMJ)
   suffix: Big
   components:
   - type: Item
@@ -206,7 +206,7 @@
     - 0,0,1,1
   - type: BallisticAmmoProvider
     capacity: 160
-    proto: Cartridge5.56x45mmFMJ
+    proto: Cartridge5,56x45mmFMJ
   - type: Sprite
     layers:
     - state: base-b
@@ -221,15 +221,15 @@
 
 #MARK: Big Rubber
 - type: entity
-  parent: AmmoBox5.56x45mmBigFMJ
-  id: AmmoBox5.56x45mmBigRubber
-  name: ammunition box (5.56x45mm NATO rubber)
+  parent: AmmoBox5,56x45mmBigFMJ
+  id: AmmoBox5,56x45mmBigRubber
+  name: ammunition box (5,56x45mm NATO rubber)
   components:
   - type: BallisticAmmoProvider
     capacity: 160
-    proto: Cartridge5.56x45mmRubber
+    proto: Cartridge5,56x45mmRubber
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/5.56x45mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/5,56x45mm.rsi
     layers:
     - state: base-b
       map: ["enum.GunVisualLayers.Base"]
@@ -240,12 +240,12 @@
 #MARK: Deprecated >
 
 - type: entity
-  parent: BaseAmmoBox5.56x45mm
-  id: AmmoBox5.56x45mmPractice
-  name: ammunition box (5.56x45mm NATO practice)
+  parent: BaseAmmoBox5,56x45mm
+  id: AmmoBox5,56x45mmPractice
+  name: ammunition box (5,56x45mm NATO practice)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmPractice
+    proto: Cartridge5,56x45mmPractice
   - type: Sprite
     layers:
     - state: base
@@ -257,12 +257,12 @@
 #armor-piercing:
 
 - type: entity
-  parent: BaseAmmoBox5.56x45mm
-  id: AmmoBox5.56x45mmPlasteelAP
-  name: ammunition box (5.56x45mm NATO AP)
+  parent: BaseAmmoBox5,56x45mm
+  id: AmmoBox5,56x45mmPlasteelAP
+  name: ammunition box (5,56x45mm NATO AP)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmPlasteelAP
+    proto: Cartridge5,56x45mmPlasteelAP
   - type: Sprite
     layers:
     - state: base

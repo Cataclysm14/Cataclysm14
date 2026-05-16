@@ -1,6 +1,6 @@
 - type: entity
-  id: SpeedLoader7.62x54mmRFMJ
-  name: "speed loader (7.62x54mmR FMJ)"
+  id: SpeedLoader7,62x54mmRFMJ
+  name: "speed loader (7,62x54mmR FMJ)"
   parent: BaseItem
   components:
   - type: Tag
@@ -11,11 +11,11 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge7.62x54mmR
+        - Cartridge7,62x54mmR
     capacity: 5
-    proto: Cartridge7.62x54mmRFMJ
+    proto: Cartridge7,62x54mmRFMJ
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/7.62x54mmR/7.62x54mmR_speed_loader.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/7,62x54mmR/7,62x54mmR_speed_loader.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]

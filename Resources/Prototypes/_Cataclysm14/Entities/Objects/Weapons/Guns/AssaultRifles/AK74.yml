@@ -1,10 +1,10 @@
 #MARK: Base
 - type: entity
-  name: AK74 (5.45x39mm)
+  name: AK74 (5,45x39mm)
   parent: BaseWeaponRifle
   id: WeaponAssaultRifleAK74Base
   abstract: true
-  description: An old Soviet Era rifle. Uses 5.45x39mm ammo. When the chaos began to spread across the Earth, few weapons were as reliable as the AK74.
+  description: An old Soviet Era rifle. Uses 5,45x39mm ammo. When the chaos began to spread across the Earth, few weapons were as reliable as the AK74.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/AK74_64x32.rsi
@@ -45,15 +45,15 @@
         priority: 2
         whitelist:
           tags:
-            - Magazine5.45x39mmAKCompatible
+            - Magazine5,45x39mmAKCompatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge5.45x39mmFMJ
+        startingItem: Cartridge5,45x39mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.45x39mm
+            - Cartridge5,45x39mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -78,7 +78,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.45x39mm6L20_30rdEmpty
+        startingItem: Magazine5,45x39mm6L20_30rdEmpty
 
 #MARK: 6L20 30rd FMJ
 - type: entity
@@ -90,4 +90,4 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.45x39mm6L20_30rdFMJ
+        startingItem: Magazine5,45x39mm6L20_30rdFMJ

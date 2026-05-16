@@ -1,10 +1,10 @@
 #MARK: Base
 - type: entity
-  name: ArmaLite AR-15 (5.56x45mm NATO)
+  name: ArmaLite AR-15 (5,56x45mm NATO)
   parent: BaseWeaponRifle
   id: WeaponRifleAR15Base
   abstract: true
-  description: A modern civilian rifle manufactured by Armalite, the ArmaLite Rifle 15. Chambered in 5.56x45mm NATO.
+  description: A modern civilian rifle manufactured by Armalite, the ArmaLite Rifle 15. Chambered in 5,56x45mm NATO.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Guns/Rifles/AR15_64x32.rsi
@@ -54,7 +54,7 @@
         priority: 2
         whitelist:
           tags:
-            - Magazine5.56x45mmSTANAGCompatible
+            - Magazine5,56x45mmSTANAGCompatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
@@ -62,7 +62,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.56x45mm
+            - Cartridge5,56x45mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -87,7 +87,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmSTANAG30rdEmpty
+        startingItem: Magazine5,56x45mmSTANAG30rdEmpty
 
 #MARK: STANAG 30rd FMJ
 - type: entity
@@ -99,7 +99,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmSTANAG30rdFMJ
+        startingItem: Magazine5,56x45mmSTANAG30rdFMJ
 
 #MARK: STANAG 30rd Tracer Red
 - type: entity
@@ -111,4 +111,4 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmSTANAG30rdTracerRed
+        startingItem: Magazine5,56x45mmSTANAG30rdTracerRed

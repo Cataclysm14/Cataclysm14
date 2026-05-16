@@ -1,6 +1,6 @@
 - type: entity
-  id: BaseCartridge7.62x54mmR
-  name: cartridge (7.62x54mmR FMJ)
+  id: BaseCartridge7,62x54mmR
+  name: cartridge (7,62x54mmR FMJ)
   parent: BaseCartridge
   description: A full-power rifle round commonly used in DMRs and civilian bolt-action rifles.
   abstract: true
@@ -8,12 +8,12 @@
   - type: Tag
     tags:
     - Cartridge
-    - Cartridge7.62x54mmR
+    - Cartridge7,62x54mmR
   - type: CartridgeAmmo
-    proto: Bullet7.62x54mmRFMJ
+    proto: Bullet7,62x54mmRFMJ
   - type: Sprite
     scale: 0.3, 0.3
-    sprite: _Cataclysm14/Objects/Weapons/Casings/7.62x54mmR_casing.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Casings/7,62x54mmR_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -23,20 +23,20 @@
     price: 1
 
 - type: entity
-  id: Cartridge7.62x54mmRFMJ
-  name: cartridge (7.62x54mmR FMJ)
-  parent: BaseCartridge7.62x54mmR
+  id: Cartridge7,62x54mmRFMJ
+  name: cartridge (7,62x54mmR FMJ)
+  parent: BaseCartridge7,62x54mmR
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x54mmRFMJ
+    proto: Bullet7,62x54mmRFMJ
 
 - type: entity
-  id: Cartridge7.62x54mmRPractice
-  name: cartridge (7.62x54mmR practice)
-  parent: BaseCartridge7.62x54mmR
+  id: Cartridge7,62x54mmRPractice
+  name: cartridge (7,62x54mmR practice)
+  parent: BaseCartridge7,62x54mmR
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x54mmRPractice
+    proto: Bullet7,62x54mmRPractice
   - type: Sprite
     layers:
       - state: base
@@ -46,12 +46,12 @@
         color: "#dbdbdb"
 
 - type: entity
-  id: Cartridge7.62x54mmRIncendiary
-  name: cartridge (7.62x54mmR incendiary)
-  parent: BaseCartridge7.62x54mmR
+  id: Cartridge7,62x54mmRIncendiary
+  name: cartridge (7,62x54mmR incendiary)
+  parent: BaseCartridge7,62x54mmR
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x54mmRIncendiary
+    proto: Bullet7,62x54mmRIncendiary
   - type: Sprite
     layers:
       - state: base
@@ -61,12 +61,12 @@
         color: "#ff6e52"
 
 - type: entity
-  id: Cartridge7.62x54mmRUranium
-  name: cartridge (7.62x54mmR depleted uranium)
-  parent: BaseCartridge7.62x54mmR
+  id: Cartridge7,62x54mmRUranium
+  name: cartridge (7,62x54mmR depleted uranium)
+  parent: BaseCartridge7,62x54mmR
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x54mmRUranium
+    proto: Bullet7,62x54mmRUranium
   - type: Sprite
     layers:
       - state: base
@@ -76,12 +76,12 @@
         color: "#65fe08"
 
 - type: entity
-  id: Cartridge7.62x54mmRRubber
-  name: cartridge (7.62x54mmR rubber)
-  parent: BaseCartridge7.62x54mmR
+  id: Cartridge7,62x54mmRRubber
+  name: cartridge (7,62x54mmR rubber)
+  parent: BaseCartridge7,62x54mmR
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x54mmRRubber
+    proto: Bullet7,62x54mmRRubber
   - type: Sprite
     layers:
       - state: base
@@ -93,12 +93,12 @@
 # Mono AP syst
 #anti-flesh:
 - type: entity
-  id: Cartridge7.62x54mmRHP
-  name: cartridge (7.62x54mmR hollow-point)
-  parent: BaseCartridge7.62x54mmR
+  id: Cartridge7,62x54mmRHP
+  name: cartridge (7,62x54mmR hollow-point)
+  parent: BaseCartridge7,62x54mmR
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x54mmRHP
+    proto: Bullet7,62x54mmRHP
   - type: Sprite
     layers:
       - state: base
@@ -108,12 +108,12 @@
         color: "#90EE90"
 
 - type: entity
-  id: Cartridge7.62x54mmRRIP
-  name: cartridge (7.62x54mmR RIP)
-  parent: BaseCartridge7.62x54mmR
+  id: Cartridge7,62x54mmRRIP
+  name: cartridge (7,62x54mmR RIP)
+  parent: BaseCartridge7,62x54mmR
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x54mmRRIP
+    proto: Bullet7,62x54mmRRIP
   - type: Sprite
     layers:
       - state: base
@@ -125,12 +125,12 @@
 #armor-piercing:
 
 - type: entity
-  id: Cartridge7.62x54mmRPlasteelAP
-  name: cartridge (7.62x54mmR AP)
-  parent: BaseCartridge7.62x54mmR
+  id: Cartridge7,62x54mmRPlasteelAP
+  name: cartridge (7,62x54mmR AP)
+  parent: BaseCartridge7,62x54mmR
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x54mmRPlasteelAP
+    proto: Bullet7,62x54mmRPlasteelAP
   - type: Sprite
     layers:
       - state: base

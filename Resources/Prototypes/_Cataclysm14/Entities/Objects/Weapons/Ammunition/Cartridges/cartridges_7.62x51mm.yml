@@ -1,7 +1,7 @@
 #MARK: Base
 - type: entity
-  id: BaseCartridge7.62x51mm
-  name: cartridge (7.62x51mm NATO FMJ)
+  id: BaseCartridge7,62x51mm
+  name: cartridge (7,62x51mm NATO FMJ)
   parent: BaseCartridge
   description: A decently sized full-power round.
   abstract: true
@@ -9,12 +9,12 @@
   - type: Tag
     tags:
     - Cartridge
-    - Cartridge7.62x51mm
+    - Cartridge7,62x51mm
   - type: CartridgeAmmo
-    proto: Bullet7.62x51mmFMJ
+    proto: Bullet7,62x51mmFMJ
   - type: Sprite
     scale: 0.3, 0.3
-    sprite: _Cataclysm14/Objects/Weapons/Casings/7.62x51mm_casing.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Casings/7,62x51mm_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -25,75 +25,75 @@
 
 #MARK: FMJ
 - type: entity
-  id: Cartridge7.62x51mmFMJ
-  name: cartridge (7.62x51mm NATO FMJ)
-  parent: BaseCartridge7.62x51mm
+  id: Cartridge7,62x51mmFMJ
+  name: cartridge (7,62x51mm NATO FMJ)
+  parent: BaseCartridge7,62x51mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x51mmFMJ
+    proto: Bullet7,62x51mmFMJ
 
 #MARK: .308 Winchester
 - type: entity
-  id: Cartridge7.62x51mm308Winchester
+  id: Cartridge7,62x51mm308Winchester
   name: cartridge (.308 Winchester)
-  parent: BaseCartridge7.62x51mm
+  parent: BaseCartridge7,62x51mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x51mm308Winchester
+    proto: Bullet7,62x51mm308Winchester
 
 #MARK: M993
 - type: entity
-  id: Cartridge7.62x51mmM993
-  name: cartridge (7.62x51mm NATO M993)
-  parent: BaseCartridge7.62x51mm
+  id: Cartridge7,62x51mmM993
+  name: cartridge (7,62x51mm NATO M993)
+  parent: BaseCartridge7,62x51mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x51mmM993
+    proto: Bullet7,62x51mmM993
 
 #MARK: M80
 - type: entity
-  id: Cartridge7.62x51mmM80
-  name: cartridge (7.62x51mm NATO M80)
-  parent: BaseCartridge7.62x51mm
+  id: Cartridge7,62x51mmM80
+  name: cartridge (7,62x51mm NATO M80)
+  parent: BaseCartridge7,62x51mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x51mmM80
+    proto: Bullet7,62x51mmM80
 
 #MARK: M61
 - type: entity
-  id: Cartridge7.62x51mmM61
-  name: cartridge (7.62x51mm NATO M61)
-  parent: BaseCartridge7.62x51mm
+  id: Cartridge7,62x51mmM61
+  name: cartridge (7,62x51mm NATO M61)
+  parent: BaseCartridge7,62x51mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x51mmM61
+    proto: Bullet7,62x51mmM61
 
 #MARK: Ultra Nosler
 - type: entity
-  id: Cartridge7.62x51mmUltraNosler
-  name: cartridge (7.62x51mm NATO Ultra Nosler)
-  parent: BaseCartridge7.62x51mm
+  id: Cartridge7,62x51mmUltraNosler
+  name: cartridge (7,62x51mm NATO Ultra Nosler)
+  parent: BaseCartridge7,62x51mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x51mmUltraNosler
+    proto: Bullet7,62x51mmUltraNosler
 
 #MARK: yellow tracer
 - type: entity
-  id: Cartridge7.62x51mmTracerYellow
-  name: cartridge (7.62x51mm NATO yellow tracer)
-  parent: BaseCartridge7.62x51mm
+  id: Cartridge7,62x51mmTracerYellow
+  name: cartridge (7,62x51mm NATO yellow tracer)
+  parent: BaseCartridge7,62x51mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x51mmTracerYellow
+    proto: Bullet7,62x51mmTracerYellow
 
 #MARK: Incendiary
 - type: entity
-  id: Cartridge7.62x51mmIncendiary
-  name: cartridge (7.62x51mm NATO incendiary)
-  parent: BaseCartridge7.62x51mm
+  id: Cartridge7,62x51mmIncendiary
+  name: cartridge (7,62x51mm NATO incendiary)
+  parent: BaseCartridge7,62x51mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x51mmIncendiary
+    proto: Bullet7,62x51mmIncendiary
   - type: Sprite
     layers:
       - state: base
@@ -104,12 +104,12 @@
 
 #MARK: Depleted Uranium
 - type: entity
-  id: Cartridge7.62x51mmDepletedUranium
-  name: cartridge (7.62x51mm NATO depleted uranium)
-  parent: BaseCartridge7.62x51mm
+  id: Cartridge7,62x51mmDepletedUranium
+  name: cartridge (7,62x51mm NATO depleted uranium)
+  parent: BaseCartridge7,62x51mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x51mmDepletedUranium
+    proto: Bullet7,62x51mmDepletedUranium
   - type: Sprite
     layers:
       - state: base
@@ -120,12 +120,12 @@
 
 #MARK: Rubber
 - type: entity
-  id: Cartridge7.62x51mmRubber
-  name: cartridge (7.62x51mm NATO rubber)
-  parent: BaseCartridge7.62x51mm
+  id: Cartridge7,62x51mmRubber
+  name: cartridge (7,62x51mm NATO rubber)
+  parent: BaseCartridge7,62x51mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x51mmRubber
+    proto: Bullet7,62x51mmRubber
   - type: Sprite
     layers:
       - state: base
@@ -136,12 +136,12 @@
 
 #MARK: HP
 - type: entity
-  id: Cartridge7.62x51mmHP
-  name: cartridge (7.62x51mm NATO hollow-point)
-  parent: BaseCartridge7.62x51mm
+  id: Cartridge7,62x51mmHP
+  name: cartridge (7,62x51mm NATO hollow-point)
+  parent: BaseCartridge7,62x51mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x51mmHP
+    proto: Bullet7,62x51mmHP
   - type: Sprite
     layers:
       - state: base
@@ -152,12 +152,12 @@
 
 #MARK: RIP
 - type: entity
-  id: Cartridge7.62x51mmRIP
-  name: cartridge (7.62x51mm NATO RIP)
-  parent: BaseCartridge7.62x51mm
+  id: Cartridge7,62x51mmRIP
+  name: cartridge (7,62x51mm NATO RIP)
+  parent: BaseCartridge7,62x51mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x51mmRIP
+    proto: Bullet7,62x51mmRIP
   - type: Sprite
     layers:
       - state: base
@@ -169,12 +169,12 @@
 #MARK: Deprecated >
 
 - type: entity
-  id: Cartridge7.62x51mmPlasteelAP
-  name: cartridge (7.62x51mm NATO AP)
-  parent: BaseCartridge7.62x51mm
+  id: Cartridge7,62x51mmPlasteelAP
+  name: cartridge (7,62x51mm NATO AP)
+  parent: BaseCartridge7,62x51mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x51mmPlasteelAP
+    proto: Bullet7,62x51mmPlasteelAP
   - type: Sprite
     layers:
       - state: base
@@ -184,12 +184,12 @@
         color: "#888888"
 
 - type: entity
-  id: Cartridge7.62x51mmPractice
-  name: cartridge (7.62x51mm NATO practice)
-  parent: BaseCartridge7.62x51mm
+  id: Cartridge7,62x51mmPractice
+  name: cartridge (7,62x51mm NATO practice)
+  parent: BaseCartridge7,62x51mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet7.62x51mmPractice
+    proto: Bullet7,62x51mmPractice
   - type: Sprite
     layers:
       - state: base

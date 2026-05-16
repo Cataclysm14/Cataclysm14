@@ -14,23 +14,23 @@
 
 - type: entity
   parent: BaseBlueprintExpedition
-  id: NFBlueprintAmmoBox5.56x45mmDepletedUranium
-  name: uranium 5.56x45mm blueprint
-  description: A blueprint with a schematic of an uranium 5.56x45mm ammo. It can be inserted into an autolathe or a techfab.
+  id: NFBlueprintAmmoBox5,56x45mmDepletedUranium
+  name: uranium 5,56x45mm blueprint
+  description: A blueprint with a schematic of an uranium 5,56x45mm ammo. It can be inserted into an autolathe or a techfab.
   components:
   - type: Blueprint
     providedRecipes:
-    - AmmoBox5.56x45mmDepletedUranium
+    - AmmoBox5,56x45mmDepletedUranium
 
 - type: entity
   parent: BaseBlueprintExpedition
-  id: NFBlueprintAmmoBox7.62x39mmDepletedUranium
-  name: uranium 7.62x39mm blueprint
-  description: A blueprint with a schematic of an uranium 7.62x39mm ammo. It can be inserted into an autolathe or a techfab.
+  id: NFBlueprintAmmoBox7,62x39mmDepletedUranium
+  name: uranium 7,62x39mm blueprint
+  description: A blueprint with a schematic of an uranium 7,62x39mm ammo. It can be inserted into an autolathe or a techfab.
   components:
   - type: Blueprint
     providedRecipes:
-    - AmmoBox7.62x39mmDepletedUranium
+    - AmmoBox7,62x39mmDepletedUranium
 
 - type: entity
   parent: BaseBlueprintExpedition
@@ -66,23 +66,23 @@
 
 - type: entity
   parent: BaseBlueprintExpedition
-  id: NFBlueprintAmmoBox5.56x45mmIncendiary
-  name: incendiary 5.56x45mm blueprint
-  description: A blueprint with a schematic of an incendiary 5.56x45mm ammo. It can be inserted into an autolathe or a techfab.
+  id: NFBlueprintAmmoBox5,56x45mmIncendiary
+  name: incendiary 5,56x45mm blueprint
+  description: A blueprint with a schematic of an incendiary 5,56x45mm ammo. It can be inserted into an autolathe or a techfab.
   components:
   - type: Blueprint
     providedRecipes:
-    - AmmoBox5.56x45mmIncendiary
+    - AmmoBox5,56x45mmIncendiary
 
 - type: entity
   parent: BaseBlueprintExpedition
-  id: NFBlueprintAmmoBox7.62x39mmIncendiary
-  name: incendiary 7.62x39mm blueprint
-  description: A blueprint with a schematic of an incendiary 7.62x39mm ammo. It can be inserted into an autolathe or a techfab.
+  id: NFBlueprintAmmoBox7,62x39mmIncendiary
+  name: incendiary 7,62x39mm blueprint
+  description: A blueprint with a schematic of an incendiary 7,62x39mm ammo. It can be inserted into an autolathe or a techfab.
   components:
   - type: Blueprint
     providedRecipes:
-    - AmmoBox7.62x39mmIncendiary
+    - AmmoBox7,62x39mmIncendiary
 
 - type: entity
   parent: BaseBlueprintExpedition

@@ -1,10 +1,10 @@
 #MARK: Base
 - type: entity
-  name: Ruger Mini-14 (5.56x45mm NATO)
+  name: Ruger Mini-14 (5,56x45mm NATO)
   parent: BaseWeaponRifle
   id: WeaponCarbineMini14Base
   abstract: true
-  description: A scaled down version of the M14 used mainly by law enforcment and civilians. Chambered in 5.56x45mm NATO .
+  description: A scaled down version of the M14 used mainly by law enforcment and civilians. Chambered in 5,56x45mm NATO .
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Guns/Carbines/Mini14_64x32.rsi
@@ -45,21 +45,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmSTANAG30rdEmpty
+        startingItem: Magazine5,56x45mmSTANAG30rdEmpty
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine5.56x45mmSTANAGCompatible
+            - Magazine5,56x45mmSTANAGCompatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge5.56x45mmFMJ
+        startingItem: Cartridge5,56x45mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge5.56x45mm
+            - Cartridge5,56x45mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -84,7 +84,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmSTANAG30rdEmpty
+        startingItem: Magazine5,56x45mmSTANAG30rdEmpty
 
 #MARK: STANAG 30rd FMJ
 - type: entity
@@ -96,4 +96,4 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5.56x45mmSTANAG30rdFMJ
+        startingItem: Magazine5,56x45mmSTANAG30rdFMJ

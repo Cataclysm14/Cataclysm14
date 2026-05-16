@@ -1,5 +1,5 @@
 - type: entity
-  id: BaseCartridge6.35x40mmCaseless
+  id: BaseCartridge6,35x40mmCaseless
   name: cartridge (.25 rifle)
   parent: BaseCartridge
   description: Developed during corporate wars for subsonic weapons to keep a low-profile during operations.
@@ -8,13 +8,13 @@
   - type: Tag
     tags:
       - Cartridge
-      - Cartridge6.35x40mmCaseless
+      - Cartridge6,35x40mmCaseless
   - type: CartridgeAmmo
     deleteOnSpawn: true
   - type: Sprite
     scale: 0.2, 0.2
     noRot: false
-    sprite: _Cataclysm14/Objects/Weapons/Casings/6.35x40mm_casing.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Casings/6,35x40mm_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -24,28 +24,28 @@
     price: 1
 
 - type: entity
-  id: Cartridge6.35x40mmCaseless
-  name: cartridge (6.35x40mm Caseless)
-  parent: BaseCartridge6.35x40mmCaseless
+  id: Cartridge6,35x40mmCaseless
+  name: cartridge (6,35x40mm Caseless)
+  parent: BaseCartridge6,35x40mmCaseless
   components:
   - type: CartridgeAmmo
-    proto: Bullet6.35x40mmCaseless
+    proto: Bullet6,35x40mmCaseless
 
 - type: entity
-  id: Cartridge6.35x40mmCaselessRubber
-  name: cartridge (6.35x40mm Caseless rubber)
-  parent: BaseCartridge6.35x40mmCaseless
+  id: Cartridge6,35x40mmCaselessRubber
+  name: cartridge (6,35x40mm Caseless rubber)
+  parent: BaseCartridge6,35x40mmCaseless
   components:
   - type: CartridgeAmmo
-    proto: Bullet6.35x40mmCaselessRubber
+    proto: Bullet6,35x40mmCaselessRubber
 
 - type: entity
-  id: Cartridge6.35x40mmCaselessPractice
-  name: cartridge (6.35x40mm Caseless practice)
-  parent: BaseCartridge6.35x40mmCaseless
+  id: Cartridge6,35x40mmCaselessPractice
+  name: cartridge (6,35x40mm Caseless practice)
+  parent: BaseCartridge6,35x40mmCaseless
   components:
   - type: CartridgeAmmo
-    proto: Bullet6.35x40mmCaselessPractice
+    proto: Bullet6,35x40mmCaselessPractice
   - type: Sprite
     layers:
       - state: base

@@ -2,15 +2,15 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseAmmoBox4.6x30mm
-  name: ammunition box (4.6x30mm FMJ)
+  id: BaseAmmoBox4,6x30mm
+  name: ammunition box (4,6x30mm FMJ)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge4.6x30mm
-    proto: Cartridge4.6x30mmFMJ
+        - Cartridge4,6x30mm
+    proto: Cartridge4,6x30mmFMJ
     capacity: 80
   - type: Item
     size: Small
@@ -18,14 +18,14 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/4.6x30mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/4,6x30mm.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 3
     zeroVisible: false
   - type: Tag
     tags:
-    - Magazine4.6x30mmFMJBox
+    - Magazine4,6x30mmFMJBox
   - type: Appearance
   - type: EmitSoundOnPickup
     sound:
@@ -39,12 +39,12 @@
 
 #MARK: FMJ
 - type: entity
-  parent: BaseAmmoBox4.6x30mm
-  id: AmmoBox4.6x30mmFMJ
-  name: ammunition box (4.6x30mm FMJ)
+  parent: BaseAmmoBox4,6x30mm
+  id: AmmoBox4,6x30mmFMJ
+  name: ammunition box (4,6x30mm FMJ)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge4.6x30mmFMJ
+    proto: Cartridge4,6x30mmFMJ
   - type: Sprite
     layers:
     - state: base
@@ -54,12 +54,12 @@
 
 #MARK: Incendiary
 - type: entity
-  parent: BaseAmmoBox4.6x30mm
-  id: AmmoBox4.6x30mmIncendiary
-  name: ammunition box (4.6x30mm incendiary)
+  parent: BaseAmmoBox4,6x30mm
+  id: AmmoBox4,6x30mmIncendiary
+  name: ammunition box (4,6x30mm incendiary)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge4.6x30mmIncendiary
+    proto: Cartridge4,6x30mmIncendiary
   - type: Sprite
     layers:
     - state: base
@@ -70,12 +70,12 @@
 
 #MARK: Depleted Uranium
 - type: entity
-  id: AmmoBox4.6x30mmDepletedUranium
-  parent: BaseAmmoBox4.6x30mm
-  name: ammunition box (4.6x30mm depleted uranium)
+  id: AmmoBox4,6x30mmDepletedUranium
+  parent: BaseAmmoBox4,6x30mm
+  name: ammunition box (4,6x30mm depleted uranium)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge4.6x30mmDepletedUranium
+    proto: Cartridge4,6x30mmDepletedUranium
   - type: Sprite
     layers:
     - state: base
@@ -86,12 +86,12 @@
 
 #MARK: Rubber
 - type: entity
-  parent: BaseAmmoBox4.6x30mm
-  id: AmmoBox4.6x30mmRubber
-  name: ammunition box (4.6x30mm rubber)
+  parent: BaseAmmoBox4,6x30mm
+  id: AmmoBox4,6x30mmRubber
+  name: ammunition box (4,6x30mm rubber)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge4.6x30mmRubber
+    proto: Cartridge4,6x30mmRubber
   - type: Sprite
     layers:
     - state: base
@@ -102,12 +102,12 @@
 
 #MARK: HP
 - type: entity
-  parent: BaseAmmoBox4.6x30mm
-  id: AmmoBox4.6x30mmHP
-  name: ammunition box (4.6x30mm hollow-point)
+  parent: BaseAmmoBox4,6x30mm
+  id: AmmoBox4,6x30mmHP
+  name: ammunition box (4,6x30mm hollow-point)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge4.6x30mmHP
+    proto: Cartridge4,6x30mmHP
   - type: Sprite
     layers:
     - state: base
@@ -118,12 +118,12 @@
 
 #MARK: RIP
 - type: entity
-  parent: BaseAmmoBox4.6x30mm
-  id: AmmoBox4.6x30mmRIP
-  name: ammunition box (4.6x30mm RIP)
+  parent: BaseAmmoBox4,6x30mm
+  id: AmmoBox4,6x30mmRIP
+  name: ammunition box (4,6x30mm RIP)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge4.6x30mmRIP
+    proto: Cartridge4,6x30mmRIP
   - type: Sprite
     layers:
     - state: base
@@ -134,9 +134,9 @@
 
 #MARK: Big FMJ
 - type: entity
-  parent: BaseAmmoBox4.6x30mm
-  id: AmmoBox4.6x30mmBigFMJ
-  name: big ammunition box (4.6x30mm FMJ)
+  parent: BaseAmmoBox4,6x30mm
+  id: AmmoBox4,6x30mmBigFMJ
+  name: big ammunition box (4,6x30mm FMJ)
   suffix: Big
   components:
   - type: Item
@@ -144,7 +144,7 @@
     - 0,0,1,1
   - type: BallisticAmmoProvider
     capacity: 280 # 8 mags per box similar to rifle box
-    proto: Cartridge4.6x30mmFMJ
+    proto: Cartridge4,6x30mmFMJ
   - type: Sprite
     layers:
     - state: base-b # Frontier: base-big<base-b
@@ -162,12 +162,12 @@
 #armor-piercing:
 
 - type: entity
-  parent: BaseAmmoBox4.6x30mm
-  id: AmmoBox4.6x30mmPlasteelAP
-  name: ammunition box (4.6x30mm AP)
+  parent: BaseAmmoBox4,6x30mm
+  id: AmmoBox4,6x30mmPlasteelAP
+  name: ammunition box (4,6x30mm AP)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge4.6x30mmPlasteelAP
+    proto: Cartridge4,6x30mmPlasteelAP
   - type: Sprite
     layers:
     - state: base
@@ -178,12 +178,12 @@
 
 # Frontier
 - type: entity
-  parent: BaseAmmoBox4.6x30mm
-  id: AmmoBox4.6x30mmEmp
-  name: ammunition box (4.6x30mm emp)
+  parent: BaseAmmoBox4,6x30mm
+  id: AmmoBox4,6x30mmEmp
+  name: ammunition box (4,6x30mm emp)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge4.6x30mmEmp
+    proto: Cartridge4,6x30mmEmp
   - type: Sprite
     layers:
     - state: base
@@ -193,12 +193,12 @@
     - state: emp
 
 - type: entity
-  parent: BaseAmmoBox4.6x30mm
-  id: AmmoBox4.6x30mmPractice
-  name: ammunition box (4.6x30mm practice)
+  parent: BaseAmmoBox4,6x30mm
+  id: AmmoBox4,6x30mmPractice
+  name: ammunition box (4,6x30mm practice)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge4.6x30mmPractice
+    proto: Cartridge4,6x30mmPractice
   - type: Sprite
     layers:
     - state: base

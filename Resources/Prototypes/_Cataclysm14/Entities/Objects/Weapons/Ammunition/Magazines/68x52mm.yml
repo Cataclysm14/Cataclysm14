@@ -1,18 +1,18 @@
 - type: entity
-  id: BaseMagazine6.8x52mmCaseless
-  name: "magazine (6.8x52mm STANAG Caseless)"
+  id: BaseMagazine6,8x52mmCaseless
+  name: "magazine (6,8x52mm STANAG Caseless)"
   parent: [ BaseCartridge, RecyclableItemSteelTiny ]
   abstract: true
   components:
   - type: Tag
     tags:
-      - Magazine6.8x52mmCaseless
+      - Magazine6,8x52mmCaseless
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge6.8x52mmCaseless
-    proto: Cartridge6.8x52mmCaseless
+        - Cartridge6,8x52mmCaseless
+    proto: Cartridge6,8x52mmCaseless
     capacity: 30
   - type: Item
     size: Small
@@ -20,7 +20,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/6.35x40mm_caseless/6.35x40mm_caseless_rifle_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/6,35x40mm_caseless/6,35x40mm_caseless_rifle_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -33,18 +33,18 @@
   - type: Appearance
 
 - type: entity
-  id: BaseMagazine6.8x52mmCaselessShort
-  name: "caseless rifle short magazine (6.8x52mm STANAG Caseless)"
-  parent: BaseMagazine6.8x52mmCaseless
+  id: BaseMagazine6,8x52mmCaselessShort
+  name: "caseless rifle short magazine (6,8x52mm STANAG Caseless)"
+  parent: BaseMagazine6,8x52mmCaseless
   abstract: true
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.8x52mmCaseless
+    proto: Cartridge6,8x52mmCaseless
     capacity: 10
   - type: Item
     size: Tiny
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/6.35x40mm_caseless/6.35x40mm_caseless_rifle_mag_short.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/6,35x40mm_caseless/6,35x40mm_caseless_rifle_mag_short.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -52,27 +52,27 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine6.8x52mmCaselessBig
-  name: "box magazine (6.8x52mm STANAG Caseless)"
-  parent: BaseMagazine6.8x52mmCaseless
+  id: Magazine6,8x52mmCaselessBig
+  name: "box magazine (6,8x52mm STANAG Caseless)"
+  parent: BaseMagazine6,8x52mmCaseless
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.8x52mmCaseless
+    proto: Cartridge6,8x52mmCaseless
     capacity: 99
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/6.35x40mm_caseless/6.35x40mm_caseless_lmg_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/6,35x40mm_caseless/6,35x40mm_caseless_lmg_mag.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 8
     zeroVisible: false
 
 - type: entity
-  id: Magazine6.8x52mmCaseless
-  name: "magazine (6.8x52mm STANAG Caseless)"
-  parent: BaseMagazine6.8x52mmCaseless
+  id: Magazine6,8x52mmCaseless
+  name: "magazine (6,8x52mm STANAG Caseless)"
+  parent: BaseMagazine6,8x52mmCaseless
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.8x52mmCaseless
+    proto: Cartridge6,8x52mmCaseless
   - type: Sprite
     layers:
     - state: red
@@ -81,12 +81,12 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine6.8x52mmCaselessPractice
-  name: "magazine (6.8x52mm STANAG Caseless practice)"
-  parent: BaseMagazine6.8x52mmCaseless
+  id: Magazine6,8x52mmCaselessPractice
+  name: "magazine (6,8x52mm STANAG Caseless practice)"
+  parent: BaseMagazine6,8x52mmCaseless
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.8x52mmCaselessPractice
+    proto: Cartridge6,8x52mmCaselessPractice
   - type: Sprite
     layers:
     - state: practice
@@ -95,9 +95,9 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine6.8x52mmCaselessEmpty
-  name: "magazine (6.8x52mm STANAG Caseless any)"
-  parent: BaseMagazine6.8x52mmCaseless
+  id: Magazine6,8x52mmCaselessEmpty
+  name: "magazine (6,8x52mm STANAG Caseless any)"
+  parent: BaseMagazine6,8x52mmCaseless
   components:
   - type: BallisticAmmoProvider
     proto: null
@@ -109,12 +109,12 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine6.8x52mmCaselessShort
-  name: "short magazine (6.8x52mm STANAG Caseless)"
-  parent: BaseMagazine6.8x52mmCaselessShort
+  id: Magazine6,8x52mmCaselessShort
+  name: "short magazine (6,8x52mm STANAG Caseless)"
+  parent: BaseMagazine6,8x52mmCaselessShort
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.8x52mmCaseless
+    proto: Cartridge6,8x52mmCaseless
     capacity: 20
   - type: Sprite
     layers:
@@ -124,12 +124,12 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine6.8x52mmCaselessShortPractice
-  name: "short magazine (6.8x52mm STANAG Caseless practice)"
-  parent: BaseMagazine6.8x52mmCaselessShort
+  id: Magazine6,8x52mmCaselessShortPractice
+  name: "short magazine (6,8x52mm STANAG Caseless practice)"
+  parent: BaseMagazine6,8x52mmCaselessShort
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.8x52mmCaselessPractice
+    proto: Cartridge6,8x52mmCaselessPractice
     capacity: 20
   - type: Sprite
     layers:
@@ -139,12 +139,12 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine6.8x52mmCaselessRubber
-  name: "magazine (6.8x52mm STANAG Caseless rubber)"
-  parent: BaseMagazine6.8x52mmCaseless
+  id: Magazine6,8x52mmCaselessRubber
+  name: "magazine (6,8x52mm STANAG Caseless rubber)"
+  parent: BaseMagazine6,8x52mmCaseless
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.8x52mmCaselessRubber
+    proto: Cartridge6,8x52mmCaselessRubber
   - type: Sprite
     layers:
     - state: base

@@ -1,6 +1,6 @@
 #MARK: 223 Remington
 - type: entity
-  id: Bullet5.56x45mm223Remington
+  id: Bullet5,56x45mm223Remington
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -12,7 +12,7 @@
 
 #MARK: M855
 - type: entity
-  id: Bullet5.56x45mmM855
+  id: Bullet5,56x45mmM855
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -24,7 +24,7 @@
 
 #MARK: M855A1
 - type: entity
-  id: Bullet5.56x45mmM855A1
+  id: Bullet5,56x45mmM855A1
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -36,7 +36,7 @@
 
 #MARK: M995
 - type: entity
-  id: Bullet5.56x45mmM995
+  id: Bullet5,56x45mmM995
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -48,7 +48,7 @@
 
 #MARK: Mk262
 - type: entity
-  id: Bullet5.56x45mmMk262
+  id: Bullet5,56x45mmMk262
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -60,7 +60,7 @@
 
 #MARK: Mk318
 - type: entity
-  id: Bullet5.56x45mmMk318
+  id: Bullet5,56x45mmMk318
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -72,7 +72,7 @@
 
 #MARK: red tracer
 - type: entity
-  id: Bullet5.56x45mmTracerRed
+  id: Bullet5,56x45mmTracerRed
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -93,7 +93,7 @@
 
 #MARK: FMJ
 - type: entity
-  id: Bullet5.56x45mmFMJ
+  id: Bullet5,56x45mmFMJ
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -105,7 +105,7 @@
 
 #MARK: Rubber
 - type: entity
-  id: Bullet5.56x45mmRubber
+  id: Bullet5,56x45mmRubber
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
   components:
@@ -116,7 +116,7 @@
 
 #MARK: Incendiary
 - type: entity
-  id: Bullet5.56x45mmIncendiary
+  id: Bullet5,56x45mmIncendiary
   parent: BaseBulletIncendiary
   categories: [ HideSpawnMenu ]
   components:
@@ -128,7 +128,7 @@
 
 #MARK: Depleted Uranium
 - type: entity
-  id: Bullet5.56x45mmDepletedUranium
+  id: Bullet5,56x45mmDepletedUranium
   parent: BaseBulletUranium
   categories: [ HideSpawnMenu ]
   components:
@@ -140,7 +140,7 @@
 
 #MARK: HP
 - type: entity
-  id: Bullet5.56x45mmHP
+  id: Bullet5,56x45mmHP
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -153,7 +153,7 @@
 
 #MARK: RIP
 - type: entity
-  id: Bullet5.56x45mmRIP
+  id: Bullet5,56x45mmRIP
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -167,7 +167,7 @@
 #MARK: Deprecated >
 
 - type: entity
-  id: Bullet5.56x45mmPlasteelAP
+  id: Bullet5,56x45mmPlasteelAP
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -179,7 +179,7 @@
     armorPenetration: 0.7
 
 - type: entity
-  id: Bullet5.56x45mmPractice
+  id: Bullet5,56x45mmPractice
   parent: BaseBulletPractice
   categories: [ HideSpawnMenu ]
   components:

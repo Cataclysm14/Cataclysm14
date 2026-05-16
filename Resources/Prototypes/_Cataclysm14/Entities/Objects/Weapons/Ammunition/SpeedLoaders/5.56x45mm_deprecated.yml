@@ -1,17 +1,17 @@
 - type: entity
-  id: BaseSpeedLoader5.56x45mm
-  name: "speed loader (5.56x45mm NATO FMJ)"
+  id: BaseSpeedLoader5,56x45mm
+  name: "speed loader (5,56x45mm NATO FMJ)"
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - SpeedLoader5.56x45mmFMJ
+      - SpeedLoader5,56x45mmFMJ
   - type: SpeedLoader
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - Cartridge5.56x45mm
+        - Cartridge5,56x45mm
     capacity: 8
   - type: Sprite
   - type: ContainerContainer
@@ -20,17 +20,17 @@
         ents: []
 
 - type: entity
-  id: SpeedLoader5.56x45mmFMJ
-  name: "speed loader (5.56x45mm NATO FMJ)"
-  parent: BaseSpeedLoader5.56x45mm
+  id: SpeedLoader5,56x45mmFMJ
+  name: "speed loader (5,56x45mm NATO FMJ)"
+  parent: BaseSpeedLoader5,56x45mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmFMJ
+    proto: Cartridge5,56x45mmFMJ
   - type: Icon
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5.56x45mm/5.56x45mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5,56x45mm/5,56x45mm.rsi
     state: icon
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5.56x45mm/5.56x45mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5,56x45mm/5,56x45mm.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -43,17 +43,17 @@
   - type: Appearance
 
 - type: entity
-  id: SpeedLoader5.56x45mmEmpty
-  name: "speed loader (5.56x45mm NATO any)"
-  parent: SpeedLoader5.56x45mmFMJ
+  id: SpeedLoader5,56x45mmEmpty
+  name: "speed loader (5,56x45mm NATO any)"
+  parent: SpeedLoader5,56x45mmFMJ
   components:
   - type: BallisticAmmoProvider
     proto: null
   - type: Icon
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5.56x45mm/5.56x45mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5,56x45mm/5,56x45mm.rsi
     state: base
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5.56x45mm/5.56x45mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5,56x45mm/5,56x45mm.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -61,14 +61,14 @@
         map: [ "enum.GunVisualLayers.Mag" ]
 
 - type: entity
-  id: SpeedLoader5.56x45mmIncendiary
-  name: "speed loader (5.56x45mm NATO incendiary)"
-  parent: BaseSpeedLoader5.56x45mm
+  id: SpeedLoader5,56x45mmIncendiary
+  name: "speed loader (5,56x45mm NATO incendiary)"
+  parent: BaseSpeedLoader5,56x45mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmIncendiary
+    proto: Cartridge5,56x45mmIncendiary
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5.56x45mm/5.56x45mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5,56x45mm/5,56x45mm.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -81,17 +81,17 @@
   - type: Appearance
 
 - type: entity
-  id: SpeedLoader5.56x45mmPractice
-  name: "speed loader (5.56x45mm NATO practice)"
-  parent: BaseSpeedLoader5.56x45mm
+  id: SpeedLoader5,56x45mmPractice
+  name: "speed loader (5,56x45mm NATO practice)"
+  parent: BaseSpeedLoader5,56x45mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmPractice
+    proto: Cartridge5,56x45mmPractice
   - type: Icon
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5.56x45mm/5.56x45mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5,56x45mm/5,56x45mm.rsi
     state: practice-icon
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5.56x45mm/5.56x45mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5,56x45mm/5,56x45mm.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -104,17 +104,17 @@
   - type: Appearance
 
 - type: entity
-  id: SpeedLoader5.56x45mmDepletedUranium
-  name: "speed loader (5.56x45mm NATO depleted uranium)"
-  parent: BaseSpeedLoader5.56x45mm
+  id: SpeedLoader5,56x45mmDepletedUranium
+  name: "speed loader (5,56x45mm NATO depleted uranium)"
+  parent: BaseSpeedLoader5,56x45mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmDepletedUranium
+    proto: Cartridge5,56x45mmDepletedUranium
   - type: Icon
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5.56x45mm/5.56x45mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5,56x45mm/5,56x45mm.rsi
     state: uranium-icon
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5.56x45mm/5.56x45mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5,56x45mm/5,56x45mm.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]
@@ -127,17 +127,17 @@
   - type: Appearance
 
 - type: entity
-  id: SpeedLoader5.56x45mmRubber
-  name: "speed loader (5.56x45mm NATO rubber)"
-  parent: BaseSpeedLoader5.56x45mm
+  id: SpeedLoader5,56x45mmRubber
+  name: "speed loader (5,56x45mm NATO rubber)"
+  parent: BaseSpeedLoader5,56x45mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmRubber
+    proto: Cartridge5,56x45mmRubber
   - type: Icon
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5.56x45mm/5.56x45mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5,56x45mm/5,56x45mm.rsi
     state: rubber-icon
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5.56x45mm/5.56x45mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/5,56x45mm/5,56x45mm.rsi
     layers:
       - state: base
         map: [ "enum.GunVisualLayers.Base" ]

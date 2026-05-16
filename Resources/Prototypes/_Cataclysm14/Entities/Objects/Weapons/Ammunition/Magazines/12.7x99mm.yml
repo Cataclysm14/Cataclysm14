@@ -1,26 +1,26 @@
 - type: entity
-  id: BaseMagazine12.7x99mm
-  name: "magazine (12.7x99mm)"
+  id: BaseMagazine12,7x99mm
+  name: "magazine (12,7x99mm)"
   parent: BaseItem
   abstract: true
   components:
   - type: Tag
     tags:
-      - Magazine12.7x99mm
+      - Magazine12,7x99mm
   - type: Item
     size: Small
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge12.7x99mm
-    proto: Cartridge12.7x99mm
+        - Cartridge12,7x99mm
+    proto: Cartridge12,7x99mm
     capacity: 10
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/12.7x99mm/12.7x99mm_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/12,7x99mm/12,7x99mm_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -33,30 +33,30 @@
   - type: Appearance
 
 - type: entity
-  id: Magazine12.7x99mmEmpty
-  name: "magazine (12.7x99mm empty)"
-  parent: BaseMagazine12.7x99mm
+  id: Magazine12,7x99mmEmpty
+  name: "magazine (12,7x99mm empty)"
+  parent: BaseMagazine12,7x99mm
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 - type: entity
-  id: Magazine12.7x99mm
-  name: "magazine (12.7x99mm anti-material)"
-  parent: BaseMagazine12.7x99mm
+  id: Magazine12,7x99mm
+  name: "magazine (12,7x99mm anti-material)"
+  parent: BaseMagazine12,7x99mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge12.7x99mm
+    proto: Cartridge12,7x99mm
 
 - type: entity
-  id: Magazine12.7x99mmExplosive
-  name: "magazine (12.7x99mm high-explosive)"
-  parent: BaseMagazine12.7x99mm
+  id: Magazine12,7x99mmExplosive
+  name: "magazine (12,7x99mm high-explosive)"
+  parent: BaseMagazine12,7x99mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge12.7x99mmExplosive
+    proto: Cartridge12,7x99mmExplosive
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/12.7x99mm/12.7x99mm_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/12,7x99mm/12,7x99mm_mag.rsi
     layers:
     - state: red
       map: ["enum.GunVisualLayers.Base"]

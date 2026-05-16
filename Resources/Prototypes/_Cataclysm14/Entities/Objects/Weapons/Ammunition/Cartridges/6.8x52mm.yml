@@ -1,6 +1,6 @@
 - type: entity
-  id: BaseCartridge6.8x52mmCaseless
-  name: cartridge (6.8x52mm STANAG Caseless)
+  id: BaseCartridge6,8x52mmCaseless
+  name: cartridge (6,8x52mm STANAG Caseless)
   description: A new intermediate caseless round developed in recent TSF standardization programs, using experience from old corporate war caseless ammunition to enhance the performance of rifles across the sectors.
   parent: BaseCartridge
   abstract: true
@@ -8,13 +8,13 @@
   - type: Tag
     tags:
       - Cartridge
-      - Cartridge6.8x52mmCaseless
+      - Cartridge6,8x52mmCaseless
   - type: CartridgeAmmo
     deleteOnSpawn: true
   - type: Sprite
     scale: 0.2, 0.2
     noRot: false
-    sprite: _Cataclysm14/Objects/Weapons/Casings/6.35x40mm_casing.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Casings/6,35x40mm_casing.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -24,28 +24,28 @@
     price: 1
 
 - type: entity
-  id: Cartridge6.8x52mmCaseless
-  name: cartridge (6.8x52mm STANAG Caseless)
-  parent: BaseCartridge6.8x52mmCaseless
+  id: Cartridge6,8x52mmCaseless
+  name: cartridge (6,8x52mm STANAG Caseless)
+  parent: BaseCartridge6,8x52mmCaseless
   components:
   - type: CartridgeAmmo
-    proto: Bullet6.8x52mmCaseless
+    proto: Bullet6,8x52mmCaseless
 
 - type: entity
-  id: Cartridge6.8x52mmCaselessRubber
-  name: cartridge (6.8x52mm STANAG Caseless rubber)
-  parent: BaseCartridge6.8x52mmCaseless
+  id: Cartridge6,8x52mmCaselessRubber
+  name: cartridge (6,8x52mm STANAG Caseless rubber)
+  parent: BaseCartridge6,8x52mmCaseless
   components:
   - type: CartridgeAmmo
-    proto: Bullet6.8x52mmCaselessRubber
+    proto: Bullet6,8x52mmCaselessRubber
 
 - type: entity
-  id: Cartridge6.8x52mmCaselessPractice
-  name: cartridge (6.8x52mm STANAG Caseless practice)
-  parent: BaseCartridge6.8x52mmCaseless
+  id: Cartridge6,8x52mmCaselessPractice
+  name: cartridge (6,8x52mm STANAG Caseless practice)
+  parent: BaseCartridge6,8x52mmCaseless
   components:
   - type: CartridgeAmmo
-    proto: Bullet6.8x52mmCaselessPractice
+    proto: Bullet6,8x52mmCaselessPractice
   - type: Sprite
     layers:
       - state: base

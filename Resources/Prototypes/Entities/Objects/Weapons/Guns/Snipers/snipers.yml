@@ -28,10 +28,10 @@
     projectileSpeed: 65 # Mono
   - type: BallisticAmmoProvider
     capacity: 10
-    proto: Cartridge7.62x39mmFMJ
+    proto: Cartridge7,62x39mmFMJ
     whitelist:
       tags:
-      - Cartridge7.62x39mm
+      - Cartridge7,62x39mm
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -58,10 +58,10 @@
   # Goobstation edit end
 
 - type: entity
-  name: NCI Kardashev-Mosin (7.62x54mmR)
+  name: NCI Kardashev-Mosin (7,62x54mmR)
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseGunMelee] # added BaseGunMelee
   id: WeaponSniperMosin
-  description: A weapon for hunting, or endless trench warfare. Uses 7.62x54mmR ammo. Equipped with bayonet. # Frontier: bayonet
+  description: A weapon for hunting, or endless trench warfare. Uses 7,62x54mmR ammo. Equipped with bayonet. # Frontier: bayonet
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi
@@ -74,9 +74,9 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - Cartridge7.62x54mmR
+      - Cartridge7,62x54mmR
     capacity: 5
-    proto: Cartridge7.62x54mmRFMJ
+    proto: Cartridge7,62x54mmRFMJ
   - type: PirateBountyItem # Mono
     id: StandardFactionLongarm
 

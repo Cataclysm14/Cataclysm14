@@ -1,7 +1,7 @@
 #MARK: FMJ
 - type: entity
-  id: Bullet7.62x39mmFMJ
-  name: bullet (7.62x39mm FMJ)
+  id: Bullet7,62x39mmFMJ
+  name: bullet (7,62x39mm FMJ)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -13,8 +13,8 @@
 
 #MARK: Rubber
 - type: entity
-  id: Bullet7.62x39mmRubber
-  name: bullet (7.62x39mm rubber)
+  id: Bullet7,62x39mmRubber
+  name: bullet (7,62x39mm rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
   components:
@@ -25,9 +25,9 @@
 
 #MARK: Incendiary
 - type: entity
-  id: Bullet7.62x39mmIncendiary
+  id: Bullet7,62x39mmIncendiary
   parent: BaseBulletIncendiary
-  name: bullet (7.62x39mm incendiary)
+  name: bullet (7,62x39mm incendiary)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -38,9 +38,9 @@
 
 #MARK: Depleted Uranium
 - type: entity
-  id: Bullet7.62x39mmDepletedUranium
+  id: Bullet7,62x39mmDepletedUranium
   parent: BaseBulletUranium
-  name: bullet (7.62x39mm depleted uranium)
+  name: bullet (7,62x39mm depleted uranium)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -51,9 +51,9 @@
 
 #MARK: HP
 - type: entity
-  id: Bullet7.62x39mmHP
+  id: Bullet7,62x39mmHP
   parent: BaseBullet
-  name: bullet (7.62x39mm hollow-point)
+  name: bullet (7,62x39mm hollow-point)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -65,9 +65,9 @@
 
 #MARK: RIP
 - type: entity
-  id: Bullet7.62x39mmRIP
+  id: Bullet7,62x39mmRIP
   parent: BaseBullet
-  name: bullet (7.62x39mm RIP)
+  name: bullet (7,62x39mm RIP)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -82,9 +82,9 @@
 #armor-piercing:
 
 - type: entity
-  id: Bullet7.62x39mmPlasteelAP
+  id: Bullet7,62x39mmPlasteelAP
   parent: BaseBullet
-  name: bullet (7.62x39mm AP)
+  name: bullet (7,62x39mm AP)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -95,8 +95,8 @@
     armorPenetration: 0.6
 
 - type: entity
-  id: Bullet7.62x39mmPractice
-  name: bullet (7.62x39mm practice)
+  id: Bullet7,62x39mmPractice
+  name: bullet (7,62x39mm practice)
   parent: BaseBulletPractice
   categories: [ HideSpawnMenu ]
   components:
@@ -106,8 +106,8 @@
         Blunt: 2
 
 - type: entity
-  id: Bullet7.62x39mmSubsonic
-  name: bullet (7.62x39mm subsonic)
+  id: Bullet7,62x39mmSubsonic
+  name: bullet (7,62x39mm subsonic)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:

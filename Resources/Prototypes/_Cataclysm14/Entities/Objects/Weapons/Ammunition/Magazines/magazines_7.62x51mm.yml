@@ -1,19 +1,19 @@
 #MARK: Base
 - type: entity
-  id: BaseMagazine7.62x51mm
-  name: "magazine (7.62x51mm NATO FMJ)"
+  id: BaseMagazine7,62x51mm
+  name: "magazine (7,62x51mm NATO FMJ)"
   parent: [ BaseItem, RecyclableItemSteelTiny ]
   abstract: true
   components:
   - type: Tag
     tags:
-      - Magazine7.62x51mmFMJ
+      - Magazine7,62x51mmFMJ
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge7.62x51mm
-    proto: Cartridge7.62x51mmFMJ
+        - Cartridge7,62x51mm
+    proto: Cartridge7,62x51mmFMJ
     capacity: 20
   - type: Item
     size: Small
@@ -22,7 +22,7 @@
       ballistic-ammo: !type:Container
   - type: Sprite
     scale: 0.30,0.30
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/7.62x51mm/7.62x51mm_mag.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/7,62x51mm/7,62x51mm_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -36,10 +36,10 @@
 
 #MARK: STANAG 20rd
 - type: entity
-  id: BaseMagazine7.62x51mmSTANAG20rd
+  id: BaseMagazine7,62x51mmSTANAG20rd
   abstract: true
-  name: "STANAG 20rd magazine (7.62x51mm NATO)"
-  parent: BaseMagazine7.62x51mm
+  name: "STANAG 20rd magazine (7,62x51mm NATO)"
+  parent: BaseMagazine7,62x51mm
   components:
   - type: BallisticAmmoProvider
     capacity: 20
@@ -47,9 +47,9 @@
     storedScale: 2.5
   - type: Tag
     tags:
-      - Magazine7.62x51mmSTANAGCompatible
+      - Magazine7,62x51mmSTANAGCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/7.62x51mm/magazine_7.62x51mm_STANAG_20rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/7,62x51mm/magazine_7,62x51mm_STANAG_20rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -58,37 +58,37 @@
 
 #MARK: Empty
 - type: entity
-  id: Magazine7.62x51mmSTANAG20rdEmpty
+  id: Magazine7,62x51mmSTANAG20rdEmpty
   suffix: Empty
-  parent: BaseMagazine7.62x51mmSTANAG20rd
+  parent: BaseMagazine7,62x51mmSTANAG20rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: Magazine7.62x51mmSTANAG20rdFMJ
+  id: Magazine7,62x51mmSTANAG20rdFMJ
   suffix: FMJ
-  parent: BaseMagazine7.62x51mmSTANAG20rd
+  parent: BaseMagazine7,62x51mmSTANAG20rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmFMJ
+    proto: Cartridge7,62x51mmFMJ
 
 #MARK: TracerYellow
 - type: entity
-  id: Magazine7.62x51mmSTANAG20rdTracerYellow
+  id: Magazine7,62x51mmSTANAG20rdTracerYellow
   suffix: Tracer Yellow
-  parent: BaseMagazine7.62x51mmSTANAG20rd
+  parent: BaseMagazine7,62x51mmSTANAG20rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmTracerYellow
+    proto: Cartridge7,62x51mmTracerYellow
 
 #MARK: Magpul Black 20rd
 - type: entity
-  id: BaseMagazine7.62x51mmMagpulBlack20rd
+  id: BaseMagazine7,62x51mmMagpulBlack20rd
   abstract: true
-  name: "Magpul black 20rd magazine (7.62x51mm NATO)"
-  parent: BaseMagazine7.62x51mm
+  name: "Magpul black 20rd magazine (7,62x51mm NATO)"
+  parent: BaseMagazine7,62x51mm
   components:
   - type: BallisticAmmoProvider
     capacity: 20
@@ -96,9 +96,9 @@
     storedScale: 2.5
   - type: Tag
     tags:
-      - Magazine7.62x51mmSTANAGCompatible
+      - Magazine7,62x51mmSTANAGCompatible
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/7.62x51mm/magazine_7.62x51mm_Magpul_black_20rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/7,62x51mm/magazine_7,62x51mm_Magpul_black_20rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -107,37 +107,37 @@
 
 #MARK: Empty
 - type: entity
-  id: Magazine7.62x51mmMagpulBlack20rdEmpty
+  id: Magazine7,62x51mmMagpulBlack20rdEmpty
   suffix: Empty
-  parent: BaseMagazine7.62x51mmMagpulBlack20rd
+  parent: BaseMagazine7,62x51mmMagpulBlack20rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: Magazine7.62x51mmMagpulBlack20rdFMJ
+  id: Magazine7,62x51mmMagpulBlack20rdFMJ
   suffix: FMJ
-  parent: BaseMagazine7.62x51mmMagpulBlack20rd
+  parent: BaseMagazine7,62x51mmMagpulBlack20rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmFMJ
+    proto: Cartridge7,62x51mmFMJ
 
 #MARK: TracerYellow
 - type: entity
-  id: Magazine7.62x51mmMagpulBlack20rdTracerYellow
+  id: Magazine7,62x51mmMagpulBlack20rdTracerYellow
   suffix: Tracer Yellow
-  parent: BaseMagazine7.62x51mmMagpulBlack20rd
+  parent: BaseMagazine7,62x51mmMagpulBlack20rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmTracerYellow
+    proto: Cartridge7,62x51mmTracerYellow
 
 #MARK: 100rd LMG Box
 - type: entity
-  id: BaseMagazineBox7.62x51mmLMG100rd
+  id: BaseMagazineBox7,62x51mmLMG100rd
   abstract: true
-  name: "100rd magazine box (7.62x51mm NATO)"
-  parent: BaseMagazine7.62x51mm
+  name: "100rd magazine box (7,62x51mm NATO)"
+  parent: BaseMagazine7,62x51mm
   components:
   - type: BallisticAmmoProvider
     capacity: 100
@@ -147,10 +147,10 @@
     - 0,0,1,1
   - type: Tag
     tags:
-      - MagazineBox7.62x51mmLMGCompatible
+      - MagazineBox7,62x51mmLMGCompatible
   - type: Sprite
     scale: 0.5,0.5
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/7.62x51mm/magazine_box_7.62x51mm_100rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/7,62x51mm/magazine_box_7,62x51mm_100rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -159,37 +159,37 @@
 
 #MARK: Empty
 - type: entity
-  id: MagazineBox7.62x51mmLMG100rdEmpty
+  id: MagazineBox7,62x51mmLMG100rdEmpty
   suffix: Empty
-  parent: BaseMagazineBox7.62x51mmLMG100rd
+  parent: BaseMagazineBox7,62x51mmLMG100rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: MagazineBox7.62x51mmLMG100rdFMJ
+  id: MagazineBox7,62x51mmLMG100rdFMJ
   suffix: FMJ
-  parent: BaseMagazineBox7.62x51mmLMG100rd
+  parent: BaseMagazineBox7,62x51mmLMG100rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmFMJ
+    proto: Cartridge7,62x51mmFMJ
 
 #MARK: Tracer Yellow
 - type: entity
-  id: MagazineBox7.62x51mmLMG100rdTracerYellow
+  id: MagazineBox7,62x51mmLMG100rdTracerYellow
   suffix: Tracer Yellow
-  parent: BaseMagazineBox7.62x51mmLMG100rd
+  parent: BaseMagazineBox7,62x51mmLMG100rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmTracerYellow
+    proto: Cartridge7,62x51mmTracerYellow
 
 #MARK: 200rd LMG Box
 - type: entity
-  id: BaseMagazineBox7.62x51mmLMG200rd
+  id: BaseMagazineBox7,62x51mmLMG200rd
   abstract: true
-  name: "200rd magazine box (7.62x51mm NATO)"
-  parent: BaseMagazine7.62x51mm
+  name: "200rd magazine box (7,62x51mm NATO)"
+  parent: BaseMagazine7,62x51mm
   components:
   - type: BallisticAmmoProvider
     capacity: 200
@@ -199,10 +199,10 @@
     - 0,0,1,1
   - type: Tag
     tags:
-      - MagazineBox7.62x51mmLMGCompatible
+      - MagazineBox7,62x51mmLMGCompatible
   - type: Sprite
     scale: 0.5,0.5
-    sprite: _Cataclysm14/Objects/Weapons/Magazines/7.62x51mm/magazine_box_7.62x51mm_200rd.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/7,62x51mm/magazine_box_7,62x51mm_200rd.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -211,27 +211,27 @@
 
 #MARK: Empty
 - type: entity
-  id: MagazineBox7.62x51mmLMG200rdEmpty
+  id: MagazineBox7,62x51mmLMG200rdEmpty
   suffix: Empty
-  parent: BaseMagazineBox7.62x51mmLMG200rd
+  parent: BaseMagazineBox7,62x51mmLMG200rd
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 #MARK: FMJ
 - type: entity
-  id: MagazineBox7.62x51mmLMG200rdFMJ
+  id: MagazineBox7,62x51mmLMG200rdFMJ
   suffix: FMJ
-  parent: BaseMagazineBox7.62x51mmLMG200rd
+  parent: BaseMagazineBox7,62x51mmLMG200rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmFMJ
+    proto: Cartridge7,62x51mmFMJ
 
 #MARK: Tracer Yellow
 - type: entity
-  id: MagazineBox7.62x51mmLMG200rdTracerYellow
+  id: MagazineBox7,62x51mmLMG200rdTracerYellow
   suffix: Tracer Yellow
-  parent: BaseMagazineBox7.62x51mmLMG200rd
+  parent: BaseMagazineBox7,62x51mmLMG200rd
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmTracerYellow
+    proto: Cartridge7,62x51mmTracerYellow

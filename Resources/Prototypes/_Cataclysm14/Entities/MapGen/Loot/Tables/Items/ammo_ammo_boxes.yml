@@ -15,79 +15,12 @@
         tableId: LootTableAmmunitionAmmoBox9x19mmMilitaryGradeLowTier
       - !type:NestedSelector
         weight: 100
-        tableId: LootTableAmmunitionAmmoBox5.56x45mmMilitaryGradeLowTier
+        tableId: LootTableAmmunitionAmmoBox5,56x45mmMilitaryGradeLowTier
       - !type:NestedSelector
         weight: 100
-        tableId: LootTableAmmunitionAmmoBox7.62x51mmMilitaryGradeLowTier
+        tableId: LootTableAmmunitionAmmoBox7,62x51mmMilitaryGradeLowTier
 
-#MARK: 5.56x45mm >
-
-
-
-
-
-
-#MARK: AmmoBoxMilLow
-- type: entityTable
-  id: LootTableAmmunitionAmmoBox5.56x45mmMilitaryGradeLowTier
-  table: !type:GroupSelector
-    children:
-      - id: AmmoBox5.56x45mmFMJ
-        rolls: !type:RangeNumberSelector
-          range: 0,2
-      - id: AmmoBox5.56x45mmTracerRed
-        rolls: !type:RangeNumberSelector
-          range: 0,2
-
-#MARK: AmmoBoxCivHigh
-- type: entityTable
-  id: LootTableAmmunitionAmmoBox5.56x45mmCivilianGradeHighTier
-  table: !type:GroupSelector
-    children:
-      - id: AmmoBox5.56x45mmRIP
-        rolls: !type:RangeNumberSelector
-          range: 0,2
-      - id: AmmoBox5.56x45mmFMJ
-        rolls: !type:RangeNumberSelector
-          range: 0,2
-      - id: AmmoBox5.56x45mmTracerRed
-        rolls: !type:RangeNumberSelector
-          range: 0,2
-      - id: AmmoBox5.56x45mmMk262
-        rolls: !type:RangeNumberSelector
-          range: 0,2
-      - id: AmmoBox5.56x45mmM855
-        rolls: !type:RangeNumberSelector
-          range: 0,2
-
-#MARK: AmmoBoxCivMid
-- type: entityTable
-  id: LootTableAmmunitionAmmoBox5.56x45mmCivilianGradeMediumTier
-  table: !type:GroupSelector
-    children:
-      - id: AmmoBox5.56x45mmHP
-        rolls: !type:RangeNumberSelector
-          range: 0,2
-      - id: AmmoBox5.56x45mmFMJ
-        rolls: !type:RangeNumberSelector
-          range: 0,2
-      - id: AmmoBox5.56x45mmTracerRed
-        rolls: !type:RangeNumberSelector
-          range: 0,2
-
-#MARK: AmmoBoxCivLow
-- type: entityTable
-  id: LootTableAmmunitionAmmoBox5.56x45mmCivilianGradeLowTier
-  table: !type:GroupSelector
-    children:
-      - id: AmmoBox5.56x45mmHP
-        rolls: !type:RangeNumberSelector
-          range: 0,2
-      - id: AmmoBox5.56x45mm223Remington
-        rolls: !type:RangeNumberSelector
-          range: 0,2
-
-#MARK: 7.62x51mm >
+#MARK: 5,56x45mm >
 
 
 
@@ -96,61 +29,128 @@
 
 #MARK: AmmoBoxMilLow
 - type: entityTable
-  id: LootTableAmmunitionAmmoBox7.62x51mmMilitaryGradeLowTier
+  id: LootTableAmmunitionAmmoBox5,56x45mmMilitaryGradeLowTier
   table: !type:GroupSelector
     children:
-      - id: AmmoBox7.62x51mmFMJ
+      - id: AmmoBox5,56x45mmFMJ
         rolls: !type:RangeNumberSelector
           range: 0,2
-      - id: AmmoBox7.62x51mmTracerYellow
+      - id: AmmoBox5,56x45mmTracerRed
         rolls: !type:RangeNumberSelector
           range: 0,2
 
 #MARK: AmmoBoxCivHigh
 - type: entityTable
-  id: LootTableAmmunitionAmmoBox7.62x51mmCivilianGradeHighTier
+  id: LootTableAmmunitionAmmoBox5,56x45mmCivilianGradeHighTier
   table: !type:GroupSelector
     children:
-      - id: AmmoBox7.62x51mmRIP
+      - id: AmmoBox5,56x45mmRIP
         rolls: !type:RangeNumberSelector
           range: 0,2
-      - id: AmmoBox7.62x51mmFMJ
+      - id: AmmoBox5,56x45mmFMJ
         rolls: !type:RangeNumberSelector
           range: 0,2
-      - id: AmmoBox7.62x51mmTracerYellow
+      - id: AmmoBox5,56x45mmTracerRed
         rolls: !type:RangeNumberSelector
           range: 0,2
-      - id: AmmoBox7.62x51mmUltraNosler
+      - id: AmmoBox5,56x45mmMk262
         rolls: !type:RangeNumberSelector
           range: 0,2
-      - id: AmmoBox7.62x51mmM61
+      - id: AmmoBox5,56x45mmM855
         rolls: !type:RangeNumberSelector
           range: 0,2
 
 #MARK: AmmoBoxCivMid
 - type: entityTable
-  id: LootTableAmmunitionAmmoBox7.62x51mmCivilianGradeMediumTier
+  id: LootTableAmmunitionAmmoBox5,56x45mmCivilianGradeMediumTier
   table: !type:GroupSelector
     children:
-      - id: AmmoBox7.62x51mmHP
+      - id: AmmoBox5,56x45mmHP
         rolls: !type:RangeNumberSelector
           range: 0,2
-      - id: AmmoBox7.62x51mmFMJ
+      - id: AmmoBox5,56x45mmFMJ
         rolls: !type:RangeNumberSelector
           range: 0,2
-      - id: AmmoBox7.62x51mmTracerYellow
+      - id: AmmoBox5,56x45mmTracerRed
         rolls: !type:RangeNumberSelector
           range: 0,2
 
 #MARK: AmmoBoxCivLow
 - type: entityTable
-  id: LootTableAmmunitionAmmoBox7.62x51mmCivilianGradeLowTier
+  id: LootTableAmmunitionAmmoBox5,56x45mmCivilianGradeLowTier
   table: !type:GroupSelector
     children:
-      - id: AmmoBox7.62x51mmHP
+      - id: AmmoBox5,56x45mmHP
         rolls: !type:RangeNumberSelector
           range: 0,2
-      - id: AmmoBox7.62x51mm308Winchester
+      - id: AmmoBox5,56x45mm223Remington
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+
+#MARK: 7,62x51mm >
+
+
+
+
+
+
+#MARK: AmmoBoxMilLow
+- type: entityTable
+  id: LootTableAmmunitionAmmoBox7,62x51mmMilitaryGradeLowTier
+  table: !type:GroupSelector
+    children:
+      - id: AmmoBox7,62x51mmFMJ
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+      - id: AmmoBox7,62x51mmTracerYellow
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+
+#MARK: AmmoBoxCivHigh
+- type: entityTable
+  id: LootTableAmmunitionAmmoBox7,62x51mmCivilianGradeHighTier
+  table: !type:GroupSelector
+    children:
+      - id: AmmoBox7,62x51mmRIP
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+      - id: AmmoBox7,62x51mmFMJ
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+      - id: AmmoBox7,62x51mmTracerYellow
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+      - id: AmmoBox7,62x51mmUltraNosler
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+      - id: AmmoBox7,62x51mmM61
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+
+#MARK: AmmoBoxCivMid
+- type: entityTable
+  id: LootTableAmmunitionAmmoBox7,62x51mmCivilianGradeMediumTier
+  table: !type:GroupSelector
+    children:
+      - id: AmmoBox7,62x51mmHP
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+      - id: AmmoBox7,62x51mmFMJ
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+      - id: AmmoBox7,62x51mmTracerYellow
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+
+#MARK: AmmoBoxCivLow
+- type: entityTable
+  id: LootTableAmmunitionAmmoBox7,62x51mmCivilianGradeLowTier
+  table: !type:GroupSelector
+    children:
+      - id: AmmoBox7,62x51mmHP
+        rolls: !type:RangeNumberSelector
+          range: 0,2
+      - id: AmmoBox7,62x51mm308Winchester
         rolls: !type:RangeNumberSelector
           range: 0,2
 

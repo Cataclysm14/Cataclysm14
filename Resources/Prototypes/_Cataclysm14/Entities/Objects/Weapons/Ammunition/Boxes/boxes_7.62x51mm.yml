@@ -2,15 +2,15 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseAmmoBox7.62x51mm
-  name: ammunition box (7.62x51mm NATO FMJ)
+  id: BaseAmmoBox7,62x51mm
+  name: ammunition box (7,62x51mm NATO FMJ)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge7.62x51mm
-    proto: Cartridge7.62x51mmFMJ
+        - Cartridge7,62x51mm
+    proto: Cartridge7,62x51mmFMJ
     capacity: 60 # 3 full power mags
   - type: Item
     size: Small
@@ -18,7 +18,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/7.62x51mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/7,62x51mm.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 4
@@ -26,7 +26,7 @@
   - type: Appearance
   - type: Tag
     tags:
-    - Magazine7.62x51mmBoxSmall
+    - Magazine7,62x51mmBoxSmall
   - type: EmitSoundOnPickup
     sound:
       path: /Audio/_Goobstation/Items/handling/ammobox_pickup.ogg
@@ -39,12 +39,12 @@
 
 #MARK: FMJ
 - type: entity
-  parent: BaseAmmoBox7.62x51mm
-  id: AmmoBox7.62x51mmFMJ
-  name: ammunition box (7.62x51mm NATO FMJ)
+  parent: BaseAmmoBox7,62x51mm
+  id: AmmoBox7,62x51mmFMJ
+  name: ammunition box (7,62x51mm NATO FMJ)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmFMJ
+    proto: Cartridge7,62x51mmFMJ
   - type: Sprite
     layers:
     - state: base
@@ -54,12 +54,12 @@
 
 #MARK: .308 Winchester
 - type: entity
-  parent: BaseAmmoBox7.62x51mm
-  id: AmmoBox7.62x51mm308Winchester
+  parent: BaseAmmoBox7,62x51mm
+  id: AmmoBox7,62x51mm308Winchester
   name: ammunition box (.308 Winchester)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mm308Winchester
+    proto: Cartridge7,62x51mm308Winchester
   - type: Sprite
     layers:
     - state: base
@@ -69,12 +69,12 @@
 
 #MARK: Tracer Yellow
 - type: entity
-  parent: BaseAmmoBox7.62x51mm
-  id: AmmoBox7.62x51mmTracerYellow
-  name: ammunition box (7.62x51mm NATO yellow tracer)
+  parent: BaseAmmoBox7,62x51mm
+  id: AmmoBox7,62x51mmTracerYellow
+  name: ammunition box (7,62x51mm NATO yellow tracer)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmTracerYellow
+    proto: Cartridge7,62x51mmTracerYellow
   - type: Sprite
     layers:
     - state: base
@@ -84,12 +84,12 @@
 
 #MARK: M61
 - type: entity
-  parent: BaseAmmoBox7.62x51mm
-  id: AmmoBox7.62x51mmM61
-  name: ammunition box (7.62x51mm NATO M61)
+  parent: BaseAmmoBox7,62x51mm
+  id: AmmoBox7,62x51mmM61
+  name: ammunition box (7,62x51mm NATO M61)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmM61
+    proto: Cartridge7,62x51mmM61
   - type: Sprite
     layers:
     - state: base
@@ -99,12 +99,12 @@
 
 #MARK: Ultra Nosler
 - type: entity
-  parent: BaseAmmoBox7.62x51mm
-  id: AmmoBox7.62x51mmUltraNosler
-  name: ammunition box (7.62x51mm NATO Ultra Nosler)
+  parent: BaseAmmoBox7,62x51mm
+  id: AmmoBox7,62x51mmUltraNosler
+  name: ammunition box (7,62x51mm NATO Ultra Nosler)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmUltraNosler
+    proto: Cartridge7,62x51mmUltraNosler
   - type: Sprite
     layers:
     - state: base
@@ -114,12 +114,12 @@
 
 #MARK: Incendiary
 - type: entity
-  parent: BaseAmmoBox7.62x51mm
-  id: AmmoBox7.62x51mmIncendiary
-  name: ammunition box (7.62x51mm NATO incendiary)
+  parent: BaseAmmoBox7,62x51mm
+  id: AmmoBox7,62x51mmIncendiary
+  name: ammunition box (7,62x51mm NATO incendiary)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmIncendiary
+    proto: Cartridge7,62x51mmIncendiary
   - type: Sprite
     layers:
     - state: base
@@ -130,12 +130,12 @@
 
 #MARK: Depleted Uranium
 - type: entity
-  id: AmmoBox7.62x51mmDepletedUranium
-  parent: BaseAmmoBox7.62x51mm
-  name: ammunition box (7.62x51mm NATO depleted uranium)
+  id: AmmoBox7,62x51mmDepletedUranium
+  parent: BaseAmmoBox7,62x51mm
+  name: ammunition box (7,62x51mm NATO depleted uranium)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmDepletedUranium
+    proto: Cartridge7,62x51mmDepletedUranium
   - type: Sprite
     layers:
     - state: base
@@ -146,12 +146,12 @@
 
 #MARK: Rubber
 - type: entity
-  parent: BaseAmmoBox7.62x51mm
-  id: AmmoBox7.62x51mmRubber
-  name: ammunition box (7.62x51mm NATO rubber)
+  parent: BaseAmmoBox7,62x51mm
+  id: AmmoBox7,62x51mmRubber
+  name: ammunition box (7,62x51mm NATO rubber)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmRubber
+    proto: Cartridge7,62x51mmRubber
   - type: Sprite
     layers:
     - state: base
@@ -162,12 +162,12 @@
 
 #MARK: HP
 - type: entity
-  parent: BaseAmmoBox7.62x51mm
-  id: AmmoBox7.62x51mmHP
-  name: ammunition box (7.62x51mm NATO hollow-point)
+  parent: BaseAmmoBox7,62x51mm
+  id: AmmoBox7,62x51mmHP
+  name: ammunition box (7,62x51mm NATO hollow-point)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmHP
+    proto: Cartridge7,62x51mmHP
   - type: Sprite
     layers:
     - state: base
@@ -178,12 +178,12 @@
 
 #MARK: RIP
 - type: entity
-  parent: BaseAmmoBox7.62x51mm
-  id: AmmoBox7.62x51mmRIP
-  name: ammunition box (7.62x51mm NATO RIP)
+  parent: BaseAmmoBox7,62x51mm
+  id: AmmoBox7,62x51mmRIP
+  name: ammunition box (7,62x51mm NATO RIP)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmRIP
+    proto: Cartridge7,62x51mmRIP
   - type: Sprite
     layers:
     - state: base
@@ -194,9 +194,9 @@
 
 #MARK: Big FMJ
 - type: entity
-  parent: BaseAmmoBox7.62x51mm
-  id: AmmoBox7.62x51mmBigFMJ
-  name: big ammunition box (7.62x51mm NATO FMJ)
+  parent: BaseAmmoBox7,62x51mm
+  id: AmmoBox7,62x51mmBigFMJ
+  name: big ammunition box (7,62x51mm NATO FMJ)
   suffix: Big
   components:
   - type: Item
@@ -204,7 +204,7 @@
     - 0,0,1,1
   - type: BallisticAmmoProvider
     capacity: 180 # 9 full power mags
-    proto: Cartridge7.62x51mmFMJ
+    proto: Cartridge7,62x51mmFMJ
   - type: Sprite
     layers:
     - state: base-b # Frontier: base-big<base-b
@@ -218,17 +218,17 @@
   - type: Appearance
   - type: Tag
     tags:
-    - Magazine7.62x51mmBoxBig
+    - Magazine7,62x51mmBoxBig
 
 #MARK: Deprecated >
 
 - type: entity
-  parent: BaseAmmoBox7.62x51mm
-  id: AmmoBox7.62x51mmPlasteelAP
-  name: ammunition box (7.62x51mm NATO AP)
+  parent: BaseAmmoBox7,62x51mm
+  id: AmmoBox7,62x51mmPlasteelAP
+  name: ammunition box (7,62x51mm NATO AP)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmPlasteelAP
+    proto: Cartridge7,62x51mmPlasteelAP
   - type: Sprite
     layers:
     - state: base
@@ -238,12 +238,12 @@
     - state: plasteelAP
 
 - type: entity
-  parent: BaseAmmoBox7.62x51mm
-  id: AmmoBox7.62x51mmPractice
-  name: ammunition box (7.62x51mm NATO practice)
+  parent: BaseAmmoBox7,62x51mm
+  id: AmmoBox7,62x51mmPractice
+  name: ammunition box (7,62x51mm NATO practice)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x51mmPractice
+    proto: Cartridge7,62x51mmPractice
   - type: Sprite
     layers:
     - state: base

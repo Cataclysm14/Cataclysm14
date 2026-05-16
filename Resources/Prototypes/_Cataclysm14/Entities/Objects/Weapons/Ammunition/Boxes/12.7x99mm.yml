@@ -1,15 +1,15 @@
 - type: entity
   abstract: true
   parent: BaseItem
-  id: BaseAmmoBox12.7x99mm
-  name: ammunition box (12.7x99mm anti-material)
+  id: BaseAmmoBox12,7x99mm
+  name: ammunition box (12,7x99mm anti-material)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge12.7x99mm
-    proto: Cartridge12.7x99mm
+        - Cartridge12,7x99mm
+    proto: Cartridge12,7x99mm
     capacity: 30
   - type: Item
     size: Small
@@ -17,7 +17,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/12.7x99mm.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/12,7x99mm.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -39,14 +39,14 @@
       path: /Audio/_Goobstation/Items/handling/ammobox_drop.ogg
 
 - type: entity
-  parent: BaseAmmoBox12.7x99mm
-  id: AmmoBox12.7x99mm
+  parent: BaseAmmoBox12,7x99mm
+  id: AmmoBox12,7x99mm
 
 - type: entity
-  parent: BaseAmmoBox12.7x99mm
-  id: AmmoBox12.7x99mmExplosive
-  name: ammunition box (12.7x99mm high-explosive)
+  parent: BaseAmmoBox12,7x99mm
+  id: AmmoBox12,7x99mmExplosive
+  name: ammunition box (12,7x99mm high-explosive)
   components:
   - type: BallisticAmmoProvider
     capacity: 30
-    proto: Cartridge12.7x99mmExplosive
+    proto: Cartridge12,7x99mmExplosive

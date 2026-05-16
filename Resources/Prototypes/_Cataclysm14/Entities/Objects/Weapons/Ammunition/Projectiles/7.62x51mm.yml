@@ -1,6 +1,6 @@
 #MARK: 308 Winchester
 - type: entity
-  id: Bullet7.62x51mm308Winchester
+  id: Bullet7,62x51mm308Winchester
   name: bullet (.308 Winchester)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -13,8 +13,8 @@
 
 #MARK: M993
 - type: entity
-  id: Bullet7.62x51mmM993
-  name: bullet (7.62x51mm NATO M993)
+  id: Bullet7,62x51mmM993
+  name: bullet (7,62x51mm NATO M993)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -26,8 +26,8 @@
 
 #MARK: M80
 - type: entity
-  id: Bullet7.62x51mmM80
-  name: bullet (7.62x51mm NATO M80)
+  id: Bullet7,62x51mmM80
+  name: bullet (7,62x51mm NATO M80)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -39,8 +39,8 @@
 
 #MARK: M61
 - type: entity
-  id: Bullet7.62x51mmM61
-  name: bullet (7.62x51mm NATO M61)
+  id: Bullet7,62x51mmM61
+  name: bullet (7,62x51mm NATO M61)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -52,8 +52,8 @@
 
 #MARK: Ultra Nosler
 - type: entity
-  id: Bullet7.62x51mmUltraNosler
-  name: bullet (7.62x51mm NATO Ultra Nosler)
+  id: Bullet7,62x51mmUltraNosler
+  name: bullet (7,62x51mm NATO Ultra Nosler)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -65,8 +65,8 @@
 
 #MARK: yellow tracer
 - type: entity
-  id: Bullet7.62x51mmTracerYellow
-  name: bullet (7.62x51mm NATO yellow tracer)
+  id: Bullet7,62x51mmTracerYellow
+  name: bullet (7,62x51mm NATO yellow tracer)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -87,8 +87,8 @@
 
 #MARK: FMJ
 - type: entity
-  id: Bullet7.62x51mmFMJ
-  name: bullet (7.62x51mm NATO FMJ)
+  id: Bullet7,62x51mmFMJ
+  name: bullet (7,62x51mm NATO FMJ)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -100,8 +100,8 @@
 
 #MARK: Rubber
 - type: entity
-  id: Bullet7.62x51mmRubber
-  name: bullet (7.62x51mm NATO rubber)
+  id: Bullet7,62x51mmRubber
+  name: bullet (7,62x51mm NATO rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
   components:
@@ -112,9 +112,9 @@
 
 #MARK: Incendiary
 - type: entity
-  id: Bullet7.62x51mmIncendiary
+  id: Bullet7,62x51mmIncendiary
   parent: BaseBulletIncendiary
-  name: bullet (7.62x51mm NATO incendiary)
+  name: bullet (7,62x51mm NATO incendiary)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -125,9 +125,9 @@
 
 #MARK: Depleted Uranium
 - type: entity
-  id: Bullet7.62x51mmDepletedUranium
+  id: Bullet7,62x51mmDepletedUranium
   parent: BaseBulletUranium
-  name: bullet (7.62x51mm NATO depleted uranium)
+  name: bullet (7,62x51mm NATO depleted uranium)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -138,9 +138,9 @@
 
 #MARK: HP
 - type: entity
-  id: Bullet7.62x51mmHP
+  id: Bullet7,62x51mmHP
   parent: BaseBullet
-  name: bullet (7.62x51mm NATO hollow-point)
+  name: bullet (7,62x51mm NATO hollow-point)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -152,9 +152,9 @@
 
 #MARK: RIP
 - type: entity
-  id: Bullet7.62x51mmRIP
+  id: Bullet7,62x51mmRIP
   parent: BaseBullet
-  name: bullet (7.62x51mm NATO Radically Invasive Projectile)
+  name: bullet (7,62x51mm NATO Radically Invasive Projectile)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -167,9 +167,9 @@
 #MARK: Deprecated >
 
 - type: entity
-  id: Bullet7.62x51mmPlasteelAP
+  id: Bullet7,62x51mmPlasteelAP
   parent: BaseBullet
-  name: bullet (7.62x51mm NATO AP)
+  name: bullet (7,62x51mm NATO AP)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -180,8 +180,8 @@
     armorPenetration: 0.8
 
 - type: entity
-  id: Bullet7.62x51mmPractice
-  name: bullet (7.62x51mm NATO practice)
+  id: Bullet7,62x51mmPractice
+  name: bullet (7,62x51mm NATO practice)
   parent: BaseBulletPractice
   categories: [ HideSpawnMenu ]
   components:

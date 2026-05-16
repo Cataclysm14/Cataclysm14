@@ -1,70 +1,70 @@
-  #MARK: 7.62x51mm
+  #MARK: 7,62x51mm
   - type: Tag
-    id: Magazine7.62x51mmSTANAGCompatible
-
-  - type: Tag
-    id: Cartridge7.62x51mm
+    id: Magazine7,62x51mmSTANAGCompatible
 
   - type: Tag
-    id: MagazineBox7.62x51mmLMGCompatible
-
-  #MARK: 7.62x54mmR
+    id: Cartridge7,62x51mm
 
   - type: Tag
-    id: Cartridge7.62x54mmR
+    id: MagazineBox7,62x51mmLMGCompatible
 
-  #MARK: 6.8x52mm
+  #MARK: 7,62x54mmR
+
+  - type: Tag
+    id: Cartridge7,62x54mmR
+
+  #MARK: 6,8x52mm
     #Deprecated-ish, unless implemented
   - type: Tag
-    id: Cartridge6.8x52mmCaseless
+    id: Cartridge6,8x52mmCaseless
 
-  #MARK: 5.56x45mm
-
-  - type: Tag
-    id: Cartridge5.56x45mm
+  #MARK: 5,56x45mm
 
   - type: Tag
-    id: Magazine5.56x45mmSTANAGCompatible
+    id: Cartridge5,56x45mm
 
   - type: Tag
-    id: AmmoBelt5.56x45mm
+    id: Magazine5,56x45mmSTANAGCompatible
 
   - type: Tag
-    id: MagazineBox5.56x45mmLMGCompatible
-
-  #MARK: 7.62x39mm
+    id: AmmoBelt5,56x45mm
 
   - type: Tag
-    id: Cartridge7.62x39mm
+    id: MagazineBox5,56x45mmLMGCompatible
+
+  #MARK: 7,62x39mm
 
   - type: Tag
-    id: Magazine7.62x39mmAKCompatible
+    id: Cartridge7,62x39mm
 
   - type: Tag
-    id: AmmoBelt7.62x39mm
+    id: Magazine7,62x39mmAKCompatible
 
   - type: Tag
-    id: Magazine7.62x39mmRPDCompatible
-
-  #MARK: 5.45x39mm
+    id: AmmoBelt7,62x39mm
 
   - type: Tag
-    id: Cartridge5.45x39mm
+    id: Magazine7,62x39mmRPDCompatible
+
+  #MARK: 5,45x39mm
 
   - type: Tag
-    id: Magazine5.45x39mmAKCompatible
-
-  #MARK: 4.6x30mm
+    id: Cartridge5,45x39mm
 
   - type: Tag
-    id: Cartridge4.6x30mm
+    id: Magazine5,45x39mmAKCompatible
+
+  #MARK: 4,6x30mm
 
   - type: Tag
-    id: Magazine4.6x30mmMP7Compatible
+    id: Cartridge4,6x30mm
+
+  - type: Tag
+    id: Magazine4,6x30mmMP7Compatible
 
     #Deprecated
   - type: Tag
-    id: Magazine4.6x30mmPistolFMJ
+    id: Magazine4,6x30mmPistolFMJ
 
   #MARK:.45 ACP
 
@@ -104,10 +104,10 @@
   - type: Tag
     id: Cartridge9x19mm
 
-  #MARK: 5.7x28mm
+  #MARK: 5,7x28mm
 
   - type: Tag
-    id: Cartridge5.7x28mm
+    id: Cartridge5,7x28mm
 
   #MARK: 8x65mm SKR
 
@@ -146,7 +146,7 @@
   - type: Tag
     id: Cartridge14.5x114mm
 
-  #MARK: 6.35x40mm
+  #MARK: 6,35x40mm
     #Deprecated-ish, unless implemented
   - type: Tag
-    id: Cartridge6.35x40mmCaseless
+    id: Cartridge6,35x40mmCaseless

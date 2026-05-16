@@ -40,9 +40,9 @@
   - type: TechnologyDisk
     recipes:
     - WeaponRifleAnnieTSF
-    - Magazine7.62x39mmFMJ
-    - Magazine7.62x39mmEmpty
-    - AmmoBox7.62x39mmFMJ
+    - Magazine7,62x39mmFMJ
+    - Magazine7,62x39mmEmpty
+    - AmmoBox7,62x39mmFMJ
 
 - type: entity
   parent: TechDiskBase
@@ -122,9 +122,9 @@
   - type: TechnologyDisk
     recipes:
     - WeaponRifleXlr556Tsf
-    - Magazine5.56x45mmFMJ
-    - Magazine5.56x45mmEmpty
-    - AmmoBox5.56x45mmFMJ
+    - Magazine5,56x45mmFMJ
+    - Magazine5,56x45mmEmpty
+    - AmmoBox5,56x45mmFMJ
 
 # universal stuff
 
@@ -258,9 +258,9 @@
   - type: TechnologyDisk
     recipes:
     - WeaponRifleM90Rogue
-    - Magazine7.62x51mmFMJ
-    - Magazine7.62x51mmEmpty
-    - AmmoBox7.62x51mmFMJ
+    - Magazine7,62x51mmFMJ
+    - Magazine7,62x51mmEmpty
+    - AmmoBox7,62x51mmFMJ
 
 - type: entity
   parent: TechDiskBase
@@ -321,6 +321,6 @@
   - type: TechnologyDisk
     recipes:
     - WeaponSubMachineGunMla73Rogue
-    - Magazine6.35x40mmCaseless
-    - AmmoBox6.35x40mmCaseless
-    - MagazineAsmgtUniversal6.35x40mm
+    - Magazine6,35x40mmCaseless
+    - AmmoBox6,35x40mmCaseless
+    - MagazineAsmgtUniversal6,35x40mm

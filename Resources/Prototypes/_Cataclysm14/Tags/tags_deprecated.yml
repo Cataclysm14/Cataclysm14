@@ -45,23 +45,23 @@
 
     #Deprecated
   - type: Tag
-    id: Magazine5.7x28mmPistolFMJ
+    id: Magazine5,7x28mmPistolFMJ
 
     #Deprecated
   - type: Tag
-    id: Magazine5.7x28mmPistolHighCapacityFMJ
+    id: Magazine5,7x28mmPistolHighCapacityFMJ
 
     #Deprecated
   - type: Tag
-    id: Magazine5.7x28mmSubMachineGunFMJ
+    id: Magazine5,7x28mmSubMachineGunFMJ
 
     #Deprecated
   - type: Tag
-    id: Magazine5.7x28mmSubMachineGunTopMountedFMJ
+    id: Magazine5,7x28mmSubMachineGunTopMountedFMJ
 
     #Deprecated
   - type: Tag
-    id: Magazine5.7x28mmFMJBox
+    id: Magazine5,7x28mmFMJBox
 
     #Deprecated
   - type: Tag
@@ -125,84 +125,84 @@
 
     #Deprecated
   - type: Tag
-    id: Magazine4.6x30mmPistolHighCapacityFMJ
+    id: Magazine4,6x30mmPistolHighCapacityFMJ
 
     #Deprecated
   - type: Tag
-    id: Magazine4.6x30mmSubMachineGunFMJ
+    id: Magazine4,6x30mmSubMachineGunFMJ
 
     #Deprecated
   - type: Tag
-    id: Magazine4.6x30mmSubMachineGunTopMountedFMJ
+    id: Magazine4,6x30mmSubMachineGunTopMountedFMJ
 
     #Deprecated
   - type: Tag
-    id: Magazine4.6x30mmFMJBox
+    id: Magazine4,6x30mmFMJBox
 
     #Deprecated
   - type: Tag
-    id: Magazine7.62x39mmFMJ
+    id: Magazine7,62x39mmFMJ
 
     #Deprecated
   - type: Tag
-    id: Magazine7.62x39mmLowCapacityFMJ
+    id: Magazine7,62x39mmLowCapacityFMJ
 
     #Deprecated
   - type: Tag
-    id: Magazine7.62x39mmBox
+    id: Magazine7,62x39mmBox
 
     #Deprecated
   - type: Tag
-    id: Magazine7.62x39mmPan
+    id: Magazine7,62x39mmPan
 
     #Deprecated
   - type: Tag
-    id: Magazine5.56x45mmFMJ
+    id: Magazine5,56x45mmFMJ
 
     #Deprecated
   - type: Tag
-    id: Magazine5.56x45mmBox
+    id: Magazine5,56x45mmBox
 
     #Deprecated
   - type: Tag
-    id: Magazine7.62x54mmRFMJ
+    id: Magazine7,62x54mmRFMJ
 
     #Deprecated
   - type: Tag
-    id: Magazine7.62x54mmRBox
+    id: Magazine7,62x54mmRBox
 
     #Deprecated
   - type: Tag
-    id: Magazine7.62x51mmFMJ
+    id: Magazine7,62x51mmFMJ
 
     #Deprecated
   - type: Tag
-    id: Magazine7.62x51mmLowCapacityFMJ
+    id: Magazine7,62x51mmLowCapacityFMJ
 
     #Deprecated
   - type: Tag
-    id: Magazine7.62x51mmBoxSmall
+    id: Magazine7,62x51mmBoxSmall
 
     #Deprecated
   - type: Tag
-    id: Magazine7.62x51mmBoxBig
+    id: Magazine7,62x51mmBoxBig
 
     #Deprecated
   - type: Tag
-    id: Magazine6.8x52mmCaseless
+    id: Magazine6,8x52mmCaseless
 
     #Deprecated
   - type: Tag
-    id: Magazine6.8x52mmCaselessBoxSmall
+    id: Magazine6,8x52mmCaselessBoxSmall
 
     #Deprecated
   - type: Tag
-    id: Magazine6.8x52mmCaselessBoxBig
+    id: Magazine6,8x52mmCaselessBoxBig
 
     #Deprecated
   - type: Tag
-    id: Magazine6.35x40mmCaseless
+    id: Magazine6,35x40mmCaseless
 
     #Deprecated
   - type: Tag
-    id: Magazine6.35x40mmCaselessPistol
+    id: Magazine6,35x40mmCaselessPistol

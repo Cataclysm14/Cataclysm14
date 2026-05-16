@@ -1,6 +1,6 @@
 - type: entity
-  id: Bullet6.35x40mmCaseless
-  name: bullet (6.35x40mm Caseless)
+  id: Bullet6,35x40mmCaseless
+  name: bullet (6,35x40mm Caseless)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -11,8 +11,8 @@
     armorPenetration: 0.085
 
 - type: entity
-  id: Bullet6.35x40mmCaselessPractice
-  name: bullet (6.35x40mm Caseless practice)
+  id: Bullet6,35x40mmCaselessPractice
+  name: bullet (6,35x40mm Caseless practice)
   parent: BaseBulletPractice
   categories: [ HideSpawnMenu ]
   components:
@@ -22,8 +22,8 @@
         Blunt: 2
 
 - type: entity
-  id: Bullet6.35x40mmCaselessRubber
-  name: bullet (6.35x40mm Caseless rubber)
+  id: Bullet6,35x40mmCaselessRubber
+  name: bullet (6,35x40mm Caseless rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
   components:

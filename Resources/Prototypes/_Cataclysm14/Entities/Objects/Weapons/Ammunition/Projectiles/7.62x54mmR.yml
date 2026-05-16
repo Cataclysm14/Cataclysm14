@@ -1,6 +1,6 @@
 - type: entity
-  id: Bullet7.62x54mmRFMJ
-  name: bullet (7.62x54mmR FMJ)
+  id: Bullet7,62x54mmRFMJ
+  name: bullet (7,62x54mmR FMJ)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -11,8 +11,8 @@
     armorPenetration: 0.1
 
 - type: entity
-  id: Bullet7.62x54mmRPractice
-  name: bullet (7.62x54mmR practice)
+  id: Bullet7,62x54mmRPractice
+  name: bullet (7,62x54mmR practice)
   parent: BaseBulletPractice
   categories: [ HideSpawnMenu ]
   components:
@@ -22,8 +22,8 @@
         Blunt: 3
 
 - type: entity
-  id: Bullet7.62x54mmRRubber
-  name: bullet (7.62x54mmR rubber)
+  id: Bullet7,62x54mmRRubber
+  name: bullet (7,62x54mmR rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
   components:
@@ -33,9 +33,9 @@
         Blunt: 5
 
 - type: entity
-  id: Bullet7.62x54mmRIncendiary
+  id: Bullet7,62x54mmRIncendiary
   parent: BaseBulletIncendiary
-  name: bullet (7.62x54mmR incendiary)
+  name: bullet (7,62x54mmR incendiary)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -45,9 +45,9 @@
         Heat: 30
 
 - type: entity
-  id: Bullet7.62x54mmRUranium
+  id: Bullet7,62x54mmRUranium
   parent: BaseBulletUranium
-  name: bullet (7.62x54mmR depleted uranium)
+  name: bullet (7,62x54mmR depleted uranium)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -59,9 +59,9 @@
 # Mono AP syst
 #anti-flesh:
 - type: entity
-  id: Bullet7.62x54mmRHP
+  id: Bullet7,62x54mmRHP
   parent: BaseBullet
-  name: bullet (7.62x54mmR hollow-point)
+  name: bullet (7,62x54mmR hollow-point)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -72,9 +72,9 @@
     armorPenetration: -0.5
 
 - type: entity
-  id: Bullet7.62x54mmRRIP
+  id: Bullet7,62x54mmRRIP
   parent: BaseBullet
-  name: bullet (7.62x54mmR RIP)
+  name: bullet (7,62x54mmR RIP)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -87,9 +87,9 @@
 #armor-piercing:
 
 - type: entity
-  id: Bullet7.62x54mmRPlasteelAP
+  id: Bullet7,62x54mmRPlasteelAP
   parent: BaseBullet
-  name: bullet (7.62x54mmR AP)
+  name: bullet (7,62x54mmR AP)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
