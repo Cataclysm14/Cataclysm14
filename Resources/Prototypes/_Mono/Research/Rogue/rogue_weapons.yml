@@ -11,7 +11,7 @@
   - EnergyDaggerRogue
   technologyPrerequisites:
   - UniversalMaterialResearchT2
-  position: 19, 6
+  position: 12, 9
 
 - type: technology
   id: HFSwordTech
@@ -24,7 +24,7 @@
   - HFSwordVT7
   technologyPrerequisites:
   - RogueEsword
-  position: 19, 12
+  position: 12, 14
 
 - type: technology
   id: RogueBasicGuns
@@ -41,7 +41,7 @@
   - PrintableDirtyBomb
   technologyPrerequisites:
   - UniversalMaterialResearchT1
-  position: 20, 2
+  position: 12, 2
 
 - type: technology
   id: RogueAdvancedGuns
@@ -58,7 +58,7 @@
   technologyPrerequisites:
   - RogueBasicGuns
   - UniversalMaterialResearchT2
-  position: 20, 7
+  position: 12, 8
 
 - type: technology
   id: RogueHeavyWeapons
@@ -69,15 +69,15 @@
   cost: 55000
   recipeUnlocks:
   - WeaponSniperHristovRogue
-  - AmmoBox14.5x114mm
-  - AmmoBox14.5x114mmBig
+  - AmmoBox145x114mm
+  - AmmoBox145x114mmBig
   - WeaponDEWBasilisk
   - Magazine10Phz # for basilisk
   - AmmoBox10Phz # for basilisk
   technologyPrerequisites:
   - RogueAdvancedGuns
   - UniversalMaterialResearchT3
-  position: 20, 12
+  position: 12, 13
 
 - type: technology
   id: RogueSubsonic
@@ -88,13 +88,13 @@
   cost: 35000
   recipeUnlocks:
   - WeaponRifleWSPRRogue
-  - Magazine7.62x39mmSubsonic
-  - AmmoBox7.62x39mmSubsonic
+  - Magazine762x39mmSubsonic
+  - AmmoBox762x39mmSubsonic
   - WeaponSubMachineGunMla73Rogue
-  - Magazine6.35x40mmCaseless
-  - AmmoBox6.35x40mmCaseless
-  - MagazineAsmgtUniversal6.35x40mm
-  - AmmoBox6.35x40mmCaselessBig
+  - Magazine635x40mmCaseless
+  - AmmoBox635x40mmCaseless
+  - MagazineAsmgtUniversal635x40mm
+  - AmmoBox635x40mmCaselessBig
   technologyPrerequisites:
   - RogueAdvancedGuns
-  position: 21, 7
+  position: 13, 8

@@ -131,8 +131,8 @@
 
 - type: latheRecipe
   parent: BaseAmmoUraniumPistolCaliberAmmoBoxRecipe
-  id: AmmoBox45_ACPDepletedUranium
-  result: AmmoBox45_ACPDepletedUranium
+  id: AmmoBox45_ACPUranium
+  result: AmmoBox45_ACPUranium
 
 - type: latheRecipe
   parent: BaseAmmoHPPistolCaliberAmmoBoxRecipe
