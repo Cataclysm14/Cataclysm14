@@ -17,9 +17,9 @@
     whitelist:
       tags:
         - Cartridge9x19mmFMJ
-        - Cartridge5.56x45mmFMJ
-        - Cartridge7.62x39mmFMJ
-        - Cartridge6.35x40mmCaseless
+        - Cartridge556x45mmFMJ
+        - Cartridge762x39mmFMJ
+        - Cartridge635x40mmCaseless
     capacity: 50
   - type: ContainerContainer
     containers:
@@ -45,30 +45,30 @@
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge9x19mmFMJ
-
+    
 - type: entity
   parent: MagazineAsmgtUniversalEmpty
-  id: MagazineAsmgtUniversal7.62x39mm
+  id: MagazineAsmgtUniversal762x39mm
   name: "ASMGT-compatible ammo box (7.62x39mm)"
   suffix: Loaded
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7.62x39mmFMJ
+    proto: Cartridge762x39mmFMJ
 
 - type: entity
   parent: MagazineAsmgtUniversalEmpty
-  id: MagazineAsmgtUniversal5.56x45mm
+  id: MagazineAsmgtUniversal556x45mm
   name: "ASMGT-compatible ammo box (5.56x45mm)"
   suffix: Loaded
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5.56x45mmFMJ
+    proto: Cartridge556x45mmFMJ
 
 - type: entity
   parent: MagazineAsmgtUniversalEmpty
-  id: MagazineAsmgtUniversal6.35x40mm
+  id: MagazineAsmgtUniversal635x40mm
   name: "ASMGT-compatible ammo box (6.35x40mm)"
   suffix: Loaded
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge6.35x40mmCaseless
+    proto: Cartridge635x40mmCaseless

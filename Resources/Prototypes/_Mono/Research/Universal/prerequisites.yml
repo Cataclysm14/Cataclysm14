@@ -38,14 +38,14 @@
   - UniversalMaterialResearchT1
   position: 10, 5
   recipeUnlocks:
-  - AmmoBox7.62x39mmBigFMJ
-  - AmmoBox7.62x51mmBigFMJ
-  - AmmoBox7.62x54mmRBigFMJ
+  - AmmoBox762x39mmBigFMJ
+  - AmmoBox762x51mmBigFMJ
+  - AmmoBox762x54mmRBigFMJ
   - AmmoBox9x19mmBigFMJ
   - AmmoBox45_ACPBigFMJ
   - AmmoBox45_magnumBigFMJ
-  - AmmoBox4.6x30mmBigFMJ
-  - AmmoBox5.56x45mmBigFMJ
+  - AmmoBox46x30mmBigFMJ
+  - AmmoBox556x45mmBigFMJ
 
 - type: technology
   id: UniversalMaterialResearchT3

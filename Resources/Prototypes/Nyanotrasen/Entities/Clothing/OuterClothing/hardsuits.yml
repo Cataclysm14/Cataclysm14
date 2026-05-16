@@ -14,7 +14,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHeadHelmetHardsuitSyndieReverseEngineered
-      faceshield: ClothingHeadfaceshieldBlock
+      helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
 
 - type: entity
@@ -34,6 +34,6 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHeadHelmetHardsuitJuggernautReverseEngineered
-      faceshield: ClothingHeadfaceshieldBlock
+      helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
 

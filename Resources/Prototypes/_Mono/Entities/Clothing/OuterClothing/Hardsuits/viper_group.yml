@@ -36,7 +36,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHeadHelmetHardsuitViperGroupStandard
-      faceshield: ClothingHeadfaceshieldBlock
+      helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaticPrice
     price: 1500
@@ -83,7 +83,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHeadHelmetHardsuitViperGroupMedic
-      faceshield: ClothingHeadfaceshieldBlock
+      helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaticPrice
     price: 1500
@@ -130,7 +130,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHeadHelmetHardsuitViperGroupJuggernaut
-      faceshield: ClothingHeadfaceshieldBlock
+      helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaticPrice
     price: 2500

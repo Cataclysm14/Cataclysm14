@@ -32,7 +32,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHelmetHardsuitUIEnforcer
-      faceshield: ClothingHeadfaceshieldBlock
+      helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaminaDamageResistance
     coefficient: 0.55
@@ -90,7 +90,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHelmetHardsuitUIEnforcerMKII # Ullman Enforcer MKII helmet
-      faceshield: ClothingHeadfaceshieldBlock
+      helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaminaDamageResistance
     coefficient: 0.45
@@ -129,7 +129,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHelmetHardsuitUIEngineer
-      faceshield: ClothingHeadfaceshieldBlock
+      helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaminaDamageResistance
     coefficient: 0.8
@@ -169,7 +169,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHelmetHardsuitUIPilot
-      faceshield: ClothingHeadfaceshieldBlock
+      helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaminaDamageResistance
     coefficient: 0.7
@@ -208,7 +208,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHelmetHardsuitUIDirector
-      faceshield: ClothingHeadfaceshieldBlock
+      helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaminaDamageResistance
     coefficient: 0.35

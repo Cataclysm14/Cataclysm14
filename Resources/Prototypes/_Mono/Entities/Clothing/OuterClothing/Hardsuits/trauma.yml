@@ -35,7 +35,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHeadHelmetHardsuitTrauma
-      faceshield: ClothingHeadfaceshieldBlock
+      helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaticPrice
     price: 1400
@@ -79,7 +79,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHeadHelmetHardsuitTraumaLeader
-      faceshield: ClothingHeadfaceshieldBlock
+      helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaticPrice
     price: 4200
