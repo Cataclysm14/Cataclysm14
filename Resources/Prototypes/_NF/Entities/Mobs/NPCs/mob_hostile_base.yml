@@ -89,16 +89,16 @@
   components:
   - type: NFSalvageMobRestrictions
     addComponentsOnDeath:
-    - type: Uncloneable
-    - type: Unrevivable
+    # - type: Uncloneable #Cataclysm14, unnerf
+    # - type: Unrevivable #Cataclysm14, unnerf
     - type: Strippable
     - type: UserInterface
       interfaces:
         enum.StrippingUiKey.Key:
          type: StrippableBoundUserInterface
     removeComponentsOnDeath:
-    - type: Insulated
-    - type: Reflect
+    # - type: Insulated #Cataclysm14, unnerf
+    # - type: Reflect #Cataclysm14, unnerf
     - type: MovementIgnoreGravity
     - type: Tool
     - type: Prying
@@ -287,7 +287,7 @@
   abstract: true
   components:
   - type: Inventory
-    templateId: hostilehumanoid # Supports loadouts
+    templateId: InvTemplateZombieBase # Supports loadouts
   - type: InventorySlots
 
 - type: entity # Slots for loot containers: pockets, belt, back
@@ -364,7 +364,7 @@
   - MobStepTriggerImmune
   - BaseMobSpecies
   - MobHumanoidHostileAIComplex
-  - BaseC3MobHuman
+  # - BaseC3MobHuman #Cataclysm14, begone frontier slop
   id: MobHumanoidHostileBase
   components:
   - type: NPCRetaliation

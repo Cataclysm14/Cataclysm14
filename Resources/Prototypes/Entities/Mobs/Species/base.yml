@@ -2,6 +2,7 @@
   save: false
   parent:
   - BaseMob
+  - ESBaseMob #Cataclysm14, EphemeralSpace
   - MobDamageable
   - MobPolymorphable
   - MobCombat
@@ -21,6 +22,7 @@
     - map: [ "enum.HumanoidVisualLayers.RLeg" ]
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
     - map: ["jumpsuit"]
+    - map: ["pants"] #Cataclysm14, slots
     - map: ["enum.HumanoidVisualLayers.LFoot"]
     - map: ["enum.HumanoidVisualLayers.RFoot"]
     - map: ["enum.HumanoidVisualLayers.LHand"]
@@ -43,7 +45,7 @@
     - map: [ "mask" ]
     - map: [ "head" ]
     - map: [ "neck" ]
-    - map: [ "helmetcover" ]
+    - map: [ "faceshield" ] #Cataclysm14, slots
     - map: [ "helmetattachment" ]
     - map: [ "pocket1" ]
     - map: [ "pocket2" ]
@@ -336,6 +338,7 @@
     - map: [ "enum.HumanoidVisualLayers.RLeg" ]
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
     - map: ["jumpsuit"]
+    - map: ["pants"] #Cataclysm14, slots
     - map: [ "balaclava" ]
     - map: ["enum.HumanoidVisualLayers.LFoot"]
     - map: ["enum.HumanoidVisualLayers.RFoot"]
@@ -360,7 +363,7 @@
     - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
     - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
     - map: [ "enum.HumanoidVisualLayers.Tail" ]
-    - map: [ "helmetcover" ]
+    - map: [ "faceshield" ] #Cataclysm14, slots
     - map: [ "helmetattachment" ]
     - map: [ "mask" ]
     - map: [ "head" ]
