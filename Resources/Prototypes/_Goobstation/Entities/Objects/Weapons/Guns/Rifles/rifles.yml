@@ -213,21 +213,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine127x99mm
+        startingItem: Magazine12.7x99mm
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - Magazine127x99mm
+          - Magazine12.7x99mm
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge127x99mm
+        startingItem: Cartridge12.7x99mm
         priority: 1
         whitelist:
           tags:
-          - Cartridge127x99mm
+          - Cartridge12.7x99mm
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

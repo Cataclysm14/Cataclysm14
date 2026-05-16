@@ -12,7 +12,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridges9x19mm
+        - Cartridge9x19mm
     capacity: 19
   - type: Item
     storedScale: 2.5

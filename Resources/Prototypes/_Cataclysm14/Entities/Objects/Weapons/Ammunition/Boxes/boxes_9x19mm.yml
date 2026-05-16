@@ -9,7 +9,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridges9x19mm
+        - Cartridge9x19mm
     proto: Cartridge9x19mmFMJ
     capacity: 80
   - type: Item

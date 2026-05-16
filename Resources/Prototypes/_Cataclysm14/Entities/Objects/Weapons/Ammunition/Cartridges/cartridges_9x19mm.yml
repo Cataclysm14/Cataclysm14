@@ -9,7 +9,7 @@
   - type: Tag
     tags:
       - Cartridge
-      - Cartridges9x19mm
+      - Cartridge9x19mm
   - type: CartridgeAmmo
     proto: Bullet9x19mmFMJ
   - type: Sprite

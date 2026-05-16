@@ -64,8 +64,9 @@
       walkSpeedModifier: 0.99
       sprintSpeedModifier: 0.99
       staminaDamageMultiplier: 0.4
-      bluntDamageMultiplier: 0.1
-      slashDamageMultiplier: 0.1
+      absorptionRatios:
+        Blunt: 0.1
+        Slash: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_front_grey_paper.rsi
       state: icon
@@ -93,8 +94,9 @@
       walkSpeedModifier: 0.99
       sprintSpeedModifier: 0.99
       staminaDamageMultiplier: 0.4
-      bluntDamageMultiplier: 0.1
-      slashDamageMultiplier: 0.1
+      absorptionRatios:
+        Blunt: 0.1
+        Slash: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_front_black_tall.rsi
       state: icon
@@ -123,8 +125,9 @@
       walkSpeedModifier: 0.99
       sprintSpeedModifier: 0.99
       staminaDamageMultiplier: 0.4
-      bluntDamageMultiplier: 0.1
-      slashDamageMultiplier: 0.1
+      absorptionRatios:
+        Blunt: 0.1
+        Slash: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_front_black_tall.rsi
       state: icon
@@ -152,8 +155,9 @@
       walkSpeedModifier: 0.99
       sprintSpeedModifier: 0.99
       staminaDamageMultiplier: 0.4
-      bluntDamageMultiplier: 0.1
-      slashDamageMultiplier: 0.1
+      absorptionRatios:
+        Blunt: 0.1
+        Slash: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_front_black.rsi
       state: icon
@@ -182,8 +186,9 @@
       walkSpeedModifier: 0.99
       sprintSpeedModifier: 0.99
       staminaDamageMultiplier: 0.4
-      bluntDamageMultiplier: 0.1
-      slashDamageMultiplier: 0.1
+      absorptionRatios:
+        Blunt: 0.1
+        Slash: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_side_green_flat.rsi
       state: icon
@@ -211,8 +216,9 @@
       walkSpeedModifier: 0.99
       sprintSpeedModifier: 0.99
       staminaDamageMultiplier: 0.4
-      bluntDamageMultiplier: 0.1
-      slashDamageMultiplier: 0.1
+      absorptionRatios:
+        Blunt: 0.1
+        Slash: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_front_black_two_piece.rsi
       state: icon
@@ -240,8 +246,9 @@
       walkSpeedModifier: 0.99
       sprintSpeedModifier: 0.99
       staminaDamageMultiplier: 0.4
-      bluntDamageMultiplier: 0.1
-      slashDamageMultiplier: 0.1
+      absorptionRatios:
+        Blunt: 0.1
+        Slash: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_side_green.rsi
       state: icon
@@ -269,8 +276,9 @@
       walkSpeedModifier: 0.99
       sprintSpeedModifier: 0.99
       staminaDamageMultiplier: 0.4
-      bluntDamageMultiplier: 0.1
-      slashDamageMultiplier: 0.1
+      absorptionRatios:
+        Blunt: 0.1
+        Slash: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_front_grey_paper.rsi
       state: icon
@@ -298,8 +306,9 @@
       walkSpeedModifier: 0.99
       sprintSpeedModifier: 0.99
       staminaDamageMultiplier: 0.4
-      bluntDamageMultiplier: 0.1
-      slashDamageMultiplier: 0.1
+      absorptionRatios:
+        Blunt: 0.1
+        Slash: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_front_grey_paper.rsi
       state: icon
@@ -327,8 +336,9 @@
       walkSpeedModifier: 0.99
       sprintSpeedModifier: 0.99
       staminaDamageMultiplier: 0.4
-      bluntDamageMultiplier: 0.1
-      slashDamageMultiplier: 0.1
+      absorptionRatios:
+        Blunt: 0.1
+        Slash: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_front_grey_paper.rsi
       state: icon
@@ -356,8 +366,9 @@
       walkSpeedModifier: 0.99
       sprintSpeedModifier: 0.99
       staminaDamageMultiplier: 0.4
-      bluntDamageMultiplier: 0.1
-      slashDamageMultiplier: 0.1
+      absorptionRatios:
+        Blunt: 0.1
+        Slash: 0.1
     - type: Sprite
       sprite: _Cataclysm14/Clothing/BallisticPlates/ballistic_plate_side_green.rsi
       state: icon
