@@ -1,0 +1,42 @@
+#MARK: Base
+- type: entity
+  parent: BaseCartridge
+  description: Large anti-material round, capable of punching through armor and walls easily.
+  abstract: true
+  id: BaseCartridge12,7x99mm
+  name: cartridge (12,7x99mm anti-material)
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge12,7x99mm
+  - type: CartridgeAmmo
+    proto: Bullet12,7x99mm
+  - type: Sprite
+    scale: 0.3,0.3
+    sprite: _Cataclysm14/Objects/Weapons/Casings/12,7x99mm_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 20
+
+#MARK: FMJ
+- type: entity
+  id: Cartridge12,7x99mmFMJ
+  name: cartridge (12,7x99mm FMJ)
+  parent: BaseCartridge12,7x99mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet12,7x99mmFMJ
+
+#MARK: FMJ
+- type: entity
+  id: Cartridge12,7x99mmHE
+  name: cartridge (12,7x99mm HE)
+  parent: BaseCartridge12,7x99mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet12,7x99mmHE

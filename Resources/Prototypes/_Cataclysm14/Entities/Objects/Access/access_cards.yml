@@ -1,0 +1,10 @@
+- type: entity
+  parent: BaseAccessIdentification
+  id: AccessIdentificationCardCivilian
+  name: civilian id card
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Access/AccessCards/id_card_civilian.rsi
+    state: icon
+  - type: PresetIdCard
+    job: CargoTechnician #temporary :clueless:

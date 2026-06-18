@@ -1,0 +1,68 @@
+#MARK: Base
+- type: entity
+  name: Ruger 10/22 (.22 LR)
+  parent: [BaseWeaponSniper, BaseGunWieldable, BaseGunMelee]
+  id: WeaponBoltActionRifleRuger10-22Base
+  suffix: Empty
+  description: A weapon for precision shooting, or hunting charlies in the jungle. Uses .22 LR ammo.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Rifles/ruger_10-22_64x32.rsi
+    scale: 0.55, 0.55
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Rifles/ruger_10-22_32x32.rsi
+    size: Large
+    shape:
+    - 0,0,6,1
+    storedScale: 2
+  - type: Clothing
+    slots:
+    - slingfront
+    - suitstorage
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Rifles/ruger_10-22_32x32.rsi
+    clothingVisuals:
+      slingfront:
+      - state: equipped-SLINGFRONT
+      suitstorage:
+      - state: equipped-SUITSTORAGE
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 1.5
+    pvsIncrease: 0.15
+  - type: AltFireMelee
+    attackType: Light
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - Cartridge22LR
+    capacity: 10
+    proto: null
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Cataclysm14/Scoping/reticle_PU.rsi
+      state: all
+  - type: Gun
+    fireRate: 4
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/mk_fire.ogg
+      params:
+        playOffsetSeconds: 0.1
+        volume: 13
+        variation: 0.1
+        pitch: 3
+    projectileSpeed: 65
+
+#MARK: FMJ
+- type: entity
+  parent: WeaponBoltActionRifleRuger10-22Base
+  id: WeaponBoltActionRifleRuger10-22FilledFMJ
+  suffix: FMJ
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge22LRFMJ

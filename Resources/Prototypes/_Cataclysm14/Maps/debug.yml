@@ -10,9 +10,9 @@
       components:
         - type: StationNameSetup
           mapNameTemplate: "CataDev"
-        # - type: StationPlanetSpawner
-        #   planet: DesertWorld
-        #   gridPath: /Maps/_Mono/POI/surface_outpost_desert.yml
+        - type: StationPlanetSpawner
+          planet: DesertWorld
+          gridPath: /Maps/_Mono/POI/surface_outpost_desert.yml
         - type: StationJobs
           availableJobs:
             #Cataclysm14 start

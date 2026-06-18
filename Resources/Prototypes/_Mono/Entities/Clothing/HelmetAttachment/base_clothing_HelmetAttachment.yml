@@ -1,19 +1,19 @@
-- type: entity
-  abstract: true
-  parent: [Clothing, RecyclableItemClothSmall] # Frontier: added RecyclableItemClothSmall
-  id: ClothingHelmetAttachmentBase
-  components:
-  - type: Item
-    size: Small
-  - type: Clothing
-    quickEquip: true
-    slots:
-    - HELMETATTACHMENT
-  - type: Sprite
-    state: icon
-  - type: StaticPrice
-    price: 200
-    vendPrice: 1000
+# - type: entity
+#   abstract: true
+#   parent: [Clothing, RecyclableItemClothSmall] # Frontier: added RecyclableItemClothSmall
+#   id: ClothingHelmetAttachmentBase
+#   components:
+#   - type: Item
+#     size: Small
+#   - type: Clothing
+#     quickEquip: true
+#     slots:
+#     - HELMETATTACHMENT
+#   - type: Sprite
+#     state: icon
+#   - type: StaticPrice
+#     price: 200
+#     vendPrice: 1000
 
 #not that awful solution
 - type: entity

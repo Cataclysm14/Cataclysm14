@@ -93,6 +93,13 @@
   - type: Tag
     id: SpeedLoader38Special
 
+  #MARK:.22 LR
+
+  - type: Tag
+    id: Cartridge22LR
+
+  - type: Tag
+    id: Magazine22LRRugerMK2Compatible
   #MARK:.45 magnum
 
   - type: Tag

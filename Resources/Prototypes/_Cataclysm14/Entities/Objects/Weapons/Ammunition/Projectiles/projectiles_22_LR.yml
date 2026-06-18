@@ -1,0 +1,55 @@
+#MARK: FMJ
+- type: entity
+  id: Bullet22LRFMJ
+  name: bullet (.22 LR FMJ)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 20
+        Structural: 20
+    armorPenetration: 0.1
+
+#MARK: JHP
+- type: entity
+  id: Bullet22LRJHP
+  name: bullet (.22 LR JHP)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 25
+        Structural: 25
+    armorPenetration: -0.2
+
+#MARK: +P
+- type: entity
+  id: Bullet22LR+P
+  name: bullet (.22 LR +P)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 23
+        Structural: 23
+    armorPenetration: 0.3
+
+#MARK: Rubber
+- type: entity
+  id: Bullet22LRRubber
+  name: bullet (.22 LR rubber)
+  parent: BaseBulletRubber
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 4
+  - type: StaminaDamageOnCollide
+    damage: 22

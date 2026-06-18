@@ -1,0 +1,157 @@
+#MARK: Base
+- type: entity
+  name: Barrett M107 AMR (12,7x99mm NATO)
+  parent: BaseWeaponRifle
+  id: WeaponCarbineBarrettM107Base
+  abstract: true
+  description: An medium anti-material precision rifle to take out enemy targets, material or living, from afar with a strong punch.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Guns/AntiMaterialRifles/barrett_M107_96x32.rsi
+    scale: 0.50, 0.50
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _Cataclysm14/Objects/Weapons/Guns/AntiMaterialRifles/barrett_M107_32x32.rsi
+    size: Large
+    shape:
+    - 0,0,5,1
+    storedScale: 2
+  - type: Clothing
+    sprite: _Cataclysm14/Objects/Weapons/Guns/AntiMaterialRifles/barrett_M107_32x32.rsi
+    clothingVisuals:
+      slingfront:
+      - state: equipped-SLINGFRONT
+      suitstorage:
+      - state: equipped-SUITSTORAGE
+  - type: Gun
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    fireRate: 1.5
+    soundGunshot:
+      path: /Audio/_Harmony/Weapons/Guns/Gunshots/hristov_fire_alt.ogg
+      params:
+        volume: 15
+        variation: 0.1
+        pitch: 0.75
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine5,56x45mmBarrett5rdEmpty
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine12,7x99mmBarrettCompatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge12,7x99mm
+        whitelistFailPopup: gun-magazine-whitelist-fail
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
+      state: all
+
+#MARK: Barrett 5rd Empty
+- type: entity
+  parent: WeaponCarbineBarrettM107Base
+  id: WeaponCarbineBarrettM107FilledBarrett5rdEmpty
+  suffix: Empty - Barrett 5rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine12,7x99mmBarrett5rdEmpty
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine12,7x99mmBarrettCompatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge12,7x99mm
+        whitelistFailPopup: gun-magazine-whitelist-fail
+
+#MARK: Barrett 5rd FMJ
+- type: entity
+  parent: WeaponCarbineBarrettM107Base
+  id: WeaponCarbineBarrettM107FilledBarrett5rdFMJ
+  suffix: FMJ - Barrett 5rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine12,7x99mmBarrett5rdFMJ
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine12,7x99mmBarrettCompatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge12,7x99mm
+        whitelistFailPopup: gun-magazine-whitelist-fail
+
+#MARK: Barrett 5rd HE
+- type: entity
+  parent: WeaponCarbineBarrettM107Base
+  id: WeaponCarbineBarrettM107FilledBarrett5rdHE
+  suffix: HE - Barrett 5rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine12,7x99mmBarrett5rdHE
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine12,7x99mmBarrettCompatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge12,7x99mm
+        whitelistFailPopup: gun-magazine-whitelist-fail

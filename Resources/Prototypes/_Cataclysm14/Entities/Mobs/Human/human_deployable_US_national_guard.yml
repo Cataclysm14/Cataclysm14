@@ -7,7 +7,7 @@
   - type: EntityTableOutfitContainerFill
     containers:
       outerClothing: !type:NestedSelector
-        tableId: LootTableClothingNationalGuardBulletProofVest
+        tableId: LootTableClothingNationalGuardBulletProofVestFilled
       head: !type:GroupSelector
         children:
         - id: ClothingHeadHelmetBulletproofACHOCPMulticam
@@ -42,6 +42,9 @@
       pocket4: !type:GroupSelector
         children:
         - id: Magazine5,56x45mmSTANAG30rdTracerRed
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS
     outfits:
     - slots:
         pants: !type:GroupSelector
@@ -67,7 +70,7 @@
   - type: EntityTableOutfitContainerFill
     containers:
       outerClothing: !type:NestedSelector
-        tableId: LootTableClothingNationalGuardBulletProofVest
+        tableId: LootTableClothingNationalGuardBulletProofVestFilled
       head: !type:GroupSelector
         children:
         - id: ClothingHeadHelmetBulletproofACHOCPMulticam
@@ -102,6 +105,9 @@
       pocket4: !type:GroupSelector
         children:
         - id: MagazineBox5,56x45mmLMG200rdFMJ
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS
     outfits:
     - slots:
         pants: !type:GroupSelector

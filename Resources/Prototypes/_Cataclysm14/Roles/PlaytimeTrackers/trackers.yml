@@ -1,0 +1,6 @@
+
+- type: playTimeTracker
+  id: JobTimeTrackerCitizenUS
+
+- type: playTimeTracker
+  id: JobTimeTrackerUNPeacekeeper

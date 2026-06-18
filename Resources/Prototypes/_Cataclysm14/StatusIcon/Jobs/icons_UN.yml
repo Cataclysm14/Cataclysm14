@@ -1,0 +1,7 @@
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconUNPeacekeeper
+  icon:
+    sprite: /Textures/_Cataclysm14/JobIcons/job_icon_UN.rsi
+    state: icon
+  jobName: job-name-UN-peacekeeper

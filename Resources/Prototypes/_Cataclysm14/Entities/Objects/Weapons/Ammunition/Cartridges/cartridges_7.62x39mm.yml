@@ -3,7 +3,7 @@
   id: BaseCartridge7,62x39mm
   name: cartridge (7,62x39mm FMJ)
   parent: BaseCartridge
-  description: Originating from over 400 years ago, this round has seen use in the rifles of multiple militias and militaries alike.
+  description: This round has seen use in the rifles of multiple armies, militias and militaries alike.
   abstract: true
   components:
   - type: Tag

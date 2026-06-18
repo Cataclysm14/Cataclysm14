@@ -1,0 +1,7 @@
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconCitizenUS
+  icon:
+    sprite: /Textures/_Cataclysm14/JobIcons/job_icon_citizen_US.rsi
+    state: icon
+  jobName: job-name-citizen-US

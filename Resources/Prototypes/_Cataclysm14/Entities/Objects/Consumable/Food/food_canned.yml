@@ -6,7 +6,7 @@
   description: "A dented tin of chicken noodle soup. Still sealed, still edible. Comfort food for the end of the world."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_chicken_soup.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -43,7 +43,7 @@
   suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_chicken_soup.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -58,7 +58,7 @@
   description: "Condensed tomato soup in a pull-tab can. Just add water. Or don't."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_tomato_soup.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -92,7 +92,7 @@
   suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_tomato_soup.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -107,7 +107,7 @@
   description: "A heavy tin of beef stew. Chunks of mystery meat float in thick brown gravy."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_stew.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -140,7 +140,7 @@
   suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_stew.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -201,7 +201,7 @@
   description: "Whole kernel sweet corn, packed before the world ended. Surprisingly good cold."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/beans.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_corn.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -231,7 +231,7 @@
   suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/beans.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_corn.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -246,7 +246,7 @@
   description: "Pear halves in light syrup. A rare treat in these dark days."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_pear.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -281,7 +281,7 @@
   suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_pear.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -296,7 +296,7 @@
   description: "Pineapple rings in juice. Tastes like summer used to."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_pineapple.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -332,7 +332,7 @@
   suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/peaches.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_pineapple.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -347,7 +347,7 @@
   description: "Chunk light tuna in water. High protein, low morale."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_tuna.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -384,7 +384,7 @@
   suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_tuna.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -399,7 +399,7 @@
   description: "Tiny fish packed in oil. The label is in a language you can't read."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_sardines.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -439,7 +439,7 @@
   suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_sardines.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -509,7 +509,7 @@
   description: "Salt-cured beef in a distinctive trapezoidal tin. Dense, salty, and satisfying."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_corned_beef.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -544,7 +544,7 @@
   suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_corned_beef.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -559,7 +559,7 @@
   description: "Spicy chili con carne. The label promises 'Texas-style'. The contents promise heartburn."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_chili.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -592,7 +592,7 @@
   suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/meat.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_chili.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -607,7 +607,7 @@
   description: "Carrots, peas, corn, and green beans. Barely recognizable individually, but nutritious together."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/beans.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_mixed_veggies.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -637,7 +637,7 @@
   suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/beans.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_mixed_veggies.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -652,7 +652,7 @@
   description: "Chef Boyar-who? Doesn't matter. Pasta pockets in tomato sauce."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/beans.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_ravioli.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -683,7 +683,7 @@
   suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/beans.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_ravioli.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -795,7 +795,7 @@
   description: "A sealed jar of assorted pickled vegetables. Vinegar-preserved and crunchy."
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/beans.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_pickled_veggies.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5
@@ -826,7 +826,7 @@
   suffix: Trash
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Food/Tins/beans.rsi
+    sprite: _Cataclysm14/Objects/Consumable/Food/CannedFood/can_pickled_veggies.rsi
     scale: 0.5,0.5
   - type: Item
     storedScale: 2.5

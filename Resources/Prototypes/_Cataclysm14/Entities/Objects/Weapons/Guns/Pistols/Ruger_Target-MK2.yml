@@ -1,0 +1,116 @@
+- type: entity
+  id: WeaponPistolRugerMK2TargetBase
+  name: Ruger MK2 Target (.22 LR)
+  abstract: true
+  description: A cheap, ubiquitous sidearm used for self defence, small game hunting at low cost and stealth takedowns. Uses .22 Long Rifle ammo.
+  parent: BaseWeaponPistol
+  components:
+    - type: Item
+      size: Normal
+      shape:
+        - 0,0,1,1
+      storedScale: 2
+    - type: Sprite
+      scale: 0.4,0.4
+      sprite: _Cataclysm14/Objects/Weapons/Guns/Pistols/ruger_MK2-Target.rsi
+      layers:
+        - state: base
+          map:
+            - enum.GunVisualLayers.Base
+        - state: mag-0
+          map:
+            - enum.GunVisualLayers.Mag
+    - type: Clothing
+      sprite: _Cataclysm14/Objects/Weapons/Guns/Pistols/ruger_MK2-Target.rsi
+      netsync: false
+    - type: Gun
+      soundGunshot:
+        path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/mk_fire.ogg
+        params:
+          playOffsetSeconds: 0.1
+          volume: 13
+          variation: 0.1
+          pitch: 3
+      fireRate: 10
+      availableModes:
+        - SemiAuto
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: null
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine22LRRugerMK2Compatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: Cartridge22LRFMJ
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge22LR
+          whitelistFailPopup: gun-magazine-whitelist-fail
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot {}
+        gun_chamber: !type:ContainerSlot {}
+    - type: StaticPrice
+      price: 50
+
+#MARK: 10rd Empty
+- type: entity
+  id: WeaponPistolRugerMK2TargetFilled10rdEmpty
+  suffix: Empty - 10rd
+  parent: WeaponPistolRugerMK2TargetBase
+  components:
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: Magazine22LRRugerMK210rdEmpty
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine22LRRugerMK2Compatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: Cartridge22LRFMJ
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge22LR
+          whitelistFailPopup: gun-magazine-whitelist-fail
+
+#MARK: 10rd FMJ
+- type: entity
+  id: WeaponPistolRugerMK2TargetFilled10rdFMJ
+  suffix: FMJ - 10rd
+  parent: WeaponPistolRugerMK2TargetBase
+  components:
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: Magazine22LRRugerMK210rdFMJ
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine22LRRugerMK2Compatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: Cartridge22LRFMJ
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge22LR
+          whitelistFailPopup: gun-magazine-whitelist-fail

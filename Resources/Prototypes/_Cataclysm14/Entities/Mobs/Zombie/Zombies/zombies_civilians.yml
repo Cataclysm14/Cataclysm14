@@ -29,6 +29,10 @@
       back: !type:NestedSelector
         tableId: LootTableClothingBagCivilian
         prob: 0.4
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS
+        prob: 0.45
 
 #MARK: Construction Worker
 - type: entity
@@ -70,6 +74,10 @@
       jumpsuit: !type:NestedSelector
         tableId: LootTableClothingTopHighVis
         prob: 0.99
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS
+        prob: 0.45
 
 #MARK: Gardener
 - type: entity
@@ -114,6 +122,10 @@
       jumpsuit: !type:NestedSelector
         tableId: LootTableClothingTopHighVis
         prob: 0.99
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS
+        prob: 0.45
 
 #MARK: Cashier
 - type: entity
@@ -154,6 +166,10 @@
       jumpsuit: !type:NestedSelector
         tableId: LootTableClothingTopHighVis
         prob: 0.99
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS
+        prob: 0.45
 
 #MARK: Butcher
 - type: entity
@@ -195,6 +211,10 @@
       jumpsuit: !type:NestedSelector
         tableId: LootTableClothingTopHighVis
         prob: 0.99
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS
+        prob: 0.45
 
 #MARK: Physician
 - type: entity
@@ -235,6 +255,10 @@
       jumpsuit: !type:NestedSelector
         tableId: LootTableClothingTopHighVis
         prob: 0.99
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS
+        prob: 0.45
 
 #MARK: Miner
 - type: entity
@@ -276,3 +300,7 @@
       jumpsuit: !type:NestedSelector
         tableId: LootTableClothingTopHighVis
         prob: 0.99
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS
+        prob: 0.45

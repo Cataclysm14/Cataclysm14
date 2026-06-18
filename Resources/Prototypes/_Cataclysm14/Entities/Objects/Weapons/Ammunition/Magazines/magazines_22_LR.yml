@@ -1,0 +1,81 @@
+#MARK: Base
+- type: entity
+  id: BaseMagazine22LR
+  name: pistol magazine (.22 LR FMJ)
+  parent: [ BaseItem, RecyclableItemSteelTiny ]
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Magazine22LRPistolFMJ
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge22LR
+    capacity: 19
+  - type: Item
+    storedScale: 2.5
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    scale: 0.30,0.30
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/9x19mm/9x19mm_pistol_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+#MARK: Glock Mags >
+
+
+
+
+
+
+#MARK: Glock 10rd
+- type: entity
+  id: BaseMagazine22LRRugerMK210rd
+  abstract: true
+  name: "Ruger Target 10rd magazine (.22 LR)"
+  parent: BaseMagazine22LR
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge22LRFMJ
+    capacity: 10
+  - type: Tag
+    tags:
+      - Magazine22LRRugerMK2Compatible
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/22LR/magazine_22LR_ruger_MK2_10rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: Magazine22LRRugerMK210rdEmpty
+  suffix: Empty
+  parent: BaseMagazine22LRRugerMK210rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: FMJ
+- type: entity
+  id: Magazine22LRRugerMK210rdFMJ
+  suffix: FMJ
+  parent: BaseMagazine22LRRugerMK210rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge22LRFMJ

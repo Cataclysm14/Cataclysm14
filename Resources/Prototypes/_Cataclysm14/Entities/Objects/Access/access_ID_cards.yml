@@ -1,0 +1,11 @@
+- type: entity
+  parent: BaseAccessIdentification
+  id: AccessIdentificationIDCardUS
+  description: A card to identify yourself to law enforcement. Confirms your identity as citizen to the United States of America.
+  name: US citizen ID card
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Access/IDs/id_card_US.rsi
+    state: icon
+  - type: PresetIdCard
+    job: JobCitizenUS

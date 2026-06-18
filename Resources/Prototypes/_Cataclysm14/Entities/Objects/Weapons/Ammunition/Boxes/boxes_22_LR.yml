@@ -1,0 +1,124 @@
+#MARK: Base
+- type: entity
+  abstract: true
+  parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
+  id: BaseAmmoBox22LR
+  name: ammunition box (.22 LR FMJ)
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge22LR
+    proto: Cartridge22LRFMJ
+    capacity: 40
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    scale: 0.5,0.5
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/22LR.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Goobstation/Items/handling/ammobox_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Goobstation/Items/handling/ammobox_drop.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Goobstation/Items/handling/ammobox_drop.ogg
+
+#MARK: FMJ
+- type: entity
+  parent: BaseAmmoBox22LR
+  id: AmmoBox22LRFMJ
+  name: ammunition box (.22 LR FMJ)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge22LRFMJ
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: JHP
+- type: entity
+  parent: BaseAmmoBox22LR
+  id: AmmoBox22LRJHP
+  name: ammunition box (.22 LR JHP)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge22LRJHP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: HP
+
+#MARK: +P
+- type: entity
+  parent: BaseAmmoBox22LR
+  id: AmmoBox22LR+P
+  name: ammunition box (.22 LR +P)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge22LR+P
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: incendiary
+
+#MARK: Rubber
+- type: entity
+  parent: BaseAmmoBox22LR
+  id: AmmoBox22LRRubber
+  name: ammunition box (.22 LR rubber)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge22LRRubber
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: rubber
+
+#MARK: Big FMJ
+- type: entity
+  parent: BaseAmmoBox22LR
+  id: AmmoBox22LRBigFMJ
+  name: big ammunition box (.22 LR FMJ)
+  suffix: Big
+  components:
+  - type: Item
+    shape:
+    - 0,0,1,1
+  - type: BallisticAmmoProvider
+    capacity: 150
+    proto: Cartridge22LRFMJ
+  - type: Sprite
+    layers:
+    - state: base-b
+      map: ["enum.GunVisualLayers.Base"]
+    - state: magb-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: magb
+    steps: 4
+    zeroVisible: false
+  - type: Appearance

@@ -24,6 +24,11 @@
       back: !type:NestedSelector
         tableId: LootTableClothingBagCivilian
         prob: 0.4
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS
+        prob: 0.45
+
   - type: Loadout
     prototypes:
       - LoadoutInhandMobFeralCivilianBasic

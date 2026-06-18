@@ -1,6 +1,7 @@
 - type: entity
   id: WeaponPistolM1911Base
   name: M1911 (.45 ACP)
+  abstract: true
   description: A cheap, ubiquitous sidearm used for two world wars, uses .45 Automatic Colt Pistol (ACP) cartridge.
   parent: BaseWeaponPistol
   components:

@@ -3,7 +3,7 @@
   name: GIAT FAMAS-G2 (5,56x45mm NATO)
   parent: BaseWeaponRifle
   id: WeaponAssaultRifleFAMAS_G2Base
-  description: A modern polymer bullpup assault rifle made by the GIAT group and used by the french army. Chambered in 5,56x45mm NATO.
+  description: A modern polymer bullpup assault rifle, the Saint-Etienne Manufacture Automatic Assault Rifle (Fusil Automatique d'Assaut de la Manufacture d'Armes de Saint-Étienne) made by the GIAT group and used by the french army. Chambered in 5,56x45mm NATO.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/FAMAS-G2_64x32.rsi

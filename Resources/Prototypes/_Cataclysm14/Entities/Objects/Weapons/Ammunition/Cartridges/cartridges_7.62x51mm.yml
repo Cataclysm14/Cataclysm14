@@ -3,7 +3,7 @@
   id: BaseCartridge7,62x51mm
   name: cartridge (7,62x51mm NATO FMJ)
   parent: BaseCartridge
-  description: A decently sized full-power round.
+  description: An extremely-common intermediate cartridge for rifles, based on the .308 Winchester, adpoted as the 7,62x51mm NATO via the STANAGs.
   abstract: true
   components:
   - type: Tag

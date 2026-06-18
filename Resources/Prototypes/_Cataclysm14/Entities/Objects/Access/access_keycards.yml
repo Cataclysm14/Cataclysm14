@@ -1,0 +1,10 @@
+- type: entity
+  parent: BaseAccessIdentification
+  id: AccessKeycardRed
+  name: red access keycard
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Access/Keycards/keycard_red.rsi
+    state: icon
+  - type: PresetIdCard
+    job: CargoTechnician #temporary :clueless:
