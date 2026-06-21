@@ -1,0 +1,32 @@
+#MARK: Cleansuit
+- type: entityTable
+  id: LootTableClothingTopCleansuit
+  table: !type:GroupSelector
+    children:
+    - id: ClothingShirtCleansuitYellow
+      weight: 5
+    - id: ClothingShirtCleansuitWhite
+      weight: 3
+    - id: ClothingShirtCleansuitBlue
+      weight: 1.5
+    - id: ClothingShirtCleansuitRed
+      weight: 1.5
+    - id: ClothingShirtCleansuitPurple
+    - id: ClothingShirtCleansuitGreen
+
+#MARK: Sterile Gloves
+- type: entityTable
+  id: LootTableClothingHandsGlovesClean
+  table: !type:GroupSelector
+    children:
+    - id: ClothingHandsGlovesSterileLatex
+      weight: 2
+    - id: ClothingHandsGlovesSterileNitrile
+
+#MARK: Industrial Gasmasks
+- type: entityTable
+  id: LootTableClothingMaskGasmasksIndustrial
+  table: !type:GroupSelector
+    children:
+    - id: ClothingMaskGasMaskRespiratorAdvantage200LS
+    - id: ClothingMaskGasMaskRespirator3M7500

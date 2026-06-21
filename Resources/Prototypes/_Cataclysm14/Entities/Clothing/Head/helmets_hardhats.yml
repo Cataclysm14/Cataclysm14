@@ -6,9 +6,9 @@
       description: A light plastic hardhat to protect against accidents and shock, or a frying pan to the head.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Head/helmet_hardhat_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_hardhat_greyscale.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/helmet_hardhat_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_hardhat_greyscale.rsi
       - type: ExplosionResistance
         damageCoefficient: 0.8
       - type: Armor

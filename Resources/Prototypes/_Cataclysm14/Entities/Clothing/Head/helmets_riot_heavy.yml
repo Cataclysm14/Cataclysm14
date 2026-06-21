@@ -6,9 +6,9 @@
       description: A heavy riot security helmet made from combined ceramic, aramid, polymers and steel. Extremly tough against small fries.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Head/helmet_riot_armored.rsi
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_riot_armored.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/helmet_riot_armored.rsi
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_riot_armored.rsi
       - type: ExplosionResistance
         damageCoefficient: 0.8
       - type: Armor
@@ -34,9 +34,9 @@
       description: A heavy riot security helmet donning the colors of the Superstructure Taskforce Sierra, made from combined ceramic, aramid, polymers and steel. Extremly tough against small fries.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Head/helmet_riot_armored_sierra.rsi
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_riot_armored_sierra.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/helmet_riot_armored_sierra.rsi
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_riot_armored_sierra.rsi
 #MARK: Security Armored - Sierra
     - type: entity
       parent: ClothingHeadHelmetRiotSecurityArmored
@@ -45,6 +45,6 @@
       description: A heavy riot security helmet donning the colors of the Superstructure Taskforce Sierra and officer markings, made from combined ceramic, aramid, polymers and steel. Extremly tough against small fries.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Head/helmet_riot_armored_sierra_officer.rsi
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_riot_armored_sierra_officer.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/helmet_riot_armored_sierra_officer.rsi
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_riot_armored_sierra_officer.rsi

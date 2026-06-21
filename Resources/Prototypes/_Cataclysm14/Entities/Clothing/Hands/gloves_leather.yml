@@ -1,0 +1,14 @@
+- type: entity
+  parent: ClothingHandsButcherable
+  id: ClothingHandsGlovesLeathers
+  name: leather gloves
+  description: Warm thick leather gloves.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Hands/gloves_leather.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Hands/gloves_leather.rsi
+  - type: Fiber
+    fiberMaterial: fibers-leather
+    fiberColor: fibers-brown
+  - type: FingerprintMask
