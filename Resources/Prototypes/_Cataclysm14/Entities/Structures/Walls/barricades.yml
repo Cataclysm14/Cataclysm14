@@ -1,0 +1,15 @@
+#MARK: Hesco
+  - type: entity
+    parent: BaseStructureWallCataTierTwo
+    id: StructureWallCataHescoBase
+    name: hesco wall
+    components:
+    - type: Occluder
+      enabled: false
+    - type: Sprite
+      sprite: _Cataclysm14/Structures/Walls/barricade_hesco.rsi
+    - type: Icon
+      sprite: _Cataclysm14/Structures/Walls/barricade_hesco.rsi
+    - type: IconSmooth
+      key: walls
+      base: hesco

@@ -1,7 +1,7 @@
 #MARK: FMJ
 - type: entity
   id: Bullet9x19mmParabellumFMJ
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -13,7 +13,7 @@
 #MARK: Tracer Green
 - type: entity
   id: Bullet9x19mmParabellumTracerGreen
-  parent: BaseBullet
+  parent: BaseProjectileBulletTracerGreen
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -34,7 +34,7 @@
 #MARK: +P
 - type: entity
   id: Bullet9x19mmParabellum+P
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -46,7 +46,7 @@
 #MARK: AP6,3
 - type: entity
   id: Bullet9x19mmParabellumAP6,3
-  parent: BaseBullet
+  parent: BaseProjectileBulletAP
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -58,7 +58,7 @@
 #MARK: Rubber
 - type: entity
   id: Bullet9x19mmParabellumRubber
-  parent: BaseBulletRubber
+  parent: BaseProjectileBulletRubber
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -69,7 +69,7 @@
 #MARK: Incendiary
 - type: entity
   id: Bullet9x19mmParabellumIncendiary
-  parent: BaseBulletIncendiary
+  parent: BaseProjectileBulletIncendiary
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -82,7 +82,7 @@
 #MARK: Depleted Uranium
 - type: entity
   id: Bullet9x19mmParabellumDepletedUranium
-  parent: BaseBulletUranium
+  parent: BaseProjectileBulletDepletedUranium
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -95,7 +95,7 @@
 #MARK: HP
 - type: entity
   id: Bullet9x19mmParabellumHP
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -108,7 +108,7 @@
 #MARK: RIP
 - type: entity
   id: Bullet9x19mmParabellumRIP
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -117,38 +117,3 @@
         Slash: 5
         Piercing: 35
     armorPenetration: -0.95
-
-#MARK: Deprecated >
-
-- type: entity
-  id: Bullet9x19mmParabellumPlasteelAP
-  parent: BaseBullet
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Piercing: 7
-        Structural: 25
-    armorPenetration: 0.9
-
-# Upstream
-- type: entity
-  id: Bullet9x19mmParabellumEmp
-  parent: BaseBulletEmp
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Shock: 0
-
-- type: entity
-  id: Bullet9x19mmParabellumPractice
-  parent: BaseBulletPractice
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Blunt: 2

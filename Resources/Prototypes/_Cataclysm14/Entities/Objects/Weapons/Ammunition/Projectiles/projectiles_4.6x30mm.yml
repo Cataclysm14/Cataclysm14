@@ -2,7 +2,7 @@
 - type: entity
   id: Bullet4,6x30mm
   name: bullet (4,6x30mm FMJ)
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -15,7 +15,7 @@
 - type: entity
   id: Bullet4,6x30mmRubber
   name: bullet (4,6x30mm rubber)
-  parent: BaseBulletRubber
+  parent: BaseProjectileBulletRubber
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -27,7 +27,7 @@
 #MARK: Incendiary
 - type: entity
   id: Bullet4,6x30mmIncendiary
-  parent: BaseBulletIncendiary
+  parent: BaseProjectileBulletIncendiary
   name: bullet (4,6x30mm incendiary)
   categories: [ HideSpawnMenu ]
   components:
@@ -41,7 +41,7 @@
 #MARK: Depleted Uranium
 - type: entity
   id: Bullet4,6x30mmDepletedUranium
-  parent: BaseBulletUranium
+  parent: BaseProjectileBulletDepletedUranium
   name: bullet (4,6x30mm depleted uranium)
   categories: [ HideSpawnMenu ]
   components:
@@ -55,7 +55,7 @@
 #MARK: HP
 - type: entity
   id: Bullet4,6x30mmHP
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   name: bullet (4,6x30mm hollow-point)
   categories: [ HideSpawnMenu ]
   components:
@@ -69,7 +69,7 @@
 #MARK: RIP
 - type: entity
   id: Bullet4,6x30mmRIP
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   name: bullet (4,6x30mm RIP)
   categories: [ HideSpawnMenu ]
   components:
@@ -79,45 +79,3 @@
         Slash: 5
         Piercing: 30
     armorPenetration: -0.9
-
-#MARK: Deprecated >
-
-#armor-piercing:
-
-- type: entity
-  id: Bullet4,6x30mmPlasteelAP
-  parent: BaseBullet
-  name: bullet (4,6x30mm AP)
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Piercing: 8
-        Structural: 35
-    armorPenetration: 0.6
-
-- type: entity
-  id: Bullet4,6x30mmPractice
-  name: bullet (4,6x30mm practice)
-  parent: BaseBulletPractice
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Blunt: 2
-    armorPenetration: 0.025
-
-# Upstream
-- type: entity
-  id: Bullet4,6x30mmEmp
-  name: bullet (4,6x30mm emp)
-  parent: BaseBulletEmp
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Shock: 0
-    armorPenetration: 0.025

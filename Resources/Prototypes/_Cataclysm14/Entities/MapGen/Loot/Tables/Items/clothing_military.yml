@@ -39,9 +39,9 @@
   id: LootTableClothingNationalGuardBulletProofVestFilled
   table: !type:GroupSelector
     children:
-    - id: ClothingOuterBulletProofVestIOTVTanFilled
-    - id: ClothingOuterBulletProofVestIOTVOCPMulticamFilled
-    - id: ClothingOuterBulletProofVestIOTVNationalGuardFilled
+    - id: ClothingOuterBulletProofVestIOTVHeavyTanFilled
+    - id: ClothingOuterBulletProofVestIOTVHeavyOCPMulticamFilled
+    - id: ClothingOuterBulletProofVestIOTVHeavyNationalGuardFilled
     - id: ClothingOuterBulletProofVestHighcomTrooperTanFilled
     - id: ClothingOuterBulletProofVestSlickCoyoteFilled
 
@@ -50,9 +50,9 @@
   id: LootTableClothingNationalGuardBulletProofVestEmpty
   table: !type:GroupSelector
     children:
-    - id: ClothingOuterBulletProofVestIOTVTan
-    - id: ClothingOuterBulletProofVestIOTVOCPMulticam
-    - id: ClothingOuterBulletProofVestIOTVNationalGuard
+    - id: ClothingOuterBulletProofVestIOTVHeavyTan
+    - id: ClothingOuterBulletProofVestIOTVHeavyOCPMulticam
+    - id: ClothingOuterBulletProofVestIOTVHeavyNationalGuard
     - id: ClothingOuterBulletProofVestHighcomTrooperTan
     - id: ClothingOuterBulletProofVestSlickCoyote
 

@@ -35,6 +35,7 @@
   - type: AltFireMelee
     attackType: Light
   - type: BallisticAmmoProvider
+    autoCycle: false
     whitelist:
       tags:
       - Cartridge7,62x51mm

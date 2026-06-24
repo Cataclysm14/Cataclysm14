@@ -1,7 +1,7 @@
 - type: entity
   id: Bullet7,62x54mmRFMJ
   name: bullet (7,62x54mmR FMJ)
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -13,7 +13,7 @@
 - type: entity
   id: Bullet7,62x54mmRPractice
   name: bullet (7,62x54mmR practice)
-  parent: BaseBulletPractice
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -24,7 +24,7 @@
 - type: entity
   id: Bullet7,62x54mmRRubber
   name: bullet (7,62x54mmR rubber)
-  parent: BaseBulletRubber
+  parent: BaseProjectileBulletRubber
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -34,7 +34,7 @@
 
 - type: entity
   id: Bullet7,62x54mmRIncendiary
-  parent: BaseBulletIncendiary
+  parent: BaseProjectileBulletIncendiary
   name: bullet (7,62x54mmR incendiary)
   categories: [ HideSpawnMenu ]
   components:
@@ -46,7 +46,7 @@
 
 - type: entity
   id: Bullet7,62x54mmRUranium
-  parent: BaseBulletUranium
+  parent: BaseProjectileBulletDepletedUranium
   name: bullet (7,62x54mmR depleted uranium)
   categories: [ HideSpawnMenu ]
   components:
@@ -60,7 +60,7 @@
 #anti-flesh:
 - type: entity
   id: Bullet7,62x54mmRHP
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   name: bullet (7,62x54mmR hollow-point)
   categories: [ HideSpawnMenu ]
   components:
@@ -73,7 +73,7 @@
 
 - type: entity
   id: Bullet7,62x54mmRRIP
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   name: bullet (7,62x54mmR RIP)
   categories: [ HideSpawnMenu ]
   components:
@@ -88,7 +88,7 @@
 
 - type: entity
   id: Bullet7,62x54mmRPlasteelAP
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   name: bullet (7,62x54mmR AP)
   categories: [ HideSpawnMenu ]
   components:

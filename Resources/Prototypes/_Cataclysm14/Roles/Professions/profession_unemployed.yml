@@ -1,0 +1,16 @@
+- type: job
+  id: ProfessionUnemployed
+  name: profession-name-unemployed
+  description: profession-description-unemployed
+  playTimeTracker: ProfessionTimeTrackerUnemployed
+  setPreference: true
+  # requirements:
+  #   - !type:OverallPlaytimeRequirement
+  #     time: 43200
+  # icon: JobIconBorg
+  # supervisors: job-supervisors-hire
+  jobEntity: MobHumanDeployableNationalGuardInfantry
+  applyTraits: true
+
+- type: playTimeTracker
+  id: ProfessionTimeTrackerUnemployed

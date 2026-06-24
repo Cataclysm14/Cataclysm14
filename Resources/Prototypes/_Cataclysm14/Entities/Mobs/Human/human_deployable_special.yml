@@ -13,18 +13,6 @@
       eyes: !type:GroupSelector
         children:
         - id: ClothingEyesSafetyGogglesClear
-      # outerClothing: !type:NestedSelector
-      #   tableId: LootTableClothingUNPeacekeeperBulletProofVest
-      #   prob: 0.95
-      # head: !type:NestedSelector
-      #   tableId: LootTableClothingHatHardHat
-      #   prob: 0.95
-      # belt: !type:GroupSelector
-      #   children:
-      #   - id: ClothingBeltDutyBeltPoliceFilledPolice
-      #     weight: 2
-      #   - id: ClothingBeltDutyBeltPolice
-      #   prob: 0.9
       gloves: !type:NestedSelector
         tableId: LootTableClothingHandsGlovesClean
       shoes: !type:GroupSelector
@@ -36,6 +24,38 @@
         tableId: LootTableClothingTopCleansuit
       mask: !type:NestedSelector
         tableId: LootTableClothingMaskGasmasksIndustrial
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS
+
+#MARK: Hazmat
+- type: entity
+  parent: BaseMobHumanDeployable
+  id: MobHumanDeployableHazmat
+  suffix: Hazmat
+  components:
+  - type: EntityTableOutfitContainerFill
+    containers:
+      suitstorage: !type:GroupSelector
+        children:
+        - id: ToolTankOxygenFilledOxygen
+      eyes: !type:GroupSelector
+        children:
+        - id: ClothingEyesSafetyGogglesClear
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltDutyBeltBlack
+      gloves: !type:NestedSelector
+        tableId: LootTableClothingHandsGlovesClean
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBlack
+      pants: !type:NestedSelector
+        tableId: LootTableClothingBottomHighVis
+      jumpsuit: !type:NestedSelector
+        tableId: LootTableClothingTopHazmat
+      mask: !type:NestedSelector
+        tableId: LootTableClothingMaskGasmasksFullFaceIndustrial
       id: !type:GroupSelector
         children:
         - id: AccessIdentificationIDCardUS

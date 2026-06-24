@@ -1,7 +1,7 @@
 #MARK: FMJ
 - type: entity
   categories: [ HideSpawnMenu ]
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   id: Bullet12,7x99mmFMJ
   components:
   - type: Projectile

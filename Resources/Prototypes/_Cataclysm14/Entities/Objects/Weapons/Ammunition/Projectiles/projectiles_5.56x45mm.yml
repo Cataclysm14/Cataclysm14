@@ -1,7 +1,7 @@
 #MARK: 223 Remington
 - type: entity
   id: Bullet5,56x45mm223Remington
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -13,7 +13,7 @@
 #MARK: M855
 - type: entity
   id: Bullet5,56x45mmM855
-  parent: BaseBullet
+  parent: BaseProjectileBulletAP
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -25,7 +25,7 @@
 #MARK: M855A1
 - type: entity
   id: Bullet5,56x45mmM855A1
-  parent: BaseBullet
+  parent: BaseProjectileBulletAP
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -37,7 +37,7 @@
 #MARK: M995
 - type: entity
   id: Bullet5,56x45mmM995
-  parent: BaseBullet
+  parent: BaseProjectileBulletAP
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -49,7 +49,7 @@
 #MARK: Mk262
 - type: entity
   id: Bullet5,56x45mmMk262
-  parent: BaseBullet
+  parent: BaseProjectileBulletAP
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -61,7 +61,7 @@
 #MARK: Mk318
 - type: entity
   id: Bullet5,56x45mmMk318
-  parent: BaseBullet
+  parent: BaseProjectileBulletAP
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -73,7 +73,7 @@
 #MARK: red tracer
 - type: entity
   id: Bullet5,56x45mmTracerRed
-  parent: BaseBullet
+  parent: BaseProjectileBulletTracerRed
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -94,7 +94,7 @@
 #MARK: FMJ
 - type: entity
   id: Bullet5,56x45mmFMJ
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -106,7 +106,7 @@
 #MARK: Rubber
 - type: entity
   id: Bullet5,56x45mmRubber
-  parent: BaseBulletRubber
+  parent: BaseProjectileBulletRubber
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -117,7 +117,7 @@
 #MARK: Incendiary
 - type: entity
   id: Bullet5,56x45mmIncendiary
-  parent: BaseBulletIncendiary
+  parent: BaseProjectileBulletIncendiary
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -129,7 +129,7 @@
 #MARK: Depleted Uranium
 - type: entity
   id: Bullet5,56x45mmDepletedUranium
-  parent: BaseBulletUranium
+  parent: BaseProjectileBulletDepletedUranium
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -141,7 +141,7 @@
 #MARK: HP
 - type: entity
   id: Bullet5,56x45mmHP
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -154,7 +154,7 @@
 #MARK: RIP
 - type: entity
   id: Bullet5,56x45mmRIP
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -163,27 +163,3 @@
         Slash: 7
         Piercing: 37
     armorPenetration: -0.9
-
-#MARK: Deprecated >
-
-- type: entity
-  id: Bullet5,56x45mmPlasteelAP
-  parent: BaseBullet
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Piercing: 10
-        Structural: 35
-    armorPenetration: 0.7
-
-- type: entity
-  id: Bullet5,56x45mmPractice
-  parent: BaseBulletPractice
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Blunt: 2

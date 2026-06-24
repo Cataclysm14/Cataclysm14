@@ -1,0 +1,8 @@
+- type: department
+  id: DepartmentSurvivors
+  name: department-cataclysm-survivors-name
+  description: department-cataclysm-survivors-description
+  color: "#173A19"
+  weight: 50
+  roles:
+  - ProfessionUnemployed

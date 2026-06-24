@@ -1,3 +1,4 @@
+#MARK: Peacekeeper
 - type: job
   id: JobUNPeacekeeper
   name: job-name-UN-peacekeeper
@@ -16,3 +17,6 @@
   # - !type:GiveItemOnHolidaySpecial
   #   holiday: BoxingDay
   #   prototype: BoxCardboard
+
+- type: playTimeTracker
+  id: JobTimeTrackerUNPeacekeeper

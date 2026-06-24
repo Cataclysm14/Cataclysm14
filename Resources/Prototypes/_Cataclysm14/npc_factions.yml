@@ -9,3 +9,7 @@
   friendly:
   - NpcFactionFerals
   defaultHostile: true
+
+- type: npcFaction
+  id: NpcFactionLostSouls
+  defaultHostile: true

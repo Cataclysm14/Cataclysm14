@@ -359,7 +359,7 @@
 - type: entity
   name: ball lightning
   id: ProjectileLightningZombie
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -583,7 +583,7 @@
 - type: entity
   name: acid spit
   id: ProjectileAcidZombie
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile

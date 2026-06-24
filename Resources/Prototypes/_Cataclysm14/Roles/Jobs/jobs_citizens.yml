@@ -1,3 +1,4 @@
+#MARK: US Citizen
 - type: job
   id: JobCitizenUS
   name: job-name-citizen-US
@@ -16,3 +17,6 @@
   # - !type:GiveItemOnHolidaySpecial
   #   holiday: BoxingDay
   #   prototype: BoxCardboard
+
+- type: playTimeTracker
+  id: JobTimeTrackerCitizenUS

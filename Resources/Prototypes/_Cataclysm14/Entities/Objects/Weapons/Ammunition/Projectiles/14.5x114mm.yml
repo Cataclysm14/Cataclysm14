@@ -1,6 +1,6 @@
 - type: entity
   categories: [ HideSpawnMenu ]
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   id: Bullet14,5x114mm
   name: bullet (14,5x114mm)
   components:

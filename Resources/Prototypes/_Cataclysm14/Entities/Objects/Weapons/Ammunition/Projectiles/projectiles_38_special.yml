@@ -2,7 +2,7 @@
 - type: entity
   id: Bullet38SpecialFMJ
   name: bullet (.38 Special FMJ)
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -16,7 +16,7 @@
 - type: entity
   id: Bullet38SpecialJHP
   name: bullet (.38 Special JHP)
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -30,7 +30,7 @@
 - type: entity
   id: Bullet38Special+P
   name: bullet (.38 Special +P)
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -44,7 +44,7 @@
 - type: entity
   id: Bullet38SpecialRubber
   name: bullet (.38 Special rubber)
-  parent: BaseBulletRubber
+  parent: BaseProjectileBulletRubber
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile

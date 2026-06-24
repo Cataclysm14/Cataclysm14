@@ -1,0 +1,55 @@
+#MARK: Crazed Murderer
+- type: entity
+  id: MobFeralCrazedMurderer
+  suffix: Crazed Murderer
+  parent: BaseMobFeralSimple
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      outerClothing: !type:GroupSelector
+        children:
+        - id: ClothingOuterApronKevlar
+        - id: ClothingOuterApronLeather
+        prob: 0.99
+      mask: !type:GroupSelector
+        children:
+        - id: ClothingMaskProtectiveMaskHockey
+        - id: ClothingMaskProtectiveMaskBallisticBlack
+        prob: 0.99
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBlack
+        prob: 0.99
+      jumpsuit: !type:NestedSelector
+        tableId: LootTableClothingTopCivilian
+        prob: 0.99
+      pants: !type:NestedSelector
+        tableId: LootTableClothingBottomCivilian
+        prob: 0.99
+      back: !type:NestedSelector
+        tableId: LootTableClothingBagCivilian
+        prob: 0.4
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS
+        prob: 0.10
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+        - id: ClothingHandsGlovesLeathers
+        prob: 0.99
+
+  - type: Loadout
+    prototypes:
+      - LoadoutInhandMobFeralCrazedMurderer1
+      - LoadoutInhandMobFeralCrazedMurderer2
+
+- type: startingGear
+  id: LoadoutInhandMobFeralCrazedMurderer1
+  inhand:
+    - Machete #To-do, change to proper
+
+- type: startingGear
+  id: LoadoutInhandMobFeralCrazedMurderer2
+  inhand:
+    - FireAxe #To-do, change to proper

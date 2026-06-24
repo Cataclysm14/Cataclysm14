@@ -1,7 +1,7 @@
 #MARK: FMJ
 - type: entity
   id: Bullet45AcpFMJ
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -14,7 +14,7 @@
 #MARK: Rubber
 - type: entity
   id: Bullet45AcpRubber
-  parent: BaseBulletRubber
+  parent: BaseProjectileBulletRubber
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -25,7 +25,7 @@
 #MARK: Incendiary
 - type: entity
   id: Bullet45AcpIncendiary
-  parent: BaseBulletIncendiary
+  parent: BaseProjectileBulletIncendiary
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -38,7 +38,7 @@
 #MARK: Depleted Uranium
 - type: entity
   id: Bullet45AcpDepletedUranium
-  parent: BaseBulletUranium
+  parent: BaseProjectileBulletDepletedUranium
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -52,7 +52,7 @@
 #MARK: HP
 - type: entity
   id: Bullet45AcpHP
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -65,7 +65,7 @@
 #MARK: RIP
 - type: entity
   id: Bullet45AcpRIP
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -74,38 +74,3 @@
         Slash: 7
         Piercing: 42
     armorPenetration: -0.95
-
-#MARK: Deprecated >
-
-- type: entity
-  id: Bullet45AcpPractice
-  parent: BaseBulletPractice
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Blunt: 2
-
-# Upstream
-- type: entity
-  id: Bullet45AcpEmp
-  parent: BaseBulletEmp
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Shock: 2
-
-- type: entity
-  id: Bullet45AcpPlasteelAP
-  parent: BaseBullet
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Piercing: 16
-        Structural: 40
-    armorPenetration: 0.7
