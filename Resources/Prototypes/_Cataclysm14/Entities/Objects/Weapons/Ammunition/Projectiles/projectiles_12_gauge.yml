@@ -99,7 +99,7 @@
 #MARK: Flare
 - type: entity
   id: Pellet12GaugeFlare
-  parent BaseProjectileShotgunBulletFlare
+  parent: BaseProjectileShotgunBulletFlare
   categories: [ HideSpawnMenu ]
   components:
   - type: Physics
