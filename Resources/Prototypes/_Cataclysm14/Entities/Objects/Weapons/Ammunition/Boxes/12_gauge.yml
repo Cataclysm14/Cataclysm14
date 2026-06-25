@@ -92,10 +92,10 @@
 - type: entity
   name: shotgun shell box (12 gauge depleted uranium)
   parent: AmmoProvider12GaugeShotgunShell
-  id: AmmoBox12GaugeUranium
+  id: AmmoBox12GaugeDepletedUranium
   components:
     - type: BallisticAmmoProvider
-      proto: ShellShotgun12GaugeUranium
+      proto: ShellShotgun12GaugeDepletedUranium
     - type: MagazineVisuals
       magState: mag-uranium
       steps: 5

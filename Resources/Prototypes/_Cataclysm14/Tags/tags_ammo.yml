@@ -144,6 +144,9 @@
   - type: Tag
     id: Cartridge12,7x99mm
 
+  - type: Tag
+    id: Magazine12,7x99mmBarrettCompatible
+
   #MARK: 14,5x114mm
 
   - type: Tag

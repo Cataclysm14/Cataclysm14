@@ -1,3 +1,4 @@
+#MARK: Base
 - type: entity
   id: BaseShellShotgun4Gauge
   name: shotgun shell (4 gauge)
@@ -30,6 +31,7 @@
   - type: StaticPrice
     price: 1
 
+#MARK: Beanbag
 - type: entity
   id: ShellShotgun4GaugeBeanbag
   name: shotgun shell (4 gauge beanbag)
@@ -48,6 +50,7 @@
   - type: SpentAmmoVisuals
     state: "beanbag"
 
+#MARK: Dozd
 - type: entity
   id: ShellShotgun4GaugeDozd
   name: shotgun shell (4 gauge Dozd)
@@ -62,6 +65,7 @@
   - type: SpentAmmoVisuals
     state: "dozd"
 
+#MARK: Slug
 - type: entity
   id: ShellShotgun4GaugeSlug
   name: shotgun shell (4 gauge slug)
@@ -76,6 +80,7 @@
   - type: SpentAmmoVisuals
     state: "slug"
 
+#MARK: Flare
 - type: entity
   id: ShellShotgun4GaugeFlare
   name: flare shell (4 gauge flare)
@@ -94,6 +99,7 @@
   - type: SpentAmmoVisuals
     state: "flare"
 
+#MARK: Buckshot
 - type: entity
   id: ShellShotgun4GaugeBuckshot
   name: shotgun shell (4 gauge buckshot)
@@ -106,6 +112,7 @@
   - type: CartridgeAmmo
     proto: Pellet4GaugeBuckshotSpread
 
+#MARK: Incendiary
 - type: entity
   id: ShellShotgun4GaugeIncendiary
   name: shotgun shell (4 gauge incendiary)
@@ -120,20 +127,7 @@
   - type: SpentAmmoVisuals
     state: "incendiary"
 
-- type: entity
-  id: ShellShotgun4GaugePractice
-  name: shotgun shell (4 gauge practice)
-  parent: BaseShellShotgun4Gauge
-  components:
-  - type: Sprite
-    layers:
-      - state: practice
-        map: [ "enum.AmmoVisualLayers.Base" ]
-  - type: CartridgeAmmo
-    proto: Pellet4GaugePracticeSpread
-  - type: SpentAmmoVisuals
-    state: "practice"
-
+#MARK: Depleted Uranium
 - type: entity
   id: ShellShotgun4GaugeDepletedUranium
   name: shotgun shell (4 gauge depleted uranium)
@@ -148,6 +142,7 @@
     - type: SpentAmmoVisuals
       state: "depleted-uranium"
 
+#MARK: Flashbang
 - type: entity
   id: ShellShotgun4GaugeFlashbang
   name: shotgun shell (4 gauge flashbang)
@@ -166,8 +161,7 @@
   - type: SpentAmmoVisuals
     state: "flashbang"
 
-# Mono AP syst
-#anti-flesh:
+#MARK: OO Magnum Buckshot
 - type: entity
   id: ShellShotgun4GaugeOOBuckshot
   name: shotgun shell (4 gauge OO Buckshot)
@@ -181,6 +175,7 @@
     proto: Pellet4GaugeOOBuckshotSpread
   - type: SpentAmmoVisuals
 
+#MARK: RIP
 - type: entity
   id: ShellShotgun4GaugeSlugRIP
   name: shotgun shell (4 gauge RIP)
@@ -195,21 +190,7 @@
   - type: SpentAmmoVisuals
     state: "RIP"
 
-#armor-piercing:
-- type: entity
-  id: ShellShotgun4GaugeSlugAP
-  name: shotgun shell (4 gauge armor-piercing slug)
-  parent: BaseShellShotgun4Gauge
-  components:
-  - type: Sprite
-    layers:
-      - state: slug-AP
-        map: [ "enum.AmmoVisualLayers.Base" ]
-  - type: CartridgeAmmo
-    proto: Pellet4GaugeSlugAP
-  - type: SpentAmmoVisuals
-    state: "slug-AP"
-
+#MARK: Flechette
 - type: entity
   id: ShellShotgun4GaugeFlechette
   name: shotgun shell (4 gauge flechette)

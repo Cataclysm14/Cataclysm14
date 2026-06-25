@@ -99,7 +99,7 @@
 #MARK: Flare
 - type: entity
   id: Pellet4GaugeFlare
-  paren: BaseProjectileShotgunBulletFlare
+  parent: BaseProjectileShotgunBulletFlare
   categories: [ HideSpawnMenu ]
   components:
   - type: Physics
@@ -143,7 +143,7 @@
 
 #MARK: DepletedUranium
 - type: entity
-  id: Pellet4GaugeUranium
+  id: Pellet4GaugeDepletedUranium
   categories: [ HideSpawnMenu ]
   parent: BaseProjectileShotgunBulletDepletedUranium
   components:
@@ -155,12 +155,12 @@
     armorPenetration: -0.1
 
 - type: entity
-  id: Pellet4GaugeUraniumSpread
+  id: Pellet4GaugeDepletedUraniumSpread
   categories: [ HideSpawnMenu ]
-  parent: Pellet4GaugeUranium
+  parent: Pellet4GaugeDepletedUranium
   components:
   - type: ProjectileSpread
-    proto: Pellet4GaugeUranium
+    proto: Pellet4GaugeDepletedUranium
     count: 5
     spread: 6
 
@@ -223,3 +223,25 @@
     proto: Pellet4GaugeFlechette
     count: 6
     spread: 12
+
+#MARK: Dozd
+- type: entity
+  id: Pellet4GaugeDozd
+  parent: BaseProjectileShotgunBulletPellet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 8
+    armorPenetration: -0.2
+
+- type: entity
+  id: Pellet4GaugeDozdSpread
+  parent: Pellet4GaugeDozd
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ProjectileSpread
+    proto: Pellet4GaugeDozd
+    count: 10
+    spread: 6

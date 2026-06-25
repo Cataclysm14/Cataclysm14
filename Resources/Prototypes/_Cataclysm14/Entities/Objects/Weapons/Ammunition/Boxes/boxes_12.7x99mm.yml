@@ -43,3 +43,6 @@
 - type: entity
   parent: BaseAmmoBox12,7x99mm
   id: AmmoBox12,7x99mmFMJ
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge12,7x99mmFMJ
