@@ -1,0 +1,167 @@
+- type: entity
+  id: WeaponMediumMachineGunLewisGunBase
+  name: Lewis Gun (.303 British)
+  description: An old WW1 era machine gun, the Lewis Automatic MG/Rifle featuring a low rate of fire with a big punch to lay suppressive fire. Chambered in .303 British.
+  parent: BaseWeaponRifle
+  abstract: true
+  components:
+    - type: Sprite
+      scale: 0.55, 0.55
+      sprite: _Cataclysm14/Objects/Weapons/Guns/MediumMachineGuns/Lewis_Gun_64x32.rsi
+      layers:
+        - state: base
+          map:
+            - enum.GunVisualLayers.Base
+        - state: mag-0
+          map:
+            - enum.GunVisualLayers.Mag
+    - type: Item
+      size: Large
+      sprite: _Cataclysm14/Objects/Weapons/Guns/MediumMachineGuns/Lewis_Gun_32x32.rsi
+      shape:
+        - 0,0,5,1
+      storedScale: 2
+    - type: Clothing
+      clothingVisuals:
+        suitstorage:
+          - state: equipped-SUITSTORAGE
+        slingfront:
+          - state: equipped-SUITSTORAGE
+      sprite: _Cataclysm14/Objects/Weapons/Guns/MediumMachineGuns/Lewis_Gun_32x32.rsi
+    - type: GunWieldBonus
+      minAngle: -20
+      maxAngle: -30
+    - type: Gun
+      soundGunshot:
+        path: /Audio/_Cataclysm14/Weapons/Guns/Gunshots/cata_LMG_1.ogg
+        params:
+          pitch: 1.5
+          volume: 15
+          variation: 0.1
+          playOffsetSeconds: 0.05
+      angleIncrease: 5
+      angleDecay: 20
+      maxAngle: 70
+      minAngle: 21
+      fireRate: 4.5
+    - type: ChamberMagazineAmmoProvider
+      soundBoltClosed:
+        path: /Audio/_Cataclysm14/Weapons/Guns/Bolt/cata_bolt_heavy_1_closing.ogg
+      soundBoltOpened:
+        path: /Audio/_Cataclysm14/Weapons/Guns/Bolt/cata_bolt_heavy_1_opening.ogg
+      soundRack:
+        path: /Audio/_Cataclysm14/Weapons/Guns/Cocking/cata_heavy_1.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: null
+          insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+          ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine303BritishLewisGunCompatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: null
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge303British
+          whitelistFailPopup: gun-magazine-whitelist-fail
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot {}
+        gun_chamber: !type:ContainerSlot {}
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: Appearance
+    - type: WieldedCrosshair
+      rsi:
+        sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
+        state: all
+
+#MARK: 47rd Empty
+- type: entity
+  id: WeaponMediumMachineGunLewisGunFilled47rdEmpty
+  suffix: Empty - 47rd
+  parent: WeaponMediumMachineGunLewisGunBase
+  components:
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: Magazine303BritishLewisGun47rdEmpty
+          insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+          ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine303BritishLewisGunCompatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: null
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge303British
+          whitelistFailPopup: gun-magazine-whitelist-fail
+
+#MARK: 47rd FMJ
+- type: entity
+  id: WeaponMediumMachineGunLewisGunFilled47rdFMJ
+  suffix: FMJ - 47rd
+  parent: WeaponMediumMachineGunLewisGunBase
+  components:
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: Magazine303BritishLewisGun47rdFMJ
+          insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+          ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine303BritishLewisGunCompatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: null
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge303British
+          whitelistFailPopup: gun-magazine-whitelist-fail
+
+#MARK: 47rd Red Tracer
+- type: entity
+  id: WeaponMediumMachineGunLewisGunFilled47rdTracerRed
+  suffix: Tracer Red - 47rd
+  parent: WeaponMediumMachineGunLewisGunBase
+  components:
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: Magazine303BritishLewisGun47rdTracerRed
+          insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+          ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine303BritishLewisGunCompatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: null
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge303British
+          whitelistFailPopup: gun-magazine-whitelist-fail

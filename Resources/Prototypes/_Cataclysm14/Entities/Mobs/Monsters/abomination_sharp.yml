@@ -4,6 +4,7 @@
   id: MobMonsterAbominationSharp
   name: sharp abomination
   description: A hideous creature covered in teeths, spikes and claws.
+  suffix: Living Meat #Easy spawn faction
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -42,3 +43,6 @@
         Heat: 20
         Piercing: 20
         Radiation: 10
+  - type: NpcFactionMember
+    factions:
+      - NpcFactionLivingMeat

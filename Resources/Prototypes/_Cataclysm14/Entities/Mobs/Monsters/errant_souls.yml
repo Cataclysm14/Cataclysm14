@@ -5,6 +5,7 @@
   name: errant soul
   abstract: true
   description: A soul that strayed too far from the path or was stuck too long in limbo, now roaming in search of your life essence, at all costs.
+  suffix: Lost Soul #Easy spawn faction
   components:
   - type: NpcFactionMember
     factions:
@@ -54,6 +55,7 @@
   parent: BaseMobMonsterErrantSoul
   id: MobMonsterErrantSoulMurderer
   name: murderer errant soul
+  suffix: Lost Soul #Easy spawn faction
   components:
   - type: Sprite
     sprite: _Cataclysm14/Mobs/Mob/ErrantSouls/errant_soul_murderer.rsi
@@ -71,6 +73,7 @@
   parent: BaseMobMonsterErrantSoul
   id: MobMonsterErrantSoulRescuer
   name: rescuer errant soul
+  suffix: Lost Soul #Easy spawn faction
   components:
   - type: Sprite
     sprite: _Cataclysm14/Mobs/Mob/ErrantSouls/errant_soul_rescuer.rsi
@@ -90,6 +93,7 @@
   parent: BaseMobMonsterErrantSoul
   id: MobMonsterErrantSoulLurker
   name: lurker errant soul
+  suffix: Lost Soul #Easy spawn faction
   components:
   #Alternative way to make sprite
   - type: Sprite
@@ -129,6 +133,7 @@
   parent: BaseMobMonsterErrantSoul
   id: MobMonsterErrantSoulBurner
   name: burner errant soul
+  suffix: Lost Soul #Easy spawn faction
   components:
   #Alternative way to make sprite
   - type: Sprite

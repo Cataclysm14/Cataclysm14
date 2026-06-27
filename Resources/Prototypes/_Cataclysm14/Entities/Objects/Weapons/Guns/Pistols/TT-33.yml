@@ -1,0 +1,115 @@
+- type: entity
+  id: WeaponPistolTT33Base
+  name: Tokarev TT-33 (7,62x25mm Tokarev)
+  description: A cheap, ubiquitous sidearm, produced by Glock and uses 7,62x25mm Tokarev ammunition.
+  parent: BaseWeaponPistol
+  abstract: true
+  components:
+    - type: Item
+      size: Normal
+      shape:
+        - 0,0,1,1
+      storedScale: 2
+    - type: Sprite
+      scale: 0.4,0.4
+      sprite: _Cataclysm14/Objects/Weapons/Guns/Pistols/TT-33.rsi
+      layers:
+        - state: base
+          map:
+            - enum.GunVisualLayers.Base
+        - state: mag-0
+          map:
+            - enum.GunVisualLayers.Mag
+    - type: Clothing
+      sprite: _Cataclysm14/Objects/Weapons/Guns/Pistols/TT-33.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/mk_fire.ogg
+        params:
+          variation: 0.1
+          volume: 13
+          pitch: 1.5
+          playOffsetSeconds: 0.15
+      fireRate: 10
+      availableModes:
+        - SemiAuto
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: Magazine7,62x25mmT_TT33_8rdFMJ
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine7,62x25mmT_TT33Compatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: Cartridge7,62x25mmTFMJ
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge7,62x25mmT
+          whitelistFailPopup: gun-magazine-whitelist-fail
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot {}
+        gun_chamber: !type:ContainerSlot {}
+    - type: StaticPrice
+      price: 50
+
+#MARK: 8rd Empty
+- type: entity
+  id: WeaponPistolTT33Filled8rdEmpty
+  suffix: Empty - 8rd
+  parent: WeaponPistolTT33Base
+  components:
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: Magazine7,62x25mmT_TT33_8rdEmpty
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine7,62x25mmT_TT33Compatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: Cartridge7,62x25mmTFMJ
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge7,62x25mmT
+          whitelistFailPopup: gun-magazine-whitelist-fail
+
+#MARK: 8rd RMJ
+- type: entity
+  id: WeaponPistolTT33Filled8rdFMJ
+  suffix: FMJ - 8rd
+  parent: WeaponPistolTT33Base
+  components:
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: Magazine7,62x25mmT_TT33_8rdFMJ
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine7,62x25mmT_TT33Compatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: Cartridge7,62x25mmTFMJ
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge7,62x25mmT
+          whitelistFailPopup: gun-magazine-whitelist-fail

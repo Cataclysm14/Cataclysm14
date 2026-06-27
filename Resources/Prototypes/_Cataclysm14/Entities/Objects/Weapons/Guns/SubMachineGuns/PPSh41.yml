@@ -1,0 +1,165 @@
+#MARK: Base
+- type: entity
+  name: PPSh-41 (7,62x25mm Tokarev)
+  parent: BaseWeaponRifle
+  id: WeaponSubMachineGunPPSh41Base
+  abstract: true
+  description: The Shpagin's machine pistol model 1941, a simplified alternative to the PPD-40, Chambered in 7,62x25mm Tokarev.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/PPSh41_64x32.rsi
+    scale: 0.50, 0.50
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/PPSh41_32x32.rsi
+    size: Normal
+    shape:
+    - 0,0,3,1
+    storedScale: 2
+  - type: Clothing
+    sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/PPSh41_32x32.rsi
+    clothingVisuals:
+      suitstorage:
+      - state: equipped-SUITSTORAGE
+      slingfront:
+      - state: equipped-SUITSTORAGE
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -30
+  - type: Gun
+    minAngle: 21
+    maxAngle: 70
+    angleIncrease: 5
+    angleDecay: 20
+    fireRate: 9
+    soundGunshot:
+      path: /Audio/_Cataclysm14/Weapons/Guns/Gunshots/cata_LMG_1.ogg
+      params:
+        pitch: 1.2
+        volume: 15
+        variation: 0.15
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Cataclysm14/Weapons/Guns/Cocking/cata_heavy_1.ogg
+    soundBoltClosed:
+      path: /Audio/_Cataclysm14/Weapons/Guns/Bolt/cata_bolt_heavy_1_closing.ogg
+    soundBoltOpened:
+      path: /Audio/_Cataclysm14/Weapons/Guns/Bolt/cata_bolt_heavy_1_opening.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: null
+        insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+        ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine7,62x25mmTPPSh41Compatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge7,62x25mmT
+        whitelistFailPopup: gun-magazine-whitelist-fail
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
+      state: all
+
+#MARK: PPSh 35rd Empty
+- type: entity
+  parent: WeaponSubMachineGunPPSh41Base
+  id: WeaponSubMachineGunPPSh41Filled35rdEmpty
+  suffix: Empty - 35rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine7,62x25mmTPPSh41_35rdEmpty
+        insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+        ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine7,62x25mmTPPSh41Compatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge7,62x25mmT
+        whitelistFailPopup: gun-magazine-whitelist-fail
+
+#MARK: PPSh 35rd FMJ
+- type: entity
+  parent: WeaponSubMachineGunPPSh41Base
+  id: WeaponSubMachineGunPPSh41Filled35rdFMJ
+  suffix: FMJ - 35rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine7,62x25mmTPPSh41_35rdFMJ
+        insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+        ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine7,62x25mmTPPSh41Compatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge7,62x25mmT
+        whitelistFailPopup: gun-magazine-whitelist-fail
+
+#MARK: PPSh 35rd PT gzh
+- type: entity
+  parent: WeaponSubMachineGunPPSh41Base
+  id: WeaponSubMachineGunPPSh41Filled35rdPtGzh
+  suffix: PT gzh - 35rd
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine7,62x25mmTPPSh41_35rdPtGzh
+        insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+        ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine7,62x25mmTPPSh41Compatible
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge7,62x25mmT
+        whitelistFailPopup: gun-magazine-whitelist-fail

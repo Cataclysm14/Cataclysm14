@@ -1,0 +1,76 @@
+#MARK: FMJ
+- type: entity
+  id: Bullet303BritishFMJ
+  name: bullet (.303 British FMJ)
+  parent: BaseProjectileBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 20
+        Structural: 20
+    armorPenetration: 0.1
+
+#MARK: JHP
+- type: entity
+  id: Bullet303BritishJHP
+  name: bullet (.303 British JHP)
+  parent: BaseProjectileBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 25
+        Structural: 25
+    armorPenetration: -0.2
+
+#MARK: +P
+- type: entity
+  id: Bullet303British+P
+  name: bullet (.303 British +P)
+  parent: BaseProjectileBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 23
+        Structural: 23
+    armorPenetration: 0.3
+
+#MARK: Rubber
+- type: entity
+  id: Bullet303BritishRubber
+  name: bullet (.303 British rubber)
+  parent: BaseProjectileBulletRubber
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 4
+  - type: StaminaDamageOnCollide
+    damage: 22
+
+#MARK: red tracer
+- type: entity
+  id: Bullet303BritishTracerRed
+  parent: BaseProjectileBulletTracerRed
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 25
+    armorPenetration: -0.05
+  - type: PointLight
+    enabled: true
+    color: "#ff4300"
+    radius: 1.1
+    energy: 20.0
+  - type: Tracer
+    color: "#c30010ff"
+    length: 15
+    lifetime: 1

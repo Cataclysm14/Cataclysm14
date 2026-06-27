@@ -218,7 +218,7 @@ public sealed partial class ZombieSystem
         _mobState.ChangeMobState(target, MobState.Alive);
 
         _faction.ClearFactions(target, dirty: false);
-        _faction.AddFaction(target, "Zombie");
+        _faction.AddFaction(target, "NpcFactionZombies"); //Cataclysm14, gave proper cataclysm faction to zombification process.
 
         //gives it the funny "Zombie ___" name.
         _nameMod.RefreshNameModifiers(target);

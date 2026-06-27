@@ -4,6 +4,7 @@
   id: MobMonsterMeatman
   name: meatman
   description: A fleshy hunk covered in eyes. This one appears to be a stabber that latched onto someone.
+  suffix: Living Meat #Easy spawn faction
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -42,3 +43,6 @@
         Heat: 20
         Piercing: 20
         Radiation: 10
+  - type: NpcFactionMember
+    factions:
+      - NpcFactionLivingMeat

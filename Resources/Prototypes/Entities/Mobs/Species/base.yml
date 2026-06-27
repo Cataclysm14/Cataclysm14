@@ -32,7 +32,6 @@
     - map: [ "ears" ]
     - map: [ "id" ] # Mono - move from between belt and back
     - map: [ "eyes" ]
-    - map: [ "belt" ]
     - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
     - map: [ "enum.HumanoidVisualLayers.Hair" ]
     - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
@@ -43,6 +42,7 @@
     - map: [ "mask" ]
     - map: [ "head" ]
     - map: [ "outerClothing" ] # mono - i hate you upstream
+    - map: [ "belt" ]
     - map: [ "back" ]
     - map: [ "neck" ]
     - map: [ "faceshield" ]
@@ -186,7 +186,7 @@
   - type: CanHostGuardian
   - type: NpcFactionMember
     factions:
-    - NanoTrasen
+    - PlayerFactionSurvivor #Cataclysm14, our own faction for players
   - type: CreamPied
   - type: Stripping
   - type: UserInterface

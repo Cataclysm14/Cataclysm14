@@ -77,7 +77,7 @@
   - type: CartridgeAmmo
     proto: Bullet5,56x45mmMk318
 
-#MARK: FMJ
+#MARK: red tracer
 - type: entity
   id: Cartridge5,56x45mmTracerRed
   name: cartridge (5,56x45mm NATO red tracer)

@@ -1,0 +1,69 @@
+#MARK: Base
+- type: entity
+  id: BaseCartridge7,62x25mmT
+  name: cartridge (7,62x25mm Tokarev FMJ)
+  parent: BaseCartridge
+  description: Heavier alternative to 9x19mm for handguns and revolvers.
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - Cartridge7,62x25mmT
+  - type: CartridgeAmmo
+    proto: Bullet7,62x25mmTFMJ
+  - type: Sprite
+    scale: 0.2, 0.2
+    sprite: _Cataclysm14/Objects/Weapons/Casings/7,62x25mmT_casing.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+
+#MARK: FMJ
+- type: entity
+  id: Cartridge7,62x25mmTFMJ
+  name: cartridge (7,62x25mm Tokarev FMJ)
+  parent: BaseCartridge7,62x25mmT
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7,62x25mmTFMJ
+
+#MARK: JHP
+- type: entity
+  id: Cartridge7,62x25mmTJHP
+  name: cartridge (7,62x25mm Tokarev JHP)
+  parent: BaseCartridge7,62x25mmT
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7,62x25mmTJHP
+
+#MARK: +P
+- type: entity
+  id: Cartridge7,62x25mmT+P
+  name: cartridge (7,62x25mm Tokarev +P)
+  parent: BaseCartridge7,62x25mmT
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7,62x25mmT+P
+
+#MARK: Rubber
+- type: entity
+  id: Cartridge7,62x25mmTRubber
+  name: cartridge (7,62x25mm Tokarev rubber)
+  parent: BaseCartridge7,62x25mmT
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7,62x25mmTRubber
+
+#MARK: PT gzh
+- type: entity
+  id: Cartridge7,62x25mmTPtGzh
+  name: cartridge (7,62x25mm Tokarev PT gzh green tracer)
+  parent: BaseCartridge7,62x25mmT
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7,62x25mmTPtGzh

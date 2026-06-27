@@ -1,0 +1,32 @@
+- type: npcFaction
+  id: NpcFactionFerals
+  friendly:
+  - NpcFactionZombies
+  defaultHostile: true
+
+- type: npcFaction
+  id: NpcFactionZombies
+  friendly:
+  - NpcFactionFerals
+  defaultHostile: true
+
+- type: npcFaction
+  id: NpcFactionLostSouls
+  defaultHostileIncluded: false
+  defaultHostile: true
+
+- type: npcFaction
+  id: NpcFactionLivingPlants
+  defaultHostile: true
+
+- type: npcFaction
+  id: NpcFactionLivingMeat
+  defaultHostile: true
+
+- type: npcFaction
+  id: NpcFactionArachnids
+  defaultHostile: true
+
+- type: npcFaction
+  id: PlayerFactionSurvivor
+  defaultHostile: true
