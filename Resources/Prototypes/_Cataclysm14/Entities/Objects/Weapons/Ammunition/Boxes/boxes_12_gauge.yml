@@ -1,3 +1,4 @@
+#MARK: Beanbag
 - type: entity
   parent: AmmoProvider12GaugeShotgunShell
   id: AmmoBox12GaugeBeanbag
@@ -17,6 +18,7 @@
         map: ["enum.GunVisualLayers.Mag"]
       - state: beanbag
 
+#MARK: Buckshot
 - type: entity
   name: shotgun shell box (12 gauge buckshot)
   parent: AmmoProvider12GaugeShotgunShell
@@ -32,6 +34,7 @@
         map: ["enum.GunVisualLayers.Mag"]
       - state: lethal
 
+#MARK: Slug
 - type: entity
   name: shotgun shell box (12 gauge slug)
   parent: AmmoProvider12GaugeShotgunShell
@@ -51,6 +54,7 @@
         map: ["enum.GunVisualLayers.Mag"]
       - state: slug
 
+#MARK: Flare
 - type: entity
   name: flare shell box (12 gauge flare)
   parent: AmmoProvider12GaugeShotgunShell
@@ -70,6 +74,7 @@
         map: ["enum.GunVisualLayers.Mag"]
       - state: flare
 
+#MARK: Incendiary
 - type: entity
   name: shotgun shell box (12 gauge incendiary)
   parent: AmmoProvider12GaugeShotgunShell
@@ -89,6 +94,7 @@
         map: ["enum.GunVisualLayers.Mag"]
       - state: incendiary
 
+#MARK: Depleted Uranium
 - type: entity
   name: shotgun shell box (12 gauge depleted uranium)
   parent: AmmoProvider12GaugeShotgunShell
@@ -108,25 +114,7 @@
         map: ["enum.GunVisualLayers.Mag"]
       - state: uranium
 
-- type: entity
-  name: shotgun shell box (12 gauge practice)
-  parent: AmmoProvider12GaugeShotgunShell
-  id: AmmoBox12GaugePractice
-  components:
-    - type: BallisticAmmoProvider
-      proto: ShellShotgun12GaugePractice
-    - type: MagazineVisuals
-      magState: mag-practice
-      steps: 5
-      zeroVisible: false
-    - type: Sprite
-      layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-practice-1
-        map: ["enum.GunVisualLayers.Mag"]
-      - state: practice
-
+#MARK: Tranquilizer
 - type: entity
   name: shotgun shell box (12 gauge tranquilizer)
   parent: AmmoProvider12GaugeShotgunShell
@@ -146,8 +134,7 @@
         map: ["enum.GunVisualLayers.Mag"]
       - state: tranquilizer
 
-# Mono AP syst
-#anti-flesh:
+#MARK: OO Magnum Buckshot
 - type: entity
   name: shotgun shell box (12 gauge OO magnum buckshot)
   parent: AmmoProvider12GaugeShotgunShell
@@ -163,6 +150,7 @@
         map: ["enum.GunVisualLayers.Mag"]
       - state: magnum-buckshot
 
+#MARK: RIP
 - type: entity
   name: shotgun shell box (12 gauge RIP)
   parent: AmmoProvider12GaugeShotgunShell
@@ -182,26 +170,7 @@
         map: ["enum.GunVisualLayers.Mag"]
       - state: slugRIP
 
-#armor-piercing:
-- type: entity
-  name: shotgun shell box (12 gauge armor-piercing slug)
-  parent: AmmoProvider12GaugeShotgunShell
-  id: AmmoBox12GaugeSlugAP
-  components:
-    - type: BallisticAmmoProvider
-      proto: ShellShotgun12GaugeSlugAP
-    - type: MagazineVisuals
-      magState: mag-slugAP
-      steps: 5
-      zeroVisible: false
-    - type: Sprite
-      layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-slugAP-1
-        map: ["enum.GunVisualLayers.Mag"]
-      - state: slugAP
-
+#MARK: Flechette
 - type: entity
   name: shotgun shell box (12 gauge flechette)
   parent: AmmoProvider12GaugeShotgunShell

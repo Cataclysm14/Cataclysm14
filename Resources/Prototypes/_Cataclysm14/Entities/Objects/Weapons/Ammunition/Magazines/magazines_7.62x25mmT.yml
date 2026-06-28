@@ -44,7 +44,7 @@
   - type: BallisticAmmoProvider
     capacity: 8
   - type: Item
-    stoGreenScale: 4
+    storedScale: 4
     shape:
     - 0,0,1,1
   - type: Tag
@@ -98,7 +98,7 @@
     capacity: 30
   - type: Tag
     tags:
-      - Magazine7,62x25mmTPPshCompatible
+      - Magazine7,62x25mmTPPSh41Compatible
   - type: Sprite
     scale: 0.25,0.25
     sprite: _Cataclysm14/Objects/Weapons/Magazines/7,62x25mmT/magazine_7,62x25mmT_PPSh41_35rd.rsi

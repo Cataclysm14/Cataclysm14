@@ -94,6 +94,29 @@
   - type: Clothing
     sprite: _Cataclysm14/Clothing/Shirt/shirt_OCP_multicam.rsi
 
+#MARK: Digital Black
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtCombatDigitalBlack
+  name: black digital combat shirt
+  description: Ripstop combat shirt. It has a black digital camo patern for covert operations and larpers.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_digital_black.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_digital_black.rsi
+
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatDigitalBlackCargo
+  name: black digital cargo combat shirt
+  description: Ripstop combat shirt with large pockets. It has a black digital camo patern for covert operations and larpers.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_digital_black.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_digital_black.rsi
+
 #MARK: Gorka4 Tan
 - type: entity
   parent: BaseClothingShirtCargo

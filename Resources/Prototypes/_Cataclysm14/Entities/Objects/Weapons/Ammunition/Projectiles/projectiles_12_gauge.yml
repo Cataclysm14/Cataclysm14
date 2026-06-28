@@ -141,7 +141,7 @@
       types:
         Heat: 5
 
-#MARK: DepletedUranium
+#MARK: Depleted Uranium
 - type: entity
   id: Pellet12GaugeDepletedUranium
   categories: [ HideSpawnMenu ]

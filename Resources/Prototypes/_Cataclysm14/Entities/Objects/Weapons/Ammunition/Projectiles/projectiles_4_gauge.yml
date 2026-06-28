@@ -27,7 +27,7 @@
 
 #MARK: Buckshot
 - type: entity
-  id: Pellet4Gauge
+  id: Pellet4GaugeBuckshot
   categories: [ HideSpawnMenu ]
   parent: BaseProjectileShotgunBulletPellet
   components:
@@ -38,12 +38,12 @@
     armorPenetration: -0.5
 
 - type: entity
-  id: Pellet4GaugeSpread
+  id: Pellet4GaugeBuckshotSpread
   categories: [ HideSpawnMenu ]
   parent: Pellet4Gauge
   components:
   - type: ProjectileSpread
-    proto: Pellet4Gauge
+    proto: Pellet4GaugeBuckshot
     count: 6
     spread: 15
 
