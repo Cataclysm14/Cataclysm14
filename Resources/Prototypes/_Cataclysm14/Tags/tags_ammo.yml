@@ -1,164 +1,190 @@
-  #MARK: 7,62x51mm
-  - type: Tag
-    id: Magazine7,62x51mmSTANAGCompatible
+#MARK: 7,62x51mm
+- type: Tag
+  id: Magazine7,62x51mmSTANAGCompatible
 
-  - type: Tag
-    id: Cartridge7,62x51mm
+- type: Tag
+  id: Cartridge7,62x51mm
 
-  - type: Tag
-    id: MagazineBox7,62x51mmLMGCompatible
+- type: Tag
+  id: MagazineBox7,62x51mmLMGCompatible
 
-  #MARK: 7,62x54mmR
+#MARK: 7,62x54mmR
 
-  - type: Tag
-    id: Cartridge7,62x54mmR
+- type: Tag
+  id: Cartridge7,62x54mmR
 
-  #MARK: 6,8x52mm
-    #Deprecated-ish, unless implemented
-  - type: Tag
-    id: Cartridge6,8x52mmCaseless
+#MARK: 7,62x25mmT
 
-  #MARK: 5,56x45mm
+- type: Tag
+  id: Cartridge7,62x25mmT
 
-  - type: Tag
-    id: Cartridge5,56x45mm
+- type: Tag
+  id: Magazine7,62x25mmT_TT33Compatible
 
-  - type: Tag
-    id: Magazine5,56x45mmSTANAGCompatible
+- type: Tag
+  id: Magazine7,62x25mmTPPSh41Compatible
 
-  - type: Tag
-    id: AmmoBelt5,56x45mm
+#MARK: .303 British
 
-  - type: Tag
-    id: MagazineBox5,56x45mmLMGCompatible
+- type: Tag
+  id: Cartridge303British
 
-  #MARK: 5,56x45mm coil
+- type: Tag
+  id: Magazine303BritishLewisGunCompatible
 
-  - type: Tag
-    id: Cartridge5,56x45mmCoil
+#MARK: 6,8x52mm
+  #Deprecated-ish, unless implemented
+- type: Tag
+  id: Cartridge6,8x52mmCaseless
 
-  - type: Tag
-    id: Magazine5,56x45mmCoilCompatible
+#MARK: 5,56x45mm
 
-  #MARK: 7,62x39mm
+- type: Tag
+  id: Cartridge5,56x45mm
 
-  - type: Tag
-    id: Cartridge7,62x39mm
+- type: Tag
+  id: Magazine5,56x45mmSTANAGCompatible
 
-  - type: Tag
-    id: Magazine7,62x39mmAKCompatible
+- type: Tag
+  id: AmmoBelt5,56x45mm
 
-  - type: Tag
-    id: AmmoBelt7,62x39mm
+- type: Tag
+  id: MagazineBox5,56x45mmLMGCompatible
 
-  - type: Tag
-    id: Magazine7,62x39mmRPDCompatible
+#MARK: 5,56x45mm coil
 
-  #MARK: 5,45x39mm
+- type: Tag
+  id: Cartridge5,56x45mmCoil
 
-  - type: Tag
-    id: Cartridge5,45x39mm
+- type: Tag
+  id: Magazine5,56x45mmCoilCompatible
 
-  - type: Tag
-    id: Magazine5,45x39mmAKCompatible
+#MARK: 7,62x39mm
 
-  #MARK: 4,6x30mm
+- type: Tag
+  id: Cartridge7,62x39mm
 
-  - type: Tag
-    id: Cartridge4,6x30mm
+- type: Tag
+  id: Magazine7,62x39mmAKCompatible
 
-  - type: Tag
-    id: Magazine4,6x30mmMP7Compatible
+- type: Tag
+  id: AmmoBelt7,62x39mm
 
-    #Deprecated
-  - type: Tag
-    id: Magazine4,6x30mmPistolFMJ
+- type: Tag
+  id: Magazine7,62x39mmRPDCompatible
 
-  #MARK:.45 ACP
+#MARK: 5,45x39mm
 
-  - type: Tag
-    id: Cartridge45Acp
+- type: Tag
+  id: Cartridge5,45x39mm
 
-  - type: Tag
-    id: Magazine45AcpM1911Compatible
+- type: Tag
+  id: Magazine5,45x39mmAKCompatible
 
-  - type: Tag
-    id: Magazine45AcpUMP45Compatible
+#MARK: 4,6x30mm
 
-  #MARK:.38 Special
+- type: Tag
+  id: Cartridge4,6x30mm
 
-  - type: Tag
-    id: Cartridge38Special
+- type: Tag
+  id: Magazine4,6x30mmMP7Compatible
 
-  - type: Tag
-    id: SpeedLoader38Special
+#MARK:.45 ACP
 
-  #MARK:.45 magnum
+- type: Tag
+  id: Cartridge45Acp
 
-  - type: Tag
-    id: Cartridge45Magnum
+- type: Tag
+  id: Magazine45AcpM1911Compatible
 
-  #MARK:9x19mm parabellum
+- type: Tag
+  id: Magazine45AcpUMP45Compatible
 
-  - type: Tag
-    id: Magazine9x19mmParabellumGlockCompatible
+#MARK:.38 Special
 
-  - type: Tag
-    id: Magazine9x19mmParabellumMP5Compatible
+- type: Tag
+  id: Cartridge38Special
 
-  - type: Tag
-    id: Magazine9x19mmParabellumPP19VityazCompatible
+- type: Tag
+  id: SpeedLoader38Special
 
-  - type: Tag
-    id: Cartridge9x19mmParabellum
+#MARK:.22 LR
 
-  #MARK: 5,7x28mm
+- type: Tag
+  id: Cartridge22LR
 
-  - type: Tag
-    id: Cartridge5,7x28mm
+- type: Tag
+  id: Magazine22LRRugerMK2Compatible
 
-  - type: Tag
-    id: Magazine5,7x28mmFN5,7Compatible
+#MARK:.45 magnum
 
-  #MARK: 12 gauge
+- type: Tag
+  id: Cartridge45Magnum
 
-  - type: Tag
-    id: ShellShotgun12Gauge
+#MARK:9x19mm parabellum
 
-  - type: Tag
-    id: Magazine12GaugeSaiga12Compatible
+- type: Tag
+  id: Magazine9x19mmParabellumGlockCompatible
 
-  #MARK: 4 gauge
+- type: Tag
+  id: Magazine9x19mmParabellumMP5Compatible
 
-  - type: Tag
-    id: ShellShotgun4Gauge
+- type: Tag
+  id: Magazine9x19mmParabellumPP19VityazCompatible
 
-  #MARK: 12,7x99mm
-  - type: Tag
-    id: Cartridge12,7x99mm
+- type: Tag
+  id: Cartridge9x19mmParabellum
 
-  #MARK: 14,5x114mm
+#MARK: 5,7x28mm
 
-  - type: Tag
-    id: Cartridge14,5x114mm
+- type: Tag
+  id: Cartridge5,7x28mm
 
-  #MARK: 6,35x40mm
-    #Deprecated-ish, unless implemented
-  - type: Tag
-    id: Cartridge6,35x40mmCaseless
+- type: Tag
+  id: Magazine5,7x28mmFN5,7Compatible
 
-  #MARK: 15x200mmRail
+#MARK: 12 gauge
 
-  - type: Tag
-    id: Cartridge15x200mmRail
+- type: Tag
+  id: ShellShotgun12Gauge
 
-  - type: Tag
-    id: Magazine15x200mmRailCompatible
+- type: Tag
+  id: Magazine12GaugeSaiga12Compatible
 
-  #MARK: 18x160mmSEP
+#MARK: 4 gauge
 
-  - type: Tag
-    id: Cartridge18x160mmSEP
+- type: Tag
+  id: ShellShotgun4Gauge
 
-  - type: Tag
-    id: Magazine18x160mmSEPCompatible
+#MARK: 12,7x99mm
+- type: Tag
+  id: Cartridge12,7x99mm
+
+- type: Tag
+  id: Magazine12,7x99mmBarrettCompatible
+
+#MARK: 14,5x114mm
+
+- type: Tag
+  id: Cartridge14,5x114mm
+
+#MARK: 6,35x40mm
+  #Deprecated-ish, unless implemented
+- type: Tag
+  id: Cartridge6,35x40mmCaseless
+
+#MARK: 15x200mmRail
+
+- type: Tag
+  id: Cartridge15x200mmRail
+
+- type: Tag
+  id: Magazine15x200mmRailCompatible
+
+#MARK: 18x160mmSEP
+
+- type: Tag
+  id: Cartridge18x160mmSEP
+
+- type: Tag
+  id: Magazine18x160mmSEPCompatible
