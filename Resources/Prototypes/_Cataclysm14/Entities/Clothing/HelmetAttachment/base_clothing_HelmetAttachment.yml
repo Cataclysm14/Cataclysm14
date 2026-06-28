@@ -1,20 +1,26 @@
-- type: entity
-  abstract: true
-  parent: Clothing
-  id: ClothingHelmetAttachmentBase
-  components:
-  - type: Item
-    storedScale: 3.5
-    shape:
-    - 0,0,1,0
-    size: Small
-  - type: Clothing
-    quickEquip: true
-    slots:
-    - HELMETATTACHMENT
-  - type: Sprite
-    scale: 0.3,0.3
-    state: icon
-  - type: StaticPrice
-    price: 200
-    vendPrice: 1000
+# - type: entity
+#   abstract: true
+#   parent: [Clothing, RecyclableItemClothSmall] # Frontier: added RecyclableItemClothSmall
+#   id: ClothingHelmetAttachmentBase
+#   components:
+#   - type: Item
+#     size: Small
+#   - type: Clothing
+#     quickEquip: true
+#     slots:
+#     - HELMETATTACHMENT
+#   - type: Sprite
+#     state: icon
+#   - type: StaticPrice
+#     price: 200
+#     vendPrice: 1000
+
+# #not that awful solution
+# - type: entity
+#   parent: ClothingHelmetAttachmentBase
+#   id: ClothingHeadHelmetAttachmentBlock
+#   name: Blocked
+#   description: Can't fit anything there
+#   components:
+#   - type: Sprite
+#     sprite: Markers/cross.rsi

@@ -4,7 +4,6 @@
   id: MobMonsterAbominationGaia
   name: Gaïa abomination
   description: A large tree with leaves and bra.. is it moving, and glowing? OH GOD!
-  suffix: Living Plant #Easy spawn faction
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -62,6 +61,3 @@
     tags:
     - DoorBumpOpener
     - FootstepSound
-  - type: NpcFactionMember
-    factions:
-      - NpcFactionLivingPlants

@@ -30,9 +30,6 @@
       shoes: !type:GroupSelector
         children:
         - id: ClothingShoesBootsSWATBlack
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
 
 #MARK: SWAT Officer
 - type: entity
@@ -83,6 +80,3 @@
       pocket4: !type:GroupSelector
         children:
         - id: Magazine5,56x45mmSTANAG30rdFMJ
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS

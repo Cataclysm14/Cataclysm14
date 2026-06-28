@@ -17,9 +17,6 @@
     templateId: InvTemplateZombieBase
   - type: EntityTableContainerFill
     containers:
-      eyes: !type:NestedSelector
-        tableId: LootTableClothingEyesCommonEyewear
-        prob: 0.40
       shoes: !type:NestedSelector
         tableId: LootTableClothingShoesCivilian
         prob: 0.99
@@ -32,10 +29,6 @@
       back: !type:NestedSelector
         tableId: LootTableClothingBagCivilian
         prob: 0.4
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
-        prob: 0.60
 
 #MARK: Construction Worker
 - type: entity
@@ -77,10 +70,6 @@
       jumpsuit: !type:NestedSelector
         tableId: LootTableClothingTopHighVis
         prob: 0.99
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
-        prob: 0.60
 
 #MARK: Gardener
 - type: entity
@@ -125,10 +114,6 @@
       jumpsuit: !type:NestedSelector
         tableId: LootTableClothingTopHighVis
         prob: 0.99
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
-        prob: 0.60
 
 #MARK: Cashier
 - type: entity
@@ -169,10 +154,6 @@
       jumpsuit: !type:NestedSelector
         tableId: LootTableClothingTopHighVis
         prob: 0.99
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
-        prob: 0.60
 
 #MARK: Butcher
 - type: entity
@@ -214,10 +195,6 @@
       jumpsuit: !type:NestedSelector
         tableId: LootTableClothingTopHighVis
         prob: 0.99
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
-        prob: 0.60
 
 #MARK: Physician
 - type: entity
@@ -258,10 +235,6 @@
       jumpsuit: !type:NestedSelector
         tableId: LootTableClothingTopHighVis
         prob: 0.99
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
-        prob: 0.60
 
 #MARK: Miner
 - type: entity
@@ -303,7 +276,3 @@
       jumpsuit: !type:NestedSelector
         tableId: LootTableClothingTopHighVis
         prob: 0.99
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
-        prob: 0.60

@@ -4,7 +4,6 @@
   id: MobMonsterMeatbagStabber
   name: stabber meatbag
   description: A fleshy hunk covered in eyes. This one has two sharp blade arms.
-  suffix: Living Meat #Easy spawn faction
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -43,6 +42,3 @@
         Heat: 20
         Piercing: 20
         Radiation: 10
-  - type: NpcFactionMember
-    factions:
-      - NpcFactionLivingMeat

@@ -15,7 +15,7 @@
   - type: EntityTableOutfitContainerFill
     containers:
       outerClothing: !type:NestedSelector
-        tableId: LootTableClothingNationalGuardBulletProofVests
+        tableId: LootTableClothingNationalGuardBulletProofVest
         prob: 0.95
       head: !type:GroupSelector
         children:
@@ -52,10 +52,6 @@
           weight: 2
         - id: ClothingBackpackAlicePackTan
         prob: 0.99
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
-        prob: 0.45
     outfits:
     - slots:
         pants: !type:GroupSelector

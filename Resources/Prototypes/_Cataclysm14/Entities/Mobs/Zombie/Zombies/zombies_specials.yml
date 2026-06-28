@@ -35,10 +35,6 @@
       back: !type:NestedSelector
         tableId: LootTableClothingBagCivilian
         prob: 0.4
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
-        prob: 0.60
 
 #MARK: Crawling >
 
@@ -65,19 +61,12 @@
     templateId: InvTemplateZombieBase
   - type: EntityTableContainerFill
     containers:
-      eyes: !type:NestedSelector
-        tableId: LootTableClothingEyesCommonEyewear
-        prob: 0.40
       jumpsuit: !type:NestedSelector
         tableId: LootTableClothingTopCivilian
         prob: 0.95
       back: !type:NestedSelector
         tableId: LootTableClothingBagCivilian
         prob: 0.4
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
-        prob: 0.60
 
 #MARK: Runner >
 
@@ -104,9 +93,6 @@
     templateId: InvTemplateZombieBase
   - type: EntityTableContainerFill
     containers:
-      eyes: !type:NestedSelector
-        tableId: LootTableClothingEyesCommonEyewear
-        prob: 0.40
       shoes: !type:NestedSelector
         tableId: LootTableClothingShoesCivilian
         prob: 0.99
@@ -119,10 +105,6 @@
       back: !type:NestedSelector
         tableId: LootTableClothingBagCivilian
         prob: 0.4
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
-        prob: 0.60
 
 #MARK: Sprinter >
 
@@ -149,9 +131,6 @@
     templateId: InvTemplateZombieBase
   - type: EntityTableContainerFill
     containers:
-      eyes: !type:NestedSelector
-        tableId: LootTableClothingEyesCommonEyewear
-        prob: 0.40
       shoes: !type:NestedSelector
         tableId: LootTableClothingShoesCivilian
         prob: 0.99
@@ -164,10 +143,6 @@
       back: !type:NestedSelector
         tableId: LootTableClothingBagCivilian
         prob: 0.4
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
-        prob: 0.60
 
 #MARK: Tesla >
 
@@ -194,9 +169,6 @@
     templateId: InvTemplateZombieBase
   - type: EntityTableContainerFill
     containers:
-      eyes: !type:NestedSelector
-        tableId: LootTableClothingEyesCommonEyewear
-        prob: 0.40
       shoes: !type:NestedSelector
         tableId: LootTableClothingShoesCivilian
         prob: 0.99
@@ -209,10 +181,6 @@
       back: !type:NestedSelector
         tableId: LootTableClothingBagCivilian
         prob: 0.4
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
-        prob: 0.60
 
 #MARK: Acid Spitter >
 
@@ -239,9 +207,6 @@
     templateId: InvTemplateZombieBase
   - type: EntityTableContainerFill
     containers:
-      eyes: !type:NestedSelector
-        tableId: LootTableClothingEyesCommonEyewear
-        prob: 0.40
       shoes: !type:NestedSelector
         tableId: LootTableClothingShoesCivilian
         prob: 0.99
@@ -254,10 +219,6 @@
       back: !type:NestedSelector
         tableId: LootTableClothingBagCivilian
         prob: 0.4
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
-        prob: 0.60
 
 #MARK: Normal >
 
@@ -305,123 +266,3 @@
       jumpsuit: !type:NestedSelector
         tableId: LootTableClothingTopHighVis
         prob: 0.99
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
-        prob: 0.20
-
-#MARK: Cleansuit
-- type: entity
-  parent: BaseMobZombieSimple
-  id: MobZombieCleansuit
-  suffix: Cleansuit
-  components:
-  - type: Inventory
-    templateId: InvTemplateZombieBase
-  - type: EntityTableOutfitContainerFill
-    containers:
-      suitstorage: !type:GroupSelector
-        children:
-        - !type:NestedSelector
-            tableId: LootTableToolsTanksExternalOxygenSupply
-            prob: 0.60
-        - !type:NestedSelector
-            tableId: LootTableToolsTanksOxygen
-            prob: 0.60
-            weight: 5
-      eyes: !type:GroupSelector
-        children:
-        - !type:NestedSelector
-          tableId: LootTableClothingEyesCommonEyewear
-        - id: ClothingEyesSafetyGogglesClear
-        prob: 0.80
-      # outerClothing: !type:NestedSelector
-      #   tableId: LootTableClothingUNPeacekeeperBulletProofVest
-      #   prob: 0.95
-      # head: !type:NestedSelector
-      #   tableId: LootTableClothingHatHardHat
-      #   prob: 0.95
-      # belt: !type:GroupSelector
-      #   children:
-      #   - id: ClothingBeltDutyBeltPoliceFilledPolice
-      #     weight: 2
-      #   - id: ClothingBeltDutyBeltPolice
-      #   prob: 0.9
-      gloves: !type:NestedSelector
-        tableId: LootTableClothingHandsGlovesClean
-        prob: 0.80
-      shoes: !type:GroupSelector
-        children:
-        - id: ClothingShoesBootsSWATBlack
-        prob: 0.99
-      pants: !type:NestedSelector
-        tableId: LootTableClothingBottomHighVis
-        prob: 0.99
-      balaclava: !type:NestedSelector
-        tableId: LootTableClothingTopCleansuit
-        prob: 0.99
-      mask: !type:NestedSelector
-        tableId: LootTableClothingMaskGasmasksIndustrial
-        prob: 0.80
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
-        prob: 0.60
-
-#MARK: Hazmat
-- type: entity
-  parent: BaseMobZombieSimple
-  id: MobZombieHazmat
-  suffix: Hazmat
-  components:
-  - type: Inventory
-    templateId: InvTemplateZombieBase
-  - type: EntityTableOutfitContainerFill
-    containers:
-      suitstorage: !type:GroupSelector
-        children:
-        - !type:NestedSelector
-            tableId: LootTableToolsTanksExternalOxygenSupply
-            prob: 0.90
-            weight: 2
-        - !type:NestedSelector
-            tableId: LootTableToolsTanksOxygen
-            prob: 0.90
-      eyes: !type:GroupSelector
-        children:
-        - !type:NestedSelector
-          tableId: LootTableClothingEyesCommonEyewear
-        - id: ClothingEyesSafetyGogglesClear
-        prob: 0.80
-      # outerClothing: !type:NestedSelector
-      #   tableId: LootTableClothingUNPeacekeeperBulletProofVest
-      #   prob: 0.95
-      # head: !type:NestedSelector
-      #   tableId: LootTableClothingHatHardHat
-      #   prob: 0.95
-      # belt: !type:GroupSelector
-      #   children:
-      #   - id: ClothingBeltDutyBeltPoliceFilledPolice
-      #     weight: 2
-      #   - id: ClothingBeltDutyBeltPolice
-      #   prob: 0.9
-      gloves: !type:NestedSelector
-        tableId: LootTableClothingHandsGlovesClean
-        prob: 0.80
-      shoes: !type:GroupSelector
-        children:
-        - id: ClothingShoesBootsSWATBlack
-        prob: 0.99
-      pants: !type:NestedSelector
-        tableId: LootTableClothingBottomHighVis
-        prob: 0.99
-      balaclava: !type:NestedSelector
-        tableId: LootTableClothingTopHazmat
-        prob: 0.99
-      mask: !type:NestedSelector
-        tableId: LootTableClothingMaskGasmasksIndustrial
-        prob: 0.80
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
-        prob: 0.60

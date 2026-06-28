@@ -270,8 +270,7 @@
         contents:
         - id: BallisticPlateFrontNESCO4400Level6
         - id: BallisticPlateFrontNESCO4400Level6
-
-#MARK: Interceptor OTV
+#MARK: -Interceptor OTV-
     - type: entity
       parent: [ClothingBallisticPlateFrontBack, BaseClothingOuterBulletProofVest]
       id: ClothingOuterBulletProofVestInterceptorOTV
@@ -324,7 +323,6 @@
         contents:
         - id: BallisticPlateFrontMonocletePELevel4
         - id: BallisticPlateFrontMonocletePELevel4
-
   #MARK: Interceptor OTV - Sierra
     - type: entity
       parent: ClothingOuterBulletProofVestInterceptorOTV
@@ -347,7 +345,6 @@
         contents:
         - id: BallisticPlateFrontMonocletePELevel4
         - id: BallisticPlateFrontMonocletePELevel4
-
 #MARK: Police US light
     - type: entity
       parent: BaseClothingOuterBulletProofVest
@@ -391,57 +388,3 @@
         sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_police_USA_small_high-vis.rsi
       - type: Clothing
         sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_police_USA_small_high-vis.rsi
-
-#MARK: IOTV Fast tan
-    - type: entity
-      parent: [ClothingBallisticPlateFrontBack, BaseClothingOuterBulletProofVest]
-      id: ClothingOuterBulletProofVestIOTVFastTan
-      name: IOTV fast armor vest (tan)
-      description: An above average armor vest out of quality materials. Can handle armor piercing pistol calibers. This one is in a fast configuration without any aditionnal armor.
-      components:
-      - type: Item
-        storedScale: 3
-        shape:
-        - 0,0,2,2
-      - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_fast_tan.rsi
-      - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_fast_tan.rsi
-      - type: Armor
-        modifiers:
-          coefficients:
-            Blunt: 0.95
-            Slash: 0.85
-            Piercing: 0.5
-            Heat: 0.85
-            Caustic: 0.9 # Frontier
-      - type: Tag  # Mono
-        tags:
-        - Kevlar
-      - type: StaminaDamageResistance # Mono - Stamres
-        coefficient: 0.8
-      - type: ExplosionResistance
-        damageCoefficient: 0.90
-      - type: StaticPrice
-        price: 6500
-        vendPrice: 9000
-      - type: Storage
-        whitelist:
-          tags:
-          - ESAPIFrontBallisticPlateLevel6
-          - ESBISideBallisticPlateLevel6
-          - NESCO4400FrontBallisticPlateLevel6
-          - AR500FrontBallisticPlateLevel3
-          - SSAPISideBallisticPlateLevel5
-          - CultLocustFrontBallisticPlateLevel5
-          - MonocletePEFrontBallisticPlateLevel4
-
-    - type: entity
-      parent: ClothingOuterBulletProofVestIOTVFastTan
-      id: ClothingOuterBulletProofVestIOTVFastTanFilled
-      suffix: Filled
-      components:
-      - type: StorageFill
-        contents:
-        - id: BallisticPlateFrontMonocletePELevel4
-        - id: BallisticPlateFrontMonocletePELevel4

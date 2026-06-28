@@ -7,9 +7,9 @@
       components:
       - type: Sprite
         scale: 0.65,0.65
-        sprite: _Cataclysm14/Clothing/Head/Hats/hat_beret_sierra.rsi
+        sprite: _Cataclysm14/Clothing/Head/hat_beret_sierra.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/Hats/hat_beret_sierra.rsi
+        sprite: _Cataclysm14/Clothing/Head/hat_beret_sierra.rsi
 
 #MARK: Sierra commandant beret
     - type: entity
@@ -20,6 +20,6 @@
       components:
       - type: Sprite
         scale: 0.65,0.65
-        sprite: _Cataclysm14/Clothing/Head/Hats/hat_beret_sierra_commandant.rsi
+        sprite: _Cataclysm14/Clothing/Head/hat_beret_sierra_commandant.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/Hats/hat_beret_sierra_commandant.rsi
+        sprite: _Cataclysm14/Clothing/Head/hat_beret_sierra_commandant.rsi

@@ -6,9 +6,9 @@
       description: A medium ballistic helmet made for the US army, the Advanced Combat Headgear ACH.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_ACH_OCP_multicam.rsi
+        sprite: _Cataclysm14/Clothing/Head/helmet_bulletproof_ACH_OCP_multicam.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_ACH_OCP_multicam.rsi
+        sprite: _Cataclysm14/Clothing/Head/helmet_bulletproof_ACH_OCP_multicam.rsi
       - type: ExplosionResistance
         damageCoefficient: 0.8
       - type: Armor

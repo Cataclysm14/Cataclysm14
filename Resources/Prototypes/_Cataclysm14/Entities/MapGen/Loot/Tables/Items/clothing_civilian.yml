@@ -188,10 +188,3 @@
     children:
     - id: ClothingHeadHelmetHardhatPlasticBase
     - id: ClothingHeadHelmetHardhatPlasticBlue
-
-#MARK: CommonEyewear
-- type: entityTable
-  id: LootTableClothingEyesCommonEyewear
-  table: !type:GroupSelector
-    children:
-    - id: ClothingEyesCorrectiveGlasses

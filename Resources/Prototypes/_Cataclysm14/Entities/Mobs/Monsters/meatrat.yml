@@ -3,16 +3,15 @@
   id: MobMonsterMeatrat
   parent: SimpleSpaceMobBase
   description: A small fleshy rat, and it's trying to bite yo..YEOUCH.
-  suffix: Living Meat #Easy spawn faction
   components:
-  - type: NpcFactionMember
-    factions:
-      - NpcFactionLivingMeat
   - type: InputMover
   - type: MobMover
   - type: HTN
     rootTask:
       task: SimpleHostileCompound
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
   - type: Sprite
     drawdepth: Mobs
     layers:

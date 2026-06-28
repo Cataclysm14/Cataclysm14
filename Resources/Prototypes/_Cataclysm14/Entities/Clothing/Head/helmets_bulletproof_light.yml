@@ -6,9 +6,9 @@
       description: A light ballistic helmet made by russia as counterpart to the Ops-core fast, made to protect against small pistol calibers.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_LShZ.rsi
+        sprite: _Cataclysm14/Clothing/Head/helmet_bulletproof_LShZ.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_LShZ.rsi
+        sprite: _Cataclysm14/Clothing/Head/helmet_bulletproof_LShZ.rsi
       - type: ExplosionResistance
         damageCoefficient: 0.8
       - type: Armor
@@ -34,9 +34,9 @@
       description: A light ballistic helmet made for the US army.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_black.rsi
+        sprite: _Cataclysm14/Clothing/Head/helmet_bulletproof_M88_black.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_black.rsi
+        sprite: _Cataclysm14/Clothing/Head/helmet_bulletproof_M88_black.rsi
       - type: ExplosionResistance
         damageCoefficient: 0.8
       - type: Armor
@@ -62,9 +62,9 @@
       description: A light ballistic helmet made for the US army and the United nations blue helmet peacekeepers.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_UN.rsi
+        sprite: _Cataclysm14/Clothing/Head/helmet_bulletproof_M88_UN.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_UN.rsi
+        sprite: _Cataclysm14/Clothing/Head/helmet_bulletproof_M88_UN.rsi
 
     - type: entity
       parent: ClothingHeadHelmetBulletproofM88Black
@@ -72,9 +72,9 @@
       name: M88 ballistic helmet (SWAT)
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_SWAT.rsi
+        sprite: _Cataclysm14/Clothing/Head/helmet_bulletproof_M88_SWAT.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_SWAT.rsi
+        sprite: _Cataclysm14/Clothing/Head/helmet_bulletproof_M88_SWAT.rsi
 
     - type: entity
       parent: ClothingHeadHelmetBulletproofM88Black
@@ -82,6 +82,6 @@
       name: M88 ballistic helmet (Olive)
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_olive.rsi
+        sprite: _Cataclysm14/Clothing/Head/helmet_bulletproof_M88_olive.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_olive.rsi
+        sprite: _Cataclysm14/Clothing/Head/helmet_bulletproof_M88_olive.rsi

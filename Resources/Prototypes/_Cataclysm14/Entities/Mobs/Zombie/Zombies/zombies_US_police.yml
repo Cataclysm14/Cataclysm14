@@ -49,10 +49,6 @@
         - id: ClothingShoesBootsSWATBlack
         - id: ClothingShoesSneakersBlack
         prob: 0.99
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
-        prob: 0.45
 
 #MARK: SWAT officer
 - type: entity
@@ -107,7 +103,3 @@
         children:
         - id: ClothingShirtPoliceCopUS
         prob: 0.99
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
-        prob: 0.45

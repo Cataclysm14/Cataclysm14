@@ -4,7 +4,6 @@
   id: MobMonsterMeatbagSpider
   name: spider meatbag
   description: A fleshy hunk covered in eyes. This one has multiple sharp blade arms it uses as legs, ressembles a spider.
-  suffix: Living Meat #Easy spawn faction
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -43,6 +42,3 @@
         Heat: 20
         Piercing: 20
         Radiation: 10
-  - type: NpcFactionMember
-    factions:
-      - NpcFactionLivingMeat

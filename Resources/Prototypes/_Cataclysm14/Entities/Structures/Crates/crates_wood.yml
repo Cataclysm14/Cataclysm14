@@ -1,4 +1,4 @@
-#MARK: Small Wood
+#MARK: wood
 - type: entity
   parent: StructureCrateBase
   id: StructureCrateWoodSmall
@@ -27,7 +27,6 @@
         layer:
         - WallLayer
 
-#MARK: Medium Wood
 - type: entity
   parent: StructureCrateBase
   id: StructureCrateWoodMedium
@@ -56,7 +55,6 @@
         layer:
         - WallLayer
 
-#MARK: Large Wood
 - type: entity
   parent: StructureCrateBase
   id: StructureCrateWoodLarge
@@ -87,7 +85,6 @@
         layer:
         - WallLayer
 
-#MARK: Shipping Wood
 - type: entity
   parent: StructureCrateBase
   id: StructureCrateShippingWood

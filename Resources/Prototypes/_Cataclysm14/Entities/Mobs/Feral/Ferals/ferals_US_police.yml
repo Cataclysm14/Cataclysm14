@@ -47,10 +47,6 @@
         - id: ClothingShoesBootsSWATBlack
         - id: ClothingShoesSneakersBlack
         prob: 0.99
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
-        prob: 0.45
 
   - type: RechargeBasicEntityAmmo
     rechargeCooldown: 0.1
@@ -140,10 +136,6 @@
         children:
         - id: ClothingShirtPoliceCopUS
         prob: 0.99
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationIDCardUS
-        prob: 0.45
 
   - type: RechargeBasicEntityAmmo
     rechargeCooldown: 0.1

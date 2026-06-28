@@ -1,6 +1,5 @@
 #made by kyres/noodle_buster for Encore
 
-#MARK: Stop Sign
 - type: entity
   id: TrafficSign
   name: stop traffic sign
@@ -13,7 +12,6 @@
     state: stop
     drawdepth: Overdoors
 
-#MARK: Yield Sign
 - type: entity
   id: YieldSign
   name: yield traffic sign
@@ -24,7 +22,6 @@
   - type: Sprite
     state: yield
 
-#MARK: Pedestrian Sign
 - type: entity
   id: PedestrianSign
   name: pedestrian traffic sign
@@ -35,7 +32,6 @@
   - type: Sprite
     state: pedestrian
 
-#MARK: One way Sign
 - type: entity
   id: OneWaySign
   name: one way traffic sign
@@ -46,7 +42,6 @@
   - type: Sprite
     state: one_way
 
-#MARK: Left Turn Sign
 - type: entity
   id: TurnLeftSign
   name: left turn traffic sign
@@ -57,7 +52,6 @@
   - type: Sprite
     state: turn_left
 
-#MARK: Right Turn Sign
 - type: entity
   id: TurnRightSign
   name: right turn traffic sign
@@ -68,7 +62,6 @@
   - type: Sprite
     state: turn_right
 
-#MARK: Street Signs >
 - type: entity
   id: LabelSign
   name: street label traffic sign #This gets described and renamed in mapping according to street name

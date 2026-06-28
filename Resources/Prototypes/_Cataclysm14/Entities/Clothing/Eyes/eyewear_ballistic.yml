@@ -139,3 +139,24 @@
         coverage: EYES
       - type: EyeProtection
         protectionTime: 5
+#MARK: Safety eyeear
+  #MARK: Safety clear
+    - type: entity
+      parent: ClothingEyesBase
+      id: ClothingEyesSafetyGogglesClear
+      name: clear safety goggles
+      description: A pair of safety goggles with clear lenses.
+      components:
+      - type: StaticPrice
+        price: 5000
+        vendPrice: 7000
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Eyes/eyes_safety_goggles_clear.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Eyes/eyes_safety_goggles_clear.rsi
+      - type: Armor
+        modifiers:
+          coefficients:
+            Heat: 0.95
+      - type: GroupExamine
+      - type: EyeProtection

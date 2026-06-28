@@ -4,7 +4,6 @@
   id: MobMonsterBushling
   name: bushling
   description: A small bush with leaves and bra.. is it moving?
-  suffix: Living Plant #Easy spawn faction
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -44,6 +43,3 @@
         Heat: 20
         Piercing: 20
         Radiation: 10
-  - type: NpcFactionMember
-    factions:
-      - NpcFactionLivingPlants

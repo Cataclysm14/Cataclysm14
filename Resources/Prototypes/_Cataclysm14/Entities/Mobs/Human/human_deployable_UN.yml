@@ -23,9 +23,6 @@
       shoes: !type:GroupSelector
         children:
         - id: ClothingShoesBootsSWATBlack
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationPassportUN
     outfits:
     - slots:
         pants: !type:GroupSelector
@@ -68,9 +65,6 @@
       shoes: !type:GroupSelector
         children:
         - id: ClothingShoesBootsSWATBlack
-      id: !type:GroupSelector
-        children:
-        - id: AccessIdentificationPassportUN
     outfits:
     - slots:
         pants: !type:GroupSelector

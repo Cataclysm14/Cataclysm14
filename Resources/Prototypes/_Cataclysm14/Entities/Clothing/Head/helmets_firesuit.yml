@@ -7,9 +7,9 @@
       description: A firesuit hood and helmet for firefighters. Provides some heat resistance and looks cool.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_firesuit_firefighter_brown.rsi
+        sprite: _Cataclysm14/Clothing/Head/helmet_firesuit_firefighter_brown.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_firesuit_firefighter_brown.rsi
+        sprite: _Cataclysm14/Clothing/Head/helmet_firesuit_firefighter_brown.rsi
         quickEquip: true
       - type: IngestionBlocker
       - type: TemperatureProtection

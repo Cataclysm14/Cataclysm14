@@ -281,21 +281,20 @@
       - type: StaticPrice
         price: 6500
         vendPrice: 9000
-
-#MARK: IOTV Medium tan
+#MARK: -IOTV- US forces tan
     - type: entity
       parent: [ClothingBallisticPlateFrontBackSides, BaseClothingOuterBulletProofVest]
-      id: ClothingOuterBulletProofVestIOTVMediumTan
+      id: ClothingOuterBulletProofVestIOTVTan
       suffix: Empty
-      name: IOTV medium armor vest (tan)
-      description: An high quality vest part of the IOTV modular kit. Can handle weak fully powered rounds. This one is in a medium configuration without shoulder armor.
+      name: IOTV armor vest (tan)
+      description: An high quality vest part of the IOTV modular kit. Can handle weak fully powered rounds.
       components:
       - type: Item
         storedScale: 2.8
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_medium_tan.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_tan.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_medium_tan.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_tan.rsi
       - type: Armor
         modifiers:
           coefficients:
@@ -326,8 +325,8 @@
           - MonocletePEFrontBallisticPlateLevel4
 
     - type: entity
-      parent: ClothingOuterBulletProofVestIOTVMediumTan
-      id: ClothingOuterBulletProofVestIOTVMediumTanFilled
+      parent: ClothingOuterBulletProofVestIOTVTan
+      id: ClothingOuterBulletProofVestIOTVTanFilled
       suffix: Filled
       components:
       - type: StorageFill
@@ -337,21 +336,21 @@
         - id: BallisticPlateFrontESAPILevel6
         - id: BallisticPlateSidesESBILevel6
 
-  #MARK: IOTV Medium green
+  #MARK: IOTV - OCP multicam
     - type: entity
-      parent: ClothingOuterBulletProofVestIOTVMediumTan
-      id: ClothingOuterBulletProofVestIOTVMediumGreen
+      parent: ClothingOuterBulletProofVestIOTVTan
+      id: ClothingOuterBulletProofVestIOTVOCPMulticam
       suffix: Empty
-      name: IOTV medium armor vest (green)
+      name: IOTV armor vest (OCP Multicam)
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_medium_green.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_OCP_multicam.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_medium_green.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_OCP_multicam.rsi
 
     - type: entity
-      parent: ClothingOuterBulletProofVestIOTVMediumGreen
-      id: ClothingOuterBulletProofVestIOTVMediumGreenFilled
+      parent: ClothingOuterBulletProofVestIOTVOCPMulticam
+      id: ClothingOuterBulletProofVestIOTVOCPMulticamFilled
       suffix: Filled
       components:
       - type: StorageFill
@@ -360,22 +359,45 @@
         - id: BallisticPlateFrontESAPILevel6
         - id: BallisticPlateFrontESAPILevel6
         - id: BallisticPlateSidesESBILevel6
-
-  #MARK: IOTV Medium black
+  #MARK: IOTV - National Guard
     - type: entity
-      parent: ClothingOuterBulletProofVestIOTVMediumTan
-      id: ClothingOuterBulletProofVestIOTVMediumBlack
+      parent: ClothingOuterBulletProofVestIOTVTan
+      id: ClothingOuterBulletProofVestIOTVNationalGuard
       suffix: Empty
-      name: IOTV medium armor vest (black)
+      name: IOTV armor vest (US National guard)
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_medium_black.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_US_national_guard.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_medium_black.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_US_national_guard.rsi
 
     - type: entity
-      parent: ClothingOuterBulletProofVestIOTVMediumBlack
-      id: ClothingOuterBulletProofVestIOTVMediumBlackFilled
+      parent: ClothingOuterBulletProofVestIOTVNationalGuard
+      id: ClothingOuterBulletProofVestIOTVNationalGuardFilled
+      suffix: Filled
+      components:
+      - type: StorageFill
+        contents:
+        - id: BallisticPlateSidesESBILevel6
+        - id: BallisticPlateFrontESAPILevel6
+        - id: BallisticPlateFrontESAPILevel6
+        - id: BallisticPlateSidesESBILevel6
+  #MARK: IOTV - Sierra
+    - type: entity
+      parent: ClothingOuterBulletProofVestIOTVTan
+      id: ClothingOuterBulletProofVestIOTVSierra
+      suffix: Empty
+      name: IOTV armor vest (sierra)
+      description: An high quality vest part of the IOTV modular kit. Can handle weak fully powered rounds. Donnes the color of the Superstructure Taskforce Sierra.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_sierra.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_sierra.rsi
+
+    - type: entity
+      parent: ClothingOuterBulletProofVestIOTVSierra
+      id: ClothingOuterBulletProofVestIOTVSierraFilled
       suffix: Filled
       components:
       - type: StorageFill

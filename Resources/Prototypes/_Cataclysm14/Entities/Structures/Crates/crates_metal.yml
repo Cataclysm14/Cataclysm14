@@ -1,4 +1,4 @@
-#MARK: Small Rusted Metal
+#MARK: metal rusted
 - type: entity
   parent: StructureCrateBase
   id: StructureCrateMetalRustedSmall
@@ -27,7 +27,6 @@
         layer:
         - WallLayer
 
-#MARK: Medium Rusted Metal
 - type: entity
   parent: StructureCrateBase
   id: StructureCrateMetalRustedMedium
@@ -58,7 +57,6 @@
         layer:
         - WallLayer
 
-#MARK: Large Rusted Metal
 - type: entity
   parent: StructureCrateBase
   id: StructureCrateMetalRustedLarge
@@ -87,7 +85,6 @@
         layer:
         - WallLayer
 
-#MARK: Reinforced Military shipping crate
 - type: entity
   parent: StructureCrateBase
   id: StructureCrateShippingMetalMilitary

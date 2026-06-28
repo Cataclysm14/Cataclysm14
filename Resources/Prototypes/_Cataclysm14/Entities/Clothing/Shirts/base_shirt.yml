@@ -1,4 +1,3 @@
-#MARK: Base
 - type: entity
   abstract: true
   parent: UnsensoredClothingUniformBase
@@ -10,7 +9,7 @@
     size: Normal
     storedScale: 2.3
 
-#MARK: Cargo
+#Version with large pockets
 - type: entity
   abstract: true
   parent: [BaseClothingShirt, NFClothingBeltStorageBase, RecyclableItemClothBasic]
@@ -21,7 +20,7 @@
     grid:
     - 0,0,3,1
 
-#MARK: Pocket
+#Version with small pockets
 - type: entity
   abstract: true
   parent: [BaseClothingShirt, NFClothingBeltStorageBase, RecyclableItemClothBasic]
@@ -31,23 +30,3 @@
     maxItemSize: Normal
     grid:
     - 0,0,1,1
-
-#MARK: Toggleable
-- type: entity
-  abstract: true
-  parent: BaseClothingShirt
-  id: BaseClothingShirtToggleable
-  components:
-  - type: ToggleableClothing
-    requiredSlot: INNERCLOTHING
-  - type: ContainerContainer
-    containers:
-      toggleable-clothing: !type:Container {}
-      storagebase: !type:Container
-        ents: []
-  - type: UserInterface
-    interfaces:
-      enum.StorageUiKey.Key:
-        type: StorageBoundUserInterface
-      enum.ToggleClothingUiKey.Key:
-        type: ToggleableClothingBoundUserInterface

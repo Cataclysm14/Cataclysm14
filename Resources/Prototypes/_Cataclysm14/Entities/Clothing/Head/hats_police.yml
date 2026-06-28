@@ -7,9 +7,9 @@
       components:
       - type: Sprite
         scale: 0.65,0.65
-        sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_police_RU.rsi
+        sprite: _Cataclysm14/Clothing/Head/hat_cap_police_RU.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_police_RU.rsi
+        sprite: _Cataclysm14/Clothing/Head/hat_cap_police_RU.rsi
 
 #MARK: US cop cap
     - type: entity
@@ -20,9 +20,9 @@
       components:
       - type: Sprite
         scale: 0.65,0.65
-        sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_police_US.rsi
+        sprite: _Cataclysm14/Clothing/Head/hat_cap_police_US.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_police_US.rsi
+        sprite: _Cataclysm14/Clothing/Head/hat_cap_police_US.rsi
 
 #MARK: French cop beret
     - type: entity
@@ -33,6 +33,6 @@
       components:
       - type: Sprite
         scale: 0.65,0.65
-        sprite: _Cataclysm14/Clothing/Head/Hats/hat_beret_police_FR.rsi
+        sprite: _Cataclysm14/Clothing/Head/hat_beret_police_FR.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/Hats/hat_beret_police_FR.rsi
+        sprite: _Cataclysm14/Clothing/Head/hat_beret_police_FR.rsi

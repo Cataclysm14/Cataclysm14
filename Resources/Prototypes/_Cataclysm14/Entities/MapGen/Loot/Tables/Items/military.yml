@@ -77,7 +77,7 @@
           range: 0,2
       - !type:NestedSelector
         weight: 100
-        tableId: LootTableClothingNationalGuardBulletProofVests
+        tableId: LootTableClothingNationalGuardBulletProofVest
         rolls: !type:RangeNumberSelector
           range: 0,4
       - !type:NestedSelector
