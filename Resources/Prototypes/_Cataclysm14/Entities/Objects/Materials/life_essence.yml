@@ -56,6 +56,12 @@
     interfaces:
       enum.StackCustomSplitUiKey.Key:
         type: StackCustomSplitBoundUserInterface
+  - type: PointLight
+    enabled: true
+    color: "#FAF881"
+    radius: 1.10
+    energy: 125.0
+    offset: 0.015,0
 
 - type: entity
   parent: MaterialObjectLifeEssence
