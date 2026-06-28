@@ -105,7 +105,7 @@
       color: "#131313"
     - sprite: _Cataclysm14/Clothing/Shirt/shirt_digital_black.rsi
       state: equipped-INNERCLOTHING
-    - sprite: _Cataclysm14/Clothing/Pants/Pants_digital_black.rsi
+    - sprite: _Cataclysm14/Clothing/Pants/pants_digital_black.rsi
       state: equipped-PANTS
       offset: 0,0.08
     - sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_black.rsi
