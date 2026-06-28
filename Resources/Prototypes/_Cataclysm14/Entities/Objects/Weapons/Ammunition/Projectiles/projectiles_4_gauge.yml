@@ -40,7 +40,7 @@
 - type: entity
   id: Pellet4GaugeBuckshotSpread
   categories: [ HideSpawnMenu ]
-  parent: Pellet4Gauge
+  parent: Pellet4GaugeBuckshot
   components:
   - type: ProjectileSpread
     proto: Pellet4GaugeBuckshot
