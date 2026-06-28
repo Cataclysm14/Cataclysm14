@@ -1,0 +1,137 @@
+#MARK: Base
+- type: entity
+  id: BaseMagazine7,62x25mmT
+  name: "magazine (7,62x25mm Tokarev FMJ)"
+  parent: [ BaseItem, RecyclableItemSteelTiny ]
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Magazine7,62x25mmTFMJ
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge7,62x25mmT
+    proto: Cartridge7,62x25mmTFMJ
+    capacity: 20
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    scale: 0.40,0.40
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/7,62x25mmT/7,62x25mmT_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+#MARK: TT-33 8rd
+- type: entity
+  id: BaseMagazine7,62x25mmT_TT33_8rd
+  abstract: true
+  name: "TT-33 magazine (7,62x25mm Tokarev)"
+  parent: BaseMagazine7,62x25mmT
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 8
+  - type: Item
+    storedScale: 4
+    shape:
+    - 0,0,1,1
+  - type: Tag
+    tags:
+      - Magazine7,62x25mmT_TT33Compatible
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/7,62x25mmT/magazine_7,62x25mmT_TT-33_8rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: Magazine7,62x25mmT_TT33_8rdEmpty
+  suffix: Empty
+  parent: BaseMagazine7,62x25mmT_TT33_8rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: FMJ
+- type: entity
+  id: Magazine7,62x25mmT_TT33_8rdFMJ
+  suffix: FMJ
+  parent: BaseMagazine7,62x25mmT_TT33_8rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge7,62x25mmTFMJ
+
+#MARK: PT gzh
+- type: entity
+  id: Magazine7,62x25mmT_TT33_8rdPtGzh
+  suffix: Tracer Green
+  parent: BaseMagazine7,62x25mmT_TT33_8rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge7,62x25mmTPtGzh
+
+
+#MARK: PP19 Vityaz 35rd
+- type: entity
+  id: BaseMagazine7,62x25mmTPPSh41_35rd
+  abstract: true
+  name: "PPsh-41 35rd magazine (7,62x25mm Tokarev)"
+  parent: BaseMagazine7,62x25mmT
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge7,62x25mmTFMJ
+    capacity: 30
+  - type: Tag
+    tags:
+      - Magazine7,62x25mmTPPSh41Compatible
+  - type: Sprite
+    scale: 0.25,0.25
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/7,62x25mmT/magazine_7,62x25mmT_PPSh41_35rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: Magazine7,62x25mmTPPSh41_35rdEmpty
+  suffix: Empty
+  parent: BaseMagazine7,62x25mmTPPSh41_35rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: FMJ
+- type: entity
+  id: Magazine7,62x25mmTPPSh41_35rdFMJ
+  suffix: FMJ
+  parent: BaseMagazine7,62x25mmTPPSh41_35rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge7,62x25mmTFMJ
+
+#MARK: PT gzh
+- type: entity
+  id: Magazine7,62x25mmTPPSh41_35rdPtGzh
+  suffix: Tracer Green
+  parent: BaseMagazine7,62x25mmTPPSh41_35rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge7,62x25mmTPtGzh
+

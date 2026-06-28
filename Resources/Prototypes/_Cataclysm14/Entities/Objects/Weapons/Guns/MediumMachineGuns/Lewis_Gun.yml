@@ -1,13 +1,13 @@
 - type: entity
-  id: WeaponSubMachineGunUMP45Base
-  name: HK UMP45 (.45 ACP)
-  description: A compact SMG that pack quite a punch, the Heckler and Koch Universal MachinePistol .45 Caliber, ordered by the US forces as replacement for the MP5 it ended up not being chosen. Chambered in .45 ACP.
+  id: WeaponMediumMachineGunLewisGunBase
+  name: Lewis Gun (.303 British)
+  description: An old WW1 era machine gun, the Lewis Automatic MG/Rifle featuring a low rate of fire with a big punch to lay suppressive fire. Chambered in .303 British.
   parent: BaseWeaponRifle
   abstract: true
   components:
     - type: Sprite
-      scale: 0.50, 0.50
-      sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/UMP45_64x32.rsi
+      scale: 0.55, 0.55
+      sprite: _Cataclysm14/Objects/Weapons/Guns/MediumMachineGuns/Lewis_Gun_64x32.rsi
       layers:
         - state: base
           map:
@@ -16,10 +16,10 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Item
-      size: Normal
-      sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/UMP45_32x32.rsi
+      size: Large
+      sprite: _Cataclysm14/Objects/Weapons/Guns/MediumMachineGuns/Lewis_Gun_32x32.rsi
       shape:
-        - 0,0,3,1
+        - 0,0,5,1
       storedScale: 2
     - type: Clothing
       clothingVisuals:
@@ -27,7 +27,7 @@
           - state: equipped-SUITSTORAGE
         slingfront:
           - state: equipped-SUITSTORAGE
-      sprite: _Cataclysm14/Objects/Weapons/Guns/SubMachineGuns/UMP45_32x32.rsi
+      sprite: _Cataclysm14/Objects/Weapons/Guns/MediumMachineGuns/Lewis_Gun_32x32.rsi
     - type: GunWieldBonus
       minAngle: -20
       maxAngle: -30
@@ -35,14 +35,15 @@
       soundGunshot:
         path: /Audio/_Cataclysm14/Weapons/Guns/Gunshots/cata_LMG_1.ogg
         params:
-          pitch: 0.9
+          pitch: 1.5
           volume: 15
-          variation: 0.15
+          variation: 0.1
+          playOffsetSeconds: 0.05
       angleIncrease: 5
       angleDecay: 20
       maxAngle: 70
       minAngle: 21
-      fireRate: 9
+      fireRate: 4.5
     - type: ChamberMagazineAmmoProvider
       soundBoltClosed:
         path: /Audio/_Cataclysm14/Weapons/Guns/Bolt/cata_bolt_heavy_1_closing.ogg
@@ -60,7 +61,7 @@
           priority: 2
           whitelist:
             tags:
-              - Magazine45AcpUMP45Compatible
+              - Magazine303BritishLewisGunCompatible
           whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:
           name: Chamber
@@ -68,7 +69,7 @@
           priority: 1
           whitelist:
             tags:
-              - Cartridge45Acp
+              - Cartridge303British
           whitelistFailPopup: gun-magazine-whitelist-fail
     - type: ContainerContainer
       containers:
@@ -84,23 +85,23 @@
         sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
         state: all
 
-#MARK: 30rd Empty
+#MARK: 47rd Empty
 - type: entity
-  id: WeaponSubMachineGunUMP45Filled30rdEmpty
-  suffix: Empty - 30rd
-  parent: WeaponSubMachineGunUMP45Base
+  id: WeaponMediumMachineGunLewisGunFilled47rdEmpty
+  suffix: Empty - 47rd
+  parent: WeaponMediumMachineGunLewisGunBase
   components:
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
-          startingItem: Magazine45AcpUMP45_30rdEmpty
+          startingItem: Magazine303BritishLewisGun47rdEmpty
           insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
           ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
           priority: 2
           whitelist:
             tags:
-              - Magazine45AcpUMP45Compatible
+              - Magazine303BritishLewisGunCompatible
           whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:
           name: Chamber
@@ -108,26 +109,26 @@
           priority: 1
           whitelist:
             tags:
-              - Cartridge45Acp
+              - Cartridge303British
           whitelistFailPopup: gun-magazine-whitelist-fail
 
-#MARK: 30rd FMJ
+#MARK: 47rd FMJ
 - type: entity
-  id: WeaponSubMachineGunUMP45Filled30rdFMJ
-  suffix: FMJ - 30rd
-  parent: WeaponSubMachineGunUMP45Base
+  id: WeaponMediumMachineGunLewisGunFilled47rdFMJ
+  suffix: FMJ - 47rd
+  parent: WeaponMediumMachineGunLewisGunBase
   components:
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
-          startingItem: Magazine45AcpUMP45_30rdFMJ
+          startingItem: Magazine303BritishLewisGun47rdFMJ
           insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
           ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
           priority: 2
           whitelist:
             tags:
-              - Magazine45AcpUMP45Compatible
+              - Magazine303BritishLewisGunCompatible
           whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:
           name: Chamber
@@ -135,5 +136,32 @@
           priority: 1
           whitelist:
             tags:
-              - Cartridge45Acp
+              - Cartridge303British
+          whitelistFailPopup: gun-magazine-whitelist-fail
+
+#MARK: 47rd Red Tracer
+- type: entity
+  id: WeaponMediumMachineGunLewisGunFilled47rdTracerRed
+  suffix: Tracer Red - 47rd
+  parent: WeaponMediumMachineGunLewisGunBase
+  components:
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: Magazine303BritishLewisGun47rdTracerRed
+          insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+          ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine303BritishLewisGunCompatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: null
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge303British
           whitelistFailPopup: gun-magazine-whitelist-fail

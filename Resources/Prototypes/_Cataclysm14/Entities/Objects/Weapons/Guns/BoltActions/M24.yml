@@ -1,19 +1,19 @@
 #MARK: Base
 - type: entity
-  name: Remington M700 (7,62x51mm NATO)
+  name: Remington M24 (7,62x51mm NATO)
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseGunMelee]
-  id: WeaponBoltActionRifleRemingtonM700Base
+  id: WeaponBoltActionRifleM24Base
   suffix: Empty
-  description: A weapon for hunting. Uses 7,62x51mm NATO ammo.
+  description: A weapon for precision shooting, or hunting charlies in the jungle. Uses 7,62x51mm NATO ammo.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/Remington-M700_64x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/M24_64x32.rsi
     scale: 0.55, 0.55
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
   - type: Item
-    sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/Remington-M700_32x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/M24_32x32.rsi
     size: Large
     shape:
     - 0,0,6,1
@@ -22,7 +22,7 @@
     slots:
     - slingfront
     - suitstorage
-    sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/Remington-M700_32x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/M24_32x32.rsi
     clothingVisuals:
       slingfront:
       - state: equipped-SLINGFRONT
@@ -35,6 +35,7 @@
   - type: AltFireMelee
     attackType: Light
   - type: BallisticAmmoProvider
+    autoCycle: false
     whitelist:
       tags:
       - Cartridge7,62x51mm
@@ -47,8 +48,8 @@
 
 #MARK: .308 Winchester
 - type: entity
-  parent: WeaponBoltActionRifleRemingtonM700Base
-  id: WeaponBoltActionRifleRemingtonM700Filled308Winchester
+  parent: WeaponBoltActionRifleM24Base
+  id: WeaponBoltActionRifleM24Filled308Winchester
   suffix: .308 Winchester
   components:
   - type: BallisticAmmoProvider

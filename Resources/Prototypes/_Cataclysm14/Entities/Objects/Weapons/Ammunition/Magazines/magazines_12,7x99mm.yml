@@ -1,0 +1,83 @@
+#MARK: Base
+- type: entity
+  id: BaseMagazine12,7x99mm
+  name: "magazine (12,7x99mm)"
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Magazine12,7x99mm
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge12,7x99mm
+    proto: Cartridge12,7x99mm
+    capacity: 10
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/12,7x99mm/12,7x99mm_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+#MARK: Barrett 5rd
+- type: entity
+  id: BaseMagazine12,7x99mmBarrett5rd
+  abstract: true
+  name: "Barrett 5rd magazine (12,7x99mm NATO)"
+  parent: BaseMagazine12,7x99mm
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 5
+  - type: Item
+    storedScale: 2.5
+  - type: Tag
+    tags:
+      - Magazine12,7x99mmBarrettCompatible
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/12,7x99mm/magazine_12,7x99mm_barrett_5rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: Magazine12,7x99mmBarrett5rdEmpty
+  suffix: Empty
+  parent: BaseMagazine12,7x99mmBarrett5rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: FMJ
+- type: entity
+  id: Magazine12,7x99mmBarrett5rdFMJ
+  suffix: FMJ
+  parent: BaseMagazine12,7x99mmBarrett5rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge12,7x99mmFMJ
+
+#MARK: HE
+- type: entity
+  id: Magazine12,7x99mmBarrett5rdHE
+  suffix: Tracer Yellow
+  parent: BaseMagazine12,7x99mmBarrett5rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge12,7x99mmHE

@@ -2,7 +2,7 @@
 - type: entity
   id: Bullet7,62x39mmFMJ
   name: bullet (7,62x39mm FMJ)
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -15,7 +15,7 @@
 - type: entity
   id: Bullet7,62x39mmRubber
   name: bullet (7,62x39mm rubber)
-  parent: BaseBulletRubber
+  parent: BaseProjectileBulletRubber
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -26,7 +26,7 @@
 #MARK: Incendiary
 - type: entity
   id: Bullet7,62x39mmIncendiary
-  parent: BaseBulletIncendiary
+  parent: BaseProjectileBulletIncendiary
   name: bullet (7,62x39mm incendiary)
   categories: [ HideSpawnMenu ]
   components:
@@ -39,7 +39,7 @@
 #MARK: Depleted Uranium
 - type: entity
   id: Bullet7,62x39mmDepletedUranium
-  parent: BaseBulletUranium
+  parent: BaseProjectileBulletDepletedUranium
   name: bullet (7,62x39mm depleted uranium)
   categories: [ HideSpawnMenu ]
   components:
@@ -52,7 +52,7 @@
 #MARK: HP
 - type: entity
   id: Bullet7,62x39mmHP
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   name: bullet (7,62x39mm hollow-point)
   categories: [ HideSpawnMenu ]
   components:
@@ -66,7 +66,7 @@
 #MARK: RIP
 - type: entity
   id: Bullet7,62x39mmRIP
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   name: bullet (7,62x39mm RIP)
   categories: [ HideSpawnMenu ]
   components:
@@ -76,43 +76,3 @@
         Slash: 8
         Piercing: 42
     armorPenetration: -0.95
-
-#MARK: Deprecated >
-
-#armor-piercing:
-
-- type: entity
-  id: Bullet7,62x39mmPlasteelAP
-  parent: BaseBullet
-  name: bullet (7,62x39mm AP)
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Piercing: 15
-        Structural: 50
-    armorPenetration: 0.6
-
-- type: entity
-  id: Bullet7,62x39mmPractice
-  name: bullet (7,62x39mm practice)
-  parent: BaseBulletPractice
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Blunt: 2
-
-- type: entity
-  id: Bullet7,62x39mmSubsonic
-  name: bullet (7,62x39mm subsonic)
-  parent: BaseBullet
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Piercing: 23
-    armorPenetration: 0.05

@@ -3,7 +3,7 @@
   id: BaseCartridge9x19mmParabellum
   name: cartridge (9x19mm parabellum FMJ)
   parent: BaseCartridge
-  description: Generic pistol round. Easy to handle, with a decent effect on unarmored flesh.
+  description: Generic pistol round. Easy to handle, with a decent effect on unarmored flesh, based on the 9x19mm Luger and Parabellum.
   abstract: true
   components:
   - type: Tag

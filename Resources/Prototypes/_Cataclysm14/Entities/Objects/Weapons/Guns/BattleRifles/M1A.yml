@@ -1,43 +1,43 @@
 #MARK: Base
 - type: entity
-  name: HK G36 Marksman (5,56x45mm NATO)
+  name: Springfield Armory M1A (7,62x51mm NATO)
   parent: BaseWeaponRifle
-  id: WeaponAssaultRifleG36MarksmanBase
+  id: WeaponBattleRifleM1ABase
   abstract: true
-  description: A precision assault rifle based on the G36 and made by the german company Heckler & Koch. Chambered in 5,56x45mm NATO.
+  description: A modern refurbished version of the M14 Battle Rifle made by the company Springfield Armory. Chambered in 7,62x51mm NATO .
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/G36_Marksman_64x32.rsi
-    scale: 0.55, 0.55
+    sprite: _Cataclysm14/Objects/Weapons/Guns/BattleRifles/M1A_64x32.rsi
+    scale: 0.60, 0.60
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Item
-    sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/G36_Marksman_32x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/BattleRifles/M1A_32x32.rsi
     size: Large
     shape:
     - 0,0,5,1
-    storedScale: 1.8
+    storedScale: 2
   - type: Clothing
-    slots:
-    - slingfront
-    - suitstorage
-    sprite: _Cataclysm14/Objects/Weapons/Guns/AssaultRifles/G36_Marksman_32x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/BattleRifles/M1A_32x32.rsi
     clothingVisuals:
       slingfront:
       - state: equipped-SLINGFRONT
       suitstorage:
       - state: equipped-SUITSTORAGE
   - type: Gun
-    fireRate: 8
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    fireRate: 9
     soundGunshot:
-      path: /Audio/_NF/Weapons/Guns/Gunshots/rifle.ogg
+      path: /Audio/_Harmony/Weapons/Guns/Gunshots/hristov_fire_alt.ogg
       params:
-        volume: 10
+        volume: 15
         variation: 0.1
-        pitch: 1.8
+        pitch: 2.2
   - type: ChamberMagazineAmmoProvider
     soundRack:
       path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
@@ -45,21 +45,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: null
+        startingItem: Magazine7,62x51mmSTANAG20rdEmpty
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine5,56x45mmSTANAGCompatible
+            - Magazine7,62x51mmSTANAGCompatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: null
+        startingItem: Cartridge7,62x51mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge5,56x45mm
+            - Cartridge7,62x51mm
         whitelistFailPopup: gun-magazine-whitelist-fail
   - type: ContainerContainer
     containers:
@@ -75,83 +75,56 @@
       sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
       state: all
 
-#MARK: STANAG 30rd Empty
+#MARK: STANAG 20rd Empty
 - type: entity
-  parent: WeaponAssaultRifleG36MarksmanBase
-  id: WeaponAssaultRifleG36MarksmanFilledSTANAG30rdEmpty
-  suffix: Empty - STANAG 30rd
+  parent: WeaponBattleRifleM1ABase
+  id: WeaponBattleRifleM1AFilledSTANAG20rdEmpty
+  suffix: Empty - STANAG 20rd
   components:
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5,56x45mmSTANAG30rdEmpty
+        startingItem: Magazine7,62x51mmSTANAG20rdEmpty
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine5,56x45mmSTANAGCompatible
+            - Magazine7,62x51mmSTANAGCompatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: null
+        startingItem: Cartridge7,62x51mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge5,56x45mm
+            - Cartridge7,62x51mm
         whitelistFailPopup: gun-magazine-whitelist-fail
 
-#MARK: STANAG 30rd FMJ
+#MARK: STANAG 20rd FMJ
 - type: entity
-  parent: WeaponAssaultRifleG36MarksmanBase
-  id: WeaponAssaultRifleG36MarksmanFilledSTANAG30rdFMJ
-  suffix: FMJ - STANAG 30rd
+  parent: WeaponBattleRifleM1ABase
+  id: WeaponBattleRifleM1AFilledSTANAG20rdFMJ
+  suffix: FMJ - STANAG 20rd
   components:
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine5,56x45mmSTANAG30rdFMJ
+        startingItem: Magazine7,62x51mmSTANAG20rdFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - Magazine5,56x45mmSTANAGCompatible
+            - Magazine7,62x51mmSTANAGCompatible
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: null
+        startingItem: Cartridge7,62x51mmFMJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge5,56x45mm
-        whitelistFailPopup: gun-magazine-whitelist-fail
-
-#MARK: STANAG 30rd Tracer Red
-- type: entity
-  parent: WeaponAssaultRifleG36MarksmanBase
-  id: WeaponAssaultRifleG36MarksmanFilledSTANAG30rdTracerRed
-  suffix: Tracer Red - STANAG 30rd
-  components:
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: Magazine5,56x45mmSTANAG30rdTracerRed
-        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - Magazine5,56x45mmSTANAGCompatible
-        whitelistFailPopup: gun-magazine-whitelist-fail
-      gun_chamber:
-        name: Chamber
-        startingItem: null
-        priority: 1
-        whitelist:
-          tags:
-            - Cartridge5,56x45mm
+            - Cartridge7,62x51mm
         whitelistFailPopup: gun-magazine-whitelist-fail

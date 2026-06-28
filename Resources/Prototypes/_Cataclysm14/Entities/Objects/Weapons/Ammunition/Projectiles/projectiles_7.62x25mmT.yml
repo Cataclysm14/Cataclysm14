@@ -1,7 +1,7 @@
 #MARK: FMJ
 - type: entity
-  id: Bullet38SpecialFMJ
-  name: bullet (.38 Special FMJ)
+  id: Bullet7,62x25mmTFMJ
+  name: bullet (7,62x25mm Tokarev FMJ)
   parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -14,8 +14,8 @@
 
 #MARK: JHP
 - type: entity
-  id: Bullet38SpecialJHP
-  name: bullet (.38 Special JHP)
+  id: Bullet7,62x25mmTJHP
+  name: bullet (7,62x25mm Tokarev JHP)
   parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -28,8 +28,8 @@
 
 #MARK: +P
 - type: entity
-  id: Bullet38Special+P
-  name: bullet (.38 Special +P)
+  id: Bullet7,62x25mmT+P
+  name: bullet (7,62x25mm Tokarev +P)
   parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -42,8 +42,8 @@
 
 #MARK: Rubber
 - type: entity
-  id: Bullet38SpecialRubber
-  name: bullet (.38 Special rubber)
+  id: Bullet7,62x25mmTRubber
+  name: bullet (7,62x25mm Tokarev rubber)
   parent: BaseProjectileBulletRubber
   categories: [ HideSpawnMenu ]
   components:
@@ -53,3 +53,25 @@
         Blunt: 4
   - type: StaminaDamageOnCollide
     damage: 22
+
+#MARK: PT gzh
+- type: entity
+  id: Bullet7,62x25mmTPtGzh
+  name: bullet (7,62x25mm PT gzh)
+  parent: BaseProjectileBulletTracerGreen
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 24
+    armorPenetration: 0.05
+  - type: PointLight
+    enabled: true
+    color: "#49E048"
+    radius: 1.1
+    energy: 20.0
+  - type: Tracer
+    color: "#49E048"
+    length: 15
+    lifetime: 1

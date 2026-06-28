@@ -1,0 +1,137 @@
+#MARK: Base
+- type: entity
+  id: BaseMagazine303British
+  name: "magazine (.303 British FMJ)"
+  parent: [ BaseItem, RecyclableItemSteelTiny ]
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Magazine303BritishFMJ
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge303British
+    proto: Cartridge303BritishFMJ
+    capacity: 20
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    scale: 0.40,0.40
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/303British/303British_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+#MARK: Lewis 47rd
+- type: entity
+  id: BaseMagazine303BritishLewisGun47rd
+  abstract: true
+  name: "47rd Lewis Gun pan magazine (.303 British)"
+  parent: BaseMagazine303British
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 47
+  - type: Item
+    storedScale: 4
+    shape:
+    - 0,0,1,1
+  - type: Tag
+    tags:
+      - Magazine303BritishLewisGunCompatible
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/303British/magazine_303British_Lewis_Gun_47rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: Magazine303BritishLewisGun47rdEmpty
+  suffix: Empty
+  parent: BaseMagazine303BritishLewisGun47rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: FMJ
+- type: entity
+  id: Magazine303BritishLewisGun47rdFMJ
+  suffix: FMJ
+  parent: BaseMagazine303BritishLewisGun47rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge303BritishFMJ
+
+#MARK: TracerRed
+- type: entity
+  id: Magazine303BritishLewisGun47rdTracerRed
+  suffix: Tracer Red
+  parent: BaseMagazine303BritishLewisGun47rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge303BritishTracerRed
+
+#MARK: Lewis 97rd
+- type: entity
+  id: BaseMagazine303BritishLewisGun97rd
+  abstract: true
+  name: "97rd Lewis Gun pan magazine (.303 British)"
+  parent: BaseMagazine303British
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 97
+  - type: Item
+    storedScale: 4
+    shape:
+    - 0,0,1,1
+  - type: Tag
+    tags:
+      - Magazine303BritishLewisGunCompatible
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Magazines/303British/magazine_303British_Lewis_Gun_97rd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#MARK: Empty
+- type: entity
+  id: Magazine303BritishLewisGun97rdEmpty
+  suffix: Empty
+  parent: BaseMagazine303BritishLewisGun97rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+#MARK: FMJ
+- type: entity
+  id: Magazine303BritishLewisGun97rdFMJ
+  suffix: FMJ
+  parent: BaseMagazine303BritishLewisGun97rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge303BritishFMJ
+
+#MARK: TracerRed
+- type: entity
+  id: Magazine303BritishLewisGun97rdTracerRed
+  suffix: Tracer Red
+  parent: BaseMagazine303BritishLewisGun97rd
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge303BritishTracerRed

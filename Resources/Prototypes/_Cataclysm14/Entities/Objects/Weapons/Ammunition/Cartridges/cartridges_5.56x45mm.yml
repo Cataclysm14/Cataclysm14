@@ -3,7 +3,7 @@
   id: BaseCartridge5,56x45mm
   name: cartridge (5,56x45mm NATO FMJ)
   parent: BaseCartridge
-  description: An extremely-common intermediate cartridge for rifles.
+  description: An extremely-common intermediate cartridge for rifles, based on the .223 Remington, adpoted as the 5,56x45mm NATO via the STANAGs.
   abstract: true
   components:
   - type: Tag
@@ -77,7 +77,7 @@
   - type: CartridgeAmmo
     proto: Bullet5,56x45mmMk318
 
-#MARK: FMJ
+#MARK: red tracer
 - type: entity
   id: Cartridge5,56x45mmTracerRed
   name: cartridge (5,56x45mm NATO red tracer)

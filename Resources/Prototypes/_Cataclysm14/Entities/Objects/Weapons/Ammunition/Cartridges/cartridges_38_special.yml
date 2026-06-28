@@ -3,7 +3,7 @@
   id: BaseCartridge38Special
   name: cartridge (.38 Special FMJ)
   parent: BaseCartridge
-  description: Heavier alternative to 9x19mmParabellum for handguns and SMGs.
+  description: Heavier alternative to 9x19mm for handguns and revolvers.
   abstract: true
   components:
   - type: Tag

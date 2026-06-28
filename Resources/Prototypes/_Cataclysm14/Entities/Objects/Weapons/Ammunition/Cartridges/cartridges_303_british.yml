@@ -1,0 +1,69 @@
+#MARK: Base
+- type: entity
+  id: BaseCartridge303British
+  name: cartridge (.303 British FMJ)
+  parent: BaseCartridge
+  description: Heavier alternative to 9x19mm for handguns and revolvers.
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - Cartridge303British
+  - type: CartridgeAmmo
+    proto: Bullet303BritishFMJ
+  - type: Sprite
+    scale: 0.2, 0.2
+    sprite: _Cataclysm14/Objects/Weapons/Casings/303British_casing.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+
+#MARK: FMJ
+- type: entity
+  id: Cartridge303BritishFMJ
+  name: cartridge (.303 British FMJ)
+  parent: BaseCartridge303British
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet303BritishFMJ
+
+#MARK: JHP
+- type: entity
+  id: Cartridge303BritishJHP
+  name: cartridge (.303 British JHP)
+  parent: BaseCartridge303British
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet303BritishJHP
+
+#MARK: +P
+- type: entity
+  id: Cartridge303British+P
+  name: cartridge (.303 British +P)
+  parent: BaseCartridge303British
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet303British+P
+
+#MARK: Rubber
+- type: entity
+  id: Cartridge303BritishRubber
+  name: cartridge (.303 British rubber)
+  parent: BaseCartridge303British
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet303BritishRubber
+
+#MARK: red tracer
+- type: entity
+  id: Cartridge303BritishTracerRed
+  name: cartridge (.303 British red tracer)
+  parent: BaseCartridge303British
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet303BritishTracerRed

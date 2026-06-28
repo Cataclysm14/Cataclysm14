@@ -1,0 +1,265 @@
+#MARK: Slug
+- type: entity
+  id: Pellet4GaugeSlug
+  categories: [ HideSpawnMenu ]
+  parent: BaseProjectileShotgunBulletSlug
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 34
+        Structural: 200
+    armorPenetration: -0.2
+
+#MARK: Beanbag
+- type: entity
+  id: Pellet4GaugeBeanbag
+  categories: [ HideSpawnMenu ]
+  parent: BaseProjectileShotgunBulletBeanbag
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 10
+    armorPenetration: -0.2
+  - type: StaminaDamageOnCollide
+    damage: 30 # 4 hits to stun
+
+#MARK: Buckshot
+- type: entity
+  id: Pellet4GaugeBuckshot
+  categories: [ HideSpawnMenu ]
+  parent: BaseProjectileShotgunBulletPellet
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 11
+    armorPenetration: -0.5
+
+- type: entity
+  id: Pellet4GaugeBuckshotSpread
+  categories: [ HideSpawnMenu ]
+  parent: Pellet4GaugeBuckshot
+  components:
+  - type: ProjectileSpread
+    proto: Pellet4GaugeBuckshot
+    count: 6
+    spread: 15
+
+#MARK: Incendiary
+- type: entity
+  id: Pellet4GaugeIncendiary
+  categories: [ HideSpawnMenu ]
+  parent: BaseProjectileShotgunBulletFlare
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 6
+        Heat: 11
+    armorPenetration: -0.2
+  - type: IgnitionSource
+    ignited: true
+
+- type: entity
+  id: Pellet4GaugeIncendiarySpread
+  categories: [ HideSpawnMenu ]
+  parent: Pellet4GaugeIncendiary
+  components:
+  - type: ProjectileSpread
+    proto: Pellet4GaugeIncendiary
+    count: 6
+    spread: 15
+
+#MARK: Tranquilizer
+- type: entity
+  id: Pellet4GaugeTranquilizer
+  categories: [ HideSpawnMenu ]
+  parent: BaseProjectileShotgunBulletBeanbag
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 1
+  - type: SolutionContainerManager
+    solutions:
+      ammo:
+        maxVol: 15
+  - type: RefillableSolution
+    solution: ammo
+  - type: DrainableSolution
+    solution: ammo
+  - type: SolutionInjectOnProjectileHit
+    transferAmount: 15
+    solution: ammo
+  - type: InjectableSolution
+    solution: ammo
+
+#MARK: Flare
+- type: entity
+  id: Pellet4GaugeFlare
+  parent: BaseProjectileShotgunBulletFlare
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Physics
+    bodyType: Dynamic
+    fixedRotation: false
+  - type: EmbeddableProjectile
+    deleteOnRemove: true
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,-0.1,0.1,0.1"
+        mask:
+          - BulletImpassable
+  - type: IgnitionSource
+    ignited: true
+    temperature: 1000
+  - type: TimedDespawn
+    lifetime: 240
+  - type: AmbientSound
+    enabled: true
+    volume: 0
+    range: 7
+    sound:
+      path: /Audio/Items/Flare/flare_burn.ogg
+      params:
+        loop: true
+  - type: IgniteOnCollide
+    fireStacks: 1
+  - type: PointLight
+    enabled: true
+    color: "#FF8080"
+    radius: 15.0
+    energy: 9.0
+  - type: Projectile
+    deleteOnCollide: false
+    damage:
+      types:
+        Heat: 5
+
+#MARK: Flashbang
+- type: entity
+  id: Pellet4GaugeFlashbang
+  name: pellet (4 gauge flashbang)
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: slug
+  - type: FlashOnTrigger
+    range: 10
+  - type: SpawnOnTrigger
+    proto: GrenadeFlashEffect
+  - type: ActiveTimerTrigger
+    timeRemaining: 0.3
+  - type: DeleteOnTrigger
+
+#MARK: Depleted Uranium
+- type: entity
+  id: Pellet4GaugeDepletedUranium
+  categories: [ HideSpawnMenu ]
+  parent: BaseProjectileShotgunBulletDepletedUranium
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Radiation: 5
+        Piercing: 7
+    armorPenetration: -0.1
+
+- type: entity
+  id: Pellet4GaugeDepletedUraniumSpread
+  categories: [ HideSpawnMenu ]
+  parent: Pellet4GaugeDepletedUranium
+  components:
+  - type: ProjectileSpread
+    proto: Pellet4GaugeDepletedUranium
+    count: 5
+    spread: 6
+
+#MARK: OO Magnum Buckshot
+- type: entity
+  id: Pellet4GaugeOOBuckshot
+  parent: BaseProjectileShotgunBulletPellet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 19
+    armorPenetration: -0.2
+
+- type: entity
+  id: Pellet4GaugeOOBuckshotSpread
+  parent: Pellet4GaugeOOBuckshot
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ProjectileSpread
+    proto: Pellet4GaugeOOBuckshot
+    count: 3
+    spread: 6
+
+#MARK: RIP Slug
+- type: entity
+  id: Pellet4GaugeSlugRIP
+  categories: [ HideSpawnMenu ]
+  parent: BaseProjectileShotgunBulletSlug
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 80
+        Structural: 300
+    armorPenetration: -0.9
+
+#MARK: Flechette
+- type: entity
+  id: Pellet4GaugeFlechette
+  parent: BaseProjectileShotgunBulletFlechette
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 8
+    armorPenetration: 0.3
+  - type: Tracer
+    color: "#6f7c82ff"
+    length: 3
+
+- type: entity
+  id: Pellet4GaugeFlechetteSpread
+  parent: Pellet4GaugeFlechette
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ProjectileSpread
+    proto: Pellet4GaugeFlechette
+    count: 6
+    spread: 12
+
+#MARK: Dozd
+- type: entity
+  id: Pellet4GaugeDozd
+  parent: BaseProjectileShotgunBulletPellet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 8
+    armorPenetration: -0.2
+
+- type: entity
+  id: Pellet4GaugeDozdSpread
+  parent: Pellet4GaugeDozd
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ProjectileSpread
+    proto: Pellet4GaugeDozd
+    count: 10
+    spread: 6

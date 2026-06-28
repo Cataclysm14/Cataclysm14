@@ -2,7 +2,7 @@
 - type: entity
   id: BaseCartridge45Acp
   parent: BaseCartridge
-  description: Heavier alternative to 9x19mmParabellum for handguns and SMGs.
+  description: Heavier alternative to 9x19mm for handguns and SMGs.
   abstract: true
   components:
   - type: Tag

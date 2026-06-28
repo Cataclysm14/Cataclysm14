@@ -3,7 +3,7 @@
   id: BaseCartridge4,6x30mm
   name: cartridge (4,6x30mm FMJ)
   parent: BaseCartridge
-  description: A light AP round developed for PDWs in the 1990s, by an older world.
+  description: A light AP round developed for PDWs in the 1990s.
   abstract: true
   components:
   - type: Tag

@@ -1,3 +1,4 @@
+#MARK: Base
 - type: entity
   abstract: true
   parent: BaseItem
@@ -38,6 +39,10 @@
     sound:
       path: /Audio/_Goobstation/Items/handling/ammobox_drop.ogg
 
+#MARK: FMJ
 - type: entity
   parent: BaseAmmoBox12,7x99mm
-  id: AmmoBox12,7x99mm
+  id: AmmoBox12,7x99mmFMJ
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge12,7x99mmFMJ

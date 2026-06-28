@@ -1,7 +1,7 @@
 #MARK: FMJ
 - type: entity
-  id: Bullet38SpecialFMJ
-  name: bullet (.38 Special FMJ)
+  id: Bullet303BritishFMJ
+  name: bullet (.303 British FMJ)
   parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -14,8 +14,8 @@
 
 #MARK: JHP
 - type: entity
-  id: Bullet38SpecialJHP
-  name: bullet (.38 Special JHP)
+  id: Bullet303BritishJHP
+  name: bullet (.303 British JHP)
   parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -28,8 +28,8 @@
 
 #MARK: +P
 - type: entity
-  id: Bullet38Special+P
-  name: bullet (.38 Special +P)
+  id: Bullet303British+P
+  name: bullet (.303 British +P)
   parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -42,8 +42,8 @@
 
 #MARK: Rubber
 - type: entity
-  id: Bullet38SpecialRubber
-  name: bullet (.38 Special rubber)
+  id: Bullet303BritishRubber
+  name: bullet (.303 British rubber)
   parent: BaseProjectileBulletRubber
   categories: [ HideSpawnMenu ]
   components:
@@ -53,3 +53,24 @@
         Blunt: 4
   - type: StaminaDamageOnCollide
     damage: 22
+
+#MARK: red tracer
+- type: entity
+  id: Bullet303BritishTracerRed
+  parent: BaseProjectileBulletTracerRed
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 25
+    armorPenetration: -0.05
+  - type: PointLight
+    enabled: true
+    color: "#ff4300"
+    radius: 1.1
+    energy: 20.0
+  - type: Tracer
+    color: "#c30010ff"
+    length: 15
+    lifetime: 1

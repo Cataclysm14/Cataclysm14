@@ -1,8 +1,8 @@
 - type: entity
-  id: WeaponPistolM1911Base
-  name: M1911 (.45 ACP)
+  id: WeaponPistolRugerMK2TargetBase
+  name: Ruger MK2 Target (.22 LR)
   abstract: true
-  description: A cheap, ubiquitous sidearm used for two world wars, uses .45 Automatic Colt Pistol (ACP) cartridge.
+  description: A cheap, ubiquitous sidearm used for self defence, small game hunting at low cost and stealth takedowns. Uses .22 Long Rifle ammo.
   parent: BaseWeaponPistol
   components:
     - type: Item
@@ -12,7 +12,7 @@
       storedScale: 2
     - type: Sprite
       scale: 0.4,0.4
-      sprite: _Cataclysm14/Objects/Weapons/Guns/Pistols/M1911.rsi
+      sprite: _Cataclysm14/Objects/Weapons/Guns/Pistols/ruger_MK2-Target.rsi
       layers:
         - state: base
           map:
@@ -21,7 +21,7 @@
           map:
             - enum.GunVisualLayers.Mag
     - type: Clothing
-      sprite: _Cataclysm14/Objects/Weapons/Guns/Pistols/M1911.rsi
+      sprite: _Cataclysm14/Objects/Weapons/Guns/Pistols/ruger_MK2-Target.rsi
       netsync: false
     - type: Gun
       soundGunshot:
@@ -30,7 +30,7 @@
           playOffsetSeconds: 0.1
           volume: 13
           variation: 0.1
-          pitch: 1.2
+          pitch: 3
       fireRate: 10
       availableModes:
         - SemiAuto
@@ -38,21 +38,21 @@
       slots:
         gun_magazine:
           name: Magazine
-          startingItem: Magazine45AcpM1911_10rdFMJ
+          startingItem: null
           insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
           ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
           priority: 2
           whitelist:
             tags:
-              - Magazine45AcpM1911Compatible
+              - Magazine22LRRugerMK2Compatible
           whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:
           name: Chamber
-          startingItem: Cartridge9x19mmParabellumFMJ
+          startingItem: Cartridge22LRFMJ
           priority: 1
           whitelist:
             tags:
-              - Cartridge9x19mmParabellum
+              - Cartridge22LR
           whitelistFailPopup: gun-magazine-whitelist-fail
     - type: ContainerContainer
       containers:
@@ -63,54 +63,54 @@
 
 #MARK: 10rd Empty
 - type: entity
-  id: WeaponPistolM1911Filled10rdEmpty
+  id: WeaponPistolRugerMK2TargetFilled10rdEmpty
   suffix: Empty - 10rd
-  parent: WeaponPistolM1911Base
+  parent: WeaponPistolRugerMK2TargetBase
   components:
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
-          startingItem: Magazine45AcpM1911_10rdEmpty
+          startingItem: Magazine22LRRugerMK210rdEmpty
           insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
           ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
           priority: 2
           whitelist:
             tags:
-              - Magazine45AcpM1911Compatible
+              - Magazine22LRRugerMK2Compatible
           whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:
           name: Chamber
-          startingItem: Cartridge9x19mmParabellumFMJ
+          startingItem: Cartridge22LRFMJ
           priority: 1
           whitelist:
             tags:
-              - Cartridge9x19mmParabellum
+              - Cartridge22LR
           whitelistFailPopup: gun-magazine-whitelist-fail
 
 #MARK: 10rd FMJ
 - type: entity
-  id: WeaponPistolM1911Filled10rdFMJ
+  id: WeaponPistolRugerMK2TargetFilled10rdFMJ
   suffix: FMJ - 10rd
-  parent: WeaponPistolM1911Base
+  parent: WeaponPistolRugerMK2TargetBase
   components:
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
-          startingItem: Magazine45AcpM1911_10rdFMJ
+          startingItem: Magazine22LRRugerMK210rdFMJ
           insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
           ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
           priority: 2
           whitelist:
             tags:
-              - Magazine45AcpM1911Compatible
+              - Magazine22LRRugerMK2Compatible
           whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:
           name: Chamber
-          startingItem: Cartridge9x19mmParabellumFMJ
+          startingItem: Cartridge22LRFMJ
           priority: 1
           whitelist:
             tags:
-              - Cartridge9x19mmParabellum
+              - Cartridge22LR
           whitelistFailPopup: gun-magazine-whitelist-fail

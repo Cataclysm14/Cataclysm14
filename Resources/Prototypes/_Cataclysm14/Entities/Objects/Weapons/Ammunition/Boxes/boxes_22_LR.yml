@@ -2,23 +2,24 @@
 - type: entity
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
-  id: BaseAmmoBox5,7x28mm
-  name: ammunition box (5,7x28mm FMJ)
+  id: BaseAmmoBox22LR
+  name: ammunition box (.22 LR FMJ)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge5,7x28mm
-    proto: Cartridge5,7x28mmFMJ
-    capacity: 80
+        - Cartridge22LR
+    proto: Cartridge22LRFMJ
+    capacity: 40
   - type: Item
     size: Small
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Boxes/5,7x28mm.rsi
+    scale: 0.5,0.5
+    sprite: _Cataclysm14/Objects/Weapons/Boxes/22LR.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 3
@@ -36,12 +37,12 @@
 
 #MARK: FMJ
 - type: entity
-  parent: BaseAmmoBox5,7x28mm
-  id: AmmoBox5,7x28mmFMJ
-  name: ammunition box (5,7x28mm FMJ)
+  parent: BaseAmmoBox22LR
+  id: AmmoBox22LRFMJ
+  name: ammunition box (.22 LR FMJ)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5,7x28mmFMJ
+    proto: Cartridge22LRFMJ
   - type: Sprite
     layers:
     - state: base
@@ -49,62 +50,14 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
-#MARK: Incendiary
+#MARK: JHP
 - type: entity
-  parent: BaseAmmoBox5,7x28mm
-  id: AmmoBox5,7x28mmIncendiary
-  name: ammunition box (5,7x28mm incendiary)
+  parent: BaseAmmoBox22LR
+  id: AmmoBox22LRJHP
+  name: ammunition box (.22 LR JHP)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5,7x28mmIncendiary
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: incendiary
-
-#MARK: Depleted Uranium
-- type: entity
-  id: AmmoBox5,7x28mmDepletedUranium
-  parent: BaseAmmoBox5,7x28mm
-  name: ammunition box (5,7x28mm depleted uranium)
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge5,7x28mmDepletedUranium
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: uranium
-
-#MARK: Rubber
-- type: entity
-  parent: BaseAmmoBox5,7x28mm
-  id: AmmoBox5,7x28mmRubber
-  name: ammunition box (5,7x28mm rubber)
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge5,7x28mmRubber
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: rubber
-
-#MARK: HP
-- type: entity
-  parent: BaseAmmoBox5,7x28mm
-  id: AmmoBox5,7x28mmHP
-  name: ammunition box (5,7x28mm hollow-point)
-  components:
-  - type: BallisticAmmoProvider
-    proto: Cartridge5,7x28mmHP
+    proto: Cartridge22LRJHP
   - type: Sprite
     layers:
     - state: base
@@ -113,43 +66,59 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: HP
 
-#MARK: RIP
+#MARK: +P
 - type: entity
-  parent: BaseAmmoBox5,7x28mm
-  id: AmmoBox5,7x28mmRIP
-  name: ammunition box (5,7x28mm RIP)
+  parent: BaseAmmoBox22LR
+  id: AmmoBox22LR+P
+  name: ammunition box (.22 LR +P)
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5,7x28mmRIP
+    proto: Cartridge22LR+P
   - type: Sprite
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
-    - state: RIP
+    - state: incendiary
+
+#MARK: Rubber
+- type: entity
+  parent: BaseAmmoBox22LR
+  id: AmmoBox22LRRubber
+  name: ammunition box (.22 LR rubber)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge22LRRubber
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: rubber
 
 #MARK: Big FMJ
 - type: entity
-  parent: BaseAmmoBox5,7x28mm
-  id: AmmoBox5,7x28mmBigFMJ
-  name: big ammunition box (5,7x28mm FMJ)
+  parent: BaseAmmoBox22LR
+  id: AmmoBox22LRBigFMJ
+  name: big ammunition box (.22 LR FMJ)
   suffix: Big
   components:
   - type: Item
     shape:
     - 0,0,1,1
   - type: BallisticAmmoProvider
-    capacity: 280 # 8 mags per box similar to rifle box
-    proto: Cartridge5,7x28mmFMJ
+    capacity: 150
+    proto: Cartridge22LRFMJ
   - type: Sprite
     layers:
-    - state: base-b # Frontier: base-big<base-b
+    - state: base-b
       map: ["enum.GunVisualLayers.Base"]
-    - state: magb-1 # Frontier: mag-big-1<magb-1
+    - state: magb-1
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
-    magState: magb # Frontier: mag-big<magb
+    magState: magb
     steps: 4
     zeroVisible: false
   - type: Appearance

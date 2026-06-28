@@ -1,7 +1,7 @@
 - type: entity
   id: Bullet45MagnumFMJ
   name: bullet (.45 magnum)
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -13,7 +13,7 @@
 - type: entity
   id: Bullet45MagnumPractice
   name: bullet (.45 magnum practice)
-  parent: BaseBulletPractice
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -24,7 +24,7 @@
 - type: entity
   id: Bullet45MagnumRubber
   name: bullet (.45 magnum rubber)
-  parent: BaseBulletRubber
+  parent: BaseProjectileBulletRubber
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -36,7 +36,7 @@
 
 - type: entity
   id: Bullet45MagnumIncendiary
-  parent: BaseBulletIncendiary
+  parent: BaseProjectileBulletIncendiary
   name: bullet (.45 magnum incendiary)
   categories: [ HideSpawnMenu ]
   components:
@@ -49,7 +49,7 @@
 - type: entity
   id: Bullet45MagnumAP
   name: bullet (.45 magnum armor-piercing)
-  parent: BaseBulletAP
+  parent: BaseProjectileBulletAP
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -61,7 +61,7 @@
 - type: entity
   id: Bullet45MagnumDepletedUranium
   name: bullet (.45 magnum depleted uranium)
-  parent: BaseBulletUranium
+  parent: BaseProjectileBulletDepletedUranium
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -75,7 +75,7 @@
 #anti-flesh:
 - type: entity
   id: Bullet45MagnumHP
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   name: bullet (.45 magnum hollow-point)
   categories: [ HideSpawnMenu ]
   components:
@@ -88,7 +88,7 @@
 
 - type: entity
   id: Bullet45MagnumRIP
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   name: bullet (.45 magnum RIP)
   categories: [ HideSpawnMenu ]
   components:
@@ -102,7 +102,7 @@
 #armor-piercing:
 - type: entity
   id: Bullet45MagnumPlasteelAP
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   name: bullet (.45 magnum AP)
   categories: [ HideSpawnMenu ]
   components:

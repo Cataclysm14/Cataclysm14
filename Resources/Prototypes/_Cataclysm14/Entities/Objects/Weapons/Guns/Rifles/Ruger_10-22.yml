@@ -1,19 +1,19 @@
 #MARK: Base
 - type: entity
-  name: Remington M24 (7,62x51mm NATO)
+  name: Ruger 10/22 (.22 LR)
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseGunMelee]
-  id: WeaponBoltActionRifleM24Base
+  id: WeaponBoltActionRifleRuger10-22Base
   suffix: Empty
-  description: A weapon for precision shooting, or hunting charlies in the jungle. Uses 7,62x51mm NATO ammo.
+  description: A weapon for precision shooting, or hunting charlies in the jungle. Uses .22 LR ammo.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/M24_64x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Rifles/ruger_10-22_64x32.rsi
     scale: 0.55, 0.55
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
   - type: Item
-    sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/M24_32x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Rifles/ruger_10-22_32x32.rsi
     size: Large
     shape:
     - 0,0,6,1
@@ -22,7 +22,7 @@
     slots:
     - slingfront
     - suitstorage
-    sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/M24_32x32.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Rifles/ruger_10-22_32x32.rsi
     clothingVisuals:
       slingfront:
       - state: equipped-SLINGFRONT
@@ -37,19 +37,32 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - Cartridge7,62x51mm
-    capacity: 5
+      - Cartridge22LR
+    capacity: 10
     proto: null
   - type: WieldedCrosshair
     rsi:
       sprite: _Cataclysm14/Scoping/reticle_PU.rsi
       state: all
+  - type: Gun
+    fireRate: 4
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/mk_fire.ogg
+      params:
+        playOffsetSeconds: 0.1
+        volume: 13
+        variation: 0.1
+        pitch: 3
+    projectileSpeed: 65
 
-#MARK: .308 Winchester
+#MARK: FMJ
 - type: entity
-  parent: WeaponBoltActionRifleM24Base
-  id: WeaponBoltActionRifleM24Filled308Winchester
-  suffix: .308 Winchester
+  parent: WeaponBoltActionRifleRuger10-22Base
+  id: WeaponBoltActionRifleRuger10-22FilledFMJ
+  suffix: FMJ
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge7,62x51mm308Winchester
+    proto: Cartridge22LRFMJ

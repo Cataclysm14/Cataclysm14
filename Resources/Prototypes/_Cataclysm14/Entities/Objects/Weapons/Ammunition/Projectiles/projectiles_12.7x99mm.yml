@@ -1,8 +1,8 @@
+#MARK: FMJ
 - type: entity
   categories: [ HideSpawnMenu ]
-  parent: BaseBullet
-  id: Bullet12,7x99mm
-  name: bullet (12,7x99mm anti-material)
+  parent: BaseProjectileBullet
+  id: Bullet12,7x99mmFMJ
   components:
   - type: Projectile
     damage:
@@ -14,11 +14,11 @@
     color: "#FFFFFFFF"
     length: 3
 
+#MARK: HE
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseBulletTrigger
-  id: Bullet12,7x99mmExplosive
-  name: bullet (12,7x99mm high-explosive)
+  id: Bullet12,7x99mmHE
   components:
   - type: Projectile
     damage:

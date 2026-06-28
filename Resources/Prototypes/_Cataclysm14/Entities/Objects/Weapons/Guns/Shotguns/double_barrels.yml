@@ -8,46 +8,56 @@
     - BaseGunWieldable
   abstract: true
   components:
-    - type: Item
-      size: Huge
-      sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/DB_12Gauge_64x64.rsi
-      shape:
-        - 0,0,6,0
-      storedScale: 2
-    - type: Sprite
-      scale: 0.65,0.65
-      sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/double-barrel_12Gauge_64x32.rsi
-      slots:
-        - slingfront
-        - suitstorage
-    - type: Clothing
-      clothingVisuals:
-        slingfront:
-          - state: equipped-SLINGFRONT
-        suitstorage:
-          - state: equipped-SUITSTORAGE
-      sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/double-barrel_12Gauge_64x32.rsi
-    - type: GunRequiresWield
-    - type: Gun
-      soundGunshot:
-        path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
-        params:
-          pitch: 1.75
-          variation: 0.25
-          volume: 15
-      fireRate: 3.5
-    - type: GunSpreadModifier
-      spread: 0.4
-    - type: BallisticAmmoProvider
-      soundRack: /Audio/Weapons/Guns/Cock/smg_cock.ogg
-      capacity: 2
-    - type: StaticPrice
-      price: 300
+  - type: Item
+    size: Huge
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/DB_12Gauge_64x64.rsi
+    shape:
+      - 0,0,6,0
+    storedScale: 2
+  - type: Sprite
+    scale: 0.65,0.65
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/double-barrel_12Gauge_64x32.rsi
+    slots:
+      - slingfront
+      - suitstorage
+  - type: Clothing
+    clothingVisuals:
+      slingfront:
+        - state: equipped-SLINGFRONT
+      suitstorage:
+        - state: equipped-SUITSTORAGE
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/double-barrel_12Gauge_64x32.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    selectedMode: SemiAuto
+    availableModes:
+    - Burst
+    - SemiAuto
+    burstCooldown: 0.3
+    burstFireRate: 3
+    shotsPerBurst: 2
+    fireRate: 1.5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
+      params:
+        pitch: 1.75
+        variation: 0.25
+        volume: 15
+  - type: GunSpreadModifier
+    spread: 0.4
+  - type: BallisticAmmoProvider
+    soundRack: /Audio/Weapons/Guns/Cock/smg_cock.ogg
+    capacity: 2
+    whitelist:
+      tags:
+      - ShellShotgun12Gauge
+  - type: StaticPrice
+    price: 300
 
 #MARK: Empty
 - type: entity
   id: WeaponShotgun12GaugeDoubleBarrelEmpty
-  suffix: Buckshot
+  suffix: Empty
   parent: WeaponShotgun12GaugeDoubleBarrelBase
   components:
     - type: BallisticAmmoProvider

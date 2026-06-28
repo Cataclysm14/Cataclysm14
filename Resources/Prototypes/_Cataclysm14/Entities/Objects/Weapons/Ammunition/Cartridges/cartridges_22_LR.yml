@@ -1,0 +1,60 @@
+#MARK: Base
+- type: entity
+  id: BaseCartridge22LR
+  name: cartridge (.22 LR FMJ)
+  parent: BaseCartridge
+  description: A small (5.7x15mmR) american made cartridge usually used for hunting small game.
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - Cartridge22LR
+  - type: CartridgeAmmo
+    proto: Bullet22LRFMJ
+  - type: Sprite
+    scale: 0.2, 0.2
+    sprite: _Cataclysm14/Objects/Weapons/Casings/22LR_casing.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+
+#MARK: FMJ
+- type: entity
+  id: Cartridge22LRFMJ
+  name: cartridge (.22 LR FMJ)
+  parent: BaseCartridge22LR
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet22LRFMJ
+
+#MARK: JHP
+- type: entity
+  id: Cartridge22LRJHP
+  name: cartridge (.22 LR JHP)
+  parent: BaseCartridge22LR
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet22LRJHP
+
+#MARK: +P
+- type: entity
+  id: Cartridge22LR+P
+  name: cartridge (.22 LR +P)
+  parent: BaseCartridge22LR
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet22LR+P
+
+#MARK: Rubber
+- type: entity
+  id: Cartridge22LRRubber
+  name: cartridge (.22 LR rubber)
+  parent: BaseCartridge22LR
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet22LRRubber

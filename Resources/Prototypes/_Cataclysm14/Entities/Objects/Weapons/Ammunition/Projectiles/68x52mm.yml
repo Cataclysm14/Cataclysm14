@@ -1,7 +1,7 @@
 - type: entity
   id: Bullet6,8x52mmCaseless
   name: bullet (6,8x52mm Caseless)
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -13,7 +13,7 @@
 - type: entity
   id: Bullet6,8x52mmCaselessPractice
   name: bullet (6,8x52mm Caseless practice)
-  parent: BaseBulletPractice
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -24,7 +24,7 @@
 - type: entity
   id: Bullet6,8x52mmCaselessRubber
   name: bullet (6,8x52mm Caseless rubber)
-  parent: BaseBulletRubber
+  parent: BaseProjectileBulletRubber
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile

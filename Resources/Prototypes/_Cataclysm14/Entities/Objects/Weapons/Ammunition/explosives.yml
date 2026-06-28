@@ -187,9 +187,6 @@
   suffix: Rogue
   parent: BaseCannonBall
   components:
-  - type: CartridgeAmmo
-    proto: Pellet12GaugeGrapeshotSpread
-    deleteOnSpawn: true
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     state: grapeshot
@@ -200,9 +197,6 @@
   suffix: Rogue
   parent: BaseCannonBall
   components:
-  - type: CartridgeAmmo
-    proto: Pellet12GaugeGlassSpread
-    deleteOnSpawn: true
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     state: glassshot
