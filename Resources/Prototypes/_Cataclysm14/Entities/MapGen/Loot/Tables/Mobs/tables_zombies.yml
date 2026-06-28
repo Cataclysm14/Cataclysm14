@@ -40,13 +40,41 @@
     children:
       - !type:NestedSelector
         weight: 15
-        tableId: LootTableMobZombieCivilianBasic
+        tableId: LootTableZombieSetCivilians
       - !type:NestedSelector
         weight: 10
         tableId: LootTableZombieSetPoliceUs
       - !type:NestedSelector
         weight: 100
         tableId: LootTableZombieSetMilitaryGeneric
+
+#MARK: HardwareStore
+- type: entityTable
+  id: LootTableSpawnerMobZombieHardwareStore
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 10
+        tableId: LootTableZombieSetCivilians
+      - id: MobZombieConstructionWorker
+        weight: 15
+      - id: MobZombieGardener
+        weight: 35
+      - id: MobZombieCashier
+        weight: 35
+
+#MARK: Pharmacy
+- type: entityTable
+  id: LootTableSpawnerMobZombiePharmacy
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        weight: 10
+        tableId: LootTableZombieSetCivilians
+      - id: MobZombiePhysician
+        weight: 40
+      - id: MobZombieCashier
+        weight: 25
 
 #MARK: Zombie Sets >
 
@@ -71,6 +99,9 @@
       - !type:NestedSelector
         weight: 100
         tableId: LootTableMobZombieCivilianBasic
+      - !type:NestedSelector
+        weight: 5
+        tableId: LootTableMobZombieNaked
       - id: MobZombieConstructionWorker
         weight: 5
       - id: MobZombieGardener
@@ -81,16 +112,26 @@
         weight: 5
       - id: MobZombiePhysician
         weight: 5
+      - id: MobZombieCleansuit
+        weight: 5
+      - id: MobZombieHazmat
+        weight: 5
 
 #MARK: MilitaryGeneric
 - type: entityTable
   id: LootTableZombieSetMilitaryGeneric
   table: !type:GroupSelector
     children:
-      - id: MobZombieNationalGuard
+      - id: MobZombieNationalGuardInfantry
         weight: 100
+      - id: MobZombieNationalGuardCBRN
+        weight: 10
+      - id: MobZombieFEMACBRN
+        weight: 10
       - id: MobZombieUNPeacekeeperFR
-        weight: 20
+        weight: 5
+      - id: MobZombieHazmat
+        weight: 5
 
 #MARK: Zombies + Variants >
 
@@ -113,4 +154,26 @@
       - id: MobZombieSprinterCivilianBasic
         weight: 1
       - id: MobZombieTeslaCivilianBasic
+        weight: 2
+      - id: MobZombieSpitterAcidCivilianBasic
+        weight: 2
+
+#MARK: Naked
+- type: entityTable
+  id: LootTableMobZombieNaked
+  table: !type:GroupSelector
+    children:
+      - id: MobZombieNaked
+        weight: 15
+      - id: MobZombieHeadlessNaked
+        weight: 4
+      - id: MobZombieCrawlingNaked
+        weight: 3
+      - id: MobZombieRunnerNaked
+        weight: 2
+      - id: MobZombieSprinterNaked
+        weight: 1
+      - id: MobZombieTeslaNaked
+        weight: 2
+      - id: MobZombieSpitterAcidNaked
         weight: 2

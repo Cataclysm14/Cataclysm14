@@ -4,6 +4,7 @@
   id: MobMonsterBushman
   name: bushman
   description: A small tree with leaves and bra.. is it moving?
+  suffix: Living Plant #Easy spawn faction
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -42,3 +43,6 @@
         Heat: 20
         Piercing: 20
         Radiation: 10
+  - type: NpcFactionMember
+    factions:
+      - NpcFactionLivingPlants

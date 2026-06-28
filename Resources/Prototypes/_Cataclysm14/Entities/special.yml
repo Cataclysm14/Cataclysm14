@@ -9,7 +9,7 @@
     texture: /Textures/_Cataclysm14/empty_32x32.png
 
 - type: entity
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   id: PseudoNPCBullet
   categories: [ HideSpawnMenu ]
   components:

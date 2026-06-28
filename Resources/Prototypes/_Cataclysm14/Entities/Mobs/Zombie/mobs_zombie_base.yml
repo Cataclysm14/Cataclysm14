@@ -11,8 +11,8 @@
     damageCap: 9999
     damage:
       groups:
-        Brute: -0.2
-        Burn: -0.1
+        Brute: -0.05
+        Burn: -0.05
         Airloss: -1
   - type: MobThresholds
     thresholds:
@@ -70,9 +70,8 @@
     - map: [ "enum.HumanoidVisualLayers.LArm" ]
     - map: [ "enum.HumanoidVisualLayers.RLeg" ]
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
-    - map: ["jumpsuit"]
-    - map: ["pants"]
-    - map: [ "balaclava" ]
+    - map: [ "pants" ]
+    - map: [ "jumpsuit" ]
     - map: ["enum.HumanoidVisualLayers.LFoot"]
     - map: ["enum.HumanoidVisualLayers.RFoot"]
     - map: ["enum.HumanoidVisualLayers.LHand"]
@@ -81,19 +80,20 @@
     - map: [ "shoes" ]
     - map: [ "ears" ]
     - map: [ "id" ] # Mono - move from between belt and back
-    - map: [ "outerClothing" ] # mono - i hate you upstream
     - map: [ "eyes" ]
-    - map: [ "belt" ]
-    - map: [ "back" ]
-    - map: [ "neck" ]
     - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
     - map: [ "enum.HumanoidVisualLayers.Hair" ]
     - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
     - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
     - map: [ "enum.HumanoidVisualLayers.Tail" ]
     - map: [ "enum.HumanoidVisualLayers.Wings" ] # For IPC wings porting from SimpleStation
+    - map: [ "balaclava" ]
     - map: [ "mask" ]
     - map: [ "head" ]
+    - map: [ "outerClothing" ] # mono - i hate you upstream
+    - map: [ "belt" ]
+    - map: [ "back" ]
+    - map: [ "neck" ]
     - map: [ "faceshield" ]
     - map: [ "helmetattachment" ]
     - map: [ "pocket1" ]
@@ -359,7 +359,7 @@
 - type: entity
   name: ball lightning
   id: ProjectileLightningZombie
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -583,7 +583,7 @@
 - type: entity
   name: acid spit
   id: ProjectileAcidZombie
-  parent: BaseBullet
+  parent: BaseProjectileBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile

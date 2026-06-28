@@ -20,8 +20,8 @@
         children:
         - id: ClothingOuterBulletProofVestInterceptorOTVSierra
         - id: ClothingOuterBulletProofVestInterceptorOTVSierraFilled
-        - id: ClothingOuterBulletProofVestIOTVSierra
-        - id: ClothingOuterBulletProofVestIOTVSierraFilled
+        - id: ClothingOuterBulletProofVestIOTVHeavySierra
+        - id: ClothingOuterBulletProofVestIOTVHeavySierraFilled
         prob: 0.9
       head: !type:GroupSelector
         children:

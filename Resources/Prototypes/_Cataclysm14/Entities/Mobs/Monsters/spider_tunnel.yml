@@ -4,7 +4,11 @@
   id: MobMonsterSpiderTunnel
   name: tunnel spider
   description: A giant arachnid with glowy eyes and chitine armor.
+  suffix: Arachnid #Easy spawn faction
   components:
+  - type: NpcFactionMember
+    factions:
+      - NpcFactionArachnids
   - type: Sprite
     drawdepth: Mobs
     sprite: _Cataclysm14/Mobs/Mob/spider_tunnel.rsi

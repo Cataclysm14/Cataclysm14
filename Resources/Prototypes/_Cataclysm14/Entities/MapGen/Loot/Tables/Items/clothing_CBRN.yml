@@ -1,0 +1,66 @@
+#MARK: Cleansuit
+- type: entityTable
+  id: LootTableClothingTopCleansuit
+  table: !type:GroupSelector
+    children:
+    - id: ClothingShirtCleansuitYellow
+      weight: 5
+    - id: ClothingShirtCleansuitWhite
+      weight: 3
+    - id: ClothingShirtCleansuitBlue
+      weight: 1.5
+    - id: ClothingShirtCleansuitRed
+      weight: 1.5
+    - id: ClothingShirtCleansuitPurple
+    - id: ClothingShirtCleansuitGreen
+
+#MARK: Hazmat
+- type: entityTable
+  id: LootTableClothingTopHazmat
+  table: !type:GroupSelector
+    children:
+    - id: ClothingShirtHazmatSuitYellow
+      weight: 5
+    - id: ClothingShirtHazmatSuitWhite
+      weight: 3
+    - id: ClothingShirtHazmatSuitBlue
+      weight: 1.5
+    - id: ClothingShirtHazmatSuitRed
+      weight: 1.5
+    - id: ClothingShirtHazmatSuitPurple
+    - id: ClothingShirtHazmatSuitGreen
+
+#MARK: Sterile Gloves
+- type: entityTable
+  id: LootTableClothingHandsGlovesClean
+  table: !type:GroupSelector
+    children:
+    - id: ClothingHandsGlovesSterileLatex
+      weight: 2
+    - id: ClothingHandsGlovesSterileNitrile
+
+#MARK: Industrial Gasmasks
+- type: entityTable
+  id: LootTableClothingMaskGasmasksIndustrial
+  table: !type:GroupSelector
+    children:
+    - !type:NestedSelector
+      tableId: LootTableClothingMaskGasmasksHalfMaskIndustrial
+      weight: 1.5
+    - !type:NestedSelector
+      tableId: LootTableClothingMaskGasmasksFullFaceIndustrial
+
+#MARK: Industrial HalfMask Gasmasks
+- type: entityTable
+  id: LootTableClothingMaskGasmasksHalfMaskIndustrial
+  table: !type:GroupSelector
+    children:
+    - id: ClothingMaskGasMaskRespiratorAdvantage200LS
+    - id: ClothingMaskGasMaskRespirator3M7500
+
+#MARK: Industrial FullFace Gasmasks
+- type: entityTable
+  id: LootTableClothingMaskGasmasksFullFaceIndustrial
+  table: !type:GroupSelector
+    children:
+    - id: ClothingMaskGasMaskUnix5000

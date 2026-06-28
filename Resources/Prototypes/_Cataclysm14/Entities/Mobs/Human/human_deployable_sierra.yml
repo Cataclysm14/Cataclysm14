@@ -59,7 +59,7 @@
     containers:
       outerClothing: !type:GroupSelector
         children:
-        - id: ClothingOuterBulletProofVestIOTVSierraFilled
+        - id: ClothingOuterBulletProofVestIOTVHeavySierraFilled
       head: !type:GroupSelector
         children:
         - id: ClothingHeadHelmetRiotSecurityArmoredSierra

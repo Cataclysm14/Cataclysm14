@@ -1,0 +1,49 @@
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskProtectiveMaskHockey
+  name: hockey mask
+  description: A standard rigid plastic mask for hockey goallies against projectiles to the face. May come in hand against blunt trauma.
+  components:
+  - type: Item
+    shape:
+    - 0,0,1,1
+    storedScale: 4
+  - type: Sprite
+    scale: 0.45,0.45
+    sprite: _Cataclysm14/Clothing/Masks/ProtectiveMasks/mask_hockey.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Masks/ProtectiveMasks/mask_hockey.rsi
+  - type: IdentityBlocker
+    coverage: EYES
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.80
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskProtectiveMaskBallisticBlack
+  name: ballistic mask
+  description: A reinforced steel and polymer facemask to deflect shrapnel and low power projectiles.
+  components:
+  - type: Item
+    shape:
+    - 0,0,1,1
+    storedScale: 4
+  - type: Sprite
+    scale: 0.45,0.45
+    sprite: _Cataclysm14/Clothing/Masks/ProtectiveMasks/mask_ballistic.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Masks/ProtectiveMasks/mask_ballistic.rsi
+  - type: IdentityBlocker
+    coverage: EYES
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.85
+        Piercing: 0.80
+        Heat: 0.90

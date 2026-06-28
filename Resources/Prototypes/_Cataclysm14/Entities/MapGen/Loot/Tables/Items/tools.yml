@@ -7,3 +7,19 @@
     - id: ToolCrowbarMetalGreen
     - id: ToolCrowbarMetalOrange
     - id: ToolCrowbarMetalYellow
+
+- type: entityTable
+  id: LootTableToolsTanksOxygen
+  table: !type:GroupSelector
+    children:
+    - id: ToolTankOxygen
+      weight: 2.5
+    - id: ToolTankOxygenFilledOxygen
+
+- type: entityTable
+  id: LootTableToolsTanksExternalOxygenSupply
+  table: !type:GroupSelector
+    children:
+    - id: ToolTankOxygenExternalSupply
+      weight: 2.5
+    - id: ToolTankOxygenExternalSupplyFilledOxygen

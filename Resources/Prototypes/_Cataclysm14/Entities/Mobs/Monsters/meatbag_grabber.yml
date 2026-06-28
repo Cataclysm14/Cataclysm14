@@ -4,6 +4,7 @@
   id: MobMonsterMeatbagGrabber
   name: grabber meatbag
   description: A fleshy hunk covered in eyes. This one has a set of tentacles reaching out.
+  suffix: Living Meat #Easy spawn faction
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -42,3 +43,6 @@
         Heat: 20
         Piercing: 20
         Radiation: 10
+  - type: NpcFactionMember
+    factions:
+      - NpcFactionLivingMeat

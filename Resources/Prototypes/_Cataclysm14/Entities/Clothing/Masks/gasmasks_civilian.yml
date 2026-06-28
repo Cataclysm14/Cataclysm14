@@ -1,0 +1,68 @@
+- type: entity
+  parent: ClothingMaskGas
+  id: ClothingMaskGasMaskRespiratorAdvantage200LS
+  name: Advantage 200-LS halfmask respirator
+  description: A standard industrial gas mask for professionals such as painters, construction workers and factory workers.
+  components:
+  - type: Item
+    shape:
+    - 0,0,1,1
+    storedScale: 3
+  - type: Sprite
+    scale: 0.55,0.55
+    sprite: _Cataclysm14/Clothing/Masks/Gasmasks/gasmask_halfmask_Advantage-200LS.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Masks/Gasmasks/gasmask_halfmask_Advantage-200LS.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+
+- type: entity
+  parent: ClothingMaskGas
+  id: ClothingMaskGasMaskRespirator3M7500
+  name: 3M 7500Series halfmask respirator
+  description: A standard industrial gas mask for professionals such as painters, construction workers and factory workers.
+  components:
+  - type: Item
+    shape:
+    - 0,0,1,1
+    storedScale: 3
+  - type: Sprite
+    scale: 0.55,0.55
+    sprite: _Cataclysm14\Clothing\Masks\Gasmasks\gasmask_halfmask_3M-7500.rsi
+  - type: Clothing
+    sprite: _Cataclysm14\Clothing\Masks\Gasmasks\gasmask_halfmask_3M-7500.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+
+- type: entity
+  parent: ClothingMaskGas
+  id: ClothingMaskGasMaskUnix5000
+  name: Unix 5000 full face gasmask
+  description: A standard industrial gas mask for professionals such as painters, construction workers and factory workers.
+  components:
+  - type: Item
+    shape:
+    - 0,0,1,1
+    storedScale: 4
+  - type: Sprite
+    scale: 0.45,0.45
+    sprite: _Cataclysm14\Clothing\Masks\Gasmasks\gasmask_Unix5000.rsi
+  - type: Clothing
+    sprite: _Cataclysm14\Clothing\Masks\Gasmasks\gasmask_Unix5000.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95

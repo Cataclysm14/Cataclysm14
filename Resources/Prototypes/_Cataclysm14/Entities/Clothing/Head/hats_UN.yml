@@ -6,9 +6,9 @@
       description: Donning the colours of the UN and in the form of a cap.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Head/hat_cap_UN.rsi
+        sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_UN.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/hat_cap_UN.rsi
+        sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_UN.rsi
 
 #MARK: UN beret
     - type: entity
@@ -18,6 +18,6 @@
       description: Donning the colours of the UN and in the form of a beret.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Head/hat_beret_UN.rsi
+        sprite: _Cataclysm14/Clothing/Head/Hats/hat_beret_UN.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/hat_beret_UN.rsi
+        sprite: _Cataclysm14/Clothing/Head/Hats/hat_beret_UN.rsi

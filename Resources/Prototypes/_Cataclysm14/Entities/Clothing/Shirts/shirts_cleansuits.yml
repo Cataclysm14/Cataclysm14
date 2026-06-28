@@ -1,0 +1,413 @@
+#MARK: Yellow Cleansuit
+- type: entity
+  parent: BaseClothingShirtToggleable
+  id: ClothingShirtCleansuitYellow
+  name: cleansuit (yellow)
+  description: "A suit that protects against contamination."
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_cleansuit.rsi
+    color: "#ffee2f"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_cleansuit.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#ffee2f"
+      balaclava:
+      - state: equipped-INNERCLOTHING
+        color: "#ffee2f"
+      - sprite: _Cataclysm14/Clothing/Head/Hoods/hood_cleansuit.rsi
+        state: equipped-HELMET
+        color: "#ffee2f"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#ffee2f"
+      right:
+      - state: inhand-right
+        color: "#ffee2f"
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.90
+        Radiation: 0.01
+  - type: GroupExamine
+  - type: ToggleableClothing
+    clothingPrototypes:
+      balaclava: ClothingHoodCleansuitYellow
+
+#MARK: Yellow Hood
+- type: entity
+  parent: BaseClothingBalaclava
+  id: ClothingHoodCleansuitYellow
+  name: cleansuit hood (yellow)
+  categories: [ HideSpawnMenu ]
+  description: "A suit that protects against contamination."
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_cleansuit.rsi
+    color: "#ffee2f"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_cleansuit.rsi
+    clothingVisuals:
+      balaclava:
+      - state: equipped-HELMET
+        color: "#ffee2f"
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.90
+        Radiation: 0.01
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+
+#MARK: Red Cleansuit
+- type: entity
+  parent: BaseClothingShirtToggleable
+  id: ClothingShirtCleansuitRed
+  name: cleansuit (red)
+  description: "A suit that protects against contamination."
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_cleansuit.rsi
+    color: "#ff2f47"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_cleansuit.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#ff2f47"
+      balaclava:
+      - state: equipped-INNERCLOTHING
+        color: "#ff2f47"
+      - sprite: _Cataclysm14/Clothing/Head/Hoods/hood_cleansuit.rsi
+        state: equipped-HELMET
+        color: "#ff2f47"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#ff2f47"
+      right:
+      - state: inhand-right
+        color: "#ff2f47"
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.90
+        Radiation: 0.01
+  - type: GroupExamine
+  - type: ToggleableClothing
+    clothingPrototypes:
+      balaclava: ClothingHoodCleansuitRed
+
+#MARK: Red Hood
+- type: entity
+  parent: BaseClothingBalaclava
+  id: ClothingHoodCleansuitRed
+  name: cleansuit hood (red)
+  categories: [ HideSpawnMenu ]
+  description: "A suit that protects against contamination."
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_cleansuit.rsi
+    color: "#ff2f47"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_cleansuit.rsi
+    clothingVisuals:
+      balaclava:
+      - state: equipped-HELMET
+        color: "#ff2f47"
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.90
+        Radiation: 0.01
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+
+#MARK: Blue Cleansuit
+- type: entity
+  parent: BaseClothingShirtToggleable
+  id: ClothingShirtCleansuitBlue
+  name: cleansuit (blue)
+  description: "A suit that protects against contamination."
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_cleansuit.rsi
+    color: "#2f6dff"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_cleansuit.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#2f6dff"
+      balaclava:
+      - state: equipped-INNERCLOTHING
+        color: "#2f6dff"
+      - sprite: _Cataclysm14/Clothing/Head/Hoods/hood_cleansuit.rsi
+        state: equipped-HELMET
+        color: "#2f6dff"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#2f6dff"
+      right:
+      - state: inhand-right
+        color: "#2f6dff"
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.90
+        Radiation: 0.01
+  - type: GroupExamine
+  - type: ToggleableClothing
+    clothingPrototypes:
+      balaclava: ClothingHoodCleansuitBlue
+
+#MARK: Blue Hood
+- type: entity
+  parent: BaseClothingBalaclava
+  id: ClothingHoodCleansuitBlue
+  name: cleansuit hood (blue)
+  categories: [ HideSpawnMenu ]
+  description: "A suit that protects against contamination."
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_cleansuit.rsi
+    color: "#2f6dff"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_cleansuit.rsi
+    clothingVisuals:
+      balaclava:
+      - state: equipped-HELMET
+        color: "#2f6dff"
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.90
+        Radiation: 0.01
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+
+#MARK: Purple Cleansuit
+- type: entity
+  parent: BaseClothingShirtToggleable
+  id: ClothingShirtCleansuitPurple
+  name: cleansuit (purple)
+  description: "A suit that protects against contamination."
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_cleansuit.rsi
+    color: "#d22fff"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_cleansuit.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#d22fff"
+      balaclava:
+      - state: equipped-INNERCLOTHING
+        color: "#d22fff"
+      - sprite: _Cataclysm14/Clothing/Head/Hoods/hood_cleansuit.rsi
+        state: equipped-HELMET
+        color: "#d22fff"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#d22fff"
+      right:
+      - state: inhand-right
+        color: "#d22fff"
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.90
+        Radiation: 0.01
+  - type: GroupExamine
+  - type: ToggleableClothing
+    clothingPrototypes:
+      balaclava: ClothingHoodCleansuitPurple
+
+#MARK: Purple Hood
+- type: entity
+  parent: BaseClothingBalaclava
+  id: ClothingHoodCleansuitPurple
+  name: cleansuit hood (purple)
+  categories: [ HideSpawnMenu ]
+  description: "A suit that protects against contamination."
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_cleansuit.rsi
+    color: "#d22fff"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_cleansuit.rsi
+    clothingVisuals:
+      balaclava:
+      - state: equipped-HELMET
+        color: "#d22fff"
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.90
+        Radiation: 0.01
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+
+#MARK: Green Cleansuit
+- type: entity
+  parent: BaseClothingShirtToggleable
+  id: ClothingShirtCleansuitGreen
+  name: cleansuit (green)
+  description: "A suit that protects against contamination."
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_cleansuit.rsi
+    color: "#3dcd66"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_cleansuit.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#3dcd66"
+      balaclava:
+      - state: equipped-INNERCLOTHING
+        color: "#3dcd66"
+      - sprite: _Cataclysm14/Clothing/Head/Hoods/hood_cleansuit.rsi
+        state: equipped-HELMET
+        color: "#3dcd66"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#3dcd66"
+      right:
+      - state: inhand-right
+        color: "#3dcd66"
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.90
+        Radiation: 0.01
+  - type: GroupExamine
+  - type: ToggleableClothing
+    clothingPrototypes:
+      balaclava: ClothingHoodCleansuitGreen
+
+#MARK: Green Hood
+- type: entity
+  parent: BaseClothingBalaclava
+  id: ClothingHoodCleansuitGreen
+  name: cleansuit hood (green)
+  categories: [ HideSpawnMenu ]
+  description: "A suit that protects against contamination."
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_cleansuit.rsi
+    color: "#3dcd66"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_cleansuit.rsi
+    clothingVisuals:
+      balaclava:
+      - state: equipped-HELMET
+        color: "#3dcd66"
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.90
+        Radiation: 0.01
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+
+#MARK: White Cleansuit
+- type: entity
+  parent: BaseClothingShirtToggleable
+  id: ClothingShirtCleansuitWhite
+  name: cleansuit (white)
+  description: "A suit that protects against contamination."
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_cleansuit.rsi
+    color: "#ffffff"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_cleansuit.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#ffffff"
+      balaclava:
+      - state: equipped-INNERCLOTHING
+        color: "#ffffff"
+      - sprite: _Cataclysm14/Clothing/Head/Hoods/hood_cleansuit.rsi
+        state: equipped-HELMET
+        color: "#ffffff"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#ffffff"
+      right:
+      - state: inhand-right
+        color: "#ffffff"
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.90
+        Radiation: 0.01
+  - type: GroupExamine
+  - type: ToggleableClothing
+    clothingPrototypes:
+      balaclava: ClothingHoodCleansuitWhite
+
+#MARK: White Hood
+- type: entity
+  parent: BaseClothingBalaclava
+  id: ClothingHoodCleansuitWhite
+  name: cleansuit hood (white)
+  categories: [ HideSpawnMenu ]
+  description: "A suit that protects against contamination."
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_cleansuit.rsi
+    color: "#ffffff"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_cleansuit.rsi
+    clothingVisuals:
+      balaclava:
+      - state: equipped-HELMET
+        color: "#ffffff"
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.90
+        Radiation: 0.01
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide

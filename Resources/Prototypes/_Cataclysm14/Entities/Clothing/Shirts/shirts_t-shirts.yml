@@ -4,7 +4,7 @@
       parent: BaseClothingShirt
       id: ClothingShirtTShirtWhite
       name: white t-shirt
-      description: A plain colored t-white, this one is colored in white.
+      description: A plain colored t-shirt, this one is colored in white.
       components:
       - type: Sprite
         sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi

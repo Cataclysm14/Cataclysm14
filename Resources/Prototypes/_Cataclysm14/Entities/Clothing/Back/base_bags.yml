@@ -55,7 +55,7 @@
     price: 9000
     vendPrice: 14000
 
-#MARK: Rucksac
+#MARK: Rucksack
 - type: entity
   parent: ClothingBackpackDuffel
   id: BaseClothingBackpackRucksack

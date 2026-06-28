@@ -4,10 +4,8 @@
   table: !type:GroupSelector
     children:
       - !type:NestedSelector
-        weight: 100
         tableId: LootTableClothingShirtCombatCCE
       - !type:NestedSelector
-        weight: 100
         tableId: LootTableClothingPantsCombatCCE
 
 #MARK: ShirtCombatCCE
@@ -28,19 +26,35 @@
 
 #MARK: National Guard Vest
 - type: entityTable
-  id: LootTableClothingNationalGuardBulletProofVest
+  id: LootTableClothingNationalGuardBulletProofVests
   table: !type:GroupSelector
     children:
-    - id: ClothingOuterBulletProofVestIOTVTan
-    - id: ClothingOuterBulletProofVestIOTVTanFilled
-    - id: ClothingOuterBulletProofVestIOTVOCPMulticam
-    - id: ClothingOuterBulletProofVestIOTVOCPMulticamFilled
-    - id: ClothingOuterBulletProofVestIOTVNationalGuard
-    - id: ClothingOuterBulletProofVestIOTVNationalGuardFilled
-    - id: ClothingOuterBulletProofVestHighcomTrooperTan
+    - !type:NestedSelector
+      tableId: LootTableClothingNationalGuardBulletProofVestFilled
+    - !type:NestedSelector
+      tableId: LootTableClothingNationalGuardBulletProofVestEmpty
+
+#MARK: National Guard Vest Filled
+- type: entityTable
+  id: LootTableClothingNationalGuardBulletProofVestFilled
+  table: !type:GroupSelector
+    children:
+    - id: ClothingOuterBulletProofVestIOTVHeavyTanFilled
+    - id: ClothingOuterBulletProofVestIOTVHeavyOCPMulticamFilled
+    - id: ClothingOuterBulletProofVestIOTVHeavyNationalGuardFilled
     - id: ClothingOuterBulletProofVestHighcomTrooperTanFilled
-    - id: ClothingOuterBulletProofVestSlickCoyote
     - id: ClothingOuterBulletProofVestSlickCoyoteFilled
+
+#MARK: National Guard Vest Empty
+- type: entityTable
+  id: LootTableClothingNationalGuardBulletProofVestEmpty
+  table: !type:GroupSelector
+    children:
+    - id: ClothingOuterBulletProofVestIOTVHeavyTan
+    - id: ClothingOuterBulletProofVestIOTVHeavyOCPMulticam
+    - id: ClothingOuterBulletProofVestIOTVHeavyNationalGuard
+    - id: ClothingOuterBulletProofVestHighcomTrooperTan
+    - id: ClothingOuterBulletProofVestSlickCoyote
 
 #MARK: National Guard Top
 - type: entityTable

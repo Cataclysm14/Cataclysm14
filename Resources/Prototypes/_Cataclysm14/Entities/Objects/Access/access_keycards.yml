@@ -1,10 +1,9 @@
 - type: entity
-  parent: IDCardStandard
+  parent: BaseAccessIdentification
   id: AccessKeycardRed
   name: red access keycard
   components:
   - type: Sprite
-    scale: 0.35,0.35
     sprite: _Cataclysm14/Objects/Access/Keycards/keycard_red.rsi
     state: icon
   - type: PresetIdCard
