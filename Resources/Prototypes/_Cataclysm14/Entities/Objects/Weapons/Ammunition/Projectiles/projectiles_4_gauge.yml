@@ -141,7 +141,25 @@
       types:
         Heat: 5
 
-#MARK: DepletedUranium
+#MARK: Flashbang
+- type: entity
+  id: Pellet4GaugeFlashbang
+  name: pellet (4 gauge flashbang)
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: slug
+  - type: FlashOnTrigger
+    range: 10
+  - type: SpawnOnTrigger
+    proto: GrenadeFlashEffect
+  - type: ActiveTimerTrigger
+    timeRemaining: 0.3
+  - type: DeleteOnTrigger
+
+#MARK: Depleted Uranium
 - type: entity
   id: Pellet4GaugeDepletedUranium
   categories: [ HideSpawnMenu ]
