@@ -121,9 +121,9 @@
   description: A russian combat suit originally made for the montainous terrain of the middle-east with high wind resistance.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Pants/pants_Gorka_tan.rsi
+    sprite: _Cataclysm14/Clothing/Pants/pants_Gorka4_tan.rsi
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Pants/pants_Gorka_tan.rsi
+    sprite: _Cataclysm14/Clothing/Pants/pants_Gorka4_tan.rsi
 
 #MARK: Gorka4 Olive
 - type: entity
@@ -133,6 +133,6 @@
   description: A russian combat suit originally made for the montainous terrain of the middle-east with high wind resistance.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Pants/pants_Gorka_olive.rsi
+    sprite: _Cataclysm14/Clothing/Pants/pants_Gorka4_olive.rsi
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Pants/pants_Gorka_olive.rsi
+    sprite: _Cataclysm14/Clothing/Pants/pants_Gorka4_olive.rsi
