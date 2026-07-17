@@ -15,8 +15,12 @@
     broadcastChannel: Handheld
     toggleOnInteract: false
     frequency: 1111
+    enabled: false
   - type: RadioSpeaker
+    channels:
+    - Handheld
     toggleOnInteract: false
+    enabled: false
   - type: Item
     storedScale: 3
     heldPrefix: walkietalkie
