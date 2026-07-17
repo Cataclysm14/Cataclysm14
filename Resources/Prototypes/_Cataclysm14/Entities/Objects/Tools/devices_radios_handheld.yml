@@ -20,7 +20,7 @@
     channels:
     - Handheld
     toggleOnInteract: false
-    enabled: true
+    enabled: false
   - type: Item
     storedScale: 3
     heldPrefix: walkietalkie
