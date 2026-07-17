@@ -42,7 +42,7 @@
   - type: BallisticAmmoProvider
     capacity: 10
   - type: Item
-    storedScale: 2
+    storedScale: 3
   - type: Tag
     tags:
       - Magazine45AcpM1911Compatible

@@ -6,10 +6,6 @@
   components:
   - type: Sprite
     sprite: _Cataclysm14/Structures/Crates/crate_wood_small.rsi
-    layers:
-    - state: base
-    - state: closed
-      map: ["enum.StorageVisualLayers.Door"]
   - type: Icon
     sprite: _Cataclysm14/Structures/Crates/crate_wood_small.rsi
     state: base
@@ -23,9 +19,9 @@
           bounds: "-0.2,-0.2,0.2,0.1"
         density: 50
         mask:
-        - LargeMobMask
+        - CrateMask
         layer:
-        - WallLayer
+        - MachineLayer
 
 #MARK: Medium Wood
 - type: entity
@@ -35,10 +31,6 @@
   components:
   - type: Sprite
     sprite: _Cataclysm14/Structures/Crates/crate_wood_medium.rsi
-    layers:
-    - state: base
-    - state: closed
-      map: ["enum.StorageVisualLayers.Door"]
   - type: Icon
     sprite: _Cataclysm14/Structures/Crates/crate_wood_medium.rsi
     state: base
@@ -52,9 +44,9 @@
           bounds: "-0.35,-0.2,0.35,0.1"
         density: 50
         mask:
-        - LargeMobMask
+        - CrateMask
         layer:
-        - WallLayer
+        - MachineLayer
 
 #MARK: Large Wood
 - type: entity
@@ -64,10 +56,6 @@
   components:
   - type: Sprite
     sprite: _Cataclysm14/Structures/Crates/crate_wood_large.rsi
-    layers:
-    - state: base
-    - state: closed
-      map: ["enum.StorageVisualLayers.Door"]
   - type: Icon
     sprite: _Cataclysm14/Structures/Crates/crate_wood_large.rsi
     state: base
@@ -83,9 +71,9 @@
           bounds: "-0.35,-0.2,0.35,0.2"
         density: 50
         mask:
-        - LargeMobMask
+        - CrateMask
         layer:
-        - WallLayer
+        - MachineLayer
 
 #MARK: Shipping Wood
 - type: entity
@@ -94,28 +82,26 @@
   name: wooden shipping crate
   components:
   - type: Sprite
-    offset: 0,0.5
+    scale: 1,0.6
+    offset: 0,0.10
     sprite: _Cataclysm14/Structures/Crates/crate_shipping_wood.rsi
-    layers:
-    - state: base
-    - state: closed
-      map: ["enum.StorageVisualLayers.Door"]
   - type: Icon
     sprite: _Cataclysm14/Structures/Crates/crate_shipping_wood.rsi
     state: base
+  - type: Climbable
+    delay: 2.0
   - type: EntityStorage
     capacity: 50
     isCollidableWhenOpen: true
-    airtight: true
     itemCanStoreMobs: true
   - type: Fixtures
     fixtures:
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.35,-0.2,0.35,0.5"
+          bounds: "-0.35,-0.2,0.35,0.4"
         density: 50
         mask:
-        - LargeMobMask
+        - CrateMask
         layer:
-        - WallLayer
+        - MachineLayer

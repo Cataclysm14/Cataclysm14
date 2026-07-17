@@ -10,7 +10,7 @@
   components:
   - type: Item
     size: Huge
-    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/DB_12Gauge_64x64.rsi
+    sprite: _Cataclysm14/Objects/Weapons/Guns/Shotguns/double-barrel_12Gauge_64x64.rsi
     shape:
       - 0,0,6,0
     storedScale: 2
