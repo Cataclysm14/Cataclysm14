@@ -44,12 +44,6 @@
   id: LootTableWeaponGunCivilianGunshop
   table: !type:GroupSelector
     children:
-    - id: WeaponBattleRifleM1AFilledSTANAG20rdEmpty
-      weight: 50
-    - id: WeaponBattleRifleM14MarksmanFilledSTANAG20rdEmpty
-      weight: 25
-    - id: WeaponBattleRifleM14FilledSTANAG20rdEmpty
-      weight: 50
     - id: WeaponBoltActionRifleM24Base
       weight: 100
     - id: WeaponBoltActionRifleRemingtonM700Base
@@ -62,8 +56,6 @@
       weight: 100
     - id: WeaponAssaultRifleVPO-136FilledSteel30rdEmpty
       weight: 100
-    - id: WeaponPistolFN5,7Filled20rdEmpty
-      weight: 75
     - id: WeaponPistolGlock17Filled17rdEmpty
       weight: 100
     - id: WeaponPistolM1911Filled10rdEmpty
@@ -74,23 +66,33 @@
       weight: 100
     - id: WeaponRevolverM36Empty
       weight: 100
-    - id: WeaponRifleAR10FilledSTANAG20rdEmpty
-      weight: 75
-    - id: WeaponRifleAR15FilledSTANAG30rdEmpty
-      weight: 75
     - id: WeaponRifleAR15WoodFurnituresFilledSTANAG30rdEmpty
       weight: 100
-    - id: WeaponRifleKelTecRFBFilledSTANAG20rdEmpty
-      weight: 75
-    - id: WeaponRifleKelTecRDBFilledSTANAG20rdEmpty
-      weight: 75
     - id: WeaponBoltActionRifleRuger10-22Base
       weight: 100
     - id: WeaponShotgun12GaugeDoubleBarrelEmpty
       weight: 100
     - id: WeaponShotgunMossberg500Empty
       weight: 100
-    - id: WeaponShotgunMossberg590TacticalEmpty
-      weight: 75
     - id: WeaponShotgunRemingtonM870Empty
       weight: 100
+    - id: WeaponRifleKelTecRFBFilledSTANAG20rdEmpty
+      weight: 75
+    - id: WeaponRifleKelTecRDBFilledSTANAG20rdEmpty
+      weight: 75
+    - id: WeaponSubMachineGunUSC45Filled30rdEmpty
+      weight: 75
+    - id: WeaponShotgunMossberg590TacticalEmpty
+      weight: 75
+    - id: WeaponRifleAR10FilledSTANAG20rdEmpty
+      weight: 75
+    - id: WeaponRifleAR15FilledSTANAG30rdEmpty
+      weight: 75
+    - id: WeaponPistolFN5,7Filled20rdEmpty
+      weight: 75
+    - id: WeaponBattleRifleM1AFilledSTANAG20rdEmpty
+      weight: 50
+    - id: WeaponBattleRifleM14FilledSTANAG20rdEmpty
+      weight: 50
+    - id: WeaponBattleRifleM14MarksmanFilledSTANAG20rdEmpty
+      weight: 25

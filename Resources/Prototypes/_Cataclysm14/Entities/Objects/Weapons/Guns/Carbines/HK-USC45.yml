@@ -1,0 +1,142 @@
+- type: entity
+  id: WeaponSubMachineGunUSC45Base
+  name: HK USC45 (.45 ACP)
+  description: A compact civilian carbine that pack quite a punch, the Heckler and Koch Universal Self-loading Carbine .45 Caliber, a civilian version of the UMP45. Chambered in .45 ACP.
+  parent: BaseWeaponRifle
+  abstract: true
+  components:
+    - type: Sprite
+      scale: 0.50, 0.50
+      sprite: _Cataclysm14/Objects/Weapons/Guns/Carbines/USC45_64x32.rsi
+      layers:
+        - state: base
+          map:
+            - enum.GunVisualLayers.Base
+        - state: mag-0
+          map:
+            - enum.GunVisualLayers.Mag
+    - type: Item
+      size: Normal
+      sprite: _Cataclysm14/Objects/Weapons/Guns/Carbines/USC45_32x32.rsi
+      shape:
+        - 0,0,3,1
+      storedScale: 2
+    - type: Clothing
+      clothingVisuals:
+        suitstorage:
+          - state: equipped-SUITSTORAGE
+        slingfront:
+          - state: equipped-SUITSTORAGE
+      sprite: _Cataclysm14/Objects/Weapons/Guns/Carbines/USC45_32x32.rsi
+    - type: GunWieldBonus
+      minAngle: -20
+      maxAngle: -30
+    - type: Gun
+      selectedMode: SemiAuto
+      availableModes:
+      - SemiAuto
+      soundGunshot:
+        path: /Audio/_Cataclysm14/Weapons/Guns/Gunshots/cata_LMG_1.ogg
+        params:
+          pitch: 0.9
+          volume: 15
+          variation: 0.15
+      angleIncrease: 5
+      angleDecay: 20
+      maxAngle: 70
+      minAngle: 21
+      fireRate: 9
+    - type: ChamberMagazineAmmoProvider
+      soundBoltClosed:
+        path: /Audio/_Cataclysm14/Weapons/Guns/Bolt/cata_bolt_heavy_1_closing.ogg
+      soundBoltOpened:
+        path: /Audio/_Cataclysm14/Weapons/Guns/Bolt/cata_bolt_heavy_1_opening.ogg
+      soundRack:
+        path: /Audio/_Cataclysm14/Weapons/Guns/Cocking/cata_heavy_1.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: null
+          insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+          ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine45AcpUMP45Compatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: null
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge45Acp
+          whitelistFailPopup: gun-magazine-whitelist-fail
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot {}
+        gun_chamber: !type:ContainerSlot {}
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: Appearance
+    - type: WieldedCrosshair
+      rsi:
+        sprite: _Cataclysm14/Scoping/reticle_holotech.rsi
+        state: all
+
+#MARK: 30rd Empty
+- type: entity
+  id: WeaponSubMachineGunUSC45Filled30rdEmpty
+  suffix: Empty - 30rd
+  parent: WeaponSubMachineGunUSC45Base
+  components:
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: Magazine45AcpUMP45_30rdEmpty
+          insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+          ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine45AcpUMP45Compatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: null
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge45Acp
+          whitelistFailPopup: gun-magazine-whitelist-fail
+
+#MARK: 30rd FMJ
+- type: entity
+  id: WeaponSubMachineGunUSC45Filled30rdFMJ
+  suffix: FMJ - 30rd
+  parent: WeaponSubMachineGunUSC45Base
+  components:
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: Magazine45AcpUMP45_30rdFMJ
+          insertSound: /Audio/_Cataclysm14/Weapons/Guns/MagIn/cata_belt_1.ogg
+          ejectSound: /Audio/_Cataclysm14/Weapons/Guns/MagOut/cata_belt_1.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine45AcpUMP45Compatible
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: null
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge45Acp
+          whitelistFailPopup: gun-magazine-whitelist-fail

@@ -1,0 +1,61 @@
+#Wall Bathroom Cabinet
+- type: entity
+  parent: StructureFurnitureBaseLarge
+  id: StructureFurnitureWallCabinetBathroom
+  name: wall bathroom cabinet
+  description: A small wall mounted cabinet designed to hold various grooming and medical supplies.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateDoorOpen: open
+    stateDoorClosed: closed
+  - type: WallMount
+    arc: 175
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: InteractionOutline
+  - type: UserInterface
+    interfaces:
+     enum.StorageUiKey.Key:
+      type: StorageBoundUserInterface
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: Sprite
+    drawdepth: WallMountedItems
+    sprite: _Cataclysm14/Structures/Furnitures/wall_cabinet_bathroom.rsi
+    noRot: false
+    layers:
+    - state: frame
+    - map: ["enum.StorageFillLayers.Fill"]
+    - state: closed
+      map: ["enum.StorageVisualLayers.Door"]
+  - type: StorageFillVisualizer
+    maxFillLevels: 2
+    fillBaseName: fill
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 80
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger: !type:DamageTrigger
+        damage: 40
+      behaviors:
+      - !type:EmptyAllContainersBehaviour
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalGlassBreak
+  - type: Storage
+    grid:
+    - 0,0,5,5
+    maxItemSize: Huge

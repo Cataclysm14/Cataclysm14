@@ -1,6 +1,6 @@
 - type: entity
   id: WeaponSubMachineGunMP5SDModSierraBase
-  name: sierra HK MP5SD mod (9x19mm parabellum)
+  name: HK MP5SD sierra mod (9x19mm parabellum)
   description: A timeless classic used by forces throughout the world, the Heckler and Koch MachinePistol 5 SD "Schalldämpfer" silenced, Chambered in 9x19mm parabellum. Donning the colors of the Superstructure Taskforce Sierra.
   parent: BaseWeaponRifle
   abstract: true
