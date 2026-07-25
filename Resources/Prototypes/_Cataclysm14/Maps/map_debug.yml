@@ -10,10 +10,15 @@
       stationProto: StandardFrontierStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: "CataDev"
-        # - type: StationPlanetSpawner
-        #   planet: CataBiomeEmpty
-        #   gridPath: /Maps/_Cataclysm14/Test/dev_map.yml
+          mapNameTemplate: "Clarksville"
+
+        - type: ExtraStationInformation
+          icon:
+            sprite: "/Textures/_Cataclysm14/RegionIcons/newhampshire.rsi"
+            state: nh
+          stationDescription: cata-latejoin-new-hampshire-description
+          lobbySortOrder: 1
+
         - type: StationJobs
           availableJobs:
-            ProfessionUnemployed: [ -1, -1 ]
+            ProfessionUnemployed: [-1, -1]
