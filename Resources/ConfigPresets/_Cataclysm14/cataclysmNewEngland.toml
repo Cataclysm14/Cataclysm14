@@ -9,6 +9,17 @@ panic_bunker.disable_with_admins = false
 panic_bunker.enable_without_admins = false
 panic_bunker.custom_reason = ""
 map = "CataDev"
+defaultpreset = "Extended"
+fallbackenabled = true
+fallbackpreset = "Extended"
+
+[vote]
+# disables voting, we a commie state in this bitch
+autovote_enabled = false
+
+# democracy? NO
+preset_autovote_enabled = false
+map_autovote_enabled = false
 
 [chat]
 motd = "Welcome to Cataclysm14. Your starts here, and ends soon. Be sure to join our Discord."
@@ -46,7 +57,7 @@ show_ooc_patron_color = false
 discord_channel_id = 1331042209172164639
 
 [shuttle]
-auto_call_time = 360
+auto_call_time = 720
 mass_limit = 0
 
 [surgery]
