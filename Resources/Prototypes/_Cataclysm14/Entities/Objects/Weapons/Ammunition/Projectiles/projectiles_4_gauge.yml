@@ -7,8 +7,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 34
-        Structural: 200
+        Piercing: 90
+        Structural: 75
     armorPenetration: -0.2
 
 #MARK: Beanbag
@@ -20,10 +20,10 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 10
+        Blunt: 7.5
     armorPenetration: -0.2
   - type: StaminaDamageOnCollide
-    damage: 30 # 4 hits to stun
+    damage: 90 # 1.5x the 12 gauge stamina damage
 
 #MARK: Buckshot
 - type: entity
@@ -34,8 +34,15 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 11
+        Piercing: 30
+        Structural: 30
     armorPenetration: -0.5
+
+  - type: ProjectileDamageFalloff
+    falloffStart: 2
+    falloffPerTile: 0.25
+    minimumMultiplier: 0.50
+    stepByTile: false
 
 - type: entity
   id: Pellet4GaugeBuckshotSpread
@@ -56,11 +63,18 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 6
-        Heat: 11
+        Piercing: 10
+        Heat: 20
+        Structural: 10
     armorPenetration: -0.2
   - type: IgnitionSource
     ignited: true
+
+  - type: ProjectileDamageFalloff
+    falloffStart: 2
+    falloffPerTile: 0.25
+    minimumMultiplier: 0.50
+    stepByTile: false
 
 - type: entity
   id: Pellet4GaugeIncendiarySpread
@@ -81,7 +95,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 1
+        Blunt: 2
   - type: SolutionContainerManager
     solutions:
       ammo:
@@ -139,7 +153,7 @@
     deleteOnCollide: false
     damage:
       types:
-        Heat: 5
+        Heat: 7.5
 
 #MARK: Flashbang
 - type: entity
@@ -168,9 +182,16 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 5
-        Piercing: 7
+        Radiation: 8
+        Piercing: 40
+        Structural: 20
     armorPenetration: -0.1
+
+  - type: ProjectileDamageFalloff
+    falloffStart: 3
+    falloffPerTile: 0.20
+    minimumMultiplier: 0.50
+    stepByTile: false
 
 - type: entity
   id: Pellet4GaugeDepletedUraniumSpread
@@ -191,8 +212,15 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 19
+        Piercing: 50
+        Structural: 60
     armorPenetration: -0.2
+
+  - type: ProjectileDamageFalloff
+    falloffStart: 3
+    falloffPerTile: 0.25
+    minimumMultiplier: 0.50
+    stepByTile: false
 
 - type: entity
   id: Pellet4GaugeOOBuckshotSpread
@@ -213,8 +241,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 80
-        Structural: 300
+        Piercing: 120
+        Structural: 200
     armorPenetration: -0.9
 
 #MARK: Flechette
@@ -226,11 +254,18 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 8
+        Piercing: 20
+        Structural: 45
     armorPenetration: 0.3
   - type: Tracer
     color: "#6f7c82ff"
     length: 3
+
+  - type: ProjectileDamageFalloff
+    falloffStart: 3
+    falloffPerTile: 0.25
+    minimumMultiplier: 0.50
+    stepByTile: false
 
 - type: entity
   id: Pellet4GaugeFlechetteSpread
@@ -263,3 +298,9 @@
     proto: Pellet4GaugeDozd
     count: 10
     spread: 6
+    
+  - type: ProjectileDamageFalloff
+    falloffStart: 3
+    falloffPerTile: 0.25
+    minimumMultiplier: 0.50
+    stepByTile: false
