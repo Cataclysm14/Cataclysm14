@@ -1,6 +1,5 @@
 using System.Linq;
 using Content.Client._Mono.Company; // Mono
-using Content.Client._Mono.MonoCoins;
 using Content.Client.Guidebook;
 using Content.Client.Humanoid;
 using Content.Client.Inventory;
@@ -47,7 +46,6 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
     [UISystemDependency] private readonly ClientInventorySystem _inventory = default!;
     [UISystemDependency] private readonly StationSpawningSystem _spawn = default!;
     [UISystemDependency] private readonly GuidebookSystem _guide = default!;
-    [UISystemDependency] private readonly MonoCoinsSystem _monoCoins = default!;
 
     private CharacterSetupGui? _characterSetup;
     private HumanoidProfileEditor? _profileEditor;
@@ -82,39 +80,6 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
         _configurationManager.OnValueChanged(CCVars.GameRoleWhitelist, _ => RefreshProfileEditor());
     }
 
-    private bool _monoCoinsSubscribed = false;
-
-    /// <summary>
-    /// Safely subscribes to MonoCoins balance updates if not already subscribed.
-    /// </summary>
-    private void EnsureMonoCoinsSubscription()
-    {
-        if (!_monoCoinsSubscribed && _monoCoins != null)
-        {
-            _monoCoins.BalanceUpdated += OnMonoCoinsBalanceUpdated;
-            _monoCoinsSubscribed = true;
-        }
-    }
-
-    /// <summary>
-    /// Called when MonoCoins balance is updated from the server.
-    /// </summary>
-    private void OnMonoCoinsBalanceUpdated(int balance)
-    {
-        UpdateMonoCoinsDisplay();
-    }
-
-    /// <summary>
-    /// Updates the MonoCoins display in the lobby preview panel.
-    /// </summary>
-    private void UpdateMonoCoinsDisplay()
-    {
-        if (PreviewPanel == null)
-            return;
-
-        var balance = _monoCoins?.GetLastKnownBalance() ?? -1;
-        PreviewPanel.SetMonoCoinsText($"MonoCoins: {balance}");
-    }
 
     private LobbyCharacterPreviewPanel? GetLobbyPreview()
     {
@@ -183,12 +148,7 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
     {
         PreviewPanel?.SetLoaded(_preferencesManager.ServerDataLoaded);
         ReloadCharacterSetup();
-
-        // Ensure MonoCoins subscription and request balance when entering lobby
-        EnsureMonoCoinsSubscription();
-        _monoCoins?.RequestBalance();
     }
-
     public void OnStateExited(LobbyState state)
     {
         PreviewPanel?.SetLoaded(false);
@@ -229,7 +189,6 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
             PreviewPanel.SetSummaryText(string.Empty);
             PreviewPanel.SetBankBalanceText(string.Empty); // Frontier
             PreviewPanel.SetCompanyText(string.Empty); // Company Display
-            PreviewPanel.SetMonoCoinsText("MonoCoins: -1"); // MonoCoins Display
             return;
         }
 
@@ -263,11 +222,6 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
         {
             PreviewPanel.SetCompanyText($"[color=white]Company:[/color] [color=yellow]{companyId}[/color]");
         }
-
-        // MonoCoins Display - Request balance from server and update display
-        EnsureMonoCoinsSubscription();
-        _monoCoins?.RequestBalance();
-        UpdateMonoCoinsDisplay();
     }
 
     private void RefreshProfileEditor()
