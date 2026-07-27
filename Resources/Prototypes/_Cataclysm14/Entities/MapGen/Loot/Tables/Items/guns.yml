@@ -20,9 +20,14 @@
         - id: WeaponAssaultRifleM16A3FilledSTANAG30rdTracerRed
       - !type:GroupSelector
         children:
-        - id: WeaponAssaultRifleM27-IARFilledSTANAG30rdEmpty
-        - id: WeaponAssaultRifleM27-IARFilledSTANAG30rdFMJ
-        - id: WeaponAssaultRifleM27-IARFilledSTANAG30rdTracerRed
+        - id: WeaponAssaultRifleM27IARFilledSTANAG30rdEmpty
+        - id: WeaponAssaultRifleM27IARFilledSTANAG30rdFMJ
+        - id: WeaponAssaultRifleM27IARFilledSTANAG30rdTracerRed
+      - !type:GroupSelector
+        children:
+        - id: WeaponAssaultRifleM38DMRFilledSTANAG30rdEmpty
+        - id: WeaponAssaultRifleM38DMRFilledSTANAG30rdFMJ
+        - id: WeaponAssaultRifleM38DMRFilledSTANAG30rdTracerRed
       - !type:GroupSelector
         children:
         - id: WeaponLightMachineGunM249Filled200rdEmpty

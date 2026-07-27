@@ -11,7 +11,7 @@ panic_bunker.custom_reason = ""
 map = "CataDev"
 
 [chat]
-motd = "Welcome to Cataclysm14. Your starts here, and ends soon. Be sure to join our Discord."
+motd = "Welcome to Cataclysm14. Your story starts here, and ends soon. Be sure to join our Discord."
 
 [console]
 login_host_user = "STALKER ARENA"
@@ -53,7 +53,7 @@ mass_limit = 0
 can_operate_on_self = true
 
 [nf14.respawn]
-time = 240
+time = 60
 
 # [hub]
 # advertise = 1
