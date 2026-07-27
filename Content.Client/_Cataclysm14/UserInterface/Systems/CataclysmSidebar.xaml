@@ -178,6 +178,12 @@
                 <Label Text="Thirst: "/>
                 <Label Name="ThirstLabel" Text="pee"/>
             </BoxContainer>
+            <Label Text="  "/>
+            <!-- Stamina -->
+            <BoxContainer Name="StaminaContainer" HorizontalExpand="true" VerticalExpand="true" Orientation="Horizontal" StyleClasses="StyleClassBoxOfTerminusLabels">
+                <Label Text="Stamina: "/>
+                <Label Name="StaminaLabel" Text="pee"/>
+            </BoxContainer>
         </BoxContainer>
 
     </BoxContainer>
