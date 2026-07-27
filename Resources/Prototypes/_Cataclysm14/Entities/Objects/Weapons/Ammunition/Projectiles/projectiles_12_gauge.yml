@@ -7,8 +7,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 34
-        Structural: 200
+        Piercing: 75
+        Structural: 50
     armorPenetration: -0.2
 
 #MARK: Beanbag
@@ -20,10 +20,10 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 10
+        Blunt: 5
     armorPenetration: -0.2
   - type: StaminaDamageOnCollide
-    damage: 30 # 4 hits to stun
+    damage: 60 # 2 hits to stun
 
 #MARK: Buckshot
 - type: entity
@@ -34,8 +34,15 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 11
+        Piercing: 20
+        Structural: 20
     armorPenetration: -0.5
+
+  - type: ProjectileDamageFalloff
+    falloffStart: 2
+    falloffPerTile: 0.25
+    minimumMultiplier: 0.50
+    stepByTile: false
 
 - type: entity
   id: Pellet12GaugeBuckshotSpread
@@ -59,6 +66,12 @@
         Piercing: 3
     armorPenetration: -0.5
 
+  - type: ProjectileDamageFalloff
+    falloffStart: 2
+    falloffPerTile: 0.25
+    minimumMultiplier: 0.50
+    stepByTile: false
+
 - type: entity
   id: Pellet12GaugeBirdshotSpread
   categories: [ HideSpawnMenu ]
@@ -67,7 +80,7 @@
   - type: ProjectileSpread
     proto: Pellet12GaugeBirdshot
     count: 14
-    spread: 15
+    spread: 20
 
 #MARK: Incendiary
 - type: entity
@@ -78,11 +91,18 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 6
-        Heat: 11
+        Piercing: 6
+        Heat: 14
+        Structural: 6
     armorPenetration: -0.2
   - type: IgnitionSource
     ignited: true
+    
+  - type: ProjectileDamageFalloff
+    falloffStart: 2
+    falloffPerTile: 0.25
+    minimumMultiplier: 0.50
+    stepByTile: false
 
 - type: entity
   id: Pellet12GaugeIncendiarySpread
@@ -173,8 +193,15 @@
     damage:
       types:
         Radiation: 5
-        Piercing: 7
+        Piercing: 25
+        Structural: 14
     armorPenetration: -0.1
+    
+  - type: ProjectileDamageFalloff
+    falloffStart: 3
+    falloffPerTile: 0.20
+    minimumMultiplier: 0.50
+    stepByTile: false
 
 - type: entity
   id: Pellet12GaugeDepletedUraniumSpread
@@ -195,8 +222,15 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 19
+        Piercing: 35
+        Structural: 40
     armorPenetration: -0.2
+    
+  - type: ProjectileDamageFalloff
+    falloffStart: 3
+    falloffPerTile: 0.25
+    minimumMultiplier: 0.50
+    stepByTile: false
 
 - type: entity
   id: Pellet12GaugeOOBuckshotSpread
@@ -218,7 +252,7 @@
     damage:
       types:
         Piercing: 80
-        Structural: 300
+        Structural: 150
     armorPenetration: -0.9
 
 #MARK: Flechette
@@ -230,11 +264,18 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 8
+        Piercing: 15
+        Structural: 30
     armorPenetration: 0.3
   - type: Tracer
     color: "#6f7c82ff"
     length: 3
+    
+  - type: ProjectileDamageFalloff
+    falloffStart: 3
+    falloffPerTile: 0.25
+    minimumMultiplier: 0.50
+    stepByTile: false
 
 - type: entity
   id: Pellet12GaugeFlechetteSpread

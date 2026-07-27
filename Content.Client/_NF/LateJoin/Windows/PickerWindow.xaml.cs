@@ -39,6 +39,8 @@ public sealed partial class PickerWindow : FancyWindow
         _gameTicker = _entitySystem.GetEntitySystem<ClientGameTicker>();
         _sawmill = Logger.GetSawmill("latejoin");
 
+        // Cata14; only "region" joining is available
+        CrewTabButton.Visible = false;
         CrewTabButton.OnPressed += _ =>
         {
             SetCurrentTab(PickerType.Crew);
@@ -61,7 +63,7 @@ public sealed partial class PickerWindow : FancyWindow
         // This is the place to change the default tab.
         if (_currentTab == null)
         {
-            SetCurrentTab(PickerType.StationOrCrewLarge);
+            SetCurrentTab(PickerType.Station);
         }
     }
 
@@ -79,8 +81,11 @@ public sealed partial class PickerWindow : FancyWindow
 
     private void UpdateUi(IReadOnlyDictionary<NetEntity, StationJobInformation> obj)
     {
-        // This is the place where it filters out cargo stations and others that shouldn't be shown in the latejoin ui.
-        var availableJobs = obj.Where(kvp => kvp.Value.JobsAvailable.Values.Count != 0)
+        // Cata14: Only Clarksville (placeholder name in New Hampshire) is joinable
+        var availableJobs = obj
+            .Where(kvp =>
+                kvp.Value.JobsAvailable.Values.Count != 0 &&
+                kvp.Value.IsLateJoinStation)
             .ToDictionary(kvp => kvp.Key, kvp => kvp.Value);
 
         var stationJobs = availableJobs.Where(kvp => kvp.Value.IsLateJoinStation)
