@@ -253,7 +253,7 @@
   id: SpecieZombieFat
   name: species-name-zombie-fat
   roundStart: false
-  prototype: BaseMobZombieFat #Not really important
+  prototype: MobZombieFatNaked #Not really important
   sprites: MobZombieSpritesBase
   defaultSkinTone: "#4F7942"
   markingLimits: MobZombieMarkingLimits
