@@ -153,6 +153,8 @@
     children:
       - id: MobZombieCivilianBasic
         weight: 15
+      - id: MobZombieFatCivilianBasic
+        weight: 4
       - id: MobZombieHeadlessCivilianBasic
         weight: 4
       - id: MobZombieCrawlingCivilianBasic
@@ -173,6 +175,8 @@
     children:
       - id: MobZombieNaked
         weight: 15
+      - id: MobZombieFatNaked
+        weight: 4
       - id: MobZombieHeadlessNaked
         weight: 4
       - id: MobZombieCrawlingNaked

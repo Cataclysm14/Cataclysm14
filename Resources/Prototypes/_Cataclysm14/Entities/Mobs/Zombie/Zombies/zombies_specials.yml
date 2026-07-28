@@ -187,7 +187,7 @@
 #MARK: Naked / no gear
 - type: entity
   parent: BaseMobZombieFat
-  id: MobZombieFat
+  id: MobZombieFatNaked
   suffix: Naked
   components:
   - type: Inventory

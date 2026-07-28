@@ -1,5 +1,6 @@
 using System.Numerics;
 using Content.Server.NPC.Components;
+using Content.Server.NPC.HTN;
 using Content.Shared.CombatMode;
 using Content.Shared.NPC;
 using Robust.Shared.Map;
@@ -79,11 +80,14 @@ public sealed partial class NPCCombatSystem
             return;
         }
 
-        if (distance > TargetMeleeLostRange)
+        // Cataclysm14 Begin - Fix low iq zombie
+        var targetMeleeLostRange = CompOrNull<HTNComponent>(uid)?.Blackboard.GetValueOrDefault<float>("VisionRadius", EntityManager) ?? TargetMeleeLostRange;
+        if (distance > targetMeleeLostRange)
         {
             component.Status = CombatStatus.TargetUnreachable;
             return;
         }
+        // Cataclysm14 End - Fix low iq zombie
 
         if (TryComp<NPCSteeringComponent>(uid, out var steering) &&
             steering.Status == SteeringStatus.NoPath)
