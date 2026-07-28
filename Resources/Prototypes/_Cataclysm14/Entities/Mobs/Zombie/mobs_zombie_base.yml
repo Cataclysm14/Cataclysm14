@@ -19,6 +19,7 @@
       0: Alive
       100: Critical
       200: Dead
+  - type: Pulpable
   - type: DamageVisuals
     thresholds: [ 10, 20, 30, 50, 70, 100 ]
     targetLayers:
