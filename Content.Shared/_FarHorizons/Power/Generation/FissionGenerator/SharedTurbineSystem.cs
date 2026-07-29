@@ -11,14 +11,14 @@ using Robust.Shared.Audio.Systems;
 
 namespace Content.Shared._FarHorizons.Power.Generation.FissionGenerator;
 
-public abstract class SharedTurbineSystem : EntitySystem
+public abstract partial class SharedTurbineSystem : EntitySystem
 {
-    [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
-    [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
-    [Dependency] protected readonly SharedAudioSystem _audio = default!;
-    [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
-    [Dependency] private readonly SharedToolSystem _toolSystem = default!;
-    [Dependency] private readonly EntityManager _entityManager = default!;
+    [Dependency] private ISharedAdminLogManager _adminLogger = default!;
+    [Dependency] private SharedAppearanceSystem _appearance = default!;
+    [Dependency] protected SharedAudioSystem _audio = default!;
+    [Dependency] private SharedPopupSystem _popupSystem = default!;
+    [Dependency] private SharedToolSystem _toolSystem = default!;
+    [Dependency] private EntityManager _entityManager = default!;
 
     private readonly float _threshold = 0.5f;
     private float _accumulator = 0f;
@@ -142,14 +142,14 @@ public abstract class SharedTurbineSystem : EntitySystem
     }
 
     protected static bool AdjustStatorLoad(TurbineComponent turbine, float change)
-    { 
+    {
         var newSet = Math.Clamp(turbine.StatorLoad + change, 1000f, turbine.StatorLoadMax);
         if (turbine.StatorLoad != newSet)
         {
             turbine.StatorLoad = newSet;
             return true;
         }
-        return false; 
+        return false;
     }
 
     #region Repairs

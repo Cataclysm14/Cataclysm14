@@ -177,6 +177,7 @@
   - type: EmagLatheRecipes
     emagStaticPacks:
     - StaticAmmoRecipePack
+    - StaticGrenades
   - type: BlueprintReceiver
     whitelist:
       tags:
@@ -272,6 +273,7 @@
     - SmartGun # Goobstation
     # Einstein Engines Packs
     - Translators
+    - RCD # Mono!
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - DynamicAmmoRecipePack
@@ -281,6 +283,7 @@
     - SyringeGuns # Delta-V
     emagStaticPacks:
     - StaticAmmoRecipePack
+    - StaticGrenades # Mono
 
 - type: entity
   id: ProtolatheHyperConvection
@@ -492,6 +495,7 @@
     - SecurityEquipmentStatic
     - SecurityPracticeStatic
     - StaticAmmoRecipePack
+    - StaticGrenades
     - SecurityWeaponsStatic
     dynamicPacks:
     - SecurityEquipment
@@ -510,9 +514,6 @@
     - MonoRogueWeaponsDynamicMelee
     - MonoRogueWeaponsDynamicRanged
     - MonoRogueMiscDynamic
-    - MonoUSSPMiscDynamic
-    - MonoViperGroupDynamic
-    - MonoUSSPWeaponsDynamicRanged
     - UniversalShellAmmo
     - ResearchedExplosives
     - UniversalRailgunAmmo
@@ -556,6 +557,7 @@
     runningState: icon
     staticPacks:
     - StaticAmmoRecipePack
+    - StaticGrenades
     - RoundstartShipgunAmmo # Mono
     dynamicPacks:
     - DynamicAmmoRecipePack

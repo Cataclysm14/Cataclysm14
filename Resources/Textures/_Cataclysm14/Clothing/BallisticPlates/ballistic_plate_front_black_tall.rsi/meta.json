@@ -1,14 +1,23 @@
 {
     "version": 1,
+<<<<<<<< HEAD:Resources/Textures/_Cataclysm14/Clothing/BallisticPlates/ballistic_plate_front_black_tall.rsi/meta.json
     "license": "CC-BY-SA-4.0",
     "copyright": "by zeranov (disc:core_mene)",
+========
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Made by Onezero0 for Monolith",
+>>>>>>>> upstream/main:Resources/Textures/_Mono/Structures/Furniture/Tables/battletable.rsi/meta.json
     "size": {
         "x": 32,
         "y": 32
     },
     "states": [
         {
+<<<<<<<< HEAD:Resources/Textures/_Cataclysm14/Clothing/BallisticPlates/ballistic_plate_front_black_tall.rsi/meta.json
             "name": "icon"
+========
+          "name": "full"
+>>>>>>>> upstream/main:Resources/Textures/_Mono/Structures/Furniture/Tables/battletable.rsi/meta.json
         }
     ]
 }

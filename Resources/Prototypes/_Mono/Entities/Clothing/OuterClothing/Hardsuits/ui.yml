@@ -32,13 +32,13 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHelmetHardsuitUIEnforcer
-      faceshield: ClothingHeadfaceshieldBlock
+      helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaminaDamageResistance
     coefficient: 0.55
 
 - type: entity
-  parent: [ ClothingOuterHardsuitBase, EnergyShieldClothing, BaseFactionGearOtherFactionT2 ]
+  parent: [ ClothingOuterHardsuitBase, MonoEnergyShieldClothing, BaseFactionGearOtherFactionT2 ]
   id: ClothingOuterHardsuitUIEnforcerMKII
   name: U.I. ENFORCER MKII combat tacsuit
   description: Based off of the infamous MKI design with versatility in mind. This is Ullman Industries' top of the line combat suit. Whether it be slipping away from the feds, taking out the competition, or serving your corporate overlords, this marvel of engineering will make sure that you get it done.
@@ -61,22 +61,16 @@
         Heat: 0.5
         Radiation: 0.6
         Caustic: 0.7
-  - type: Blocking
-    passiveBlockModifier:
-      coefficients:
-        Blunt: 0.4
-        Slash: 0.25
-        Piercing: 0.5
-        Heat: 0.3
-      flatReductions:
-        Heat: 15
-        Piercing: 5
-    passiveBlockFraction: 0.5
-    activeBlockFraction: 1.0
-    isClothing: true
+  - type: PersonalShield
+    shield:
+      maxCharge: 600
+      regenRate: 6
+      spinupTime: 1
+      breakCooldown: 30
+      powerDraw: 0.5
   - type: Battery
-    maxCharge: 15
-    startingCharge: 15
+    maxCharge: 60
+    startingCharge: 60
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 0.1
@@ -90,7 +84,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHelmetHardsuitUIEnforcerMKII # Ullman Enforcer MKII helmet
-      faceshield: ClothingHeadfaceshieldBlock
+      helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaminaDamageResistance
     coefficient: 0.45
@@ -129,7 +123,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHelmetHardsuitUIEngineer
-      faceshield: ClothingHeadfaceshieldBlock
+      helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaminaDamageResistance
     coefficient: 0.8
@@ -169,7 +163,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHelmetHardsuitUIPilot
-      faceshield: ClothingHeadfaceshieldBlock
+      helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaminaDamageResistance
     coefficient: 0.7
@@ -208,7 +202,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHelmetHardsuitUIDirector
-      faceshield: ClothingHeadfaceshieldBlock
+      helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaminaDamageResistance
     coefficient: 0.35

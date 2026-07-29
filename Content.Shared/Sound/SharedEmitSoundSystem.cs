@@ -1,4 +1,3 @@
-using Content.Shared._Cataclysm14.Noise;
 using Content.Shared.Audio;
 using Content.Shared.Hands;
 using Content.Shared.Interaction;
@@ -18,6 +17,8 @@ using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Network;
 using Robust.Shared.Physics.Components;
+
+using Content.Shared._Cataclysm14.Noise; // Cataclysm14
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
@@ -28,16 +29,17 @@ namespace Content.Shared.Sound;
 /// Will play a sound on various events if the affected entity has a component derived from BaseEmitSoundComponent
 /// </summary>
 [UsedImplicitly]
-public abstract class SharedEmitSoundSystem : EntitySystem
+public abstract partial class SharedEmitSoundSystem : EntitySystem
 {
-    [Dependency] protected readonly IGameTiming Timing = default!;
-    [Dependency] private readonly INetManager _netMan = default!;
-    [Dependency] protected readonly IRobustRandom Random = default!;
-    [Dependency] private   readonly SharedAmbientSoundSystem _ambient = default!;
-    [Dependency] private   readonly SharedAudioSystem _audioSystem = default!;
-    [Dependency] protected readonly SharedPopupSystem Popup = default!;
-    [Dependency] private readonly SharedMapSystem _map = default!;
-    [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
+    [Dependency] protected IGameTiming Timing = default!;
+    [Dependency] private INetManager _netMan = default!;
+    [Dependency] protected IRobustRandom Random = default!;
+    [Dependency] private   SharedAmbientSoundSystem _ambient = default!;
+    [Dependency] private   SharedAudioSystem _audioSystem = default!;
+    [Dependency] protected SharedPopupSystem Popup = default!;
+    [Dependency] private SharedMapSystem _map = default!;
+    [Dependency] private EntityWhitelistSystem _whitelistSystem = default!;
+    [Dependency] private TurfSystem _turf = default!;
 
     public override void Initialize()
     {
@@ -94,7 +96,7 @@ public abstract class SharedEmitSoundSystem : EntitySystem
         var tile = _map.GetTileRef(xform.GridUid.Value, grid, xform.Coordinates);
 
         // Handle maps being grids (we'll still emit the sound).
-        if (xform.GridUid != xform.MapUid && tile.IsSpace())
+        if (xform.GridUid != xform.MapUid && _turf.IsSpace(tile))
             return;
 
         // hand throwing not predicted sadly

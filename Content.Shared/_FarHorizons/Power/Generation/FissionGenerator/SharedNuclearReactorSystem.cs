@@ -5,13 +5,13 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Shared._FarHorizons.Power.Generation.FissionGenerator;
 
-public abstract class SharedNuclearReactorSystem : EntitySystem
+public abstract partial class SharedNuclearReactorSystem : EntitySystem
 {
-    [Dependency] private readonly ItemSlotsSystem _slotsSystem = default!;
-    [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
-    [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
-    [Dependency] private readonly IPrototypeManager _proto = default!;
-    [Dependency] private readonly EntityManager _entityManager = default!;
+    [Dependency] private ItemSlotsSystem _slotsSystem = default!;
+    [Dependency] private SharedAppearanceSystem _appearance = default!;
+    [Dependency] private SharedPopupSystem _popupSystem = default!;
+    [Dependency] private IPrototypeManager _proto = default!;
+    [Dependency] private EntityManager _entityManager = default!;
 
     public override void Initialize()
     {
@@ -107,13 +107,13 @@ public abstract class SharedNuclearReactorSystem : EntitySystem
         }
     }
 
-    public static bool AdjustControlRods(NuclearReactorComponent comp, float change) { 
+    public static bool AdjustControlRods(NuclearReactorComponent comp, float change) {
         var newSet = Math.Clamp(comp.ControlRodInsertion + change, 0, 2);
         if (comp.ControlRodInsertion != newSet)
         {
             comp.ControlRodInsertion = newSet;
             return true;
         }
-        return false; 
+        return false;
     }
 }

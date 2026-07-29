@@ -499,7 +499,6 @@
   - type: Sprite
     sprite: Objects/Weapons/Grenades/airboom.rsi
   - type: SoundOnTrigger
-    noise: 20 # Cataclysm14
     sound: /Audio/Items/smoke_grenade_smoke.ogg
   - type: TimerTriggerVisuals
     primingSound:
@@ -512,8 +511,8 @@
     air:
       volume: 1000
       moles: # Target is 3117.84 mols total for filling 30 tiles (goal is 101.325 kPa @ 20C)
-      - 654.7464 # oxygen
-      - 2463.0936 # nitrogen
+        Oxygen: 654.7464 # oxygen
+        Nitrogen: 2463.0936 # nitrogen
       temperature: 293.15
   - type: StaticPrice
     price: 100 #Mono: 350 >> 100

@@ -32,7 +32,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHelmetHardsuitMercenaryWarlord
-      faceshield: ClothingHeadfaceshieldBlock
+      helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: PirateBountyItem
     id: ClothingOuterHardsuitTacsuit
@@ -74,7 +74,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head:  ClothingHeadHelmetHardsuitScaf
-      faceshield: ClothingHeadfaceshieldBlock
+      helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: PirateBountyItem # Mono
     id: ClothingOuterHardsuitTacsuitHighValue

@@ -60,6 +60,49 @@
       uiWindowPos: 1,6
       strippingWindowPos: 3,3
       displayName: Head
+    - name: pocket1
+      slotTexture: pocket
+      fullTextureName: template_small
+      slotFlags: POCKET
+      slotGroup: MainHotbar
+      stripTime: 3
+      uiWindowPos: 0,4
+      strippingWindowPos: 0,4
+      dependsOn: jumpsuit
+      displayName: Pocket 1
+      stripHidden: true
+    - name: pocket2
+      slotTexture: pocket
+      fullTextureName: template_small
+      slotFlags: POCKET
+      slotGroup: MainHotbar
+      stripTime: 3
+      uiWindowPos: 2,4
+      strippingWindowPos: 1,4
+      dependsOn: jumpsuit
+      displayName: Pocket 2
+      stripHidden: true
+    - name: suitstorage
+      slotTexture: suit_storage
+      slotFlags:   SUITSTORAGE
+      slotGroup: MainHotbar
+      stripTime: 3
+      uiWindowPos: 2,1
+      strippingWindowPos: 2,5
+#      dependsOn: outerClothing #Mono: Disable shoulder slot restrictions
+#      dependsOnComponents:
+#      - type: AllowSuitStorage
+      displayName: Suit Storage
+    - name: id
+      slotTexture: id
+      fullTextureName: template_small
+      slotFlags: IDCARD
+      slotGroup: SecondHotbar
+      stripTime: 6
+      uiWindowPos: 2,2
+      strippingWindowPos: 2,4
+      dependsOn: jumpsuit
+      displayName: ID
     - name: belt
       slotTexture: cata_chest_rig
       fullTextureName: template_small

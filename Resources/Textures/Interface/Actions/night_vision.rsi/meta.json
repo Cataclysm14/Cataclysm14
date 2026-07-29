@@ -1,0 +1,19 @@
+{
+    "version": 1,
+<<<<<<<< HEAD:Resources/Textures/_Cataclysm14/Clothing/BallisticPlates/ballistic_plate_front_black.rsi/meta.json
+    "license": "CC-BY-SA-4.0",
+    "copyright": "by zeranov (disc:core_mene)",
+========
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Made by Samuka-C (github)",
+>>>>>>>> upstream/main:Resources/Textures/Interface/Actions/night_vision.rsi/meta.json
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "icon"
+        }
+    ]
+}

@@ -13,7 +13,6 @@
   description: department-NFCivilian-description # Frontier
   color: "#9FED58"
   weight: 130 # Mono
-  editorHidden: true
   roles:
   # - Bartender # Frontier
   # - Botanist # Frontier
@@ -60,7 +59,6 @@
   name: department-Command
   description: department-NFCommand-description # Frontier
   color: "#334E6D"
-  editorHidden: true
   roles:
   # - Captain # Frontier
   # - ChiefEngineer # Frontier
@@ -100,7 +98,6 @@
   description: department-Medical-description
   color: "#52B4E9"
   weight: 0
-  editorHidden: true
   roles: # Mono
   - DirectorOfCare # Mono
   - MdMedic # Mono
@@ -111,7 +108,6 @@
   description: department-NFSecurity-description # Frontier
   color: "#326DA8" # Mono
   weight: 120 # Mono
-  editorHidden: true
   roles:
 #  - Detective # Frontier
 #  - HeadOfSecurity # Frontier
@@ -129,6 +125,7 @@
   - SeniorOfficer # Frontier
   - PublicAffairsLiaison # Frontier
   - TsfEngineer # Mono
+  - TsfMarsoc # Mono
   - TsfBorg # Mono
 
 - type: department

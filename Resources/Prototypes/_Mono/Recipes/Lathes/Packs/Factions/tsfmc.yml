@@ -30,15 +30,21 @@
   - WeaponDEWCalico
   - WeaponDEWSmilodon
   - WeaponLauncherTSFOsiris
+  - WeaponLauncherTSFAnubis
+  - WeaponAMRShenzhenTSF
+  - WeaponRifleRiversongTSF
+  - WeaponRifleDragonfangTSF
 
 - type: latheRecipePack
   id: MonoTSFVouchersDynamic
   recipes:
   - FlyssaVoucherTSF
+  - FujianVoucherTSF
   - AltairVoucherTSF
+  - PolarisVoucherTSF
   - ShipVoucherTsfT0Recipe
-  - ShipVoucherTsfT1RandomRecipe
-  - ShipVoucherTsfT2RandomRecipe
+  - ShipVoucherTsfT1Recipe
+  - ShipVoucherTsfT2Recipe
 
 - type: latheRecipePack
   id: MonoTSFMiscDynamic
@@ -52,3 +58,5 @@
   - MotionDetectorTSF
   - BasicBorgCombatModuleTSF
   - AdvancedBorgCombatModuleTSF
+  - AutosurgeonSandevistanTSF
+  - AutosurgeonShuntTSF
