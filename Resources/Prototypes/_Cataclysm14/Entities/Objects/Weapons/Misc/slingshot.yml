@@ -6,7 +6,8 @@
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Misc/Slingshot.rsi
-    state: icon
+    layers:
+    - state: icon
   - type: Item
     sprite: _Cataclysm14/Objects/Weapons/Misc/Slingshot.rsi
     size: Small
