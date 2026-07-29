@@ -20,12 +20,18 @@ public sealed class ShitfixSystem : EntitySystem
     {
         var xform = Transform(uid);
         var grid = xform.ParentUid;
+
+        if (!TryComp(grid, out GridPathfindingComponent? gridComp))
+            return;
+
         var center = _pathfinding.GetOrigin(xform.Coordinates, grid);
         for (var x = component.Left; x <= component.Right; x++)
         {
             for (var y = component.Bottom; y <= component.Top; y++)
             {
-                _pathfinding.DirtyChunk(grid, new Vector2i(center.X + x, center.Y + y));
+                var chunk = new Vector2i(center.X + x, center.Y + y);
+                if (!_pathfinding.TryGetChunk(chunk, gridComp, out _)) // does the chunk already exist?
+                    _pathfinding.DirtyChunk(grid, chunk); // create chunk
             }
         }
     }

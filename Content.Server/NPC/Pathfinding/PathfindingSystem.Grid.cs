@@ -397,7 +397,7 @@ public sealed partial class PathfindingSystem
         return chunk;
     }
 
-    private bool TryGetChunk(Vector2i origin, GridPathfindingComponent component, [NotNullWhen(true)] out GridPathfindingChunk? chunk)
+    public bool TryGetChunk(Vector2i origin, GridPathfindingComponent component, [NotNullWhen(true)] out GridPathfindingChunk? chunk) // Cataclysm14 make public
     {
         return component.Chunks.TryGetValue(origin, out chunk);
     }
