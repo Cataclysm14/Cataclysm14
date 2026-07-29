@@ -17,7 +17,7 @@
   displayWeight: 45
   assignedCompany: PDV
   canBeAntag: false
-  setPreference: true
+  #setPreference: true
   access:
   - Pirate
   - GrandVizier

@@ -16,6 +16,7 @@
   description: department-NF-description
   color: "#334E6D"
   weight: 50 # accounted for in jobs
+  editorHidden: true # Cataclysm14
   roles:
   - StationRepresentative
   - StationTrafficController
@@ -29,6 +30,7 @@
   name: department-Antag
   description: department-NFAntag-description
   color: "#DE3A3A"
+  editorHidden: true # Cataclysm14
   weight: 115 # Mono
   roles:
   - PirateCaptain

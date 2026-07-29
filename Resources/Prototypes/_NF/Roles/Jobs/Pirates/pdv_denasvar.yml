@@ -33,7 +33,7 @@
   weight: 30
   displayWeight: 30
   assignedCompany: PDV
-  setPreference: true
+  #setPreference: true
   access:
   - Pirate
   - PDVCommand

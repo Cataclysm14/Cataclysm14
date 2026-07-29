@@ -19,7 +19,7 @@
   weight: 50
   displayWeight: 50
   assignedCompany: PDV
-  setPreference: true
+  #setPreference: true
   access:
   - Pirate
   - GrandVizier

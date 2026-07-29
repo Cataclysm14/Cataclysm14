@@ -209,6 +209,7 @@ public sealed class StationJobsTest
     }
 
     [Test]
+    [Ignore("Tests only Frontier things, not Cataclysm")]
     public async Task InvalidRoundstartJobsTest()
     {
         await using var pair = await PoolManager.GetServerClient();

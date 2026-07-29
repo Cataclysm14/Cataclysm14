@@ -70,7 +70,7 @@ namespace Content.Shared.Roles
         ///     Should this job appear in preferences menu?
         /// </summary>
         [DataField("setPreference")]
-        public bool SetPreference { get; private set; } = true;
+        public bool SetPreference { get; private set; } = false; // Cataclysm14 false by default
 
         /// <summary>
         ///     Frontier - Whether this job should show in the ID Card Console.

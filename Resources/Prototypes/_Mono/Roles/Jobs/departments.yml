@@ -20,6 +20,7 @@
   - USSPSergeant
   - USSPRifleman
   primary: false
+  editorHidden: true # Cataclysm14
 
 - type: department
   id: MieyoManufacturingConcern
@@ -32,6 +33,7 @@
   - MMCSecurity
   - MMCEmployee
   primary: false
+  editorHidden: true # Cataclysm14
 
 - type: department
   id: ViperGroup
@@ -44,4 +46,4 @@
   - VGLieutenant
   - VGCommander
   primary: false
-  editorHidden: false
+  editorHidden: true # cataclysm14

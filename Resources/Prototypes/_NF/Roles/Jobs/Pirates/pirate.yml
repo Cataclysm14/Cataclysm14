@@ -15,7 +15,7 @@
   weight: 20
   displayWeight: 20
   assignedCompany: PDV
-  setPreference: true
+  #setPreference: true
   access:
   - Pirate
   - Mercenary

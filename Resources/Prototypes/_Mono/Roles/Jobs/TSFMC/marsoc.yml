@@ -17,7 +17,7 @@
   displayWeight: 45
   assignedCompany: TSF
   canBeAntag: false
-  setPreference: true
+  #setPreference: true
   accessGroups:
   - AllAccess
   access:

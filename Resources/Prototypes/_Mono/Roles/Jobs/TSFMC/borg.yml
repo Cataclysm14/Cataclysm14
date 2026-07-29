@@ -3,7 +3,7 @@
   name: job-name-tsf-borg
   description: job-description-tsf-borg
   playTimeTracker: JobTsfBorg
-  setPreference: true
+  #setPreference: true
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 43200
