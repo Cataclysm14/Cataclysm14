@@ -1,0 +1,33 @@
+- type: entity
+  parent: WeaponImprovisedPneumaticCannon
+  id: WeaponSlingshot
+  name: slingshot
+  description: A handcrafted slingshot for hurling small objects at your victims.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Misc/Slingshot.rsi
+    state: icon
+  - type: Item
+    sprite: _Cataclysm14/Objects/Weapons/Misc/Slingshot.rsi
+    size: Small
+  - type: Clothing
+    sprite: _Cataclysm14/Objects/Weapons/Misc/Slingshot.rsi
+    quickEquip: false
+    slots:
+    - Belt
+    - Pocket
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,0,1
+  - type: PneumaticCannon
+    gasUsage: 0
+  - type: Gun
+    fireRate: 2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Effects/thunk.ogg
+    soundEmpty: null
+    clumsyProof: true
