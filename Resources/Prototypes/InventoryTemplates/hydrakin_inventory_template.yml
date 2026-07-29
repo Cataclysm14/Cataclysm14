@@ -153,14 +153,14 @@
       uiWindowPos: 0,2
       strippingWindowPos: 3,2
       displayName: Right_armband
-    - name: helmetcover
-      slotTexture: helmet_cover
-      slotFlags: HELMETCOVER
-      stripTime: 3
-      uiWindowPos: 1,5
-      strippingWindowPos: 3,3
-      dependsOn: head
-      displayName: Helmet cover
+    #- name: helmetcover # CATACLYSM14 WTF IS IT MERGE ERROR
+    #  slotTexture: helmet_cover
+    #  slotFlags: HELMETCOVER
+    #  stripTime: 3
+    #  uiWindowPos: 1,5
+    #  strippingWindowPos: 3,3
+    #  dependsOn: head
+    #  displayName: Helmet cover
     - name: helmetattachment
       slotTexture: helmet_attachment
       slotFlags: HELMETATTACHMENT

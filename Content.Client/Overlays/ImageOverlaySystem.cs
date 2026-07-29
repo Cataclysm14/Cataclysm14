@@ -25,7 +25,7 @@ public sealed class ImageOverlaySystem : EquipmentHudSystem<ImageOverlayComponen
 
     private void OnItemToggled(Entity<ImageOverlayComponent> ent, ref ItemMaskToggledEvent args)
     {
-        _overlay.OverlayActivate(ent.Comp, !args.IsToggled);
+        _overlay.OverlayActivate(ent.Comp, !args.Mask.Comp.IsToggled);
     }
 
     protected override void UpdateInternal(RefreshEquipmentHudEvent<ImageOverlayComponent> component)

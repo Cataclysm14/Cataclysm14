@@ -27,10 +27,6 @@ namespace Content.Server.Power.EntitySystems
         private float _updateInterval = 1f;
         private float _updateAccumulator = 0f;
 
-        // Mono
-        private float _updateInterval = 1f;
-        private float _updateAccumulator = 0f;
-
         public override void Initialize()
         {
             base.Initialize();

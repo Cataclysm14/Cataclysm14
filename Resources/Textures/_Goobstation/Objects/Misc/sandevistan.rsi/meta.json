@@ -1,22 +1,14 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-<<<<<<<< HEAD:Resources/Textures/_Cataclysm14/Structures/Windows/window_grille_armored.rsi/meta.json
     "copyright": "By avtomata (disc:core_mene)",
-========
-    "copyright": "Made by pheenty",
->>>>>>>> upstream/main:Resources/Textures/_Goobstation/Objects/Misc/sandevistan.rsi/meta.json
     "size": {
         "x": 32,
         "y": 32
     },
     "states": [
         {
-<<<<<<<< HEAD:Resources/Textures/_Cataclysm14/Structures/Windows/window_grille_armored.rsi/meta.json
           "name": "icon"
-========
-            "name": "icon"
->>>>>>>> upstream/main:Resources/Textures/_Goobstation/Objects/Misc/sandevistan.rsi/meta.json
         }
     ]
 }

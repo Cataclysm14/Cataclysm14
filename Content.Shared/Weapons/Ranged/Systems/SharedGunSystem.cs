@@ -78,10 +78,6 @@ public abstract partial class SharedGunSystem : EntitySystem
     protected EntityQuery<ProjectileComponent> _projQuery; // Mono
     private EntityQuery<AutoShootGunComponent> _autoShootGunQuery; // Mono
 
-    protected EntityQuery<PhysicsComponent> _physQuery; // Mono
-    protected EntityQuery<ProjectileComponent> _projQuery; // Mono
-    private EntityQuery<AutoShootGunComponent> _autoShootGunQuery; // Mono
-
     private const float InteractNextFire = 0.3f;
     private const double SafetyNextFire = 0.5;
     private const float EjectOffset = 0.4f;

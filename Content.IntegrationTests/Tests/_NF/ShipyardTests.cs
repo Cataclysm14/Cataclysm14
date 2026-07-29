@@ -14,6 +14,7 @@ namespace Content.IntegrationTests.Tests._NF;
 public sealed class ShipyardTest
 {
     [Test]
+    [Ignore("Are we in space?")] // Cataclysm14
     public async Task CheckAllShuttleGrids()
     {
         await using var pair = await PoolManager.GetServerClient();
@@ -59,6 +60,7 @@ public sealed class ShipyardTest
     }
 
     [Test]
+    [Ignore("Are we in space?")] // Cataclysm14
     public async Task NoShipyardShipArbitrage()
     {
         await using var pair = await PoolManager.GetServerClient();
@@ -91,7 +93,7 @@ public sealed class ShipyardTest
 
                     Assert.That(vessel.Price, Is.AtLeast(idealMinPrice),
                         $"Arbitrage possible on {vessel.ID}. Minimal price should be {idealMinPrice}, {(vessel.MinPriceMarkup - 1.0f) * 100}% over the appraise price ({appraisePrice}).");
-                    
+
                     map.DeleteMap(mapId);
                 }
             });

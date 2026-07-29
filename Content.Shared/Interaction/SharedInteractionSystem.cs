@@ -74,8 +74,6 @@ namespace Content.Shared.Interaction
 
         [Dependency] private INetManager _net = default!; // Mono
 
-        [Dependency] private readonly INetManager _net = default!; // Mono
-
         private EntityQuery<IgnoreUIRangeComponent> _ignoreUiRangeQuery;
         private EntityQuery<FixturesComponent> _fixtureQuery;
         private EntityQuery<ItemComponent> _itemQuery;

@@ -60,8 +60,6 @@ public abstract partial class SharedStationAiSystem : EntitySystem
 
     [Dependency] private SharedAiRemoteControlSystem _remoteSystem = default!; // Corvax-Next-AiRemoteControl
 
-    [Dependency] private readonly SharedAiRemoteControlSystem _remoteSystem = default!; // Corvax-Next-AiRemoteControl
-
     // StationAiHeld is added to anything inside of an AI core.
     // StationAiHolder indicates it can hold an AI positronic brain (e.g. holocard / core).
     // StationAiCore holds functionality related to the core itself.

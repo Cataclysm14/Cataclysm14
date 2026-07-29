@@ -47,9 +47,6 @@ namespace Content.Server.Destructible
         // Mono
         private EntityQuery<DestructibleComponent> _destructibleQuery;
 
-        // Mono
-        private EntityQuery<DestructibleComponent> _destructibleQuery;
-
         public override void Initialize()
         {
             base.Initialize();
