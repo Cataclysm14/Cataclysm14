@@ -263,7 +263,7 @@
     - Mercury
     - Sentinel
     - Dagger
-    - Calypso
+    #- Calypso
     - Razorback
 
 # end T1

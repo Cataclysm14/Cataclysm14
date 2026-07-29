@@ -10,7 +10,7 @@
     state: icon
   - type: Clothing
     sprite: _Cataclysm14/Clothing/HelmetAttachment/nvg_PVS-7_green.rsi
-  - type: NightVision
+  - type: WWDPNightVision
     isEquipment: true
     color: "#59BE66"
 
@@ -26,7 +26,7 @@
     state: icon
   - type: Clothing
     sprite: _Cataclysm14/Clothing/HelmetAttachment/nvg_PVS-7_red.rsi
-  - type: NightVision
+  - type: WWDPNightVision
     isEquipment: true
     color: "#AA443D"
 
@@ -42,7 +42,7 @@
     state: icon
   - type: Clothing
     sprite: _Cataclysm14/Clothing/HelmetAttachment/nvg_PVS-7_blue.rsi
-  - type: NightVision
+  - type: WWDPNightVision
     isEquipment: true
     color: "#406B9C"
 
@@ -58,6 +58,6 @@
     state: icon
   - type: Clothing
     sprite: _Cataclysm14/Clothing/HelmetAttachment/nvg_PVS-14_dual.rsi
-  - type: NightVision
+  - type: WWDPNightVision
     isEquipment: true
     color: "#4F3DA0"
