@@ -3991,30 +3991,30 @@ entities:
       containers:
         solution@food: !type:ContainerSlot
           ent: 498
-- proto: ClothingHeadHelmetCoverBlock
-  entities:
-  - uid: 673
-    components:
-    - type: Transform
-      parent: 669
-    - type: Physics
-      canCollide: False
-    - type: AttachedClothing
-      attachedUid: 669
-    - type: ContainerContainer
-      containers:
-        replaced-clothing: !type:ContainerSlot {}
-  - uid: 688
-    components:
-    - type: Transform
-      parent: 684
-    - type: Physics
-      canCollide: False
-    - type: AttachedClothing
-      attachedUid: 684
-    - type: ContainerContainer
-      containers:
-        replaced-clothing: !type:ContainerSlot {}
+#- proto: ClothingHeadHelmetCoverBlock
+#  entities:
+#  - uid: 673
+#    components:
+#    - type: Transform
+#      parent: 669
+#    - type: Physics
+#      canCollide: False
+#    - type: AttachedClothing
+#      attachedUid: 669
+#    - type: ContainerContainer
+#      containers:
+#        replaced-clothing: !type:ContainerSlot {}
+#  - uid: 688
+#    components:
+#    - type: Transform
+#      parent: 684
+#    - type: Physics
+#      canCollide: False
+#    - type: AttachedClothing
+#      attachedUid: 684
+#    - type: ContainerContainer
+#      containers:
+#        replaced-clothing: !type:ContainerSlot {}
 - proto: ClothingHeadHelmetEVALarge
   entities:
   - uid: 492

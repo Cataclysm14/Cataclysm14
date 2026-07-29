@@ -33,7 +33,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHelmetHardsuitCCTCMedium
-      helmetcover: ClothingHeadHelmetCoverBlock
+      faceshield: ClothingHeadfaceshieldBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: PirateBountyItem
     id: ClothingOuterHardsuitTacsuit
@@ -77,7 +77,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHelmetHardsuitCCTCMediumPremium
-      helmetcover: ClothingHeadHelmetCoverBlock
+      faceshield: ClothingHeadfaceshieldBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: PirateBountyItem
     id: ClothingOuterHardsuitTacsuit

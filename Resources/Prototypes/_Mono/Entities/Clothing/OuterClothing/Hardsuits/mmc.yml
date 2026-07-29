@@ -33,7 +33,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHelmetHardsuitMieyoMining
-      helmetcover: ClothingHeadHelmetCoverBlock
+      faceshield: ClothingHeadfaceshieldBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaminaDamageResistance
     coefficient: 0.4
@@ -74,7 +74,7 @@
     replaceCurrentClothing: true
     clothingPrototypes:
       head: ClothingHelmetHardsuitMieyoCombat
-      helmetcover: ClothingHeadHelmetCoverBlock
+      faceshield: ClothingHeadfaceshieldBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: PirateBountyItem
     id: ClothingOuterHardsuitTacsuit
