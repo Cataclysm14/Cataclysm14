@@ -157,7 +157,6 @@
     species: SpecieFeralBase
   - type: RandomHumanoidAppearance
     randomizeName: true
-
   - type: Blindable
   - type: Butcherable
     spawned:
@@ -195,6 +194,20 @@
         - MobMask
         layer:
         - MobLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 400
+      behaviors:
+      - !type:GibBehavior
+        destroyOrgans: true
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialBones1:
+            max: 1
+            min: 3
 
 #MARK: Dummy
 - type: entity
