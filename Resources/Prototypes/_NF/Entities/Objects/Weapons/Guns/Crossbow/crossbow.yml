@@ -2,7 +2,7 @@
 - type: entity
   id: BaseCrossbow
   name: crossbow
-  parent: [ BaseItem, GunMeleeAttackBluntBase ] # \Resources\Prototypes\_NF\Entities\Objects\Weapons\Melee\base_melee_weapon.yml
+  parent: [ BaseItem, GunMeleeAttackBluntBase ] # /Resources/Prototypes/_NF/Entities/Objects/Weapons/Melee/base_melee_weapon.yml
   description: The original rooty tooty point and shooty.
   abstract: true
   components:

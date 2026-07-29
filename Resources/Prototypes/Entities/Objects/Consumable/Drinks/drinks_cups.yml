@@ -1,5 +1,5 @@
 # Empty drink containers; different from bottles in that these are intended to be spawned empty
-# When adding new drinks also add to random spawner located in Resources\Prototypes\Entities\Markers\Spawners\Random\Food_Drinks\drinks_soda.yml
+# When adding new drinks also add to random spawner located in Resources/Prototypes/Entities/Markers/Spawners/Random/Food_Drinks/drinks_soda.yml
 - type: entity
   parent: BaseItem
   id: DrinkBaseCup

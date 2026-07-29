@@ -32,7 +32,7 @@
 
 # Humans
 # Blood Cult Priest, ranged mab, bolts deal 10 slash damage
-# Look for magic bolt here:\Resources\Prototypes\_NF\Entities\Objects\Weapons\Guns\Projectiles\magic.yml
+# Look for magic bolt here:/Resources/Prototypes/_NF/Entities/Objects/Weapons/Guns/Projectiles/magic.yml
 - type: entity
   name: blood cult priest
   parent:
@@ -66,7 +66,7 @@
       path: /Audio/Effects/Lightning/lightningshock.ogg
 
 # Blood Cult Janitor, ranged mab, bolts deal 10 slash damage
-# Look for magic bolt here:\Resources\Prototypes\_NF\Entities\Objects\Weapons\Guns\Projectiles\magic.yml
+# Look for magic bolt here:/Resources/Prototypes/_NF/Entities/Objects/Weapons/Guns/Projectiles/magic.yml
 - type: entity
   name: blood cult janitor
   parent:
@@ -132,7 +132,7 @@
     - BloodCultistZealotMeleeGear
 
 # Blood Cult Zealot, ranged mob, crossbow bolt deals 20 slash and 5 bloodloss
-# Look for crossbow bolt here: \Resources\Prototypes\_NF\Entities\Objects\Weapons\Guns\Projectiles\crossbow_bolts.yml
+# Look for crossbow bolt here: /Resources/Prototypes/_NF/Entities/Objects/Weapons/Guns/Projectiles/crossbow_bolts.yml
 - type: entity
   name: blood cult zealot
   parent:
@@ -164,7 +164,7 @@
       collection: BulletMiss
 
 # Blood Cult Zealot, ranged mob, magic bolt deals 5 slash and 2 bloodloss
-# Look for magic bolt here:\Resources\Prototypes\_NF\Entities\Objects\Weapons\Guns\Projectiles\magic.yml
+# Look for magic bolt here:/Resources/Prototypes/_NF/Entities/Objects/Weapons/Guns/Projectiles/magic.yml
 - type: entity
   name: blood cult zealot
   parent:
@@ -491,7 +491,7 @@
 
 # Turrets
 # blood pylon, ranged, magic bolt deals 5 slash and 2 bloodloss
-# Look for magic bolt here:\Resources\Prototypes\_NF\Entities\Objects\Weapons\Guns\Projectiles\magic.yml
+# Look for magic bolt here:/Resources/Prototypes/_NF/Entities/Objects/Weapons/Guns/Projectiles/magic.yml
 - type: entity
   parent:
   - BaseWeaponTurretNF

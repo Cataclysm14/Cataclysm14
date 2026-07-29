@@ -1,4 +1,4 @@
-# Base prototype is in Resources\Prototypes\_NF\Recipes\Lathes\sheet.yml
+# Base prototype is in Resources/Prototypes/_NF/Recipes/Lathes/sheet.yml
 
 # Raw mats
 - type: latheRecipe

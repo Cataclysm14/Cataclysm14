@@ -38,7 +38,7 @@
 - type: latheRecipe
   id: NFBioGenWoodPlank
   result: MaterialWoodPlank1
-  parent: BaseMaterialsNoDiscountRecipe # Base prototype is in Resources\Prototypes\_NF\Recipes\Lathes\sheet.yml
+  parent: BaseMaterialsNoDiscountRecipe # Base prototype is in Resources/Prototypes/_NF/Recipes/Lathes/sheet.yml
   materials:
     Biomass: 3 # Mono
 

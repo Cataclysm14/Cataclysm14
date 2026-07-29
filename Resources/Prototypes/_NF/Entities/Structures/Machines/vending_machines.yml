@@ -504,7 +504,7 @@
 - type: entity
   parent:
   - VendingMachine
-  - PunkHoloGraffitiOverlay # Prototype can be located at \Resources\Prototypes\_NF\Entities\Structures\Holographic\graffiti.yml
+  - PunkHoloGraffitiOverlay # Prototype can be located at /Resources/Prototypes/_NF/Entities/Structures/Holographic/graffiti.yml
   id: VendingMachineClothingPunk
   name: ThreadsChoom
   description: A vandalized ClothesMate.
@@ -539,7 +539,7 @@
 - type: entity
   parent:
   - VendingMachine
-  - PunkHoloGraffitiOverlay # Prototype can be located at \Resources\Prototypes\_NF\Entities\Structures\Holographic\graffiti.yml
+  - PunkHoloGraffitiOverlay # Prototype can be located at /Resources/Prototypes/_NF/Entities/Structures/Holographic/graffiti.yml
   id: VendingMachineBountyVendPunk
   name: BonanzaMatic
   description: A vandalised BountyVend.
