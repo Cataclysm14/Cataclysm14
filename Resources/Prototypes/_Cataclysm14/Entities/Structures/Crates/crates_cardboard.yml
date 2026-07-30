@@ -1,0 +1,29 @@
+#MARK: Large Cardboard Box
+- type: entity
+  parent: StructureCrateBase
+  id: StructureCrateLargeCardboardBox
+  name: large cardboard box
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Crates/crate_cardboard_box_large.rsi
+    layers:
+    - state: base
+    - state: closed
+      map: ["enum.StorageVisualLayers.Door"]
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Crates/crate_cardboard_box_large.rsi
+    state: base
+  - type: EntityStorage
+    isCollidableWhenOpen: false
+    capacity: 10
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.2,0.2,0.2"
+        density: 50
+        mask:
+        - CrateMask
+        layer:
+        - LargeMobLayer

@@ -39,12 +39,23 @@
         - id: WeaponMediumMachineGunM60Filled200rdFMJ
         - id: WeaponMediumMachineGunM60Filled200rdTracerYellow
 
-#MARK: Guns Civilian Gunshop
+#MARK: Guns Civilian Gunshop (0-6)
 - type: entityTable
   id: LootTableWeaponGunCivilianGunshop
   table: !type:GroupSelector
     rolls: !type:RangeNumberSelector
       range: 0,6
+    children:
+    - !type:NestedSelector
+      tableId: LootTableWeaponGunCivilianGunshopReturnsOne
+
+#MARK: Guns Civilian Gunshop
+#MARK: (just table, return exactly 1 gun)
+- type: entityTable
+  id: LootTableWeaponGunCivilianGunshopReturnsOne
+  table: !type:GroupSelector
+    rolls: !type:ConstantNumberSelector
+      value: 1
     children:
     - id: WeaponBattleRifleM1AFilledSTANAG20rdEmpty
       weight: 50

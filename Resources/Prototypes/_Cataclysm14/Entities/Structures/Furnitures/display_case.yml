@@ -1,0 +1,60 @@
+#MARK: Display Case
+- type: entity
+  id: StructureFurnitureDisplayCase
+  parent: StructureFurnitureBaseLarge
+  name: display case
+  description: A secure wooden case at about waist-height, with glass panelling on top. Useful for storing valuable things while still showing them off. Not actually as secure as it looks, as the display windows are easily broken.
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Furnitures/display_case.rsi
+    noRot: true
+    layers:
+    - state: icon
+    - map: ["enum.StorageFillLayers.Fill"]
+  - type: StorageFillVisualizer
+    maxFillLevels: 3
+    fillBaseName: fill
+  - type: Damageable
+    damageModifierSet: Metallic
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialObjectMineralPlateSteelStack1:
+            min: 2
+            max: 4
+          MaterialObjectMineralPipeSteelStack1:
+            min: 1
+            max: 3
+          MaterialObjectShardGlassStack1:
+            min: 2
+            max: 4
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Storage
+    grid:
+    - 0,0,7,2
+    maxItemSize: Huge
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Tag
+    tags:
+    - Wooden
+  - type: Anchorable
+  - type: Rotatable
+  - type: Transform
+    anchored: true
+    noRot: true
