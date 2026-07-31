@@ -88,12 +88,12 @@ public sealed partial class ContainerFillSystem : EntitySystem
                     {
                         storageComponent.Grid[0] = _item.GetAdjustedItemShape((spawn, itemComponent), Angle.Zero, Vector2i.Zero)[0];
                         Dirty(ent, storageComponent);
-                        if (_containerSystem.Insert(spawn, container, containerXform: xform))
+                        if (!_containerSystem.Insert(spawn, container, containerXform: xform))
                             Log.Error($"Entity {ToPrettyString(ent)} with a {nameof(EntityTableContainerFillComponent)} and {nameof(ResizableStorageOnFillComponent)} failed to insert an entity: {ToPrettyString(spawn)}.");
                         break;
                     }
 
-                    Log.Error($"Entity {ToPrettyString(ent)} with a {nameof(EntityTableContainerFillComponent)} failed to insert an entity: {ToPrettyString(spawn)}.");
+                    Log.Warning($"Entity {ToPrettyString(ent)} with a {nameof(EntityTableContainerFillComponent)} failed to insert an entity: {ToPrettyString(spawn)}.");
                     _transform.AttachToGridOrMap(spawn);
                     break;
                 }
