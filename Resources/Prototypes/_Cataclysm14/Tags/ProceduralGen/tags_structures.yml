@@ -11,6 +11,9 @@
     id: CataStructureClothingShopSmall26x26
 
   - type: Tag
+    id: CataStructurePharmacy26x26
+
+  - type: Tag
     id: CataStructureGunshopSmall26x26
 
   - type: Tag

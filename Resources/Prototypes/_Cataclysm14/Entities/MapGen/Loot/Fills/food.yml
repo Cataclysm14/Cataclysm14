@@ -173,3 +173,25 @@
       storagebase: !type:NestedSelector
         tableId: LootTableFoodFridgeDrinks
         prob: 0.50
+
+#MARK: Shelves Food
+- type: entity
+  id: StructureFurnitureShelfMetalFilledFood
+  suffix: Food 100%
+  parent: StructureFurnitureShelfMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableFoodFridgeFood
+
+- type: entity
+  id: StructureFurnitureShelfMetalFilledFoodRandom50
+  suffix: Food 50%
+  parent: StructureFurnitureShelfMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableFoodFridgeFood
+        prob: 0.50

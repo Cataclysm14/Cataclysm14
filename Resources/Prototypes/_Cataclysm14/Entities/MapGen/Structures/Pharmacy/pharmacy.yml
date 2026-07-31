@@ -1,0 +1,30 @@
+- type: dungeonRoom
+  id: StructureSpawnerPharmacy26x26a # s_pharm_south in cdda
+  size: 27,27
+  atlas: /Maps/_Cataclysm14/Structures/Shops/Pharmacy/structure_pharmacy_26x26_a.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructurePharmacy26x26
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerPharmacy26x26
+  name: pharmacy
+  suffix: 2x2 Chunk][26x26
+  components:
+  - type: Sprite
+    scale: 26,26
+    offset: -0.5,-0.5
+    layers:
+      - sprite: _Cataclysm14/Mapping/Shops/structure_shop.rsi
+        state: structure_border_shop_small
+      - sprite: _Cataclysm14/Objects/Containers/medkit_box_medium_red.rsi
+        state: icon
+        scale: 0.4,0.4
+        offset: 0.1,-0.1
+  - type: RoomFill
+    rotation: false
+    roomWhitelist:
+      tags:
+      - CataStructurePharmacy26x26
