@@ -8,6 +8,9 @@
 
 #MARK: City Buildings
   - type: Tag
+    id: CataStructureClothingShopSmall26x26
+
+  - type: Tag
     id: CataStructureGunshopSmall26x26
 
   - type: Tag

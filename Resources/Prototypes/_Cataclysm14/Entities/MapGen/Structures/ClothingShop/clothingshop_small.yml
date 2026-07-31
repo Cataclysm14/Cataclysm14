@@ -1,0 +1,57 @@
+- type: dungeonRoom
+  id: StructureSpawnerClothingShopSmall26x26a # s_clothes_south in cdda
+  size: 27,27
+  atlas: /Maps/_Cataclysm14/Structures/Shops/Clothess/structure_clothes_26x26_a.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureClothingShopSmall26x26
+
+- type: dungeonRoom
+  id: StructureSpawnerClothingShopSmall26x26b # s_clothes_2_south in cdda
+  size: 27,27
+  atlas: /Maps/_Cataclysm14/Structures/Shops/Clothess/structure_clothes_26x26_b.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureClothingShopSmall26x26
+
+- type: dungeonRoom
+  id: StructureSpawnerClothingShopSmall26x26c # s_clothes_4_south in cdda
+  size: 27,27
+  atlas: /Maps/_Cataclysm14/Structures/Shops/Clothess/structure_clothes_26x26_c.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureClothingShopSmall26x26
+
+- type: dungeonRoom
+  id: StructureSpawnerClothingShopSmall26x26d # s_clothes_6_south in cdda
+  size: 27,27
+  atlas: /Maps/_Cataclysm14/Structures/Shops/Clothess/structure_clothes_26x26_d.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureClothingShopSmall26x26
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerClothingShopSmall26x26
+  name: small clothing shop
+  suffix: 2x2 Chunk][26x26
+  components:
+  - type: Sprite
+    scale: 26,26
+    offset: -0.5,-0.5
+    layers:
+      - sprite: _Cataclysm14/Mapping/Shops/structure_shop.rsi
+        state: structure_border_shop_small
+      - sprite: _Cataclysm14/Clothing/Shirt/shirt_tank-top_any.rsi
+        state: icon
+        scale: 0.4,0.4
+        offset: 0.1,-0.1
+  - type: RoomFill
+    rotation: false
+    roomWhitelist:
+      tags:
+      - CataStructureClothingShopSmall26x26
