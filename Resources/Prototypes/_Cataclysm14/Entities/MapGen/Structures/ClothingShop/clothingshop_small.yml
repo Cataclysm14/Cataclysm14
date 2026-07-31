@@ -1,7 +1,7 @@
 - type: dungeonRoom
   id: StructureSpawnerClothingShopSmall26x26a # s_clothes_south in cdda
   size: 27,27
-  atlas: /Maps/_Cataclysm14/Structures/Shops/Clothess/structure_clothes_26x26_a.yml
+  atlas: /Maps/_Cataclysm14/Structures/Shops/Clothes/structure_clothes_26x26_a.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -10,7 +10,7 @@
 - type: dungeonRoom
   id: StructureSpawnerClothingShopSmall26x26b # s_clothes_2_south in cdda
   size: 27,27
-  atlas: /Maps/_Cataclysm14/Structures/Shops/Clothess/structure_clothes_26x26_b.yml
+  atlas: /Maps/_Cataclysm14/Structures/Shops/Clothes/structure_clothes_26x26_b.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -19,7 +19,7 @@
 - type: dungeonRoom
   id: StructureSpawnerClothingShopSmall26x26c # s_clothes_4_south in cdda
   size: 27,27
-  atlas: /Maps/_Cataclysm14/Structures/Shops/Clothess/structure_clothes_26x26_c.yml
+  atlas: /Maps/_Cataclysm14/Structures/Shops/Clothes/structure_clothes_26x26_c.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
@@ -28,7 +28,7 @@
 - type: dungeonRoom
   id: StructureSpawnerClothingShopSmall26x26d # s_clothes_6_south in cdda
   size: 27,27
-  atlas: /Maps/_Cataclysm14/Structures/Shops/Clothess/structure_clothes_26x26_d.yml
+  atlas: /Maps/_Cataclysm14/Structures/Shops/Clothes/structure_clothes_26x26_d.yml
   offset: 0,0
   ignoreTile: FloorShuttleOrange
   tags:
