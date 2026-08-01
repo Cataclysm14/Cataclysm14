@@ -1,3 +1,5 @@
+- type: Tag
+  id: ProjectileSlingshotMakeshift
 - type: entity
   parent: BaseItem
   id: ProjectileSlingshotMakeshift
