@@ -11,6 +11,12 @@
       "name": "icon"
     },
     {
+      "name": "icon-admeme"
+    },
+    {
+      "name": "tank"
+    },
+    {
       "name": "inhand-left",
       "directions": 4
     },
