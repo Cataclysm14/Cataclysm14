@@ -48,10 +48,21 @@
     sprite: _Cataclysm14/Objects/Weapons/Misc/Slingshot.rsi
     layers:
     - state: icon-admeme
+  - type: Item
+    sprite: _Cataclysm14/Objects/Weapons/Misc/Slingshot.rsi
+    size: Ginormous
   - type: Storage
-    maxItemSize: Ginormous
+    maxItemSize: Tiny
     grid:
-    - 0,0,9,9
+    - 0,0,0,0
+    - 2,0,4,0
+    - 0,1,0,1
+    - 2,1,2,1
+    - 0,2,4,2
+    - 2,3,2,3
+    - 4,3,4,3
+    - 0,4,2,4
+    - 4,4,4,4
     whitelist: null
   - type: Gun
     fireRate: 15
