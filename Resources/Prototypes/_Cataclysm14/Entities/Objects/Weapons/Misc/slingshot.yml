@@ -1,0 +1,76 @@
+- type: entity
+  parent: WeaponImprovisedPneumaticCannon
+  id: WeaponSlingshotMakeshift
+  name: slingshot
+  description: A handcrafted slingshot for hurling small objects at your victims.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Misc/Slingshot.rsi
+    layers:
+    - state: icon
+  - type: Item
+    sprite: _Cataclysm14/Objects/Weapons/Misc/Slingshot.rsi
+    size: Small
+  - type: Clothing
+    sprite: _Cataclysm14/Objects/Weapons/Misc/Slingshot.rsi
+    quickEquip: false
+    slots:
+    - Belt
+    - Pocket
+  - type: Storage
+    maxItemSize: Tiny
+    grid:
+    - 0,0,0,1
+    whitelist:
+      tags:
+      - ProjectileSlingshotMakeshift
+  - type: PneumaticCannon
+    gasUsage: 0
+  - type: Gun
+    fireRate: 2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Effects/thunk.ogg
+    soundEmpty: null
+    clumsyProof: true
+
+# 🫃🫃🫃🫃🫃🫃
+- type: entity
+  parent: WeaponSlingshotMakeshift
+  id: WeaponSlingshotMakeshiftAdmeme
+  name: based slingshot
+  suffix: Admeme
+  description: Worry not, Maslin...this one is better.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Objects/Weapons/Misc/Slingshot.rsi
+    layers:
+    - state: icon-admeme
+  - type: Item
+    sprite: _Cataclysm14/Objects/Weapons/Misc/Slingshot.rsi
+    size: Ginormous
+  - type: Storage
+    maxItemSize: Tiny
+    grid:
+    - 0,0,0,0
+    - 2,0,4,0
+    - 0,1,0,1
+    - 2,1,2,1
+    - 0,2,4,2
+    - 2,3,2,3
+    - 4,3,4,3
+    - 0,4,2,4
+    - 4,4,4,4
+    whitelist: null
+  - type: Gun
+    fireRate: 15
+    selectedMode: FullAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Effects/thunk.ogg
+    soundEmpty: null
+    clumsyProof: true
