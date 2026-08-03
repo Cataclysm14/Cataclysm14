@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using Content.Server.Chat.Systems;
+using Content.Server.NPC.Components;
 using Content.Shared._Cataclysm14.Noise;
 using Content.Shared.FixedPoint;
 using Content.Shared.Weapons.Ranged.Systems;
@@ -19,10 +20,11 @@ public sealed partial class NoiseSystem : EntitySystem
     private List<NoiseListenerComponent> _heardNoise = new(32);
 
     private UpdateNoiseJob _job;
+    private bool _cleanJob = false;
 
     public override void Initialize()
     {
-        _job = new UpdateNoiseJob(_heardNoise);
+        _job = new UpdateNoiseJob(_heardNoise, this);
         SubscribeLocalEvent<NoiseEvent>(OnNoiseEvent);
         SubscribeLocalEvent<EntitySpokeEvent>(OnEntitySpokeEvent);
         SubscribeLocalEvent<GunShotEvent>(OnGunShotEvent);
@@ -47,6 +49,9 @@ public sealed partial class NoiseSystem : EntitySystem
         _lookup.GetEntitiesInRange(ev.Source, ev.Strength, set);
         foreach (var ent in set)
         {
+            if (HasComp<NPCMeleeCombatComponent>(ent.Owner)) // skip if zombie in combat mode
+                continue;
+
             var comp = ent.Comp;
             if (!_heardNoise.Contains(comp))
                 _heardNoise.Add(comp);
@@ -66,9 +71,9 @@ public sealed partial class NoiseSystem : EntitySystem
     {
         _job.FrameTime = frameTime;
         _parallel.ProcessNow(_job, _heardNoise.Count);
-        if (_job.Clean)
+        if (_cleanJob)
         {
-            _job.Clean = false;
+            _cleanJob = false;
             _heardNoise.RemoveAll(RemoveAllEmpty);
         }
     }
@@ -78,12 +83,11 @@ public sealed partial class NoiseSystem : EntitySystem
         return obj.Target == null;
     }
 
-    private record struct UpdateNoiseJob(List<NoiseListenerComponent> HeardNoise) : IParallelRobustJob
+    private record struct UpdateNoiseJob(List<NoiseListenerComponent> HeardNoise, NoiseSystem System) : IParallelRobustJob
     {
         public int BatchSize => 16;
 
         public FixedPoint2 FrameTime = FixedPoint2.Zero;
-        public bool Clean = false;
 
         public void Execute(int index)
         {
@@ -93,7 +97,7 @@ public sealed partial class NoiseSystem : EntitySystem
             {
                 heardNoise.Timer = FixedPoint2.Zero;
                 heardNoise.Target = null;
-                Clean = true;
+                System._cleanJob = true;
             }
         }
     }

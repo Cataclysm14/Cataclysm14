@@ -248,6 +248,20 @@
   dollPrototype: MobZombieDummy  #Not really important either
   skinColoration: HumanToned
 
+#MARK: species: Fat
+- type: species
+  id: SpecieZombieFat
+  name: species-name-zombie-fat
+  roundStart: false
+  prototype: MobZombieFatNaked #Not really important
+  sprites: MobZombieSpritesBase
+  defaultSkinTone: "#4F7942"
+  markingLimits: MobZombieMarkingLimits
+  dollPrototype: MobZombieDummy  #Not really important either
+  skinColoration: HumanToned
+  minWidth: 1.25
+  maxWidth: 1.35
+
 #MARK: species: Headless
 - type: species
   id: SpecieZombieHeadless

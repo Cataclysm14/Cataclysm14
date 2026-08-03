@@ -178,6 +178,48 @@
         - id: AccessIdentificationIDCardUS
         prob: 0.60
 
+#MARK: Fat >
+
+
+
+
+
+#MARK: Naked / no gear
+- type: entity
+  parent: BaseMobZombieFat
+  id: MobZombieFatNaked
+  suffix: Naked
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieHeadless
+
+#MARK: Civilian Basic
+- type: entity
+  parent: BaseMobZombieFat
+  id: MobZombieFatCivilianBasic
+  suffix: Civilian Basic
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableContainerFill
+    containers:
+      shoes: !type:NestedSelector
+        tableId: LootTableClothingShoesCivilian
+        prob: 0.99
+      jumpsuit: !type:NestedSelector
+        tableId: LootTableClothingTopCivilian
+        prob: 0.95
+      pants: !type:NestedSelector
+        tableId: LootTableClothingBottomCivilian
+        prob: 0.99
+      back: !type:NestedSelector
+        tableId: LootTableClothingBagCivilian
+        prob: 0.4
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS
+        prob: 0.60
+
 #MARK: Tesla >
 
 

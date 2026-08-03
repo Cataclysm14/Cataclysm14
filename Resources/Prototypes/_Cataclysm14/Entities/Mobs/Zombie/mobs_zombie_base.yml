@@ -199,6 +199,42 @@
         Brute: 8
         Slash: 5
 
+#MARK: Mob Fat
+- type: entity
+  id: BaseMobZombieFat
+  abstract: true
+  name: fat zombie
+  description: Stumbling as it moves, this corpse of an overweight human regards its surroundings with an empty black gaze.
+  categories: [ HideSpawnMenu ]
+  parent:
+  - MobHumanoidHostileAISimpleMeleeZombieBase
+  - BasePrototypeSpecieZombie
+  - BaseMobZombieStats
+  components:
+  - type: Body
+    prototype: BodyPartSetZombieBase
+    requiredLegs: 2
+  - type: MovementSpeedModifier
+  - type: UnshitmedMovementModifier
+    sprintSpeedMod: 0.8
+  - type: HumanoidAppearance
+    species: SpecieZombieFat
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      120: Critical
+      220: Dead
+  - type: MeleeWeapon
+    attackRate: 0.5
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: AlienClaw
+    animation: WeaponArcBite
+    damage:
+      types:
+        Brute: 8
+
 #MARK: Mob Headless
 - type: entity
   id: BaseMobZombieHeadless
