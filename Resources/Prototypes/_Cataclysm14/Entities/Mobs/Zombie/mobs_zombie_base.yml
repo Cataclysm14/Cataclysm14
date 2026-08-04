@@ -235,6 +235,42 @@
       types:
         Brute: 8
 
+#MARK: Mob Child
+- type: entity
+  id: BaseMobZombieChild
+  abstract: true
+  name: zombie child
+  description: It was only a child, and little is different about it now aside from the hungry look in its eyes. You'd be hard-pressed to not feel like you were killing an actual child by putting it down.
+  categories: [ HideSpawnMenu ]
+  parent:
+  - MobHumanoidHostileAISimpleMeleeZombieBase
+  - BasePrototypeSpecieZombie
+  - BaseMobZombieStats
+  components:
+  - type: Body
+    prototype: BodyPartSetZombieBase
+    requiredLegs: 2
+  - type: MovementSpeedModifier
+  - type: UnshitmedMovementModifier
+    sprintSpeedMod: 0.98
+  - type: HumanoidAppearance
+    species: SpecieZombieChild
+  - type: MobThresholds # twice less than MobZombie HP according to https://cdda-guide.nornagon.net/monster/mon_zombie?v=0.I
+    thresholds:
+      0: Alive
+      50: Critical
+      100: Dead
+  - type: MeleeWeapon
+    attackRate: 0.5
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: AlienClaw
+    animation: WeaponArcBite
+    damage:
+      types:
+        Brute: 8
+
 #MARK: Mob Headless
 - type: entity
   id: BaseMobZombieHeadless

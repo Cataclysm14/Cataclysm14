@@ -262,6 +262,22 @@
   minWidth: 1.25
   maxWidth: 1.35
 
+#MARK: species: Child
+- type: species
+  id: SpecieZombieChild
+  name: species-name-zombie-child
+  roundStart: false
+  prototype: MobZombieChildNaked #Not really important
+  sprites: MobZombieSpritesBase
+  defaultSkinTone: "#4F7942"
+  markingLimits: MobZombieMarkingLimits
+  dollPrototype: MobZombieDummy  #Not really important either
+  skinColoration: HumanToned
+  minWidth: 0.6
+  maxWidth: 0.7
+  minHeight: 0.6
+  maxHeight: 0.7
+
 #MARK: species: Headless
 - type: species
   id: SpecieZombieHeadless
