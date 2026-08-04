@@ -84,3 +84,6 @@
     id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseCornerLong26x26
   - type: Tag
     id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseEnd13x13
+
+  - type: Tag
+    id: CataStructureSpawnerRoadBlockStraight13x13

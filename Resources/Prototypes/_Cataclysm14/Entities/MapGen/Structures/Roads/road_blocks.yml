@@ -1,0 +1,30 @@
+#MARK: Straight
+- type: dungeonRoom
+  id: StructureSpawnerRoadBlockStraight13x13a
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/Roads/structure_road_block_straight_1.yml
+  offset: -7,-10 # -7 -9 left bottom point
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerRoadBlockStraight13x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerRoadBlockStraight13x13
+  name: road block
+  suffix: Straight][1x1 Chunk][13x13
+  components:
+  - type: Sprite
+    scale: 13,13
+    layers:
+    - sprite: _Cataclysm14/Mapping/structure_road.rsi
+      state: structure_border_road_asphalt_gray_straight
+    - sprite: _Cataclysm14/Mapping/structure_road.rsi
+      state: structure_border_road_line_white_straight
+    - sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_police_US.rsi
+      state: icon
+      offset: 3,5
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureSpawnerRoadBlockStraight13x13
