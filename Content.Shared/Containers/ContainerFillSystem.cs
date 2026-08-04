@@ -5,9 +5,8 @@ using Robust.Shared.Map;
 using Robust.Shared.Random;
 
 using Content.Shared._Cataclysm14.Containers; // Cataclysm14
-using Content.Shared._Cataclysm14.Storage; // Cataclysm14
-using Content.Shared.Item; // Cataclysm14
 using Content.Shared.Storage; // Cataclysm14
+using Robust.Shared.Network; // Cataclysm14
 
 namespace Content.Shared.Containers;
 
@@ -17,7 +16,9 @@ public sealed partial class ContainerFillSystem : EntitySystem
     [Dependency] private readonly EntityTableSystem _entityTable = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
-    [Dependency] private readonly SharedItemSystem _item = default!; // Cataclysm14
+
+    [Dependency] private readonly SharedContainerForPrototypesSystem _containerForProtos = default!; // Cataclysm14
+    [Dependency] private readonly INetManager _netManager = default!; // Cataclysm14
 
     public override void Initialize()
     {
@@ -59,7 +60,13 @@ public sealed partial class ContainerFillSystem : EntitySystem
     // Cataclysm14 Begin
     private void OnTableMapInit(Entity<EntityTableContainerFillComponent> ent, ref MapInitEvent args)
     {
+        if (_netManager.IsClient) // EntityTableSystem isn't predictable because RobustRandom also isn't predictable
+            return;
+
         if (!TryComp(ent, out ContainerManagerComponent? containerComp))
+            return;
+
+        if (!TryComp(ent, out StorageComponent? storageComponent))
             return;
 
         if (TerminatingOrDeleted(ent) || !Exists(ent))
@@ -79,21 +86,19 @@ public sealed partial class ContainerFillSystem : EntitySystem
             var spawns = _entityTable.GetSpawns(table);
             foreach (var proto in spawns)
             {
+                if (!_containerForProtos.CanInsertProto(proto, (ent, storageComponent)))
+                {
+                    #if DEBUG
+                    Log.Warning($"Entity {ToPrettyString(ent)} with a {nameof(EntityTableContainerFillComponent)} failed to insert an entity (it doesnt fit): {proto}.");
+                    #endif
+                    continue;
+                }
+
                 var spawn = Spawn(proto, coords);
                 if (!_containerSystem.Insert(spawn, container, containerXform: xform))
                 {
-                    if (HasComp<ResizableStorageOnFillComponent>(ent.Owner)
-                        && TryComp(ent.Owner, out StorageComponent? storageComponent)
-                        && TryComp(spawn, out ItemComponent? itemComponent))
-                    {
-                        storageComponent.Grid[0] = _item.GetAdjustedItemShape((spawn, itemComponent), Angle.Zero, Vector2i.Zero)[0];
-                        Dirty(ent, storageComponent);
-                        if (!_containerSystem.Insert(spawn, container, containerXform: xform))
-                            Log.Error($"Entity {ToPrettyString(ent)} with a {nameof(EntityTableContainerFillComponent)} and {nameof(ResizableStorageOnFillComponent)} failed to insert an entity: {ToPrettyString(spawn)}.");
-                        break;
-                    }
+                    Log.Error($"Entity {ToPrettyString(ent)} with a {nameof(EntityTableContainerFillComponent)} failed to insert an entity: {ToPrettyString(spawn)}.");
 
-                    Log.Warning($"Entity {ToPrettyString(ent)} with a {nameof(EntityTableContainerFillComponent)} failed to insert an entity: {ToPrettyString(spawn)}.");
                     _transform.AttachToGridOrMap(spawn);
                     break;
                 }

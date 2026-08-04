@@ -58,4 +58,3 @@
   - type: Transform
     anchored: true
     noRot: true
-  - type: ResizableStorageOnFill # important shitfix
