@@ -220,7 +220,7 @@
         - id: AccessIdentificationIDCardUS
         prob: 0.60
 
-#MARK: Child >
+#MARK: Smoll >
 
 
 
@@ -228,8 +228,8 @@
 
 #MARK: Naked / no gear
 - type: entity
-  parent: BaseMobZombieChild
-  id: MobZombieChildNaked
+  parent: BaseMobZombieSmoll
+  id: MobZombieSmollNaked
   suffix: Naked
   components:
   - type: Inventory
@@ -237,8 +237,8 @@
 
 #MARK: Civilian Basic
 - type: entity
-  parent: BaseMobZombieChild
-  id: MobZombieChildCivilianBasic
+  parent: BaseMobZombieSmoll
+  id: MobZombieSmollCivilianBasic
   suffix: Civilian Basic
   components:
   - type: Inventory

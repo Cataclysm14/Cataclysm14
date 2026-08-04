@@ -262,12 +262,12 @@
   minWidth: 1.25
   maxWidth: 1.35
 
-#MARK: species: Child
+#MARK: species: Small, smoll, dwarf-like
 - type: species
-  id: SpecieZombieChild
-  name: species-name-zombie-child
+  id: SpecieZombieSmoll
+  name: species-name-zombie-smoll
   roundStart: false
-  prototype: MobZombieChildNaked #Not really important
+  prototype: MobZombieSmollNaked #Not really important
   sprites: MobZombieSpritesBase
   defaultSkinTone: "#4F7942"
   markingLimits: MobZombieMarkingLimits
