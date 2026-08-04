@@ -191,7 +191,7 @@
   suffix: Naked
   components:
   - type: Inventory
-    templateId: InvTemplateZombieHeadless
+    templateId: InvTemplateZombieBase
 
 #MARK: Civilian Basic
 - type: entity
@@ -233,7 +233,7 @@
   suffix: Naked
   components:
   - type: Inventory
-    templateId: InvTemplateZombieHeadless
+    templateId: InvTemplateZombieBase
 
 #MARK: Civilian Basic
 - type: entity
@@ -592,6 +592,69 @@
       mask: !type:NestedSelector
         tableId: LootTableClothingMaskGasmasksIndustrial
         prob: 0.80
+      id: !type:GroupSelector
+        children:
+        - id: AccessIdentificationIDCardUS
+        prob: 0.60
+
+#MARK: Hulk >
+
+
+
+
+
+#MARK: Naked / no gear
+- type: entity
+  parent: BaseMobZombieHulk
+  id: MobZombieHulkNaked
+  suffix: Naked
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+
+#MARK: Smoker >
+
+
+
+
+
+#MARK: Naked / no gear
+- type: entity
+  parent: BaseMobZombieSmoker
+  id: MobZombieSmokerNaked
+  suffix: Naked
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+
+#MARK: Civilian Basic
+- type: entity
+  parent: BaseMobZombieSmoker
+  id: MobZombieSmokerCivilianBasic
+  suffix: Civilian Basic
+  components:
+  - type: Inventory
+    templateId: InvTemplateZombieBase
+  - type: EntityTableContainerFill
+    containers:
+      eyes: !type:NestedSelector
+        tableId: LootTableClothingEyesCommonEyewear
+        prob: 0.40
+      shoes: !type:NestedSelector
+        tableId: LootTableClothingShoesCivilian
+        prob: 0.99
+      jumpsuit: !type:NestedSelector
+        tableId: LootTableClothingShirtTracksuit
+        prob: 0.95
+      pants: !type:NestedSelector
+        tableId: LootTableClothingPantsTracksuit
+        prob: 0.99
+      back: !type:NestedSelector
+        tableId: LootTableClothingBagCivilian
+        prob: 0.4
+      head: !type:NestedSelector
+        tableId: LootTableClothingHatCivilian
+        prob: 0.4
       id: !type:GroupSelector
         children:
         - id: AccessIdentificationIDCardUS

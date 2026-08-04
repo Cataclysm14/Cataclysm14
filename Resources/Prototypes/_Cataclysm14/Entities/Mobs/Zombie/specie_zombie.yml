@@ -278,6 +278,22 @@
   minHeight: 0.6
   maxHeight: 0.7
 
+#MARK: species: Hulk
+- type: species
+  id: SpecieZombieHulk
+  name: species-name-zombie-hulk
+  roundStart: false
+  prototype: MobZombieHulkNaked #Not really important
+  sprites: MobZombieSpritesBase
+  defaultSkinTone: "#395445"
+  markingLimits: MobZombieMarkingLimits
+  dollPrototype: MobZombieDummy  #Not really important either
+  skinColoration: VoxFeathers # better than HumanToned
+  minWidth: 1.95
+  maxWidth: 2.05
+  minHeight: 1.95
+  maxHeight: 2.05
+
 #MARK: species: Headless
 - type: species
   id: SpecieZombieHeadless
