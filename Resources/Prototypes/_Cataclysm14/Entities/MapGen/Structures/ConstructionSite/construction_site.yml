@@ -1,0 +1,35 @@
+- type: dungeonRoom
+  id: StructureSpawnerConstructionSite13x13a
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/ConstructionSite/construction_site_1.yml
+  offset: -7,-6
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureConstructionSite13x13
+
+- type: dungeonRoom
+  id: StructureSpawnerConstructionSite13x13b
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/ConstructionSite/construction_site_2.yml
+  offset: -7,-6
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureConstructionSite13x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerConstructionSite13x13
+  name: Construction Site
+  suffix: 1x1 Chunk][13x13
+  components:
+  - type: Sprite
+    scale: 13,13
+    layers:
+    - sprite: _NF/Objects/Specific/Engineering/construction_bag.rsi
+      state: icon
+    - sprite: _Cataclysm14/Mapping/generic.rsi
+      state: structure_full_directions
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureConstructionSite13x13

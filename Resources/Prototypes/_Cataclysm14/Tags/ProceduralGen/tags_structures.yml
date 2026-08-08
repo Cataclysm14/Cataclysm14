@@ -24,6 +24,14 @@
 
   - type: Tag
     id: CataStructureHouseMedium52x52
+  
+  - type: Tag
+    id: CataStructureConstructionSite13x13
+
+#MARK: Military Things
+
+  - type: Tag
+    id: CataStructureMilitaryStorageRoom13x13
 
 #MARK: Special Buildings
 
@@ -84,3 +92,6 @@
     id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseCornerLong26x26
   - type: Tag
     id: CataStructureSpawnerRoadGrayWhiteSidewalkBaseEnd13x13
+
+  - type: Tag
+    id: CataStructureSpawnerRoadBlockStraight13x13
