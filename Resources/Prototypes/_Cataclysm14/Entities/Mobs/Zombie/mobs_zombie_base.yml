@@ -237,10 +237,10 @@
 
 #MARK: Mob Smoll
 - type: entity
-  id: BaseMobZombieSmoll
+  id: BaseMobZombieMini
   abstract: true
-  name: zombie child
-  description: It was only a child, and little is different about it now aside from the hungry look in its eyes. You'd be hard-pressed to not feel like you were killing an actual child by putting it down.
+  name: mini zombie
+  description: It was only a mini, and little is different about it now aside from the hungry look in its eyes. You'd be hard-pressed to not feel like you were killing an actual mini by putting it down.
   categories: [ HideSpawnMenu ]
   parent:
   - MobHumanoidHostileAISimpleMeleeZombieBase
@@ -254,7 +254,7 @@
   - type: UnshitmedMovementModifier
     sprintSpeedMod: 0.98
   - type: HumanoidAppearance
-    species: SpecieZombieSmoll
+    species: SpecieZombieMini
   - type: MobThresholds # twice less than MobZombie HP according to https://cdda-guide.nornagon.net/monster/mon_zombie?v=0.I
     thresholds:
       0: Alive

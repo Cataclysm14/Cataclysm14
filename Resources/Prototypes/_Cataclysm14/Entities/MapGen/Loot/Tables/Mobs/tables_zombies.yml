@@ -155,7 +155,7 @@
         weight: 15
       - id: MobZombieFatCivilianBasic
         weight: 4
-      - id: MobZombieSmollCivilianBasic
+      - id: MobZombieMiniCivilianBasic
         weight: 4
       - id: MobZombieHeadlessCivilianBasic
         weight: 4
@@ -181,7 +181,7 @@
         weight: 15
       - id: MobZombieFatNaked
         weight: 4
-      - id: MobZombieSmollNaked
+      - id: MobZombieMiniNaked
         weight: 4
       - id: MobZombieHeadlessNaked
         weight: 4

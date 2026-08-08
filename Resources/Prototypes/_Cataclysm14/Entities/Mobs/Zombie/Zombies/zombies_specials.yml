@@ -228,8 +228,8 @@
 
 #MARK: Naked / no gear
 - type: entity
-  parent: BaseMobZombieSmoll
-  id: MobZombieSmollNaked
+  parent: BaseMobZombieMini
+  id: MobZombieMiniNaked
   suffix: Naked
   components:
   - type: Inventory
@@ -237,8 +237,8 @@
 
 #MARK: Civilian Basic
 - type: entity
-  parent: BaseMobZombieSmoll
-  id: MobZombieSmollCivilianBasic
+  parent: BaseMobZombieMini
+  id: MobZombieMiniCivilianBasic
   suffix: Civilian Basic
   components:
   - type: Inventory
