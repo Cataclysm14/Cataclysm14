@@ -234,6 +234,7 @@
     damage:
       types:
         Brute: 8
+        Slash: 5
 
 #MARK: Mob Smoll
 - type: entity
@@ -270,6 +271,7 @@
     damage:
       types:
         Brute: 8
+        Slash: 5
 
 #MARK: Mob Headless
 - type: entity
@@ -714,7 +716,7 @@
     animation: WeaponArcBite # 2d3 (max6) for zombie, 4d8 (max32) for hulk, 
     damage:                  # with 25 typical survivor will crit from 4 (100/25) attacks 
       types:
-        Brute: 25
+        Slash: 25
 
 #MARK: Mob Smoker
 - type: entity
@@ -759,6 +761,7 @@
     damage:
       types:
         Brute: 9
+        Slash: 7
   - type: SmokeOnTrigger # smoke grenade with legs btw
     duration: 13
     spreadAmount: 30
