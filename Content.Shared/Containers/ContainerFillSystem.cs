@@ -66,8 +66,7 @@ public sealed partial class ContainerFillSystem : EntitySystem
         if (!TryComp(ent, out ContainerManagerComponent? containerComp))
             return;
 
-        if (!TryComp(ent, out StorageComponent? storageComponent))
-            return;
+        var storageComponent = CompOrNull<StorageComponent>(ent);
 
         if (TerminatingOrDeleted(ent) || !Exists(ent))
             return;
@@ -86,7 +85,8 @@ public sealed partial class ContainerFillSystem : EntitySystem
             var spawns = _entityTable.GetSpawns(table);
             foreach (var proto in spawns)
             {
-                if (!_containerForProtos.CanInsertProto(proto, (ent, storageComponent)))
+                // check CanInsertProto only for entities with StorageComp (like shelves, wardrobes, etc.) and skip check for Mobs, because they don't have StorageComp
+                if (storageComponent != null && !_containerForProtos.CanInsertProto(proto, (ent, storageComponent)))
                 {
                     #if DEBUG
                     Log.Warning($"Entity {ToPrettyString(ent)} with a {nameof(EntityTableContainerFillComponent)} failed to insert an entity (it doesnt fit): {proto}.");
