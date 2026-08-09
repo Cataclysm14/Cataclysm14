@@ -262,6 +262,38 @@
   minWidth: 1.25
   maxWidth: 1.35
 
+#MARK: species: Mini
+- type: species
+  id: SpecieZombieMini
+  name: species-name-zombie-mini
+  roundStart: false
+  prototype: MobZombieMiniNaked #Not really important
+  sprites: MobZombieSpritesBase
+  defaultSkinTone: "#4F7942"
+  markingLimits: MobZombieMarkingLimits
+  dollPrototype: MobZombieDummy  #Not really important either
+  skinColoration: HumanToned
+  minWidth: 0.6
+  maxWidth: 0.7
+  minHeight: 0.6
+  maxHeight: 0.7
+
+#MARK: species: Hulk
+- type: species
+  id: SpecieZombieHulk
+  name: species-name-zombie-hulk
+  roundStart: false
+  prototype: MobZombieHulkNaked #Not really important
+  sprites: MobZombieSpritesBase
+  defaultSkinTone: "#395445"
+  markingLimits: MobZombieMarkingLimits
+  dollPrototype: MobZombieDummy  #Not really important either
+  skinColoration: VoxFeathers # better than HumanToned
+  minWidth: 1.95
+  maxWidth: 2.05
+  minHeight: 1.95
+  maxHeight: 2.05
+
 #MARK: species: Headless
 - type: species
   id: SpecieZombieHeadless
