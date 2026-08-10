@@ -106,3 +106,7 @@
 #MARK: Cabin
   - type: Tag
     id: CataStructureCabin13x13
+
+#MARK: Graveyard
+  - type: Tag
+    id: CataStructureSpawnerSmallGraveyard13x13
