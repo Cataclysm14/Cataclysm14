@@ -10,7 +10,7 @@
 - type: entity
   parent: BaseStructureSpawner
   id: StructureSpawnerStorageUnitCivilian39x39
-  name: Military storage room
+  name: Civilian Unit Storage
   suffix: 3x3 Chunk][39x39
   components:
   - type: Sprite
