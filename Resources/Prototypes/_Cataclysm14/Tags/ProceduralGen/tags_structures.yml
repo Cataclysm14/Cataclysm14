@@ -102,3 +102,7 @@
 #MARK: Storage Unit
   - type: Tag
     id: CataStructureSpawnerStorageUnit39x39
+
+#MARK: Cabin
+  - type: Tag
+    id: CataStructureCabin13x13

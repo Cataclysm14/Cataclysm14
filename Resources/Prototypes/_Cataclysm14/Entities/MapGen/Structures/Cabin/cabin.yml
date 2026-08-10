@@ -1,0 +1,35 @@
+- type: dungeonRoom
+  id: StructureSpawnerCabin13x13a
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/Cabin/structure_cabin_13x13_a.yml
+  offset: 0,-12
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureConstructionSite13x13
+
+- type: dungeonRoom
+  id: StructureSpawnerCabin13x13c
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/Cabin/structure_cabin_13x13_c.yml
+  offset: 0,-12
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureCabin13x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerCabin13x13
+  name: Cabin
+  suffix: 1x1 Chunk][13x13
+  components:
+  - type: Sprite
+    scale: 13,13
+    layers:
+    #- sprite: i dont known
+    #  state: something
+    - sprite: _Cataclysm14/Mapping/generic.rsi
+      state: structure_full_directions
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureCabin13x13
