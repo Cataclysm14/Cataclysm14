@@ -1,0 +1,27 @@
+- type: dungeonRoom
+  id: StructureSpawnerStorageUnitCivilian39x39a
+  size: 39,39
+  atlas: /Maps/_Cataclysm14/Structures/StorageUnit/structure_storage_unit_civillian_39x39_a.yml
+  offset: 0,-38
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerStorageUnit39x39
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerStorageUnitCivilian39x39
+  name: Military storage room
+  suffix: 3x3 Chunk][39x39
+  components:
+  - type: Sprite
+    scale: 39,39
+    layers:
+    - sprite: _Cataclysm14/Structures/Shutters/shutter_garage_base.rsi
+      state: closed
+      scale: 0.5,0.5
+    - sprite: _Cataclysm14/Mapping/generic.rsi
+      state: structure_full_directions
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureSpawnerStorageUnit39x39

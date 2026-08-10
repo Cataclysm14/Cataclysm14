@@ -95,3 +95,7 @@
 
   - type: Tag
     id: CataStructureSpawnerRoadBlockStraight13x13
+
+#MARK: Storage Unit
+  - type: Tag
+    id: CataStructureSpawnerStorageUnit39x39
