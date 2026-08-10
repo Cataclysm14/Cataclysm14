@@ -1,0 +1,29 @@
+- type: dungeonRoom
+  id: StructureSpawnerFurnitureShop26x26a
+  size: 27,27
+  atlas: /Maps/_Cataclysm14/Structures/Shops/Furniture/structure_furniture_store_26x26_a.yml
+  offset: 0,-27
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureFurnitureShop26x26
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerFurnitureShop26x26
+  name: furniture shop
+  suffix: 2x2 Chunk][26x26
+  components:
+  - type: Sprite
+    scale: 26,26
+    offset: -0.5,-0.5
+    layers:
+    - sprite: Structures/Furniture/chairs.rsi
+      state: comfy
+      scale: 0.5,0.5
+    - sprite: _Cataclysm14/Mapping/generic.rsi
+      state: structure_full_directions
+  - type: RoomFill
+    rotation: false
+    roomWhitelist:
+      tags:
+      - CataStructureFurnitureShop26x26

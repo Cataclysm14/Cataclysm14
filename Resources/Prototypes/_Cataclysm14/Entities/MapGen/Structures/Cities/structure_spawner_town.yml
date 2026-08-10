@@ -23,6 +23,9 @@
       children:
       - id: StructureSpawnerGunshopSmall26x26
         weight: 100
+      - id: StructureSpawnerFurnitureShop26x26
+        weight: 100
+
 
 #MARK: Service Building
 - type: entity

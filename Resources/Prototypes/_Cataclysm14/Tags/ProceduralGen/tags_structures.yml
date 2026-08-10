@@ -28,6 +28,9 @@
   - type: Tag
     id: CataStructureConstructionSite13x13
 
+  - type: Tag
+    id: CataStructureFurnitureShop26x26
+
 #MARK: Military Things
 
   - type: Tag
