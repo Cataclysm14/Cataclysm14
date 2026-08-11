@@ -6,8 +6,14 @@
   components:
   - type: EntityTableContainerFill
     containers:
-      storagebase: !type:NestedSelector
-        tableId: LootTableWeaponGunCivilianGunshop
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableWeaponGunCivilianGunshop
+          rolls: !type:RangeNumberSelector
+            range: 1,6
 
 - type: entity
   id: StructureFurnitureGunRackMetalFilledGunshopRandom50
@@ -16,8 +22,14 @@
   components:
   - type: EntityTableContainerFill
     containers:
-      storagebase: !type:NestedSelector
-        tableId: LootTableWeaponGunCivilianGunshop
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableWeaponGunCivilianGunshop
+          rolls: !type:RangeNumberSelector
+            range: 1,6
         prob: 0.50
 
 - type: entity
@@ -27,8 +39,14 @@
   components:
   - type: EntityTableContainerFill
     containers:
-      storagebase: !type:NestedSelector
-        tableId: LootTableWeaponGunCivilianGunshop
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableWeaponGunCivilianGunshop
+          rolls: !type:RangeNumberSelector
+            range: 1,6
         prob: 0.25
 
 - type: entity
@@ -38,8 +56,14 @@
   components:
   - type: EntityTableContainerFill
     containers:
-      storagebase: !type:NestedSelector
-        tableId: LootTableWeaponGunCivilianGunshop
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableWeaponGunCivilianGunshop
+          rolls: !type:RangeNumberSelector
+            range: 1,6
         prob: 0.10
 
 #MARK: Locked Gun Racks
@@ -50,8 +74,14 @@
   components:
   - type: EntityTableContainerFill
     containers:
-      storagebase: !type:NestedSelector
-        tableId: LootTableWeaponGunCivilianGunshop
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableWeaponGunCivilianGunshop
+          rolls: !type:RangeNumberSelector
+            range: 1,6
 
 - type: entity
   id: StructureFurnitureGunRackMetalLockedFilledGunshopRandom50
@@ -60,8 +90,14 @@
   components:
   - type: EntityTableContainerFill
     containers:
-      storagebase: !type:NestedSelector
-        tableId: LootTableWeaponGunCivilianGunshop
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableWeaponGunCivilianGunshop
+          rolls: !type:RangeNumberSelector
+            range: 1,6
         prob: 0.50
 
 - type: entity
@@ -71,8 +107,14 @@
   components:
   - type: EntityTableContainerFill
     containers:
-      storagebase: !type:NestedSelector
-        tableId: LootTableWeaponGunCivilianGunshop
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableWeaponGunCivilianGunshop
+          rolls: !type:RangeNumberSelector
+            range: 1,6
         prob: 0.25
 
 - type: entity
@@ -82,8 +124,14 @@
   components:
   - type: EntityTableContainerFill
     containers:
-      storagebase: !type:NestedSelector
-        tableId: LootTableWeaponGunCivilianGunshop
+      storagebase: !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - !type:NestedSelector
+            tableId: LootTableWeaponGunCivilianGunshop
+          rolls: !type:RangeNumberSelector
+            range: 1,6
         prob: 0.10
 
 #MARK: Display Cases

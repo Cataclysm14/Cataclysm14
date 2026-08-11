@@ -170,7 +170,8 @@ public sealed partial class HumanoidCharacterAppearance : ICharacterAppearance, 
 
         var newEyeColor = random.Pick(RealisticEyeColors);
 
-        var skinType = IoCManager.Resolve<IPrototypeManager>().Index<SpeciesPrototype>(species).SkinColoration;
+        var speciesPrototype = IoCManager.Resolve<IPrototypeManager>().Index<SpeciesPrototype>(species); // Cataclysm14
+        var skinType = speciesPrototype.SkinColoration; // Cataclysm14
 
         var newSkinColor = new Color(random.NextFloat(1), random.NextFloat(1), random.NextFloat(1), 1);
         switch (skinType)
@@ -192,8 +193,8 @@ public sealed partial class HumanoidCharacterAppearance : ICharacterAppearance, 
                 break;
         }
 
-        var newHeight = random.NextFloat(0.95f, 1.05f); // Random height between 95% and 105% of normal
-        var newWidth = random.NextFloat(0.95f, 1.05f); // Random width between 95% and 105% of normal
+        var newHeight = random.NextFloat(speciesPrototype.MinHeight, speciesPrototype.MaxHeight); // Random height between 95% and 105% of normal // Cataclysm14
+        var newWidth = random.NextFloat(speciesPrototype.MinWidth, speciesPrototype.MaxWidth); // Random width between 95% and 105% of normal // Cataclysm14
         return new HumanoidCharacterAppearance(newHairStyle, newHairColor, newFacialHairStyle, newHairColor, newEyeColor, newSkinColor, new (), newHeight, newWidth);
 
         float RandomizeColor(float channel)

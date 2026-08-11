@@ -18,7 +18,7 @@ public abstract partial class SharedForageableSystem : EntitySystem
 
     private void AddForageVerb(EntityUid uid, ForageableComponent component, GetVerbsEvent<AlternativeVerb> args)
     {
-        if (!component.ReadyToForage)
+        if (!args.CanInteract || !component.ReadyToForage)
             return;
 
         args.Verbs.Add(new()

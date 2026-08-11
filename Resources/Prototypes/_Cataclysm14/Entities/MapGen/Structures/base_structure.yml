@@ -13,6 +13,7 @@
     rotation: false
     clearExisting: true
     inheritRotation: true
+  - type: MakeChunkDirtyOnSpawn
 
 #MARK: Test5x5a
 - type: dungeonRoom

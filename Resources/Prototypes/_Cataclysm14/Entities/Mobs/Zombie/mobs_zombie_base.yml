@@ -199,6 +199,80 @@
         Brute: 8
         Slash: 5
 
+#MARK: Mob Fat
+- type: entity
+  id: BaseMobZombieFat
+  abstract: true
+  name: fat zombie
+  description: Stumbling as it moves, this corpse of an overweight human regards its surroundings with an empty black gaze.
+  categories: [ HideSpawnMenu ]
+  parent:
+  - MobHumanoidHostileAISimpleMeleeZombieBase
+  - BasePrototypeSpecieZombie
+  - BaseMobZombieStats
+  components:
+  - type: Body
+    prototype: BodyPartSetZombieBase
+    requiredLegs: 2
+  - type: MovementSpeedModifier
+  - type: UnshitmedMovementModifier
+    sprintSpeedMod: 0.8
+  - type: HumanoidAppearance
+    species: SpecieZombieFat
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      120: Critical
+      220: Dead
+  - type: MeleeWeapon
+    attackRate: 0.5
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: AlienClaw
+    animation: WeaponArcBite
+    damage:
+      types:
+        Brute: 8
+        Slash: 5
+
+#MARK: Mob Smoll
+- type: entity
+  id: BaseMobZombieMini
+  abstract: true
+  name: mini zombie
+  description: It was only a mini, and little is different about it now aside from the hungry look in its eyes. You'd be hard-pressed to not feel like you were killing an actual mini by putting it down.
+  categories: [ HideSpawnMenu ]
+  parent:
+  - MobHumanoidHostileAISimpleMeleeZombieBase
+  - BasePrototypeSpecieZombie
+  - BaseMobZombieStats
+  components:
+  - type: Body
+    prototype: BodyPartSetZombieBase
+    requiredLegs: 2
+  - type: MovementSpeedModifier
+  - type: UnshitmedMovementModifier
+    sprintSpeedMod: 0.98
+  - type: HumanoidAppearance
+    species: SpecieZombieMini
+  - type: MobThresholds # twice less than MobZombie HP according to https://cdda-guide.nornagon.net/monster/mon_zombie?v=0.I
+    thresholds:
+      0: Alive
+      50: Critical
+      100: Dead
+  - type: MeleeWeapon
+    attackRate: 0.5
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: AlienClaw
+    animation: WeaponArcBite
+    damage:
+      types:
+        Brute: 8
+        Slash: 5
+
 #MARK: Mob Headless
 - type: entity
   id: BaseMobZombieHeadless
@@ -607,3 +681,93 @@
     radius: 1.2
     energy: 100.0
   - type: Transform
+
+#MARK: Mob Hulk
+- type: entity
+  id: BaseMobZombieHulk
+  abstract: true
+  name: zombie hulk
+  description: A human corpse swollen to the size of six men, with arms as wide as trash cans.
+  categories: [ HideSpawnMenu ]
+  parent:
+  - MobHumanoidHostileAISimpleMeleeZombieBase
+  - BasePrototypeSpecieZombie
+  - BaseMobZombieStats
+  components:
+  - type: Body
+    prototype: BodyPartSetZombieBase
+    requiredLegs: 2
+  - type: MovementSpeedModifier
+  - type: UnshitmedMovementModifier # In Cataclysm DDA: Zombie = 70 spd, Hulk = 130 spd, so 130/70 = 1.85 boost speed
+    sprintSpeedMod: 1.8
+  - type: HumanoidAppearance
+    species: SpecieZombieHulk
+  - type: MobThresholds # Zombie=80, Hulk=480, boost=480/80=6 aprox https://cdda-guide.nornagon.net/monster/mon_zombie_hulk?v=0.I
+    thresholds:
+      0: Alive
+      590: Critical
+      690: Dead
+  - type: MeleeWeapon
+    attackRate: 0.5
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: AlienClaw
+    animation: WeaponArcBite # 2d3 (max6) for zombie, 4d8 (max32) for hulk, 
+    damage:                  # with 25 typical survivor will crit from 4 (100/25) attacks 
+      types:
+        Slash: 25
+
+#MARK: Mob Smoker
+- type: entity
+  id: BaseMobZombieSmoker
+  abstract: true
+  name: smoker zombie
+  description: A blackened and twisted naked human body. Strips of flesh hang from its frame, and it emits a constant haze of thick black smoke.
+  categories: [ HideSpawnMenu ]
+  parent:
+  - MobHumanoidHostileAISimpleMeleeZombieBase
+  - BasePrototypeSpecieZombie
+  - BaseMobZombieStats
+  components:
+  - type: Sprite
+    layers:
+    - map: ["enum.HumanoidVisualLayers.Handcuffs"] #spam errors if it isn't there, no clue why
+      color: "#ffffff"
+      sprite: Objects/Misc/handcuffs.rsi
+      state: body-overlay-2
+      visible: false
+    - map: [ "lightning" ]
+      sprite: Effects/chemsmoke.rsi
+      state: chemsmoke
+  - type: Body
+    prototype: BodyPartSetZombieBase
+    requiredLegs: 2
+  - type: MovementSpeedModifier
+  - type: UnshitmedMovementModifier # In Cataclysm DDA: Zombie = 70 spd, Smoker = 110 spd, so 110/70 = 1.57 boost speed
+    sprintSpeedMod: 1.5
+  - type: MobThresholds # Zombie=80, Smoker=75, boost=75/80=0.94 aprox
+    thresholds:
+      0: Alive
+      94: Critical
+      188: Dead
+  - type: MeleeWeapon
+    attackRate: 0.5
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: AlienClaw
+    animation: WeaponArcBite # 2d3 (max6) for zombie, 1d6 bash + 2cut (max8) for smoker, 
+    damage:
+      types:
+        Brute: 9
+        Slash: 7
+  - type: SmokeOnTrigger # smoke grenade with legs btw
+    duration: 13
+    spreadAmount: 30
+    solution:
+      reagents:
+      - ReagentId: Nicotine
+        Quantity: 50
+  - type: RepeatTimerTrigger
+    interval: 9

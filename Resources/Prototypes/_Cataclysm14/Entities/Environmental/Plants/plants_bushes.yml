@@ -7,6 +7,24 @@
   - type: Sprite
     sprite: _Cataclysm14/Plants/Bushes/bush_blackberry.rsi
     state: summer
+  - type: FloorOccluder
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.7
+    sprintSpeedModifier: 0.55
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      bush:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.15,0.15,0.15"
+        layer:
+        - SlipLayer
+        mask:
+        - ItemMask
+        density: 1000
+        hard: false
   - type: Forageable
     foodProto: FoodBlackBerries
     maxSpawnAmount: 3 # in game: 2..5
@@ -49,6 +67,24 @@
   - type: Sprite
     sprite: _Cataclysm14/Plants/Bushes/bush_blueberry.rsi
     state: summer
+  - type: FloorOccluder
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.7
+    sprintSpeedModifier: 0.55
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      bush:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.15,0.15,0.15"
+        layer:
+        - SlipLayer
+        mask:
+        - ItemMask
+        density: 1000
+        hard: false
   - type: Forageable
     foodProto: FoodBlueBerries
     maxSpawnAmount: 3 # in game: 2..5
@@ -91,6 +127,24 @@
   - type: Sprite
     sprite: _Cataclysm14/Plants/Bushes/bush_grape.rsi
     state: summer
+  - type: FloorOccluder
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.7
+    sprintSpeedModifier: 0.55
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      bush:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.15,0.15,0.15"
+        layer:
+        - SlipLayer
+        mask:
+        - ItemMask
+        density: 1000
+        hard: false
   - type: Forageable
     foodProto: FoodGrape
     maxSpawnAmount: 3 # in game: 2..5
@@ -133,6 +187,24 @@
   - type: Sprite
     sprite: _Cataclysm14/Plants/Bushes/bush_huckleberry.rsi
     state: summer
+  - type: FloorOccluder
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.7
+    sprintSpeedModifier: 0.55
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      bush:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.15,0.15,0.15"
+        layer:
+        - SlipLayer
+        mask:
+        - ItemMask
+        density: 1000
+        hard: false
   - type: Forageable
     foodProto: FoodHuckleBerries
     maxSpawnAmount: 3 # in game: 2..5
@@ -175,6 +247,24 @@
   - type: Sprite
     sprite: _Cataclysm14/Plants/Bushes/bush_hydrangea.rsi
     state: base
+  - type: FloorOccluder
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.7
+    sprintSpeedModifier: 0.55
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      bush:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.15,0.15,0.15"
+        layer:
+        - SlipLayer
+        mask:
+        - ItemMask
+        density: 1000
+        hard: false
   - type: Destructible
     thresholds:
     - trigger:
@@ -209,6 +299,24 @@
   - type: Sprite
     sprite: _Cataclysm14/Plants/Bushes/bush_lilac.rsi
     state: base
+  - type: FloorOccluder
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.7
+    sprintSpeedModifier: 0.55
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      bush:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.15,0.15,0.15"
+        layer:
+        - SlipLayer
+        mask:
+        - ItemMask
+        density: 1000
+        hard: false
   - type: Destructible
     thresholds:
     - trigger:
@@ -243,6 +351,24 @@
   - type: Sprite
     sprite: _Cataclysm14/Plants/Bushes/bush_peanut.rsi
     state: base
+  - type: FloorOccluder
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.7
+    sprintSpeedModifier: 0.55
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      bush:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.15,0.15,0.15"
+        layer:
+        - SlipLayer
+        mask:
+        - ItemMask
+        density: 1000
+        hard: false
   - type: Destructible
     thresholds:
     - trigger:
@@ -277,6 +403,24 @@
   - type: Sprite
     sprite: _Cataclysm14/Plants/Bushes/bush_raspberry.rsi
     state: summer
+  - type: FloorOccluder
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.7
+    sprintSpeedModifier: 0.55
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      bush:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.15,0.15,0.15"
+        layer:
+        - SlipLayer
+        mask:
+        - ItemMask
+        density: 1000
+        hard: false
   - type: Forageable
     foodProto: FoodRaspBerries
     maxSpawnAmount: 3 # in game: 2..5
@@ -319,6 +463,24 @@
   - type: Sprite
     sprite: _Cataclysm14/Plants/Bushes/bush_strawberry.rsi
     state: summer
+  - type: FloorOccluder
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.7
+    sprintSpeedModifier: 0.55
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      bush:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.15,0.15,0.15"
+        layer:
+        - SlipLayer
+        mask:
+        - ItemMask
+        density: 1000
+        hard: false
   - type: Forageable
     foodProto: FoodStrawBerries
     maxSpawnAmount: 3 # in game: 2..5
@@ -361,6 +523,24 @@
   - type: Sprite
     sprite: _Cataclysm14/Plants/Bushes/bush_winter_rose.rsi
     state: base
+  - type: FloorOccluder
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.7
+    sprintSpeedModifier: 0.55
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      bush:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.15,0.15,0.15"
+        layer:
+        - SlipLayer
+        mask:
+        - ItemMask
+        density: 1000
+        hard: false
   - type: Destructible
     thresholds:
     - trigger:

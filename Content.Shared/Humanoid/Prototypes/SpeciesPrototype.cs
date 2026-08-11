@@ -120,6 +120,20 @@ public sealed partial class SpeciesPrototype : IPrototype
     /// </summary>
     [DataField]
     public int MaxAge = 120;
+
+    // Cataclysm14 Begin
+    [DataField]
+    public float MinWidth = 0.95f;
+
+    [DataField]
+    public float MaxWidth = 1.05f;
+
+    [DataField]
+    public float MinHeight = 0.95f;
+
+    [DataField]
+    public float MaxHeight = 1.05f;
+    // Cataclysm14 End
 }
 
 public enum SpeciesNaming : byte

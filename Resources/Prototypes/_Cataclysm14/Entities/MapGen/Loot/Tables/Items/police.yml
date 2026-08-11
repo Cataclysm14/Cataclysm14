@@ -15,6 +15,16 @@
           range: 0,2
       - !type:NestedSelector
         weight: 100
+        tableId: LootTableLoadoutWeaponGunMossberg500FilledBuckshot
+        rolls: !type:RangeNumberSelector
+          range: 0,1
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableLoadoutWeaponGunRemingtonM870FilledBuckshot
+        rolls: !type:RangeNumberSelector
+          range: 0,1
+      - !type:NestedSelector
+        weight: 100
         tableId: LootTableLoadoutWeaponGunM1911Filled10rdFMJ
         rolls: !type:RangeNumberSelector
           range: 0,2

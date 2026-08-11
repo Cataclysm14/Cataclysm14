@@ -37,8 +37,8 @@
   - type: Sprite
     offset: -0.5,-0.5
     layers:
-    - sprite: _Cataclysm14/Mapping/Shops/structure_shop.rsi
-      state: structure_border_shop_small
+    - sprite: _Cataclysm14/Mapping/building.rsi
+      state: structure_building_brick
       scale: 26,26
     - sprite: _Cataclysm14/Objects/Weapons/Melee/nightstick.rsi
       state: icon
@@ -56,5 +56,5 @@
     rotate: true
     table: !type:GroupSelector
       children:
-      - id: StructureSpawnerGunshopSmall26x26
+      - id: StructureSpawnerPoliceStationSmall26x26
         weight: 100

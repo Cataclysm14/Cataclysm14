@@ -177,6 +177,7 @@ public sealed partial class CataclysmSidebar : UIWidget
             if (_cachedHpLevel != hpLevel)
             {
                 _cachedHpLevel = hpLevel;
+                hpLevel = hpLevel*2;
                 var (healthValue, healthColor) = hpLevel switch
                 {
                     < 9 => ("|||||", new Color(0, 110, 0)),
@@ -189,7 +190,18 @@ public sealed partial class CataclysmSidebar : UIWidget
                     < 72 => ("|\\...", new Color(255, 150, 150)),
                     < 81 => ("|....", new Color(255, 150, 150)), // pink
                     < 90 => ("\\....", Color.Red),
-                    >= 90 => (".....", Color.Red),
+                    < 99 => (".....", Color.Red),
+                    < 109 => ("|||||", Color.Red),
+                    < 118 => ("||||\\", Color.Red),
+                    < 127 => ("||||.", Color.Red),
+                    < 136 => ("|||\\.", Color.Red),
+                    < 145 => ("|||..", Color.Red),
+                    < 154 => ("||\\..", Color.Red),
+                    < 163 => ("||...", Color.Red),
+                    < 172 => ("|\\...", Color.Red),
+                    < 181 => ("|....", Color.Red),
+                    < 190 => ("\\....", Color.Red),
+                    >= 190 => (".....", Color.Red),
                 };
 
                 HealthLabel.Text = healthValue;

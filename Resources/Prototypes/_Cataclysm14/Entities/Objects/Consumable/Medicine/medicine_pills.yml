@@ -18,9 +18,9 @@
           Quantity: 5
 
 - type: entity
-  parent: PillCanister
-  id: ConsumableMedicinePillCanisterAspirin
-  name: pill canister
+  parent: ContainerCanisterPillSmall
+  id: ContainerCanisterPillSmallFilledAspirin
+  name: aspirin pills canister
   suffix: aspirin, 5
   components:
   - type: Label
@@ -52,9 +52,9 @@
           Quantity: 5
 
 - type: entity
-  parent: PillCanister
-  id: ConsumableMedicinePillCanisterIbuprofen
-  name: pill canister
+  parent: ContainerCanisterPillSmall
+  id: ContainerCanisterPillSmallFilledIbuprofen
+  name: ibuprofen pills canister
   suffix: ibuprofen, 5
   components:
   - type: Label
@@ -84,9 +84,9 @@
           Quantity: 10
 
 - type: entity
-  parent: PillCanister
-  id: ConsumableMedicinePillCanisterAcetaminophen
-  name: pill canister
+  parent: ContainerCanisterPillSmall
+  id: ContainerCanisterPillSmallFilledAcetaminophen
+  name: acetaminophen pills canister
   suffix: acetaminophen, 5
   components:
   - type: Label
@@ -118,9 +118,9 @@
           Quantity: 10
 
 - type: entity
-  parent: PillCanister
-  id: ConsumableMedicinePillCanisterCodeine
-  name: pill canister
+  parent: ContainerCanisterPillSmall
+  id: ContainerCanisterPillSmallFilledCodeine
+  name: codeine pills canister
   suffix: codeine, 5
   components:
   - type: Label
@@ -150,9 +150,9 @@
           Quantity: 10
 
 - type: entity
-  parent: PillCanister
-  id: ConsumableMedicinePillCanisterAntibiotics
-  name: pill canister
+  parent: ContainerCanisterPillSmall
+  id: ContainerCanisterPillSmallFilledAntibiotics
+  name: antibiotics pills canister
   suffix: antibiotics, 5
   components:
   - type: Label
@@ -182,9 +182,9 @@
           Quantity: 10
 
 - type: entity
-  parent: PillCanister
-  id: ConsumableMedicinePillCanisterAntihistamine
-  name: pill canister
+  parent: ContainerCanisterPillSmall
+  id: ContainerCanisterPillSmallFilledAntihistamine
+  name: antihistamine pills canister
   suffix: antihistamine, 5
   components:
   - type: Label
@@ -214,9 +214,9 @@
           Quantity: 10
 
 - type: entity
-  parent: PillCanister
-  id: ConsumableMedicinePillCanisterIodine
-  name: pill canister
+  parent: ContainerCanisterPillSmall
+  id: ContainerCanisterPillSmallFilledIodine
+  name: iodine pills canister
   suffix: potassium iodide, 5
   components:
   - type: Label
@@ -248,9 +248,9 @@
           Quantity: 2
 
 - type: entity
-  parent: PillCanister
-  id: ConsumableMedicinePillCanisterPrussianBlue
-  name: pill canister
+  parent: ContainerCanisterPillSmall
+  id: ContainerCanisterPillSmallFilledPrussianBlue
+  name: prussianBlue pills canister
   suffix: prussian blue, 5
   components:
   - type: Label
@@ -280,9 +280,9 @@
           Quantity: 10
 
 - type: entity
-  parent: PillCanister
-  id: ConsumableMedicinePillCanisterCharcoal
-  name: pill canister
+  parent: ContainerCanisterPillSmall
+  id: ContainerCanisterPillSmallFilledCharcoal
+  name: activated charcoal pills canister
   suffix: activated charcoal, 3
   components:
   - type: Label

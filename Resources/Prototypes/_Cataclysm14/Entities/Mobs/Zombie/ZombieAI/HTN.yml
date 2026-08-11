@@ -31,7 +31,7 @@
           task: ExploreTheSoundTargetCompoundZombieBase
     - tasks:
         - !type:HTNCompoundTask
-          task: IdleCompoundZombieBase
+          task: IdleCompoundZombieBase # breaks npc debug menu and zombie logic. For debug replace it with IdleCompound
 
 - type: htnCompound
   id: IdleCompoundZombieBase
@@ -207,4 +207,5 @@
             removeKeyOnFinish: true
             brakeMaxVelocity: null # Monolith - don't try to brake
             targetKey: SoundCoordinates
-            rangeKey: VisionRadius
+          preconditions:
+          - !type:SoundTargetExistsPrecondition

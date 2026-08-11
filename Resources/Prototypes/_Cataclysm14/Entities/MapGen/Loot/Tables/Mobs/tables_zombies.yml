@@ -153,6 +153,10 @@
     children:
       - id: MobZombieCivilianBasic
         weight: 15
+      - id: MobZombieFatCivilianBasic
+        weight: 4
+      - id: MobZombieMiniCivilianBasic
+        weight: 4
       - id: MobZombieHeadlessCivilianBasic
         weight: 4
       - id: MobZombieCrawlingCivilianBasic
@@ -163,6 +167,8 @@
         weight: 1
       - id: MobZombieTeslaCivilianBasic
         weight: 2
+      - id: MobZombieSmokerCivilianBasic
+        weight: 1
       - id: MobZombieSpitterAcidCivilianBasic
         weight: 2
 
@@ -173,6 +179,10 @@
     children:
       - id: MobZombieNaked
         weight: 15
+      - id: MobZombieFatNaked
+        weight: 4
+      - id: MobZombieMiniNaked
+        weight: 4
       - id: MobZombieHeadlessNaked
         weight: 4
       - id: MobZombieCrawlingNaked
@@ -185,3 +195,7 @@
         weight: 2
       - id: MobZombieSpitterAcidNaked
         weight: 2
+      - id: MobZombieSmokerNaked
+        weight: 1
+      - id: MobZombieHulkNaked
+        weight: 0.1 # very big unluck

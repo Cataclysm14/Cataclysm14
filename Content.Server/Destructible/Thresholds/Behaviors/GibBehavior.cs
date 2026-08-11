@@ -1,4 +1,5 @@
 using Content.Shared.Body.Components;
+using Content.Shared.Body.Organ; // Cataclysm14 Change
 using Content.Shared.Gibbing.Events; // Shitmed Change
 using JetBrains.Annotations;
 

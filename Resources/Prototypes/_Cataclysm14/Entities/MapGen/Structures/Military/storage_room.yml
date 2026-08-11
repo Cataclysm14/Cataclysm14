@@ -1,0 +1,32 @@
+- type: dungeonRoom
+  id: StructureSpawnerMilitaryStorageRoom13x13a
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/Military/Storage/storage_room_1.yml
+  offset: -7,-6
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureMilitaryStorageRoom13x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerMilitaryStorageRoom13x13
+  name: Military storage room
+  suffix: 1x1 Chunk][13x13
+  components:
+  - type: Sprite
+    scale: 13,13
+    layers:
+    - sprite: _Cataclysm14/Structures/Furnitures/locker_metal.rsi
+      state: locker_metal_third_triple
+      scale: 0.5,0.5
+      offset: 0,-0.1
+    - sprite: _Mono/Objects/Weapons/Guns/Snipers/ak410.rsi
+      state: icon
+      scale: 0.5,0.5
+      offset: 0,0.2
+    - sprite: _Cataclysm14/Mapping/generic.rsi
+      state: structure_full_directions
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureMilitaryStorageRoom13x13

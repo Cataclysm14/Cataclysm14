@@ -20,9 +20,14 @@
         - id: WeaponAssaultRifleM16A3FilledSTANAG30rdTracerRed
       - !type:GroupSelector
         children:
-        - id: WeaponAssaultRifleM27-IARFilledSTANAG30rdEmpty
-        - id: WeaponAssaultRifleM27-IARFilledSTANAG30rdFMJ
-        - id: WeaponAssaultRifleM27-IARFilledSTANAG30rdTracerRed
+        - id: WeaponAssaultRifleM27IARFilledSTANAG30rdEmpty
+        - id: WeaponAssaultRifleM27IARFilledSTANAG30rdFMJ
+        - id: WeaponAssaultRifleM27IARFilledSTANAG30rdTracerRed
+      - !type:GroupSelector
+        children:
+        - id: WeaponAssaultRifleM38DMRFilledSTANAG30rdEmpty
+        - id: WeaponAssaultRifleM38DMRFilledSTANAG30rdFMJ
+        - id: WeaponAssaultRifleM38DMRFilledSTANAG30rdTracerRed
       - !type:GroupSelector
         children:
         - id: WeaponLightMachineGunM249Filled200rdEmpty
@@ -39,30 +44,11 @@
         - id: WeaponMediumMachineGunM60Filled200rdFMJ
         - id: WeaponMediumMachineGunM60Filled200rdTracerYellow
 
-#MARK: Guns Civilian Gunshop (0-6)
+#MARK: Guns Civilian Gunshop
 - type: entityTable
   id: LootTableWeaponGunCivilianGunshop
   table: !type:GroupSelector
-    rolls: !type:RangeNumberSelector
-      range: 0,6
     children:
-    - !type:NestedSelector
-      tableId: LootTableWeaponGunCivilianGunshopReturnsOne
-
-#MARK: Guns Civilian Gunshop
-#MARK: (just table, return exactly 1 gun)
-- type: entityTable
-  id: LootTableWeaponGunCivilianGunshopReturnsOne
-  table: !type:GroupSelector
-    rolls: !type:ConstantNumberSelector
-      value: 1
-    children:
-    - id: WeaponBattleRifleM1AFilledSTANAG20rdEmpty
-      weight: 50
-    - id: WeaponBattleRifleM14MarksmanFilledSTANAG20rdEmpty
-      weight: 25
-    - id: WeaponBattleRifleM14FilledSTANAG20rdEmpty
-      weight: 50
     - id: WeaponBoltActionRifleM24Base
       weight: 100
     - id: WeaponBoltActionRifleRemingtonM700Base
@@ -75,8 +61,6 @@
       weight: 100
     - id: WeaponAssaultRifleVPO-136FilledSteel30rdEmpty
       weight: 100
-    - id: WeaponPistolFN5,7Filled20rdEmpty
-      weight: 75
     - id: WeaponPistolGlock17Filled17rdEmpty
       weight: 100
     - id: WeaponPistolM1911Filled10rdEmpty
@@ -87,23 +71,33 @@
       weight: 100
     - id: WeaponRevolverM36Empty
       weight: 100
-    - id: WeaponRifleAR10FilledSTANAG20rdEmpty
-      weight: 75
-    - id: WeaponRifleAR15FilledSTANAG30rdEmpty
-      weight: 75
     - id: WeaponRifleAR15WoodFurnituresFilledSTANAG30rdEmpty
       weight: 100
-    - id: WeaponRifleKelTecRFBFilledSTANAG20rdEmpty
-      weight: 75
-    - id: WeaponRifleKelTecRDBFilledSTANAG20rdEmpty
-      weight: 75
     - id: WeaponBoltActionRifleRuger10-22Base
       weight: 100
     - id: WeaponShotgun12GaugeDoubleBarrelEmpty
       weight: 100
     - id: WeaponShotgunMossberg500Empty
       weight: 100
-    - id: WeaponShotgunMossberg590TacticalEmpty
-      weight: 75
     - id: WeaponShotgunRemingtonM870Empty
       weight: 100
+    - id: WeaponRifleKelTecRFBFilledSTANAG20rdEmpty
+      weight: 75
+    - id: WeaponRifleKelTecRDBFilledSTANAG20rdEmpty
+      weight: 75
+    - id: WeaponSubMachineGunUSC45Filled30rdEmpty
+      weight: 75
+    - id: WeaponShotgunMossberg590TacticalEmpty
+      weight: 75
+    - id: WeaponRifleAR10FilledSTANAG20rdEmpty
+      weight: 75
+    - id: WeaponRifleAR15FilledSTANAG30rdEmpty
+      weight: 75
+    - id: WeaponPistolFN5,7Filled20rdEmpty
+      weight: 75
+    - id: WeaponBattleRifleM1AFilledSTANAG20rdEmpty
+      weight: 50
+    - id: WeaponBattleRifleM14FilledSTANAG20rdEmpty
+      weight: 50
+    - id: WeaponBattleRifleM14MarksmanFilledSTANAG20rdEmpty
+      weight: 25

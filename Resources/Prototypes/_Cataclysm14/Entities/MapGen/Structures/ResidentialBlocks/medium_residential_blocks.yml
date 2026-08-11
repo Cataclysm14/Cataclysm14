@@ -26,8 +26,8 @@
     scale: 52,52
     offset: -0.5,-0.5
     layers:
-      - sprite: _Cataclysm14/Mapping/House/structure_house.rsi
-        state: structure_border_house_small
+    - sprite: _Cataclysm14/Mapping/building.rsi
+      state: structure_building_brick
   - type: RoomFill
     rotation: false
     roomWhitelist:

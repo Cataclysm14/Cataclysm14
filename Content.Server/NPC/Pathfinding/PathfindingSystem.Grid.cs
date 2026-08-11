@@ -319,7 +319,7 @@ public sealed partial class PathfindingSystem
     /// <summary>
     /// Queues the entire relevant chunk to be re-built in the next update.
     /// </summary>
-    private void DirtyChunk(EntityUid gridUid, EntityCoordinates coordinates)
+    public void DirtyChunk(EntityUid gridUid, EntityCoordinates coordinates) // Cataclysm14 make public
     {
         if (!TryComp<GridPathfindingComponent>(gridUid, out var comp))
             return;
@@ -334,7 +334,27 @@ public sealed partial class PathfindingSystem
         chunks.Add(GetOrigin(coordinates, gridUid));
     }
 
-    private void DirtyChunkArea(EntityUid gridUid, Box2 aabb)
+    // Cataclysm14 Begin
+    /// <summary>
+    /// Queues the entire relevant chunk to be re-built in the next update.
+    /// </summary>
+    public void DirtyChunk(EntityUid gridUid, Vector2i origin)
+    {
+        if (!TryComp<GridPathfindingComponent>(gridUid, out var comp))
+            return;
+
+        var currentTime = _timing.CurTime;
+
+        if (comp.NextUpdate < currentTime && !MetaData(gridUid).EntityPaused)
+            comp.NextUpdate = currentTime + UpdateCooldown;
+
+        var chunks = comp.DirtyChunks;
+        // TODO: Change these args around.
+        chunks.Add(origin);
+    }
+    // Cataclysm14 End
+
+    public void DirtyChunkArea(EntityUid gridUid, Box2 aabb) // Cataclysm14 make public
     {
         if (!TryComp<GridPathfindingComponent>(gridUid, out var comp))
             return;
@@ -377,7 +397,7 @@ public sealed partial class PathfindingSystem
         return chunk;
     }
 
-    private bool TryGetChunk(Vector2i origin, GridPathfindingComponent component, [NotNullWhen(true)] out GridPathfindingChunk? chunk)
+    public bool TryGetChunk(Vector2i origin, GridPathfindingComponent component, [NotNullWhen(true)] out GridPathfindingChunk? chunk) // Cataclysm14 make public
     {
         return component.Chunks.TryGetValue(origin, out chunk);
     }
@@ -392,7 +412,7 @@ public sealed partial class PathfindingSystem
         return new Vector2i((int) Math.Floor(localPos.X / ChunkSize), (int) Math.Floor(localPos.Y / ChunkSize));
     }
 
-    private Vector2i GetOrigin(EntityCoordinates coordinates, EntityUid gridUid)
+    public Vector2i GetOrigin(EntityCoordinates coordinates, EntityUid gridUid) // Cataclysm14 make public
     {
         var localPos = Vector2.Transform(_transform.ToMapCoordinates(coordinates).Position, _transform.GetInvWorldMatrix(gridUid));
         return new Vector2i((int) Math.Floor(localPos.X / ChunkSize), (int) Math.Floor(localPos.Y / ChunkSize));

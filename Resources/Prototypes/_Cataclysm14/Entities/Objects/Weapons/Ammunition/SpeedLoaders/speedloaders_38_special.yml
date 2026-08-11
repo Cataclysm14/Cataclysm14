@@ -9,7 +9,9 @@
     sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/38Special/speedloader_38Special_6rd.rsi
     state: icon
   - type: Item
-    storedScale: 2.5
+    storedScale: 2.75
+    shape:
+    - 0,0,0,0
   - type: Sprite
     scale: 0.25,0.25
     sprite: _Cataclysm14/Objects/Weapons/SpeedLoaders/38Special/speedloader_38Special_6rd.rsi
