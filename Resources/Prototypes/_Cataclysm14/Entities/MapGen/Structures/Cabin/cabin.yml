@@ -8,6 +8,16 @@
   - CataStructureConstructionSite13x13
 
 - type: dungeonRoom
+  id: StructureSpawnerCabin13x13b
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/Cabin/structure_cabin_13x13_b.yml
+  offset: 0,-12
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureCabin13x13
+
+
+- type: dungeonRoom
   id: StructureSpawnerCabin13x13c
   size: 13,13
   atlas: /Maps/_Cataclysm14/Structures/Cabin/structure_cabin_13x13_c.yml
