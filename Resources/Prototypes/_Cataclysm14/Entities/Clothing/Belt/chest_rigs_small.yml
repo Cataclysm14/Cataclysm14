@@ -1,4 +1,4 @@
-#MARK: Scav 2x3 * 2 + 2x1 µ 2
+#MARK: Scav
   - type: entity
     parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
     id: ClothingBeltChestRigScavenger
@@ -16,15 +16,17 @@
       damageCoefficient: 0.9
     - type: Storage
       grid:
+      # 2x3 * 2 + 2x1 * 2
       - 0,0,1,2
       - 0,4,1,4
       - 3,0,4,2
       - 3,4,4,4
-#MARK: Security 2x3 * 3
+
+#MARK: Security
   - type: entity
     parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
     id: ClothingBeltChestRigSecurity
-    name: security vest
+    name: security chest rig vest
     description: A basic vests made for security agents, now used by scavengers.
     components:
     - type: StaticPrice
@@ -38,6 +40,6 @@
       damageCoefficient: 0.9
     - type: Storage
       grid:
+      # 2x3 * 2
       - 0,0,1,2
       - 3,0,4,2
-      - 6,0,7,2

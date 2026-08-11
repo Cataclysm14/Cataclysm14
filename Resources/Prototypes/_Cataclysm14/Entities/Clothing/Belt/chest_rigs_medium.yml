@@ -1,21 +1,22 @@
-#MARK: Thunderbolt 4x4
-  - type: entity
-    parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
-    id: ClothingBeltChestRigThunderbolt
-    name: Thunderbolt comapct chest rig
-    description: the Direct Action Thunderbolt compact chest rig, this one is colored in shadow grey.
-    components:
-    - type: StaticPrice
-      price: 12000
-      vendPrice: 17500
-    - type: Sprite
-      sprite: _Cataclysm14/Clothing/Belt/chest_rig_thunderbolt.rsi
-    - type: Clothing
-      sprite: _Cataclysm14/Clothing/Belt/chest_rig_thunderbolt.rsi
-    - type: ExplosionResistance
-      damageCoefficient: 0.5
-    - type: Storage
-      grid:
-      - 0,0,3,3
-    - type: ClothingSpeedModifier
-      sprintModifier: 0.95
+#MARK: Thunderbolt
+- type: entity
+  parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
+  id: ClothingBeltChestRigThunderbolt
+  name: Thunderbolt comapct chest rig
+  description: the Direct Action Thunderbolt compact chest rig, this one is colored in shadow grey.
+  components:
+  - type: StaticPrice
+    price: 12000
+    vendPrice: 17500
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Belt/chest_rig_thunderbolt.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Belt/chest_rig_thunderbolt.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: Storage
+    grid:
+    # 4x4
+    - 0,0,3,3
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.95

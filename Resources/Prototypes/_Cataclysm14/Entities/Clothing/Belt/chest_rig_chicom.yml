@@ -1,0 +1,287 @@
+#MARK: Chicom Ranger Green
+- type: entity
+  parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
+  id: ClothingBeltChestRigChicomRangerGreen
+  name: chicom chest rig (ranger green)
+  description: A basic vests made for infantry.
+  components:
+  - type: StaticPrice
+    price: 4000
+    vendPrice: 7000
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Belt/chest_rig_chicom.rsi
+    color: "#363D35"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Belt/chest_rig_chicom.rsi
+    clothingVisuals:
+      belt:
+      - state: equipped-BELT
+        color: "#363D35"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#363D35"
+      right:
+      - state: inhand-right
+        color: "#363D35"
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: Storage
+    grid:
+    # 2x3 * 3
+    - 0,0,1,2
+    - 3,0,4,2
+    - 6,0,7,2
+
+#MARK: Chicom Olive
+- type: entity
+  parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
+  id: ClothingBeltChestRigChicomOlive
+  name: chicom chest rig (olive)
+  description: A basic vests made for infantry.
+  components:
+  - type: StaticPrice
+    price: 4000
+    vendPrice: 7000
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Belt/chest_rig_chicom.rsi
+    color: "#5B6442"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Belt/chest_rig_chicom.rsi
+    clothingVisuals:
+      belt:
+      - state: equipped-BELT
+        color: "#5B6442"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#5B6442"
+      right:
+      - state: inhand-right
+        color: "#5B6442"
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: Storage
+    grid:
+    # 2x3 * 3
+    - 0,0,1,2
+    - 3,0,4,2
+    - 6,0,7,2
+
+#MARK: Chicom Tan
+- type: entity
+  parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
+  id: ClothingBeltChestRigChicomTan
+  name: chicom chest rig (tan)
+  description: A basic vests made for infantry.
+  components:
+  - type: StaticPrice
+    price: 4000
+    vendPrice: 7000
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Belt/chest_rig_chicom.rsi
+    color: "#d2B48C"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Belt/chest_rig_chicom.rsi
+    clothingVisuals:
+      belt:
+      - state: equipped-BELT
+        color: "#d2B48C"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#d2B48C"
+      right:
+      - state: inhand-right
+        color: "#d2B48C"
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: Storage
+    grid:
+    # 2x3 * 3
+    - 0,0,1,2
+    - 3,0,4,2
+    - 6,0,7,2
+
+#MARK: Chicom Coyote Brown
+- type: entity
+  parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
+  id: ClothingBeltChestRigChicomCoyoteBrown
+  name: chicom chest rig (coyote brown)
+  description: A basic vests made for infantry.
+  components:
+  - type: StaticPrice
+    price: 4000
+    vendPrice: 7000
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Belt/chest_rig_chicom.rsi
+    color: "#81613C"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Belt/chest_rig_chicom.rsi
+    clothingVisuals:
+      belt:
+      - state: equipped-BELT
+        color: "#81613C"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#81613C"
+      right:
+      - state: inhand-right
+        color: "#81613C"
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: Storage
+    grid:
+    # 2x3 * 3
+    - 0,0,1,2
+    - 3,0,4,2
+    - 6,0,7,2
+
+#MARK: Chicom Coyote Tan
+- type: entity
+  parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
+  id: ClothingBeltChestRigChicomCoyoteTan
+  name: chicom chest rig (coyote tan)
+  description: A basic vests made for infantry.
+  components:
+  - type: StaticPrice
+    price: 4000
+    vendPrice: 7000
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Belt/chest_rig_chicom.rsi
+    color: "#81613C"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Belt/chest_rig_chicom.rsi
+    clothingVisuals:
+      belt:
+      - state: equipped-BELT
+        color: "#9B6A33"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#9B6A33"
+      right:
+      - state: inhand-right
+        color: "#9B6A33"
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: Storage
+    grid:
+    # 2x3 * 3
+    - 0,0,1,2
+    - 3,0,4,2
+    - 6,0,7,2
+
+#MARK: Chicom Black
+- type: entity
+  parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
+  id: ClothingBeltChestRigChicomBlack
+  name: chicom chest rig (black)
+  description: A basic vests made for infantry.
+  components:
+  - type: StaticPrice
+    price: 4000
+    vendPrice: 7000
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Belt/chest_rig_chicom.rsi
+    color: "#383838"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Belt/chest_rig_chicom.rsi
+    clothingVisuals:
+      belt:
+      - state: equipped-BELT
+        color: "#383838"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#383838"
+      right:
+      - state: inhand-right
+        color: "#383838"
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: Storage
+    grid:
+    # 2x3 * 3
+    - 0,0,1,2
+    - 3,0,4,2
+    - 6,0,7,2
+
+#MARK: Chicom Grey
+- type: entity
+  parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
+  id: ClothingBeltChestRigChicomGrey
+  name: chicom chest rig (grey)
+  description: A basic vests made for infantry.
+  components:
+  - type: StaticPrice
+    price: 4000
+    vendPrice: 7000
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Belt/chest_rig_chicom.rsi
+    color: "#646464"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Belt/chest_rig_chicom.rsi
+    clothingVisuals:
+      belt:
+      - state: equipped-BELT
+        color: "#646464"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#646464"
+      right:
+      - state: inhand-right
+        color: "#646464"
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: Storage
+    grid:
+    # 2x3 * 3
+    - 0,0,1,2
+    - 3,0,4,2
+    - 6,0,7,2
+
+#MARK: Chicom Green
+- type: entity
+  parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
+  id: ClothingBeltChestRigChicomGreen
+  name: chicom chest rig (green)
+  description: A basic vests made for infantry.
+  components:
+  - type: StaticPrice
+    price: 4000
+    vendPrice: 7000
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Belt/chest_rig_chicom.rsi
+    color: "#434935"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Belt/chest_rig_chicom.rsi
+    clothingVisuals:
+      belt:
+      - state: equipped-BELT
+        color: "#434935"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#434935"
+      right:
+      - state: inhand-right
+        color: "#434935"
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: Storage
+    grid:
+    # 2x3 * 3
+    - 0,0,1,2
+    - 3,0,4,2
+    - 6,0,7,2

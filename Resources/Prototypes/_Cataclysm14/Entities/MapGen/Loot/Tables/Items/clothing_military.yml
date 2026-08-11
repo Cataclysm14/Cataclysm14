@@ -93,6 +93,7 @@
     - id: ClothingPantsDutyMercenaryTan
     - id: ClothingPantsDutyMercenaryCoyoteBrown
     - id: ClothingPantsDutyMercenaryRangerGreen
+    - id: ClothingPantsDutyMercenaryOlive
     - id: ClothingPantsDutyMercenaryBlack
 
 #MARK: Civilian BP vests
