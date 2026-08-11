@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "license": "CC0-1.0",
+  "copyright": "by EmoGarbage404 (github) for Space Station 14, bathroom cabinet version by avtomata (disc:core_mene)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "fill-0"
+    },
+    {
+      "name": "fill-1"
+    },
+    {
+      "name": "fill-2"
+    },
+    {
+      "name": "closed"
+    },
+    {
+      "name": "frame"
+    },
+    {
+      "name": "open"
+    }
+  ]
+}

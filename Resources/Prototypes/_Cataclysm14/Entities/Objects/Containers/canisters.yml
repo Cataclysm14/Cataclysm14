@@ -1,0 +1,36 @@
+#MARK: Small Pill Canister
+- type: entity
+  name: small pill canister
+  id: ContainerCanisterPillSmall
+  parent: [BaseStorageItem, RecyclableItemPlasticTiny]
+  description: A small canister made for pills. Holds up to 10 pills.
+  components:
+  - type: Item
+    storedScale: 2
+    size: Tiny
+    sprite: _Cataclysm14/Objects/Containers/canister_pills.rsi
+  - type: Sprite
+    scale: 0.35,0.35
+    sprite: _Cataclysm14/Objects/Containers/canister_pills.rsi
+    state: pill_canister
+  - type: Tag
+    tags:
+      - PillCanister
+  - type: Storage
+    grid:
+    - 0,0,4,1
+    quickInsert: true
+    areaInsert: true
+    areaInsertRadius: 1
+    storageInsertSound: /Audio/Effects/pill_insert.ogg
+    storageRemoveSound: /Audio/Effects/pill_remove.ogg
+    whitelist:
+      tags:
+      - Pill
+  - type: Dumpable
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Goobstation/Items/handling/pillbottle_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Goobstation/Items/handling/pillbottle_drop.ogg

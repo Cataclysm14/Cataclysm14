@@ -18,8 +18,8 @@
     sprite: _Cataclysm14/Objects/Weapons/Guns/Rifles/KelTec-RFB_32x32.rsi
     size: Large
     shape:
-    - 0,0,4,1
-    storedScale: 1.8
+    - 0,0,3,1
+    storedScale: 2.5
   - type: Clothing
     slots:
     - slingfront

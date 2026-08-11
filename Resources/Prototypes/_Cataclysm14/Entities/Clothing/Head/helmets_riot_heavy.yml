@@ -26,6 +26,7 @@
       - type: StaticPrice
         price: 12000
         vendPrice: 20000
+
 #MARK: Security Armored - Sierra
     - type: entity
       parent: ClothingHeadHelmetRiotSecurityArmored
@@ -37,12 +38,13 @@
         sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_riot_armored_sierra.rsi
       - type: Clothing
         sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_riot_armored_sierra.rsi
+
 #MARK: Security Armored - Sierra
     - type: entity
       parent: ClothingHeadHelmetRiotSecurityArmored
       id: ClothingHeadHelmetRiotSecurityArmoredSierraOfficer
       name: armored security riot helmet (sierra officer)
-      description: A heavy riot security helmet donning the colors of the Superstructure Taskforce Sierra and officer markings, made from combined ceramic, aramid, polymers and steel. Extremly tough against small fries.
+      description: A heavy riot security helmet donning the colors of the Superstructure Taskforce Sierra along with officer markings, made from combined ceramic, aramid, polymers and steel. Extremly tough against small fries.
       components:
       - type: Sprite
         sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_riot_armored_sierra_officer.rsi

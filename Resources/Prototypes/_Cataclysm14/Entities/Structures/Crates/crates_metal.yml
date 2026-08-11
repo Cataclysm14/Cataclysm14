@@ -8,13 +8,18 @@
     sprite: _Cataclysm14/Structures/Crates/crate_metal_rusted_small.rsi
     layers:
     - state: base
+      map: ["enum.StorageVisualLayers.Base"]
     - state: closed
       map: ["enum.StorageVisualLayers.Door"]
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
   - type: Icon
     sprite: _Cataclysm14/Structures/Crates/crate_metal_rusted_small.rsi
     state: base
   - type: EntityStorage
     capacity: 10
+    isCollidableWhenOpen: false
   - type: Fixtures
     fixtures:
       fix1:
@@ -23,9 +28,9 @@
           bounds: "-0.2,-0.2,0.2,0.1"
         density: 50
         mask:
-        - LargeMobMask
+        - CrateMask
         layer:
-        - WallLayer
+        - MachineLayer
 
 #MARK: Medium Rusted Metal
 - type: entity
@@ -37,15 +42,18 @@
     sprite: _Cataclysm14/Structures/Crates/crate_metal_rusted_medium.rsi
     layers:
     - state: base
+      map: ["enum.StorageVisualLayers.Base"]
     - state: closed
       map: ["enum.StorageVisualLayers.Door"]
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
   - type: Icon
     sprite: _Cataclysm14/Structures/Crates/crate_metal_rusted_medium.rsi
     state: base
   - type: EntityStorage
     capacity: 20
-    isCollidableWhenOpen: true
-    itemCanStoreMobs: true
+    isCollidableWhenOpen: false
   - type: Fixtures
     fixtures:
       fix1:
@@ -54,9 +62,9 @@
           bounds: "-0.35,-0.2,0.35,0.1"
         density: 50
         mask:
-        - LargeMobMask
+        - CrateMask
         layer:
-        - WallLayer
+        - MachineLayer
 
 #MARK: Large Rusted Metal
 - type: entity
@@ -68,13 +76,19 @@
     sprite: _Cataclysm14/Structures/Crates/crate_metal_rusted_large.rsi
     layers:
     - state: base
+      map: ["enum.StorageVisualLayers.Base"]
     - state: closed
       map: ["enum.StorageVisualLayers.Door"]
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
   - type: Icon
     sprite: _Cataclysm14/Structures/Crates/crate_metal_rusted_large.rsi
     state: base
   - type: EntityStorage
     capacity: 30
+    isCollidableWhenOpen: false
+    itemCanStoreMobs: true
   - type: Fixtures
     fixtures:
       fix1:
@@ -83,9 +97,9 @@
           bounds: "-0.35,-0.2,0.35,0.2"
         density: 50
         mask:
-        - LargeMobMask
+        - CrateMask
         layer:
-        - WallLayer
+        - MachineLayer
 
 #MARK: Reinforced Military shipping crate
 - type: entity
@@ -97,15 +111,20 @@
     sprite: _Cataclysm14/Structures/Crates/crate_shipping_metal_military_reinforced.rsi
     layers:
     - state: base
+      map: ["enum.StorageVisualLayers.Base"]
     - state: closed
       map: ["enum.StorageVisualLayers.Door"]
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
   - type: Icon
     sprite: _Cataclysm14/Structures/Crates/crate_shipping_metal_military_reinforced.rsi
     state: base
+  - type: Climbable
+    delay: 2.0
   - type: EntityStorage
     capacity: 50
     isCollidableWhenOpen: true
-    airtight: true
     itemCanStoreMobs: true
   - type: Fixtures
     fixtures:
@@ -115,7 +134,7 @@
           bounds: "-0.35,-0.2,0.35,0.4"
         density: 50
         mask:
-        - LargeMobMask
+        - CrateMask
         layer:
-        - WallLayer
+        - MachineLayer
 

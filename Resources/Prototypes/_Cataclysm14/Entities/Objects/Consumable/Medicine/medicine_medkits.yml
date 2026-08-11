@@ -20,7 +20,7 @@
     contents:
     - id: ConsumableMedicineBandageMedicalGauze
     - id: ConsumableMedicineBandageProper
-    - id: ConsumableMedicinePillCanisterAspirin
+    - id: ContainerCanisterPillSmallFilledAspirin
     - id: ConsumableMedicineAntiseptic
 
 #MARK: IFAK
@@ -46,7 +46,7 @@
     - id: ConsumableMedicineHemostaticPowder
     - id: ConsumableMedicineBandageProper
     - id: ConsumableMedicineInjectorEpinephrine
-    - id: ConsumableMedicinePillCanisterCodeine
+    - id: ContainerCanisterPillSmallFilledCodeine
 
 #MARK: AFAK
 - type: entity
@@ -71,7 +71,7 @@
     - id: ConsumableMedicineHemostaticPowder
     - id: ConsumableMedicineBandageProper
     - id: ConsumableMedicineInjectorEpinephrine
-    - id: ConsumableMedicinePillCanisterCodeine
+    - id: ContainerCanisterPillSmallFilledCodeine
 
 #MARK: HerbalistPouch
 - type: entity
