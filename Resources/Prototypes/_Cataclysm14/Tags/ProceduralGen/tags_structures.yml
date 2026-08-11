@@ -33,6 +33,9 @@
 
   - type: Tag
     id: CataStructureMediumMall65x65
+  
+  - type: Tag
+    id: CataStructureGasStation26x26
 
 #MARK: Military Things
 

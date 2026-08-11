@@ -16,7 +16,6 @@
   tags:
   - CataStructureMediumMall65x65
 
-
 - type: entity
   parent: BaseStructureSpawner
   id: StructureSpawnerMediumMall65x65
