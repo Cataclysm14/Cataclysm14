@@ -5,7 +5,7 @@
   offset: 0,-12
   ignoreTile: FloorShuttleOrange
   tags:
-  - CataStructureConstructionSite13x13
+  - CataStructureCabin13x13
 
 - type: dungeonRoom
   id: StructureSpawnerCabin13x13b
