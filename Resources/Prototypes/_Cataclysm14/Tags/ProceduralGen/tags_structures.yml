@@ -31,6 +31,9 @@
   - type: Tag
     id: CataStructureFurnitureShop26x26
 
+  - type: Tag
+    id: CataStructureMediumMall65x65
+
 #MARK: Military Things
 
   - type: Tag

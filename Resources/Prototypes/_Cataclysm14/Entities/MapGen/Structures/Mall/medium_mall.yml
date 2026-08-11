@@ -1,0 +1,36 @@
+- type: dungeonRoom
+  id: StructureSpawnerMediumMall65x65
+  size: 65,65
+  atlas: /Maps/_Cataclysm14/Structures/Shops/Mall/structure_medium_mall_65x65.yml
+  offset: 0,-64
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureMediumMall65x65
+
+- type: dungeonRoom
+  id: StructureSpawnerMediumMall65x65Surv
+  size: 65,65
+  atlas: /Maps/_Cataclysm14/Structures/Shops/Mall/structure_medium_mall_65x65_surv.yml
+  offset: 0,-64
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureMediumMall65x65
+
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerMediumMall65x65
+  name: Medium Mall
+  suffix: 5x5 Chunk][65x65
+  components:
+  - type: Sprite
+    scale: 65,65
+    layers:
+    #- sprite: im REALLY dont known
+    #  state: something
+    - sprite: _Cataclysm14/Mapping/generic.rsi
+      state: structure_full_directions
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureMediumMall65x65
