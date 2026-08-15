@@ -31,98 +31,84 @@
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristHead
-  categories: [ HideSpawnMenu ]
   baseSprite:
     sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
     state: head
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristHeadMale
-  categories: [ HideSpawnMenu ]
   baseSprite:
     sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
     state: head
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristHeadFemale
-  categories: [ HideSpawnMenu ]
   baseSprite:
     sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
     state: head
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristTorso
-  categories: [ HideSpawnMenu ]
   baseSprite:
     sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
     state: torso
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristTorsoMale
-  categories: [ HideSpawnMenu ]
   baseSprite:
     sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
     state: torso
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristTorsoFemale
-  categories: [ HideSpawnMenu ]
   baseSprite:
     sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
     state: torso
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristLLeg
-  categories: [ HideSpawnMenu ]
   baseSprite:
     sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
     state: l_leg
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristLArm
-  categories: [ HideSpawnMenu ]
   baseSprite:
     sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
     state: l_arm
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristLHand
-  categories: [ HideSpawnMenu ]
   baseSprite:
     sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
     state: l_hand
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristLFoot
-  categories: [ HideSpawnMenu ]
   baseSprite:
     sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
     state: l_foot
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristRLeg
-  categories: [ HideSpawnMenu ]
   baseSprite:
     sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
     state: r_leg
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristRArm
-  categories: [ HideSpawnMenu ]
   baseSprite:
     sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
     state: r_arm
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristRHand
-  categories: [ HideSpawnMenu ]
   baseSprite:
     sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
     state: r_hand
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristRFoot
-  categories: [ HideSpawnMenu ]
   baseSprite:
     sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
     state: r_foot
