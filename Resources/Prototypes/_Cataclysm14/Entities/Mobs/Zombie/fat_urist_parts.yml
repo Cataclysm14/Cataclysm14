@@ -1,0 +1,219 @@
+# Cata 14 add; Body parts for the Fat Urist zombie
+
+- type: entity
+  id: PartZombieFatUrist
+  categories: [ HideSpawnMenu ]  
+  parent: PartZombie
+  name: fat urist zombie body part
+  abstract: true
+  components:
+  - type: Icon
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+  - type: BodyPart
+    species: SpecieZombieFatUrist
+
+- type: entity
+  id: TorsoZombieFatUrist
+  categories: [ HideSpawnMenu ] 
+  name: fat urist zombie torso
+  parent: [PartZombieFatUrist, BaseZombieTorso]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: torso
+  - type: Icon
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: torso
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 20
+      - ReagentId: Blood
+        Quantity: 20
+
+- type: entity
+  id: HeadZombieFatUrist
+  categories: [ HideSpawnMenu ]
+  name: fat urist zombie head
+  parent: [PartZombieFatUrist, BaseZombieHead]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: head
+  - type: Icon
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: head
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 8
+      - ReagentId: Blood
+        Quantity: 10
+
+- type: entity
+  id: LeftArmZombieFatUrist
+  categories: [ HideSpawnMenu ]
+  name: left fat urist zombie arm
+  parent: [PartZombieFatUrist, BaseZombieLeftArm]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: l_arm
+  - type: Icon
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: l_arm
+
+- type: entity
+  id: RightArmZombieFatUrist
+  categories: [ HideSpawnMenu ]
+  name: right fat urist zombie arm
+  parent: [PartZombieFatUrist, BaseZombieRightArm]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: r_arm
+  - type: Icon
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: r_arm
+
+- type: entity
+  id: LeftHandZombieFatUrist
+  categories: [ HideSpawnMenu ]
+  name: left fat urist zombie hand
+  parent: [PartZombieFatUrist, BaseZombieLeftHand]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: l_hand
+  - type: Icon
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: l_hand
+  - type: DoAfterDelayMultiplier
+    multiplier: 0.9
+
+- type: entity
+  id: RightHandZombieFatUrist
+  categories: [ HideSpawnMenu ]
+  name: right fat urist zombie hand
+  parent: [PartZombieFatUrist, BaseZombieRightHand]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: r_hand
+  - type: Icon
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: r_hand
+  - type: DoAfterDelayMultiplier
+    multiplier: 0.9
+
+- type: entity
+  id: LeftLegZombieFatUrist
+  categories: [ HideSpawnMenu ]
+  name: left fat urist zombie leg
+  parent: [PartZombieFatUrist, BaseZombieLeftLeg]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: l_leg
+  - type: Icon
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: l_leg
+  - type: MovementBodyPart
+    walkSpeed: 2
+    sprintSpeed: 4
+
+- type: entity
+  id: RightLegZombieFatUrist
+  categories: [ HideSpawnMenu ]
+  name: right fat urist zombie leg
+  parent: [PartZombieFatUrist, BaseZombieRightLeg]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: r_leg
+  - type: Icon
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: r_leg
+  - type: MovementBodyPart
+    walkSpeed: 2
+    sprintSpeed: 4
+
+- type: entity
+  id: LeftFootZombieFatUrist
+  categories: [ HideSpawnMenu ]
+  name: left fat urist zombie foot
+  parent: [PartZombieFatUrist, BaseZombieLeftFoot]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: l_foot
+  - type: Icon
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: l_foot
+
+- type: entity
+  id: RightFootZombieFatUrist
+  categories: [ HideSpawnMenu ]
+  name: right fat urist zombie foot
+  parent: [PartZombieFatUrist, BaseZombieRightFoot]
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: r_foot
+  - type: Icon
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: r_foot
+
+- type: body
+  id: BodyPartSetZombieFatUrist
+  categories: [ HideSpawnMenu ]
+  name: fat urist zombie
+  root: torso
+  slots:
+    head:
+      part: HeadZombieFatUrist
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+    torso:
+      part: TorsoZombieFatUrist
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      - head
+      organs:
+        heart: OrganHumanHeart
+        lungs: OrganHumanLungs
+        stomach: OrganHumanStomach
+        liver: OrganHumanLiver
+        kidneys: OrganHumanKidneys
+    right arm:
+      part: RightArmZombieFatUrist
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmZombieFatUrist
+      connections:
+      - left hand
+    right hand:
+      part: RightHandZombieFatUrist
+    left hand:
+      part: LeftHandZombieFatUrist
+    right leg:
+      part: RightLegZombieFatUrist
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegZombieFatUrist
+      connections:
+      - left foot
+    right foot:
+      part: RightFootZombieFatUrist
+    left foot:
+      part: LeftFootZombieFatUrist

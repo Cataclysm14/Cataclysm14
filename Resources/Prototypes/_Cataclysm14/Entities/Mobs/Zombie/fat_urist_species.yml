@@ -1,0 +1,114 @@
+# Cata 14 add; Zona 14 Fat Urist body sprites
+# Head and Chest require Male/Female humanoidBaseSprite variants because
+# Cataclysm's HumanoidAppearanceSystem sex-morphs those prototype IDs
+# But honestly, who the fuck cares? I sure don't!
+
+- type: species
+  id: SpecieZombieFatUrist
+  name: species-name-zombie-fat
+  roundStart: false
+  prototype: MobZombieFatNaked
+  sprites: MobZombieFatUristSprites
+  defaultSkinTone: "#4F7942"
+  markingLimits: MobZombieMarkingLimits
+  dollPrototype: MobZombieDummy
+  skinColoration: HumanToned
+
+- type: speciesBaseSprites
+  id: MobZombieFatUristSprites
+  sprites:
+    Head: MobZombieFatUristHead
+    Chest: MobZombieFatUristTorso
+    Eyes: MobHumanoidEyes
+    LArm: MobZombieFatUristLArm
+    RArm: MobZombieFatUristRArm
+    LHand: MobZombieFatUristLHand
+    RHand: MobZombieFatUristRHand
+    LLeg: MobZombieFatUristLLeg
+    RLeg: MobZombieFatUristRLeg
+    LFoot: MobZombieFatUristLFoot
+    RFoot: MobZombieFatUristRFoot
+
+- type: humanoidBaseSprite
+  id: MobZombieFatUristHead
+  baseSprite:
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobZombieFatUristHeadMale
+  baseSprite:
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobZombieFatUristHeadFemale
+  baseSprite:
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobZombieFatUristTorso
+  baseSprite:
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobZombieFatUristTorsoMale
+  baseSprite:
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobZombieFatUristTorsoFemale
+  baseSprite:
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobZombieFatUristLLeg
+  baseSprite:
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobZombieFatUristLArm
+  baseSprite:
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobZombieFatUristLHand
+  baseSprite:
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobZombieFatUristLFoot
+  baseSprite:
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobZombieFatUristRLeg
+  baseSprite:
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobZombieFatUristRArm
+  baseSprite:
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobZombieFatUristRHand
+  baseSprite:
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobZombieFatUristRFoot
+  baseSprite:
+    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    state: r_foot
