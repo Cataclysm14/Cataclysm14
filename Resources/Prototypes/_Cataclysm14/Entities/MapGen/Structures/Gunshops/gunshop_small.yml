@@ -16,6 +16,15 @@
   tags:
   - CataStructureGunshopSmall26x26
 
+- type: dungeonRoom
+  id: StructureSpawnerGunshopSmall26x26c # s_gun_a_south in cdda
+  size: 27,27
+  atlas: /Maps/_Cataclysm14/Structures/Shops/Gunshops/structure_gunshop_26x26_c.yml
+  offset: 0,0
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureGunshopSmall26x26
+
 - type: entity
   parent: BaseStructureSpawner
   id: StructureSpawnerGunshopSmall26x26
