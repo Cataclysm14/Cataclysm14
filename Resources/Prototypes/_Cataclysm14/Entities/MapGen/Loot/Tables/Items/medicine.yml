@@ -1,0 +1,85 @@
+#MARK: Random medicine
+- type: entityTable
+  id: LootTableMedicineRandom
+  table: !type:GroupSelector
+    children:
+    - !type:NestedSelector
+      tableId: LootTableMedicineBasic
+    - !type:NestedSelector
+      tableId: LootTableMedicineOils
+    - !type:NestedSelector
+      tableId: LootTableMedicineInjectors
+    - !type:NestedSelector
+      tableId: LootTableMedicineKits
+
+#MARK: Basic medicine
+- type: entityTable
+  id: LootTableMedicineBasic
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableMedicineBandageMedicalGauze
+      weight: 100
+    - id: ConsumableMedicineBandageProper
+      weight: 100
+    - id: ConsumableMedicineHemostaticPowder
+      weight: 100
+    - id: ConsumableMedicineAntiseptic
+      weight: 100
+    - id: ConsumableMedicineAntisepticPowder
+      weight: 100
+
+#MARK: Medicine Oils
+- type: entityTable
+  id: LootTableMedicineOils
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableMedicineHerbalPoppyPainkiller
+      weight: 100
+    - id: ConsumableMedicineHerbalCattailJelly
+      weight: 100
+    - id: ConsumableMedicineHerbalWintergreenOil
+      weight: 100
+    - id: ConsumableMedicineHerbalThymeOil
+      weight: 100
+    - id: ConsumableMedicineHerbalMugwortOil
+      weight: 100
+    - id: ConsumableMedicineHerbalPoppySyrup
+      weight: 100
+    - id: ConsumableMedicineHerbalCharcoalPurified
+      weight: 100
+
+#MARK: Medicine Injectors
+- type: entityTable
+  id: LootTableMedicineInjectors
+  table: !type:GroupSelector
+    children:
+    - id: ConsumableMedicineInjectorEpinephrine
+      weight: 100
+    - id: ConsumableMedicineInjectorMorphine
+      weight: 100
+    - id: ConsumableMedicineInjectorAntidote
+      weight: 100
+    - id: ConsumableMedicineInjectorStimulant
+      weight: 100
+    - id: ConsumableMedicineInjectorRadTreatment
+      weight: 100
+    #- id: ConsumableMedicineInjectorCombat
+    #  weight: 100
+    - id: ConsumableMedicineInjectorSaline
+      weight: 100
+
+#MARK: Medicine Kits
+- type: entityTable
+  id: LootTableMedicineKits
+  table: !type:GroupSelector
+    children:
+    - id: ContainerMedicalPouchFirstAidFilled
+      weight: 100
+    - id: ContainerMedicalKitIFAKFilled
+      weight: 100
+    - id: ContainerMedicalKitAFAKFilled
+      weight: 100
+    - id: ContainerMedicalSackHerbalistFilled
+      weight: 100
+    #- id: ContainerMedicalKitTraumaFilled
+    #  weight: 100

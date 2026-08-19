@@ -2,7 +2,7 @@
 - type: entity
   name: M27-IAR (5,56x45mm NATO)
   parent: BaseWeaponRifle
-  id: WeaponAssaultRifleM27-IARBase
+  id: WeaponAssaultRifleM27IARBase
   abstract: true
   description: A modern polymer assault rifle based on the HK416, made for the US Army by HK, the M27 Infantry. Automatic. Rifle. Chambered in 5,56x45mm NATO.
   components:
@@ -77,8 +77,8 @@
 
 #MARK: STANAG 30rd Empty
 - type: entity
-  parent: WeaponAssaultRifleM27-IARBase
-  id: WeaponAssaultRifleM27-IARFilledSTANAG30rdEmpty
+  parent: WeaponAssaultRifleM27IARBase
+  id: WeaponAssaultRifleM27IARFilledSTANAG30rdEmpty
   suffix: Empty - STANAG 30rd
   components:
   - type: ItemSlots
@@ -104,8 +104,8 @@
 
 #MARK: STANAG 30rd FMJ
 - type: entity
-  parent: WeaponAssaultRifleM27-IARBase
-  id: WeaponAssaultRifleM27-IARFilledSTANAG30rdFMJ
+  parent: WeaponAssaultRifleM27IARBase
+  id: WeaponAssaultRifleM27IARFilledSTANAG30rdFMJ
   suffix: FMJ - STANAG 30rd
   components:
   - type: ItemSlots
@@ -131,8 +131,8 @@
 
 #MARK: STANAG 30rd Tracer Red
 - type: entity
-  parent: WeaponAssaultRifleM27-IARBase
-  id: WeaponAssaultRifleM27-IARFilledSTANAG30rdTracerRed
+  parent: WeaponAssaultRifleM27IARBase
+  id: WeaponAssaultRifleM27IARFilledSTANAG30rdTracerRed
   suffix: Tracer Red - STANAG 30rd
   components:
   - type: ItemSlots

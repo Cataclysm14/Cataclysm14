@@ -9,7 +9,7 @@
       size: Normal
       shape:
         - 0,0,1,1
-      storedScale: 2
+      storedScale: 2.5
     - type: Sprite
       scale: 0.4,0.4
       sprite: _Cataclysm14/Objects/Weapons/Guns/Pistols/M1911.rsi

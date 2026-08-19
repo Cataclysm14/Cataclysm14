@@ -96,3 +96,149 @@
       storagebase: !type:NestedSelector
         tableId: LootTableClothingCivilianGeneric
         prob: 0.50
+
+#MARK: Metal Shelves
+- type: entity
+  id: StructureFurnitureShelfMetalFilledClothingCivilian
+  suffix: CivClothing 100%
+  parent: StructureFurnitureShelfMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableClothingCivilianGeneric
+
+- type: entity
+  id: StructureFurnitureShelfMetalFilledClothingCivilianRandom75
+  suffix: CivClothing 75%
+  parent: StructureFurnitureShelfMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableClothingCivilianGeneric
+        prob: 0.75
+
+- type: entity
+  id: StructureFurnitureShelfMetalFilledClothingCivilianRandom50
+  suffix: CivClothing 50%
+  parent: StructureFurnitureShelfMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableClothingCivilianGeneric
+        prob: 0.50
+
+#MARK: Display Cases
+- type: entity
+  id: StructureFurnitureDisplayCaseFilledClothingCivilian
+  suffix: CivClothing 100%
+  parent: StructureFurnitureDisplayCase
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableClothingCivilianGenericOneItem
+
+- type: entity
+  id: StructureFurnitureDisplayCaseFilledClothingCivilianRandom75
+  suffix: CivClothing 75%
+  parent: StructureFurnitureDisplayCase
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableClothingCivilianGenericOneItem
+        prob: 0.75
+
+- type: entity
+  id: StructureFurnitureDisplayCaseFilledClothingCivilianRandom50
+  suffix: CivClothing 50%
+  parent: StructureFurnitureDisplayCase
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableClothingCivilianGenericOneItem
+        prob: 0.50
+
+#MARK: Mannequin
+- type: entity
+  id: MannequinFilledClothingCivilian
+  suffix: CivClothing 100%
+  parent: Mannequin
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      jumpsuit: !type:NestedSelector
+        tableId: LootTableClothingTopCivilian
+      back: !type:NestedSelector
+        tableId: LootTableClothingBagCivilian
+      head: !type:NestedSelector
+        tableId: LootTableClothingHatCivilian
+      eyes: !type:NestedSelector
+        tableId: LootTableClothingEyesCommonEyewear
+
+- type: entity
+  id: MannequinFilledClothingCivilianRandom75
+  suffix: CivClothing 75%
+  parent: Mannequin
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      jumpsuit: !type:NestedSelector
+        tableId: LootTableClothingTopCivilian
+        prob: 0.75
+      back: !type:NestedSelector
+        tableId: LootTableClothingBagCivilian
+        prob: 0.75
+      head: !type:NestedSelector
+        tableId: LootTableClothingHatCivilian
+        prob: 0.75
+      eyes: !type:NestedSelector
+        tableId: LootTableClothingEyesCommonEyewear
+        prob: 0.75
+
+- type: entity
+  id: MannequinFilledClothingCivilianRandom50
+  suffix: CivClothing 50%
+  parent: Mannequin
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      jumpsuit: !type:NestedSelector
+        tableId: LootTableClothingTopCivilian
+        prob: 0.50
+      back: !type:NestedSelector
+        tableId: LootTableClothingBagCivilian
+        prob: 0.50
+      head: !type:NestedSelector
+        tableId: LootTableClothingHatCivilian
+        prob: 0.50
+      eyes: !type:NestedSelector
+        tableId: LootTableClothingEyesCommonEyewear
+        prob: 0.50
+
+#MARK: Locker Metal Third Triple
+- type: entity
+  id: StructureFurnitureLockerMetalThirdTripleFilledClothingCivilianRandom75
+  suffix: CivClothing 75%
+  parent: StructureFurnitureLockerMetalThirdTriple
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableClothingCivilianGeneric
+        prob: 0.75
+
+- type: entity
+  id: StructureFurnitureLockerMetalThirdTripleFilledClothingCivilianRandom50
+  suffix: CivClothing 50%
+  parent: StructureFurnitureLockerMetalThirdTriple
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableClothingCivilianGeneric
+        prob: 0.50

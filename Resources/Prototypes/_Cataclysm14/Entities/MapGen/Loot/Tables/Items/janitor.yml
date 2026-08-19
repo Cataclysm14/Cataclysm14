@@ -1,0 +1,23 @@
+#MARK: Janitor
+- type: entityTable
+  id: LootTableJanitorItems
+  table: !type:GroupSelector
+    children:
+    - id: MopItem
+      weight: 100
+    - id: Bucket
+      weight: 100
+    - id: TrashBag
+      weight: 90
+    - id: WetFloorSign
+      weight: 100
+    - id: Plunger
+      weight: 90
+    - id: GoldenPlunger
+      weight: 2
+    - id: RagItem
+      weight: 60
+    - id: BoxMousetrap
+      weight: 25
+    - id: Soap
+      weight: 35

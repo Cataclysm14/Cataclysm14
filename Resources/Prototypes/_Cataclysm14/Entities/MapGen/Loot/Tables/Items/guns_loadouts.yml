@@ -95,6 +95,32 @@
           rolls: !type:RangeNumberSelector
             range: 1,2
 
+#MARK: Loadout Mossberg 500
+- type: entityTable
+  id: LootTableLoadoutWeaponGunMossberg500FilledBuckshot
+  table: !type:AllSelector
+    children:
+      - !type:GroupSelector
+          children:
+          - id: WeaponShotgunMossberg500Empty
+          - id: WeaponShotgunMossberg500FilledBuckshot
+      - id: AmmoBox12GaugeBuckshot
+        rolls: !type:RangeNumberSelector
+          range: 1,2
+
+#MARK: Loadout Remginton M870
+- type: entityTable
+  id: LootTableLoadoutWeaponGunRemingtonM870FilledBuckshot
+  table: !type:AllSelector
+    children:
+      - !type:GroupSelector
+          children:
+          - id: WeaponShotgunRemingtonM870Empty
+          - id: WeaponShotgunRemingtonM870FilledBuckshot
+      - id: AmmoBox12GaugeBuckshot
+        rolls: !type:RangeNumberSelector
+          range: 1,2
+
 #MARK: Loadout Glock 17
 - type: entityTable
   id: LootTableLoadoutWeaponGunGlock17Filled17rdFMJ

@@ -1,0 +1,55 @@
+- type: entity
+  id: StandingMirror
+  parent: StructureFurnitureBaseLarge
+  name: standing mirror
+  description: A full-length mirror mounted in a sleek aluminum frame. You can easily see all of the dirt and blood on your clothes, and the weariness in your eyes.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Furnitures/mirror_big.rsi
+    state: icon
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Transform
+    anchored: true
+  - type: MagicMirror
+    changeHairSound: null
+    addSlotTime: 0
+    removeSlotTime: 0
+    selectSlotTime: 0
+    changeSlotTime: 0
+  - type: ActivatableUI
+    key: enum.MagicMirrorUiKey.Key
+    singleUser: true
+  - type: UserInterface
+    interfaces:
+      enum.MagicMirrorUiKey.Key:
+        type: MagicMirrorBoundUserInterface
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 80
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialObjectMineralPlateSteelStack1:
+            min: 1
+            max: 2
+          MaterialObjectShardGlassStack1:
+            min: 4
+            max: 8
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.2,0.15,-0.05"
+        density: 50
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer
+  #- type: Occluder # ass system
+  #  boundingBox: "-0.24,-0.5,0.24,0.65"

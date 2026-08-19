@@ -1,27 +1,18 @@
 #MARK: base
 - type: entity
-  parent: [StructureFurnitureBaseLarge, CrateGeneric]
+  parent: BaseStructureDynamic
   id: StructureCrateBase
   abstract: true
   name: wooden crate
   components:
   - type: EntityStorage
-    isCollidableWhenOpen: false
+    isCollidableWhenOpen: true
     showContents: false
     enteringOffset: 0,0
     capacity: 50
     airtight: false
     itemCanStoreMobs: false
-    openOnMove: false
-  - type: Sprite
-    sprite: Structures/Storage/Crates/livestock.rsi
-    layers:
-    - state: base
-    - state: closed
-      map: ["enum.StorageVisualLayers.Door"]
-  - type: Icon
-    sprite: Structures/Storage/Crates/livestock.rsi
-    state: base
+    openOnMove: true
   - type: Destructible
     thresholds:
     - trigger:
@@ -50,15 +41,36 @@
         mask:
         - CrateMask #this is so they can go under plastic flaps
         layer:
-        - LargeMobLayer
-  - type: Construction
-    graph: CrateLivestock
-    node: cratelivestock
-    containers:
-    - entity_storage
+        - MachineLayer
   - type: StaticPrice
     price: 125
   - type: Transform
     anchored: false
     noRot: true
-
+  - type: Animateable
+  - type: Icon
+    sprite: Structures/Storage/Crates/generic.rsi
+    state: icon
+  - type: Sprite
+    noRot: true
+    sprite: Structures/Storage/Crates/generic.rsi
+    layers:
+    - state: base
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: closed
+      map: ["enum.StorageVisualLayers.Door"]
+  - type: InteractionOutline
+  - type: PlaceableSurface
+    isPlaceable: false # defaults to closed.
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateDoorOpen: open
+    stateDoorClosed: closed
+  - type: ContainerContainer
+    containers:
+      entity_storage: !type:Container
+  - type: ItemSlots
+  - type: RequireProjectileTarget

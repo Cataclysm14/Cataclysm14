@@ -1,159 +1,159 @@
 #MARK: Log
-  - type: entity
-    parent: BaseStructureWallCataTierTwo
-    id: StructureWallCataWoodLogBase
-    name: wooden log wall
-    components:
-    - type: Sprite
-      sprite: _Cataclysm14/Structures/Walls/wood_log.rsi
-    - type: Icon
-      sprite: _Cataclysm14/Structures/Walls/wood_log.rsi
-    - type: IconSmooth
-      key: walls
-      base: wood
-    - type: Construction
-      graph: StructureWallCataBrickRedRedBase
-      node: StructureWallCataBrickRedRedBase
+- type: entity
+  parent: BaseStructureWallCataTierTwo
+  id: StructureWallCataWoodLogBase
+  name: wooden log wall
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Walls/wood_log.rsi
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Walls/wood_log.rsi
+  - type: IconSmooth
+    key: walls
+    base: wood
+  - type: Construction
+    graph: StructureWallCataBrickRedRedBase
+    node: StructureWallCataBrickRedRedBase
 
 #MARK: Planks
-  - type: entity
-    parent: BaseStructureWallCataTierOne
-    id: StructureWallCataWoodPlankBase
-    name: wooden plank wall
-    components:
-    - type: Sprite
-      sprite: _Cataclysm14/Structures/Walls/wood_plank_base.rsi
-    - type: Icon
-      sprite: _Cataclysm14/Structures/Walls/wood_plank_base.rsi
-    - type: IconSmooth
-      key: walls
-      base: wood
-    - type: Construction
-      graph: StructureWallCataBrickRedRedBase
-      node: StructureWallCataBrickRedRedBase
+- type: entity
+  parent: BaseStructureWallCataTierOne
+  id: StructureWallCataWoodPlankBase
+  name: wooden plank wall
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_base.rsi
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_base.rsi
+  - type: IconSmooth
+    key: walls
+    base: wood
+  - type: Construction
+    graph: StructureWallCataBrickRedRedBase
+    node: StructureWallCataBrickRedRedBase
 
 #TODO: make the center piece not colored, failed at doing this and spent so much time
 #MARK: Plank white
-  - type: entity
-    parent: BaseStructureWallCataTierOne
-    id: StructureWallCataWoodPlankWhite
-    name: white wooden plank wall
-    components:
-    - type: Sprite
-      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
-    - type: Icon
-      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
-    - type: IconSmooth
-      key: walls
-      base: wood
-    - type: Construction
-      graph: StructureWallCataBrickRedRedBase
-      node: StructureWallCataBrickRedRedBase
+- type: entity
+  parent: BaseStructureWallCataTierOne
+  id: StructureWallCataWoodPlankWhite
+  name: white wooden plank wall
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+  - type: IconSmooth
+    key: walls
+    base: wood
+  - type: Construction
+    graph: StructureWallCataBrickRedRedBase
+    node: StructureWallCataBrickRedRedBase
 
 #MARK: Plank red
-  - type: entity
-    parent: BaseStructureWallCataTierOne
-    id: StructureWallCataWoodPlankRed
-    name: red wooden plank wall
-    components:
-    - type: Sprite
-      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
-      color: "#ED2939"
-    - type: Icon
-      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
-    - type: IconSmooth
-      key: walls
-      base: wood
-    - type: Construction
-      graph: StructureWallCataBrickRedRedBase
-      node: StructureWallCataBrickRedRedBase
+- type: entity
+  parent: BaseStructureWallCataTierOne
+  id: StructureWallCataWoodPlankRed
+  name: red wooden plank wall
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    color: "#ED2939"
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+  - type: IconSmooth
+    key: walls
+    base: wood
+  - type: Construction
+    graph: StructureWallCataBrickRedRedBase
+    node: StructureWallCataBrickRedRedBase
 
 #MARK: Plank blue
-  - type: entity
-    parent: BaseStructureWallCataTierOne
-    id: StructureWallCataWoodPlankBlue
-    name: blue wooden plank wall
-    components:
-    - type: Sprite
-      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
-      color: "#2832C2"
-    - type: Icon
-      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
-    - type: IconSmooth
-      key: walls
-      base: wood
-    - type: Construction
-      graph: StructureWallCataBrickRedRedBase
-      node: StructureWallCataBrickRedRedBase
+- type: entity
+  parent: BaseStructureWallCataTierOne
+  id: StructureWallCataWoodPlankBlue
+  name: blue wooden plank wall
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    color: "#2832C2"
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+  - type: IconSmooth
+    key: walls
+    base: wood
+  - type: Construction
+    graph: StructureWallCataBrickRedRedBase
+    node: StructureWallCataBrickRedRedBase
 
 #MARK: Plank green
-  - type: entity
-    parent: BaseStructureWallCataTierOne
-    id: StructureWallCataWoodPlankGreen
-    name: green wooden plank wall
-    components:
-    - type: Sprite
-      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
-      color: "#3d8c40"
-    - type: Icon
-      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
-    - type: IconSmooth
-      key: walls
-      base: wood
-    - type: Construction
-      graph: StructureWallCataBrickRedRedBase
-      node: StructureWallCataBrickRedRedBase
+- type: entity
+  parent: BaseStructureWallCataTierOne
+  id: StructureWallCataWoodPlankGreen
+  name: green wooden plank wall
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    color: "#3d8c40"
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+  - type: IconSmooth
+    key: walls
+    base: wood
+  - type: Construction
+    graph: StructureWallCataBrickRedRedBase
+    node: StructureWallCataBrickRedRedBase
 
 #MARK: Plank yellow
-  - type: entity
-    parent: BaseStructureWallCataTierOne
-    id: StructureWallCataWoodPlankYellow
-    name: yellow wooden plank wall
-    components:
-    - type: Sprite
-      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
-      color: "#E4CD05"
-    - type: Icon
-      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
-    - type: IconSmooth
-      key: walls
-      base: wood
-    - type: Construction
-      graph: StructureWallCataBrickRedRedBase
-      node: StructureWallCataBrickRedRedBase
+- type: entity
+  parent: BaseStructureWallCataTierOne
+  id: StructureWallCataWoodPlankYellow
+  name: yellow wooden plank wall
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    color: "#E4CD05"
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+  - type: IconSmooth
+    key: walls
+    base: wood
+  - type: Construction
+    graph: StructureWallCataBrickRedRedBase
+    node: StructureWallCataBrickRedRedBase
 
 #MARK: Plank purple
-  - type: entity
-    parent: BaseStructureWallCataTierOne
-    id: StructureWallCataWoodPlankPurple
-    name: purple wooden plank wall
-    components:
-    - type: Sprite
-      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
-      color: "#702963"
-    - type: Icon
-      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
-    - type: IconSmooth
-      key: walls
-      base: wood
-    - type: Construction
-      graph: StructureWallCataBrickRedRedBase
-      node: StructureWallCataBrickRedRedBase
+- type: entity
+  parent: BaseStructureWallCataTierOne
+  id: StructureWallCataWoodPlankPurple
+  name: purple wooden plank wall
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    color: "#702963"
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+  - type: IconSmooth
+    key: walls
+    base: wood
+  - type: Construction
+    graph: StructureWallCataBrickRedRedBase
+    node: StructureWallCataBrickRedRedBase
 
 #MARK: Plank grey
-  - type: entity
-    parent: BaseStructureWallCataTierOne
-    id: StructureWallCataWoodPlankGrey
-    name: grey wooden plank wall
-    components:
-    - type: Sprite
-      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
-      color: "#AAAAAA"
-    - type: Icon
-      sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
-    - type: IconSmooth
-      key: walls
-      base: wood
-    - type: Construction
-      graph: StructureWallCataBrickRedRedBase
-      node: StructureWallCataBrickRedRedBase
+- type: entity
+  parent: BaseStructureWallCataTierOne
+  id: StructureWallCataWoodPlankGrey
+  name: grey wooden plank wall
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    color: "#AAAAAA"
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+  - type: IconSmooth
+    key: walls
+    base: wood
+  - type: Construction
+    graph: StructureWallCataBrickRedRedBase
+    node: StructureWallCataBrickRedRedBase
