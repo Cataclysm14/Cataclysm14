@@ -4,25 +4,26 @@
   text: "/ServerInfo/_Mono/Guidebook/Rules/MonolithRuleset.xml"
   priority: -2
   ruleEntry: true
-  children:
-    - MonolithRuleCoreOneCommonSense
-    - MonolithRuleCoreTwoRespect
-    - MonolithRuleCoreThreeCheatingExploits
-    - MonolithRuleCoreFourAlternativeAccounts
-    - MonolithRuleCoreFiveLanguages
-    - MonolithRuleRoleplayOneBreakCharacter
-    - MonolithRuleRoleplayTwoTextChat
-    - MonolithRuleRoleplayThreeProperGrammar
-    - MonolithRuleRoleplayFourCharacterActions
-    - MonolithRuleRoleplayFiveEroticRoleplay
-    - MonolithRuleRoleplaySixMetagame
-    - MonolithRuleRoleplaySevenSafeZones
-    - MonolithRuleRoleplayEightFactionRoles
-    - MonolithRuleRoleplayNineCommandingRoles
-    - MonolithRuleConflictOneRandomDeathmatch
-    - MonolithRuleConflictTwoNewLife
-    - MonolithRuleConflictThreeFairPlay
-    - MonolithRuleConflictFourPortStriking
+    #Cata 14 tweak
+  # children:
+    # - MonolithRuleCoreOneCommonSense
+    # - MonolithRuleCoreTwoRespect
+    # - MonolithRuleCoreThreeCheatingExploits
+    # - MonolithRuleCoreFourAlternativeAccounts
+    # - MonolithRuleCoreFiveLanguages
+    # - MonolithRuleRoleplayOneBreakCharacter
+    # - MonolithRuleRoleplayTwoTextChat
+    # - MonolithRuleRoleplayThreeProperGrammar
+    # - MonolithRuleRoleplayFourCharacterActions
+    # - MonolithRuleRoleplayFiveEroticRoleplay
+    # - MonolithRuleRoleplaySixMetagame
+    # - MonolithRuleRoleplaySevenSafeZones
+    # - MonolithRuleRoleplayEightFactionRoles
+    # - MonolithRuleRoleplayNineCommandingRoles
+    # - MonolithRuleConflictOneRandomDeathmatch
+    # - MonolithRuleConflictTwoNewLife
+    # - MonolithRuleConflictThreeFairPlay
+    # - MonolithRuleConflictFourPortStriking
 
 #MARK: Core Rules
 
