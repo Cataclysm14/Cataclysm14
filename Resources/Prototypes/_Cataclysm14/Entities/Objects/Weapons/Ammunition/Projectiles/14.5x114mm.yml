@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 70
+        Piercing: 150
         Structural: 250
     ignoreResistances: true # Goobstation
     penetrationThreshold: 250

@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 24
+        Piercing: 34
     armorPenetration: 0.05
 
 #MARK: Tracer Green
@@ -19,7 +19,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 24
+        Piercing: 34
     armorPenetration: 0.05
   - type: PointLight
     enabled: true
@@ -40,7 +40,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 24
+        Piercing: 34
     armorPenetration: 0.05
 
 #MARK: AP6,3
@@ -52,7 +52,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 24
+        Piercing: 34
     armorPenetration: 0.05
 
 #MARK: Rubber
@@ -75,7 +75,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 4
+        Blunt: 12
         Heat: 18
     armorPenetration: -0.15
 
@@ -88,9 +88,9 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 8
-        Piercing: 13
-    armorPenetration: -0.1
+        Radiation: 7
+        Piercing: 33
+    armorPenetration: 0.1
 
 #MARK: HP
 - type: entity
@@ -101,8 +101,8 @@
   - type: Projectile
     damage:
       types:
-        Slash: 3
-        Piercing: 26
+        Slash: 4
+        Piercing: 36
     armorPenetration: -0.6
 
 #MARK: RIP
@@ -114,6 +114,6 @@
   - type: Projectile
     damage:
       types:
-        Slash: 5
-        Piercing: 35
+        Slash: 8
+        Piercing: 36
     armorPenetration: -0.95

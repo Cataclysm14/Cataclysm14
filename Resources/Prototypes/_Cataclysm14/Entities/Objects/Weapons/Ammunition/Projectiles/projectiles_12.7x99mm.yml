@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 65
+        Piercing: 120
         Structural: 100
     armorPenetration: 0.4
   - type: Tracer
@@ -23,8 +23,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 10
-        Heat: 8
+        Piercing: 90
+        Heat: 10
         Structural: 20
     armorPenetration: 0.15
   - type: ExplodeOnTrigger

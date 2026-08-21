@@ -8,7 +8,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 25
+        Piercing: 55
     armorPenetration: 0.085
 
 #MARK: Rubber
@@ -33,8 +33,8 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 5
-        Heat: 18
+        Blunt: 18
+        Heat: 38
 
 #MARK: Depleted Uranium
 - type: entity
@@ -46,8 +46,9 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 10
-        Piercing: 13
+        Radiation: 13
+        Piercing: 53
+    armorPenetration: 0.2
 
 #MARK: HP
 - type: entity
@@ -59,8 +60,8 @@
   - type: Projectile
     damage:
       types:
-        Slash: 6
-        Piercing: 35
+        Slash: 10
+        Piercing: 55
     armorPenetration: -0.65
 
 #MARK: RIP
@@ -73,6 +74,6 @@
   - type: Projectile
     damage:
       types:
-        Slash: 8
-        Piercing: 42
+        Slash: 20
+        Piercing: 55
     armorPenetration: -0.95
