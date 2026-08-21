@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 35
+        Piercing: 55
     armorPenetration: 0.1
 
 - type: entity
@@ -43,7 +43,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 3
+        Blunt: 13
         Heat: 32
 
 - type: entity
@@ -55,7 +55,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 26 # 20% decrease
+        Piercing: 60 # 20% decrease
     ignoreResistances: true
 
 - type: entity
@@ -68,7 +68,7 @@
     damage:
       types:
         Radiation: 15
-        Piercing: 20
+        Piercing: 50
 
 # Mono AP syst
 # + 0.05 base AP
@@ -83,7 +83,7 @@
     damage:
       types:
         Slash: 8
-        Piercing: 37
+        Piercing: 47
     armorPenetration: -0.5
 
 - type: entity
@@ -96,7 +96,7 @@
     damage:
       types:
         Slash: 10
-        Piercing: 50
+        Piercing: 55
     armorPenetration: -0.9
 
 #armor-piercing:
@@ -109,6 +109,6 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 20
+        Piercing: 60
         Structural: 70
     armorPenetration: 0.6

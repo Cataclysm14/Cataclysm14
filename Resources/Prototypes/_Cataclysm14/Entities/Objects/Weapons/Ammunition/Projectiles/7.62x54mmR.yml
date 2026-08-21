@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 45
+        Piercing: 90
     armorPenetration: 0.1
 
 - type: entity
@@ -41,8 +41,8 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 15
-        Heat: 30
+        Blunt: 30
+        Heat: 60
 
 - type: entity
   id: Bullet7,62x54mmRUranium
@@ -54,7 +54,7 @@
     damage:
       types:
         Radiation: 25
-        Piercing: 20
+        Piercing: 90
 
 # Mono AP syst
 #anti-flesh:
@@ -67,8 +67,8 @@
   - type: Projectile
     damage:
       types:
-        Slash: 5
-        Piercing: 45
+        Slash: 10
+        Piercing: 80
     armorPenetration: -0.5
 
 - type: entity
@@ -80,8 +80,8 @@
   - type: Projectile
     damage:
       types:
-        Slash: 10
-        Piercing: 60
+        Slash: 20
+        Piercing: 90
     armorPenetration: -0.95
 
 #armor-piercing:
@@ -95,6 +95,6 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 20
+        Piercing: 80
         Structural: 40
     armorPenetration: 0.8

@@ -7,8 +7,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 25
-    armorPenetration: -0.05
+        Piercing: 45
+    armorPenetration: 0.05
 
 #MARK: M855
 - type: entity
@@ -19,8 +19,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 25
-    armorPenetration: -0.05
+        Piercing: 45
+    armorPenetration: 0.15
 
 #MARK: M855A1
 - type: entity
@@ -31,8 +31,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 25
-    armorPenetration: -0.05
+        Piercing: 45
+    armorPenetration: 0.25
 
 #MARK: M995
 - type: entity
@@ -43,8 +43,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 25
-    armorPenetration: -0.05
+        Piercing: 45
+    armorPenetration: 0.4
 
 #MARK: Mk262
 - type: entity
@@ -55,8 +55,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 25
-    armorPenetration: -0.05
+        Piercing: 45
+    armorPenetration: 0.2
 
 #MARK: Mk318
 - type: entity
@@ -67,8 +67,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 25
-    armorPenetration: -0.05
+        Piercing: 45
+    armorPenetration: 0.25
 
 #MARK: red tracer
 - type: entity
@@ -79,7 +79,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 25
+        Piercing: 45
     armorPenetration: -0.05
   - type: PointLight
     enabled: true
@@ -100,7 +100,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 23
+        Piercing: 45
     armorPenetration: 0.1
 
 #MARK: Rubber
@@ -123,8 +123,8 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 4
-        Heat: 17
+        Blunt: 13
+        Heat: 37
 
 #MARK: Depleted Uranium
 - type: entity
@@ -135,8 +135,9 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 8
-        Piercing: 11
+        Radiation: 9
+        Piercing: 41
+    armorPenetration: 0.6
 
 #MARK: HP
 - type: entity
@@ -147,8 +148,8 @@
   - type: Projectile
     damage:
       types:
-        Slash: 4
-        Piercing: 30
+        Slash: 15
+        Piercing: 40
     armorPenetration: -0.55
 
 #MARK: RIP
@@ -160,6 +161,6 @@
   - type: Projectile
     damage:
       types:
-        Slash: 7
-        Piercing: 37
+        Slash: 20
+        Piercing: 40
     armorPenetration: -0.9
