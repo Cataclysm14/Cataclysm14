@@ -19,6 +19,8 @@
         40
       AggroVisionRadius: !type:Single
         15
+      MeleeMissChance: !type:Single
+        0.4
 
 - type: htnCompound
   id: SimpleHostileCompoundZombieBase
