@@ -22,9 +22,16 @@ public sealed class SmokerTongueVisualSystem : EntitySystem
 
     private SmokerTongueOverlay? _overlay;
 
-    public override void Initialize()
+    public override void Update(float frameTime)
     {
-        base.Initialize();
+        base.Update(frameTime);
+
+        if (_overlay != null)
+            return;
+
+        var query = EntityQueryEnumerator<SmokerTongueActiveComponent>();
+        if (!query.MoveNext(out _, out _))
+            return;
 
         _overlay = new SmokerTongueOverlay(EntityManager, _transform, _resourceCache);
         _overlayManager.AddOverlay(_overlay);
@@ -45,8 +52,8 @@ public sealed class SmokerTongueVisualSystem : EntitySystem
 /// </summary>
 internal sealed class SmokerTongueOverlay : Overlay
 {
-    private static readonly ResPath TongueTexturePath =
-        new("/Textures/_Cataclysm14/Effects/smoker_tongue.rsi/tongue.png");
+    private static readonly ResPath TongueRsiPath =
+        new("/Textures/_Cataclysm14/Effects/smoker_tongue.rsi");
 
     private readonly IEntityManager _entityManager;
     private readonly SharedTransformSystem _transform;
@@ -61,9 +68,10 @@ internal sealed class SmokerTongueOverlay : Overlay
     {
         _entityManager = entityManager;
         _transform = transform;
-        _tongueTexture = resourceCache.GetResource<TextureResource>(TongueTexturePath);
 
-        // Draw above world sprite so the tongue does not disappear under the victim
+        var tongueRsi = resourceCache.GetResource<RSIResource>(TongueRsiPath).RSI;
+        _tongueTexture = tongueRsi["tongue"].Frame0;
+
         ZIndex = 10;
     }
 

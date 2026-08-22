@@ -799,15 +799,12 @@
     tongueBreakRange: 10
     tonguePullSpeed: 5
     tongueStopDistance: 0.85
-    tongueReelInterval: 0.15
-    # escapePresses: 20
     strugglePressInterval: 0.08
     struggleRequiredProgress: 100
     struggleProgressPerPress: 5
     struggleDecayPerSecond: 12
     smokeDeathDelay: 5
     smokeEmitterPrototype: SmokerSmokeEmitter
-    tongueVisualPrototype: SmokerTongueBeam
   - type: ActionGrant
     actions:
     - ActionSmokerTongue

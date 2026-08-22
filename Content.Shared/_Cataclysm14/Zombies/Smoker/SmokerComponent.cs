@@ -26,13 +26,6 @@ public sealed partial class SmokerComponent : Component
     public float TongueStopDistance = 0.85f;
 
     [DataField]
-    public float TongueReelInterval = 0.15f;
-
-    // Scrapped, but I will keep this here if I want to change the escape method I was fucking with earlier -pierow
-    [DataField]
-    public int EscapePresses = 20;
-
-    [DataField]
     public float StrugglePressInterval = 0.06f;
 
     [DataField]
@@ -54,9 +47,6 @@ public sealed partial class SmokerComponent : Component
     public string SmokeEmitterPrototype = "SmokerSmokeEmitter";
 
     [DataField]
-    public string TongueVisualPrototype = "SmokerTongueBeam";
-
-    [DataField]
     public string TongueCuffPrototype = "SmokerTongueCuffs";
 
     [DataField]
@@ -71,7 +61,6 @@ public sealed partial class SmokerComponent : Component
 
     public EntityUid? SmokeEmitter;
     public EntityUid? TongueTarget;
-    public TimeSpan NextTongueRefresh;
     public TimeSpan? StopSmokeAt;
     public bool DeathHandled;
 

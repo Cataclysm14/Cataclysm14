@@ -252,8 +252,6 @@ public sealed class SmokerSystem : EntitySystem
     private void StartTongue(EntityUid smoker, EntityUid target, SmokerComponent smokerComp)
     {
         smokerComp.TongueTarget = target;
-        smokerComp.NextTongueRefresh = TimeSpan.Zero;
-
         // The visual is rendered client-side as one continuous textured quad
         var activeTongue = EnsureComp<SmokerTongueActiveComponent>(smoker);
         activeTongue.Target = target;
@@ -482,7 +480,6 @@ public sealed class SmokerSystem : EntitySystem
         }
 
         comp.TongueTarget = null;
-        comp.NextTongueRefresh = TimeSpan.Zero;
 
         if (!Deleted(smoker))
         {
