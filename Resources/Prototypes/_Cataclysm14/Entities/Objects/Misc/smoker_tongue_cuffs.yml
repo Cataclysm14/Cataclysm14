@@ -1,0 +1,25 @@
+- type: entity
+  id: SmokerTongueCuffs
+  name: smoker tongue restraint
+  description: The Smoker's tongue has bound your arms.
+  parent: BaseItem
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: /Textures/_Cataclysm14/Effects/smoker_tongue.rsi
+    state: tongue_icon
+  - type: Handcuff
+    # Applied directly by SmokerSystem rather than through a cuffing DoAfter
+    used: true
+    cuffTime: 0
+    # The tongue escape UI is the intended escape route
+    uncuffTime: 999999
+    breakoutTime: 999999
+
+    # CuffableSystem uses this RSI for the overlay rendered on the victim
+    # It automatically appends "-2" for a normal two-handed victim, so
+    # bodyIconState: entangled resolves to the RSI state "entangled-2"
+    cuffedRSI: _Cataclysm14/Effects/smoker_tongue.rsi
+    bodyIconState: entangled

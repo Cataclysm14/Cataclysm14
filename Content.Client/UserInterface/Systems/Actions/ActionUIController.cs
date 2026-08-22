@@ -1,6 +1,7 @@
 using System.Linq;
 using System.Numerics;
 using Content.Client.Actions;
+using Content.Shared._Cataclysm14.Zombies.Smoker; //Cata14 Add
 using Content.Client.Construction;
 using Content.Client.Gameplay;
 using Content.Client.Hands;
@@ -147,6 +148,10 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
         if (SelectingTargetFor == null)
             return false;
 
+        //Cata14 Add;
+        if (IsSmokerTargetingLocked(SelectingTargetFor))
+            return true;
+
         StopTargeting();
         return true;
     }
@@ -158,6 +163,11 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
     {
         if (!_timing.IsFirstTimePredicted || _actionsSystem == null || SelectingTargetFor is not { } actionId)
             return false;
+
+        //Cata14 Add;
+		// Ignore attempts while the Smoker's tongue is still in it's arm cooldown
+        if (IsSmokerTargetingLocked(actionId))
+            return true;
 
         if (_playerManager.LocalEntity is not { } user)
             return false;
@@ -260,7 +270,7 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
             EntityManager.RaisePredictiveEvent(new RequestPerformActionEvent(EntityManager.GetNetEntity(actionId), EntityManager.GetNetEntity(args.EntityUid)));
 
         if (!action.Repeat)
-            StopTargeting();
+            StopTargeting(notifySmokerDisarm: false); //Cata 14 Add
 
         return true;
     }
@@ -884,15 +894,52 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
     }
 
     /// <summary>
-    /// If currently targeting with this slot, stops targeting.
+    /// Cata14 Add;
+	/// If currently targeting with this slot, stops targeting.
     /// If currently targeting with no slot or a different slot, switches to
     /// targeting with the specified slot.
     /// </summary>
     private void ToggleTargeting(EntityUid actionId, BaseTargetActionComponent action)
     {
+        // Cata 14 Add;
+		// Once the tongue is attached, pressing the same action button again is a manual
+        // release command. This check intentionally runs before cooldown gating because the
+        // tongue action enters it's cooldown as soon as the shot connects
+        if (EntityManager.HasComponent<SmokerTongueActionComponent>(actionId) &&
+            _playerManager.LocalEntity is { } localSmoker &&
+            EntityManager.HasComponent<SmokerTongueActiveComponent>(localSmoker))
+        {
+            if (_timing.IsFirstTimePredicted)
+            {
+                EntityManager.RaisePredictiveEvent(
+                    new SmokerTongueCancelRequestEvent(EntityManager.GetNetEntity(actionId)));
+            }
+
+            return;
+        }
+
         if (SelectingTargetFor == actionId)
         {
+            // The Smoker tongue cannot be untoggled until it's arming timer ends
+            if (IsSmokerTargetingLocked(actionId))
+                return;
+
             StopTargeting();
+            return;
+        }
+
+        // Cata14 Add;
+		// Do not bypass the Smoker's arming by switching directly to another action
+        if (IsSmokerTargetingLocked(SelectingTargetFor))
+            return;
+
+        // Unlike generic target actions, don't let the tongue enter its alert state while the
+        // actual action is disabled or still on its 45-second cooldown.
+        if (EntityManager.HasComponent<SmokerTongueActionComponent>(actionId) &&
+            (!action.Enabled ||
+             action is { Charges: 0, RenewCharges: false } ||
+             action.Cooldown is { } cooldown && cooldown.End > _timing.CurTime))
+        {
             return;
         }
 
@@ -909,6 +956,18 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
 
         SelectingTargetFor = actionId;
         // TODO inform the server
+
+        if (EntityManager.TryGetComponent(actionId, out SmokerTongueActionComponent? smokerTongue))
+        {
+            smokerTongue.ClientUnlockAt = _timing.CurTime + smokerTongue.ArmDelay;
+
+            if (_timing.IsFirstTimePredicted)
+            {
+                EntityManager.RaisePredictiveEvent(
+                    new SmokerTongueArmRequestEvent(EntityManager.GetNetEntity(actionId)));
+            }
+        }
+
         action.Toggled = true;
 
         // override "held-item" overlay
@@ -958,7 +1017,14 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
     /// <summary>
     /// Switch out of targeting mode if currently selecting target for an action
     /// </summary>
-    private void StopTargeting()
+    private bool IsSmokerTargetingLocked(EntityUid? actionId)
+    {
+        return actionId is { } id &&
+               EntityManager.TryGetComponent(id, out SmokerTongueActionComponent? smokerTongue) &&
+               _timing.CurTime < smokerTongue.ClientUnlockAt;
+    }
+
+    private void StopTargeting(bool notifySmokerDisarm = true)
     {
         if (SelectingTargetFor == null)
             return;
@@ -966,7 +1032,15 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
         var oldAction = SelectingTargetFor;
         if (_actionsSystem != null && _actionsSystem.TryGetActionData(oldAction, out var action))
         {
-            // TODO inform the server
+            // TODO inform israel
+            if (notifySmokerDisarm &&
+                _timing.IsFirstTimePredicted &&
+                EntityManager.HasComponent<SmokerTongueActionComponent>(oldAction))
+            {
+                EntityManager.RaisePredictiveEvent(
+                    new SmokerTongueDisarmRequestEvent(EntityManager.GetNetEntity(oldAction.Value)));
+            }
+
             action.Toggled = false;
         }
 

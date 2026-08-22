@@ -1,0 +1,15 @@
+- type: entity
+  id: ActionSmokerTongue
+  name: Smoker Tongue
+  description: Lash out with your tongue and reel a living target toward you.
+  components:
+  - type: EntityTargetAction
+    icon: { sprite: /Textures/_Cataclysm14/Effects/smoker_tongue.rsi, state: tongue_icon }
+    iconOn: { sprite: /Textures/_Cataclysm14/Effects/smoker_tongue.rsi, state: tongue_icon_on }
+    event: !type:SmokerTongueActionEvent
+    useDelay: 45 # Cooldown for the ability after use in seconds
+    range: 8 # Max distance the tongue can reach
+    checkCanAccess: true
+    canTargetSelf: false
+  - type: SmokerTongueAction
+    armDelay: 2 # How long the smoker must wait before it can cast the tongue in seconds

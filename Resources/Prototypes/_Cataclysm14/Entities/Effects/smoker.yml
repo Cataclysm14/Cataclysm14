@@ -1,0 +1,37 @@
+# Child emitter parented to the Smoker. SmokerSystem deletes it five seconds after death. Rejuving doesn't bring
+# it back, and I don't care (╯°□°）╯︵ ┻━┻
+- type: entity
+  id: SmokerSmokeEmitter
+  name: smoker smoke emitter
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Effects/chemsmoke.rsi
+    drawdepth: Effects
+    state: chemsmoke
+  - type: SmokeOnTrigger
+    duration: 5
+    spreadAmount: 2
+    solution:
+      reagents:
+      - ReagentId: Nicotine
+        Quantity: 25
+  - type: RepeatTimerTrigger
+    interval: 15
+
+# Beams are refreshed while the grapple is active so the line follows both mobs
+# I'm not pleased this current method but fuck it, it just works™️
+- type: entity
+  id: SmokerTongueBeam
+  name: smoker tongue
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: /Textures/_Cataclysm14/Effects/smoker_tongue.rsi
+    drawdepth: Effects
+    state: tongue
+  - type: Physics
+    canCollide: false
+  - type: Beam
+  - type: TimedDespawn
+    lifetime: 0.25

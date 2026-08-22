@@ -1,0 +1,17 @@
+- type: soundCollection
+  id: SmokerLurker
+  files:
+  - /Audio/_Cataclysm14/Zombies/Smoker/smoker_lurk_01.ogg
+  - /Audio/_Cataclysm14/Zombies/Smoker/smoker_lurk_03.ogg
+  - /Audio/_Cataclysm14/Zombies/Smoker/smoker_lurk_04.ogg
+  - /Audio/_Cataclysm14/Zombies/Smoker/smoker_lurk_06.ogg
+
+- type: soundCollection
+  id: SmokerAlert
+  files:
+  - /Audio/_Cataclysm14/Zombies/Smoker/smoker_alert_01.ogg
+  - /Audio/_Cataclysm14/Zombies/Smoker/smoker_alert_02.ogg
+  - /Audio/_Cataclysm14/Zombies/Smoker/smoker_alert_03.ogg
+  - /Audio/_Cataclysm14/Zombies/Smoker/smoker_alert_04.ogg
+  - /Audio/_Cataclysm14/Zombies/Smoker/smoker_alert_05.ogg
+  - /Audio/_Cataclysm14/Zombies/Smoker/smoker_alert_06.ogg
