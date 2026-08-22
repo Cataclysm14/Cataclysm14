@@ -6,11 +6,13 @@ using Content.Shared.NPC;
 using Robust.Shared.Map;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Random;
+using Content.Shared.Popups;
 
 namespace Content.Server.NPC.Systems;
 
 public sealed partial class NPCCombatSystem
 {
+    [Dependency] private readonly SharedPopupSystem _popup = default!;
     private const float TargetMeleeLostRange = 14f;
 
     private void InitializeMelee()
@@ -108,11 +110,19 @@ public sealed partial class NPCCombatSystem
         if (weapon.NextAttack > curTime || !Enabled)
             return;
 
-        if (_random.Prob(component.MissChance) &&
-            physicsQuery.TryGetComponent(component.Target, out var targetPhysics) &&
-            targetPhysics.LinearVelocity.LengthSquared() != 0f)
+        if (_random.Prob(component.MissChance))
         {
-            _melee.AttemptLightAttackMiss(uid, weaponUid, weapon, targetXform.Coordinates.Offset(_random.NextVector2(0.5f)));
+            _melee.AttemptLightAttackMiss(
+                uid,
+                weaponUid,
+                weapon,
+                targetXform.Coordinates.Offset(_random.NextVector2(0.5f)));
+
+            _popup.PopupEntity(
+                "I narrowly dodge their attack!",
+                component.Target,
+                component.Target,
+                PopupType.Small);
         }
         else
         {
