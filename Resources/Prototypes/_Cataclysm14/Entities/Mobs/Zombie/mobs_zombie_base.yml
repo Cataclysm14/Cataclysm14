@@ -250,6 +250,11 @@
           32:
             sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/displacement.rsi
             state: pants
+      outerClothing:
+        sizeMaps:
+          32:
+            sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/displacement.rsi
+            state: outerClothing
   - type: MobThresholds
     thresholds:
       0: Alive
