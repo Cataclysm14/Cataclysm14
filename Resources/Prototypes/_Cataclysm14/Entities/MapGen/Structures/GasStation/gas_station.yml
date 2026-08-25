@@ -1,0 +1,26 @@
+- type: dungeonRoom
+  id: StructureSpawnerGasStation26x26a
+  size: 26,26
+  atlas: /Maps/_Cataclysm14/Structures/GasStation/structure_gas_station_26x26.yml
+  offset: 0,-25
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureGasStation26x26
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerGasStation26x26
+  name: Gas Station
+  suffix: 2x2 Chunk][26x26
+  components:
+  - type: Sprite
+    scale: 26,26
+    layers:
+    #- sprite: i dont known
+    #  state: something
+    - sprite: _Cataclysm14/Mapping/generic.rsi
+      state: structure_full_directions
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureGasStation26x26
