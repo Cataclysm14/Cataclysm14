@@ -34,6 +34,15 @@
   - type: Tag
     id: CataStructureConstructionSite13x13
 
+  - type: Tag
+    id: CataStructureFurnitureShop26x26
+
+  - type: Tag
+    id: CataStructureMediumMall65x65
+  
+  - type: Tag
+    id: CataStructureGasStation26x26
+
 #MARK: Military Things
 
   - type: Tag
@@ -101,3 +110,15 @@
 
   - type: Tag
     id: CataStructureSpawnerRoadBlockStraight13x13
+
+#MARK: Storage Unit
+  - type: Tag
+    id: CataStructureSpawnerStorageUnit39x39
+
+#MARK: Cabin
+  - type: Tag
+    id: CataStructureCabin13x13
+
+#MARK: Graveyard
+  - type: Tag
+    id: CataStructureSpawnerSmallGraveyard13x13

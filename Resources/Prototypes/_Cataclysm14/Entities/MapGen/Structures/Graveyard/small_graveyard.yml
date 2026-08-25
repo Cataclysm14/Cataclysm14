@@ -1,0 +1,27 @@
+- type: dungeonRoom
+  id: StructureSpawnerSmallGraveyard13x13a
+  size: 13,13
+  atlas: /Maps/_Cataclysm14/Structures/Graveyard/structure_graveyard_13x13_a.yml
+  offset: 0,-12
+  ignoreTile: FloorShuttleOrange
+  tags:
+  - CataStructureSpawnerSmallGraveyard13x13
+
+- type: entity
+  parent: BaseStructureSpawner
+  id: StructureSpawnerSmallGraveyard13x13
+  name: Graveyard
+  suffix: 1x1 Chunk][13x13
+  components:
+  - type: Sprite
+    scale: 13,13
+    layers:
+    - sprite: _Cataclysm14/Mapping/generic.rsi
+      state: structure_full_directions
+    - sprite: Structures/Storage/Crates/stone_grave.rsi
+      state: base
+      scale: 0.5,0.5
+  - type: RoomFill
+    roomWhitelist:
+      tags:
+      - CataStructureSpawnerSmallGraveyard13x13
