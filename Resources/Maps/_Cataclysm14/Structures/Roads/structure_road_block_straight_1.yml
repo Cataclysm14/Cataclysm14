@@ -324,7 +324,7 @@ entities:
     - type: Transform
       pos: -6.5,-8.5
       parent: 0
-- proto: ConsumableMedicinePillCanisterAntibiotics
+- proto: ContainerCanisterPillSmallFilledAntibiotics
   entities:
   - uid: 2283
     components:

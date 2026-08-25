@@ -1,0 +1,91 @@
+#MARK: BasicMedicine Shelves
+- type: entity
+  id: StructureFurnitureShelfMetalFilledMedBasic
+  suffix: MedBasic 100%
+  parent: StructureFurnitureShelfMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableMedicineBasic
+        rolls: !type:RangeNumberSelector
+            range: 1,6
+
+- type: entity
+  id: StructureFurnitureShelfMetalFilledMedBasicRandom75
+  suffix: MedBasic 75%
+  parent: StructureFurnitureShelfMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableMedicineBasic
+        rolls: !type:RangeNumberSelector
+            range: 1,6
+        prob: 0.75
+
+- type: entity
+  id: StructureFurnitureShelfMetalFilledMedBasicRandom50
+  suffix: MedBasic 50%
+  parent: StructureFurnitureShelfMetal
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableMedicineBasic
+        rolls: !type:RangeNumberSelector
+            range: 1,6
+        prob: 0.5
+
+#MARK: Medicine Oils Fridges
+- type: entity
+  id: StructureApplianceFridgeStoreFilledMedOils
+  suffix: MedOils 100%
+  parent: StructureApplianceFridgeStore
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableMedicineOils
+        rolls: !type:RangeNumberSelector
+            range: 2,6
+
+- type: entity
+  id: StructureApplianceFridgeStoreFilledMedOilsRandom75
+  suffix: MedOils 75%
+  parent: StructureApplianceFridgeStore
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableMedicineOils
+        rolls: !type:RangeNumberSelector
+            range: 2,6
+        prob: 0.75
+
+- type: entity
+  id: StructureApplianceFridgeStoreFilledMedOilsRandom50
+  suffix: MedOils 50%
+  parent: StructureApplianceFridgeStore
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableMedicineOils
+        rolls: !type:RangeNumberSelector
+            range: 2,6
+        prob: 0.5
+
+#MARK: MedicineRandom Fridges
+- type: entity
+  id: StructureApplianceFridgeStoreFilledMedRandRandom50
+  suffix: MedRandom 50%
+  parent: StructureApplianceFridgeStore
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableMedicineRandom
+        rolls: !type:RangeNumberSelector
+            range: 1,4
+        prob: 0.5

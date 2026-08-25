@@ -1,0 +1,52 @@
+#MARK: Random
+- type: entityTable
+  id: LootTableCigaretteRandom
+  table: !type:GroupSelector
+    children:
+    - !type:NestedSelector
+      tableId: LootTableCigarettes
+    - !type:NestedSelector
+      tableId: LootTableCigaretteLighters
+
+#MARK: Cigs
+- type: entityTable
+  id: LootTableCigarettes
+  table: !type:GroupSelector
+    children:
+      - id: Cigarette
+        weight: 36
+      - id: Cigar
+        weight: 9
+      - id: CigPackGreen
+        weight: 9
+      - id: CigPackRed
+        weight: 9
+      - id: CigPackBlue
+        weight: 9
+      - id: CigPackBlack
+        weight: 9
+      - id: PackPaperRollingFilters
+        weight: 9
+      - id: Joint
+        weight: 0.5
+      - id: JointRainbow
+        weight: 0.5
+      - id: CigPackMixed
+        weight: 0.10
+      - !type:NestedSelector
+        tableId: SoakedSmokesTable
+        weight: 0.10
+
+#MARK: Lighters
+- type: entityTable
+  id: LootTableCigaretteLighters
+  table: !type:GroupSelector
+    children:
+    - id: Lighter
+      weight: 100
+    - id: CheapLighter
+      weight: 150
+    - id: FlippoLighter
+      weight: 80
+    - id: FlippoEngravedLighter
+      weight: 10

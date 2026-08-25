@@ -1,58 +1,64 @@
-﻿[color=#99ff99]Monolith Sector is a Medium Roleplay server. Try to immerse yourself into your character. This includes doing your job as a station or ship crew member and delegating tasks that are outside of that description, or striking out upon space as a Captain of your ship. This does not imply you’re forced to play the whole round; Monolith Station is designed with pop-in-and-out gameplay in mind, where some players will come and go but their bank account remains persistent across server restarts.[/color]
+﻿[head=1]Core rules[/head]
+[italic]Core rules follow the discord rules closely.[/italic]
 
-[color=#99ff99]You can access more information about the game using the Guidebook (NUMPAD 0).[/color]
+[bold]Rule 0-1.[/bold] No hard slurs, and no targeted slurs against RL disabilities. You can't call someone retarded because you know they have autism. But calling someone a retard because they walked on a landmine or got eaten alive is acceptable.
+[bold]SubRule 0-1-1.[/bold] Slurs against mutated humans are acceptable, so long as it doesn't break 0-2 and is not based off of real-world slurs.
+[bold]SubRule 0-1-2.[/bold] Being called a slur as a mutated human is viable grounds to kill the other person, if you weren't already doing so. This applies to mutants being discriminatory against normal humans as well.
 
-[color=#a4885c][head=3]0. Admins can disregard any and all of these rules if they deem it in the best interest of the current round, server, and/or community at large.[/head][/color]
-	• They will of course be held fully accountable for their actions if they exercise this privilege.
+[bold]Rule 0-2.[/bold] Do not share OOC personal information about yourself or others without explicit consent. This includes addresses, phone numbers, emails, etc.
 
-[color=#a4885c][head=3]0.1. All of these rules apply as they are intended.[/head][/color]
-	• Every example of a rule break cannot be defined as written, therefore, enforcement of the rules is subject to staff interpretation of the rule's intention.
+[bold]Rule 0-3.[/bold] No NSFW content is allowed. Anyone caught performing ERP will be punished.
 
-[color=#a4885c][head=3]0.2. Staff is not obligated to cover player losses, deaths or delays.[/head][/color]
-	• This includes but is not limited to ship deeds, money, respawns or revivals. Any action taken will depend on the circumstances at hand.
+[bold]Rule 0-4.[/bold] If you see someone breaking a core rule, report it and it will be taken care of.
 
-[color=#a4885c][head=4]The core rules of [bold]Monolith[/bold] are as follows.[/head][/color]
-[color=#a4885c]These are not the full extent of the rules, and further information can be found in the guidebook.[/color]
+[bold]Rule 0-5.[/bold] English is the preferred language, you are allowed to speak in your native tongue, but refusing to speak English at all is liable for punishment. In Ahelps you are expected to know fundamental English to communicate your case.
 
-[color=#a4885c][head=3]1. Use common sense.[/head][/color]
-	• The expected behavior is not limited to these rules.
-	• If you are in doubt as to whether something is against the rules, [color=yellow]consult an admin[/color].
-	• When in doubt, act in [color=green]good faith[/color] and consider the [color=yellow]spirit of the rules[/color].
+[bold]Rule 0-6.[/bold] The dreaded good faith rule. Don't abuse the AI and don't intentionally make the game unplayable for others.
 
-[color=#a4885c][head=3]2. Respect each other.[/head][/color]
-	• [color=red][bold]Racism, harassment, or any kind of targeted or hateful behavior is strictly prohibited.[/bold][/color]
-	• This includes discrimination based on [color=yellow]gender[/color], [color=yellow]race[/color], [color=yellow]religion[/color], [color=yellow]nationality[/color], [color=yellow]disability[/color], or any other protected characteristic or class.
-	• These rules apply both in and out of character.
+[italic]Violating these rules may result in a warning, mute, kick, or ban, depending on the severity of the violation. In the case of ERP, usage of real-world slurs, and leaking personal info, it is an appeal only ban.[/italic]
 
-[color=#a4885c][head=3]3. Do not engage in cheating or exploits.[/head][/color]
-	• [color=red][bold]Do not use third-party software, macros, or any tools to circumvent game mechanics or gain an unfair advantage.[/bold][/color]
-	• [color=red]Exploiting bugs or unintended mechanics is not allowed.[/color]
+[head=1]Combat Rules.[/head]
+[italic]Combat rules apply to interactions that result in bloodshed amongst 2 (or more) players, not amongst NPCs and players.[/italic]
 
-[color=#a4885c][head=3]4. Do not use alternative accounts.[/head][/color]
-	• Players are limited to [color=yellow][bold]one account per person[/bold][/color], regardless of intent.
-	• [color=red]Using multiple accounts to bypass bans, gain advantages, or for any other reason is not allowed.[/color]
+[bolditalic]Note that this is an active apocalypse, people will do horrible things and believe in what would be considered taboo today. The world is burning and we are merely trying not to be consumed by it. Desperation, debauchery, and homicide is not off the table.[/bolditalic]
 
-[color=#a4885c][head=3]5. English is the required language for all communication.[/head][/color]
-	• This includes [color=yellow]roleplay[/color], [color=yellow]OOC chat[/color], [color=yellow]ahelp[/color], and [color=yellow]staff messages[/color].
-	• [color=red][bold]All communication on the server—both in-character (IC) and out-of-character (OOC) must be in English.[/bold][/color]
+[bold]Rule 1-1.[/bold] Combat may be engaged between two (or more) players for the reasonings as follows:
+[italic]Verbal attacks:[/italic]
+Insults and such.
+[italic]Secretive actions:[/italic]
+If you are attempting to hide something, like a corpse, a stash, money, etc. you may kill someone who witnesses you attempting to hide such items.
+[italic]Robbery/Mugging:[/italic]
+If you are [bold]AWARE[/bold] of an item on another person that you [bold]need[/bold] or [bold]want[/bold] then you are permitted to rob that person. [italic]How you go about this is up to player discretion,[/italic] but do note that this [bold]doesn't mean you kill a dozen people to take 1 thing.[/bold] Unless, of course, that dozen people is actively trying to stop you from taking that item.
+[italic]Ideological differences:[/italic]
+If you are part of a [bold]faction or group[/bold] with a selective ideology or belief, you may engage other groups on the basis of their opposing ideology, once aware of it. [italic]An anarcho-capitalist group would despise a group trying to impose fascist authoritarianism upon the area. And would gladly engage and kill them for such.[/italic]
+[italic]Known actions:[/italic]
+If you know a person or persons are committing heinous acts, such as cannibalism, genocide, omnicide, serial killings, and/or speaks of "rape" or "molested", you may kill that person if you are not a teammate to them.
+[italic]This list is not exhaustive. There is multiple reasons why someone would kill another in this world.[/italic]
 
-[color=#a4885c][head=4]The ruleplay rules of [bold]Monolith[/bold] are as follows.[/head][/color]
-[color=#a4885c]These are not the full extent of the rules, and further information can be found in the guidebook.[/color]
+[bold]Rule 1-2.[/bold] Ambush combat, an ambush can be done by anyone against anyone. [bolditalic]Nobody is safe from being ambushed, no matter their role or faction.[/bolditalic]
+[bold]Rule 1-2-1.[/bold] An ambush isn’t sitting in a bush for 30 minutes or corner camping a door. Set up a trap, a barricade, some form of prep work. Just be creative! [bolditalic]Running up behind someone and shooting them in the back is not an ambush, that is just homicide.[/bolditalic]
 
-	• [color=#a4885c][head=2]RP.1. Do not break character.[/head][/color]
-	• [color=#a4885c][head=2]RP.2. Avoid misusing in-character text chat.[/head][/color]
-	• [color=#a4885c][head=2]RP.3. Type with proper grammar in in-character text chat.[/head][/color]
-	• [color=#a4885c][head=2]RP.4. Build upon the contributions of others.[/head][/color]
-	• [color=#a4885c][head=2]RP.5. Erotic roleplay is FULLY prohibited.[/head][/color]
-	• [color=#a4885c][head=2]RP.6. Do not metagame.[/head][/color]
-	• [color=#a4885c][head=2]RP.7. Follow safezone rules at all time.[/head][/color]
-	• [color=#a4885c][head=2]RP.8. Do not abandon your role as a faction member.[/head][/color]
+[bold]Rule 1-3.[/bold] Base assaults can be conducted at any time, so long as [bold]Rule 1-1[/bold] is fulfilled. No you cannot ambush a base, but you are allowed to set up an ambush outside of one. [italic]Certain locations may or may not be valid for assaults and raids. It is recommended to ask and be sure before you blaze in and cop a ban. Generally: player built bases are valid.[/italic]
 
-[color=#a4885c][head=4]The conflict rules of [bold]Monolith[/bold] are as follows.[/head][/color]
-[color=#a4885c]These are not the full extent of the rules, and further information can be found in the guidebook.[/color]
+[head=1]Roleplay rules.[/head]
+[italic]These aren't really rules, just fundamentals.[/italic]
 
-	• [color=#a4885c][head=2]C.1. Avoid random deathmatch (RDM) as a civilian.[/head][/color]
-	• [color=#a4885c][head=2]C.2. Adhere to the new life rule.[/head][/color]
-	• [color=#a4885c][head=2]C.3. Engage in fair play when making demands.[/head][/color]
-	• [color=#a4885c][head=2]C.4. Outpost striking/portstriking is not allowed w/o admin permission.[/head][/color]
+[bolditalic]Note that people will go mad upon watching all they took for granted burn before them. Psychopaths, madmen, and the delusional are not out of the picture.[/bolditalic]
 
+[bold]Rule 2-1.[/bold] Your character is a reasonable human being. Having some moderate insanity, psychosis, obsession, or apathetic/psychopathic behavior is considered acceptable within CDDA lore and the current situation. No this does not supersede [bold]Rule 1-1[/bold]. It only helps with the larp that comes afterwards and the reasoning beforehand. The excuse "but my character is a psycho" is not sufficient to kill 5 people without a word or prior knowledge.
+
+[bold]Rule 2-2.[/bold] Act in character at all times. Breaking character alone is grounds to be banned. True roleplay comes when the setting is taken seriously and the characters act within the confines of it. [italic]Using LOOC to talk a little outside of character is fine, especially to teach others the game! But using it to argue about something that happened in character is foolish, and doesn't do anything but subtract from the experience.[/italic]
+
+[bold]Rule 2-3.[/bold] Respect the setting of CDDA and act within it, not outside of it. This is a apocalypse where the world is overtaken by inter dimensional goo, aliens are landing on earth, mutant humans exist, and there is cyborgs coming through portals. [italic]Is it a little goofy? Yes. Does it take this seriously and will off you for making light of it? Yes.[/italic]
+
+[bold]Rule 2-4.[/bold] Player made factions can follow borderline any ideology they desire, or lack one entirely! So long as the ideology doesn't break core rules, roleplay rules, or looks to break combat rules, you are entirely fine to play with this faction and larp it out in game!
+
+[bold]Rule 2-5.[/bold] Use a realistic full name.
+
+[italic]These rules act as the core of what I will look to enforce. I couldn't give less of a fuck about dead sprites, I value the quality of your larp significantly more. LRP shit will be punished.[/italic]
+
+[bold]Rule 2-6.[/bold] Metacomming is prohibited. No Metacomming. Literally 1984. Do note that if we suspect you are using ghosts to feed you info in game, [bolditalic]both of you will be banned.[/bolditalic]
+
+[bold]Rule 2-7.[/bold] NLR rules, so dreaded and so restrictive. There is 2 kinds of death, Temporary Death and True Death. The subrules will explain this better. We use a softer form of NLR.
+[bold]Rule 2-7-1.[/bold] [italic]True Death[/italic] is when your player instance, or character, has died and you RESPAWN. Under true death, you do not remember [italic]anything from the interaction that killed you. Including location, items on your person, the person(s) that killed you, or the weapon used.[/italic] However, you do remember your friends and faction loyalty.
+[bold]Rule 2-7-2.[/bold] [italic]Temporary Death[/italic] is when your player instance, or character, has died but you have been REVIVED in the same instance. Under temporary death you remember [italic]the person(s) that killed you, the location, what you had on you, but not what was used to kill you.[/italic] Like with true death, you still remember your friends and faction loyalty.

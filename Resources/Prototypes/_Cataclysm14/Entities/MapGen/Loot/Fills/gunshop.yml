@@ -134,6 +134,50 @@
             range: 1,6
         prob: 0.10
 
+#MARK: Display Cases
+- type: entity
+  id: StructureFurnitureDisplayCaseFilledGunshop
+  suffix: Gunshop Guns 100%
+  parent: StructureFurnitureDisplayCase
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableWeaponGunCivilianGunshop
+
+- type: entity
+  id: StructureFurnitureDisplayCaseFilledGunshopRandom50
+  suffix: Gunshop Guns 50%
+  parent: StructureFurnitureDisplayCase
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableWeaponGunCivilianGunshop
+        prob: 0.50
+
+- type: entity
+  id: StructureFurnitureDisplayCaseFilledGunshopRandom25
+  suffix: Gunshop Guns 25%
+  parent: StructureFurnitureDisplayCase
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableWeaponGunCivilianGunshop
+        prob: 0.25
+
+- type: entity
+  id: StructureFurnitureDisplayCaseFilledGunshopRandom10
+  suffix: Gunshop Guns 10%
+  parent: StructureFurnitureDisplayCase
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: LootTableWeaponGunCivilianGunshop
+        prob: 0.10
+
 #MARK: Ammo Shelves
 - type: entity
   id: StructureFurnitureShelfMetalFilledGunshopAmmo
