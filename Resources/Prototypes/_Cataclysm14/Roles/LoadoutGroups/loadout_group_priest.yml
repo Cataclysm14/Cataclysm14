@@ -1,0 +1,299 @@
+#MARK: Eyeware/Face
+- type: loadoutGroup
+  id: LoadoutGroupPriestEyewear
+  name: loadout-group-eyewear
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - PriestLoadoutPlagueMask
+
+#MARK: Hats
+- type: loadoutGroup
+  id: LoadoutGroupPriestHat
+  name: loadout-group-hat
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - PriestLoadoutNunHood
+  - PriestLoadoutFez
+  - PriestLoadoutPlagueDoctorHat
+  - PriestLoadoutWitchHat
+  - PriestLoadoutWitchHatAlt
+  - PriestLoadoutKippah
+  - PriestLoadoutWideBrimmedHat
+  - PriestLoadoutPilgrimHat
+  - PriestLoadoutBishopMitre
+  - PriestLoadoutCardinalHat
+  - PriestLoadoutWitchHunterHat
+
+#MARK: Shirts(robes/outerclothing)
+- type: loadoutGroup
+  id: LoadoutGroupPriestShirt
+  name: loadout-group-shirt
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - PriestLoadoutMonasticRobeDark
+  - PriestLoadoutMonasticRobeLight
+  - PriestLoadoutChaplainHoodie
+  - PriestLoadoutBlackHoodie
+  - PriestLoadoutNunRobe
+  - PriestLoadoutPlagueSuit
+  - PriestLoadoutPilgrimVest
+  - PriestLoadoutBishopCoat
+  - PriestLoadoutCardinalCoat
+  - PriestLoadoutWitchHunterCoat
+
+#MARK: Gear
+- type: loadoutGroup
+  id: LoadoutGroupPriestGear
+  name: loadout-group-priest-gear
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - PriestLoadoutChaplainStamp
+  - PriestLoadoutBible
+  - PriestLoadoutCandleBox
+  - PriestLoadoutSmallCandleBox
+  - PriestLoadoutUrn
+  - PriestLoadoutMortuaryUrn
+  - PriestLoadoutCenser
+  - PriestLoadoutSilverRing
+  - PriestLoadoutGoldRing
+  - PriestLoadoutHolyWater
+  
+#MARK: Accessories
+- type: loadoutGroup
+  id: LoadoutGroupPriestAccessories
+  name: loadout-group-priest-accessories
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - PriestLoadoutChaplainScarfStole
+  - PriestLoadoutChaplainStole
+  - PriestLoadoutChaplainSash
+  - PriestLoadoutCrucifix
+
+
+# Eyewear/Face
+
+- type: loadout
+  id: PriestLoadoutPlagueMask
+  price: 0
+  equipment:
+    mask: ClothingMaskPlague
+    # And yeah I couldn't think of anything else roflcopter     -pierow
+
+
+# Hats
+
+- type: loadout
+  id: PriestLoadoutNunHood
+  price: 0
+  equipment:
+    head: ClothingHeadHatHoodNunHood
+
+- type: loadout
+  id: PriestLoadoutFez
+  price: 0
+  equipment:
+    head: ClothingHeadHatFez
+
+- type: loadout
+  id: PriestLoadoutPlagueDoctorHat
+  price: 0
+  equipment:
+    head: ClothingHeadHatPlaguedoctor
+
+- type: loadout
+  id: PriestLoadoutWitchHat
+  price: 0
+  equipment:
+    head: ClothingHeadHatWitch
+
+- type: loadout
+  id: PriestLoadoutWitchHatAlt
+  price: 0
+  equipment:
+    head: ClothingHeadHatWitch1
+
+- type: loadout
+  id: PriestLoadoutKippah
+  price: 0
+  equipment:
+    head: ClothingHeadHatKippah
+
+- type: loadout
+  id: PriestLoadoutWideBrimmedHat
+  price: 0
+  equipment:
+    head: ClothingHeadHatWideBrimmed
+
+- type: loadout
+  id: PriestLoadoutPilgrimHat
+  price: 0
+  equipment:
+    head: ClothingHeadHatPilgrim
+
+- type: loadout
+  id: PriestLoadoutBishopMitre
+  price: 0
+  equipment:
+    head: ClothingHeadHatBishopMitre
+
+- type: loadout
+  id: PriestLoadoutCardinalHat
+  price: 0
+  equipment:
+    head: ClothingHeadHatCardinal
+
+- type: loadout
+  id: PriestLoadoutWitchHunterHat
+  price: 0
+  equipment:
+    head: ClothingHeadHatWitchhunter
+
+
+# Clothing
+
+- type: loadout
+  id: PriestLoadoutMonasticRobeDark
+  price: 0
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMonasticRobeDark
+
+- type: loadout
+  id: PriestLoadoutMonasticRobeLight
+  price: 0
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMonasticRobeLight
+
+- type: loadout
+  id: PriestLoadoutChaplainHoodie
+  price: 0
+  equipment:
+    outerClothing: ClothingOuterHoodieChaplain
+
+- type: loadout
+  id: PriestLoadoutBlackHoodie
+  price: 0
+  equipment:
+    outerClothing: ClothingOuterHoodieBlack
+
+- type: loadout
+  id: PriestLoadoutNunRobe
+  price: 0
+  equipment:
+    outerClothing: ClothingOuterNunRobe
+
+- type: loadout
+  id: PriestLoadoutPlagueSuit
+  price: 0
+  equipment:
+    outerClothing: ClothingOuterPlagueSuit
+
+- type: loadout
+  id: PriestLoadoutPilgrimVest
+  price: 0
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitChaplainPilgrimVest
+
+- type: loadout
+  id: PriestLoadoutBishopCoat
+  price: 0
+  equipment:
+    outerClothing: ClothingOuterCoatBishop
+
+- type: loadout
+  id: PriestLoadoutCardinalCoat
+  price: 0
+  equipment:
+    outerClothing: ClothingOuterCoatCardinal
+
+- type: loadout
+  id: PriestLoadoutWitchHunterCoat
+  price: 0
+  equipment:
+    outerClothing: ClothingOuterCoatWitchHunter
+
+- type: loadout
+  id: PriestLoadoutChaplainScarfStole
+  price: 0
+  equipment:
+    neck: ClothingNeckScarfChaplainStole
+
+- type: loadout
+  id: PriestLoadoutChaplainStole
+  price: 0
+  equipment:
+    neck: ClothingNeckStoleChaplain
+
+- type: loadout
+  id: PriestLoadoutChaplainSash
+  price: 0
+  equipment:
+    belt: ClothingBeltChaplainSash
+
+- type: loadout
+  id: PriestLoadoutCrucifix
+  price: 0
+  equipment:
+    neck: ClothingNeckCrucifix
+
+
+# Misc
+
+- type: loadout
+  id: PriestLoadoutBible
+  price: 0
+  inhand:
+  - Bible
+
+- type: loadout
+  id: PriestLoadoutCandleBox
+  price: 0
+  inhand:
+  - BoxCandle
+
+- type: loadout
+  id: PriestLoadoutSmallCandleBox
+  price: 0
+  inhand:
+  - BoxCandleSmall
+
+- type: loadout
+  id: PriestLoadoutUrn
+  price: 0
+  inhand:
+  - Urn
+
+- type: loadout
+  id: PriestLoadoutMortuaryUrn
+  price: 0
+  inhand:
+  - UrnMortuary
+
+- type: loadout
+  id: PriestLoadoutCenser
+  price: 0
+  inhand:
+  - Censer
+
+- type: loadout
+  id: PriestLoadoutSilverRing
+  price: 0
+  inhand:
+  - SilverRing
+
+- type: loadout
+  id: PriestLoadoutGoldRing
+  price: 0
+  inhand:
+  - GoldRing
+
+- type: loadout
+  id: PriestLoadoutHolyWater
+  price: 0
+  inhand:
+  - ChaplainHolywaterFlaskFilled
+  

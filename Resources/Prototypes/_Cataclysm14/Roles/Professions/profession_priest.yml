@@ -1,0 +1,17 @@
+- type: job
+  id: ProfessionPriest
+  name: profession-name-priest
+  description: profession-description-priest
+  playTimeTracker: ProfessionTimeTrackerPriest
+  setPreference: true
+  icon: JobIconChaplain
+  whitelisted: true
+  applyTraits: true
+  
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: BibleUser
+
+- type: playTimeTracker
+  id: ProfessionTimeTrackerPriest
