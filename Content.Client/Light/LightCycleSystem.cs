@@ -14,6 +14,39 @@ public sealed class LightCycleSystem : SharedLightCycleSystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly MetaDataSystem _metadata = default!;
 
+    public bool TryGetCycleProgress(out double progress)
+    {
+        var mapQuery = AllEntityQuery<LightCycleComponent, MapLightComponent>();
+        while (mapQuery.MoveNext(out var uid, out var cycle, out _))
+        {
+            if (!cycle.Running || !cycle.Enabled)
+                continue;
+
+            var durationSeconds = cycle.Duration.TotalSeconds;
+            if (durationSeconds <= 0)
+                continue;
+
+            // Keep the status tab clock sync'd with the exact time source
+            // used below to render the planet's day/night lighting
+            var pausedTime = _metadata.GetPauseTime(uid);
+            var elapsedSeconds = _timing.CurTime
+                .Add(cycle.Offset)
+                .Subtract(_ticker.RoundStartTimeSpan)
+                .Subtract(pausedTime)
+                .TotalSeconds;
+
+            var cycleSeconds = elapsedSeconds % durationSeconds;
+            if (cycleSeconds < 0)
+                cycleSeconds += durationSeconds;
+
+            progress = cycleSeconds / durationSeconds;
+            return true;
+        }
+
+        progress = 0;
+        return false;
+    }
+
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
