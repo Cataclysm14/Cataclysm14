@@ -42,7 +42,7 @@
       90: 0.7
       95: 0.4
   - type: Stamina
-    critThreshold: 100
+    critThreshold: 50
 
 #MARK: BaseZombie
 - type: entity
@@ -111,6 +111,7 @@
     attackMemoryLength: 10
   - type: MobMover
   - type: StandingState
+  - type: LayingDown
   - type: HumanoidAppearance
     species: SpecieZombieBase
   - type: RandomHumanoidAppearance
