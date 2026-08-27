@@ -23,6 +23,7 @@ using Robust.Shared.Containers;
 using Content.Shared._White.Standing;
 using Content.Shared.Jittering;
 using Content.Shared.Speech.EntitySystems;
+using Content.Shared.Zombies; //Cata14
 
 namespace Content.Shared.Stunnable;
 
@@ -116,11 +117,15 @@ public abstract class SharedStunSystem : EntitySystem
 
     }
 
-    private void UpdateCanMove(EntityUid uid, StunnedComponent component, EntityEventArgs args)
-    {
-        _blocker.UpdateCanMove(uid);
-    }
-
+	//Cata14 Tweak
+	protected virtual void UpdateCanMove(
+		EntityUid uid,
+		StunnedComponent component,
+		EntityEventArgs args)
+	{
+		_blocker.UpdateCanMove(uid);
+	}
+	//Cata14 End
     private void OnStunOnContactStartup(Entity<StunOnContactComponent> ent, ref ComponentStartup args)
     {
         if (TryComp<PhysicsComponent>(ent, out var body))
@@ -204,6 +209,24 @@ public abstract class SharedStunSystem : EntitySystem
 
         if (!_statusEffect.TryAddStatusEffect<StunnedComponent>(uid, "Stun", time, refresh))
             return false;
+			
+		// Cata14 Tweak; zombies fall over whenever they are stunned
+		if (HasComp<ZombieComponent>(uid))
+		{
+			var alreadyKnockedDown = HasComp<KnockedDownComponent>(uid);
+
+			if (_statusEffect.TryAddStatusEffect<KnockedDownComponent>(
+					uid,
+					"KnockedDown",
+					time,
+					refresh,
+					status) &&
+				!alreadyKnockedDown)
+			{
+				var knockdownEv = new KnockedDownEvent();
+				RaiseLocalEvent(uid, ref knockdownEv);
+			}
+		}
 
         // goob edit
         _jitter.DoJitter(uid, time, refresh);
