@@ -13,6 +13,9 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Client.Guidebook.Controls;
 
+// Cata14 Tweak: Comment blocked, will reference some of this later		-pierow
+
+/*
 [GenerateTypedNameReferences]
 public sealed partial class GuidebookWindow : FancyWindow, ILinkClickHandler
 {
@@ -213,5 +216,50 @@ public sealed partial class GuidebookWindow : FancyWindow, ILinkClickHandler
                 element.SetHiddenState(true, SearchBar.Text.Trim());
             }
         }
+    }
+}
+*/
+
+[GenerateTypedNameReferences]
+public sealed partial class GuidebookWindow : FancyWindow, ILinkClickHandler
+{
+    public ProtoId<GuideEntryPrototype> LastEntry;
+
+    public GuidebookWindow()
+    {
+        RobustXamlLoader.Load(this);
+    }
+
+    public void HandleClick(string link)
+    {
+    }
+
+    public void ClearSelectedGuide()
+    {
+        Tree.Clear();
+        TreeBox.Visible = false;
+        SearchContainer.Visible = false;
+        ReturnContainer.Visible = false;
+        Placeholder.Visible = false;
+
+        EntryContainer.RemoveAllChildren();
+        EntryContainer.Visible = true;
+
+        EntryContainer.AddChild(new Label
+        {
+            Text = "Work in progress"
+        });
+
+        Split.State = SplitContainer.SplitState.Auto;
+        Split.ResizeMode = SplitContainer.SplitResizeMode.NotResizable;
+    }
+
+    public void UpdateGuides(
+        Dictionary<ProtoId<GuideEntryPrototype>, GuideEntry> entries,
+        List<ProtoId<GuideEntryPrototype>>? rootEntries = null,
+        ProtoId<GuideEntryPrototype>? forceRoot = null,
+        ProtoId<GuideEntryPrototype>? selected = null)
+    {
+        ClearSelectedGuide();
     }
 }

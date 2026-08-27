@@ -41,7 +41,16 @@ namespace Content.Client.Info
             SetSize = new Vector2(650, 650);
         }
 
+		//Cata14 Tweak: WIP Tutorial page
         private void PopulateTutorial(Info tutorialList)
+		{
+			AddSection(tutorialList, new Label
+			{
+				Text = "Work in progress"
+			});
+		}
+
+/*         private void PopulateTutorial(Info tutorialList)
         {
             AddSection(tutorialList, Loc.GetString("ui-info-header-intro"), "Intro.txt");
             var infoControlSection = new InfoControlsSection();
@@ -52,6 +61,7 @@ namespace Content.Client.Info
             infoControlSection.ControlsButton.OnPressed += _ => UserInterfaceManager.GetUIController<OptionsUIController>().OpenWindow();
         }
 
+ */
         private static void AddSection(Info info, Control control)
         {
             info.InfoContainer.AddChild(control);

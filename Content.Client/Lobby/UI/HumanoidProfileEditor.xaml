@@ -146,8 +146,10 @@
                         <BoxContainer Name="TraitsList" Orientation="Vertical" />
                     </ScrollContainer>
                 </BoxContainer>
-                <!-- Monolith: Company Tab -->
-                <BoxContainer Orientation="Vertical" Margin="10">
+                <!-- Cata14: no companies, all must be poor -->
+				<!-- Monolith: Company Tab
+                <BoxContainer Orientation="Vertical" Margin="10"> -->
+				<BoxContainer Name="CompanyTab" Orientation="Vertical" Margin="10">
                     <!-- Company -->
                     <ScrollContainer VerticalExpand="True">
                         <!-- Select -->
