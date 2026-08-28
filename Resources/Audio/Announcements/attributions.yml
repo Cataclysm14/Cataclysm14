@@ -10,8 +10,8 @@
 
 - files: ["attention.ogg"]
   license: "CC-BY-SA-3.0"
-  copyright: "Taken from tgstation"
-  source: "https://github.com/tgstation/tgstation/blob/40d89d11ea4a5cb81d61dc1018b46f4e7d32c62a/sound/ai/default/attention.ogg"
+  copyright: "Taken from Cb Radio Static - Sound Effects"
+  source: "https://www.youtube.com/watch?v=oYt-mxZKFxA"
 
 - files: ["meteors.ogg"]
   license: "CC-BY-SA-3.0"
@@ -25,13 +25,13 @@
 
 - files: ["welcome.ogg"]
   license: "CC-BY-SA-3.0"
-  copyright: "Taken from tgstation"
-  source: "https://github.com/tgstation/tgstation/blob/40d89d11ea4a5cb81d61dc1018b46f4e7d32c62a/sound/ai/default/welcome.ogg"
+  copyright: "Taken from L4D2"
+  source: "https://sounds.spriters-resource.com/pc_computer/left4dead2/asset/412933/"
 
 - files: ["announce.ogg"]
   license: "CC-BY-SA-3.0"
-  copyright: "Taken from tgstation, cut from the beginning"
-  source: "https://github.com/tgstation/tgstation/blob/40d89d11ea4a5cb81d61dc1018b46f4e7d32c62a/sound/ai/default/shuttlerecalled.ogg"
+  copyright: "Taken from Cb Radio Static - Sound Effects"
+  source: "https://www.youtube.com/watch?v=oYt-mxZKFxA"
 
 - files: ["shuttle_dock.ogg"]
   license: "CC-BY-SA-3.0"
