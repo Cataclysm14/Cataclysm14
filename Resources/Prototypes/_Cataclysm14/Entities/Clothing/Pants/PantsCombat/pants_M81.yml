@@ -1,0 +1,41 @@
+#MARK: Pants
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatM81Pants
+  name: combat pants (M81 patern)
+  description: >
+    Ripstop combat pants.
+    It has the M81 american forces woodland camo.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/M81/pants_M81_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/M81/pants_M81_pants.rsi
+
+#MARK: Cargo Pants
+- type: entity
+  parent: BaseClothingPantsCargo
+  id: ClothingPantsCombatM81CargoPants
+  name: cargo combat pants (M81 patern)
+  description: >
+    Ripstop combat pants with large pockets.
+    It has the M81 american forces woodland camo.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/M81/pants_M81_cargo_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/M81/pants_M81_cargo_pants.rsi
+
+#MARK: Shorts
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatM81Shorts
+  name: combat shorts (M81 patern)
+  description: >
+    Ripstop combat shorts.
+    It has the M81 american forces woodland camo.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/M81/pants_M81_shorts.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/M81/pants_M81_shorts.rsi

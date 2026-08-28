@@ -103,9 +103,9 @@
     - sprite: _Mono/Clothing/Balaclavas/balaclava_classic.rsi
       state: equipped-BALACLAVA
       color: "#131313"
-    - sprite: _Cataclysm14/Clothing/Shirt/shirt_digital_black.rsi
+    - sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/DigitalBlack/shirt_digital_black_jacket.rsi
       state: equipped-INNERCLOTHING
-    - sprite: _Cataclysm14/Clothing/Pants/pants_digital_black.rsi
+    - sprite: _Cataclysm14/Clothing/Pants/PantsCombat/DigitalBlack/pants_digital_black_cargo_pants.rsi
       state: equipped-PANTS
       offset: 0,0.08
     - sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_M88_any.rsi

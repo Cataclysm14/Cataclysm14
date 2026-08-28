@@ -61,35 +61,35 @@
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatUCP
-          - id: ClothingPantsCombatUCPCargo
+          - id: ClothingPantsCombatUCPPants
+          - id: ClothingPantsCombatUCPCargoPants
           prob: 0.99
         jumpsuit: !type:GroupSelector
           children:
-          - id: ClothingShirtCombatUCP
-          - id: ClothingShirtCombatUCPCargo
+          - id: ClothingShirtCombatUCPTShirt
+          - id: ClothingShirtCombatUCPJacket
           prob: 0.99
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatMulticamOCP
-          - id: ClothingPantsCombatMulticamOCPCargo
+          - id: ClothingPantsCombatOCPPants
+          - id: ClothingPantsCombatOCPCargoPants
           prob: 0.99
         jumpsuit: !type:GroupSelector
           children:
-          - id: ClothingShirtCombatMulticamOCP
-          - id: ClothingShirtCombatMulticamOCPCargo
+          - id: ClothingShirtCombatOCPTShirt
+          - id: ClothingShirtCombatOCPJacket
           prob: 0.99
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatM81
-          - id: ClothingPantsCombatM81Cargo
+          - id: ClothingPantsCombatM81Pants
+          - id: ClothingPantsCombatM81CargoPants
           prob: 0.99
         jumpsuit: !type:GroupSelector
           children:
-          - id: ClothingShirtCombatM81
-          - id: ClothingShirtCombatM81Cargo
+          - id: ClothingShirtCombatM81TShirt
+          - id: ClothingShirtCombatM81Jacket
           prob: 0.99
 
 #MARK: National Guard CBRN
@@ -162,25 +162,20 @@
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatUCP
-          - id: ClothingPantsCombatUCPCargo
+          - id: ClothingPantsCombatUCPPants
+          - id: ClothingPantsCombatUCPCargoPants
           prob: 0.99
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatMulticamOCP
-          - id: ClothingPantsCombatMulticamOCPCargo
+          - id: ClothingPantsCombatOCPPants
+          - id: ClothingPantsCombatOCPCargoPants
           prob: 0.99
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatM81
-          - id: ClothingPantsCombatM81Cargo
-          prob: 0.99
-        jumpsuit: !type:GroupSelector
-          children:
-          - id: ClothingShirtCombatM81
-          - id: ClothingShirtCombatM81Cargo
+          - id: ClothingPantsCombatM81Pants
+          - id: ClothingPantsCombatM81CargoPants
           prob: 0.99
 
 #MARK: FEMA
@@ -243,25 +238,20 @@
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatUCP
-          - id: ClothingPantsCombatUCPCargo
+          - id: ClothingPantsCombatUCPPants
+          - id: ClothingPantsCombatUCPCargoPants
           prob: 0.99
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatMulticamOCP
-          - id: ClothingPantsCombatMulticamOCPCargo
+          - id: ClothingPantsCombatOCPPants
+          - id: ClothingPantsCombatOCPCargoPants
           prob: 0.99
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatM81
-          - id: ClothingPantsCombatM81Cargo
-          prob: 0.99
-        jumpsuit: !type:GroupSelector
-          children:
-          - id: ClothingShirtCombatM81
-          - id: ClothingShirtCombatM81Cargo
+          - id: ClothingPantsCombatM81Pants
+          - id: ClothingPantsCombatM81CargoPants
           prob: 0.99
 
 #MARK: US Army Woodland Infantry
@@ -327,13 +317,13 @@
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatM81
-          - id: ClothingPantsCombatM81Cargo
+          - id: ClothingPantsCombatM81Pants
+          - id: ClothingPantsCombatM81CargoPants
           prob: 0.99
         jumpsuit: !type:GroupSelector
           children:
-          - id: ClothingShirtCombatM81
-          - id: ClothingShirtCombatM81Cargo
+          - id: ClothingShirtCombatM81TShirt
+          - id: ClothingShirtCombatM81Jacket
           prob: 0.99
 
 #MARK: US Army Desert Infantry
@@ -359,7 +349,7 @@
         prob: 0.95
       head: !type:GroupSelector
         children:
-        - id: ClothingHeadHelmetBulletproofACHMulticamOCP
+        - id: ClothingHeadHelmetBulletproofACHOCP
         prob: 0.8
       belt: !type:GroupSelector
         children:
@@ -400,22 +390,44 @@
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatUCP
-          - id: ClothingPantsCombatUCPCargo
+          - id: ClothingPantsCombatUCPPants
+          - id: ClothingPantsCombatUCPCargoPants
           prob: 0.99
         jumpsuit: !type:GroupSelector
           children:
-          - id: ClothingShirtCombatUCP
-          - id: ClothingShirtCombatUCPCargo
+          - id: ClothingShirtCombatUCPTShirt
+          - id: ClothingShirtCombatUCPJacket
           prob: 0.99
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatMulticamOCP
-          - id: ClothingPantsCombatMulticamOCPCargo
+          - id: ClothingPantsCombatOCPPants
+          - id: ClothingPantsCombatOCPCargoPants
           prob: 0.99
         jumpsuit: !type:GroupSelector
           children:
-          - id: ClothingShirtCombatMulticamOCP
-          - id: ClothingShirtCombatMulticamOCPCargo
+          - id: ClothingShirtCombatOCPTShirt
+          - id: ClothingShirtCombatOCPJacket
+          prob: 0.99
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatMulticamDesertPants
+          - id: ClothingPantsCombatMulticamDesertCargoPants
+          prob: 0.99
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatMulticamDesertTShirt
+          - id: ClothingShirtCombatMulticamDesertJacket
+          prob: 0.99
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatMulticamAridPants
+          - id: ClothingPantsCombatMulticamAridCargoPants
+          prob: 0.99
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatMulticamAridTShirt
+          - id: ClothingShirtCombatMulticamAridJacket
           prob: 0.99

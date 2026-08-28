@@ -1,0 +1,44 @@
+#MARK: TShirt
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtCombatMulticamAridTShirt
+  name: combat t-shirt (multicam arid)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally created by the American company Crye Precision the multicam arid patern was adopted by a pletora of army throughout the world.
+    This one dones darker and more contrasted colors with more tan for arid environments.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/MulticamArid/shirt_multicam_arid_Tshirt.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/MulticamArid/shirt_multicam_arid_Tshirt.rsi
+
+#MARK: Cargo
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatMulticamAridJacket
+  name: combat jacket (multicam arid)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally created by the American company Crye Precision the multicam arid patern was adopted by a pletora of army throughout the world.
+    This one dones darker and more contrasted colors with more tan for arid environments.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/MulticamArid/shirt_multicam_arid_jacket.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/MulticamArid/shirt_multicam_arid_jacket.rsi
+
+#MARK: Shirt
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatMulticamAridShirt
+  name: combat shirt (multicam arid)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally created by the American company Crye Precision the multicam arid patern was adopted by a pletora of army throughout the world.
+    This one dones darker and more contrasted colors with more tan for arid environments.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/MulticamArid/shirt_multicam_arid_shirt.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/MulticamArid/shirt_multicam_arid_shirt.rsi

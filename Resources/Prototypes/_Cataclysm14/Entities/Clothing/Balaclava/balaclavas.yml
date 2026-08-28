@@ -12,7 +12,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskBlack
-  name: black ski mask balaclava
+  name: ski mask (black)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -37,7 +37,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskGray
-  name: gray ski mask balaclava
+  name: ski mask (gray)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -62,7 +62,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskWhite
-  name: white ski mask balaclava
+  name: ski mask (white)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -83,7 +83,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskRed
-  name: red ski mask balaclava
+  name: ski mask (red)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -108,7 +108,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskGreen
-  name: green ski mask balaclava
+  name: ski mask (green)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -133,7 +133,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskBlue
-  name: blue ski mask balaclava
+  name: ski mask (blue)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -158,7 +158,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskPurple
-  name: purple ski mask balaclava
+  name: ski mask (purple)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -183,7 +183,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskYellow
-  name: yellow ski mask balaclava
+  name: ski mask (yellow)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -208,7 +208,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskTan
-  name: tan ski mask balaclava
+  name: ski mask (tan)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -233,7 +233,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskRangerGreen
-  name: ranger green ski mask balaclava
+  name: ski mask (ranger green)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -258,7 +258,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskCoyoteBrown
-  name: coyote brown ski mask balaclava
+  name: ski mask (coyote brown)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -290,7 +290,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskMouthBlack
-  name: black ski mask balaclava (mouth)
+  name: ski mask (mouth) (black)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -315,7 +315,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskMouthGray
-  name: gray ski mask balaclava (mouth)
+  name: ski mask (mouth) (gray)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -340,7 +340,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskMouthWhite
-  name: white ski mask balaclava (mouth)
+  name: ski mask (mouth) (white)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -361,7 +361,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskMouthRed
-  name: red ski mask balaclava (mouth)
+  name: ski mask (mouth) (red)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -386,7 +386,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskMouthGreen
-  name: green ski mask balaclava (mouth)
+  name: ski mask (mouth) (green)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -411,7 +411,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskMouthBlue
-  name: blue ski mask balaclava (mouth)
+  name: ski mask (mouth) (blue)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -436,7 +436,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskMouthPurple
-  name: purple ski mask balaclava (mouth)
+  name: ski mask (mouth) (purple)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -461,7 +461,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskMouthYellow
-  name: yellow ski mask balaclava (mouth)
+  name: ski mask (mouth) (yellow)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -486,7 +486,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskMouthTan
-  name: tan ski mask balaclava (mouth)
+  name: ski mask (mouth) (tan)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -511,7 +511,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskMouthRangerGreen
-  name: ranger green ski mask balaclava (mouth)
+  name: ski mask (mouth) (ranger green)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -536,7 +536,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaSkiMaskMouthCoyoteBrown
-  name: coyote brown ski mask balaclava (mouth)
+  name: ski mask (mouth) (coyote brown)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -568,7 +568,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicBlack
-  name: black classic balaclava
+  name: balaclava (black)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -593,7 +593,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicGray
-  name: gray classic balaclava
+  name: balaclava (gray)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -618,7 +618,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicWhite
-  name: white classic balaclava
+  name: balaclava (white)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -639,7 +639,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicRed
-  name: red classic balaclava
+  name: balaclava (red)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -664,7 +664,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicGreen
-  name: green classic balaclava
+  name: balaclava (green)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -689,7 +689,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicBlue
-  name: blue classic balaclava
+  name: balaclava (blue)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -714,7 +714,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicPurple
-  name: purple classic balaclava
+  name: balaclava (purple)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -739,7 +739,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicYellow
-  name: yellow classic balaclava
+  name: balaclava (yellow)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -764,7 +764,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicTan
-  name: tan classic balaclava
+  name: balaclava (tan)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -789,7 +789,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicRangerGreen
-  name: ranger green classic balaclava
+  name: balaclava (ranger green)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -814,7 +814,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicCoyoteBrown
-  name: coyote brown classic balaclava
+  name: balaclava (coyote brown)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -846,7 +846,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicMouthBlack
-  name: black classic balaclava (mouth)
+  name: balaclava (mouth) (black)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -871,7 +871,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicMouthGray
-  name: gray classic balaclava (mouth)
+  name: balaclava (mouth) (gray)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -896,7 +896,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicMouthWhite
-  name: white classic balaclava (mouth)
+  name: balaclava (mouth) (white)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -917,7 +917,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicMouthRed
-  name: red classic balaclava (mouth)
+  name: balaclava (mouth) (red)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -942,7 +942,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicMouthGreen
-  name: green classic balaclava (mouth)
+  name: balaclava (mouth) (green)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -967,7 +967,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicMouthBlue
-  name: blue classic balaclava (mouth)
+  name: balaclava (mouth) (blue)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -992,7 +992,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicMouthPurple
-  name: purple classic balaclava (mouth)
+  name: balaclava (mouth) (purple)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -1017,7 +1017,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicMouthYellow
-  name: yellow classic balaclava (mouth)
+  name: balaclava (mouth) (yellow)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -1042,7 +1042,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicMouthTan
-  name: tan classic balaclava (mouth)
+  name: balaclava (mouth) (tan)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -1067,7 +1067,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicMouthRangerGreen
-  name: ranger green classic balaclava (mouth)
+  name: balaclava (mouth) (ranger green)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
@@ -1092,7 +1092,7 @@
 - type: entity
   parent: BaseClothingBalaclava
   id: ClothingBalaclavaBalaclavaClassicMouthCoyoteBrown
-  name: coyote brown classic balaclava (mouth)
+  name: balaclava (mouth) (coyote brown)
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite

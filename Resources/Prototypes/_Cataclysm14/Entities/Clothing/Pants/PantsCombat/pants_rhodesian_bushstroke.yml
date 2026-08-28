@@ -1,0 +1,41 @@
+#MARK: Pants
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatRhodesianBushstrokePants
+  name: combat pants (rhodesian bushstroke)
+  description: >
+    Ripstop combat pants.
+    It has the rhodesian bushstroke camo of the Rhodesian Security Forces, used between 1965 and 1980. Just missing a trusty FN FAL.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/RhodesianBushstroke/pants_rhodesian_bushstroke_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/RhodesianBushstroke/pants_rhodesian_bushstroke_pants.rsi
+
+#MARK: Cargo Pants
+- type: entity
+  parent: BaseClothingPantsCargo
+  id: ClothingPantsCombatRhodesianBushstrokeCargoPants
+  name: cargo combat pants (rhodesian bushstroke)
+  description: >
+    Ripstop combat pants with large pockets.
+    It has the rhodesian bushstroke camo of the Rhodesian Security Forces, used between 1965 and 1980. Just missing a trusty FN FAL.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/RhodesianBushstroke/pants_rhodesian_bushstroke_cargo_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/RhodesianBushstroke/pants_rhodesian_bushstroke_cargo_pants.rsi
+
+#MARK: Shorts
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatRhodesianBushstrokeShorts
+  name: combat shorts (rhodesian bushstroke)
+  description: >
+    Ripstop combat shorts.
+    It has the rhodesian bushstroke camo of the Rhodesian Security Forces, used between 1965 and 1980. Just missing a trusty FN FAL.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/RhodesianBushstroke/pants_rhodesian_bushstroke_shorts.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/RhodesianBushstroke/pants_rhodesian_bushstroke_shorts.rsi

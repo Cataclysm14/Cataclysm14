@@ -1,0 +1,44 @@
+#MARK: TShirt
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtCombatMulticamWoodlandTShirt
+  name: combat t-shirt (multicam woodland)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally created by the American company Crye Precision the multicam woodland patern was adopted by a pletora of army throughout the world.
+    This one dones greener and darker colors for cold forests.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/MulticamWoodland/shirt_multicam_woodland_Tshirt.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/MulticamWoodland/shirt_multicam_woodland_Tshirt.rsi
+
+#MARK: Cargo
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatMulticamWoodlandJacket
+  name: combat jacket (multicam woodland)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally created by the American company Crye Precision the multicam woodland patern was adopted by a pletora of army throughout the world.
+    This one dones greener and darker colors for cold forests.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/MulticamWoodland/shirt_multicam_woodland_jacket.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/MulticamWoodland/shirt_multicam_woodland_jacket.rsi
+
+#MARK: Shirt
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatMulticamWoodlandShirt
+  name: combat shirt (multicam woodland)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally created by the American company Crye Precision the multicam woodland patern was adopted by a pletora of army throughout the world.
+    This one dones greener and darker colors for cold forests.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/MulticamWoodland/shirt_multicam_woodland_shirt.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/MulticamWoodland/shirt_multicam_woodland_shirt.rsi

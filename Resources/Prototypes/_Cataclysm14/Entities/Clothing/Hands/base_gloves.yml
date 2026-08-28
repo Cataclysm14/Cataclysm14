@@ -1,0 +1,44 @@
+- type: entity
+  parent: ClothingHandsGlovesColorBlack
+  id: BaseClothingHandsGloves
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/combat.rsi
+    scale: 0.4,0.4
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/combat.rsi
+
+- type: entity
+  parent: BaseClothingHandsGloves
+  id: BaseClothingHandsGlovesCombat
+  abstract: true
+  name: combat gloves
+  description: These combat gloves are fireproof and shock resistant.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/combat.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/combat.rsi
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-insulative
+  - type: StaminaDamageResistance # Mono - Stamres
+    coefficient: 0.95 # *grabs ur baton* nice knife
+
+- type: entity
+  parent: BaseClothingHandsGloves
+  id: BaseClothingHandsGlovesTactical
+  abstract: true
+  name: tactical gloves
+  description: These tactical gloves are fireproof and shock resistant.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/combat.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/combat.rsi
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-insulative
+  - type: StaminaDamageResistance # Mono - Stamres
+    coefficient: 0.95 # *grabs ur baton* nice knife

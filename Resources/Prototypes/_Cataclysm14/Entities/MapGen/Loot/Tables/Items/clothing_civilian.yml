@@ -120,7 +120,7 @@
         tableId: LootTableClothingBeanie
       - !type:NestedSelector
         weight: 100
-        tableId: LootTableClothingHeadHatCap
+        tableId: LootTableClothingHeadHatCapBaseball
 
 #MARK: TShirt
 - type: entityTable
@@ -356,20 +356,20 @@
 
 #MARK: HeadHatCap
 - type: entityTable
-  id: LootTableClothingHeadHatCap
+  id: LootTableClothingHeadHatCapBaseball
   table: !type:GroupSelector
     children:
-    - id: ClothingHeadHatCapWhite
-    - id: ClothingHeadHatCapRed
-    - id: ClothingHeadHatCapBlue
-    - id: ClothingHeadHatCapGreen
-    - id: ClothingHeadHatCapYellow
-    - id: ClothingHeadHatCapPurple
-    - id: ClothingHeadHatCapBlack
-    - id: ClothingHeadHatCapBeige
-    - id: ClothingHeadHatCapBrown
-    - id: ClothingHeadHatCapOlive
-    - id: ClothingHeadHatCapRangerGreen
+    - id: ClothingHeadHatCapBaseballWhite
+    - id: ClothingHeadHatCapBaseballRed
+    - id: ClothingHeadHatCapBaseballBlue
+    - id: ClothingHeadHatCapBaseballGreen
+    - id: ClothingHeadHatCapBaseballYellow
+    - id: ClothingHeadHatCapBaseballPurple
+    - id: ClothingHeadHatCapBaseballBlack
+    - id: ClothingHeadHatCapBaseballBeige
+    - id: ClothingHeadHatCapBaseballBrown
+    - id: ClothingHeadHatCapBaseballOlive
+    - id: ClothingHeadHatCapBaseballRangerGreen
 
 #MARK: ShirtStrippedMariniereTeslnyashka
 - type: entityTable

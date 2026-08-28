@@ -1,0 +1,44 @@
+#MARK: TShirt
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtCombatMulticamDesertTShirt
+  name: combat t-shirt (multicam desert)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally created by the American company Crye Precision the multicam desert patern was adopted by a pletora of army throughout the world.
+    This one dones lighter sand and rock colors for desertic environments.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/MulticamDesert/shirt_multicam_desert_Tshirt.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/MulticamDesert/shirt_multicam_desert_Tshirt.rsi
+
+#MARK: Cargo
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatMulticamDesertJacket
+  name: combat jacket (multicam desert)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally created by the American company Crye Precision the multicam desert patern was adopted by a pletora of army throughout the world.
+    This one dones lighter sand and rock colors for desertic environments.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/MulticamDesert/shirt_multicam_desert_jacket.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/MulticamDesert/shirt_multicam_desert_jacket.rsi
+
+#MARK: Shirt
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatMulticamDesertShirt
+  name: combat shirt (multicam desert)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally created by the American company Crye Precision the multicam desert patern was adopted by a pletora of army throughout the world.
+    This one dones lighter sand and rock colors for desertic environments.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/MulticamDesert/shirt_multicam_desert_shirt.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/MulticamDesert/shirt_multicam_desert_shirt.rsi

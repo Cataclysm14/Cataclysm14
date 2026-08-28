@@ -1,0 +1,44 @@
+#MARK: TShirt
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtCombatFlecktarnAutumnTShirt
+  name: combat t-shirt (autumn flektarn)
+  description: >
+    Ripstop combat t-shirt with medium sleeves.
+    Originally used by german SS units, kept by the german federal army Bundeswehr and adapted in multiple palettes with a patern adapted to most environments.
+    This particular version is colored in autumn colors with a mix of brown, tan, orange and black.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/FlecktarnAutumn/shirt_flecktarn_autumn_Tshirt.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/FlecktarnAutumn/shirt_flecktarn_autumn_Tshirt.rsi
+
+#MARK: Cargo
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatFlecktarnAutumnJacket
+  name: combat jacket (autumn flektarn)
+  description: >
+    Ripstop combat jacket with large pockets.
+    Originally used by german SS units, kept by the german federal army Bundeswehr and adapted in multiple palettes with a patern adapted to most environments.
+    This particular version is colored in autumn colors with a mix of brown, tan, orange and black.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/FlecktarnAutumn/shirt_flecktarn_autumn_jacket.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/FlecktarnAutumn/shirt_flecktarn_autumn_jacket.rsi
+
+#MARK: Shirt
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatFlecktarnAutumnShirt
+  name: combat shirt (autumn flektarn)
+  description: >
+    Ripstop combat shirt.
+    Originally used by german SS units, kept by the german federal army Bundeswehr and adapted in multiple palettes with a patern adapted to most environments.
+    This particular version is colored in autumn colors with a mix of brown, tan, orange and black.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/FlecktarnAutumn/shirt_flecktarn_autumn_shirt.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/FlecktarnAutumn/shirt_flecktarn_autumn_shirt.rsi

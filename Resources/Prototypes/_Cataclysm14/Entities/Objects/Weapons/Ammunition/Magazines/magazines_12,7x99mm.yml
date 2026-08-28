@@ -21,6 +21,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
+    scale: 0.25,0.25
     sprite: _Cataclysm14/Objects/Weapons/Magazines/12,7x99mm/12,7x99mm_mag.rsi
     layers:
     - state: base

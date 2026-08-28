@@ -10,7 +10,7 @@
         tableId: LootTableClothingPoliceUsBulletProofVest
       head: !type:GroupSelector
         children:
-        - id: ClothingHeadHatCapPoliceUS
+        - id: ClothingHeadHatCapBaseballPoliceUS
       belt: !type:GroupSelector
         children:
         - id: ClothingBeltDutyBeltPoliceFilledPolice
@@ -67,7 +67,7 @@
       pants: !type:GroupSelector
         children:
         - id: ClothingPantsPoliceCopUS
-        - id: ClothingPantsCombatDigitalBlack
+        - id: ClothingPantsCombatDigitalBlackCargoPants
       jumpsuit: !type:GroupSelector
         children:
         - id: ClothingShirtPoliceCopUS

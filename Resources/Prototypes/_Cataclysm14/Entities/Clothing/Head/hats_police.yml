@@ -1,7 +1,7 @@
 #MARK: RU cop cap
     - type: entity
       parent: BaseClothingHead
-      id: ClothingHeadHatCapPoliceRU
+      id: ClothingHeadHatCapBaseballPoliceRU
       name: russian police cap
       description: Donning the colours of the russian police and made for russian police officers.
       components:
@@ -14,7 +14,7 @@
 #MARK: US cop cap
     - type: entity
       parent: BaseClothingHead
-      id: ClothingHeadHatCapPoliceUS
+      id: ClothingHeadHatCapBaseballPoliceUS
       name: US police cap
       description: Donning the colours of the US police force and made for american police officers.
       components:
