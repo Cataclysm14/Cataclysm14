@@ -549,6 +549,9 @@ namespace Content.Client.Lobby.UI
 
             UpdateSpeciesGuidebookIcon();
             UpdateCompanyControls();
+			// Cata14 Tweak: Hide Company from character customization
+			// Keep intact so existing company code doesn't break
+			TabContainer.RemoveChild(CompanyTab);
             IsDirty = false;
         }
 

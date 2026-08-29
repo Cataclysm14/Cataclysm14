@@ -313,6 +313,9 @@ namespace Content.Client.Actions
             var yamlStream = new YamlStream();
             yamlStream.Load(reader);
 
+            if (yamlStream.Documents.Count == 0) // Cataclysm14
+                return; // Cataclysm14
+
             if (yamlStream.Documents[0].RootNode.ToDataNode() is not SequenceDataNode sequence)
                 return;
 

@@ -51,3 +51,10 @@
 #MARK: Bathroom
   - type: Tag
     id: CataRoomSpawnerHouseBathroomBase3x3
+
+#MARK: Storage Unit Civ
+  - type: Tag
+    id: CataRoomSpawnerStorageUnitCivilian3x3
+
+  - type: Tag
+    id: CataRoomSpawnerStorageUnitCivilian3x4

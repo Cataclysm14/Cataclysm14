@@ -8,3 +8,14 @@
   - LoadoutGroupEyewear
   - LoadoutGroupHat
   - LoadoutGroupShirt
+
+- type: roleLoadout
+  id: JobProfessionPriest
+  groups:
+  - LoadoutGroupPants
+  - LoadoutGroupShoes
+  - LoadoutGroupPriestEyewear
+  - LoadoutGroupPriestHat
+  - LoadoutGroupPriestShirt
+  - LoadoutGroupPriestGear
+  - LoadoutGroupPriestAccessories
