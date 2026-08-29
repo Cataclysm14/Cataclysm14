@@ -1,29 +1,79 @@
-#MARK:  white
+#MARK: flippable base
 - type: entity
   parent: ClothingHeadBase
+  id: ClothingHeadHatCapBaseFlippable
+  abstract: true
+  components:
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: fold-flip-verb
+    foldVerbText: fold-flip-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: flipped
+    foldedHeldPrefix: flipped
+  - type: Sprite
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon_raised
+      map: ["foldedLayer"]
+      visible: false
+
+#MARK: flipped base
+- type: entity
+  parent: ClothingHeadHatCapBaseFlippable
+  id: ClothingHeadHatCapBaseFlipped
+  suffix: flipped
+  abstract: true
+  components:
+  - type: Foldable
+    folded: true
+  - type: Clothing
+    equippedPrefix: flipped
+  - type: Item
+    heldPrefix: flipped
+  - type: Sprite
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+      visible: false
+    - state: icon_raised
+      map: ["foldedLayer"]
+      visible: true
+
+#MARK:  white
+- type: entity
+  parent: ClothingHeadHatCapBaseFlippable
   id: ClothingHeadHatCapWhite
   name: cap (white)
-  description: A plain colored t-shirt.
+  description: A plain colored cap.
   components:
   - type: Sprite
     scale: 0.5,0.5
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
+
+#MARK: white flipped
+- type: entity
+  parent: [ClothingHeadHatCapBaseFlipped, ClothingHeadHatCapWhite]
+  id: ClothingHeadHatCapWhiteFlipped
+  name: cap (white)
 
 #MARK:  red
 - type: entity
-  parent: ClothingHeadBase
+  parent: ClothingHeadHatCapBaseFlippable
   id: ClothingHeadHatCapRed
   name: cap (red)
-  description: A plain colored t-shirt.
+  description: A plain colored cap.
   components:
   - type: Sprite
     scale: 0.5,0.5
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
     color: "#9E1A1A"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
     clothingVisuals:
       head:
       - state: equipped-HELMET
@@ -36,20 +86,29 @@
       right:
       - state: inhand-right
         color: "#9E1A1A"
+  - type: HoodedClothing
+    visualLayerKey: head
+    baseState: equipped-HELMET
+
+#MARK: red flipped
+- type: entity
+  parent: [ClothingHeadHatCapBaseFlipped, ClothingHeadHatCapRed]
+  id: ClothingHeadHatCapRedFlipped
+  name: cap (red)
 
 #MARK:  blue
 - type: entity
-  parent: ClothingHeadBase
+  parent: ClothingHeadHatCapBaseFlippable
   id: ClothingHeadHatCapBlue
   name: cap (blue)
-  description: A plain colored t-shirt.
+  description: A plain colored cap.
   components:
   - type: Sprite
     scale: 0.5,0.5
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
     color: "#404691"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
     clothingVisuals:
       head:
       - state: equipped-HELMET
@@ -62,20 +121,29 @@
       right:
       - state: inhand-right
         color: "#404691"
+  - type: HoodedClothing
+    visualLayerKey: head
+    baseState: equipped-HELMET
+
+#MARK: blue flipped
+- type: entity
+  parent: [ClothingHeadHatCapBaseFlipped, ClothingHeadHatCapBlue]
+  id: ClothingHeadHatCapBlueFlipped
+  name: cap (blue)
 
 #MARK:  green
 - type: entity
-  parent: ClothingHeadBase
+  parent: ClothingHeadHatCapBaseFlippable
   id: ClothingHeadHatCapGreen
   name: cap (green)
-  description: A plain colored t-shirt.
+  description: A plain colored cap.
   components:
   - type: Sprite
     scale: 0.5,0.5
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
     color: "#3d8c40"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
     clothingVisuals:
       head:
       - state: equipped-HELMET
@@ -88,20 +156,29 @@
       right:
       - state: inhand-right
         color: "#3d8c40"
+  - type: HoodedClothing
+    visualLayerKey: head
+    baseState: equipped-HELMET
+
+#MARK: green flipped
+- type: entity
+  parent: [ClothingHeadHatCapBaseFlipped, ClothingHeadHatCapGreen]
+  id: ClothingHeadHatCapGreenFlipped
+  name: cap (green)
 
 #MARK:  yellow
 - type: entity
-  parent: ClothingHeadBase
+  parent: ClothingHeadHatCapBaseFlippable
   id: ClothingHeadHatCapYellow
   name: cap (yellow)
-  description: A plain colored t-shirt.
+  description: A plain colored cap.
   components:
   - type: Sprite
     scale: 0.5,0.5
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
     color: "#A89B25"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
     clothingVisuals:
       head:
       - state: equipped-HELMET
@@ -114,20 +191,29 @@
       right:
       - state: inhand-right
         color: "#A89B25"
+  - type: HoodedClothing
+    visualLayerKey: head
+    baseState: equipped-HELMET
+
+#MARK: yellow flipped
+- type: entity
+  parent: [ClothingHeadHatCapBaseFlipped, ClothingHeadHatCapYellow]
+  id: ClothingHeadHatCapYellowFlipped
+  name: cap (yellow)
 
 #MARK:  purple
 - type: entity
-  parent: ClothingHeadBase
+  parent: ClothingHeadHatCapBaseFlippable
   id: ClothingHeadHatCapPurple
   name: cap (purple)
-  description: A plain colored t-shirt.
+  description: A plain colored cap.
   components:
   - type: Sprite
     scale: 0.5,0.5
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
     color: "#702963"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
     clothingVisuals:
       head:
       - state: equipped-HELMET
@@ -140,20 +226,29 @@
       right:
       - state: inhand-right
         color: "#702963"
+  - type: HoodedClothing
+    visualLayerKey: head
+    baseState: equipped-HELMET
+
+#MARK: purple flipped
+- type: entity
+  parent: [ClothingHeadHatCapBaseFlipped, ClothingHeadHatCapPurple]
+  id: ClothingHeadHatCapPurpleFlipped
+  name: cap (purple)
 
 #MARK:  black
 - type: entity
-  parent: ClothingHeadBase
+  parent: ClothingHeadHatCapBaseFlippable
   id: ClothingHeadHatCapBlack
   name: cap (black)
-  description: A plain colored t-shirt.
+  description: A plain colored cap.
   components:
   - type: Sprite
     scale: 0.5,0.5
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
     color: "#444444"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
     clothingVisuals:
       head:
       - state: equipped-HELMET
@@ -166,20 +261,29 @@
       right:
       - state: inhand-right
         color: "#444444"
+  - type: HoodedClothing
+    visualLayerKey: head
+    baseState: equipped-HELMET
+
+#MARK: black flipped
+- type: entity
+  parent: [ClothingHeadHatCapBaseFlipped, ClothingHeadHatCapBlack]
+  id: ClothingHeadHatCapBlackFlipped
+  name: cap (black)
 
 #MARK:  beige
 - type: entity
-  parent: ClothingHeadBase
+  parent: ClothingHeadHatCapBaseFlippable
   id: ClothingHeadHatCapBeige
   name: cap (beige)
-  description: A plain colored t-shirt.
+  description: A plain colored cap.
   components:
   - type: Sprite
     scale: 0.5,0.5
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
     color: "#CDBEA1"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
     clothingVisuals:
       head:
       - state: equipped-HELMET
@@ -192,20 +296,29 @@
       right:
       - state: inhand-right
         color: "#CDBEA1"
+  - type: HoodedClothing
+    visualLayerKey: head
+    baseState: equipped-HELMET
+
+#MARK: beige flipped
+- type: entity
+  parent: [ClothingHeadHatCapBaseFlipped, ClothingHeadHatCapBeige]
+  id: ClothingHeadHatCapBeigeFlipped
+  name: cap (beige)
 
 #MARK: brown
 - type: entity
-  parent: ClothingHeadBase
+  parent: ClothingHeadHatCapBaseFlippable
   id: ClothingHeadHatCapBrown
   name: cap (brown)
-  description: A plain colored t-shirt.
+  description: A plain colored cap.
   components:
   - type: Sprite
     scale: 0.5,0.5
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
     color: "#5F4D2A"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
     clothingVisuals:
       head:
       - state: equipped-HELMET
@@ -218,20 +331,29 @@
       right:
       - state: inhand-right
         color: "#5F4D2A"
+  - type: HoodedClothing
+    visualLayerKey: head
+    baseState: equipped-HELMET
+
+#MARK: brown flipped
+- type: entity
+  parent: [ClothingHeadHatCapBaseFlipped, ClothingHeadHatCapBrown]
+  id: ClothingHeadHatCapBrownFlipped
+  name: cap (brown)
 
 #MARK:  olive
 - type: entity
-  parent: ClothingHeadBase
+  parent: ClothingHeadHatCapBaseFlippable
   id: ClothingHeadHatCapOlive
   name: cap (olive)
-  description: A plain colored t-shirt.
+  description: A plain colored cap.
   components:
   - type: Sprite
     scale: 0.5,0.5
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
     color: "#92A168"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
     clothingVisuals:
       head:
       - state: equipped-HELMET
@@ -244,20 +366,29 @@
       right:
       - state: inhand-right
         color: "#92A168"
+  - type: HoodedClothing
+    visualLayerKey: head
+    baseState: equipped-HELMET
+
+#MARK: olive flipped
+- type: entity
+  parent: [ClothingHeadHatCapBaseFlipped, ClothingHeadHatCapOlive]
+  id: ClothingHeadHatCapOliveFlipped
+  name: cap (olive)
 
 #MARK:  ranger green
 - type: entity
-  parent: ClothingHeadBase
+  parent: ClothingHeadHatCapBaseFlippable
   id: ClothingHeadHatCapRangerGreen
   name: cap (ranger green)
-  description: A plain colored t-shirt.
+  description: A plain colored cap.
   components:
   - type: Sprite
     scale: 0.5,0.5
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
     color: "#4A5A49"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_any.rsi
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_greyscale.rsi
     clothingVisuals:
       head:
       - state: equipped-HELMET
@@ -268,5 +399,16 @@
       - state: inhand-left
         color: "#4A5A49"
       right:
+      - state: inhand-right
+        color: "#4A5A49"
+  - type: HoodedClothing
+    visualLayerKey: head
+    baseState: equipped-HELMET
+
+#MARK: ranger green flipped
+- type: entity
+  parent: [ClothingHeadHatCapBaseFlipped, ClothingHeadHatCapRangerGreen]
+  id: ClothingHeadHatCapRangerGreenFlipped
+  name: cap (ranger green)
       - state: inhand-right
         color: "#4A5A49"
