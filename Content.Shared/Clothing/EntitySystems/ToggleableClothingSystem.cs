@@ -159,7 +159,7 @@ public sealed class ToggleableClothingSystem : EntitySystem
         if (!toggleableComp.ClothingUids.TryGetValue(attached.Owner, out var attachedSlot))
             return;
 
-        if (!_inventorySystem.TryUnequip(Transform(attached.Owner).ParentUid, attachedSlot, force: true))
+        if (!_inventorySystem.TryUnequip(Transform(attached.Owner).ParentUid, attachedSlot, force: true, predicted: true, checkDoafter: false))
             return;
 
         _containerSystem.Insert(attached.Owner, toggleableComp.Container);
@@ -210,7 +210,7 @@ public sealed class ToggleableClothingSystem : EntitySystem
             if (part.Value == null)
                 continue;
 
-            _inventorySystem.TryUnequip(args.Equipee, part.Value, force: true);
+            _inventorySystem.TryUnequip(args.Equipee, part.Value, force: true, predicted: true, checkDoafter: false);
         }
     }
 
@@ -403,7 +403,7 @@ public sealed class ToggleableClothingSystem : EntitySystem
     {
         var parent = Transform(toggleable.Owner).ParentUid;
 
-        _inventorySystem.TryUnequip(user, parent, slot, force: true);
+        _inventorySystem.TryUnequip(user, parent, slot, force: true, predicted: true, checkDoafter: false);
 
         // If attached have clothing in container - equip it
         if (!TryComp<AttachedClothingComponent>(clothing, out var attachedComp) || attachedComp.ClothingContainer == null)
@@ -412,7 +412,7 @@ public sealed class ToggleableClothingSystem : EntitySystem
         var storedClothing = attachedComp.ClothingContainer.ContainedEntity;
 
         if (storedClothing != null)
-            _inventorySystem.TryEquip(parent, storedClothing.Value, slot, force: true);
+            _inventorySystem.TryEquip(parent, storedClothing.Value, slot, force: true, predicted: true, checkDoafter: false);
     }
     private void EquipClothing(EntityUid user, Entity<ToggleableClothingComponent> toggleable, EntityUid clothing, string slot)
     {
@@ -432,11 +432,11 @@ public sealed class ToggleableClothingSystem : EntitySystem
             if (attachedComp.ClothingContainer == null || attachedComp.ClothingContainer.ContainedEntity != null)
                 return;
 
-            if (_inventorySystem.TryUnequip(user, parent, slot))
+            if (_inventorySystem.TryUnequip(user, parent, slot, force: true, predicted: true, checkDoafter: false))
                 _containerSystem.Insert(currentClothing.Value, attachedComp.ClothingContainer);
         }
 
-        _inventorySystem.TryEquip(user, parent, clothing, slot);
+        _inventorySystem.TryEquip(user, parent, clothing, slot, force: true, predicted: true, checkDoafter: false);
     }
 
     private void OnGetActions(Entity<ToggleableClothingComponent> toggleable, ref GetItemActionsEvent args)

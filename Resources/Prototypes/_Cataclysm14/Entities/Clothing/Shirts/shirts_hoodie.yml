@@ -1,22 +1,61 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetBlock
+  name: Blocked
+  description: Can't fit anything there
+  components:
+  - type: Sprite
+    sprite: Markers/cross.rsi
 
 #MARK: white
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodieWhite
   name: hoodie (white)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
   - type: Clothing
     sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+  - type: ToggleableClothing
+    clothingPrototypes:
+      faceshield: ClothingHoodHoodieWhite
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised
+
+#MARK: white hood
+- type: entity
+  parent: ClothingfaceshieldBase
+  id: ClothingHoodHoodieWhite
+  name: hoodie hood (white)
+  categories: [ HideSpawnMenu ]
+  description: The hood of a hoodie.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+    clothingVisuals:
+      faceshield:
+      - state: equipped-faceshield
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
 
 #MARK: red
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodieRed
   name: hoodie (red)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
@@ -35,13 +74,43 @@
       right:
       - state: inhand-right
         color: "#9E1A1A"
+  - type: ToggleableClothing
+    clothingPrototypes:
+      faceshield: ClothingHoodHoodieRed
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised
+
+#MARK: red hood
+- type: entity
+  parent: ClothingfaceshieldBase
+  id: ClothingHoodHoodieRed
+  name: hoodie hood (red)
+  categories: [ HideSpawnMenu ]
+  description: The hood of a hoodie.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+    color: "#9E1A1A"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+    clothingVisuals:
+      faceshield:
+      - state: equipped-faceshield
+        color: "#9E1A1A"
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
 
 #MARK: blue
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodieBlue
   name: hoodie (blue)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
@@ -60,13 +129,43 @@
       right:
       - state: inhand-right
         color: "#404691"
+  - type: ToggleableClothing
+    clothingPrototypes:
+      faceshield: ClothingHoodHoodieBlue
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised
+
+#MARK: blue hood
+- type: entity
+  parent: ClothingfaceshieldBase
+  id: ClothingHoodHoodieBlue
+  name: hoodie hood (blue)
+  categories: [ HideSpawnMenu ]
+  description: The hood of a hoodie.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+    color: "#404691"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+    clothingVisuals:
+      faceshield:
+      - state: equipped-faceshield
+        color: "#404691"
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
 
 #MARK: green
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodieGreen
   name: hoodie (green)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
@@ -85,13 +184,43 @@
       right:
       - state: inhand-right
         color: "#3d8c40"
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+      faceshield: ClothingHoodHoodieGreen
+  - type: HoodedClothing
+    equippedPrefix: raised
+
+#MARK: green hood
+- type: entity
+  parent: ClothingfaceshieldBase
+  id: ClothingHoodHoodieGreen
+  name: hoodie hood (green)
+  categories: [ HideSpawnMenu ]
+  description: The hood of a hoodie.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+    color: "#3d8c40"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+    clothingVisuals:
+      faceshield:
+      - state: equipped-faceshield
+        color: "#3d8c40"
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
 
 #MARK: yellow
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodieYellow
   name: hoodie (yellow)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
@@ -110,13 +239,43 @@
       right:
       - state: inhand-right
         color: "#A89B25"
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+      faceshield: ClothingHoodHoodieYellow
+  - type: HoodedClothing
+    equippedPrefix: raised
+
+#MARK: yellow hood
+- type: entity
+  parent: ClothingfaceshieldBase
+  id: ClothingHoodHoodieYellow
+  name: hoodie hood (yellow)
+  categories: [ HideSpawnMenu ]
+  description: The hood of a hoodie.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+    color: "#A89B25"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+    clothingVisuals:
+      faceshield:
+      - state: equipped-faceshield
+        color: "#A89B25"
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
 
 #MARK: purple
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodiePurple
   name: hoodie (purple)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
@@ -135,13 +294,43 @@
       right:
       - state: inhand-right
         color: "#702963"
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+      faceshield: ClothingHoodHoodiePurple
+  - type: HoodedClothing
+    equippedPrefix: raised
+
+#MARK: purple hood
+- type: entity
+  parent: ClothingfaceshieldBase
+  id: ClothingHoodHoodiePurple
+  name: hoodie hood (purple)
+  categories: [ HideSpawnMenu ]
+  description: The hood of a hoodie.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+    color: "#702963"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+    clothingVisuals:
+      faceshield:
+      - state: equipped-faceshield
+        color: "#702963"
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
 
 #MARK: black
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodieBlack
   name: hoodie (black)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
@@ -160,13 +349,43 @@
       right:
       - state: inhand-right
         color: "#444444"
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+      faceshield: ClothingHoodHoodieBlack
+  - type: HoodedClothing
+    equippedPrefix: raised
+
+#MARK: black hood
+- type: entity
+  parent: ClothingfaceshieldBase
+  id: ClothingHoodHoodieBlack
+  name: hoodie hood (black)
+  categories: [ HideSpawnMenu ]
+  description: The hood of a hoodie.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+    color: "#444444"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+    clothingVisuals:
+      faceshield:
+      - state: equipped-faceshield
+        color: "#444444"
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
 
 #MARK: beige
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodieBeige
   name: hoodie (beige)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
@@ -185,13 +404,43 @@
       right:
       - state: inhand-right
         color: "#CDBEA1"
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+      faceshield: ClothingHoodHoodieBeige
+  - type: HoodedClothing
+    equippedPrefix: raised
+
+#MARK: beige hood
+- type: entity
+  parent: ClothingfaceshieldBase
+  id: ClothingHoodHoodieBeige
+  name: hoodie hood (beige)
+  categories: [ HideSpawnMenu ]
+  description: The hood of a hoodie.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+    color: "#CDBEA1"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+    clothingVisuals:
+      faceshield:
+      - state: equipped-faceshield
+        color: "#CDBEA1"
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
 
 #MARK:  brown
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodieBrown
   name: hoodie (brown)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
@@ -210,13 +459,43 @@
       right:
       - state: inhand-right
         color: "#5F4D2A"
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+      faceshield: ClothingHoodHoodieBrown
+  - type: HoodedClothing
+    equippedPrefix: raised
+
+#MARK: brown hood
+- type: entity
+  parent: ClothingfaceshieldBase
+  id: ClothingHoodHoodieBrown
+  name: hoodie hood (brown)
+  categories: [ HideSpawnMenu ]
+  description: The hood of a hoodie.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+    color: "#5F4D2A"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+    clothingVisuals:
+      faceshield:
+      - state: equipped-faceshield
+        color: "#5F4D2A"
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
 
 #MARK:  olive
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodieOlive
   name: hoodie (olive)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
@@ -235,13 +514,43 @@
       right:
       - state: inhand-right
         color: "#92A168"
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+      faceshield: ClothingHoodHoodieOlive
+  - type: HoodedClothing
+    equippedPrefix: raised
+
+#MARK: olive hood
+- type: entity
+  parent: ClothingfaceshieldBase
+  id: ClothingHoodHoodieOlive
+  name: hoodie hood (olive)
+  categories: [ HideSpawnMenu ]
+  description: The hood of a hoodie.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+    color: "#92A168"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+    clothingVisuals:
+      faceshield:
+      - state: equipped-faceshield
+        color: "#92A168"
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
 
 #MARK:  ranger green
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodieRangerGreen
   name: hoodie (ranger green)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
@@ -260,3 +569,33 @@
       right:
       - state: inhand-right
         color: "#4A5A49"
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+      faceshield: ClothingHoodHoodieRangerGreen
+  - type: HoodedClothing
+    equippedPrefix: raised
+
+#MARK: ranger green hood
+- type: entity
+  parent: ClothingfaceshieldBase
+  id: ClothingHoodHoodieRangerGreen
+  name: hoodie hood (ranger green)
+  categories: [ HideSpawnMenu ]
+  description: The hood of a hoodie.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+    color: "#4A5A49"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_greyscale.rsi
+    clothingVisuals:
+      faceshield:
+      - state: equipped-faceshield
+        color: "#4A5A49"
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
