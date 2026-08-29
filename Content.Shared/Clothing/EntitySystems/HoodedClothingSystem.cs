@@ -3,6 +3,7 @@ using Content.Shared.Inventory;
 using Content.Shared.Item;
 using Content.Shared.Popups;
 using Robust.Shared.Timing;
+using Content.Shared.Foldable;
 using Robust.Shared.Utility;
 
 namespace Content.Shared.Clothing.EntitySystems;
@@ -21,6 +22,7 @@ public sealed class HoodedClothingSystem : EntitySystem
         SubscribeLocalEvent<AttachedClothingComponent, ClothingGotEquippedEvent>(OnAttachedEquipped);
         SubscribeLocalEvent<AttachedClothingComponent, ClothingGotUnequippedEvent>(OnAttachedUnequipped);
         SubscribeLocalEvent<ToggleableClothingComponent, ToggleClothingAttemptEvent>(OnToggleAttempt);
+        SubscribeLocalEvent<HoodedClothingComponent, FoldedEvent>(OnFolded);
     }
 
     private void OnToggleAttempt(Entity<ToggleableClothingComponent> ent, ref ToggleClothingAttemptEvent args)
@@ -47,7 +49,22 @@ public sealed class HoodedClothingSystem : EntitySystem
             }
         }
     }
+    private void OnFolded(Entity<HoodedClothingComponent> ent, ref FoldedEvent args)
+    {
+        if (!TryComp<ClothingComponent>(ent.Owner, out var clothing)
+            || !clothing.ClothingVisuals.TryGetValue(ent.Comp.VisualLayerKey, out var layers) || layers.Count == 0)
+            return;
 
+        var newState = args.IsFolded ? $"{ent.Comp.EquippedPrefix}-{ent.Comp.BaseState}" : ent.Comp.BaseState;
+
+        var layer = layers[0];
+        layer.State = newState;
+        var updated = new List<PrototypeLayerData>(layers) { [0] = layer };
+        clothing.ClothingVisuals[ent.Comp.VisualLayerKey] = updated;
+        Dirty(ent.Owner, clothing);
+
+        RaiseLocalEvent(Transform(ent.Owner).ParentUid, new VisualsChangedEvent(GetNetEntity(ent.Owner), clothing.InSlot ?? ent.Comp.VisualLayerKey));
+    }
     private void OnAttachedMapInit(Entity<AttachedClothingComponent> ent, ref MapInitEvent args)
     {
         if (!TryComp<TransformComponent>(ent.Comp.AttachedUid, out var xform) || !xform.ParentUid.IsValid())
