@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "pierow",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "tongue"
+    },
+    {
+      "name": "tongue_icon"
+    },
+    {
+      "name": "tongue_icon_on"
+    },
+    {
+      "name": "entangled-2",
+      "directions": 4
+    }
+  ]
+}
