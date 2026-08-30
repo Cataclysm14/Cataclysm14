@@ -293,7 +293,7 @@
 - type: loadout
   id: LoadoutEntryClothingShirtShortTShirtOlive
   equipment:
-    jumpsuit: ClothingShirtShortTShirtsOlive
+    jumpsuit: ClothingShirtShortTShirtOlive
 
 - type: loadout
   id: LoadoutEntryClothingShirtShortTShirtRangerGreen
