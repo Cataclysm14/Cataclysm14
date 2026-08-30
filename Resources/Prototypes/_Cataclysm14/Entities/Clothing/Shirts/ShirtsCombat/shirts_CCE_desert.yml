@@ -1,0 +1,41 @@
+#MARK: TShirt
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtCombatCCEDesertTShirt
+  name: combat t-shirt (CCE desert)
+  description: >
+    Ripstop combat t-shirt with medium sleeves.
+    It has a CCE camo variant made for the african theater such as Mali.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/CCEDesert/shirt_CCE_desert_Tshirt.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/CCEDesert/shirt_CCE_desert_Tshirt.rsi
+
+#MARK: Cargo
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatCCEDesertJacket
+  name: combat jacket (CCE desert)
+  description: >
+    Ripstop combat jacket with large pockets.
+    It has a CCE camo variant made for the african theater such as Mali.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/CCEDesert/shirt_CCE_desert_jacket.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/CCEDesert/shirt_CCE_desert_jacket.rsi
+
+#MARK: Shirt
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatCCEDesertShirt
+  name: combat shirt (CCE desert)
+  description: >
+    Ripstop combat shirt.
+    It has a CCE camo variant made for the african theater such as Mali.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/CCEDesert/shirt_CCE_desert_shirt.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/CCEDesert/shirt_CCE_desert_shirt.rsi

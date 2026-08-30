@@ -27,10 +27,10 @@
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatCCEDesertCargo
+          - id: ClothingPantsCombatCCEDesertCargoPants
         jumpsuit: !type:GroupSelector
           children:
-          - id: ClothingShirtCombatCCEDesertCargo
+          - id: ClothingShirtCombatCCEDesertJacket
         head: !type:GroupSelector
           children:
           - id: ClothingHeadHatCapBaseballUN
@@ -96,10 +96,10 @@
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatCCEDesertCargo
+          - id: ClothingPantsCombatCCEDesertCargoPants
         jumpsuit: !type:GroupSelector
           children:
-          - id: ClothingShirtCombatCCEDesertCargo
+          - id: ClothingShirtCombatCCEDesertJacket
     - slots:
         pants: !type:GroupSelector
           children:

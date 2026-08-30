@@ -1,0 +1,41 @@
+#MARK: Pants
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatCCEDesertPants
+  name: combat pants (CCE desert)
+  description: >
+    Ripstop combat pants.
+    It has a CCE camo variant made for the african theater such as Mali.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/CCEDesert/pants_CCE_desert_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/CCEDesert/pants_CCE_desert_pants.rsi
+
+#MARK: Cargo Pants
+- type: entity
+  parent: BaseClothingPantsCargo
+  id: ClothingPantsCombatCCEDesertCargoPants
+  name: cargo combat pants (CCE desert)
+  description: >
+    Ripstop combat pants with large pockets.
+    It has a CCE camo variant made for the african theater such as Mali.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/CCEDesert/pants_CCE_desert_cargo_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/CCEDesert/pants_CCE_desert_cargo_pants.rsi
+
+#MARK: Shorts
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatCCEDesertShorts
+  name: combat shorts (CCE desert)
+  description: >
+    Ripstop combat shorts.
+    It has a CCE camo variant made for the african theater such as Mali.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/CCEDesert/pants_CCE_desert_shorts.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/CCEDesert/pants_CCE_desert_shorts.rsi

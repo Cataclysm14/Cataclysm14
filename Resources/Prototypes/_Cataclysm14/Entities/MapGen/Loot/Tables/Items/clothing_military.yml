@@ -261,13 +261,13 @@
     - id: ClothingPantsCombatM81Pants
     - id: ClothingPantsCombatM81CargoPants
     - id: ClothingPantsCombatM81Shorts
-    - id: ClothingPantsCombaTigerStripesPants
-    - id: ClothingPantsCombaTigerStripesCargoPants
-    - id: ClothingPantsCombaTigerStripesShorts
+    - id: ClothingPantsCombatTigerStripesPants
+    - id: ClothingPantsCombatTigerStripesCargoPants
+    - id: ClothingPantsCombatTigerStripesShorts
     - id: ClothingPantsCombatCCEPants
     - id: ClothingPantsCombatCCECargoPants
     - id: ClothingPantsCombatCCEShorts
-    - id: ClothingPantsCombatCCEDeserCargoPants
+    - id: ClothingPantsCombatCCEDeserPants
     - id: ClothingPantsCombatCCEDesertCargoPants
     - id: ClothingPantsCombatCCEDesertShorts
     - id: ClothingPantsCombatGorka4Tan
