@@ -410,5 +410,3 @@
   parent: [ClothingHeadHatCapBaseFlipped, ClothingHeadHatCapRangerGreen]
   id: ClothingHeadHatCapRangerGreenFlipped
   name: cap (ranger green)
-      - state: inhand-right
-        color: "#4A5A49"
