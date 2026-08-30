@@ -29,7 +29,7 @@
 #MARK: Shorts
 - type: entity
   parent: BaseClothingPants
-  id: ClothingPantsCombatOCPPantsShorts
+  id: ClothingPantsCombatOCPShorts
   name: combat shorts (OCP patern)
   description: >
     Ripstop combat shorts.

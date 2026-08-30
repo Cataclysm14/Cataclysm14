@@ -3,16 +3,16 @@
   id: LootTableClothingShirtCombatCCE
   table: !type:GroupSelector
     children:
-    - id: ClothingShirtCombatCCE
-    - id: ClothingShirtCombatCCECargo
+    - id: ClothingShirtCombatCCEShirt
+    - id: ClothingShirtCombatCCEJacket
 
 #MARK: PantsCombatCCE
 - type: entityTable
   id: LootTableClothingPantsCombatCCE
   table: !type:GroupSelector
     children:
-    - id: ClothingPantsCombatCCE
-    - id: ClothingPantsCombatCCECargo
+    - id: ClothingPantsCombatCCEPants
+    - id: ClothingPantsCombatCCECargoPants
 
 #MARK: National Guard Vest
 - type: entityTable
@@ -79,7 +79,7 @@
     - id: ClothingPantsCombatMulticamCargoPants
     - id: ClothingPantsCombatMulticamAridPants
     - id: ClothingPantsCombatMulticamAridCargoPants
-    - id: ClothingPantsCombatMulticamDeserCargoPants
+    - id: ClothingPantsCombatMulticamDesertCargoPants
     - id: ClothingPantsCombatMulticamDesertCargoPants
     - id: ClothingPantsCombatMulticamWoodlandPants
     - id: ClothingPantsCombatMulticamWoodlandCargoPants
@@ -279,7 +279,7 @@
     - id: ClothingPantsCombatCCEPants
     - id: ClothingPantsCombatCCECargoPants
     - id: ClothingPantsCombatCCEShorts
-    - id: ClothingPantsCombatCCEDeserPants
+    - id: ClothingPantsCombatCCEDesertPants
     - id: ClothingPantsCombatCCEDesertCargoPants
     - id: ClothingPantsCombatCCEDesertShorts
     - id: ClothingPantsCombatGorka4Tan
