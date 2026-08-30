@@ -11,5 +11,5 @@ namespace Content.Shared._Cataclysm14.Zombies.Smoker;
 public sealed partial class SmokerTongueActiveComponent : Component
 {
     [AutoNetworkedField]
-    public EntityUid Target;
+    public EntityUid? Target;
 }

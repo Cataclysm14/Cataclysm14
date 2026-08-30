@@ -11,7 +11,7 @@ namespace Content.Shared._Cataclysm14.Zombies.Smoker;
 public sealed partial class SmokerTonguedComponent : Component
 {
     // Serverside state
-    public EntityUid Smoker;
+    public EntityUid? Smoker;
     public float ProgressPerPress = 6f;
     public TimeSpan NextAcceptedPress;
     public TimeSpan NextProgressNetworkUpdate;

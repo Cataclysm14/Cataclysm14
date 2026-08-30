@@ -82,14 +82,13 @@ internal sealed class SmokerTongueOverlay : Overlay
 
         while (query.MoveNext(out _, out var tongue, out var smokerXform))
         {
-            if (!tongue.Target.IsValid() ||
-                !targetXformQuery.TryGetComponent(tongue.Target, out var targetXform) ||
-                smokerXform.MapID != args.MapId ||
-                targetXform.MapID != args.MapId)
-            {
-                continue;
-            }
-
+			if (tongue.Target is not { } target ||
+				!targetXformQuery.TryGetComponent(target, out var targetXform) ||
+				smokerXform.MapID != args.MapId ||
+				targetXform.MapID != args.MapId)
+			{
+				continue;
+			}
             var start = _transform.GetWorldPosition(smokerXform);
             var end = _transform.GetWorldPosition(targetXform);
             var delta = end - start;

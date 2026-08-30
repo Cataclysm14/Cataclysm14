@@ -334,8 +334,9 @@ public sealed class SmokerSystem : EntitySystem
         if (now < victimComp.NextAcceptedPress)
             return;
 
-        if (Deleted(victimComp.Smoker) ||
-            !TryComp<SmokerComponent>(victimComp.Smoker, out var smokerComp) ||
+        if (victimComp.Smoker is not { } smoker ||
+            Deleted(smoker) ||
+            !TryComp<SmokerComponent>(smoker, out var smokerComp) ||
             smokerComp.TongueTarget != victim)
         {
             RemoveTongueCuffs(victimComp);
@@ -350,7 +351,7 @@ public sealed class SmokerSystem : EntitySystem
         Dirty(victim, victimComp);
 
         if (victimComp.EscapeProgress >= victimComp.RequiredProgress)
-            BreakTongue(victimComp.Smoker, smokerComp, escaped: true);
+            BreakTongue(smoker, smokerComp, escaped: true);
     }
 
     public override void Update(float frameTime)
@@ -499,8 +500,9 @@ public sealed class SmokerSystem : EntitySystem
         var query = EntityQueryEnumerator<SmokerTonguedComponent>();
         while (query.MoveNext(out var victim, out var caught))
         {
-            if (!Deleted(caught.Smoker) &&
-                TryComp<SmokerComponent>(caught.Smoker, out var smoker) &&
+            if (caught.Smoker is { } smokerUid &&
+                !Deleted(smokerUid) &&
+                TryComp<SmokerComponent>(smokerUid, out var smoker) &&
                 smoker.TongueTarget == victim)
             {
                 continue;
