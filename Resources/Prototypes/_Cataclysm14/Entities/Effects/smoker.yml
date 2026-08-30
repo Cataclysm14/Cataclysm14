@@ -1,0 +1,20 @@
+# Child emitter parented to the Smoker. SmokerSystem deletes it five seconds after death. Rejuving doesn't bring
+# it back, and I don't care (╯°□°）╯︵ ┻━┻
+- type: entity
+  id: SmokerSmokeEmitter
+  name: smoker smoke emitter
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Effects/chemsmoke.rsi
+    drawdepth: Effects
+    state: chemsmoke
+  - type: SmokeOnTrigger
+    duration: 5
+    spreadAmount: 2
+    solution:
+      reagents:
+      - ReagentId: Nicotine
+        Quantity: 25
+  - type: RepeatTimerTrigger
+    interval: 20

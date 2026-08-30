@@ -1,4 +1,6 @@
 # also used in MakeGhostRuleWindow and MakeGhostRoleCommand
+ghost-role-component-default-name = Unknown
+ghost-role-component-default-description = Unknown
 ghost-role-component-default-rules = All normal rules apply unless an administrator tells you otherwise.
                                      You don't remember any of your previous life, and you don't remember anything you learned as a ghost.
                                      You are allowed to remember knowledge about the game in general, such as how to cook, how to use objects, etc.

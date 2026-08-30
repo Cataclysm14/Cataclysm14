@@ -774,9 +774,6 @@
       sprite: Objects/Misc/handcuffs.rsi
       state: body-overlay-2
       visible: false
-    - map: [ "lightning" ]
-      sprite: Effects/chemsmoke.rsi
-      state: chemsmoke
   - type: Body
     prototype: BodyPartSetZombieBase
     requiredLegs: 2
@@ -799,12 +796,21 @@
       types:
         Brute: 9
         Slash: 7
-  - type: SmokeOnTrigger # smoke grenade with legs btw
-    duration: 13
-    spreadAmount: 30
-    solution:
-      reagents:
-      - ReagentId: Nicotine
-        Quantity: 50
-  - type: RepeatTimerTrigger
-    interval: 9
+  - type: AutoEmote
+    emotes:
+    - SmokerCough
+  - type: Smoker
+    tongueMinRange: 2
+    tongueMaxRange: 10
+    tongueBreakRange: 10
+    tonguePullSpeed: 5
+    tongueStopDistance: 0.85
+    strugglePressInterval: 0.08
+    struggleRequiredProgress: 100
+    struggleProgressPerPress: 5
+    struggleDecayPerSecond: 12
+    smokeDeathDelay: 5
+    smokeEmitterPrototype: SmokerSmokeEmitter
+  - type: ActionGrant
+    actions:
+    - ActionSmokerTongue

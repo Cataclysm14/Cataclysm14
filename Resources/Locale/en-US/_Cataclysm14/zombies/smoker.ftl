@@ -1,0 +1,11 @@
+smoker-tongue-caught = The smoker's tongue wraps around you! STRUGGLE to escape!
+smoker-tongue-struggle-title = ENTANGLED - STRUGGLE TO ESCAPE!
+smoker-tongue-escaped = You tear yourself free from the smoker's tongue!
+smoker-tongue-too-close = The victim is too close for your tongue...
+smoker-tongue-no-line = You do not have a clear shot...
+smoker-tongue-invalid-target = Your tongue can only grab a conscious/living target.
+smoker-tongue-busy = Your tongue is already wrapped around someone!
+smoker-tongue-target-busy = That target is already caught by another smoker!
+smoker-tongue-arming = Your tongue is still preparing to strike!
+smoker-tongue-struggle-button = >STRUGGLE<
+smoker-tongue-arm-emote = recoils backwards, licking its lips!
