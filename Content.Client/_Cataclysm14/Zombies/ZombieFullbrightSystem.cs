@@ -3,6 +3,7 @@ using Content.Shared.Zombies;
 using Robust.Client.GameObjects;
 using Robust.Client.Player;
 using Robust.Shared.GameObjects;
+using Robust.Shared.Timing;
 
 namespace Content.Client._Cataclysm14.Zombies;
 
@@ -14,6 +15,7 @@ public sealed class ZombieFullbrightSystem : EntitySystem
 {
     [Dependency] private readonly ContentEyeSystem _contentEye = default!;
     [Dependency] private readonly IPlayerManager _player = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
 
     private EntityUid? _lastLocalEntity;
     private bool _lastZombieState;
@@ -25,11 +27,7 @@ public sealed class ZombieFullbrightSystem : EntitySystem
 
         var local = _player.LocalEntity;
         if (local == null)
-        {
-            _lastLocalEntity = null;
-            _hasAppliedState = false;
             return;
-        }
 
         var uid = local.Value;
         var isZombie = HasComp<ZombieComponent>(uid);
@@ -39,6 +37,9 @@ public sealed class ZombieFullbrightSystem : EntitySystem
             return;
 
         if (!TryComp<EyeComponent>(uid, out var eye))
+            return;
+
+        if (!_timing.InPrediction || !_timing.IsFirstTimePredicted)
             return;
 
         // zombies ignore darkness; non-zombies use normal lighting
