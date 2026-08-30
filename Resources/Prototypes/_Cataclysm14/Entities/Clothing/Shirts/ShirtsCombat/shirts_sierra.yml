@@ -6,9 +6,9 @@
     description: Ripstop combat shirt with large pockets. It has the markings of the Superstructure Taskforce Sierra.
     components:
     - type: Sprite
-      sprite: _Cataclysm14/Clothing/Shirt/shirt_digital_black_sierra_duty.rsi
+      sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/shirt_digital_black_sierra_duty.rsi
     - type: Clothing
-      sprite: _Cataclysm14/Clothing/Shirt/shirt_digital_black_sierra_duty.rsi
+      sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/shirt_digital_black_sierra_duty.rsi
 
 #MARK: Sierra commandant combat shirt
   - type: entity
@@ -18,6 +18,6 @@
     description: Ripstop combat shirt with large pockets. It has the markings of a commandant of the Superstructure Taskforce Sierra.
     components:
     - type: Sprite
-      sprite: _Cataclysm14/Clothing/Shirt/shirt_digital_black_sierra_commandant.rsi
+      sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/shirt_digital_black_sierra_commandant.rsi
     - type: Clothing
-      sprite: _Cataclysm14/Clothing/Shirt/shirt_digital_black_sierra_commandant.rsi
+      sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/shirt_digital_black_sierra_commandant.rsi
