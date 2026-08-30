@@ -23,3 +23,4 @@
           availableJobs:
             ProfessionUnemployed: [-1, -1]
             ProfessionPriest: [1, 1]
+            ProfessionPoliceOfficer: [3, 3]

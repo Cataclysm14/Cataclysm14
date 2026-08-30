@@ -19,3 +19,10 @@
   - LoadoutGroupPriestShirt
   - LoadoutGroupPriestGear
   - LoadoutGroupPriestAccessories
+
+- type: roleLoadout
+  id: JobProfessionPoliceOfficer
+  groups:
+  - LoadoutGroupPoliceOfficerUniform
+  - LoadoutGroupPoliceOfficerVest
+  - LoadoutGroupPoliceOfficerFaceCovering
