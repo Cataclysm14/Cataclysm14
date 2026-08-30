@@ -1,0 +1,13 @@
+- type: entity
+  parent: BaseClothingShoes
+  id: ClothingShoesReebokAlienStompers
+  name: Reebok® alien stompers
+  description: Retro futuristic high-tops built to stomp through xeno agent skulls.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shoes/stompers.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shoes/stompers.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.1
+    sprintModifier: 1.1

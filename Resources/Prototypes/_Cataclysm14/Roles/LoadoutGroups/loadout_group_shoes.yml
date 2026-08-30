@@ -17,6 +17,8 @@
   - LoadoutEntryClothingShoesBootsWorkbootsRangerGreen
   - LoadoutEntryClothingShoesBootsWorkbootsCoyoteBrown
   - LoadoutEntryClothingShoesBootsWorkbootsWhite
+  #Unlocks
+  - LoadoutEntryClothingShoesReebokAlienStompers
   fallbacks:
   - LoadoutEntryClothingShoesSneakersBlack
 
@@ -86,3 +88,21 @@
   id: LoadoutEntryClothingShoesBootsWorkbootsWhite
   equipment:
     shoes: ClothingShoesBootsWorkbootsWhite
+    
+#MARK: Reebok Alien Stompers
+- type: loadout
+  id: LoadoutEntryClothingShoesReebokAlienStompers
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ReebokAlienStompersTimer
+  equipment:
+    shoes: ClothingShoesReebokAlienStompers
+    
+#MARK: Unlocks
+- type: loadoutEffectGroup
+  id: ReebokAlienStompersTimer
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:OverallPlaytimeRequirement
+      time: 180000 # 50 hours
