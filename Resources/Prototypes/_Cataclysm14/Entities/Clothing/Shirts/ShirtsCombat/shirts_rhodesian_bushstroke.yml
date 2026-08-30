@@ -1,0 +1,41 @@
+#MARK: TShirt
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtCombatRhodesianBushstrokeTShirt
+  name: combat t-shirt (rhodesian bushstroke)
+  description: >
+    Ripstop combat t-shirt with medium sleeves.
+    It has the rhodesian bushstroke camo of the Rhodesian Security Forces, used between 1965 and 1980. Just missing a trusty FN FAL.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/RhodesianBushstroke/shirt_rhodesian_bushstroke_Tshirt.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/RhodesianBushstroke/shirt_rhodesian_bushstroke_Tshirt.rsi
+
+#MARK: Cargo
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatRhodesianBushstrokeJacket
+  name: combat jacket (rhodesian bushstroke)
+  description: >
+    Ripstop combat jacket with large pockets.
+    It has the rhodesian bushstroke camo of the Rhodesian Security Forces, used between 1965 and 1980. Just missing a trusty FN FAL.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/RhodesianBushstroke/shirt_rhodesian_bushstroke_jacket.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/RhodesianBushstroke/shirt_rhodesian_bushstroke_jacket.rsi
+
+#MARK: Shirt
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatRhodesianBushstrokeShirt
+  name: combat shirt (rhodesian bushstroke)
+  description: >
+    Ripstop combat shirt.
+    It has the rhodesian bushstroke camo of the Rhodesian Security Forces, used between 1965 and 1980. Just missing a trusty FN FAL.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/RhodesianBushstroke/shirt_rhodesian_bushstroke_shirt.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/RhodesianBushstroke/shirt_rhodesian_bushstroke_shirt.rsi

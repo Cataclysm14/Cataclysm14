@@ -1,6 +1,6 @@
 #MARK: tan
 - type: entity
-  parent: [ ClothingHandsGlovesCombat]
+  parent: BaseClothingHandsGlovesCombat
   id: ClothingHandsGlovesCombatTan
   name: combat gloves (tan)
   description: These combat gloves are fireproof and shock resistant.
@@ -28,7 +28,7 @@
 
 #MARK: sand
 - type: entity
-  parent: [ ClothingHandsGlovesCombat]
+  parent: BaseClothingHandsGlovesCombat
   id: ClothingHandsGlovesCombatSand
   name: combat gloves (sand)
   description: These combat gloves are fireproof and shock resistant.
@@ -56,7 +56,7 @@
 
 #MARK: black
 - type: entity
-  parent: [ ClothingHandsGlovesCombat]
+  parent: BaseClothingHandsGlovesCombat
   id: ClothingHandsGlovesCombatBlack
   name: combat gloves (black)
   description: These combat gloves are fireproof and shock resistant.
@@ -84,7 +84,7 @@
 
 #MARK: ranger green
 - type: entity
-  parent: [ ClothingHandsGlovesCombat]
+  parent: BaseClothingHandsGlovesCombat
   id: ClothingHandsGlovesCombatRangerGreen
   name: combat gloves (ranger green)
   description: These combat gloves are fireproof and shock resistant.
@@ -112,7 +112,7 @@
 
 #MARK: olive
 - type: entity
-  parent: [ ClothingHandsGlovesCombat]
+  parent: BaseClothingHandsGlovesCombat
   id: ClothingHandsGlovesCombatOlive
   name: combat gloves (olive)
   description: These combat gloves are fireproof and shock resistant.
@@ -140,7 +140,7 @@
 
 #MARK: green
 - type: entity
-  parent: [ ClothingHandsGlovesCombat]
+  parent: BaseClothingHandsGlovesCombat
   id: ClothingHandsGlovesCombatGreen
   name: combat gloves (green)
   description: These combat gloves are fireproof and shock resistant.
@@ -168,7 +168,7 @@
 
 #MARK: coyote brown
 - type: entity
-  parent: [ ClothingHandsGlovesCombat]
+  parent: BaseClothingHandsGlovesCombat
   id: ClothingHandsGlovesCombatCoyoteBrown
   name: combat gloves (coyote brown)
   description: These combat gloves are fireproof and shock resistant.
@@ -196,7 +196,7 @@
 
 #MARK: white
 - type: entity
-  parent: [ ClothingHandsGlovesCombat]
+  parent: BaseClothingHandsGlovesCombat
   id: ClothingHandsGlovesCombatWhite
   name: combat gloves (white)
   description: These combat gloves are fireproof and shock resistant.

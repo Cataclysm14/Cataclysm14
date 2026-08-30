@@ -21,7 +21,7 @@
         prob: 0.95
       head: !type:GroupSelector
         children:
-        - id: ClothingHeadHatCapPoliceUS
+        - id: ClothingHeadHatCapBaseballPoliceUS
         prob: 0.5
       belt: !type:GroupSelector
         children:
@@ -101,7 +101,7 @@
       pants: !type:GroupSelector
         children:
         - id: ClothingPantsPoliceCopUS
-        - id: ClothingPantsCombatDigitalBlack
+        - id: ClothingPantsCombatDigitalBlackPants
         prob: 0.99
       jumpsuit: !type:GroupSelector
         children:

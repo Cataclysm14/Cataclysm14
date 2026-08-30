@@ -16,8 +16,8 @@ tilemap:
   0: Space
   1: FloorCataConcreteSlabBase
   2: FloorCataConcreteTilesOld
-  3: FloorGrayConcreteSmooth
-  4: FloorOldConcreteSmooth
+  3: FloorCataConcreteSlabBlack
+  4: FloorCataConcreteSlabOld
 entities:
 - proto: ""
   entities:

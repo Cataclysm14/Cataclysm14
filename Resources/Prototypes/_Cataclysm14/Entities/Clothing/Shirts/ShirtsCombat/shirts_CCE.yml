@@ -1,0 +1,41 @@
+#MARK: TShirt
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtCombatCCETShirt
+  name: combat t-shirt (CCE)
+  description: >
+    Ripstop combat t-shirt with medium sleeves.
+    It has the CCE central europe camo of the french army.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/CCE/shirt_CCE_Tshirt.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/CCE/shirt_CCE_Tshirt.rsi
+
+#MARK: Cargo
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatCCEJacket
+  name: combat jacket (CCE)
+  description: >
+    Ripstop combat jacket with large pockets.
+    It has the CCE central europe camo of the french army.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/CCE/shirt_CCE_jacket.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/CCE/shirt_CCE_jacket.rsi
+
+#MARK: Shirt
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatCCEShirt
+  name: combat shirt (CCE)
+  description: >
+    Ripstop combat shirt.
+    It has the CCE central europe camo of the french army.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/CCE/shirt_CCE_shirt.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/CCE/shirt_CCE_shirt.rsi

@@ -168,21 +168,21 @@
         - id: BallisticPlateFrontESAPILevel6
         - id: BallisticPlateSidesESBILevel6
 
-  #MARK: IOTV Heavy OCP multicam
+  #MARK: IOTV Heavy OCP
     - type: entity
       parent: ClothingOuterBulletProofVestIOTVHeavyTan
-      id: ClothingOuterBulletProofVestIOTVHeavyMulticamOCP
+      id: ClothingOuterBulletProofVestIOTVHeavyOCP
       suffix: Empty
-      name: IOTV armor vest (OCP Multicam)
+      name: IOTV armor vest (OCP)
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_heavy_OCP_multicam.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_heavy_OCP.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_heavy_OCP_multicam.rsi
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_heavy_OCP.rsi
 
     - type: entity
-      parent: ClothingOuterBulletProofVestIOTVHeavyMulticamOCP
-      id: ClothingOuterBulletProofVestIOTVHeavyMulticamOCPFilled
+      parent: ClothingOuterBulletProofVestIOTVHeavyOCP
+      id: ClothingOuterBulletProofVestIOTVHeavyOCPFilled
       suffix: Filled
       components:
       - type: StorageFill
@@ -232,6 +232,30 @@
     - type: entity
       parent: ClothingOuterBulletProofVestIOTVHeavySierra
       id: ClothingOuterBulletProofVestIOTVHeavySierraFilled
+      suffix: Filled
+      components:
+      - type: StorageFill
+        contents:
+        - id: BallisticPlateSidesESBILevel6
+        - id: BallisticPlateFrontESAPILevel6
+        - id: BallisticPlateFrontESAPILevel6
+        - id: BallisticPlateSidesESBILevel6
+
+  #MARK: IOTV Heavy Black
+    - type: entity
+      parent: ClothingOuterBulletProofVestIOTVHeavyTan
+      id: ClothingOuterBulletProofVestIOTVHeavyBlack
+      suffix: Empty
+      name: IOTV armor vest (black)
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_heavy_black.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Vests/BulletproofVests/vest_bulletproof_IOTV_heavy_black.rsi
+
+    - type: entity
+      parent: ClothingOuterBulletProofVestIOTVHeavyBlack
+      id: ClothingOuterBulletProofVestIOTVHeavyBlackFilled
       suffix: Filled
       components:
       - type: StorageFill

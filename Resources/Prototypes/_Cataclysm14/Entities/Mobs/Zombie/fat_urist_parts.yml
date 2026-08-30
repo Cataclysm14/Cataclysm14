@@ -2,27 +2,27 @@
 
 - type: entity
   id: PartZombieFatUrist
-  categories: [ HideSpawnMenu ]  
+  categories: [ HideSpawnMenu ]
   parent: PartZombie
   name: fat urist zombie body part
   abstract: true
   components:
   - type: Icon
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
   - type: BodyPart
     species: SpecieZombieFatUrist
 
 - type: entity
   id: TorsoZombieFatUrist
-  categories: [ HideSpawnMenu ] 
+  categories: [ HideSpawnMenu ]
   name: fat urist zombie torso
   parent: [PartZombieFatUrist, BaseZombieTorso]
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: torso
   - type: Icon
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: torso
   - type: Extractable
     juiceSolution:
@@ -39,10 +39,10 @@
   parent: [PartZombieFatUrist, BaseZombieHead]
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: head
   - type: Icon
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: head
   - type: Extractable
     juiceSolution:
@@ -59,10 +59,10 @@
   parent: [PartZombieFatUrist, BaseZombieLeftArm]
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: l_arm
   - type: Icon
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: l_arm
 
 - type: entity
@@ -72,10 +72,10 @@
   parent: [PartZombieFatUrist, BaseZombieRightArm]
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: r_arm
   - type: Icon
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: r_arm
 
 - type: entity
@@ -85,10 +85,10 @@
   parent: [PartZombieFatUrist, BaseZombieLeftHand]
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: l_hand
   - type: Icon
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: l_hand
   - type: DoAfterDelayMultiplier
     multiplier: 0.9
@@ -100,10 +100,10 @@
   parent: [PartZombieFatUrist, BaseZombieRightHand]
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: r_hand
   - type: Icon
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: r_hand
   - type: DoAfterDelayMultiplier
     multiplier: 0.9
@@ -115,10 +115,10 @@
   parent: [PartZombieFatUrist, BaseZombieLeftLeg]
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: l_leg
   - type: Icon
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: l_leg
   - type: MovementBodyPart
     walkSpeed: 2
@@ -131,10 +131,10 @@
   parent: [PartZombieFatUrist, BaseZombieRightLeg]
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: r_leg
   - type: Icon
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: r_leg
   - type: MovementBodyPart
     walkSpeed: 2
@@ -147,10 +147,10 @@
   parent: [PartZombieFatUrist, BaseZombieLeftFoot]
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: l_foot
   - type: Icon
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: l_foot
 
 - type: entity
@@ -160,10 +160,10 @@
   parent: [PartZombieFatUrist, BaseZombieRightFoot]
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: r_foot
   - type: Icon
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: r_foot
 
 - type: body

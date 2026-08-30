@@ -23,7 +23,7 @@
           range: 0,4
       - !type:NestedSelector
         weight: 100
-        tableId: LootTableAmmunitionAmmoBoxUsForcesLowTier
+        tableId: LootTableAmmunitionAmmoBox5,56x45mmMilitaryGradeLowTier
         rolls: !type:RangeNumberSelector
           range: 0,6
 

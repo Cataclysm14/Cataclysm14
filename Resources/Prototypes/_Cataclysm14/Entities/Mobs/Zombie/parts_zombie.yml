@@ -6,7 +6,7 @@
   abstract: true
   components:
   - type: Icon
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/Zombie/parts.rsi
   - type: BodyPart
     species: SpecieZombieBase
   - type: Extractable
@@ -24,7 +24,7 @@
   parent: [PartZombie, BaseZombieTorso]
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/Zombie/parts.rsi
     state: "torso_m"
   - type: Extractable
     juiceSolution:
@@ -41,7 +41,7 @@
   parent: [PartZombie, BaseZombieHead]
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/Zombie/parts.rsi
     state: "head_m"
   - type: Extractable
     juiceSolution:
@@ -58,7 +58,7 @@
   parent: [PartZombie, BaseZombieLeftArm]
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/Zombie/parts.rsi
     state: "l_arm"
 
 - type: entity
@@ -67,7 +67,7 @@
   parent: [PartZombie, BaseZombieRightArm]
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/Zombie/parts.rsi
     state: "r_arm"
 
 #MARK: Hands
@@ -77,7 +77,7 @@
   parent: [PartZombie, BaseZombieLeftHand]
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/Zombie/parts.rsi
     state: "l_hand"
   - type: DoAfterDelayMultiplier # Goobstation
     multiplier: 0.9
@@ -88,7 +88,7 @@
   parent: [PartZombie, BaseZombieRightHand]
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/Zombie/parts.rsi
     state: "r_hand"
   - type: DoAfterDelayMultiplier # Goobstation
     multiplier: 0.9
@@ -100,7 +100,7 @@
   parent: [PartZombie, BaseZombieLeftLeg]
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/Zombie/parts.rsi
     state: "l_leg"
   - type: MovementBodyPart
     walkSpeed: 2
@@ -112,83 +112,11 @@
   parent: [PartZombie, BaseZombieRightLeg]
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/Zombie/parts.rsi
     state: "r_leg"
   - type: MovementBodyPart
     walkSpeed: 2
     sprintSpeed: 4
-
-- type: entity
-  id: LeftLegZombieSlow
-  name: "decayed left zombie leg"
-  parent: [PartZombie, BaseZombieLeftLeg]
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
-    state: "l_leg"
-  - type: MovementBodyPart
-    walkSpeed: 0.75
-    sprintSpeed: 2.5
-
-- type: entity
-  id: RightLegZombieSlow
-  name: "right zombie leg"
-  parent: [PartZombie, BaseZombieRightLeg]
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
-    state: "r_leg"
-  - type: MovementBodyPart
-    walkSpeed: 0.75
-    sprintSpeed: 2.5
-
-- type: entity
-  id: LeftLegZombieFast
-  name: "strengthened left zombie leg"
-  parent: [PartZombie, BaseZombieLeftLeg]
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
-    state: "l_leg"
-  - type: MovementBodyPart
-    walkSpeed: 3
-    sprintSpeed: 6
-
-- type: entity
-  id: RightLegZombieFast
-  name: "strengthened right zombie leg"
-  parent: [PartZombie, BaseZombieRightLeg]
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
-    state: "r_leg"
-  - type: MovementBodyPart
-    walkSpeed: 3
-    sprintSpeed: 6
-
-- type: entity
-  id: LeftLegZombieFastVery
-  name: "muscular left zombie leg"
-  parent: [PartZombie, BaseZombieLeftLeg]
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
-    state: "l_leg"
-  - type: MovementBodyPart
-    walkSpeed: 4
-    sprintSpeed: 8
-
-- type: entity
-  id: RightLegZombieFastVery
-  name: "muscular right zombie leg"
-  parent: [PartZombie, BaseZombieRightLeg]
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
-    state: "r_leg"
-  - type: MovementBodyPart
-    walkSpeed: 4
-    sprintSpeed: 8
 
 #MARK: Feets
 - type: entity
@@ -197,7 +125,7 @@
   parent: [PartZombie, BaseZombieLeftFoot]
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/Zombie/parts.rsi
     state: "l_foot"
 
 - type: entity
@@ -206,5 +134,5 @@
   parent: [PartZombie, BaseZombieRightFoot]
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/Zombie/parts.rsi
     state: "r_foot"

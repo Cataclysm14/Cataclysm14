@@ -32,83 +32,83 @@
 - type: humanoidBaseSprite
   id: MobZombieFatUristHead
   baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: head
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristHeadMale
   baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: head
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristHeadFemale
   baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: head
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristTorso
   baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: torso
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristTorsoMale
   baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: torso
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristTorsoFemale
   baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: torso
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristLLeg
   baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: l_leg
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristLArm
   baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: l_arm
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristLHand
   baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: l_hand
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristLFoot
   baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: l_foot
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristRLeg
   baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: r_leg
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristRArm
   baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: r_arm
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristRHand
   baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: r_hand
 
 - type: humanoidBaseSprite
   id: MobZombieFatUristRFoot
   baseSprite:
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: r_foot

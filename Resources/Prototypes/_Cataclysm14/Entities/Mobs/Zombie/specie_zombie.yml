@@ -82,11 +82,11 @@
     left hand:
       part: LeftHandZombie
     right leg:
-      part: RightLegZombieSlow
+      part: RightLegZombieNormal
       connections:
       - right foot
     left leg:
-      part: LeftLegZombieSlow
+      part: LeftLegZombieNormal
       connections:
       - left foot
     right foot:
@@ -132,110 +132,6 @@
     left hand:
       part: LeftHandZombie
 
-#MARK: body: Runner
-- type: body
-  id: BodyPartSetZombieRunner
-  name: "runner zombie"
-  root: torso
-  slots:
-    head:
-      part: HeadZombie
-      connections:
-      - torso
-      organs:
-        brain: OrganHumanBrain
-        eyes: OrganHumanEyes
-    torso:
-      part: TorsoHuman
-      connections:
-      - right arm
-      - left arm
-      - right leg
-      - left leg
-      - head
-      organs:
-        heart: OrganHumanHeart
-        lungs: OrganHumanLungs
-        stomach: OrganHumanStomach
-        liver: OrganHumanLiver
-        kidneys: OrganHumanKidneys
-    right arm:
-      part: RightArmZombie
-      connections:
-      - right hand
-    left arm:
-      part: LeftArmZombie
-      connections:
-      - left hand
-    right hand:
-      part: RightHandZombie
-    left hand:
-      part: LeftHandZombie
-    right leg:
-      part: RightLegZombieFast
-      connections:
-      - right foot
-    left leg:
-      part: LeftLegZombieFast
-      connections:
-      - left foot
-    right foot:
-      part: RightFootZombie
-    left foot:
-      part: LeftFootZombie
-
-#MARK: body: Sprinter
-- type: body
-  id: BodyPartSetZombieSprinter
-  name: "sprinter zombie"
-  root: torso
-  slots:
-    head:
-      part: HeadZombie
-      connections:
-      - torso
-      organs:
-        brain: OrganHumanBrain
-        eyes: OrganHumanEyes
-    torso:
-      part: TorsoHuman
-      connections:
-      - right arm
-      - left arm
-      - right leg
-      - left leg
-      - head
-      organs:
-        heart: OrganHumanHeart
-        lungs: OrganHumanLungs
-        stomach: OrganHumanStomach
-        liver: OrganHumanLiver
-        kidneys: OrganHumanKidneys
-    right arm:
-      part: RightArmZombie
-      connections:
-      - right hand
-    left arm:
-      part: LeftArmZombie
-      connections:
-      - left hand
-    right hand:
-      part: RightHandZombie
-    left hand:
-      part: LeftHandZombie
-    right leg:
-      part: RightLegZombieFastVery
-      connections:
-      - right foot
-    left leg:
-      part: LeftLegZombieFastVery
-      connections:
-      - left foot
-    right foot:
-      part: RightFootZombie
-    left foot:
-      part: LeftFootZombie
-
 #MARK: species: Base
 - type: species
   id: SpecieZombieBase
@@ -273,10 +169,10 @@
   markingLimits: MobZombieMarkingLimits
   dollPrototype: MobZombieDummy  #Not really important either
   skinColoration: HumanToned
-  minWidth: 0.6
-  maxWidth: 0.7
-  minHeight: 0.6
-  maxHeight: 0.7
+  minWidth: 0.7
+  maxWidth: 0.8
+  minHeight: 0.7
+  maxHeight: 0.8
 
 #MARK: species: Hulk
 - type: species
@@ -288,11 +184,11 @@
   defaultSkinTone: "#395445"
   markingLimits: MobZombieMarkingLimits
   dollPrototype: MobZombieDummy  #Not really important either
-  skinColoration: VoxFeathers # better than HumanToned
-  minWidth: 1.95
-  maxWidth: 2.05
-  minHeight: 1.95
-  maxHeight: 2.05
+  skinColoration: HumanToned
+  minWidth: 1.45
+  maxWidth: 1.55
+  minHeight: 1.45
+  maxHeight: 1.55
 
 #MARK: species: Headless
 - type: species

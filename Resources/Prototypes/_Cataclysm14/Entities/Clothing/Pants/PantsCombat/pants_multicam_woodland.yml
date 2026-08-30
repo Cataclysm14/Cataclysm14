@@ -1,0 +1,44 @@
+#MARK: Pants
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatMulticamWoodlandPants
+  name: combat pants (multicam woodland)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally created by the American company Crye Precision the multicam woodland patern was adopted by a pletora of army throughout the world.
+    This one dones greener and darker colors for cold forests.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/MulticamWoodland/pants_multicam_woodland_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/MulticamWoodland/pants_multicam_woodland_pants.rsi
+
+#MARK: Cargo Pants
+- type: entity
+  parent: BaseClothingPantsCargo
+  id: ClothingPantsCombatMulticamWoodlandCargoPants
+  name: cargo combat pants (multicam woodland)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally created by the American company Crye Precision the multicam woodland patern was adopted by a pletora of army throughout the world.
+    This one dones greener and darker colors for cold forests.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/MulticamWoodland/pants_multicam_woodland_cargo_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/MulticamWoodland/pants_multicam_woodland_cargo_pants.rsi
+
+#MARK: Shorts
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatMulticamWoodlandShorts
+  name: combat shorts (multicam woodland)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally created by the American company Crye Precision the multicam woodland patern was adopted by a pletora of army throughout the world.
+    This one dones greener and darker colors for cold forests.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/MulticamWoodland/pants_multicam_woodland_shorts.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/MulticamWoodland/pants_multicam_woodland_shorts.rsi

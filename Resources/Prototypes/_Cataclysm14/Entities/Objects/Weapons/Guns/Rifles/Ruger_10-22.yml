@@ -4,7 +4,7 @@
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseGunMelee]
   id: WeaponBoltActionRifleRuger10-22Base
   suffix: Empty
-  description: A weapon for precision shooting, or hunting charlies in the jungle. Uses .22 LR ammo.
+  description: A weapon for hunting small game, or popping zombie heads. Uses .22 LR ammo.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Guns/Rifles/ruger_10-22_64x32.rsi
@@ -16,7 +16,7 @@
     sprite: _Cataclysm14/Objects/Weapons/Guns/Rifles/ruger_10-22_32x32.rsi
     size: Large
     shape:
-    - 0,0,6,1
+    - 0,0,5,0
     storedScale: 2
   - type: Clothing
     slots:

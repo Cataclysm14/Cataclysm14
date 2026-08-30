@@ -1,9 +1,9 @@
 #MARK:  white
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatCapWhite
-  name: cap (white)
-  description: A plain colored t-shirt.
+  id: ClothingHeadHatCapBaseballWhite
+  name: baseball cap (white)
+  description: A plain colored baseball cap.
   components:
   - type: Sprite
     scale: 0.5,0.5
@@ -14,9 +14,9 @@
 #MARK:  red
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatCapRed
-  name: cap (red)
-  description: A plain colored t-shirt.
+  id: ClothingHeadHatCapBaseballRed
+  name: baseball cap (red)
+  description: A plain colored baseball cap.
   components:
   - type: Sprite
     scale: 0.5,0.5
@@ -40,9 +40,9 @@
 #MARK:  blue
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatCapBlue
-  name: cap (blue)
-  description: A plain colored t-shirt.
+  id: ClothingHeadHatCapBaseballBlue
+  name: baseball cap (blue)
+  description: A plain colored baseball cap.
   components:
   - type: Sprite
     scale: 0.5,0.5
@@ -66,9 +66,9 @@
 #MARK:  green
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatCapGreen
-  name: cap (green)
-  description: A plain colored t-shirt.
+  id: ClothingHeadHatCapBaseballGreen
+  name: baseball cap (green)
+  description: A plain colored baseball cap.
   components:
   - type: Sprite
     scale: 0.5,0.5
@@ -92,9 +92,9 @@
 #MARK:  yellow
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatCapYellow
-  name: cap (yellow)
-  description: A plain colored t-shirt.
+  id: ClothingHeadHatCapBaseballYellow
+  name: baseball cap (yellow)
+  description: A plain colored baseball cap.
   components:
   - type: Sprite
     scale: 0.5,0.5
@@ -118,9 +118,9 @@
 #MARK:  purple
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatCapPurple
-  name: cap (purple)
-  description: A plain colored t-shirt.
+  id: ClothingHeadHatCapBaseballPurple
+  name: baseball cap (purple)
+  description: A plain colored baseball cap.
   components:
   - type: Sprite
     scale: 0.5,0.5
@@ -144,9 +144,9 @@
 #MARK:  black
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatCapBlack
-  name: cap (black)
-  description: A plain colored t-shirt.
+  id: ClothingHeadHatCapBaseballBlack
+  name: baseball cap (black)
+  description: A plain colored baseball cap.
   components:
   - type: Sprite
     scale: 0.5,0.5
@@ -170,9 +170,9 @@
 #MARK:  beige
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatCapBeige
-  name: cap (beige)
-  description: A plain colored t-shirt.
+  id: ClothingHeadHatCapBaseballBeige
+  name: baseball cap (beige)
+  description: A plain colored baseball cap.
   components:
   - type: Sprite
     scale: 0.5,0.5
@@ -196,9 +196,9 @@
 #MARK: brown
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatCapBrown
-  name: cap (brown)
-  description: A plain colored t-shirt.
+  id: ClothingHeadHatCapBaseballBrown
+  name: baseball cap (brown)
+  description: A plain colored baseball cap.
   components:
   - type: Sprite
     scale: 0.5,0.5
@@ -222,9 +222,9 @@
 #MARK:  olive
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatCapOlive
-  name: cap (olive)
-  description: A plain colored t-shirt.
+  id: ClothingHeadHatCapBaseballOlive
+  name: baseball cap (olive)
+  description: A plain colored baseball cap.
   components:
   - type: Sprite
     scale: 0.5,0.5
@@ -248,9 +248,9 @@
 #MARK:  ranger green
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatCapRangerGreen
-  name: cap (ranger green)
-  description: A plain colored t-shirt.
+  id: ClothingHeadHatCapBaseballRangerGreen
+  name: baseball cap (ranger green)
+  description: A plain colored baseball cap.
   components:
   - type: Sprite
     scale: 0.5,0.5

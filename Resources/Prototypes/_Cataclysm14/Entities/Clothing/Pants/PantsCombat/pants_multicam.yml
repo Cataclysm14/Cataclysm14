@@ -1,0 +1,44 @@
+#MARK: Pants
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatMulticamPants
+  name: combat pants (multicam)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally created by the American company Crye Precision the multicam patern was adopted by a pletora of army throughout the world.
+    This one dones the original color pallette made for sandy environments.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/Multicam/pants_multicam_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/Multicam/pants_multicam_pants.rsi
+
+#MARK: Cargo Pants
+- type: entity
+  parent: BaseClothingPantsCargo
+  id: ClothingPantsCombatMulticamCargoPants
+  name: cargo combat pants (multicam)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally created by the American company Crye Precision the multicam patern was adopted by a pletora of army throughout the world.
+    This one dones the original color pallette made for sandy environments.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/Multicam/pants_multicam_cargo_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/Multicam/pants_multicam_cargo_pants.rsi
+
+#MARK: Shorts
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatMulticamShorts
+  name: combat shorts (multicam)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally created by the American company Crye Precision the multicam patern was adopted by a pletora of army throughout the world.
+    This one dones the original color pallette made for sandy environments.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/Multicam/pants_multicam_shorts.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/Multicam/pants_multicam_shorts.rsi

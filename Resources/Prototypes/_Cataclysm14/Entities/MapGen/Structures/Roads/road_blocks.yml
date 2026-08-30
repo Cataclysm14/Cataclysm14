@@ -23,7 +23,6 @@
       state: structure_border_road_line_white_straight
     - sprite: _Cataclysm14/Clothing/Head/Hats/hat_cap_police_US.rsi
       state: icon
-      offset: 3,5
   - type: RoomFill
     roomWhitelist:
       tags:

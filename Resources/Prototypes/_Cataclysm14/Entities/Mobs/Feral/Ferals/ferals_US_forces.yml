@@ -59,33 +59,35 @@
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatUCP
-          - id: ClothingPantsCombatUCPCargo
-        jumpsuit: !type:GroupSelector
-          children:
-          - id: ClothingShirtCombatUCP
-          - id: ClothingShirtCombatUCPCargo
-          prob: 0.9
-    - slots:
-        pants: !type:GroupSelector
-          children:
-          - id: ClothingPantsCombatMulticamOCP
-          - id: ClothingPantsCombatMulticamOCPCargo
-        jumpsuit: !type:GroupSelector
-          children:
-          - id: ClothingShirtCombatMulticamOCP
-          - id: ClothingShirtCombatMulticamOCPCargo
-          prob: 0.9
-    - slots:
-        pants: !type:GroupSelector
-          children:
-          - id: ClothingPantsCombatM81
-          - id: ClothingPantsCombatM81Cargo
+          - id: ClothingPantsCombatUCPPants
+          - id: ClothingPantsCombatUCPCargoPants
           prob: 0.99
         jumpsuit: !type:GroupSelector
           children:
-          - id: ClothingShirtCombatM81
-          - id: ClothingShirtCombatM81Cargo
+          - id: ClothingShirtCombatUCPTShirt
+          - id: ClothingShirtCombatUCPJacket
+          prob: 0.99
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatOCPPants
+          - id: ClothingPantsCombatOCPCargoPants
+          prob: 0.99
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatOCPTShirt
+          - id: ClothingShirtCombatOCPJacket
+          prob: 0.99
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatM81Pants
+          - id: ClothingPantsCombatM81CargoPants
+          prob: 0.99
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatM81TShirt
+          - id: ClothingShirtCombatM81Jacket
           prob: 0.99
 
   - type: RechargeBasicEntityAmmo

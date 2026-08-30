@@ -1,0 +1,44 @@
+#MARK: Pants
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatMulticamDesertPants
+  name: combat pants (multicam desert)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally created by the American company Crye Precision the multicam desert patern was adopted by a pletora of army throughout the world.
+    This one dones lighter sand and rock colors for desertic environments.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/MulticamDesert/pants_multicam_desert_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/MulticamDesert/pants_multicam_desert_pants.rsi
+
+#MARK: Cargo Pants
+- type: entity
+  parent: BaseClothingPantsCargo
+  id: ClothingPantsCombatMulticamDesertCargoPants
+  name: cargo combat pants (multicam desert)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally created by the American company Crye Precision the multicam desert patern was adopted by a pletora of army throughout the world.
+    This one dones lighter sand and rock colors for desertic environments.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/MulticamDesert/pants_multicam_desert_cargo_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/MulticamDesert/pants_multicam_desert_cargo_pants.rsi
+
+#MARK: Shorts
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatMulticamDesertShorts
+  name: combat shorts (multicam desert)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally created by the American company Crye Precision the multicam desert patern was adopted by a pletora of army throughout the world.
+    This one dones lighter sand and rock colors for desertic environments.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/MulticamDesert/pants_multicam_desert_shorts.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/MulticamDesert/pants_multicam_desert_shorts.rsi
