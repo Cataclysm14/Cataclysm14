@@ -10,9 +10,9 @@ namespace Content.Server.Ghost.Roles.Components;
 [Access(typeof(GhostRoleSystem))]
 public sealed partial class GhostRoleComponent : Component
 {
-    [DataField("name")] private string _roleName = "Unknown";
+    [DataField("name")] private string _roleName = "ghost-role-component-default-name";
 
-    [DataField("description")] private string _roleDescription = "Unknown";
+    [DataField("description")] private string _roleDescription = "ghost-role-component-default-description";
 
     [DataField("rules")] private string _roleRules = "ghost-role-component-default-rules";
 
