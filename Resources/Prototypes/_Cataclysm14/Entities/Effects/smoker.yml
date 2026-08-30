@@ -17,4 +17,4 @@
       - ReagentId: Nicotine
         Quantity: 25
   - type: RepeatTimerTrigger
-    interval: 15
+    interval: 20

@@ -2,7 +2,7 @@
 - type: autoEmote
   id: SmokerCough
   emote: Cough
-  interval: 12.0
+  interval: 20
   chance: 0.65
   withChat: true
 # I might add more here, I dunno ¯\(°_o)/¯
