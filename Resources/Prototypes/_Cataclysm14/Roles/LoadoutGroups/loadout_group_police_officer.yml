@@ -36,7 +36,7 @@
   id: PoliceOfficerLoadoutUniform
   price: 0
   equipment:
-    head: ClothingHeadHatCapPoliceUS
+    head: ClothingHeadHatCapBaseballPoliceUS
     eyes: ClothingEyesGlassesSecurity
     belt: ClothingBeltDutyBeltPolice
     gloves: ClothingHandsGlovesTacticalCombatBlack
