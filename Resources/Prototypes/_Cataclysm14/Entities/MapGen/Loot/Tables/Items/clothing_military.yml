@@ -264,6 +264,18 @@
     - id: ClothingPantsCombatTigerStripesPants
     - id: ClothingPantsCombatTigerStripesCargoPants
     - id: ClothingPantsCombatTigerStripesShorts
+    - id: ClothingPantsCombatRhodesianBushstrokePants
+    - id: ClothingPantsCombatRhodesianBushstrokeCargoPants
+    - id: ClothingPantsCombatRhodesianBushstrokeShorts
+    - id: ClothingPantsCombatFlecktarnAutumnPants
+    - id: ClothingPantsCombatFlecktarnAutumnCargoPants
+    - id: ClothingPantsCombatFlecktarnAutumnShorts
+    - id: ClothingPantsCombatDigitalBlackPants
+    - id: ClothingPantsCombatDigitalBlackCargoPants
+    - id: ClothingPantsCombatDigitalBlackShorts
+    - id: ClothingPantsCombatDigitalFloraPants
+    - id: ClothingPantsCombatDigitalFloraCargoPants
+    - id: ClothingPantsCombatDigitalFloraShorts
     - id: ClothingPantsCombatCCEPants
     - id: ClothingPantsCombatCCECargoPants
     - id: ClothingPantsCombatCCEShorts
@@ -302,6 +314,18 @@
     - id: ClothingShirtCombatTigerStripesShirt
     - id: ClothingShirtCombatTigerStripesTShirt
     - id: ClothingShirtCombatTigerStripesJacket
+    - id: ClothingShirtCombatRhodesianBushstrokeShirt
+    - id: ClothingShirtCombatRhodesianBushstrokeTShirt
+    - id: ClothingShirtCombatRhodesianBushstrokeJacket
+    - id: ClothingShirtCombatFlecktarnAutumnShirt
+    - id: ClothingShirtCombatFlecktarnAutumnTShirt
+    - id: ClothingShirtCombatFlecktarnAutumnJacket
+    - id: ClothingShirtCombatDigitalBlackShirt
+    - id: ClothingShirtCombatDigitalBlackTShirt
+    - id: ClothingShirtCombatDigitalBlackJacket
+    - id: ClothingShirtCombatDigitalFloraShirt
+    - id: ClothingShirtCombatDigitalFloraTShirt
+    - id: ClothingShirtCombatDigitalFloraJacket
     - id: ClothingShirtCombatCCEShirt
     - id: ClothingShirtCombatCCETShirt
     - id: ClothingShirtCombatCCEJacket
