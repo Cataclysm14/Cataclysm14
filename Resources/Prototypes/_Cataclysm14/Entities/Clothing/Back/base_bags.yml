@@ -31,11 +31,13 @@
     maxItemSize: Normal
     defaultStorageOrientation: Vertical
     grid:
-    - 0,0,5,2
+    - 0,0,4,3
   - type: Item
+    storedScale: 4.5
+    storedOffset: 0,-5
     size: Huge
     shape:
-    - 0,0,4,3
+    - 0,0,3,2
   - type: StaticPrice
     price: 17500
     vendPrice: 22500

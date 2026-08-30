@@ -6,6 +6,7 @@
   - LoadoutEntryClothingPantsDutyTan
   - LoadoutEntryClothingPantsDutyCoyoteBrown
   - LoadoutEntryClothingPantsDutyRangerGreen
+  - LoadoutEntryClothingPantsDutyOlive
   - LoadoutEntryClothingPantsDutyBlack
   #MARK: Jeans
   - LoadoutEntryClothingPantsJeansBlue
@@ -44,6 +45,11 @@
   id: LoadoutEntryClothingPantsDutyRangerGreen
   equipment:
     pants: ClothingPantsDutyRangerGreen
+
+- type: loadout
+  id: LoadoutEntryClothingPantsDutyOlive
+  equipment:
+    pants: ClothingPantsDutyOlive
 
 - type: loadout
   id: LoadoutEntryClothingPantsDutyBlack

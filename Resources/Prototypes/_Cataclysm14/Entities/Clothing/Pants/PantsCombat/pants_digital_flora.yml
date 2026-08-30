@@ -1,0 +1,41 @@
+#MARK: Pants
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatDigitalFloraPants
+  name: combat pants (digital flora)
+  description: >
+    Ripstop combat pants.
+    It has the digital flora pixelated patern in green colors of the Russian Ground Forces introduced in 2008.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/DigitalFlora/pants_digital_flora_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/DigitalFlora/pants_digital_flora_pants.rsi
+
+#MARK: Cargo Pants
+- type: entity
+  parent: BaseClothingPantsCargo
+  id: ClothingPantsCombatDigitalFloraCargoPants
+  name: cargo combat pants (digital flora)
+  description: >
+    Ripstop combat pants with large pockets.
+    It has the digital flora pixelated patern in green colors of the Russian Ground Forces introduced in 2008.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/DigitalFlora/pants_digital_flora_cargo_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/DigitalFlora/pants_digital_flora_cargo_pants.rsi
+
+#MARK: Shorts
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatDigitalFloraShorts
+  name: combat shorts (digital flora)
+  description: >
+    Ripstop combat shorts.
+    It has the digital flora pixelated patern in green colors of the Russian Ground Forces introduced in 2008.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/DigitalFlora/pants_digital_flora_shorts.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/DigitalFlora/pants_digital_flora_shorts.rsi

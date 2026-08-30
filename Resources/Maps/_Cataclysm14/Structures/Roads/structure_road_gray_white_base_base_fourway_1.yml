@@ -14,25 +14,14 @@ orphans: []
 nullspace: []
 tilemap:
   0: Space
-  2: FloorAsteroidSand
-  6: FloorAsteroidSandUnvariantized
-  5: FloorAsteroidTile
-  10: FloorAstroGrass
-  8: FloorBrokenWood
   17: FloorCataAsphaltBase
   16: FloorCataConcreteSlabSidewalkBase
-  11: FloorRGlass
   15: FloorShuttleBlack
   12: FloorShuttleBlue
-  82: FloorShuttleOrange
+  82: FloorCataGrassBaseDirty
   1: FloorShuttlePurple
   14: FloorShuttleRed
   13: FloorShuttleWhite
-  89: FloorSteel
-  9: FloorSteelDamaged
-  7: FloorWood
-  3: Plating
-  4: PlatingAsteroid
 entities:
 - proto: ""
   entities:

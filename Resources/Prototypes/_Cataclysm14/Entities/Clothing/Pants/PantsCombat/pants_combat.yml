@@ -1,0 +1,23 @@
+#MARK: Gorka4 Tan
+- type: entity
+  parent: BaseClothingPantsCargo
+  id: ClothingPantsCombatGorka4Tan
+  name: Gorka-4 combat pants (tan)
+  description: A russian combat suit originally made for the montainous terrain of the middle-east with high wind resistance.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/pants_Gorka4_tan.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/pants_Gorka4_tan.rsi
+
+#MARK: Gorka4 Olive
+- type: entity
+  parent: BaseClothingPantsCargo
+  id: ClothingPantsCombatGorka4Olive
+  name: Gorka-4 combat pants (olive)
+  description: A russian combat suit originally made for the montainous terrain of the middle-east with high wind resistance.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/pants_Gorka4_olive.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/pants_Gorka4_olive.rsi

@@ -1,10 +1,36 @@
-
-#tactical gloves
-
+#MARK: tan
 - type: entity
-  parent: [ ClothingHandsGlovesCombat]
+  parent: BaseClothingHandsGlovesTactical
   id: ClothingHandsGlovesTacticalTan
   name: tactical gloves (tan)
+  description: These tactical gloves are fireproof and shock resistant.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Hands/gloves_tactical_any.rsi
+    color: "#AD8D62"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Hands/gloves_tactical_any.rsi
+    clothingVisuals:
+      gloves:
+      - state: equipped-HAND
+        color: "#AD8D62"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#AD8D62"
+      right:
+      - state: inhand-right
+        color: "#AD8D62"
+  - type: StaticPrice
+    price: 1500
+    vendPrice: 1950
+
+#MARK: sand
+- type: entity
+  parent: BaseClothingHandsGlovesTactical
+  id: ClothingHandsGlovesTacticalSand
+  name: tactical gloves (sand)
   description: These tactical gloves are fireproof and shock resistant.
   components:
   - type: Sprite
@@ -28,8 +54,9 @@
     price: 1500
     vendPrice: 1950
 
+#MARK: black
 - type: entity
-  parent: [ ClothingHandsGlovesCombat]
+  parent: BaseClothingHandsGlovesTactical
   id: ClothingHandsGlovesTacticalBlack
   name: tactical gloves (black)
   description: These tactical gloves are fireproof and shock resistant.
@@ -55,8 +82,9 @@
     price: 1500
     vendPrice: 1950
 
+#MARK: ranger green
 - type: entity
-  parent: [ ClothingHandsGlovesCombat]
+  parent: BaseClothingHandsGlovesTactical
   id: ClothingHandsGlovesTacticalRangerGreen
   name: tactical gloves (ranger green)
   description: These tactical gloves are fireproof and shock resistant.
@@ -82,8 +110,9 @@
     price: 1500
     vendPrice: 1950
 
+#MARK: olive
 - type: entity
-  parent: [ ClothingHandsGlovesCombat]
+  parent: BaseClothingHandsGlovesTactical
   id: ClothingHandsGlovesTacticalOlive
   name: tactical gloves (olive)
   description: These tactical gloves are fireproof and shock resistant.
@@ -109,8 +138,37 @@
     price: 1500
     vendPrice: 1950
 
+#MARK: green
 - type: entity
-  parent: [ ClothingHandsGlovesCombat]
+  parent: BaseClothingHandsGlovesTactical
+  id: ClothingHandsGlovesTacticalGreen
+  name: tactical gloves (green)
+  description: These tactical gloves are fireproof and shock resistant.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Hands/gloves_tactical_any.rsi
+    color: "#3B442C"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Hands/gloves_tactical_any.rsi
+    clothingVisuals:
+      gloves:
+      - state: equipped-HAND
+        color: "#3B442C"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#3B442C"
+      right:
+      - state: inhand-right
+        color: "#3B442C"
+  - type: StaticPrice
+    price: 1500
+    vendPrice: 1950
+
+#MARK: coyote brown
+- type: entity
+  parent: BaseClothingHandsGlovesTactical
   id: ClothingHandsGlovesTacticalCoyoteBrown
   name: tactical gloves (coyote brown)
   description: These tactical gloves are fireproof and shock resistant.
@@ -136,8 +194,9 @@
     price: 1500
     vendPrice: 1950
 
+#MARK: white
 - type: entity
-  parent: [ ClothingHandsGlovesCombat]
+  parent: BaseClothingHandsGlovesTactical
   id: ClothingHandsGlovesTacticalWhite
   name: tactical gloves (white)
   description: These tactical gloves are fireproof and shock resistant.

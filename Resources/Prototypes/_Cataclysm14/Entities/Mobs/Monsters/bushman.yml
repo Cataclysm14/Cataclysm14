@@ -37,12 +37,12 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Structural: 150
-        Slash: 20 #Horror
-        Blunt: 20
-        Heat: 20
-        Piercing: 20
-        Radiation: 10
+        Structural: 25
+        Slash: 15
+        Blunt: 5
+        # Heat: 20
+        Piercing: 5
+        # Radiation: 10
   - type: NpcFactionMember
     factions:
       - NpcFactionLivingPlants

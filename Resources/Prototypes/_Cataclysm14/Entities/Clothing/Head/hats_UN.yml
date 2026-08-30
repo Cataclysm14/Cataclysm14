@@ -1,7 +1,7 @@
 #MARK: UN cap
     - type: entity
       parent: BaseClothingHead
-      id: ClothingHeadHatCapUN
+      id: ClothingHeadHatCapBaseballUN
       name: cap (UN)
       description: Donning the colours of the UN and in the form of a cap.
       components:

@@ -30,11 +30,12 @@
       sprite: _Cataclysm14/Objects/Weapons/Guns/BattleRifles/M110-SASS_32x32.rsi
     - type: Gun
       soundGunshot:
-        path: /Audio/_NF/Weapons/Guns/Gunshots/rifle.ogg
+        path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
         params:
+          pitch: 0.9
           volume: 15
-          variation: 0.1
-          pitch: 0.85
+          variation: 0.15
+          playOffsetSeconds: 0.05
       fireRate: 9
     - type: ChamberMagazineAmmoProvider
       soundRack:

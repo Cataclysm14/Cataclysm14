@@ -1,0 +1,41 @@
+#MARK: TShirt
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtCombatUCPTShirt
+  name: combat t-shirt (UCP patern)
+  description: >
+    Ripstop combat t-shirt with medium sleeves.
+    It has the UCP (Universal Combat Patern) camo variant made for the US army.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/UCP/shirt_UCP_Tshirt.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/UCP/shirt_UCP_Tshirt.rsi
+
+#MARK: Cargo
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatUCPJacket
+  name: combat jacket (UCP patern)
+  description: >
+    Ripstop combat jacket with large pockets.
+    It has the UCP (Universal Combat Patern) camo variant made for the US army.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/UCP/shirt_UCP_jacket.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/UCP/shirt_UCP_jacket.rsi
+
+#MARK: Shirt
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatUCPShirt
+  name: combat shirt (UCP patern)
+  description: >
+    Ripstop combat shirt.
+    It has the UCP (Universal Combat Patern) camo variant made for the US army.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/UCP/shirt_UCP_shirt.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/UCP/shirt_UCP_shirt.rsi

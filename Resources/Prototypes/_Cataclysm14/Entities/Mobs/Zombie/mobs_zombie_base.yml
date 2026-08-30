@@ -3,6 +3,12 @@
   id: BaseMobZombieStats
   abstract: true
   components:
+  - type: Clumsy
+    clumsyDefaultCheck: 1
+    gunShootFailDamage:
+      types:
+        Heat: 51
+    clumsyVaulting: false
   - type: PassiveDamage
     allowedStates:
     - Alive
@@ -58,7 +64,7 @@
   abstract: true
   components:
   - type: Icon
-    sprite: _Cataclysm14/Mobs/Species/Zombie/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/Zombie/parts.rsi
     state: full
   - type: Sprite
     layers:
@@ -185,9 +191,8 @@
   - type: Body
     prototype: BodyPartSetZombieBase
     requiredLegs: 2
-  - type: MovementSpeedModifier
-#Praise shitmed, this dont do shit, edit the legs inside parts_zomb    baseWalkSpeed : 4.5
-    baseSprintSpeed : 4.5
+  - type: UnshitmedMovementModifier
+    sprintSpeedMod: 1
   - type: MeleeWeapon
     attackRate: 0.8
     altDisarm: false
@@ -213,12 +218,11 @@
   - BaseMobZombieStats
   components:
   - type: Icon
-    sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/parts.rsi
+    sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/parts.rsi
     state: full
   - type: Body
     prototype: BodyPartSetZombieFatUrist
     requiredLegs: 2
-  - type: MovementSpeedModifier
   - type: UnshitmedMovementModifier
     sprintSpeedMod: 0.8
   - type: HumanoidAppearance
@@ -229,32 +233,32 @@
       mask:
         sizeMaps:
           32:
-            sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/displacement.rsi
+            sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/displacement.rsi
             state: mask
       neck:
         sizeMaps:
           32:
-            sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/displacement.rsi
+            sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/displacement.rsi
             state: neck
       gloves:
         sizeMaps:
           32:
-            sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/displacement.rsi
+            sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/displacement.rsi
             state: hand
       jumpsuit:
         sizeMaps:
           32:
-            sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/displacement.rsi
+            sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/displacement.rsi
             state: jumpsuit
       pants:
         sizeMaps:
           32:
-            sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/displacement.rsi
+            sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/displacement.rsi
             state: pants
       outerClothing:
         sizeMaps:
           32:
-            sprite: _Cataclysm14/Mobs/Species/Zombie/FatUrist/displacement.rsi
+            sprite: _Cataclysm14/Mobs/Species/Zombies/ZombieFat/displacement.rsi
             state: outerClothing
   - type: MobThresholds
     thresholds:
@@ -288,7 +292,6 @@
   - type: Body
     prototype: BodyPartSetZombieBase
     requiredLegs: 2
-  - type: MovementSpeedModifier
   - type: UnshitmedMovementModifier
     sprintSpeedMod: 0.98
   - type: HumanoidAppearance
@@ -325,9 +328,8 @@
   - type: Body
     prototype: BodyPartSetZombieHeadless
     requiredLegs: 2
-  - type: MovementSpeedModifier
-#Praise shitmed, this dont do shit, edit the legs inside parts_zomb    baseWalkSpeed : 1
-    baseSprintSpeed : 1
+  - type: UnshitmedMovementModifier
+    sprintSpeedMod: 0.75
   - type: MeleeWeapon
     attackRate: 0.8
     altDisarm: false
@@ -375,9 +377,8 @@
   - type: Body
     prototype: BodyPartSetZombieCrawling
     requiredLegs: 2
-  - type: MovementSpeedModifier #has no legs thus it actually works
-    baseWalkSpeed : 2
-    baseSprintSpeed : 2
+  - type: UnshitmedMovementModifier
+    sprintSpeedMod: 0.5
   - type: MeleeWeapon
     attackRate: 0.8
     altDisarm: false
@@ -436,9 +437,8 @@
   - type: Body
     prototype: BodyPartSetZombieBase
     requiredLegs: 2
-  - type: MovementSpeedModifier
-#Praise shitmed, this dont do shit, edit the legs inside parts_zomb    baseWalkSpeed : 4.5
-    baseSprintSpeed : 4.5
+  - type: UnshitmedMovementModifier
+    sprintSpeedMod: 1
   - type: ProjectileBatteryAmmoProvider
     proto: ProjectileLightningZombie
     fireCost: 1
@@ -550,11 +550,10 @@
   - BaseMobZombieStats
   components:
   - type: Body
-    prototype: BodyPartSetZombieRunner
+    prototype: BodyPartSetZombieBase
     requiredLegs: 2
-  - type: MovementSpeedModifier
-#Praise shitmed, this dont do shit, edit the legs inside parts_zomb    baseWalkSpeed : 1
-    baseSprintSpeed : 1
+  - type: UnshitmedMovementModifier
+    sprintSpeedMod: 1.5
   - type: MeleeWeapon
     attackRate: 0.8
     altDisarm: false
@@ -597,11 +596,10 @@
   - BaseMobZombieStats
   components:
   - type: Body
-    prototype: BodyPartSetZombieSprinter
+    prototype: BodyPartSetZombieBase
     requiredLegs: 2
-  - type: MovementSpeedModifier
-#Praise shitmed, this dont do shit, edit the legs inside parts_zomb    baseWalkSpeed : 1
-    baseSprintSpeed : 1
+  - type: UnshitmedMovementModifier
+    sprintSpeedMod: 2
   - type: MeleeWeapon
     attackRate: 0.8
     altDisarm: false
@@ -735,8 +733,8 @@
     prototype: BodyPartSetZombieBase
     requiredLegs: 2
   - type: MovementSpeedModifier
-  - type: UnshitmedMovementModifier # In Cataclysm DDA: Zombie = 70 spd, Hulk = 130 spd, so 130/70 = 1.85 boost speed
-    sprintSpeedMod: 1.8
+  - type: UnshitmedMovementModifier # Hulk way way to fast, their hulk isn't like ours
+    sprintSpeedMod: 0.8
   - type: HumanoidAppearance
     species: SpecieZombieHulk
   - type: MobThresholds # Zombie=80, Hulk=480, boost=480/80=6 aprox https://cdda-guide.nornagon.net/monster/mon_zombie_hulk?v=0.I
@@ -750,8 +748,8 @@
     hidden: true
     soundHit:
       collection: AlienClaw
-    animation: WeaponArcBite # 2d3 (max6) for zombie, 4d8 (max32) for hulk, 
-    damage:                  # with 25 typical survivor will crit from 4 (100/25) attacks 
+    animation: WeaponArcBite # 2d3 (max6) for zombie, 4d8 (max32) for hulk,
+    damage:                  # with 25 typical survivor will crit from 4 (100/25) attacks
       types:
         Slash: 25
 
@@ -791,7 +789,7 @@
     hidden: true
     soundHit:
       collection: AlienClaw
-    animation: WeaponArcBite # 2d3 (max6) for zombie, 1d6 bash + 2cut (max8) for smoker, 
+    animation: WeaponArcBite # 2d3 (max6) for zombie, 1d6 bash + 2cut (max8) for smoker,
     damage:
       types:
         Brute: 9

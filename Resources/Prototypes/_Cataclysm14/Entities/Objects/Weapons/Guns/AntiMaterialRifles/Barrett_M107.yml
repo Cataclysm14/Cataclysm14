@@ -2,7 +2,7 @@
 - type: entity
   name: Barrett M107 AMR (12,7x99mm NATO)
   parent: BaseWeaponRifle
-  id: WeaponCarbineBarrettM107Base
+  id: WeaponAntiMaterialRifleBarrettM107Base
   abstract: true
   description: An medium anti-material precision rifle to take out enemy targets, material or living, from afar with a strong punch.
   components:
@@ -77,8 +77,8 @@
 
 #MARK: Barrett 5rd Empty
 - type: entity
-  parent: WeaponCarbineBarrettM107Base
-  id: WeaponCarbineBarrettM107FilledBarrett5rdEmpty
+  parent: WeaponAntiMaterialRifleBarrettM107Base
+  id: WeaponAntiMaterialRifleBarrettM107FilledBarrett5rdEmpty
   suffix: Empty - Barrett 5rd
   components:
   - type: ItemSlots
@@ -104,8 +104,8 @@
 
 #MARK: Barrett 5rd FMJ
 - type: entity
-  parent: WeaponCarbineBarrettM107Base
-  id: WeaponCarbineBarrettM107FilledBarrett5rdFMJ
+  parent: WeaponAntiMaterialRifleBarrettM107Base
+  id: WeaponAntiMaterialRifleBarrettM107FilledBarrett5rdFMJ
   suffix: FMJ - Barrett 5rd
   components:
   - type: ItemSlots
@@ -131,8 +131,8 @@
 
 #MARK: Barrett 5rd HE
 - type: entity
-  parent: WeaponCarbineBarrettM107Base
-  id: WeaponCarbineBarrettM107FilledBarrett5rdHE
+  parent: WeaponAntiMaterialRifleBarrettM107Base
+  id: WeaponAntiMaterialRifleBarrettM107FilledBarrett5rdHE
   suffix: HE - Barrett 5rd
   components:
   - type: ItemSlots

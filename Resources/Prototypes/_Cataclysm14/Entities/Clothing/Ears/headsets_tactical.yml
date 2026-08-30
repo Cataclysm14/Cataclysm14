@@ -21,3 +21,15 @@
     sprite: _Cataclysm14/Clothing/Ears/Headsets/headset_Comtac2_olive.rsi
   - type: Clothing
     sprite: _Cataclysm14/Clothing/Ears/Headsets/headset_Comtac2_olive.rsi
+
+- type: entity
+  parent: BaseClothingEarsRadio
+  id: ClothingEarHeadsetTacticalComtac2Black
+  name: Comtac II tactical headset (black)
+  description: An ergonomic tactical headset which features compatibility with handheld radios and noise reduction. Remember to change the default channel.
+  components:
+  - type: Sprite
+    scale: 0.35,0.35
+    sprite: _Cataclysm14/Clothing/Ears/Headsets/headset_Comtac2_black.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Ears/Headsets/headset_Comtac2_black.rsi
