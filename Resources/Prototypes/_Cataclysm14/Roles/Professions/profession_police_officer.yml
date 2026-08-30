@@ -1,0 +1,16 @@
+- type: job
+  id: ProfessionPoliceOfficer
+  name: profession-name-police-officer
+  description: profession-description-police-officer
+  playTimeTracker: ProfessionTimeTrackerPoliceOfficer
+  setPreference: true
+  icon: JobIconPoliceOfficer
+  whitelisted: false
+  applyTraits: true
+  
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 5h
+
+- type: playTimeTracker
+  id: ProfessionTimeTrackerPoliceOfficer

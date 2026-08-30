@@ -1,0 +1,81 @@
+#Fixed Gear, hidden
+- type: loadoutGroup
+  id: LoadoutGroupPoliceOfficerUniform
+  name: loadout-group-police-officer-uniform
+  hidden: true
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - PoliceOfficerLoadoutUniform
+  fallbacks:
+  - PoliceOfficerLoadoutUniform
+  
+#Body Armor
+- type: loadoutGroup
+  id: LoadoutGroupPoliceOfficerVest
+  name: loadout-group-police-officer-vest
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - PoliceOfficerLoadoutVestBlack
+  - PoliceOfficerLoadoutVestHighVis
+  fallbacks:
+  - PoliceOfficerLoadoutVestBlack
+
+#Face
+- type: loadoutGroup
+  id: LoadoutGroupPoliceOfficerFaceCovering
+  name: loadout-group-police-officer-face
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - PoliceOfficerLoadoutNeckGaiterBlack
+  - PoliceOfficerLoadoutSkiMaskBlack
+
+- type: loadout
+  id: PoliceOfficerLoadoutUniform
+  price: 0
+  equipment:
+    head: ClothingHeadHatCapBaseballPoliceUS
+    eyes: ClothingEyesGlassesSecurity
+    belt: ClothingBeltDutyBeltPolice
+    gloves: ClothingHandsGlovesTacticalCombatBlack
+    pants: ClothingPantsPoliceCopUS
+    jumpsuit: ClothingShirtPoliceCopUS
+    shoes: ClothingShoesBootsSWATBootsBlack
+    id: AccessIdentificationIDCardUS
+    pocket1: ToolRadioHandheldCommercialBlack
+    pocket2: ToolLightFlashlightHandheldBlackFilled
+  storage:
+    belt:
+    - WeaponPistolGlock17Filled17rdFMJ
+    - Magazine9x19mmParabellumGlock17rdFMJ
+    - Magazine9x19mmParabellumGlock17rdFMJ
+    - Magazine9x19mmParabellumGlock17rdFMJ
+    - WeaponMeleeNightstick
+    - Handcuffs
+
+- type: loadout
+  id: PoliceOfficerLoadoutVestBlack
+  price: 0
+  equipment:
+    outerClothing: ClothingOuterBulletProofVestPoliceUSLightBlack
+
+- type: loadout
+  id: PoliceOfficerLoadoutVestHighVis
+  price: 0
+  equipment:
+    outerClothing: ClothingOuterBulletProofVestPoliceUSLightHighVis
+
+- type: loadout
+  id: PoliceOfficerLoadoutNeckGaiterBlack
+  price: 0
+  equipment:
+    balaclava: ClothingBalaclavaNeckGaiterBlack
+
+- type: loadout
+  id: PoliceOfficerLoadoutSkiMaskBlack
+  price: 0
+  equipment:
+    balaclava: ClothingBalaclavaBalaclavaSkiMaskBlack
+    
