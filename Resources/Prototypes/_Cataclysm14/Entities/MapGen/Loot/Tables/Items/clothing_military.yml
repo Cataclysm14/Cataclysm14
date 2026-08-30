@@ -3,8 +3,8 @@
   id: LootTableClothingShirtCombatCCE
   table: !type:GroupSelector
     children:
-    - id: ClothingCombatCCE
-    - id: ClothingCombatCCECargo
+    - id: ClothingShirtCombatCCE
+    - id: ClothingShirtCombatCCECargo
 
 #MARK: PantsCombatCCE
 - type: entityTable
@@ -51,20 +51,20 @@
   id: LootTableClothingNationalGuardTop
   table: !type:GroupSelector
     children:
-    - id: ClothingCombatUCPTShirt
-    - id: ClothingCombatUCPJacket
-    - id: ClothingCombatOCPTShirt
-    - id: ClothingCombatOCPJacket
-    - id: ClothingCombatMulticamTShirt
-    - id: ClothingCombatMulticamJacket
-    - id: ClothingCombatMulticamAridTShirt
-    - id: ClothingCombatMulticamAridJacket
-    - id: ClothingCombatMulticamDesertTShirt
-    - id: ClothingCombatMulticamDesertJacket
-    - id: ClothingCombatMulticamWoodlandTShirt
-    - id: ClothingCombatMulticamWoodlandJacket
-    - id: ClothingCombatM81TShirt
-    - id: ClothingCombatM81Jacket
+    - id: ClothingShirtCombatUCPTShirt
+    - id: ClothingShirtCombatUCPJacket
+    - id: ClothingShirtCombatOCPTShirt
+    - id: ClothingShirtCombatOCPJacket
+    - id: ClothingShirtCombatMulticamTShirt
+    - id: ClothingShirtCombatMulticamJacket
+    - id: ClothingShirtCombatMulticamAridTShirt
+    - id: ClothingShirtCombatMulticamAridJacket
+    - id: ClothingShirtCombatMulticamDesertTShirt
+    - id: ClothingShirtCombatMulticamDesertJacket
+    - id: ClothingShirtCombatMulticamWoodlandTShirt
+    - id: ClothingShirtCombatMulticamWoodlandJacket
+    - id: ClothingShirtCombatM81TShirt
+    - id: ClothingShirtCombatM81Jacket
 
 #MARK: National Guard Bottom
 - type: entityTable
@@ -278,38 +278,38 @@
   id: LootTableClothingsSurplusTop
   table: !type:GroupSelector
     children:
-    - id: ClothingCombatUCPShirt
-    - id: ClothingCombatUCPTShirt
-    - id: ClothingCombatUCPJacket
-    - id: ClothingCombatOCPShirt
-    - id: ClothingCombatOCPTShirt
-    - id: ClothingCombatOCPJacket
-    - id: ClothingCombatMulticamShirt
-    - id: ClothingCombatMulticamTShirt
-    - id: ClothingCombatMulticamJacket
-    - id: ClothingCombatMulticamAridShirt
-    - id: ClothingCombatMulticamAridTShirt
-    - id: ClothingCombatMulticamAridJacket
-    - id: ClothingCombatMulticamDesertShirt
-    - id: ClothingCombatMulticamDesertTShirt
-    - id: ClothingCombatMulticamDesertJacket
-    - id: ClothingCombatMulticamWoodlandShirt
-    - id: ClothingCombatMulticamWoodlandTShirt
-    - id: ClothingCombatMulticamWoodlandJacket
-    - id: ClothingCombatM81Shirt
-    - id: ClothingCombatM81TShirt
-    - id: ClothingCombatM81Jacket
-    - id: ClothingCombatTigerStripesShirt
-    - id: ClothingCombatTigerStripesTShirt
-    - id: ClothingCombatTigerStripesJacket
-    - id: ClothingCombatCCEShirt
-    - id: ClothingCombatCCETShirt
-    - id: ClothingCombatCCEJacket
-    - id: ClothingCombatCCEDesertShirt
-    - id: ClothingCombatCCEDesertTShirt
-    - id: ClothingCombatCCEDesertJacket
-    - id: ClothingCombatGorka4Tan
-    - id: ClothingCombatGorka4Olive
+    - id: ClothingShirtCombatUCPShirt
+    - id: ClothingShirtCombatUCPTShirt
+    - id: ClothingShirtCombatUCPJacket
+    - id: ClothingShirtCombatOCPShirt
+    - id: ClothingShirtCombatOCPTShirt
+    - id: ClothingShirtCombatOCPJacket
+    - id: ClothingShirtCombatMulticamShirt
+    - id: ClothingShirtCombatMulticamTShirt
+    - id: ClothingShirtCombatMulticamJacket
+    - id: ClothingShirtCombatMulticamAridShirt
+    - id: ClothingShirtCombatMulticamAridTShirt
+    - id: ClothingShirtCombatMulticamAridJacket
+    - id: ClothingShirtCombatMulticamDesertShirt
+    - id: ClothingShirtCombatMulticamDesertTShirt
+    - id: ClothingShirtCombatMulticamDesertJacket
+    - id: ClothingShirtCombatMulticamWoodlandShirt
+    - id: ClothingShirtCombatMulticamWoodlandTShirt
+    - id: ClothingShirtCombatMulticamWoodlandJacket
+    - id: ClothingShirtCombatM81Shirt
+    - id: ClothingShirtCombatM81TShirt
+    - id: ClothingShirtCombatM81Jacket
+    - id: ClothingShirtCombatTigerStripesShirt
+    - id: ClothingShirtCombatTigerStripesTShirt
+    - id: ClothingShirtCombatTigerStripesJacket
+    - id: ClothingShirtCombatCCEShirt
+    - id: ClothingShirtCombatCCETShirt
+    - id: ClothingShirtCombatCCEJacket
+    - id: ClothingShirtCombatCCEDesertShirt
+    - id: ClothingShirtCombatCCEDesertTShirt
+    - id: ClothingShirtCombatCCEDesertJacket
+    - id: ClothingShirtCombatGorka4Tan
+    - id: ClothingShirtCombatGorka4Olive
 
 #MARK: Surplus Helmet
 - type: entityTable

@@ -3,6 +3,12 @@
   id: BaseMobZombieStats
   abstract: true
   components:
+  - type: Clumsy
+    clumsyDefaultCheck: 1
+    gunShootFailDamage:
+      types:
+        Heat: 51
+    clumsyVaulting: false
   - type: PassiveDamage
     allowedStates:
     - Alive
