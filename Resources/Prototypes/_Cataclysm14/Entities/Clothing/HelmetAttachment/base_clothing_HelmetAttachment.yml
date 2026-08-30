@@ -9,6 +9,9 @@
     - 0,0,1,0
     size: Small
   - type: Clothing
+    clothingVisuals:
+      helmetattachment:
+      - state: equipped-HELMETATTACHMENT
     quickEquip: true
     slots:
     - HELMETATTACHMENT

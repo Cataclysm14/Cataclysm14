@@ -1,0 +1,44 @@
+#MARK: Pants
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatFlecktarnAutumnPants
+  name: combat pants (autumn flecktarn)
+  description: >
+    Ripstop combat pants.
+    Originally used by german SS units, kept by the german federal army Bundeswehr and adapted in multiple palettes with a patern adapted to most environments.
+    This particular version is colored in autumn colors with a mix of brown, tan, orange and black.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/FlecktarnAutumn/pants_flecktarn_autumn_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/FlecktarnAutumn/pants_flecktarn_autumn_pants.rsi
+
+#MARK: Cargo Pants
+- type: entity
+  parent: BaseClothingPantsCargo
+  id: ClothingPantsCombatFlecktarnAutumnCargoPants
+  name: cargo combat pants (autumn flecktarn)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally used by german SS units, kept by the german federal army Bundeswehr and adapted in multiple palettes with a patern adapted to most environments.
+    This particular version is colored in autumn colors with a mix of brown, tan, orange and black.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/FlecktarnAutumn/pants_flecktarn_autumn_cargo_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/FlecktarnAutumn/pants_flecktarn_autumn_cargo_pants.rsi
+
+#MARK: Shorts
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatFlecktarnAutumnShorts
+  name: combat shorts (autumn flecktarn)
+  description: >
+    Ripstop combat shorts.
+    Originally used by german SS units, kept by the german federal army Bundeswehr and adapted in multiple palettes with a patern adapted to most environments.
+    This particular version is colored in autumn colors with a mix of brown, tan, orange and black.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/FlecktarnAutumn/pants_flecktarn_autumn_shorts.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/FlecktarnAutumn/pants_flecktarn_autumn_shorts.rsi

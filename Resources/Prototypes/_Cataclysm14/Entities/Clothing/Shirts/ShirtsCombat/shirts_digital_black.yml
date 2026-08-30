@@ -1,0 +1,41 @@
+#MARK: TShirt
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtCombatDigitalBlackTShirt
+  name: combat t-shirt (digital black)
+  description: >
+    Ripstop combat t-shirt with medium sleeves.
+    It has a black digital camo patern for covert operations and larpers.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/DigitalBlack/shirt_digital_black_Tshirt.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/DigitalBlack/shirt_digital_black_Tshirt.rsi
+
+#MARK: Cargo
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatDigitalBlackJacket
+  name: combat jacket (digital black)
+  description: >
+    Ripstop combat jacket with large pockets.
+    It has a black digital camo patern for covert operations and larpers.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/DigitalBlack/shirt_digital_black_jacket.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/DigitalBlack/shirt_digital_black_jacket.rsi
+
+#MARK: Shirt
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatDigitalBlackShirt
+  name: combat shirt (digital black)
+  description: >
+    Ripstop combat shirt.
+    It has a black digital camo patern for covert operations and larpers.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/DigitalBlack/shirt_digital_black_shirt.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/DigitalBlack/shirt_digital_black_shirt.rsi

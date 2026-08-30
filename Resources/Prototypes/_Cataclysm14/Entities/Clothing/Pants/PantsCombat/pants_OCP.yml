@@ -1,0 +1,41 @@
+#MARK: Pants
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatOCPPants
+  name: combat pants (OCP patern)
+  description: >
+    Ripstop combat pants.
+    It has the OCP multicam variant (Operational Camouflage Pattern) camo made for the US army.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/OCP/pants_OCP_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/OCP/pants_OCP_pants.rsi
+
+#MARK: Cargo Pants
+- type: entity
+  parent: BaseClothingPantsCargo
+  id: ClothingPantsCombatOCPCargoPants
+  name: cargo combat pants (OCP patern)
+  description: >
+    Ripstop combat pants with large pockets.
+    It has the OCP multicam variant (Operational Camouflage Pattern) camo made for the US army.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/OCP/pants_OCP_cargo_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/OCP/pants_OCP_cargo_pants.rsi
+
+#MARK: Shorts
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatOCPShorts
+  name: combat shorts (OCP patern)
+  description: >
+    Ripstop combat shorts.
+    It has the OCP multicam variant (Operational Camouflage Pattern) camo made for the US army.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/OCP/pants_OCP_shorts.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/OCP/pants_OCP_shorts.rsi

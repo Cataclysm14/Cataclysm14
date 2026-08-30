@@ -1,0 +1,41 @@
+#MARK: TShirt
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtCombatM81TShirt
+  name: combat t-shirt (M81 patern)
+  description: >
+    Ripstop combat t-shirt with medium sleeves.
+    It has the M81 american forces woodland camo.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/M81/shirt_M81_Tshirt.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/M81/shirt_M81_Tshirt.rsi
+
+#MARK: Cargo
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatM81Jacket
+  name: combat jacket (M81 patern)
+  description: >
+    Ripstop combat jacket with large pockets.
+    It has the M81 american forces woodland camo.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/M81/shirt_M81_jacket.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/M81/shirt_M81_jacket.rsi
+
+#MARK: Shirt
+- type: entity
+  parent: BaseClothingShirtCargo
+  id: ClothingShirtCombatM81Shirt
+  name: combat shirt (M81 patern)
+  description: >
+    Ripstop combat shirt.
+    It has the M81 american forces woodland camo.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/M81/shirt_M81_shirt.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/M81/shirt_M81_shirt.rsi

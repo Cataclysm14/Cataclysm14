@@ -17,16 +17,16 @@
   id: LootTableClothingSWATTop
   table: !type:GroupSelector
     children:
-    - id: ClothingShirtCombatDigitalBlack
-    - id: ClothingShirtCombatDigitalBlackCargo
+    - id: ClothingShirtCombatDigitalBlackTShirt
+    - id: ClothingShirtCombatDigitalBlackJacket
 
 #MARK: SWAT
 - type: entityTable
   id: LootTableClothingSWATBottom
   table: !type:GroupSelector
     children:
-    - id: ClothingPantsCombatDigitalBlack
-    - id: ClothingPantsCombatDigitalBlackCargo
+    - id: ClothingPantsCombatDigitalBlackPants
+    - id: ClothingPantsCombatDigitalBlackCargoPants
 
 #MARK: US Police vest
 - type: entityTable

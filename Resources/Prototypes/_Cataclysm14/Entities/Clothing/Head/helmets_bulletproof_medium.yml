@@ -1,14 +1,14 @@
-#MARK: ACH
+#MARK: ACH OCP
     - type: entity
       parent: BaseClothingHead
-      id: ClothingHeadHelmetBulletproofACHMulticamOCP
-      name: ACH ballistic helmet (OCP multicam)
+      id: ClothingHeadHelmetBulletproofACHOCP
+      name: ACH ballistic helmet (OCP)
       description: A medium ballistic helmet made for the US army, the Advanced Combat Headgear ACH.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_ACH_OCP_multicam.rsi
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_ACH_OCP.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_ACH_OCP_multicam.rsi
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_ACH_OCP.rsi
       - type: ExplosionResistance
         damageCoefficient: 0.8
       - type: Armor
@@ -26,3 +26,15 @@
       - type: StaticPrice
         price: 12000
         vendPrice: 20000
+
+#MARK: ACH Black
+    - type: entity
+      parent: ClothingHeadHelmetBulletproofACHOCP
+      id: ClothingHeadHelmetBulletproofACHBlack
+      name: ACH ballistic helmet (black)
+      description: A medium ballistic helmet made for the US army, the Advanced Combat Headgear ACH.
+      components:
+      - type: Sprite
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_ACH_black.rsi
+      - type: Clothing
+        sprite: _Cataclysm14/Clothing/Head/Helmets/helmet_bulletproof_ACH_black.rsi

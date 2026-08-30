@@ -5,7 +5,7 @@ maps:
 grids:
 - 0
 tilemap:
-  0: Space
+  0: FloorCataGrassBaseDirty
   1: FloorCataAsphaltBase
   2: FloorCataConcreteSlabBase
   3: FloorCataConcreteSlabSidewalkBase
@@ -50,7 +50,7 @@ entities:
         version: 2
         nodes: []
     - type: SpreaderGrid
-    - type: GridPathfinding 
+    - type: GridPathfinding
 - proto: MobFeralNationalGuard
   entities:
   - uid: 75

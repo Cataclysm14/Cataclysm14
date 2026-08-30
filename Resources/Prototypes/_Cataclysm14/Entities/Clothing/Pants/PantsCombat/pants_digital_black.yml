@@ -1,0 +1,41 @@
+#MARK: Pants
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatDigitalBlackPants
+  name: combat pants (digital black)
+  description: >
+    Ripstop combat pants.
+    It has a digital black camo patern for covert operations and larpers.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/DigitalBlack/pants_digital_black_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/DigitalBlack/pants_digital_black_pants.rsi
+
+#MARK: Cargo Pants
+- type: entity
+  parent: BaseClothingPantsCargo
+  id: ClothingPantsCombatDigitalBlackCargoPants
+  name: cargo combat pants (digital black)
+  description: >
+    Ripstop combat pants with large pockets.
+    It has a digital black camo patern for covert operations and larpers.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/DigitalBlack/pants_digital_black_cargo_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/DigitalBlack/pants_digital_black_cargo_pants.rsi
+
+#MARK: Shorts
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatDigitalBlackShorts
+  name: combat shorts (digital black)
+  description: >
+    Ripstop combat shorts.
+    It has a digital black camo patern for covert operations and larpers.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/DigitalBlack/pants_digital_black_shorts.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/DigitalBlack/pants_digital_black_shorts.rsi

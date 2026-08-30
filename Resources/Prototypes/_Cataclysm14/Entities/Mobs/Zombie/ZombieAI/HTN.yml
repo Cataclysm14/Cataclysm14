@@ -7,21 +7,24 @@
     rootTask:
        task: SimpleHostileCompoundZombieBase
     blackboard:
-      NavClimb: !type:Bool
+      NavClimb: !type:Bool #Climbing tables
         true
-      NavInteract: !type:Bool
+      NavInteract: !type:Bool #Opening doors and attacking structures
+      # turning this off stops them from breaking windows and doors.
+      # but lets them open doors, this is shit.
         true
-      NavPry: !type:Bool
+      NavPry: !type:Bool #Unsure
         true
-      NavSmash: !type:Bool
+      NavSmash: !type:Bool #Zombies being able path through windows.
         true
-      VisionRadius: !type:Single
+      VisionRadius: !type:Single #How far will zombie chase, if they are too far they become slower anyway.
         40
-      AggroVisionRadius: !type:Single
+      AggroVisionRadius: !type:Single #How close you need to be for them to notice you.
         15
-      MeleeMissChance: !type:Single
+      MeleeMissChance: !type:Single #Attack miss chance.
         0.4
 
+#MARK: SimpleHostileCompoundZombieBase
 - type: htnCompound
   id: SimpleHostileCompoundZombieBase
   branches:
@@ -35,6 +38,7 @@
         - !type:HTNCompoundTask
           task: IdleCompoundZombieBase # breaks npc debug menu and zombie logic. For debug replace it with IdleCompound
 
+#MARK: IdleCompoundZombieBase
 - type: htnCompound
   id: IdleCompoundZombieBase
   branches:
@@ -46,6 +50,7 @@
             - !type:KeyExistsPrecondition
               key: IdleTime
 
+#MARK: MeleeCombatCompoundZombieBase
 - type: htnCompound
   id: MeleeCombatCompoundZombieBase
   branches:
@@ -56,6 +61,7 @@
         - !type:HTNCompoundTask
           task: BeforeMeleeAttackTargetCompoundZombieBase
 
+#MARK: BeforeMeleeAttackTargetCompoundZombieBase
 - type: htnCompound
   id: BeforeMeleeAttackTargetCompoundZombieBase
   branches:
@@ -102,6 +108,7 @@
         - !type:HTNCompoundTask
           task: MeleeAttackTargetCompoundZombieBase
 
+#MARK: MeleeAttackTargetCompoundZombieBase
 # Tries to melee attack our target.
 - type: htnCompound
   id: MeleeAttackTargetCompoundZombieBase
@@ -137,6 +144,7 @@
               proto: NearbyMeleeTargetsZombieBase
               key: Target
 
+#MARK: NearbyMeleeTargetsZombieBase
 - type: utilityQuery
   id: NearbyMeleeTargetsZombieBase
   query:
@@ -155,6 +163,7 @@
     - !type:TargetInLOSOrCurrentCon
       curve: !type:BoolCurve
 
+#MARK: TargetDistanceZombieBase
 - type: utilityCurvePreset
   id: TargetDistanceZombieBase
   curve: !type:QuadraticCurve
@@ -163,36 +172,7 @@
     yOffset: 1
     xOffset: 0
 
-#MARK: Reduced range
-- type: entity
-  id: MobHumanoidHostileAISimpleMeleeZombieReducedRange
-  abstract: true
-  components:
-  - type: HTN
-    rootTask:
-       task: SimpleHostileCompoundZombieBase
-    blackboard:
-      IdleRange: !type:Single
-        1
-      FollowCloseRange: !type:Single
-        1
-      FollowRange: !type:Single
-        1
-      MeleeRange: !type:Single
-        0.2
-      NavClimb: !type:Bool
-        false
-      NavInteract: !type:Bool
-        true
-      NavPry: !type:Bool
-        true
-      NavSmash: !type:Bool
-        true
-      VisionRadius: !type:Single
-        6
-      AggroVisionRadius: !type:Single
-        3
-
+#MARK: ExploreTheSoundTargetCompoundZombieBase
 - type: htnCompound
   id: ExploreTheSoundTargetCompoundZombieBase
   branches:
@@ -211,3 +191,36 @@
             targetKey: SoundCoordinates
           preconditions:
           - !type:SoundTargetExistsPrecondition
+
+#MARK: Reduced range
+- type: entity
+  parent: MobHumanoidHostileAISimpleMeleeZombieBase
+  id: MobHumanoidHostileAISimpleMeleeZombieReducedRange
+  abstract: true
+  components:
+  - type: HTN
+    blackboard:
+      NavClimb: !type:Bool #Climbing tables
+        true
+      NavInteract: !type:Bool #Opening doors and attacking structures
+      # turning this off stops them from breaking windows and doors.
+      # but lets them open doors, this is shit.
+        true
+      NavPry: !type:Bool #Unsure
+        true
+      NavSmash: !type:Bool #Zombies being able path through windows.
+        true
+      VisionRadius: !type:Single #How far will zombie chase, if they are too far they become slower anyway.
+        6
+      AggroVisionRadius: !type:Single #How close you need to be for them to notice you.
+        3
+      IdleRange: !type:Single
+        1
+      FollowCloseRange: !type:Single
+        1
+      FollowRange: !type:Single
+        1
+      MeleeRange: !type:Single
+        0.2
+      MeleeMissChance: !type:Single #Attack miss chance.
+        0.6

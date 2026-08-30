@@ -1,0 +1,15 @@
+- type: damageModifierSet
+  id: DamageModifierGlassWeak
+  coefficients:
+    Blunt: 1.05
+    Slash: 0.95
+    Piercing: 0.95
+    # Shock: 1.2
+    Structural: 0.95
+    Heat: 0.5
+  flatReductions:
+    Blunt: 2
+    Slash: 2
+    Piercing: 2
+    Heat: 8
+    Structural: 2

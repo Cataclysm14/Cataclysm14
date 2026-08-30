@@ -85,6 +85,35 @@
       - state: inhand-right
         color: "#4A5A49"
 
+#MARK: Olive
+- type: entity
+  parent: BaseClothingPantsPocket
+  id: ClothingPantsDutyOlive
+  name: duty pants (olive)
+  description: A pair of though duty pants with kneepads often used by private security, PMCs and mercenaries.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_duty_any.rsi
+    layers:
+    - state: pants-icon
+      color: "#60604e"
+    - state: bits-icon
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_duty_any.rsi
+    clothingVisuals:
+      pants:
+      - state: pants-equipped-PANTS
+        color: "#60604e"
+      - state: bits-equipped-PANTS
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#60604e"
+      right:
+      - state: inhand-right
+        color: "#60604e"
+
 #MARK: Black
 - type: entity
   parent: BaseClothingPantsPocket

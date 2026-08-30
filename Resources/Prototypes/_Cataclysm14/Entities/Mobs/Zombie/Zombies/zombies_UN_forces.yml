@@ -23,7 +23,7 @@
         children:
         - id: ClothingHeadHelmetBulletproofM88UN
         - id: ClothingHeadHatBeretUN
-        - id: ClothingHeadHatCapUN
+        - id: ClothingHeadHatCapBaseballUN
         - id: ClothingHeadHelmetBulletproofM88CCE
         - id: ClothingHeadHelmetBulletproofM88Olive
         - id: ClothingHeadHelmetBulletproofM88Green
@@ -50,33 +50,33 @@
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatCCEDesert
-          - id: ClothingPantsCombatCCEDesertCargo
+          - id: ClothingPantsCombatCCEDesertPants
+          - id: ClothingPantsCombatCCEDesertCargoPants
           prob: 0.99
         jumpsuit: !type:GroupSelector
           children:
-          - id: ClothingShirtCombatCCEDesert
-          - id: ClothingShirtCombatCCEDesertCargo
+          - id: ClothingShirtCombatCCEDesertTShirt
+          - id: ClothingShirtCombatCCEDesertJacket
           prob: 0.99
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatCCE
-          - id: ClothingPantsCombatCCECargo
+          - id: ClothingPantsCombatCCEPants
+          - id: ClothingPantsCombatCCECargoPants
           prob: 0.99
         jumpsuit: !type:GroupSelector
           children:
-          - id: ClothingShirtCombatCCE
-          - id: ClothingShirtCombatCCECargo
+          - id: ClothingShirtCombatCCETShirt
+          - id: ClothingShirtCombatCCEJacket
           prob: 0.99
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatM81
-          - id: ClothingPantsCombatM81Cargo
+          - id: ClothingPantsCombatM81Pants
+          - id: ClothingPantsCombatM81CargoPants
           prob: 0.99
         jumpsuit: !type:GroupSelector
           children:
-          - id: ClothingShirtCombatM81
-          - id: ClothingShirtCombatM81Cargo
+          - id: ClothingShirtCombatM81TShirt
+          - id: ClothingShirtCombatM81Jacket
           prob: 0.99

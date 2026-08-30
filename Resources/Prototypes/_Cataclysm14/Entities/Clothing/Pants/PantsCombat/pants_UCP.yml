@@ -1,0 +1,41 @@
+#MARK: Pants
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatUCPPants
+  name: combat pants (UCP patern)
+  description: >
+    Ripstop combat pants.
+    It has the UCP (Universal Combat Patern) camo variant made for the US army.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/UCP/pants_UCP_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/UCP/pants_UCP_pants.rsi
+
+#MARK: Cargo Pants
+- type: entity
+  parent: BaseClothingPantsCargo
+  id: ClothingPantsCombatUCPCargoPants
+  name: cargo combat pants (UCP patern)
+  description: >
+    Ripstop combat pants with large pockets.
+    It has the UCP (Universal Combat Patern) camo variant made for the US army.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/UCP/pants_UCP_cargo_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/UCP/pants_UCP_cargo_pants.rsi
+
+#MARK: Shorts
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatUCPShorts
+  name: combat shorts (UCP patern)
+  description: >
+    Ripstop combat shorts.
+    It has the UCP (Universal Combat Patern) camo variant made for the US army.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/UCP/pants_UCP_shorts.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/UCP/pants_UCP_shorts.rsi

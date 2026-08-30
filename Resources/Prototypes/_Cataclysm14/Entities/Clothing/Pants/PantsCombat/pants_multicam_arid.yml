@@ -1,0 +1,44 @@
+#MARK: Pants
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatMulticamAridPants
+  name: combat pants (multicam arid)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally created by the American company Crye Precision the multicam arid patern was adopted by a pletora of army throughout the world.
+    This one dones darker and more contrasted colors with more tan for arid environments.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/MulticamArid/pants_multicam_arid_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/MulticamArid/pants_multicam_arid_pants.rsi
+
+#MARK: Cargo Pants
+- type: entity
+  parent: BaseClothingPantsCargo
+  id: ClothingPantsCombatMulticamAridCargoPants
+  name: cargo combat pants (multicam arid)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally created by the American company Crye Precision the multicam arid patern was adopted by a pletora of army throughout the world.
+    This one dones darker and more contrasted colors with more tan for arid environments.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/MulticamArid/pants_multicam_arid_cargo_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/MulticamArid/pants_multicam_arid_cargo_pants.rsi
+
+#MARK: Shorts
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatMulticamAridShorts
+  name: combat shorts (multicam arid)
+  description: >
+    Ripstop combat pants with large pockets.
+    Originally created by the American company Crye Precision the multicam arid patern was adopted by a pletora of army throughout the world.
+    This one dones darker and more contrasted colors with more tan for arid environments.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/MulticamArid/pants_multicam_arid_shorts.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/MulticamArid/pants_multicam_arid_shorts.rsi

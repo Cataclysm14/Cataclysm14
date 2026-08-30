@@ -1,0 +1,41 @@
+#MARK: Pants
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatTigerStripesPants
+  name: combat pants (tiger stripes)
+  description: >
+    Ripstop combat pants.
+    It has tiger stripes jungle camo made for US special forces in Vietnam, introduced around 1963.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/TigerStripes/pants_tiger_stripes_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/TigerStripes/pants_tiger_stripes_pants.rsi
+
+#MARK: Cargo Pants
+- type: entity
+  parent: BaseClothingPantsCargo
+  id: ClothingPantsCombatTigerStripesCargoPants
+  name: cargo combat pants (tiger stripes)
+  description: >
+    Ripstop combat pants with large pockets.
+    It has tiger stripes jungle camo made for US special forces in Vietnam, introduced around 1963.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/TigerStripes/pants_tiger_stripes_cargo_pants.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/TigerStripes/pants_tiger_stripes_cargo_pants.rsi
+
+#MARK: Shorts
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsCombatTigerStripesShorts
+  name: combat shorts (tiger stripes)
+  description: >
+    Ripstop combat shorts.
+    It has tiger stripes jungle camo made for US special forces in Vietnam, introduced around 1963.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/TigerStripes/pants_tiger_stripes_shorts.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/PantsCombat/TigerStripes/pants_tiger_stripes_shorts.rsi

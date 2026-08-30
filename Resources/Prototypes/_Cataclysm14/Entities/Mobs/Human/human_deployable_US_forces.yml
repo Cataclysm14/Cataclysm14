@@ -48,25 +48,24 @@
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatUCPCargo
+          - id: ClothingPantsCombatUCPCargoPants
         jumpsuit: !type:GroupSelector
           children:
-          - id: ClothingShirtCombatUCPCargo
+          - id: ClothingShirtCombatUCPJacket
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatMulticamOCPCargo
+          - id: ClothingPantsCombatOCPCargoPants
         jumpsuit: !type:GroupSelector
           children:
-          - id: ClothingShirtCombatMulticamOCPCargo
+          - id: ClothingShirtCombatOCPJacket
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatM81Cargo
+          - id: ClothingPantsCombatM81CargoPants
         jumpsuit: !type:GroupSelector
           children:
-          - id: ClothingShirtCombatM81Cargo
-
+          - id: ClothingShirtCombatM81Jacket
 
 #MARK: National Guard Gunner
 - type: entity
@@ -118,24 +117,24 @@
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatUCPCargo
+          - id: ClothingPantsCombatUCPCargoPants
         jumpsuit: !type:GroupSelector
           children:
-          - id: ClothingShirtCombatUCPCargo
+          - id: ClothingShirtCombatUCPJacket
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatMulticamOCPCargo
+          - id: ClothingPantsCombatOCPCargoPants
         jumpsuit: !type:GroupSelector
           children:
-          - id: ClothingShirtCombatMulticamOCPCargo
+          - id: ClothingShirtCombatOCPJacket
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatM81Cargo
+          - id: ClothingPantsCombatM81CargoPants
         jumpsuit: !type:GroupSelector
           children:
-          - id: ClothingShirtCombatM81Cargo
+          - id: ClothingShirtCombatM81Jacket
 
 #MARK: National Guard CBRN
 - type: entity
@@ -190,15 +189,15 @@
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatUCPCargo
+          - id: ClothingPantsCombatUCPCargoPants
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatMulticamOCPCargo
+          - id: ClothingPantsCombatOCPCargoPants
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatM81Cargo
+          - id: ClothingPantsCombatM81CargoPants
 
 #MARK: FEMA
 - type: entity
@@ -236,12 +235,136 @@
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatUCPCargo
+          - id: ClothingPantsCombatUCPCargoPants
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatMulticamOCPCargo
+          - id: ClothingPantsCombatOCPCargoPants
     - slots:
         pants: !type:GroupSelector
           children:
-          - id: ClothingPantsCombatM81Cargo
+          - id: ClothingPantsCombatM81CargoPants
+
+#MARK: Spec Ops Desert
+- type: entity
+  parent: BaseMobHumanDeployable
+  id: MobHumanDeployableSpecOpsDesert
+  suffix: Spec Ops Desert
+  components:
+  - type: EntityTableOutfitContainerFill
+    containers:
+      ears: !type:GroupSelector
+        children:
+        - id: ClothingEarHeadsetTacticalComtac2Tan
+      helmetattachment: !type:GroupSelector
+        children:
+        - id: ClothingHelmetAttachmentGogglesCoverTan
+      outerClothing: !type:GroupSelector
+        children:
+        - id: ClothingOuterBulletProofVestIOTVHeavyOCPFilled
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHelmetBulletproofACHOCP
+      eyes: !type:GroupSelector
+        children:
+        - id: ClothingEyesSafetyGogglesClear
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltChestRigChicomTan
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaBalaclavaSkiMaskTan
+      suitstorage: !type:GroupSelector
+        children:
+        - id: WeaponAntiMaterialRifleBarrettM107FilledBarrett5rdFMJ
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatTan
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBootsTan
+      back: !type:GroupSelector
+        children:
+        - id: ClothingBackpackAlicePackTanFilledNationalGuard
+      pocket1: !type:GroupSelector
+        children:
+        - id: Magazine12,7x99mmBarrett5rdFMJ
+      pocket2: !type:GroupSelector
+        children:
+        - id: Magazine12,7x99mmBarrett5rdFMJ
+      pocket3: !type:GroupSelector
+        children:
+        - id: Magazine12,7x99mmBarrett5rdFMJ
+      pocket4: !type:GroupSelector
+        children:
+        - id: Magazine12,7x99mmBarrett5rdFMJ
+    outfits:
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatMulticamDesertCargoPants
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatMulticamDesertJacket
+
+#MARK: Spec Ops Black Ops
+- type: entity
+  parent: BaseMobHumanDeployable
+  id: MobHumanDeployableSpecOpsBlackOps
+  suffix: Spec Ops Black Ops
+  components:
+  - type: EntityTableOutfitContainerFill
+    containers:
+      ears: !type:GroupSelector
+        children:
+        - id: ClothingEarHeadsetTacticalComtac2Black
+      helmetattachment: !type:GroupSelector
+        children:
+        - id: ClothingHelmetAttachmentNVGPVS14Dual
+      outerClothing: !type:GroupSelector
+        children:
+        - id: ClothingOuterBulletProofVestIOTVHeavyBlackFilled
+      head: !type:GroupSelector
+        children:
+        - id: ClothingHeadHelmetBulletproofACHBlack
+      # eyes: !type:GroupSelector
+      #   children:
+      #   - id: ClothingEyesSafetyGogglesClear
+      belt: !type:GroupSelector
+        children:
+        - id: ClothingBeltChestRigChicomBlack
+      balaclava: !type:GroupSelector
+        children:
+        - id: ClothingBalaclavaBalaclavaSkiMaskBlack
+      suitstorage: !type:GroupSelector
+        children:
+        - id: WeaponBattleRifleM110SASSFilledSTANAG20rdFMJ
+      gloves: !type:GroupSelector
+        children:
+        - id: ClothingHandsGlovesTacticalCombatBlack
+      shoes: !type:GroupSelector
+        children:
+        - id: ClothingShoesBootsSWATBootsBlack
+      back: !type:GroupSelector
+        children:
+        - id: ClothingBackpackAlicePackBlack
+      pocket1: !type:GroupSelector
+        children:
+        - id: Magazine7,62x51mmSTANAG20rdFMJ
+      pocket2: !type:GroupSelector
+        children:
+        - id: Magazine7,62x51mmSTANAG20rdFMJ
+      pocket3: !type:GroupSelector
+        children:
+        - id: Magazine7,62x51mmSTANAG20rdFMJ
+      pocket4: !type:GroupSelector
+        children:
+        - id: Magazine7,62x51mmSTANAG20rdFMJ
+    outfits:
+    - slots:
+        pants: !type:GroupSelector
+          children:
+          - id: ClothingPantsCombatDigitalBlackCargoPants
+        jumpsuit: !type:GroupSelector
+          children:
+          - id: ClothingShirtCombatDigitalBlackJacket
