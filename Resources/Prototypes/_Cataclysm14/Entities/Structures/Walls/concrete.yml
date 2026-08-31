@@ -58,9 +58,9 @@
     name: white solid concrete wall
     components:
     - type: Sprite
-      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_any.rsi
     - type: Icon
-      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_any.rsi
     - type: IconSmooth
       key: walls
       base: concrete
@@ -75,10 +75,10 @@
     name: red solid concrete wall
     components:
     - type: Sprite
-      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_any.rsi
       color: "#ED2939"
     - type: Icon
-      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_any.rsi
     - type: IconSmooth
       key: walls
       base: concrete
@@ -93,10 +93,10 @@
     name: blue solid concrete wall
     components:
     - type: Sprite
-      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_any.rsi
       color: "#2832C2"
     - type: Icon
-      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_any.rsi
     - type: IconSmooth
       key: walls
       base: concrete
@@ -111,10 +111,10 @@
     name: green solid concrete wall
     components:
     - type: Sprite
-      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_any.rsi
       color: "#3d8c40"
     - type: Icon
-      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_any.rsi
     - type: IconSmooth
       key: walls
       base: concrete
@@ -129,10 +129,10 @@
     name: yellow solid concrete wall
     components:
     - type: Sprite
-      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_any.rsi
       color: "#E4CD05"
     - type: Icon
-      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_any.rsi
     - type: IconSmooth
       key: walls
       base: concrete
@@ -147,10 +147,10 @@
     name: purple solid concrete wall
     components:
     - type: Sprite
-      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_any.rsi
       color: "#702963"
     - type: Icon
-      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_any.rsi
     - type: IconSmooth
       key: walls
       base: concrete
@@ -165,10 +165,10 @@
     name: grey solid concrete wall
     components:
     - type: Sprite
-      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_any.rsi
       color: "#AAAAAA"
     - type: Icon
-      sprite: _Cataclysm14/Structures/Walls/concrete_solid_greyscale.rsi
+      sprite: _Cataclysm14/Structures/Walls/concrete_solid_any.rsi
     - type: IconSmooth
       key: walls
       base: concrete

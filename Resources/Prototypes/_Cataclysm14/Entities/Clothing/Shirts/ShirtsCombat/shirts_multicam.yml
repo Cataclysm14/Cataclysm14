@@ -13,7 +13,7 @@
   - type: Clothing
     sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/Multicam/shirt_multicam_Tshirt.rsi
 
-#MARK: Cargo
+#MARK: Jacket
 - type: entity
   parent: BaseClothingShirtCargo
   id: ClothingShirtCombatMulticamJacket

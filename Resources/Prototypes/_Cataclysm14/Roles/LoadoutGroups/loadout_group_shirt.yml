@@ -26,7 +26,7 @@
   - LoadoutEntryClothingShirtSweaterBrown
   - LoadoutEntryClothingShirtSweaterOlive
   - LoadoutEntryClothingShirtSweaterRangerGreen
-  #Longsleeve T-Shirt
+  #T-Shirt
   - LoadoutEntryClothingShirtTShirtWhite
   - LoadoutEntryClothingShirtTShirtRed
   - LoadoutEntryClothingShirtTShirtBlue
@@ -38,18 +38,18 @@
   - LoadoutEntryClothingShirtTShirtBrown
   - LoadoutEntryClothingShirtTShirtOlive
   - LoadoutEntryClothingShirtTShirtRangerGreen
-  #Shortsleeve T-Shirt
-  - LoadoutEntryClothingShirtShortTShirtWhite
-  - LoadoutEntryClothingShirtShortTShirtRed
-  - LoadoutEntryClothingShirtShortTShirtBlue
-  - LoadoutEntryClothingShirtShortTShirtGreen
-  - LoadoutEntryClothingShirtShortTShirtYellow
-  - LoadoutEntryClothingShirtShortTShirtPurple
-  - LoadoutEntryClothingShirtShortTShirtBlack
-  - LoadoutEntryClothingShirtShortTShirtBeige
-  - LoadoutEntryClothingShirtShortTShirtBrown
-  - LoadoutEntryClothingShirtShortTShirtOlive
-  - LoadoutEntryClothingShirtShortTShirtRangerGreen
+  #Shirt
+  - LoadoutEntryClothingShirtShirtWhite
+  - LoadoutEntryClothingShirtShirtRed
+  - LoadoutEntryClothingShirtShirtBlue
+  - LoadoutEntryClothingShirtShirtGreen
+  - LoadoutEntryClothingShirtShirtYellow
+  - LoadoutEntryClothingShirtShirtPurple
+  - LoadoutEntryClothingShirtShirtBlack
+  - LoadoutEntryClothingShirtShirtBeige
+  - LoadoutEntryClothingShirtShirtBrown
+  - LoadoutEntryClothingShirtShirtOlive
+  - LoadoutEntryClothingShirtShirtRangerGreen
   #Tank Top
   - LoadoutEntryClothingShirtTankTopWhite
   - LoadoutEntryClothingShirtTankTopRed
@@ -188,7 +188,7 @@
   equipment:
     jumpsuit: ClothingShirtSweaterRangerGreen
 
-#MARK: Longsleeve T-Shirt
+#MARK:T-Shirt
 - type: loadout
   id: LoadoutEntryClothingShirtTShirtWhite
   equipment:
@@ -244,61 +244,61 @@
   equipment:
     jumpsuit: ClothingShirtTShirtRangerGreen
 
-#MARK: Shortsleeve T-Shirt
+#MARK: Shirt
 - type: loadout
-  id: LoadoutEntryClothingShirtShortTShirtWhite
+  id: LoadoutEntryClothingShirtShirtWhite
   equipment:
-    jumpsuit: ClothingShirtShortTShirtWhite
+    jumpsuit: ClothingShirtShirtWhite
 
 - type: loadout
-  id: LoadoutEntryClothingShirtShortTShirtRed
+  id: LoadoutEntryClothingShirtShirtRed
   equipment:
-    jumpsuit: ClothingShirtShortTShirtRed
+    jumpsuit: ClothingShirtShirtRed
 
 - type: loadout
-  id: LoadoutEntryClothingShirtShortTShirtBlue
+  id: LoadoutEntryClothingShirtShirtBlue
   equipment:
-    jumpsuit: ClothingShirtShortTShirtBlue
+    jumpsuit: ClothingShirtShirtBlue
 
 - type: loadout
-  id: LoadoutEntryClothingShirtShortTShirtGreen
+  id: LoadoutEntryClothingShirtShirtGreen
   equipment:
-    jumpsuit: ClothingShirtShortTShirtGreen
+    jumpsuit: ClothingShirtShirtGreen
 
 - type: loadout
-  id: LoadoutEntryClothingShirtShortTShirtYellow
+  id: LoadoutEntryClothingShirtShirtYellow
   equipment:
-    jumpsuit: ClothingShirtShortTShirtYellow
+    jumpsuit: ClothingShirtShirtYellow
 
 - type: loadout
-  id: LoadoutEntryClothingShirtShortTShirtPurple
+  id: LoadoutEntryClothingShirtShirtPurple
   equipment:
-    jumpsuit: ClothingShirtShortTShirtPurple
+    jumpsuit: ClothingShirtShirtPurple
 
 - type: loadout
-  id: LoadoutEntryClothingShirtShortTShirtBlack
+  id: LoadoutEntryClothingShirtShirtBlack
   equipment:
-    jumpsuit: ClothingShirtShortTShirtBlack
+    jumpsuit: ClothingShirtShirtBlack
 
 - type: loadout
-  id: LoadoutEntryClothingShirtShortTShirtBeige
+  id: LoadoutEntryClothingShirtShirtBeige
   equipment:
-    jumpsuit: ClothingShirtShortTShirtBeige
+    jumpsuit: ClothingShirtShirtBeige
 
 - type: loadout
-  id: LoadoutEntryClothingShirtShortTShirtBrown
+  id: LoadoutEntryClothingShirtShirtBrown
   equipment:
-    jumpsuit: ClothingShirtShortTShirtBrown
+    jumpsuit: ClothingShirtShirtBrown
 
 - type: loadout
-  id: LoadoutEntryClothingShirtShortTShirtOlive
+  id: LoadoutEntryClothingShirtShirtOlive
   equipment:
-    jumpsuit: ClothingShirtShortTShirtOlive
+    jumpsuit: ClothingShirtShirtOlive
 
 - type: loadout
-  id: LoadoutEntryClothingShirtShortTShirtRangerGreen
+  id: LoadoutEntryClothingShirtShirtRangerGreen
   equipment:
-    jumpsuit: ClothingShirtShortTShirtRangerGreen
+    jumpsuit: ClothingShirtShirtRangerGreen
 
 #MARK: Tank Top
 - type: loadout

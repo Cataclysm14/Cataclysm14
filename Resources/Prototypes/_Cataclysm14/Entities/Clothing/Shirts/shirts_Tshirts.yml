@@ -2,26 +2,26 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtTShirtWhite
-  name: longsleeve t-shirt (white)
-  description: A plain colored longsleeve t-shirt.
+  name: t-shirt (white)
+  description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
 
 #MARK:  red
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtTShirtRed
-  name: longsleeve t-shirt (red)
-  description: A plain colored longsleeve t-shirt.
+  name: t-shirt (red)
+  description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
     color: "#9E1A1A"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -39,14 +39,14 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtTShirtBlue
-  name: longsleeve t-shirt (blue)
-  description: A plain colored longsleeve t-shirt.
+  name: t-shirt (blue)
+  description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
     color: "#404691"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -64,14 +64,14 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtTShirtGreen
-  name: longsleeve t-shirt (green)
-  description: A plain colored longsleeve t-shirt.
+  name: t-shirt (green)
+  description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
     color: "#3d8c40"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -89,14 +89,14 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtTShirtYellow
-  name: longsleeve t-shirt (yellow)
-  description: A plain colored longsleeve t-shirt.
+  name: t-shirt (yellow)
+  description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
     color: "#A89B25"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -114,14 +114,14 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtTShirtPurple
-  name: longsleeve t-shirt (purple)
-  description: A plain colored longsleeve t-shirt.
+  name: t-shirt (purple)
+  description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
     color: "#702963"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -139,14 +139,14 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtTShirtBlack
-  name: longsleeve t-shirt (black)
-  description: A plain colored longsleeve t-shirt.
+  name: t-shirt (black)
+  description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
     color: "#444444"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -164,14 +164,14 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtTShirtBeige
-  name: longsleeve t-shirt (beige)
-  description: A plain colored longsleeve t-shirt.
+  name: t-shirt (beige)
+  description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
     color: "#CDBEA1"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -189,14 +189,14 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtTShirtBrown
-  name: longsleeve t-shirt (brown)
-  description: A plain colored longsleeve t-shirt.
+  name: t-shirt (brown)
+  description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
     color: "#5F4D2A"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -214,14 +214,14 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtTShirtOlive
-  name: longsleeve t-shirt (olive)
-  description: A plain colored longsleeve t-shirt.
+  name: t-shirt (olive)
+  description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
     color: "#92A168"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -239,14 +239,14 @@
 - type: entity
   parent: BaseClothingShirt
   id: ClothingShirtTShirtRangerGreen
-  name: longsleeve t-shirt (ranger green)
-  description: A plain colored longsleeve t-shirt.
+  name: t-shirt (ranger green)
+  description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
     color: "#4A5A49"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
