@@ -14,32 +14,9 @@
       - state: equipped-INNERCLOTHING
   - type: ToggleableClothing
     clothingPrototypes:
-      faceshield: ClothingHoodHighVisOrangeYellow
       head: ClothingHeadHelmetBlock
   - type: HoodedClothing
     equippedPrefix: raised
-
-#MARK: orange, yellow hood
-- type: entity
-  parent: ClothingfaceshieldBase
-  id: ClothingHoodHighVisOrangeYellow
-  name: hoodie hood (high-vis)
-  categories: [ HideSpawnMenu ]
-  description: The hood of a hoodie.
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_high-vis_orange_yellow.rsi
-  - type: Clothing
-    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hoodie_high-vis_orange_yellow.rsi
-    clothingVisuals:
-      faceshield:
-      - state: equipped-faceshield
-  - type: HideLayerClothing
-    slots:
-    - Hair
-    - Snout
-    - HeadTop
-    - HeadSide
 
 #MARK: orange/blue, white
 - type: entity
@@ -57,7 +34,6 @@
       - state: equipped-INNERCLOTHING
   - type: ToggleableClothing
     clothingPrototypes:
-      faceshield: ClothingHoodHighVisOrangeYellow
       head: ClothingHeadHelmetBlock
   - type: HoodedClothing
     equippedPrefix: raised
