@@ -1,0 +1,81 @@
+#MARK: M81
+- type: entity
+  parent: BaseClothingHead
+  id: ClothingHeadHatBoonieHatM81
+  name: boonie hat (M81 patern)
+  description: >
+    A boonie hat, made for hunters and for protecting your head from the sun.
+    It has the M81 american forces woodland camo.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_boonie_hat_M81.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_boonie_hat_M81.rsi
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+  - type: Item
+    shape:
+    - 0,0,0,1
+    storedScale: 2
+    storedOffset: 0,3
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+
+#MARK: CCE
+- type: entity
+  parent: BaseClothingHead
+  id: ClothingHeadHatBoonieHatCCE
+  name: boonie hat (CCE)
+  description: >
+    A boonie hat, made for hunters and for protecting your head from the sun.
+    It has the CCE central europe camo of the french army.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_boonie_hat_CCE.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_boonie_hat_CCE.rsi
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+  - type: Item
+    shape:
+    - 0,0,0,1
+    storedScale: 2
+    storedOffset: 0,3
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+
+#MARK: multicam
+- type: entity
+  parent: BaseClothingHead
+  id: ClothingHeadHatBoonieHatMulticam
+  name: boonie hat (multicam)
+  description: >
+    A boonie hat, made for hunters and for protecting your head from the sun.
+    Originally created by the American company Crye Precision the multicam patern was adopted by a pletora of army throughout the world.
+    This one dones the original color pallette made for sandy environments.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_boonie_hat_multicam.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_boonie_hat_multicam.rsi
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+  - type: Item
+    shape:
+    - 0,0,0,1
+    storedScale: 2
+    storedOffset: 0,3
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right

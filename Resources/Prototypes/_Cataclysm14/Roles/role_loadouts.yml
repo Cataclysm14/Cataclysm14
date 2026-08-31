@@ -8,6 +8,7 @@
   - LoadoutGroupEyewear
   - LoadoutGroupHat
   - LoadoutGroupShirt
+  - LoadoutGroupNeck
 
 - type: roleLoadout
   id: JobProfessionPriest
@@ -26,3 +27,4 @@
   - LoadoutGroupPoliceOfficerUniform
   - LoadoutGroupPoliceOfficerVest
   - LoadoutGroupPoliceOfficerFaceCovering
+  - LoadoutGroupNeck

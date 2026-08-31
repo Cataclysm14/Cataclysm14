@@ -73,6 +73,13 @@
   - LoadoutEntryClothingShirtStrippedMariniereTeslnyashkaBlue
   - LoadoutEntryClothingShirtStrippedMariniereTeslnyashkaRed
   - LoadoutEntryClothingShirtStrippedMariniereTeslnyashkaBlack
+  #Dress Shirt
+  - LoadoutEntryClothingShirtDressShirtBlack
+  - LoadoutEntryClothingShirtDressShirtWhite
+  - LoadoutEntryClothingShirtDressShirtLightBlue
+  - LoadoutEntryClothingShirtDressShirtLavender
+  - LoadoutEntryClothingShirtDressShirtLightRed
+  - LoadoutEntryClothingShirtDressShirtLightPink
   fallbacks:
   - LoadoutEntryClothingShirtTracksuitBlack
 
@@ -402,3 +409,34 @@
   id: LoadoutEntryClothingShirtStrippedMariniereTeslnyashkaBlack
   equipment:
     jumpsuit: ClothingShirtStrippedMariniereTeslnyashkaBlack
+
+#MARK: Dress Shirt
+- type: loadout
+  id: LoadoutEntryClothingShirtDressShirtBlack
+  equipment:
+    jumpsuit: ClothingShirtDressShirtBlack
+
+- type: loadout
+  id: LoadoutEntryClothingShirtDressShirtWhite
+  equipment:
+    jumpsuit: ClothingShirtDressShirtWhite
+
+- type: loadout
+  id: LoadoutEntryClothingShirtDressShirtLightBlue
+  equipment:
+    jumpsuit: ClothingShirtDressShirtLightBlue
+
+- type: loadout
+  id: LoadoutEntryClothingShirtDressShirtLavender
+  equipment:
+    jumpsuit: ClothingShirtDressShirtLavender
+
+- type: loadout
+  id: LoadoutEntryClothingShirtDressShirtLightRed
+  equipment:
+    jumpsuit: ClothingShirtDressShirtLightRed
+
+- type: loadout
+  id: LoadoutEntryClothingShirtDressShirtLightPink
+  equipment:
+    jumpsuit: ClothingShirtDressShirtLightPink

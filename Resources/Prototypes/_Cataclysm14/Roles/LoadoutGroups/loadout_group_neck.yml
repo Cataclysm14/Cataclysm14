@@ -1,0 +1,56 @@
+- type: loadoutGroup
+  id: LoadoutGroupNeck
+  name: loadout-group-neck
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  #Colored Ties
+  - LoadoutEntryClothingNeckTieColoredWhite
+  - LoadoutEntryClothingNeckTieColoredRed
+  - LoadoutEntryClothingNeckTieColoredBlue
+  - LoadoutEntryClothingNeckTieColoredGreen
+  - LoadoutEntryClothingNeckTieColoredYellow
+  - LoadoutEntryClothingNeckTieColoredPurple
+  - LoadoutEntryClothingNeckTieColoredBlack
+  - LoadoutEntryClothingNeckTieColoredBeige
+
+#MARK: Colored Ties
+- type: loadout
+  id: LoadoutEntryClothingNeckTieColoredWhite
+  equipment:
+    jumpsuit: ClothingNeckTieColoredWhite
+
+- type: loadout
+  id: LoadoutEntryClothingNeckTieColoredRed
+  equipment:
+    jumpsuit: ClothingNeckTieColoredRed
+
+- type: loadout
+  id: LoadoutEntryClothingNeckTieColoredBlue
+  equipment:
+    jumpsuit: ClothingNeckTieColoredBlue
+
+- type: loadout
+  id: LoadoutEntryClothingNeckTieColoredGreen
+  equipment:
+    jumpsuit: ClothingNeckTieColoredGreen
+
+- type: loadout
+  id: LoadoutEntryClothingNeckTieColoredYellow
+  equipment:
+    jumpsuit: ClothingNeckTieColoredYellow
+
+- type: loadout
+  id: LoadoutEntryClothingNeckTieColoredPurple
+  equipment:
+    jumpsuit: ClothingNeckTieColoredPurple
+
+- type: loadout
+  id: LoadoutEntryClothingNeckTieColoredBlack
+  equipment:
+    jumpsuit: ClothingNeckTieColoredBlack
+
+- type: loadout
+  id: LoadoutEntryClothingNeckTieColoredBeige
+  equipment:
+    jumpsuit: ClothingNeckTieColoredBeige

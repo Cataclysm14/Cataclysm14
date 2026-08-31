@@ -212,7 +212,13 @@
       weight: 75
     - !type:NestedSelector
       tableId: LootTableClothingBeanie
-      weight: 75
+      weight: 30
+    - !type:NestedSelector
+      tableId: LootTableClothingBoonieHat
+      weight: 30
+    - !type:NestedSelector
+      tableId: LootTableClothingsSurplusHat
+      weight: 30
     - !type:NestedSelector
       tableId: LootTableClothingBootsSWATBoots
       weight: 30
@@ -234,6 +240,15 @@
     - !type:NestedSelector
       tableId: LootTableClothingBulletProofVestCivilian
       weight: 15
+
+#MARK: Surplus Hat
+- type: entityTable
+  id: LootTableClothingsSurplusHat
+  table: !type:GroupSelector
+    children:
+    - ClothingHeadHatBoonieHatM81
+    - ClothingHeadHatBoonieHatCCE
+    - ClothingHeadHatBoonieHatMulticam
 
 #MARK: Surplus Bottom
 - type: entityTable
