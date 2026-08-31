@@ -6,6 +6,7 @@
   description: A neosilk clip-on tie, this one is colored in white.
   components:
   - type: Sprite
+    scale: 0.4,0.4
     sprite: _Cataclysm14/Clothing/Neck/Ties/tie_any.rsi
   - type: Clothing
     sprite: _Cataclysm14/Clothing/Neck/Ties/tie_any.rsi
@@ -18,6 +19,7 @@
   description: A neosilk clip-on tie, this one is colored in red.
   components:
   - type: Sprite
+    scale: 0.4,0.4
     sprite: _Cataclysm14/Clothing/Neck/Ties/tie_any.rsi
     color: "#9E1A1A"
   - type: Clothing
@@ -43,6 +45,7 @@
   description: A neosilk clip-on tie, this one is colored in blue.
   components:
   - type: Sprite
+    scale: 0.4,0.4
     sprite: _Cataclysm14/Clothing/Neck/Ties/tie_any.rsi
     color: "#2832C2"
   - type: Clothing
@@ -68,6 +71,7 @@
   description: A neosilk clip-on tie, this one is colored in green.
   components:
   - type: Sprite
+    scale: 0.4,0.4
     sprite: _Cataclysm14/Clothing/Neck/Ties/tie_any.rsi
     color: "#3d8c40"
   - type: Clothing
@@ -93,6 +97,7 @@
   description: A neosilk clip-on tie, this one is colored in yellow.
   components:
   - type: Sprite
+    scale: 0.4,0.4
     sprite: _Cataclysm14/Clothing/Neck/Ties/tie_any.rsi
     color: "#E4CD05"
   - type: Clothing
@@ -118,6 +123,7 @@
   description: A neosilk clip-on tie, this one is colored in purple.
   components:
   - type: Sprite
+    scale: 0.4,0.4
     sprite: _Cataclysm14/Clothing/Neck/Ties/tie_any.rsi
     color: "#702963"
   - type: Clothing
@@ -143,6 +149,7 @@
   description: A neosilk clip-on tie, this one is colored in black.
   components:
   - type: Sprite
+    scale: 0.4,0.4
     sprite: _Cataclysm14/Clothing/Neck/Ties/tie_any.rsi
     color: "#444444"
   - type: Clothing
@@ -168,6 +175,7 @@
   description: A plain colored t-beige, this one is colored in beige.
   components:
   - type: Sprite
+    scale: 0.4,0.4
     sprite: _Cataclysm14/Clothing/Neck/Ties/tie_any.rsi
     color: "#CDBEA1"
   - type: Clothing
