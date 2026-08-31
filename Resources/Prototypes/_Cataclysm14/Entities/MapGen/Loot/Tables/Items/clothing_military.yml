@@ -246,9 +246,9 @@
   id: LootTableClothingsSurplusHat
   table: !type:GroupSelector
     children:
-    - ClothingHeadHatBoonieHatM81
-    - ClothingHeadHatBoonieHatCCE
-    - ClothingHeadHatBoonieHatMulticam
+    - id: ClothingHeadHatBoonieHatM81
+    - id: ClothingHeadHatBoonieHatCCE
+    - id: ClothingHeadHatBoonieHatMulticam
 
 #MARK: Surplus Bottom
 - type: entityTable
