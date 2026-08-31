@@ -60,6 +60,12 @@
         tableId: LootTableClothingTShirt
       - !type:NestedSelector
         weight: 100
+        tableId: LootTableClothingDressShirt
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingShirt
+      - !type:NestedSelector
+        weight: 100
         tableId: LootTableClothingSweater
       - !type:NestedSelector
         weight: 100
@@ -76,6 +82,9 @@
   id: LootTableClothingBottomCivilian
   table: !type:GroupSelector
     children:
+      - !type:NestedSelector
+        weight: 100
+        tableId: LootTableClothingDressPants
       - !type:NestedSelector
         weight: 100
         tableId: LootTableClothingJeans
@@ -119,6 +128,9 @@
         weight: 50
         tableId: LootTableClothingBeanie
       - !type:NestedSelector
+        weight: 50
+        tableId: LootTableClothingBoonieHat
+      - !type:NestedSelector
         weight: 100
         tableId: LootTableClothingHeadHatCapBaseball
 
@@ -142,6 +154,53 @@
     - id: ClothingShirtTShirtGreen
     - id: ClothingShirtTShirtYellow
     - id: ClothingShirtTShirtPurple
+
+#MARK: Shirt
+- type: entityTable
+  id: LootTableClothingShirt
+  table: !type:GroupSelector
+    children:
+    - id: ClothingShirtShirtWhite
+      weight: 3
+    - id: ClothingShirtShirtBlack
+      weight: 3
+    - id: ClothingShirtShirtBeige
+      weight: 2
+    - id: ClothingShirtShirtBrown
+      weight: 2
+    - id: ClothingShirtShirtRangerGreen
+    - id: ClothingShirtShirtOlive
+    - id: ClothingShirtShirtRed
+    - id: ClothingShirtShirtBlue
+    - id: ClothingShirtShirtGreen
+    - id: ClothingShirtShirtYellow
+    - id: ClothingShirtShirtPurple
+
+#MARK: Dress Shirt
+- type: entityTable
+  id: LootTableClothingDressShirt
+  table: !type:GroupSelector
+    children:
+    - id: ClothingShirtDressShirtWhite
+      weight: 3
+    - id: ClothingShirtDressShirtBlack
+    - id: ClothingShirtDressShirtLightBlue
+    - id: ClothingShirtDressShirtLavender
+    - id: ClothingShirtDressShirtLightRed
+    - id: ClothingShirtDressShirtLightPink
+
+#MARK: Dress Pants
+- type: entityTable
+  id: LootTableClothingDressPants
+  table: !type:GroupSelector
+    children:
+    - id: ClothingPantsDressPantsWhite
+      weight: 3
+    - id: ClothingPantsDressPantsBlack
+    - id: ClothingPantsDressPantsLightBlue
+    - id: ClothingPantsDressPantsLavender
+    - id: ClothingPantsDressPantsLightRed
+    - id: ClothingPantsDressPantsLightPink
 
 #MARK: TankTop
 - type: entityTable
@@ -353,6 +412,18 @@
     - id: ClothingHeadHatBeanieTan
     - id: ClothingHeadHatBeanieOlive
     - id: ClothingHeadHatBeanieRangerGreen
+
+#MARK: Boonie Hat
+- type: entityTable
+  id: LootTableClothingBoonieHat
+  table: !type:GroupSelector
+    children:
+    - id: ClothingHeadHatBoonieHatBlack
+    - id: ClothingHeadHatBoonieHatBeige
+    - id: ClothingHeadHatBoonieHatGray
+    - id: ClothingHeadHatBoonieHatTan
+    - id: ClothingHeadHatBoonieHatOlive
+    - id: ClothingHeadHatBoonieHatRangerGreen
 
 #MARK: HeadHatCap
 - type: entityTable

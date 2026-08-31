@@ -1,28 +1,44 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetBlock
+  name: Blocked
+  description: Can't fit anything there
+  components:
+  - type: Sprite
+    sprite: Markers/cross.rsi
 
 #MARK: white
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodieWhite
   name: hoodie (white)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised
 
 #MARK: red
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodieRed
   name: hoodie (red)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
     color: "#9E1A1A"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -35,19 +51,24 @@
       right:
       - state: inhand-right
         color: "#9E1A1A"
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised
 
 #MARK: blue
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodieBlue
   name: hoodie (blue)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
     color: "#404691"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -60,19 +81,24 @@
       right:
       - state: inhand-right
         color: "#404691"
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised
 
 #MARK: green
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodieGreen
   name: hoodie (green)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
     color: "#3d8c40"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -85,19 +111,24 @@
       right:
       - state: inhand-right
         color: "#3d8c40"
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised
 
 #MARK: yellow
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodieYellow
   name: hoodie (yellow)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
     color: "#A89B25"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -110,19 +141,24 @@
       right:
       - state: inhand-right
         color: "#A89B25"
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised
 
 #MARK: purple
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodiePurple
   name: hoodie (purple)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
     color: "#702963"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -135,19 +171,24 @@
       right:
       - state: inhand-right
         color: "#702963"
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised
 
 #MARK: black
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodieBlack
   name: hoodie (black)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
     color: "#444444"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -160,19 +201,24 @@
       right:
       - state: inhand-right
         color: "#444444"
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised
 
 #MARK: beige
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodieBeige
   name: hoodie (beige)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
     color: "#CDBEA1"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -185,19 +231,24 @@
       right:
       - state: inhand-right
         color: "#CDBEA1"
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised
 
 #MARK:  brown
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodieBrown
   name: hoodie (brown)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
     color: "#5F4D2A"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -210,19 +261,24 @@
       right:
       - state: inhand-right
         color: "#5F4D2A"
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised
 
 #MARK:  olive
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodieOlive
   name: hoodie (olive)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
     color: "#92A168"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -235,19 +291,24 @@
       right:
       - state: inhand-right
         color: "#92A168"
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised
 
 #MARK:  ranger green
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodieRangerGreen
   name: hoodie (ranger green)
-  description: A warm large hoodie, very comfy.
+  description: A colored hoodie, very comfy.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
     color: "#4A5A49"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_greyscale.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -260,3 +321,8 @@
       right:
       - state: inhand-right
         color: "#4A5A49"
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised

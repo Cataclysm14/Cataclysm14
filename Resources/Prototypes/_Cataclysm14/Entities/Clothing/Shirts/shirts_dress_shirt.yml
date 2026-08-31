@@ -1,0 +1,161 @@
+#MARK: Black
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtDressShirtBlack
+  name: dress shirt (black)
+  description: An tight fitted dress shirt for when you need to be on your 31'.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_dress_shirt_any.rsi
+    layers:
+    - state: icon
+      color: "#141414"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_dress_shirt_any.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#141414"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#141414"
+      right:
+      - state: inhand-right
+        color: "#141414"
+
+#MARK: White
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtDressShirtWhite
+  name: dress shirt (white)
+  description: An tight fitted dress shirt for when you need to be on your 31'.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_dress_shirt_any.rsi
+    layers:
+    - state: icon
+      color: "#D8D8D8"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_dress_shirt_any.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#D8D8D8"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#D8D8D8"
+      right:
+      - state: inhand-right
+        color: "#D8D8D8"
+
+#MARK: Light Blue
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtDressShirtLightBlue
+  name: dress shirt (light blue)
+  description: An tight fitted dress shirt for when you need to be on your 31'.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_dress_shirt_any.rsi
+    layers:
+    - state: icon
+      color: "#91AFEE"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_dress_shirt_any.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#91AFEE"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#91AFEE"
+      right:
+      - state: inhand-right
+        color: "#91AFEE"
+
+#MARK: Lavender
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtDressShirtLavender
+  name: dress shirt (Lavender)
+  description: An tight fitted dress shirt for when you need to be on your 31'.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_dress_shirt_any.rsi
+    layers:
+    - state: icon
+      color: "#B08CDD"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_dress_shirt_any.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#B08CDD"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#B08CDD"
+      right:
+      - state: inhand-right
+        color: "#B08CDD"
+
+#MARK: Light Red
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtDressShirtLightRed
+  name: dress shirt (light red)
+  description: An tight fitted dress shirt for when you need to be on your 31'.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_dress_shirt_any.rsi
+    layers:
+    - state: icon
+      color: "#F39C9C"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_dress_shirt_any.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#F39C9C"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#F39C9C"
+      right:
+      - state: inhand-right
+        color: "#F39C9C"
+
+#MARK: Light Pink
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtDressShirtLightPink
+  name: dress shirt (light pink)
+  description: An tight fitted dress shirt for when you need to be on your 31'.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_dress_shirt_any.rsi
+    layers:
+    - state: icon
+      color: "#DDC5F8"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_dress_shirt_any.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#DDC5F8"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#DDC5F8"
+      right:
+      - state: inhand-right
+        color: "#DDC5F8"

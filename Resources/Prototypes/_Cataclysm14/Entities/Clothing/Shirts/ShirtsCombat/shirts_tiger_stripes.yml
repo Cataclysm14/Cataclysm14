@@ -12,7 +12,7 @@
   - type: Clothing
     sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/TigerStripes/shirt_tiger_stripes_Tshirt.rsi
 
-#MARK: Cargo
+#MARK: Jacket
 - type: entity
   parent: BaseClothingShirtCargo
   id: ClothingShirtCombatTigerStripesJacket

@@ -7,10 +7,10 @@
       description: A plain colored joggings, this one is colored in red.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_any.rsi
         color: "#9E1A1A"
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_any.rsi
         clothingVisuals:
           pants:
           - state: equipped-PANTS
@@ -31,10 +31,10 @@
       description: A plain colored joggings, this one is colored in blue.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_any.rsi
         color: "#404691"
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_any.rsi
         clothingVisuals:
           pants:
           - state: equipped-PANTS
@@ -55,10 +55,10 @@
       description: A plain colored joggings, this one is colored in green.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_any.rsi
         color: "#3d8c40"
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_any.rsi
         clothingVisuals:
           pants:
           - state: equipped-PANTS
@@ -79,10 +79,10 @@
       description: A plain colored joggings, this one is colored in yellow.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_any.rsi
         color: "#A89B25"
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_any.rsi
         clothingVisuals:
           pants:
           - state: equipped-PANTS
@@ -103,10 +103,10 @@
       description: A plain colored joggings, this one is colored in purple.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_any.rsi
         color: "#702963"
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_any.rsi
         clothingVisuals:
           pants:
           - state: equipped-PANTS
@@ -127,10 +127,10 @@
       description: A plain colored joggings, this one is colored in black.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_any.rsi
         color: "#444444"
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_any.rsi
         clothingVisuals:
           pants:
           - state: equipped-PANTS
@@ -151,6 +151,6 @@
       description: A plain colored joggings, this one is colored in white.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_any.rsi
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_joggings_any.rsi

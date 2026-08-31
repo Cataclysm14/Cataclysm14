@@ -1,4 +1,4 @@
-#MARK: Yellow HazmatSuit
+#MARK: Yellow
 - type: entity
   parent: BaseClothingShirtToggleable
   id: ClothingShirtHazmatSuitYellow
@@ -6,10 +6,10 @@
   description: "A suit that protects against contamination from HAZardous MATerials such as Chemical, Bioligical, Radiological and Nuclear threats moderatly"
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat_any.rsi
     color: "#ffee2f"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -17,7 +17,7 @@
       balaclava:
       - state: equipped-INNERCLOTHING
         color: "#ffee2f"
-      - sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat.rsi
+      - sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat_any.rsi
         state: equipped-HELMET
         color: "#ffee2f"
   - type: Item
@@ -36,38 +36,11 @@
   - type: GroupExamine
   - type: ToggleableClothing
     clothingPrototypes:
-      balaclava: ClothingHoodHazmatSuitYellow
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised
 
-#MARK: Yellow Hood
-- type: entity
-  parent: BaseClothingBalaclava
-  id: ClothingHoodHazmatSuitYellow
-  name: hazmat suit hood (yellow)
-  categories: [ HideSpawnMenu ]
-  description: "A suit that protects against contamination from HAZardous MATerials such as Chemical, Bioligical, Radiological and Nuclear threats moderatly"
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat.rsi
-    color: "#ffee2f"
-  - type: Clothing
-    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat.rsi
-    clothingVisuals:
-      balaclava:
-      - state: equipped-HELMET
-        color: "#ffee2f"
-  - type: Armor
-    modifiers:
-      coefficients:
-        Heat: 0.90
-        Radiation: 0.01
-  - type: HideLayerClothing
-    slots:
-    - Hair
-    - Snout
-    - HeadTop
-    - HeadSide
-
-#MARK: Red HazmatSuit
+#MARK: Red
 - type: entity
   parent: BaseClothingShirtToggleable
   id: ClothingShirtHazmatSuitRed
@@ -75,10 +48,10 @@
   description: "A suit that protects against contamination from HAZardous MATerials such as Chemical, Bioligical, Radiological and Nuclear threats moderatly"
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat_any.rsi
     color: "#ff2f47"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -86,7 +59,7 @@
       balaclava:
       - state: equipped-INNERCLOTHING
         color: "#ff2f47"
-      - sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat.rsi
+      - sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat_any.rsi
         state: equipped-HELMET
         color: "#ff2f47"
   - type: Item
@@ -105,38 +78,11 @@
   - type: GroupExamine
   - type: ToggleableClothing
     clothingPrototypes:
-      balaclava: ClothingHoodHazmatSuitRed
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised
 
-#MARK: Red Hood
-- type: entity
-  parent: BaseClothingBalaclava
-  id: ClothingHoodHazmatSuitRed
-  name: hazmat suit hood (red)
-  categories: [ HideSpawnMenu ]
-  description: "A suit that protects against contamination from HAZardous MATerials such as Chemical, Bioligical, Radiological and Nuclear threats moderatly"
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat.rsi
-    color: "#ff2f47"
-  - type: Clothing
-    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat.rsi
-    clothingVisuals:
-      balaclava:
-      - state: equipped-HELMET
-        color: "#ff2f47"
-  - type: Armor
-    modifiers:
-      coefficients:
-        Heat: 0.90
-        Radiation: 0.01
-  - type: HideLayerClothing
-    slots:
-    - Hair
-    - Snout
-    - HeadTop
-    - HeadSide
-
-#MARK: Blue HazmatSuit
+#MARK: Blue
 - type: entity
   parent: BaseClothingShirtToggleable
   id: ClothingShirtHazmatSuitBlue
@@ -144,10 +90,10 @@
   description: "A suit that protects against contamination from HAZardous MATerials such as Chemical, Bioligical, Radiological and Nuclear threats moderatly"
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat_any.rsi
     color: "#2f6dff"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -155,7 +101,7 @@
       balaclava:
       - state: equipped-INNERCLOTHING
         color: "#2f6dff"
-      - sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat.rsi
+      - sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat_any.rsi
         state: equipped-HELMET
         color: "#2f6dff"
   - type: Item
@@ -174,38 +120,11 @@
   - type: GroupExamine
   - type: ToggleableClothing
     clothingPrototypes:
-      balaclava: ClothingHoodHazmatSuitBlue
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised
 
-#MARK: Blue Hood
-- type: entity
-  parent: BaseClothingBalaclava
-  id: ClothingHoodHazmatSuitBlue
-  name: hazmat suit hood (blue)
-  categories: [ HideSpawnMenu ]
-  description: "A suit that protects against contamination from HAZardous MATerials such as Chemical, Bioligical, Radiological and Nuclear threats moderatly"
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat.rsi
-    color: "#2f6dff"
-  - type: Clothing
-    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat.rsi
-    clothingVisuals:
-      balaclava:
-      - state: equipped-HELMET
-        color: "#2f6dff"
-  - type: Armor
-    modifiers:
-      coefficients:
-        Heat: 0.90
-        Radiation: 0.01
-  - type: HideLayerClothing
-    slots:
-    - Hair
-    - Snout
-    - HeadTop
-    - HeadSide
-
-#MARK: Purple HazmatSuit
+#MARK: Purple
 - type: entity
   parent: BaseClothingShirtToggleable
   id: ClothingShirtHazmatSuitPurple
@@ -213,10 +132,10 @@
   description: "A suit that protects against contamination from HAZardous MATerials such as Chemical, Bioligical, Radiological and Nuclear threats moderatly"
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat_any.rsi
     color: "#d22fff"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -224,7 +143,7 @@
       balaclava:
       - state: equipped-INNERCLOTHING
         color: "#d22fff"
-      - sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat.rsi
+      - sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat_any.rsi
         state: equipped-HELMET
         color: "#d22fff"
   - type: Item
@@ -243,38 +162,11 @@
   - type: GroupExamine
   - type: ToggleableClothing
     clothingPrototypes:
-      balaclava: ClothingHoodHazmatSuitPurple
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised
 
-#MARK: Purple Hood
-- type: entity
-  parent: BaseClothingBalaclava
-  id: ClothingHoodHazmatSuitPurple
-  name: hazmat suit hood (purple)
-  categories: [ HideSpawnMenu ]
-  description: "A suit that protects against contamination from HAZardous MATerials such as Chemical, Bioligical, Radiological and Nuclear threats moderatly"
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat.rsi
-    color: "#d22fff"
-  - type: Clothing
-    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat.rsi
-    clothingVisuals:
-      balaclava:
-      - state: equipped-HELMET
-        color: "#d22fff"
-  - type: Armor
-    modifiers:
-      coefficients:
-        Heat: 0.90
-        Radiation: 0.01
-  - type: HideLayerClothing
-    slots:
-    - Hair
-    - Snout
-    - HeadTop
-    - HeadSide
-
-#MARK: Green HazmatSuit
+#MARK: Green
 - type: entity
   parent: BaseClothingShirtToggleable
   id: ClothingShirtHazmatSuitGreen
@@ -282,10 +174,10 @@
   description: "A suit that protects against contamination from HAZardous MATerials such as Chemical, Bioligical, Radiological and Nuclear threats moderatly"
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat_any.rsi
     color: "#3dcd66"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -293,7 +185,7 @@
       balaclava:
       - state: equipped-INNERCLOTHING
         color: "#3dcd66"
-      - sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat.rsi
+      - sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat_any.rsi
         state: equipped-HELMET
         color: "#3dcd66"
   - type: Item
@@ -312,38 +204,11 @@
   - type: GroupExamine
   - type: ToggleableClothing
     clothingPrototypes:
-      balaclava: ClothingHoodHazmatSuitGreen
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised
 
-#MARK: Green Hood
-- type: entity
-  parent: BaseClothingBalaclava
-  id: ClothingHoodHazmatSuitGreen
-  name: hazmat suit hood (green)
-  categories: [ HideSpawnMenu ]
-  description: "A suit that protects against contamination from HAZardous MATerials such as Chemical, Bioligical, Radiological and Nuclear threats moderatly"
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat.rsi
-    color: "#3dcd66"
-  - type: Clothing
-    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat.rsi
-    clothingVisuals:
-      balaclava:
-      - state: equipped-HELMET
-        color: "#3dcd66"
-  - type: Armor
-    modifiers:
-      coefficients:
-        Heat: 0.90
-        Radiation: 0.01
-  - type: HideLayerClothing
-    slots:
-    - Hair
-    - Snout
-    - HeadTop
-    - HeadSide
-
-#MARK: White HazmatSuit
+#MARK: White
 - type: entity
   parent: BaseClothingShirtToggleable
   id: ClothingShirtHazmatSuitWhite
@@ -351,10 +216,10 @@
   description: "A suit that protects against contamination from HAZardous MATerials such as Chemical, Bioligical, Radiological and Nuclear threats moderatly"
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat_any.rsi
     color: "#ffffff"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_hazmat_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -362,7 +227,7 @@
       balaclava:
       - state: equipped-INNERCLOTHING
         color: "#ffffff"
-      - sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat.rsi
+      - sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat_any.rsi
         state: equipped-HELMET
         color: "#ffffff"
   - type: Item
@@ -381,33 +246,6 @@
   - type: GroupExamine
   - type: ToggleableClothing
     clothingPrototypes:
-      balaclava: ClothingHoodHazmatSuitWhite
-
-#MARK: White Hood
-- type: entity
-  parent: BaseClothingBalaclava
-  id: ClothingHoodHazmatSuitWhite
-  name: hazmat suit hood (white)
-  categories: [ HideSpawnMenu ]
-  description: "A suit that protects against contamination from HAZardous MATerials such as Chemical, Bioligical, Radiological and Nuclear threats moderatly"
-  components:
-  - type: Sprite
-    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat.rsi
-    color: "#ffffff"
-  - type: Clothing
-    sprite: _Cataclysm14/Clothing/Head/Hoods/hood_hazmat.rsi
-    clothingVisuals:
-      balaclava:
-      - state: equipped-HELMET
-        color: "#ffffff"
-  - type: Armor
-    modifiers:
-      coefficients:
-        Heat: 0.90
-        Radiation: 0.01
-  - type: HideLayerClothing
-    slots:
-    - Hair
-    - Snout
-    - HeadTop
-    - HeadSide
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised

@@ -1,4 +1,4 @@
-#Fixed Gear, hidden
+#MARK: Fixed Gear, hidden
 - type: loadoutGroup
   id: LoadoutGroupPoliceOfficerUniform
   name: loadout-group-police-officer-uniform
@@ -9,8 +9,8 @@
   - PoliceOfficerLoadoutUniform
   fallbacks:
   - PoliceOfficerLoadoutUniform
-  
-#Body Armor
+
+#MARK: Body Armor
 - type: loadoutGroup
   id: LoadoutGroupPoliceOfficerVest
   name: loadout-group-police-officer-vest
@@ -22,7 +22,7 @@
   fallbacks:
   - PoliceOfficerLoadoutVestBlack
 
-#Face
+#MARK: Face
 - type: loadoutGroup
   id: LoadoutGroupPoliceOfficerFaceCovering
   name: loadout-group-police-officer-face
@@ -78,4 +78,3 @@
   price: 0
   equipment:
     balaclava: ClothingBalaclavaBalaclavaSkiMaskBlack
-    

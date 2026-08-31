@@ -12,7 +12,7 @@
   - type: Clothing
     sprite: _Cataclysm14/Clothing/Shirt/ShirtsCombat/RhodesianBushstroke/shirt_rhodesian_bushstroke_Tshirt.rsi
 
-#MARK: Cargo
+#MARK: Jacket
 - type: entity
   parent: BaseClothingShirtCargo
   id: ClothingShirtCombatRhodesianBushstrokeJacket

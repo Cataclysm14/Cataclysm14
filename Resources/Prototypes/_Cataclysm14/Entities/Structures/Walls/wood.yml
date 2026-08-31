@@ -40,9 +40,9 @@
   name: white wooden plank wall
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_any.rsi
   - type: Icon
-    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_any.rsi
   - type: IconSmooth
     key: walls
     base: wood
@@ -57,10 +57,10 @@
   name: red wooden plank wall
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_any.rsi
     color: "#ED2939"
   - type: Icon
-    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_any.rsi
   - type: IconSmooth
     key: walls
     base: wood
@@ -75,10 +75,10 @@
   name: blue wooden plank wall
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_any.rsi
     color: "#2832C2"
   - type: Icon
-    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_any.rsi
   - type: IconSmooth
     key: walls
     base: wood
@@ -93,10 +93,10 @@
   name: green wooden plank wall
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_any.rsi
     color: "#3d8c40"
   - type: Icon
-    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_any.rsi
   - type: IconSmooth
     key: walls
     base: wood
@@ -111,10 +111,10 @@
   name: yellow wooden plank wall
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_any.rsi
     color: "#E4CD05"
   - type: Icon
-    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_any.rsi
   - type: IconSmooth
     key: walls
     base: wood
@@ -129,10 +129,10 @@
   name: purple wooden plank wall
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_any.rsi
     color: "#702963"
   - type: Icon
-    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_any.rsi
   - type: IconSmooth
     key: walls
     base: wood
@@ -147,10 +147,10 @@
   name: grey wooden plank wall
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_any.rsi
     color: "#AAAAAA"
   - type: Icon
-    sprite: _Cataclysm14/Structures/Walls/wood_plank_greyscale.rsi
+    sprite: _Cataclysm14/Structures/Walls/wood_plank_any.rsi
   - type: IconSmooth
     key: walls
     base: wood

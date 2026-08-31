@@ -16,14 +16,15 @@ namespace Content.Shared.Clothing.Components;
 [Access(typeof(ClothingSystem), typeof(InventorySystem))]
 public sealed partial class ClothingComponent : Component
 {
-    [DataField("clothingVisuals")]
-    public Dictionary<string, List<PrototypeLayerData>> ClothingVisuals = new();
-
     /// <summary>
     /// The name of the layer in the user that this piece of clothing will map to
     /// </summary>
     [DataField]
     public string? MappedLayer;
+
+    [DataField]
+    [Access(typeof(ClothingSystem), typeof(Content.Shared.Clothing.EntitySystems.HoodedClothingSystem))]
+    public Dictionary<string, List<PrototypeLayerData>> ClothingVisuals = new();
 
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("quickEquip")]
@@ -42,7 +43,7 @@ public sealed partial class ClothingComponent : Component
     [DataField("unequipSound")]
     public SoundSpecifier? UnequipSound;
 
-    [Access(typeof(ClothingSystem))]
+    [Access(typeof(ClothingSystem), typeof(Content.Shared.Clothing.EntitySystems.HoodedClothingSystem))]
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("equippedPrefix")]
     public string? EquippedPrefix;

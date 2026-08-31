@@ -1,0 +1,173 @@
+#MARK: black
+- type: entity
+  parent: BaseClothingHead
+  id: ClothingHeadHatBoonieHatBlack
+  name: boonie hat (black)
+  description: A boonie hat, made for hunters and for protecting your head from the sun.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_boonie_hat_any.rsi
+    color: "#3B3B3B"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_boonie_hat_any.rsi
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+        color: "#3B3B3B"
+  - type: Item
+    shape:
+    - 0,0,0,1
+    storedScale: 2
+    storedOffset: 0,3
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#3B3B3B"
+      right:
+      - state: inhand-right
+        color: "#3B3B3B"
+
+#MARK: beige
+- type: entity
+  parent: BaseClothingHead
+  id: ClothingHeadHatBoonieHatBeige
+  name: boonie hat (beige)
+  description: A boonie hat, made for hunters and for protecting your head from the sun.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_boonie_hat_any.rsi
+    color: "#B8A98A"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_boonie_hat_any.rsi
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+        color: "#B8A98A"
+  - type: Item
+    shape:
+    - 0,0,0,1
+    storedScale: 2
+    storedOffset: 1,3
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#B8A98A"
+      right:
+      - state: inhand-right
+        color: "#B8A98A"
+
+#MARK: gray
+- type: entity
+  parent: BaseClothingHead
+  id: ClothingHeadHatBoonieHatGray
+  name: boonie hat (gray)
+  description: A boonie hat, made for hunters and for protecting your head from the sun.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_boonie_hat_any.rsi
+    color: "#777777"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_boonie_hat_any.rsi
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+        color: "#777777"
+  - type: Item
+    shape:
+    - 0,0,0,1
+    storedScale: 2
+    storedOffset: 0,3
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#777777"
+      right:
+      - state: inhand-right
+        color: "#777777"
+
+#MARK: tan
+- type: entity
+  parent: BaseClothingHead
+  id: ClothingHeadHatBoonieHatTan
+  name: boonie hat (tan)
+  description: A boonie hat, made for hunters and for protecting your head from the sun.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_boonie_hat_any.rsi
+    color: "#d2B48C"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_boonie_hat_any.rsi
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+        color: "#d2B48C"
+  - type: Item
+    shape:
+    - 0,0,0,1
+    storedScale: 2
+    storedOffset: 0,3
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#d2B48C"
+      right:
+      - state: inhand-right
+        color: "#d2B48C"
+
+#MARK: olive
+- type: entity
+  parent: BaseClothingHead
+  id: ClothingHeadHatBoonieHatOlive
+  name: boonie hat (olive)
+  description: A boonie hat, made for hunters and for protecting your head from the sun.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_boonie_hat_any.rsi
+    color: "#92A168"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_boonie_hat_any.rsi
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+        color: "#92A168"
+  - type: Item
+    shape:
+    - 0,0,0,1
+    storedScale: 2
+    storedOffset: 0,3
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#92A168"
+      right:
+      - state: inhand-right
+        color: "#92A168"
+
+#MARK: ranger green
+- type: entity
+  parent: BaseClothingHead
+  id: ClothingHeadHatBoonieHatRangerGreen
+  name: boonie hat (ranger green)
+  description: A boonie hat, made for hunters and for protecting your head from the sun.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_boonie_hat_any.rsi
+    color: "#4A5A49"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hats/hat_boonie_hat_any.rsi
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+        color: "#4A5A49"
+  - type: Item
+    shape:
+    - 0,0,0,1
+    storedScale: 2
+    storedOffset: 0,3
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#4A5A49"
+      right:
+      - state: inhand-right
+        color: "#4A5A49"

@@ -51,6 +51,7 @@ public sealed partial class ToggleableClothingComponent : Component
     ///     Dictionary of clothing uids and slots
     /// </summary>
     [DataField, AutoNetworkedField]
+    [Access(typeof(ToggleableClothingSystem), typeof(Content.Shared.Clothing.EntitySystems.HoodedClothingSystem))]
     public Dictionary<EntityUid, string> ClothingUids = new();
 
     /// <summary>
@@ -66,6 +67,7 @@ public sealed partial class ToggleableClothingComponent : Component
     public string ContainerId = DefaultClothingContainerId;
 
     [ViewVariables]
+    [Access(typeof(ToggleableClothingSystem), typeof(Content.Shared.Clothing.EntitySystems.HoodedClothingSystem))]
     public Container? Container;
 
     /// <summary>

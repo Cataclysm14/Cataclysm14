@@ -2,7 +2,7 @@
   id: LoadoutGroupShirt
   name: loadout-group-shirt
   loadouts:
-  #Hoodie
+  #MARK: Hoodie
   - LoadoutEntryClothingShirtHoodieWhite
   - LoadoutEntryClothingShirtHoodieRed
   - LoadoutEntryClothingShirtHoodieBlue
@@ -14,7 +14,7 @@
   - LoadoutEntryClothingShirtHoodieBrown
   - LoadoutEntryClothingShirtHoodieOlive
   - LoadoutEntryClothingShirtHoodieRangerGreen
-  #Sweater
+  #MARK: Sweater
   - LoadoutEntryClothingShirtSweaterWhite
   - LoadoutEntryClothingShirtSweaterRed
   - LoadoutEntryClothingShirtSweaterBlue
@@ -26,7 +26,7 @@
   - LoadoutEntryClothingShirtSweaterBrown
   - LoadoutEntryClothingShirtSweaterOlive
   - LoadoutEntryClothingShirtSweaterRangerGreen
-  #T-Shirt
+  #MARK: T-Shirt
   - LoadoutEntryClothingShirtTShirtWhite
   - LoadoutEntryClothingShirtTShirtRed
   - LoadoutEntryClothingShirtTShirtBlue
@@ -38,7 +38,19 @@
   - LoadoutEntryClothingShirtTShirtBrown
   - LoadoutEntryClothingShirtTShirtOlive
   - LoadoutEntryClothingShirtTShirtRangerGreen
-  #Tank Top
+  #MARK: Shirt
+  - LoadoutEntryClothingShirtShirtWhite
+  - LoadoutEntryClothingShirtShirtRed
+  - LoadoutEntryClothingShirtShirtBlue
+  - LoadoutEntryClothingShirtShirtGreen
+  - LoadoutEntryClothingShirtShirtYellow
+  - LoadoutEntryClothingShirtShirtPurple
+  - LoadoutEntryClothingShirtShirtBlack
+  - LoadoutEntryClothingShirtShirtBeige
+  - LoadoutEntryClothingShirtShirtBrown
+  - LoadoutEntryClothingShirtShirtOlive
+  - LoadoutEntryClothingShirtShirtRangerGreen
+  #MARK: Tank Top
   - LoadoutEntryClothingShirtTankTopWhite
   - LoadoutEntryClothingShirtTankTopRed
   - LoadoutEntryClothingShirtTankTopBlue
@@ -50,17 +62,24 @@
   - LoadoutEntryClothingShirtTankTopBrown
   - LoadoutEntryClothingShirtTankTopOlive
   - LoadoutEntryClothingShirtTankTopRangerGreen
-  #Tracksuit
+  #MARK: Tracksuit
   - LoadoutEntryClothingShirtTracksuitBlack
   - LoadoutEntryClothingShirtTracksuitBlue
   - LoadoutEntryClothingShirtTracksuitYellow
   - LoadoutEntryClothingShirtTracksuitRed
   - LoadoutEntryClothingShirtTracksuitGreen
-  #Mariniere/Teslnyashka
+  #MARK: Mariniere/Teslnyashka
   - LoadoutEntryClothingShirtStrippedMariniereTeslnyashkaGreen
   - LoadoutEntryClothingShirtStrippedMariniereTeslnyashkaBlue
   - LoadoutEntryClothingShirtStrippedMariniereTeslnyashkaRed
   - LoadoutEntryClothingShirtStrippedMariniereTeslnyashkaBlack
+  #MARK: Dress Shirt
+  - LoadoutEntryClothingShirtDressShirtBlack
+  - LoadoutEntryClothingShirtDressShirtWhite
+  - LoadoutEntryClothingShirtDressShirtLightBlue
+  - LoadoutEntryClothingShirtDressShirtLavender
+  - LoadoutEntryClothingShirtDressShirtLightRed
+  - LoadoutEntryClothingShirtDressShirtLightPink
   fallbacks:
   - LoadoutEntryClothingShirtTracksuitBlack
 
@@ -176,7 +195,7 @@
   equipment:
     jumpsuit: ClothingShirtSweaterRangerGreen
 
-#MARK: T-Shirt
+#MARK:T-Shirt
 - type: loadout
   id: LoadoutEntryClothingShirtTShirtWhite
   equipment:
@@ -231,6 +250,62 @@
   id: LoadoutEntryClothingShirtTShirtRangerGreen
   equipment:
     jumpsuit: ClothingShirtTShirtRangerGreen
+
+#MARK: Shirt
+- type: loadout
+  id: LoadoutEntryClothingShirtShirtWhite
+  equipment:
+    jumpsuit: ClothingShirtShirtWhite
+
+- type: loadout
+  id: LoadoutEntryClothingShirtShirtRed
+  equipment:
+    jumpsuit: ClothingShirtShirtRed
+
+- type: loadout
+  id: LoadoutEntryClothingShirtShirtBlue
+  equipment:
+    jumpsuit: ClothingShirtShirtBlue
+
+- type: loadout
+  id: LoadoutEntryClothingShirtShirtGreen
+  equipment:
+    jumpsuit: ClothingShirtShirtGreen
+
+- type: loadout
+  id: LoadoutEntryClothingShirtShirtYellow
+  equipment:
+    jumpsuit: ClothingShirtShirtYellow
+
+- type: loadout
+  id: LoadoutEntryClothingShirtShirtPurple
+  equipment:
+    jumpsuit: ClothingShirtShirtPurple
+
+- type: loadout
+  id: LoadoutEntryClothingShirtShirtBlack
+  equipment:
+    jumpsuit: ClothingShirtShirtBlack
+
+- type: loadout
+  id: LoadoutEntryClothingShirtShirtBeige
+  equipment:
+    jumpsuit: ClothingShirtShirtBeige
+
+- type: loadout
+  id: LoadoutEntryClothingShirtShirtBrown
+  equipment:
+    jumpsuit: ClothingShirtShirtBrown
+
+- type: loadout
+  id: LoadoutEntryClothingShirtShirtOlive
+  equipment:
+    jumpsuit: ClothingShirtShirtOlive
+
+- type: loadout
+  id: LoadoutEntryClothingShirtShirtRangerGreen
+  equipment:
+    jumpsuit: ClothingShirtShirtRangerGreen
 
 #MARK: Tank Top
 - type: loadout
@@ -334,3 +409,34 @@
   id: LoadoutEntryClothingShirtStrippedMariniereTeslnyashkaBlack
   equipment:
     jumpsuit: ClothingShirtStrippedMariniereTeslnyashkaBlack
+
+#MARK: Dress Shirt
+- type: loadout
+  id: LoadoutEntryClothingShirtDressShirtBlack
+  equipment:
+    jumpsuit: ClothingShirtDressShirtBlack
+
+- type: loadout
+  id: LoadoutEntryClothingShirtDressShirtWhite
+  equipment:
+    jumpsuit: ClothingShirtDressShirtWhite
+
+- type: loadout
+  id: LoadoutEntryClothingShirtDressShirtLightBlue
+  equipment:
+    jumpsuit: ClothingShirtDressShirtLightBlue
+
+- type: loadout
+  id: LoadoutEntryClothingShirtDressShirtLavender
+  equipment:
+    jumpsuit: ClothingShirtDressShirtLavender
+
+- type: loadout
+  id: LoadoutEntryClothingShirtDressShirtLightRed
+  equipment:
+    jumpsuit: ClothingShirtDressShirtLightRed
+
+- type: loadout
+  id: LoadoutEntryClothingShirtDressShirtLightPink
+  equipment:
+    jumpsuit: ClothingShirtDressShirtLightPink

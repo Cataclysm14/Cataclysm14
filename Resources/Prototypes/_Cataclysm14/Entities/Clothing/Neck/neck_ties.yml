@@ -2,10 +2,11 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckTieColoredWhite
-  name: white colored necktie
+  name: colored necktie (white)
   description: A neosilk clip-on tie, this one is colored in white.
   components:
   - type: Sprite
+    scale: 0.4,0.4
     sprite: _Cataclysm14/Clothing/Neck/Ties/tie_any.rsi
   - type: Clothing
     sprite: _Cataclysm14/Clothing/Neck/Ties/tie_any.rsi
@@ -14,10 +15,11 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckTieColoredRed
-  name: red colored necktie
+  name: colored necktie (red)
   description: A neosilk clip-on tie, this one is colored in red.
   components:
   - type: Sprite
+    scale: 0.4,0.4
     sprite: _Cataclysm14/Clothing/Neck/Ties/tie_any.rsi
     color: "#9E1A1A"
   - type: Clothing
@@ -39,10 +41,11 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckTieColoredBlue
-  name: blue colored necktie
+  name: colored necktie (blue)
   description: A neosilk clip-on tie, this one is colored in blue.
   components:
   - type: Sprite
+    scale: 0.4,0.4
     sprite: _Cataclysm14/Clothing/Neck/Ties/tie_any.rsi
     color: "#2832C2"
   - type: Clothing
@@ -64,10 +67,11 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckTieColoredGreen
-  name: green colored necktie
+  name: colored necktie (green)
   description: A neosilk clip-on tie, this one is colored in green.
   components:
   - type: Sprite
+    scale: 0.4,0.4
     sprite: _Cataclysm14/Clothing/Neck/Ties/tie_any.rsi
     color: "#3d8c40"
   - type: Clothing
@@ -89,10 +93,11 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckTieColoredYellow
-  name: yellow colored necktie
+  name: colored necktie (yellow)
   description: A neosilk clip-on tie, this one is colored in yellow.
   components:
   - type: Sprite
+    scale: 0.4,0.4
     sprite: _Cataclysm14/Clothing/Neck/Ties/tie_any.rsi
     color: "#E4CD05"
   - type: Clothing
@@ -114,10 +119,11 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckTieColoredPurple
-  name: purple colored necktie
+  name: colored necktie (purple)
   description: A neosilk clip-on tie, this one is colored in purple.
   components:
   - type: Sprite
+    scale: 0.4,0.4
     sprite: _Cataclysm14/Clothing/Neck/Ties/tie_any.rsi
     color: "#702963"
   - type: Clothing
@@ -139,10 +145,11 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckTieColoredBlack
-  name: black colored necktie
+  name: colored necktie (black)
   description: A neosilk clip-on tie, this one is colored in black.
   components:
   - type: Sprite
+    scale: 0.4,0.4
     sprite: _Cataclysm14/Clothing/Neck/Ties/tie_any.rsi
     color: "#444444"
   - type: Clothing
@@ -164,10 +171,11 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckTieColoredBeige
-  name: beige colored necktie
+  name: colored necktie (beige)
   description: A plain colored t-beige, this one is colored in beige.
   components:
   - type: Sprite
+    scale: 0.4,0.4
     sprite: _Cataclysm14/Clothing/Neck/Ties/tie_any.rsi
     color: "#CDBEA1"
   - type: Clothing

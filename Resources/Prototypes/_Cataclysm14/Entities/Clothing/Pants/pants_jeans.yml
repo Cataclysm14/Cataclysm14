@@ -7,10 +7,10 @@
       description: A warm jeans, this one is colored in blue.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_any.rsi
         color: "#6F8FAF"
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_any.rsi
         clothingVisuals:
           pants:
           - state: equipped-PANTS
@@ -31,10 +31,10 @@
       description: A warm jeans, this one is colored in purple.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_any.rsi
         color: "#89839C"
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_any.rsi
         clothingVisuals:
           pants:
           - state: equipped-PANTS
@@ -55,10 +55,10 @@
       description: A warm jeans, this one is colored in black.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_any.rsi
         color: "#444444"
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_any.rsi
         clothingVisuals:
           pants:
           - state: equipped-PANTS
@@ -79,10 +79,10 @@
       description: A warm jeans, this one is colored in brown.
       components:
       - type: Sprite
-        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_any.rsi
         color: "#81613C"
       - type: Clothing
-        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_greyscale.rsi
+        sprite: _Cataclysm14/Clothing/Pants/pants_jeans_any.rsi
         clothingVisuals:
           pants:
           - state: equipped-PANTS

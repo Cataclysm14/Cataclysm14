@@ -1,6 +1,6 @@
 #MARK: orange, yellow
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtHoodieHighVisOrangeYellow
   name: hoodie (high-vis)(orange, yellow)
   description: A warm hoodie with high visibility markings for safety, this one is colored in orange and has yellow reflective strips.
@@ -9,10 +9,18 @@
     sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_high-vis_orange_yellow.rsi
   - type: Clothing
     sprite: _Cataclysm14/Clothing/Shirt/shirt_hoodie_high-vis_orange_yellow.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised
 
 #MARK: orange/blue, white
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtCoatHighVisOrangeBlueWhite
   name: coat (high-vis)(orange/blue, white)
   description: A warm hoodie with high visibility markings for safety, this one is colored in orange and blue and has white reflective strips.
@@ -21,3 +29,11 @@
     sprite: _Cataclysm14/Clothing/Shirt/shirt_coat_high-vis_orange_blue_white.rsi
   - type: Clothing
     sprite: _Cataclysm14/Clothing/Shirt/shirt_coat_high-vis_orange_blue_white.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised
