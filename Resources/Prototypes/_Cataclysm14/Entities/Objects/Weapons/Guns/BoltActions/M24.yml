@@ -1,10 +1,10 @@
 #MARK: Base
 - type: entity
-  name: Remington M24 (7,62x51mm NATO)
+  name: M24 SWS (7,62x51mm NATO)
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseGunMelee]
   id: WeaponBoltActionRifleM24Base
   suffix: Empty
-  description: A weapon for precision shooting, or hunting charlies in the jungle. Uses 7,62x51mm NATO ammo.
+  description: A weapon for precision shooting, or hunting charlies in the jungle. the model 24 Sniper Weapon System. Uses 7,62x51mm NATO ammo.
   components:
   - type: Sprite
     sprite: _Cataclysm14/Objects/Weapons/Guns/BoltActions/M24_64x32.rsi
