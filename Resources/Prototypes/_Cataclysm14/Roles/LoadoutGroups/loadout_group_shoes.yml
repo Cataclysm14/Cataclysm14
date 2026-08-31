@@ -2,7 +2,7 @@
   id: LoadoutGroupShoes
   name: loadout-group-shoes
   loadouts:
-  #Sneakers
+  #MARK: Sneakers
   - LoadoutEntryClothingShoesSneakersWhite
   - LoadoutEntryClothingShoesSneakersRed
   - LoadoutEntryClothingShoesSneakersBlue
@@ -10,14 +10,14 @@
   - LoadoutEntryClothingShoesSneakersYellow
   - LoadoutEntryClothingShoesSneakersPurple
   - LoadoutEntryClothingShoesSneakersBlack
-  #Workboots
+  #MARK: Workboots
   - LoadoutEntryClothingShoesBootsWorkbootsTan
   - LoadoutEntryClothingShoesBootsWorkbootsOlive
   - LoadoutEntryClothingShoesBootsWorkbootsBlack
   - LoadoutEntryClothingShoesBootsWorkbootsRangerGreen
   - LoadoutEntryClothingShoesBootsWorkbootsCoyoteBrown
   - LoadoutEntryClothingShoesBootsWorkbootsWhite
-  #Unlocks
+  #MARK: Unlocks
   - LoadoutEntryClothingShoesReebokAlienStompers
   fallbacks:
   - LoadoutEntryClothingShoesSneakersBlack
@@ -88,7 +88,7 @@
   id: LoadoutEntryClothingShoesBootsWorkbootsWhite
   equipment:
     shoes: ClothingShoesBootsWorkbootsWhite
-    
+
 #MARK: Reebok Alien Stompers
 - type: loadout
   id: LoadoutEntryClothingShoesReebokAlienStompers
@@ -97,7 +97,7 @@
     proto: ReebokAlienStompersTimer
   equipment:
     shoes: ClothingShoesReebokAlienStompers
-    
+
 #MARK: Unlocks
 - type: loadoutEffectGroup
   id: ReebokAlienStompersTimer

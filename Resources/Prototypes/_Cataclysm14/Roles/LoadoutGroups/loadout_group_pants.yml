@@ -27,6 +27,13 @@
   - LoadoutEntryClothingPantsTracksuitYellow
   - LoadoutEntryClothingPantsTracksuitRed
   - LoadoutEntryClothingPantsTracksuitGreen
+  #MARK: Dress Pants
+  - LoadoutEntryClothingPantsDressPantsBlack
+  - LoadoutEntryClothingPantsDressPantsWhite
+  - LoadoutEntryClothingPantsDressPantsLightBlue
+  - LoadoutEntryClothingPantsDressPantsLavender
+  - LoadoutEntryClothingPantsDressPantsLightRed
+  - LoadoutEntryClothingPantsDressPantsLightPink
   fallbacks:
   - LoadoutEntryClothingPantsTracksuitBlack
 
@@ -139,4 +146,33 @@
   equipment:
     pants: ClothingPantsTracksuitGreen
 
+#MARK: Dress Pants
+- type: loadout
+  id: LoadoutEntryClothingPantsDressPantsBlack
+  equipment:
+    jumpsuit: ClothingPantsDressPantsBlack
 
+- type: loadout
+  id: LoadoutEntryClothingPantsDressPantsWhite
+  equipment:
+    jumpsuit: ClothingPantsDressPantsWhite
+
+- type: loadout
+  id: LoadoutEntryClothingPantsDressPantsLightBlue
+  equipment:
+    jumpsuit: ClothingPantsDressPantsLightBlue
+
+- type: loadout
+  id: LoadoutEntryClothingPantsDressPantsLavender
+  equipment:
+    jumpsuit: ClothingPantsDressPantsLavender
+
+- type: loadout
+  id: LoadoutEntryClothingPantsDressPantsLightRed
+  equipment:
+    jumpsuit: ClothingPantsDressPantsLightRed
+
+- type: loadout
+  id: LoadoutEntryClothingPantsDressPantsLightPink
+  equipment:
+    jumpsuit: ClothingPantsDressPantsLightPink

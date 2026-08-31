@@ -1,0 +1,161 @@
+#MARK: Black
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsDressPantsBlack
+  name: dress pants (black)
+  description: An tight fitted dress pants for when you need to be on your 31'.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_dress_pants_any.rsi
+    layers:
+    - state: icon
+      color: "#141414"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_dress_pants_any.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#141414"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#141414"
+      right:
+      - state: inhand-right
+        color: "#141414"
+
+#MARK: White
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsDressPantsWhite
+  name: dress pants (white)
+  description: An tight fitted dress pants for when you need to be on your 31'.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_dress_pants_any.rsi
+    layers:
+    - state: icon
+      color: "#D8D8D8"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_dress_pants_any.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#D8D8D8"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#D8D8D8"
+      right:
+      - state: inhand-right
+        color: "#D8D8D8"
+
+#MARK: Light Blue
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsDressPantsLightBlue
+  name: dress pants (light blue)
+  description: An tight fitted dress pants for when you need to be on your 31'.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_dress_pants_any.rsi
+    layers:
+    - state: icon
+      color: "#91AFEE"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_dress_pants_any.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#91AFEE"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#91AFEE"
+      right:
+      - state: inhand-right
+        color: "#91AFEE"
+
+#MARK: Lavender
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsDressPantsLavender
+  name: dress pants (Lavender)
+  description: An tight fitted dress pants for when you need to be on your 31'.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_dress_pants_any.rsi
+    layers:
+    - state: icon
+      color: "#B08CDD"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_dress_pants_any.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#B08CDD"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#B08CDD"
+      right:
+      - state: inhand-right
+        color: "#B08CDD"
+
+#MARK: Light Red
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsDressPantsLightRed
+  name: dress pants (light red)
+  description: An tight fitted dress pants for when you need to be on your 31'.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_dress_pants_any.rsi
+    layers:
+    - state: icon
+      color: "#F39C9C"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_dress_pants_any.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#F39C9C"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#F39C9C"
+      right:
+      - state: inhand-right
+        color: "#F39C9C"
+
+#MARK: Light Pink
+- type: entity
+  parent: BaseClothingPants
+  id: ClothingPantsDressPantsLightPink
+  name: dress pants (light pink)
+  description: An tight fitted dress pants for when you need to be on your 31'.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Pants/pants_dress_pants_any.rsi
+    layers:
+    - state: icon
+      color: "#DDC5F8"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Pants/pants_dress_pants_any.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#DDC5F8"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#DDC5F8"
+      right:
+      - state: inhand-right
+        color: "#DDC5F8"

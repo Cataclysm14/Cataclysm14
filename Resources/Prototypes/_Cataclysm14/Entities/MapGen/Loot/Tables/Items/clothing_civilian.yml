@@ -84,6 +84,9 @@
     children:
       - !type:NestedSelector
         weight: 100
+        tableId: LootTableClothingDressPants
+      - !type:NestedSelector
+        weight: 100
         tableId: LootTableClothingJeans
       - !type:NestedSelector
         weight: 100
@@ -185,6 +188,19 @@
     - id: ClothingShirtDressShirtLavender
     - id: ClothingShirtDressShirtLightRed
     - id: ClothingShirtDressShirtLightPink
+
+#MARK: Dress Pants
+- type: entityTable
+  id: LootTableClothingDressPants
+  table: !type:GroupSelector
+    children:
+    - id: ClothingPantsDressPantsWhite
+      weight: 3
+    - id: ClothingPantsDressPantsBlack
+    - id: ClothingPantsDressPantsLightBlue
+    - id: ClothingPantsDressPantsLavender
+    - id: ClothingPantsDressPantsLightRed
+    - id: ClothingPantsDressPantsLightPink
 
 #MARK: TankTop
 - type: entityTable

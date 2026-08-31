@@ -2,7 +2,7 @@
   id: LoadoutGroupShirt
   name: loadout-group-shirt
   loadouts:
-  #Hoodie
+  #MARK: Hoodie
   - LoadoutEntryClothingShirtHoodieWhite
   - LoadoutEntryClothingShirtHoodieRed
   - LoadoutEntryClothingShirtHoodieBlue
@@ -14,7 +14,7 @@
   - LoadoutEntryClothingShirtHoodieBrown
   - LoadoutEntryClothingShirtHoodieOlive
   - LoadoutEntryClothingShirtHoodieRangerGreen
-  #Sweater
+  #MARK: Sweater
   - LoadoutEntryClothingShirtSweaterWhite
   - LoadoutEntryClothingShirtSweaterRed
   - LoadoutEntryClothingShirtSweaterBlue
@@ -26,7 +26,7 @@
   - LoadoutEntryClothingShirtSweaterBrown
   - LoadoutEntryClothingShirtSweaterOlive
   - LoadoutEntryClothingShirtSweaterRangerGreen
-  #T-Shirt
+  #MARK: T-Shirt
   - LoadoutEntryClothingShirtTShirtWhite
   - LoadoutEntryClothingShirtTShirtRed
   - LoadoutEntryClothingShirtTShirtBlue
@@ -38,7 +38,7 @@
   - LoadoutEntryClothingShirtTShirtBrown
   - LoadoutEntryClothingShirtTShirtOlive
   - LoadoutEntryClothingShirtTShirtRangerGreen
-  #Shirt
+  #MARK: Shirt
   - LoadoutEntryClothingShirtShirtWhite
   - LoadoutEntryClothingShirtShirtRed
   - LoadoutEntryClothingShirtShirtBlue
@@ -50,7 +50,7 @@
   - LoadoutEntryClothingShirtShirtBrown
   - LoadoutEntryClothingShirtShirtOlive
   - LoadoutEntryClothingShirtShirtRangerGreen
-  #Tank Top
+  #MARK: Tank Top
   - LoadoutEntryClothingShirtTankTopWhite
   - LoadoutEntryClothingShirtTankTopRed
   - LoadoutEntryClothingShirtTankTopBlue
@@ -62,18 +62,18 @@
   - LoadoutEntryClothingShirtTankTopBrown
   - LoadoutEntryClothingShirtTankTopOlive
   - LoadoutEntryClothingShirtTankTopRangerGreen
-  #Tracksuit
+  #MARK: Tracksuit
   - LoadoutEntryClothingShirtTracksuitBlack
   - LoadoutEntryClothingShirtTracksuitBlue
   - LoadoutEntryClothingShirtTracksuitYellow
   - LoadoutEntryClothingShirtTracksuitRed
   - LoadoutEntryClothingShirtTracksuitGreen
-  #Mariniere/Teslnyashka
+  #MARK: Mariniere/Teslnyashka
   - LoadoutEntryClothingShirtStrippedMariniereTeslnyashkaGreen
   - LoadoutEntryClothingShirtStrippedMariniereTeslnyashkaBlue
   - LoadoutEntryClothingShirtStrippedMariniereTeslnyashkaRed
   - LoadoutEntryClothingShirtStrippedMariniereTeslnyashkaBlack
-  #Dress Shirt
+  #MARK: Dress Shirt
   - LoadoutEntryClothingShirtDressShirtBlack
   - LoadoutEntryClothingShirtDressShirtWhite
   - LoadoutEntryClothingShirtDressShirtLightBlue

@@ -4,7 +4,7 @@
   minLimit: 0
   maxLimit: 1
   loadouts:
-  #Colored Ties
+  #MARK: Colored Ties
   - LoadoutEntryClothingNeckTieColoredWhite
   - LoadoutEntryClothingNeckTieColoredRed
   - LoadoutEntryClothingNeckTieColoredBlue

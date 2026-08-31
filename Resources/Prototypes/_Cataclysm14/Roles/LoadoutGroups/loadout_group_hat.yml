@@ -2,7 +2,7 @@
   id: LoadoutGroupHat
   name: loadout-group-hat
   loadouts:
-  #Cap
+  #MARK: Cap
   - LoadoutEntryClothingHeadHatCapBaseballWhite
   - LoadoutEntryClothingHeadHatCapBaseballRed
   - LoadoutEntryClothingHeadHatCapBaseballBlue
@@ -14,7 +14,7 @@
   - LoadoutEntryClothingHeadHatCapBaseballBrown
   - LoadoutEntryClothingHeadHatCapBaseballOlive
   - LoadoutEntryClothingHeadHatCapBaseballRangerGreen
-  #Beanie
+  #MARK: Beanie
   - LoadoutEntryClothingHeadHatBeanieBlack
   - LoadoutEntryClothingHeadHatBeanieBeige
   - LoadoutEntryClothingHeadHatBeaniePurple
