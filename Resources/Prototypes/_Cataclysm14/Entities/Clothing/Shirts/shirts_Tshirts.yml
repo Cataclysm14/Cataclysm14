@@ -6,9 +6,9 @@
   description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
 
 #MARK:  red
 - type: entity
@@ -18,10 +18,10 @@
   description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
     color: "#9E1A1A"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -43,10 +43,10 @@
   description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
     color: "#404691"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -68,10 +68,10 @@
   description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
     color: "#3d8c40"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -93,10 +93,10 @@
   description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
     color: "#A89B25"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -118,10 +118,10 @@
   description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
     color: "#702963"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -143,10 +143,10 @@
   description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
     color: "#444444"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -168,10 +168,10 @@
   description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
     color: "#CDBEA1"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -193,10 +193,10 @@
   description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
     color: "#5F4D2A"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -218,10 +218,10 @@
   description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
     color: "#92A168"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -243,10 +243,10 @@
   description: A plain colored t-shirt.
   components:
   - type: Sprite
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
     color: "#4A5A49"
   - type: Clothing
-    sprite: _Cataclysm14/Clothing/Shirt/shirt_t-shirt_any.rsi
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_Tshirt_any.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
