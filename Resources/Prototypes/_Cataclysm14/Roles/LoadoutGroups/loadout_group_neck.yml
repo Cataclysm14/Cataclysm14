@@ -18,39 +18,39 @@
 - type: loadout
   id: LoadoutEntryClothingNeckTieColoredWhite
   equipment:
-    jumpsuit: ClothingNeckTieColoredWhite
+    neck: ClothingNeckTieColoredWhite
 
 - type: loadout
   id: LoadoutEntryClothingNeckTieColoredRed
   equipment:
-    jumpsuit: ClothingNeckTieColoredRed
+    neck: ClothingNeckTieColoredRed
 
 - type: loadout
   id: LoadoutEntryClothingNeckTieColoredBlue
   equipment:
-    jumpsuit: ClothingNeckTieColoredBlue
+    neck: ClothingNeckTieColoredBlue
 
 - type: loadout
   id: LoadoutEntryClothingNeckTieColoredGreen
   equipment:
-    jumpsuit: ClothingNeckTieColoredGreen
+    neck: ClothingNeckTieColoredGreen
 
 - type: loadout
   id: LoadoutEntryClothingNeckTieColoredYellow
   equipment:
-    jumpsuit: ClothingNeckTieColoredYellow
+    neck: ClothingNeckTieColoredYellow
 
 - type: loadout
   id: LoadoutEntryClothingNeckTieColoredPurple
   equipment:
-    jumpsuit: ClothingNeckTieColoredPurple
+    neck: ClothingNeckTieColoredPurple
 
 - type: loadout
   id: LoadoutEntryClothingNeckTieColoredBlack
   equipment:
-    jumpsuit: ClothingNeckTieColoredBlack
+    neck: ClothingNeckTieColoredBlack
 
 - type: loadout
   id: LoadoutEntryClothingNeckTieColoredBeige
   equipment:
-    jumpsuit: ClothingNeckTieColoredBeige
+    neck: ClothingNeckTieColoredBeige

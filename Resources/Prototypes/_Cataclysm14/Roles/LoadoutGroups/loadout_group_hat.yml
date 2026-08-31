@@ -2,6 +2,8 @@
   id: LoadoutGroupHat
   name: loadout-group-hat
   loadouts:
+  min limit: 0
+  max limit: 1
   #MARK: Cap
   - LoadoutEntryClothingHeadHatCapBaseballWhite
   - LoadoutEntryClothingHeadHatCapBaseballRed
