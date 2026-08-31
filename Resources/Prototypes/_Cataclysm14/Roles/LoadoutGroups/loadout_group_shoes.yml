@@ -17,6 +17,8 @@
   - LoadoutEntryClothingShoesBootsWorkbootsRangerGreen
   - LoadoutEntryClothingShoesBootsWorkbootsCoyoteBrown
   - LoadoutEntryClothingShoesBootsWorkbootsWhite
+  #MARK: Laceup Shoes
+  - LoadoutEntryClothingShoesBootsLaceup
   #MARK: Unlocks
   - LoadoutEntryClothingShoesReebokAlienStompers
   fallbacks:
@@ -88,6 +90,12 @@
   id: LoadoutEntryClothingShoesBootsWorkbootsWhite
   equipment:
     shoes: ClothingShoesBootsWorkbootsWhite
+
+#MARK: Laceup Shoes
+- type: loadout
+  id: LoadoutEntryClothingShoesBootsLaceup
+  equipment:
+    shoes: ClothingShoesBootsLaceup
 
 #MARK: Reebok Alien Stompers
 - type: loadout

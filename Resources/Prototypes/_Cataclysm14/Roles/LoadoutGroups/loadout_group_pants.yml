@@ -150,29 +150,29 @@
 - type: loadout
   id: LoadoutEntryClothingPantsDressPantsBlack
   equipment:
-    jumpsuit: ClothingPantsDressPantsBlack
+    pants: ClothingPantsDressPantsBlack
 
 - type: loadout
   id: LoadoutEntryClothingPantsDressPantsWhite
   equipment:
-    jumpsuit: ClothingPantsDressPantsWhite
+    pants: ClothingPantsDressPantsWhite
 
 - type: loadout
   id: LoadoutEntryClothingPantsDressPantsLightBlue
   equipment:
-    jumpsuit: ClothingPantsDressPantsLightBlue
+    pants: ClothingPantsDressPantsLightBlue
 
 - type: loadout
   id: LoadoutEntryClothingPantsDressPantsLavender
   equipment:
-    jumpsuit: ClothingPantsDressPantsLavender
+    pants: ClothingPantsDressPantsLavender
 
 - type: loadout
   id: LoadoutEntryClothingPantsDressPantsLightRed
   equipment:
-    jumpsuit: ClothingPantsDressPantsLightRed
+    pants: ClothingPantsDressPantsLightRed
 
 - type: loadout
   id: LoadoutEntryClothingPantsDressPantsLightPink
   equipment:
-    jumpsuit: ClothingPantsDressPantsLightPink
+    pants: ClothingPantsDressPantsLightPink

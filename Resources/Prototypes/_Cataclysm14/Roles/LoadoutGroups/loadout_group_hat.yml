@@ -1,6 +1,8 @@
 - type: loadoutGroup
   id: LoadoutGroupHat
   name: loadout-group-hat
+  minLimit: 0
+  maxLimit: 1
   loadouts:
   #MARK: Cap
   - LoadoutEntryClothingHeadHatCapBaseballWhite
