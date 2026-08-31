@@ -78,10 +78,6 @@
   - type: GroupExamine
   - type: ToggleableClothing
     clothingPrototypes:
-      balaclava: ClothingHoodHazmatSuitRed
-
-  - type: ToggleableClothing
-    clothingPrototypes:
       head: ClothingHeadHelmetBlock
   - type: HoodedClothing
     equippedPrefix: raised
