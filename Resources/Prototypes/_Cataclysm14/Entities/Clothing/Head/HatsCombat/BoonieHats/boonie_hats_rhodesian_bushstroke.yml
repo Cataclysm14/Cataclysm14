@@ -1,0 +1,12 @@
+- type: entity
+  parent: BaseClothingHead
+  id: ClothingHeadHatBoonieHatRhodesianBushstroke
+  name: camo boonie hat (rhodesian bushstroke)
+  description: >
+    A boonie hat, made for hunters and for protecting your head from the sun.
+    It has the rhodesian bushstroke camo of the Rhodesian Security Forces, used between 1965 and 1980. Just missing a trusty FN FAL.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/RhodesianBushstroke/hat_boonie_hat_rhodesian_bushstroke.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/RhodesianBushstroke/hat_boonie_hat_rhodesian_bushstroke.rsi

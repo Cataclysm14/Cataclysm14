@@ -1,0 +1,35 @@
+#MARK: Jumpsuit
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtJumpsuitHub01
+  name: jumpsuit (Hub-01)
+  description: A sturdy jumpsuit donning the colors of the mysterious Hub-01
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_jumpsuit_hub-01.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_jumpsuit_hub-01.rsi
+
+#MARK: Coveralls
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtCoverallsHub01
+  name: coveralls (Hub-01)
+  description: A sturdy pair of coveralls donning the colors of the mysterious Hub-01
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_coveralls_hub-01.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_coveralls_hub-01.rsi
+
+#MARK: Environmental Suit
+- type: entity
+  parent: BaseClothingShirt
+  id: ClothingShirtEnvironmentalSuitHub01
+  name: environmental suit (Hub-01)
+  description: A reinforced suit akin to an armored and strengthened hazmat suit, donning the colors of the mysterious Hub-01
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_environmental_suit_hub-01.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Shirt/shirt_environmental_suit_hub-01.rsi

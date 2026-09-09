@@ -1,4 +1,4 @@
-#MARK: Alice Ranger Green
+#MARK: Ranger Green
 - type: entity
   parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
   id: ClothingBeltChestRigAliceRangerGreen
@@ -34,7 +34,7 @@
     - 3,0,4,2
     - 6,0,7,2
 
-#MARK: Alice Olive
+#MARK: Olive
 - type: entity
   parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
   id: ClothingBeltChestRigAliceOlive
@@ -70,7 +70,7 @@
     - 3,0,4,2
     - 6,0,7,2
 
-#MARK: Alice Tan
+#MARK: Tan
 - type: entity
   parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
   id: ClothingBeltChestRigAliceTan
@@ -106,7 +106,7 @@
     - 3,0,4,2
     - 6,0,7,2
 
-#MARK: Alice Coyote Brown
+#MARK: Coyote Brown
 - type: entity
   parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
   id: ClothingBeltChestRigAliceCoyoteBrown
@@ -142,7 +142,7 @@
     - 3,0,4,2
     - 6,0,7,2
 
-#MARK: Alice Coyote Tan
+#MARK: Coyote Tan
 - type: entity
   parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
   id: ClothingBeltChestRigAliceCoyoteTan
@@ -178,7 +178,7 @@
     - 3,0,4,2
     - 6,0,7,2
 
-#MARK: Alice Black
+#MARK: Black
 - type: entity
   parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
   id: ClothingBeltChestRigAliceBlack
@@ -214,7 +214,7 @@
     - 3,0,4,2
     - 6,0,7,2
 
-#MARK: Alice Grey
+#MARK: Grey
 - type: entity
   parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
   id: ClothingBeltChestRigAliceGrey
@@ -250,7 +250,7 @@
     - 3,0,4,2
     - 6,0,7,2
 
-#MARK: Alice Green
+#MARK: Green
 - type: entity
   parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
   id: ClothingBeltChestRigAliceGreen
