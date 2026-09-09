@@ -1,4 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
+using Content.Server.Atmos.Components;
 using Content.Server.Atmos.EntitySystems;
 using Content.Server.Body.Systems;
 using Content.Server.Construction;
@@ -109,13 +110,13 @@ public sealed class EntityStorageSystem : SharedEntityStorageSystem
 
     protected override void TakeGas(EntityUid uid, SharedEntityStorageComponent component)
     {
-        if (!component.Airtight)
+        if (component is not EntityStorageComponent serverComp || !serverComp.Airtight)
             return;
-
-        var serverComp = (EntityStorageComponent) component;
         var tile = GetOffsetTileRef(uid, serverComp);
+        // Include the map atmosphere so planet maps can provide their configured air mix.
+        var mapUid = Transform(uid).MapUid;
 
-        if (tile != null && _atmos.GetTileMixture(tile.Value.GridUid, null, tile.Value.GridIndices, true) is {} environment)
+        if (tile != null && _atmos.GetTileMixture(tile.Value.GridUid, mapUid, tile.Value.GridIndices, true) is {} environment)
         {
             _atmos.Merge(serverComp.Air, environment.RemoveVolume(serverComp.Air.Volume));
         }
@@ -123,14 +124,14 @@ public sealed class EntityStorageSystem : SharedEntityStorageSystem
 
     public override void ReleaseGas(EntityUid uid, SharedEntityStorageComponent component)
     {
-        var serverComp = (EntityStorageComponent) component;
-
-        if (!serverComp.Airtight)
+        if (component is not EntityStorageComponent serverComp || !serverComp.Airtight)
             return;
 
         var tile = GetOffsetTileRef(uid, serverComp);
+        // Include the map atmosphere when venting back into the environment.
+        var mapUid = Transform(uid).MapUid;
 
-        if (tile != null && _atmos.GetTileMixture(tile.Value.GridUid, null, tile.Value.GridIndices, true) is {} environment)
+        if (tile != null && _atmos.GetTileMixture(tile.Value.GridUid, mapUid, tile.Value.GridIndices, true) is {} environment)
         {
             _atmos.Merge(environment, serverComp.Air);
             serverComp.Air.Clear();
@@ -139,7 +140,7 @@ public sealed class EntityStorageSystem : SharedEntityStorageSystem
 
     private TileRef? GetOffsetTileRef(EntityUid uid, EntityStorageComponent component)
     {
-        var targetCoordinates = new EntityCoordinates(uid, component.EnteringOffset).ToMap(EntityManager, TransformSystem);
+        var targetCoordinates = TransformSystem.ToMapCoordinates(new EntityCoordinates(uid, component.EnteringOffset));
 
         if (_map.TryFindGridAt(targetCoordinates, out var gridId, out var grid))
         {
@@ -158,20 +159,42 @@ public sealed class EntityStorageSystem : SharedEntityStorageSystem
 
     #region Gas mix event handlers
 
-    private void OnInsideInhale(EntityUid uid, InsideEntityStorageComponent component, InhaleLocationEvent args)
+    private void OnInsideInhale(EntityUid uid, InsideEntityStorageComponent component, ref InhaleLocationEvent args)
     {
         if (TryComp<EntityStorageComponent>(component.Storage, out var storage) && storage.Airtight)
         {
-            args.Gas = storage.Air;
+            // Immutable non-spaced map atmospheres act as an effectively "infinite" breathing source.
+            args.Gas = TryGetImmutablePlanetAtmosphere(component.Storage, out var mapAtmosphere)
+                ? mapAtmosphere.Mixture
+                : storage.Air;
         }
     }
 
-    private void OnInsideExhale(EntityUid uid, InsideEntityStorageComponent component, ExhaleLocationEvent args)
+    private void OnInsideExhale(EntityUid uid, InsideEntityStorageComponent component, ref ExhaleLocationEvent args)
     {
         if (TryComp<EntityStorageComponent>(component.Storage, out var storage) && storage.Airtight)
         {
-            args.Gas = storage.Air;
+            // Exhale into the immutable map atmosphere too, preventing container CO2 buildup from exhaling.
+            args.Gas = TryGetImmutablePlanetAtmosphere(component.Storage, out var mapAtmosphere)
+                ? mapAtmosphere.Mixture
+                : storage.Air;
         }
+    }
+
+    // Only non-space immutable map atmospheres get effectively "infinite" storage breathing.
+    private bool TryGetImmutablePlanetAtmosphere(EntityUid storageUid, [NotNullWhen(true)] out MapAtmosphereComponent? mapAtmosphere)
+    {
+        mapAtmosphere = null;
+
+        if (Transform(storageUid).MapUid is not { } mapUid ||
+            !TryComp(mapUid, out mapAtmosphere) ||
+            mapAtmosphere.Space ||
+            !mapAtmosphere.Mixture.Immutable)
+        {
+            return false;
+        }
+
+        return true;
     }
 
     private void OnInsideExposed(EntityUid uid, InsideEntityStorageComponent component, ref AtmosExposedGetAirEvent args)
