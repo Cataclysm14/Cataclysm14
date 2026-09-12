@@ -12,7 +12,7 @@
 
 #MARK: Coveralls
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtCoverallsHub01
   name: coveralls (Hub-01)
   description: A sturdy pair of coveralls donning the colors of the mysterious Hub-01
@@ -24,7 +24,7 @@
 
 #MARK: Environmental Suit
 - type: entity
-  parent: BaseClothingShirt
+  parent: BaseClothingShirtToggleable
   id: ClothingShirtEnvironmentalSuitHub01
   name: environmental suit (Hub-01)
   description: A reinforced suit akin to an armored and strengthened hazmat suit, donning the colors of the mysterious Hub-01

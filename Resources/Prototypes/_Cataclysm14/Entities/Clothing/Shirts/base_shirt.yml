@@ -33,14 +33,22 @@
     grid:
     - 0,0,1,1
 
+#MARK: Toggleable Head Block
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetBlock
+  name: Blocked
+  description: Can't fit anything there
+  components:
+  - type: Sprite
+    sprite: Markers/cross.rsi
+
 #MARK: Toggleable
 - type: entity
   abstract: true
   parent: BaseClothingShirt
   id: BaseClothingShirtToggleable
   components:
-  - type: ToggleableClothing
-    requiredSlot: INNERCLOTHING
   - type: ContainerContainer
     containers:
       toggleable-clothing: !type:Container {}
@@ -52,3 +60,9 @@
         type: StorageBoundUserInterface
       enum.ToggleClothingUiKey.Key:
         type: ToggleableClothingBoundUserInterface
+  - type: ToggleableClothing
+    requiredSlot: INNERCLOTHING
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock
+  - type: HoodedClothing
+    equippedPrefix: raised
