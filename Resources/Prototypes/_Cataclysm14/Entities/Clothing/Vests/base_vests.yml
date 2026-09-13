@@ -30,5 +30,3 @@
     requiredSlot: OUTERCLOTHING
     clothingPrototypes:
       head: ClothingHeadHelmetBlock
-  - type: HoodedClothing
-    equippedPrefix: raised
