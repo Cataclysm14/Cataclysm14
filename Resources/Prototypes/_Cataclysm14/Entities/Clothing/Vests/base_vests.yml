@@ -8,3 +8,25 @@
     - Kevlar
   - type: Item
     storedScale: 3.5
+
+#MARK: Toggleable
+- type: entity
+  abstract: true
+  parent: BaseClothingOuterBulletProofVest
+  id: BaseClothingOuterBulletProofVestToggleable
+  components:
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:Container {}
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.ToggleClothingUiKey.Key:
+        type: ToggleableClothingBoundUserInterface
+  - type: ToggleableClothing
+    requiredSlot: OUTERCLOTHING
+    clothingPrototypes:
+      head: ClothingHeadHelmetBlock

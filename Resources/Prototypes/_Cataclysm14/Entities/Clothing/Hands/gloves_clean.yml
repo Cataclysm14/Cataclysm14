@@ -2,7 +2,7 @@
 - type: entity
   parent: ClothingHandsButcherable
   id: ClothingHandsGlovesSterileLatex
-  name: latex gloves
+  name: latex sterile gloves
   description: Thin sterile latex gloves. Basic PPE for any clean environnment.
   components:
   - type: Sprite
@@ -16,7 +16,7 @@
 - type: entity
   parent: ClothingHandsButcherable
   id: ClothingHandsGlovesSterileNitrile
-  name: nitrile gloves
+  name: nitrile sterile gloves
   description: High-quality nitrile gloves. Expensive medical PPE.
   components:
   - type: Sprite

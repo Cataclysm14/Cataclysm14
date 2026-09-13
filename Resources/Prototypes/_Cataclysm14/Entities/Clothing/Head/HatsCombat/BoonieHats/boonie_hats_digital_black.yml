@@ -1,0 +1,12 @@
+- type: entity
+  parent: BaseClothingHead
+  id: ClothingHeadHatBoonieHatDigitalBlack
+  name: camo boonie hat (digital black)
+  description: >
+    A boonie hat, made for hunters and for protecting your head from the sun.
+    It has a digital black camo patern for covert operations and larpers.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/DigitalBlack/hat_boonie_hat_digital_black.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/DigitalBlack/hat_boonie_hat_digital_black.rsi

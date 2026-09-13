@@ -1,4 +1,4 @@
-#MARK: Chicom Ranger Green
+#MARK: Ranger Green
 - type: entity
   parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
   id: ClothingBeltChestRigChicomRangerGreen
@@ -34,7 +34,7 @@
     - 3,0,4,2
     - 6,0,7,2
 
-#MARK: Chicom Olive
+#MARK: Olive
 - type: entity
   parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
   id: ClothingBeltChestRigChicomOlive
@@ -70,7 +70,7 @@
     - 3,0,4,2
     - 6,0,7,2
 
-#MARK: Chicom Tan
+#MARK: Tan
 - type: entity
   parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
   id: ClothingBeltChestRigChicomTan
@@ -106,7 +106,7 @@
     - 3,0,4,2
     - 6,0,7,2
 
-#MARK: Chicom Coyote Brown
+#MARK: Coyote Brown
 - type: entity
   parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
   id: ClothingBeltChestRigChicomCoyoteBrown
@@ -142,7 +142,7 @@
     - 3,0,4,2
     - 6,0,7,2
 
-#MARK: Chicom Coyote Tan
+#MARK: Coyote Tan
 - type: entity
   parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
   id: ClothingBeltChestRigChicomCoyoteTan
@@ -178,7 +178,7 @@
     - 3,0,4,2
     - 6,0,7,2
 
-#MARK: Chicom Black
+#MARK: Black
 - type: entity
   parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
   id: ClothingBeltChestRigChicomBlack
@@ -214,7 +214,7 @@
     - 3,0,4,2
     - 6,0,7,2
 
-#MARK: Chicom Grey
+#MARK: Grey
 - type: entity
   parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
   id: ClothingBeltChestRigChicomGrey
@@ -250,7 +250,7 @@
     - 3,0,4,2
     - 6,0,7,2
 
-#MARK: Chicom Green
+#MARK: Green
 - type: entity
   parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase]
   id: ClothingBeltChestRigChicomGreen
