@@ -1,6 +1,6 @@
 #MARK: Heavy Utiltiy Exoskeleton
 - type: entity
-  parent: ClothingOuterArmorBase
+  parent: BaseClothingOuterBulletProofVestToggleable
   id: BaweClothingOuterExoskeletonUtilityHeavy
   name: heavy utility exoskeleton
   description: A reinforced high quality medium weight, high strength utility exoskeleton equipped with 2 hyrdraulic power auxiliary arms.
