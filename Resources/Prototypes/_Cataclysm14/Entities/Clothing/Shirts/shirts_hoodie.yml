@@ -1,12 +1,3 @@
-- type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadHelmetBlock
-  name: Blocked
-  description: Can't fit anything there
-  components:
-  - type: Sprite
-    sprite: Markers/cross.rsi
-
 #MARK: white
 - type: entity
   parent: BaseClothingShirtToggleable
@@ -21,11 +12,6 @@
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-  - type: ToggleableClothing
-    clothingPrototypes:
-      head: ClothingHeadHelmetBlock
-  - type: HoodedClothing
-    equippedPrefix: raised
 
 #MARK: red
 - type: entity
@@ -51,11 +37,6 @@
       right:
       - state: inhand-right
         color: "#9E1A1A"
-  - type: ToggleableClothing
-    clothingPrototypes:
-      head: ClothingHeadHelmetBlock
-  - type: HoodedClothing
-    equippedPrefix: raised
 
 #MARK: blue
 - type: entity
@@ -81,11 +62,6 @@
       right:
       - state: inhand-right
         color: "#404691"
-  - type: ToggleableClothing
-    clothingPrototypes:
-      head: ClothingHeadHelmetBlock
-  - type: HoodedClothing
-    equippedPrefix: raised
 
 #MARK: green
 - type: entity
@@ -111,11 +87,6 @@
       right:
       - state: inhand-right
         color: "#3d8c40"
-  - type: ToggleableClothing
-    clothingPrototypes:
-      head: ClothingHeadHelmetBlock
-  - type: HoodedClothing
-    equippedPrefix: raised
 
 #MARK: yellow
 - type: entity
@@ -141,11 +112,6 @@
       right:
       - state: inhand-right
         color: "#A89B25"
-  - type: ToggleableClothing
-    clothingPrototypes:
-      head: ClothingHeadHelmetBlock
-  - type: HoodedClothing
-    equippedPrefix: raised
 
 #MARK: purple
 - type: entity
@@ -171,11 +137,6 @@
       right:
       - state: inhand-right
         color: "#702963"
-  - type: ToggleableClothing
-    clothingPrototypes:
-      head: ClothingHeadHelmetBlock
-  - type: HoodedClothing
-    equippedPrefix: raised
 
 #MARK: black
 - type: entity
@@ -201,11 +162,6 @@
       right:
       - state: inhand-right
         color: "#444444"
-  - type: ToggleableClothing
-    clothingPrototypes:
-      head: ClothingHeadHelmetBlock
-  - type: HoodedClothing
-    equippedPrefix: raised
 
 #MARK: beige
 - type: entity
@@ -231,11 +187,6 @@
       right:
       - state: inhand-right
         color: "#CDBEA1"
-  - type: ToggleableClothing
-    clothingPrototypes:
-      head: ClothingHeadHelmetBlock
-  - type: HoodedClothing
-    equippedPrefix: raised
 
 #MARK:  brown
 - type: entity
@@ -261,11 +212,6 @@
       right:
       - state: inhand-right
         color: "#5F4D2A"
-  - type: ToggleableClothing
-    clothingPrototypes:
-      head: ClothingHeadHelmetBlock
-  - type: HoodedClothing
-    equippedPrefix: raised
 
 #MARK:  olive
 - type: entity
@@ -291,11 +237,6 @@
       right:
       - state: inhand-right
         color: "#92A168"
-  - type: ToggleableClothing
-    clothingPrototypes:
-      head: ClothingHeadHelmetBlock
-  - type: HoodedClothing
-    equippedPrefix: raised
 
 #MARK:  ranger green
 - type: entity
@@ -321,8 +262,3 @@
       right:
       - state: inhand-right
         color: "#4A5A49"
-  - type: ToggleableClothing
-    clothingPrototypes:
-      head: ClothingHeadHelmetBlock
-  - type: HoodedClothing
-    equippedPrefix: raised

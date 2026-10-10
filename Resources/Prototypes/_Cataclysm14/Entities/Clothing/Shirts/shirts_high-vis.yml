@@ -12,11 +12,6 @@
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-  - type: ToggleableClothing
-    clothingPrototypes:
-      head: ClothingHeadHelmetBlock
-  - type: HoodedClothing
-    equippedPrefix: raised
 
 #MARK: orange/blue, white
 - type: entity
@@ -32,8 +27,3 @@
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
-  - type: ToggleableClothing
-    clothingPrototypes:
-      head: ClothingHeadHelmetBlock
-  - type: HoodedClothing
-    equippedPrefix: raised

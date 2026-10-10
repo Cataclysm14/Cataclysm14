@@ -1,3 +1,4 @@
+#MARK: Lab Coat
 - type: entity
   parent: ClothingOuterStorageBase
   id: ClothingOuterCoatLabCoat
@@ -17,6 +18,7 @@
         Slash: 0.95
         Caustic: 0.60
 
+#MARK: Lab Vest
 - type: entity
   parent: ClothingOuterStorageBase
   id: ClothingOuterCoatLabVest
@@ -36,6 +38,7 @@
         Slash: 0.95
         Caustic: 0.60
 
+#MARK: Lab Jacket
 - type: entity
   parent: ClothingOuterStorageBase
   id: ClothingOuterCoatLabJacket
@@ -46,6 +49,26 @@
     sprite: _Cataclysm14/Clothing/Vests/Coats/coat_labjacket.rsi
   - type: Clothing
     sprite: _Cataclysm14/Clothing/Vests/Coats/coat_labjacket.rsi
+  - type: TemperatureProtection
+    heatingCoefficient: 0.1
+    coolingCoefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Caustic: 0.60
+
+#MARK: Lab Coat
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatLabCoatHub01
+  name: lab coat (Hub-01)
+  description: A durable thick lab coat, donning the colors of the mysterious Hub-01
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Vests/Coats/coat_labcoat_hub-01.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Vests/Coats/coat_labcoat_hub-01.rsi
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1

@@ -246,9 +246,20 @@
   id: LootTableClothingsSurplusHat
   table: !type:GroupSelector
     children:
-    - id: ClothingHeadHatBoonieHatM81
-    - id: ClothingHeadHatBoonieHatCCE
+    - id: ClothingHeadHatBoonieHatUCP
+    - id: ClothingHeadHatBoonieHatOCP
     - id: ClothingHeadHatBoonieHatMulticam
+    - id: ClothingHeadHatBoonieHatMulticamArid
+    - id: ClothingHeadHatBoonieHatMulticamDesert
+    - id: ClothingHeadHatBoonieHatMulticamWoodland
+    - id: ClothingHeadHatBoonieHatM81
+    - id: ClothingHeadHatBoonieHatTigerStripes
+    - id: ClothingHeadHatBoonieHatRhodesianBushstroke
+    - id: ClothingHeadHatBoonieHatFlecktarnAutumn
+    - id: ClothingHeadHatBoonieHatDigitalBlack
+    - id: ClothingHeadHatBoonieHatDigitalFlora
+    - id: ClothingHeadHatBoonieHatCCE
+    - id: ClothingHeadHatBoonieHatCCEDesert
 
 #MARK: Surplus Bottom
 - type: entityTable

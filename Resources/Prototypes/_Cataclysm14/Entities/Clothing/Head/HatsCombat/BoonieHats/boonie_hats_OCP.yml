@@ -1,0 +1,12 @@
+- type: entity
+  parent: BaseClothingHead
+  id: ClothingHeadHatBoonieHatOCP
+  name: camo boonie hat (OCP patern)
+  description: >
+    A boonie hat, made for hunters and for protecting your head from the sun.
+    It has the OCP multicam variant (Operational Camouflage Pattern) camo made for the US army.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/OCP/hat_boonie_hat_OCP.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/OCP/hat_boonie_hat_OCP.rsi

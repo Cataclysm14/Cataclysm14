@@ -1,0 +1,12 @@
+- type: entity
+  parent: BaseClothingHead
+  id: ClothingHeadHatBoonieHatCCE
+  name: camo boonie hat (CCE)
+  description: >
+    A boonie hat, made for hunters and for protecting your head from the sun.
+    It has the CCE central europe camo of the french army.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/CCE/hat_boonie_hat_CCE.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/CCE/hat_boonie_hat_CCE.rsi

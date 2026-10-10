@@ -1,0 +1,13 @@
+- type: entity
+  parent: BaseClothingHead
+  id: ClothingHeadHatBoonieHatFlecktarnAutumn
+  name: camo boonie hat (autumn flecktarn)
+  description: >
+    A boonie hat, made for hunters and for protecting your head from the sun.
+    Originally used by german SS units, kept by the german federal army Bundeswehr and adapted in multiple palettes with a patern adapted to most environments.
+    This particular version is colored in autumn colors with a mix of brown, tan, orange and black.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/FlecktarnAutumn/hat_boonie_hat_flecktarn_autumn.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/FlecktarnAutumn/hat_boonie_hat_flecktarn_autumn.rsi

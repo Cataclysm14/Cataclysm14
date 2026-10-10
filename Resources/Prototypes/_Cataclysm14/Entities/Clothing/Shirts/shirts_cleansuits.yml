@@ -34,11 +34,6 @@
         Heat: 0.90
         Radiation: 0.01
   - type: GroupExamine
-  - type: ToggleableClothing
-    clothingPrototypes:
-      head: ClothingHeadHelmetBlock
-  - type: HoodedClothing
-    equippedPrefix: raised
 
 #MARK: Red
 - type: entity
@@ -76,11 +71,6 @@
         Heat: 0.90
         Radiation: 0.01
   - type: GroupExamine
-  - type: ToggleableClothing
-    clothingPrototypes:
-      head: ClothingHeadHelmetBlock
-  - type: HoodedClothing
-    equippedPrefix: raised
 
 #MARK: Blue
 - type: entity
@@ -118,11 +108,6 @@
         Heat: 0.90
         Radiation: 0.01
   - type: GroupExamine
-  - type: ToggleableClothing
-    clothingPrototypes:
-      head: ClothingHeadHelmetBlock
-  - type: HoodedClothing
-    equippedPrefix: raised
 
 #MARK: Purple
 - type: entity
@@ -160,11 +145,6 @@
         Heat: 0.90
         Radiation: 0.01
   - type: GroupExamine
-  - type: ToggleableClothing
-    clothingPrototypes:
-      head: ClothingHeadHelmetBlock
-  - type: HoodedClothing
-    equippedPrefix: raised
 
 #MARK: Green
 - type: entity
@@ -202,11 +182,6 @@
         Heat: 0.90
         Radiation: 0.01
   - type: GroupExamine
-  - type: ToggleableClothing
-    clothingPrototypes:
-      head: ClothingHeadHelmetBlock
-  - type: HoodedClothing
-    equippedPrefix: raised
 
 #MARK: White
 - type: entity
@@ -244,8 +219,3 @@
         Heat: 0.90
         Radiation: 0.01
   - type: GroupExamine
-  - type: ToggleableClothing
-    clothingPrototypes:
-      head: ClothingHeadHelmetBlock
-  - type: HoodedClothing
-    equippedPrefix: raised

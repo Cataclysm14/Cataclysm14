@@ -1,0 +1,12 @@
+- type: entity
+  parent: BaseClothingHead
+  id: ClothingHeadHatBoonieHatM81
+  name: camo boonie hat (M81 patern)
+  description: >
+    A boonie hat, made for hunters and for protecting your head from the sun.
+    It has the M81 american forces woodland camo.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/M81/hat_boonie_hat_M81.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/M81/hat_boonie_hat_M81.rsi

@@ -168,3 +168,28 @@
       right:
       - state: inhand-right
         color: "#4C573B"
+
+#MARK: Coyote Brown
+- type: entity
+  parent: BaseClothingBeltDutyBelt
+  id: ClothingBeltDutyBeltCoyoteBrown
+  name: duty belt (coyote brown)
+  description: A belt with plenty of attach for equipment and pockets, used by various militias and special forces, and mall ninjas.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_any.rsi
+    color: "#81613C"
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Belt/belt_duty_belt_any.rsi
+    clothingVisuals:
+      belt:
+      - state: equipped-BELT
+        color: "#81613C"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#81613C"
+      right:
+      - state: inhand-right
+        color: "#81613C"

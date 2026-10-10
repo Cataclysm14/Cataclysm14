@@ -1,0 +1,12 @@
+- type: entity
+  parent: BaseClothingHead
+  id: ClothingHeadHatBoonieHatTigerStripes
+  name: camo boonie hat (tiger stripes)
+  description: >
+    A boonie hat, made for hunters and for protecting your head from the sun.
+    It has tiger stripes jungle camo made for US special forces in Vietnam, introduced around 1963.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/TigerStripes/hat_boonie_hat_tiger_stripes.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/TigerStripes/hat_boonie_hat_tiger_stripes.rsi

@@ -1,0 +1,13 @@
+- type: entity
+  parent: BaseClothingHead
+  id: ClothingHeadHatBoonieHatMulticamWoodland
+  name: camo boonie hat (multicam woodland)
+  description: >
+    A boonie hat, made for hunters and for protecting your head from the sun.
+    Originally created by the American company Crye Precision the multicam woodland patern was adopted by a pletora of army throughout the world.
+    This one dones greener and darker colors for cold forests.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/MulticamWoodland/hat_boonie_hat_multicam_woodland.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/MulticamWoodland/hat_boonie_hat_multicam_woodland.rsi

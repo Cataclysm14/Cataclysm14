@@ -1,0 +1,12 @@
+- type: entity
+  parent: BaseClothingHead
+  id: ClothingHeadHatBoonieHatDigitalFlora
+  name: camo boonie hat (digital flora)
+  description: >
+    A boonie hat, made for hunters and for protecting your head from the sun.
+    It has the digital flora pixelated patern in green colors of the Russian Ground Forces introduced in 2008.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/DigitalFlora/hat_boonie_hat_digital_flora.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/DigitalFlora/hat_boonie_hat_digital_flora.rsi

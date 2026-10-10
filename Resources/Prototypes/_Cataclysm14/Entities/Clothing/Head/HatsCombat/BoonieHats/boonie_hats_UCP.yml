@@ -1,0 +1,12 @@
+- type: entity
+  parent: BaseClothingHead
+  id: ClothingHeadHatBoonieHatUCP
+  name: camo boonie hat (UCP patern)
+  description: >
+    A boonie hat, made for hunters and for protecting your head from the sun.
+    It has the UCP (Universal Combat Patern) camo variant made for the US army.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/UCP/hat_boonie_hat_UCP.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/UCP/hat_boonie_hat_UCP.rsi

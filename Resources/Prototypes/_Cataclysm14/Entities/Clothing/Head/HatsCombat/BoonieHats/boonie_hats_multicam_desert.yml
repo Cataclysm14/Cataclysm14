@@ -1,0 +1,13 @@
+- type: entity
+  parent: BaseClothingHead
+  id: ClothingHeadHatBoonieHatMulticamDesert
+  name: camo boonie hat (multicam desert)
+  description: >
+    A boonie hat, made for hunters and for protecting your head from the sun.
+    Originally created by the American company Crye Precision the multicam desert patern was adopted by a pletora of army throughout the world.
+    This one dones lighter sand and rock colors for desertic environments.
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/MulticamDesert/hat_boonie_hat_multicam_desert.rsi
+  - type: Clothing
+    sprite: _Cataclysm14/Clothing/Head/Hats/HatsCombat/BoonieHats/MulticamDesert/hat_boonie_hat_multicam_desert.rsi
