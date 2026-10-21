@@ -1,3 +1,6 @@
+using Content.Shared.Bed.Sleep;
+using Content.Shared.Mobs;
+using Content.Shared.Mobs.Components;
 using Content.Shared.Stunnable;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
@@ -21,6 +24,13 @@ public sealed class StunSystem : SharedStunSystem
         Stunned,
     }
 
+    public override void Initialize()
+    {
+        base.Initialize();
+        SubscribeLocalEvent<SleepingComponent, ComponentStartup>(OnSleepingStartup);
+        SubscribeLocalEvent<SleepingComponent, ComponentShutdown>(OnSleepingShutdown);
+    }
+
     protected override void UpdateCanMove(
         EntityUid uid,
         StunnedComponent component,
@@ -29,19 +39,54 @@ public sealed class StunSystem : SharedStunSystem
         // keep the normal stun behavior
         base.UpdateCanMove(uid, component, args);
 
-        if (!TryComp<SpriteComponent>(uid, out var sprite))
-            return;
-
         switch (args)
         {
             case ComponentStartup:
-                ShowStunVisual(uid, sprite);
+                UpdateStunVisual(uid, stunnedOverride: true);
                 break;
 
             case ComponentShutdown:
-                HideStunVisual(uid, sprite);
+                UpdateStunVisual(uid, stunnedOverride: false);
                 break;
         }
+    }
+
+    private void OnSleepingStartup(
+        EntityUid uid,
+        SleepingComponent component,
+        ComponentStartup args)
+    {
+        UpdateStunVisual(uid, sleepingOverride: true);
+    }
+
+    private void OnSleepingShutdown(
+        EntityUid uid,
+        SleepingComponent component,
+        ComponentShutdown args)
+    {
+        UpdateStunVisual(uid, sleepingOverride: false);
+    }
+
+    private void UpdateStunVisual(
+        EntityUid uid,
+        bool? stunnedOverride = null,
+        bool? sleepingOverride = null)
+    {
+        if (!TryComp<SpriteComponent>(uid, out var sprite))
+            return;
+
+        var stunned = stunnedOverride ?? HasComp<StunnedComponent>(uid);
+        var sleeping = sleepingOverride ?? HasComp<SleepingComponent>(uid);
+        var incapacitated = TryComp<MobStateComponent>(uid, out var mobState) &&
+                            mobState.CurrentState != MobState.Alive;
+
+        if (stunned && !sleeping && !incapacitated)
+        {
+            ShowStunVisual(uid, sprite);
+            return;
+        }
+
+        HideStunVisual(uid, sprite);
     }
 
     private void ShowStunVisual(
